@@ -1,6 +1,6 @@
 # Separate tail mass from tail value under the useful support
 
-Status: **proposed after cycle16/Astra review; not implemented, staged or measured**. [Certified retrieval](../certified-current-query-retrieval.md) preserves current-query top4 but is slower than a full scan. Stop that cost optimization and inspect the remaining approximation under fixed addresses. Use the same retrospective pair, source geometry, routes, current-query support/order and centroid law; do not increase support or add covariance state before seeing this result.
+Status: **executed in cycle17**, guarded job `job-f1aeafd8d9a4`. The [measured result](../current-support-tail-factorial.md) retains both improvements and countertrends; the original protocol follows unchanged. [Certified retrieval](../certified-current-query-retrieval.md) preserves current-query top4 but is slower than a full scan. Stop that cost optimization and inspect the remaining approximation under fixed addresses. Use the same retrospective pair, source geometry, routes, current-query support/order and centroid law; do not increase support or add covariance state before seeing this result.
 
 For selected support S and complement T, let Z_S,h_S be its exact mass/value mean under the current query. Let h_T⁰ be the anchor-weighted tail value mean, Z̃_T its centroid-predicted current mass, and h_T*,Z_T* the exact tilted tail mean/mass. Define
 

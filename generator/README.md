@@ -32,6 +32,8 @@ The [full-prefix selector diagnostic](../docs/full-prefix-selector-objective.md)
 
 The [certified retrieval assay](../docs/certified-current-query-retrieval.md) uses source-fixed coordinate blocks and outward score intervals, with the original full-scan fallback. `certified_retrieval_study.py stage|submit|collect` seals a causal index/read bank before fresh full-scan and historical comparisons; `publish_certified_retrieval.py verify|publish` authenticates complete retained bytes. Identical banks inherit the existing original-consumer result. It avoids about10.6%of score products but is slower in this implementation. Full KV storage and bound/read costs remain; no strictzero-neural image claim.
 
+The [fixed-support tail factorial](../docs/current-support-tail-factorial.md) crosses exact/centroid tail mass with exact/anchor tail value on the useful ordered current-query top4. `tail_factorial_study.py stage|submit|collect` seals complete raw/BF16 banks and signed factors before old outputs or original consumer parameters; `publish_tail_factorial.py verify|publish` authenticates retained evidence. Mass and value repairs both improve pooled paired state response, with broader head improvements for value and signed cancellation retained. Four new learned receiving consumers are offline diagnostic work, not the site's arbitrary-prompt image backend. The [next plan](../docs/plans/positive-tail-moment-closure.md) tests one coherent positive directional closure.
+
 ## Generate from the website
 
 From this repository in the domains workspace, with the configured mrun client and reachable fleet:
