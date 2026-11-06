@@ -99,7 +99,7 @@ test('the model host swaps family adapters and disposes the previous model',asyn
   await assert.rejects(()=>host.select('missing'));
 });
 test('core transfer stays below 1 MB compressed and evidence export has source hashes',()=>{
-  const files=['index.html','style.css','app.js','isa-adapter.js','model-host.js','models.js','kernels.js','data/scan.json','data/carry.json','data/loop.json','data/frontier.json','data/readings.json'];
+  const files=['index.html','templates/isa.html','style.css','app.js','isa-adapter.js','model-host.js','models.js','flux-model.js','components.js','kernels.js','data/scan.json','data/carry.json','data/loop.json','data/frontier.json','data/readings.json'];
   const bytes=files.reduce((sum,n)=>sum+gzipSync(readFileSync(new URL(n.startsWith('data/')?`../public/${n}`:`../src/${n}`,import.meta.url))).length,0);
   assert.ok(bytes<1_000_000);console.log('Core gzip bytes:',bytes);
   const p=read('provenance');assert.equal(p.checkpoint,isa.checkpoint);assert.equal(p.newModelForwards,0);assert.equal(Object.keys(p.sources).length,14);

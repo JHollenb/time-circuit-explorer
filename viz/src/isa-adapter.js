@@ -1,23 +1,21 @@
 import {validatePack} from './models.js';
 import {wordLaw, trajectory, scanRow, scanTrajectory, writeContributions, conditionalMixer, postMLP, linear, maxError, escapeHTML as esc} from './kernels.js';
+import {assetJSON,mountTemplate,openDialog,scrollToSection,renderWalkthrough,renderArchitecture as drawArchitecture,renderInspector,Playback} from './components.js';
 
 const $ = id => document.getElementById(id);
 let model, lifecycle;
 const state = {lesson:0,guided:true,node:'scan2',view:'scan',row:8,channel:0,mode:0,dose:1,mlpDelta:0,phase:3,scenario:'carry',instruction:0,hex:true,playing:false,math:false,h:false,conv:false};
 const initialState={...state};
 const phases = [ ['Context','inputs'],['Route','operands'],['Form update','writer'],['Carry','scan state'],['Read','consumer'],['Commit','next input'] ];
-const cache = new Map();
-let carry, loops, frontier, scan, readings, timer, loadingScan, provenance;
+let carry, loops, frontier, scan, readings, playback, loadingScan, provenance;
 const history = [];
 const precision = x => Math.abs(x)<1e-4 && x!==0 ? x.toExponential(3) : Number(x).toFixed(5);
 const short = x => Math.abs(x)>10000||Math.abs(x)<.001&&x!==0 ? Number(x).toExponential(2) : Number(x).toFixed(4);
 const word = x => state.hex?'0x'+BigInt(x).toString(16).padStart(16,'0'):BigInt(x).toString();
 const vecNorm=x=>Math.sqrt(x.reduce((a,b)=>a+b*b,0));
-function json(url) {if(!cache.has(url)) cache.set(url,fetch(url).then(r=>{if(!r.ok)throw new Error(`Could not load ${url} (${r.status})`);return r.json();}));return cache.get(url);}
+function json(url) {return assetJSON(url,lifecycle.signal);}
 function toast(message) {$('toast').textContent=message;$('toast').hidden=false;clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('toast').hidden=true,3400);}
-function openDialog(label,html) {$('dialog-label').textContent=label;$('dialog-content').innerHTML=html;if(!$('detail-dialog').open)$('detail-dialog').showModal();}
-function scrollToSection(id) {$(id)?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});}
-function stop() {state.playing=false;clearTimeout(timer);$('play').innerHTML='<span>▶</span> Run';$('play').setAttribute('aria-label','Play execution');}
+function stop() {state.playing=false;playback?.stop();if($('play')){$('play').innerHTML='<span>▶</span> Run';$('play').setAttribute('aria-label','Play execution');}}
 function setView(view) {
   state.view=view;
   $('scan-tab').classList.toggle('active',view==='scan');$('mlp-tab').classList.toggle('active',view==='mlp');
@@ -46,35 +44,14 @@ function selectLesson(index,scroll=true) {
   if(scroll)scrollToSection(l.target);
 }
 function renderLesson() {
-  $('lesson-nav').innerHTML=model.lessons.map((l,i)=>`<button data-lesson="${i}" class="${i===state.lesson?'active':''}" ${i===state.lesson?'aria-current="step"':''}><span class="lesson-number">0${i+1}</span>${l.short}</button>`).join('');
-  const l=model.lessons[state.lesson];
-  $('lesson-kicker').textContent=l.kicker;$('lesson-heading').textContent=l.heading;$('lesson-text').textContent=l.text;
-  $('next-lesson').innerHTML=state.lesson===model.lessons.length-1?'Explore freely <span>↗</span>':'Next chapter <span>→</span>';
-  $('guided-mode').classList.toggle('active',state.guided);$('explore-mode').classList.toggle('active',!state.guided);
-  $('guided-mode').setAttribute('aria-pressed',state.guided);$('explore-mode').setAttribute('aria-pressed',!state.guided);
-  document.querySelector('.lesson-caption').hidden=!state.guided;
+  renderWalkthrough(model.lessons,state.lesson,state.guided);
 }
 function renderArchitecture() {
-  const graph=model.graph, nodes=new Map(graph.nodes.map(n=>[n.id,n]));
-  const svg=$('architecture-graph');svg.setAttribute('viewBox',`0 0 ${graph.width} ${graph.height}`);
-  const colors={input:['#f9fafc','#e1e6ef'],mlp:['#eef7f2','#cde2d6'],scan:['#f2eff9','#d5cce9'],route:['#eef4fc','#cbdaf1'],head:['#eef4fc','#cbdaf1']};
-  function edge([a,b],index) {
-    const s=nodes.get(a),t=nodes.get(b);let path;
-    if(a==='decoder'&&['heads','flags'].includes(b)) {
-      const y=b==='heads'?24:292;path=`M${s.x+s.w/2},${b==='heads'?s.y:s.y+s.h} V${y} H${t.x+t.w/2} V${b==='heads'?t.y:t.y+t.h}`;
-    } else if(s.x===t.x)path=`M${s.x+s.w/2},${s.y+s.h} V${t.y}`;
-    else if(s.x>t.x)path=`M${s.x+s.w/2},${s.y+s.h} V${t.y-10} H${t.x+t.w/2} V${t.y}`;
-    else if(s.y>t.y+50)path=`M${s.x+s.w},${s.y+s.h/2} H${s.x+s.w+9} V${t.y+t.h/2} H${t.x}`;
-    else path=`M${s.x+s.w},${s.y+s.h/2} C${s.x+s.w+20},${s.y+s.h/2} ${t.x-20},${t.y+t.h/2} ${t.x},${t.y+t.h/2}`;
-    return `<path class="graph-edge ${a===state.node||b===state.node?'highlight':''}" d="${path}" marker-end="url(#arrow-${a===state.node||b===state.node?'active':'default'})"/>`;
-  }
-  svg.innerHTML=`<defs><marker id="arrow-default" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#cdd5e2"/></marker><marker id="arrow-active" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#9282c4"/></marker></defs>
-    ${graph.groups.map(g=>`<rect x="${g.x}" y="${g.y}" width="${g.w}" height="${g.h}" rx="10" fill="#fcfbfe" stroke="#e7e2f0" stroke-dasharray="3 3"/><text x="${g.x+15}" y="${g.y+20}" font-size="6.5" fill="#a094b6" letter-spacing=".7" font-family="monospace">${esc(g.label)}</text>`).join('')}
-    ${graph.edges.map(edge).join('')}
-    ${graph.nodes.map(n=>{const c=colors[n.kind]||colors.input;return `<g class="graph-node ${state.node===n.id?'selected':''}" data-node="${n.id}" role="button" tabindex="0" aria-label="Inspect ${esc(n.label)}" aria-pressed="${state.node===n.id}"><rect class="node-box" x="${n.x}" y="${n.y}" width="${n.w}" height="${n.h}" rx="7" fill="${c[0]}" stroke="${c[1]}"/><text class="node-title" x="${n.x+11}" y="${n.y+21}">${esc(n.label)}</text><text class="node-sub" x="${n.x+11}" y="${n.y+35}">${esc(n.sub)}</text>${n.h>60?`<text class="node-math" x="${n.x+11}" y="${n.y+54}">${esc(n.math)}</text>`:''}${state.node===n.id?`<circle cx="${n.x+n.w-9}" cy="${n.y+10}" r="2.5" fill="#9482bd"/>`:''}</g>`;}).join('')}
-    <text x="20" y="308" font-size="7" fill="#a2adbe" font-family="monospace">INPUTS → LIVE FACTORS → STATE → READOUT</text><text x="872" y="308" font-size="7" fill="#9a8eb3" font-family="monospace">BIT ROW ${String(state.row).padStart(2,'0')} / 63</text>`;
-  const n=nodes.get(state.node);
-  $('component-inspector').innerHTML=`<div><span class="inspector-type">${esc(n.kind==='mlp'?'MULTILAYER PERCEPTRON':n.kind==='scan'?'SELECTIVE STATE SPACE':n.kind.toUpperCase())}</span><h3>${esc(n.label)}</h3><span class="dimensions">${esc(n.dims)}</span></div><p>${esc(n.text)}</p><button class="inspect-link" id="inspect-computation">${n.id==='scan2'||n.id==='post2'?'Explore this computation':'Inspect the equation'} <span>↗</span></button><div class="inspector-symbol">${esc(n.equation)}</div>`;
+  drawArchitecture($('architecture-graph'),model.graph,{selected:state.node,
+    edgePath(a,b,s,t){if(a==='decoder'&&['heads','flags'].includes(b)){const y=b==='heads'?24:292;return `M${s.x+s.w/2},${b==='heads'?s.y:s.y+s.h} V${y} H${t.x+t.w/2} V${b==='heads'?t.y:t.y+t.h}`;}},
+    footerLeft:'INPUTS → LIVE FACTORS → STATE → READOUT',footerRight:`BIT ROW ${String(state.row).padStart(2,'0')} / 63`});
+  const n=model.graph.nodes.find(n=>n.id===state.node);
+  $('component-inspector').innerHTML=renderInspector({...n,typeLabel:n.kind==='mlp'?'MULTILAYER PERCEPTRON':n.kind==='scan'?'SELECTIVE STATE SPACE':n.kind.toUpperCase()},{explore:['scan2','post2'].includes(n.id)});
 }
 function spark(values,selected,color='#7392bf') {
   const width=460,height=65,pad=6,min=Math.min(...values),max=Math.max(...values),range=max-min||1;
@@ -98,7 +75,7 @@ function heatSVG(groups,colors=['#7192bd','#a08cc7','#78a798']) {
 }
 async function ensureScan() {
   if(scan)return scan;
-  if(!loadingScan)loadingScan=json(model.evidence.scan).then(d=>{scan=d;return d;});
+  if(!loadingScan)loadingScan=json(model.evidence.scan).then(d=>{scan=d;return d;}).finally(()=>{loadingScan=null;});
   return loadingScan;
 }
 function renderComparison() {
@@ -106,7 +83,7 @@ function renderComparison() {
   $('trace-location').textContent=`CARRY-DEPTH-0 / ${state.view==='scan'?'MIXER':'MLP'} 3 / ROW ${String(state.row).padStart(2,'0')}`;
   $('dose-value').textContent=state.view==='scan'?`${state.dose.toFixed(2)}×`:`${state.mlpDelta>=0?'+':''}${state.mlpDelta.toFixed(2)}`;
   $('math-details').hidden=!state.math;$('math-button').innerHTML=`${state.math?'Hide':'Show'} equations <span>${state.math?'−':'+'}</span>`;
-  if(!scan){ensureScan().then(()=>{if(!lifecycle?.signal.aborted)renderComparison();}).catch(error=>{if(!lifecycle?.signal.aborted)$('comparison-status').textContent=error.message;});return;}
+  if(!scan){const signal=lifecycle.signal;ensureScan().then(()=>{if(!signal.aborted)renderComparison();}).catch(error=>{if(!signal.aborted)$('comparison-status').textContent=error.message;});return;}
   const row=state.row;
   const localMixer=state.view==='scan'?conditionalMixer(scan,row,state.dose).output:[...scan.post.input[row]];
   if(state.view==='mlp')localMixer[0]+=state.mlpDelta;
@@ -199,8 +176,7 @@ function stepForward() {
   renderArchitecture();renderMachine();renderComparison();
 }
 function run() {
-  if(!state.playing)return;
-  stepForward();if(state.playing)timer=setTimeout(run,Number($('speed').value));
+  playback.start();
 }
 function resetExecution() {stop();history.length=0;state.row=0;state.phase=0;state.instruction=0;state.node='inputs';renderArchitecture();renderMachine();renderComparison();}
 function renderFrontier() {
@@ -212,17 +188,21 @@ function renderFrontier() {
   $('exception-list').innerHTML=frontier.exceptions.map(e=>`<div class="exception-row">${esc(e.query_id)} · cut ${e.cut} · output bit ${e.output_bit}<br>Recovered ${e.program_bit} / native ${e.native_bit} · native logit +${e.native_logit.toFixed(6)}<br>Prefix ${esc(e.prefix_hex)} · suffix ${e.suffix_value}</div>`).join('');
 }
 async function showSources() {
+  const signal=lifecycle.signal;
   try {
     provenance ||= await json(model.evidence.provenance);
+    if(signal.aborted)return;
     openDialog('EVIDENCE & PROVENANCE',`<h2>Every measurement has a source.</h2><p>This is the frozen R3 Mamba direct-effect ISA checkpoint, captured on CPU in FP32. The website runs small local calculations; it runs no model forwards.</p><pre>Checkpoint\n${esc(provenance.checkpoint)}\n\nNew model forwards: 0\nNative observations: recorded FP32\nBrowser local mathematics: double precision</pre><p>Source-derived equations, finite recovered response laws, and illustrative playback phases have different scopes. The conceptual phase track is a teaching map, not a measurement of native wall-clock timing. The scan and MLP panels use the fixed carry-depth-0 context; switching the outer-loop context changes the state-machine panel.</p><a class="download-link" href="./data/provenance.json" download>Download the hashed source manifest ↧</a><p>The exporter preserves the original research artifacts. The compact law’s three held-out exceptions and non-unique flag hypotheses remain visible.</p>${Object.entries(provenance.sources).map(([path,hash])=>`<div class="source-row"><p>${esc(path)}</p><small>SHA-256 ${hash}</small></div>`).join('')}<p>Teaching references: <a href="https://ciechanow.ski/gears/" target="_blank" rel="noreferrer">Ciechanowski: Gears ↗</a> · <a href="https://www.redblobgames.com/pathfinding/a-star/introduction.html" target="_blank" rel="noreferrer">Red Blob Games: A* ↗</a> · <a href="https://poloclub.github.io/transformer-explainer/" target="_blank" rel="noreferrer">Transformer Explainer ↗</a></p>`);
-  } catch(error){toast(error.message);}
+  } catch(error){if(!signal.aborted)toast(error.message);}
 }
 async function showReading(id) {
+  const signal=lifecycle.signal;
   const reading=readings.find(r=>r.id===id);
   openDialog('FROM THE FIELD NOTES',`<h2>${esc(reading.title)}</h2><p>Loading the original research note…</p>`);
   try {
-    const response=await fetch(reading.path);if(!response.ok)throw new Error('The research note could not be loaded.');
+    const response=await fetch(reading.path,{signal});if(!response.ok)throw new Error('The research note could not be loaded.');
     const text=await response.text();
+    if(signal.aborted)return;
     const guides={
       'state-math':{lesson:1,text:'A model advances a state under a fixed parameter law. Context determines which operands are available, how they are read, and what an update will change. The useful question is which parts of that state must cross the next boundary so that future computations can continue.',equation:'Sₜ₊₁ = Fθ(Sₜ, uₜ)',scope:'The full native state is sufficient by construction. A smaller operational state becomes a useful explanation only when it preserves the future computations we care about.'},
       'mlp':{lesson:2,text:'An MLP has fixed weights, but its finite response depends on the state it receives. Layer normalization couples coordinates; GELU changes the effective response of each expanded feature. A good local account tracks the input, the update, the receiving state, and the downstream consumer together.',equation:'Y = X + W₂ GELU(W₁ LN(X) + b₁) + b₂',scope:'A local derivative describes an infinitesimal response. A finite change can cross nonlinear regions and needs its own calculation. Try shifting one input feature in the live MLP view.'},
@@ -232,7 +212,7 @@ async function showReading(id) {
     const guide=guides[id];
     openDialog('FROM THE FIELD NOTES',`<h2>${esc(reading.title)}</h2><p>${esc(guide.text)}</p><pre>${esc(guide.equation)}</pre><p>${esc(guide.scope)}</p><button class="dark-button" id="reading-explore" data-chapter="${guide.lesson}">Explore this idea →</button><p>Original source: <code>${esc(reading.source)}</code></p><a class="download-link" href="${reading.path}" download>Download original Markdown ↧</a><details class="original-note"><summary>Read the original source note</summary><p>Original mathematical notation and Obsidian backlinks are preserved below.</p><pre class="blog-text">${esc(text.replace(/^---\n[\s\S]*?\n---\n/,''))}</pre></details>`);
     $('reading-explore').onclick=()=>{$('detail-dialog').close();selectLesson(guide.lesson);};
-  } catch(error){toast(error.message);}
+  } catch(error){if(!signal.aborted)toast(error.message);}
 }
 function setupEvents() {
   $('lesson-nav').addEventListener('click',e=>{const b=e.target.closest('[data-lesson]');if(b)selectLesson(Number(b.dataset.lesson));},{signal:lifecycle.signal});
@@ -256,10 +236,9 @@ function setupEvents() {
   $('format-button').onclick=()=>{state.hex=!state.hex;renderMachine();};
   $('sandbox-form').onsubmit=e=>{e.preventDefault();try{const input=$('sandbox-word').value.trim();if(!/^(?:0x[0-9a-f]+|[0-9]+)$/i.test(input))throw new Error('Use a decimal or 0x-prefixed unsigned 64-bit integer.');const x=BigInt(input),r=wordLaw(x);$('sandbox-result').textContent=`${x} → ${r.word}   (q starts at 1; 64 Boolean transitions)`;}catch(error){$('sandbox-result').textContent=error.message;}};
   $('toggle-h').onclick=()=>{state.h=!state.h;renderFrontier();};$('toggle-conv').onclick=()=>{state.conv=!state.conv;renderFrontier();};
-  $('sources-button').onclick=showSources;$('close-dialog').onclick=()=>$('detail-dialog').close();
-  $('detail-dialog').addEventListener('click',e=>{if(e.target===$('detail-dialog')){const r=$('detail-dialog').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)$('detail-dialog').close();}});
+  $('sources-button').onclick=showSources;
   $('reading-list').onclick=e=>{const b=e.target.closest('[data-reading]');if(b)showReading(b.dataset.reading);};
-  $('about-models').onclick=()=>openDialog('MODEL PACKS',`<h2>Same explorer. Different computation.</h2><p>The model pack supplies its component graph, clocks, state fields, evidence, lessons, and calculation kernels. The shared explorer draws that graph and coordinates playback. Phase one ships the R3 Mamba ISA pack.</p><pre>ModelPack v1\n  id, name, checkpoint, kernel\n  graph: nodes, edges, groups, geometry\n  clocks, stateFields\n  lessons\n  evidence: recorded data URLs</pre><p>Future attention or diffusion packs can introduce different topology, state, and clocks. They need their own evidence and kernel binding; they are not automatically interchangeable with ISA numerical calculations.</p><p>Source and extension instructions are included in the project README. No weights, model server, accounts, or GPU are needed for this demonstration.</p>`);
+  $('about-models').onclick=()=>openDialog('MODEL PACKS',`<h2>Same explorer. Different computation.</h2><p>The model pack supplies its component graph, clocks, state fields, evidence, lessons, and calculation kernels. The shared explorer draws that graph and coordinates playback. The explorer ships R3 Mamba ISA and FLUX.2 Klein packs.</p><pre>ModelPack v1\n  id, name, checkpoint, kernel\n  graph: nodes, edges, groups, geometry\n  clocks, stateFields\n  lessons\n  evidence: recorded data URLs</pre><p>Attention and diffusion packs introduce different topology, state, and clocks. They need their own evidence and kernel binding; they are not automatically interchangeable with ISA numerical calculations.</p><p>Source and extension instructions are included in the project README. No weights, model server, accounts, or GPU are needed for this demonstration.</p>`);
   document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();},{signal:lifecycle.signal});
 }
 async function init() {
@@ -268,11 +247,15 @@ async function init() {
     [carry,loops,frontier,readings]=await Promise.all([json(model.evidence.carry),json(model.evidence.loop),json(model.evidence.frontier),json('./data/readings.json')]);
     if(lifecycle.signal.aborted)return;
     $('reading-list').innerHTML=readings.map((r,i)=>`<button class="reading-card" data-reading="${r.id}"><span class="reading-index">0${i+1} / RESEARCH NOTE</span><h3>${esc(r.title)}</h3><span class="reading-type">OPEN FIELD NOTE</span><span class="reading-arrow">↗</span></button>`).join('');
-    renderMachine();renderFrontier();await ensureScan();renderComparison();
-  }catch(error){$('comparison-status').innerHTML=`<span class="error-notice">Evidence could not load. ${esc(error.message)}. Reload to retry.</span>`;stop();}
+    renderMachine();renderFrontier();await ensureScan();if(!lifecycle.signal.aborted)renderComparison();
+  }catch(error){if(lifecycle.signal.aborted)return;$('comparison-status').innerHTML=`<span class="error-notice">Evidence could not load. ${esc(error.message)}. Reload to retry.</span>`;stop();}
 }
 export async function mount(pack,environment) {
-  model=validatePack(pack);lifecycle=environment;Object.assign(state,initialState);
+  const signal=environment.signal;
+  await mountTemplate('./templates/isa.html',signal);
+  model=validatePack(pack);lifecycle=environment;Object.assign(state,initialState,environment.state||{},{playing:false});history.length=0;
+  playback=new Playback({step:()=>{stepForward();return state.playing;},delay:()=>Number($('speed').value),onToggle:active=>{state.playing=active;if($('play')){$('play').innerHTML=active?'<span>Ⅱ</span> Pause':'<span>▶</span> Run';$('play').setAttribute('aria-label',active?'Pause execution':'Play execution');}},signal});
   await init();
-  return {dispose(){stop();$('sources-button').onclick=null;$('close-dialog').onclick=null;}};
+  if(!signal.aborted){setView(state.view);$('channel').value=state.channel;$('state-mode').value=state.mode;}
+  return {getState(){return {...state,playing:false};},dispose(){stop();clearTimeout(toast.timer);$('toast').hidden=true;$('sources-button').onclick=null;}};
 }

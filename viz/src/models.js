@@ -29,7 +29,9 @@ export const isa = {
   ],
   evidence:{carry:'./data/carry.json',scan:'./data/scan.json',loop:'./data/loop.json',frontier:'./data/frontier.json',provenance:'./data/provenance.json'},
 };
-export const registry = [isa];
+import {flux} from './flux-model.js';
+export {flux};
+export const registry = [isa,flux];
 export function validatePack(p) {
   if(p.schema!==1 || !p.id || !p.graph || !p.clocks?.length || !p.stateFields?.length || !p.kernel) throw new Error('Incomplete model pack.');
   const ids=new Set(p.graph.nodes.map(n=>n.id));

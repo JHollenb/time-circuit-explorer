@@ -1,6 +1,6 @@
 # Time Circuit Explorer visualization
 
-A buildless, browser-local teaching site for the frozen R3 Mamba direct-effect ISA model. The interface links the physical architecture, recorded native values, recovered local mathematics, a compact response law, and own-state architectural feedback.
+A browser-local teaching site for the frozen R3 Mamba direct-effect ISA model and FLUX.2 Klein 4B distilled. The interface links the physical architecture, recorded native values, recovered mathematics, and each model's state feedback.
 
 ## Run and verify
 
@@ -42,7 +42,27 @@ Add the new pack to `registry`, with an `adapter` module URL. Each adapter expor
 
 For another ISA checkpoint with matching evidence contracts, reuse `isa-adapter.js` and provide the new recorded JSON and weights. A different family needs its own numerical/playback adapter: attention state, diffusion scheduler state, and ISA architectural words are different interfaces. Reuse the presentation shell and styling; register family-specific computations instead of forcing the ISA recurrence onto the new model. Small pure ISA kernels live in `kernels.js`.
 
-The model menu intentionally lists only the shipped specimen. The host test mounts and swaps an internal two-node, single-clock fixture, verifies its different clock dimensions, and checks adapter cleanup.
+The model menu lists both shipped specimens. Shared architecture, walkthrough, inspector, dialog, and playback components live in `components.js`. Each adapter mounts its own HTML template. Adapters may return `getState()`; the host retains that model-specific state across switches, aborts pending work, and serializes mounts to prevent an old adapter writing into a new view.
+
+## FLUX evidence and scope
+
+`flux-model.js` supplies the graph and six chapters; `flux-adapter.js` owns the two-stream state view and nested clocks; `flux-kernels.js` contains the scalar BF16 Euler and synthetic attention/SiLU computations. The 112 transitions are four scheduler passes with 28 operations each, not 112 denoising steps. All 5 joint and 20 single block addresses remain selectable.
+
+The full forecast starts at actual Z₀. The matched forecast begins at observed native Z₂ after 56 transitions; its earlier clocks are unavailable. Before/after selects operation inputs/outputs. Image, text, modulation, and denoiser fields clear at commit; the latent and bound conditioning, IDs, and schedules carry forward. State selection, coordinate selection, and latent-channel selection are separate controls.
+
+`public/data/flux-klein/` retains coordinate samples and full-field error reductions with explicit separate scopes. Tile files contain four complete packed latent channels, arranged using the recorded spatial ID axes 1 and 2, on a shared fixed color scale. These are not RGB reconstructions. Terminal images are byte copies of the four original native-VAE PNGs. Pixel error is computed from those images in the browser; complete channel histograms and worst pixels remain inspectable.
+
+The full endpoint has 3.3254% latent relative RMS error, RGB MAE 0.116628 on a 0–255 scale, and maximum channel error 42. Matched has 1.2509%, 0.066078, and 10 respectively. Zero mismatches across 740,327,424 scalar values describe independent reconstruction of the sealed program, a different comparison from native CUDA. The shared native conditioning/VAE and one-seed scope remain explicit. No speedup or generalization claim is made.
+
+Re-export the existing artifacts without running a model:
+
+```sh
+../common/bin/common exec python viz/scripts/export_flux_evidence.py --workspace ..
+```
+
+The exporter uses NumPy and the public corrected `tensor_archive.load_tensor_archive` from the sibling `saturn-pub` checkout. It pins the accepted audit SHA-256, verifies native BF16/int64 framing and bytes, streams forecast-bundle digests, and verifies selected NPY leaves and content hashes. It leaves multi-gigabyte arrays and all pretrained weights outside the website. `provenance.json` binds 236 source identities, 199 selected forecast leaves, and every generated artifact. Full-field error numbers come from the accepted audit, not sample reductions.
+
+All 192 retained Euler coordinates reproduce their source results exactly. Tests also cover ties-to-even, signed zero, subnormals, hostile interval-promotion cases, all clock joins and field lifetimes, own-state pass joins, toy algebra, original artifact hashes, session restoration, cancelled mounts, and transfer budgets. Initial compressed assets are about 815 KB for ISA and 253 KB for FLUX, including per-sample source paths and hashes; tiles, Euler fixtures, endpoint images, and provenance load on demand. Both families were checked in the browser at desktop and 390-pixel mobile widths.
 
 ## Teaching references
 

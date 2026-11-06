@@ -1,6 +1,6 @@
 # FLUX pipeline visualization plan
 
-Status: proposed implementation. The ISA explorer is implemented; this document specifies a second model pack without launching new model runs.
+Status: implemented on 2026-11-05. Both ISA and FLUX packs are available in the model menu. The implementation exports existing evidence without launching new model runs. See [implementation documentation](../../viz/README.md#flux-evidence-and-scope) for shipped behavior and validation.
 
 ## Goal and first specimen
 
