@@ -15,6 +15,18 @@ import run as runner
 
 
 class GeneratorMechanics(unittest.TestCase):
+    def test_guarded_collection_rejects_ordinary_admission_or_wrong_execution_host(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory)/'request';request=runner.stage(root,[{'prompt':'a cone','seed':113}])
+            seal={'sha256':'a'*64,'size_bytes':123}
+            job={'state':'succeeded','assigned_host':'beast','cmd':runner.command(),'config':{**request,'retry_on_kill':False,'mrun_guarded_request_sha256':'b'*64},
+                'needs':{'payload_custody_v2':True},'admission':{'claim_key':'test'},'payload_custody':{'required':True,'declared':seal,'sealed':seal,'executed':{**seal,'host':'beast'}},
+                'result':{'returncode':0,'diagnostics':{'cwd':'/mnt/hdd8tb/mrun-work/job-proof'}}}
+            for variant in [{**job,'admission':None},{**job,'payload_custody':{**job['payload_custody'],'required':False}},
+                            {**job,'payload_custody':{**job['payload_custody'],'executed':{**seal,'host':'other-host'}}}]:
+                with patch.object(runner,'status',return_value={'_job':variant,'jobID':'job-proof'}),patch.object(runner.subprocess,'run',side_effect=AssertionError('Unexpected collection attempt')):
+                    with self.assertRaisesRegex(ValueError,'guarded admission|host differs'):runner.collect(root)
+
     def test_request_binds_one_finite_scheduler_submission_with_measured_cold_start_budget(self):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory)/'request'

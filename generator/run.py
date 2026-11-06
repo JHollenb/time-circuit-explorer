@@ -138,6 +138,8 @@ def collect(run_dir):
     for phase in ['declared','sealed']:
         if any((custody.get(phase) or {}).get(key)!=payload.get(key) for key in ['sha256','size_bytes']):raise ValueError('mrun declared/sealed payload differs')
     if executed and any(executed.get(key)!=payload.get(key) for key in ['sha256','size_bytes']):raise ValueError('mrun executed payload differs')
+    if executed and executed.get('host')!=job['assigned_host']:raise ValueError('Executed payload host differs from assigned host')
+    if request['executionContract'].get('payloadCustodyRequired') and (custody.get('required') is not True or not job.get('admission') or guarded_id is None):raise ValueError('Required guarded admission/custody absent')
     if (custody.get('required') or request['executionContract'].get('payloadCustodyRequired')) and not executed:raise ValueError('Required executed-payload seal absent')
     cwd=result.get('diagnostics',{}).get('cwd')
     if cwd!='/mnt/hdd8tb/mrun-work/'+job_id:raise ValueError('Unexpected authenticated worker directory')
