@@ -1,0 +1,64 @@
+{
+  "backend": "diffusers",
+  "batch_size": 1,
+  "conversion": "Original selected FP64 expression -> FP32 -> BF16 RNE via encoder_atoms.words",
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "height": 512,
+  "manifestSHA256": "9a155bd1410c52909997bacaf1d1aac2f9e90be86dc269d5e7edfab2b5285432",
+  "model": "flux2-klein-4b-distilled",
+  "ownedSources": [
+    "selected_reader_study.py",
+    "selected_reader.py",
+    "selected_reader_encoder.py",
+    "selected_reader_images.py",
+    "encoder_atoms.py",
+    "paired_fields.py",
+    "masked_kv_study.py",
+    "conditioning_demand.py",
+    "complete_masked_study.py",
+    "flux_clock.py",
+    "flux_clock_study.py"
+  ],
+  "parentRequestSHA256": "1a27311e0ad1508df000954df227d8af7863096a1d9644e3ee1eed0a67f5f62b",
+  "planSHA256": "edcbdf3a98b9be98adeb2e5e0c93f70877a4734f1263e1191458b59fef0d4bf5",
+  "prompts": [
+    {
+      "id": "A",
+      "prompt": "A red cube to the left of a blue sphere on a plain white tabletop. Two separate objects, studio photograph."
+    },
+    {
+      "id": "B",
+      "prompt": "A red cube to the right of a blue sphere on a plain white tabletop. Two separate objects, studio photograph."
+    }
+  ],
+  "protocol": "Rawstrings->sameatoms->frozen currentquery orderedtop4/routes and cachedanchor+delta selectedweights->ownfull512row encoder/E->2images. No tailstate/basis/fallback/refit/newreference/noisedraw/refresh. Seal before full/rank/zero/uniform targets and parentdiagnostic operands.",
+  "readerPolicy": "current-top4-anchor-delta-selected-only-fp64-fp32-bf16-v1",
+  "requestSHA256": "5be3cbd55d03ab7acf91af05596e1768de451d776d2626398de301a6f6609439",
+  "schema": "tce-selected-reader-image-request-v1",
+  "scope": "Delete unselected-tail moments/envelopes/centroid/basis work; retain exact selected arithmetic, original fullKV/cache/scan and learned encoder/FLUX/VAE. No arbitrary-prompt zero-neural claim.",
+  "seq_len": 1536,
+  "sourceHashes": {
+    "clock-table.json": "ee858f422b8fadf42fdb77902851d947e3f981df9605d49d9e846ec6c9c44492",
+    "complete_masked_study.py": "f52633bc9d729b2a5032e024331d9b20fcee8cb993941cab87c197089cdcff99",
+    "conditioning_demand.py": "6536da5e73e89b7d2a18085d963edf578d0567ed20680c4022c1c82a10c10e9f",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "flux_clock.py": "bde499ff527f624fcd1b62a8f6f0b2fbaf70eebc7b7835fcd7d4c6403b4e0b2b",
+    "flux_clock_study.py": "eaccf6bdb75678ac6acb5a371f8858201cf83dbac4de83868b70d5570e4beddc",
+    "flux_functional_qwen_prefix.py": "763ae441d33396fe5cede5d96214c76e01aae779916ce5cf28e79cf5f5eb618a",
+    "frozen-plan.md": "edcbdf3a98b9be98adeb2e5e0c93f70877a4734f1263e1191458b59fef0d4bf5",
+    "inputs.json": "7d8fc068a681097387c704a49de2aac4cc84219e94039999d19a1aafd7246976",
+    "masked_kv_study.py": "920416ce49d823b1337a7f6d9f5fca90c8047723bb6b1d37dc09967114b6ad89",
+    "paired_fields.py": "408e035cb2f2f99558dbbe5abccdc281a5deade195abdbbc003549318ef09e88",
+    "qwen_h18_state_history.py": "17084d404f5ae00557e4ad8e94a8b84704787c47ebf9c875228cb452c4857036",
+    "resource-basis.json": "4d112488908a3d31014cc738c4fc00cbd0a7a29a55c85ced3ff41a2912c16dea",
+    "selected_reader.py": "a7980acb0d662c850507617d20cb952058f9a8ed635db19c0f4bcdd18092b490",
+    "selected_reader_encoder.py": "45f62d160b974775f181602a72dee4384be8b1cec21ca66e3bbc1f7667c32add",
+    "selected_reader_images.py": "e25c497cc400c4b60318311b7049dc39768e6b7b4a8ca6aceb024fde237c6e50",
+    "selected_reader_study.py": "a1dbd27a6ec454f5a7a17469fcd30511b1bc4fc5e1aae873ac8b11c75a7fabc5",
+    "targets.json": "09f2590ecd50f23d9baf84e01926bd2c1777633eccd537b51e3a478300e49c4b"
+  },
+  "steps": 4,
+  "timeoutSeconds": 900,
+  "width": 512
+}

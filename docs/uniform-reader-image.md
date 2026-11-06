@@ -1,5 +1,7 @@
 # A small causal mean state does not preserve the tested image computation
 
+Cycle31 follow-up: [matched selected-only tail deletion](selected-reader-image.md) preserves the objects and spatial swap at19.37% signed PNG error with2.10MB of comparable numerical state. The original uniform-reader account follows.
+
 The uniform reader advances an **8,208-byte numerical state** and matches its independent calculation exactly. Its images merge the red cube and blue sphere into one object. Signed PNG response error is **122.68%**, compared with **104.17% for deletion** and **10.72% for rank-one**. This constrains the particular query-independent averaging law; it does not exclude compact contextual readers generally.
 
 ![Original native, rank-one, uniform and zero-reader images](results/uniform-reader-image-figure/uniform-reader-image.png)

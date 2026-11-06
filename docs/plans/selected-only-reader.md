@@ -1,6 +1,6 @@
 # Delete the tail while keeping the successful selected read fixed
 
-Status: cycle30 Astra-selected next cut; not staged or executed. The [uniform-state result](../uniform-reader-image.md) removes query dependence and merges the objects. The [rank-one result](../raw-rank-one-image.md) remains much better at images. Test whether its unselected-tail state is needed before expanding rank, support or other feature families.
+Status: executed in cycle31 as `job-0021bd0429e3`; [result](../selected-reader-image.md). The selected computation matches the parent exactly, and both images retain the objects and spatial swap at19.37% signed PNG response error. Comparable numerical state falls from18.98MB to2.10MB, with most learned work still paid. The original pre-execution plan remains frozen in payload `frozen-plan.md`. The [uniform-state result](../uniform-reader-image.md) removes query dependence and merges the objects; this contrast tests the rank-one reader's tail before expanding rank, support or other feature families.
 
 Reuse exactly the existing raw A/B left/right strings, complete compiled lexical source/template/tokenizer/positions/mask, source geometry/64anchors, original consumer profiles/checkpoints, seed314159noise and inherited exact clocks. Existing full/rank/zero/uniform references are already observed; this is retrospective deletion/reduction research, not prospective quality certification. Generate only two own-state candidate images, with no new references, noise draws, support sweep, fit or output-driven policy selection.
 

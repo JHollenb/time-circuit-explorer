@@ -1,0 +1,17 @@
+{
+  "schema": "tce-storage-review-decisions-v1",
+  "cycle": 31,
+  "skipped": {
+    "source": "/Users/jakeholl/domains/artifacts/mdb-flux-precision-cut-20261105/failed-snapshot-01",
+    "reason": "Original archive-custody.json is absent. Cleanup staging stopped before a plan, transfer or deletion; both original transport files remain local.",
+    "attempt": "../artifacts/time-circuit-storage-cleanup-20261106-cycle31"
+  },
+  "selected": {
+    "plan": "../artifacts/time-circuit-storage-cleanup-20261106-cycle31-v2/plan.json",
+    "sources": [
+      "/Users/jakeholl/domains/artifacts/mdb-predicted-future-20261104/run-01",
+      "/Users/jakeholl/domains/artifacts/mdb-shape-formation-replication-20261104/run-01"
+    ],
+    "scope": "Four completed-job archive/log transport copies with original custody receipts. Extracted evidence remains local. Archive completion and full SHA verification are recorded separately in its result."
+  }
+}
