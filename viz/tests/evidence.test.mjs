@@ -3,11 +3,11 @@ import assert from 'node:assert/strict';
 import {readFileSync,statSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {gzipSync} from 'node:zlib';
-import {wordLaw,routeFromWindow,trajectory,scanRow,scanTrajectory,writeContributions,conditionalMixer,postMLP,linear,maxError,U64} from '../dist/kernels.js';
-import {isa,validatePack} from '../dist/models.js';
-import {ModelHost} from '../dist/model-host.js';
+import {wordLaw,routeFromWindow,trajectory,scanRow,scanTrajectory,writeContributions,conditionalMixer,postMLP,linear,maxError,U64} from '../src/kernels.js';
+import {isa,validatePack} from '../src/models.js';
+import {ModelHost} from '../src/model-host.js';
 
-const read=n=>JSON.parse(readFileSync(new URL(`../dist/data/${n}.json`,import.meta.url)));
+const read=n=>JSON.parse(readFileSync(new URL(`../public/data/${n}.json`,import.meta.url)));
 const scan=read('scan'),loop=read('loop'),carry=read('carry'),frontier=read('frontier');
 
 test('64-bit Boolean law handles carries, overflow, and values beyond JS integer precision',()=>{
@@ -100,7 +100,7 @@ test('the model host swaps family adapters and disposes the previous model',asyn
 });
 test('core transfer stays below 1 MB compressed and evidence export has source hashes',()=>{
   const files=['index.html','style.css','app.js','isa-adapter.js','model-host.js','models.js','kernels.js','data/scan.json','data/carry.json','data/loop.json','data/frontier.json','data/readings.json'];
-  const bytes=files.reduce((sum,n)=>sum+gzipSync(readFileSync(new URL(`../dist/${n}`,import.meta.url))).length,0);
+  const bytes=files.reduce((sum,n)=>sum+gzipSync(readFileSync(new URL(n.startsWith('data/')?`../public/${n}`:`../src/${n}`,import.meta.url))).length,0);
   assert.ok(bytes<1_000_000);console.log('Core gzip bytes:',bytes);
   const p=read('provenance');assert.equal(p.checkpoint,isa.checkpoint);assert.equal(p.newModelForwards,0);assert.equal(Object.keys(p.sources).length,14);
   for(const hash of Object.values(p.sources))assert.match(hash,/^[a-f0-9]{64}$/);

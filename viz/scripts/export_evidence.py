@@ -7,9 +7,10 @@ import hashlib
 import json
 from pathlib import Path
 import sys
+import argparse
 
-ROOT = Path(__file__).resolve().parents[2]
-OUT = Path(__file__).resolve().parents[1] / "dist/data"
+ROOT = Path(__file__).resolve().parents[3]
+OUT = Path(__file__).resolve().parents[1] / "public/data"
 SCAN = ROOT / "isa/runs/native-forward-symbols-20261029T072605.019798Z/extracted/compiled-scan-result"
 STREAM = ROOT / "isa/runs/native-forward-symbols-20261029T090450.332745Z/extracted/stream-program-result"
 LOOP = ROOT / "isa/runs/native-forward-symbols-20261029T100021.116951Z/extracted/symbolic-loop-result"
@@ -44,7 +45,13 @@ def values(d):
     return d["values"]
 
 
-def main():
+def main(workspace=None):
+    global ROOT, SCAN, STREAM, LOOP
+    if workspace is not None:
+        ROOT = workspace.resolve()
+        SCAN = ROOT / "isa/runs/native-forward-symbols-20261029T072605.019798Z/extracted/compiled-scan-result"
+        STREAM = ROOT / "isa/runs/native-forward-symbols-20261029T090450.332745Z/extracted/stream-program-result"
+        LOOP = ROOT / "isa/runs/native-forward-symbols-20261029T100021.116951Z/extracted/symbolic-loop-result"
     import torch
     OUT.mkdir(parents=True, exist_ok=True)
     report = load(SCAN / "report.json")
@@ -108,10 +115,12 @@ def main():
         reading_index.append({"id":slug,"title":title,"path":f"./data/reading-{slug}.txt","source":str(path.relative_to(ROOT))})
     write("readings.json",reading_index)
     write("provenance.json", {"schema":"time-circuit-evidence-v1", "checkpoint":report["checkpoint_sha256"],
-        "export":"scripts/export_evidence.py", "newModelForwards":0, "sources":SOURCES,
+        "export":"viz/scripts/export_evidence.py", "newModelForwards":0, "sources":SOURCES,
         "scope":"Recorded CPU FP32 observations; JavaScript local calculations use double precision. Compact response law has retained native exceptions. No general semantic ISA claim."})
     print("Exported",len(SOURCES),"hashed sources;",sum(p.stat().st_size for p in OUT.iterdir()),"bytes")
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--workspace", type=Path, default=ROOT, help="Research workspace containing isa/ and obsidian/; defaults to this repository's parent")
+    main(parser.parse_args().workspace)
