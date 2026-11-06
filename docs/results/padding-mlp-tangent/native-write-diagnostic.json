@@ -1,0 +1,169 @@
+{
+  "actualInputs": [
+    {
+      "actualNormalizedPayloadSHA256": "7dfad122b6e50a8dfe37332a205b7b77b83887880ff8beb23ba5c1b806f4f59c",
+      "candidateNormalizedFieldSHA256": "eb57e1e8f4b2ae599d8aadbd4271032362c1118ba38f307ef3bd174097089069",
+      "case": "00"
+    },
+    {
+      "actualNormalizedPayloadSHA256": "3cffe96fa2a88493b0f06d58ffda9a4aecc148407f92c46690215c3af12dac11",
+      "candidateNormalizedFieldSHA256": "f9e10ff3c20d95289dfd6897e1124b4e958d633d9e0c4a594d24ebc4e06ef60c",
+      "case": "10"
+    }
+  ],
+  "fields": {
+    "00": {
+      "H1": {
+        "bytes": 2621568,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-922839f9980e/arrays/diagnostic/00/native-H1.npy",
+        "payloadSHA256": "5c8ad9832e6ab902994b6d685fe59bb0383f2abf548deb64ef973860a8d56702",
+        "sha256": "a1cf21b820027893be8002cf84b4986c3696b6cb13d5a159bb361b21bb3e2b94",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "uint16"
+      },
+      "write": {
+        "bytes": 2621568,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-922839f9980e/arrays/diagnostic/00/native-write.npy",
+        "payloadSHA256": "f9202b6dae7f44bee0c7369921b82b604d690863bd187b9d7b03a5eea51e9e53",
+        "sha256": "b0d06a1939ceab7d561cde6d3178b6361e41b25a7d775393929080c0d4eb67ba",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "uint16"
+      }
+    },
+    "10": {
+      "H1": {
+        "bytes": 2621568,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-922839f9980e/arrays/diagnostic/10/native-H1.npy",
+        "payloadSHA256": "e44c7ae16374f6adf3131916e696fc963bc328734b265d41dffbb8994ebbd27b",
+        "sha256": "0dd8f4a1bae0eaf493344fdb9aa6a69c9c60fcfe3e3016bfd84acd7d2025e845",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "uint16"
+      },
+      "write": {
+        "bytes": 2621568,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-922839f9980e/arrays/diagnostic/10/native-write.npy",
+        "payloadSHA256": "d5981746d9794f0ad7af980a8b4490ae5e4ebbdfc80565f3d097f31a76435dc0",
+        "sha256": "3588ed4c720492254e54365786668986c8e06da76b928f20e11f208b1b88ca69",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "uint16"
+      }
+    }
+  },
+  "releasedAfterCandidateSealSHA256": "354ffb03c9c2d0be98fb0f06acf39f1557b4ce084f521f53b7250e528028598f",
+  "requestSHA256": "b17698cc6beef4730597c0c5f1c0317523075dad5ba81a49562daf3f9ed3a450",
+  "schema": "tce-padding-native-write-diagnostic-v1",
+  "scope": "Paid original512row MLP evaluated after all4images seal. Own first receiver shared exactly between policies; no native value enters primary serving.",
+  "sourceAssetChecks": [
+    {
+      "after_signature": [
+        66311,
+        298015,
+        4967215360,
+        1784967532015721400,
+        1784967532019901900
+      ],
+      "before_signature": [
+        66311,
+        298015,
+        4967215360,
+        1784967532015721400,
+        1784967532019901900
+      ],
+      "bytes": 4967215360,
+      "header_bytes": 26360,
+      "header_sha256": "8d1a2170cadc1eb2e68cb60f5610c304d263f29de260584fd4fadc73d40b56ec",
+      "path": "/mnt/big/llm-models/FLUX.2-klein-4B/text_encoder/model-00001-of-00002.safetensors",
+      "selected_count": 229,
+      "selected_payload_bytes": 4967188992,
+      "sha256": "8c0506e7f4936fa7e26183a4fd8da4e2bdbc5990ba64ae441f965d51228f36ea",
+      "tensor_count": 229,
+      "verifiedSignature": [
+        66311,
+        298015,
+        4967215360,
+        1784967532015721400,
+        1784967532019901900
+      ]
+    },
+    {
+      "after_signature": [
+        66311,
+        298026,
+        3077766632,
+        1784967490530992400,
+        1784967490580917100
+      ],
+      "before_signature": [
+        66311,
+        298026,
+        3077766632,
+        1784967490530992400,
+        1784967490580917100
+      ],
+      "bytes": 3077766632,
+      "header_bytes": 19424,
+      "header_sha256": "17ee7543a170d3b70ae33b3e1ba4f67d4d3c30135db986cc53a99b2d06a008de",
+      "path": "/mnt/big/llm-models/FLUX.2-klein-4B/text_encoder/model-00002-of-00002.safetensors",
+      "selected_count": 169,
+      "selected_payload_bytes": 3077747200,
+      "sha256": "82f2bd839378541b0557bfabaf37c7d3d637071fdcb73302dedd7cf61162ce07",
+      "tensor_count": 169,
+      "verifiedSignature": [
+        66311,
+        298026,
+        3077766632,
+        1784967490530992400,
+        1784967490580917100
+      ]
+    }
+  ],
+  "sourceParameterReads": [
+    {
+      "bytes": 49807360,
+      "file": "/mnt/big/llm-models/FLUX.2-klein-4B/text_encoder/model-00001-of-00002.safetensors",
+      "name": "model.layers.0.mlp.gate_proj.weight",
+      "payloadSHA256": "fe440e8f6cc7c56de2d5a97fef5ee04f65388dd8460821ef2ed1645c39c6a47a",
+      "row": null
+    },
+    {
+      "bytes": 49807360,
+      "file": "/mnt/big/llm-models/FLUX.2-klein-4B/text_encoder/model-00001-of-00002.safetensors",
+      "name": "model.layers.0.mlp.up_proj.weight",
+      "payloadSHA256": "9a957c5a0f2bd6a240eaf6e5de83dd91a58ed1acd1829fcb72ab95aa7624181d",
+      "row": null
+    },
+    {
+      "bytes": 49807360,
+      "file": "/mnt/big/llm-models/FLUX.2-klein-4B/text_encoder/model-00001-of-00002.safetensors",
+      "name": "model.layers.0.mlp.down_proj.weight",
+      "payloadSHA256": "edf534353405dab5179894b9641d12c6e53c4c6a8100b8c079257a9f3584945f",
+      "row": null
+    }
+  ],
+  "work": {
+    "nominalLinearMACs": 76504104960,
+    "originalLinears": 6,
+    "originalMLPEvaluations": 2
+  },
+  "workerSecondsAfterImports": 6.693754376843572
+}

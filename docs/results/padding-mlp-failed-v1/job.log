@@ -1,0 +1,31 @@
+<frozen runpy>:130: RuntimeWarning: 'mrun.os_limit' found in sys.modules after import of package 'mrun', but prior to execution of 'mrun.os_limit'; this may result in unpredictable behaviour
+PADDING_MLP_COMPILED 3d7f2c4f68ee75718fe122ce32f5bb15e890a89e0eb8a0b88b9ae5e5cef3ba3a
+Traceback (most recent call last):
+  File "/mnt/hdd8tb/mrun-work/job-a0b069724b5d/padding_mlp_study.py", line 156, in <module>
+    v=uncentered_reader.execute(a.run)
+  File "/mnt/hdd8tb/mrun-work/job-a0b069724b5d/uncentered_reader.py", line 134, in execute
+    root = Path(root).resolve(); request = read(root/'request.json'); verify(root, request); source = read(root/'inputs.json')
+                                                                      ~~~~~~^^^^^^^^^^^^^^^
+  File "/mnt/hdd8tb/mrun-work/job-a0b069724b5d/uncentered_reader_study.py", line 18, in verify
+    if sha(Path(root)/name) != digest: raise ValueError('Frozen source differs: '+name)
+       ~~~^^^^^^^^^^^^^^^^^
+  File "/mnt/hdd8tb/mrun-work/job-a0b069724b5d/encoder_atoms.py", line 20, in sha
+    with Path(path).open('rb') as f:
+         ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/beast/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/hdd8tb/mrun-work/job-a0b069724b5d/flux_clock.py", line 90, in audit
+    raise PermissionError('Evaluation target unavailable before candidate seal')
+PermissionError: Evaluation target unavailable before candidate seal
+Traceback (most recent call last):
+  File "/mnt/hdd8tb/mrun-work/job-a0b069724b5d/padding_mlp_study.py", line 160, in <module>
+    else:v=globals()[a.action](a.run)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/mnt/hdd8tb/mrun-work/job-a0b069724b5d/padding_mlp_study.py", line 145, in execute
+    tick=time.perf_counter();subprocess.run([sys.executable,'-u',str(root/'padding_mlp_study.py'),action,str(root)],check=True,timeout=780);phases.append({'action':action,'wallSecondsIncludingFreshProcess':time.perf_counter()-tick})
+                             ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/beast/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['/mnt/hdd8tb/mdb/uv-cache/builds-v0/.tmpInK5ek/bin/python', '-u', '/mnt/hdd8tb/mrun-work/job-a0b069724b5d/padding_mlp_study.py', 'reader', '/mnt/hdd8tb/mrun-work/job-a0b069724b5d']' returned non-zero exit status 1.

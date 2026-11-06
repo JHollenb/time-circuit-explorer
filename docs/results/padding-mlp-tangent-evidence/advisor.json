@@ -1,0 +1,52 @@
+{
+  "schema": "tce-padding-mlp-astra-review-v1",
+  "advisor": "Astra (gpt-6-astra)",
+  "cycle": 35,
+  "primaryReportSHA256": "c533726cfab986e63c22219f573bb27e97214a7902cd657e7be9daa7f2f7bc03",
+  "remainderReportSHA256": "7cc5f8db34c64237e8be7675ec652effa7cac95558004ad2b2eb3c1d27738f5b",
+  "sourceReview": "No material implementation/custody blocker found. Source/native anchor and smooth Jacobian remain separate, own normalized receiver retained, active writes shared, all four images seal before diagnostics/targets.",
+  "interpretation": "Nonlinear curvature dominates measured finite discrepancies. Constant benefits from strongly negative linear/remainder cross term; neither approximates native padding write well. Coarse object/color/order survives, tangent introduces conspicuous extra surface/interior/geometry artifacts.",
+  "nextCut": {
+    "status": "written-unexecuted",
+    "plan": "../../plans/retained-padding-queries.md",
+    "rule": "All active rows +16 endpoint-inclusive evenly spaced original padding positions (all if fewer). Original native attention in block0/all27blocks, original positions/RoPE/mask; padding never keys. Own H9/H18/H27 taps expand by nearest retained original padding row, ties earlier. Full512row E→unchanged FLUX/VAE. Two new00/10images, no new refs/noise/fits/sweep.",
+    "closure": "π_S F_l(H)=F_l^S(π_S H) in real arithmetic when every retained-query key read is in S, normalization/MLPs are rowwise, and positions/masks/parameters/mode agree. Finite compact execution measured separately.",
+    "diagnostic": "Ehat−E = R(Esmall−P E)+(R P−I)E; both complete terms and signed cross effects retained postseal. Row copying preserves multiplicity, not original attention partition/mass. Do not scale embeddings by multiplicity.",
+    "nativeEncoderMACperPrompt": 144424304640,
+    "fullEncoderMACperPrompt": 1395193282560,
+    "encoderFractionAvoided": 0.896484375,
+    "wholeEncoderDenoiserFractionApprox": 0.0616,
+    "paid": "2prompts:378encoderlinears/54attentioncalls/8denoisers/2VAE. Original weights/full E/image buffers remain, no latency or strictzero-neural claim."
+  },
+  "reviewedSnapshots": [
+    {
+      "file": "2026-11-06-151646-restoring-the-current-write-leaves-the-conversation-state-different.md",
+      "sha256": "f6a5d3f350ae9f24c078b5df46693acfc261ae035cd002b040a1d11e73df033d"
+    },
+    {
+      "file": "2026-11-06-151329-binding-needs-a-compatible-payload-and-receiving-state.md",
+      "sha256": "bff9e64aecbd3eec25fe9bd711feb335eddeca25de2cdcf68be91e64ec8abff2"
+    },
+    {
+      "file": "2026-11-06-144600-a-program-that-produces-queries-and-updates-its-own-memory.md",
+      "sha256": "bcdcbbef8466a5e13166a6e52732d46483a51ae6d4119b6679b18da513d81c7f"
+    },
+    {
+      "file": "2026-11-06-150300-model-size-reasoning-and-the-computations-weights-change.md",
+      "sha256": "d7f55a02be5994d54b544d3c70a7edaab209dca281ebe09081ee06008c0fe315"
+    },
+    {
+      "file": "2026-11-06-125544-a-frozen-mlp-program-updates-a-conversation.md",
+      "sha256": "b2c8bc7c82e525cb5afa35a42cae5e613a7e4757ebb59bae7ecfa7dab57932f1"
+    },
+    {
+      "file": "2026-11-06-152039-transferring-an-eye-program-to-a-turned-head.md",
+      "sha256": "36ffc804148b218776100ef44fba017a15c874ee4a1fcd5f4e9300a3e9bc548e"
+    },
+    {
+      "file": "2026-11-06-155021-what-recursion-would-mean-inside-flux.md",
+      "sha256": "850f9b4e479e9da7eb90c328aca71b06d649c042fd2abd9e2edfbfe051f33032"
+    }
+  ],
+  "scope": "Latest-post/source/result/image review and next experiment selection. No new execution by advisor; full arbitrary-prompt zero-neural goal remains open."
+}

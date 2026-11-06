@@ -1,0 +1,23 @@
+{
+  "schema": "tce-padding-mlp-test-observation-v1",
+  "command": "../common/bin/common exec python -m unittest discover -s generator -p 'test_*.py' -q",
+  "tests": 183,
+  "seconds": 13.824,
+  "result": "OK",
+  "specificCoverage": [
+    "Independent toy autograd vs compiler smooth Jacobian",
+    "Directional quadratic remainder and full last input coordinate",
+    "Native/smooth anchor offset and zero delta",
+    "Shared active write identity and changed-input refusal",
+    "Original embedding row byte bounds and source mutation",
+    "Isolated target exclusion and lazy neural imports",
+    "All images seal before diagnostic; partial-image release refused",
+    "Signed error-energy/cross-term telescope",
+    "Actual frozen reader integrity verification precedes target value guard"
+  ],
+  "exactStagedImports": [
+    "padding-mlp-tangent-v2: source identity pins, all workers import without eager torch",
+    "padding-mlp-remainder-v1: source identity pins, no torch import"
+  ],
+  "scope": "Mechanics evidence; does not certify approximation quality or arbitrary-prompt generation."
+}

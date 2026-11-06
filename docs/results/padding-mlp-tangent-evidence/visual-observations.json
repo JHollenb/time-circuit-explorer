@@ -1,0 +1,17 @@
+{
+  "schema": "tce-padding-mlp-visual-observations-v1",
+  "reviewer": "Codex",
+  "figure": "../padding-mlp-tangent-figure/padding-mlp.png",
+  "figureSHA256": "1182439a310a12f0913df5ae28a11e9a1afe6b128f3ae797929efd2d4f97e0ec",
+  "imagesInspected": 8,
+  "newImages": 4,
+  "historicalImages": 4,
+  "observations": [
+    "Both new constant images preserve two coarse vessel bodies, their left/right order and orange/teal body-color assignment.",
+    "The constant outputs alter shapes relative to historical targets, including can body/handle/spout geometry; visual plausibility is not exact model fidelity.",
+    "Both tangent outputs retain coarse vessel/color ordering but introduce conspicuous decorative-looking surface markings, textured or filled interiors and extra stick/utensil-like or spout structures.",
+    "Tangent00 changes both vessel geometry and pitcher mouth substantially; tangent10 retains gross shapes but shows damaged-looking surface marks and interior clutter.",
+    "All four historical targets are inspected alongside candidates; shared native shape limitations remain evidence."
+  ],
+  "scope": "Human visual observations on two known prompts/one seed. No independent semantic benchmark, universality claim, or zero-neural image certificate."
+}

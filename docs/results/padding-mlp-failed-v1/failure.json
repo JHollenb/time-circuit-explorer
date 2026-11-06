@@ -1,0 +1,228 @@
+{
+  "absentRecords": [
+    "reader-seal.json",
+    "encoder-candidate.json",
+    "images-candidate.json",
+    "candidate-seal.json",
+    "native-write-diagnostic.json"
+  ],
+  "admission": {
+    "claim_key": "mrun:7f0b2cbcd3d7658fbbbeac814a62a8ddf8ed1f4fb6284ef291da0841ae16174e",
+    "fencing_epoch": 1,
+    "idempotency_key": "mrun:7f0b2cbcd3d7658fbbbeac814a62a8ddf8ed1f4fb6284ef291da0841ae16174e",
+    "scope_sha256": "19c430655da2e4368d831048e9a72611a1c2704ee8031c8d92beafab5cfc3efb"
+  },
+  "cause": "Outer target guard blocked frozen reader integrity hashing, before head formation. Repaired v2 driver authenticates before the reader installs its own guard.",
+  "instrument_status": "source-compiler-complete-only",
+  "jobID": "job-a0b069724b5d",
+  "mechanics_status": "failed-before-reader",
+  "newImages": 0,
+  "payloadCustody": {
+    "declared": {
+      "sha256": "4379414516b595157f0cbf3e58a76740848fee796513eba091646ba30970e3aa",
+      "size_bytes": 240953
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794006669.457348,
+      "sha256": "4379414516b595157f0cbf3e58a76740848fee796513eba091646ba30970e3aa",
+      "size_bytes": 240953
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794006393.45633,
+      "sha256": "4379414516b595157f0cbf3e58a76740848fee796513eba091646ba30970e3aa",
+      "size_bytes": 240953
+    }
+  },
+  "requestSHA256": "db24de4e23fbf1a0f92577e188a71787f6d0276f7f3db7a3811d266d56f7363c",
+  "result": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-a0b069724b5d",
+      "job_log": {
+        "bytes": 2770,
+        "sha256": "17d3301a0632c647ad8d7ecccc9f51d6ffc663d73845ac4c11148c6e850f003e"
+      },
+      "job_status": "failed",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-a0b069724b5d/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "CUBLAS_WORKSPACE_CONFIG=:4096:8",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "python",
+        "-u",
+        "padding_mlp_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-a0b069724b5d",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-a0b069724b5d/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794006669.443219
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794006669.478554
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794006669.5046394
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794006669.532109
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794006732.9742377
+        },
+        {
+          "name": "finished",
+          "ts": 1794006732.994273
+        }
+      ]
+    },
+    "elapsed_s": 63.99,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "4379414516b595157f0cbf3e58a76740848fee796513eba091646ba30970e3aa",
+      "size_bytes": 240953
+    },
+    "failure": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "CUBLAS_WORKSPACE_CONFIG=:4096:8",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "python",
+        "-u",
+        "padding_mlp_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-a0b069724b5d",
+      "kind": "process_exit",
+      "log_tail": "<frozen runpy>:130: RuntimeWarning: 'mrun.os_limit' found in sys.modules after import of package 'mrun', but prior to execution of 'mrun.os_limit'; this may result in unpredictable behaviour\nPADDING_MLP_COMPILED 3d7f2c4f68ee75718fe122ce32f5bb15e890a89e0eb8a0b88b9ae5e5cef3ba3a\nTraceback (most recent call last):\n  File \"/mnt/hdd8tb/mrun-work/job-a0b069724b5d/padding_mlp_study.py\", line 156, in <module>\n    v=uncentered_reader.execute(a.run)\n  File \"/mnt/hdd8tb/mrun-work/job-a0b069724b5d/uncentered_reader.py\", line 134, in execute\n    root = Path(root).resolve(); request = read(root/'request.json'); verify(root, request); source = read(root/'inputs.json')\n                                                                      ~~~~~~^^^^^^^^^^^^^^^\n  File \"/mnt/hdd8tb/mrun-work/job-a0b069724b5d/uncentered_reader_study.py\", line 18, in verify\n    if sha(Path(root)/name) != digest: raise ValueError('Frozen source differs: '+name)\n       ~~~^^^^^^^^^^^^^^^^^\n  File \"/mnt/hdd8tb/mrun-work/job-a0b069724b5d/encoder_atoms.py\", line 20, in sha\n    with Path(path).open('rb') as f:\n         ~~~~~~~~~~~~~~~^^^^^^\n  File \"/home/beast/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/pathlib/__init__.py\", line 771, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/hdd8tb/mrun-work/job-a0b069724b5d/flux_clock.py\", line 90, in audit\n    raise PermissionError('Evaluation target unavailable before candidate seal')\nPermissionError: Evaluation target unavailable before candidate seal\nTraceback (most recent call last):\n  File \"/mnt/hdd8tb/mrun-work/job-a0b069724b5d/padding_mlp_study.py\", line 160, in <module>\n    else:v=globals()[a.action](a.run)\n           ~~~~~~~~~~~~~~~~~~~^^^^^^^\n  File \"/mnt/hdd8tb/mrun-work/job-a0b069724b5d/padding_mlp_study.py\", line 145, in execute\n    tick=time.perf_counter();subprocess.run([sys.executable,'-u',str(root/'padding_mlp_study.py'),action,str(root)],check=True,timeout=780);phases.append({'action':action,'wallSecondsIncludingFreshProcess':time.perf_counter()-tick})\n                             ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/beast/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/subprocess.py\", line 578, in run\n    raise CalledProcessError(retcode, process.args,\n                             output=stdout, stderr=stderr)\nsubprocess.CalledProcessError: Command '['/mnt/hdd8tb/mdb/uv-cache/builds-v0/.tmpInK5ek/bin/python', '-u', '/mnt/hdd8tb/mrun-work/job-a0b069724b5d/padding_mlp_study.py', 'reader', '/mnt/hdd8tb/mrun-work/job-a0b069724b5d']' returned non-zero exit status 1.\n",
+      "message": "child exited with return code 1",
+      "observed_ts": 1794006732.9854202,
+      "phase": "process.finalize",
+      "resources": {
+        "peak_rss_mb": 1729.5,
+        "peak_vram_mb": 1450.0,
+        "ram_ceiling_mb": 15769.600000000002,
+        "vram_ceiling_mb": 14300.000000000002
+      },
+      "returncode": 1
+    },
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 1729.5,
+    "peak_vram_mb": 1450.0,
+    "returncode": 1,
+    "status": "failed"
+  },
+  "resultFiles": [],
+  "schema": "tce-padding-mlp-failure-v1",
+  "scope": "Paid source compilation retained; no reader, encoder/image candidate, native comparison or scientific null.",
+  "state": "failed",
+  "terminal_status": "unassessed"
+}

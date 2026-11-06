@@ -1,0 +1,91 @@
+{
+  "backend": "diffusers",
+  "batch_size": 1,
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "frozenReaderSHA256": "743590ba7c87a7ff2afd340c1b03fece9f464183bc690a88ccc6ff1716c9e5af",
+  "height": 512,
+  "manifestSHA256": "9a155bd1410c52909997bacaf1d1aac2f9e90be86dc269d5e7edfab2b5285432",
+  "model": "flux2-klein-4b-distilled",
+  "ownedSources": [
+    "padding_mlp_study_v2.py",
+    "padding_mlp_study.py",
+    "padding_mlp.py",
+    "padding_mlp_compile.py",
+    "padding_mlp_encoder.py",
+    "padding_mlp_images.py",
+    "padding_mlp_diagnostic.py",
+    "uncentered_reader.py",
+    "uncentered_reader_study.py",
+    "encoder_atoms.py",
+    "paired_fields.py",
+    "masked_kv_study.py",
+    "conditioning_demand.py",
+    "complete_masked_study.py",
+    "flux_clock.py",
+    "flux_clock_study.py"
+  ],
+  "parentRequestSHA256": "beeff453d9412eaef5ae67b122483561880cc1a70825cea0b2497340e9e7ef92",
+  "prompts": [
+    {
+      "case": "00",
+      "id": "constant-00",
+      "policy": "constant",
+      "prompt": "A studio photograph of a orange ceramic pitcher to the left of a teal metal watering can on a white table, soft lighting."
+    },
+    {
+      "case": "10",
+      "id": "constant-10",
+      "policy": "constant",
+      "prompt": "A studio photograph of a teal ceramic pitcher to the left of a orange metal watering can on a white table, soft lighting."
+    },
+    {
+      "case": "00",
+      "id": "tangent-00",
+      "policy": "tangent",
+      "prompt": "A studio photograph of a orange ceramic pitcher to the left of a teal metal watering can on a white table, soft lighting."
+    },
+    {
+      "case": "10",
+      "id": "tangent-10",
+      "policy": "tangent",
+      "prompt": "A studio photograph of a teal ceramic pitcher to the left of a orange metal watering can on a white table, soft lighting."
+    }
+  ],
+  "protocol": "Compile FP64smooth sourceJ/emittedFP32 at decoded nativeRMS(originalpadembedding); nativeb at repeated512rows. Own raw firstreader/residual/nativeRMS. Runtime FP32delta@J.T+nativeb thenBF16.4ownimages seal before2paid nativeMLP diagnostics and savedtop4/fulltarget scoring. No fit/rankcut/newnoise/nativeimage campaign/targetrefresh.",
+  "readerPolicy": "current-top4-uncentered-fp64-fp32-bf16-v1",
+  "requestSHA256": "b17698cc6beef4730597c0c5f1c0317523075dad5ba81a49562daf3f9ed3a450",
+  "schema": "tce-padding-mlp-request-v1",
+  "scope": "Source-only full-input smooth tangent versus native source-anchor constant for block0padding MLP. Active37rows share exact original write; all512rows continue. Reduced learned arithmetic, no strict zero-neural or speedup claim.",
+  "seed": 271828,
+  "seq_len": 1536,
+  "sourceHashes": {
+    "clock-table.json": "ee858f422b8fadf42fdb77902851d947e3f981df9605d49d9e846ec6c9c44492",
+    "complete_masked_study.py": "f52633bc9d729b2a5032e024331d9b20fcee8cb993941cab87c197089cdcff99",
+    "conditioning_demand.py": "6536da5e73e89b7d2a18085d963edf578d0567ed20680c4022c1c82a10c10e9f",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "flux_clock.py": "bde499ff527f624fcd1b62a8f6f0b2fbaf70eebc7b7835fcd7d4c6403b4e0b2b",
+    "flux_clock_study.py": "eaccf6bdb75678ac6acb5a371f8858201cf83dbac4de83868b70d5570e4beddc",
+    "flux_functional_qwen_prefix.py": "763ae441d33396fe5cede5d96214c76e01aae779916ce5cf28e79cf5f5eb618a",
+    "frozen-plan.md": "9e762ddd7991fb6193322689fee6b73483313e705abb61d50130031f4c59ceb6",
+    "inputs.json": "08b60d40c5e6e1686aace880cbf57f8070378210cc674491ce4ef23485f45c70",
+    "masked_kv_study.py": "920416ce49d823b1337a7f6d9f5fca90c8047723bb6b1d37dc09967114b6ad89",
+    "noise-seal.json": "3971848ac18fbef7d6ff616284fedd20e07fffd4c313be2297087bf7740336d8",
+    "padding_mlp.py": "c8c60b1909c69647691f3345d208ede575219ad86a48c8245dadf5d3560f5aad",
+    "padding_mlp_compile.py": "e946c6752a3ddafb3dd9e354b70f52166768b6878174d194741530baf75faa06",
+    "padding_mlp_diagnostic.py": "eddf7d3bd76649c14e7366d6b6d587b70b4510febf72b80f8fec608dcb9b9492",
+    "padding_mlp_encoder.py": "644a8b00f3bdd9756c7c0e9c98c4dcf0353ad0219fbc328866447467aa191601",
+    "padding_mlp_images.py": "38580cffbc49bb8a43f7ee9d91520ef6246a4b240adaf53815a1af81eebfc080",
+    "padding_mlp_study.py": "9d96c51aa808c5040b18598abb525a69b1c37513e18b55fddb3bce354c8555fe",
+    "padding_mlp_study_v2.py": "52b3261109a6d2ff6d43f5c687bd2a3cd6d757fef57439db1cb8f40edaaccd8a",
+    "paired_fields.py": "408e035cb2f2f99558dbbe5abccdc281a5deade195abdbbc003549318ef09e88",
+    "qwen_h18_state_history.py": "17084d404f5ae00557e4ad8e94a8b84704787c47ebf9c875228cb452c4857036",
+    "resource-basis.json": "749cd48b762cc13865e799bddcbb1e3102d92fc19e738825ccd0e5b02dee5592",
+    "targets.json": "8813fd30df742c0b2c01cef01fa83d283ae52cf8dee2199aa6316897935b2fea",
+    "uncentered_reader.py": "743590ba7c87a7ff2afd340c1b03fece9f464183bc690a88ccc6ff1716c9e5af",
+    "uncentered_reader_study.py": "d0e86a01f3c30089d93de9ae1eaa22be83c2494de29374b2b0db42635a0f132f"
+  },
+  "steps": 4,
+  "timeoutSeconds": 900,
+  "width": 512
+}

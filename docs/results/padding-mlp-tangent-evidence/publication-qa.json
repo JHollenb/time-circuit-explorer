@@ -1,0 +1,104 @@
+{
+  "schema": "tce-padding-mlp-publication-qa-v1",
+  "status": "verified",
+  "mechanics": {
+    "schema": "tce-padding-mlp-mechanics-v1",
+    "manifestMembers": {
+      "padding-mlp-tangent": 26,
+      "padding-mlp-remainder": 8,
+      "padding-mlp-failed-v1": 7
+    },
+    "ownedSourcePins": 16,
+    "ownEncoderHandoffs": 108,
+    "actualDenoiserInputJoins": 16,
+    "candidateFields": 180,
+    "firstMLPFields": 20,
+    "nativeDiagnosticFields": 4,
+    "sharedActiveWriteReuses": 2,
+    "originalNewPNGs": 4,
+    "historicalPNGs": 4,
+    "observations": {
+      "padding-mlp-tangent": 122880,
+      "padding-mlp-remainder": 1900
+    },
+    "candidateSealSHA256": "354ffb03c9c2d0be98fb0f06acf39f1557b4ce084f521f53b7250e528028598f",
+    "reportSHA256": "c533726cfab986e63c22219f573bb27e97214a7902cd657e7be9daa7f2f7bc03",
+    "remainderReportSHA256": "7cc5f8db34c64237e8be7675ec652effa7cac95558004ad2b2eb3c1d27738f5b",
+    "scope": "Integrity and actual input/state/release/custody coverage, not semantic certification or zero-neural completion."
+  },
+  "sourceAndTerminalRevalidation": [
+    {
+      "jobID": "job-922839f9980e",
+      "state": "succeeded",
+      "requestSHA256": "b17698cc6beef4730597c0c5f1c0317523075dad5ba81a49562daf3f9ed3a450",
+      "executedPayload": {
+        "host": "beast",
+        "reported_ts": 1794007134.204346,
+        "sha256": "d59f8d79343d0d09d66463eb006f91952fd918b0b74488c7018dc35e2ff55408",
+        "size_bytes": 241602
+      }
+    },
+    {
+      "jobID": "job-0ba07716745c",
+      "state": "succeeded",
+      "requestSHA256": "255d9b29147d96714e39560d4835a79acd8d2a520b417f4cfae7207627a85b25",
+      "executedPayload": {
+        "host": "beast",
+        "reported_ts": 1794007356.9343064,
+        "sha256": "81476919fb6d458c12c5ffeacb2eb30432b2c69e0566b8e5a3c0ccbb6c6e7ea5",
+        "size_bytes": 71807
+      }
+    }
+  ],
+  "linksAndFindings": {
+    "localLinksChecked": 900,
+    "missing": [],
+    "blogSHA256": "cbeecb53ba0ab68886426e4326595255aed37816381f0c1c19105765acda620a",
+    "figureSHA256": "1182439a310a12f0913df5ae28a11e9a1afe6b128f3ae797929efd2d4f97e0ec",
+    "copiedFigureIdentical": true,
+    "currentFreeBytes": 9909944320,
+    "advisorSnapshots": [
+      {
+        "file": "2026-11-06-151646-restoring-the-current-write-leaves-the-conversation-state-different.md",
+        "reviewedSHA256": "f6a5d3f350ae9f24c078b5df46693acfc261ae035cd002b040a1d11e73df033d",
+        "currentSHA256": "322dc7f601f348a8d520036884af7740aa6957e20a56a07e30030a0cc0e99fb8"
+      },
+      {
+        "file": "2026-11-06-151329-binding-needs-a-compatible-payload-and-receiving-state.md",
+        "reviewedSHA256": "bff9e64aecbd3eec25fe9bd711feb335eddeca25de2cdcf68be91e64ec8abff2",
+        "currentSHA256": "bff9e64aecbd3eec25fe9bd711feb335eddeca25de2cdcf68be91e64ec8abff2"
+      },
+      {
+        "file": "2026-11-06-144600-a-program-that-produces-queries-and-updates-its-own-memory.md",
+        "reviewedSHA256": "bcdcbbef8466a5e13166a6e52732d46483a51ae6d4119b6679b18da513d81c7f",
+        "currentSHA256": "fadf39281a1f20bd5b93aa37d3bfebd917333c412f68d491ab862488bb245951"
+      },
+      {
+        "file": "2026-11-06-150300-model-size-reasoning-and-the-computations-weights-change.md",
+        "reviewedSHA256": "d7f55a02be5994d54b544d3c70a7edaab209dca281ebe09081ee06008c0fe315",
+        "currentSHA256": "47a7a438d822746a1dd1d3937fe3898c31391418401fb9a73ca1837de5a6ef32"
+      },
+      {
+        "file": "2026-11-06-125544-a-frozen-mlp-program-updates-a-conversation.md",
+        "reviewedSHA256": "b2c8bc7c82e525cb5afa35a42cae5e613a7e4757ebb59bae7ecfa7dab57932f1",
+        "currentSHA256": "cd1f0d39e05dcc88f08bc060881ab424a419ceba1edbd212f4aafcf7d3f67968"
+      },
+      {
+        "file": "2026-11-06-152039-transferring-an-eye-program-to-a-turned-head.md",
+        "reviewedSHA256": "36ffc804148b218776100ef44fba017a15c874ee4a1fcd5f4e9300a3e9bc548e",
+        "currentSHA256": "2b49db55db0c088e37be7e35d157a7afc7253872833831bda79da6431ae4d470"
+      },
+      {
+        "file": "2026-11-06-155021-what-recursion-would-mean-inside-flux.md",
+        "reviewedSHA256": "850f9b4e479e9da7eb90c328aca71b06d649c042fd2abd9e2edfbfe051f33032",
+        "currentSHA256": "850f9b4e479e9da7eb90c328aca71b06d649c042fd2abd9e2edfbfe051f33032"
+      }
+    ]
+  },
+  "mechanicsTests": {
+    "tests": 183,
+    "seconds": 13.824,
+    "status": "OK"
+  },
+  "scope": "Published file manifests, lossless streams, guarded executed payload identity, all own state/consumer joins and release ordering, original PNGs, copied figure/blog SHA and links. Mutable post review hashes remain historical snapshots; current post drift is retained separately. No semantic or zero-neural certification."
+}

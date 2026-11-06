@@ -1,0 +1,256 @@
+{
+  "cpuSecondsAfterImports": 7.435491949,
+  "fields": {
+    "J": {
+      "bytes": 26214528,
+      "logicalDtype": "torch.float32",
+      "path": "/mnt/hdd8tb/mrun-work/job-a0b069724b5d/compiled/J.npy",
+      "payloadSHA256": "1a876460e3c6cbc99c9db55927241cce4b3440836c087f988f301d0b0babd7de",
+      "sha256": "e847de476d352c82f2c6bdac161338f9d1f536df22c48d420f7e4c7e77cc48de",
+      "shape": [
+        2560,
+        2560
+      ],
+      "storedDtype": "float32"
+    },
+    "b": {
+      "bytes": 5248,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-a0b069724b5d/compiled/b.npy",
+      "payloadSHA256": "151154dcffd3d8a73ff3b338824c5f1fc85162a8908d7a7708edbbc6130f2554",
+      "sha256": "dd6cc93ed638972961866009f55e6f471f73c34575a88a014b769b80bc258727",
+      "shape": [
+        2560
+      ],
+      "storedDtype": "uint16"
+    },
+    "jacobianEmissionError": {
+      "bytes": 52428928,
+      "logicalDtype": "torch.float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-a0b069724b5d/compiled/jacobian-emission-error.npy",
+      "payloadSHA256": "d1dd4532d97b3a02fde32a9d3ab47f3a844dcf40c59ccf7b2ce745980f7a2feb",
+      "sha256": "b7c3a1c187b6f714786523f26a489ee0b3d2c49a570bbc15020e150a88be08f5",
+      "shape": [
+        2560,
+        2560
+      ],
+      "storedDtype": "float64"
+    },
+    "smoothAnchor": {
+      "bytes": 20608,
+      "logicalDtype": "torch.float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-a0b069724b5d/compiled/smooth-anchor.npy",
+      "payloadSHA256": "6dc242758c907810cb480d8bcb6cc2b0d457671bcaf1ed6d2df89e42493b27ba",
+      "sha256": "1d958a3e9425c96baf09ce35d946d49944f4ea44cd9d2539294887133da1495a",
+      "shape": [
+        2560
+      ],
+      "storedDtype": "float64"
+    },
+    "smoothGate": {
+      "bytes": 77952,
+      "logicalDtype": "torch.float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-a0b069724b5d/compiled/smooth-gate.npy",
+      "payloadSHA256": "b1e52520652fe1f4055d62623351672afee2140027849936476e67108076b48c",
+      "sha256": "3f08a5306cbb016cdecb1641c3ab1584c30c3d25c08c1c2b7ce4776201715af6",
+      "shape": [
+        9728
+      ],
+      "storedDtype": "float64"
+    },
+    "smoothUp": {
+      "bytes": 77952,
+      "logicalDtype": "torch.float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-a0b069724b5d/compiled/smooth-up.npy",
+      "payloadSHA256": "75fb686d535effe8df5d5dd8b6e093b365813a403b7b0aa627aa4034a90ba96f",
+      "sha256": "e0ac0530aced031b1dbd976beb8558ac8ca4d1cb58354f3f65944a8067778002",
+      "shape": [
+        9728
+      ],
+      "storedDtype": "float64"
+    },
+    "x0": {
+      "bytes": 5248,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-a0b069724b5d/compiled/x0.npy",
+      "payloadSHA256": "528bbdbef93e4084bce544ccfbf3b8ad4fb4b620c1418ab74787b07d1d149611",
+      "sha256": "f34c0d5995efd08c25b91b607d63f070e28fa3264d8c97682c1bfddbbd96aa7f",
+      "shape": [
+        2560
+      ],
+      "storedDtype": "uint16"
+    }
+  },
+  "jacobianFP32Emission": {
+    "candidateRms": 0.01043262957741788,
+    "changedValues": 6553600,
+    "cosine": 0.9999999999999997,
+    "mae": 1.7560832990549915e-10,
+    "maxAbs": 2.504710705508728e-08,
+    "referenceRms": 0.010432629577777698,
+    "relativeRms": 2.530123010968283e-08,
+    "rms": 2.6395836159643674e-10,
+    "scalars": 6553600
+  },
+  "nativeAnchorMinusSmooth": {
+    "candidateRms": 0.16682113354961078,
+    "changedValues": 2560,
+    "cosine": 0.9999922259368476,
+    "mae": 0.0004625377683014296,
+    "maxAbs": 0.006896020133311476,
+    "referenceRms": 0.16664422277960245,
+    "relativeRms": 0.004085540718952252,
+    "rms": 0.0006808317577442162,
+    "scalars": 2560
+  },
+  "numericalProfile": {
+    "bf16ReducedPrecisionReduction": true,
+    "cublasWorkspaceConfig": ":4096:8",
+    "cudaMatmulTF32": false,
+    "cudnnBenchmark": false,
+    "cudnnDeterministic": true,
+    "cudnnTF32": false,
+    "deterministicAlgorithms": true,
+    "float32MatmulPrecision": "highest",
+    "threads": 1
+  },
+  "padID": 151643,
+  "padToken": "<|endoftext|>",
+  "repeatedRowMismatches": {
+    "gate": 0,
+    "normalized": 0,
+    "up": 0,
+    "write": 0
+  },
+  "repeatedSourceRows": 512,
+  "requestSHA256": "db24de4e23fbf1a0f92577e188a71787f6d0276f7f3db7a3811d266d56f7363c",
+  "schema": "tce-padding-mlp-compile-v1",
+  "scope": "Source-only pad embedding and original weights. Native BF16 anchor at repeated512row profile; derivative of smooth FP64 widened-weight function at decoded native x0, emittedFP32. No target activation/fit/precision choice.",
+  "sourceAssetChecks": [
+    {
+      "after_signature": [
+        66311,
+        298015,
+        4967215360,
+        1784967532015721400,
+        1784967532019901900
+      ],
+      "before_signature": [
+        66311,
+        298015,
+        4967215360,
+        1784967532015721400,
+        1784967532019901900
+      ],
+      "bytes": 4967215360,
+      "header_bytes": 26360,
+      "header_sha256": "8d1a2170cadc1eb2e68cb60f5610c304d263f29de260584fd4fadc73d40b56ec",
+      "path": "/mnt/big/llm-models/FLUX.2-klein-4B/text_encoder/model-00001-of-00002.safetensors",
+      "selected_count": 229,
+      "selected_payload_bytes": 4967188992,
+      "sha256": "8c0506e7f4936fa7e26183a4fd8da4e2bdbc5990ba64ae441f965d51228f36ea",
+      "tensor_count": 229,
+      "verifiedSignature": [
+        66311,
+        298015,
+        4967215360,
+        1784967532015721400,
+        1784967532019901900
+      ]
+    },
+    {
+      "after_signature": [
+        66311,
+        298026,
+        3077766632,
+        1784967490530992400,
+        1784967490580917100
+      ],
+      "before_signature": [
+        66311,
+        298026,
+        3077766632,
+        1784967490530992400,
+        1784967490580917100
+      ],
+      "bytes": 3077766632,
+      "header_bytes": 19424,
+      "header_sha256": "17ee7543a170d3b70ae33b3e1ba4f67d4d3c30135db986cc53a99b2d06a008de",
+      "path": "/mnt/big/llm-models/FLUX.2-klein-4B/text_encoder/model-00002-of-00002.safetensors",
+      "selected_count": 169,
+      "selected_payload_bytes": 3077747200,
+      "sha256": "82f2bd839378541b0557bfabaf37c7d3d637071fdcb73302dedd7cf61162ce07",
+      "tensor_count": 169,
+      "verifiedSignature": [
+        66311,
+        298026,
+        3077766632,
+        1784967490530992400,
+        1784967490580917100
+      ]
+    }
+  ],
+  "sourceAtomFiles": [
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/manifest.json",
+      "sha256": "9a155bd1410c52909997bacaf1d1aac2f9e90be86dc269d5e7edfab2b5285432"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/coverage.npy",
+      "sha256": "e6ae5faf47930cb70a9fa89b594ff6b1ad57d39e4e0d51794fe36c73d9f4f93f"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/row-hashes.npy",
+      "sha256": "25f5a892cc19bc7895f45312e03a5c7e323ff3e9e2a966d20ebdf1860b18ee88"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0296.npy",
+      "sha256": "6042c71b4f09814bd7a6bb9502f9b3e3c61f961a24b9f6dbc918fe0ff1af33ad"
+    }
+  ],
+  "sourceParameterReads": [
+    {
+      "bytes": 5120,
+      "file": "/mnt/big/llm-models/FLUX.2-klein-4B/text_encoder/model-00001-of-00002.safetensors",
+      "name": "model.embed_tokens.weight",
+      "payloadSHA256": "e429c46a2dbdb604ee90f91bf7896a90d200628d1be6506692d17898c07fbc1d",
+      "row": 151643
+    },
+    {
+      "bytes": 49807360,
+      "file": "/mnt/big/llm-models/FLUX.2-klein-4B/text_encoder/model-00001-of-00002.safetensors",
+      "name": "model.layers.0.mlp.gate_proj.weight",
+      "payloadSHA256": "fe440e8f6cc7c56de2d5a97fef5ee04f65388dd8460821ef2ed1645c39c6a47a",
+      "row": null
+    },
+    {
+      "bytes": 49807360,
+      "file": "/mnt/big/llm-models/FLUX.2-klein-4B/text_encoder/model-00001-of-00002.safetensors",
+      "name": "model.layers.0.mlp.up_proj.weight",
+      "payloadSHA256": "9a957c5a0f2bd6a240eaf6e5de83dd91a58ed1acd1829fcb72ab95aa7624181d",
+      "row": null
+    },
+    {
+      "bytes": 49807360,
+      "file": "/mnt/big/llm-models/FLUX.2-klein-4B/text_encoder/model-00001-of-00002.safetensors",
+      "name": "model.layers.0.mlp.down_proj.weight",
+      "payloadSHA256": "edf534353405dab5179894b9641d12c6e53c4c6a8100b8c079257a9f3584945f",
+      "row": null
+    },
+    {
+      "bytes": 5120,
+      "file": "/mnt/big/llm-models/FLUX.2-klein-4B/text_encoder/model-00001-of-00002.safetensors",
+      "name": "model.layers.0.post_attention_layernorm.weight",
+      "payloadSHA256": "1b62e6af917bfad75a9271a8d89a8d565517abbedef85a68cbd5f4ba3a0a0584",
+      "row": null
+    }
+  ],
+  "wallSecondsAfterImports": 24.403439376037568,
+  "work": {
+    "emittedJacobianPayloadBytes": 26214400,
+    "jacobianProductsMACs": 127506841600,
+    "nativeAnchorMLPLinears": 3,
+    "nativeAnchorMLPMACs": 38252052480,
+    "smoothAnchorMACs": 74711040
+  }
+}

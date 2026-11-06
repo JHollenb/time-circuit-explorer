@@ -1,0 +1,162 @@
+{
+  "completeCollectedInventory": {
+    "bytes": 2808544,
+    "files": {
+      "fields.json": {
+        "bytes": 3454,
+        "sha256": "b8f750f3ddf08d198d78f17c7fdf725639a186a3575395fddbb33e50f3d51791"
+      },
+      "inputs.json": {
+        "bytes": 675106,
+        "sha256": "875dacee073ec0421a0d0fb7128e38b8746151dc3bb1dd70b41303957b4b5fa9"
+      },
+      "observations.jsonl": {
+        "bytes": 2114826,
+        "sha256": "4897a4cf9b9aec19caf89fdf8b3134a5a440af2d9ef1f64c08a092d8a9928522"
+      },
+      "report.json": {
+        "bytes": 13750,
+        "sha256": "7cc5f8db34c64237e8be7675ec652effa7cac95558004ad2b2eb3c1d27738f5b"
+      },
+      "request.json": {
+        "bytes": 1408,
+        "sha256": "cb40bac331819d49bc0893b2b0fea1bdb76187c64e6ab0d18812f91cf7141c13"
+      }
+    }
+  },
+  "goalStatus": "Active. Context-state approximation and retrospective diagnostics do not establish arbitrary-prompt zero-neural images.",
+  "jobID": "job-0ba07716745c",
+  "losslessStreamTransports": [
+    {
+      "conversion": "gzip only; decompressed bytes exactly equal source, verified; no row/value/schema changes.",
+      "published": "observations.jsonl.gz",
+      "publishedBytes": 250516,
+      "publishedSHA256": "b01046cd89f5f1c614d5eb6bb3a9963498835ea56fd5d19feb3af86e54251f22",
+      "source": "observations.jsonl",
+      "sourceBytes": 2114826,
+      "sourceSHA256": "4897a4cf9b9aec19caf89fdf8b3134a5a440af2d9ef1f64c08a092d8a9928522"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "81476919fb6d458c12c5ffeacb2eb30432b2c69e0566b8e5a3c0ccbb6c6e7ea5",
+      "size_bytes": 71807
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794007356.9343064,
+      "sha256": "81476919fb6d458c12c5ffeacb2eb30432b2c69e0566b8e5a3c0ccbb6c6e7ea5",
+      "size_bytes": 71807
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794007356.637825,
+      "sha256": "81476919fb6d458c12c5ffeacb2eb30432b2c69e0566b8e5a3c0ccbb6c6e7ea5",
+      "size_bytes": 71807
+    }
+  },
+  "publication": "All collected result files retained; JSONL transported as byte-lossless gzip. Large sealed heads/state/ports/reference slice remain near compute, separately hash-verified for primary assay.",
+  "remoteResultRoot": "/mnt/hdd8tb/mrun-work/job-0ba07716745c/response-result",
+  "requestSHA256": "255d9b29147d96714e39560d4835a79acd8d2a520b417f4cfae7207627a85b25",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-0ba07716745c",
+      "job_log": {
+        "bytes": 214,
+        "sha256": "efdcaaa7d4bc4e871374f194777737f412595c86c095a517e2e517d1952c16f4"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-0ba07716745c/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "pillow>=10.0",
+        "python",
+        "-u",
+        "padding_mlp_remainder.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-0ba07716745c",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-0ba07716745c/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794007356.925416
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794007356.9548175
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794007356.9637609
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794007356.9907901
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794007376.4101465
+        },
+        {
+          "name": "finished",
+          "ts": 1794007376.680702
+        }
+      ]
+    },
+    "elapsed_s": 20.96,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "81476919fb6d458c12c5ffeacb2eb30432b2c69e0566b8e5a3c0ccbb6c6e7ea5",
+      "size_bytes": 71807
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 1015.8,
+    "peak_vram_mb": 0.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-context-evidence-public-v1"
+}
