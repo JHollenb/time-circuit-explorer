@@ -6,6 +6,10 @@ Two interchangeable model packs explore the frozen R3 Mamba ISA model and FLUX.2
 
 The FLUX pack follows a four-pass, 112-transition history from initial noise: joint and single blocks, before/after boundaries, full and matched forecasts, spatial latent previews, BF16 Euler calculations, synthetic attention/SiLU sandboxes, and original terminal images with pixel-error inspection. Open it directly with `?model=flux2-klein-4b`.
 
+The [prediction-only generator](generator/README.md) turns those reconstructed equations into fresh images, without loading the native transformer. Its website section shows original measured outputs and per-stage compute. Start `../common/bin/common exec python generator/server.py` to enable live local generation through mrun; the hosted Site displays saved benchmark examples. Open `?model=flux2-klein-4b#generator`.
+
+The [first measured benchmark](docs/prediction-only-benchmark.md) records 365.55–418.85 seconds of denoiser wall time per image on four configured CPU threads, with native encoding and decoding measured separately.
+
 ## Run locally
 
 Requires Node.js 20 or newer. There are no package dependencies to install.
@@ -28,6 +32,7 @@ time-circuit-explorer/
 │   ├── scripts/      # static build, local server and offline evidence exporter
 │   └── tests/        # dependency-free Node tests
 ├── docs/plans/       # plans for additional visualized models
+├── generator/        # prediction-only worker, mrun launcher and local live API
 ├── .openai/          # existing private Site deployment identity
 └── package.json      # root workspace commands
 ```

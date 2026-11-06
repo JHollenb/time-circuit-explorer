@@ -1,0 +1,62 @@
+{
+  "backend": "diffusers",
+  "batch_size": 1,
+  "config": {
+    "modelPath": "/mnt/big/llm-models/FLUX.2-klein-4B",
+    "output": "prediction-result",
+    "samples": [
+      {
+        "prompt": "A green cone to the left of a yellow cylinder on a plain white background. Two separate objects, simple studio product photograph.",
+        "seed": 113
+      },
+      {
+        "prompt": "A small blue glass sphere beside an orange cube on a plain white background. Two separate objects, simple studio product photograph.",
+        "seed": 2718
+      }
+    ]
+  },
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "executionContract": {
+    "cpuThreads": 4,
+    "expectedWallSeconds": 900,
+    "nativeDenoiserCalls": 0,
+    "nativePromptEncodingsPerImage": 1,
+    "nativeTransformerLoaded": false,
+    "nativeVAEDecodesPerImage": 1,
+    "predictedTransitionsPerImage": 112,
+    "retention": "final latent, PNG, per-stage resources, pass hashes and bounded progress; no intermediate activations"
+  },
+  "height": 512,
+  "launcherSHA256": "e34a11be763c1f5d911b2a68ffa0176eb1335b663c905ce1479dae4f7004d852",
+  "model": "flux2-klein-4b-distilled",
+  "requestSHA256": "4a01c75c475fa9af79a67339ee2d13b4dddfa5ebaf72ac11074fec0d588275f9",
+  "resourceCalibration": {
+    "job": "job-4350531b1dcd",
+    "rssMB": 8509.1,
+    "scope": "Historical full validation harness. New generator releases encoder after encoding, omits transformer residency and trajectory capture. New actual peaks reported separately.",
+    "vramMB": 12936
+  },
+  "resourceException": {
+    "cpuThreads": 4,
+    "diskGB": 1,
+    "ramMB": 14336,
+    "reason": "Intent-first attempt rejected by an impossible generalized-history15360MB VRAM ask (guard ceiling16896 >15557 physical-minus-margin). Reuse historical admitted14336MBRAM/13000MBVRAM profile, measuredRSS8509/VRAM12936. Release encoder after encoding as historical worker did; native transformer and2GBtrajectory omitted. Subsequent encoder reload included in encode time. Actual4 CPU threads; output below1MB perimage, pretrained constants external.",
+    "vramMB": 13000
+  },
+  "schema": "tce-flux-prediction-request-v1",
+  "sourceHashes": {
+    "bindings.json": "51258f8622d48d2db73d3699833e60171dd93f07844c933ac5f32bafcf378c02",
+    "checkpoint-files.json": "9e2408aa4a485e181087a38d91cb2d2eb46a1e6ef378e0f1fd34c3c562f78f8d",
+    "kernel-manifest.json": "50113dca22633d50bf89ed96fb514717c321a7a5d99910fc630d1aaa545e4f47",
+    "kernels/flux_mlp_replacement.py": "5ee9ba9d67c44e947bb6983a8bdec7b1e9335aaf28f0ffdd8ce71ab559767f8a",
+    "kernels/flux_reentry_reference.py": "e7ba7e9b55d775386767a15d87af4f011d64831322a38ab7ee4c59537b31e108",
+    "kernels/flux_step_boundary_reference.py": "f890a62248f0ce8a1f30d29fe3db421326a196640c0fd578a8be7960dd315768",
+    "kernels/flux_transition_reference.py": "f531e059635fe9940d55c38eaf5cc1d7ab9dd3a4cd1adeee5225ba9342f3bf83",
+    "parameter-artifacts.json": "fc87376975562bdc3ec2ded05e013b842aa1b7e8fe3d41afdf05cd7efb27734f",
+    "retrieve_weights.py": "7cef6f04829dc8638718c25cffa9e3e5ca86703e19cb770d57aa516b719677ae",
+    "worker.py": "f398769ef587fbadabe4feba20af2f1b75387eae209be3403033556a312d6d23"
+  },
+  "task_family": "forward",
+  "width": 512
+}

@@ -6,7 +6,7 @@ const main=document.getElementById('main'),select=document.getElementById('model
 installDialog();
 const host=new ModelHost(registry,pack=>import(pack.adapter),{
   beforeMount(pack){document.getElementById('detail-dialog').close();main.innerHTML='<div class="pack-loading">Opening the computation…</div>';main.setAttribute('aria-busy','true');main.dataset.model=pack.id;document.title=`Time Circuit — ${pack.name}`;},
-  afterMount(pack){select.value=pack.id;const url=new URL(location.href);url.searchParams.set('model',pack.id);history.replaceState(null,'',url);}
+  afterMount(pack){select.value=pack.id;const url=new URL(location.href);url.searchParams.set('model',pack.id);history.replaceState(null,'',url);if(url.hash)document.getElementById(url.hash.slice(1))?.scrollIntoView({block:'start',behavior:'instant'});}
 });
 select.replaceChildren(...registry.map(pack=>new Option(pack.name,pack.id)));
 select.onchange=()=>host.select(select.value).catch(error=>{

@@ -92,8 +92,10 @@ test('host restores separate model sessions and cancels stale asynchronous mount
   const stale=racing.select(isa.id);await begun;const fresh=racing.select(flux.id);release();await Promise.all([stale,fresh]);assert.equal(racing.current.id,flux.id);racing.dispose();
 });
 test('FLUX initial assets and every lazy detail stay inside transfer budgets',()=>{
-  const src=new URL('../src/',import.meta.url),initial=['index.html','app.js','models.js','flux-model.js','model-host.js','components.js','kernels.js','style.css','flux.css','flux-adapter.js','flux-kernels.js','templates/flux.html'];
-  const bytes=initial.reduce((s,p)=>s+gzipSync(readFileSync(new URL(p,src))).length,0)+['manifest','timeline'].reduce((s,p)=>s+gzipSync(readFileSync(new URL(p+'.json',root))).length,0);
+  const src=new URL('../src/',import.meta.url),initial=['index.html','app.js','models.js','flux-model.js','model-host.js','components.js','kernels.js','style.css','flux.css','flux-adapter.js','flux-kernels.js','templates/flux.html','generator-demo.js','generator.css'];
+  const generator=new URL('../public/data/generator/',import.meta.url),example=JSON.parse(readFileSync(new URL('benchmarks.json',generator)));
+  const generatorBytes=gzipSync(readFileSync(new URL('benchmarks.json',generator))).length+(example.samples[0]?readFileSync(new URL(example.samples[0].image.path,generator)).length:0);
+  const bytes=initial.reduce((s,p)=>s+gzipSync(readFileSync(new URL(p,src))).length,0)+['manifest','timeline'].reduce((s,p)=>s+gzipSync(readFileSync(new URL(p+'.json',root))).length,0)+generatorBytes;
   console.log('FLUX initial gzip bytes:',bytes);assert.ok(bytes<1_000_000);
   const paths=['provenance.json','endpoints.json','euler.json',...readdirSync(new URL('tiles/',root)).map(p=>'tiles/'+p)];for(const p of paths)assert.ok(gzipSync(readFileSync(new URL(p,root))).length<2_000_000,p);
 });

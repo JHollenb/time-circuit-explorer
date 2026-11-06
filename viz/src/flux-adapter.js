@@ -1,6 +1,7 @@
 import {$,assetJSON,mountTemplate,openDialog,renderWalkthrough,renderArchitecture,renderInspector,scrollToSection,Playback} from './components.js';
 import {escapeHTML as esc} from './kernels.js';
 import {address,boundaryRecord,euler,bf16,toyAttention,toyMLP} from './flux-kernels.js';
+import {mountGenerator} from './generator-demo.js';
 
 const fmt=(x,d=6)=>Number.isFinite(x)?Number(x.toPrecision(d)).toString():'unavailable';
 const pct=x=>Number.isFinite(x)?`${(100*x).toFixed(4)}%`:'undefined';
@@ -149,5 +150,7 @@ export async function mount(pack,environment) {
   document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();},{signal});
   const observer=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)){observer.disconnect();safe(loadEuler)();}},{rootMargin:'200px'});observer.observe($('euler'));signal.addEventListener('abort',()=>observer.disconnect(),{once:true});
   metadata();lessons();drawToys();render();$('endpoint-history').value=state.endpointHistory;
-  return{getState:()=>({...state}),dispose(){stop();drawRevision++;endpointRevision++;observer.disconnect();$('sources-button').onclick=null;}};
+  let disposeGenerator=()=>{};
+  mountGenerator(signal).then(dispose=>{if(signal.aborted)dispose?.();else disposeGenerator=dispose;}).catch(error=>{if(!signal.aborted)$('generator-status').textContent=`Generator demonstration could not load: ${error.message}`;});
+  return{getState:()=>({...state}),dispose(){stop();disposeGenerator?.();drawRevision++;endpointRevision++;observer.disconnect();$('sources-button').onclick=null;}};
 }
