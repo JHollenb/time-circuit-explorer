@@ -1,0 +1,8 @@
+{
+  "schema": "tce-direct-reader-prelease-event-v1",
+  "stage": "artifacts/direct-reader-v1",
+  "requestSHA256": "338efbfc058615d83ca6d071eb7c8f5b196edb6c143e0557087ef5479942fa2d",
+  "event": "Local launch validation rejected explicit cpu_threads/est_wall_s without a declared ram_mb, before API submission or job creation.",
+  "scientificExecution": false,
+  "resolution": "Keep CPU1 in the command environment/config and omit reservation overrides, retaining intent-first scheduler sizing. Fresh v2 stage preserves v1 sources and request; no retry of an uncertain job."
+}

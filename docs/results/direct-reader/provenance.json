@@ -1,0 +1,199 @@
+{
+  "completeCollectedInventory": {
+    "bytes": 14702529,
+    "files": {
+      "comparison-fields.json": {
+        "bytes": 868,
+        "sha256": "067d92ccbc9647e777af0ca68fa6eb52040ac805c196ea974c7451f3f6a33a97"
+      },
+      "compile-receipt.json": {
+        "bytes": 1086,
+        "sha256": "165e1b85547f9038512b84903d04c5921656857a092d1c97fcbf3b8d91ea9f24"
+      },
+      "frozen-plan.md": {
+        "bytes": 4275,
+        "sha256": "bdb3003a6bf3c3d89e89a616a6ea4afbb69cb3f6790f50df6bd385c3ee37a357"
+      },
+      "head-seal.json": {
+        "bytes": 2071,
+        "sha256": "70dd9c722ed15a0b19d066d498b9b87d9eaf05cd018c107fafbcfa8708f7d68d"
+      },
+      "inherited-A.png": {
+        "bytes": 164457,
+        "sha256": "4dc3bac1dcef0355ad0fe3e00649aca5568eb85d977d1f7e6ace4e1fbec001f6"
+      },
+      "inherited-B.png": {
+        "bytes": 190857,
+        "sha256": "79869840730d660fc6b6fca461dcded9ab39a0b447e9ac0e98b14a87f073df97"
+      },
+      "inherited-outputs.json": {
+        "bytes": 43792,
+        "sha256": "eb6d29f2d502e8a87959386a8572217e5cee274ad44a047a2a9304105bbd7dcf"
+      },
+      "input-identity.json": {
+        "bytes": 4677,
+        "sha256": "959423fa7635eb0aad17f4e045fffb0c1c3525c646e80a7e21e5e75bd6aead88"
+      },
+      "inputs.json": {
+        "bytes": 47273,
+        "sha256": "1b5edd817bfcdbc113e54956c336734b561f4b96a41d94673f83b9fde3c484e2"
+      },
+      "observations.jsonl": {
+        "bytes": 12768833,
+        "sha256": "be0c81f92c370486e851563ad5053950cf3980ab9dae30ca60b640235f00a28e"
+      },
+      "reader-seal.json": {
+        "bytes": 39959,
+        "sha256": "f98c2cb13f2d74bb970d7d74fd8a9c347662f441d51539d3c40f8cc3cbec4fef"
+      },
+      "report.json": {
+        "bytes": 119988,
+        "sha256": "df40f115a57bfde5f6887d324aeed3f6df76982bcd27c3adc571cae5349e341c"
+      },
+      "request.json": {
+        "bytes": 2390,
+        "sha256": "878fbf97d76a683c2c13ba2ffd7ec24c47e03cc51263b54183e0caa0c46cd8eb"
+      },
+      "targets.json": {
+        "bytes": 1312003,
+        "sha256": "40d9849bd4d79cc8f725424f3961916998b4104adbc4d71201fde25a2bf4a6df"
+      }
+    }
+  },
+  "jobID": "job-b24fec394c5a",
+  "losslessStreams": [
+    {
+      "published": "observations.jsonl.gz",
+      "publishedBytes": 1889477,
+      "publishedSHA256": "773d7980f8fad246221d903e843b0fa702d4c966c88ba75ea858e3a24adf3eea",
+      "source": "observations.jsonl",
+      "sourceBytes": 12768833,
+      "sourceSHA256": "be0c81f92c370486e851563ad5053950cf3980ab9dae30ca60b640235f00a28e"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "119a9559b66fca7bd9acb022a43ddaf59bf51abc3d6b949b01dacfbdb525b0c7",
+      "size_bytes": 179844
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794002270.1691105,
+      "sha256": "119a9559b66fca7bd9acb022a43ddaf59bf51abc3d6b949b01dacfbdb525b0c7",
+      "size_bytes": 179844
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794002270.0678205,
+      "sha256": "119a9559b66fca7bd9acb022a43ddaf59bf51abc3d6b949b01dacfbdb525b0c7",
+      "size_bytes": 179844
+    }
+  },
+  "requestSHA256": "7f5169645313d2cd250ac7b9777b94bfde7a4e7273a08f28aabc7a2a4f2ee973",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-b24fec394c5a",
+      "job_log": {
+        "bytes": 436,
+        "sha256": "5e33f9aab9f40eb3b6abe513d9430a0160d5d0a01142cc7a56e803e538e72d5f"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-b24fec394c5a/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "tokenizers>=0.21",
+        "--with",
+        "jinja2>=3.1",
+        "python",
+        "-u",
+        "direct_reader_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-b24fec394c5a",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-b24fec394c5a/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794002270.1578023
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794002270.1864626
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794002270.1975355
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794002270.242696
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794002279.4583786
+        },
+        {
+          "name": "finished",
+          "ts": 1794002279.477334
+        }
+      ]
+    },
+    "elapsed_s": 9.93,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "119a9559b66fca7bd9acb022a43ddaf59bf51abc3d6b949b01dacfbdb525b0c7",
+      "size_bytes": 179844
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 434.4,
+    "peak_vram_mb": 0.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-direct-reader-public-v1",
+  "scope": "New CPU source extraction/raw reader and complete input-identity proof. Qualified parent encoder/image evidence is inherited explicitly; no new images/dense consumers, arbitrary-prompt certificate or speedup claim."
+}

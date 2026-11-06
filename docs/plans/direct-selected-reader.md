@@ -1,6 +1,6 @@
 # Reuse the current-query scores and remove the anchor machinery
 
-Status: cycle31 Astra-selected next cut; not staged or executed. The [matched tail deletion](../selected-reader-image.md) retains useful images with no tail state, at19.37% signed PNG response error. Its supports, routes, logits, weights and selected read match the frozen rank-one parent exactly. Now remove machinery that is algebraically redundant once only the selected read remains.
+Status: executed in cycle32 as `job-b24fec394c5a`; [result](../direct-reader.md). Raw FP64 values change slightly, but every demanded BF16 head/H0 and lexical control matches. The original selected-only downstream evidence is inherited by complete input identity, with no new dense/image execution. Comparable numerical state falls2.10→1.05MB, and serving excludes original source geometry in favor of8,192B centers. The original pre-execution plan remains in payload `frozen-plan.md`. The [matched tail deletion](../selected-reader-image.md) supplied the useful parent for this algebraic reduction.
 
 Keep exactly the same raw A/B strings, complete lexical source/template/positions/mask, source-centered/scaled keys U, scaled query x, value cache V and causal key order. Preserve the existing full-prefix GEMV and ordered top-four selector:
 

@@ -1,5 +1,7 @@
 # Delete the attention tail and keep the image computation
 
+Cycle32 follow-up: the [direct-score reader](direct-reader.md) removes anchor routing and score caches, matches all consumed BF16 inputs and lexical controls, and inherits these original images by exact input identity. Its comparable numerical state is1.05MB; no new dense consumer or image runs. The original cycle31 result follows.
+
 The selected-only reader preserves the red cube, blue sphere and requested left/right swap on the tested pair. It deletes the rank-one reader's tail moments, envelopes, centroid updates, basis projection and fallback. Signed image-response error rises from **10.72% to 19.37%**, while the allocated numerical reader state falls from **18,980,992 to 2,101,376 bytes**. The tail improves fidelity, but this much smaller read retains useful image behavior. This is a bounded reduction on one known pair and one noise realization; arbitrary-prompt generation with zero neural evaluations remains open.
 
 ![Native, rank-one, selected-only, uniform and zero-reader images, with response errors and compute](results/selected-reader-image-figure/selected-reader-image.png)
