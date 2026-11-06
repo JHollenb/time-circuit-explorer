@@ -30,6 +30,6 @@ time-circuit-explorer/
 └── package.json      # root workspace commands
 ```
 
-See [visualization documentation](viz/README.md) for numerical scope, evidence provenance, and model-pack interfaces.
+See [visualization documentation](viz/README.md) for numerical scope, evidence provenance, and model-pack interfaces. The [FLUX pipeline plan](docs/plans/flux-pipeline.md) specifies the next model pack, its mathematics, source evidence, implementation order, and acceptance checks.
 
 The [hosted explorer](https://time-circuit-explorer.jholl-sub.chatgpt.site) currently requires its owner's ChatGPT sign-in. This Git repository is public; Site access is managed separately.
