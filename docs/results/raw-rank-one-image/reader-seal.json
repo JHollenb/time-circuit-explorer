@@ -1,0 +1,697 @@
+{
+  "cpuSecondsAfterImports": 3.207898758,
+  "exactHeadReferences": 0,
+  "fields": {
+    "A": {
+      "bytes": 4194432,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-7b206109b072/arrays/reader/A-head.npy",
+      "payloadSHA256": "8ee9112698eeae031ad8156567b1b2394df79dd4fb68bc668711f4e1f7d1b178",
+      "sha256": "e787184365b942d4abdcf7a935e1d58f2bd4c3a59b31b0a7426f5c829b4379e5",
+      "shape": [
+        1,
+        512,
+        4096
+      ],
+      "storedDtype": "uint16"
+    },
+    "B": {
+      "bytes": 4194432,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-7b206109b072/arrays/reader/B-head.npy",
+      "payloadSHA256": "67bcba1987e83ce0933875b2a0457977d67267620293b19c45621bda0cf1cb65",
+      "sha256": "f9bb906426fc470f228eff2291f823c4956ef6f7c465f69389c0e3e89d3295ef",
+      "shape": [
+        1,
+        512,
+        4096
+      ],
+      "storedDtype": "uint16"
+    }
+  },
+  "frameworkCalls": 0,
+  "highWaterRSSKiB": 221520,
+  "lexicalRows": [
+    {
+      "activeTokens": 35,
+      "firstArithmeticSeconds": 1.457953488919884,
+      "id": "A",
+      "idsPayloadSHA256": "e086b3f87eb78664350301224af57a3ad780b19b28f79b90ab0447efbdf13932",
+      "maskPayloadSHA256": "f35cc01b2fecd463167e2973f92e484a95c03ebb0a20d4c70d4e4af59bf702fd",
+      "path": "/mnt/hdd8tb/mrun-work/job-7b206109b072/lexical/A.npz",
+      "prompt": "A red cube to the left of a blue sphere on a plain white tabletop. Two separate objects, studio photograph.",
+      "renderedTextSHA256": "4fb6d2e1b0dfd99e2657123da8674b86fe177746965d701766d7b478a191919f",
+      "sha256": "ad946f690895ca4f657c03cf82d44a22390aa94f8d851acb28817788d5311ea4"
+    },
+    {
+      "activeTokens": 35,
+      "firstArithmeticSeconds": 0.07758551510050893,
+      "id": "B",
+      "idsPayloadSHA256": "0ffc1e5ec4ce8d0ed9977d34fed384f9d0e4981721000906308e969febe9cf60",
+      "maskPayloadSHA256": "f35cc01b2fecd463167e2973f92e484a95c03ebb0a20d4c70d4e4af59bf702fd",
+      "path": "/mnt/hdd8tb/mrun-work/job-7b206109b072/lexical/B.npz",
+      "prompt": "A red cube to the right of a blue sphere on a plain white tabletop. Two separate objects, studio photograph.",
+      "renderedTextSHA256": "fa6b3bf87e9467f3d679aa4a12a020f035f58b13801a9b09a73b6b7a2279e0d4",
+      "sha256": "2940f24ee0944396570606c845792ea96a647ce91111c48b9f98bb7a73bba467"
+    }
+  ],
+  "lexicalSealSHA256": "cd798fc4b5047de05f9348ed7695b51b238d3bea459ce40937087ddc9f90c067",
+  "numpyVersion": "2.5.4",
+  "originalDenseProjections": 0,
+  "reader": {
+    "asset": {
+      "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/compiled/bank-assets.npz",
+      "sha256": "25d48680c831e45d6841220a3231be1f79e62ebf1303556877613424bd0adafa"
+    },
+    "basis": {
+      "path": "/mnt/hdd8tb/mrun-work/job-49e50c9cb996/compiled/rank-one-basis.npz",
+      "sha256": "e891ea238bbc53ba9130d25c33c85c9b6fcc9596ce955a9b41751af5a97a5386"
+    },
+    "basisPayloadBytes": 16384,
+    "counts": [
+      {
+        "groups": [
+          {
+            "admissionAnchorMACs": 1146880,
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 263168,
+            "downdateSelectedOccurrences": 8128,
+            "envelopeCellsUpdated": 4614400,
+            "envelopeContractionMACs": 2359152,
+            "envelopePayloadBytes": 1054720,
+            "fallbackCalls": 0,
+            "fallbackCoreMACs": 0,
+            "fallbackKeyVisits": 0,
+            "kvGroup": 0,
+            "momentContractionMACs": 786384,
+            "momentPayloadBytes": 1054720,
+            "queries": 2048,
+            "seconds": 0.3474819762632251,
+            "selectedCoordinateProducts": 2091008,
+            "selectorScoreProducts": 8870400,
+            "stateCellsUpdated": 4614400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 143920,
+            "zProjectionProducts": 4480
+          },
+          {
+            "admissionAnchorMACs": 1146880,
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 263168,
+            "downdateSelectedOccurrences": 8128,
+            "envelopeCellsUpdated": 4614400,
+            "envelopeContractionMACs": 2359152,
+            "envelopePayloadBytes": 1054720,
+            "fallbackCalls": 0,
+            "fallbackCoreMACs": 0,
+            "fallbackKeyVisits": 0,
+            "kvGroup": 1,
+            "momentContractionMACs": 786384,
+            "momentPayloadBytes": 1054720,
+            "queries": 2048,
+            "seconds": 0.1895863888785243,
+            "selectedCoordinateProducts": 2091008,
+            "selectorScoreProducts": 8870400,
+            "stateCellsUpdated": 4614400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 143920,
+            "zProjectionProducts": 4480
+          },
+          {
+            "admissionAnchorMACs": 1146880,
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 263168,
+            "downdateSelectedOccurrences": 8128,
+            "envelopeCellsUpdated": 4614400,
+            "envelopeContractionMACs": 2359152,
+            "envelopePayloadBytes": 1054720,
+            "fallbackCalls": 0,
+            "fallbackCoreMACs": 0,
+            "fallbackKeyVisits": 0,
+            "kvGroup": 2,
+            "momentContractionMACs": 786384,
+            "momentPayloadBytes": 1054720,
+            "queries": 2048,
+            "seconds": 0.1880413838662207,
+            "selectedCoordinateProducts": 2091008,
+            "selectorScoreProducts": 8870400,
+            "stateCellsUpdated": 4614400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 143920,
+            "zProjectionProducts": 4480
+          },
+          {
+            "admissionAnchorMACs": 1146880,
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 263168,
+            "downdateSelectedOccurrences": 8128,
+            "envelopeCellsUpdated": 4614400,
+            "envelopeContractionMACs": 2359152,
+            "envelopePayloadBytes": 1054720,
+            "fallbackCalls": 0,
+            "fallbackCoreMACs": 0,
+            "fallbackKeyVisits": 0,
+            "kvGroup": 3,
+            "momentContractionMACs": 786384,
+            "momentPayloadBytes": 1054720,
+            "queries": 2048,
+            "seconds": 0.1694708396680653,
+            "selectedCoordinateProducts": 2091008,
+            "selectorScoreProducts": 8870400,
+            "stateCellsUpdated": 4614400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 143920,
+            "zProjectionProducts": 4480
+          },
+          {
+            "admissionAnchorMACs": 1146880,
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 263168,
+            "downdateSelectedOccurrences": 8128,
+            "envelopeCellsUpdated": 4614400,
+            "envelopeContractionMACs": 2359152,
+            "envelopePayloadBytes": 1054720,
+            "fallbackCalls": 0,
+            "fallbackCoreMACs": 0,
+            "fallbackKeyVisits": 0,
+            "kvGroup": 4,
+            "momentContractionMACs": 786384,
+            "momentPayloadBytes": 1054720,
+            "queries": 2048,
+            "seconds": 0.16958241816610098,
+            "selectedCoordinateProducts": 2091008,
+            "selectorScoreProducts": 8870400,
+            "stateCellsUpdated": 4614400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 143920,
+            "zProjectionProducts": 4480
+          },
+          {
+            "admissionAnchorMACs": 1146880,
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 263168,
+            "downdateSelectedOccurrences": 8128,
+            "envelopeCellsUpdated": 4614400,
+            "envelopeContractionMACs": 2359152,
+            "envelopePayloadBytes": 1054720,
+            "fallbackCalls": 0,
+            "fallbackCoreMACs": 0,
+            "fallbackKeyVisits": 0,
+            "kvGroup": 5,
+            "momentContractionMACs": 786384,
+            "momentPayloadBytes": 1054720,
+            "queries": 2048,
+            "seconds": 0.16770750796422362,
+            "selectedCoordinateProducts": 2091008,
+            "selectorScoreProducts": 8870400,
+            "stateCellsUpdated": 4614400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 143920,
+            "zProjectionProducts": 4480
+          },
+          {
+            "admissionAnchorMACs": 1146880,
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 263168,
+            "downdateSelectedOccurrences": 8128,
+            "envelopeCellsUpdated": 4614400,
+            "envelopeContractionMACs": 2359152,
+            "envelopePayloadBytes": 1054720,
+            "fallbackCalls": 0,
+            "fallbackCoreMACs": 0,
+            "fallbackKeyVisits": 0,
+            "kvGroup": 6,
+            "momentContractionMACs": 786384,
+            "momentPayloadBytes": 1054720,
+            "queries": 2048,
+            "seconds": 0.1686741430312395,
+            "selectedCoordinateProducts": 2091008,
+            "selectorScoreProducts": 8870400,
+            "stateCellsUpdated": 4614400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 143920,
+            "zProjectionProducts": 4480
+          },
+          {
+            "admissionAnchorMACs": 1146880,
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 263168,
+            "downdateSelectedOccurrences": 8128,
+            "envelopeCellsUpdated": 4614400,
+            "envelopeContractionMACs": 2359152,
+            "envelopePayloadBytes": 1054720,
+            "fallbackCalls": 0,
+            "fallbackCoreMACs": 0,
+            "fallbackKeyVisits": 0,
+            "kvGroup": 7,
+            "momentContractionMACs": 786384,
+            "momentPayloadBytes": 1054720,
+            "queries": 2048,
+            "seconds": 0.16941262129694223,
+            "selectedCoordinateProducts": 2091008,
+            "selectorScoreProducts": 8870400,
+            "stateCellsUpdated": 4614400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 143920,
+            "zProjectionProducts": 4480
+          }
+        ],
+        "id": "A",
+        "withSerializationSeconds": 1.6124286293052137
+      },
+      {
+        "groups": [
+          {
+            "admissionAnchorMACs": 1146880,
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 263168,
+            "downdateSelectedOccurrences": 8128,
+            "envelopeCellsUpdated": 4614400,
+            "envelopeContractionMACs": 2359152,
+            "envelopePayloadBytes": 1054720,
+            "fallbackCalls": 0,
+            "fallbackCoreMACs": 0,
+            "fallbackKeyVisits": 0,
+            "kvGroup": 0,
+            "momentContractionMACs": 786384,
+            "momentPayloadBytes": 1054720,
+            "queries": 2048,
+            "seconds": 0.16834257310256362,
+            "selectedCoordinateProducts": 2091008,
+            "selectorScoreProducts": 8870400,
+            "stateCellsUpdated": 4614400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 143920,
+            "zProjectionProducts": 4480
+          },
+          {
+            "admissionAnchorMACs": 1146880,
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 263168,
+            "downdateSelectedOccurrences": 8128,
+            "envelopeCellsUpdated": 4614400,
+            "envelopeContractionMACs": 2359152,
+            "envelopePayloadBytes": 1054720,
+            "fallbackCalls": 0,
+            "fallbackCoreMACs": 0,
+            "fallbackKeyVisits": 0,
+            "kvGroup": 1,
+            "momentContractionMACs": 786384,
+            "momentPayloadBytes": 1054720,
+            "queries": 2048,
+            "seconds": 0.167468321043998,
+            "selectedCoordinateProducts": 2091008,
+            "selectorScoreProducts": 8870400,
+            "stateCellsUpdated": 4614400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 143920,
+            "zProjectionProducts": 4480
+          },
+          {
+            "admissionAnchorMACs": 1146880,
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 263168,
+            "downdateSelectedOccurrences": 8128,
+            "envelopeCellsUpdated": 4614400,
+            "envelopeContractionMACs": 2359152,
+            "envelopePayloadBytes": 1054720,
+            "fallbackCalls": 0,
+            "fallbackCoreMACs": 0,
+            "fallbackKeyVisits": 0,
+            "kvGroup": 2,
+            "momentContractionMACs": 786384,
+            "momentPayloadBytes": 1054720,
+            "queries": 2048,
+            "seconds": 0.17054736986756325,
+            "selectedCoordinateProducts": 2091008,
+            "selectorScoreProducts": 8870400,
+            "stateCellsUpdated": 4614400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 143920,
+            "zProjectionProducts": 4480
+          },
+          {
+            "admissionAnchorMACs": 1146880,
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 263168,
+            "downdateSelectedOccurrences": 8128,
+            "envelopeCellsUpdated": 4614400,
+            "envelopeContractionMACs": 2359152,
+            "envelopePayloadBytes": 1054720,
+            "fallbackCalls": 0,
+            "fallbackCoreMACs": 0,
+            "fallbackKeyVisits": 0,
+            "kvGroup": 3,
+            "momentContractionMACs": 786384,
+            "momentPayloadBytes": 1054720,
+            "queries": 2048,
+            "seconds": 0.16832132264971733,
+            "selectedCoordinateProducts": 2091008,
+            "selectorScoreProducts": 8870400,
+            "stateCellsUpdated": 4614400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 143920,
+            "zProjectionProducts": 4480
+          },
+          {
+            "admissionAnchorMACs": 1146880,
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 263168,
+            "downdateSelectedOccurrences": 8128,
+            "envelopeCellsUpdated": 4614400,
+            "envelopeContractionMACs": 2359152,
+            "envelopePayloadBytes": 1054720,
+            "fallbackCalls": 0,
+            "fallbackCoreMACs": 0,
+            "fallbackKeyVisits": 0,
+            "kvGroup": 4,
+            "momentContractionMACs": 786384,
+            "momentPayloadBytes": 1054720,
+            "queries": 2048,
+            "seconds": 0.16873037721961737,
+            "selectedCoordinateProducts": 2091008,
+            "selectorScoreProducts": 8870400,
+            "stateCellsUpdated": 4614400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 143920,
+            "zProjectionProducts": 4480
+          },
+          {
+            "admissionAnchorMACs": 1146880,
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 263168,
+            "downdateSelectedOccurrences": 8128,
+            "envelopeCellsUpdated": 4614400,
+            "envelopeContractionMACs": 2359152,
+            "envelopePayloadBytes": 1054720,
+            "fallbackCalls": 0,
+            "fallbackCoreMACs": 0,
+            "fallbackKeyVisits": 0,
+            "kvGroup": 5,
+            "momentContractionMACs": 786384,
+            "momentPayloadBytes": 1054720,
+            "queries": 2048,
+            "seconds": 0.169266146607697,
+            "selectedCoordinateProducts": 2091008,
+            "selectorScoreProducts": 8870400,
+            "stateCellsUpdated": 4614400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 143920,
+            "zProjectionProducts": 4480
+          },
+          {
+            "admissionAnchorMACs": 1146880,
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 263168,
+            "downdateSelectedOccurrences": 8128,
+            "envelopeCellsUpdated": 4614400,
+            "envelopeContractionMACs": 2359152,
+            "envelopePayloadBytes": 1054720,
+            "fallbackCalls": 0,
+            "fallbackCoreMACs": 0,
+            "fallbackKeyVisits": 0,
+            "kvGroup": 6,
+            "momentContractionMACs": 786384,
+            "momentPayloadBytes": 1054720,
+            "queries": 2048,
+            "seconds": 0.16962600918486714,
+            "selectedCoordinateProducts": 2091008,
+            "selectorScoreProducts": 8870400,
+            "stateCellsUpdated": 4614400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 143920,
+            "zProjectionProducts": 4480
+          },
+          {
+            "admissionAnchorMACs": 1146880,
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 263168,
+            "downdateSelectedOccurrences": 8128,
+            "envelopeCellsUpdated": 4614400,
+            "envelopeContractionMACs": 2359152,
+            "envelopePayloadBytes": 1054720,
+            "fallbackCalls": 0,
+            "fallbackCoreMACs": 0,
+            "fallbackKeyVisits": 0,
+            "kvGroup": 7,
+            "momentContractionMACs": 786384,
+            "momentPayloadBytes": 1054720,
+            "queries": 2048,
+            "seconds": 0.16995980264618993,
+            "selectedCoordinateProducts": 2091008,
+            "selectorScoreProducts": 8870400,
+            "stateCellsUpdated": 4614400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 143920,
+            "zProjectionProducts": 4480
+          }
+        ],
+        "id": "B",
+        "withSerializationSeconds": 1.531564321834594
+      }
+    ],
+    "cpuSecondsAfterImports": 2.87870289,
+    "exactHeadReferences": 0,
+    "frameworkCalls": 0,
+    "highWaterRSSKiB": 221520,
+    "originalDenseProjections": 0,
+    "ports": [
+      {
+        "activeTokens": 35,
+        "firstArithmeticSeconds": 1.457953488919884,
+        "id": "A",
+        "idsPayloadSHA256": "e086b3f87eb78664350301224af57a3ad780b19b28f79b90ab0447efbdf13932",
+        "maskPayloadSHA256": "f35cc01b2fecd463167e2973f92e484a95c03ebb0a20d4c70d4e4af59bf702fd",
+        "path": "/mnt/hdd8tb/mrun-work/job-7b206109b072/lexical/A.npz",
+        "prompt": "A red cube to the left of a blue sphere on a plain white tabletop. Two separate objects, studio photograph.",
+        "renderedTextSHA256": "4fb6d2e1b0dfd99e2657123da8674b86fe177746965d701766d7b478a191919f",
+        "sha256": "ad946f690895ca4f657c03cf82d44a22390aa94f8d851acb28817788d5311ea4"
+      },
+      {
+        "activeTokens": 35,
+        "firstArithmeticSeconds": 0.07758551510050893,
+        "id": "B",
+        "idsPayloadSHA256": "0ffc1e5ec4ce8d0ed9977d34fed384f9d0e4981721000906308e969febe9cf60",
+        "maskPayloadSHA256": "f35cc01b2fecd463167e2973f92e484a95c03ebb0a20d4c70d4e4af59bf702fd",
+        "path": "/mnt/hdd8tb/mrun-work/job-7b206109b072/lexical/B.npz",
+        "prompt": "A red cube to the right of a blue sphere on a plain white tabletop. Two separate objects, studio photograph.",
+        "renderedTextSHA256": "fa6b3bf87e9467f3d679aa4a12a020f035f58b13801a9b09a73b6b7a2279e0d4",
+        "sha256": "2940f24ee0944396570606c845792ea96a647ce91111c48b9f98bb7a73bba467"
+      }
+    ],
+    "rows": [
+      {
+        "id": "A",
+        "method": "stream",
+        "path": "/mnt/hdd8tb/mrun-work/job-7b206109b072/reader/A-stream-rank1.npz",
+        "sha256": "490089b37db30b66afc9b2a1ad53d975e296f3666e5ec071d38c8ced0c8b064b"
+      },
+      {
+        "id": "B",
+        "method": "stream",
+        "path": "/mnt/hdd8tb/mrun-work/job-7b206109b072/reader/B-stream-rank1.npz",
+        "sha256": "5e56d5a6967b345464193be3fcd0b9052153739f12aea0029dd3fde0a1190d3f"
+      }
+    ],
+    "runtimeGeometryBytes": 3153920,
+    "schema": "tce-rank-one-tail-seal-v1",
+    "scope": "Own causal mixed-moment state and full current-query KV selection. Explicit rank1 direct-tail fallbacks only on normalization safety envelope; no reference output access. Full centroid retained. Not compact encoder/zero-neural image.",
+    "specSHA256": "a30b9131fa51df18abdefa97138a48f2df32bc93db0effb0ac0ca506af141d6f",
+    "states": [
+      {
+        "id": "A",
+        "kvGroup": 0,
+        "path": "/mnt/hdd8tb/mrun-work/job-7b206109b072/reader/A-group0-state.npz",
+        "sha256": "3c53732152991ddc851654c984cd501ba9053d1e7e9c6513bab1f96762a4cc61"
+      },
+      {
+        "id": "A",
+        "kvGroup": 1,
+        "path": "/mnt/hdd8tb/mrun-work/job-7b206109b072/reader/A-group1-state.npz",
+        "sha256": "02511a40f00d7b4a90ff3be6a3c60974f1fdf8769950ae73cc36ba81dc353b25"
+      },
+      {
+        "id": "A",
+        "kvGroup": 2,
+        "path": "/mnt/hdd8tb/mrun-work/job-7b206109b072/reader/A-group2-state.npz",
+        "sha256": "e491ad8e97cefb59401df51ab131df6559db2a81e933e6b79907151b4618b622"
+      },
+      {
+        "id": "A",
+        "kvGroup": 3,
+        "path": "/mnt/hdd8tb/mrun-work/job-7b206109b072/reader/A-group3-state.npz",
+        "sha256": "233b19c350744010a235a47b6b65d6f13fb62134f0394065d8cc2a4abce0ed3a"
+      },
+      {
+        "id": "A",
+        "kvGroup": 4,
+        "path": "/mnt/hdd8tb/mrun-work/job-7b206109b072/reader/A-group4-state.npz",
+        "sha256": "970a0995ac3a8f61b7a6c780ae5ae3da2ea9e3d9f9a3458ac7f3701862fb6978"
+      },
+      {
+        "id": "A",
+        "kvGroup": 5,
+        "path": "/mnt/hdd8tb/mrun-work/job-7b206109b072/reader/A-group5-state.npz",
+        "sha256": "b175bec12848a787b473e0f79dda45177d1815f32d1d83a23c93100c5e5ee4b0"
+      },
+      {
+        "id": "A",
+        "kvGroup": 6,
+        "path": "/mnt/hdd8tb/mrun-work/job-7b206109b072/reader/A-group6-state.npz",
+        "sha256": "dd3a837b8ce74e0f927eac2b41e79459829b43517a695d80ba1021654dfd385e"
+      },
+      {
+        "id": "A",
+        "kvGroup": 7,
+        "path": "/mnt/hdd8tb/mrun-work/job-7b206109b072/reader/A-group7-state.npz",
+        "sha256": "99faeee14c12d2a537aafeae3ac6d80faac5534bd9ffe0003417bb703530b721"
+      },
+      {
+        "id": "B",
+        "kvGroup": 0,
+        "path": "/mnt/hdd8tb/mrun-work/job-7b206109b072/reader/B-group0-state.npz",
+        "sha256": "af1cebe72664d95aebc94d85541046d7d931a8f993808d41b7ea07a46ba4be6e"
+      },
+      {
+        "id": "B",
+        "kvGroup": 1,
+        "path": "/mnt/hdd8tb/mrun-work/job-7b206109b072/reader/B-group1-state.npz",
+        "sha256": "22966047e19641bf44841bd16614150e01874904bd5ff6a6001da8d36f5f6cd5"
+      },
+      {
+        "id": "B",
+        "kvGroup": 2,
+        "path": "/mnt/hdd8tb/mrun-work/job-7b206109b072/reader/B-group2-state.npz",
+        "sha256": "5f36a4103f440add0dc9cfa75f6b87f7e276c92019efc406b9a87649df5591c1"
+      },
+      {
+        "id": "B",
+        "kvGroup": 3,
+        "path": "/mnt/hdd8tb/mrun-work/job-7b206109b072/reader/B-group3-state.npz",
+        "sha256": "4ea174a7649acafe865bb2a53cb079f3b15fe264b7d1dd9f9f66ef8955c0e698"
+      },
+      {
+        "id": "B",
+        "kvGroup": 4,
+        "path": "/mnt/hdd8tb/mrun-work/job-7b206109b072/reader/B-group4-state.npz",
+        "sha256": "c7130bce4f177ef37d4fde00688278f4d140d4047a408277909c50c2512586ac"
+      },
+      {
+        "id": "B",
+        "kvGroup": 5,
+        "path": "/mnt/hdd8tb/mrun-work/job-7b206109b072/reader/B-group5-state.npz",
+        "sha256": "c971cd029ec4382c9911b6c659bd378b24516fa8b9f4f8580b1f93bd737958cb"
+      },
+      {
+        "id": "B",
+        "kvGroup": 6,
+        "path": "/mnt/hdd8tb/mrun-work/job-7b206109b072/reader/B-group6-state.npz",
+        "sha256": "0a6e5803eeca56b924a65794663b3b06194feae9dc70026c67e1bea4a51306b3"
+      },
+      {
+        "id": "B",
+        "kvGroup": 7,
+        "path": "/mnt/hdd8tb/mrun-work/job-7b206109b072/reader/B-group7-state.npz",
+        "sha256": "883f09ef25ae9b01f6bbd76284e6025ab644085e5812662e7bc83f244d155f73"
+      }
+    ],
+    "wallSecondsAfterImports": 3.2595400670543313
+  },
+  "readerPredictionSealSHA256": "3cddf4fae313768cfc7b5cf400a265bed357df3d644a630e7ca4ea85445f26e8",
+  "readerWallSeconds": 3.2600467330776155,
+  "requestSHA256": "a3bec71524401bbce039fc2a7dff552a2284dbdddfae3a3263f7c5a1d7569761",
+  "schema": "tce-raw-rank-one-reader-seal-v1",
+  "scope": "Raw strings through complete lexical table and frozen32-head reader; full currentKV/moment/envelope/index and same-law fallbacks paid.",
+  "sourceAtomFiles": [
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/manifest.json",
+      "sha256": "9a155bd1410c52909997bacaf1d1aac2f9e90be86dc269d5e7edfab2b5285432"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/tokenizer.json",
+      "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/chat_template.jinja",
+      "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/coverage.npy",
+      "sha256": "e6ae5faf47930cb70a9fa89b594ff6b1ad57d39e4e0d51794fe36c73d9f4f93f"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/row-hashes.npy",
+      "sha256": "25f5a892cc19bc7895f45312e03a5c7e323ff3e9e2a966d20ebdf1860b18ee88"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/rope.npy",
+      "sha256": "bb7217ccf0922b61c986cc94801fd26962c0bb2e848b6ebe47b7cf3d9e0dfc9a"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0000.npy",
+      "sha256": "50d081fe3476649e8d5da584b0c94244bd70493bc6b1e4d71650dc54ee63f333"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0001.npy",
+      "sha256": "c45ce7fb64ac4aee1aa6ba4e20f56fab8a7c4904a61cf19f999d29eef216a143"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0002.npy",
+      "sha256": "fb8651de491441a2d1246c836f44cbbc0008384fcea9bfce16cff58078f1eede"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0004.npy",
+      "sha256": "20d2c3f37d0b2be79f2f07f638ff67748ab8bac75be277efd11abe97c158b826"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0008.npy",
+      "sha256": "98e0a60741fc69d8000527d5ce8d930862397c56efaa70ada4598dd305867230"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0012.npy",
+      "sha256": "0661ed2d3c9a3902178f9f17ad062f9450ed23dd1d2eb56439921479ff04eba5"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0016.npy",
+      "sha256": "24cf7ce5f7d44dcb3c15034101f563a674c2270c548d520635e4858acd88042f"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0017.npy",
+      "sha256": "7fb8433f7844965525d98293cc0f46b43fd48edfe539f3d9d8e37e0cf109a189"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0020.npy",
+      "sha256": "a9299d7f912323c0eeacbeb55d066d169eead4ca8217010630577958d3fbc06c"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0027.npy",
+      "sha256": "4622e5a1bbc2afd9e12ca7a91c3ff2746c8eef0a6faeb3ab20f9ee34bc0b6052"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0028.npy",
+      "sha256": "e0d5f1e2b71298cf8e0faccc243affb655db015ee08ee4eb317129ef70d933d5"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0046.npy",
+      "sha256": "ec39a216671ac103c42851e6a4840e7a8a053f25f2ad51cca25320b01387b47d"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0049.npy",
+      "sha256": "00689403de1c43fdff9f2020a49bb8d278a0476bdbc7c41efa4c7f416cb5a79e"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0150.npy",
+      "sha256": "ad0f932e9d40878f15b2a5305be923cfd5f616098e8631f7a0319677cfea93e2"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0172.npy",
+      "sha256": "c292e5e19c8f3e49d429c2009f7a81a5a9230a5d7c6cb4fd29f85ed1491838b5"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0296.npy",
+      "sha256": "6042c71b4f09814bd7a6bb9502f9b3e3c61f961a24b9f6dbc918fe0ff1af33ad"
+    }
+  ],
+  "sourceBasisRecompiled": false,
+  "workerSecondsAfterImports": 5.620609201025218
+}

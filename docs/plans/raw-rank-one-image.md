@@ -1,6 +1,6 @@
 # Follow the frozen dynamic reader from raw prompts to pixels
 
-Status: cycle27 Astra-selected next cut; not staged or executed. The [clock result](../compiled-flux-clock.md) removes a finite parameter subset but only0.0036% of nominal transformer linear work. Return to the dynamic-state question with one image-consumer test of the [already-frozen rank-one reader](../rank-one-tail-state.md), without retuning it.
+Status: executed in cycle28 as `job-7b206109b072`; [result](../raw-rank-one-image.md). Both images preserve the spatial swap, with10.72% signed PNG response error despite125.43% conditioning response error. Reader necessity remains untested. The original pre-execution text below is retained in the executed payload as `frozen-plan.md`. The [clock result](../compiled-flux-clock.md) removes a finite parameter subset but only0.0036% of nominal transformer linear work. Return to the dynamic-state question with one image-consumer test of the [already-frozen rank-one reader](../rank-one-tail-state.md), without retuning it.
 
 Reuse the current A/B strings: red cube left/right of a blue sphere on a plain white tabletop, with the exact existing user template/tokenizer/positions/512-row mask. These targets were previously observed; this is retrospective integration on new inputs to the frozen reader, not prospective image-quality certification. Reuse seed314159 noise and already sealed full references from `job-394733a01129`; run only two new candidate images.
 
