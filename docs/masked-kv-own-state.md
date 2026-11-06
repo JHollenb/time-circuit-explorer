@@ -67,6 +67,6 @@ The [plan](plans/masked-kv-own-state.md) specifies the source store, masks, refe
 
 ## The next single contrast
 
-Astra reviewed the source, controls and report. The [next frozen plan](plans/kv-accumulation-profile.md) disables BF16 reduced-precision reduction only for K/V projections. It compares full and compact formation under that same alternative, retains raw K before normalization and raw V, and measures both against independent FP64 active-row diagnostics and the unchanged original-profile target. The remaining consumer returns to the original flags.
+Astra reviewed the source, controls and report. The [fixed plan](plans/kv-accumulation-profile.md) disables BF16 reduced-precision reduction only for K/V projections. Its [completed follow-up](kv-accumulation-profile.md) reduces H2 endpoint error to 0.1825%, preserving the same nominal saving. Full alternative formation is exact in this specimen; compact geometry still differs, and twelve padding rows worsen. The remaining consumer returns to the original flags.
 
 This can test whether a shared accumulation policy retains the row-elimination saving with less geometry-dependent drift. It guarantees neither identical reduction order nor original-profile parity. If it adds little, the next question is the actual conditioning/image consequence, rather than an open-ended kernel search. Substantial learned computation remains; arbitrary-prompt zero-neural images are still the objective.

@@ -1,0 +1,379 @@
+{
+  "calls": [
+    {
+      "actualBF16ReducedPrecisionReduction": true,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "alternative-full",
+      "nominalMACs": 5368709120,
+      "parameter": "model.layers.1.self_attn.q_proj.weight",
+      "policy": "alternative",
+      "primitive": "linear",
+      "restoredBF16ReducedPrecisionReduction": true,
+      "rows": 512,
+      "weightShape": [
+        4096,
+        2560
+      ]
+    },
+    {
+      "actualBF16ReducedPrecisionReduction": false,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "alternative-full",
+      "nominalMACs": 1342177280,
+      "parameter": "model.layers.1.self_attn.k_proj.weight",
+      "policy": "alternative",
+      "primitive": "linear",
+      "restoredBF16ReducedPrecisionReduction": true,
+      "rows": 512,
+      "weightShape": [
+        1024,
+        2560
+      ]
+    },
+    {
+      "actualBF16ReducedPrecisionReduction": false,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "alternative-full",
+      "nominalMACs": 1342177280,
+      "parameter": "model.layers.1.self_attn.v_proj.weight",
+      "policy": "alternative",
+      "primitive": "linear",
+      "restoredBF16ReducedPrecisionReduction": true,
+      "rows": 512,
+      "weightShape": [
+        1024,
+        2560
+      ]
+    },
+    {
+      "actualBF16ReducedPrecisionReduction": true,
+      "lane": "alternative-full",
+      "policy": "alternative",
+      "primitive": "SDPA",
+      "shapes": [
+        [
+          1,
+          32,
+          512,
+          128
+        ],
+        [
+          1,
+          32,
+          512,
+          128
+        ],
+        [
+          1,
+          32,
+          512,
+          128
+        ]
+      ]
+    },
+    {
+      "actualBF16ReducedPrecisionReduction": true,
+      "inputShape": [
+        1,
+        512,
+        4096
+      ],
+      "lane": "alternative-full",
+      "nominalMACs": 5368709120,
+      "parameter": "model.layers.1.self_attn.o_proj.weight",
+      "policy": "alternative",
+      "primitive": "linear",
+      "restoredBF16ReducedPrecisionReduction": true,
+      "rows": 512,
+      "weightShape": [
+        2560,
+        4096
+      ]
+    },
+    {
+      "actualBF16ReducedPrecisionReduction": true,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "alternative-full",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.gate_proj.weight",
+      "policy": "alternative",
+      "primitive": "linear",
+      "restoredBF16ReducedPrecisionReduction": true,
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "actualBF16ReducedPrecisionReduction": true,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "alternative-full",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.up_proj.weight",
+      "policy": "alternative",
+      "primitive": "linear",
+      "restoredBF16ReducedPrecisionReduction": true,
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "actualBF16ReducedPrecisionReduction": true,
+      "inputShape": [
+        1,
+        512,
+        9728
+      ],
+      "lane": "alternative-full",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.down_proj.weight",
+      "policy": "alternative",
+      "primitive": "linear",
+      "restoredBF16ReducedPrecisionReduction": true,
+      "rows": 512,
+      "weightShape": [
+        2560,
+        9728
+      ]
+    },
+    {
+      "actualBF16ReducedPrecisionReduction": true,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "alternative-compact",
+      "nominalMACs": 5368709120,
+      "parameter": "model.layers.1.self_attn.q_proj.weight",
+      "policy": "alternative",
+      "primitive": "linear",
+      "restoredBF16ReducedPrecisionReduction": true,
+      "rows": 512,
+      "weightShape": [
+        4096,
+        2560
+      ]
+    },
+    {
+      "actualBF16ReducedPrecisionReduction": false,
+      "inputShape": [
+        1,
+        28,
+        2560
+      ],
+      "lane": "alternative-compact",
+      "nominalMACs": 73400320,
+      "parameter": "model.layers.1.self_attn.k_proj.weight",
+      "policy": "alternative",
+      "primitive": "linear",
+      "restoredBF16ReducedPrecisionReduction": true,
+      "rows": 28,
+      "weightShape": [
+        1024,
+        2560
+      ]
+    },
+    {
+      "actualBF16ReducedPrecisionReduction": false,
+      "inputShape": [
+        1,
+        28,
+        2560
+      ],
+      "lane": "alternative-compact",
+      "nominalMACs": 73400320,
+      "parameter": "model.layers.1.self_attn.v_proj.weight",
+      "policy": "alternative",
+      "primitive": "linear",
+      "restoredBF16ReducedPrecisionReduction": true,
+      "rows": 28,
+      "weightShape": [
+        1024,
+        2560
+      ]
+    },
+    {
+      "actualBF16ReducedPrecisionReduction": true,
+      "lane": "alternative-compact",
+      "policy": "alternative",
+      "primitive": "SDPA",
+      "shapes": [
+        [
+          1,
+          32,
+          512,
+          128
+        ],
+        [
+          1,
+          32,
+          512,
+          128
+        ],
+        [
+          1,
+          32,
+          512,
+          128
+        ]
+      ]
+    },
+    {
+      "actualBF16ReducedPrecisionReduction": true,
+      "inputShape": [
+        1,
+        512,
+        4096
+      ],
+      "lane": "alternative-compact",
+      "nominalMACs": 5368709120,
+      "parameter": "model.layers.1.self_attn.o_proj.weight",
+      "policy": "alternative",
+      "primitive": "linear",
+      "restoredBF16ReducedPrecisionReduction": true,
+      "rows": 512,
+      "weightShape": [
+        2560,
+        4096
+      ]
+    },
+    {
+      "actualBF16ReducedPrecisionReduction": true,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "alternative-compact",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.gate_proj.weight",
+      "policy": "alternative",
+      "primitive": "linear",
+      "restoredBF16ReducedPrecisionReduction": true,
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "actualBF16ReducedPrecisionReduction": true,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "alternative-compact",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.up_proj.weight",
+      "policy": "alternative",
+      "primitive": "linear",
+      "restoredBF16ReducedPrecisionReduction": true,
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "actualBF16ReducedPrecisionReduction": true,
+      "inputShape": [
+        1,
+        512,
+        9728
+      ],
+      "lane": "alternative-compact",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.down_proj.weight",
+      "policy": "alternative",
+      "primitive": "linear",
+      "restoredBF16ReducedPrecisionReduction": true,
+      "rows": 512,
+      "weightShape": [
+        2560,
+        9728
+      ]
+    },
+    {
+      "actualBF16ReducedPrecisionReduction": true,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "original-raw",
+      "nominalMACs": 1342177280,
+      "parameter": "model.layers.1.self_attn.k_proj.weight",
+      "policy": "original",
+      "primitive": "linear",
+      "restoredBF16ReducedPrecisionReduction": true,
+      "rows": 512,
+      "weightShape": [
+        1024,
+        2560
+      ]
+    },
+    {
+      "actualBF16ReducedPrecisionReduction": true,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "original-raw",
+      "nominalMACs": 1342177280,
+      "parameter": "model.layers.1.self_attn.v_proj.weight",
+      "policy": "original",
+      "primitive": "linear",
+      "restoredBF16ReducedPrecisionReduction": true,
+      "rows": 512,
+      "weightShape": [
+        1024,
+        2560
+      ]
+    },
+    {
+      "lane": "fp64-diagnostic",
+      "nominalMACs": 73400320,
+      "policy": "cpu-fp64",
+      "port": "k",
+      "primitive": "matmul",
+      "rows": 28,
+      "wallSeconds": 0.17042802227661014
+    },
+    {
+      "lane": "fp64-diagnostic",
+      "nominalMACs": 73400320,
+      "policy": "cpu-fp64",
+      "port": "v",
+      "primitive": "matmul",
+      "rows": 28,
+      "wallSeconds": 0.003470742143690586
+    }
+  ],
+  "normalizedActiveInputExact": true
+}

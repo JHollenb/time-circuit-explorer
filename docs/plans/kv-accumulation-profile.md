@@ -1,6 +1,6 @@
 # One fixed accumulation-policy contrast
 
-Cycle 22 measured a first-prompt row-elimination saving and a finite arithmetic defect. H1 was bit-exact; zero-masked/full block-1 outputs agreed exactly; compact/full active V already differed at the shortened projection. The [result](../masked-kv-own-state.md) retains the complete miss and actual work. This plan is not executed yet.
+Cycle 22 measured a first-prompt row-elimination saving and a finite arithmetic defect. H1 was bit-exact; zero-masked/full block-1 outputs agreed exactly; compact/full active V already differed at the shortened projection. The [result](../masked-kv-own-state.md) retains the complete miss and actual work. This frozen plan was executed in cycle 23 as `job-332caa7e03a6`; the [measured result](../kv-accumulation-profile.md) preserves both the improvement and remaining discrepancy. The prospective text below is retained.
 
 Reuse the authenticated candidate H1 from `job-5f515567890f`, short raw prompt with 28 attended positions. Freeze one alternative: disable `torch.backends.cuda.matmul.allow_bf16_reduced_precision_reduction` only inside K/V projection calls, restoring the original flag before Q or any downstream operation. Form both full-512 and compact-28 K/V under that same alternative. Keep raw K before head normalization and raw V, then use the unchanged original normalization/RoPE/SDPA/output/MLP consumer to emit complete H2. No refreshed native H1 or target K/V enters predictions.
 

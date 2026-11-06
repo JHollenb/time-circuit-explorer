@@ -1,0 +1,56 @@
+{
+  "schema": "tce-kv-accumulation-derived-accounting-v1",
+  "sourceReportSHA256": "f54330bda232f57f0e5cf4ec41d7d4b1c3bc74c3035347b0c0fc40280c9c2144",
+  "sourceRowsSHA256": "66e56ab0ee605e6cb2ea244a44dd6f1ae92494ddc9574dacdb34399a6b34d44c",
+  "sourcePrimitivesSHA256": "b721a201b4254700042e1ad9f0ffc302e6b1315bc5e790737d7ae3c98923e1fb",
+  "rowEndpointRmsComparisons": {
+    "all": {
+      "improved": 500,
+      "unchanged": 0,
+      "worsened": 12
+    },
+    "active": {
+      "improved": 28,
+      "unchanged": 0,
+      "worsened": 0
+    },
+    "padding": {
+      "improved": 472,
+      "unchanged": 0,
+      "worsened": 12
+    }
+  },
+  "worsenedPaddingPositions": [
+    114,
+    123,
+    198,
+    257,
+    270,
+    280,
+    283,
+    400,
+    459,
+    462,
+    467,
+    508
+  ],
+  "fullAlternativeOriginalNPYByteEqual": {
+    "q": true,
+    "head": true,
+    "R": true,
+    "M": true,
+    "Hnext": true
+  },
+  "fullAlternativeOriginalRawNPYByteEqual": {
+    "rawK": true,
+    "rawV": true
+  },
+  "nominalBlockLinearMACs": {
+    "full": 51673825280,
+    "compact": 49136271360,
+    "omitted": 2537553920
+  },
+  "H2RmsReductionFraction": 0.5262163019065318,
+  "newRetainedArrayBytes": 49069696,
+  "derivation": "Integer work from actual primitive receipts; row improvements compare all per-position endpoint RMS; NPY byte equality joins independently verified field hashes. Scalar-only retrospective accounting; no model calls or independent trials."
+}

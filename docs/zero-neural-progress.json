@@ -1,16 +1,16 @@
 {
   "schema": "tce-zero-neural-goal-progress-v1",
-  "updatedAt": "2026-11-06T09:42:39-08:00",
+  "updatedAt": "2026-11-06T10:05:39-08:00",
   "objective": "let\u2019s solve arbitrary prompt to image without any forward zero neural evals. Every few turns have Astra review the newest blog posts and get a big picture of where we are at so that we can find the best route forward. Keep a log of your findings and with as a blog post - update it with your high level summaries and findings. Clean up the accumulated artifacts every few turns so as not to consume all of the system storage too",
   "status": "active",
-  "researchCycle": 22,
+  "researchCycle": 23,
   "previousGoalTurn": {
     "classification": "progress",
-    "evidence": "Pushed9b9b0c96860615be3eee68bc095998acb63b04f2: verified row-sign intake, executed saved-only composition assay, demonstrated nonradial output defect with98.34%energy surviving best scale, published complete rows/custody and updated livinglog. Revalidated clean main==origin/main at cycle22start."
+    "evidence": "Revalidated clean main==origin/main at ca3d54f05cd8250813d19ad0a5be7dc068de5f06. Previous turn completed cycle22 QA, committed and pushed actual masked-KV science, verified cached-QKV intake, recoverable1.538GBcleanup and living-log update. No result or goal completion was inferred from the push."
   },
   "thisGoalTurn": {
     "classification": "progress",
-    "evidence": "Independently verified new cachedQKV exact mixed-support result/custody/12actualCLI checks and published4.671MBmetadata. Astra redirected fullgoal lane to first-prompt work. Implemented and ran rawstrings->complete lexical atoms->ownH1->compactKV H2, job5f515567890f succeeded firstaccepted execution49.25s/2106.7MB/790VRAM. ShortL28omits484KVrows/2.537554BnominalMACs; H1exact, zero/full consumedoutputs exact, compactactiveprojection drift yieldsH2.3852%endpoint/.6300%update error; all-attendedcontrol exact/no savings. Actual12SDPA78linear receipts,5120rowaccounts/wordzero counts,100files336.15MBbyteverified.105tests pass and Saturnstreamonlyrun/verify0. No native fullencoder/embedding/FLUX/VAE/image. Savedprelease422note rejection; no modelrerun. Cleanup22archives2transports1.538GBwithfullSHA/restorepointers;16pointer/custody/remote metadata checks,64remainingcandidatesnot safedeletions. Livingblog/figures/Astraupdated; nextfixedKVaccumulation contrast planned, fullgoal active."
+    "evidence": "Implemented the one fixed KV-only accumulation-policy contrast, with Astra source review and107passing mechanics tests. Guarded job332caa7e03a6 succeeded once38s/1967MBRSS/582MBVRAM,16linears/2SDPA/2CPUFP64products. Same actual emitted H1 and unchanged original target, allalternativeH2 sealed before references. Original full alternative H2 exact; compact endpoint error .3852%->.1825%, update .6300%->.2985%, same2.537554BnominalMACsaving. Raw25K/34Vword differences remain;500rows improve/12padding worsen.52members103.64MBfullbyteverified,2048losslessrows/public236002bytes, no tensor hydration. Saturnstreamonlyrun/verify0. Astra newest-post/resultreview chooses complete conditioning taps and actual FLUXprojection next; no further precision search. Livingblog/figureupdated. No arbitraryzero-neuralimage solution or speedupclaim; goalactive."
   },
   "requirements": {
     "arbitraryRawPromptCoverage": "Two fresh rawstrings form their own first2contextual states from complete-vocabulary atoms. One short28attended and one512attended control. No fullcontextualencoder/arbitraryprompt/image validation.",
@@ -26,9 +26,9 @@
   "findingsLog": {
     "path": "../obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
     "role": "One living highlevel blog for this active goal; keep summaries, findings, constraints and next mathematical question current after each research cycle.",
-    "lastUpdatedCycle": 22,
+    "lastUpdatedCycle": 23,
     "scope": "Local notebook post, not a public-site publication. Source/code/artifact/related-post backlinks verified; unrelated dirty notebook files preserved.",
-    "sha256": "1e3703dd6eab98448ee38d628d03fe63f30aa1bc2f40c86e76c40190d49a5d49"
+    "sha256": "b69efa52753de062dc9a41eafb1846af369f4560f894d6ebf6a443f101dfa9c5"
   },
   "storageMaintenance": {
     "lastCycle": 22,
@@ -52,9 +52,9 @@
     "latestPointerCheck": "16pointer/receipt/custody matches; freshremote regularfile/size for all16. Previous14not rehashed; fullSHA for new2 in archive transaction.",
     "cycle8Practice": "Bounded audit142top-level artifact directories for100MB-or-larger archive.tar.gz/worker.log.gz: none. All6restoration pointers match the cycle5receipt; authenticated remote type/size checks total7701454599bytes, not a fresh byte rehash. No new archive/deletion. Full common-bank/kernel/head arrays remain near compute; compact public evidence6201541bytes.",
     "latestSpaceObservation": {
-      "cycle": 22,
-      "localFreeBytes": 14142124032,
-      "scope": "Later shared-volume postpublication observation; not isolated cleanup attribution."
+      "cycle": 23,
+      "localFreeBytes": 14118510592,
+      "scope": "Shared-volume observation after compact publication; no isolated cleanup attribution."
     },
     "cycle9Practice": "Full states/ports/heads and target-assisted capacity weights remain near compute. Two compact publications2895986bytes; no full lexical table or forecast hydration. Last actual archive remainscycle5, last bounded transport auditcycle8, next storage reviewcycle11 or earlier under pressure.",
     "cycle5Archive": {
@@ -103,7 +103,8 @@
       "files": 2,
       "bytes": 1537861671,
       "scope": "FullremoteSHA before localunlink; extracteddata and originalcustody local."
-    }
+    },
+    "cycle23Practice": "49.07MBnew fullarrays stay nearcompute;236002byte compact public result plus derivedfigure.52member103.64MBbytecheck includes inheriteddata, not newartifacttotal. No new deletion/archive; lastactual22,nextreview25 or pressure."
   },
   "openPreference": {
     "question": "Reproduce FLUX prompt/seed behavior, or comparable prompt-faithful quality using another recovered computation?",
@@ -112,8 +113,8 @@
   "reviews": {
     "advisor": "astra_zero_forward_advisor",
     "model": "gpt-6-astra",
-    "lastCycle": 22,
-    "nextDueByCycle": 25,
+    "lastCycle": 23,
+    "nextDueByCycle": 26,
     "earlierIf": "new model evidence changes the route",
     "cycle5Snapshots": [
       {
@@ -178,7 +179,7 @@
         "sha256": "e016144354d12b35b3e85b6798fe6ab69b296a3ade42d61a3bb2bcd6adacbe56"
       }
     ],
-    "advice": "Return to rawprompt first2blocks and input-mask-defined elimination. Following measured geometrydrift, test one KV-only accumulation-policy contrast with rawK/V and independentFP64 diagnostics. Original consumer flags restored; no alternate-profile/original parity conflation. Iflittlebenefit, evaluate conditioning/image consequence rather than open kernel search.",
+    "advice": "Stop precision exploration. Consume originalfull/oldcompact/newcompact H2 through unchanged blocks2..26, then concatenate H9/H18/H27 and run the actual FLUX context_embedder. Every branch retains its emitted state; no further compaction.75originalblocks+3contextprojections are paid offline consumers, not additional operation elimination. Complete absolute/relative discrepancies at demanded taps/E/C, active/padded regions, row reversals and signed old/new error alignment. No local threshold certifies image effects; full image consequence remains next.",
     "cycle6Snapshots": [
       {
         "path": "../obsidian/blog/2026-11-06-010513-predicting-a-complete-denoiser-pass-from-its-own-state.md",
@@ -463,7 +464,23 @@
         "sha256": "5134b8e33ba1a7f586aa22917974c7f4c2213a6fd163a7c52d47a6e9cbdcd0ef",
         "scope": "Astra read actual2prompt/5control-channel reports; state/control interpretation and nextfixedcontrast."
       }
-    ]
+    ],
+    "cycle23Snapshots": [
+      {
+        "path": "../obsidian/blog/2026-11-06-093800-predicting-how-an-error-moves-through-the-next-block.md",
+        "sha256": "0dd4036ed656943403a7155affce3c88378d0014a07df85f36f45c41c7b23ad9"
+      },
+      {
+        "path": "../obsidian/blog/2026-11-06-092300-a-symbol-table-that-checks-its-inputs.md",
+        "sha256": "5319ce3eccd14238f4a8c50ef4a32fed6dcd053d623f51b82e456c800a78f45c"
+      },
+      {
+        "path": "../obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+        "sha256": "1e3703dd6eab98448ee38d628d03fe63f30aa1bc2f40c86e76c40190d49a5d49",
+        "scope": "Cycle22 working snapshot before the subsequent living-log update."
+      }
+    ],
+    "latestResultSHA256": "f54330bda232f57f0e5cf4ec41d7d4b1c3bc74c3035347b0c0fc40280c9c2144"
   },
   "rootReviewedSinceAdvisor": [
     {
@@ -518,6 +535,12 @@
       "scope": "Source-bound exact conditionalQKV reduction; inheritedpositive cost paid, no firstprompt saving.",
       "cycle": 22,
       "implication": "Conditionalrewrite exact, but firstprompt cost requires ownrawinput. Fullgoal lane follows maskKV; neighbor dispatcher/block19 propagation not a prerequisite."
+    },
+    {
+      "path": "../obsidian/blog/2026-11-06-093800-predicting-how-an-error-moves-through-the-next-block.md",
+      "sha256": "0dd4036ed656943403a7155affce3c88378d0014a07df85f36f45c41c7b23ad9",
+      "cycle": 23,
+      "implication": "Inherited discrepancy grows and rotates despite partial MLP cancellation. No universal stability law; measure complete demanded conditioning consequence for actual first-prompt reduction."
     }
   ],
   "completedRuns": [
@@ -1007,6 +1030,21 @@
       "linear": 78,
       "scope": "Two fresh raw strings, lexical table -> own H1 -> compact-KV H2. First-prompt conditional compiler reduction, not zero-neural encoder/images.",
       "workerTimingScope": "Timed assay body after framework imports; scheduler49.25s includes process/import/monitor overhead. Phase clocks include captures with nativefinalHnextsave outside phase."
+    },
+    {
+      "jobID": "job-332caa7e03a6",
+      "requestSHA256": "c23b278beb301e6891ee7a6ec8d59a348d2feab27a1832453e9319b1211dc241",
+      "type": "One fixed KV-only accumulation-policy contrast, full512/compact28 completeH2 from authenticated candidateH1; postseal raw/FP64 diagnostics",
+      "schedulerSeconds": 38.0,
+      "workerSecondsAfterFrameworkImports": 15.269117822870612,
+      "sampledPeakRSSMB": 1967.0,
+      "sampledPeakVRAMMB": 582.0,
+      "linear": 16,
+      "SDPA": 2,
+      "cpuFP64Matmul": 2,
+      "nativeModuleCalls": 0,
+      "newH1Blocks": 0,
+      "scope": "One alternative K/V-only accumulation flag; full512/compact28 from own emitted H1. Original consumer, no encoder/FLUX/VAE."
     }
   ],
   "failedRuns": [
@@ -1106,15 +1144,14 @@
     }
   ],
   "nextCut": {
-    "status": "Frozen one-policy followup, not yet staged or executed. No live scientificjob remains.",
-    "plan": "plans/kv-accumulation-profile.md",
-    "question": "Can one shared KV-only accumulation policy retain the first-prompt row-elimination saving while reducing geometry-dependent drift?",
-    "source": "Authenticated ownH1 from job5f515567890f short28attended case; original block1 weights and unchanged source/profile target.",
-    "law": "Disable BF16 reduced-precision reduction only for K/V, form full512 andcompact28, retainrawKpreNorm/V, consume underoriginalnorm/RoPE/SDPA/tail flags; independentCPUFP64 activeXW diagnostic afterseal.",
-    "requirements": "Bind sourceH1/parameters/mask/shape/source, no reference refresh. Seal bothcompleteH2 before scoring. Retain original/alternative/rawFP64 discrepancies, realrows/MACs/walltime. Alternativeagreement notoriginalparity; no accuracygate/fallback.",
-    "nextAction": "Implement and execute one finite CUDA/CPU1 fixed-policy assay. Ifbenefitlittle, stop kernel/shape tuning and measure actualconditioning/image consequence of retainedapproximate ownstate.",
-    "scope": "Still substantial learnedcomputation. No fullencoder/diffusion/decoder/strictzero-neural solution.",
-    "neighborWork": "Dispatcher and inheritedblock19 propagation remain neighbormechanism lane, not nextdependency for this first-prompt goal."
+    "status": "Frozen complete-conditioning followup; not staged or executed. No live scientific job remains.",
+    "plan": "plans/conditioning-demand-consequence.md",
+    "question": "Does the retained local H2 improvement survive the actual H9/H18/H27 conditioning demand and first FLUX context projection?",
+    "source": "Originalfull, oldcompact and newcompact H2 authenticated by job332caa7e03a6 and inherited job5f515567890f. One already-scored short context.",
+    "law": "Each branch consumes its emitted state through unchanged blocks2..26; E=concat(H9,H18,H27); actual original context_embedder consumes completeE.75originalblocks+3projections paid offline.",
+    "requirements": "No further compaction, native state refresh or numerical gate. Bind qualified source/checkpoint/parameter/mask/profile and actual projection input. Preserve all512rows, absolute/relative/tap/C errors, regional reversals and signed error alignment.",
+    "nextAction": "Implement one finite guarded CUDA consumer assay, layer-major parameter reuse across3serial branches. No complete denoiser/VAE yet; image consequence follows conditioning observation, with no threshold certifying it.",
+    "scope": "Learned consumers remain original work. This tests usefulness of a reduction, not additional neural elimination or completed arbitrary-prompt generation."
   },
   "alternativeDiagnostic": {
     "status": "executedcycle20",
@@ -1840,7 +1877,7 @@
     "saturnSweep": "run/verifyexit0,1stream23040records,no watchfires,target-streams-only,no terminalreceipts/physicaladdressjoins.",
     "goalStatus": "Active. Frozen source-score envelope has active trend/overallcountertrend; no selector/tail defect found. No zero-neural arbitraryimage."
   },
-  "previousResearchCycle": 21,
+  "previousResearchCycle": 22,
   "selectorObjectiveEvidence": {
     "directory": "results/selector-objective",
     "evidenceSweep": "results/selector-objective-evidence/sweep.json",
@@ -5564,7 +5601,7 @@
   },
   "previousEvidenceTurn": {
     "classification": "progress",
-    "evidence": "Executed planned savedonly omissionfactorization while rowcampaign qualified. Guarded job54dce85e782d firstattempt14.51s/846.4MB/0VRAM, no originalweights/projections/model/consumer/rankfit. L=eps*(1+ttilde),Q=eps\u00b2/2 expose signedmass/mixedvalue transport and cancellation. Linearvalue direction useful32/32heads; unitheadspaceaddition32pooled/26active/31pad, no isolatedrequantization/consumer. Canonicalfull/rank completeBF16banks matchparents.98tests,19files541.2MBbytecheck,49152losslessobservations/17.029MBpublic, Saturnrun/verify0. Removed redundant collector32MiBmembercap within unchanged128MiBaggregate; complete localraw67.374MB retained. Astrareviews math/results and unchangednewpostpriority, livingblog/derivedfigure updated. Neighbor native rowjob74efe succeeded, firstaudit807e failedcatalogmetadata, no semanticresult admitted/duplicate model. Goalunchanged/open, lastcleanup19,next22."
+    "evidence": "Independently verified new cachedQKV exact mixed-support result/custody/12actualCLI checks and published4.671MBmetadata. Astra redirected fullgoal lane to first-prompt work. Implemented and ran rawstrings->complete lexical atoms->ownH1->compactKV H2, job5f515567890f succeeded firstaccepted execution49.25s/2106.7MB/790VRAM. ShortL28omits484KVrows/2.537554BnominalMACs; H1exact, zero/full consumedoutputs exact, compactactiveprojection drift yieldsH2.3852%endpoint/.6300%update error; all-attendedcontrol exact/no savings. Actual12SDPA78linear receipts,5120rowaccounts/wordzero counts,100files336.15MBbyteverified.105tests pass and Saturnstreamonlyrun/verify0. No native fullencoder/embedding/FLUX/VAE/image. Savedprelease422note rejection; no modelrerun. Cleanup22archives2transports1.538GBwithfullSHA/restorepointers;16pointer/custody/remote metadata checks,64remainingcandidatesnot safedeletions. Livingblog/figures/Astraupdated; nextfixedKVaccumulation contrast planned, fullgoal active."
   },
   "signCompositionEvidence": {
     "report": "results/sign-composition/report.json",
@@ -6460,5 +6497,391 @@
     "outputs": "All8whole head/R/M/H19fields and signedresponses perchannel bitexact; no new firstprompt/image in that campaign.",
     "publicBytes": 4671294,
     "scope": "Neighboring native/audit evidence, not new ownedscientific runs."
+  },
+  "kvAccumulationEvidence": {
+    "path": "results/kv-accumulation",
+    "plan": "plans/kv-accumulation-profile.md",
+    "reportSHA256": "f54330bda232f57f0e5cf4ec41d7d4b1c3bc74c3035347b0c0fc40280c9c2144",
+    "predictionSealSHA256": "6ecf0a365af0f115c0ed3019b3f1b513e65512578ed5c3cbddb283ba25033fbb",
+    "jobID": "job-332caa7e03a6",
+    "retainedByteVerification": {
+      "files": 52,
+      "bytes": 103642823
+    },
+    "publicFiles": 10,
+    "publicBytes": 236002,
+    "newArrayBytesNearCompute": 49069696,
+    "observations": 2048,
+    "H2RmsReductionFraction": 0.5262163019065318,
+    "rowComparisons": {
+      "all": {
+        "improved": 500,
+        "unchanged": 0,
+        "worsened": 12
+      },
+      "active": {
+        "improved": 28,
+        "unchanged": 0,
+        "worsened": 0
+      },
+      "padding": {
+        "improved": 472,
+        "unchanged": 0,
+        "worsened": 12
+      }
+    },
+    "nominalBlockLinearMACs": {
+      "full": 51673825280,
+      "compact": 49136271360,
+      "omitted": 2537553920
+    },
+    "fullAlternativeOriginalNPYByteEqual": {
+      "q": true,
+      "head": true,
+      "R": true,
+      "M": true,
+      "Hnext": true
+    },
+    "rawPairAccounts": [
+      {
+        "BF16WordMismatches": 25,
+        "changedValues": 25,
+        "channel": "alternative-compact-minus-alternative-full",
+        "maxAbs": 0.0009765625,
+        "port": "K",
+        "referenceRms": 0.11213248990323538,
+        "relativeRms": 7.96209519111667e-05,
+        "rms": 8.92809558626489e-06,
+        "scalars": 28672,
+        "signedZeroDefects": 0
+      },
+      {
+        "BF16WordMismatches": 34,
+        "changedValues": 34,
+        "channel": "alternative-compact-minus-alternative-full",
+        "maxAbs": 0.0009765625,
+        "port": "V",
+        "referenceRms": 0.0525732772660258,
+        "relativeRms": 0.0001282561799711398,
+        "rms": 6.742847710704038e-06,
+        "scalars": 28672,
+        "signedZeroDefects": 0
+      }
+    ],
+    "completeH2Accounts": [
+      {
+        "BF16WordMismatches": 360919,
+        "changedValues": 360919,
+        "channel": "alternative-compact-minus-alternative-full",
+        "kind": "endpoint",
+        "maxAbs": 0.03125,
+        "port": "Hnext",
+        "referenceRms": 0.21592346941337032,
+        "region": "all",
+        "relativeRms": 0.0018252275238344801,
+        "rms": 0.000394109459415116,
+        "scalars": 1310720,
+        "signedZeroDefects": 0
+      },
+      {
+        "BF16WordMismatches": 17461,
+        "changedValues": 17461,
+        "channel": "alternative-compact-minus-alternative-full",
+        "kind": "endpoint",
+        "maxAbs": 0.015625,
+        "port": "Hnext",
+        "referenceRms": 0.4763708765266759,
+        "region": "active",
+        "relativeRms": 0.0009324031104567639,
+        "rms": 0.00044416968700448765,
+        "scalars": 71680,
+        "signedZeroDefects": 0
+      },
+      {
+        "BF16WordMismatches": 343458,
+        "changedValues": 343458,
+        "channel": "alternative-compact-minus-alternative-full",
+        "kind": "endpoint",
+        "maxAbs": 0.03125,
+        "port": "Hnext",
+        "referenceRms": 0.19024196055709103,
+        "region": "padding",
+        "relativeRms": 0.0020553686079029135,
+        "rms": 0.00039101735363494914,
+        "scalars": 1239040,
+        "signedZeroDefects": 0
+      },
+      {
+        "changedValues": 360919,
+        "channel": "alternative-compact-minus-alternative-full",
+        "kind": "block-update",
+        "maxAbs": 0.03125,
+        "port": "Hnext",
+        "referenceRms": 0.13203447845011423,
+        "region": "all",
+        "relativeRms": 0.002984898066333635,
+        "rms": 0.000394109459415116,
+        "scalars": 1310720
+      },
+      {
+        "changedValues": 17461,
+        "channel": "alternative-compact-minus-alternative-full",
+        "kind": "block-update",
+        "maxAbs": 0.015625,
+        "port": "Hnext",
+        "referenceRms": 0.35906840983879085,
+        "region": "active",
+        "relativeRms": 0.0012370057483026822,
+        "rms": 0.00044416968700448765,
+        "scalars": 71680
+      },
+      {
+        "changedValues": 343458,
+        "channel": "alternative-compact-minus-alternative-full",
+        "kind": "block-update",
+        "maxAbs": 0.03125,
+        "port": "Hnext",
+        "referenceRms": 0.10479915412483083,
+        "region": "padding",
+        "relativeRms": 0.0037311117336805157,
+        "rms": 0.00039101735363494914,
+        "scalars": 1239040
+      },
+      {
+        "BF16WordMismatches": 0,
+        "changedValues": 0,
+        "channel": "alternative-full-minus-original-full",
+        "kind": "endpoint",
+        "maxAbs": 0.0,
+        "port": "Hnext",
+        "referenceRms": 0.21592346941337032,
+        "region": "all",
+        "relativeRms": 0.0,
+        "rms": 0.0,
+        "scalars": 1310720,
+        "signedZeroDefects": 0
+      },
+      {
+        "BF16WordMismatches": 0,
+        "changedValues": 0,
+        "channel": "alternative-full-minus-original-full",
+        "kind": "endpoint",
+        "maxAbs": 0.0,
+        "port": "Hnext",
+        "referenceRms": 0.4763708765266759,
+        "region": "active",
+        "relativeRms": 0.0,
+        "rms": 0.0,
+        "scalars": 71680,
+        "signedZeroDefects": 0
+      },
+      {
+        "BF16WordMismatches": 0,
+        "changedValues": 0,
+        "channel": "alternative-full-minus-original-full",
+        "kind": "endpoint",
+        "maxAbs": 0.0,
+        "port": "Hnext",
+        "referenceRms": 0.19024196055709103,
+        "region": "padding",
+        "relativeRms": 0.0,
+        "rms": 0.0,
+        "scalars": 1239040,
+        "signedZeroDefects": 0
+      },
+      {
+        "changedValues": 0,
+        "channel": "alternative-full-minus-original-full",
+        "kind": "block-update",
+        "maxAbs": 0.0,
+        "port": "Hnext",
+        "referenceRms": 0.13203447845011423,
+        "region": "all",
+        "relativeRms": 0.0,
+        "rms": 0.0,
+        "scalars": 1310720
+      },
+      {
+        "changedValues": 0,
+        "channel": "alternative-full-minus-original-full",
+        "kind": "block-update",
+        "maxAbs": 0.0,
+        "port": "Hnext",
+        "referenceRms": 0.35906840983879085,
+        "region": "active",
+        "relativeRms": 0.0,
+        "rms": 0.0,
+        "scalars": 71680
+      },
+      {
+        "changedValues": 0,
+        "channel": "alternative-full-minus-original-full",
+        "kind": "block-update",
+        "maxAbs": 0.0,
+        "port": "Hnext",
+        "referenceRms": 0.10479915412483083,
+        "region": "padding",
+        "relativeRms": 0.0,
+        "rms": 0.0,
+        "scalars": 1239040
+      },
+      {
+        "BF16WordMismatches": 360919,
+        "changedValues": 360919,
+        "channel": "alternative-compact-minus-original-full",
+        "kind": "endpoint",
+        "maxAbs": 0.03125,
+        "port": "Hnext",
+        "referenceRms": 0.21592346941337032,
+        "region": "all",
+        "relativeRms": 0.0018252275238344801,
+        "rms": 0.000394109459415116,
+        "scalars": 1310720,
+        "signedZeroDefects": 0
+      },
+      {
+        "BF16WordMismatches": 17461,
+        "changedValues": 17461,
+        "channel": "alternative-compact-minus-original-full",
+        "kind": "endpoint",
+        "maxAbs": 0.015625,
+        "port": "Hnext",
+        "referenceRms": 0.4763708765266759,
+        "region": "active",
+        "relativeRms": 0.0009324031104567639,
+        "rms": 0.00044416968700448765,
+        "scalars": 71680,
+        "signedZeroDefects": 0
+      },
+      {
+        "BF16WordMismatches": 343458,
+        "changedValues": 343458,
+        "channel": "alternative-compact-minus-original-full",
+        "kind": "endpoint",
+        "maxAbs": 0.03125,
+        "port": "Hnext",
+        "referenceRms": 0.19024196055709103,
+        "region": "padding",
+        "relativeRms": 0.0020553686079029135,
+        "rms": 0.00039101735363494914,
+        "scalars": 1239040,
+        "signedZeroDefects": 0
+      },
+      {
+        "changedValues": 360919,
+        "channel": "alternative-compact-minus-original-full",
+        "kind": "block-update",
+        "maxAbs": 0.03125,
+        "port": "Hnext",
+        "referenceRms": 0.13203447845011423,
+        "region": "all",
+        "relativeRms": 0.002984898066333635,
+        "rms": 0.000394109459415116,
+        "scalars": 1310720
+      },
+      {
+        "changedValues": 17461,
+        "channel": "alternative-compact-minus-original-full",
+        "kind": "block-update",
+        "maxAbs": 0.015625,
+        "port": "Hnext",
+        "referenceRms": 0.35906840983879085,
+        "region": "active",
+        "relativeRms": 0.0012370057483026822,
+        "rms": 0.00044416968700448765,
+        "scalars": 71680
+      },
+      {
+        "changedValues": 343458,
+        "channel": "alternative-compact-minus-original-full",
+        "kind": "block-update",
+        "maxAbs": 0.03125,
+        "port": "Hnext",
+        "referenceRms": 0.10479915412483083,
+        "region": "padding",
+        "relativeRms": 0.0037311117336805157,
+        "rms": 0.00039101735363494914,
+        "scalars": 1239040
+      },
+      {
+        "BF16WordMismatches": 751976,
+        "changedValues": 751976,
+        "channel": "original-compact-minus-original-full",
+        "kind": "endpoint",
+        "maxAbs": 0.25,
+        "port": "Hnext",
+        "referenceRms": 0.21592346941337032,
+        "region": "all",
+        "relativeRms": 0.003852448978678026,
+        "rms": 0.0008318341492141544,
+        "scalars": 1310720,
+        "signedZeroDefects": 0
+      },
+      {
+        "BF16WordMismatches": 37323,
+        "changedValues": 37323,
+        "channel": "original-compact-minus-original-full",
+        "kind": "endpoint",
+        "maxAbs": 0.25,
+        "port": "Hnext",
+        "referenceRms": 0.4763708765266759,
+        "region": "active",
+        "relativeRms": 0.003309327749881777,
+        "rms": 0.0015764673609252342,
+        "scalars": 71680,
+        "signedZeroDefects": 0
+      },
+      {
+        "BF16WordMismatches": 714653,
+        "changedValues": 714653,
+        "channel": "original-compact-minus-original-full",
+        "kind": "endpoint",
+        "maxAbs": 0.03125,
+        "port": "Hnext",
+        "referenceRms": 0.19024196055709103,
+        "region": "padding",
+        "relativeRms": 0.004031414314497777,
+        "rms": 0.0007669441630079783,
+        "scalars": 1239040,
+        "signedZeroDefects": 0
+      },
+      {
+        "changedValues": 751976,
+        "channel": "original-compact-minus-original-full",
+        "kind": "block-update",
+        "maxAbs": 0.25,
+        "port": "Hnext",
+        "referenceRms": 0.13203447845011423,
+        "region": "all",
+        "relativeRms": 0.0063001282617891445,
+        "rms": 0.0008318341492141544,
+        "scalars": 1310720
+      },
+      {
+        "changedValues": 37323,
+        "channel": "original-compact-minus-original-full",
+        "kind": "block-update",
+        "maxAbs": 0.25,
+        "port": "Hnext",
+        "referenceRms": 0.35906840983879085,
+        "region": "active",
+        "relativeRms": 0.004390437358811411,
+        "rms": 0.0015764673609252342,
+        "scalars": 71680
+      },
+      {
+        "changedValues": 714653,
+        "channel": "original-compact-minus-original-full",
+        "kind": "block-update",
+        "maxAbs": 0.03125,
+        "port": "Hnext",
+        "referenceRms": 0.10479915412483083,
+        "region": "padding",
+        "relativeRms": 0.007318228562173677,
+        "rms": 0.0007669441630079783,
+        "scalars": 1239040
+      }
+    ],
+    "scope": "Retrospective one-context fixed-policy result, improved but not exact compact formation. No new images/fullencoder/FLUX/VAE or arbitraryzero-neural backend. Timings are captured single phases, not speedup."
   }
 }
