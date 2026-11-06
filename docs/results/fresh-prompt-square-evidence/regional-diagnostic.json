@@ -1,0 +1,81 @@
+{
+  "schema": "tce-fresh-square-regional-diagnostic-v1",
+  "sourceReportSHA256": "db131593e32969d38c3345834493fe914ad888bbd913730daf793f10127d22f9",
+  "sourceObservationGzipSHA256": "bb2f976eaf85c8ffe3679935f48c1ba5dce7784c8ab7d4a049a1308b78d4bdc2",
+  "uncompressedObservationsSHA256": "748ac46cfa36a9c9166c0d669adfd8719952a8a3345620af63662be12486c33b",
+  "rows": [
+    {
+      "case": "00",
+      "activeRows": 37,
+      "paddingRows": 475,
+      "activeRowRelativeRMSErrorPercentiles10_50_90": [
+        1.6467739566658237,
+        2.953782190849778,
+        6.822130197505053
+      ],
+      "paddingFractionOfEErrorEnergy": 0.9996660932234378,
+      "highestActiveReferenceRMSRow": {
+        "position": 0,
+        "referenceRms": 334.30468597722927,
+        "rms": 0.0,
+        "relativeRms": 0.0
+      },
+      "activeReferenceRowRMSMin": 1.4888165352884977
+    },
+    {
+      "case": "10",
+      "activeRows": 37,
+      "paddingRows": 475,
+      "activeRowRelativeRMSErrorPercentiles10_50_90": [
+        1.6885540121534923,
+        2.8342496781103894,
+        6.989166456255583
+      ],
+      "paddingFractionOfEErrorEnergy": 0.9996415794206618,
+      "highestActiveReferenceRMSRow": {
+        "position": 0,
+        "referenceRms": 334.30468597722927,
+        "rms": 0.0,
+        "relativeRms": 0.0
+      },
+      "activeReferenceRowRMSMin": 1.4884851144737656
+    },
+    {
+      "case": "01",
+      "activeRows": 37,
+      "paddingRows": 475,
+      "activeRowRelativeRMSErrorPercentiles10_50_90": [
+        1.6419961629856297,
+        2.953782190849778,
+        7.218682176838424
+      ],
+      "paddingFractionOfEErrorEnergy": 0.9996670389787499,
+      "highestActiveReferenceRMSRow": {
+        "position": 0,
+        "referenceRms": 334.30468597722927,
+        "rms": 0.0,
+        "relativeRms": 0.0
+      },
+      "activeReferenceRowRMSMin": 1.4887133385011153
+    },
+    {
+      "case": "11",
+      "activeRows": 37,
+      "paddingRows": 475,
+      "activeRowRelativeRMSErrorPercentiles10_50_90": [
+        1.7449324834805053,
+        2.9634032569442637,
+        6.999196732953369
+      ],
+      "paddingFractionOfEErrorEnergy": 0.9996297526665499,
+      "highestActiveReferenceRMSRow": {
+        "position": 0,
+        "referenceRms": 334.30468597722927,
+        "rms": 0.0,
+        "relativeRms": 0.0
+      },
+      "activeReferenceRowRMSMin": 1.4920897705371086
+    }
+  ],
+  "scope": "Derived from complete recorded endpoint rows. Aggregate activeE relative errors are dominated by a large reference-row denominator; row distributions remain. Padding error energy is not a causal attribution of image error."
+}

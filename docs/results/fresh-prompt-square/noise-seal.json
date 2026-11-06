@@ -1,0 +1,57 @@
+{
+  "ids": {
+    "bytes": 32896,
+    "logicalDtype": "torch.int64",
+    "path": "/mnt/hdd8tb/mrun-work/job-b69f30eff20a/arrays/shared/imageIDs.npy",
+    "payloadSHA256": "87b4f95cfb97df0287488b86742472e263ea5e9c080c2e3348f6f64224f797af",
+    "sha256": "5eaeec651a5ca7e48a9ec778cff91e3e2a98eda31fef6eadcd406cc403770e33",
+    "shape": [
+      1,
+      1024,
+      4
+    ],
+    "storedDtype": "int64"
+  },
+  "newNoiseDraws": 1,
+  "numericalProfile": {
+    "bf16ReducedPrecisionReduction": true,
+    "cublasWorkspaceConfig": ":4096:8",
+    "cudaMatmulTF32": false,
+    "cudnnBenchmark": false,
+    "cudnnDeterministic": true,
+    "cudnnTF32": false,
+    "deterministicAlgorithms": true,
+    "float32MatmulPrecision": "highest",
+    "threads": 4
+  },
+  "packed": {
+    "bytes": 262272,
+    "logicalDtype": "torch.bfloat16",
+    "path": "/mnt/hdd8tb/mrun-work/job-b69f30eff20a/arrays/shared/packedNoise.npy",
+    "payloadSHA256": "966aae426ab36a631fd55a852684fe1ac963e9f2f9a452ef25b0cad65a18faf6",
+    "sha256": "10450a612faa8f3461acdeeb9ab6f7f027514cc2593deddbceea2f2155313a4b",
+    "shape": [
+      1,
+      1024,
+      128
+    ],
+    "storedDtype": "uint16"
+  },
+  "raw": {
+    "bytes": 262272,
+    "logicalDtype": "torch.bfloat16",
+    "path": "/mnt/hdd8tb/mrun-work/job-b69f30eff20a/arrays/shared/rawNoise.npy",
+    "payloadSHA256": "1f07173aaa003c2089c47833f64b8e4f8da11b018c200c19f4037ed3aedc1c99",
+    "sha256": "a9f43766f31e6d962d660a2abdefddf0d2f5195c530bbb45a1aa1e46e0b7af94",
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ],
+    "storedDtype": "uint16"
+  },
+  "requestSHA256": "beeff453d9412eaef5ae67b122483561880cc1a70825cea0b2497340e9e7ef92",
+  "schema": "tce-fresh-square-noise-v1",
+  "seed": 271828
+}

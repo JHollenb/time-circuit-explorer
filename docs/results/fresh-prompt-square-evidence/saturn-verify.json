@@ -1,0 +1,42 @@
+{
+  "broken": false,
+  "command": "verify",
+  "exit_code": 0,
+  "findings": 0,
+  "instrument_status": "target-streams-only",
+  "pack": "saturn-evidence-pack-v1",
+  "schema": "saturn-evidence-pipeline-v1",
+  "steps": {
+    "claims": {
+      "registry": "/Users/jakeholl/domains/saturn/index/claims-auto.jsonl",
+      "status": "skipped"
+    },
+    "target_scope": {
+      "claims": [],
+      "claims_current": 0,
+      "claims_drifted": 0,
+      "claims_missing": 0,
+      "instrument_status": "target-streams-only",
+      "receipts": 0,
+      "status": "ok",
+      "streams": 1
+    },
+    "watch": {
+      "ledgers": [
+        {
+          "expected_missing": true,
+          "fires": 0,
+          "ledger": "index/watch/fresh-prompt-square-v1/result/observations-e431dd32.fires.jsonl",
+          "reason": "no_fires",
+          "verified": null
+        }
+      ],
+      "ledgers_broken": 0,
+      "ledgers_checked": 0,
+      "ledgers_missing": 0,
+      "ledgers_missing_expected": 1,
+      "status": "ok"
+    }
+  },
+  "target": "/Users/jakeholl/domains/time-circuit-explorer/artifacts/fresh-prompt-square-v1/result"
+}

@@ -1,6 +1,6 @@
 # Freeze the reader and test fresh compositional prompts
 
-Status: written and unexecuted after cycle33. Astra reviewed the [uncentered-reader result](../uncentered-reader.md) and newest attribute-binding, state-closure and attention work. The first reader now has no sampled source geometry. The important next uncertainty is whether it remains useful on new operands through its own full conditioning and pixels.
+Status: executed in cycle34, job-b69f30eff20a. The [result](../fresh-prompt-square.md) records four own candidate trajectories sealed before four fresh full-attention references, with useful body-color/order preservation and native/candidate spout defects retained. The exact pre-run plan remains [frozen](../results/fresh-prompt-square/frozen-plan.md). The first reader has no sampled source geometry; most learned encoder/image computation remains paid.
 
 Freeze the current plain top-four reader, complete lexical store, numerical profile and four-step512×512 FLUX.2 Klein4B consumer. Use one new fixed seed,271828. Do not fit, sweep support/precision, replace prompts after seeing images or length-match tokenization. Cross color assignment C with spatial relation R:
 

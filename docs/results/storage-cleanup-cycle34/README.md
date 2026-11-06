@@ -1,0 +1,5 @@
+# Periodic transport cleanup, cycle34
+
+Two terminal transport copies from `mdb-shape-formation-20261104/run-01` are archived: **890,881,757bytes**. Extracted scientific data and original custody receipts remain local. The [plan](plan.json), [result](result.json) and [events](events.jsonl) retain exact source identities, remote full-SHA verification and durable restoration pointers. Fresh local identities and custody were rechecked before unlinking transport copies. No model weights or research arrays are deleted.
+
+Shared-volume free space was13,409,017,856B before and14,291,746,816B after; concurrent workspace activity means this difference is not exact physical cleanup attribution. The [read-only audit](../storage-audit-cycle34/result.json) joins28pointers/custody records and checks all remote objects' regular-file type and size. Historical cold objects are not freshly full-byte rehashed by this audit. The48remaining name/size candidates total14,441,956,845logical bytes; that is an inventory, not permission to delete them. The previously unqualified failed snapshot remains local.

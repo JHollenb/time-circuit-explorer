@@ -1,0 +1,74 @@
+{
+  "archivedBytes": 890881757,
+  "files": 2,
+  "localFreeBytesAfter": 14291746816,
+  "localFreeBytesBefore": 13409017856,
+  "planSHA256": "add5344db6147ef96b727c60ca2a2b609eb59a7c692ce6c95037d071e6a0a180",
+  "rows": [
+    {
+      "bytes": 443418867,
+      "custodyPath": "/Users/jakeholl/domains/artifacts/mdb-shape-formation-20261104/run-01/archive-custody.json",
+      "custodySHA256": "a65d8d4f9f7fc5480a031889b598299f0b0aabbd75ffa6bf252645bf4cfe8126",
+      "jobID": "job-19679c58a4a7",
+      "path": "/Users/jakeholl/domains/artifacts/mdb-shape-formation-20261104/run-01/archive.tar.gz",
+      "planSHA256": "add5344db6147ef96b727c60ca2a2b609eb59a7c692ce6c95037d071e6a0a180",
+      "remote": "/mnt/hdd8tb/cold-storage/mbp1/time-circuit-explorer/transports/sha256/0d/0d29da3e0a3f041b8fdc3d1c66865b7163737729b80b61527251c167cde543fb",
+      "remoteHost": "beast",
+      "remoteVerification": {
+        "bytes": 443418867,
+        "path": "/mnt/hdd8tb/cold-storage/mbp1/time-circuit-explorer/transports/sha256/0d/0d29da3e0a3f041b8fdc3d1c66865b7163737729b80b61527251c167cde543fb",
+        "sha256": "0d29da3e0a3f041b8fdc3d1c66865b7163737729b80b61527251c167cde543fb",
+        "verified": true
+      },
+      "restoreCommand": [
+        "rsync",
+        "-a",
+        "--protect-args",
+        "beast:/mnt/hdd8tb/cold-storage/mbp1/time-circuit-explorer/transports/sha256/0d/0d29da3e0a3f041b8fdc3d1c66865b7163737729b80b61527251c167cde543fb",
+        "/Users/jakeholl/domains/artifacts/mdb-shape-formation-20261104/run-01/archive.tar.gz"
+      ],
+      "schema": "tce-cold-transport-pointer-v1",
+      "sha256": "0d29da3e0a3f041b8fdc3d1c66865b7163737729b80b61527251c167cde543fb",
+      "statIdentity": [
+        16777234,
+        213427670,
+        443418867,
+        1793845782514496815
+      ]
+    },
+    {
+      "bytes": 447462890,
+      "custodyPath": "/Users/jakeholl/domains/artifacts/mdb-shape-formation-20261104/run-01/log-custody.json",
+      "custodySHA256": "5b6ce304e1b9c75975ed35e6f03cc418501c41ed61d5fff9189f434c0170bb04",
+      "jobID": "job-19679c58a4a7",
+      "path": "/Users/jakeholl/domains/artifacts/mdb-shape-formation-20261104/run-01/worker.log.gz",
+      "planSHA256": "add5344db6147ef96b727c60ca2a2b609eb59a7c692ce6c95037d071e6a0a180",
+      "remote": "/mnt/hdd8tb/cold-storage/mbp1/time-circuit-explorer/transports/sha256/0f/0fbba7f3cca6d1f6fac6c988163863ef41e94dd7ea75f46c6a70ba16ca1d6b51",
+      "remoteHost": "beast",
+      "remoteVerification": {
+        "bytes": 447462890,
+        "path": "/mnt/hdd8tb/cold-storage/mbp1/time-circuit-explorer/transports/sha256/0f/0fbba7f3cca6d1f6fac6c988163863ef41e94dd7ea75f46c6a70ba16ca1d6b51",
+        "sha256": "0fbba7f3cca6d1f6fac6c988163863ef41e94dd7ea75f46c6a70ba16ca1d6b51",
+        "verified": true
+      },
+      "restoreCommand": [
+        "rsync",
+        "-a",
+        "--protect-args",
+        "beast:/mnt/hdd8tb/cold-storage/mbp1/time-circuit-explorer/transports/sha256/0f/0fbba7f3cca6d1f6fac6c988163863ef41e94dd7ea75f46c6a70ba16ca1d6b51",
+        "/Users/jakeholl/domains/artifacts/mdb-shape-formation-20261104/run-01/worker.log.gz"
+      ],
+      "schema": "tce-cold-transport-pointer-v1",
+      "sha256": "0fbba7f3cca6d1f6fac6c988163863ef41e94dd7ea75f46c6a70ba16ca1d6b51",
+      "statIdentity": [
+        16777234,
+        213427671,
+        447462890,
+        1793845783532932352
+      ]
+    }
+  ],
+  "schema": "tce-transport-cleanup-result-v1",
+  "scope": "Explicit completed-run archive/log transport copies only; all extracted scientific artifacts and original receipts remain local.",
+  "status": "complete"
+}

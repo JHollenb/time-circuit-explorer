@@ -1,0 +1,157 @@
+{
+  "exception": "Generic fallback/B64 sizing does not describe serialB1/512. Reuse measured14336MBRAM/13000MBVRAM envelope. Four cases increase retained fields, not batch. CPU1encoder/4image, separate children, no model co-residency. Expected600s,1200scap, no retries.",
+  "intentFirstPreview": {
+    "beast": {
+      "artifact_id": null,
+      "artifact_kind": null,
+      "artifact_locator": {},
+      "artifact_mount": null,
+      "backend": "diffusers",
+      "device": "cuda",
+      "dtype": "bfloat16",
+      "engine_options": {},
+      "engine_profile": "backend:diffusers",
+      "est_ram_mb": 8410.0,
+      "est_vram_mb": 40212.3,
+      "est_wall_s": null,
+      "max_batch": 64,
+      "model": "flux2-klein-4b-distilled",
+      "ram_limit_mb": 52809.0,
+      "reasons": [
+        "host=beast ram=66513MB cuda=True mps=False ane=False task=forward",
+        "dtype=bfloat16 (explicit opt-in \u2014 not the canonical path)",
+        "device=cuda (explicit)",
+        "TF32 forced OFF on cuda (breaches 4-decimal stats)",
+        "backend=diffusers (explicit)",
+        "max_batch=64 threads=4 ram_limit=52809MB (est x 1.3)",
+        "selector fallback: explicit backend has no matching local artifact",
+        "science runtime envelope: diffusers"
+      ],
+      "threads": 4,
+      "weights_gb": 9.6
+    }
+  },
+  "measuredConsumerJobID": "job-0021bd0429e3",
+  "measuredResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-0021bd0429e3",
+      "job_log": {
+        "bytes": 2148,
+        "sha256": "fba476c5aeaa8360d7647e8d0be0d136f8d2ca227662a4345964f5321e1a392f"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-0021bd0429e3/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "CUBLAS_WORKSPACE_CONFIG=:4096:8",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "python",
+        "-u",
+        "selected_reader_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-0021bd0429e3",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-0021bd0429e3/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794000814.534829
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794000814.5673046
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794000814.5909717
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794000814.621366
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794000932.2980978
+        },
+        {
+          "name": "finished",
+          "ts": 1794000932.319153
+        }
+      ]
+    },
+    "elapsed_s": 118.43,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "393758477cee2b63fd8f2ea879698bbb393a4a53104ef5ca21d4ff1e65e333ff",
+      "size_bytes": 111391
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 7197.7,
+    "peak_vram_mb": 8848.0,
+    "returncode": 0,
+    "status": "ok"
+  }
+}

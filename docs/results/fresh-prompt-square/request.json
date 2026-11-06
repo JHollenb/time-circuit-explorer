@@ -1,0 +1,73 @@
+{
+  "backend": "diffusers",
+  "batch_size": 1,
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "frozenReaderSHA256": "743590ba7c87a7ff2afd340c1b03fece9f464183bc690a88ccc6ff1716c9e5af",
+  "height": 512,
+  "manifestSHA256": "9a155bd1410c52909997bacaf1d1aac2f9e90be86dc269d5e7edfab2b5285432",
+  "model": "flux2-klein-4b-distilled",
+  "ownedSources": [
+    "fresh_square_study.py",
+    "fresh_square_encoder.py",
+    "fresh_square_images.py",
+    "uncentered_reader.py",
+    "uncentered_reader_study.py",
+    "encoder_atoms.py",
+    "paired_fields.py",
+    "masked_kv_study.py",
+    "conditioning_demand.py",
+    "complete_masked_study.py",
+    "flux_clock.py",
+    "flux_clock_study.py"
+  ],
+  "parentRequestSHA256": "6edffd3827b1c226be569ec3fe49095188997d46d54d5b1da962087028f69bf6",
+  "prompts": [
+    {
+      "id": "00",
+      "prompt": "A studio photograph of a orange ceramic pitcher to the left of a teal metal watering can on a white table, soft lighting."
+    },
+    {
+      "id": "10",
+      "prompt": "A studio photograph of a teal ceramic pitcher to the left of a orange metal watering can on a white table, soft lighting."
+    },
+    {
+      "id": "01",
+      "prompt": "A studio photograph of a orange ceramic pitcher to the right of a teal metal watering can on a white table, soft lighting."
+    },
+    {
+      "id": "11",
+      "prompt": "A studio photograph of a teal ceramic pitcher to the right of a orange metal watering can on a white table, soft lighting."
+    }
+  ],
+  "protocol": "One fresh native noise draw at seed271828, shared exactly. No fitting, support/precision sweep, length matching, prompt replacement, hidden-state refresh or target transplantation. Preserve endpoints/four edges/mixed interaction, active/padding and semantic countertrends.",
+  "readerPolicy": "current-top4-uncentered-fp64-fp32-bf16-v1",
+  "requestSHA256": "beeff453d9412eaef5ae67b122483561880cc1a70825cea0b2497340e9e7ef92",
+  "schema": "tce-fresh-prompt-square-request-v1",
+  "scope": "Fresh fixed compositional coverage. Four own top4 candidates seal before four full-attention references. Both use original learned encoder suffix/denoiser/VAE and qualified compiled clocks; no zero-neural or arbitrary-prompt certificate.",
+  "seed": 271828,
+  "seq_len": 1536,
+  "sourceHashes": {
+    "clock-table.json": "ee858f422b8fadf42fdb77902851d947e3f981df9605d49d9e846ec6c9c44492",
+    "complete_masked_study.py": "f52633bc9d729b2a5032e024331d9b20fcee8cb993941cab87c197089cdcff99",
+    "conditioning_demand.py": "6536da5e73e89b7d2a18085d963edf578d0567ed20680c4022c1c82a10c10e9f",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "flux_clock.py": "bde499ff527f624fcd1b62a8f6f0b2fbaf70eebc7b7835fcd7d4c6403b4e0b2b",
+    "flux_clock_study.py": "eaccf6bdb75678ac6acb5a371f8858201cf83dbac4de83868b70d5570e4beddc",
+    "flux_functional_qwen_prefix.py": "763ae441d33396fe5cede5d96214c76e01aae779916ce5cf28e79cf5f5eb618a",
+    "fresh_square_encoder.py": "5a1104c76dcb597edd9a31540b86be3a0657c2b17ebd70d1fe33c2053f583265",
+    "fresh_square_images.py": "4cdc4ce242cb670efdef2cab485914363dc7ad55e88f3abc0515fbdc6048179d",
+    "fresh_square_study.py": "5c0084346395cdb70066372428ed400ecb38cc06b3d9f38d3195ba8535b33c14",
+    "frozen-plan.md": "b85f173f76a5e459f1aaf626ccdda0bc5fc56a66be8ad5b7617ddc6dbc8f7e10",
+    "inputs.json": "03a4f51ffc4087bd94b20b26b23b703c9453e08a54064cb01523087dd55ebff5",
+    "masked_kv_study.py": "920416ce49d823b1337a7f6d9f5fca90c8047723bb6b1d37dc09967114b6ad89",
+    "paired_fields.py": "408e035cb2f2f99558dbbe5abccdc281a5deade195abdbbc003549318ef09e88",
+    "qwen_h18_state_history.py": "17084d404f5ae00557e4ad8e94a8b84704787c47ebf9c875228cb452c4857036",
+    "resource-basis.json": "72ced25029a73753311cb663b3ec3992eb78cb2721591547de7cc3db1886149d",
+    "uncentered_reader.py": "743590ba7c87a7ff2afd340c1b03fece9f464183bc690a88ccc6ff1716c9e5af",
+    "uncentered_reader_study.py": "d0e86a01f3c30089d93de9ae1eaa22be83c2494de29374b2b0db42635a0f132f"
+  },
+  "steps": 4,
+  "timeoutSeconds": 1200,
+  "width": 512
+}
