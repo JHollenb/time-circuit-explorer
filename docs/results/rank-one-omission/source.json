@@ -1,0 +1,85 @@
+{
+  "asset": {
+    "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/compiled/bank-assets.npz",
+    "sha256": "25d48680c831e45d6841220a3231be1f79e62ebf1303556877613424bd0adafa"
+  },
+  "basis": {
+    "path": "/mnt/hdd8tb/mrun-work/job-49e50c9cb996/compiled/rank-one-basis.npz",
+    "sha256": "e891ea238bbc53ba9130d25c33c85c9b6fcc9596ce955a9b41751af5a97a5386"
+  },
+  "completeBankRoot": "/mnt/hdd8tb/mrun-work/job-29760e2a3970",
+  "geometry": {
+    "headDim": 128,
+    "kvWidth": 1024,
+    "qWidth": 4096
+  },
+  "pairs": [
+    [
+      "crane-behind",
+      "crane-before"
+    ]
+  ],
+  "parentBanks": [
+    {
+      "id": "crane-behind",
+      "method": "quadratic",
+      "path": "/mnt/hdd8tb/mrun-work/job-e9d147a7b3a5/predictions/crane-behind-quadratic.npz",
+      "sha256": "179f95222bf66bb37086706739e67a077728a346a078c5e3880f5764cca90eb6"
+    },
+    {
+      "id": "crane-before",
+      "method": "quadratic",
+      "path": "/mnt/hdd8tb/mrun-work/job-e9d147a7b3a5/predictions/crane-before-quadratic.npz",
+      "sha256": "a6d68bd1ccf7a99e93e6ce0aca5e93e459a413f60cb56f24cde4018df5cd0fb5"
+    }
+  ],
+  "parentControls": [
+    {
+      "id": "crane-behind",
+      "kind": "control-banks",
+      "path": "/mnt/hdd8tb/mrun-work/job-e9d147a7b3a5/reference-work/crane-behind-controls.npz",
+      "sha256": "70a4930c57a39dace3ed4e45dfb82fd2571eca8f252441d0dd42695b08410ac4"
+    },
+    {
+      "id": "crane-before",
+      "kind": "control-banks",
+      "path": "/mnt/hdd8tb/mrun-work/job-e9d147a7b3a5/reference-work/crane-before-controls.npz",
+      "sha256": "c40fa3faf4ae7310cec2021ff980e254eb10f29b751d28bbe9ec5bf1996ced31"
+    }
+  ],
+  "parentSeal": {
+    "path": "/mnt/hdd8tb/mrun-work/job-49e50c9cb996/predictions/prediction-seal.json",
+    "sha256": "1994cd7fdecc6d707dbf44f0b84ea1333398068f7a5403985bc06ccef07230d3"
+  },
+  "ports": [
+    {
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-port.npz",
+      "sha256": "5839d2ed451c7882aaa638000ff61ab09c5f0ea9dfb7fd888dd569a6920535d0"
+    },
+    {
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-port.npz",
+      "sha256": "cce9881e5836864102cf852cd4617337e221d50aa3eee0e3049a3179c9ce5e19"
+    }
+  ],
+  "rankBanks": [
+    {
+      "id": "crane-behind",
+      "method": "stream",
+      "path": "/mnt/hdd8tb/mrun-work/job-49e50c9cb996/predictions/crane-behind-stream-rank1.npz",
+      "sha256": "cfc4bec9168157b6892d26719581c63774348bcce1c3feb99a028fe86ca59287"
+    },
+    {
+      "id": "crane-before",
+      "method": "stream",
+      "path": "/mnt/hdd8tb/mrun-work/job-49e50c9cb996/predictions/crane-before-stream-rank1.npz",
+      "sha256": "d44a7b4382adf3d75ef6ba00d9d293e412dbcaf1694c41711adb2cde41c62dde"
+    }
+  ],
+  "roots": [
+    "/mnt/hdd8tb/mrun-work/job-49e50c9cb996",
+    "/mnt/hdd8tb/mrun-work/job-e9d147a7b3a5",
+    "/mnt/hdd8tb/mrun-work/job-29760e2a3970"
+  ]
+}

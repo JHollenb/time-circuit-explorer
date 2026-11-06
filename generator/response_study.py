@@ -125,7 +125,9 @@ def collect(root):
     cwd=result['diagnostics']['cwd']
     if cwd!='/mnt/hdd8tb/mrun-work/'+job['job_id']:raise ValueError('Unexpected worker path')
     remote=cwd+'/response-result'
-    code=inventory_code(remote).replace('size>8<<20 or total>32<<20','size>32<<20 or total>128<<20').replace('len(files)>50','len(files)>200')
+    # The aggregate budget already bounds every member. A separate32MiB cap
+    # refused valid larger observation streams within the128MiB total budget.
+    code=inventory_code(remote).replace('size>8<<20 or total>32<<20','total>128<<20').replace('len(files)>50','len(files)>200')
     def inventory():return json.loads(subprocess.run(['ssh','-T','beast','python3','-'],input=code,text=True,capture_output=True,check=True,timeout=30).stdout)
     before=inventory();local=root/'result';local.mkdir(exist_ok=True)
     subprocess.run(['rsync','-a','--protect-args','beast:'+remote+'/',str(local)+'/'],check=True,capture_output=True,timeout=90)

@@ -1,0 +1,137 @@
+{
+  "analysisSealSHA256": "208ed3747dc19946b9b254c73f6227dbee5518822433be68966dd67ddb36c1e6",
+  "collectionAmendment": "Dropped redundant32MiBmember cap, retained128MiBaggregate/200members/path-type guards/allremote-before-after-local hashes. Collector outside scientificpayload, worker/observations unchanged.",
+  "collectorSourceSHA256": "dcd99c237ef36b4d832a53a470cabae6437d4dc0cc0a0cbe723c146da0d56206",
+  "currentWorkerSourceHashesMatch": true,
+  "jobID": "job-54dce85e782d",
+  "jobState": "succeeded",
+  "localFreeBytesObserved": 13254832128,
+  "localRawObservationBytes": 67374183,
+  "losslessStreamsVerified": true,
+  "publicBytes": 17029302,
+  "publicFiles": 9,
+  "publicHashesVerified": true,
+  "requestSHA256": "a1a0e8e11a1e3f09c557fe0a794adc948944c772a45eb4b7cd7f44ae237133e4",
+  "retainedBytesVerified": 541200601,
+  "retainedFilesVerified": 19,
+  "run": {
+    "broken": false,
+    "command": "run",
+    "exit_code": 0,
+    "findings": 0,
+    "instrument_status": "target-streams-only",
+    "pack": "saturn-evidence-pack-v1",
+    "schema": "saturn-evidence-pipeline-v1",
+    "steps": {
+      "claims": {
+        "chain_ok": true,
+        "errors": [],
+        "ingested": 0,
+        "ingested_claims": [],
+        "receipts_accepted": 0,
+        "receipts_found": 0,
+        "registry": "artifacts/rank-one-omission-v1-claims-auto.jsonl",
+        "skipped_invalid": 0,
+        "skipped_invalid_receipts": [],
+        "skipped_too_large": 0,
+        "skipped_unchanged": 0,
+        "status": "ok"
+      },
+      "target_scope": {
+        "instrument_status": "target-streams-only",
+        "invalid_receipts": 0,
+        "receipts": 0,
+        "status": "ok",
+        "streams": 1
+      },
+      "watch": {
+        "fires": 0,
+        "ledgers_broken": 0,
+        "ledgers_unchanged": 0,
+        "ledgers_verified": 0,
+        "ledgers_written": 0,
+        "per_stream": [
+          {
+            "error": null,
+            "fires": 0,
+            "ledger": "/Users/jakeholl/domains/time-circuit-explorer/artifacts/rank-one-omission-v1-watch/result/_/observations-e431dd32.fires.jsonl",
+            "ledger_status": "no_fires",
+            "ledger_verified": null,
+            "predicates": 3,
+            "records": 49152,
+            "stream": "/Users/jakeholl/domains/time-circuit-explorer/artifacts/rank-one-omission-v1/result/observations.jsonl"
+          }
+        ],
+        "records": 49152,
+        "status": "ok",
+        "stream_errors": 0,
+        "streams": 1,
+        "streams_too_large": 0,
+        "streams_with_predicates": 1
+      },
+      "xref": {
+        "db": "artifacts/rank-one-omission-v1-xref.sqlite",
+        "distinct_addresses": 0,
+        "files_scanned": 5,
+        "files_skipped_unchanged": 0,
+        "files_too_large": 0,
+        "files_unparseable": 0,
+        "refs_added": 0,
+        "refs_from_citations": 0,
+        "refs_with_model_id": 0,
+        "root": "artifacts/rank-one-omission-v1/result",
+        "status": "ok"
+      }
+    },
+    "target": "/Users/jakeholl/domains/time-circuit-explorer/artifacts/rank-one-omission-v1/result"
+  },
+  "schema": "tce-rank-one-omission-evidence-v1",
+  "scope": "Retrospective1stream49152records,nofires,no terminalimageclaims/physicaladdressjoins.",
+  "storageScope": "RawlocalJSONL retained, publicgzip byte-lossless, fullcanonicalbanks/signedarrays nearcompute. No newarchive/deletion thiscycle; lastactual19,nextreview22.",
+  "testScope": "Four new independentprobability/factorization/emptytail/oblique-ratio/error-energy tests and existingmechanics. No fullmodel/arbitraryprompt quality coverage.",
+  "testWallSeconds": 9.172,
+  "tests": 98,
+  "timestamp": "2026-11-06T16:32:00.022718+00:00",
+  "verify": {
+    "broken": false,
+    "command": "verify",
+    "exit_code": 0,
+    "findings": 0,
+    "instrument_status": "target-streams-only",
+    "pack": "saturn-evidence-pack-v1",
+    "schema": "saturn-evidence-pipeline-v1",
+    "steps": {
+      "claims": {
+        "registry": "artifacts/rank-one-omission-v1-claims-auto.jsonl",
+        "status": "skipped"
+      },
+      "target_scope": {
+        "claims": [],
+        "claims_current": 0,
+        "claims_drifted": 0,
+        "claims_missing": 0,
+        "instrument_status": "target-streams-only",
+        "receipts": 0,
+        "status": "ok",
+        "streams": 1
+      },
+      "watch": {
+        "ledgers": [
+          {
+            "expected_missing": true,
+            "fires": 0,
+            "ledger": "/Users/jakeholl/domains/time-circuit-explorer/artifacts/rank-one-omission-v1-watch/result/_/observations-e431dd32.fires.jsonl",
+            "reason": "no_fires",
+            "verified": null
+          }
+        ],
+        "ledgers_broken": 0,
+        "ledgers_checked": 0,
+        "ledgers_missing": 0,
+        "ledgers_missing_expected": 1,
+        "status": "ok"
+      }
+    },
+    "target": "/Users/jakeholl/domains/time-circuit-explorer/artifacts/rank-one-omission-v1/result"
+  }
+}

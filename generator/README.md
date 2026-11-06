@@ -38,6 +38,8 @@ The [positive-quadratic follow-up](../docs/positive-tail-moment-closure.md) pred
 
 The [rank-one state follow-up](../docs/rank-one-tail-state.md) implements source-only coordinate compilation and actual causal mixed moments in `rank_one_tail.py`. `rank_one_tail_study.py stage|submit|collect` seals complete banks/states before independent direct-law references and original consumers; `publish_rank_one_tail.py verify|publish` authenticates source shards and retained arrays. Serving/direct BF16 outputs match with no fallbacks, while paired state error rises to39.02% from the full-direction law's24.15%. `plot_rank_one_tail.py` renders published scalars only. This is component research, not the website's arbitrary-prompt image backend.
 
+The [omitted-score diagnostic](../docs/rank-one-omission-diagnostic.md) expands the fixed rank-one/full-quadratic difference into signed mass and value terms. `rank_one_omission_study.py stage|submit|collect` runs the saved-array CPU assay; `publish_rank_one_omission.py verify|publish` authenticates complete arrays and lossless observations. No original parameters, consumers or model calls run. `plot_rank_one_omission.py` renders published scalars. The useful mixed-value term is diagnostic, with full-direction inputs still supplied; it is not a serving correction.
+
 ## Generate from the website
 
 From this repository in the domains workspace, with the configured mrun client and reachable fleet:

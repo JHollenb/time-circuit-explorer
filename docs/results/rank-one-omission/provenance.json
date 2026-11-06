@@ -1,0 +1,195 @@
+{
+  "claimBoundary": "Frozen rank1 omission diagnosis; zero new original projections/consumers/neural calls. Does not establish a new representation, laterstate/encoder/image capability.",
+  "completeCollectedInventory": {
+    "bytes": 72768886,
+    "files": {
+      "analysis-seal.json": {
+        "bytes": 774,
+        "sha256": "208ed3747dc19946b9b254c73f6227dbee5518822433be68966dd67ddb36c1e6"
+      },
+      "observations.jsonl": {
+        "bytes": 67374183,
+        "sha256": "a6c37f619aa6b864bd682eea4ea7bafca34840860133c54d4c78de8d732712e6"
+      },
+      "report.json": {
+        "bytes": 2266552,
+        "sha256": "254bc5b97306788dbf8889637bccd2c1b2fc1677f25fee5190e0d214969eab1a"
+      },
+      "request.json": {
+        "bytes": 4090,
+        "sha256": "deba8f7394b47325e61b8f52d84ce93fbc63a1d08a68e4841febbb98fdaa83e7"
+      },
+      "scalar-diagnostics.json": {
+        "bytes": 3120351,
+        "sha256": "337cc9c6ffb657f180fe6dee8c84df7b19b2a7838d43150c7778cbb74a28663d"
+      },
+      "source.json": {
+        "bytes": 2936,
+        "sha256": "0bf618db398e90bc33b06ec4ee57f761d03a6328c4d03ed9cca3e45a597dc831"
+      }
+    }
+  },
+  "jobID": "job-54dce85e782d",
+  "losslessStreamTransports": [
+    {
+      "conversion": "Byte-lossless gzip, exact round-trip checked.",
+      "published": "observations.jsonl.gz",
+      "publishedBytes": 14537525,
+      "publishedSHA256": "8f9a017af8335b080f8144889af08a9c65a85f6254b2f5a571fd2d36265e7741",
+      "source": "observations.jsonl",
+      "sourceBytes": 67374183,
+      "sourceSHA256": "a6c37f619aa6b864bd682eea4ea7bafca34840860133c54d4c78de8d732712e6"
+    },
+    {
+      "conversion": "Byte-lossless gzip, exact round-trip checked.",
+      "published": "scalar-diagnostics.json.gz",
+      "publishedBytes": 206030,
+      "publishedSHA256": "e74073a206ad90acae9f836b39a0718d78e09cd4e3c5899dbf3b79d1dc334f1b",
+      "source": "scalar-diagnostics.json",
+      "sourceBytes": 3120351,
+      "sourceSHA256": "337cc9c6ffb657f180fe6dee8c84df7b19b2a7838d43150c7778cbb74a28663d"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "1bf9dabb2a750e92c1b423839f3bda72949beb0212ca5e4459a313437e30c6d1",
+      "size_bytes": 85239
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1793982191.8333652,
+      "sha256": "1bf9dabb2a750e92c1b423839f3bda72949beb0212ca5e4459a313437e30c6d1",
+      "size_bytes": 85239
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1793982191.734859,
+      "sha256": "1bf9dabb2a750e92c1b423839f3bda72949beb0212ca5e4459a313437e30c6d1",
+      "size_bytes": 85239
+    }
+  },
+  "publication": "All compact reports/observations retained; complete canonicalbanks/signedvectors/scalars remain nearcompute with fullbyte checks. Retrospective analysis, not serving or heldout prediction.",
+  "requestSHA256": "a1a0e8e11a1e3f09c557fe0a794adc948944c772a45eb4b7cd7f44ae237133e4",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-54dce85e782d",
+      "job_log": {
+        "bytes": 284,
+        "sha256": "45593088700dc77d69dd6c5a310f042eaf72eec6e1012a912c0687e669e77a55"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-54dce85e782d/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "python",
+        "-u",
+        "rank_one_omission_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-54dce85e782d",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-54dce85e782d/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1793982191.8206315
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1793982191.851703
+        },
+        {
+          "name": "process.launch",
+          "ts": 1793982191.8610456
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1793982191.8882926
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1793982206.2072132
+        },
+        {
+          "name": "finished",
+          "ts": 1793982206.2152238
+        }
+      ]
+    },
+    "elapsed_s": 14.51,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "1bf9dabb2a750e92c1b423839f3bda72949beb0212ca5e4459a313437e30c6d1",
+      "size_bytes": 85239
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 846.4,
+    "peak_vram_mb": 0.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-rank-one-omission-public-v1"
+}
