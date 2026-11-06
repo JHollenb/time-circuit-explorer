@@ -1,0 +1,39 @@
+{
+  "schema": "tce-complete-masked-image-advisor-v1",
+  "cycle": 26,
+  "advisor": "/root/astra_zero_forward_advisor",
+  "model": "gpt-6-astra",
+  "recordType": "Summary of completed source, result and newest-post reviews; not a verbatim transcript or terminal certification.",
+  "sourceSnapshots": {
+    "generator/complete_masked_study.py": "322ab994f994f9a45e6314769ee38cfd9e04445eeeefcf465cb5abd3124ba561",
+    "generator/complete_masked_encoder.py": "e092ee527e091a5a5a4fdf1313598e660e34f36e723dbdba80dc60ae6841a413",
+    "generator/paired_image_consumer.py": "c1c71b41806a453ee0acc3e8ee7759efe6866213f4f46b8abc4bfc1a0d4a1a7c",
+    "generator/paired_fields.py": "408e035cb2f2f99558dbbe5abccdc281a5deade195abdbbc003549318ef09e88"
+  },
+  "resultSHA256": "faba054cc5f9d7e36703870ac1c717a444c94b4560c5b5fb028762ebbade7ae5",
+  "postSnapshots": [
+    {
+      "path": "../obsidian/blog/2026-11-06-111533-improving-an-mlp-on-its-own-predicted-states.md",
+      "sha256": "cedd4455371daddb41c7cda75a0b330b24456b26058c4e7e94067eae4674e231",
+      "implication": "Own-state response improvement retains dense first-affine computation and does not render images."
+    },
+    {
+      "path": "../obsidian/blog/2026-11-06-105404-mathematical-accounts-of-model-computation.md",
+      "sha256": "17b03eeb2bb132cbe4cdfda676503c3dd7ad96152ddfedfd075d33b5238b3a07",
+      "implication": "Architectural scan/readout/attention parity retains original parameters; proposed invariance assays are not new zero-neural methods."
+    },
+    {
+      "path": "../obsidian/blog/2026-11-05-153154-state-context-and-the-mathematics-of-time-circuits.md",
+      "sha256": "ae0487c88dd35ba6ab6b4062b97acb22ddd64ab974477dd2973b9636903a809e"
+    },
+    {
+      "path": "../obsidian/blog/2026-11-05-161109-the-one-assumption-that-would-make-model-computation-easier-to-understand.md",
+      "sha256": "6f90eaeaf77fc7cbb2edfee969da1b6ad0dd89eceafd0c36896c85fd60ce5699"
+    }
+  ],
+  "sourceReview": "No substantive blocker. Retain signed uint8/zero-denominator/corrupt-candidate tests, four model phases plus lexical child, separate block0 memoization saving, and absence of matched speed evidence.",
+  "resultReview": "Bounded exactness survives independent review. Distinct candidate/full paths and independent native54-block references exclude branch aliasing and target refresh. Candidate K/V rows35 and policyFalse differ from reference512/True. Reference receipt binds earlier candidate seal. Both prompts match28 computed encoder fields plus commonH0 and16 image fields; PNG bytes match. Paired response is nonzero and exact. Full-byte verification covers708332383bytes. Images show left/right with size/lighting changes. Supports5.2376% fewer nominal encoder linear MACs on these executions, not speedup or a universal35-row rule. Preserve earlier28-row counterexample.",
+  "mathematicalAdvice": "Triangular active/padding state is the correct dependency account: active state advances from active state alone; padding queries still advance from themselves and active memory, and their tap outputs remain demanded by FLUX.",
+  "nextCut": "Compile the complete clock-only subgraph for the four deployed actual timestep bit patterns: time embedding, three shared modulation vectors and norm_out conditioning affine. Exclude all eliminated learned tensors before selected serving loads. Guidance absent and reference/KV modes disabled. Preserve actual BF16 clock conversion/divide/multiply path, checkpoint/dtype/profile. Two new candidate renders reuse current E/noise and already sealed targets; no new reference-image campaign. Offline learned compilation remains paid; six affines per denoiser invocation removed, all live attention/normalization/MLP/decode remain. Finite-domain partial evaluation does not solve the strict zero-neural goal.",
+  "nextPlan": "docs/plans/compiled-flux-clock.md"
+}

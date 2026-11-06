@@ -10,6 +10,8 @@ The [prediction-only generator](generator/README.md) turns those reconstructed e
 
 The [first measured benchmark](docs/prediction-only-benchmark.md) records 365.55–418.85 seconds of denoiser wall time per image on four configured CPU threads, with native encoding and decoding measured separately.
 
+The [complete masked-encoder result](docs/complete-masked-encoder-image.md) now follows two fresh left/right prompts through their own complete conditioning and original image consumers. Candidates match all retained computed fields and original PNG bytes while avoiding 146.15 billion nominal encoder linear MACs across the pair (5.24%). The 109.59-second assay still pays original learned attention, MLP, denoiser and VAE work; it establishes no runtime speedup or arbitrary-prompt zero-neural backend.
+
 The [zero-network image response experiment](docs/zero-network-image-response.md) goes further within a supplied scene: a compiled RGB chart renders new doses with no encoder, denoiser or VAE evaluation. It measured 1.075 ms of arithmetic per primary output. The public chart and CLI are runnable with NumPy/Pillow; broad changes interpolate well, while fine contextual effects remain weak. Arbitrary new prompts and seeds remain outside this experiment.
 
 Open `?model=flux2-klein-4b#zero-network` for live browser rendering. Switch among four supplied contexts, move the dose slider, compare tested doses with historical native targets, and inspect current-device timing alongside the original CPU assay. Browser float32 arithmetic reproduces all 16 recorded primary outputs pixel for pixel. Calibration RGB packs load only when the section comes into view; no model runtime is downloaded.

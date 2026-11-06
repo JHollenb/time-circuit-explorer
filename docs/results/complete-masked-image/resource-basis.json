@@ -1,0 +1,50 @@
+{
+  "encoderGeometry": "One~202MBlayer reused for2serialB1/512streams; never co-resident with image model.",
+  "encoderHistoryJobID": "job-0dddb989549a",
+  "exception": "Generic diffusion B64/fallback config preview40.2GB is inapplicable. Reuse native same-profile14336MBRAM/13000MBVRAM envelope; current nativeB1 measured9168MBVRAM. Four serial model phases plus one lexical child avoid model overlap. Guard14300MB below card physical-minus-margin; actual peaks retained.",
+  "intentFirstPreview": {
+    "beast": {
+      "artifact_id": null,
+      "artifact_kind": null,
+      "artifact_locator": {},
+      "artifact_mount": null,
+      "backend": "diffusers",
+      "device": "cuda",
+      "dtype": "bfloat16",
+      "engine_options": {},
+      "engine_profile": "backend:diffusers",
+      "est_ram_mb": 8410.0,
+      "est_vram_mb": 40212.3,
+      "est_wall_s": null,
+      "max_batch": 64,
+      "model": "flux2-klein-4b-distilled",
+      "ram_limit_mb": 52809.0,
+      "reasons": [
+        "host=beast ram=66513MB cuda=True mps=False ane=False task=forward",
+        "dtype=bfloat16 (explicit opt-in \u2014 not the canonical path)",
+        "device=cuda (explicit)",
+        "TF32 forced OFF on cuda (breaches 4-decimal stats)",
+        "backend=diffusers (explicit)",
+        "max_batch=64 threads=4 ram_limit=52809MB (est x 1.3)",
+        "selector fallback: explicit backend has no matching local artifact",
+        "science runtime envelope: diffusers"
+      ],
+      "threads": 4,
+      "weights_gb": 9.6
+    }
+  },
+  "measuredNativeJobID": "job-36aca5f049e6",
+  "measuredNativeReservation": {
+    "cpu_threads": 4,
+    "disk_gb": 1.0,
+    "est_wall_s": 180.0,
+    "ram_mb": 14336.0,
+    "source": "declared",
+    "vram_mb": 13000.0
+  },
+  "measuredNativeResult": {
+    "elapsed_s": 41.29,
+    "peak_rss_mb": 3424.6,
+    "peak_vram_mb": 9168.0
+  }
+}

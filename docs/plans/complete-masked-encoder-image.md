@@ -1,6 +1,6 @@
 # Compose mask-dependent K/V reduction through the complete image demand
 
-Status: cycle25 follow-up, frozen prompt pair and scientific scope; not staged or executed. Selected by Astra after the [same-noise image consequence](../conditioning-image-consequence.md). No further precision search or intermediate image-attribution study is included.
+Status: executed in cycle26 as `job-394733a01129`; [result and computation account](../complete-masked-encoder-image.md). The protocol below records the original frozen scope. Both candidates match all retained computed fields and original PNG bytes for this pair; most learned computation remains. Selected by Astra after the [same-noise image consequence](../conditioning-image-consequence.md). No further precision search or intermediate image-attribution study is included.
 
 Before tokenization, freeze these two fresh strings:
 

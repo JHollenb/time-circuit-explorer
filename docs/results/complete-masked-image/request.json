@@ -1,0 +1,55 @@
+{
+  "backend": "diffusers",
+  "batch_size": 1,
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "height": 512,
+  "manifestSHA256": "9a155bd1410c52909997bacaf1d1aac2f9e90be86dc269d5e7edfab2b5285432",
+  "model": "flux2-klein-4b-distilled",
+  "ownedSources": [
+    "complete_masked_study.py",
+    "complete_masked_encoder.py",
+    "paired_image_consumer.py",
+    "paired_fields.py",
+    "masked_kv.py",
+    "kv_accumulation.py",
+    "masked_kv_study.py",
+    "encoder_atoms.py",
+    "conditioning_demand.py"
+  ],
+  "planSHA256": "e65b8549eb031155744b76537bb3c3bf93ad9c6b19c6a3b9e52d37b1675d9fed",
+  "prompts": [
+    {
+      "id": "A",
+      "prompt": "A red cube to the left of a blue sphere on a plain white tabletop. Two separate objects, studio photograph."
+    },
+    {
+      "id": "B",
+      "prompt": "A red cube to the right of a blue sphere on a plain white tabletop. Two separate objects, studio photograph."
+    }
+  ],
+  "protocol": "Two frozen rawstrings; compiled block0 lexicalQKV, compactKV blocks1..26 with fixedpolicy. All512queries/residual/MLP. OwnH/E/latent. Candidate2images seal before original native27block fullreferences and2fullimages. Inheritedseed314159noise; no redraw, layerrescue or precisionsearch.",
+  "requestSHA256": "e92f6a37039c8ddc15ee73bc60642433f98eb54489a7179816baa0abaeb1a515",
+  "schema": "tce-complete-masked-encoder-image-request-v1",
+  "scope": "First-prompt dependency reduction through complete encoder and native images. Most learned work paid; not arbitrary-prompt zero-neural serving.",
+  "seq_len": 1536,
+  "sourceHashes": {
+    "complete_masked_encoder.py": "4729fcd45fea97bd8b40c1ebd0f4c7205de0ed694d9b8dd05a5f0431ea091d80",
+    "complete_masked_study.py": "f52633bc9d729b2a5032e024331d9b20fcee8cb993941cab87c197089cdcff99",
+    "conditioning_demand.py": "6536da5e73e89b7d2a18085d963edf578d0567ed20680c4022c1c82a10c10e9f",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "flux_functional_qwen_prefix.py": "763ae441d33396fe5cede5d96214c76e01aae779916ce5cf28e79cf5f5eb618a",
+    "kv_accumulation.py": "9c33767d20f6e025611f67c25f9ce1221f1fa3f2fa0fb4967dc314d34f311505",
+    "masked_kv.py": "a0297c8ef139d51ed10d4fe8c06776e68260ea9ba20d33cba801991dd2c69dc6",
+    "masked_kv_study.py": "920416ce49d823b1337a7f6d9f5fca90c8047723bb6b1d37dc09967114b6ad89",
+    "paired_fields.py": "408e035cb2f2f99558dbbe5abccdc281a5deade195abdbbc003549318ef09e88",
+    "paired_image_consumer.py": "c7712eb199dffd2239adb8f99cdceee73c7dde529c477b5c4536c833b7f63fbb",
+    "qwen_h18_state_history.py": "17084d404f5ae00557e4ad8e94a8b84704787c47ebf9c875228cb452c4857036",
+    "resource-basis.json": "097015371359599646fd89b56c38f5d14bd4e6379749ccbaf97ab35d39043b5b",
+    "serve.json": "0b6e9b3112c0fede777243a509c6189e0a3cbe24d03ca110f08fe4aea6ea46eb",
+    "source.json": "3eb29cf1cdca65fd0a0574a5f3783b4170db551f77925119950ad46672015403"
+  },
+  "steps": 4,
+  "timeoutSeconds": 900,
+  "width": 512
+}
