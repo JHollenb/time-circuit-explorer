@@ -6,6 +6,8 @@ The native text encoder supplies conditioning and the native VAE renders the fin
 
 The separate [zero-network response chart](../docs/zero-network-image-response.md) eliminates all neural evaluation for a supplied context/dose family. Its public RGB bundle and `render_response.py` need only NumPy and Pillow. It interpolates a known scene, with measured limitations on small contextual effects; it does not replace this prompt/seed generator.
 
+Arbitrary prompts are supported by the full reconstructed generator, with dense learned-weight computation and native encoding/decoding. Arbitrary prompts with **zero neural evaluations** remain open. The [research record](../docs/zero-neural-research.md) documents that distinction and the first prompt-composition diagnostics.
+
 ## Generate from the website
 
 From this repository in the domains workspace, with the configured mrun client and reachable fleet:
@@ -58,6 +60,25 @@ Only current working registers remain resident. The worker saves final BF16 late
 Timings depend on cache state and other fleet work. Queue wait, mrun staging and collection are excluded from worker timing. No energy measurement, FLOP count or controlled native speed comparison is claimed.
 
 The qualified prompt/seed must reproduce the prior sealed mathematical forecast's initial noise, conditioning, terminal latent and PNG exactly. That check certifies extraction fidelity to that forecast. A new prompt is an actual new own-state generation; its agreement with native CUDA execution is unmeasured unless separately compared.
+
+## Saved-only prompt-composition diagnostics
+
+`prompt_closure_study.py` stages three source-bound native prompt histories and a separately scored fourth corner. Its prediction child seals204 complete candidate-array hashes before target-exclusive file reads. Six fixed composition/control rules are compared at34 independently supplied boundaries; these are not a connected state rollout. `prompt_span_study.py` separately fits the best two-direction plane using the target, explicitly as a capacity diagnostic with no serving claim.
+
+The source is an existing authenticated campaign; these workers execute no model, original dense weights, encoder or VAE. They still use historical native states and rendered images. Stage and submit once through the workspace's configured mrun environment:
+
+```sh
+../common/bin/common exec python generator/prompt_closure_study.py stage artifacts/my-closure \
+  --source ../artifacts/mdb-flux-prompt-factorial-20261105/run-01
+../common/bin/common exec python generator/prompt_closure_study.py submit artifacts/my-closure
+# Inspect the returned job; collect only that job after success.
+../common/bin/common exec python generator/prompt_closure_study.py collect artifacts/my-closure
+../common/bin/common exec python generator/prompt_span_study.py stage artifacts/my-span --parent artifacts/my-closure
+../common/bin/common exec python generator/prompt_span_study.py submit artifacts/my-span
+../common/bin/common exec python generator/prompt_span_study.py collect artifacts/my-span
+```
+
+These launchers require the retained Beast source paths and the qualified worker environment. The checked-in [results](../docs/results/prompt-composition/provenance.json) retain the original requests, raw reports, predictions, controls and custody subset without copying large native state arrays into this repository. Runtime figures are analysis costs, not generator latency.
 
 ## Provenance and checks
 

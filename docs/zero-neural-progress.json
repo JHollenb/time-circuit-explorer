@@ -1,0 +1,105 @@
+{
+  "schema": "tce-zero-neural-goal-progress-v1",
+  "updatedAt": "2026-11-06T06:44:00Z",
+  "objective": "let’s solve arbitrary prompt to image without any forward zero neural evals. Every few turns have Astra review the newest blog posts and get a big picture of where we are at so that we can find the best route forward",
+  "status": "active",
+  "researchCycle": 1,
+  "requirements": {
+    "arbitraryRawPromptCoverage": "open",
+    "zeroNeuralServing": "demonstrated only within supplied context/dose RGB chart",
+    "reusablePromptOperandFormation": "open; two global calibration directions leave substantial measured conditioning residual",
+    "reducedOwnStateContinuation": "open; full dense reconstruction advances its own state, saved-only diagnostics do not",
+    "generalNonNeuralPixelDecoder": "open; interpolated supplied RGB images do not establish it",
+    "independentPromptFaithfulnessAndQuality": "open",
+    "astraAdvisoryReview": "completed for initial route, both diagnostics and latest OVC10/OVC11 synthesis; no new general-generation claim"
+  },
+  "openPreference": {
+    "question": "Reproduce FLUX prompt/seed behavior, or comparable prompt-faithful quality using another recovered computation?",
+    "status": "asked; no answer received; current saved-only diagnostics do not depend on this choice"
+  },
+  "reviews": {
+    "advisor": "astra_zero_forward_advisor",
+    "model": "gpt-6-astra",
+    "lastCycle": 1,
+    "nextDueByCycle": 4,
+    "earlierIf": "new model evidence changes the route",
+    "latestPosts": [
+      {
+        "path": "../obsidian/blog/2026-11-05-220837-predicting-the-change-that-the-next-computation-receives.md",
+        "sha256": "c52ed01157c74ee89c559c5f298aac2f9b1695fd15b40aa115baa24c21c5214a"
+      },
+      {
+        "path": "../obsidian/blog/2026-11-05-161109-the-one-assumption-that-would-make-model-computation-easier-to-understand.md",
+        "sha256": "453863e1b4eeeeefe9fd6c152d61e58a1eb92edb80dc76a963a6d12c7cf4473a",
+        "scope": "OVC10 results and OVC11 writer plan"
+      },
+      {
+        "path": "../obsidian/blog/2026-08-14-what-saturn-can-actually-do.md",
+        "sha256": "affc43eab107208d7072f101d9b32488406c4b0bfdaa213600ba845b8b79576b"
+      }
+    ],
+    "advice": [
+      "Prefer factored local composition and retained products over a global low-degree truncation.",
+      "Separate supplied spatial token transport from physical latent reflection or global model equivariance.",
+      "Track raw interactions, signed residuals, clipping and controls separately.",
+      "Target-assisted two-direction projection measures capacity, not a deployable predictor or intrinsic semantic dimension. The well-conditioned conditioning residual excludes only exact reconstruction by those two globally weighted differences; retain later-text counter-trends and distinguish RMS from energy.",
+      "OVC11 is a proposed writer-memory-reader experiment, not a result. Distinguish the written K/V from later hidden state and qualify the next receiving operation.",
+      "Prioritize a bounded compiled MLP write and residual consumer over another independently calibrated seven-corner history. Compile local gate/value products offline; serve only five projected coefficient arrays and the declared residual update.",
+      "Require own-state continuation, a raw-prompt compiler and a non-neural decoder before claiming arbitrary-prompt generation."
+    ]
+  },
+  "completedRuns": [
+    {
+      "jobID": "job-3ff4ee580893",
+      "requestSHA256": "1243c7b75de89651798eff248dfa8cc54d7378b8d97230b23092ee025b127164",
+      "type": "sealed retrospective six-rule prompt-composition diagnostic",
+      "boundaries": 34,
+      "sealedPredictions": 204,
+      "newNeuralEvaluations": 0,
+      "schedulerSeconds": 19.81,
+      "workerSeconds": 19.112617,
+      "peakRSSMB": 495.4
+    },
+    {
+      "jobID": "job-7667bd48bb25",
+      "requestSHA256": "c01ee02eb75a1a627ce1eb59977abff1e38d1d3c8aa752b02b3c11e673e99e12",
+      "type": "target-assisted retrospective two-direction capacity diagnostic",
+      "boundaries": 34,
+      "newNeuralEvaluations": 0,
+      "schedulerSeconds": 21.74,
+      "workerSeconds": 16.418885,
+      "peakRSSMB": 390.7
+    }
+  ],
+  "unexecutedRuns": [
+    {
+      "jobID": "job-a0456ce5fe32",
+      "requestSHA256": "f99fa5f9bf2eb63c1e6a15db4664b5ec4174231b1120eeaf3e5186745918fe19",
+      "status": "cancelled while queued; default reservation did not fit admission gap; replaced using measured resource profile",
+      "scientificEvidence": "none"
+    }
+  ],
+  "liveJobs": [],
+  "evidence": {
+    "directory": "results/prompt-composition",
+    "custody": "guarded declared/sealed/executed payload hashes match; collected result inventories verified",
+    "saturnSweep": "run and verify exit0; target-streams-only; two streams, 238 records; no terminal claim receipts or physical address joins",
+    "interpretation": "zero neural arithmetic on saved native states; retrospective, per-boundary anchors; no arbitrary-prompt or own-state-rollout claim"
+  },
+  "nextCut": {
+    "status": "proposed, not launched",
+    "question": "Can one dense MLP write be replaced by a coefficient-only input-line polynomial whose prediction feeds the residual update?",
+    "plan": "plans/compiled-mlp-write.md",
+    "source": "existing 32-row MLP corpus, job-f0cd6a040823",
+    "law": "m_hat(alpha) = sum(c_j * alpha^j, j=0..4); I_next = BF16(U0 + BF16(gM * BF16(m_hat)))",
+    "requirements": "bind source custody and parameter recipes; seal coefficients and predictions without midpoint target access; retain BF16 approximation error and fixed-parent consumer scope; no new neural truth run"
+  },
+  "alternativeDiagnostic": {
+    "status": "proposed, not launched; lower priority after Astra review",
+    "question": "Does the color-relation interaction transfer across shape?",
+    "organism": "existing eight-prompt shape/color/relation cube, seed47, source job-1424b0346278",
+    "law": "X111_hat = X110 + X101 + X011 - X100 - X010 - X001 + X000",
+    "requirements": "bind remote migration custody and available saved ports before staging; keep retrospective seven-corner diagnostic separate from own-state generation",
+    "coldSource": "/mnt/hdd8tb/cold-storage/mbp1/domains/2026-11-04-artifact-offload/artifacts/mdb-flux-scene-inventory-20261103"
+  }
+}

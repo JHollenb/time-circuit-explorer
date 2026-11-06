@@ -14,6 +14,8 @@ The [zero-network image response experiment](docs/zero-network-image-response.md
 
 Open `?model=flux2-klein-4b#zero-network` for live browser rendering. Switch among four supplied contexts, move the dose slider, compare tested doses with historical native targets, and inspect current-device timing alongside the original CPU assay. Browser float32 arithmetic reproduces all 16 recorded primary outputs pixel for pixel. Calibration RGB packs load only when the section comes into view; no model runtime is downloaded.
 
+The [arbitrary-prompt research record](docs/zero-neural-research.md) tracks the remaining gap. Two saved-only diagnostics inspect prompt composition at34 boundaries, retaining the prediction seals, native comparisons and target-assisted span analysis. They use no new neural evaluations; each boundary still uses native calibration states, so this is research toward a generator rather than arbitrary-prompt serving.
+
 ## Run locally
 
 Requires Node.js 20 or newer. There are no package dependencies to install.
