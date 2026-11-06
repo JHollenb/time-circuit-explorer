@@ -10,6 +10,8 @@ Arbitrary prompts are supported by the full reconstructed generator, with dense 
 
 The [complete-vocabulary lexical compiler](../docs/raw-prompt-encoder-atoms.md) now accepts raw strings and serves the encoder's first embedding/QKV/position operands without original projections or a neural runtime. It memoizes learned outputs for all 151,936 IDs, with 2.645 GB of atoms retained near compute. Eight frozen strings exactly matched the isolated native prefix; contextual attention, later encoder layers and images are outside that result.
 
+The [context-state experiment](../docs/compiled-context-statistics.md) tests the first contextual read after that prefix. A positive-feature streaming state closes against its own kernel, but not against exact attention: rank64 median head error is183%. `context_statistics_study.py stage|submit|collect` runs the source-bound assay; `context_kernel_diagnostics.py` and `context_key_diagnostics.py` analyze sealed saved arrays. Diagnostics retain key collapse and lookahead-fitted conditioning separately from serving. They are not an image-generation backend.
+
 ## Generate from the website
 
 From this repository in the domains workspace, with the configured mrun client and reachable fleet:

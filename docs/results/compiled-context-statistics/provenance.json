@@ -1,0 +1,204 @@
+{
+  "completeCollectedInventory": {
+    "bytes": 20189341,
+    "files": {
+      "observations.jsonl": {
+        "bytes": 16252235,
+        "sha256": "6dd5dbc087bb89abf4875e3773ebb90107e7da68df610426528457c3fe9c723d"
+      },
+      "omega.npy": {
+        "bytes": 65664,
+        "sha256": "ea80ef3ef98e97894f820b995592eb61548663fa0e2db13523ab70831b77bd08"
+      },
+      "paired-observations.jsonl": {
+        "bytes": 3512912,
+        "sha256": "2d4b7fad8ade1cf63697c3cb98e8a7569fda67bab0094e5590732d759a13d518"
+      },
+      "prediction-seal.json": {
+        "bytes": 79513,
+        "sha256": "1f05982f5ce96fe84c3ce4a48935b95b55c6854b4ad9aea51cb9f6b8cf612567"
+      },
+      "reference-receipt.json": {
+        "bytes": 6421,
+        "sha256": "ae25f587436ba8658f3a85d5b0ec7d847950bc4484ae76bec534431fbc00d514"
+      },
+      "report.json": {
+        "bytes": 257852,
+        "sha256": "b0129b6e34c157b18a531cdbe2a75162401b5ad96f47c597f7b1601ed4cf7bfd"
+      },
+      "request.json": {
+        "bytes": 2679,
+        "sha256": "d7abfdfe4490cf9275336f4b1e2ec1a619cc6304209af3d2997ac42d2467ba01"
+      },
+      "serve.json": {
+        "bytes": 12065,
+        "sha256": "3d97d4571779b3d09c9039005ca187de5965b231728d80bd58b99478cacc9164"
+      }
+    }
+  },
+  "goalStatus": "Active. Context-state approximation and retrospective diagnostics do not establish arbitrary-prompt zero-neural images.",
+  "jobID": "job-cad6090b693f",
+  "losslessStreamTransports": [
+    {
+      "conversion": "gzip only; decompressed bytes exactly equal source, verified; no row/value/schema changes.",
+      "published": "observations.jsonl.gz",
+      "publishedBytes": 3158501,
+      "publishedSHA256": "80f64558c05702749ba2dbf000e216775dbd7935f5b870c98ddcc60f46c7b2a1",
+      "source": "observations.jsonl",
+      "sourceBytes": 16252235,
+      "sourceSHA256": "6dd5dbc087bb89abf4875e3773ebb90107e7da68df610426528457c3fe9c723d"
+    },
+    {
+      "conversion": "gzip only; decompressed bytes exactly equal source, verified; no row/value/schema changes.",
+      "published": "paired-observations.jsonl.gz",
+      "publishedBytes": 489354,
+      "publishedSHA256": "a4f3cf851224b11152b57eba55d2e74e18dd6198eff52676832d1891cd4dd22e",
+      "source": "paired-observations.jsonl",
+      "sourceBytes": 3512912,
+      "sourceSHA256": "2d4b7fad8ade1cf63697c3cb98e8a7569fda67bab0094e5590732d759a13d518"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "68e8ab0c81d842a74d2399f31898010978aa8c2091ce5a1f016dc5e1b5dd7719",
+      "size_bytes": 14368
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1793956061.537784,
+      "sha256": "68e8ab0c81d842a74d2399f31898010978aa8c2091ce5a1f016dc5e1b5dd7719",
+      "size_bytes": 14368
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1793956061.154264,
+      "sha256": "68e8ab0c81d842a74d2399f31898010978aa8c2091ce5a1f016dc5e1b5dd7719",
+      "size_bytes": 14368
+    }
+  },
+  "publication": "All collected result files retained; JSONL transported as byte-lossless gzip. Large sealed heads/state/ports/reference slice remain near compute, separately hash-verified for primary assay.",
+  "remoteResultRoot": "/mnt/hdd8tb/mrun-work/job-cad6090b693f/response-result",
+  "requestSHA256": "f3d2276e672b94757d1b00a690bbc226db0fcdd928a8731e19334217288227b6",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-cad6090b693f",
+      "job_log": {
+        "bytes": 305,
+        "sha256": "33fa169eccc4d33ed07b6f03f0d165458629ca703668c0fcce976709e9294180"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-cad6090b693f/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "python",
+        "-u",
+        "context_statistics_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-cad6090b693f",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-cad6090b693f/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1793956061.5286
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1793956061.5602658
+        },
+        {
+          "name": "process.launch",
+          "ts": 1793956061.5679832
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1793956061.5975156
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1793956077.9631178
+        },
+        {
+          "name": "finished",
+          "ts": 1793956077.9728684
+        }
+      ]
+    },
+    "elapsed_s": 17.09,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "68e8ab0c81d842a74d2399f31898010978aa8c2091ce5a1f016dc5e1b5dd7719",
+      "size_bytes": 14368
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 314.3,
+    "peak_vram_mb": 0.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-context-evidence-public-v1"
+}

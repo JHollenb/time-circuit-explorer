@@ -1,6 +1,6 @@
 # Test whether context admits a smaller streaming state
 
-Status: proposed after the [complete lexical-prefix result](../raw-prompt-encoder-atoms.md) and Astra's cycle5 review. No feature compilation, reduced contextual execution or new image result is claimed here. The arbitrary-prompt zero-neural image goal remains active.
+Status: **implemented and diagnosed in cycle6**, following the [complete lexical-prefix result](../raw-prompt-encoder-atoms.md) and Astra's cycle5 review. The [measured result](../compiled-context-statistics.md) preserves this original design: streaming/direct-kernel closure is about7e-17, but rank64 median whole-head error is183.3% versus97.8% uniform. Saved-only key diagnostics observe collapse; retrospective gauge conditioning helps but remains inaccurate. No image result or general small-state impossibility follows. The arbitrary-prompt zero-neural image goal remains active.
 
 ## The next unresolved mathematical assumption
 

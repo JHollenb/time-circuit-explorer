@@ -1,0 +1,76 @@
+{
+  "backend": "numpy-fp64",
+  "cpuThreads": 1,
+  "device": "cpu",
+  "exactAttentionOnline": false,
+  "featureConstruction": "Nested first16/32/64 rows of standard-normal PCG64(seed6306) matrix [64,128]. Frozen before targets; exp dot positive kernel with input norm and d**.25 scaling.",
+  "head": 0,
+  "kvHead": 0,
+  "mode": "full",
+  "pairs": [
+    [
+      "objects-left",
+      "objects-right"
+    ],
+    [
+      "forest-short",
+      "forest-expanded"
+    ],
+    [
+      "order-a",
+      "order-b"
+    ],
+    [
+      "repeat-once",
+      "repeat-many"
+    ],
+    [
+      "unicode-a",
+      "unicode-b"
+    ],
+    [
+      "long-forward",
+      "long-reverse"
+    ]
+  ],
+  "parent": {
+    "custody": {
+      "declared": {
+        "sha256": "30a6a1eb42c9ca5165e30b640732d61f0bc2b83188b1f977678bb3a27a3e6a11",
+        "size_bytes": 12780
+      },
+      "executed": {
+        "host": "beast",
+        "reported_ts": 1793953477.5969012,
+        "sha256": "30a6a1eb42c9ca5165e30b640732d61f0bc2b83188b1f977678bb3a27a3e6a11",
+        "size_bytes": 12780
+      },
+      "required": true,
+      "sealed": {
+        "sealed_ts": 1793953477.471775,
+        "sha256": "30a6a1eb42c9ca5165e30b640732d61f0bc2b83188b1f977678bb3a27a3e6a11",
+        "size_bytes": 12780
+      }
+    },
+    "jobID": "job-7dcbeae35deb",
+    "requestSHA256": "7fbdf92591bec6fbd8e27b1c2acb1608214f9c41bc21f12f359c557c67864fa0"
+  },
+  "ranks": [
+    16,
+    32,
+    64
+  ],
+  "referencePolicy": "Post-seal FP64 causal attention consuming BF16 lexical/RoPE operands, then BF16 head rounding. Not native SDPA/Flash parity.",
+  "requestSHA256": "f3d2276e672b94757d1b00a690bbc226db0fcdd928a8731e19334217288227b6",
+  "retention": "Complete ports, forecasts, state checkpoints and reference heads stay near compute. Collect compact metrics and manifests; original weights excluded from serving.",
+  "schema": "tce-context-statistics-request-v1",
+  "scope": "Raw text -> complete compiled lexical atoms -> one first-layer Qwen3 head0 positive-kernel context state; exact FP64 attention and original output-slice diagnostics offline only. Reduced model-derived computation, no full encoder or image.",
+  "seed": 6306,
+  "sourceHashes": {
+    "context_statistics.py": "6f86949f47160890bd58a41174fe99809d6dce8a3e67222be09f7e77e961b057",
+    "context_statistics_study.py": "0d44d03f2a8eabd32b5d7034a449f7a46e7d8abe0252dd1b94d229c31f1ea1c8",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "reference-source.json": "60dbed6a9348396e5d7f1cc5c1e0c5b064fcfe4e67477077f80bce0cc077745d",
+    "serve-source.json": "ef100d8ee2ee7715f0ebc83f8af46ffa8293b41ee24d1fd29f577ff27f9b0c7f"
+  }
+}
