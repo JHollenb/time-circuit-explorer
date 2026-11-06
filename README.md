@@ -12,6 +12,8 @@ The [first measured benchmark](docs/prediction-only-benchmark.md) records 365.55
 
 The [zero-network image response experiment](docs/zero-network-image-response.md) goes further within a supplied scene: a compiled RGB chart renders new doses with no encoder, denoiser or VAE evaluation. It measured 1.075 ms of arithmetic per primary output. The public chart and CLI are runnable with NumPy/Pillow; broad changes interpolate well, while fine contextual effects remain weak. Arbitrary new prompts and seeds remain outside this experiment.
 
+Open `?model=flux2-klein-4b#zero-network` for live browser rendering. Switch among four supplied contexts, move the dose slider, compare tested doses with historical native targets, and inspect current-device timing alongside the original CPU assay. Browser float32 arithmetic reproduces all 16 recorded primary outputs pixel for pixel. Calibration RGB packs load only when the section comes into view; no model runtime is downloaded.
+
 ## Run locally
 
 Requires Node.js 20 or newer. There are no package dependencies to install.
