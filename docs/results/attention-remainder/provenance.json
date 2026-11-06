@@ -1,0 +1,182 @@
+{
+  "claimBoundary": "Retrospective exact exponential-remainder and one-address controls on the already-scored complete bank. No new predictor, target-free correction or strictzero-neural image claim. No original checkpoint/projection evaluation.",
+  "completeCollectedInventory": {
+    "bytes": 22049966,
+    "files": {
+      "observations.jsonl": {
+        "bytes": 21329394,
+        "sha256": "1e1224360984fbc7ca63f4f0da4a79df8a0aeea4abfbe90856d01a4552684095"
+      },
+      "reference-receipt.json": {
+        "bytes": 28859,
+        "sha256": "a0151825c79725465103bcb6b8b498befd5ffe10e01445a1d85b98421f3e5580"
+      },
+      "report.json": {
+        "bytes": 684725,
+        "sha256": "cf129389d34401599cee9c7dd72430e934003f168d5970151cd272974f54caf7"
+      },
+      "request.json": {
+        "bytes": 2628,
+        "sha256": "6cdcfc9db23f49242d3e941e4c1269a4b361ad13561aba674690afc9be2f5bea"
+      },
+      "source.json": {
+        "bytes": 4360,
+        "sha256": "606887b2f891b00fa82e36310f2f4b7f56bcaa6d6a4d39ba640c8ca4a06f79ac"
+      }
+    }
+  },
+  "jobID": "job-ad7b427fd79c",
+  "losslessStreamTransports": [
+    {
+      "published": "observations.jsonl.gz",
+      "publishedBytes": 5255210,
+      "publishedSHA256": "9cc20ee776aa1f8563f4d6306226d57b1f1e3abe73be88ef1a1bb2b81db88fc6",
+      "source": "observations.jsonl",
+      "sourceBytes": 21329394,
+      "sourceSHA256": "1e1224360984fbc7ca63f4f0da4a79df8a0aeea4abfbe90856d01a4552684095"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "abbcf3c390904c4719ee053f35778afc769ae68ef6c6abd33e8c3c3416c01411",
+      "size_bytes": 42976
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1793966396.6878316,
+      "sha256": "abbcf3c390904c4719ee053f35778afc769ae68ef6c6abd33e8c3c3416c01411",
+      "size_bytes": 42976
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1793966396.6032488,
+      "sha256": "abbcf3c390904c4719ee053f35778afc769ae68ef6c6abd33e8c3c3416c01411",
+      "size_bytes": 42976
+    }
+  },
+  "publication": "All compact results and lossless observations retained; complete remainder/address arrays remain near compute with independent byte verification.",
+  "remoteResultRoot": "/mnt/hdd8tb/mrun-work/job-ad7b427fd79c/response-result",
+  "requestSHA256": "320498ad0124fb12b4bd55689451ef9ba6622d057248d44d4ed00c6fcfa9354a",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-ad7b427fd79c",
+      "job_log": {
+        "bytes": 222,
+        "sha256": "bba5bcf2fae994c54a6effff5a40961c694873b46ecb2a8dbef734fc625f3ee8"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-ad7b427fd79c/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "python",
+        "-u",
+        "attention_remainder.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-ad7b427fd79c",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-ad7b427fd79c/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1793966396.6774666
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1793966396.7045267
+        },
+        {
+          "name": "process.launch",
+          "ts": 1793966396.7154195
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1793966396.7411923
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1793966404.9349322
+        },
+        {
+          "name": "finished",
+          "ts": 1793966404.9424124
+        }
+      ]
+    },
+    "elapsed_s": 8.68,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "abbcf3c390904c4719ee053f35778afc769ae68ef6c6abd33e8c3c3416c01411",
+      "size_bytes": 42976
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 689.3,
+    "peak_vram_mb": 0.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-attention-remainder-public-v1"
+}

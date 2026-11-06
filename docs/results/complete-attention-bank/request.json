@@ -1,0 +1,43 @@
+{
+  "arms": [
+    "zero",
+    "exact",
+    "nearest64",
+    "transport64"
+  ],
+  "backend": "numpy-fp64",
+  "consumerPolicy": "Original full W_o over complete rounded bank, BF16 residual, FP32 RMS variance, original gated SiLU MLP and final residual on all512rows. Shared FP64/BF16 equation reference, nativebackend parity unmeasured.",
+  "cpuThreads": 1,
+  "device": "cpu",
+  "interfacePolicy": "Strings fixed in hashed source.json; IDs/masks sealed before source compilation; all512queries retained. Complete nearest/transport bank and all final moment-state hashes sealed before original parameter reads/exact heads.",
+  "pairs": [
+    [
+      "crane-behind",
+      "crane-before"
+    ]
+  ],
+  "parentJobID": "job-7bafdd5e6846",
+  "parentRequestSHA256": "3ec4511d6b4e40823a96700f9e8621efb862aef541b99bfee60fcfdd136918af",
+  "predictionRule": "Source-metric nearest reader plus actual-prefix centered Cov(v,y) displacement correction. Sequential head execution; full logical moment state charged. No clipping/exact fallback/reference head refresh.",
+  "primaryObservable": "Paired firstblock state effect relative to attention-bank deletion, active/padding/maskchanged splits. Full endpoints, perhead linear output contributions and signed cancellation retained.",
+  "requestSHA256": "33482c6ce96896df972d5c9781d4287236e6de2af35969e8be1ea34232e234aa",
+  "schema": "tce-complete-attention-bank-request-v1",
+  "scope": "One fresh raw-prompt pair, all32first-layer query heads predicted with no exact replacement; original first-block consumer and exact attention offline after whole-bank seal. Not zero-neural encoder/images.",
+  "sourceHashes": {
+    "attention_bank.py": "e5617d704fcb66b6a34d2e20b61045a15865df949788c4406ba77e9d32325326",
+    "attention_bank_study.py": "50a788ea1460c41007f1784983f221f4f9e5c48402f8ec395a7aeba75b669e32",
+    "context_landmarks.py": "8e81cd5fa735bdca8169c96225f3df319b09689d30dc3b8e3d96b7f756bb7f2c",
+    "context_source_geometry.py": "3ce2e0b8e66d2174247f5cac2042d6183b30a45b18704f9c7f600fbefd8d012c",
+    "context_statistics.py": "6f86949f47160890bd58a41174fe99809d6dce8a3e67222be09f7e77e961b057",
+    "context_statistics_study.py": "0d44d03f2a8eabd32b5d7034a449f7a46e7d8abe0252dd1b94d229c31f1ea1c8",
+    "context_transport.py": "8b94d46a45cd635a538000d2d2ab5eee39d82369ddcf3ff9a2766f1fb80ab665",
+    "context_transport_study.py": "28d9d7bb4b849a675dcdc0a90db2728100e02505aa3b1ee5c2b657f621895e95",
+    "encoder-atoms-source.json": "9605e7f4a734f0a39bc70dbae880936998289cb5625b1d4dd3327b3c4e6fbc85",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "source-ids.npy": "887ef22f692c04965643663162f1026a31d47bc02b2e31ccc07011b4d8d7efaa",
+    "source.json": "7d11e30d20124b140e0189f39d7ef455f6d2a3f74cc289e8b561df1d845bc500",
+    "transport_consumer.py": "ea238479b9a54f3ea61c9a4deffef1099a71ac8af54befed96c0331c3cd27efd"
+  },
+  "sourceRule": "Same2048sourceIDsx512positions. Eight KV covariance computations,64independent landmarks for each32query heads. PCG64seed1909 lexical4096+all512padpositions,50/50source mixture; deterministic farthest-first. No pooled landmarks/compressed coordinates.",
+  "timeoutSeconds": 900
+}

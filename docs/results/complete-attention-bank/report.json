@@ -1,0 +1,2790 @@
+{
+  "compileChildSeconds": 38.097383335232735,
+  "frameworkCalls": 0,
+  "goalStatus": "Active. Complete reduced first-layer attention bank plus original learned consumer; later contextual encoder/diffusion/decoder and strictzero-neural images remain open.",
+  "instrument_status": "executed",
+  "mechanics_status": "complete",
+  "observations": 15360,
+  "originalEquationWork": {
+    "exactHeadEvaluations": 64,
+    "fullOutputProjections": 8,
+    "mlpDenseProjections": 24,
+    "rowsPerArm": 512
+  },
+  "originalLearnedConsumerEquationsEvaluated": true,
+  "originalParameterReadSeconds": 6.706555052660406,
+  "pairedScores": [
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.4811086533591085,
+        "maxAbs": 0.251953125,
+        "relativeRms": 0.9846681514453711,
+        "rmsError": 0.007319060135901071,
+        "targetRms": 0.00743302210511998
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.4811086533591085,
+        "maxAbs": 0.251953125,
+        "relativeRms": 0.9846681514453711,
+        "rmsError": 0.007319060135901071,
+        "targetRms": 0.00743302210511998
+      },
+      "invalidQueries": 0,
+      "method": "nearest64",
+      "queries": 512,
+      "region": "all",
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.4656253505749033,
+        "maxAbs": 0.251953125,
+        "relativeRms": 0.9453311638449006,
+        "rmsError": 0.007648492981121997,
+        "targetRms": 0.00809080804023602
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.4656253505749033,
+        "maxAbs": 0.251953125,
+        "relativeRms": 0.9453311638449006,
+        "rmsError": 0.007648492981121997,
+        "targetRms": 0.00809080804023602
+      },
+      "invalidQueries": 0,
+      "method": "nearest64",
+      "queries": 27,
+      "region": "active_both",
+      "stage": "projection",
+      "validQueries": 27
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.4823231562330519,
+        "maxAbs": 0.203125,
+        "relativeRms": 0.987234049938517,
+        "rmsError": 0.007300283756654546,
+        "targetRms": 0.007394683922327429
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.4823231562330519,
+        "maxAbs": 0.203125,
+        "relativeRms": 0.987234049938517,
+        "rmsError": 0.007300283756654546,
+        "targetRms": 0.007394683922327429
+      },
+      "invalidQueries": 0,
+      "method": "nearest64",
+      "queries": 485,
+      "region": "padding_both",
+      "stage": "projection",
+      "validQueries": 485
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.48100820463707566,
+        "maxAbs": 0.25390625,
+        "relativeRms": 0.9849466797725794,
+        "rmsError": 0.0073181639350019005,
+        "targetRms": 0.007430010258719424
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.5024049612083542,
+        "maxAbs": 0.25390625,
+        "relativeRms": 0.9644859687351411,
+        "rmsError": 0.0073181639350019005,
+        "targetRms": 0.007587631310592505
+      },
+      "invalidQueries": 0,
+      "method": "nearest64",
+      "queries": 512,
+      "region": "all",
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.4655808660475932,
+        "maxAbs": 0.25390625,
+        "relativeRms": 0.9454169111521662,
+        "rmsError": 0.007649350450783894,
+        "targetRms": 0.008090981196286979
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.7018554321667799,
+        "maxAbs": 0.25390625,
+        "relativeRms": 0.7281756427290075,
+        "rmsError": 0.007649350450783894,
+        "targetRms": 0.010504815050001089
+      },
+      "invalidQueries": 0,
+      "method": "nearest64",
+      "queries": 27,
+      "region": "active_both",
+      "stage": "residual",
+      "validQueries": 27
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.48222139428990674,
+        "maxAbs": 0.1953125,
+        "relativeRms": 0.9875272401898255,
+        "rmsError": 0.0072992852054686985,
+        "targetRms": 0.007391477326808329
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.48222139428990674,
+        "maxAbs": 0.1953125,
+        "relativeRms": 0.9875272401898255,
+        "rmsError": 0.0072992852054686985,
+        "targetRms": 0.007391477326808329
+      },
+      "invalidQueries": 0,
+      "method": "nearest64",
+      "queries": 485,
+      "region": "padding_both",
+      "stage": "residual",
+      "validQueries": 485
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.5404826068195808,
+        "maxAbs": 0.39501953125,
+        "relativeRms": 0.9536042857286663,
+        "rmsError": 0.019433104759337138,
+        "targetRms": 0.02037858370622564
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.5166081723013961,
+        "maxAbs": 0.39501953125,
+        "relativeRms": 0.9775655529261263,
+        "rmsError": 0.019433104759337138,
+        "targetRms": 0.01987908094875933
+      },
+      "invalidQueries": 0,
+      "method": "nearest64",
+      "queries": 512,
+      "region": "all",
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.7932521380643988,
+        "maxAbs": 0.39501953125,
+        "relativeRms": 0.632972979256725,
+        "rmsError": 0.024735109578030715,
+        "targetRms": 0.03907767059357916
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.7206042368249297,
+        "maxAbs": 0.39501953125,
+        "relativeRms": 0.7307528052028062,
+        "rmsError": 0.024735109578030715,
+        "targetRms": 0.033848805508404405
+      },
+      "invalidQueries": 0,
+      "method": "nearest64",
+      "queries": 27,
+      "region": "active_both",
+      "stage": "rms",
+      "validQueries": 27
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.48147259342539955,
+        "maxAbs": 0.1650390625,
+        "relativeRms": 1.0157434016711835,
+        "rmsError": 0.019094730453694225,
+        "targetRms": 0.018798773806729164
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.48147259342539955,
+        "maxAbs": 0.1650390625,
+        "relativeRms": 1.0157434016711835,
+        "rmsError": 0.019094730453694225,
+        "targetRms": 0.018798773806729164
+      },
+      "invalidQueries": 0,
+      "method": "nearest64",
+      "queries": 485,
+      "region": "padding_both",
+      "stage": "rms",
+      "validQueries": 485
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.4228351955882636,
+        "maxAbs": 0.748046875,
+        "relativeRms": 1.2845101446010756,
+        "rmsError": 0.028484645949445907,
+        "targetRms": 0.022175493178601756
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.4062350402376566,
+        "maxAbs": 0.748046875,
+        "relativeRms": 1.2386325662462805,
+        "rmsError": 0.028484645949445907,
+        "targetRms": 0.022996848884548247
+      },
+      "invalidQueries": 0,
+      "method": "nearest64",
+      "queries": 512,
+      "region": "all",
+      "stage": "mlp",
+      "validQueries": 512
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.842119710029494,
+        "maxAbs": 0.748046875,
+        "relativeRms": 0.7434930817763272,
+        "rmsError": 0.023516296664493834,
+        "targetRms": 0.03162947610529144
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.8419666309236533,
+        "maxAbs": 0.748046875,
+        "relativeRms": 0.5696844411833971,
+        "rmsError": 0.023516296664493834,
+        "targetRms": 0.04127951364731636
+      },
+      "invalidQueries": 0,
+      "method": "nearest64",
+      "queries": 27,
+      "region": "active_both",
+      "stage": "mlp",
+      "validQueries": 27
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.3715739786643194,
+        "maxAbs": 0.703125,
+        "relativeRms": 1.3348488495289617,
+        "rmsError": 0.0287360038707538,
+        "targetRms": 0.02152753390834782
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.3715739786643194,
+        "maxAbs": 0.703125,
+        "relativeRms": 1.3348488495289617,
+        "rmsError": 0.0287360038707538,
+        "targetRms": 0.02152753390834782
+      },
+      "invalidQueries": 0,
+      "method": "nearest64",
+      "queries": 485,
+      "region": "padding_both",
+      "stage": "mlp",
+      "validQueries": 485
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.43488533538978486,
+        "maxAbs": 0.771484375,
+        "relativeRms": 1.2510526033643141,
+        "rmsError": 0.031098144541034375,
+        "targetRms": 0.024857583492017565
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.4288628364934472,
+        "maxAbs": 0.771484375,
+        "relativeRms": 1.2019579499465536,
+        "rmsError": 0.031098144541034375,
+        "targetRms": 0.025872905572459658
+      },
+      "invalidQueries": 0,
+      "method": "nearest64",
+      "queries": 512,
+      "region": "all",
+      "stage": "state",
+      "validQueries": 512
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.8140354446185465,
+        "maxAbs": 0.6904296875,
+        "relativeRms": 0.8003408310608089,
+        "rmsError": 0.025405784411636528,
+        "targetRms": 0.03174370646311087
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.8360175638551793,
+        "maxAbs": 0.6904296875,
+        "relativeRms": 0.5703187587060197,
+        "rmsError": 0.025405784411636528,
+        "targetRms": 0.04454663996898683
+      },
+      "invalidQueries": 0,
+      "method": "nearest64",
+      "queries": 27,
+      "region": "active_both",
+      "stage": "state",
+      "validQueries": 27
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.3974126678326186,
+        "maxAbs": 0.771484375,
+        "relativeRms": 1.2853510053944475,
+        "rmsError": 0.03138471547599258,
+        "targetRms": 0.024417233381601677
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.3974126678326186,
+        "maxAbs": 0.771484375,
+        "relativeRms": 1.2853510053944475,
+        "rmsError": 0.03138471547599258,
+        "targetRms": 0.024417233381601677
+      },
+      "invalidQueries": 0,
+      "method": "nearest64",
+      "queries": 485,
+      "region": "padding_both",
+      "stage": "state",
+      "validQueries": 485
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.6986977826895099,
+        "maxAbs": 0.21875,
+        "relativeRms": 0.9964096062504719,
+        "rmsError": 0.0074063346290136525,
+        "targetRms": 0.00743302210511998
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.6986977826895099,
+        "maxAbs": 0.21875,
+        "relativeRms": 0.9964096062504719,
+        "rmsError": 0.0074063346290136525,
+        "targetRms": 0.00743302210511998
+      },
+      "invalidQueries": 0,
+      "method": "transport64",
+      "queries": 512,
+      "region": "all",
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.650144563811344,
+        "maxAbs": 0.21875,
+        "relativeRms": 1.2407722106364738,
+        "rmsError": 0.010038849777919004,
+        "targetRms": 0.00809080804023602
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.650144563811344,
+        "maxAbs": 0.21875,
+        "relativeRms": 1.2407722106364738,
+        "rmsError": 0.010038849777919004,
+        "targetRms": 0.00809080804023602
+      },
+      "invalidQueries": 0,
+      "method": "transport64",
+      "queries": 27,
+      "region": "active_both",
+      "stage": "projection",
+      "validQueries": 27
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.7032855139854727,
+        "maxAbs": 0.2109375,
+        "relativeRms": 0.9779562663967178,
+        "rmsError": 0.00723167747986317,
+        "targetRms": 0.007394683922327429
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.7032855139854727,
+        "maxAbs": 0.2109375,
+        "relativeRms": 0.9779562663967178,
+        "rmsError": 0.00723167747986317,
+        "targetRms": 0.007394683922327429
+      },
+      "invalidQueries": 0,
+      "method": "transport64",
+      "queries": 485,
+      "region": "padding_both",
+      "stage": "projection",
+      "validQueries": 485
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.6983729188209564,
+        "maxAbs": 0.2109375,
+        "relativeRms": 0.9968910646482487,
+        "rmsError": 0.007406910837162217,
+        "targetRms": 0.007430010258719424
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.7071371079054796,
+        "maxAbs": 0.2109375,
+        "relativeRms": 0.976182227887378,
+        "rmsError": 0.007406910837162217,
+        "targetRms": 0.007587631310592505
+      },
+      "invalidQueries": 0,
+      "method": "transport64",
+      "queries": 512,
+      "region": "all",
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.6502013555956885,
+        "maxAbs": 0.2109375,
+        "relativeRms": 1.2405729720892749,
+        "rmsError": 0.010037452589796174,
+        "targetRms": 0.008090981196286979
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.7436092282576626,
+        "maxAbs": 0.2109375,
+        "relativeRms": 0.9555096917003916,
+        "rmsError": 0.010037452589796174,
+        "targetRms": 0.010504815050001089
+      },
+      "invalidQueries": 0,
+      "method": "transport64",
+      "queries": 27,
+      "region": "active_both",
+      "stage": "residual",
+      "validQueries": 27
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.7029325616168655,
+        "maxAbs": 0.2109375,
+        "relativeRms": 0.9784794150558,
+        "rmsError": 0.007232408411133623,
+        "targetRms": 0.007391477326808329
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.7029325616168655,
+        "maxAbs": 0.2109375,
+        "relativeRms": 0.9784794150558,
+        "rmsError": 0.007232408411133623,
+        "targetRms": 0.007391477326808329
+      },
+      "invalidQueries": 0,
+      "method": "transport64",
+      "queries": 485,
+      "region": "padding_both",
+      "stage": "residual",
+      "validQueries": 485
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.7200989899608395,
+        "maxAbs": 0.37548828125,
+        "relativeRms": 0.8918798130381074,
+        "rmsError": 0.018175247425889943,
+        "targetRms": 0.02037858370622564
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.6997644942175613,
+        "maxAbs": 0.37548828125,
+        "relativeRms": 0.9142901260243762,
+        "rmsError": 0.018175247425889943,
+        "targetRms": 0.01987908094875933
+      },
+      "invalidQueries": 0,
+      "method": "transport64",
+      "queries": 512,
+      "region": "all",
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.8444637485247316,
+        "maxAbs": 0.37548828125,
+        "relativeRms": 0.6391972990550193,
+        "rmsError": 0.024978341496777554,
+        "targetRms": 0.03907767059357916
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.7533652482243666,
+        "maxAbs": 0.37548828125,
+        "relativeRms": 0.7379386398310457,
+        "rmsError": 0.024978341496777554,
+        "targetRms": 0.033848805508404405
+      },
+      "invalidQueries": 0,
+      "method": "transport64",
+      "queries": 27,
+      "region": "active_both",
+      "stage": "rms",
+      "validQueries": 27
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.6931309737348286,
+        "maxAbs": 0.207763671875,
+        "relativeRms": 0.942611227888196,
+        "rmsError": 0.017719935260753432,
+        "targetRms": 0.018798773806729164
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.6931309737348286,
+        "maxAbs": 0.207763671875,
+        "relativeRms": 0.942611227888196,
+        "rmsError": 0.017719935260753432,
+        "targetRms": 0.018798773806729164
+      },
+      "invalidQueries": 0,
+      "method": "transport64",
+      "queries": 485,
+      "region": "padding_both",
+      "stage": "rms",
+      "validQueries": 485
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.539996591183385,
+        "maxAbs": 0.998046875,
+        "relativeRms": 1.2077483643399047,
+        "rmsError": 0.026782415614886985,
+        "targetRms": 0.022175493178601756
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.5426402184575281,
+        "maxAbs": 0.998046875,
+        "relativeRms": 1.1646124105673576,
+        "rmsError": 0.026782415614886985,
+        "targetRms": 0.022996848884548247
+      },
+      "invalidQueries": 0,
+      "method": "transport64",
+      "queries": 512,
+      "region": "all",
+      "stage": "mlp",
+      "validQueries": 512
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.850344781513748,
+        "maxAbs": 0.676025390625,
+        "relativeRms": 0.6638015362815571,
+        "rmsError": 0.02099569483047326,
+        "targetRms": 0.03162947610529144
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.8620760684185129,
+        "maxAbs": 0.676025390625,
+        "relativeRms": 0.5086226308249691,
+        "rmsError": 0.02099569483047326,
+        "targetRms": 0.04127951364731636
+      },
+      "invalidQueries": 0,
+      "method": "transport64",
+      "queries": 27,
+      "region": "active_both",
+      "stage": "mlp",
+      "validQueries": 27
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.507520328427872,
+        "maxAbs": 0.998046875,
+        "relativeRms": 1.2573774449289623,
+        "rmsError": 0.02706823558129998,
+        "targetRms": 0.02152753390834782
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.507520328427872,
+        "maxAbs": 0.998046875,
+        "relativeRms": 1.2573774449289623,
+        "rmsError": 0.02706823558129998,
+        "targetRms": 0.02152753390834782
+      },
+      "invalidQueries": 0,
+      "method": "transport64",
+      "queries": 485,
+      "region": "padding_both",
+      "stage": "mlp",
+      "validQueries": 485
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.5667339674749721,
+        "maxAbs": 1.09375,
+        "relativeRms": 1.1603481006554706,
+        "rmsError": 0.028843449791847362,
+        "targetRms": 0.024857583492017565
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.5757196012868375,
+        "maxAbs": 1.09375,
+        "relativeRms": 1.114812934754019,
+        "rmsError": 0.028843449791847362,
+        "targetRms": 0.025872905572459658
+      },
+      "invalidQueries": 0,
+      "method": "transport64",
+      "queries": 512,
+      "region": "all",
+      "stage": "state",
+      "validQueries": 512
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.8259462660353203,
+        "maxAbs": 0.84765625,
+        "relativeRms": 0.7210460697181753,
+        "rmsError": 0.022888674783513533,
+        "targetRms": 0.03174370646311087
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.8619929463165903,
+        "maxAbs": 0.84765625,
+        "relativeRms": 0.5138137197204666,
+        "rmsError": 0.022888674783513533,
+        "targetRms": 0.04454663996898683
+      },
+      "invalidQueries": 0,
+      "method": "transport64",
+      "queries": 27,
+      "region": "active_both",
+      "stage": "state",
+      "validQueries": 27
+    },
+    {
+      "a": "crane-behind",
+      "attentionEffect": {
+        "cosine": 0.5445870274167387,
+        "maxAbs": 1.09375,
+        "relativeRms": 1.193387317828239,
+        "rmsError": 0.02913921665405577,
+        "targetRms": 0.024417233381601677
+      },
+      "b": "crane-before",
+      "endpoint": {
+        "cosine": 0.5445870274167387,
+        "maxAbs": 1.09375,
+        "relativeRms": 1.193387317828239,
+        "rmsError": 0.02913921665405577,
+        "targetRms": 0.024417233381601677
+      },
+      "invalidQueries": 0,
+      "method": "transport64",
+      "queries": 485,
+      "region": "padding_both",
+      "stage": "state",
+      "validQueries": 485
+    }
+  ],
+  "predictionSealSHA256": "7de7436375d8c9ca12f9d3691d1f13b37c8a0bed726ae9ef0f07abe84e3409e4",
+  "referenceHeadsSuppliedToPrediction": 0,
+  "requestSHA256": "33482c6ce96896df972d5c9781d4287236e6de2af35969e8be1ea34232e234aa",
+  "schema": "tce-complete-attention-bank-result-v1",
+  "scope": "One fresh raw-prompt pair, all32first-layer query heads predicted with no exact replacement; original first-block consumer and exact attention offline after whole-bank seal. Not zero-neural encoder/images.",
+  "scores": [
+    {
+      "attentionEffect": {
+        "cosine": 0.9096131205081205,
+        "maxAbs": 1.390625,
+        "relativeRms": 0.41891058528781583,
+        "rmsError": 0.03072302601426104,
+        "targetRms": 0.0733402952640897
+      },
+      "endpoint": {
+        "cosine": 0.9096131205081205,
+        "maxAbs": 1.390625,
+        "relativeRms": 0.41891058528781583,
+        "rmsError": 0.03072302601426104,
+        "targetRms": 0.0733402952640897
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 512,
+      "region": "all",
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.8656787450554172,
+        "maxAbs": 1.390625,
+        "relativeRms": 0.5025081881070486,
+        "rmsError": 0.03711293880516203,
+        "targetRms": 0.07385539118271227
+      },
+      "endpoint": {
+        "cosine": 0.8656787450554172,
+        "maxAbs": 1.390625,
+        "relativeRms": 0.5025081881070486,
+        "rmsError": 0.03711293880516203,
+        "targetRms": 0.07385539118271227
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 27,
+      "region": "active",
+      "stage": "projection",
+      "validQueries": 27
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9122906729297809,
+        "maxAbs": 0.8203125,
+        "relativeRms": 0.41368349959634093,
+        "rmsError": 0.03032776345483927,
+        "targetRms": 0.0733115134745092
+      },
+      "endpoint": {
+        "cosine": 0.9122906729297809,
+        "maxAbs": 0.8203125,
+        "relativeRms": 0.41368349959634093,
+        "rmsError": 0.03032776345483927,
+        "targetRms": 0.0733115134745092
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 485,
+      "region": "padding",
+      "stage": "projection",
+      "validQueries": 485
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9096836770178037,
+        "maxAbs": 1.39453125,
+        "relativeRms": 0.4187666230858738,
+        "rmsError": 0.030718048901917577,
+        "targetRms": 0.07335362277814204
+      },
+      "endpoint": {
+        "cosine": 0.9152114620651504,
+        "maxAbs": 1.39453125,
+        "relativeRms": 0.40627549021980847,
+        "rmsError": 0.030718048901917577,
+        "targetRms": 0.07560891474230477
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 512,
+      "region": "all",
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.8656807921629632,
+        "maxAbs": 1.39453125,
+        "relativeRms": 0.5025080117325389,
+        "rmsError": 0.03711390903276222,
+        "targetRms": 0.07385734787551244
+      },
+      "endpoint": {
+        "cosine": 0.8718986535608869,
+        "maxAbs": 1.39453125,
+        "relativeRms": 0.49090321758290545,
+        "rmsError": 0.03711390903276222,
+        "targetRms": 0.07560331182081587
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 27,
+      "region": "active",
+      "stage": "residual",
+      "validQueries": 27
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9123645290875432,
+        "maxAbs": 0.8125,
+        "relativeRms": 0.41353121990386377,
+        "rmsError": 0.030322374642841265,
+        "targetRms": 0.07332547866613433
+      },
+      "endpoint": {
+        "cosine": 0.9177608517836515,
+        "maxAbs": 0.8125,
+        "relativeRms": 0.4010406664398495,
+        "rmsError": 0.030322374642841265,
+        "targetRms": 0.07560922664532127
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 485,
+      "region": "padding",
+      "stage": "residual",
+      "validQueries": 485
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9026965776392403,
+        "maxAbs": 0.8388671875,
+        "relativeRms": 0.4379042183456338,
+        "rmsError": 0.08180762025696661,
+        "targetRms": 0.1868162416110744
+      },
+      "endpoint": {
+        "cosine": 0.7645229656653119,
+        "maxAbs": 0.8388671875,
+        "relativeRms": 0.6824517095576111,
+        "rmsError": 0.08180762025696661,
+        "targetRms": 0.1198731267154377
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 512,
+      "region": "all",
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.895618334553304,
+        "maxAbs": 0.8388671875,
+        "relativeRms": 0.4469351893078406,
+        "rmsError": 0.09223412811641295,
+        "targetRms": 0.2063702530544844
+      },
+      "endpoint": {
+        "cosine": 0.7541133756760089,
+        "maxAbs": 0.8388671875,
+        "relativeRms": 0.7037315123753586,
+        "rmsError": 0.09223412811641295,
+        "targetRms": 0.13106437113365588
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 27,
+      "region": "active",
+      "stage": "rms",
+      "validQueries": 27
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9032288025263776,
+        "maxAbs": 0.6259765625,
+        "relativeRms": 0.43727623618596634,
+        "rmsError": 0.08118783843624498,
+        "targetRms": 0.18566716349460421
+      },
+      "endpoint": {
+        "cosine": 0.7652466181491598,
+        "maxAbs": 0.6259765625,
+        "relativeRms": 0.6809960885278228,
+        "rmsError": 0.08118783843624498,
+        "targetRms": 0.11921924340528423
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 485,
+      "region": "padding",
+      "stage": "rms",
+      "validQueries": 485
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.8913445704238715,
+        "maxAbs": 2.5,
+        "relativeRms": 0.48907550599826327,
+        "rmsError": 0.08592309510705295,
+        "targetRms": 0.17568472363316037
+      },
+      "endpoint": {
+        "cosine": 0.8119647299084634,
+        "maxAbs": 2.5,
+        "relativeRms": 0.6689495754107277,
+        "rmsError": 0.08592309510705295,
+        "targetRms": 0.12844480102150765
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 512,
+      "region": "all",
+      "stage": "mlp",
+      "validQueries": 512
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.8969802966765256,
+        "maxAbs": 2.5,
+        "relativeRms": 0.4503493080793488,
+        "rmsError": 0.09834114458784458,
+        "targetRms": 0.21836637211068496
+      },
+      "endpoint": {
+        "cosine": 0.8690457654365533,
+        "maxAbs": 2.5,
+        "relativeRms": 0.49483553429954213,
+        "rmsError": 0.09834114458784458,
+        "targetRms": 0.19873500945531344
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 27,
+      "region": "active",
+      "stage": "mlp",
+      "validQueries": 27
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.8912011643398862,
+        "maxAbs": 1.546875,
+        "relativeRms": 0.4923633226692408,
+        "rmsError": 0.08517859946433551,
+        "targetRms": 0.17299948136379906
+      },
+      "endpoint": {
+        "cosine": 0.8090640994228155,
+        "maxAbs": 1.546875,
+        "relativeRms": 0.6904856830604787,
+        "rmsError": 0.08517859946433551,
+        "targetRms": 0.12336041362478883
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 485,
+      "region": "padding",
+      "stage": "mlp",
+      "validQueries": 485
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.8856249999530478,
+        "maxAbs": 3.25,
+        "relativeRms": 0.4999061507511013,
+        "rmsError": 0.09736321794313917,
+        "targetRms": 0.19476299260741728
+      },
+      "endpoint": {
+        "cosine": 0.8600622358678836,
+        "maxAbs": 3.25,
+        "relativeRms": 0.5585157678281637,
+        "rmsError": 0.09736321794313917,
+        "targetRms": 0.17432492250262577
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 512,
+      "region": "all",
+      "stage": "state",
+      "validQueries": 512
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.881606960964262,
+        "maxAbs": 3.25,
+        "relativeRms": 0.47867045969341177,
+        "rmsError": 0.11097804714634375,
+        "targetRms": 0.23184645072400153
+      },
+      "endpoint": {
+        "cosine": 0.8835857405231933,
+        "maxAbs": 3.25,
+        "relativeRms": 0.4687642195267079,
+        "rmsError": 0.11097804714634375,
+        "targetRms": 0.23674598555835547
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 27,
+      "region": "active",
+      "stage": "state",
+      "validQueries": 27
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.8863108253972839,
+        "maxAbs": 1.625,
+        "relativeRms": 0.5015819720725754,
+        "rmsError": 0.09654888010490824,
+        "targetRms": 0.19248873659864774
+      },
+      "endpoint": {
+        "cosine": 0.8602074877261522,
+        "maxAbs": 1.625,
+        "relativeRms": 0.5673389743599696,
+        "rmsError": 0.09654888010490824,
+        "targetRms": 0.17017847260331026
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 485,
+      "region": "padding",
+      "stage": "state",
+      "validQueries": 485
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9387341795277517,
+        "maxAbs": 0.96875,
+        "relativeRms": 0.37709047228195935,
+        "rmsError": 0.02765592657843393,
+        "targetRms": 0.0733402952640897
+      },
+      "endpoint": {
+        "cosine": 0.9387341795277517,
+        "maxAbs": 0.96875,
+        "relativeRms": 0.37709047228195935,
+        "rmsError": 0.02765592657843393,
+        "targetRms": 0.0733402952640897
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 512,
+      "region": "all",
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9118644811005127,
+        "maxAbs": 0.96875,
+        "relativeRms": 0.5161992687292787,
+        "rmsError": 0.038124098920230894,
+        "targetRms": 0.07385539118271227
+      },
+      "endpoint": {
+        "cosine": 0.9118644811005127,
+        "maxAbs": 0.96875,
+        "relativeRms": 0.5161992687292787,
+        "rmsError": 0.038124098920230894,
+        "targetRms": 0.07385539118271227
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 27,
+      "region": "active",
+      "stage": "projection",
+      "validQueries": 27
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9408722940047247,
+        "maxAbs": 0.78125,
+        "relativeRms": 0.36766341334726704,
+        "rmsError": 0.026953961281692217,
+        "targetRms": 0.0733115134745092
+      },
+      "endpoint": {
+        "cosine": 0.9408722940047247,
+        "maxAbs": 0.78125,
+        "relativeRms": 0.36766341334726704,
+        "rmsError": 0.026953961281692217,
+        "targetRms": 0.0733115134745092
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 485,
+      "region": "padding",
+      "stage": "projection",
+      "validQueries": 485
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9387652996762361,
+        "maxAbs": 0.96875,
+        "relativeRms": 0.37685867672094003,
+        "rmsError": 0.027643949212857614,
+        "targetRms": 0.07335362277814204
+      },
+      "endpoint": {
+        "cosine": 0.941772072586922,
+        "maxAbs": 0.96875,
+        "relativeRms": 0.36561759029441865,
+        "rmsError": 0.027643949212857614,
+        "targetRms": 0.07560891474230477
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 512,
+      "region": "all",
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9118787226072048,
+        "maxAbs": 0.96875,
+        "relativeRms": 0.5161902661906513,
+        "rmsError": 0.03812444405999631,
+        "targetRms": 0.07385734787551244
+      },
+      "endpoint": {
+        "cosine": 0.914225782426334,
+        "maxAbs": 0.96875,
+        "relativeRms": 0.5042694974838324,
+        "rmsError": 0.03812444405999631,
+        "targetRms": 0.07560331182081587
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 27,
+      "region": "active",
+      "stage": "residual",
+      "validQueries": 27
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9409072150539123,
+        "maxAbs": 0.7734375,
+        "relativeRms": 0.3674160855024279,
+        "rmsError": 0.02694096033910286,
+        "targetRms": 0.07332547866613433
+      },
+      "endpoint": {
+        "cosine": 0.9438964669688251,
+        "maxAbs": 0.7734375,
+        "relativeRms": 0.35631842216137755,
+        "rmsError": 0.02694096033910286,
+        "targetRms": 0.07560922664532127
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 485,
+      "region": "padding",
+      "stage": "residual",
+      "validQueries": 485
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9390476875091418,
+        "maxAbs": 0.5859375,
+        "relativeRms": 0.3572616760849341,
+        "rmsError": 0.06674228359786046,
+        "targetRms": 0.1868162416110744
+      },
+      "endpoint": {
+        "cosine": 0.8485626515982907,
+        "maxAbs": 0.5859375,
+        "relativeRms": 0.5567743615822873,
+        "rmsError": 0.06674228359786046,
+        "targetRms": 0.1198731267154377
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 512,
+      "region": "all",
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9373821828846767,
+        "maxAbs": 0.5654296875,
+        "relativeRms": 0.37231792436485406,
+        "rmsError": 0.07683534426789532,
+        "targetRms": 0.2063702530544844
+      },
+      "endpoint": {
+        "cosine": 0.8423124192682521,
+        "maxAbs": 0.5654296875,
+        "relativeRms": 0.5862412767352366,
+        "rmsError": 0.07683534426789532,
+        "targetRms": 0.13106437113365588
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 27,
+      "region": "active",
+      "stage": "rms",
+      "validQueries": 27
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.939200619409491,
+        "maxAbs": 0.5859375,
+        "relativeRms": 0.35620275612046837,
+        "rmsError": 0.06613515535784763,
+        "targetRms": 0.18566716349460421
+      },
+      "endpoint": {
+        "cosine": 0.8490819807753861,
+        "maxAbs": 0.5859375,
+        "relativeRms": 0.5547355734595802,
+        "rmsError": 0.06613515535784763,
+        "targetRms": 0.11921924340528423
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 485,
+      "region": "padding",
+      "stage": "rms",
+      "validQueries": 485
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9268461286706128,
+        "maxAbs": 1.2265625,
+        "relativeRms": 0.3962978732248273,
+        "rmsError": 0.06962348233391301,
+        "targetRms": 0.17568472363316037
+      },
+      "endpoint": {
+        "cosine": 0.8690006708807572,
+        "maxAbs": 1.2265625,
+        "relativeRms": 0.5420498282546663,
+        "rmsError": 0.06962348233391301,
+        "targetRms": 0.12844480102150765
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 512,
+      "region": "all",
+      "stage": "mlp",
+      "validQueries": 512
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9449014572825246,
+        "maxAbs": 1.2265625,
+        "relativeRms": 0.33532622672953794,
+        "rmsError": 0.07322397160449419,
+        "targetRms": 0.21836637211068496
+      },
+      "endpoint": {
+        "cosine": 0.9320253368446356,
+        "maxAbs": 1.2265625,
+        "relativeRms": 0.3684502886793027,
+        "rmsError": 0.07322397160449419,
+        "targetRms": 0.19873500945531344
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 27,
+      "region": "active",
+      "stage": "mlp",
+      "validQueries": 27
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9253565178891413,
+        "maxAbs": 1.1953125,
+        "relativeRms": 0.40125874887996943,
+        "rmsError": 0.0694175554489216,
+        "targetRms": 0.17299948136379906
+      },
+      "endpoint": {
+        "cosine": 0.8612535293639576,
+        "maxAbs": 1.1953125,
+        "relativeRms": 0.5627214874624284,
+        "rmsError": 0.0694175554489216,
+        "targetRms": 0.12336041362478883
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 485,
+      "region": "padding",
+      "stage": "mlp",
+      "validQueries": 485
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9258510261211855,
+        "maxAbs": 1.546875,
+        "relativeRms": 0.40134171065411745,
+        "rmsError": 0.07816651262517609,
+        "targetRms": 0.19476299260741728
+      },
+      "endpoint": {
+        "cosine": 0.9089983866757598,
+        "maxAbs": 1.546875,
+        "relativeRms": 0.4483955105386535,
+        "rmsError": 0.07816651262517609,
+        "targetRms": 0.17432492250262577
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 512,
+      "region": "all",
+      "stage": "state",
+      "validQueries": 512
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9393313235438401,
+        "maxAbs": 1.546875,
+        "relativeRms": 0.3589979411899736,
+        "rmsError": 0.0832323984821192,
+        "targetRms": 0.23184645072400153
+      },
+      "endpoint": {
+        "cosine": 0.940734908879178,
+        "maxAbs": 1.546875,
+        "relativeRms": 0.3515683625461234,
+        "rmsError": 0.0832323984821192,
+        "targetRms": 0.23674598555835547
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 27,
+      "region": "active",
+      "stage": "state",
+      "validQueries": 27
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9247886740356075,
+        "maxAbs": 1.212890625,
+        "relativeRms": 0.40456814605198954,
+        "rmsError": 0.07787481130160466,
+        "targetRms": 0.19248873659864774
+      },
+      "endpoint": {
+        "cosine": 0.9058008333028563,
+        "maxAbs": 1.212890625,
+        "relativeRms": 0.45760671200247843,
+        "rmsError": 0.07787481130160466,
+        "targetRms": 0.17017847260331026
+      },
+      "id": "crane-behind",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 485,
+      "region": "padding",
+      "stage": "state",
+      "validQueries": 485
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9099091829123196,
+        "maxAbs": 1.39453125,
+        "relativeRms": 0.4174906450735638,
+        "rmsError": 0.03136009479291266,
+        "targetRms": 0.07511568262179111
+      },
+      "endpoint": {
+        "cosine": 0.9099091829123196,
+        "maxAbs": 1.39453125,
+        "relativeRms": 0.4174906450735638,
+        "rmsError": 0.03136009479291266,
+        "targetRms": 0.07511568262179111
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 512,
+      "region": "all",
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.8678921931886224,
+        "maxAbs": 1.39453125,
+        "relativeRms": 0.4987120840693094,
+        "rmsError": 0.037015050319773375,
+        "targetRms": 0.07422128218298625
+      },
+      "endpoint": {
+        "cosine": 0.8678921931886224,
+        "maxAbs": 1.39453125,
+        "relativeRms": 0.4987120840693094,
+        "rmsError": 0.037015050319773375,
+        "targetRms": 0.07422128218298625
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 27,
+      "region": "active",
+      "stage": "projection",
+      "validQueries": 27
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9123571174923627,
+        "maxAbs": 0.7734375,
+        "relativeRms": 0.4126246734027706,
+        "rmsError": 0.0310150001155259,
+        "targetRms": 0.07516516125842912
+      },
+      "endpoint": {
+        "cosine": 0.9123571174923627,
+        "maxAbs": 0.7734375,
+        "relativeRms": 0.4126246734027706,
+        "rmsError": 0.0310150001155259,
+        "targetRms": 0.07516516125842912
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 485,
+      "region": "padding",
+      "stage": "projection",
+      "validQueries": 485
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9099800105410946,
+        "maxAbs": 1.3984375,
+        "relativeRms": 0.4173526940342314,
+        "rmsError": 0.0313524476744696,
+        "targetRms": 0.07512218831370011
+      },
+      "endpoint": {
+        "cosine": 0.9152464350081017,
+        "maxAbs": 1.3984375,
+        "relativeRms": 0.40550309724729616,
+        "rmsError": 0.0313524476744696,
+        "targetRms": 0.07731740617347073
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 512,
+      "region": "all",
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.8678834466452351,
+        "maxAbs": 1.3984375,
+        "relativeRms": 0.49872579043632675,
+        "rmsError": 0.03701597998287465,
+        "targetRms": 0.07422110645308716
+      },
+      "endpoint": {
+        "cosine": 0.8737015788289286,
+        "maxAbs": 1.3984375,
+        "relativeRms": 0.4877341179700661,
+        "rmsError": 0.03701597998287465,
+        "targetRms": 0.07589376797533455
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 27,
+      "region": "active",
+      "stage": "residual",
+      "validQueries": 27
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9124320954174332,
+        "maxAbs": 0.765625,
+        "relativeRms": 0.4124775377691094,
+        "rmsError": 0.03100677559448392,
+        "targetRms": 0.07517203424502703
+      },
+      "endpoint": {
+        "cosine": 0.9175891689434151,
+        "maxAbs": 0.765625,
+        "relativeRms": 0.40062560536495306,
+        "rmsError": 0.03100677559448392,
+        "targetRms": 0.07739589077497444
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 485,
+      "region": "padding",
+      "stage": "residual",
+      "validQueries": 485
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9030251619378441,
+        "maxAbs": 0.82763671875,
+        "relativeRms": 0.43730806910293885,
+        "rmsError": 0.08171648620338044,
+        "targetRms": 0.18686251632860915
+      },
+      "endpoint": {
+        "cosine": 0.7579167011224054,
+        "maxAbs": 0.82763671875,
+        "relativeRms": 0.6937438492906973,
+        "rmsError": 0.08171648620338044,
+        "targetRms": 0.1177905739804823
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 512,
+      "region": "all",
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.8961099056061428,
+        "maxAbs": 0.82763671875,
+        "relativeRms": 0.4460292783526787,
+        "rmsError": 0.09217372531430233,
+        "targetRms": 0.20665397943096434
+      },
+      "endpoint": {
+        "cosine": 0.7491283727144308,
+        "maxAbs": 0.82763671875,
+        "relativeRms": 0.7111223396982553,
+        "rmsError": 0.09217372531430233,
+        "targetRms": 0.12961725454077797
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 27,
+      "region": "active",
+      "stage": "rms",
+      "validQueries": 27
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.903546544706857,
+        "maxAbs": 0.630859375,
+        "relativeRms": 0.43670038304937214,
+        "rmsError": 0.08109471598442317,
+        "targetRms": 0.18569875166620778
+      },
+      "endpoint": {
+        "cosine": 0.758530388210303,
+        "maxAbs": 0.630859375,
+        "relativeRms": 0.6925425546978204,
+        "rmsError": 0.08109471598442317,
+        "targetRms": 0.11709708729712287
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 485,
+      "region": "padding",
+      "stage": "rms",
+      "validQueries": 485
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.891178912676494,
+        "maxAbs": 2.5,
+        "relativeRms": 0.48871361460661217,
+        "rmsError": 0.08515320804891,
+        "targetRms": 0.1742394840329007
+      },
+      "endpoint": {
+        "cosine": 0.8075574165763513,
+        "maxAbs": 2.5,
+        "relativeRms": 0.6786915245080366,
+        "rmsError": 0.08515320804891,
+        "targetRms": 0.12546673263768107
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 512,
+      "region": "all",
+      "stage": "mlp",
+      "validQueries": 512
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.8987107776913059,
+        "maxAbs": 2.5,
+        "relativeRms": 0.4484732023596703,
+        "rmsError": 0.09818449108197133,
+        "targetRms": 0.21893056388958668
+      },
+      "endpoint": {
+        "cosine": 0.8681292238963736,
+        "maxAbs": 2.5,
+        "relativeRms": 0.49651979343134495,
+        "rmsError": 0.09818449108197133,
+        "targetRms": 0.1977453716465939
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 27,
+      "region": "active",
+      "stage": "mlp",
+      "validQueries": 27
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.8907947528335128,
+        "maxAbs": 1.6875,
+        "relativeRms": 0.49220518425310406,
+        "rmsError": 0.08436863149908817,
+        "targetRms": 0.1714094735249756
+      },
+      "endpoint": {
+        "cosine": 0.8041770033727755,
+        "maxAbs": 1.6875,
+        "relativeRms": 0.702064086474623,
+        "rmsError": 0.08436863149908817,
+        "targetRms": 0.12017226507446166
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 485,
+      "region": "padding",
+      "stage": "mlp",
+      "validQueries": 485
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.8851459590391882,
+        "maxAbs": 3.25,
+        "relativeRms": 0.4997707713517518,
+        "rmsError": 0.09701418242106973,
+        "targetRms": 0.19411735936191554
+      },
+      "endpoint": {
+        "cosine": 0.8595360179237341,
+        "maxAbs": 3.25,
+        "relativeRms": 0.558871528389633,
+        "rmsError": 0.09701418242106973,
+        "targetRms": 0.1735894163379773
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 512,
+      "region": "all",
+      "stage": "state",
+      "validQueries": 512
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.882989820889249,
+        "maxAbs": 3.25,
+        "relativeRms": 0.47757621001074685,
+        "rmsError": 0.1108576061318892,
+        "targetRms": 0.23212547821298424
+      },
+      "endpoint": {
+        "cosine": 0.8829596284012219,
+        "maxAbs": 3.25,
+        "relativeRms": 0.4698392146998532,
+        "rmsError": 0.1108576061318892,
+        "targetRms": 0.235947964034267
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 27,
+      "region": "active",
+      "stage": "state",
+      "validQueries": 27
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.8856191938302627,
+        "maxAbs": 1.75,
+        "relativeRms": 0.5015375718045016,
+        "rmsError": 0.09618498903286427,
+        "targetRms": 0.19178022632840155
+      },
+      "endpoint": {
+        "cosine": 0.8596251729508316,
+        "maxAbs": 1.75,
+        "relativeRms": 0.567647594052663,
+        "rmsError": 0.09618498903286427,
+        "targetRms": 0.16944489863184517
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "nearest64",
+      "queries": 485,
+      "region": "padding",
+      "stage": "state",
+      "validQueries": 485
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9404778218923344,
+        "maxAbs": 0.9765625,
+        "relativeRms": 0.37295966985066525,
+        "rmsError": 0.028015120191230564,
+        "targetRms": 0.07511568262179111
+      },
+      "endpoint": {
+        "cosine": 0.9404778218923344,
+        "maxAbs": 0.9765625,
+        "relativeRms": 0.37295966985066525,
+        "rmsError": 0.028015120191230564,
+        "targetRms": 0.07511568262179111
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 512,
+      "region": "all",
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9129676099678576,
+        "maxAbs": 0.9765625,
+        "relativeRms": 0.5136495498567816,
+        "rmsError": 0.03812372818308405,
+        "targetRms": 0.07422128218298625
+      },
+      "endpoint": {
+        "cosine": 0.9129676099678576,
+        "maxAbs": 0.9765625,
+        "relativeRms": 0.5136495498567816,
+        "rmsError": 0.03812372818308405,
+        "targetRms": 0.07422128218298625
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 27,
+      "region": "active",
+      "stage": "projection",
+      "validQueries": 27
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9425517188001067,
+        "maxAbs": 0.8046875,
+        "relativeRms": 0.36376929765961047,
+        "rmsError": 0.027342777919450122,
+        "targetRms": 0.07516516125842912
+      },
+      "endpoint": {
+        "cosine": 0.9425517188001067,
+        "maxAbs": 0.8046875,
+        "relativeRms": 0.36376929765961047,
+        "rmsError": 0.027342777919450122,
+        "targetRms": 0.07516516125842912
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 485,
+      "region": "padding",
+      "stage": "projection",
+      "validQueries": 485
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9404989302242831,
+        "maxAbs": 0.9765625,
+        "relativeRms": 0.3727359623587969,
+        "rmsError": 0.028000741155605777,
+        "targetRms": 0.07512218831370011
+      },
+      "endpoint": {
+        "cosine": 0.9432617840047814,
+        "maxAbs": 0.9765625,
+        "relativeRms": 0.36215313654965103,
+        "rmsError": 0.028000741155605777,
+        "targetRms": 0.07731740617347073
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 512,
+      "region": "all",
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.912955516367786,
+        "maxAbs": 0.9765625,
+        "relativeRms": 0.5137132614929283,
+        "rmsError": 0.038128366667629233,
+        "targetRms": 0.07422110645308716
+      },
+      "endpoint": {
+        "cosine": 0.9150201282102493,
+        "maxAbs": 0.9765625,
+        "relativeRms": 0.5023912724957988,
+        "rmsError": 0.038128366667629233,
+        "targetRms": 0.07589376797533455
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 27,
+      "region": "active",
+      "stage": "residual",
+      "validQueries": 27
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9425781996468816,
+        "maxAbs": 0.796875,
+        "relativeRms": 0.36352434411629486,
+        "rmsError": 0.027326864444811107,
+        "targetRms": 0.07517203424502703
+      },
+      "endpoint": {
+        "cosine": 0.9453259405097062,
+        "maxAbs": 0.796875,
+        "relativeRms": 0.3530790093787138,
+        "rmsError": 0.027326864444811107,
+        "targetRms": 0.07739589077497444
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 485,
+      "region": "padding",
+      "stage": "residual",
+      "validQueries": 485
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.940588115788998,
+        "maxAbs": 0.6220703125,
+        "relativeRms": 0.35241822547504076,
+        "rmsError": 0.06585375641232927,
+        "targetRms": 0.18686251632860915
+      },
+      "endpoint": {
+        "cosine": 0.847071276932368,
+        "maxAbs": 0.6220703125,
+        "relativeRms": 0.5590749258360955,
+        "rmsError": 0.06585375641232927,
+        "targetRms": 0.1177905739804823
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 512,
+      "region": "all",
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9379365555210041,
+        "maxAbs": 0.55810546875,
+        "relativeRms": 0.37102389289817217,
+        "rmsError": 0.07667356393137519,
+        "targetRms": 0.20665397943096434
+      },
+      "endpoint": {
+        "cosine": 0.8400854082301188,
+        "maxAbs": 0.55810546875,
+        "relativeRms": 0.591538250081153,
+        "rmsError": 0.07667356393137519,
+        "targetRms": 0.12961725454077797
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 27,
+      "region": "active",
+      "stage": "rms",
+      "validQueries": 27
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9408169652300953,
+        "maxAbs": 0.6220703125,
+        "relativeRms": 0.35109916164941135,
+        "rmsError": 0.06519867602934779,
+        "targetRms": 0.18569875166620778
+      },
+      "endpoint": {
+        "cosine": 0.8476674503520822,
+        "maxAbs": 0.6220703125,
+        "relativeRms": 0.5567916122790677,
+        "rmsError": 0.06519867602934779,
+        "targetRms": 0.11709708729712287
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 485,
+      "region": "padding",
+      "stage": "rms",
+      "validQueries": 485
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9290470913126538,
+        "maxAbs": 1.3203125,
+        "relativeRms": 0.39123749407708186,
+        "rmsError": 0.06816901910231579,
+        "targetRms": 0.1742394840329007
+      },
+      "endpoint": {
+        "cosine": 0.8700245611961334,
+        "maxAbs": 1.3203125,
+        "relativeRms": 0.543323458491361,
+        "rmsError": 0.06816901910231579,
+        "targetRms": 0.12546673263768107
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 512,
+      "region": "all",
+      "stage": "mlp",
+      "validQueries": 512
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9450878881066255,
+        "maxAbs": 1.09375,
+        "relativeRms": 0.33519960147375005,
+        "rmsError": 0.07338543776621283,
+        "targetRms": 0.21893056388958668
+      },
+      "endpoint": {
+        "cosine": 0.9312596744917402,
+        "maxAbs": 1.09375,
+        "relativeRms": 0.3711107731884903,
+        "rmsError": 0.07338543776621283,
+        "targetRms": 0.1977453716465939
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 27,
+      "region": "active",
+      "stage": "mlp",
+      "validQueries": 27
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9277005790729015,
+        "maxAbs": 1.3203125,
+        "relativeRms": 0.39593400806079404,
+        "rmsError": 0.06786683987233415,
+        "targetRms": 0.1714094735249756
+      },
+      "endpoint": {
+        "cosine": 0.8622802469677038,
+        "maxAbs": 1.3203125,
+        "relativeRms": 0.5647462817671133,
+        "rmsError": 0.06786683987233415,
+        "targetRms": 0.12017226507446166
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 485,
+      "region": "padding",
+      "stage": "mlp",
+      "validQueries": 485
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9274643836170596,
+        "maxAbs": 1.234375,
+        "relativeRms": 0.3984345026465073,
+        "rmsError": 0.07734305353241815,
+        "targetRms": 0.19411735936191554
+      },
+      "endpoint": {
+        "cosine": 0.9110911773964635,
+        "maxAbs": 1.234375,
+        "relativeRms": 0.4455516653263687,
+        "rmsError": 0.07734305353241815,
+        "targetRms": 0.1735894163379773
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 512,
+      "region": "all",
+      "stage": "state",
+      "validQueries": 512
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.9396512284612426,
+        "maxAbs": 1.0,
+        "relativeRms": 0.3588762993814546,
+        "rmsError": 0.08330433261322624,
+        "targetRms": 0.23212547821298424
+      },
+      "endpoint": {
+        "cosine": 0.9405248485994869,
+        "maxAbs": 1.0,
+        "relativeRms": 0.3530623074210035,
+        "rmsError": 0.08330433261322624,
+        "targetRms": 0.235947964034267
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 27,
+      "region": "active",
+      "stage": "state",
+      "validQueries": 27
+    },
+    {
+      "attentionEffect": {
+        "cosine": 0.926498207729433,
+        "maxAbs": 1.234375,
+        "relativeRms": 0.4014888773456435,
+        "rmsError": 0.07699762776568336,
+        "targetRms": 0.19178022632840155
+      },
+      "endpoint": {
+        "cosine": 0.908142929152117,
+        "maxAbs": 1.234375,
+        "relativeRms": 0.4544110114107181,
+        "rmsError": 0.07699762776568336,
+        "targetRms": 0.16944489863184517
+      },
+      "id": "crane-before",
+      "invalidQueries": 0,
+      "kind": "endpoint",
+      "method": "transport64",
+      "queries": 485,
+      "region": "padding",
+      "stage": "state",
+      "validQueries": 485
+    }
+  ],
+  "serving": {
+    "asset": {
+      "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/compiled/bank-assets.npz",
+      "sha256": "25d48680c831e45d6841220a3231be1f79e62ebf1303556877613424bd0adafa"
+    },
+    "coreStateBytesPerHead": 8520720,
+    "cpuSecondsAfterImports": 3.33357851,
+    "exactCurrentQueryAttentionEvaluations": 0,
+    "frameworkCalls": 0,
+    "headDim": 128,
+    "highWaterRSSKiB": 304596,
+    "interfaces": {
+      "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/prompt-interfaces.json",
+      "sha256": "f7452d099fbed6de0bcbe4cae82d80e8fbb9c72e9c90cd2cbcd7292b80aebf16"
+    },
+    "kvGroups": 8,
+    "learnedAtomPayloadBytesRead": 417792,
+    "learnedAtomRowsRead": 24,
+    "logicalCoreStateBytes": 272663040,
+    "manifestSHA256": "9a155bd1410c52909997bacaf1d1aac2f9e90be86dc269d5e7edfab2b5285432",
+    "originalDenseProjections": 0,
+    "queryHeads": 32,
+    "rankPerHead": 64,
+    "referenceHeadsSupplied": 0,
+    "retainedFinalStateBytes": 545628288,
+    "rows": [
+      {
+        "activeTokens": 27,
+        "headSeconds": [
+          0.08445562282577157,
+          0.03662811405956745,
+          0.03418994881212711,
+          0.03449912602081895,
+          0.034512792248278856,
+          0.03446268802508712,
+          0.0340655567124486,
+          0.034145236015319824,
+          0.03442434733733535,
+          0.03737502917647362,
+          0.03699407819658518,
+          0.036993566900491714,
+          0.03418086189776659,
+          0.035900915041565895,
+          0.03416565386578441,
+          0.034398908726871014,
+          0.034036642871797085,
+          0.03397319419309497,
+          0.034096553921699524,
+          0.03417657408863306,
+          0.034243529196828604,
+          0.03467106772586703,
+          0.03653234522789717,
+          0.039788908790796995,
+          0.039612669963389635,
+          0.0390854561701417,
+          0.039498536847531796,
+          0.038550796918570995,
+          0.03533852519467473,
+          0.03761069988831878,
+          0.03757107583805919,
+          0.03787276986986399
+        ],
+        "id": "crane-behind",
+        "invalidHeadReads": {
+          "nearest64": 0,
+          "transport64": 0
+        },
+        "maximumHullViolations": {
+          "nearest64": 1.734723475976807e-18,
+          "transport64": 0.9956204280687753
+        },
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-bank.npz",
+        "port": {
+          "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-port.npz",
+          "sha256": "5839d2ed451c7882aaa638000ff61ab09c5f0ea9dfb7fd888dd569a6920535d0"
+        },
+        "rawTextBankSeconds": 6.182320940308273,
+        "sha256": "02a9222623aa9b43f5b2e94408a49ed95b98a0da610aef5884d79cccdfe179f0"
+      },
+      {
+        "activeTokens": 27,
+        "headSeconds": [
+          0.06504379492253065,
+          0.036861490458250046,
+          0.036848776042461395,
+          0.036547543946653605,
+          0.037286162842065096,
+          0.03832716774195433,
+          0.03573558619245887,
+          0.033319483045488596,
+          0.03495435696095228,
+          0.03351210197433829,
+          0.034055478405207396,
+          0.03373793512582779,
+          0.03396921558305621,
+          0.03436352265998721,
+          0.034797613974660635,
+          0.035165020264685154,
+          0.03490949282422662,
+          0.03455280605703592,
+          0.03414130816236138,
+          0.034073440823704004,
+          0.03415504330769181,
+          0.03427482722327113,
+          0.03401769697666168,
+          0.0362072279676795,
+          0.03588181966915727,
+          0.034171363804489374,
+          0.03457797411829233,
+          0.03409715509042144,
+          0.03427043929696083,
+          0.0343111059628427,
+          0.034529032185673714,
+          0.03466236079111695
+        ],
+        "id": "crane-before",
+        "invalidHeadReads": {
+          "nearest64": 0,
+          "transport64": 0
+        },
+        "maximumHullViolations": {
+          "nearest64": 1.734723475976807e-18,
+          "transport64": 0.9978504338782344
+        },
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-bank.npz",
+        "port": {
+          "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-port.npz",
+          "sha256": "cce9881e5836864102cf852cd4617337e221d50aa3eee0e3049a3179c9ce5e19"
+        },
+        "rawTextBankSeconds": 2.1628758385777473,
+        "sha256": "571028b845043bf444d0a8747bf93792e8f1f22b4d05996d8780524de561b289"
+      }
+    ],
+    "runtimeAssetBytes": 3153920,
+    "schema": "tce-complete-bank-prediction-seal-v1",
+    "scope": "Complete first-layer attention candidate banks from raw text. Reduced model-derived attention, not complete contextual encoder or zero-neural images.",
+    "sequentialHeadExecution": true,
+    "specSHA256": "a2fd911f294d78b7638083d8ce501943ae96cac7cb860645c2bd28e082d0127d",
+    "states": [
+      {
+        "id": "crane-behind",
+        "kvGroup": 0,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-0.npz",
+        "queryHead": 0,
+        "sha256": "65275555e9be1e91bf626c62dee62b885fc333f3c42b80b36a86db1697b7a657"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 0,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-1.npz",
+        "queryHead": 1,
+        "sha256": "68427b9da92a5eb7039aa8152473a410e4ec5801dbc0e40f26fd6722ad662a6e"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 0,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-2.npz",
+        "queryHead": 2,
+        "sha256": "32173cc651eb77f42cb06144338cbed28875d909e1e22d2e7d6642e11539b117"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 0,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-3.npz",
+        "queryHead": 3,
+        "sha256": "058e827edb66428a35688c9ae6130a4a7e25f9b84a27317c1b52dc19b0c0e99c"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 1,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-4.npz",
+        "queryHead": 4,
+        "sha256": "f435ecac807eb603f0e7a3e7a9fc3235e9db0a781069b84af8c1ee52dcf9629d"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 1,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-5.npz",
+        "queryHead": 5,
+        "sha256": "c30e82d7c06cc01807a2557d43383fff537f4fdb7a4670cd91e8459aa67f0474"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 1,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-6.npz",
+        "queryHead": 6,
+        "sha256": "1b1211b7b238627be8dbbda2063c5a9373bb3b67e88aac4edffbfb82d0103a36"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 1,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-7.npz",
+        "queryHead": 7,
+        "sha256": "38357e3d42e78cf9a08fc0eddb08cc7668c16904f4dc81604b4d2b6c6e2cd717"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 2,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-8.npz",
+        "queryHead": 8,
+        "sha256": "6e197ef653c0ebae59529906f374622c33911700a744161d5447c19ca5d9fc99"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 2,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-9.npz",
+        "queryHead": 9,
+        "sha256": "d3e28e79ad84c397bbc1fa6811688e20e5409162283452b188c0854656d3738e"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 2,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-10.npz",
+        "queryHead": 10,
+        "sha256": "a3f52b4d13d64e51fbadcca7bf901c561212d57cbb5034182d1a79004d91a16a"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 2,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-11.npz",
+        "queryHead": 11,
+        "sha256": "a651f6de87fd22100bcfea15c7f582efb5f3beedcc2124ffa64eeea397d6ad79"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 3,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-12.npz",
+        "queryHead": 12,
+        "sha256": "1872d63a24b100c4a09d3e5d9cfa69fd33f4ffe32815a8970cc2d6ac67e34f8d"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 3,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-13.npz",
+        "queryHead": 13,
+        "sha256": "4f33b732c0f7d6af77a669df78c083b1fe2beea5d676395f89ca9fa7b8625bdf"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 3,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-14.npz",
+        "queryHead": 14,
+        "sha256": "4b4d6455a406103740986c1b208b84c2617a4b3034f0e62a205a5e62d1f7ee8b"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 3,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-15.npz",
+        "queryHead": 15,
+        "sha256": "d82b0b03f2d37b134c25af40f12e8a5441356077f9b4241c5ae9b3c945bc6957"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 4,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-16.npz",
+        "queryHead": 16,
+        "sha256": "c754cf36dae5a3df512a8f844d2665cadfecd78e7d994c1f7717965a9b0efe01"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 4,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-17.npz",
+        "queryHead": 17,
+        "sha256": "5ab2ab127fa6ed7f110437c6220c10803e066a01e8dd9e71917d66f2c497bf52"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 4,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-18.npz",
+        "queryHead": 18,
+        "sha256": "190482426d2e5b4203fac804bd94ec723a6b390e81300b1229fb648919ba17f0"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 4,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-19.npz",
+        "queryHead": 19,
+        "sha256": "a4db07047699ef5ee63ac955ded3b9eeaf9a4e22fa13ae3364c40f68cad2f2de"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 5,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-20.npz",
+        "queryHead": 20,
+        "sha256": "166b4a135e3c1ac64ec7bae44e350faa24d7585ca94c8196068f934bfdeb565f"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 5,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-21.npz",
+        "queryHead": 21,
+        "sha256": "39c7072995d87a4649a643abd5dff2e0f3df3158ba5dcf5229d48211a9754c15"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 5,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-22.npz",
+        "queryHead": 22,
+        "sha256": "3cd04cd69510c9b3f18edb617d7444777c11ebe6cab550cdca4499347dcf1da7"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 5,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-23.npz",
+        "queryHead": 23,
+        "sha256": "9ac77575709886f5233b965979259574f08aa8a306ecafb32b9d8275bb358a9a"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 6,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-24.npz",
+        "queryHead": 24,
+        "sha256": "fb76b9e133b4b7dfbe095ff62e62ff32e9eceed6e665f01ee3f408480b1cfe49"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 6,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-25.npz",
+        "queryHead": 25,
+        "sha256": "a36498dfa56511a737bba6d2312aa010c30974cc182a0c50c0308e8689c7dcfe"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 6,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-26.npz",
+        "queryHead": 26,
+        "sha256": "00b9aaca3fe392acaaaedd0b9e62e2bf47d3a685d47f681f4d81cd099054837c"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 6,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-27.npz",
+        "queryHead": 27,
+        "sha256": "e2d2ae193e280ed6fdfa00854b59adb3ab7cda0208052628b8377daffe64e151"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 7,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-28.npz",
+        "queryHead": 28,
+        "sha256": "fd00ee429d2e776b72ddfe41b6fb1646df16a5379607ce8bc1b6b57401961c1e"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 7,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-29.npz",
+        "queryHead": 29,
+        "sha256": "736d64d88370558f7e227fc2a4cdcc9bb32afc83e54d30376002f2c7bb773845"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 7,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-30.npz",
+        "queryHead": 30,
+        "sha256": "7e6ae5d6aaf817afe1f05d660810ea49f7c2d7c31b6775bd0e1540c0131f7322"
+      },
+      {
+        "id": "crane-behind",
+        "kvGroup": 7,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-state-31.npz",
+        "queryHead": 31,
+        "sha256": "10939ec62c351dd3912662830092e0ecb497cfd00bd9579c2eb3db18841f343b"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 0,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-0.npz",
+        "queryHead": 0,
+        "sha256": "ffe9f6d06b568141987884a75a99653847e61e9c969263982934700731efa7b5"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 0,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-1.npz",
+        "queryHead": 1,
+        "sha256": "12beb80f4a7485ac769cffd501555f15c6c3eb241af82b5ee31edffaf744820a"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 0,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-2.npz",
+        "queryHead": 2,
+        "sha256": "41b5c77c25b9f5a901fef4f328beb2c0fb46d95319ed87b84f209cb2ecc62916"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 0,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-3.npz",
+        "queryHead": 3,
+        "sha256": "b79931efba0f9daed264fde09f7c8097a5b5b136f6539cce76ae0e90cfe165bc"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 1,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-4.npz",
+        "queryHead": 4,
+        "sha256": "4d93374e1c2ac010b206d624184c290b312dc6922647de300095411f4871836b"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 1,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-5.npz",
+        "queryHead": 5,
+        "sha256": "c7c74054318cdea2c59f10b54eb5e7eecb9da9ff6eadb01ed043802d1013e054"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 1,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-6.npz",
+        "queryHead": 6,
+        "sha256": "c5b06d25477b0d49e668064f9832efb5d61bf80c9c086479bdfa798ea22c2011"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 1,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-7.npz",
+        "queryHead": 7,
+        "sha256": "675410910e22b73d3f1cbef51597e64393d41666f7be9439139011d30ce42cad"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 2,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-8.npz",
+        "queryHead": 8,
+        "sha256": "d4be1d9317c314753a385244e9c8049ddaea234da01418f6e0b5473a60ac8b7e"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 2,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-9.npz",
+        "queryHead": 9,
+        "sha256": "b3a5e3c208054d560b73c1e0d9777c90aca4c92bffb1745bd20124420fc6bccb"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 2,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-10.npz",
+        "queryHead": 10,
+        "sha256": "7920dcae7cc197442d877c1d9bf2827801d3cbc953b8cc5ce7d0d79e3829a283"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 2,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-11.npz",
+        "queryHead": 11,
+        "sha256": "22c4fad8a8a27982b16050f047a0c9e0c5a77232e69e004dee3111bdbb0a023b"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 3,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-12.npz",
+        "queryHead": 12,
+        "sha256": "414576cbacdec6237a6389049e8ab0aafb069e50d2c81cdf055f2085fe751d47"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 3,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-13.npz",
+        "queryHead": 13,
+        "sha256": "c841dc9e9a27a6df50f2b9a56e90f7a12d0f2aec7551135a6a586af0beb3f903"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 3,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-14.npz",
+        "queryHead": 14,
+        "sha256": "56b52c2787dd9f74e42c1b6a23e3673e9d53e63e2bfc0968a4a25ce98eaf8963"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 3,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-15.npz",
+        "queryHead": 15,
+        "sha256": "bb27351a3e79df214bd56643ff7fb3c3a13a163f4ab5d2d514c05606f3528a6f"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 4,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-16.npz",
+        "queryHead": 16,
+        "sha256": "7fb3a7224970e2d5f37238f5e8e4b28c270efcc12378dd943e61a1aad5b637f2"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 4,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-17.npz",
+        "queryHead": 17,
+        "sha256": "4e9ab3299597276651b5a21052e561173018a7d8ffb07898582316307696d6c1"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 4,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-18.npz",
+        "queryHead": 18,
+        "sha256": "2beb2eb4a2a2df18d401db5643533872342ad1ca42f7ea53ac8293191a8486a2"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 4,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-19.npz",
+        "queryHead": 19,
+        "sha256": "4aa33a02a678b68e198c978e771b4b590b0432e64138e30ca962a5f26eaaa993"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 5,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-20.npz",
+        "queryHead": 20,
+        "sha256": "8a5daf669fc9697fe64e61de0e284fc2377b57b1af0e3500646602cdf9e2e0f3"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 5,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-21.npz",
+        "queryHead": 21,
+        "sha256": "fe012aa30e60b73e51662ac2f496e111ad1e31b43e61b2ad0543e7ea6b496612"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 5,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-22.npz",
+        "queryHead": 22,
+        "sha256": "2d912451be3aa800cc78b23abb4d79b70ffc518e64f5ef7cba2827235dd665a7"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 5,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-23.npz",
+        "queryHead": 23,
+        "sha256": "bcef737b45724f1ff2f3300dc7c627291956113fdf04bf2f158f046bc60edc80"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 6,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-24.npz",
+        "queryHead": 24,
+        "sha256": "dabf31edc587916b62774a7e52400547d8b2761efc8aa206e39e68addafa829e"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 6,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-25.npz",
+        "queryHead": 25,
+        "sha256": "b6c5bc0e9a0438cbd12ad3c742d2d335192838e7bec9e594e0949e4785701139"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 6,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-26.npz",
+        "queryHead": 26,
+        "sha256": "ae4ee1bad9f0d4be2b1287c8235c4635de95b4d483cc5fef9a5e20f5ea70b885"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 6,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-27.npz",
+        "queryHead": 27,
+        "sha256": "381c1e5dfa1fe7c8791bc487a6b2d432e7af803954686a1de595baf823238f37"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 7,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-28.npz",
+        "queryHead": 28,
+        "sha256": "3895e917aa2441a887ff6a007e8e75073d3c6a2f748591aa4acf9c2f3b9aadca"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 7,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-29.npz",
+        "queryHead": 29,
+        "sha256": "4a82c0565331c4f271434011be4d8c5baaea6ad2dc929bc3efec22e0437f413f"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 7,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-30.npz",
+        "queryHead": 30,
+        "sha256": "de4ae633055c22da667c7ef575dc3db0e1e8afa2066ef0c2da7494e69789b019"
+      },
+      {
+        "id": "crane-before",
+        "kvGroup": 7,
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-state-31.npz",
+        "queryHead": 31,
+        "sha256": "938f708951346eb00334176cdcdd2370817e30a67d56c56a46bfd5c04031808e"
+      }
+    ],
+    "wallSecondsAfterImports": 9.20806399686262
+  },
+  "servingChildSeconds": 9.411301837302744,
+  "terminal_status": "unassessed",
+  "timings": [
+    {
+      "allFourConsumerArmsSeconds": 4.8390942621044815,
+      "exactHeadsAndDiagnosticsSeconds": 0.13277399819344282,
+      "id": "crane-behind"
+    },
+    {
+      "allFourConsumerArmsSeconds": 4.6515628271736205,
+      "exactHeadsAndDiagnosticsSeconds": 0.12995046330615878,
+      "id": "crane-before"
+    }
+  ],
+  "workerSeconds": 72.30529965786263
+}

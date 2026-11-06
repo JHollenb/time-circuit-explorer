@@ -20,6 +20,8 @@ The [source-frozen landmark reader](../docs/source-landmark-context.md) replaces
 
 The [live query-transport experiment](../docs/query-transport-context.md) adds stable causal value–key cross moments to those source-selected readers. `context_transport_study.py stage|submit|collect` seals fresh raw-string head forecasts; `transport_consumer.py stage|submit|collect` separately measures the original output/RMS/MLP consumer with 31 exact other heads. Both improve the four paired effects at their measured scopes. This is component research, not the website's arbitrary-prompt image backend. The next proposed cut predicts the [complete attention bank](../docs/plans/complete-attention-bank.md).
 
+The [complete attention-bank study](../docs/complete-attention-bank.md) extends prediction to all 32 first-layer heads, with no exact replacement heads. `attention_bank_study.py stage|submit|collect` freezes one fresh raw-string pair, compiles source-only banks, seals all candidate heads, then evaluates the original block consumer on all 512 rows. `attention_remainder.py stage|submit|collect` separately attributes its already-scored error to exact partition/value remainders and BF16 defects, with baseline-assisted one-address controls. Neither is a new zero-neural image backend.
+
 ## Generate from the website
 
 From this repository in the domains workspace, with the configured mrun client and reachable fleet:

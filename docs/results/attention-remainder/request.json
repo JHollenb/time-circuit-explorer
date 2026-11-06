@@ -1,0 +1,27 @@
+{
+  "backend": "numpy-fp64",
+  "cpuThreads": 1,
+  "device": "cpu",
+  "law": "Centered t=delta dot(y-E_l[y]), H=E_l[v], A=E_l[(v-H)t], beta=1/E_l[exp(t)]. Error H+A-h_exact=P+V, P=(1-beta)A, V=-beta E_l[(v-H)(expm1(t)-t)]. Separate BF16 forecast/reference defects telescope rounded error.",
+  "numericalPolicy": "Stable logsumexp tilt, normalized remainder coefficients. expm1(t)-t for abs(t)<=1, otherwise w_tilt-beta*p*(1+t); no clipping. Original direct attention separately verifies exact identity. All signed/raw terms retained.",
+  "observables": "Paired vectors/energies/cross terms and target-assisted single-term removals, active/padding/maskchanged plus before8/at8/after8 clocks; full endpoint/head traces and normalized per-key remainder coefficients. Verify sole changed token8/identical later queries/routes; exact baseline-assisted one-key key/payload split on applicable later rows. Retrospective control, not serving.",
+  "parentJobID": "job-29760e2a3970",
+  "parentRequestSHA256": "33482c6ce96896df972d5c9781d4287236e6de2af35969e8be1ea34232e234aa",
+  "requestSHA256": "320498ad0124fb12b4bd55689451ef9ba6622d057248d44d4ed00c6fcfa9354a",
+  "schema": "tce-attention-remainder-request-v1",
+  "scope": "Saved-only allquery/allhead exact exponential remainder attribution on already scored pair. No new forecast, target fit, original checkpoint or learned projection. Target-assisted diagnostic corrections are not serving laws.",
+  "sourceHashes": {
+    "attention_bank.py": "e5617d704fcb66b6a34d2e20b61045a15865df949788c4406ba77e9d32325326",
+    "attention_bank_study.py": "50a788ea1460c41007f1784983f221f4f9e5c48402f8ec395a7aeba75b669e32",
+    "attention_remainder.py": "7f039cc17f796272a7f7c5735d49c7cc67ae67f4e695e59c7fe39cfb8a059e09",
+    "context_landmarks.py": "8e81cd5fa735bdca8169c96225f3df319b09689d30dc3b8e3d96b7f756bb7f2c",
+    "context_source_geometry.py": "3ce2e0b8e66d2174247f5cac2042d6183b30a45b18704f9c7f600fbefd8d012c",
+    "context_statistics.py": "6f86949f47160890bd58a41174fe99809d6dce8a3e67222be09f7e77e961b057",
+    "context_statistics_study.py": "0d44d03f2a8eabd32b5d7034a449f7a46e7d8abe0252dd1b94d229c31f1ea1c8",
+    "context_transport.py": "8b94d46a45cd635a538000d2d2ab5eee39d82369ddcf3ff9a2766f1fb80ab665",
+    "context_transport_study.py": "28d9d7bb4b849a675dcdc0a90db2728100e02505aa3b1ee5c2b657f621895e95",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "source.json": "606887b2f891b00fa82e36310f2f4b7f56bcaa6d6a4d39ba640c8ca4a06f79ac",
+    "transport_consumer.py": "ea238479b9a54f3ea61c9a4deffef1099a71ac8af54befed96c0331c3cd27efd"
+  }
+}

@@ -1,6 +1,6 @@
 # Predict the complete first-layer attention bank
 
-Status: **proposed after cycle10 and Astra review; not staged or measured**. The [live query-transport result](../query-transport-context.md) improves four paired changes and their measured MLP/state effects. Its largest remaining supplied dependency is the other 31 attention heads. The next experiment asks whether errors from all predicted heads remain useful when they meet at the actual common consumer.
+Status: **implemented and measured in cycle11**, followed by a saved-only exponential-remainder attribution. The [full result](../complete-attention-bank.md) removes reference-head replacement, but the tested prompt change remains inaccurate despite improved endpoint states. The protocol below preserves the pre-result design after the [live query-transport result](../query-transport-context.md).
 
 Freeze the existing source-only recipe for every query head: complete lexical atoms, source covariance of each of the eight KV groups, and 64 landmarks selected separately for each of 32 query distributions. Reuse source operand gathering and eight covariance computations where exact. Initially preserve 64 landmarks per query head; do not pool landmarks, change routing and compress coordinates simultaneously.
 

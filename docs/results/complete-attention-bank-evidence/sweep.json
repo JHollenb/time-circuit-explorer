@@ -1,0 +1,40 @@
+{
+  "schema": "tce-complete-bank-evidence-v1",
+  "timestamp": "2026-11-06T12:05:09.549970+00:00",
+  "tests": 57,
+  "testScope": "Tiny synthetic mechanics, not pretrained model coverage.",
+  "runs": [
+    {
+      "jobID": "job-29760e2a3970",
+      "result": "complete-attention-bank",
+      "requestSHA256": "33482c6ce96896df972d5c9781d4287236e6de2af35969e8be1ea34232e234aa",
+      "runExit": 0,
+      "verifyExit": 0,
+      "streams": 1,
+      "records": 15360,
+      "watchFires": 0,
+      "instrumentStatus": "target-streams-only",
+      "terminalClaimReceipts": 0,
+      "physicalAddressJoins": 0,
+      "stagedAndCurrentSourceHashesMatch": true,
+      "publicHashesAndLosslessStreamsVerified": true
+    },
+    {
+      "jobID": "job-ad7b427fd79c",
+      "result": "attention-remainder",
+      "requestSHA256": "320498ad0124fb12b4bd55689451ef9ba6622d057248d44d4ed00c6fcfa9354a",
+      "runExit": 0,
+      "verifyExit": 0,
+      "streams": 1,
+      "records": 32768,
+      "watchFires": 0,
+      "instrumentStatus": "target-streams-only",
+      "terminalClaimReceipts": 0,
+      "physicalAddressJoins": 0,
+      "stagedAndCurrentSourceHashesMatch": true,
+      "publicHashesAndLosslessStreamsVerified": true
+    }
+  ],
+  "localFreeBytesObserved": 11128070144,
+  "storageScope": "Observation only. Last actual cold archive cycle10; full new arrays/source store remain near compute. No new deletion this cycle."
+}
