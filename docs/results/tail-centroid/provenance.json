@@ -1,0 +1,194 @@
+{
+  "claimBoundary": "Retrospective frozen-support unit/centroid comparison on supplied ports, original learned consumer offline. No reranked oracle, freshrawprompt/fullencoder or strictzero-neural image claim.",
+  "completeCollectedInventory": {
+    "bytes": 7089795,
+    "files": {
+      "membership-diagnostics.json": {
+        "bytes": 16213,
+        "sha256": "f60048af0dc24b65ce0ca0632d94a8756cd9eab24b201461418579a573e42fa1"
+      },
+      "observations.jsonl": {
+        "bytes": 6517566,
+        "sha256": "266b01d6202c75c828fe0e4e66a54bf6d132ee96e3a57fea070cebea4856d46f"
+      },
+      "prediction-seal.json": {
+        "bytes": 41515,
+        "sha256": "61e0f07c5b951ef897b89e6db4c99a3727f55464ebd263a7fb70a4ee8ae8f238"
+      },
+      "reference-receipt.json": {
+        "bytes": 8725,
+        "sha256": "0b4f5fe9eca70e1d7fe805fef1e890d096b54279d9a4c63f45a2e25fa9e89451"
+      },
+      "report.json": {
+        "bytes": 474157,
+        "sha256": "d6e451010b79a99c8d3a28dee4af9ae4e017e1b1d717a74523f18a8b6a58f2b2"
+      },
+      "request.json": {
+        "bytes": 3194,
+        "sha256": "50fd7f589a634527f3f45bcb966a8e304e26c502bf1a623bc474f43c43621635"
+      },
+      "serve-source.json": {
+        "bytes": 3980,
+        "sha256": "e00fe6c6f15c00418c3ed9414b82d08a9d8233851b3ecd5c9c1d1ff46f5bc944"
+      },
+      "source.json": {
+        "bytes": 24445,
+        "sha256": "b2c128e0c24cb6ec155a4bbd724e7d909c40eda94851436ac47a646e1ed47217"
+      }
+    }
+  },
+  "jobID": "job-f2b0ab14b656",
+  "losslessStreamTransports": [
+    {
+      "published": "observations.jsonl.gz",
+      "publishedBytes": 740413,
+      "publishedSHA256": "358ae5a4e6b530347073a947f589511ff524c44f3a233c73601aa26d7c6a12f6",
+      "source": "observations.jsonl",
+      "sourceBytes": 6517566,
+      "sourceSHA256": "266b01d6202c75c828fe0e4e66a54bf6d132ee96e3a57fea070cebea4856d46f"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "d64538f8cdba1c8a78298081f5af8bcdf792e6ff4bdd3440b497766c21a2c4e3",
+      "size_bytes": 56978
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1793969544.5528884,
+      "sha256": "d64538f8cdba1c8a78298081f5af8bcdf792e6ff4bdd3440b497766c21a2c4e3",
+      "size_bytes": 56978
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1793969544.4691522,
+      "sha256": "d64538f8cdba1c8a78298081f5af8bcdf792e6ff4bdd3440b497766c21a2c4e3",
+      "size_bytes": 56978
+    }
+  },
+  "publication": "All compact reports and lossless consumer observations retained; full states/frozen support/oracle/consumer arrays stay near compute with independent byte checks.",
+  "remoteResultRoot": "/mnt/hdd8tb/mrun-work/job-f2b0ab14b656/response-result",
+  "requestSHA256": "ad61466d465964461d25ae5dc10e8a81f10c5b4cd3ca47d0b5833c951894584d",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-f2b0ab14b656",
+      "job_log": {
+        "bytes": 589,
+        "sha256": "b841dd6e58f241df31d5a1143a8c9a1d1fa1d87100d20420c3f7153a5b5ed9cf"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-f2b0ab14b656/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "python",
+        "-u",
+        "centroid_tilt_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-f2b0ab14b656",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-f2b0ab14b656/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1793969544.543208
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1793969544.576375
+        },
+        {
+          "name": "process.launch",
+          "ts": 1793969544.5843596
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1793969544.613731
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1793969590.6190577
+        },
+        {
+          "name": "finished",
+          "ts": 1793969590.656273
+        }
+      ]
+    },
+    "elapsed_s": 46.21,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "d64538f8cdba1c8a78298081f5af8bcdf792e6ff4bdd3440b497766c21a2c4e3",
+      "size_bytes": 56978
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 1537.1,
+    "peak_vram_mb": 0.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-tail-centroid-public-v1"
+}

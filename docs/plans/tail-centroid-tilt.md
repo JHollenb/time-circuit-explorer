@@ -1,6 +1,6 @@
 # Freeze support, then test the tail centroid
 
-Status: **proposed after cycle 12 and Astra review; not staged or measured**. The [sparse joint-tilt result](../sparse-joint-tilt.md) reduces core state31.9 times and improves active responses, while eligible padding remains poor. Full-query-score oracle support improves the response substantially. That gap does not isolate support selection from the unit-tail approximation or membership changes.
+Status: **implemented and measured in cycle 13**. The [matched result](../tail-centroid-tilt.md) improves eligible paired state error 126.3%→96.0% at identical state/support; frozen oracle error slightly worsens 41.8%→43.7%. The original plan follows. The [sparse joint-tilt result](../sparse-joint-tilt.md) reduces core state 31.9 times and improves active responses, while eligible padding remains poor. Full-query-score oracle support improves the response substantially. That gap does not isolate support selection from the unit-tail approximation or membership changes.
 
 Use only the existing retrospective pair, 64 source landmarks, nearest routes and m4 budget. Freeze both original eligible and original oracle supports at every query. Do not rerank the oracle for the new law. Compare unit versus centroid tail within each support class; no new selector geometry, coefficient fitting, dataset or covariance tensor.
 

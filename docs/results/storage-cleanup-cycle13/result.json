@@ -1,0 +1,74 @@
+{
+  "archivedBytes": 1628748559,
+  "files": 2,
+  "localFreeBytesAfter": 11117727744,
+  "localFreeBytesBefore": 9524436992,
+  "planSHA256": "819a799440e588cabc58e2cdf8a4d363856d9868d493277683acc35301dcd776",
+  "rows": [
+    {
+      "bytes": 810756640,
+      "custodyPath": "/Users/jakeholl/domains/artifacts/mdb-flux-mlp-replacement-20261104/run-03/archive-custody.json",
+      "custodySHA256": "88ce1d776ce0cee83bb8b28b825faa09fae364c1d77d5967374bde287d29b70a",
+      "jobID": "job-68295609457d",
+      "path": "/Users/jakeholl/domains/artifacts/mdb-flux-mlp-replacement-20261104/run-03/archive.tar.gz",
+      "planSHA256": "819a799440e588cabc58e2cdf8a4d363856d9868d493277683acc35301dcd776",
+      "remote": "/mnt/hdd8tb/cold-storage/mbp1/time-circuit-explorer/transports/sha256/df/df12080744b8b6c94f9830930578f474cf5a235e7a95d97bf6d06e7de216d906",
+      "remoteHost": "beast",
+      "remoteVerification": {
+        "bytes": 810756640,
+        "path": "/mnt/hdd8tb/cold-storage/mbp1/time-circuit-explorer/transports/sha256/df/df12080744b8b6c94f9830930578f474cf5a235e7a95d97bf6d06e7de216d906",
+        "sha256": "df12080744b8b6c94f9830930578f474cf5a235e7a95d97bf6d06e7de216d906",
+        "verified": true
+      },
+      "restoreCommand": [
+        "rsync",
+        "-a",
+        "--protect-args",
+        "beast:/mnt/hdd8tb/cold-storage/mbp1/time-circuit-explorer/transports/sha256/df/df12080744b8b6c94f9830930578f474cf5a235e7a95d97bf6d06e7de216d906",
+        "/Users/jakeholl/domains/artifacts/mdb-flux-mlp-replacement-20261104/run-03/archive.tar.gz"
+      ],
+      "schema": "tce-cold-transport-pointer-v1",
+      "sha256": "df12080744b8b6c94f9830930578f474cf5a235e7a95d97bf6d06e7de216d906",
+      "statIdentity": [
+        16777234,
+        213171815,
+        810756640,
+        1793817628327401856
+      ]
+    },
+    {
+      "bytes": 817991919,
+      "custodyPath": "/Users/jakeholl/domains/artifacts/mdb-flux-mlp-replacement-20261104/run-03/log-custody.json",
+      "custodySHA256": "ba49a5d997296d55a989c1ba8297e99b100deb6661d9cd3991d9a64e7cfb418e",
+      "jobID": "job-68295609457d",
+      "path": "/Users/jakeholl/domains/artifacts/mdb-flux-mlp-replacement-20261104/run-03/worker.log.gz",
+      "planSHA256": "819a799440e588cabc58e2cdf8a4d363856d9868d493277683acc35301dcd776",
+      "remote": "/mnt/hdd8tb/cold-storage/mbp1/time-circuit-explorer/transports/sha256/dc/dc938ac2d456d26eda6987211f3da2c8cb669b53b5674cd67afd71c2a81bad03",
+      "remoteHost": "beast",
+      "remoteVerification": {
+        "bytes": 817991919,
+        "path": "/mnt/hdd8tb/cold-storage/mbp1/time-circuit-explorer/transports/sha256/dc/dc938ac2d456d26eda6987211f3da2c8cb669b53b5674cd67afd71c2a81bad03",
+        "sha256": "dc938ac2d456d26eda6987211f3da2c8cb669b53b5674cd67afd71c2a81bad03",
+        "verified": true
+      },
+      "restoreCommand": [
+        "rsync",
+        "-a",
+        "--protect-args",
+        "beast:/mnt/hdd8tb/cold-storage/mbp1/time-circuit-explorer/transports/sha256/dc/dc938ac2d456d26eda6987211f3da2c8cb669b53b5674cd67afd71c2a81bad03",
+        "/Users/jakeholl/domains/artifacts/mdb-flux-mlp-replacement-20261104/run-03/worker.log.gz"
+      ],
+      "schema": "tce-cold-transport-pointer-v1",
+      "sha256": "dc938ac2d456d26eda6987211f3da2c8cb669b53b5674cd67afd71c2a81bad03",
+      "statIdentity": [
+        16777234,
+        213171816,
+        817991919,
+        1793817629541551935
+      ]
+    }
+  ],
+  "schema": "tce-transport-cleanup-result-v1",
+  "scope": "Explicit completed-run archive/log transport copies only; all extracted scientific artifacts and original receipts remain local.",
+  "status": "complete"
+}

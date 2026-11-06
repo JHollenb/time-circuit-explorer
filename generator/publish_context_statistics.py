@@ -9,7 +9,7 @@ import subprocess
 from encoder_atoms import read,save,sha,identity
 
 
-def checked_collection(root):
+def checked_collection(root,*,current_workers=True):
     root=Path(root).resolve();c=read(root/'collection.json');j=read(root/'scheduler-job.json');r=read(root/'request.json')
     if j['state']!='succeeded' or j['job_id']!=c['jobID'] or j['payload_custody']!=c['custody'] or j['config']['requestSHA256']!=r['requestSHA256']:
         raise ValueError('Collected job identity differs')
@@ -23,7 +23,9 @@ def checked_collection(root):
         if p.stat().st_size!=item['bytes'] or sha(p)!=item['sha256']:raise ValueError('Collected result changed: '+n)
     for n,h in r['sourceHashes'].items():
         if sha(root/'payload'/n)!=h:raise ValueError('Staged source changed: '+n)
-        if n.endswith('.py') and sha(Path(__file__).parent/n)!=h:raise ValueError('Current worker differs: '+n)
+        # Historical parents bind their immutable staged sources, not later edits
+        # in the development checkout. Fresh publication keeps the stronger default.
+        if current_workers and n.endswith('.py') and sha(Path(__file__).parent/n)!=h:raise ValueError('Current worker differs: '+n)
     if read(root/'result/report.json')['requestSHA256']!=r['requestSHA256']:raise ValueError('Report request differs')
     return c,j,r
 

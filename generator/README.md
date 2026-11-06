@@ -24,6 +24,8 @@ The [complete attention-bank study](../docs/complete-attention-bank.md) extends 
 
 The [sparse joint-tilt study](../docs/sparse-joint-tilt.md) tests a positive top-m/tail state without the covariance tensor on that retained pair. `sparse_tilt_study.py stage|submit|collect` seals all32head banks before its separate current-prefix oracle and original fullblock consumer; `publish_sparse_tilt.py verify|publish` authenticates retained bytes. Four-key core state is8.55MB, but padding response remains poor. The [next plan](../docs/plans/tail-centroid-tilt.md) compares tail laws with support frozen. These are component experiments on supplied ports, not the site's arbitrary-prompt image backend.
 
+The [matched tail-centroid study](../docs/tail-centroid-tilt.md) reuses the previous eligible/oracle support sets without reranking. `centroid_tilt_study.py stage|submit|collect` seals its own eligible unit/centroid banks before frozen-oracle/original-consumer work. `publish_centroid_tilt.py verify|publish` checks retained bytes. It improves eligible state response at unchanged core bytes but remains retrospective component research, not an arbitrary-prompt image backend.
+
 ## Generate from the website
 
 From this repository in the domains workspace, with the configured mrun client and reachable fleet:

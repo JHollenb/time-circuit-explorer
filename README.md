@@ -32,6 +32,8 @@ The [complete attention-bank experiment](docs/complete-attention-bank.md) predic
 
 The [sparse joint-tilt experiment](docs/sparse-joint-tilt.md) replaces that covariance tensor with retained keys and a positive tail. Four-key core state falls to8.55MB; active-row state response improves, but padding remains inaccurate. A separate full-query-score oracle performs much better. The next test freezes support and changes only the tail approximation; this is retrospective component research, with no arbitrary-prompt zero-neural image claim.
 
+The [matched tail-centroid experiment](docs/tail-centroid-tilt.md) runs that comparison at identical state and selected keys. Eligible paired state error improves 126.3%→96.0%; the frozen oracle slightly worsens 41.8%→43.7%. This isolates a useful tail-law change on the saved pair while retaining the remaining support gap and original learned consumer costs.
+
 The [source-only landmark reader](docs/source-landmark-context.md) supplies an explicit rule for eight new strings, with64live positive prefix statistics. Its initial mixture is inaccurate. Saved-only routing/capacity diagnostics distinguish excessive smoothing from the added restriction of fixed convex response mixing; target-assisted fitted weights are not serving assets. Contextual/image completion remains open.
 
 The [compiled state reader](docs/compiled-state-reader.md) now consumes that writer's actual BF16 state without a dose input, recovering coordinates and the next layer's Q/K/V affines in about .93ms for32rows. It uses learned reduced banks, with native and per-row errors retained. A saved-array follow-up separates basis omission, rounding, numerical policy and inherited writer error. This is one supplied-context edge, before attention.

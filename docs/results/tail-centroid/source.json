@@ -1,0 +1,660 @@
+{
+  "asset": {
+    "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/compiled/bank-assets.npz",
+    "sha256": "25d48680c831e45d6841220a3231be1f79e62ebf1303556877613424bd0adafa"
+  },
+  "completeBankRoot": "/mnt/hdd8tb/mrun-work/job-29760e2a3970",
+  "geometry": {
+    "headDim": 128,
+    "kvWidth": 1024,
+    "qWidth": 4096
+  },
+  "oracle": [
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "kind": "oracle-diagnostics",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/reference-work/crane-behind-m4-oracle.npz",
+      "sha256": "b2f32e9c93a0b40c2e60daa385d3d94b01877718cbe60d2a9e457e6f9e4753ac"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "kind": "oracle-diagnostics",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/reference-work/crane-before-m4-oracle.npz",
+      "sha256": "85c2dc122b2b95abb83c461dfdd31f4ffc1a92524bcc1f5b865c267428ab6e7a"
+    }
+  ],
+  "pairs": [
+    [
+      "crane-behind",
+      "crane-before"
+    ]
+  ],
+  "parentConsumerParameterSource": {
+    "assets": {
+      "text_encoder/config.json": "214b4c29a0d975e9fddf9994a5673f22cb2c4c5750352f9227c2c3251ebeab40",
+      "text_encoder/model.safetensors.index.json": "06b3d5319b6d76d1a4a2433419180016cfd54ed62d086a5e6567a809f8c82634",
+      "tokenizer/added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+      "tokenizer/chat_template.jinja": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+      "tokenizer/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+      "tokenizer/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+      "tokenizer/tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+      "tokenizer/tokenizer_config.json": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+      "tokenizer/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    "modelRoot": "/mnt/big/llm-models/FLUX.2-klein-4B",
+    "nativeSourceSHA256": "fbdcfeeb1b54135ca67ba7df924da92f4b264e1252b517eea2de989289ebaeab",
+    "pipelineSourceSHA256": "8a57a8a7f1c22fc0c5bc5d3fd1bd9bc76c17c1f4d6644cc73370651dd955358e",
+    "tensors": {
+      "e": "model.embed_tokens.weight",
+      "input": "model.layers.0.input_layernorm.weight",
+      "k": "model.layers.0.self_attn.k_proj.weight",
+      "kn": "model.layers.0.self_attn.k_norm.weight",
+      "q": "model.layers.0.self_attn.q_proj.weight",
+      "qn": "model.layers.0.self_attn.q_norm.weight",
+      "v": "model.layers.0.self_attn.v_proj.weight"
+    },
+    "weightFile": {
+      "bytes": 4967215360,
+      "path": "text_encoder/model-00001-of-00002.safetensors",
+      "sha256": "8c0506e7f4936fa7e26183a4fd8da4e2bdbc5990ba64ae441f965d51228f36ea"
+    }
+  },
+  "parentConsumers": [
+    {
+      "id": "crane-behind",
+      "kind": "consumers",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/reference-work/crane-behind-consumers.npz",
+      "sha256": "0adf8fb1ddfaedd64263a100b4297efacbc3aa5b9a27caf52aea1a750213ff16"
+    },
+    {
+      "id": "crane-before",
+      "kind": "consumers",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/reference-work/crane-before-consumers.npz",
+      "sha256": "557ca38d46d6e80cf8dab02445208023cff8666190b94aabab5fa379ff1272ac"
+    }
+  ],
+  "parentSeal": {
+    "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/prediction-seal.json",
+    "sha256": "83f3022f4b8b0838445a674cf5fb375aab00c3ebcb2eb3ddffcf3ba963039547"
+  },
+  "parentStates": [
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state0.npz",
+      "queryHead": 0,
+      "sha256": "1cd10e0420096271201400b8737640537af1e21b0e918cea93675f7bfb2699d4"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state1.npz",
+      "queryHead": 1,
+      "sha256": "717caa2d02c9441956cbc88d35c2d0ed2875903d03a772624479272577f842f4"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state2.npz",
+      "queryHead": 2,
+      "sha256": "10c363866908a470aedc5caddb17c1c55a0a37b5577c712f2db030847a77f727"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state3.npz",
+      "queryHead": 3,
+      "sha256": "ed95e7947f8a70493f1a867eb66fe56d99c57cfadc0679d7ee0bc7721b7c314c"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state4.npz",
+      "queryHead": 4,
+      "sha256": "2ad69ab947984bcf46330be4836bd001944289434c664144f05404e559a16902"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state5.npz",
+      "queryHead": 5,
+      "sha256": "62816f4d6eddce2c1a37e341930334aefb2517d9420d5543e7d365ade4e7d26a"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state6.npz",
+      "queryHead": 6,
+      "sha256": "e63856c0949df2d5b1aca988e2ca13f297c231483af706f4af099f584ea69615"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state7.npz",
+      "queryHead": 7,
+      "sha256": "fc7727ae89a53d70c4a93ef8adcba64d19ef250869d29abd874f89efb06ac308"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state8.npz",
+      "queryHead": 8,
+      "sha256": "bc3fb87132d571f3e6ea5e9fa0e09650eb1da3a4533229a521881b5aef0f1343"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state9.npz",
+      "queryHead": 9,
+      "sha256": "883f96db5972e1f1e74d413a40f3f167bf5d4a742e1b4e18e8c2dc2a9c8fcc0e"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state10.npz",
+      "queryHead": 10,
+      "sha256": "26527bd096c51d57c625c13f1b20224c1faacfd5866b794ba8ac87d5050e7cb2"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state11.npz",
+      "queryHead": 11,
+      "sha256": "834974c25da1def7f9d3839936a4129b02365572c1974bca6b42a54bb940106c"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state12.npz",
+      "queryHead": 12,
+      "sha256": "6c062fbca06307d35203912ca07935e7b29b9945d136513db1800bbb3d871c6d"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state13.npz",
+      "queryHead": 13,
+      "sha256": "873f3f9c76a77c4ad5c216d83b407818f14dec1089ceb276141e6f8fe3d1950c"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state14.npz",
+      "queryHead": 14,
+      "sha256": "9b53ad1193e60e2b2ed85d7b782d48f77be9711cc083b92f0dc1f1fd2e314d58"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state15.npz",
+      "queryHead": 15,
+      "sha256": "344664f2f5b4e886e75f62cb065731813350ea8efb9a03efa9764e09e0a6ae24"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state16.npz",
+      "queryHead": 16,
+      "sha256": "a7b894d3d0e1412b055ee9df62af248c85748577cf418da1280c613f0461595e"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state17.npz",
+      "queryHead": 17,
+      "sha256": "b9a89c82eb9fb9965eb6e45928c96dcfea590a07d69b8c2535b10b640e13cae4"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state18.npz",
+      "queryHead": 18,
+      "sha256": "44554a0e2c862de2b6eb690e536f9e8afd9c6bba1faf5a1fd242a8b7d52610db"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state19.npz",
+      "queryHead": 19,
+      "sha256": "fd5101d9d5db52a6286f72e342723b5b03d2954af833d4e4904a6a148bcf5fa0"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state20.npz",
+      "queryHead": 20,
+      "sha256": "007159e3650d9ba2e4d515f2cdb6f1406e2e41c9885bbf8bc06c59203242a25b"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state21.npz",
+      "queryHead": 21,
+      "sha256": "784ef4a97c35ecb24b1bac1dd603c0acbc645f5536a38069332af966b6877328"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state22.npz",
+      "queryHead": 22,
+      "sha256": "eb14bb2d2d048603d961097f961fcd609831e81e47b79c0b6e3fb8d72699c839"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state23.npz",
+      "queryHead": 23,
+      "sha256": "aaeca4a9de45248047a50d11d04830b93a063273f06ccd33119372176172484b"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state24.npz",
+      "queryHead": 24,
+      "sha256": "755e9182724c9787bf4de44e4f534a86e97350dc0ae9bbc3494c56e920e53f05"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state25.npz",
+      "queryHead": 25,
+      "sha256": "2269508a93e4c139adf366781670a1ca0e2dd3f675470885adbf63beb7d5d944"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state26.npz",
+      "queryHead": 26,
+      "sha256": "af6b6001f1af5cbdd447965f4563a1b8298ce2591b59f1d002eab9bbfc51bfa7"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state27.npz",
+      "queryHead": 27,
+      "sha256": "c49a445402a093c25b60ac5d2e026750d1f7bc8d76a987f1d9c1e6f0b973b81c"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state28.npz",
+      "queryHead": 28,
+      "sha256": "11bb103825c73bfda4846033c97828d0a250d6de66de661f754bfe83f4f71928"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state29.npz",
+      "queryHead": 29,
+      "sha256": "ad5e34d3a5f6f2100706fcc63b4db9b7591b61809e11f0b68c50a11641e74ea6"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state30.npz",
+      "queryHead": 30,
+      "sha256": "6d6844bc3bb132c10021da9dca2a8145e934751c86d42e98624dcbc9d3e08bc8"
+    },
+    {
+      "budget": 4,
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state31.npz",
+      "queryHead": 31,
+      "sha256": "80497227c77274ce472c1d9fb9979d1e4f6ead79321fcfcda1e8dc33a86aae96"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state0.npz",
+      "queryHead": 0,
+      "sha256": "19028002185192d54264074ee5fafd855bf8d1aaa949533eac93298e7397f001"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state1.npz",
+      "queryHead": 1,
+      "sha256": "9ce3fbca5e1c6089afc3260571893e8560686356424d3f2c12191e6374cf8977"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state2.npz",
+      "queryHead": 2,
+      "sha256": "56b93a6de3964316d5035ad25d0e710d69f077c531ebe83cd6b37ed205393004"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state3.npz",
+      "queryHead": 3,
+      "sha256": "4bc86f0b00ac31f0b0911340a4c98187a297314fc154c1a61540b723357ab09f"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state4.npz",
+      "queryHead": 4,
+      "sha256": "b04c8ccfe3b55edd8a100d6563f23bef56199972da9b609d306c417c705e9496"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state5.npz",
+      "queryHead": 5,
+      "sha256": "a2366c547dd6e26f6d82ec43ed7aa033f6a23420677ea86be0f7753f83864da6"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state6.npz",
+      "queryHead": 6,
+      "sha256": "cc799d8f5595ba492df5b7f44166134bb1b5ddbed339b02afe1f086293dd2154"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state7.npz",
+      "queryHead": 7,
+      "sha256": "d204bd2cf67149e9be2ce271d03eeedd833cc59bfba41bfcdfd7aa742742c088"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state8.npz",
+      "queryHead": 8,
+      "sha256": "f04d9dd02a59f8997c87487a77d15e6fed1e50136950893f44d498daf398bd98"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state9.npz",
+      "queryHead": 9,
+      "sha256": "a4552b2cdc29fd5608c76cef0de1b6598e4a014966b597f3956e8156fd7d6aca"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state10.npz",
+      "queryHead": 10,
+      "sha256": "e45c641fa1e297f75519429d6331c839b0545dd9d493af24196ae1e31d6a14ce"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state11.npz",
+      "queryHead": 11,
+      "sha256": "e0f27b65a2530a21a2d59227ece676d343f40f24f5b54dfce9548dc7bb68a33f"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state12.npz",
+      "queryHead": 12,
+      "sha256": "ce192748cba1c1928902e9fa202760cdb1c3834b82585632aaab73f2e0b75600"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state13.npz",
+      "queryHead": 13,
+      "sha256": "b059479a381529c92448009e12fd1396d032f258315eea63b9e0b59d394f3dbe"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state14.npz",
+      "queryHead": 14,
+      "sha256": "7cfe45ef9486939bb03b16e5fc101f4e1fb151cf9395488b4f9a8875fcf8ff0d"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state15.npz",
+      "queryHead": 15,
+      "sha256": "73f0b2b58ed3b0a1c443181cb22511c57ca188e09c83179f177d214a08995a3d"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state16.npz",
+      "queryHead": 16,
+      "sha256": "1d937f405ecc3940f4d7a50a26f710e0f34b74c7ff7e0540a4814cd8fe8b2443"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state17.npz",
+      "queryHead": 17,
+      "sha256": "381e152a7a5cd89bca0ff96f7e68045e5e0b2ed1a86abfc2430d1a41d63126c9"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state18.npz",
+      "queryHead": 18,
+      "sha256": "9848c5e9a0ed167bcf94cb56b4f78f6f0487d7de4f432cf1d534aba2cdb9c48b"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state19.npz",
+      "queryHead": 19,
+      "sha256": "67a7ae525e09aba9a227e98a7eeb077b2e3cc2433a28a33c9581cf1639af8eb1"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state20.npz",
+      "queryHead": 20,
+      "sha256": "9c7a0f3a12d9bf0b0f718d792f8457017dadd635ab0c9bfe2ef43f38690552b1"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state21.npz",
+      "queryHead": 21,
+      "sha256": "81f3d42398aef8b15c599334b23295e477a27928aca9cafb0ef6a0ff62412871"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state22.npz",
+      "queryHead": 22,
+      "sha256": "3ad10d6b66b783e6a7a691fb5834709eee9ae7f42310e6b086f03927b48446c5"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state23.npz",
+      "queryHead": 23,
+      "sha256": "0ebbfa3afab03ad21180d260f7d6436358bdf94c2233485302c8aa3bfe569bb7"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state24.npz",
+      "queryHead": 24,
+      "sha256": "32895da8aa62434922779af4278632d57db180b228807c598e959e9ed8a850e0"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state25.npz",
+      "queryHead": 25,
+      "sha256": "0a7fd68a7993eaf30c453e83dd27aa359d16661319683490878cc8e9cc0e4538"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state26.npz",
+      "queryHead": 26,
+      "sha256": "b00491092aa1e927c2987835d7995d98d7c25a96d60a9e8937de64636023bc61"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state27.npz",
+      "queryHead": 27,
+      "sha256": "f18a11c52fd6394626335435aa00069fb3f936279e882924e830c77bee23a6d6"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state28.npz",
+      "queryHead": 28,
+      "sha256": "5d21ae6b6b893a39361fbc9b1ebd19a53f52a787808352a594ff982c1fe3f109"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state29.npz",
+      "queryHead": 29,
+      "sha256": "32f61855660e66e6f1035387e332a3e2ea5e8e09632b9fe71972715cbe9c411e"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state30.npz",
+      "queryHead": 30,
+      "sha256": "36afed6b03631d3412ac81630151a702e5677f1dfa22868bf8db62c3bb32a440"
+    },
+    {
+      "budget": 4,
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state31.npz",
+      "queryHead": 31,
+      "sha256": "175e6af03b45a5412f40dbc10b4fb1be406a63b35c9e59f6179bf4bbd50d4fe8"
+    }
+  ],
+  "ports": [
+    {
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-port.npz",
+      "sha256": "5839d2ed451c7882aaa638000ff61ab09c5f0ea9dfb7fd888dd569a6920535d0"
+    },
+    {
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-port.npz",
+      "sha256": "cce9881e5836864102cf852cd4617337e221d50aa3eee0e3049a3179c9ce5e19"
+    }
+  ],
+  "primary": [
+    {
+      "activeTokens": 27,
+      "budget": 4,
+      "coreBytesPerHead": 267280,
+      "counterDiagnosticBytes": 512,
+      "headSeconds": [
+        0.024693964049220085,
+        0.023016604129225016,
+        0.022689323406666517,
+        0.022865259554237127,
+        0.022288094274699688,
+        0.022171436343342066,
+        0.022142461966723204,
+        0.022197143640369177,
+        0.02249945793300867,
+        0.022546575870364904,
+        0.022994741797447205,
+        0.022327397018671036,
+        0.022395845036953688,
+        0.0223985998891294,
+        0.02211920777335763,
+        0.02350616781041026,
+        0.0248692212626338,
+        0.024258560966700315,
+        0.024497006088495255,
+        0.024319543968886137,
+        0.024192898999899626,
+        0.025009181816130877,
+        0.025389771908521652,
+        0.02477510506287217,
+        0.024365169927477837,
+        0.024350452236831188,
+        0.02444079192355275,
+        0.02448268886655569,
+        0.024582175072282553,
+        0.024436903651803732,
+        0.02440193761140108,
+        0.024385437835007906
+      ],
+      "id": "crane-behind",
+      "invalidHeadReads": 0,
+      "logicalCoreBytes": 8552960,
+      "maximumHullViolation": 1.734723475976807e-18,
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4.npz",
+      "rangeDiagnosticBytes": 65536,
+      "sha256": "2b83cc924c658c0be28b343b6d8521f55c8b1686092bb0edb1d5172c1cf27622",
+      "sourceIdentityUTF8Bytes": 2048,
+      "totalEvictions": 16568,
+      "totalTailUpdates": 47104,
+      "withSerializationSeconds": 2.4861455969512463
+    },
+    {
+      "activeTokens": 27,
+      "budget": 4,
+      "coreBytesPerHead": 267280,
+      "counterDiagnosticBytes": 512,
+      "headSeconds": [
+        0.02310527814552188,
+        0.022231557872146368,
+        0.02227414818480611,
+        0.02225254662334919,
+        0.02221062872558832,
+        0.0221607256680727,
+        0.022112596314400434,
+        0.022302560973912477,
+        0.023415247444063425,
+        0.02269850019365549,
+        0.023374320939183235,
+        0.022464634384959936,
+        0.022207853849977255,
+        0.024437515065073967,
+        0.025244621094316244,
+        0.02554236724972725,
+        0.024670059327036142,
+        0.02464448194950819,
+        0.025223772041499615,
+        0.02500474313274026,
+        0.02444557985290885,
+        0.02455348102375865,
+        0.024473982863128185,
+        0.02435277681797743,
+        0.02442000200971961,
+        0.024502535816282034,
+        0.024458423722535372,
+        0.023915952071547508,
+        0.02229310292750597,
+        0.02207800094038248,
+        0.022026355378329754,
+        0.022147362120449543
+      ],
+      "id": "crane-before",
+      "invalidHeadReads": 0,
+      "logicalCoreBytes": 8552960,
+      "maximumHullViolation": 1.734723475976807e-18,
+      "path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4.npz",
+      "rangeDiagnosticBytes": 65536,
+      "sha256": "d57369d9fb3577ec5e331f5e78e3422b71f27aeb62650ee85bc352c7012014df",
+      "sourceIdentityUTF8Bytes": 2048,
+      "totalEvictions": 16663,
+      "totalTailUpdates": 47104,
+      "withSerializationSeconds": 2.6760092368349433
+    }
+  ],
+  "references": [
+    {
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/reference-work/crane-behind-consumer.npz",
+      "sha256": "d50dd4f62011c9e2d4872102ea5a8e89c068d7a0bac176aa8179904f8416435a"
+    },
+    {
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/reference-work/crane-before-consumer.npz",
+      "sha256": "35a09c52f09ac7faef0a7681c6338ad4008a0053b6759d4892a6e732c3e1fe7b"
+    }
+  ]
+}
