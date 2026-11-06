@@ -1,0 +1,58 @@
+{
+  "compilerTokenRows": 151936,
+  "coverage": "full",
+  "fullEncoderForwards": 0,
+  "offlineNativePrimitiveEvaluation": true,
+  "onlineLearnedFunctionMemoization": true,
+  "onlineOriginalDenseProjections": 0,
+  "outputRetention": "All151936atomrows and complete forecast/reference operands remain near compute with hash-bound manifests. Collect compact measurements/row diagnostics only.",
+  "physicalBatchGeometry": [
+    1,
+    512,
+    2560
+  ],
+  "requestSHA256": "7fbdf92591bec6fbd8e27b1c2acb1608214f9c41bc21f12f359c557c67864fa0",
+  "resourceCalibration": {
+    "compileHighWaterRSSKiB": 1625328,
+    "custody": {
+      "declared": {
+        "sha256": "a71c2549f2326ad4dc079b7756e2e366da51b61095c22bff8e23e4d2f0a24a6c",
+        "size_bytes": 11435
+      },
+      "executed": {
+        "host": "beast",
+        "reported_ts": 1793953335.3085384,
+        "sha256": "a71c2549f2326ad4dc079b7756e2e366da51b61095c22bff8e23e4d2f0a24a6c",
+        "size_bytes": 11435
+      },
+      "required": true,
+      "sealed": {
+        "sealed_ts": 1793953335.207855,
+        "sha256": "a71c2549f2326ad4dc079b7756e2e366da51b61095c22bff8e23e4d2f0a24a6c",
+        "size_bytes": 11435
+      }
+    },
+    "jobID": "job-9d3dc5351f3d",
+    "reason": "Reuse admitted smoke RAM/VRAM profile; fixed512-row streamed compilation keeps working set bounded. CPU math is explicitly1thread. Full store+forecasts+refs need <4GB disk; estimate scales measured smoke batch time conservatively, not a speed claim.",
+    "requestSHA256": "38df0cb0af8e38b702aac848a067a4d4351f6f79593b73bdba58eb0f039f7f7c",
+    "reservation": {
+      "cpu_threads": 1,
+      "disk_gb": 4,
+      "est_wall_s": 306.0,
+      "ram_mb": 4096.0,
+      "source": "probe-default",
+      "vram_mb": 4096.0
+    },
+    "sampledPeakRssMB": 1488.1,
+    "sampledPeakVramMB": 1120.0
+  },
+  "schema": "tce-raw-prompt-atoms-request-v1",
+  "scope": "Complete-vocabulary token-local Qwen3 E/input-RMS/QKV/QK-RMS memoization; raw text assembly + positions. No contextual attention, later encoder, denoiser, decoder or image capability.",
+  "sourceHashes": {
+    "compile.json": "5da88cde2483fe0a49b560896356f479352fab7cb255ec90bc54602cce64a784",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "encoder_atoms_native.py": "5bccbbdfd39f8603cbf6002e45b5f4a6eaa61d8ed075243db0bc3f385dd25406",
+    "encoder_atoms_study.py": "8d8ffc4711b0c3eb71cd55385e41df5d0d94f1324d465a18d08162928fd06d3c",
+    "raw-prompts.json": "6901a7acc0a0d497456213842ac7915384d7c4c6e8ab7e07c74a5cb4eb4dd4c5"
+  }
+}

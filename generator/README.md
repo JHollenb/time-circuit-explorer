@@ -8,6 +8,8 @@ The separate [zero-network response chart](../docs/zero-network-image-response.m
 
 Arbitrary prompts are supported by the full reconstructed generator, with dense learned-weight computation and native encoding/decoding. Arbitrary prompts with **zero neural evaluations** remain open. The [research record](../docs/zero-neural-research.md) documents that distinction and the first prompt-composition diagnostics.
 
+The [complete-vocabulary lexical compiler](../docs/raw-prompt-encoder-atoms.md) now accepts raw strings and serves the encoder's first embedding/QKV/position operands without original projections or a neural runtime. It memoizes learned outputs for all 151,936 IDs, with 2.645 GB of atoms retained near compute. Eight frozen strings exactly matched the isolated native prefix; contextual attention, later encoder layers and images are outside that result.
+
 ## Generate from the website
 
 From this repository in the domains workspace, with the configured mrun client and reachable fleet:

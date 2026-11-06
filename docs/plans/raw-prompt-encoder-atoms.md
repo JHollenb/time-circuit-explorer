@@ -1,6 +1,6 @@
 # Move the next cut to raw prompt operands
 
-Status: source-grounded proposal after the [global-head result](../compiled-global-head.md) and Astra's cycle4 review. No token-atom compilation or new encoder execution is claimed here. The full arbitrary-prompt-to-image objective remains active.
+Status: implemented and executed in cycle5; see [complete-vocabulary results](../raw-prompt-encoder-atoms.md). All151936IDs were compiled, and eight frozen raw strings exactly matched the isolated native prefix. The source-grounded proposal below is retained as the experiment design. Contextual encoding and arbitrary-prompt-to-image remain open.
 
 The global head now consumes a supplied producer state. Repeating known-context head/block reductions alone would leave the input frontier unchanged. The next experiment should accept raw text and remove an actual computation at the **beginning** of the existing conditioning pipeline, without supplying a contextual hidden-state history.
 

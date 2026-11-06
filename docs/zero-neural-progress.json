@@ -1,25 +1,46 @@
 {
   "schema": "tce-zero-neural-goal-progress-v1",
-  "updatedAt": "2026-11-06T08:07:56Z",
-  "objective": "let’s solve arbitrary prompt to image without any forward zero neural evals. Every few turns have Astra review the newest blog posts and get a big picture of where we are at so that we can find the best route forward",
+  "updatedAt": "2026-11-06T08:45:25Z",
+  "objective": "let’s solve arbitrary prompt to image without any forward zero neural evals. Every few turns have Astra review the newest blog posts and get a big picture of where we are at so that we can find the best route forward. Keep a log of your findings and with as a blog post - update it with your high level summaries and findings. Clean up the accumulated artifacts every few turns so as not to consume all of the system storage too",
   "status": "active",
-  "researchCycle": 4,
+  "researchCycle": 5,
   "previousGoalTurn": {
-    "classification": "progress",
-    "evidence": "Cycle3 implemented and collected state-fed receiver job-2f0a52357bf1 and attribution job-15dea027e760; source/results pushed in4ec410b. Revalidated clean worktree before advancing the global consumer."
+    "classification": "no progress",
+    "evidence": "The intervening answer clarified arbitrary-prompt versus supplied-context demo scope but changed no authoritative research state. Revalidated clean3847563 and took the next safe raw-prompt compilation action; cycle4 global-head work remains completed evidence."
   },
   "thisGoalTurn": {
     "classification": "progress",
-    "evidence": "Implemented and collected complete-query head0 job-13617045e079 and matched V-delta address job-4cad9f4cb662; same-arithmetic closure near5e-14, actual-state global response measured, fair address controls changed interpretation. Astra reviewed newest posts and pivoted next action to raw-prompt lexical operand formation."
+    "evidence": "Implemented and authenticated smoke job-9d3dc5351f3d and complete151936ID compiler job-7dcbeae35deb. Eight frozen raw strings exactly matched tokenizer/template/mask/positions and56623104BF16 prefix scalars. Independently verified342retained store/operand files, published compact evidence, and obtained Astra cycle5 newest-post/code/architecture review. Created the living findings blog; archived7.701GB of completed transport copies with recovery pointers. Contextual encoding/images remain open."
   },
   "requirements": {
-    "arbitraryRawPromptCoverage": "open",
-    "zeroNeuralServing": "supplied context/dose RGB chart uses no neural evaluation; compiled MLP/receiver/globalhead remove original dense projections/framework calls online but retain learned coefficient/bank/head-scale arithmetic; no arbitrary prompt capability",
-    "reusablePromptOperandFormation": "open; actual Qwen3 first-layer token-local prefix inspected; complete-vocabulary offline atom compiler proposed, not executed",
+    "arbitraryRawPromptCoverage": "complete vocabulary coverage for first token-local encoder operands; arbitrary contextual conditioning and image generation remain open",
+    "zeroNeuralServing": "supplied RGB chart has no neural evals; raw-prefix serving performs learned-output table gathers and nonlearned BF16 position arithmetic, no original dense projections/frameworks. Compiled MLP/receiver/head still evaluate learned reduced maps. None is a complete arbitrary-prompt zero-neural image generator.",
+    "reusablePromptOperandFormation": "implemented for all151936IDs at actual first Qwen3 E/inputRMS/QKV/QKRMS prefix; eight frozen rawstrings exactly match isolated source-qualified native prefix and positions. Later contextual operands remain open.",
     "reducedOwnStateContinuation": "actual emitted32row BF16 state drives reducedQKV/headnorm/RoPE and complete1536query joint2head0 read; explicit frozen1504row remainder, no dose/native refresh; output projection and full autonomous continuation open",
     "generalNonNeuralPixelDecoder": "open; interpolated supplied RGB images do not establish it",
     "independentPromptFaithfulnessAndQuality": "open",
-    "astraAdvisoryReview": "cycle4 completed: reviewed globalhead/matched-controls math/custody and newest query-bank,20block continuation and OVC13 posts; recommends raw-prompt encoder-atom frontier next"
+    "findingsBlog": "Living Obsidian blog created with highlevel findings, math, limitations and backlinks; update it after each research cycle.",
+    "periodicStorageCleanup": "Cycle5 archived6completed-run transport files,7.701GB, to verified Beast cold storage with local recovery pointers. Extracted evidence and custody preserved; next review bycycle8.",
+    "astraAdvisoryReview": "cycle5 code/results/architecture review: fullvocab compilation is real lexical progress; full attention reimplementation alone would rename neural computation. Prefer a genuinely reduced contextual-state experiment with exact offline references and explicit learned-computation limits."
+  },
+  "findingsLog": {
+    "path": "../obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+    "role": "One living highlevel blog for this active goal; keep summaries, findings, constraints and next mathematical question current after each research cycle.",
+    "lastUpdatedCycle": 5,
+    "scope": "Local notebook post, not a public-site publication. Source/code/artifact/related-post backlinks verified; unrelated dirty notebook files preserved."
+  },
+  "storageMaintenance": {
+    "lastCycle": 5,
+    "nextDueByCycle": 8,
+    "earlierIf": "large new artifacts or local storage pressure",
+    "receipt": "../artifacts/time-circuit-storage-cleanup-20261106-cycle5/result.json",
+    "publicReceipt": "results/storage-cleanup-cycle5/result.json",
+    "archivedTransportFiles": 6,
+    "archivedBytes": 7701454599,
+    "localFreeBytesBefore": 10885238784,
+    "localFreeBytesAfter": 18569580544,
+    "observedLocalFreeIncreaseBytes": 7684341760,
+    "retention": "All extracted research evidence/original custody records remain local. Exact transport bytes are checksum-verified in Beast cold storage with neighboring .cold.json restoration pointers. Active full lexical table remains near compute; no bulk Mac/Git hydration."
   },
   "openPreference": {
     "question": "Reproduce FLUX prompt/seed behavior, or comparable prompt-faithful quality using another recovered computation?",
@@ -28,9 +49,23 @@
   "reviews": {
     "advisor": "astra_zero_forward_advisor",
     "model": "gpt-6-astra",
-    "lastCycle": 4,
-    "nextDueByCycle": 7,
+    "lastCycle": 5,
+    "nextDueByCycle": 8,
     "earlierIf": "new model evidence changes the route",
+    "cycle5Snapshots": [
+      {
+        "path": "../obsidian/blog/2026-11-06-001355-the-next-consumer-changes-which-model-write-matters.md",
+        "sha256": "61159a44f150eed6fb5b0d149c90f8a7221fab37258c23a9decf2de22853fccb"
+      },
+      {
+        "path": "../obsidian/blog/2026-11-05-153154-state-context-and-the-mathematics-of-time-circuits.md",
+        "sha256": "c54ed46d9f32734d5271eb37dfff77ab6e9d361c41c3160f769a29b69ff35a31"
+      },
+      {
+        "path": "../obsidian/blog/2026-11-05-161109-the-one-assumption-that-would-make-model-computation-easier-to-understand.md",
+        "sha256": "f7f2f3c5c495f2638c70229d2eec12353705032b8cea217f9bc4f74c75754983"
+      }
+    ],
     "cycle4Snapshots": [
       {
         "path": "../obsidian/blog/2026-11-05-233846-how-image-queries-and-memory-banks-compute-a-state-change.md",
@@ -95,7 +130,8 @@
       "Distinguish zero framework calls, zero original dense projection evaluations and three learned reduced-map contractions. A compiled WDB bank remains learned computation; do not satisfy the arbitrary-prompt objective by renaming a linear network.",
       "Attribution complete: advance a controlled global attention consumer; do not make BF16 discrepancy a discovery gate. All changed QKV must derive from state packets, changed queries must read the complete bank, and baseline probabilities/head outputs must share arithmetic.",
       "Global consumer closes under shared mathematical arithmetic. P-C is propagated QKV approximation, not incremental-attention algorithm error or native Flash evidence. Matched V-delta permutations support address sensitivity only at this fixed head/context.",
-      "Pivot to raw-prompt operand formation. Compile the actual first Qwen3 token-local E/input-RMS/QKV/QK-RMS prefix offline, design for all151936 IDs, gather atoms for new raw-text combinations plus exact template/tokenizer/position policy. Bounded smoke is not coverage. No hidden-state prompt cache or native fallback. Contextual encoding, layers9/18/27 conditioning, denoising/decoder and strictzero-learned-computation remain open."
+      "Pivot to raw-prompt operand formation. Compile the actual first Qwen3 token-local E/input-RMS/QKV/QK-RMS prefix offline, design for all151936 IDs, gather atoms for new raw-text combinations plus exact template/tokenizer/position policy. Bounded smoke is not coverage. No hidden-state prompt cache or native fallback. Contextual encoding, layers9/18/27 conditioning, denoising/decoder and strictzero-learned-computation remain open.",
+      "Complete-vocabulary token-local exactness is finite learned-output compilation, not contextual semantics. Do not count a NumPy full-GQA rewrite as a zero-neural milestone; use exact attention offline to test a smaller compiled sufficient-state hypothesis, with no native fallback and explicit learned information/storage costs. Retain null interface controls caused by truncation and first-use disk latency."
     ]
   },
   "rootReviewedSinceAdvisor": [
@@ -106,6 +142,52 @@
     }
   ],
   "completedRuns": [
+    {
+      "jobID": "job-9d3dc5351f3d",
+      "requestSHA256": "38df0cb0af8e38b702aac848a067a4d4351f6f79593b73bdba58eb0f039f7f7c",
+      "type": "813ID raw-prefix mechanics smoke; frozen2strings and3interface controls; fresh guarded serving before native refs",
+      "coverageCount": 813,
+      "uncoveredCount": 151123,
+      "primaryWordMismatches": 0,
+      "schedulerSeconds": 50.28,
+      "sampledPeakRSSMB": 1488.1,
+      "sampledPeakVRAMMB": 1120,
+      "scope": "Development mechanics only; not fullvocab coverage or independent held semantic evidence"
+    },
+    {
+      "jobID": "job-7dcbeae35deb",
+      "requestSHA256": "7fbdf92591bec6fbd8e27b1c2acb1608214f9c41bc21f12f359c557c67864fa0",
+      "type": "Full151936ID token-local Qwen3 E/inputRMS/QKV/QKRMS compilation;8frozen rawstrings and3interface controls; postseal isolated native refs",
+      "coverageCount": 151936,
+      "uncoveredCount": 0,
+      "atomPayloadBytes": 2644901888,
+      "physicalBatches": 297,
+      "usefulProjectionMACs": 2389746647040,
+      "physicalProjectionMACs": 2391759912960,
+      "offlineNativeEmbeddingCalls": 297,
+      "offlineNativeLinearCalls": 891,
+      "offlineNativeRMSCalls": 891,
+      "onlineOriginalDenseProjections": 0,
+      "onlineFrameworkCalls": 0,
+      "learnedFunctionMemoization": true,
+      "fullEncoderDenoiserVAEForwards": 0,
+      "primaryBF16ScalarsCompared": 56623104,
+      "primaryWordMismatches": 0,
+      "rawInterfaceMismatches": 0,
+      "compilerSeconds": 51.16308268997818,
+      "atomCompileSeconds": 35.76077068876475,
+      "servingWarmMedianSecondsRange": [0.012803074903786182,0.013932575937360525],
+      "servingFirstPrimarySecondsRange": [0.014704008586704731,2.140904061961919],
+      "servingInitializationSecondsAfterImports": 0.4301902879960835,
+      "servingHighWaterRSSKiB": 236000,
+      "retainedBytesVerified": 3228908150,
+      "retainedFilesVerified": 342,
+      "workerSeconds": 125.36659410502762,
+      "schedulerSeconds": 127,
+      "sampledPeakRSSMB": 1488.7,
+      "sampledPeakVRAMMB": 1116,
+      "scope": "Lexical operands only. Shared source-qualified isolated-native helper, not wholeencoderhook parity; learned cache outputs remain, no contextual encoding/image or speedup claim."
+    },
     {
       "jobID": "job-3ff4ee580893",
       "requestSHA256": "1243c7b75de89651798eff248dfa8cc54d7378b8d97230b23092ee025b127164",
@@ -276,6 +358,16 @@
     "semanticLimits": "oneheadonecontext, independent equation arithmetic not nativeFlash, no output projection/image; learned maps/head scales remain",
     "goalStatus": "active; pivot next to raw-prompt input frontier"
   },
+  "rawPromptEvidence": {
+    "directory": "results/raw-prompt-encoder-atoms",
+    "custody": "Two guarded payload identities and complete compact result inventories verified. Independent authenticated SSH byte check verifies342retained table/prefix files totaling3228908150bytes.",
+    "manifestSHA256": "9a155bd1410c52909997bacaf1d1aac2f9e90be86dc269d5e7edfab2b5285432",
+    "predictionSealSHA256": "98eb19a6c081f937c2277200bf3358b59ec3dfa0630878ace4f1e7aa93442b59",
+    "tests": "34generator mechanics tests pass, including4new prefix integrity/numeric/isolation checks",
+    "saturnSweep": "run and verify exit0, target-streams-only;1stream4096dependent position records; no terminal claim receipts or physical address joins",
+    "controlCounterTrend": "Wrongtemplate has no effect for truncated string because removed generation suffix already lies outside512token window; retained as expected interface null.",
+    "semanticLimits": "Complete token domain is not allcontext semantics. Learned intermediate outputs are memoized. First-use storage latency material. Contextual attention, laterencoder, general ownstate denoising and nonneural pixels remain open."
+  },
   "workspaceRequests": [
     {
       "path": "../saturn/request.jsonl",
@@ -284,14 +376,12 @@
     }
   ],
   "nextCut": {
-    "status": "source-grounded proposal, not launched; Astra reviewed complete-vocabulary direction",
-    "question": "Can raw prompts assemble the actual first text-encoder pre-RoPE operands from a complete token-local compiled vocabulary, without original projections or supplied prompt hidden states?",
-    "plan": "plans/raw-prompt-encoder-atoms.md",
-    "source": "FLUX2Klein Qwen3ForCausalLM config214b4c29a0d975e9fddf9994a5673f22cb2c4c5750352f9227c2c3251ebeab40; inspected installed pipeline and Qwen3 sources",
-    "law": "atom(t)=(E_t,QK-normalized Wq/k RMS(E_t),Wv RMS(E_t)); tokenize raw string, gather bytokenID, applyposition transform",
-    "requirements": "bind all tokenizer/template assets and encoder weight ranges; preserveQwen FP32norm->BF16cast->gamma order; design151936IDs with explicit smoke/full coverage, no fallback or prompt cache;512token policy, held raw strings and positions; seal before nativeprefix refs; keep later encoding/denoising/decoder open",
-    "estimatedFullBF16TableBytes": 2644901888,
-    "estimatedOfflineProjectionMACs": 2389746647040
+    "status": "proposed after complete lexical-prefix result, not launched",
+    "plan": "plans/compiled-context-statistics.md",
+    "question": "Can a smaller compiled context state predict the first actual causal GQA read on raw-text-derived operands, without original attention or native fallback online?",
+    "source": "Complete-vocab prefix job7dcbeae35deb; Qwen3 source and output-capturing code inspected. Conditioning hiddenstates9/18/27 are after layers8/17/26; last9layer output-demand omission is source inference, not execution-parity result.",
+    "law": "Test a fixed low-rank positive-kernel representation with streaming prefix numerator/partition statistics, exact attention only as offline reference; preserve32query/8KV heads, positions, mask and all512query rows.",
+    "requirements": "Freeze held prompts, compile features without wholeprompt or target-state caches, state/storage/firstuse/warm costs explicit, no original projections or native fallback online. Retain approximation and numerical-policy errors separately and heterogeneous positions. A reduced contextual model still contains learned information and does not by itself fulfill strict zero-neural image goal."
   },
   "alternativeDiagnostic": {
     "status": "proposed, not launched; lower priority after Astra review",

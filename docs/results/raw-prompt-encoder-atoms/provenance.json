@@ -1,0 +1,185 @@
+{
+  "completeCollectedInventory": {
+    "bytes": 3684246,
+    "files": {
+      "compile-receipt.json": {
+        "bytes": 3166,
+        "sha256": "d31f2765b19d56aea31a4533a54ba2833ec6156c0583610f1323f396fae5090d"
+      },
+      "manifest.json": {
+        "bytes": 62287,
+        "sha256": "9a155bd1410c52909997bacaf1d1aac2f9e90be86dc269d5e7edfab2b5285432"
+      },
+      "observations.jsonl": {
+        "bytes": 3505415,
+        "sha256": "ac4cbd37abf565b7c3d38dc7f9d56f72ad73e79f32cfda4af14387b07fd16fee"
+      },
+      "prediction-seal.json": {
+        "bytes": 20659,
+        "sha256": "98eb19a6c081f937c2277200bf3358b59ec3dfa0630878ace4f1e7aa93442b59"
+      },
+      "raw-prompts.json": {
+        "bytes": 5591,
+        "sha256": "6901a7acc0a0d497456213842ac7915384d7c4c6e8ab7e07c74a5cb4eb4dd4c5"
+      },
+      "reference-receipt.json": {
+        "bytes": 3536,
+        "sha256": "5f1595937d69de7d202e6e462bc5f2e23ac9e5752fd5014f3b0ab887724b0c34"
+      },
+      "report.json": {
+        "bytes": 81031,
+        "sha256": "c4b9aeb911cacecaeaa5a08b50fc2cfb123e742372e82af676dfbdd965f1cc79"
+      },
+      "request.json": {
+        "bytes": 2561,
+        "sha256": "d58b4f5f0466f6c38983974c78acac410462c5b04664b90c55c6c88e04848910"
+      }
+    }
+  },
+  "goalStatus": "Active. Lexical operand assembly is not arbitrary-prompt image generation or a representation-independent absence of learned computation.",
+  "jobID": "job-7dcbeae35deb",
+  "payloadCustody": {
+    "declared": {
+      "sha256": "30a6a1eb42c9ca5165e30b640732d61f0bc2b83188b1f977678bb3a27a3e6a11",
+      "size_bytes": 12780
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1793953477.5969012,
+      "sha256": "30a6a1eb42c9ca5165e30b640732d61f0bc2b83188b1f977678bb3a27a3e6a11",
+      "size_bytes": 12780
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1793953477.471775,
+      "sha256": "30a6a1eb42c9ca5165e30b640732d61f0bc2b83188b1f977678bb3a27a3e6a11",
+      "size_bytes": 12780
+    }
+  },
+  "publication": "Unmodified compact result files. No learned full-vocabulary table or complete prefix arrays copied into Git.",
+  "remoteResultRoot": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/response-result",
+  "requestSHA256": "7fbdf92591bec6fbd8e27b1c2acb1608214f9c41bc21f12f359c557c67864fa0",
+  "retainedNearCompute": "atom-store/, prefix-predictions/, prefix-references/ beside response-result; exact table shards/rows/indices are bound by manifest, complete forecasts and references by their seals/receipts.",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-7dcbeae35deb",
+      "job_log": {
+        "bytes": 705,
+        "sha256": "e1e2980df407c8b0582dfc1fbe7c2ce0d4a665d5e372be620f28a077cf33f340"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-7dcbeae35deb/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "python",
+        "-u",
+        "encoder_atoms_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1793953477.5439494
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1793953477.6122952
+        },
+        {
+          "name": "process.launch",
+          "ts": 1793953477.639661
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1793953477.676813
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1793953604.4315686
+        },
+        {
+          "name": "finished",
+          "ts": 1793953604.4516735
+        }
+      ]
+    },
+    "elapsed_s": 127.0,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "30a6a1eb42c9ca5165e30b640732d61f0bc2b83188b1f977678bb3a27a3e6a11",
+      "size_bytes": 12780
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 1488.7,
+    "peak_vram_mb": 1116.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-raw-prompt-atoms-public-v1"
+}
