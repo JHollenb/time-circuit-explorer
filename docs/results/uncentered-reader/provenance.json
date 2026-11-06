@@ -1,0 +1,195 @@
+{
+  "completeCollectedInventory": {
+    "bytes": 14754743,
+    "files": {
+      "comparison-fields.json": {
+        "bytes": 868,
+        "sha256": "10eff46f4f9f98e864dad3d16e57447276d48ae6cdb3d298d7eaea4669dd7feb"
+      },
+      "frozen-plan.md": {
+        "bytes": 3532,
+        "sha256": "7db58e9c28efd14fe1112d5be41b0c300918af8d974158a1e7cd70160a3815d5"
+      },
+      "head-seal.json": {
+        "bytes": 2075,
+        "sha256": "3e51c138582c511bada8ee1af0ebaa1bc14ff950d7cab86b28bf60e4c0d73f93"
+      },
+      "inherited-A.png": {
+        "bytes": 164457,
+        "sha256": "4dc3bac1dcef0355ad0fe3e00649aca5568eb85d977d1f7e6ace4e1fbec001f6"
+      },
+      "inherited-B.png": {
+        "bytes": 190857,
+        "sha256": "79869840730d660fc6b6fca461dcded9ab39a0b447e9ac0e98b14a87f073df97"
+      },
+      "inherited-outputs.json": {
+        "bytes": 43796,
+        "sha256": "5cc0430a8b18ddfa14c04bce268280258eb5b239b06a7f50c8d33aa17b89eb5f"
+      },
+      "input-identity.json": {
+        "bytes": 4681,
+        "sha256": "e5cd0336150eeb3965cee0fe0a1b33ed598d258d4a1fcf5ea81f5ce48f7f0556"
+      },
+      "inputs.json": {
+        "bytes": 49724,
+        "sha256": "310528763e7114fbc59487e794c88b5b8f23bde94ad807e0db9a46e6eb98ca94"
+      },
+      "observations.jsonl": {
+        "bytes": 12769941,
+        "sha256": "a2281f46329a908122ef3c8372219cbaa64713146da2d6aa4fd41df3daeb29d4"
+      },
+      "reader-seal.json": {
+        "bytes": 39462,
+        "sha256": "8f9b0eb30195036e3791ec11099373d9356a1049b3d08590b233b4c55adff8f5"
+      },
+      "report.json": {
+        "bytes": 121241,
+        "sha256": "2be1a1b5cfc710be87cc1909f33d9553d26c1c7ceab4f4b5c1faefda3b4f1fe6"
+      },
+      "request.json": {
+        "bytes": 2519,
+        "sha256": "a9c26b4e9db8c81f501a90d004a0fc9e088ab656b921683f5e2780add307417c"
+      },
+      "targets.json": {
+        "bytes": 1361590,
+        "sha256": "249a387106988845a695896cd9f31241347ec95facf7ec236296ac4f5498e49b"
+      }
+    }
+  },
+  "jobID": "job-2ed557dbb033",
+  "losslessStreams": [
+    {
+      "published": "observations.jsonl.gz",
+      "publishedBytes": 1901526,
+      "publishedSHA256": "05975284f54d5879a1dc0b47f980debb03f34c440ca9a31c45dfc04752fa1a8b",
+      "source": "observations.jsonl",
+      "sourceBytes": 12769941,
+      "sourceSHA256": "a2281f46329a908122ef3c8372219cbaa64713146da2d6aa4fd41df3daeb29d4"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "f1b031f2200dbe3f8e83af19fe9cc42ad3675fa1602c0bd65cabfd64c683d0e9",
+      "size_bytes": 186644
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794003662.5580513,
+      "sha256": "f1b031f2200dbe3f8e83af19fe9cc42ad3675fa1602c0bd65cabfd64c683d0e9",
+      "size_bytes": 186644
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794003662.4389083,
+      "sha256": "f1b031f2200dbe3f8e83af19fe9cc42ad3675fa1602c0bd65cabfd64c683d0e9",
+      "size_bytes": 186644
+    }
+  },
+  "requestSHA256": "6edffd3827b1c226be569ec3fe49095188997d46d54d5b1da962087028f69bf6",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-2ed557dbb033",
+      "job_log": {
+        "bytes": 417,
+        "sha256": "6e6f53f5abe546f73eb9bbdacb3108feee93fdd26c214a248ea9d8ab01fafde5"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-2ed557dbb033/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "tokenizers>=0.21",
+        "--with",
+        "jinja2>=3.1",
+        "python",
+        "-u",
+        "uncentered_reader_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794003662.524554
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794003662.5848174
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794003662.5953135
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794003662.620494
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794003670.8186545
+        },
+        {
+          "name": "finished",
+          "ts": 1794003670.8294241
+        }
+      ]
+    },
+    "elapsed_s": 8.42,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "f1b031f2200dbe3f8e83af19fe9cc42ad3675fa1602c0bd65cabfd64c683d0e9",
+      "size_bytes": 186644
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 368.7,
+    "peak_vram_mb": 0.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-uncentered-reader-public-v1",
+  "scope": "New CPU uncentered raw reader and complete input-identity proof. Qualified parent encoder/image evidence is inherited explicitly; no new images/dense consumers, arbitrary-prompt certificate or speedup claim."
+}

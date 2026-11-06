@@ -1,0 +1,44 @@
+{
+  "actualConsumerRequestSHA256": "5be3cbd55d03ab7acf91af05596e1768de451d776d2626398de301a6f6609439",
+  "backend": "numpy-fp64",
+  "consumerContractSHA256": "8bd22e647ed1071ca972505ac95b014678fc62b822668e6bb4886dc2992f8006",
+  "cpuThreads": 1,
+  "device": "cpu",
+  "manifestSHA256": "9a155bd1410c52909997bacaf1d1aac2f9e90be86dc269d5e7edfab2b5285432",
+  "ownedSources": [
+    "uncentered_reader_study.py",
+    "uncentered_reader.py",
+    "encoder_atoms.py",
+    "paired_fields.py",
+    "masked_kv_study.py",
+    "flux_clock.py"
+  ],
+  "parentRequestSHA256": "7f5169645313d2cd250ac7b9777b94bfde7a4e7273a08f28aabc7a2a4f2ee973",
+  "prompts": [
+    {
+      "id": "A",
+      "prompt": "A red cube to the left of a blue sphere on a plain white tabletop. Two separate objects, studio photograph."
+    },
+    {
+      "id": "B",
+      "prompt": "A red cube to the right of a blue sphere on a plain white tabletop. Two separate objects, studio photograph."
+    }
+  ],
+  "protocol": "No geometry/centers compiler or source asset read. Fresh serving denies geometry/basis/centers and target fields. Same BF16 operands/scaling/layout/ties/casts; seal before current-comparator and original-consumer values. No new fit/precision/reference/noise.",
+  "readerPolicy": "current-top4-uncentered-fp64-fp32-bf16-v1",
+  "requestSHA256": "6edffd3827b1c226be569ec3fe49095188997d46d54d5b1da962087028f69bf6",
+  "schema": "tce-uncentered-reader-request-v1",
+  "scope": "Raw strings -> plain uncentered causal top4 -> complete raw/BF16 heads/H0 -> actual-consumer input identity, otherwise own original continuation required. No arbitrary-prompt zero-neural claim.",
+  "sourceHashes": {
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "flux_clock.py": "bde499ff527f624fcd1b62a8f6f0b2fbaf70eebc7b7835fcd7d4c6403b4e0b2b",
+    "frozen-plan.md": "7db58e9c28efd14fe1112d5be41b0c300918af8d974158a1e7cd70160a3815d5",
+    "inputs.json": "310528763e7114fbc59487e794c88b5b8f23bde94ad807e0db9a46e6eb98ca94",
+    "masked_kv_study.py": "920416ce49d823b1337a7f6d9f5fca90c8047723bb6b1d37dc09967114b6ad89",
+    "paired_fields.py": "408e035cb2f2f99558dbbe5abccdc281a5deade195abdbbc003549318ef09e88",
+    "targets.json": "249a387106988845a695896cd9f31241347ec95facf7ec236296ac4f5498e49b",
+    "uncentered_reader.py": "743590ba7c87a7ff2afd340c1b03fece9f464183bc690a88ccc6ff1716c9e5af",
+    "uncentered_reader_study.py": "d0e86a01f3c30089d93de9ae1eaa22be83c2494de29374b2b0db42635a0f132f"
+  },
+  "timeoutSeconds": 300
+}

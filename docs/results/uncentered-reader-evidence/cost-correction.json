@@ -1,0 +1,17 @@
+{
+  "schema": "tce-uncentered-reader-cost-correction-v1",
+  "scope": "Additive correction to frozen pre-run plan; raw reports and executed workers unchanged.",
+  "frozenPlanSHA256": "7db58e9c28efd14fe1112d5be41b0c300918af8d974158a1e7cd70160a3815d5",
+  "parentSource": "generator/direct_reader.py",
+  "parentSourceSHA256": "8fed0f187bae87e03039db3a74f387b6d01325db42ec76817fcf958ca9f470bd",
+  "sourceExpression": "k = floats(packets[0]['k']).astype(float) / d**.25 - center",
+  "packetRows": 512,
+  "kvGroups": 8,
+  "headDim": 128,
+  "actualCenteringSubtractionsPerPromptRemoved": 524288,
+  "admittedKeyRows": 35,
+  "admittedKeyCoordinates": 35840,
+  "priorPlanFigure": 35840,
+  "correction": "The parent computes subtraction on the complete packet before masking. The prior figure counted admitted coordinates, not executed packet-wide subtractions. Current report zero-centering counter and all outputs are unchanged.",
+  "advisorVerified": true
+}

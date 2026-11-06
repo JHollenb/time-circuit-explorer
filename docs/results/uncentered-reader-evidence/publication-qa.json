@@ -1,0 +1,40 @@
+{
+  "schema": "tce-uncentered-reader-publication-qa-v1",
+  "status": "verified",
+  "manifestMembers": 15,
+  "executedSourcePins": 6,
+  "completeMatchedBF16Words": 6815744,
+  "matchedLexicalControlEntries": 3072,
+  "inheritedEncoderHandoffs": 54,
+  "inheritedActualRecordKinds": {
+    "prepared-noise": 2,
+    "denoiser-input": 8
+  },
+  "inheritedCompleteFields": 90,
+  "inheritedImageBytesVerified": true,
+  "newImages": 0,
+  "observations": 32768,
+  "perCase": {
+    "A": {
+      "records": 16384,
+      "activeRecords": 1120,
+      "rawChangedScalars": 1829473,
+      "BF16WordMismatches": 0
+    },
+    "B": {
+      "records": 16384,
+      "activeRecords": 1120,
+      "rawChangedScalars": 1828798,
+      "BF16WordMismatches": 0
+    }
+  },
+  "excludedAssets": 3,
+  "actualCenteringSubtractionsPerPromptRemoved": 524288,
+  "figureSHA256": "50fa9ebb3204e77ddbcf268de282e3375f012290b425ff0598d6d62c9990200f",
+  "reportSHA256": "2be1a1b5cfc710be87cc1909f33d9553d26c1c7ceab4f4b5c1faefda3b4f1fe6",
+  "inputIdentitySHA256": "e5cd0336150eeb3965cee0fe0a1b33ed598d258d4a1fcf5ea81f5ce48f7f0556",
+  "payloadSHA256": "f1b031f2200dbe3f8e83af19fe9cc42ad3675fa1602c0bd65cabfd64c683d0e9",
+  "blogSHA256": "4d5a08ceda4b90ef04e7fa745b8f4ed68ef7448a376c953b8a37f3778d6cbb8f",
+  "scope": "Complete input-bound known-pair inheritance; source/manifest/lossless-stream publication checks. Independent near-compute full-byte verification is separate. No new image/learned consumer or arbitrary-prompt quality certificate.",
+  "inheritedActualDenoiserEAndLatentJoins": 8
+}

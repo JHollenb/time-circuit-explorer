@@ -1,0 +1,1086 @@
+{
+  "cpuSecondsAfterImports": 0.7687707109999999,
+  "excludedSourceOpenDenials": [
+    "/mnt/hdd8tb/mrun-work/job-29760e2a3970/compiled/bank-assets.npz",
+    "/mnt/hdd8tb/mrun-work/job-b24fec394c5a/compiled/centers.npy",
+    "/mnt/hdd8tb/mrun-work/job-49e50c9cb996/compiled/rank-one-basis.npz"
+  ],
+  "fields": {
+    "A": {
+      "bytes": 4194432,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/arrays/reader/A-head.npy",
+      "payloadSHA256": "83c039b8a3a9867f471d6eab003d38224db5659aaffd3f92a99cf30f7e58553a",
+      "sha256": "27e7df1a1689bbcf640203f5cf0cbb0ddf4d302f2249dc56c0c1872a1bf7c88d",
+      "shape": [
+        1,
+        512,
+        4096
+      ],
+      "storedDtype": "uint16"
+    },
+    "B": {
+      "bytes": 4194432,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/arrays/reader/B-head.npy",
+      "payloadSHA256": "739d68aaf31f0a53261d12bbe5e46f1dfece948dc0fb516a3ba848061710f62c",
+      "sha256": "5548f479bd74ee417d269c9d29313de51c050f61aec109b149f00b180534df54",
+      "shape": [
+        1,
+        512,
+        4096
+      ],
+      "storedDtype": "uint16"
+    }
+  },
+  "frameworkCalls": 0,
+  "h0Fields": {
+    "A": {
+      "bytes": 2621568,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/arrays/h0/A-H0.npy",
+      "payloadSHA256": "f6caa79353ba235cb222fc1c72e5c975b0d9723174d248dd9ea150e7d3e2478b",
+      "sha256": "88aa9bcc6f70d62d7faacba1d4f0909ee22a19d1c667845bde20d120afb0f9a1",
+      "shape": [
+        1,
+        512,
+        2560
+      ],
+      "storedDtype": "uint16"
+    },
+    "B": {
+      "bytes": 2621568,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/arrays/h0/B-H0.npy",
+      "payloadSHA256": "0af985bc9f0dd2a1af2eec03980dfa92e1933893bdbb3738689b2e82af687116",
+      "sha256": "a066fbd659c29a671d76fe78254aa1ba24d16036e45563ce85e77b49e8b89431",
+      "shape": [
+        1,
+        512,
+        2560
+      ],
+      "storedDtype": "uint16"
+    }
+  },
+  "highWaterRSSKiB": 284516,
+  "lexicalRows": [
+    {
+      "activeTokens": 35,
+      "firstArithmeticSeconds": 1.3013269822113216,
+      "id": "A",
+      "idsPayloadSHA256": "e086b3f87eb78664350301224af57a3ad780b19b28f79b90ab0447efbdf13932",
+      "maskPayloadSHA256": "f35cc01b2fecd463167e2973f92e484a95c03ebb0a20d4c70d4e4af59bf702fd",
+      "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/lexical/A.npz",
+      "prompt": "A red cube to the left of a blue sphere on a plain white tabletop. Two separate objects, studio photograph.",
+      "renderedTextSHA256": "4fb6d2e1b0dfd99e2657123da8674b86fe177746965d701766d7b478a191919f",
+      "sha256": "ad946f690895ca4f657c03cf82d44a22390aa94f8d851acb28817788d5311ea4"
+    },
+    {
+      "activeTokens": 35,
+      "firstArithmeticSeconds": 0.07798692397773266,
+      "id": "B",
+      "idsPayloadSHA256": "0ffc1e5ec4ce8d0ed9977d34fed384f9d0e4981721000906308e969febe9cf60",
+      "maskPayloadSHA256": "f35cc01b2fecd463167e2973f92e484a95c03ebb0a20d4c70d4e4af59bf702fd",
+      "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/lexical/B.npz",
+      "prompt": "A red cube to the right of a blue sphere on a plain white tabletop. Two separate objects, studio photograph.",
+      "renderedTextSHA256": "fa6b3bf87e9467f3d679aa4a12a020f035f58b13801a9b09a73b6b7a2279e0d4",
+      "sha256": "2940f24ee0944396570606c845792ea96a647ce91111c48b9f98bb7a73bba467"
+    }
+  ],
+  "lexicalSealSHA256": "1597949dad7d64bd961cda1ae9d4b717b77bcbdbff8caf6976abd03d2ecc30a6",
+  "numpyVersion": "2.5.4",
+  "originalDenseProjections": 0,
+  "packets": [
+    {
+      "id": "A",
+      "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/A-selected.npz",
+      "sha256": "8aa232084c0ed030f306e6968149ddf5d21e20fbf13c891caebdb0e33131e1f3"
+    },
+    {
+      "id": "B",
+      "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/B-selected.npz",
+      "sha256": "5e0abc1565c15a7b330700d3a4e8e687060941e74b3af6d6cd2eeb5ea01c0cb1"
+    }
+  ],
+  "policy": "current-top4-uncentered-fp64-fp32-bf16-v1",
+  "reader": {
+    "basisPayloadBytes": 0,
+    "counts": [
+      {
+        "groups": [
+          {
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 131584,
+            "anchorAdmissionMACs": 0,
+            "anchorScoreCacheBytes": 0,
+            "countAndClockBytes": 16,
+            "envelopePayloadBytes": 0,
+            "fallbackCalls": 0,
+            "kvGroup": 0,
+            "momentPayloadBytes": 0,
+            "queries": 2048,
+            "routingCalls": 0,
+            "seconds": 0.13735692715272307,
+            "selectedDeltaProducts": 0,
+            "selectedValueProducts": 1045504,
+            "selectorScoreProducts": 8870400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 71960
+          },
+          {
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 131584,
+            "anchorAdmissionMACs": 0,
+            "anchorScoreCacheBytes": 0,
+            "countAndClockBytes": 16,
+            "envelopePayloadBytes": 0,
+            "fallbackCalls": 0,
+            "kvGroup": 1,
+            "momentPayloadBytes": 0,
+            "queries": 2048,
+            "routingCalls": 0,
+            "seconds": 0.020206257235258818,
+            "selectedDeltaProducts": 0,
+            "selectedValueProducts": 1045504,
+            "selectorScoreProducts": 8870400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 71960
+          },
+          {
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 131584,
+            "anchorAdmissionMACs": 0,
+            "anchorScoreCacheBytes": 0,
+            "countAndClockBytes": 16,
+            "envelopePayloadBytes": 0,
+            "fallbackCalls": 0,
+            "kvGroup": 2,
+            "momentPayloadBytes": 0,
+            "queries": 2048,
+            "routingCalls": 0,
+            "seconds": 0.02032754383981228,
+            "selectedDeltaProducts": 0,
+            "selectedValueProducts": 1045504,
+            "selectorScoreProducts": 8870400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 71960
+          },
+          {
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 131584,
+            "anchorAdmissionMACs": 0,
+            "anchorScoreCacheBytes": 0,
+            "countAndClockBytes": 16,
+            "envelopePayloadBytes": 0,
+            "fallbackCalls": 0,
+            "kvGroup": 3,
+            "momentPayloadBytes": 0,
+            "queries": 2048,
+            "routingCalls": 0,
+            "seconds": 0.020245691295713186,
+            "selectedDeltaProducts": 0,
+            "selectedValueProducts": 1045504,
+            "selectorScoreProducts": 8870400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 71960
+          },
+          {
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 131584,
+            "anchorAdmissionMACs": 0,
+            "anchorScoreCacheBytes": 0,
+            "countAndClockBytes": 16,
+            "envelopePayloadBytes": 0,
+            "fallbackCalls": 0,
+            "kvGroup": 4,
+            "momentPayloadBytes": 0,
+            "queries": 2048,
+            "routingCalls": 0,
+            "seconds": 0.020024948753416538,
+            "selectedDeltaProducts": 0,
+            "selectedValueProducts": 1045504,
+            "selectorScoreProducts": 8870400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 71960
+          },
+          {
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 131584,
+            "anchorAdmissionMACs": 0,
+            "anchorScoreCacheBytes": 0,
+            "countAndClockBytes": 16,
+            "envelopePayloadBytes": 0,
+            "fallbackCalls": 0,
+            "kvGroup": 5,
+            "momentPayloadBytes": 0,
+            "queries": 2048,
+            "routingCalls": 0,
+            "seconds": 0.020025350153446198,
+            "selectedDeltaProducts": 0,
+            "selectedValueProducts": 1045504,
+            "selectorScoreProducts": 8870400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 71960
+          },
+          {
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 131584,
+            "anchorAdmissionMACs": 0,
+            "anchorScoreCacheBytes": 0,
+            "countAndClockBytes": 16,
+            "envelopePayloadBytes": 0,
+            "fallbackCalls": 0,
+            "kvGroup": 6,
+            "momentPayloadBytes": 0,
+            "queries": 2048,
+            "routingCalls": 0,
+            "seconds": 0.02006392227485776,
+            "selectedDeltaProducts": 0,
+            "selectedValueProducts": 1045504,
+            "selectorScoreProducts": 8870400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 71960
+          },
+          {
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 131584,
+            "anchorAdmissionMACs": 0,
+            "anchorScoreCacheBytes": 0,
+            "countAndClockBytes": 16,
+            "envelopePayloadBytes": 0,
+            "fallbackCalls": 0,
+            "kvGroup": 7,
+            "momentPayloadBytes": 0,
+            "queries": 2048,
+            "routingCalls": 0,
+            "seconds": 0.020211919210851192,
+            "selectedDeltaProducts": 0,
+            "selectedValueProducts": 1045504,
+            "selectorScoreProducts": 8870400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 71960
+          }
+        ],
+        "id": "A",
+        "outputAndDiagnosticPayloadBytes": 22548480,
+        "withSerializationSeconds": 0.30248224502429366
+      },
+      {
+        "groups": [
+          {
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 131584,
+            "anchorAdmissionMACs": 0,
+            "anchorScoreCacheBytes": 0,
+            "countAndClockBytes": 16,
+            "envelopePayloadBytes": 0,
+            "fallbackCalls": 0,
+            "kvGroup": 0,
+            "momentPayloadBytes": 0,
+            "queries": 2048,
+            "routingCalls": 0,
+            "seconds": 0.020305353216826916,
+            "selectedDeltaProducts": 0,
+            "selectedValueProducts": 1045504,
+            "selectorScoreProducts": 8870400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 71960
+          },
+          {
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 131584,
+            "anchorAdmissionMACs": 0,
+            "anchorScoreCacheBytes": 0,
+            "countAndClockBytes": 16,
+            "envelopePayloadBytes": 0,
+            "fallbackCalls": 0,
+            "kvGroup": 1,
+            "momentPayloadBytes": 0,
+            "queries": 2048,
+            "routingCalls": 0,
+            "seconds": 0.020067999605089426,
+            "selectedDeltaProducts": 0,
+            "selectedValueProducts": 1045504,
+            "selectorScoreProducts": 8870400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 71960
+          },
+          {
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 131584,
+            "anchorAdmissionMACs": 0,
+            "anchorScoreCacheBytes": 0,
+            "countAndClockBytes": 16,
+            "envelopePayloadBytes": 0,
+            "fallbackCalls": 0,
+            "kvGroup": 2,
+            "momentPayloadBytes": 0,
+            "queries": 2048,
+            "routingCalls": 0,
+            "seconds": 0.020179306622594595,
+            "selectedDeltaProducts": 0,
+            "selectedValueProducts": 1045504,
+            "selectorScoreProducts": 8870400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 71960
+          },
+          {
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 131584,
+            "anchorAdmissionMACs": 0,
+            "anchorScoreCacheBytes": 0,
+            "countAndClockBytes": 16,
+            "envelopePayloadBytes": 0,
+            "fallbackCalls": 0,
+            "kvGroup": 3,
+            "momentPayloadBytes": 0,
+            "queries": 2048,
+            "routingCalls": 0,
+            "seconds": 0.0201944662258029,
+            "selectedDeltaProducts": 0,
+            "selectedValueProducts": 1045504,
+            "selectorScoreProducts": 8870400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 71960
+          },
+          {
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 131584,
+            "anchorAdmissionMACs": 0,
+            "anchorScoreCacheBytes": 0,
+            "countAndClockBytes": 16,
+            "envelopePayloadBytes": 0,
+            "fallbackCalls": 0,
+            "kvGroup": 4,
+            "momentPayloadBytes": 0,
+            "queries": 2048,
+            "routingCalls": 0,
+            "seconds": 0.020413032732903957,
+            "selectedDeltaProducts": 0,
+            "selectedValueProducts": 1045504,
+            "selectorScoreProducts": 8870400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 71960
+          },
+          {
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 131584,
+            "anchorAdmissionMACs": 0,
+            "anchorScoreCacheBytes": 0,
+            "countAndClockBytes": 16,
+            "envelopePayloadBytes": 0,
+            "fallbackCalls": 0,
+            "kvGroup": 5,
+            "momentPayloadBytes": 0,
+            "queries": 2048,
+            "routingCalls": 0,
+            "seconds": 0.020120848901569843,
+            "selectedDeltaProducts": 0,
+            "selectedValueProducts": 1045504,
+            "selectorScoreProducts": 8870400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 71960
+          },
+          {
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 131584,
+            "anchorAdmissionMACs": 0,
+            "anchorScoreCacheBytes": 0,
+            "countAndClockBytes": 16,
+            "envelopePayloadBytes": 0,
+            "fallbackCalls": 0,
+            "kvGroup": 6,
+            "momentPayloadBytes": 0,
+            "queries": 2048,
+            "routingCalls": 0,
+            "seconds": 0.02015950996428728,
+            "selectedDeltaProducts": 0,
+            "selectedValueProducts": 1045504,
+            "selectorScoreProducts": 8870400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 71960
+          },
+          {
+            "admittedKeys": 35,
+            "allocatedIndexPayloadBytes": 131584,
+            "anchorAdmissionMACs": 0,
+            "anchorScoreCacheBytes": 0,
+            "countAndClockBytes": 16,
+            "envelopePayloadBytes": 0,
+            "fallbackCalls": 0,
+            "kvGroup": 7,
+            "momentPayloadBytes": 0,
+            "queries": 2048,
+            "routingCalls": 0,
+            "seconds": 0.02006896212697029,
+            "selectedDeltaProducts": 0,
+            "selectedValueProducts": 1045504,
+            "selectorScoreProducts": 8870400,
+            "steps": 512,
+            "usedIndexPayloadBytes": 71960
+          }
+        ],
+        "id": "B",
+        "outputAndDiagnosticPayloadBytes": 22548480,
+        "withSerializationSeconds": 0.9092398700304329
+      }
+    ],
+    "cpuSecondsAfterImports": 0.405135832,
+    "highWaterRSSKiB": 284516,
+    "manifestSHA256": "9a155bd1410c52909997bacaf1d1aac2f9e90be86dc269d5e7edfab2b5285432",
+    "policy": "current-top4-uncentered-fp64-fp32-bf16-v1",
+    "ports": [
+      {
+        "activeTokens": 35,
+        "firstArithmeticSeconds": 1.3013269822113216,
+        "id": "A",
+        "idsPayloadSHA256": "e086b3f87eb78664350301224af57a3ad780b19b28f79b90ab0447efbdf13932",
+        "maskPayloadSHA256": "f35cc01b2fecd463167e2973f92e484a95c03ebb0a20d4c70d4e4af59bf702fd",
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/lexical/A.npz",
+        "prompt": "A red cube to the left of a blue sphere on a plain white tabletop. Two separate objects, studio photograph.",
+        "renderedTextSHA256": "4fb6d2e1b0dfd99e2657123da8674b86fe177746965d701766d7b478a191919f",
+        "sha256": "ad946f690895ca4f657c03cf82d44a22390aa94f8d851acb28817788d5311ea4"
+      },
+      {
+        "activeTokens": 35,
+        "firstArithmeticSeconds": 0.07798692397773266,
+        "id": "B",
+        "idsPayloadSHA256": "0ffc1e5ec4ce8d0ed9977d34fed384f9d0e4981721000906308e969febe9cf60",
+        "maskPayloadSHA256": "f35cc01b2fecd463167e2973f92e484a95c03ebb0a20d4c70d4e4af59bf702fd",
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/lexical/B.npz",
+        "prompt": "A red cube to the right of a blue sphere on a plain white tabletop. Two separate objects, studio photograph.",
+        "renderedTextSHA256": "fa6b3bf87e9467f3d679aa4a12a020f035f58b13801a9b09a73b6b7a2279e0d4",
+        "sha256": "2940f24ee0944396570606c845792ea96a647ce91111c48b9f98bb7a73bba467"
+      }
+    ],
+    "rows": [
+      {
+        "id": "A",
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/A-selected.npz",
+        "sha256": "8aa232084c0ed030f306e6968149ddf5d21e20fbf13c891caebdb0e33131e1f3"
+      },
+      {
+        "id": "B",
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/B-selected.npz",
+        "sha256": "5e0abc1565c15a7b330700d3a4e8e687060941e74b3af6d6cd2eeb5ea01c0cb1"
+      }
+    ],
+    "runtimeCentersPayloadBytes": 0,
+    "schema": "tce-uncentered-reader-prediction-v1",
+    "scope": "Uncentered selected scores; full causal K/V and current-query scans paid. No geometry, centers, routes, anchors, cache, tail, basis or fallback.",
+    "specSHA256": "f051b31524c510d45f8939bd9166a4658c37966ac7771b6e96cb0893ecb62642",
+    "states": [
+      {
+        "id": "A",
+        "kvGroup": 0,
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/A-group0-state.npz",
+        "sha256": "b96c03097dd777b7588e2023c99879788c764af1b253e90ff8c5365ba040b828"
+      },
+      {
+        "id": "A",
+        "kvGroup": 1,
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/A-group1-state.npz",
+        "sha256": "ca1000e2f1a2a993d6534061f09c5d2ddb02c874af956905a78ba1e5ce0ac18e"
+      },
+      {
+        "id": "A",
+        "kvGroup": 2,
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/A-group2-state.npz",
+        "sha256": "022e81c0fc8eef08cde7cfd320ac1c5bfb6732c9853cce8eb1c9432d780062b3"
+      },
+      {
+        "id": "A",
+        "kvGroup": 3,
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/A-group3-state.npz",
+        "sha256": "653e38d2665d0eab2f718840ca03383a6d950312d9f9a72f68508504d5d67932"
+      },
+      {
+        "id": "A",
+        "kvGroup": 4,
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/A-group4-state.npz",
+        "sha256": "15393fb6c097f4684b9289b374a54b963529f60bbe09f4f0b438fb67faa94f84"
+      },
+      {
+        "id": "A",
+        "kvGroup": 5,
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/A-group5-state.npz",
+        "sha256": "d054d35b024d575f04c969cdf479c6ac003d41b8b8ee764c8b4a71c9a98ae7d6"
+      },
+      {
+        "id": "A",
+        "kvGroup": 6,
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/A-group6-state.npz",
+        "sha256": "b9af14c40b8584c131fcc11b276afb9f53d2f976eebd8bba6365394e6d4eef3c"
+      },
+      {
+        "id": "A",
+        "kvGroup": 7,
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/A-group7-state.npz",
+        "sha256": "75f835ec7a54cc95bb9bc31b025160a4eb6faa4dbe2430a9b0e82454b5abec36"
+      },
+      {
+        "id": "B",
+        "kvGroup": 0,
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/B-group0-state.npz",
+        "sha256": "b70f74a07bad8a426f354b4723233857bc7d4dd17f71dbf7b16b2e3e27bddfa7"
+      },
+      {
+        "id": "B",
+        "kvGroup": 1,
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/B-group1-state.npz",
+        "sha256": "d34fc51c7b2286fc3660f713e9bb57d167f4e577a37a1391d3bc3d88ae5fb634"
+      },
+      {
+        "id": "B",
+        "kvGroup": 2,
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/B-group2-state.npz",
+        "sha256": "1af8ea96ca348e4ef53139f69711e62078e0493522bd5fa645d83313107c0ed7"
+      },
+      {
+        "id": "B",
+        "kvGroup": 3,
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/B-group3-state.npz",
+        "sha256": "feb773f179ca9b0d8e563398cfcd733525020d90a149f00b05ebb14fb9dd6b7e"
+      },
+      {
+        "id": "B",
+        "kvGroup": 4,
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/B-group4-state.npz",
+        "sha256": "8acc797d3c4d173da81d925f6130d5736878f7b82c80e034edeef1f3d62210c1"
+      },
+      {
+        "id": "B",
+        "kvGroup": 5,
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/B-group5-state.npz",
+        "sha256": "051366117e3ea325d18c44e5e39ed9f8a48ee03c99eea42e68bf8817dfe4a5d2"
+      },
+      {
+        "id": "B",
+        "kvGroup": 6,
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/B-group6-state.npz",
+        "sha256": "e8af5e6185aeb863ff98a2a520bcd4d1451b5d60097ee58bbdf5a476863c5184"
+      },
+      {
+        "id": "B",
+        "kvGroup": 7,
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/B-group7-state.npz",
+        "sha256": "68950eb25df45455f06f7afc007ecdbe9431d52868a793566e5a4e73b6dd6c21"
+      }
+    ],
+    "wallSecondsAfterImports": 1.2347370139323175
+  },
+  "readerPredictionSealSHA256": "945948a1361195eb2eb78f00eed66216b328c8b4362a6a09e1ef641561f1adf9",
+  "readerWallSeconds": 1.2404382140375674,
+  "requestSHA256": "6edffd3827b1c226be569ec3fe49095188997d46d54d5b1da962087028f69bf6",
+  "schema": "tce-uncentered-reader-seal-v1",
+  "scope": "Raw strings through uncentered causal reader; full K/V scans and compiled learned lexical table remain. No centers/anchors/routes/cache/tail/basis/fallback or original learned-weight projections.",
+  "sourceAtomFiles": [
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/manifest.json",
+      "sha256": "9a155bd1410c52909997bacaf1d1aac2f9e90be86dc269d5e7edfab2b5285432"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/tokenizer.json",
+      "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/chat_template.jinja",
+      "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/coverage.npy",
+      "sha256": "e6ae5faf47930cb70a9fa89b594ff6b1ad57d39e4e0d51794fe36c73d9f4f93f"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/row-hashes.npy",
+      "sha256": "25f5a892cc19bc7895f45312e03a5c7e323ff3e9e2a966d20ebdf1860b18ee88"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/rope.npy",
+      "sha256": "bb7217ccf0922b61c986cc94801fd26962c0bb2e848b6ebe47b7cf3d9e0dfc9a"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0000.npy",
+      "sha256": "50d081fe3476649e8d5da584b0c94244bd70493bc6b1e4d71650dc54ee63f333"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0001.npy",
+      "sha256": "c45ce7fb64ac4aee1aa6ba4e20f56fab8a7c4904a61cf19f999d29eef216a143"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0002.npy",
+      "sha256": "fb8651de491441a2d1246c836f44cbbc0008384fcea9bfce16cff58078f1eede"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0004.npy",
+      "sha256": "20d2c3f37d0b2be79f2f07f638ff67748ab8bac75be277efd11abe97c158b826"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0008.npy",
+      "sha256": "98e0a60741fc69d8000527d5ce8d930862397c56efaa70ada4598dd305867230"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0012.npy",
+      "sha256": "0661ed2d3c9a3902178f9f17ad062f9450ed23dd1d2eb56439921479ff04eba5"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0016.npy",
+      "sha256": "24cf7ce5f7d44dcb3c15034101f563a674c2270c548d520635e4858acd88042f"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0017.npy",
+      "sha256": "7fb8433f7844965525d98293cc0f46b43fd48edfe539f3d9d8e37e0cf109a189"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0020.npy",
+      "sha256": "a9299d7f912323c0eeacbeb55d066d169eead4ca8217010630577958d3fbc06c"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0027.npy",
+      "sha256": "4622e5a1bbc2afd9e12ca7a91c3ff2746c8eef0a6faeb3ab20f9ee34bc0b6052"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0028.npy",
+      "sha256": "e0d5f1e2b71298cf8e0faccc243affb655db015ee08ee4eb317129ef70d933d5"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0046.npy",
+      "sha256": "ec39a216671ac103c42851e6a4840e7a8a053f25f2ad51cca25320b01387b47d"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0049.npy",
+      "sha256": "00689403de1c43fdff9f2020a49bb8d278a0476bdbc7c41efa4c7f416cb5a79e"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0150.npy",
+      "sha256": "ad0f932e9d40878f15b2a5305be923cfd5f616098e8631f7a0319677cfea93e2"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0172.npy",
+      "sha256": "c292e5e19c8f3e49d429c2009f7a81a5a9230a5d7c6cb4fd29f85ed1491838b5"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0296.npy",
+      "sha256": "6042c71b4f09814bd7a6bb9502f9b3e3c61f961a24b9f6dbc918fe0ff1af33ad"
+    }
+  ],
+  "states": [
+    {
+      "id": "A",
+      "kvGroup": 0,
+      "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/A-group0-state.npz",
+      "sha256": "b96c03097dd777b7588e2023c99879788c764af1b253e90ff8c5365ba040b828"
+    },
+    {
+      "id": "A",
+      "kvGroup": 1,
+      "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/A-group1-state.npz",
+      "sha256": "ca1000e2f1a2a993d6534061f09c5d2ddb02c874af956905a78ba1e5ce0ac18e"
+    },
+    {
+      "id": "A",
+      "kvGroup": 2,
+      "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/A-group2-state.npz",
+      "sha256": "022e81c0fc8eef08cde7cfd320ac1c5bfb6732c9853cce8eb1c9432d780062b3"
+    },
+    {
+      "id": "A",
+      "kvGroup": 3,
+      "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/A-group3-state.npz",
+      "sha256": "653e38d2665d0eab2f718840ca03383a6d950312d9f9a72f68508504d5d67932"
+    },
+    {
+      "id": "A",
+      "kvGroup": 4,
+      "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/A-group4-state.npz",
+      "sha256": "15393fb6c097f4684b9289b374a54b963529f60bbe09f4f0b438fb67faa94f84"
+    },
+    {
+      "id": "A",
+      "kvGroup": 5,
+      "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/A-group5-state.npz",
+      "sha256": "d054d35b024d575f04c969cdf479c6ac003d41b8b8ee764c8b4a71c9a98ae7d6"
+    },
+    {
+      "id": "A",
+      "kvGroup": 6,
+      "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/A-group6-state.npz",
+      "sha256": "b9af14c40b8584c131fcc11b276afb9f53d2f976eebd8bba6365394e6d4eef3c"
+    },
+    {
+      "id": "A",
+      "kvGroup": 7,
+      "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/A-group7-state.npz",
+      "sha256": "75f835ec7a54cc95bb9bc31b025160a4eb6faa4dbe2430a9b0e82454b5abec36"
+    },
+    {
+      "id": "B",
+      "kvGroup": 0,
+      "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/B-group0-state.npz",
+      "sha256": "b70f74a07bad8a426f354b4723233857bc7d4dd17f71dbf7b16b2e3e27bddfa7"
+    },
+    {
+      "id": "B",
+      "kvGroup": 1,
+      "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/B-group1-state.npz",
+      "sha256": "d34fc51c7b2286fc3660f713e9bb57d167f4e577a37a1391d3bc3d88ae5fb634"
+    },
+    {
+      "id": "B",
+      "kvGroup": 2,
+      "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/B-group2-state.npz",
+      "sha256": "1af8ea96ca348e4ef53139f69711e62078e0493522bd5fa645d83313107c0ed7"
+    },
+    {
+      "id": "B",
+      "kvGroup": 3,
+      "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/B-group3-state.npz",
+      "sha256": "feb773f179ca9b0d8e563398cfcd733525020d90a149f00b05ebb14fb9dd6b7e"
+    },
+    {
+      "id": "B",
+      "kvGroup": 4,
+      "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/B-group4-state.npz",
+      "sha256": "8acc797d3c4d173da81d925f6130d5736878f7b82c80e034edeef1f3d62210c1"
+    },
+    {
+      "id": "B",
+      "kvGroup": 5,
+      "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/B-group5-state.npz",
+      "sha256": "051366117e3ea325d18c44e5e39ed9f8a48ee03c99eea42e68bf8817dfe4a5d2"
+    },
+    {
+      "id": "B",
+      "kvGroup": 6,
+      "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/B-group6-state.npz",
+      "sha256": "e8af5e6185aeb863ff98a2a520bcd4d1451b5d60097ee58bbdf5a476863c5184"
+    },
+    {
+      "id": "B",
+      "kvGroup": 7,
+      "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/B-group7-state.npz",
+      "sha256": "68950eb25df45455f06f7afc007ecdbe9431d52868a793566e5a4e73b6dd6c21"
+    }
+  ],
+  "work": [
+    {
+      "groups": [
+        {
+          "admittedKeys": 35,
+          "allocatedIndexPayloadBytes": 131584,
+          "anchorAdmissionMACs": 0,
+          "anchorScoreCacheBytes": 0,
+          "countAndClockBytes": 16,
+          "envelopePayloadBytes": 0,
+          "fallbackCalls": 0,
+          "kvGroup": 0,
+          "momentPayloadBytes": 0,
+          "queries": 2048,
+          "routingCalls": 0,
+          "seconds": 0.13735692715272307,
+          "selectedDeltaProducts": 0,
+          "selectedValueProducts": 1045504,
+          "selectorScoreProducts": 8870400,
+          "steps": 512,
+          "usedIndexPayloadBytes": 71960
+        },
+        {
+          "admittedKeys": 35,
+          "allocatedIndexPayloadBytes": 131584,
+          "anchorAdmissionMACs": 0,
+          "anchorScoreCacheBytes": 0,
+          "countAndClockBytes": 16,
+          "envelopePayloadBytes": 0,
+          "fallbackCalls": 0,
+          "kvGroup": 1,
+          "momentPayloadBytes": 0,
+          "queries": 2048,
+          "routingCalls": 0,
+          "seconds": 0.020206257235258818,
+          "selectedDeltaProducts": 0,
+          "selectedValueProducts": 1045504,
+          "selectorScoreProducts": 8870400,
+          "steps": 512,
+          "usedIndexPayloadBytes": 71960
+        },
+        {
+          "admittedKeys": 35,
+          "allocatedIndexPayloadBytes": 131584,
+          "anchorAdmissionMACs": 0,
+          "anchorScoreCacheBytes": 0,
+          "countAndClockBytes": 16,
+          "envelopePayloadBytes": 0,
+          "fallbackCalls": 0,
+          "kvGroup": 2,
+          "momentPayloadBytes": 0,
+          "queries": 2048,
+          "routingCalls": 0,
+          "seconds": 0.02032754383981228,
+          "selectedDeltaProducts": 0,
+          "selectedValueProducts": 1045504,
+          "selectorScoreProducts": 8870400,
+          "steps": 512,
+          "usedIndexPayloadBytes": 71960
+        },
+        {
+          "admittedKeys": 35,
+          "allocatedIndexPayloadBytes": 131584,
+          "anchorAdmissionMACs": 0,
+          "anchorScoreCacheBytes": 0,
+          "countAndClockBytes": 16,
+          "envelopePayloadBytes": 0,
+          "fallbackCalls": 0,
+          "kvGroup": 3,
+          "momentPayloadBytes": 0,
+          "queries": 2048,
+          "routingCalls": 0,
+          "seconds": 0.020245691295713186,
+          "selectedDeltaProducts": 0,
+          "selectedValueProducts": 1045504,
+          "selectorScoreProducts": 8870400,
+          "steps": 512,
+          "usedIndexPayloadBytes": 71960
+        },
+        {
+          "admittedKeys": 35,
+          "allocatedIndexPayloadBytes": 131584,
+          "anchorAdmissionMACs": 0,
+          "anchorScoreCacheBytes": 0,
+          "countAndClockBytes": 16,
+          "envelopePayloadBytes": 0,
+          "fallbackCalls": 0,
+          "kvGroup": 4,
+          "momentPayloadBytes": 0,
+          "queries": 2048,
+          "routingCalls": 0,
+          "seconds": 0.020024948753416538,
+          "selectedDeltaProducts": 0,
+          "selectedValueProducts": 1045504,
+          "selectorScoreProducts": 8870400,
+          "steps": 512,
+          "usedIndexPayloadBytes": 71960
+        },
+        {
+          "admittedKeys": 35,
+          "allocatedIndexPayloadBytes": 131584,
+          "anchorAdmissionMACs": 0,
+          "anchorScoreCacheBytes": 0,
+          "countAndClockBytes": 16,
+          "envelopePayloadBytes": 0,
+          "fallbackCalls": 0,
+          "kvGroup": 5,
+          "momentPayloadBytes": 0,
+          "queries": 2048,
+          "routingCalls": 0,
+          "seconds": 0.020025350153446198,
+          "selectedDeltaProducts": 0,
+          "selectedValueProducts": 1045504,
+          "selectorScoreProducts": 8870400,
+          "steps": 512,
+          "usedIndexPayloadBytes": 71960
+        },
+        {
+          "admittedKeys": 35,
+          "allocatedIndexPayloadBytes": 131584,
+          "anchorAdmissionMACs": 0,
+          "anchorScoreCacheBytes": 0,
+          "countAndClockBytes": 16,
+          "envelopePayloadBytes": 0,
+          "fallbackCalls": 0,
+          "kvGroup": 6,
+          "momentPayloadBytes": 0,
+          "queries": 2048,
+          "routingCalls": 0,
+          "seconds": 0.02006392227485776,
+          "selectedDeltaProducts": 0,
+          "selectedValueProducts": 1045504,
+          "selectorScoreProducts": 8870400,
+          "steps": 512,
+          "usedIndexPayloadBytes": 71960
+        },
+        {
+          "admittedKeys": 35,
+          "allocatedIndexPayloadBytes": 131584,
+          "anchorAdmissionMACs": 0,
+          "anchorScoreCacheBytes": 0,
+          "countAndClockBytes": 16,
+          "envelopePayloadBytes": 0,
+          "fallbackCalls": 0,
+          "kvGroup": 7,
+          "momentPayloadBytes": 0,
+          "queries": 2048,
+          "routingCalls": 0,
+          "seconds": 0.020211919210851192,
+          "selectedDeltaProducts": 0,
+          "selectedValueProducts": 1045504,
+          "selectorScoreProducts": 8870400,
+          "steps": 512,
+          "usedIndexPayloadBytes": 71960
+        }
+      ],
+      "id": "A",
+      "outputAndDiagnosticPayloadBytes": 22548480,
+      "withSerializationSeconds": 0.30248224502429366
+    },
+    {
+      "groups": [
+        {
+          "admittedKeys": 35,
+          "allocatedIndexPayloadBytes": 131584,
+          "anchorAdmissionMACs": 0,
+          "anchorScoreCacheBytes": 0,
+          "countAndClockBytes": 16,
+          "envelopePayloadBytes": 0,
+          "fallbackCalls": 0,
+          "kvGroup": 0,
+          "momentPayloadBytes": 0,
+          "queries": 2048,
+          "routingCalls": 0,
+          "seconds": 0.020305353216826916,
+          "selectedDeltaProducts": 0,
+          "selectedValueProducts": 1045504,
+          "selectorScoreProducts": 8870400,
+          "steps": 512,
+          "usedIndexPayloadBytes": 71960
+        },
+        {
+          "admittedKeys": 35,
+          "allocatedIndexPayloadBytes": 131584,
+          "anchorAdmissionMACs": 0,
+          "anchorScoreCacheBytes": 0,
+          "countAndClockBytes": 16,
+          "envelopePayloadBytes": 0,
+          "fallbackCalls": 0,
+          "kvGroup": 1,
+          "momentPayloadBytes": 0,
+          "queries": 2048,
+          "routingCalls": 0,
+          "seconds": 0.020067999605089426,
+          "selectedDeltaProducts": 0,
+          "selectedValueProducts": 1045504,
+          "selectorScoreProducts": 8870400,
+          "steps": 512,
+          "usedIndexPayloadBytes": 71960
+        },
+        {
+          "admittedKeys": 35,
+          "allocatedIndexPayloadBytes": 131584,
+          "anchorAdmissionMACs": 0,
+          "anchorScoreCacheBytes": 0,
+          "countAndClockBytes": 16,
+          "envelopePayloadBytes": 0,
+          "fallbackCalls": 0,
+          "kvGroup": 2,
+          "momentPayloadBytes": 0,
+          "queries": 2048,
+          "routingCalls": 0,
+          "seconds": 0.020179306622594595,
+          "selectedDeltaProducts": 0,
+          "selectedValueProducts": 1045504,
+          "selectorScoreProducts": 8870400,
+          "steps": 512,
+          "usedIndexPayloadBytes": 71960
+        },
+        {
+          "admittedKeys": 35,
+          "allocatedIndexPayloadBytes": 131584,
+          "anchorAdmissionMACs": 0,
+          "anchorScoreCacheBytes": 0,
+          "countAndClockBytes": 16,
+          "envelopePayloadBytes": 0,
+          "fallbackCalls": 0,
+          "kvGroup": 3,
+          "momentPayloadBytes": 0,
+          "queries": 2048,
+          "routingCalls": 0,
+          "seconds": 0.0201944662258029,
+          "selectedDeltaProducts": 0,
+          "selectedValueProducts": 1045504,
+          "selectorScoreProducts": 8870400,
+          "steps": 512,
+          "usedIndexPayloadBytes": 71960
+        },
+        {
+          "admittedKeys": 35,
+          "allocatedIndexPayloadBytes": 131584,
+          "anchorAdmissionMACs": 0,
+          "anchorScoreCacheBytes": 0,
+          "countAndClockBytes": 16,
+          "envelopePayloadBytes": 0,
+          "fallbackCalls": 0,
+          "kvGroup": 4,
+          "momentPayloadBytes": 0,
+          "queries": 2048,
+          "routingCalls": 0,
+          "seconds": 0.020413032732903957,
+          "selectedDeltaProducts": 0,
+          "selectedValueProducts": 1045504,
+          "selectorScoreProducts": 8870400,
+          "steps": 512,
+          "usedIndexPayloadBytes": 71960
+        },
+        {
+          "admittedKeys": 35,
+          "allocatedIndexPayloadBytes": 131584,
+          "anchorAdmissionMACs": 0,
+          "anchorScoreCacheBytes": 0,
+          "countAndClockBytes": 16,
+          "envelopePayloadBytes": 0,
+          "fallbackCalls": 0,
+          "kvGroup": 5,
+          "momentPayloadBytes": 0,
+          "queries": 2048,
+          "routingCalls": 0,
+          "seconds": 0.020120848901569843,
+          "selectedDeltaProducts": 0,
+          "selectedValueProducts": 1045504,
+          "selectorScoreProducts": 8870400,
+          "steps": 512,
+          "usedIndexPayloadBytes": 71960
+        },
+        {
+          "admittedKeys": 35,
+          "allocatedIndexPayloadBytes": 131584,
+          "anchorAdmissionMACs": 0,
+          "anchorScoreCacheBytes": 0,
+          "countAndClockBytes": 16,
+          "envelopePayloadBytes": 0,
+          "fallbackCalls": 0,
+          "kvGroup": 6,
+          "momentPayloadBytes": 0,
+          "queries": 2048,
+          "routingCalls": 0,
+          "seconds": 0.02015950996428728,
+          "selectedDeltaProducts": 0,
+          "selectedValueProducts": 1045504,
+          "selectorScoreProducts": 8870400,
+          "steps": 512,
+          "usedIndexPayloadBytes": 71960
+        },
+        {
+          "admittedKeys": 35,
+          "allocatedIndexPayloadBytes": 131584,
+          "anchorAdmissionMACs": 0,
+          "anchorScoreCacheBytes": 0,
+          "countAndClockBytes": 16,
+          "envelopePayloadBytes": 0,
+          "fallbackCalls": 0,
+          "kvGroup": 7,
+          "momentPayloadBytes": 0,
+          "queries": 2048,
+          "routingCalls": 0,
+          "seconds": 0.02006896212697029,
+          "selectedDeltaProducts": 0,
+          "selectedValueProducts": 1045504,
+          "selectorScoreProducts": 8870400,
+          "steps": 512,
+          "usedIndexPayloadBytes": 71960
+        }
+      ],
+      "id": "B",
+      "outputAndDiagnosticPayloadBytes": 22548480,
+      "withSerializationSeconds": 0.9092398700304329
+    }
+  ],
+  "workerSecondsAfterImports": 3.4741153339855373
+}

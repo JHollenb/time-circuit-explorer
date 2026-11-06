@@ -1,0 +1,24 @@
+{
+  "schema": "tce-uncentered-reader-mechanics-v1",
+  "command": "../common/bin/common exec python -m unittest discover -s generator -p 'test_*.py' -q",
+  "exitCode": 0,
+  "tests": 164,
+  "wallSecondsReportedByUnittest": 14.468,
+  "newChecks": 8,
+  "isolatedStagedPayloadImport": {
+    "exitCode": 0,
+    "sourceHashes": {
+      "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+      "flux_clock.py": "bde499ff527f624fcd1b62a8f6f0b2fbaf70eebc7b7835fcd7d4c6403b4e0b2b",
+      "frozen-plan.md": "7db58e9c28efd14fe1112d5be41b0c300918af8d974158a1e7cd70160a3815d5",
+      "inputs.json": "310528763e7114fbc59487e794c88b5b8f23bde94ad807e0db9a46e6eb98ca94",
+      "masked_kv_study.py": "920416ce49d823b1337a7f6d9f5fca90c8047723bb6b1d37dc09967114b6ad89",
+      "paired_fields.py": "408e035cb2f2f99558dbbe5abccdc281a5deade195abdbbc003549318ef09e88",
+      "targets.json": "249a387106988845a695896cd9f31241347ec95facf7ec236296ac4f5498e49b",
+      "uncentered_reader.py": "743590ba7c87a7ff2afd340c1b03fece9f464183bc690a88ccc6ff1716c9e5af",
+      "uncentered_reader_study.py": "d0e86a01f3c30089d93de9ae1eaa22be83c2494de29374b2b0db42635a0f132f"
+    },
+    "noOldReadersOrNeuralFrameworks": true
+  },
+  "scope": "Toy mechanics, guard/closure and exact consumer-role tests; no model-quality certification."
+}

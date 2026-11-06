@@ -1,6 +1,8 @@
 # Remove the common key offset from the direct reader
 
-Status: cycle32 next cut, written and unexecuted. The [direct-score reader](../direct-reader.md) removes anchors/routing/cache, changes raw FP64 results slightly, and matches every consumed BF16 head, H0 and lexical control on the known pair. Its images are inherited from the original selected-only consumer through complete input identity. The next periodic Astra review remains due by cycle34.
+Status: executed in cycle33, guarded CPUjob-2ed557dbb033. See the [result](../uncentered-reader.md): no centers or sampled geometry are read, and all actual-consumer inputs match. Two images are inherited; no new neural/image execution occurs. Astra reviewed source, results and newest posts in cycle33. The exact pre-run version remains in the [frozen plan](../results/uncentered-reader/frozen-plan.md).
+
+Additive cost correction: the35,840 figure below counts admitted-key coordinates. The executed centered parent subtracts centers on all512packet rows before masking, so the actual removed arithmetic is524,288scalar subtractions per prompt. See the [correction receipt](../results/uncentered-reader-evidence/cost-correction.json). The original numerical-state and centers-payload counts are unchanged.
 
 The direct reader stores source-centered keys U_j=K_j−c and computes x^TU_j. For each fixed query, −x^Tc is common to every allowed key. Therefore, in real arithmetic,
 
