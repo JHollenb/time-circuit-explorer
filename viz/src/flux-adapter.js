@@ -3,6 +3,7 @@ import {escapeHTML as esc} from './kernels.js';
 import {address,boundaryRecord,euler,bf16,toyAttention,toyMLP} from './flux-kernels.js';
 import {mountGenerator} from './generator-demo.js';
 import {mountResponse} from './response-demo.js';
+import {mountConditioningImage} from './conditioning-image.js';
 
 const fmt=(x,d=6)=>Number.isFinite(x)?Number(x.toPrecision(d)).toString():'unavailable';
 const pct=x=>Number.isFinite(x)?`${(100*x).toFixed(4)}%`:'undefined';
@@ -26,7 +27,11 @@ export async function mount(pack,environment) {
   if(!responseTemplate.ok)throw new Error('Image response template could not load.');
   const responseHTML=await responseTemplate.text();signal.throwIfAborted();
   $('generator').insertAdjacentHTML('afterend',responseHTML);
-  document.querySelector('.generator-jump').insertAdjacentHTML('afterend','<a class="generator-jump" href="#zero-network">Render with zero neural passes <span>↘</span></a>');
+  const consequenceTemplate=await fetch('./templates/conditioning-image.html',{signal});
+  if(!consequenceTemplate.ok)throw new Error('Conditioning image template could not load.');
+  const consequenceHTML=await consequenceTemplate.text();signal.throwIfAborted();
+  $('zero-network').insertAdjacentHTML('afterend',consequenceHTML);
+  document.querySelector('.generator-jump').insertAdjacentHTML('afterend','<a class="generator-jump" href="#zero-network">Render with zero neural passes <span>↘</span></a><a class="generator-jump" href="#conditioning-image">Follow a compact state to its image <span>↘</span></a>');
   const state={history:'full',cursor:0,side:'after',field:'image',token:0,feature:0,channel:0,node:'project',lesson:0,guided:true,errorMode:'relative_rms',speed:650,eulerIndex:0,eulerPrecision:'bf16',dose:0,query:0,logit:0,value:0,input:0,gate:0,outer:.5,endpointHistory:'full',...environment.state};
   let drawRevision=0,eulerData=null,endpointData=null,endpointLoaded=false,endpointRevision=0;
   const on=(id,type,fn)=>$(id).addEventListener(type,fn,{signal});
@@ -156,8 +161,8 @@ export async function mount(pack,environment) {
   document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();},{signal});
   const observer=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)){observer.disconnect();safe(loadEuler)();}},{rootMargin:'200px'});observer.observe($('euler'));signal.addEventListener('abort',()=>observer.disconnect(),{once:true});
   metadata();lessons();drawToys();render();$('endpoint-history').value=state.endpointHistory;
-  let disposeGenerator=()=>{},disposeResponse=()=>{};
+  let disposeGenerator=()=>{},disposeResponse=()=>{},disposeConsequence=mountConditioningImage(signal);
   mountGenerator(signal).then(dispose=>{if(signal.aborted)dispose?.();else disposeGenerator=dispose;}).catch(error=>{if(!signal.aborted)$('generator-status').textContent=`Generator demonstration could not load: ${error.message}`;});
   mountResponse(signal).then(dispose=>{if(signal.aborted)dispose?.();else disposeResponse=dispose;}).catch(error=>{if(!signal.aborted)$('response-status').textContent=`Image response demonstration could not load: ${error.message}`;});
-  return{getState:()=>({...state}),dispose(){stop();disposeGenerator?.();disposeResponse?.();drawRevision++;endpointRevision++;observer.disconnect();$('sources-button').onclick=null;}};
+  return{getState:()=>({...state}),dispose(){stop();disposeGenerator?.();disposeResponse?.();disposeConsequence?.();drawRevision++;endpointRevision++;observer.disconnect();$('sources-button').onclick=null;}};
 }

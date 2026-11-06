@@ -1,0 +1,31 @@
+{
+  "schema": "tce-astra-image-consequence-review-v1",
+  "advisor": "/root/astra_zero_forward_advisor",
+  "model": "gpt-6-astra",
+  "cycle": 25,
+  "reportSHA256": "2dead27bf0575351bcfc57f198de0562fe0fb0864a03bc23d37341766f19994e",
+  "sourceReview": {
+    "reviewedWorkerSHA256": "d6da14832c209b39a28f13555f870ccbd039fee77d9bd0ee26f9b6e38bce9b8a",
+    "finding": "No substantive math, custody or branch-isolation blocker. Explicit cuBLAS workspace pin requested; applied before the scientific launch. Actual numerical profile recorded in v2."
+  },
+  "snapshots": [
+    {
+      "path": "../obsidian/blog/2026-11-06-093800-predicting-how-an-error-moves-through-the-next-block.md",
+      "sha256": "0dd4036ed656943403a7155affce3c88378d0014a07df85f36f45c41c7b23ad9"
+    },
+    {
+      "path": "../obsidian/blog/2026-11-06-092300-a-symbol-table-that-checks-its-inputs.md",
+      "sha256": "5319ce3eccd14238f4a8c50ef4a32fed6dcd053d623f51b82e456c800a78f45c"
+    },
+    {
+      "path": "../obsidian/blog/2026-11-06-090851-predicting-attention-from-transformed-operands.md",
+      "sha256": "0e4751660e5094ff6d9e27b702552c8d2cbb4cc342d5ee7f0bdb46df2c7c36e8"
+    },
+    {
+      "path": "../obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+      "sha256": "d3cdc725f5c3c452fefaa72127782881cad26180ec05fc3b468010ea8da6c745"
+    }
+  ],
+  "completedReportPlainText": "Cycle25 closes the local precision question with a mixed image result. All three originals retain the indigo teapot, brass compass and map composition. Visible changes concentrate in compass geometry/dial details, map markings and shading. This is an observation of one scene, not a semantic-quality comparison.\n\nThe new policy lowers PNG RMS by 8.73%, but increases MAE by 8.11%; 164,937 pixels worsen versus 91,990 improve. The RMS/MAE reversal already exists in decodedRaw, so PNG quantization does not explain it. Report reduced large-error energy alongside broader smaller discrepancies—not “better image quality.” Exact repeated C reproduction and the verified noise/state/schedule joins make this a credible downstream consequence of the encoder approximation.\n\nMy next single cut: complete the mask-dependent encoder reduction on one fresh minimal prompt pair, through actual pixels. This tests reusable composition of the saving, rather than another numerical setting.\n\nFreeze two new strings differing in one spatial relation before tokenization. For each, start from raw text and the complete lexical atom store. In every remaining demanded Qwen block, 1…26, form K/V only at mask-permitted key rows; retain all512 query, residual and MLP rows. Use the already chosen accumulation policy unchanged. Each block consumes its own emitted state; pack its own H9/H18/H27 and render once with the frozen common noise. Full references run separately after candidate sealing.\n\nThe structural rule is reusable:\nA={j:m_j=1}, K_l=W^K_l N(H_l)_A, V_l=W^V_l N(H_l)_A.\nPadding queries remain live. Omitted key rows are never read, but finite GEMM geometry still makes the implementation approximate. Nominal eliminated K/V work is 26(512−|A|)2560(2·1024) MACs per prompt, before accounting for gathers, scattering, memory and actual runtime.\n\nUse four images total: candidate/full for each prompt. Alongside endpoint differences, measure the paired prompt response (Ihat_B−Ihat_A)−(I_B−I_A), with undefined zero denominators retained, and inspect whether the requested relation changes coherently. This is more informative than preserving one already-scored composition. No new precision search, per-layer rescue or native-state refresh belongs in this cut.\n\nThis remains a bounded first-prompt computational reduction. Most learned encoder work, FLUX and VAE remain. It does not establish—or redefine—the strict zero-neural goal. Its value is determining whether the current general dependency rule composes into a usable complete input path before investing further in it.\n\nThe latest posts reinforce this distinction: applicability checks select a method; sign reuse needs paid source states; measured continuation can amplify and rotate errors. No newer mechanism post appeared in the bounded mtime/git-log scan.",
+  "scope": "Advisor findings and proposed next cut, not a completed next experiment or terminal zero-neural claim."
+}

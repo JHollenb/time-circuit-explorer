@@ -1,0 +1,35 @@
+{
+  "backend": "diffusers",
+  "batch_size": 1,
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "height": 512,
+  "model": "flux2-klein-4b-distilled",
+  "parentJobID": "job-0dddb989549a",
+  "parentRequestSHA256": "551e29bb9ede226399051781ae31247d908a48b1a27b2e1a036cd6d45e601899",
+  "protocol": "One seed314159/noise seal; three serial B1/512px branches, fresh identical scheduler perbranch, four denoising steps, no encoder, extra compaction or seed selection. Seal all outputs before scoring.",
+  "requestSHA256": "a7554c4126b019106633d376a53b7a7cd2695996913bec0423b24c68dcbd884d",
+  "resourceException": {
+    "basisSHA256": "e9aa6157eecad40ba3cd8c75164473219fabb479237ab6c89b7d5088db63a48d",
+    "cpuThreads": 4,
+    "diskGB": 1,
+    "ramMB": 14336,
+    "vramMB": 13000
+  },
+  "schema": "tce-conditioning-image-request-v1",
+  "scope": "Three actual sealed E fields through same-noise original native FLUX/VAE. Paid consumer work, not zero-neural image generation.",
+  "seed": 314159,
+  "seq_len": 1536,
+  "sourceHashes": {
+    "conditioning_demand.py": "6536da5e73e89b7d2a18085d963edf578d0567ed20680c4022c1c82a10c10e9f",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "image_consequence.py": "c72d026bc5b6e05427be27cc9b75b7cc45ffcd0f4243d5b3b8a2f7c8aa739260",
+    "image_consequence_study.py": "df91873d1d5c474d626d1a2fde457984db22f5c3e65854e7d7cc4dea6bc35645",
+    "masked_kv_study.py": "920416ce49d823b1337a7f6d9f5fca90c8047723bb6b1d37dc09967114b6ad89",
+    "resource-basis.json": "e9aa6157eecad40ba3cd8c75164473219fabb479237ab6c89b7d5088db63a48d",
+    "source.json": "cb91a3e96953f2c80601e864ab178c46395d626b93d2edad81627c77cc4072cf"
+  },
+  "steps": 4,
+  "timeoutSeconds": 600,
+  "width": 512
+}

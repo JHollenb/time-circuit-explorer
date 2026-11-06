@@ -1,6 +1,6 @@
 # Measure the three conditioning states at the image consumer
 
-Status: frozen cycle-24 follow-up; not staged or executed. The [complete conditioning result](../conditioning-demand-consequence.md) preserves a pooled C improvement but includes H18 and row-level reversals. No state-similarity threshold certifies image significance. Stop intermediate precision work and evaluate the actual image-producing consumer.
+Status: executed in cycle25 as guarded job `job-36aca5f049e6`; see the [complete result](../conditioning-image-consequence.md). The new policy lowers PNG RMS 8.73% while MAE rises 8.11%, with more pixels worsened than improved. The [complete conditioning result](../conditioning-demand-consequence.md) preserves a pooled C improvement but includes H18 and row-level reversals. No state-similarity threshold certifies image significance. The frozen protocol below remains the historical plan.
 
 Freeze the full, old-compact and new-compact **E `[1,512,7680]`** arrays from `job-0dddb989549a`. Do not pass C: the native denoiser projects E again. All 512 rows remain, including padding. The raw prompt is the same already-scored teapot/compass/map description. This is a one-context numerical consequence assay, not new prompt or seed generalization.
 

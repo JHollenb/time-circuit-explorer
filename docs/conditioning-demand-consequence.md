@@ -57,7 +57,9 @@ The successful [request/custody](results/conditioning-demand/provenance.json) bi
 
 An independent [byte check](results/conditioning-demand/retained-array-verification.json) verifies **92 members / 263,695,137 bytes**, including all 84 complete H2..H27/E/C fields, the lexical source packet and compact reports. New arrays occupy **229,648,512 bytes near compute**. The public primary result is ten files / **2,596,570 bytes**, with lossless row compression and no local tensor/weight hydration. Saturn run/verify pass as stream-only instrument checks, with no terminal scientific claim or physical model-address join.
 
-## Next: actual pixel consequence
+## Follow-up: actual pixel consequence
+
+The [executed image assay](conditioning-image-consequence.md) now finds lower PNG RMS but higher MAE and more pixels worsened than improved. The reversal already appears before PNG encoding. The original plan and interpretation below describe the cycle24 decision; all later image computation remains paid.
 
 Astra reviewed the result and newest mechanism posts. Its [advice](results/conditioning-demand-evidence/advisor.json) selects the [fixed image-consumer assay](plans/conditioning-image-consequence.md): pass actual E through `prompt_embeds`, clone one presealed noise state across all three branches, and run the pinned four-step native FLUX/VAE consumer. C is already projected and must not be passed as prompt embeddings.
 
