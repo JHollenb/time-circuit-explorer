@@ -1,0 +1,96 @@
+{
+  "derived": {
+    "observations.jsonl": {
+      "method": "Lossless per-score projection from the collected report; not a new model measurement.",
+      "rows": 80,
+      "sha256": "8310ec4fd543b1b4032f16d822e1286eaea6784ae14ac15b0c2c0c1ebbaebce8"
+    }
+  },
+  "inventory": {
+    "bytes": 26004098,
+    "files": {
+      "candidate-seal.json": {
+        "bytes": 8864,
+        "sha256": "0c1065fe9b39cbb363107a0d1faea649ee302928a99c2cb3cb2527ec46ddda8b"
+      },
+      "candidates.npz": {
+        "bytes": 25494514,
+        "sha256": "a0e71019430be2499869a9c865a2eb59322fde6c5ebe32f6e1b640bc1112b96f"
+      },
+      "probabilities.npz": {
+        "bytes": 460002,
+        "sha256": "b5dd6d93064a7f2403942f3d26c153292d558237d876ab0c3a643ca75760c472"
+      },
+      "report.json": {
+        "bytes": 40718,
+        "sha256": "e443f9b6a13ca3f960b734cedab8871fbdb05010dd8b623d2f12fc43b27c4532"
+      }
+    }
+  },
+  "jobID": "job-4cad9f4cb662",
+  "payloadCustody": {
+    "declared": {
+      "sha256": "251f7abd59d69aaf26dfb2b8ba3bd92dccaa891f8564b03cd0ae068aa6cbe54e",
+      "size_bytes": 22962
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1793951893.4407651,
+      "sha256": "251f7abd59d69aaf26dfb2b8ba3bd92dccaa891f8564b03cd0ae068aa6cbe54e",
+      "size_bytes": 22962
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1793951893.3397198,
+      "sha256": "251f7abd59d69aaf26dfb2b8ba3bd92dccaa891f8564b03cd0ae068aa6cbe54e",
+      "size_bytes": 22962
+    }
+  },
+  "reportSHA256": "e443f9b6a13ca3f960b734cedab8871fbdb05010dd8b623d2f12fc43b27c4532",
+  "requestSHA256": "8240cc95b929dc23f58324352b6d5dfa8046f2a516acfca03c1afb246eed26df",
+  "result": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-4cad9f4cb662",
+      "job_log": {
+        "bytes": 246,
+        "sha256": "1a4b796b2d99299151f46e0aa70676239ae349098d4c986288f2c8af48b9b36b"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-4cad9f4cb662/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "elapsed_s": 1.23,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "251f7abd59d69aaf26dfb2b8ba3bd92dccaa891f8564b03cd0ae068aa6cbe54e",
+      "size_bytes": 22962
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 14.4,
+    "peak_vram_mb": 0.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-global-head-publication-v1",
+  "scope": "Verified collected subset with exact banks and sample states for head serving, or exact saved-only diagnostic metadata. Omitted arrays remain hash-bound in complete remote/local collections; no general prompt/image capability."
+}

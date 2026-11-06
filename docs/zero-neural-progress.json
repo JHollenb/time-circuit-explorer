@@ -1,25 +1,25 @@
 {
   "schema": "tce-zero-neural-goal-progress-v1",
-  "updatedAt": "2026-11-06T07:39:50Z",
+  "updatedAt": "2026-11-06T08:07:56Z",
   "objective": "let’s solve arbitrary prompt to image without any forward zero neural evals. Every few turns have Astra review the newest blog posts and get a big picture of where we are at so that we can find the best route forward",
   "status": "active",
-  "researchCycle": 3,
+  "researchCycle": 4,
   "previousGoalTurn": {
-    "classification": "no progress",
-    "evidence": "The immediately preceding answer clarified arbitrary-prompt support but changed no authoritative state. Revalidated the actual worktree and completed the next safe action: a state-fed receiver and saved-array defect attribution, not another status restatement."
+    "classification": "progress",
+    "evidence": "Cycle3 implemented and collected state-fed receiver job-2f0a52357bf1 and attribution job-15dea027e760; source/results pushed in4ec410b. Revalidated clean worktree before advancing the global consumer."
   },
   "thisGoalTurn": {
     "classification": "progress",
-    "evidence": "Implemented, executed and collected actual-state receiver job-2f0a52357bf1 and saved-array attribution job-15dea027e760; actual errors/cancellation changed next action to a controlled global attention consumer."
+    "evidence": "Implemented and collected complete-query head0 job-13617045e079 and matched V-delta address job-4cad9f4cb662; same-arithmetic closure near5e-14, actual-state global response measured, fair address controls changed interpretation. Astra reviewed newest posts and pivoted next action to raw-prompt lexical operand formation."
   },
   "requirements": {
     "arbitraryRawPromptCoverage": "open",
-    "zeroNeuralServing": "supplied context/dose RGB chart uses no neural evaluation; compiled MLP and receiver remove original dense projections/framework calls but retain learned coefficient/bank arithmetic; no arbitrary prompt capability",
-    "reusablePromptOperandFormation": "open; two global calibration directions leave substantial measured conditioning residual",
-    "reducedOwnStateContinuation": "actual emitted BF16 state feeds next joint2 image QKV affine reader without dose/native refresh; bounded supplied32row family, before head normalization/RoPE/attention; full autonomous continuation open",
+    "zeroNeuralServing": "supplied context/dose RGB chart uses no neural evaluation; compiled MLP/receiver/globalhead remove original dense projections/framework calls online but retain learned coefficient/bank/head-scale arithmetic; no arbitrary prompt capability",
+    "reusablePromptOperandFormation": "open; actual Qwen3 first-layer token-local prefix inspected; complete-vocabulary offline atom compiler proposed, not executed",
+    "reducedOwnStateContinuation": "actual emitted32row BF16 state drives reducedQKV/headnorm/RoPE and complete1536query joint2head0 read; explicit frozen1504row remainder, no dose/native refresh; output projection and full autonomous continuation open",
     "generalNonNeuralPixelDecoder": "open; interpolated supplied RGB images do not establish it",
     "independentPromptFaithfulnessAndQuality": "open",
-    "astraAdvisoryReview": "cycle3 math/code review and attribution advice completed; newest value-to-image-output-to-RGB evidence and OVC11 failures reviewed; full objective remains active"
+    "astraAdvisoryReview": "cycle4 completed: reviewed globalhead/matched-controls math/custody and newest query-bank,20block continuation and OVC13 posts; recommends raw-prompt encoder-atom frontier next"
   },
   "openPreference": {
     "question": "Reproduce FLUX prompt/seed behavior, or comparable prompt-faithful quality using another recovered computation?",
@@ -28,9 +28,24 @@
   "reviews": {
     "advisor": "astra_zero_forward_advisor",
     "model": "gpt-6-astra",
-    "lastCycle": 3,
-    "nextDueByCycle": 6,
+    "lastCycle": 4,
+    "nextDueByCycle": 7,
     "earlierIf": "new model evidence changes the route",
+    "cycle4Snapshots": [
+      {
+        "path": "../obsidian/blog/2026-11-05-233846-how-image-queries-and-memory-banks-compute-a-state-change.md",
+        "sha256": "ac48f4be597e6a6d9be94a53f6bc002775a7fa5c7f2453d24e240015f24a202e"
+      },
+      {
+        "path": "../obsidian/blog/2026-11-05-235313-following-a-state-change-through-twenty-model-blocks.md",
+        "sha256": "f8cc224d1bd242dc69b2b0aa1e9fe925143a0146b96fa4ba50b32c40b1ee51b1"
+      },
+      {
+        "path": "../obsidian/blog/2026-11-05-161109-the-one-assumption-that-would-make-model-computation-easier-to-understand.md",
+        "sha256": "69fd261948540b3224fb23e1de848be8388dd59a89de1f5533740571474c0d5a",
+        "observedBy": "Astra; mutable working post snapshot"
+      }
+    ],
     "cycle3Snapshots": [
       {
         "path": "../obsidian/blog/2026-11-05-230617-a-reader-can-predict-a-change-without-carrying-its-main-effect.md",
@@ -78,7 +93,9 @@
       "Keep actual variance/sqrt: polynomial inverse-root normalization can lose its amplitude bound; OVC11 retains3/64 nonfinite branches.",
       "Before advancing attention, use saved-array signed defect telescopes and BF16(full smooth projection) through the same final quantizer. Basis omission and numerical policy interact; retain both and per-row counter-trends.",
       "Distinguish zero framework calls, zero original dense projection evaluations and three learned reduced-map contractions. A compiled WDB bank remains learned computation; do not satisfy the arbitrary-prompt objective by renaming a linear network.",
-      "Attribution complete: advance a controlled global attention consumer; do not make BF16 discrepancy a discovery gate. All changed QKV must derive from state packets, changed queries must read the complete bank, and baseline probabilities/head outputs must share arithmetic."
+      "Attribution complete: advance a controlled global attention consumer; do not make BF16 discrepancy a discovery gate. All changed QKV must derive from state packets, changed queries must read the complete bank, and baseline probabilities/head outputs must share arithmetic.",
+      "Global consumer closes under shared mathematical arithmetic. P-C is propagated QKV approximation, not incremental-attention algorithm error or native Flash evidence. Matched V-delta permutations support address sensitivity only at this fixed head/context.",
+      "Pivot to raw-prompt operand formation. Compile the actual first Qwen3 token-local E/input-RMS/QKV/QK-RMS prefix offline, design for all151936 IDs, gather atoms for new raw-text combinations plus exact template/tokenizer/position policy. Bounded smoke is not coverage. No hidden-state prompt cache or native fallback. Contextual encoding, layers9/18/27 conditioning, denoising/decoder and strictzero-learned-computation remain open."
     ]
   },
   "rootReviewedSinceAdvisor": [
@@ -165,6 +182,44 @@
       "sampledSchedulerPeakRSSMB": 13.5,
       "midpointDeltaResidualOverDeltaCenteredState": 0.10176750999293589,
       "interpretation": "Both basis omission through quantization and combined native numerical policy remain material; negative cross terms prevent additive attribution."
+    },
+    {
+      "jobID": "job-13617045e079",
+      "requestSHA256": "766a85ffa1f712024f01d4a625b4f932702ba3bbac2a40c156ba21a885af3618",
+      "type": "actual-state reducedQKV drives complete1536query mathematical head0; fixed1504row remainder",
+      "newNeuralFrameworkCalls": 0,
+      "offlineOriginalDenseHeadProjections": 6,
+      "onlineLearnedReducedMaps": 3,
+      "onlineLearnedHeadScaleApplications": 2,
+      "onlineOriginalDenseProjections": 0,
+      "schedulerSeconds": 8.35,
+      "workerSeconds": 6.5734372437000275,
+      "compilerSeconds": 5.709928343072534,
+      "servingMedianSecondsRange": [0.0018014502711594105, 0.0018060379661619663],
+      "servingHighWaterRSSMiB": 64.58203125,
+      "compiledPayloadBytes": 8396288,
+      "rawSameArithmeticMaxAbs": 4.973799150320701e-14,
+      "roundedSameArithmeticChangedScalars": 0,
+      "midpointPairedHeadRawError": 0.28757700899653277,
+      "midpointPairedHeadRoundedError": 0.3513308012413335,
+      "rawReferenceResponseEnergyInFixedImageQueries": 0.9835995790392326,
+      "nativeAttentionParity": "unmeasured; references use shared mathematical attention and archived nativeCPU QKV"
+    },
+    {
+      "jobID": "job-4cad9f4cb662",
+      "requestSHA256": "8240cc95b929dc23f58324352b6d5dfa8046f2a516acfca03c1afb246eed26df",
+      "type": "saved-only matched V-delta address permutations; baseline carriers preserved, smooth+BF16 admission",
+      "newNeuralFrameworkCalls": 0,
+      "newOriginalDenseProjections": 0,
+      "weightBytesRead": 0,
+      "schedulerSeconds": 1.23,
+      "workerSeconds": 0.3746657515875995,
+      "parentHighWaterRSSMiB": 111.79296875,
+      "sampledSchedulerPeakRSSMB": 14.4,
+      "correctValueReadMaxAbs": 4.796163466380676e-14,
+      "correctRawEffectError": 0.2984489810459678,
+      "wrongAddressRawEffectErrors": [1.3292774331186028, 1.1510017782296433, 1.3357481482065587],
+      "interpretation": "Address sensitivity at one frozen read; exact proposed-delta power preserved, BF16 realized power/displacement retained; no semantic-address or arbitrary-prompt claim."
     }
   ],
   "failedRuns": [
@@ -210,6 +265,17 @@
     "saturnSweep": "both run and verify exit0 for primary and attribution; each target-streams-only, one stream/1152records, no terminal claim receipts or address joins",
     "goalStatus": "active; arbitrary raw prompts, global attention, general context, denoising and non-neural pixel decoding remain open"
   },
+  "globalHeadEvidence": {
+    "directory": "results/compiled-global-head",
+    "addressControlDirectory": "results/global-value-address",
+    "custody": "two guarded payload identities and complete before/after/local inventories verified;38,909,376byte20file head result and26,004,098byte4file control result",
+    "servingIsolation": "actual emitted state, no dose/native refresh; complete head fields seal before archived nativeQKV/prior-reader reference reads; selected rows zero in fixedbank",
+    "observations": "3072perquery head records and80losslessly projected control-score records; dependent, no prompt replication",
+    "tests": "30generator mechanics tests including4global/control transaction tests; tiny portablewrapper verified",
+    "saturnSweep": "head/control run and verify exit0; target-streams-only, no terminal claim receipts or address joins",
+    "semanticLimits": "oneheadonecontext, independent equation arithmetic not nativeFlash, no output projection/image; learned maps/head scales remain",
+    "goalStatus": "active; pivot next to raw-prompt input frontier"
+  },
   "workspaceRequests": [
     {
       "path": "../saturn/request.jsonl",
@@ -218,12 +284,14 @@
     }
   ],
   "nextCut": {
-    "status": "proposed, not launched; Astra reviewed direction",
-    "question": "Can the actual emitted-state QKV drive one complete global attention-head update without dose or native refresh?",
-    "plan": "plans/compiled-global-attention.md",
-    "source": "producer job-80041334757d, receiver job-2f0a52357bf1, attribution job-15dea027e760 and authenticated joint2 full fixed context",
-    "law": "unchanged queries combine fixed-source cached numerator/partition with changed-source terms;32 changed queries recompute over the complete updated bank",
-    "requirements": "inspect native headnorm/RoPE and full context custody; prespecifiedhead0 baseline/midpoint; same-arithmetic cache and direct-reference; noalpha/native refresh; all changed QKV from actual packets; seal complete head field before matched references; retain inherited/consumer errors as diagnostics, not accuracy gates"
+    "status": "source-grounded proposal, not launched; Astra reviewed complete-vocabulary direction",
+    "question": "Can raw prompts assemble the actual first text-encoder pre-RoPE operands from a complete token-local compiled vocabulary, without original projections or supplied prompt hidden states?",
+    "plan": "plans/raw-prompt-encoder-atoms.md",
+    "source": "FLUX2Klein Qwen3ForCausalLM config214b4c29a0d975e9fddf9994a5673f22cb2c4c5750352f9227c2c3251ebeab40; inspected installed pipeline and Qwen3 sources",
+    "law": "atom(t)=(E_t,QK-normalized Wq/k RMS(E_t),Wv RMS(E_t)); tokenize raw string, gather bytokenID, applyposition transform",
+    "requirements": "bind all tokenizer/template assets and encoder weight ranges; preserveQwen FP32norm->BF16cast->gamma order; design151936IDs with explicit smoke/full coverage, no fallback or prompt cache;512token policy, held raw strings and positions; seal before nativeprefix refs; keep later encoding/denoising/decoder open",
+    "estimatedFullBF16TableBytes": 2644901888,
+    "estimatedOfflineProjectionMACs": 2389746647040
   },
   "alternativeDiagnostic": {
     "status": "proposed, not launched; lower priority after Astra review",

@@ -1,0 +1,47 @@
+{
+  "cache": {
+    "path": "/mnt/hdd8tb/mrun-work/job-13617045e079/response-result/attention-cache.npz",
+    "sha256": "2bc750b639545dadc568f0aa0acd4699c926be6d85e84cf0536df1d16fa13741"
+  },
+  "eps": 1e-06,
+  "fixed": {
+    "path": "/mnt/hdd8tb/mrun-work/job-13617045e079/response-result/fixed-head.npz",
+    "sha256": "bfd7a66c8f675388f84a3bc01cb15b286b60c2d44bf3cf32808621f2a0278dbf"
+  },
+  "packets": [
+    {
+      "id": "7923e59c3e78a497",
+      "path": "/mnt/hdd8tb/mrun-work/job-2f0a52357bf1/response-result/state-7923e59c3e78a497.npy",
+      "sha256": "9d8559c996e89d899f95588045ec4aebd9f38d54c20ccc26cf1cf6bd8b53610c",
+      "shape": [
+        1,
+        32,
+        3072
+      ]
+    },
+    {
+      "id": "22185a19edaa2661",
+      "path": "/mnt/hdd8tb/mrun-work/job-2f0a52357bf1/response-result/state-22185a19edaa2661.npy",
+      "sha256": "2c10369d3b924205af6a4bad39c9907d3b06665d8ab906451cd66651d9f1cc26",
+      "shape": [
+        1,
+        32,
+        3072
+      ]
+    }
+  ],
+  "reader": {
+    "path": "/mnt/hdd8tb/mrun-work/job-13617045e079/response-result/reader-head.npz",
+    "sha256": "3449659556f8bcc3f20f2b11dbc6fba8baafd81859022cad0d28c501d3a22e48"
+  },
+  "repeats": 31,
+  "scope": "Actual32-row BF16 producer state -> reduced QKV -> one complete joint2 head0 read. Frozen supplied remainder:512text+992image rows;32changed queries read all1536keys. FP64 mathematical attention consumer with explicit BF16 boundaries; not native Flash parity, raw-prompt generation, output projection, denoising or RGB.",
+  "sourceRoots": [
+    "/mnt/hdd8tb/mdb/research/job-f0cd6a040823/binding-minimal-result",
+    "/mnt/hdd8tb/mdb/research/job-5500509e5fdd/binding-minimal-result",
+    "/mnt/big/llm-models/FLUX.2-klein-4B",
+    "/mnt/hdd8tb/mrun-work/job-80041334757d/response-result",
+    "/mnt/hdd8tb/mrun-work/job-2f0a52357bf1/response-result",
+    "/mnt/hdd8tb/mrun-work/job-13617045e079"
+  ]
+}

@@ -1,6 +1,6 @@
 # Let the emitted state change a global attention read
 
-Status: proposed after the [state-reader and signed-attribution results](../compiled-state-reader.md). No global-consumer run is claimed. The arbitrary-prompt objective remains unchanged.
+Status: implemented and measured in job `job-13617045e079`, with matched value-delta address diagnostics in `job-4cad9f4cb662`. See [results and limits](../compiled-global-head.md). The design below records intended scope; the arbitrary-prompt objective remains unchanged.
 
 The smallest first organism is one prespecified head0, baseline and midpoint, with its complete1536-query head field. Head0 is a mechanical choice, not a claim that this head carries the late color effect observed at another clock. Additional heads/doses can follow once this instrument's geometry and arithmetic are qualified.
 

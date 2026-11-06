@@ -20,6 +20,8 @@ The [compiled MLP write](docs/compiled-mlp-write.md) eliminates original dense p
 
 The [compiled state reader](docs/compiled-state-reader.md) now consumes that writer's actual BF16 state without a dose input, recovering coordinates and the next layer's Q/K/V affines in about .93ms for32rows. It uses learned reduced banks, with native and per-row errors retained. A saved-array follow-up separates basis omission, rounding, numerical policy and inherited writer error. This is one supplied-context edge, before attention.
 
+The [global-head continuation](docs/compiled-global-head.md) carries those actual-state operands through head0's complete1536-query attention read in about1.8ms. Incremental and full mathematical attention have identical BF16 outputs; paired prediction error remains35.1% after rounding. Matched value-delta controls expose address sensitivity. Frozen context, learned maps and independent-arithmetic limits remain explicit; the next proposed cut starts at [raw-prompt encoder operands](docs/plans/raw-prompt-encoder-atoms.md).
+
 ## Run locally
 
 Requires Node.js 20 or newer. There are no package dependencies to install.

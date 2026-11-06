@@ -1,0 +1,135 @@
+{
+  "head": 0,
+  "headDim": 128,
+  "newNativeFrameworkCalls": 0,
+  "offlineOriginalDensePreparation": true,
+  "parent": {
+    "boundary": {
+      "contextPage": {
+        "path": "/mnt/hdd8tb/mdb/research/job-5500509e5fdd/binding-minimal-result/store/pages/8dfcda9c1b88d9e75aa94be0a9aecb67767947741e8b17392d66e21a4851616c.json",
+        "sha256": "8dfcda9c1b88d9e75aa94be0a9aecb67767947741e8b17392d66e21a4851616c"
+      },
+      "cut": {
+        "path": "/mnt/hdd8tb/mdb/research/job-5500509e5fdd/binding-minimal-result/store/cuts/2f1dbab51da6022302634c5c7d26253cd759fe334341ed8eaa8a23b244599b8a.json",
+        "sha256": "17a604eab8ac0cc2473d82e2b803eca023c0d14a55292316b2000131f6e3077c"
+      },
+      "executionPoint": {
+        "edge": "before",
+        "family": "flux2-klein",
+        "index": 2,
+        "local_clock": 2,
+        "logical_step": 2,
+        "next_operation": "joint_block.2",
+        "operator": "joint",
+        "phase": "joint"
+      }
+    },
+    "collectionSHA256": "efe594b1327eb5375cd72ccaaa27679e980c5cfcdf648ecf1a1f3e0c19fc241f",
+    "contextSource": {
+      "custody": {
+        "archive_bytes": 400267259,
+        "archive_sha256": "adf597341e87dfa8e86ac217a47e852afd0dda8d4d89b975daf6d2b7b555b0c4",
+        "files": 707,
+        "job_id": "job-5500509e5fdd",
+        "mechanics_status": "verified",
+        "model_reexecution": false,
+        "part_count": 48,
+        "request_sha256": "6a596b25489852d247326811fac384dcc1a2f889b1fac788b510d40022474b38",
+        "schema": "mdb-flux-family-custody-verification-v1"
+      },
+      "inventorySHA256": "77d7fd65c12da5bbe808c09b07fa9cde5b785dd1d9d1b6649bf576a5c1f28ad0",
+      "payloadCustody": {
+        "declared": {
+          "sha256": "e02c5f327311b241a46698141974f13544a5f486e98d7292c10094aad777abce",
+          "size_bytes": 3156606
+        },
+        "executed": {
+          "host": "beast",
+          "reported_ts": 1793917486.7374833,
+          "sha256": "e02c5f327311b241a46698141974f13544a5f486e98d7292c10094aad777abce",
+          "size_bytes": 3156606
+        },
+        "required": true,
+        "sealed": {
+          "sealed_ts": 1793917486.5465682,
+          "sha256": "e02c5f327311b241a46698141974f13544a5f486e98d7292c10094aad777abce",
+          "size_bytes": 3156606
+        }
+      },
+      "remoteRoot": "/mnt/hdd8tb/mdb/research/job-5500509e5fdd/binding-minimal-result",
+      "reportSHA256": "8910559cf5e53a8db3f48cbb0a084a4434cab39e83f07cd43b1f7d0873617225"
+    },
+    "jobID": "job-2f0a52357bf1",
+    "payloadCustody": {
+      "declared": {
+        "sha256": "92f5f500d6c87404cbc44604412f39e03f3f7a8bacf4948980c45d54c68676c5",
+        "size_bytes": 32478
+      },
+      "executed": {
+        "host": "beast",
+        "reported_ts": 1793950318.3938527,
+        "sha256": "92f5f500d6c87404cbc44604412f39e03f3f7a8bacf4948980c45d54c68676c5",
+        "size_bytes": 32478
+      },
+      "required": true,
+      "sealed": {
+        "sealed_ts": 1793950318.3025029,
+        "sha256": "92f5f500d6c87404cbc44604412f39e03f3f7a8bacf4948980c45d54c68676c5",
+        "size_bytes": 32478
+      }
+    },
+    "requestSHA256": "f721133d0d1e444f25d62d5e3b3d29eb7d6b2428dafde68b7e2a8813bf0b1933"
+  },
+  "requestSHA256": "766a85ffa1f712024f01d4a625b4f932702ba3bbac2a40c156ba21a885af3618",
+  "schema": "tce-global-head-request-v1",
+  "scope": "Actual32-row BF16 producer state -> reduced QKV -> one complete joint2 head0 read. Frozen supplied remainder:512text+992image rows;32changed queries read all1536keys. FP64 mathematical attention consumer with explicit BF16 boundaries; not native Flash parity, raw-prompt generation, output projection, denoising or RGB.",
+  "selectedRows": [
+    6,
+    53,
+    149,
+    183,
+    200,
+    205,
+    231,
+    244,
+    318,
+    344,
+    371,
+    417,
+    426,
+    436,
+    462,
+    531,
+    533,
+    541,
+    584,
+    600,
+    606,
+    737,
+    744,
+    757,
+    790,
+    795,
+    863,
+    864,
+    925,
+    938,
+    942,
+    956
+  ],
+  "sourceHashes": {
+    "compile.json": "4464147d41ce67b1eed00b393b7f80a9455b01c24ee837d1a3f3d994f48e93f9",
+    "evaluation.json": "aad3b475c17f5e86f8743f667e23e88a61769ec5a8f3e98b4b83413ffb7099ee",
+    "global_attention.py": "195c843c9adf576b5048cc21e27dc97b14fe4b634aac5f1cd1e45ad0ef1c059b",
+    "global_attention_study.py": "1e78f675482f85a18b2573ce4c97930e2b8e1582625b8f2585d4291a6137c2a8",
+    "mlp_polynomial.py": "0f5495f39e936b945e8698dac27df270f11f80eeb03a3ae20f94771decf4b38a",
+    "packet-source.json": "2e785fa9d893bc7a071ff0b3cf3e0b484cc5005aa80ebf481de3fb5e1e4ab2f6",
+    "prompt_closure.py": "aece165a6f0eb7d1353d9e159fa84bb9f247be6413e27b45e98a1c9a7dd3f54e",
+    "response_chart.py": "1d0febad9df24642badb474a521ee819ffb667b4cc22269a8603d36fee22589d",
+    "response_study.py": "4f1213a1b37139454f1358cc66a1fa6e98c715a6d21a398a95e1d2345aabc78c",
+    "retrieve_weights.py": "7cef6f04829dc8638718c25cffa9e3e5ca86703e19cb770d57aa516b719677ae",
+    "state_receiver.py": "b62f90180855db0935fb91d97f6f24afdcdda8a6b0c65d1d371aff10a859973f",
+    "state_receiver_study.py": "cc86dcd0cc1350c86b21b410b778a4f427c9972738b54f9d7be4caaec460af43"
+  },
+  "timingRepeats": 31
+}

@@ -90,7 +90,7 @@ The [next-reader experiment](../docs/compiled-state-reader.md) recovers coordina
 
 `state_receiver_study.py stage|submit|collect` runs the source-bound compiler, fresh state-only serving and six post-seal native CPU references in one finite mrun lease. `state_receiver_native.py` is deliberately a separate entry point: serving helpers prohibit importing neural frameworks. `state_reader_attribution.py stage|submit|collect` subsequently analyzes only saved arrays, including a same-final-quantizer full-projection counterfactual.
 
-The checked-in reader needs NumPy and one [1,32,3072] array of FP32-widened BF16 state bytes:
+The checked-in reader needs NumPy/Pillow and one [1,32,3072] array of FP32-widened BF16 state bytes:
 
 ```bash
 python generator/render_state_receiver.py \
@@ -100,6 +100,21 @@ python generator/render_state_receiver.py \
 ```
 
 The supplied midpoint packet reproduces this bounded input. Accuracy for arbitrary states, contexts or prompts is unmeasured. Output is Q/K/V and residual diagnostics, not an image.
+
+## Compiled global head
+
+The [global-head experiment](../docs/compiled-global-head.md) advances those state-fed Q/K/V through learned head normalization, captured RoPE and complete1536-query head0 attention. Its fixed-source cache excludes all32 changed rows; changed queries read every updated key. The same-arithmetic full calculation verifies the partition identity, while prediction errors and region/row counter-trends remain separate.
+
+```bash
+python generator/render_global_head.py \
+  --bundle docs/results/compiled-global-head \
+  --state docs/results/compiled-global-head/state-22185a19edaa2661.npy \
+  --output artifacts/my-global-head
+```
+
+The portable utility requires NumPy/Pillow and returns a[1536,128] head field plus computational controls. It accepts this supplied state geometry, not a raw prompt. `global_attention_study.py stage|submit|collect` handles the finite source-bound experiment; `global_value_address.py` runs the saved-only matched value-delta address diagnostic. `publish_global_attention.py` preserves collected metadata/banks and labels derived score projections and omitted arrays.
+
+No neural framework runs in these experiments. Offline fixed-context preparation still evaluates six selected original-weight projections; online state evaluation uses three reduced learned maps and two learned head scales. There is no native Flash/output-projection/decoder claim. The [next input-frontier plan](../docs/plans/raw-prompt-encoder-atoms.md) targets the real Qwen3 token-local prefix, with complete-vocabulary design and explicit smoke coverage.
 
 ```sh
 ../common/bin/common exec python generator/render_compiled_mlp.py \

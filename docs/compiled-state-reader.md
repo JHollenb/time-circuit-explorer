@@ -158,7 +158,7 @@ The CPU reference profile is Torch 2.13.0+cu130, NumPy 2.5.4, Python 3.14.6, AVX
 
 ## Reproduce the bounded reader
 
-Only NumPy is needed by the reader. The public bundle includes the exact emitted midpoint state for convenience; its explanatory dose label is not passed to serving.
+The reader requires NumPy and the inherited import guard's Pillow utility dependency. The public bundle includes the exact emitted midpoint state for convenience; its explanatory dose label is not passed to serving.
 
 ```bash
 python generator/render_state_receiver.py \
