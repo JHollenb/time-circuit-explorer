@@ -1,0 +1,206 @@
+{
+  "claimBoundary": "Retrospective source-only witness selector on supplied ports, original learned consumer offline, old frozen oracle retained. Not freshrawprompt/fullencoder or strictzero-neural image.",
+  "completeCollectedInventory": {
+    "bytes": 7736661,
+    "files": {
+      "compile-receipt.json": {
+        "bytes": 1569515,
+        "sha256": "f34eb8d5699a9f7e7d0410102c63e91949bf0db594d8ab05fbd97ac82ce747b0"
+      },
+      "compile-source.json": {
+        "bytes": 332,
+        "sha256": "ea49d6ec2b969e0d970548bfe726d5a486744b187aaf4e245ef7e9c921d91693"
+      },
+      "membership-diagnostics.json": {
+        "bytes": 11894,
+        "sha256": "31467ce55637d80f4cd0d20f8ed778c718e65263a96b3da0f6ad4984c11b0513"
+      },
+      "observations.jsonl": {
+        "bytes": 4709998,
+        "sha256": "524cc44be8f6fd5785829fcb1b59eb618ddc173bbf217b9fce7d79eab0e78a4a"
+      },
+      "prediction-seal.json": {
+        "bytes": 349076,
+        "sha256": "79bdbd89432b359961dbbe62fe2fa6f641eb600600408c31c73cff559519d8fa"
+      },
+      "reference-receipt.json": {
+        "bytes": 8156,
+        "sha256": "5977f278c52167ff752fffc02e0128e541ba4b7b0ccbbd12498a03ba59d6c552"
+      },
+      "report.json": {
+        "bytes": 719036,
+        "sha256": "462b2af3a126d187748d99adf2df9f177949bd48264d50d997f7103a5e81e01b"
+      },
+      "request.json": {
+        "bytes": 3690,
+        "sha256": "ea818d74dca3bc75de47f25327a08669fff291aed832e80d70654db22d7838a0"
+      },
+      "serve.json": {
+        "bytes": 709,
+        "sha256": "5dcb7ce2504c4999640af0e7c4997c6f222518647dab9f54710157bf27aef9f0"
+      },
+      "source.json": {
+        "bytes": 24897,
+        "sha256": "3818671e758ce79b7f5bd10a7b7e4487e188f7d00bb316852a4c3dede53eb810"
+      },
+      "support-diagnostics.json": {
+        "bytes": 339358,
+        "sha256": "8ef103802eed2bb265f8bed8f7a8aef729076c2c84a7137f53b7cad0f4d589c0"
+      }
+    }
+  },
+  "jobID": "job-614222d36ca1",
+  "losslessStreamTransports": [
+    {
+      "published": "observations.jsonl.gz",
+      "publishedBytes": 555832,
+      "publishedSHA256": "fffa3b91503db7999c9678806ca41bfde0e0099dede36aa8705fc8cf7d8e79b3",
+      "source": "observations.jsonl",
+      "sourceBytes": 4709998,
+      "sourceSHA256": "524cc44be8f6fd5785829fcb1b59eb618ddc173bbf217b9fce7d79eab0e78a4a"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "ed55e8c8499b36e05859d1cc2122d957b4cd193cf4ecb3cdedab76d6a7c610ce",
+      "size_bytes": 63193
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1793971096.9225924,
+      "sha256": "ed55e8c8499b36e05859d1cc2122d957b4cd193cf4ecb3cdedab76d6a7c610ce",
+      "size_bytes": 63193
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1793971096.834417,
+      "sha256": "ed55e8c8499b36e05859d1cc2122d957b4cd193cf4ecb3cdedab76d6a7c610ce",
+      "size_bytes": 63193
+    }
+  },
+  "publication": "All compact reports/lossless observations retained; full source/witness/support/state/consumer arrays stay near compute with independent byte checks.",
+  "remoteResultRoot": "/mnt/hdd8tb/mrun-work/job-614222d36ca1/response-result",
+  "requestSHA256": "8d8e9c3e87dbdb997ea007e183dd2bc1f35f43bc93bc67db0f8ebc5767aa3c79",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-614222d36ca1",
+      "job_log": {
+        "bytes": 598,
+        "sha256": "00555eff32d0b90c9936a29ca175239874af5cd9a1b12e01065e4a96d82bd231"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-614222d36ca1/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "python",
+        "-u",
+        "source_witness_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-614222d36ca1",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-614222d36ca1/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1793971096.9123225
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1793971096.940934
+        },
+        {
+          "name": "process.launch",
+          "ts": 1793971096.9516606
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1793971096.994647
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1793971159.3357522
+        },
+        {
+          "name": "finished",
+          "ts": 1793971159.3567588
+        }
+      ]
+    },
+    "elapsed_s": 62.53,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "ed55e8c8499b36e05859d1cc2122d957b4cd193cf4ecb3cdedab76d6a7c610ce",
+      "size_bytes": 63193
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 1391.6,
+    "peak_vram_mb": 0.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-source-witness-public-v1"
+}

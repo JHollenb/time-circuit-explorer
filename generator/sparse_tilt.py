@@ -78,11 +78,16 @@ def read_state(state,x,index,asset):
 def core_bytes(d,rank,budget):return rank*(16+2*d*8+budget*(16+4*d))+16
 
 
-def stream(p,asset,budget,state=None,readout=read_state):
+def stream(p,asset,budget,state=None,readout=read_state,advance_fn=advance,transition_tag=None):
     q,k,v=[floats(p[key]).astype(float) for key in ['q','k','v']];n,d=q.shape;rank=len(asset['landmarks'])
     if q.shape!=k.shape or q.shape!=v.shape or asset['landmarks'].shape!=(rank,d) or asset['metricRoot'].shape!=(d,d) or asset['keyCenter'].shape!=(d,):raise ValueError('Sparse operand shapes differ')
     if not all(np.isfinite(a).all() for a in [q,k,v,asset['landmarks'],asset['metricRoot'],asset['keyCenter']]):raise ValueError('Nonfinite sparse operand')
     state=new_state(d,rank,budget) if state is None else copy_state(state)
+    if transition_tag is None:
+        if 'transitionIdentity' in state:raise ValueError('Sparse transition differs')
+    else:
+        if state.get('transitionIdentity',transition_tag)!=transition_tag or (state['count'] and 'transitionIdentity' not in state):raise ValueError('Sparse transition differs')
+        state['transitionIdentity']=transition_tag
     tag=hashlib.sha256(str(budget).encode()+b''.join(np.asarray(asset[key],dtype='<f8').tobytes() for key in ['landmarks','metricRoot','keyCenter'])).hexdigest()
     if state.get('assetIdentity',tag)!=tag:raise ValueError('Sparse state source differs')
     state['assetIdentity']=tag
@@ -91,7 +96,7 @@ def stream(p,asset,budget,state=None,readout=read_state):
     if p['mask'].shape!=(n,) or np.any((p['mask']!=0)&(p['mask']!=1)):raise ValueError('Sparse binary mask differs')
     x=q/d**.25;indices,distances=nearest(x,asset);out=[];baseline=[];trace=[];supports=[]
     for i in range(n):
-        if p['mask'][i]:advance(state,p['k'][i],p['v'][i],int(p['positions'][i]),asset)
+        if p['mask'][i]:advance_fn(state,p['k'][i],p['v'][i],int(p['positions'][i]),asset)
         state['steps']+=1;a=int(indices[i]);h,H,row=readout(state,x[i],a,asset);out.append(h);baseline.append(H)
         finite=bool(np.isfinite(h).all());violation=0. if not state['count'] else max(0.,float(np.max(h-state['hi'])),float(np.max(state['lo']-h))) if finite else np.nan
         trace.append({**row,'nearestIndex':a,'sourceDistanceSquared':float(distances[i]),'hullViolation':violation,

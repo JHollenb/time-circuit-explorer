@@ -1,0 +1,295 @@
+{
+  "checks": [
+    {
+      "anchorParentStateFieldMismatchesByHead": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchorParentSupportMismatches": 0,
+      "anchorParentWordMismatches": 0,
+      "directCentroidMaxAbsClosure": {
+        "anchor": 6.661338147750939e-16,
+        "witness": 9.228728892196614e-16
+      },
+      "id": "crane-behind",
+      "parentRouteMismatches": 0,
+      "routeMismatches": 0
+    },
+    {
+      "consumerParentWordMismatches": {
+        "anchor": {
+          "mlp": 0,
+          "projection": 0,
+          "residual": 0,
+          "rms": 0,
+          "state": 0
+        },
+        "exact": {
+          "mlp": 0,
+          "projection": 0,
+          "residual": 0,
+          "rms": 0,
+          "state": 0
+        },
+        "zero": {
+          "mlp": 0,
+          "projection": 0,
+          "residual": 0,
+          "rms": 0,
+          "state": 0
+        }
+      },
+      "id": "crane-behind"
+    },
+    {
+      "anchorParentStateFieldMismatchesByHead": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchorParentSupportMismatches": 0,
+      "anchorParentWordMismatches": 0,
+      "directCentroidMaxAbsClosure": {
+        "anchor": 7.216449660063518e-16,
+        "witness": 6.661338147750939e-16
+      },
+      "id": "crane-before",
+      "parentRouteMismatches": 0,
+      "routeMismatches": 0
+    },
+    {
+      "consumerParentWordMismatches": {
+        "anchor": {
+          "mlp": 0,
+          "projection": 0,
+          "residual": 0,
+          "rms": 0,
+          "state": 0
+        },
+        "exact": {
+          "mlp": 0,
+          "projection": 0,
+          "residual": 0,
+          "rms": 0,
+          "state": 0
+        },
+        "zero": {
+          "mlp": 0,
+          "projection": 0,
+          "residual": 0,
+          "rms": 0,
+          "state": 0
+        }
+      },
+      "id": "crane-before"
+    }
+  ],
+  "parameters": {
+    "float64ResidentMatrixBytes": 681579520,
+    "numericPolicy": "FP64 mathematical attention/output/MLP contractions on BF16 operands, explicit BF16 boundaries; FP32 RMS variance and SiLU. Shared equation reference, not nativeCUDA/Flash/Torch numerical parity.",
+    "parameterPayloadBytes": 170398720,
+    "source": {
+      "assets": {
+        "text_encoder/config.json": "214b4c29a0d975e9fddf9994a5673f22cb2c4c5750352f9227c2c3251ebeab40",
+        "text_encoder/model.safetensors.index.json": "06b3d5319b6d76d1a4a2433419180016cfd54ed62d086a5e6567a809f8c82634",
+        "tokenizer/added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+        "tokenizer/chat_template.jinja": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+        "tokenizer/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "tokenizer/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "tokenizer/tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "tokenizer/tokenizer_config.json": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+        "tokenizer/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      },
+      "modelRoot": "/mnt/big/llm-models/FLUX.2-klein-4B",
+      "nativeSourceSHA256": "fbdcfeeb1b54135ca67ba7df924da92f4b264e1252b517eea2de989289ebaeab",
+      "pipelineSourceSHA256": "8a57a8a7f1c22fc0c5bc5d3fd1bd9bc76c17c1f4d6644cc73370651dd955358e",
+      "tensors": {
+        "e": "model.embed_tokens.weight",
+        "input": "model.layers.0.input_layernorm.weight",
+        "k": "model.layers.0.self_attn.k_proj.weight",
+        "kn": "model.layers.0.self_attn.k_norm.weight",
+        "q": "model.layers.0.self_attn.q_proj.weight",
+        "qn": "model.layers.0.self_attn.q_norm.weight",
+        "v": "model.layers.0.self_attn.v_proj.weight"
+      },
+      "weightFile": {
+        "bytes": 4967215360,
+        "path": "text_encoder/model-00001-of-00002.safetensors",
+        "sha256": "8c0506e7f4936fa7e26183a4fd8da4e2bdbc5990ba64ae441f965d51228f36ea"
+      }
+    },
+    "sourceShardBytesHashed": 4967215360,
+    "tensors": [
+      {
+        "header": {
+          "data_offsets": [
+            932587776,
+            953559296
+          ],
+          "dtype": "BF16",
+          "shape": [
+            2560,
+            4096
+          ]
+        },
+        "key": "output",
+        "payloadBytes": 20971520,
+        "payloadSHA256": "619b512cd8923f4f7fe0aba1aa51182f15295ea3f4b5e994d2f96cc28bd87d1b",
+        "tensor": "model.layers.0.self_attn.o_proj.weight"
+      },
+      {
+        "header": {
+          "data_offsets": [
+            927339520,
+            927344640
+          ],
+          "dtype": "BF16",
+          "shape": [
+            2560
+          ]
+        },
+        "key": "gamma",
+        "payloadBytes": 5120,
+        "payloadSHA256": "1b62e6af917bfad75a9271a8d89a8d565517abbedef85a68cbd5f4ba3a0a0584",
+        "tensor": "model.layers.0.post_attention_layernorm.weight"
+      },
+      {
+        "header": {
+          "data_offsets": [
+            827724800,
+            877532160
+          ],
+          "dtype": "BF16",
+          "shape": [
+            9728,
+            2560
+          ]
+        },
+        "key": "gate",
+        "payloadBytes": 49807360,
+        "payloadSHA256": "fe440e8f6cc7c56de2d5a97fef5ee04f65388dd8460821ef2ed1645c39c6a47a",
+        "tensor": "model.layers.0.mlp.gate_proj.weight"
+      },
+      {
+        "header": {
+          "data_offsets": [
+            877532160,
+            927339520
+          ],
+          "dtype": "BF16",
+          "shape": [
+            9728,
+            2560
+          ]
+        },
+        "key": "up",
+        "payloadBytes": 49807360,
+        "payloadSHA256": "9a957c5a0f2bd6a240eaf6e5de83dd91a58ed1acd1829fcb72ab95aa7624181d",
+        "tensor": "model.layers.0.mlp.up_proj.weight"
+      },
+      {
+        "header": {
+          "data_offsets": [
+            777917440,
+            827724800
+          ],
+          "dtype": "BF16",
+          "shape": [
+            2560,
+            9728
+          ]
+        },
+        "key": "down",
+        "payloadBytes": 49807360,
+        "payloadSHA256": "edf534353405dab5179894b9641d12c6e53c4c6a8100b8c079257a9f3584945f",
+        "tensor": "model.layers.0.mlp.down_proj.weight"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "id": "crane-behind",
+      "kind": "support-diagnostics",
+      "path": "/mnt/hdd8tb/mrun-work/job-614222d36ca1/reference-work/crane-behind-support-diagnostics.npz",
+      "sha256": "b29d027e6e2170cf582a810afc6ea6ccd1d816c3273fa5636127ad1d45ac8562"
+    },
+    {
+      "id": "crane-behind",
+      "kind": "consumers",
+      "path": "/mnt/hdd8tb/mrun-work/job-614222d36ca1/reference-work/crane-behind-consumers.npz",
+      "sha256": "efe1c5e127453f1f6f31332a5952855f2582aeb80aa0a84ec6b7eb214be54cf8"
+    },
+    {
+      "id": "crane-before",
+      "kind": "support-diagnostics",
+      "path": "/mnt/hdd8tb/mrun-work/job-614222d36ca1/reference-work/crane-before-support-diagnostics.npz",
+      "sha256": "ba6c33b991df3c1cc4ea8b31b84ea73f72dd7411804993de29a2664ce767fdfd"
+    },
+    {
+      "id": "crane-before",
+      "kind": "consumers",
+      "path": "/mnt/hdd8tb/mrun-work/job-614222d36ca1/reference-work/crane-before-consumers.npz",
+      "sha256": "2ebfa9c9e46e31d9431978b59b0220c0757670d7ef2820e254b82c343b7e8213"
+    }
+  ],
+  "scope": "Post-seal fullprefix support diagnostics/original learned fullblock. Old oracle-centroid banks/consumers retained, no rerank or new oracle consumer."
+}

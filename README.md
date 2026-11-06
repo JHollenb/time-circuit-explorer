@@ -34,6 +34,8 @@ The [sparse joint-tilt experiment](docs/sparse-joint-tilt.md) replaces that cova
 
 The [matched tail-centroid experiment](docs/tail-centroid-tilt.md) runs that comparison at identical state and selected keys. Eligible paired state error improves 126.3%→96.0%; the frozen oracle slightly worsens 41.8%→43.7%. This isolates a useful tail-law change on the saved pair while retaining the remaining support gap and original learned consumer costs.
 
+The [source-witness selector](docs/source-witness-support.md) tests four frozen query witnesses per anchor under that same read. Active state response improves slightly, while padding and overall response worsen. The evidence preserves source compilation, additional storage/work and all countertrends; the next diagnostic separates query coverage from the key-ranking objective. Arbitrary-prompt zero-neural images remain open.
+
 The [source-only landmark reader](docs/source-landmark-context.md) supplies an explicit rule for eight new strings, with64live positive prefix statistics. Its initial mixture is inaccurate. Saved-only routing/capacity diagnostics distinguish excessive smoothing from the added restriction of fixed convex response mixing; target-assisted fitted weights are not serving assets. Contextual/image completion remains open.
 
 The [compiled state reader](docs/compiled-state-reader.md) now consumes that writer's actual BF16 state without a dose input, recovering coordinates and the next layer's Q/K/V affines in about .93ms for32rows. It uses learned reduced banks, with native and per-row errors retained. A saved-array follow-up separates basis omission, rounding, numerical policy and inherited writer error. This is one supplied-context edge, before attention.

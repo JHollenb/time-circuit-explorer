@@ -1,6 +1,6 @@
 # Source query witnesses for a fixed support budget
 
-Status: **proposed after cycle 13 and Astra review; not staged or measured**. The [matched tail-law result](../tail-centroid-tilt.md) improves eligible paired state error to 95.96%, but the frozen oracle reaches 43.67% under the same centroid reader. Test selection geometry while keeping that reader, four-key budget, 64 anchors per head and nearest-source routing fixed.
+Status: **implemented and measured in cycle 14**. The [result](../source-witness-support.md) slightly improves active state error32.85%→31.29% but worsens overall95.96%→107.98%, with lower correction-mass capture. Original plan follows. The [matched tail-law result](../tail-centroid-tilt.md) improves eligible paired state error to 95.96%, but the frozen oracle reaches 43.67% under the same centroid reader. Test selection geometry while keeping that reader, four-key budget, 64 anchors per head and nearest-source routing fixed.
 
 Reconstruct the parent's existing source query candidate pool from retained lexical atoms and candidate identities. Verify its original anchor identities/values. Assign candidates to the existing anchors using the existing key-covariance metric, with canonical identity/position ties. Current prompt queries and contextual targets must not enter compilation.
 

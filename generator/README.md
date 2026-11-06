@@ -26,6 +26,8 @@ The [sparse joint-tilt study](../docs/sparse-joint-tilt.md) tests a positive top
 
 The [matched tail-centroid study](../docs/tail-centroid-tilt.md) reuses the previous eligible/oracle support sets without reranking. `centroid_tilt_study.py stage|submit|collect` seals its own eligible unit/centroid banks before frozen-oracle/original-consumer work. `publish_centroid_tilt.py verify|publish` checks retained bytes. It improves eligible state response at unchanged core bytes but remains retrospective component research, not an arbitrary-prompt image backend.
 
+The [source-witness study](../docs/source-witness-support.md) compiles source-cell witnesses from retained lexical atoms. `source_witness_study.py stage|submit|collect` compares own-state anchor/witness selectors under the same centroid read, sealing both before reference/consumer work. `publish_source_witness.py verify|publish` also authenticates touched atom shards. The result is heterogeneous and overall worse; this is retrospective component research, not an arbitrary-prompt backend.
+
 ## Generate from the website
 
 From this repository in the domains workspace, with the configured mrun client and reachable fleet:
