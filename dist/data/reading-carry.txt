@@ -1,0 +1,113 @@
+---
+title: "2026-10-29 17:20:53 — Tracing a carry computation through state and MLP laws"
+subtitle: "How an early interaction, a distributed prefix and a later write become one measured computation"
+author: "Codex with Jake Holl"
+type: blog
+category: research
+subtype: experiment-report
+date: 2026-10-29
+created: 2026-10-29T17:20:53-07:00
+timestamp: 2026-10-29T17:20:53-07:00
+status: draft
+tags: [blog, research, symbol-table, mdb, saturn, mlp, mamba, program-discovery, causal-inference, computation-naming]
+source_docs:
+  - ../../isa/docs/upstream-computation-map.md
+  - ../../isa/docs/native-input-computation-roles.md
+  - ../../saturn-pub/packages/mdb/docs/PREPARED-PANELS.md
+source_artifacts:
+  - ../../isa/outputs/upstream-writer-r3-mamba/audit.json
+  - ../../isa/outputs/upstream-route-r3-mamba/audit.json
+  - ../../isa/outputs/post-coalition-r3-mamba/audit.json
+  - ../../isa/outputs/post-coalition-r3-mamba/mechanism-map.json
+  - ../../isa/outputs/post-coalition-r3-mamba/law-summary.json
+source_code:
+  - ../../isa/isa_lab/upstream_writer.py
+  - ../../isa/isa_lab/upstream_writer_assay.py
+  - ../../isa/scripts/upstream_writer_analyze.py
+  - ../../isa/scripts/prepare_post_coalition.py
+  - ../../isa/scripts/upstream_writer_present.py
+---
+
+# 2026-10-29 17:20:53 — Tracing a carry computation through state and MLP laws
+
+We followed `511 + 1` through a frozen neural model and connected its input bits, an interaction spread across lower positions, a later mixer write and the final MLP readout. The result gives us a more useful way to name computations: bind the law to its receiving state, the contrast being tested and the consumer that uses its output.
+
+The first visible interaction appears early in the model. A later write has a much stronger effect on the tested carry decisions. The final MLP then expresses different kinds of interaction under different contrasts, despite keeping exactly the same weights.
+
+These are measured roles in a small ISA Mamba. They provide a concrete part of the larger computation map we want to build.
+
+## Follow the input into the model
+
+The model receives instruction bytes, register bits and flags, then predicts the next machine state. We fixed an ADD1 instruction and varied the destination register across 508, 509, 510 and 511. Only its two lowest input bits change. The model gets all four register answers right, ending with the carry transition from 511 to 512.
+
+For any internal value, this four-case square lets us measure a joint interaction: the response to both changed bits, minus their separate responses, plus the baseline. It asks what appears when the two changes combine.
+
+The incoming embedding has exactly zero interaction on this square. Each bit enters its own position through a row-local affine projection. The first convolution brings neighboring effects together, and its following SiLU produces the first substantial nonlinear combination, initially at positions 1 and 2.
+
+That is a mathematical event we can describe. If the convolution has brought two main effects `a` and `b` into an input `z`, the nonlinear combination is:
+
+```
+SiLU(z + a + b) - SiLU(z + a) - SiLU(z + b) + SiLU(z)
+```
+
+The convolution's tiny numerical second difference and the SiLU's substantial joint response are different phenomena. The nonlinearity combines the main effects. It does not merely amplify a rounding artifact.
+
+The next causal test adds a useful qualification: replacing the entire first mixer write with additive completion preserves the final answer. Finding the earliest interaction has located an emergence point; this replacement does not establish it as the necessary carrier of the carry computation. Later components can still combine the retained information.
+
+## Separate the carried state from the later write
+
+The final mixer returns an incoming residual plus its own write. We can change those two terms independently and let the unchanged model continue.
+
+At positions 8 and 9, replacing the final mixer's joint write response with additive completion changes the register result from 512 to 256. Both target bits flip, and no other register or flag decisions change. The next native step consumes 256 and produces 257.
+
+Completing the incoming residual at those positions while clamping the entire native write preserves 512. This makes the later write a stronger candidate for a carry-transition role in this context. The [writer experiment](../../isa/outputs/upstream-writer-r3-mamba/README.md) retains the separate branches, readouts and futures.
+
+The residual and write are mathematically added, but their causal roles need separate records. The final MLP can transform both before a reader makes a decision.
+
+## The useful context extends across lower positions
+
+The next panel changes groups of positions entering that final mixer. Editing the two target positions alone preserves the carry decisions. Editing the full lower prefix changes them.
+
+| Input positions completed | Bit 8 logit | Bit 9 logit | Register result |
+|---|---:|---:|---:|
+| Native | −26.7484 | +22.2379 | 512 |
+| Positions 0–3 | −7.0419 | +7.1653 | 526 |
+| Positions 4–7 | −25.2452 | +14.2031 | 704 |
+| Positions 0–7 | +0.1011 | −2.9848 | 510 |
+
+Each smaller band preserves the two target decisions, although it changes other output bits. Their joint removal flips both targets. At bit 8, the joint effect also crosses the decision boundary that an additive prediction from the separate effects would preserve. Its positive margin is only 0.1011, which remains part of the observation. At bit 9, adding the separate effects already predicts a flip; the joint result has an additional nonlinear contribution.
+
+The direction control is useful too. Editing positions 10–63 leaves the two target logits exactly unchanged while other continuous outputs move. The [routing panel](../../isa/outputs/upstream-route-r3-mamba/README.md) therefore supports a qualified role for lower-prefix context, with the collateral effects visible.
+
+## Return to the MLP law
+
+The final MLP still follows the same frozen transformation:
+
+```
+P(m) = W2 GELU(W1 LayerNorm(m) + b1) + b2
+```
+
+Our earlier native-input study found that much of its interaction was a response to interaction already present upstream. The lower-band panel lets us ask that question under a new contrast.
+
+We retain the four earlier band-intervention states and construct an additive completion of their MLP inputs. Then we directly measure `P(Madd)` through the native model. This separates three contributions: interaction in the input, post nonadditivity on the additive input completion, and the post response to upstream interaction.
+
+| Reader | Upstream input contribution | Post contribution on additive input | Post response to upstream interaction |
+|---|---:|---:|---:|
+| Register bit 8 | +0.3156 | +4.0378 | +1.2864 |
+| Register bit 9 | +1.9601 | −6.1762 | +2.1009 |
+
+For bit 8, most of the extra effect now comes from post nonadditivity on the completed input. At bit 9, that term opposes the other two. These are different responses of the same law under a different receiving state and contrast.
+
+This last experiment uses a conditioned recipient that already predicts 510 because of the joint upstream cut. Replacing its post interaction restores the two target decisions but produces 766, since the lower-bit errors remain. It is a target-bit restoration within an altered state. The [post-coalition results](../../isa/outputs/post-coalition-r3-mamba/README.md) preserve that distinction.
+
+![Interaction trajectory, final-mixer cuts, lower-prefix dependence and MLP response decomposition](images/2026-10-29-172053-upstream-carry-map.png)
+
+## Name the measured contract
+
+A useful name should let us return to the same computation and ask a sharper question. Here the names include “final-mixer contribution to clearing bit 8 and setting bit 9,” “lower-prefix context modulating that transition,” and “post2 nonlinear response to the joint lower-band intervention.”
+
+Each binds a fixed law instance, a receiving context, an explicit replacement, a reader and a measured horizon. The [mechanism map](../../isa/outputs/post-coalition-r3-mamba/mechanism-map.json) connects those roles while keeping human names separate from immutable execution records. Its 44 reader-specific records describe 22 branches, rather than 44 independent examples.
+
+The upgraded MDB runtime made these panels practical by preparing a parent once and sealing all candidate payloads before continuation. Three finite mrun jobs completed 22 candidate branches, 22 independent full-model audits covering all eleven heads, and 22 successors fed their own predicted state. Those immediate successor inputs were all even, so the future checks establish state consumption in this panel; longer carry propagation is a separate question. The [technical synthesis](../../isa/docs/upstream-computation-map.md) links the source, numerical checks and remaining scope.
+
+The next discriminating cut is inside the final mixer. Its short convolution reads local neighbors, while its selective recurrence can carry distant prefix context. Isolating those paths can test the route suggested by the graph and band interventions. That would move the map from a useful block-level contribution toward the particular state update that implements it.

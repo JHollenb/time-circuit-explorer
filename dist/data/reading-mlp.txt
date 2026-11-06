@@ -1,0 +1,165 @@
+---
+title: "2026-10-29 14:20:00 — How the same MLP changes its response with state and dose"
+subtitle: "From a fixed MLP law to a tested response program and evidence-bound names"
+author: "Codex with Jake Holl"
+type: blog
+category: research
+subtype: research-perspective
+date: 2026-10-29
+created: 2026-10-29T14:20:00-07:00
+timestamp: 2026-10-29T14:20:00-07:00
+updated: 2026-10-29T15:03:18-07:00
+status: draft
+tags: [blog, research, mlp, symbol-table, mdb, saturn, causal-inference, computations]
+source_docs:
+  - ../../isa/docs/naming-native-computation-records.md
+  - ../../isa/docs/finite-mlp-response-and-computation-names.md
+  - ../../isa/docs/post-context-direction-and-baseline.md
+source_artifacts:
+  - ../../isa/outputs/computation-naming-r3-mamba/named-response-program.json
+  - ../../isa/outputs/post2-quadratic-r3-mamba/audit.json
+  - ../../isa/outputs/post2-state-law-r3-mamba/audit.json
+  - ../../isa/outputs/post2-state-law-r3-mamba/measurements.json
+source_code:
+  - ../../isa/isa_lab/post2_quadratic.py
+  - ../../isa/isa_lab/computation_records.py
+  - ../../isa/isa_lab/post2_state_law.py
+  - ../../isa/isa_lab/post2_state_law_assay.py
+  - ../../isa/scripts/post2_state_law_analyze.py
+---
+
+# 2026-10-29 14:20:00 — How the same MLP changes its response with state and dose
+
+An MLP can follow one fixed mathematical law while responding differently to the same incoming direction. We have now turned a measured part of that response into a small program: 240 coefficients fitted from five native responses predicted four new update combinations, with 0.78–1.60% error across the complete 48-feature write. The model's original heads consumed the predicted writes and produced the same register and flag bit decisions as the native references in all four cases.
+
+That gives us a concrete way to start naming computations: identify the law, the state where it acts, the updates it accepts and the consumer that gives its output meaning. The evidence points to a receiver-bound numerical response program. Its arithmetic semantic role remains a question for controlled native-input experiments.
+
+The lead came from tracing a symbol-table route backward into the final `post.2` MLP of our frozen ISA Mamba. An earlier crossed experiment held an incoming update fixed and changed the receiving state. The MLP's contribution to one register-logit coordinate went from positive to negative.
+
+This time we kept the receiving state fixed and varied the amount of the same update. Before running the native branches, we used the saved weights and input state to predict the MLP's complete 48-feature response.
+
+| Fraction of the update | Native MLP contribution to the selected readout |
+|---|---:|
+| 1/16 | +0.005114 |
+| 1/8 | −0.006896 |
+| 1 | −1.300013 |
+
+The response bends enough to cross zero. At full dose, the MLP's initial linear approximation predicts +0.214530 instead. Following the initial slope would give the wrong sign for its finite contribution.
+
+We then separated two parts of the computation. At dose 1/8, we replaced LayerNorm with its local linear approximation, GELU with its local linear approximation, or both. The original residual update stayed the same.
+
+| LayerNorm | GELU | MLP contribution |
+|---|---|---:|
+| linear approximation | linear approximation | +0.026817 |
+| native | linear approximation | +0.015501 |
+| linear approximation | native | +0.004851 |
+| native | native | −0.006896 |
+
+Within this intervention panel, keeping both finite nonlinear maps produces the negative contribution. Their effects are mostly additive. The selected readout sits near cancellation: positive hidden contributions sum to about +0.4993 and negative ones to −0.5062. A small difference in that balance changes the projected sign.
+
+The complete target effect remains negative in every nonzero-dose arm. We have measured a change in the MLP's contribution, so its scalar sign should not become the name of the whole computation.
+
+![Native MLP responses, tangent substitutions and the eight register projections](images/job-91d7ad1b784d-finite-mlp-response.png)
+
+The small-dose sign change occurs while the two complete output-update vectors remain closely aligned, with cosine 0.997695. At full dose, the native write and its initial linear approximation have cosine 0.698785: the curvature also changes the direction of the write substantially.
+
+## One law with many local responses
+
+The fixed block computes:
+
+```
+P(m) = W2 GELU(W1 LayerNorm(m) + b1) + b2
+```
+
+The native residual becomes `m + P(m)`. An incoming update changes both the direct residual and the MLP write. The receiving state determines the normalization geometry and the GELU slopes; a finite update moves through those changing responses.
+
+LayerNorm first subtracts the mean of the 48 features and divides by their shared scale, then applies learned gains and offsets. Changing one part of the row can therefore change how other features are presented to the first learned matrix. That matrix produces 96 hidden preactivations. GELU changes each preactivation by a smooth nonlinear rule, and the second matrix combines those 96 responses into a 48-feature write. Finally, the model adds the write back to the incoming residual. The fixed matrices supply a reusable transformation; the current row determines which local response it expresses.
+
+The local derivative makes that dependence explicit:
+
+```
+J_P(m) = W2 × diag(GELUprime(a(m))) × W1 × J_LayerNorm(m)
+```
+
+`J_P(m)` predicts the first-order response to a small update at state `m`. A finite update can move far enough that both the normalization geometry and GELU slopes change along its path. That is why measuring the initial derivative is useful, yet insufficient for the full-dose result.
+
+This supports the intuition that the MLP is a law acting on state. It also sharpens what “state” should mean. At this boundary, the MLP reads a particular 48-feature row. Its learned weights, the upstream instruction and register information that formed that row, and any persistent runtime memory occupy different roles. The hypothesis that prompt history or CoT can supply such context needs its own token-model experiment; this assay used instruction bits and a conditioned internal state.
+
+## Testing whether the response transfers
+
+The next experiment changed the incoming direction while matching its raw magnitude. Let `h0` be one eighth of the original update, and let `h1` be a second already observed native update scaled to the same magnitude. We predicted the complete MLP write before running new positive, negative, receiver-transfer and composition branches.
+
+A small correction calibrated on the earlier `+h0` response improved predictions for `±h1` within the original receiver. Full-vector errors fell from about 5.8–6.3% for its local tangent to 3.7–4.1% with that correction.
+
+Moving the correction to the other receiver exposed its limit. That receiver's local tangent was about 3% off for `±h0`. Adding the source correction made the error about 35%. Even after adapting the first-order response to the receiver, the finite correction belonged to its original state domain.
+
+The negative directions also separated even and odd response components. This matters because a correction measured on one positive update contains both curvature and higher-order odd effects. The composition branches measured what remained after adding separate responses, retaining the full residual vectors and FP32 installation differences. Their dose scaling was approximate, so a finite response model was the next candidate to test.
+
+## A compact program predicts new combinations
+
+Five native calibration responses give us five 48-feature vectors. Two describe finite odd responses, two describe finite even responses, and one describes the mixed effect. Together they define a small polynomial:
+
+```
+response(s,t) = s*odd0 + t*odd1
+              + s²*even0 + t²*even1 + s*t*mixed
+```
+
+Here `(s,t)` describes an update in the plane spanned by `h0` and `h1`. These are finite fitted coefficients; we have not identified exact Hessian entries or an exact polynomial law inside the network.
+
+We froze the program and predicted four new combinations before running their native references. Each combination also received a second branch in which the predicted post write was installed and consumed by the original model heads.
+
+| New update coordinates | Local tangent error | Compact response error |
+|---|---:|---:|
+| (¼, ¾) | 6.73% | 0.775% |
+| (¾, −¼) | 5.45% | 0.969% |
+| (−½, ¼) | 2.79% | 1.599% |
+| (¼, −¾) | 3.32% | 0.918% |
+
+The errors measure the complete 48-feature write. All four predictions improve on the tangent. Continuous head outputs differ, with a largest register-logit difference of about 0.00931, while all register and flag bit decisions agree with the conditioned native references. That is evidence of useful response prediction on this panel; later-call behavior remains a separate experiment.
+
+![Direction and receiver transfer, new quadratic predictions and native consumer effects](images/job-23d225cd916b-computation-transfer.png)
+
+The predictor also runs on its own. In a fresh temporary directory, with model-framework imports, network and workspace reads denied, it reproduces all four sealed forecasts exactly using the fitted coefficients and supplied receiver. It contains no original MLP matrices or new target outputs. Changing the receiver causes its binding check to refuse the request.
+
+The coefficient program occupies 10,002 bytes. The whole demonstration bundle is 80,166 bytes, including the full receiver, basis, runtime and query inputs. Those dependencies matter. The model assay still executes the original MLP before overwriting its output in the compact arms. The result establishes standalone response prediction and native consumer use.
+
+## How a trace becomes an experiment
+
+MDB records the native operations and gives their produced tensors execution-local identities. The symbol table connects those identities to physical roles: the input of this MLP, its normalized row, hidden preactivations, activation output, final write and downstream readers. These addresses let us return to the same boundary and ask controlled questions.
+
+We retain the model identity, raw inputs and parameter roots, then replay them to establish the common parent. A Saturn Act declares exactly which produced tensor is replaced. For this experiment, each branch installs the same receiving context and a complete copy of its MLP input, editing only bit row 8. The rest of the original native graph continues through its real heads.
+
+The tangent substitutions make a specific comparison possible. They preserve the baseline value and initial sensitivity of one selected map while removing its finite curvature. At the matched dose, replacing LayerNorm or GELU changes that map while keeping the physical residual update fixed. These are deliberately modified computations used to distinguish explanations of the native response.
+
+We also check the debugger itself. Each candidate suffix is compared with a separate full model call that executes the original operators and applies the same declared patches. All final heads must agree for that execution claim. The model is frozen throughout. Predictions and patch tensors are sealed before the candidate continuations, so the forecast cannot quietly be adjusted to fit the observed answer.
+
+The resulting record contains the source and state addresses, actual installed tensors, predicted response, native response, collateral changes, parent identity and replay receipt. A rejected compact hypothesis can stay in that record beside the native result. Its error tells us where the proposed description stopped capturing the computation.
+
+## From a numerical law to a named computation
+
+A computation record should bind the law to its receiving-state domain, incoming direction, dose, physical location and downstream consumer. Our present record describes a dose-dependent post correction in one receiver, with all 48 output features and all 11 native heads attached.
+
+It helps to give the record several distinct handles. Its immutable ID identifies the exact evidence. Its law-family name identifies the mathematical structure, such as a LayerNorm–GELU residual MLP. Its measured-role description states what a particular input movement does to a particular reader in a particular state. A semantic operation name, such as an arithmetic carry, needs additional evidence connecting controlled input meaning to native behavior.
+
+Those handles can evolve independently. Discovering a better semantic description should preserve the original evidence ID. Two records may share a numerical law while occupying different state domains. Similar effects on one register coordinate may coexist with different writes to the other 47 features or different collateral heads. A useful name should make those distinctions inspectable.
+
+The current program has a useful name: **post2 / row8 / receiver10 / h0-h1 quadratic response v1**. Its identity binds the model, receiver, update basis, coefficients, calibration receipts and consumer horizon. The display name is a separately sealed annotation, so a clearer name can preserve the original evidence identity.
+
+| Part of the name record | What it tells us |
+|---|---|
+| Immutable evidence ID | Which execution or fitted program this is |
+| Law family | Which mathematical transformation or approximation it uses |
+| Behavioral annotation | What a measured update does to a specified reader in a specified state |
+| Semantic operation | Which meaningful native computation it implements, when demonstrated |
+
+We now have 22 new native response records with those distinctions. Public MDB catalogs retain their actual plans, receipts and output outcomes. A query can find records where the post contribution reinforces or opposes a direct register-readout effect, while preserving the complete response signature. Registering a description does not prove its semantics.
+
+This also connects the larger stack. A graph locates candidate routes. Spectral addressing can nominate related states or computations. A model-memory entry can retain a candidate law and its evidence. The receiving state supplies compatibility conditions, and MDB branches through the actual consumer to test the prediction. Names should summarize relationships that survive those tests.
+
+Across the two new jobs, every one of the 22 branches also matched its independent full-forward audit exactly across all eleven heads: 242 comparisons. These validate the debugger's execution separately within each arm. The compact predictions remain approximate relative to their native references. Fresh copied receivers matched every historical head, preserving the baseline required to reuse earlier calibration responses.
+
+The next semantic bridge is to change a native instruction or before-state variable, observe it create the relevant internal update, and show how a downstream computation uses it. That can turn a numerical response name into a demonstrated computational role. For now, we have a working program with an explicit domain, predictions and counterexamples attached to its name.
+
+See the [new experiments and naming protocol](../../isa/docs/naming-native-computation-records.md), [named record index](../../isa/outputs/computation-naming-r3-mamba/INDEX.md), [compact-program audit](../../isa/outputs/post2-quadratic-r3-mamba/audit.json), [standalone proof](../../isa/outputs/post2-quadratic-r3-mamba/standalone-proof.json), [calibration code](../../isa/isa_lab/post2_quadratic.py), and [original dose experiment](../../isa/docs/finite-mlp-response-and-computation-names.md).
+
+The [native-input follow-up](2026-10-29-154514-connecting-mlp-responses-to-native-arithmetic.md) has now run. Two controlled ADD1 input squares connect the internal response to carry-set margin and carry-clear roles, with causal replacements and literal own-state successors. A further affine substitution preserves decisions while changing the continuous write substantially, sharpening the difference between a behavioral name and an exact mathematical transformation.

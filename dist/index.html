@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7f8fa">
+  <meta name="description" content="Follow a model from instruction to circuit to state. An interactive atlas of the R3 Mamba ISA model and its recovered computations.">
+  <title>Time Circuit — Inside the computation</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a href="#main" class="skip">Skip to explorer</a>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Time Circuit home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 9h13a7 7 0 0 1 0 14H9M9 4v24M23 4v10M23 23v5"/><circle cx="9" cy="9" r="3"/><circle cx="23" cy="23" r="3"/></svg><span>time circuit<span class="brand-sub">AN INTERACTIVE FIELD GUIDE</span></span></a>
+    <nav aria-label="Page"><a href="#architecture" class="header-link">Explorer</a><a href="#readings" class="header-link">Field notes <span>↗</span></a><button class="quiet-button" id="sources-button">Evidence <span>↗</span></button></nav>
+    <div class="model-select"><span class="live-dot"></span><label class="sr-only" for="model">Model</label><select id="model"><option value="r3-mamba-isa">R3 Mamba · ISA</option></select></div>
+  </header>
+
+  <main id="main">
+    <section class="intro">
+      <div><div class="eyebrow"><span class="tiny-line"></span> INSIDE THE COMPUTATION <span class="edition">/ 001</span></div>
+      <h1>Watch a computation<br>become <em>state.</em></h1>
+      <p class="intro-copy">Follow the model’s native operations, unfold our recovered time circuits,<br class="desktop-break"> and see how one prediction becomes the next input.</p></div>
+      <div class="intro-aside"><div class="specimen-label">OUR FIRST SPECIMEN</div><strong>A small model.<br>A complete loop.</strong><p>Instructions in. State changes out.<br>Small enough to see what happens between.</p><span class="specimen-meta">3 MIXERS <i>·</i> 5 MLPS <i>·</i> 64 BIT ROWS</span></div>
+    </section>
+
+    <div class="lesson-bar"><nav id="lesson-nav" aria-label="Guided walkthrough"></nav><div class="mode-switch" role="group" aria-label="Experience mode"><button id="guided-mode" class="active" aria-pressed="true">Guided</button><button id="explore-mode" aria-pressed="false">Explore</button></div></div>
+    <section class="lesson-caption" aria-live="polite"><div><span id="lesson-kicker" class="eyebrow"></span><h2 id="lesson-heading"></h2><p id="lesson-text"></p></div><button id="next-lesson" class="outline-button">Next chapter <span>→</span></button></section>
+
+    <section class="architecture-panel section-anchor" id="architecture" aria-labelledby="architecture-title">
+      <div class="panel-top"><div class="section-title"><span class="section-index">01</span><h2 id="architecture-title">The native architecture</h2><span class="small-tag">R3 MAMBA</span></div><span class="diagram-swipe">Scroll diagram →</span><div class="diagram-legend"><span><i class="legend-square blue"></i>Routing & reads</span><span><i class="legend-square purple"></i>State & mixing</span><span><i class="legend-square mint"></i>MLPs</span></div></div>
+      <div class="architecture-content"><div class="graph-wrap" id="graph-wrap"><svg id="architecture-graph" role="group" aria-label="Interactive native model architecture"></svg></div>
+        <div class="component-inspector" id="component-inspector"></div>
+      </div>
+      <div class="architecture-foot"><span><span class="subtle-dot"></span> Fixed weights. Context-dependent computations.</span><span>SELECT A COMPONENT TO LOOK INSIDE <span>↗</span></span></div>
+    </section>
+
+    <section id="computation" class="section-anchor computation-section" aria-labelledby="computation-title">
+      <div class="section-heading"><div><div class="eyebrow">ONE EVENT, TWO VIEWS</div><h2 id="computation-title">The operation. The explanation.</h2></div><p>Same context. Same receiving state.<br>Compare what ran with the math we recovered.</p></div>
+      <div class="comparison-board">
+        <div class="comparison-controls"><div class="segmented" role="group" aria-label="Computation"><button id="scan-tab" class="active" aria-pressed="true">Selective scan</button><button id="mlp-tab" aria-pressed="false">Residual MLP</button></div><span class="trace-location" id="trace-location">MIXER 3 / ROW 08</span><button id="math-button" class="text-button">Show equations <span>+</span></button></div>
+        <div class="compare-columns"><article class="computation-lane native-lane"><div class="lane-label"><span class="lane-dot native"></span>NATIVE EXECUTION <span class="lane-badge">RECORDED</span></div><h3 id="native-title">A selective state update</h3><p class="lane-description" id="native-description"></p><div id="native-visual"></div><div class="lane-foot" id="native-foot"></div></article>
+        <div class="lane-connector" aria-hidden="true">⇄</div>
+        <article class="computation-lane recovered-lane"><div class="lane-label"><span class="lane-dot recovered"></span>RECOVERED COMPUTATION <span class="lane-badge">LIVE MATH</span></div><h3 id="recovered-title">Retain + write = next state</h3><p class="lane-description" id="recovered-description"></p><div id="recovered-visual"></div><div class="lane-foot" id="recovered-foot"></div></article></div>
+        <div class="consumer-bridge" id="consumer-bridge"></div>
+        <div class="math-details" id="math-details" hidden></div>
+        <div class="math-controls"><div class="control-group"><label for="bit-row">INNER CLOCK <strong id="row-value">Bit 08 / 63</strong></label><input id="bit-row" type="range" min="0" max="63" value="8"><div class="range-labels"><span>Least significant bit</span><span>Most significant bit</span></div></div><div class="control-group parameter-group"><label for="dose">CLOCK MULTIPLIER <strong id="dose-value">1.00×</strong></label><input id="dose" type="range" min="0.25" max="2" step="0.05" value="1"><div class="range-labels"><span>0.25×</span><button id="reset-dose" class="inline-button">Reset</button><span>2×</span></div></div><div class="coordinate-select"><label for="channel">CHANNEL</label><input id="channel" type="number" min="0" max="95" value="0"><label for="state-mode">MODE</label><select id="state-mode"><option>0</option><option>1</option><option>2</option><option>3</option></select></div></div>
+        <div class="comparison-status" id="comparison-status" role="status">Loading recorded factors…</div>
+      </div>
+    </section>
+
+    <section id="machine" class="section-anchor machine-section" aria-labelledby="machine-title">
+      <div class="section-heading"><div><div class="eyebrow">THE STATE IS THE BRIDGE</div><h2 id="machine-title">Now let it run.</h2></div><p>The circuit advances an internal state.<br>The instruction commits an architectural state.</p></div>
+      <div class="machine-board"><div class="machine-toolbar"><div class="transport"><button id="reset" class="icon-button" aria-label="Reset execution" title="Reset">↺</button><button id="previous" class="icon-button" aria-label="Previous execution step" title="Previous">‹</button><button id="play" class="play-button" aria-label="Play execution"><span>▶</span> Run</button><button id="next" class="icon-button" aria-label="Next execution step" title="Next">›</button></div><div class="instruction-select"><label for="scenario">CONTEXT</label><select id="scenario"><option value="carry">Nine-bit carry · one instruction</option><option value="symbolic-00">Own-state loop · path A</option><option value="symbolic-01">Own-state loop · path B</option></select></div><div class="speed-select"><label for="speed">SPEED</label><select id="speed"><option value="240">1×</option><option value="100">2×</option><option value="45">4×</option></select></div></div>
+        <div class="clock-strip"><div><span class="clock-icon">◷</span><span>OUTER CLOCK</span><strong id="instruction-value">Instruction 1 / 1</strong></div><div id="instruction-steps" class="instruction-steps"></div><div class="inner-clock"><span>INNER CLOCK</span><strong id="machine-row">08 / 63</strong></div></div>
+        <div id="phase-track" class="phase-track" aria-label="Conceptual execution phases"></div>
+        <div class="machine-main"><div class="bit-machine"><div class="mini-title">THE RECOVERED BIT MACHINE <span class="small-tag">COMPACT LAW</span></div><div id="bit-tape" class="bit-tape"></div><div id="bit-equation" class="bit-equation"></div><p class="machine-note">The measured Boolean response law is a compact hypothesis, distinct from the model’s 384-coordinate scan state.</p></div><div class="state-boundary"><div><span class="boundary-number">1,152</span><span>scan H coordinates</span></div><div><span class="boundary-number">576</span><span>convolution values</span></div><div class="reset-boundary">↺ Reset inside each model call</div></div></div>
+        <div class="state-panel"><div class="state-title"><h3>Architectural state</h3><div class="state-legend"><span class="native-ink">● Native</span><span class="recovered-ink">● Recovered</span><span id="state-parity" class="parity-pill"></span></div><button id="format-button" class="text-button">Hex / decimal</button></div><div id="registers" class="register-grid"></div><div class="state-metadata" id="state-metadata"></div></div>
+        <div class="machine-foot"><span id="machine-status" role="status"></span><span class="foot-muted">Each path consumes its own previous output.</span></div>
+      </div>
+      <details class="sandbox"><summary><span>Try your own word</span><span class="small-tag">TEACHING SANDBOX</span><span class="summary-plus">+</span></summary><div class="sandbox-content"><p>Run the compact Boolean law on any unsigned 64-bit word. Custom inputs have no recorded native comparison.</p><form id="sandbox-form"><label for="sandbox-word" class="sr-only">Unsigned 64-bit word</label><input id="sandbox-word" value="511" autocomplete="off" spellcheck="false"><button class="dark-button">Compute →</button></form><div id="sandbox-result" role="status"></div></div></details>
+    </section>
+
+    <section id="frontier" class="section-anchor frontier-section" aria-labelledby="frontier-title"><div class="frontier-copy"><div class="eyebrow">KEEP THE EXCEPTION IN VIEW</div><h2 id="frontier-title">A simple law.<br>A richer state.</h2><p>The two-state program predicts <strong>93 of 96</strong> held words exactly. Three exceptions remain. At one exceptional bit, recurrent state and short convolution history jointly determine what happens next.</p><p class="small-copy">Transplant either part of a recorded donor frontier, or both. The suffix inputs stay the same.</p><div class="frontier-toggles"><button id="toggle-h" aria-pressed="false"><span class="toggle-track"></span><span>Donor recurrent state <strong>H</strong></span></button><button id="toggle-conv" aria-pressed="false"><span class="toggle-track"></span><span>Donor convolution history</span></button></div></div><div class="frontier-card"><div class="lane-label"><span class="lane-dot native"></span>RECORDED FRONTIER EXPERIMENT</div><div class="frontier-chart" id="frontier-chart"></div><div class="frontier-result" id="frontier-result"></div><p class="frontier-scope">Measured in the streamed model equations, with native baseline calibration. This isolates a joint dependency; it does not identify an abstract ISA carry variable.</p><details class="exceptions"><summary>Inspect the 3 retained exceptions <span>↗</span></summary><div id="exception-list"></div></details></div></section>
+
+    <section id="readings" class="section-anchor readings-section"><div class="section-heading"><div><div class="eyebrow">CONTINUE THE INVESTIGATION</div><h2>From the field notes.</h2></div><p>The architecture is an account of computation.<br>These notes develop the mathematics behind it.</p></div><div id="reading-list" class="reading-list"></div></section>
+    <footer><a class="footer-brand" href="#">time circuit <span>↗</span></a><p>A model is a computation you can take apart.</p><button class="text-button" id="about-models">About model packs <span>↗</span></button><span class="footer-detail">ISA / R3 MAMBA / PHASE 01</span></footer>
+  </main>
+  <dialog id="detail-dialog"><div class="dialog-top"><span id="dialog-label" class="eyebrow">EVIDENCE</span><button id="close-dialog" class="icon-button" aria-label="Close dialog">×</button></div><div id="dialog-content"></div></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <noscript><div class="noscript">JavaScript is needed for the interactive diagrams. The site uses small browser calculations and recorded evidence; it does not download a model.</div></noscript>
+</body>
+</html>

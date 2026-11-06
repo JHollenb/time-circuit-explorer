@@ -1,0 +1,152 @@
+---
+title: "2026-10-30 14:02:15 A dynamic symbol table read off the model, then frozen to predict new inputs"
+subtitle: "Causal liveness scans in Qwen2.5-1.5B addition recover a fixed scaffold of three reader roles whose addresses advance one column per answer digit; the frozen table predicted all 30 role assignments on a new prompt format and on 4-digit addition"
+author: "Jake Holl with Claude"
+type: blog
+category: research
+subtype: experiment-report
+date: 2026-10-30
+created: 2026-10-30T14:02:15-07:00
+timestamp: 2026-10-30T14:02:15-07:00
+updated: 2026-10-30T14:02:15-07:00
+status: complete
+claim_status: measured-single-seed
+tags: [blog, research, symbol-table, dynamic-symbol-table, time-circuits, dynamic-circuits, scaffolds, qwen2.5, arithmetic, carry, activation-patching, liveness, attention-heads, mapping, prediction, prereg, saturn]
+related:
+  - "[[2026-10-02-115541-the-time-scaffold-architecture-living-theory]]"
+  - "[[2026-10-30-000214-the-computation-atlas-prediction-programs-and-the-carry]]"
+  - "[[2026-10-29-203157-the-big-picture-mapping-computation-and-the-time-circuit-architecture]]"
+  - "[[2026-10-30-001156-computation-routes-across-source-contexts]]"
+  - "[[2026-10-30-022119-one-computation-route-two-consumers]]"
+---
+
+# A dynamic symbol table read off the model, then frozen to predict new inputs
+
+**Short version.** The time-scaffold theory says a model runs per-input circuits on a fixed scaffold of roles. If that is right, there should be a *dynamic symbol table*: for each variable the computation needs, where it lives, how long it lives there, which component reads it, and when. We built that table for Qwen2.5-1.5B doing addition using only causal patching, with no probes, and then froze it and asked it to predict inputs it had never seen.
+
+- **What the table says.** Three reader roles do all the cross-position work of producing each answer digit:
+  - an **own-column reader** (heads 22.6 + 22.8 at layer 22) reads the operand digits in the column being written;
+  - a **column-below reader** (heads 22.10 + 22.11 at layer 22) reads the column one place lower;
+  - a **carry reader** (heads 20.1, 20.2, 20.5, 20.10 at layer 20) reads the column two places lower, and matters only when the column between sums to 9.
+
+  The same heads serve every answer digit. What changes from one digit to the next is the *address*: each role points one column further right per emitted digit. Every operand digit stays at its own token from layer 0 until it is read, and disappears from there within one layer of the read. Every read happens in a single layer.
+- **Does it predict?** Yes. Frozen from 3-digit addition in one prompt format, the table named the reader heads, the read layers and the necessity pattern for **30 of 30** contrasts on a different prompt format and on 4-digit addition, with predictions sealed before the runs.
+- **How the address works.** In 4-digit addition the column being written sits 4 tokens back instead of 3, so a head that looked a fixed distance back would have shifted roles. None did. The readers are aligned to columns, not to token distance.
+- **What failed.** Six of thirteen preregistered checks failed across the two stages. Two failures (S4, S7) are what revealed the column-relative structure. The rest are either threshold-edge misses or a small carry contribution from heads outside the named set.
+
+Everything is single seed, Beast RTX 4080, bf16, SDPA attention. Code and results: [experiment directory](../../saturn/experiments/2026-10-30-dynamic-symbol-table/), [PREREG](../../saturn/experiments/2026-10-30-dynamic-symbol-table/PREREG.md) (stage 1 predictions at 10:00, stage 2 sealed predictions at 11:22), [FINDINGS](../../saturn/experiments/2026-10-30-dynamic-symbol-table/FINDINGS.md), instrument [`payload/symtab.py`](../../saturn/experiments/2026-10-30-dynamic-symbol-table/payload/symtab.py), scorers [`analyze.py`](../../saturn/experiments/2026-10-30-dynamic-symbol-table/analyze.py) and [`analyze2.py`](../../saturn/experiments/2026-10-30-dynamic-symbol-table/analyze2.py).
+
+![Role map: single-head flip of the eight role heads for every contrast, in stage 1 and both stage-2 configurations](images/2026-10-30-symtab-rolemap.png)
+
+## Why build a symbol table
+
+The [carry formation trace](2026-10-30-000214-the-computation-atlas-prediction-programs-and-the-carry.md) found that Qwen2.5-1.5B forms the hundreds digit from two single-layer reads into the `=` token: the ones carry at layer 20 and the tens digits at layer 22. That was one answer digit, one prompt, and hand-chosen contrasts. The [big-picture post](2026-10-29-203157-the-big-picture-mapping-computation-and-the-time-circuit-architecture.md) argued that the point of this work is mapping how computation happens, not editing it. The natural mapping object for the time-scaffold theory is a table with one row per variable and these columns:
+
+- **carrier**: which token position holds it;
+- **lifetime**: which layers it is held there;
+- **read event**: when it moves to another position, and which heads move it;
+- **consumer**: which answer step uses it.
+
+The Codex session's [symbol-table posts](2026-10-30-001156-computation-routes-across-source-contexts.md) describe a similar record (law instance, source condition, route, consumer, fidelity, horizon). Here the aim is to extract it automatically and causally, then test whether it is a fixed scaffold or rebuilt per input.
+
+## How the table is extracted
+
+The setup is Stage C's 4-shot addition prompt, `12+35=47\n481+307=788\n256+139=395\n604+218=822\n{a}+{b}=`, with the true answer digits teacher-forced for later steps. Three answer steps: the hundreds digit H is predicted at `=`, the tens T at the first answer token r0, the ones O at r1.
+
+- **Contrast.** For each step k and operand digit x, take pairs of inputs that differ only in x, agree on all earlier answer digits, and differ in the step-k answer. Both must be natively correct. That gives 12 contrasts, 256 pairs each.
+- **Liveness.** Copy the residual stream at one (position, layer) from the donor into the recipient and measure how often the step-k answer flips to the donor's. Doing this at every position and every layer gives a map of where the contrast lives over depth.
+- **Readers.** At the prediction position, patch each head's output one at a time (single-head sufficiency), plus each attention and MLP output.
+- **Necessity.** Replace a head set's output at the prediction position with its mean over other prompts and measure the accuracy drop on 4,096 natively correct inputs per step.
+
+Nothing here uses a probe or a variable label: the table falls out of where flips happen.
+
+![Liveness maps for the 12 stage-1 contrasts](images/2026-10-30-symtab-liveness-stage1.png)
+
+Each panel is one contrast; rows are token positions, columns are layers, colour is flip rate. In every panel, the contrast sits at its own operand token (a bright horizontal bar) until layer 20 or 22, then jumps to the prediction position in a single layer.
+
+## Stage 1: the table
+
+| Answer step | Operand column read | Column offset d | Read layer | Reader heads (single-head flip) |
+|---|---|---|---|---|
+| H (at `=`) | hundreds | 0 | 22 | 22.8 0.31–0.34, 22.6 0.21–0.23 |
+| H | tens | 1 | 22 | 22.11 0.42–0.46, 22.10 0.40–0.44 |
+| H | ones | 2 | 20 | 20.1 0.19–0.28, 20.5 0.20, 20.10 0.13–0.18, 20.2 0.09–0.16 |
+| T (at r0) | tens | 0 | 22 | 22.6 0.43–0.44, 22.8 0.43 |
+| T | ones | 1 | 22 | 22.11 0.40–0.45, 22.10 0.36–0.44 |
+| O (at r1) | ones | 0 | 22 | 22.6 0.43–0.44, 22.8 0.30–0.35 |
+
+Read down the d column and the structure is plain: heads are tied to the offset between the column being written and the column being read, not to a particular digit column. The tens digits are read by 22.10/22.11 when producing H and by 22.6/22.8 when producing T.
+
+Other measured facts:
+
+- **No staging.** No operand position other than the source ever holds a contrast at liveness ≥ 0.5. The only partial relay is the ones carry: on the H-from-a0 contrast, b0 picks up 0.29 at layers 12–19, which is where the ones sum becomes readable at b0.
+- **Composition at layer 23.** The layer-23 MLP output at the prediction position carries 0.79–1.00 of every contrast.
+- **Necessity.** The seeded random control pair for layer 22 happened to be {22.8, 22.6}, the own-column readers. Ablating it dropped accuracy 0.21 at H, 0.41 at T and 0.30 at O. The column-below pair drops H 0.22 and T 0.18 and does nothing at O, which has no column below. The carry set drops H by 0.15 only on inputs whose tens column sums to 9 (0.000 elsewhere).
+
+**Stage 1 ledger.** S1 (source lifetimes end in layers 18–23) and S5 (hundreds arrive at `=` in layers 18–23) passed. S6 (L20 heads read b0 whether or not the carry changes) passed, but the no-carry-change family moved almost as much, so it does not isolate a carry bit. Four failed:
+
+- S2 (operand relays) found none at 0.5.
+- S3 required the best single head at every read to flip ≥ 0.3; the carry read's best head is 0.20–0.28.
+- S4 predicted 22.10/22.11 would read the tens for T, because they read the tens for H. 22.6/22.8 do. This failure is what exposed column-relative roles.
+- S7's control set contained the own-column pair, and the named sets fell just short of their thresholds (−0.25 vs 0.30; −0.18 vs 0.20).
+
+## Stage 2: freeze the table and predict
+
+The stage-1 table was frozen into role sets and read layers and written into a dated PREREG amendment before any stage-2 job ran:
+
+- **A, 4-digit addition** with a 5-shot 4-digit prompt: 4 answer steps, 18 contrasts.
+- **B, a different prompt format**, `Compute: 23+41=64; 518+266=784; 107+395=502; 732+149=881; {a}+{b}=`, same 3-digit task, 12 contrasts.
+
+A is the decisive test. Token distance from the current answer slot to operand b's digit in the column being written is n − d, so in 3-digit it is 3 tokens and in 4-digit it is 4. If the readers attend a fixed distance back, every role shifts by one column in A. If they attend by column, roles hold.
+
+| Prediction | A (4-digit) | B (other prompt) |
+|---|---|---|
+| Q1 role heads per column offset | **Pass, 18/18** | **Pass, 12/12** |
+| Q2 read layers 22 / 22 / 20 | **Pass**, all exact | **Pass**, all exact |
+| Q3 live at source until the read, no relays | **Pass** | **Fail** on one contrast: the source still holds 0.10–0.11 at layers 20–21 against a < 0.1 bar |
+| Q4 one-layer reads | **Pass** | **Pass** |
+| Q5 necessity follows roles | **Fail**, control clause only | **Fail**, control clause only |
+| Q6 B matches stage 1 within 0.15 | n/a | **Pass** |
+
+![Liveness maps for the 18 four-digit contrasts](images/2026-10-30-symtab-liveness-4digit.png)
+
+Necessity on the new inputs (accuracy drop, 4,096 natively correct inputs per step):
+
+| Head set | A: thousands, H, T, O | B: H, T, O |
+|---|---|---|
+| own-column {22.6, 22.8} | 0.27, 0.36, 0.38, 0.32 | 0.37, 0.40, 0.31 |
+| column-below {22.10, 22.11} | 0.26, 0.24, 0.12, 0.000 | 0.24, 0.26, 0.000 |
+| carry set, column below sums to 9 | 0.24, 0.23 | 0.27 |
+| carry set, otherwise | 0.001, 0.002 | 0.012 |
+
+Every role clause passed at every step in both configurations. The Q5 failures are both at the first answer step, on the small class where the column below sums to 9 (312 and 343 inputs): random L20 control sets dropped 0.047–0.070 there against the carry set's 0.24–0.27. All three L20 controls share heads 20.8 and 20.11, which are the likely small extra contributors to the first-step carry route.
+
+A new role appeared exactly where the table said it would. In 3-digit addition the T step at r0 has no column two below, so stage 1 never saw the carry readers at r0. In 4-digit addition the H step at r0 does have one, and the L20 carry heads read it there.
+
+## What this says about the architecture
+
+1. **A dynamic symbol table can be read off causally and it is predictive.** One automatic liveness scan per contrast gives carriers, lifetimes, read layers and reader heads; necessity confirms the same heads; and the frozen table predicts new formats and lengths before the data exists.
+2. **The scaffold is roles; the per-input circuit is a binding.** Nine heads in two layers serve every answer digit of 3- and 4-digit addition in two formats. What differs between digits is which operand column each role is pointed at. This is the time-scaffold picture at head grain: the components are fixed, and the dynamic part is the address.
+3. **The address is a column index that advances with each emitted digit.** It is not a token distance. *Inference:* the model keeps a column-aligned positional code on operand digits and on answer slots, and the role heads match on it, own column at offset 0, below at offset 1. The attention patterns themselves were not measured here.
+4. **Operands are read once, late, and directly.** No operand digit is staged at another operand position for the digit routes; everything is pulled from the original tokens at layer 20 or 22 and composed by the layer-23 MLP. This matches the [carry formation](2026-10-30-000214-the-computation-atlas-prediction-programs-and-the-carry.md) result that the early copy at `=` is readable but idle.
+5. **Reads land at the commit-band entry.** Layer 22 is the entry of the L22–27 band from the living theory's T1, and layer 23 is the [store-vs-law](2026-10-02-115541-the-time-scaffold-architecture-living-theory.md) MLP. The band entry is where cross-position reads for computed answers happen.
+
+## What is open
+
+- **Attention patterns:** an eager-attention readout of the role heads to confirm column-aligned addressing directly, and to find the positional code they match on.
+- **Longer carry chains:** contrasts at d = 3 (does a fourth role exist, or does the carry reader chain?).
+- **Other operations:** subtraction and multiplication, to test whether the same heads take other roles.
+- **Other models:** the table's shape (roles keyed by offset, single-layer reads at the band entry) predicted blind in another model family.
+- **The first-step carry remainder:** the 20.8 / 20.11 contribution.
+- **Saturn:** a request to make this extraction a standard lens is filed as `causal-liveness-symbol-table-extractor` in [`saturn/request.jsonl`](../../saturn/request.jsonl).
+
+## Jobs
+
+| Run | Job | Wall | Use |
+|---|---|---|---|
+| st-smoke | job-4393f33d08ad | 288 s | stage 1 smoke |
+| st-full1 | job-1177d4c82c18 | 4,325 s | stage 1, 12 contrasts × 256 pairs |
+| st2-smoke-4dig | job-a88854c3a2eb | ~17 min | stage 2A smoke |
+| st2-smoke-alt | job-e27d1977ac15 | ~11 min | stage 2B smoke |
+| st2-full-alt | job-c606234a03c1 | 2,556 s | stage 2B, 12 × 128 |
+| st2-full-4dig | job-72b93f850b7a | 5,437 s | stage 2A, 18 × 128 |

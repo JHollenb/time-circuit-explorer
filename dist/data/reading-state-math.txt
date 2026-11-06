@@ -1,0 +1,921 @@
+---
+title: "2026-11-05 15:31:54 State context and the mathematics of time circuits"
+subtitle: "How attention reads accumulated context, MLP laws advance the receiving state, and computation records compose into predictions of chat and diffusion"
+author: "Jake Holl with Codex"
+type: blog
+category: research
+subtype: mathematical-synthesis
+date: 2026-11-05
+created: 2026-11-05T15:31:54-08:00
+timestamp: 2026-11-05T15:31:54-08:00
+updated: 2026-11-05T17:30:00-08:00
+mathematical_advisor: "Astra (gpt-6-astra) for the operand factorization and simplifying hypothesis"
+status: complete
+claim_status: "Mathematical derivation and source-grounded synthesis with bounded measured examples. Reduced state and reusable semantic programs remain research objectives."
+tags:
+  - blog
+  - research
+  - mathematical-synthesis
+  - time-circuits
+  - time-scaffold
+  - dynamic-circuits
+  - dynamic-symbol-tables
+  - state-transitions
+  - context
+  - mlp-laws
+  - attention
+  - qwen
+  - diffusion
+  - prediction
+  - mdb
+  - saturn
+related:
+  - "[[2026-11-05-161604-a-speculative-algebra-of-model-computation]]"
+  - "[[2026-10-02-115541-the-time-scaffold-architecture-living-theory]]"
+  - "[[2026-10-08-111437-time-circuits-as-state-machines-and-frontier-reduction]]"
+  - "[[2026-10-29-203157-the-big-picture-mapping-computation-and-the-time-circuit-architecture]]"
+  - "[[2026-10-29-142000-how-the-same-mlp-changes-its-response]]"
+  - "[[2026-10-29-172053-tracing-a-carry-computation-through-state-and-mlp-laws]]"
+  - "[[2026-10-30-140215-a-dynamic-symbol-table-read-off-the-model-and-frozen-to-predict]]"
+  - "[[2026-11-03-113232-the-complete-state-of-a-transformer-position-and-why-the-predictor-is-math]]"
+  - "[[2026-11-03-115919-finding-the-switch-what-decides-which-neurons-fire]]"
+  - "[[2026-11-04-141252-computation-records-and-continuation-in-the-time-circuit-architecture]]"
+  - "[[2026-11-05-050409-what-one-qwen-column-reads-from-memory-and-what-a-sealed-16-token-chain-does-when-that-read-is-cut-short]]"
+  - "[[2026-11-05-140315-predicting-a-diffusion-image-from-its-initial-noise]]"
+source_docs:
+  - ../../research/papers/time-circuit-scaffold/reviews/architecture-math-2026-10-02.md
+  - ../../research/papers/time-circuit-scaffold/paper.md
+  - ../../saturn/docs/CAUSAL-CONTEXT-VM.md
+  - ../../saturn/experiments/2026-11-05-open-conversation/FINDINGS-CV5.md
+  - ../../saturn/experiments/2026-11-05-open-conversation/AUDIT-CV5.md
+  - ../../saturn/experiments/2026-11-05-qwen-prediction-chain/FINDINGS-QC8.md
+  - ../../saturn/experiments/2026-11-05-qwen-prediction-chain/FINDINGS-QC15.md
+  - ../../saturn/experiments/2026-11-05-qwen-prediction-chain/FINDINGS-QC22.md
+  - ../../saturn/experiments/2026-11-05-qwen-prediction-chain/AUDIT-QC22.md
+  - ../../saturn/experiments/2026-11-05-qwen-prediction-chain/FINDINGS-QC23.md
+  - ../../saturn/experiments/2026-11-05-qwen-prediction-chain/AUDIT-QC23.md
+  - ../../saturn-pub/packages/mdb/docs/FLUX-MLP-STATE-LAW.md
+  - ../../saturn-pub/packages/mdb/docs/FLUX-ATTENTION-STATE-LAW.md
+  - ../../saturn-pub/packages/mdb/docs/FLUX-INITIAL-NOISE.md
+source_code:
+  - ../../saturn/experiments/2026-11-05-qwen-prediction-chain/payload_qc23/qwen_transition_reference.py
+  - ../../saturn/experiments/2026-11-05-open-conversation/payload_cv5/worker_cv5.py
+  - ../../saturn-pub/packages/mdb/qualification/flux_initial_noise_campaign.py
+  - ../../saturn-pub/packages/mdb/qualification/flux_reentry_reference.py
+source_artifacts:
+  - ../../saturn/experiments/2026-11-05-open-conversation/results/cv5-full1/report.json
+  - ../../saturn/experiments/2026-11-05-qwen-prediction-chain/results/qc22c-analysis.txt
+  - ../../saturn/experiments/2026-11-05-qwen-prediction-chain/results/qc23c-analysis.txt
+  - ../../artifacts/mdb-flux-initial-noise-20261105-corrected/audit.json
+  - assets/2026-11-05-state-context-math/derivation-checks.json
+  - assets/2026-11-05-state-context-math/operand-factorization-checks.json
+---
+
+# 2026-11-05 15:31:54 State context and the mathematics of time circuits
+
+A model advances a state. Its learned weights specify laws for reading, transforming and writing that state. The prompt helps construct the initial conditions; the accumulated context supplies memory; the execution clock determines which law acts next. A reply or image is an observable of the resulting trajectory.
+
+This connects the symbol table, MLP and time circuit work at a deeper level than a list of prediction scores. Attention calculates a contextual read. An MLP applies a fixed nonlinear law to the state that receives that read. The result changes what later computations can read. A time circuit follows this formation, storage, transformation and consumption through ordered execution. A symbol table gives qualified identities to the operations, values and relationships we have understood.
+
+The mathematical question is therefore precise: **given a sufficient incoming state, can we calculate the complete successor state and its later consequences?** A second question asks whether a smaller representation or a cheaper law preserves the consequences that matter. We can make progress on the first while still investigating the second.
+
+The recent experiments make this distinction concrete. The Qwen reference generates its own tokens and memory through explicit equations, and the diffusion reference composes its own state through the entire denoiser. We also have local response programs, exact perturbation identities and measured approximation regimes. These pieces support an account of how computation advances. They do not yet supply one compact semantic program for arbitrary chat.
+
+## A native test of operational variables
+
+The [operational-variable experiment](2026-11-05-161109-the-one-assumption-that-would-make-model-computation-easier-to-understand.md) now supplies a small causal example of this distinction. Two supplied binding coordinates were measured at three Qwen depths, transported by frozen affine maps and changed through typed Saturn interventions. Across eight held-out receiver contexts, all 16 full coordinate flips changed the target answer color and preserved the other binding's color. Across 48 signed interventions, the law predicted every target-margin direction, with correlation 0.939 and effect RMSE 7.00 logits. Complete hidden-state parity with the native model was exact in all 48 independent comparisons.
+
+The same result exposes the remaining state problem. A direction discarded by the source chart preserved color in all 64 queried outcomes but changed capitalization in six. It also changed later coordinates and continuous logits. The chart is useful for a bounded coarse consumer while remaining insufficient for exact token prediction and complete state advancement.
+
+Factoring the target-effect error into transport and readout defects gives RMSEs of 3.84 and 5.77 logits, respectively; their cross term is retained in the combined7.00-logit error. The larger defect concerns how a later query converts the candidate variables into answer evidence. The [frozen program, raw branches, state audit and decomposition](../../saturn/experiments/2026-11-05-operational-variable-closure/FINDINGS.md) remain linked to their exact specimen and numerical execution.
+
+The [consumer follow-up](../../saturn/experiments/2026-11-05-operational-variable-closure/FINDINGS-OVC4.md) supplies an exact omission test: replacing both complete source rows with identical FP32 bytes across native origins still leaves different answers. No function of those rows, wording and question alone can explain the resulting margins. The later question reads memory already written before the clamp, so the prefix writer and question reader must have separate clocks in our account.
+
+We then traced the successful early edit through [three persistent-memory intervals](../../saturn/experiments/2026-11-05-operational-variable-closure/FINDINGS-OVC5.md). Across 128 original/edited cache combinations, the target color changes exactly when edited layers 16–23 are present. Every combination retains the other binding's color. Layers 24–27 additionally change target confidence by about 4.5 logits when supplied alone. Toggling that later memory leaves the entire query-suffix receiving matrix at layer 24 bitidentical, confirming that the remaining native layers read an additional state input. These bounded mechanism results connect a source operand, persistent writes and later consumption; they still retain dense native memory and do not constitute a compact free-chat predictor.
+
+Separating [keys and values inside that effective band](../../saturn/experiments/2026-11-05-operational-variable-closure/FINDINGS-OVC6.md) gives another computational distinction. Values alone flip 13/16 targets, keys alone0/16, both together16/16. At the first affected reader, all four combinations have exactly the same complete incoming query state. The values carry most of this edit's measured answer effect, while the keys condition its propagation and resolve three remaining color decisions. Later query vectors can change; this channel factorial is not a fixed-attention explanation of the whole band. Its interaction is the attention-side counterpart of retaining all terms in the MLP finite-response expansion.
+
+## The machine and its current state
+
+Choose a boundary in execution and write
+
+$$
+(O_q,S_{q+1})=T_{q,\theta,\mathcal B}(S_q,U_q).
+$$
+
+Here $S_q$ is the live state, $U_q$ is newly supplied input, $O_q$ is an exposed result, $\theta$ is the fixed parameter bank, and $\mathcal B$ is the execution contract. The clock $q$ includes the information needed to identify the next operation: token position, layer and phase for a causal transformer; denoising pass, block and scheduler phase for diffusion. The contract binds numerical arithmetic, positional rules, masking, state layout and other conditions that affect execution.
+
+The weights and the live state have different mathematical roles. The weights define a function. The state supplies that function's current arguments. Two invocations of the same MLP share a law while producing different results because they receive different arguments.
+
+The complete-state principle is elementary but useful: if two executions have the same sufficient state, the same fixed bindings and the same future inputs, their futures agree. Under sampling, that statement also requires the same random state and sampling policy. A complete StateCut makes this principle executable through replay and restoration. The [mathematical account of the time scaffold](../../research/papers/time-circuit-scaffold/reviews/architecture-math-2026-10-02.md) and [CausalContextVM](../../saturn/docs/CAUSAL-CONTEXT-VM.md) describe the theory and its bounded implementation.
+
+The stronger research problem is discovering a useful organization inside this state: which sources a reader addresses, what a writer calculates, where information persists, and which consumers give it an effect. Calling a model a state machine establishes the bookkeeping. The time circuit research asks whether recurring causal roles support a reusable account of the computation.
+
+## The complete state of a chat decoder
+
+We need a boundary convention before defining the state. Let $x_t$ be the token about to be processed at position $t$. Before that column runs, the persistent attention memory contains positions strictly earlier than $t$:
+
+$$
+M_{<t}=\{K^\ell_{<t},V^\ell_{<t}\}_{\ell=0}^{L-1}.
+$$
+
+A sufficient state for the bare deterministic decoder at this boundary is
+
+$$
+S_t^-=(x_t,M_{<t},p_t),
+$$
+
+with weights, architecture, causal mask rules and arithmetic bound externally. The position metadata $p_t$ determines RoPE and cache placement. Standard full-context evaluation is assumed here; sliding windows or other cache policies need their own metadata.
+
+During a column the state also contains the current residual, the layer/phase clock, and the new K/V rows already written by lower layers. After the final layer, it contains the completed memory and either the final residual or the logits needed for token selection. Once a token has been selected, the next boundary can discard that temporary residual and carry the selected token instead:
+
+$$
+S_{t+1}^-=(x_{t+1},M_{\leq t},p_{t+1}).
+$$
+
+These are different sufficient representations at different boundaries. “The state is the residual” and “the state is the cache” each omit something when applied at the wrong boundary. The [complete-state review](2026-11-03-113232-the-complete-state-of-a-transformer-position-and-why-the-predictor-is-math.md) established the importance of the all-layer memory; the boundary convention here makes the pending token and readout explicit.
+
+The indexing is deliberate: column $t$ consumes $x_t$, writes memory row $t$, and predicts $x_{t+1}$. A supplied frontier can stop before the final prompt token, leaving that token pending. A cache-only prefill description therefore needs the pending token and position before it becomes a column-entry state.
+
+For Qwen2.5-1.5B-Instruct, $L=28$, the residual width is 1536, there are 12 query heads and 2 K/V heads, and each head has width 128. One processed position therefore contributes
+
+$$
+28\times 2\times128\times2=14{,}336
+$$
+
+stored scalar values across all layer keys and values. The first factor of two counts K/V heads; the last counts keys versus values. A single 1536-dimensional final residual is a different object from those 14,336 memory coordinates.
+
+An application can require more state than the bare decoder. Repetition penalties can depend on token history; sampling needs RNG state; stopping needs policy state; tool use needs the tool/environment state if replay claims include it. The original token transcript is useful for these consumers even when the neural decoder itself can continue from its cache and pending token. A model-state equivalence does not automatically establish equivalence of a whole agent application.
+
+## Context is a history that has been executed
+
+Write the ordered prompt tokens as $c_0,\ldots,c_{n-1}$. Prefill constructs memory by applying the same causal laws to those tokens:
+
+$$
+M_{<n}=\operatorname{Prefill}_{\theta,\mathcal B}(c_0,\ldots,c_{n-1}).
+$$
+
+Parallel prefill and incremental decoding organize the computation differently, but both implement this causal dependency structure. Their numerical reductions can differ under finite precision.
+
+Context has at least three distinct meanings here. The visible context is the token sequence. The executed context is the layered memory formed from that sequence. The receiving context is the particular live state on which an operation acts. Confusing these meanings produces bad predictors: an average token embedding does not supply the contextualized value that a later attention head actually reads.
+
+For example, consider the desired binding behavior for “Mira has the copper key. Niko has the silver key. Who has the copper key?” The current token and position can be identical in another prompt that swaps the owners, while its earlier memory differs. The question must select and consume the appropriate contextual binding. The exact equations explain how such information can reach the answer; locating which rows and features implement it in a particular model requires an actual trace and controlled contrast. The words “owner” and “key” do not guarantee one separately named neural register apiece.
+
+For an earlier position $j$, its layer-$\ell$ memory row was formed from the prefix through $j$ and the computation below layer $\ell$. It cannot contain information from a future token. Conversely, it can contain much more than the identity of token $x_j$: its role, earlier bindings and other distinctions encoded by the preceding computation. Those earlier rows remain fixed during ordinary append-only decoding. Later queries change how they are read.
+
+When another user turn arrives, the chat template, role markers and user text become additional input tokens. Processing them appends new rows to the same history. The role markers are learned inputs to the model, rather than an extra mathematical substance added beside the cache.
+
+There is consequently no general equation of the form
+
+$$
+\text{next state}=\text{previous residual}+\text{prompt vector}+\text{token vector}.
+$$
+
+The correct relationship is a composition: the prompt forms memory; a current token creates a query; that query addresses the formed memory; the resulting reads and nonlinear writes construct the successor. The [October state-machine experiments](2026-10-08-111437-time-circuits-as-state-machines-and-frontier-reduction.md) already exposed the practical consequence: repairing an exposed answer can leave its persistent memory inconsistent with later use.
+
+## One transformer column from beginning to end
+
+Use column vectors and let $h_t^\ell\in\mathbb R^d$ be the residual entering layer $\ell$. The initial residual is the token embedding,
+
+$$
+h_t^0=E[x_t].
+$$
+
+For Qwen's RMSNorm, define
+
+$$
+N_\gamma(h)=\Gamma\frac{h}{r(h)},\qquad
+r(h)=\sqrt{\frac{h^\top h}{d}+\varepsilon},\qquad
+\Gamma=\operatorname{diag}(\gamma).
+$$
+
+Each layer has its own attention and MLP norm weights. First compute $n_t^\ell=N_{\gamma_A^\ell}(h_t^\ell)$. The current query, key and value projections are
+
+$$
+q_t^{\ell,h}=R_{p_t}(W_Q^{\ell,h}n_t^\ell+b_Q^{\ell,h}),
+$$
+
+$$
+k_t^{\ell,g}=R_{p_t}(W_K^{\ell,g}n_t^\ell+b_K^{\ell,g}),\qquad
+v_t^{\ell,g}=W_V^{\ell,g}n_t^\ell+b_V^{\ell,g}.
+$$
+
+RoPE rotates queries and keys, while the values remain unrotated. Cached $K^\ell_j$ stores these post-RoPE keys, and cached $V^\ell_j$ stores the unrotated values. The group map $g(h)$ tells each query head which K/V head it reads; in this model six query heads share each K/V head. The current K/V rows join the earlier rows for this layer's attention calculation, so self-attention includes $j=t$.
+
+The contextual address and read are
+
+$$
+s_{tj}^{\ell,h}=\frac{(q_t^{\ell,h})^\top k_j^{\ell,g(h)}}{\sqrt{d_h}},\qquad
+\alpha_{tj}^{\ell,h}=\frac{\exp s_{tj}^{\ell,h}}{\sum_{i\in\mathcal A_t}\exp s_{ti}^{\ell,h}},\qquad j\in\mathcal A_t,
+$$
+
+$$
+a_t^{\ell,h}=\sum_{j\in\mathcal A_t}\alpha_{tj}^{\ell,h}v_j^{\ell,g(h)},\qquad
+A_t^\ell=W_O^\ell\operatorname{concat}_h a_t^{\ell,h}.
+$$
+
+The eligible set $\mathcal A_t$ is $\{0,\ldots,t\}$ for the unpadded full-attention columns here; other masks restrict it further. The softmax gives a weighted address over those positions. Its weights are generally continuous, so “which source is read” can refer to a distribution rather than a single pointer.
+
+Attention writes into the residual:
+
+$$
+r_t^\ell=h_t^\ell+A_t^\ell.
+$$
+
+The MLP receives the normalized **updated** residual,
+
+$$
+z_t^\ell=N_{\gamma_M^\ell}(r_t^\ell),
+$$
+
+and applies SwiGLU:
+
+$$
+M_t^\ell=W_D^\ell\left[
+\operatorname{SiLU}(W_G^\ell z_t^\ell)\odot W_U^\ell z_t^\ell
+\right],\qquad
+h_t^{\ell+1}=r_t^\ell+M_t^\ell.
+$$
+
+This Qwen specimen has biases in Q/K/V and no biases in its three MLP projections. Other architectures require their own equations.
+
+The timing of the memory write matters. The layer-$\ell$ K/V row is computed from $h_t^\ell$ **before that layer's attention and MLP updates**. Its MLP can affect the current token's memory at higher layers, beginning at $\ell+1$, and its final readout. It does not retroactively rewrite its own already-formed layer-$\ell$ row. This is a concrete temporal dependency that the circuit map must preserve.
+
+After all layers,
+
+$$
+\ell_t=W_{\mathrm{head}}N_{\gamma_f}(h_t^L),\qquad
+x_{t+1}=\operatorname{Select}(\ell_t;\pi,\rho_t).
+$$
+
+The selector is argmax under greedy decoding, with a declared tie rule, or a sampler under policy $\pi$ and random state $\rho_t$. The all-layer K/V rows of position $t$ persist. The selected token supplies the next embedding. These equations implement the entire decoder transition; the [independent Qwen reference](../../saturn/experiments/2026-11-05-qwen-prediction-chain/payload_qc23/qwen_transition_reference.py) gives the executable version.
+
+## The MLP as a state dependent mathematical law
+
+Suppress layer and token indices and write
+
+$$
+m(z)=D\,[\phi(Gz)\odot Uz],\qquad \phi(a)=a\,\sigma(a).
+$$
+
+With $d_i$ the $i$th column of $D$ and $g_i^\top,u_i^\top$ the corresponding rows of $G,U$,
+
+$$
+m(z)=\sum_i d_i\,\phi(g_i^\top z)\,(u_i^\top z).
+$$
+
+Each hidden feature contributes a fixed output direction $d_i$, multiplied by a state-dependent scalar. The incoming state determines both its gate-side response and its value-side response. SiLU is a smooth signed function; a gate here is not a literal Boolean switch.
+
+The MLP acts independently at each position. Cross-position operands reach it through the residual formed by attention and earlier computation. Its output changes higher-layer memory and readout through those later consumers.
+
+The [SwiGLU analysis](2026-10-16-114000-what-a-swiglu-mlp-is-and-what-to-exploit.md) and [MLP store-versus-law work](2026-10-15-134000-do-transformer-mlps-store-tables-or-compute-laws.md) make this a useful meeting point between memory and computation. Learned parameters can encode associations and response directions, while the invocation calculates a nonlinear function of its current arguments. The algebra by itself does not tell us whether a feature implements a particular fact, carry, object or relationship.
+
+For a particular state, define $s(z)=\phi(Gz)$. Then
+
+$$
+m(z)=\underbrace{D\operatorname{diag}(s(z))U}_{B(z)}z.
+$$
+
+This is a state-dependent effective matrix. Once the gate values are supplied, the remaining multiplication is linear in $z$. Globally, $B(z)$ changes with $z$, so the MLP remains nonlinear.
+
+The same conditional expansion applies across the transformer. Hold the complete occurrence-specific attention weights, MLP gate values and normalization denominators fixed. The real-arithmetic residual update is then affine in the current embedding and earlier value rows, including projection biases where present. Cached keys enter this payload expression through the supplied attention weights; without those weights the map is nonlinear in the full state. The final readout normalization also needs its denominator fixed for the affine statement to extend to logits. This is the exact algebra behind the [switched-affine account](2026-11-02-152115-the-model-as-a-switched-affine-machine-why-the-state-compiler-generalizes.md).
+
+However, those coefficients were themselves calculated from the state. MLP gate values can carry content. Supplying them does not establish a cheap content-free routing oracle. An effective matrix at one input is an account of that invocation; a predictive program must also calculate which matrix applies to the next input. The [switch experiments](2026-11-03-115919-finding-the-switch-what-decides-which-neurons-fire.md) investigate precisely that dependence.
+
+## How accumulated context reaches an MLP
+
+The residual has an exact additive history in real arithmetic:
+
+$$
+h_t^\ell=E[x_t]+\sum_{k<\ell}(A_t^k+M_t^k).
+$$
+
+Thus the incoming gate preactivation at layer $\ell$ is
+
+$$
+G^\ell N_{\gamma_M^\ell}(r_t^\ell)
+=\frac{G^\ell\Gamma_M^\ell}{r(r_t^\ell)}
+\left[E[x_t]+\sum_{k<\ell}(A_t^k+M_t^k)+A_t^\ell\right].
+$$
+
+For the actual norm denominator this splits into exact contributions from the embedding, earlier writes and the current attention write. Attention can be expanded again into the earlier source values it read. This is how a distant prompt binding can become an operand to a local MLP.
+
+The expansion is an accounting identity on the observed state. If one contribution changes, the norm denominator, later attention and gates generally change too. Holding all of those fixed gives a controlled modified computation; it does not automatically describe the native counterfactual.
+
+This resolves a common ambiguity in “the same MLP does a different operation.” Its parameters and formula can remain identical while its input and local response change. The [finite-response experiments](2026-10-29-142000-how-the-same-mlp-changes-its-response.md) demonstrated this in a small ISA Mamba: a response could bend enough with dose to reverse the sign of a selected readout contribution. A small polynomial predicted fresh combinations within one declared receiver; transferring it to another receiver produced large error. The domain of a recovered law is part of its mathematical meaning.
+
+## Predicting a changed attention read
+
+Consider one head at a fixed query. Write its output as
+
+$$
+A=\frac{b}{Z},\qquad
+b=\sum_j e^{s_j}v_j,\qquad Z=\sum_j e^{s_j}.
+$$
+
+Suppose a set $J$ of source keys or values changes while the query and all other sources remain fixed. Define
+
+$$
+\Delta b=\sum_{j\in J}\left(e^{s'_j}v'_j-e^{s_j}v_j\right),\qquad
+\Delta Z=\sum_{j\in J}\left(e^{s'_j}-e^{s_j}\right).
+$$
+
+The exact successor read is
+
+$$
+A'=\frac{ZA+\Delta b}{Z+\Delta Z},\qquad
+\boxed{\Delta A=\frac{\Delta b-A\Delta Z}{Z+\Delta Z}}.
+$$
+
+Changing an addressed key alters the denominator shared by every source. The effect therefore includes a reweighting of unchanged values. A causal route is more than the payload at the changed token.
+
+There is a complementary exact expansion in routing and payload changes:
+
+$$
+\Delta A=\sum_j\Delta\alpha_jv_j
++\sum_j\alpha_j\Delta v_j
++\sum_j\Delta\alpha_j\Delta v_j.
+$$
+
+The terms are routing, value and interaction contributions relative to the baseline. In the [new FLUX attention-state calculation](../../saturn-pub/packages/mdb/docs/FLUX-ATTENTION-STATE-LAW.md), changed text reweights even unchanged image values. At a fixed image query, with $\mu$ the total probability on text, the image contribution scales as
+
+$$
+A'_I=\frac{1-\mu'}{1-\mu}A_I.
+$$
+
+That study independently predicts positioned Q/K/V, attention, receiving MLP input, MLP output and selected image exits from raw state. It retains all 1536 keys/values but forecasts only 32 selected image queries, under CPU BF16. The routing/value interaction has RMS 0.191784 while their complete combined attention change has RMS 0.132982, because the interaction partly opposes the additive terms. This is a measured operand-level account of how context changes a write; the selected rows do not constitute a complete successor state for the next block.
+
+The first-order version exposes the roles of keys, values and receiving query:
+
+$$
+\delta A=\sum_j\alpha_j\,\delta v_j
++\sum_j\alpha_j(v_j-A)\,\delta s_j,
+$$
+
+$$
+\delta s_j=\frac{k_j^\top\delta q+q^\top\delta k_j}{\sqrt{d_h}}.
+$$
+
+A value change directly changes the read payload. A key or query change matters through a score and the difference between that source value and the existing read. A high attention weight alone does not fully determine sensitivity. If the query changes, potentially every source score changes; the small-$J$ update is no longer a shortcut unless those additional changes are included.
+
+There is also an exact account of masking a tail. Let its total attention mass be $\mu$, its attention-weighted mean value be $\bar v_T$, and the retained sources' weighted mean be $\bar v_R$. Then
+
+$$
+A=(1-\mu)\bar v_R+\mu\bar v_T,\qquad
+A_{\mathrm{mask}}=\bar v_R,
+$$
+
+so
+
+$$
+\boxed{A_{\mathrm{mask}}-A=\mu(\bar v_R-\bar v_T)}.
+$$
+
+At that fixed head boundary, error depends on removed mass and the difference between the substituted and removed payloads. The number of removed rows is insufficient to determine it. The [audited attention-tail experiments](../../saturn/experiments/2026-11-05-qwen-prediction-chain/FINDINGS-QC9.md) corrected an earlier “many aligned small pushes” interpretation and supported this mass-and-payload account.
+
+This is a reusable mathematical explanation of an intervention. Whether a cheap summary can supply the needed $\mu$ and $\bar v_T$ without doing the full read remains a separate predictive question.
+
+## Predicting the receiving MLP write
+
+Attention changes the MLP's receiver. For a layer input perturbation $\Delta h$ and attention perturbation $\Delta A$,
+
+$$
+\Delta r=\Delta h+\Delta A,\qquad
+\Delta z=N(r+\Delta r)-N(r).
+$$
+
+Let $a=Gz$, $u=Uz$, $s=\phi(a)$, and define
+
+$$
+\Delta u=U\Delta z,\qquad
+\Delta s=\phi(a+G\Delta z)-\phi(a).
+$$
+
+Expanding the product gives the exact finite-change identity
+
+$$
+\boxed{
+\Delta m=D\left[
+s\odot\Delta u
++\Delta s\odot u
++\Delta s\odot\Delta u
+\right]}.
+$$
+
+The first term changes values under the original gate. The second changes gates acting on the original values. The third is their interaction. These are an ordered decomposition around the chosen baseline; reversing the baseline changes the allocation of the terms while preserving the total difference.
+
+The identity is exact for the displayed real-arithmetic product. A rounded native calculation also needs a numerical remainder accounting for its intermediate product, projection and other rounding boundaries; that remainder should not be silently assigned to one semantic contribution.
+
+The complete residual change leaving the layer is
+
+$$
+\Delta h_{\mathrm{out}}=\Delta r+\Delta m.
+$$
+
+This closes the chain from contextual read to nonlinear write. A prompt change can alter keys or values; the resulting attention change alters the receiver; normalization changes both its scale and direction; the MLP recalculates gate and value responses; the new residual changes higher-layer reads and writes.
+
+The current [FLUX MLP state-law work](../../saturn-pub/packages/mdb/docs/FLUX-MLP-STATE-LAW.md) uses this gate/value/interaction organization on the image-facing MLP of joint block 1. Its outer time-modulation gates and explicit BF16 boundaries are additional parts of that specimen's law. The same algebraic pattern connects to Qwen's SwiGLU, while dimensions, normalization, modulation and numerical rules remain model-specific.
+
+This explains why transferring a measured MLP correction between receiving states can fail. A correction $m(z+\Delta z)-m(z)$ depends on both $z$ and $\Delta z$. Matching only the apparent semantic edit or only the perturbation vector does not fix the baseline gate, value or norm. The [receiving-state experiments](2026-11-03-130032-when-an-mlp-substitution-changes-with-its-receiving-state.md) and [contextual diffusion programs](2026-11-04-140929-contextual-programs-and-predictable-image-edits.md) examine this dependence through native consumers.
+
+## The derivative and the finite response
+
+For the unnormalized-input MLP $m(z)=D[\phi(Gz)\odot Uz]$, its Jacobian is
+
+$$
+J_m(z)=D\left[
+\operatorname{diag}(Uz)\operatorname{diag}(\phi'(Gz))G
++\operatorname{diag}(\phi(Gz))U
+\right].
+$$
+
+Both gate and value sensitivity appear. For SwiGLU,
+
+$$
+\phi'(a)=\sigma(a)+a\sigma(a)(1-\sigma(a)).
+$$
+
+For the full block $F(r)=m(N_\gamma(r))$, apply the chain rule:
+
+$$
+J_F(r)=J_m(N_\gamma(r))J_N(r),
+$$
+
+$$
+J_N(r)=\Gamma\left[\frac{I}{\eta}-\frac{rr^\top}{d\eta^3}\right],\qquad
+\eta=\sqrt{r^\top r/d+\varepsilon}.
+$$
+
+Normalization is part of the response law. Its derivative is not generally a fixed scalar multiplier, and finite changes also include its curvature.
+
+Here $J_F$ is the derivative of the MLP write. Its residual substep $r\mapsto r+F(r)$ has derivative $I+J_F(r)$. For the complete attention-plus-MLP layer, with incoming cache held fixed, the derivative is $(I+J_F(r))(I+J_A(h))$. These derivatives describe the smooth law; native rounding adds numerical discontinuities.
+
+The exact finite response is an integral of local laws along the state change:
+
+$$
+\boxed{F(r+\delta)-F(r)=\int_0^1J_F(r+s\delta)\,\delta\,ds}.
+$$
+
+A tangent approximation samples the derivative at the start:
+
+$$
+F(r+\delta)\approx F(r)+J_F(r)\delta.
+$$
+
+A midpoint approximation samples halfway along the actual segment:
+
+$$
+F(r+\delta)\approx F(r)+J_F(r+\tfrac12\delta)\delta.
+$$
+
+For a smooth block on a controlled segment, the tangent's absolute remainder is second order in $\|\delta\|$, while the midpoint rule's is third order. This gives a mathematical reason for improved finite-response prediction without treating the expansion point as a special semantic memory.
+
+That is what the [latest Qwen MLP experiments and audit](../../saturn/experiments/2026-11-05-qwen-prediction-chain/FINDINGS-QC22.md) support. At layers 8–14, the measured local relative error fell from about 0.65 to 0.08 on short prompts and from 0.74 to 0.09 on chat when replacing the tangent with the midpoint rule around nearby reference points. Matched-distance controls showed that the improvement is a property of the smooth law, including at synthetic reference points. Nearer points still help when many layers are composed.
+
+The calculation remains substantive work: that implementation costs roughly five to six native MLP evaluations. A derivative account can explain the model more accurately before it becomes a cheaper executor. The small ISA response program, by contrast, stored a finite polynomial over a qualified low-dimensional domain. These are two different levels of understanding a law: explicit evaluation over broad inputs, and compact response prediction within an identified regime.
+
+## From the MLP formula to a recovered operation
+
+The older MLP-law work supplies more than a general smoothness observation. SwiGLU has an exact decomposition,
+
+$$
+\phi(a)=\frac a2+\frac a2\tanh\frac a2,
+$$
+
+and therefore
+
+$$
+m(z)=\frac12D[(Gz)\odot Uz]
++\frac12D[((Gz)\odot\tanh(Gz/2))\odot Uz].
+$$
+
+The first term is quadratic in the normalized input. It can multiply features arriving from different operands. The second term supplies additional state-dependent curvature. This is an exact decomposition of the bias-free MLP, without assuming that either term dominates a particular native task.
+
+A concrete candidate operation is composition of phase codes. If a value $a$ has a representation $(\cos\omega a,\sin\omega a)$, then addition follows from
+
+$$
+\cos\omega(a+b)=\cos\omega a\cos\omega b-\sin\omega a\sin\omega b,
+$$
+
+$$
+\sin\omega(a+b)=\sin\omega a\cos\omega b+\cos\omega a\sin\omega b.
+$$
+
+Products of operand features followed by a linear combination can therefore compose a sum code. A later reader can compare that code with candidate answers. Attention must first gather the relevant operand representations into the receiver; the MLP's multiplication alone does not identify which values to add.
+
+The [weight-reading experiments](2026-10-15-202526-reading-the-laws-a-model-uses-from-its-mlp-weights.md) found bounded evidence for this organization in Qwen arithmetic. The weight-derived operand planes and the native layer-23 MLP restored substantial held-out addition behavior, while other operations and answer families had weaker or failed recovery. The supplied family ordering, readout assumptions, operating point and native consumer remain part of that evidence. The [dynamic symbol table](2026-10-30-140215-a-dynamic-symbol-table-read-off-the-model-and-frozen-to-predict.md) contributes the complementary address account: column-relative readers locate digits and carry information as the answer position advances.
+
+The small ISA Mamba gives another kind of recovered operation. In one two-direction receiver domain, five measured response vectors define
+
+$$
+\Delta P(s,t)=s a+t b+s^2c+t^2d+st e.
+$$
+
+For 48 output features this is 240 coefficients. The [frozen response program](2026-10-29-142000-how-the-same-mlp-changes-its-response.md) predicted four fresh combinations at approximately 0.78–1.60% relative error and preserved the tested native register/flag decisions. It is a local multivariate law, with a bound receiver and basis, rather than a universal replacement for that MLP.
+
+These examples identify what an understood computation can look like: addressed operands, an algebra that combines their representations, a qualified response domain, a write, and a consumer that uses it. They connect the neuron-level formula to the program-level roles without assuming that every MLP invocation performs the same named operation.
+
+## Time circuits as formation and later consumption
+
+The transformer equations give a concrete interpretation of the time circuit architecture. At a particular layer and position, an earlier value is a source, the current query/key comparison supplies an address, attention transports a payload, an MLP transforms the receiving state, and later memory rows carry consequences to future consumers.
+
+```mermaid
+flowchart LR
+    P[Ordered prompt and earlier computation] --> K[Layered keys and values]
+    K --> A[Current query and contextual read]
+    A --> R[Updated receiving residual]
+    R --> M[Normalization and MLP law]
+    M --> H[Higher layer state and writes]
+    H --> C[Readout and token commit]
+    C --> E[Next token embedding]
+    H --> K2[Memory available to later positions]
+    K2 --> A2[Later contextual read]
+    E --> A2
+```
+
+There are two clocks in this picture. Depth advances the current column through layers. Sequence time appends a new position after a token is committed. A circuit can form a distinction over depth, write consequences into memory, and have them consumed much later in sequence time. Diffusion adds a denoising-pass clock with a persistent latent between passes.
+
+A recurrent model packages the history differently. A schematic selective state-space transition is
+
+$$
+H_{t+1}=A_tH_t+B_tv_t,\qquad o_t=C_tH_{t+1}+Dv_t,
+$$
+
+where $A_t,B_t,C_t$ are calculated from the current input under fixed learned parameters. The complete Mamba boundary also includes convolution history and the surrounding gates, residuals and clock. The recurrent state replaces the growing attention cache as a principal carrier, while the source/read/write/consumer questions remain. Input-dependent retention is one component of the transition; it does not alone establish when a semantic result is committed. The [Mamba dynamic-circuit work](2026-10-01-210120-shared-memory-and-dynamic-circuits-in-mamba.md) and [architecture review](2026-10-29-203157-the-big-picture-mapping-computation-and-the-time-circuit-architecture.md) distinguish those measured roles from the stronger clock hypotheses that were retired.
+
+Unrolling these dependencies produces a directed graph over operation occurrences. The learned parameter graph is fixed. The attention coefficients, nonlinear responses and causal effects along its edges depend on the live state. This is the dynamic part of a dynamic circuit. A dense implementation can execute every operator even when a particular distinction has concentrated causal influence along only some paths.
+
+The scaffold hypothesis adds an empirical proposition: recurring source, store, reader, writer and consumer roles may admit stable descriptions over a declared family of contexts. That proposition requires interventions and predictions across contexts. It does not follow from drawing the unrolled graph, and it does not imply a universal storage band or a unique set of coordinates. The [big-picture architecture synthesis](2026-10-29-203157-the-big-picture-mapping-computation-and-the-time-circuit-architecture.md) separates the surviving store/router evidence from time-ordering hypotheses that were retired.
+
+The mathematical object worth discovering is therefore a qualified transition with its causal interfaces. A carry, for example, should be tracked from operand formation through nonlinear interaction, commitment and later readout. A neuron that correlates with the carry is one observation along that path. The [carry investigation](2026-10-29-172053-tracing-a-carry-computation-through-state-and-mlp-laws.md) illustrates why formation, necessity and final readout need separate measurements.
+
+## What a symbol table must connect
+
+A computation record can be represented conceptually as
+
+$$
+\mathcal R=(\text{identity},q,\mathcal D,\text{inputs},f_\theta,
+\text{outputs},\text{consumers},\text{continuation},\text{evidence}).
+$$
+
+The domain $\mathcal D$ states where the account applies. Inputs include the live operands and parameter bindings. Outputs identify what the next consumer receives. The continuation states how those outputs enter later execution, and the evidence records numerical errors and behavioral effects under those conditions. This tuple is a mathematical description of the record, rather than a claim that one current API automatically discovers every field.
+
+A symbol table indexes these records and the values they describe. It lets us distinguish the reusable law from its particular occurrence. `mlp.silu-gated-projection` can name a mathematical family; a checkpoint/layer/clock/state binding identifies an invocation; “forms a carry used by this later reader” is a causal role requiring additional evidence.
+
+This is also why a bare address is insufficient. The same address can receive a different state and play a different role. Conversely, two different addresses or checkpoints can implement the same logical operation with different carriers. The [symbol lifetimes work](2026-10-28-004715-symbol-lifetimes-time-scaffolds-dynamic-circuits.md), [frozen dynamic table](2026-10-30-140215-a-dynamic-symbol-table-read-off-the-model-and-frozen-to-predict.md) and [computation-record synthesis](2026-11-04-141252-computation-records-and-continuation-in-the-time-circuit-architecture.md) develop these distinctions.
+
+Records compose when one operation supplies the complete input required by the next:
+
+$$
+\widehat S_{q+2}=\widehat T_{q+1}(\widehat T_q(S_q)).
+$$
+
+Composition must preserve ports, clock, positional rules, carried state and numerical contract. Supplying a later native tensor in place of one predicted field changes the experiment into a refreshed or conditional forecast. Such a bridge is useful for diagnosis, but the dependency should remain visible.
+
+## Diffusion and chat share state advancement
+
+At a FLUX pass boundary, a sufficient denoiser state includes a latent $Z_s$, encoded prompt conditioning $E$, position IDs, schedule and current pass. The model parameters and numerical execution profile remain fixed bindings. Projection regenerates working image/text streams and time modulation from these arguments; joint and single blocks transform those streams; readout produces a noise/velocity field; the scheduler commits the next latent.
+
+Schematically,
+
+$$
+V_s=D_{\theta}(Z_s,E,\tau_s),\qquad
+Z_{s+1}=\operatorname{Scheduler}_{\mathcal B}(Z_s,V_s,\sigma_s,\sigma_{s+1}).
+$$
+
+For the measured Euler profile this includes declared BF16 rounding of the scalar step, product and residual addition. Inside a pass, the complete state also contains the temporary image/text registers and modulation context. A joint block applies attention and then an MLP to its updated receiver; the single-block architecture uses parallel attention/MLP features. Changing that operation order changes the law.
+
+Chat carries growing layered memory and a pending token; diffusion carries a changing latent and persistent conditioning. Chat's readout commits a discrete token; diffusion's scheduler commits a continuous tensor. Both systems compose known laws on their own predecessor state:
+
+$$
+\begin{aligned}
+\text{chat:}\quad &(x_{t+1},M_{\leq t})=F_\theta(x_t,M_{<t},p_t),\\
+\text{diffusion:}\quad &Z_{s+1}=G_{\theta,s}(Z_s,E).
+\end{aligned}
+$$
+
+The [initial-noise experiment](2026-11-05-140315-predicting-a-diffusion-image-from-its-initial-noise.md) composed 112 denoiser transitions over four passes for one FLUX.2 Klein 4B history. Its forecast image existed before native denoising. The final latent differed by 3.3254% relative RMS and its actual VAE output by 0.116628 RGB levels on average out of 255. Native encoding and VAE decoding remained supplied boundaries.
+
+The [human-user conversation experiment](../../saturn/experiments/2026-11-05-open-conversation/FINDINGS-CV5.md) independently calculated 32 sixteen-token windows from 16 sessions, including reply openings and positions sixteen tokens into replies. All 512 forecast tokens matched the FP32 native reference, with final-residual error around $10^{-6}$, and the full predicted states supported matching native continuation. Its initial prompt/cache frontier was supplied by native prefill. These counts are bounded execution evidence, rather than independent samples of every kind of chat.
+
+The independent Qwen equation executor widens original BF16 checkpoint values into FP64 arithmetic and binds the declared FP32 RoPE table. Its token agreement with the native FP32 reference is measured; scalar bitwise equality with every native kernel is not implied.
+
+Both results establish composition through a declared state boundary. Their numerical errors differ because the laws, trajectories and executor contracts differ. A quantized greedy near-tie can flip a text trajectory under a small logit difference, while a latent discrepancy can remain visually subtle after decoding. Pixel agreement and token identity are different observables of the dynamics.
+
+## Local error and transported error
+
+Let $S_{q+1}=T_q(S_q)$ be native and $\widehat S_{q+1}=\widehat T_q(\widehat S_q)$ be predicted. Add and subtract a native transition on the predicted input:
+
+$$
+\widehat S_{q+1}-S_{q+1}
+=\underbrace{\widehat T_q(\widehat S_q)-T_q(\widehat S_q)}_{\text{local implementation or approximation error}}
++\underbrace{T_q(\widehat S_q)-T_q(S_q)}_{\text{transported incoming error}}.
+$$
+
+This identity makes the matched native bridge useful. It isolates how the current operation differs on the same receiver from how the native operation transports a receiver that earlier predictions already changed. The [chained diffusion analysis](2026-11-05-000800-debugging-chained-model-predictions.md) implemented this comparison with complete incoming states.
+
+Within a differentiable region and a common discrete branch,
+
+$$
+e_{q+1}=J_{T_q}(S_q)e_q+\eta_q+O(\|e_q\|^2),
+$$
+
+where $\eta_q=\widehat T_q(\widehat S_q)-T_q(\widehat S_q)$. Iteration transports earlier defects through products of later Jacobians. Norms can grow, shrink or cancel in particular directions. A negative inner product between error terms is numerical opposition; it does not demonstrate that a model recognized and repaired a semantic mistake.
+
+Token selection introduces a branch boundary. If the native top token has margin $m$ over its runner-up, then
+
+$$
+\|\widehat\ell-\ell\|_\infty<m/2
+$$
+
+is a sufficient condition for preserving that argmax. This is a mathematical bound for a declared comparison, not a requirement to gate exploratory evidence collection. Once a token differs, the next embedding differs, and a linearized comparison along the original token path no longer describes the entire alternative trajectory.
+
+Even when the token agrees, the newly written K/V rows can differ. That is the point where current-output preservation and time-circuit preservation separate.
+
+## A smaller state must preserve future consumers
+
+Suppose we want a compact state $z=C(S)$ and a reduced transition $\widetilde T$. The required relationship is a commuting update, over a declared domain and input set:
+
+$$
+C(T(S,u))\approx\widetilde T(C(S),u).
+$$
+
+Its exposed outputs also need to agree with the corresponding readout. A representation that predicts today's answer but cannot advance itself under tomorrow's input is not sufficient for that continuation task.
+
+An exact definition makes the role of the consumer clear. Let $\Psi_r^q(s;w)$ denote the state reached after $r$ transitions from clock $q$ under the supplied input string $w$, and let $O_{q+r}$ be the observation there. For a declared input alphabet $\mathcal U$, define
+
+$$
+s\equiv_H^q s'
+\iff
+\forall\,0\leq r\leq H,\ \forall w\in\mathcal U^r:\quad
+O_{q+r}(\Psi_r^q(s;w))=O_{q+r}(\Psi_r^q(s';w)).
+$$
+
+The states start at the same clock. Taking all finite horizons yields equivalence under every allowed finite continuation. When the input family is closed under continuation, this supports a quotient state machine. Finite-horizon equivalence is weaker; its update has the form
+
+$$
+[s]_H^q\xrightarrow{u}[T_q(s,u)]_{H-1}^{q+1}.
+$$
+
+Advancing a state reduces the remaining horizon. A fixed finite-horizon result does not automatically justify indefinite reuse.
+
+This is a target for discovery, not a claim that we have already recovered the quotient for chat. It explains why the minimal state can depend on the task, future question and horizon. A distinction invisible to one next-token readout can become visible to a later query.
+
+There is a useful local version. Let $P_h$ be the Jacobian transporting an incoming perturbation through $h$ transitions along one fixed branch, with $P_0=I$, and let $H_h$ be the derivative of the observation at that future boundary. Then
+
+$$
+\delta o_h\approx H_hP_h\delta S.
+$$
+
+A local measure of influence over the horizon is
+
+$$
+\mathcal W_H=\sum_{h=0}^{H}P_h^\top H_h^\top H_hP_h,
+\qquad
+\sum_{h=0}^{H}\|\delta o_h\|^2\approx\delta S^\top\mathcal W_H\delta S.
+$$
+
+This uses differentiable observations such as logits, with token choices and sampling branches held fixed. Argmax itself is not differentiated. A fixed arena or explicit append maps supply compatible state dimensions when memory grows. Directions with little effect on the current readout can still matter through later transport. Directions with little effect on all tested future consumers are local candidates for reduction; this quadratic form does not prove global state equivalence or the existence of a quotient.
+
+This derivation connects the [frontier-reduction work](2026-10-08-111437-time-circuits-as-state-machines-and-frontier-reduction.md) to the current predictor program. The objective is to preserve the distinctions later consumers use. Raw reconstruction error, activation variance and one-step token agreement each measure something useful, but none alone defines that objective.
+
+## Written reasoning creates more state transitions
+
+A written intermediate token is an input to a new full column. It creates a new embedding, new contextual reads and new K/V rows at every layer. Later columns can consume the intermediate result through the same machinery used for any other context.
+
+For an externally visible trace $b_1,\ldots,b_k$, each accepted step therefore extends both text and memory:
+
+$$
+(b_{i+1},M_{i+1})=F_\theta(b_i,M_i,p_i).
+$$
+
+This is a concrete connection between chain of thought and the time circuit architecture: a trace can move a dependency into an explicit newly written source for the next read. It provides additional sequential computation and an addressable carrier. It does not guarantee that the intermediate result is correct or that the model will use it faithfully.
+
+The [reasoning experiments](2026-11-04-172724-serving-frontier-on-wikitext-why-the-trace-helps-and-the-sparse-predictor-on-chat.md) support a bounded version on invented in-context binding chains: written steps preserved composition far better than direct answers at greater depth. The same post corrected the claim that every nominal factual hop requires another runtime hop; learned associations can bypass the verbal decomposition. The computational question is which intermediate state the model actually forms and reads.
+
+## What the experiments have made mathematically explicit
+
+The work now spans several levels of understanding. Keeping them separate makes the positive results more useful.
+
+| Level | Mathematical object | What our evidence supplies |
+|---|---|---|
+| Complete execution | $T_{\theta,\mathcal B}$ on a sufficient state | Independent Qwen column/chain equations and a complete bounded FLUX denoiser trajectory |
+| Local contextual read | $\operatorname{softmax}(QK^\top)V$ and its changed-source update | Qualified attention reconstruction, key/value interventions and tail-mass controls |
+| Local nonlinear write | $D[\phi(Gz)\odot Uz]$ and its finite-change terms | Native MLP reconstruction, gate/value/interaction accounting and receiver-sensitive effects |
+| Response approximation | Polynomial, tangent or integrated-Jacobian response over a domain | Compact ISA response predictions and improved Qwen midpoint approximations |
+| Information flow over time | Formation, write, carrier and later consumer | Saved cuts, matched continuations, K/V interventions and causal counterexamples |
+| Semantic operation | A qualified role such as a carry or binding with predictable consequences | Bounded examples and partial maps; broad automatic recovery remains open |
+| Reduced executable state | A representation closed under its own updates and future readouts | A research target informed by the preceding results |
+
+The newest Qwen results explain where a compact account needs more structure. Same-token memory and output tables retain some lower-layer regularity, but the middle-layer MLP is a smooth contextual function with substantial response rank. Nearby references can improve local approximations. Plain reuse becomes accurate only when the input state is sufficiently close, and the [latest audit](../../saturn/experiments/2026-11-05-qwen-prediction-chain/FINDINGS-QC23.md) found that much of the nearest-state chat advantage came from repeated text. This preserves a useful conditional mechanism without generalizing it to all long contexts.
+
+Attention selection also has a real positive result with a precise boundary: the [own-query chain](../../saturn/experiments/2026-11-05-qwen-prediction-chain/FINDINGS-QC15.md) preserved all sixteen tokens in 12 of 16 chat openings when reading the top 64 values per K/V head. It still scored every key, and the union of positions touched across layers and time was broad. This supports selective value reads under the tested conditions; it does not establish that the remainder of memory is dispensable.
+
+All of these observations belong in the computation map. A numerical miss can reveal a wrong source binding, missing normalization term, inaccurate response approximation or important future consumer. It need not erase a directional trend or the part of the law that did predict correctly.
+
+## Factoring the MLP without hiding an operand
+
+The next question is what single discovery would make this whole account easier to understand. In a mathematical advisory, Astra proposed finding operational variables in which the model has a reusable algebra, with those variables remaining sufficient as state advances. A more revealing MLP factorization helps make that hypothesis concrete.
+
+Write SiLU as its argument times a sigmoid:
+
+$$
+m(z)=\sum_i d_i\,\underbrace{\sigma(g_i^\top z)}_{c_i(z)}
+\underbrace{(g_i^\top z)}_{a_i(z)}
+\underbrace{(u_i^\top z)}_{b_i(z)}.
+$$
+
+Each neuron reads two projected operands, multiplies them, weights their product by a smooth coefficient, and writes along $d_i$. Freezing the complete SiLU value makes the remaining expression linear, but puts the gate-side operand $a_i$ inside what was supplied. Freezing only the sigmoid coefficient exposes a quadratic operation:
+
+$$
+m(z)=\sum_i d_i c_i(z)\,z^\top Q_i z,\qquad
+Q_i=\tfrac12(g_i u_i^\top+u_i g_i^\top).
+$$
+
+Each $Q_i$ has rank at most two. Their aggregate can still have substantial rank. The factorization is exact, while its coefficients remain state-dependent. It supplies an interpretable multiplication structure without establishing that a few neurons or a small linear subspace capture an entire model.
+
+For a fixed sigmoid vector $c$ and perturbations $v,w$, the mixed finite difference is exactly
+
+$$
+m_c(z+v+w)-m_c(z+v)-m_c(z+w)+m_c(z)
+=\sum_i d_ic_i\left[(g_i^\top v)(u_i^\top w)+(g_i^\top w)(u_i^\top v)\right].
+$$
+
+This is a specific prediction about operand interaction. The native MLP also changes its sigmoid coefficients and normalization, so a clamped-$c$ comparison is a diagnostic modified computation. It must not be presented as the native counterfactual without accounting for those additional changes.
+
+The expansion around an arbitrary normalized receiver $z_0$ shows where the added terms enter. Let $a_i=g_i^\top z_0$, $b_i=u_i^\top z_0$, $\alpha_i=g_i^\top\delta$, $\beta_i=u_i^\top\delta$, and $\phi=\operatorname{SiLU}$. Through second order,
+
+$$
+\begin{aligned}
+m(z_0+\delta)-m(z_0)=\sum_i d_i\big[&
+\phi'(a_i)b_i\alpha_i+\phi(a_i)\beta_i\\
+&+\tfrac12\phi''(a_i)b_i\alpha_i^2
++\phi'(a_i)\alpha_i\beta_i\big]+O(\|\delta\|^3).
+\end{aligned}
+$$
+
+The second-order response contains gate-side curvature and cross-operand multiplication. These are different structures that can reinforce or oppose each other at a consumer. Restoring normalization adds its derivative and curvature through composition, as in the earlier full-block formulas.
+
+This changes the discovery question. Knowing a feature's activation is insufficient; we want to know what the two operands represent, why they arrive together, what product is formed, and which later computation consumes its write. The phase-addition and carry examples offer bounded cases where that account is already partly available.
+
+## Factoring context into a future read function
+
+For one layer and K/V group, absorb the $1/\sqrt{d_h}$ factor into the query and define
+
+$$
+Z_M(q)=\sum_j e^{q^\top k_j},\qquad
+N_M(q)=\sum_j e^{q^\top k_j}v_j,\qquad
+A_M(q)=\frac{N_M(q)}{Z_M(q)}.
+$$
+
+This represents the context as two functions of a future query: normalization mass and weighted payload. The current query chooses where to evaluate them. The parameters and preceding computation determine how that query is formed.
+
+Appending a row $(k_*,v_*)$ has a particularly simple law:
+
+$$
+Z_{M'}(q)=Z_M(q)+e^{q^\top k_*},\qquad
+N_{M'}(q)=N_M(q)+e^{q^\top k_*}v_*.
+$$
+
+The new row writes one basis function into each future-read function. In a decoder, each layer computes its current row from the incoming residual, includes it for the self read, and retains it for later positions. This is an exact mathematical connection between writing context and changing what future queries will read.
+
+The normalized read $A_M$ alone is insufficient for this update. Consider scalar memories
+
+$$
+M_1=\{(0,0)\},\qquad M_2=\{(1,0)\}.
+$$
+
+Both give $A_M(q)=0$ for every query. Append the identical row $(0,1)$ and query at $q=\log 2$. The new reads are
+
+$$
+A_{M'_1}(\log2)=\tfrac12,\qquad
+A_{M'_2}(\log2)=\tfrac13.
+$$
+
+Their old values were all zero, so the original reads concealed how much mass each context would contribute when competing with a new write. Preserving every current normalized read did not preserve the future state law. The pair $(Z_M,N_M)$ retains the missing information.
+
+For the ideal real-arithmetic, full-attention, append-only decoder, these function pairs at every layer/K/V group, together with pending token and clock, provide an alternative sufficient neural-state description. Inductively, equal incoming functions give equal current reads, equal higher-layer residuals, equal new rows, equal updated functions and equal logits. Equal sampled tokens additionally require matching selector/RNG state. Application history, eviction/masking policies and exact native rounding require their additional contracts. This representation does not promise compact storage: retaining the original atoms is one exact way to represent the functions.
+
+Expansion separates query coefficients from memory moments. Define
+
+$$
+K_n(M)=\sum_jk_j^{\otimes n},\qquad
+V_n(M)=\sum_jk_j^{\otimes n}\otimes v_j.
+$$
+
+Then, for finite memory,
+
+$$
+A_M(q)=
+\frac{\displaystyle\sum_{n=0}^{\infty}\frac1{n!}\langle q^{\otimes n},V_n(M)\rangle}
+{\displaystyle\sum_{n=0}^{\infty}\frac1{n!}\langle q^{\otimes n},K_n(M)\rangle}.
+$$
+
+The numerator contraction leaves a value vector. Order zero is a uniform summary. Higher orders capture how keys and values co-vary under the query. Appending memory also updates each moment additively: $K_n'=K_n+k_*^{\otimes n}$ and $V_n'=V_n+k_*^{\otimes n}\otimes v_*$.
+
+This makes an approximation assumption explicit: a truncated moment account is useful only where the score range, moment degree and required accuracy make the omitted terms small. The exact infinite expansion does not justify a universal low-order summary. Strongly selective reads and rare large scores can require higher-order structure or a different local representation.
+
+At first order, query sensitivity is a weighted key/value covariance:
+
+$$
+\frac{\partial A_M}{\partial q}
+=\sum_j\alpha_j(v_j-A_M)(k_j-\bar k)^\top,
+\qquad \bar k=\sum_j\alpha_jk_j.
+$$
+
+Restore $1/\sqrt{d_h}$ when differentiating with respect to the unscaled query. This is another expression of contextual computation: the effect of changing a query depends on the joint key/value distribution it currently addresses, not just one mean context vector.
+
+## A simplifying assumption worth testing
+
+The most useful assumption is that **within a declared computation family, there are stable operational variables with reusable nonlinear updates and predictable transport between carriers**. The variables may be distributed, continuous and numerous; their number may grow with context. What becomes simpler is their organization and update algebra.
+
+Let $z=C_q(S)$ be those variables. The two required factorizations are
+
+$$
+\boxed{C_{q+1}(T_q(S,u))=f_q(C_q(S),u)},\qquad
+\boxed{O_q(S)=g_q(C_q(S))}.
+$$
+
+The first says the variables can advance themselves. The second says the declared consumer can read them. In coordinates $(z,n)$, where $n$ describes the remaining realization of the state, the desired organization is triangular:
+
+$$
+z'=f_q(z,u),\qquad n'=h_q(z,n,u),\qquad O=g_q(z).
+$$
+
+Changes to $n$ may affect future nuisance state, but do not change the next operational variables within the declared domain. If a later question makes a discarded distinction relevant, that question exposes a missing variable or a domain boundary. This is why the consumer and allowed continuation must be specified.
+
+Closure alone is insufficient to establish understanding: $C=I$ always preserves the original problem, and an arbitrary nonlinear $C$ could hide a whole model execution. The coordinate maps must themselves be inspectable and bounded in complexity, while $f_q$ should reuse a modest set of operations across contexts. Its interfaces must support fresh predictions under operand changes, different physical realizations and new compositions; renaming every original neuron would preserve closure without supplying that explanation. A useful chart should clarify adjacent attention, MLP, write and later-read operations jointly. A rotation that simplifies one block while obscuring all of its consumers is a limited local result.
+
+The differential test follows by differentiating the commuting equation:
+
+$$
+DC_{q+1}(T_q(S,u))J_{T_q}(S,u)
+=J_{f_q}(C_q(S),u)DC_q(S).
+$$
+
+For linear charts $C_q(S)=P_qS$, discarded directions must satisfy
+
+$$
+P_{q+1}J_{T_q}(S,u)n=0\quad\text{whenever }P_qn=0.
+$$
+
+However, a single Jacobian check can miss the very interactions we are studying. For
+
+$$
+T(x,y)=(x+y^2,y),\qquad C(x,y)=x,
+$$
+
+the discarded $y$ direction has zero first-order effect at $y=0$. Yet $C(T(0,0))=0$ and $C(T(0,1))=1$. Finite changes reveal the missing variable. Exact closure requires constancy over the allowed fibers $C(S)=C(S')$, not only zero tangent effects at one point. Approximate closure requires a measured or derived bound over that domain.
+
+The quadratic case gives a more direct factorization target. Suppose a qualified transition is $T(S)=AS+\mathcal B(S\otimes S)+b$ and a linear chart $P$ is used at both ends. Closure holds if there exist reduced coefficients satisfying
+
+$$
+PA=\widetilde A P,\qquad
+P\mathcal B=\widetilde{\mathcal B}(P\otimes P),\qquad
+\widetilde b=Pb.
+$$
+
+Only the symmetric quadratic part is relevant on $S\otimes S$. These conditions make the retained linear and multiplicative writes functions of retained operands. They are sufficient coefficient identities, not assumptions that native transformers are globally quadratic. The state-dependent sigmoid weights, attention softmax and norms require their own retained variables or bounded response account.
+
+## Constraints that clarify the computation
+
+| Constraint | Useful adjustment | Mathematical reason |
+|---|---|---|
+| One neuron or fixed address per concept | Loosen to distributed, clock-qualified carriers | A logical variable may move or be represented across several coordinates |
+| One coordinate system for every task and layer | Loosen to a small family of compatible charts | Different stages may represent the same distinction differently; chart selection and transport must also be predicted |
+| A tiny fixed-size complete state | Loosen to extensive memory with a reusable update law | Exact retrieval from $n$ independent binary bindings requires at least $n$ bits of distinguishable finite-precision state |
+| A finite globally linear lift | Loosen to sparse nonlinear operations and compositions | Even $x'=x^2$ has a one-variable rule but generates $x,x^2,x^4,\ldots$ under a linear monomial lift |
+| One correct immediate output | Tighten to retained writes and future consumers | Identical current reads or answers need not imply equivalent successors |
+| An oracle switch or task label | Tighten to endogenous operand and mode selection | A supplied coefficient can conceal an operand or the answer-producing computation |
+| A flexible semantic decoder | Tighten its complexity and source access | Otherwise the decoder can implement the entire model or import the native future |
+| A local tangent fit | Tighten to finite factorial changes across receivers | Higher-order interactions can carry effects invisible to a single Jacobian |
+
+The target is the computation the model actually performs, including shortcuts and wrong answers. Forcing operational variables to equal the intended correct answer would conceal those mechanisms.
+
+A smallest informative test crosses one operand change with one context/receiver change, tracks candidate variables through their formation, an MLP write and a later memory read, and freezes a derived or measured update law before predicting new combinations. For a consumer $Y(a,c)$, retain the mixed contrast
+
+$$
+Y(a_1,c_1)-Y(a_1,c_0)-Y(a_0,c_1)+Y(a_0,c_0).
+$$
+
+The law should predict that interaction from its retained operands. It need not force the interaction to zero. Then advance the retained variables through the later question using their own predicted predecessor. A miss should distinguish an omitted operand, an incorrect address rule, an inadequate nonlinear response, lost persistent state or a chart boundary.
+
+The [operand-factorization script](assets/2026-11-05-state-context-math/check_operand_factorization.py) checks these equations on small synthetic arrays. The sigmoid/product and quadratic-form factorizations agree within $1.4\times10^{-15}$ absolute error, the attention append identity within $1.2\times10^{-16}$, and the attention covariance derivative agrees with finite differences within $2.2\times10^{-11}$. A deliberately constructed dense rotated state machine preserves its operational variables through six transitions with error below $4.0\times10^{-15}$ despite differing nuisance states; the $y^2$ example demonstrates the opposite case. These [saved checks](assets/2026-11-05-state-context-math/operand-factorization-checks.json) establish the algebra and the distinction between the hypotheses, not that native models already admit the proposed charts.
+
+## The mathematical program this suggests
+
+The companion post, [The one assumption that would make model computation easier to understand](2026-11-05-161109-the-one-assumption-that-would-make-model-computation-easier-to-understand.md), develops this program through native tests: supplied binding variables, frozen depth-dependent charts, composed successor predictions, finite coordinate writes, an exact selected-row insufficiency counterexample and causal memory interchanges. It separates a readable operand, an effective write and a sufficient receiving state.
+
+The big-picture object is a **state-dependent executable account of computation**. Its fixed part consists of parameterized laws and recurring interfaces. Its dynamic part consists of their actual operands, addresses, nonlinear coefficients and resulting writes. Its temporal part connects those writes to future readers and consumers. Its symbol table preserves the names, applicability and evidence that let us compose the account again.
+
+For free-form chat, the program is to start at a declared prompt/state boundary and successively account for the read, receiving state, nonlinear write, committed token and persistent memory. Where a response is already understood, a qualified compact law can calculate it. Where the state leaves that law's domain, the explicit full law remains a reference and a source of new observations. Prediction errors should be localized through matched receivers and later consumers, rather than reduced to a single final score.
+
+The most informative next mathematical cut is to identify which combinations of state changes a local response law must retain to preserve both a current readout and the memory used by selected later queries. Freeze the law and its domain, advance it on its own predicted states, then compare native reads, writes and continuations. This tests a reusable transition rather than a remembered endpoint. Wider coverage would come from discovering and composing such qualified regimes, not from assuming that every invocation of one static address has the same semantic effect.
+
+We understand the architectural equations, the complete declared execution states, several exact perturbation identities, and increasingly long compositions through those states. We have also measured where simple reductions stop preserving the relevant computation. The remaining scientific question is which parts of that dynamics admit a smaller, reusable description over meaningful families of contexts. That is where the MLP laws, dynamic symbol table and time circuit architecture become one research program.
+
+## Algebra checks and numerical execution
+
+The [supplementary derivation script](assets/2026-11-05-state-context-math/check_derivations.py) checks the finite MLP-change identity, changed-source attention identity, tail-mask identity, normalization/block derivatives and future-observation quadratic form on small fixed FP64 arrays. The exact identities agree within $9\times10^{-16}$ absolute error; directional derivatives agree with central finite differences within $1.4\times10^{-11}$. Over four small step sizes, the observed absolute remainder orders are 2.000 for the tangent and 3.016 for the midpoint. The [saved results](assets/2026-11-05-state-context-math/derivation-checks.json) are algebra sanity checks, with no new model run or claim about an empirical effect.
+
+The displayed identities use real arithmetic unless rounding is stated. Native execution adds explicit rounding and reduction behavior. The Qwen reference widens original BF16 parameter bits exactly, performs its main arithmetic in FP64 and binds a declared FP32 RoPE table; it does not emulate every native BF16 kernel. The diffusion reference uses its own qualified BF16 boundaries. Reproducing a sealed mathematical forecast and agreeing with a native numerical executor are consequently separate checks, retained separately in the linked evidence.
