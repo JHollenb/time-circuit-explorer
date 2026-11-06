@@ -1,0 +1,159 @@
+{
+  "completeCollectedInventory": {
+    "bytes": 1990672,
+    "files": {
+      "analysis-seal.json": {
+        "bytes": 6932,
+        "sha256": "a5e969eed9a81259c4c02001659a60e5496db76717479d2434d48d42891f06bd"
+      },
+      "observations.jsonl": {
+        "bytes": 1955945,
+        "sha256": "ea931e69e3e4e2e3ed30385489a1717594e14a30a14b8504181d79d7715b28da"
+      },
+      "report.json": {
+        "bytes": 19706,
+        "sha256": "abd82aaba77b22e16da3d0e1cdbac3bc1e2cdf09177e2a1d7ceb76eb825186bf"
+      },
+      "request.json": {
+        "bytes": 1668,
+        "sha256": "793834b81ff13e5f657d8d3827bd2555043d48b6f34a61da49427d128daa8eba"
+      },
+      "source.json": {
+        "bytes": 6421,
+        "sha256": "706452c17969f467c3532831d04f9b2d4c576acfec0cc1dfc275d7cb839fa152"
+      }
+    }
+  },
+  "jobID": "job-07dd2ad27814",
+  "losslessStreams": [
+    {
+      "published": "observations.jsonl.gz",
+      "publishedBytes": 260551,
+      "publishedSHA256": "c7ce315fda7e5ab1c44c76b89548673adc05fd7039b7851f302e77c36d74be79",
+      "source": "observations.jsonl",
+      "sourceBytes": 1955945,
+      "sourceSHA256": "ea931e69e3e4e2e3ed30385489a1717594e14a30a14b8504181d79d7715b28da"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "0bae4633f0426d59269a70cc03986b8c3f6b65309f585053c2b34fc4ff7f822c",
+      "size_bytes": 69703
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1793984263.1543882,
+      "sha256": "0bae4633f0426d59269a70cc03986b8c3f6b65309f585053c2b34fc4ff7f822c",
+      "size_bytes": 69703
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1793984263.0654025,
+      "sha256": "0bae4633f0426d59269a70cc03986b8c3f6b65309f585053c2b34fc4ff7f822c",
+      "size_bytes": 69703
+    }
+  },
+  "requestSHA256": "f34059b9d5307640521b005e2765f71bc7c613c109b8a663becac4bb3e39b5e5",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-07dd2ad27814",
+      "job_log": {
+        "bytes": 390,
+        "sha256": "2a9f1d06cd80dd1a17b938189ecf2af888accc0d96fbd4b57b3d755099c957a2"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-07dd2ad27814/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "pillow>=10.0",
+        "python",
+        "-u",
+        "sign_composition_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-07dd2ad27814",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-07dd2ad27814/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1793984263.1430306
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1793984263.1724904
+        },
+        {
+          "name": "process.launch",
+          "ts": 1793984263.1836734
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1793984263.2093847
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1793984267.310899
+        },
+        {
+          "name": "finished",
+          "ts": 1793984267.3221161
+        }
+      ]
+    },
+    "elapsed_s": 4.34,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "0bae4633f0426d59269a70cc03986b8c3f6b65309f585053c2b34fc4ff7f822c",
+      "size_bytes": 69703
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 278.4,
+    "peak_vram_mb": 0.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-sign-composition-public-v1",
+  "scope": "Retrospective composition geometry, no predictive next-block or arbitrary-prompt image claim. Raw fields stay near compute."
+}
