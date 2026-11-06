@@ -1,6 +1,6 @@
 # Couple tail mass and value through one positive directional measure
 
-Status: **proposed after cycle17/Astra review; not implemented, staged or measured**. The [fixed-support factorial](../current-support-tail-factorial.md) finds both tail factors material. Value repair improves all 32 paired heads and both receiving endpoints, while mass repair has a slight pooled paired-state advantage. Preserve their cancellation and countertrends. Test one coupled approximation before expanding persistent state.
+Status: **executed in cycle18**, guarded job `job-e9d147a7b3a5`. The [measured result](../positive-tail-moment-closure.md) preserves improvements and countertrends; the original protocol follows unchanged. The [fixed-support factorial](../current-support-tail-factorial.md) finds both tail factors material. Value repair improves all 32 paired heads and both receiving endpoints, while mass repair has a slight pooled paired-state advantage. Preserve their cancellation and countertrends. Test one coupled approximation before expanding persistent state.
 
 ## One frozen candidate
 

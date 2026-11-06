@@ -1,0 +1,204 @@
+{
+  "claimBoundary": "Retrospective fixed-support positive-quadratic tail law, fullprefix directional inputs and original learned receiving consumer offline. No unseenprompt/compactstate/fullencoder or zero-neural image claim.",
+  "completeCollectedInventory": {
+    "bytes": 12041342,
+    "files": {
+      "observations.jsonl": {
+        "bytes": 4428762,
+        "sha256": "9ca6e855e27ecf7f5d95beb5ed19488cd6447aefb228fce9a6b2a380bb33e191"
+      },
+      "prediction-seal.json": {
+        "bytes": 4385,
+        "sha256": "813a971dfa3635fa46cd0eead6f0a9adfcfd11d09ac8984648ff6576e567e640"
+      },
+      "reference-receipt.json": {
+        "bytes": 7261,
+        "sha256": "37272f3f1acdd992d46b0b71df85653df3e73c089d059869ab7f28046022d806"
+      },
+      "report.json": {
+        "bytes": 3277301,
+        "sha256": "cb19074eee0990b786617b3ac2a92d2ad42786499898868eaf6a42d071c7027a"
+      },
+      "request.json": {
+        "bytes": 4160,
+        "sha256": "10ccd5815aa98cee7f35c80d8bf1f674eae0252f01d97d22a183dd383e8d39c6"
+      },
+      "serve-source.json": {
+        "bytes": 1209,
+        "sha256": "5b5c07c277d572ac981717b75549bc11664487c524ba4efe0add8eabbec0964f"
+      },
+      "source.json": {
+        "bytes": 4816,
+        "sha256": "60fcea6532acf86847cc8946526ee553d40985e174ea247c2fc2e0369295bf69"
+      },
+      "tail-diagnostics.json": {
+        "bytes": 4313448,
+        "sha256": "cf1a7f282f9fb820a6d61928155514c26b13612a55b02025cd5c40fc3687a9e2"
+      }
+    }
+  },
+  "jobID": "job-e9d147a7b3a5",
+  "losslessStreamTransports": [
+    {
+      "conversion": "Byte-lossless gzip only; round-trip checked.",
+      "published": "observations.jsonl.gz",
+      "publishedBytes": 472188,
+      "publishedSHA256": "b317759011c6cbd6ce65d07f83ad4f9d90b6087b4b250fd5186f38e9324a63b4",
+      "source": "observations.jsonl",
+      "sourceBytes": 4428762,
+      "sourceSHA256": "9ca6e855e27ecf7f5d95beb5ed19488cd6447aefb228fce9a6b2a380bb33e191"
+    },
+    {
+      "conversion": "Byte-lossless gzip only; round-trip checked.",
+      "published": "tail-diagnostics.json.gz",
+      "publishedBytes": 297941,
+      "publishedSHA256": "4d80f7fcf13a1baf5ed75744903ab26c4618512654fa91764b25a344dc19ba9f",
+      "source": "tail-diagnostics.json",
+      "sourceBytes": 4313448,
+      "sourceSHA256": "cf1a7f282f9fb820a6d61928155514c26b13612a55b02025cd5c40fc3687a9e2"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "6ac2351c3c2bacd196e1e8bf13702ce5fe95c04d7bb672afc03a3a5664efdb68",
+      "size_bytes": 71633
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1793978035.574534,
+      "sha256": "6ac2351c3c2bacd196e1e8bf13702ce5fe95c04d7bb672afc03a3a5664efdb68",
+      "size_bytes": 71633
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1793978035.4912732,
+      "sha256": "6ac2351c3c2bacd196e1e8bf13702ce5fe95c04d7bb672afc03a3a5664efdb68",
+      "size_bytes": 71633
+    }
+  },
+  "publication": "All compact reports/observations retained, bulky scalar descriptions byte-lossless gzip. Full banks/signed diagnostic fields/consumers remain near compute with complete byte checks.",
+  "remoteResultRoot": "/mnt/hdd8tb/mrun-work/job-e9d147a7b3a5/response-result",
+  "requestSHA256": "3dc084fb8e6f60dd89df466706ba547628f3e1c02bae08f3034b68fc8cc5817c",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-e9d147a7b3a5",
+      "job_log": {
+        "bytes": 480,
+        "sha256": "84b104c7ca72182df4385f0eec4ec3c821c38d5f0634378315817858d5de3c3a"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-e9d147a7b3a5/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "python",
+        "-u",
+        "positive_tail_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-e9d147a7b3a5",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-e9d147a7b3a5/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1793978035.565691
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1793978035.5979788
+        },
+        {
+          "name": "process.launch",
+          "ts": 1793978035.6059556
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1793978035.635597
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1793978064.2479124
+        },
+        {
+          "name": "finished",
+          "ts": 1793978064.2572489
+        }
+      ]
+    },
+    "elapsed_s": 28.79,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "6ac2351c3c2bacd196e1e8bf13702ce5fe95c04d7bb672afc03a3a5664efdb68",
+      "size_bytes": 71633
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 1804.0,
+    "peak_vram_mb": 0.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-positive-tail-public-v1"
+}

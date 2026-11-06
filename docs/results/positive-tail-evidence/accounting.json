@@ -1,0 +1,20 @@
+{
+  "schema": "tce-positive-tail-compute-accounting-v1",
+  "jobID": "job-e9d147a7b3a5",
+  "source": "Declared original tensor shapes in reference-receipt.json and executed arm/row counts in report.json",
+  "newConsumerArms": 2,
+  "rowsPerArm": 512,
+  "nominalDenseMACsByTensor": {
+    "output": 10737418240,
+    "gate": 25501368320,
+    "up": 25501368320,
+    "down": 25501368320
+  },
+  "nominalDenseMACs": 87241523200,
+  "mathematicalExactHeadReferences": 64,
+  "nominalReferenceQKAndPVMACs": 4294967296,
+  "originalParameterPayloadBytes": 170398720,
+  "originalShardBytesVerified": 4967215360,
+  "residentParameterArrayBytes": 681579520,
+  "scope": "Geometry-derived contraction MACs, not complete FLOPs, retired instructions or energy. Candidate full-prefix directional contractions/routing/positive weights, post-seal diagnostics, normalization/SiLU/gating, hashing and serialization additional and included in measured time. Historical lexical/source preparation and inherited consumers retain their cost. No new covariance tensor; full supplied key/value operands still accessed."
+}

@@ -40,7 +40,9 @@ The [current-query selector diagnostic](docs/full-prefix-selector-objective.md) 
 
 The [certified retrieval-cost assay](docs/certified-current-query-retrieval.md) preserves those ordered supports and outputs exactly while skipping about10.6%of score products. Bound/sort overhead makes this implementation much slower; its full FP64 index is also larger than BF16 K/V. This is measured component research, not a zero-neural image backend.
 
-The [fixed-support tail factorial](docs/current-support-tail-factorial.md) reduces paired state error 41.76%→33.46% with exact tail mass, or 33.77% with exact tail value. Value repair improves all 32 paired heads; mass improves only 12 active heads. Signed cancellation and original learned-consumer costs remain explicit. The next proposed test couples mass and value through one positive directional measure; arbitrary-prompt zero-neural images remain open.
+The [fixed-support tail factorial](docs/current-support-tail-factorial.md) reduces paired state error 41.76%→33.46% with exact tail mass, or 33.77% with exact tail value. Value repair improves all 32 paired heads; mass improves only 12 active heads. Signed cancellation and original learned-consumer costs remain explicit.
+
+The [joint positive-quadratic law](docs/positive-tail-moment-closure.md) predicts both tail factors together and reduces paired state error to 24.15%, with 6.08% active error. All 32 pooled heads improve, while five active heads and one padded head worsen. Full-prefix operands and original receiving computations remain paid; the next proposed test asks whether a source-defined streaming state can retain the gain. Arbitrary-prompt zero-neural images remain open.
 
 The [source-only landmark reader](docs/source-landmark-context.md) supplies an explicit rule for eight new strings, with64live positive prefix statistics. Its initial mixture is inaccurate. Saved-only routing/capacity diagnostics distinguish excessive smoothing from the added restriction of fixed convex response mixing; target-assisted fitted weights are not serving assets. Contextual/image completion remains open.
 
