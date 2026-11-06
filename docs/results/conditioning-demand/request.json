@@ -1,0 +1,20 @@
+{
+  "backend": "source-bound-torch-bf16",
+  "device": "cuda",
+  "parentJobID": "job-332caa7e03a6",
+  "parentRequestSHA256": "c23b278beb301e6891ee7a6ec8d59a348d2feab27a1832453e9319b1211dc241",
+  "protocol": "75 original blocks2..26, three native context projections; layer-major parameter reuse, original B1/512 geometry. Seal all retained states before comparison. No denoiser/VAE or neural elimination claim.",
+  "requestSHA256": "551e29bb9ede226399051781ae31247d908a48b1a27b2e1a036cd6d45e601899",
+  "schema": "tce-conditioning-demand-request-v1",
+  "scope": "One already-scored short prompt; consume actual presealed full/oldcompact/newcompact H2. No further approximation or native state refresh.",
+  "sourceHashes": {
+    "conditioning_demand.py": "6536da5e73e89b7d2a18085d963edf578d0567ed20680c4022c1c82a10c10e9f",
+    "conditioning_demand_study.py": "403932bf75a555fa7cbf8fe33ab5782e6207f4c8b01d93a012cb0ff76082ee11",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "flux_functional_qwen_prefix.py": "763ae441d33396fe5cede5d96214c76e01aae779916ce5cf28e79cf5f5eb618a",
+    "masked_kv_study.py": "920416ce49d823b1337a7f6d9f5fca90c8047723bb6b1d37dc09967114b6ad89",
+    "qwen_h18_state_history.py": "17084d404f5ae00557e4ad8e94a8b84704787c47ebf9c875228cb452c4857036",
+    "source.json": "f1c7a54ae866d787423861a6cfddf78c1c5b16a7e0e1731de1466e571588cc21"
+  },
+  "timeoutSeconds": 600
+}

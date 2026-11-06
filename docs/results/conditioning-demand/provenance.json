@@ -1,0 +1,188 @@
+{
+  "completeCollectedInventory": {
+    "bytes": 12011691,
+    "files": {
+      "consumer-seal.json": {
+        "bytes": 36799,
+        "sha256": "810c2c78a119e494afc2592dad7cd7f286c07629711b749a5451aad2411186a3"
+      },
+      "observations.jsonl": {
+        "bytes": 11470769,
+        "sha256": "c7db1b2168ad87a86c5bb4cc9225bc0a5d9f69d06ce729c22c28718768cd7ad6"
+      },
+      "primitive-receipts.json": {
+        "bytes": 269874,
+        "sha256": "910728ef19fbf44a090eb88c315e1de846d1508b221dd5643a23422a6c1b3ca8"
+      },
+      "report.json": {
+        "bytes": 98380,
+        "sha256": "58293b4a92e14c98b80a3259268e11b73ce95656b5320915ffcff5ec2a73fe71"
+      },
+      "request.json": {
+        "bytes": 1433,
+        "sha256": "39531b372a411011ce01af48dd056376ba21f862ce36c1c27c4bc522e3639842"
+      },
+      "retained-fields.json": {
+        "bytes": 35558,
+        "sha256": "dda0fd3313542d4fc6caef21c48fab0269ef0b08581c1ded4b520a8a07f8e2a1"
+      },
+      "source.json": {
+        "bytes": 98878,
+        "sha256": "0ecf4b8bcedd83dcb5232d62d9f1df329e64f75ca06d452273efb8628dc1cd46"
+      }
+    }
+  },
+  "jobID": "job-0dddb989549a",
+  "losslessStreams": [
+    {
+      "published": "observations.jsonl.gz",
+      "publishedBytes": 2031208,
+      "publishedSHA256": "565f41d6a06d02a63db0ba115154b08d70fce92c5a8b084501a5ef5020ddf600",
+      "source": "observations.jsonl",
+      "sourceBytes": 11470769,
+      "sourceSHA256": "c7db1b2168ad87a86c5bb4cc9225bc0a5d9f69d06ce729c22c28718768cd7ad6"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "8f7320ac6a67bc9a2764fbb2414d8d7f14a849f3611711fa6854a06142a9cf56",
+      "size_bytes": 33882
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1793989071.7100587,
+      "sha256": "8f7320ac6a67bc9a2764fbb2414d8d7f14a849f3611711fa6854a06142a9cf56",
+      "size_bytes": 33882
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1793989071.5893478,
+      "sha256": "8f7320ac6a67bc9a2764fbb2414d8d7f14a849f3611711fa6854a06142a9cf56",
+      "size_bytes": 33882
+    }
+  },
+  "requestSHA256": "551e29bb9ede226399051781ae31247d908a48b1a27b2e1a036cd6d45e601899",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-0dddb989549a",
+      "job_log": {
+        "bytes": 909,
+        "sha256": "3627ff2503c39ce3570f1167c36273bf68ca1e65c212d69e26542ad7f396daf9"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-0dddb989549a/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "python",
+        "-u",
+        "conditioning_demand_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-0dddb989549a",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-0dddb989549a/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1793989071.6820102
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1793989071.7265756
+        },
+        {
+          "name": "process.launch",
+          "ts": 1793989071.7512796
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1793989071.7787116
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1793989111.6158543
+        },
+        {
+          "name": "finished",
+          "ts": 1793989111.6259198
+        }
+      ]
+    },
+    "elapsed_s": 40.0,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "8f7320ac6a67bc9a2764fbb2414d8d7f14a849f3611711fa6854a06142a9cf56",
+      "size_bytes": 33882
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 1819.7,
+    "peak_vram_mb": 692.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-conditioning-demand-public-v1",
+  "scope": "75 original blocks and three actual native context projections consume three presealed H2 states. Own-state consequence evidence, not additional operation elimination, image quality or a zero-neural image backend."
+}

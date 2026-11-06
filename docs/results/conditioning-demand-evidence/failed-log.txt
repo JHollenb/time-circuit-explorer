@@ -1,0 +1,9 @@
+<frozen runpy>:130: RuntimeWarning: 'mrun.os_limit' found in sys.modules after import of package 'mrun', but prior to execution of 'mrun.os_limit'; this may result in unpredictable behaviour
+Traceback (most recent call last):
+  File "/mnt/hdd8tb/mrun-work/job-6da90f538bf6/conditioning_demand_study.py", line 275, in <module>
+    else: result = globals()[a.action](a.run)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/mnt/hdd8tb/mrun-work/job-6da90f538bf6/conditioning_demand_study.py", line 188, in execute
+    versions = [(n, v.data_ptr(), v._version) for n, v in parameters.items()]
+                                  ^^^^^^^^^^
+RuntimeError: Inference tensors do not track version counter.

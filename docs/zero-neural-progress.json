@@ -1,16 +1,16 @@
 {
   "schema": "tce-zero-neural-goal-progress-v1",
-  "updatedAt": "2026-11-06T10:05:39-08:00",
+  "updatedAt": "2026-11-06T10:27:52-08:00",
   "objective": "let\u2019s solve arbitrary prompt to image without any forward zero neural evals. Every few turns have Astra review the newest blog posts and get a big picture of where we are at so that we can find the best route forward. Keep a log of your findings and with as a blog post - update it with your high level summaries and findings. Clean up the accumulated artifacts every few turns so as not to consume all of the system storage too",
   "status": "active",
-  "researchCycle": 23,
+  "researchCycle": 24,
   "previousGoalTurn": {
     "classification": "progress",
-    "evidence": "Revalidated clean main==origin/main at ca3d54f05cd8250813d19ad0a5be7dc068de5f06. Previous turn completed cycle22 QA, committed and pushed actual masked-KV science, verified cached-QKV intake, recoverable1.538GBcleanup and living-log update. No result or goal completion was inferred from the push."
+    "evidence": "Revalidated clean main==origin/main at ba6df1c4d1e0aa88d4c248dc8b02fd6b6d7fb120. Previous turn implemented and executed fixed KV-only policy, measured52.62%H2RMS improvement with same2.538BnominalMACsaving, retained12padding reversals, fullbyteverified/published evidence, updated livinglog, and pushed source/results. No full-goal completion inferred."
   },
   "thisGoalTurn": {
     "classification": "progress",
-    "evidence": "Implemented the one fixed KV-only accumulation-policy contrast, with Astra source review and107passing mechanics tests. Guarded job332caa7e03a6 succeeded once38s/1967MBRSS/582MBVRAM,16linears/2SDPA/2CPUFP64products. Same actual emitted H1 and unchanged original target, allalternativeH2 sealed before references. Original full alternative H2 exact; compact endpoint error .3852%->.1825%, update .6300%->.2985%, same2.537554BnominalMACsaving. Raw25K/34Vword differences remain;500rows improve/12padding worsen.52members103.64MBfullbyteverified,2048losslessrows/public236002bytes, no tensor hydration. Saturnstreamonlyrun/verify0. Astra newest-post/resultreview chooses complete conditioning taps and actual FLUXprojection next; no further precision search. Livingblog/figureupdated. No arbitraryzero-neuralimage solution or speedupclaim; goalactive."
+    "evidence": "Executed complete demanded conditioning on three actual H2 states:75originalblocks2..26 plus3nativecontextprojections, actualinputpayloadSHAjoins at75handoffs,84retained completefields. First instrument job6da90f538bf6 failed33.92s before firstconsumer due to inference-created weights lacking version counters; authenticated failedjob/log/oldpayload preserved, regression added. Fresh v2job0dddb989549a succeeded40s/1819.7MBRSS/692VRAM,75SDPA528linears25layerhydrations276originalpayloads5.094GBlogical. C RMS .178039->.149982 (15.76%gain), endpoint .9935%->.8370%, butH18 pooled reverses/165Crow errorsworse andpaddingC3.849%. New/oldCerrorcosine.454, no scalar attenuation or image claim.92members263.70MBbyteverified,14336losslessdependentrows/public2596570bytes,229.65MBnewstates nearcompute.110tests and Saturnstreamonlyrun/verify0. Astra newestpost/resultreview chooses3sealedE/same-noise nativeimageconsumer, no extra compaction or precisionsearch. Livingblog/figureupdated. No newarchive/deletion; lastcleanup22,nextstorage25. Fullzero-neuralgoalactive."
   },
   "requirements": {
     "arbitraryRawPromptCoverage": "Two fresh rawstrings form their own first2contextual states from complete-vocabulary atoms. One short28attended and one512attended control. No fullcontextualencoder/arbitraryprompt/image validation.",
@@ -26,9 +26,9 @@
   "findingsLog": {
     "path": "../obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
     "role": "One living highlevel blog for this active goal; keep summaries, findings, constraints and next mathematical question current after each research cycle.",
-    "lastUpdatedCycle": 23,
+    "lastUpdatedCycle": 24,
     "scope": "Local notebook post, not a public-site publication. Source/code/artifact/related-post backlinks verified; unrelated dirty notebook files preserved.",
-    "sha256": "b69efa52753de062dc9a41eafb1846af369f4560f894d6ebf6a443f101dfa9c5"
+    "sha256": "d3cdc725f5c3c452fefaa72127782881cad26180ec05fc3b468010ea8da6c745"
   },
   "storageMaintenance": {
     "lastCycle": 22,
@@ -52,9 +52,9 @@
     "latestPointerCheck": "16pointer/receipt/custody matches; freshremote regularfile/size for all16. Previous14not rehashed; fullSHA for new2 in archive transaction.",
     "cycle8Practice": "Bounded audit142top-level artifact directories for100MB-or-larger archive.tar.gz/worker.log.gz: none. All6restoration pointers match the cycle5receipt; authenticated remote type/size checks total7701454599bytes, not a fresh byte rehash. No new archive/deletion. Full common-bank/kernel/head arrays remain near compute; compact public evidence6201541bytes.",
     "latestSpaceObservation": {
-      "cycle": 23,
-      "localFreeBytes": 14118510592,
-      "scope": "Shared-volume observation after compact publication; no isolated cleanup attribution."
+      "cycle": 24,
+      "localFreeBytes": 14112509952,
+      "scope": "Shared-volume postpublication observation, not cleanup attribution."
     },
     "cycle9Practice": "Full states/ports/heads and target-assisted capacity weights remain near compute. Two compact publications2895986bytes; no full lexical table or forecast hydration. Last actual archive remainscycle5, last bounded transport auditcycle8, next storage reviewcycle11 or earlier under pressure.",
     "cycle5Archive": {
@@ -104,7 +104,8 @@
       "bytes": 1537861671,
       "scope": "FullremoteSHA before localunlink; extracteddata and originalcustody local."
     },
-    "cycle23Practice": "49.07MBnew fullarrays stay nearcompute;236002byte compact public result plus derivedfigure.52member103.64MBbytecheck includes inheriteddata, not newartifacttotal. No new deletion/archive; lastactual22,nextreview25 or pressure."
+    "cycle23Practice": "49.07MBnew fullarrays stay nearcompute;236002byte compact public result plus derivedfigure.52member103.64MBbytecheck includes inheriteddata, not newartifacttotal. No new deletion/archive; lastactual22,nextreview25 or pressure.",
+    "cycle24Practice": "229.65MBnewstates remain nearcompute; primarycompact public2596570bytes plusderivedfigure/failuremetadata.92member263.70MBbytecheck includes inheritedsources, notnewartifacttotal. No newarchive/deletion, lastactual22,nextreview25 orpressure."
   },
   "openPreference": {
     "question": "Reproduce FLUX prompt/seed behavior, or comparable prompt-faithful quality using another recovered computation?",
@@ -113,8 +114,8 @@
   "reviews": {
     "advisor": "astra_zero_forward_advisor",
     "model": "gpt-6-astra",
-    "lastCycle": 23,
-    "nextDueByCycle": 26,
+    "lastCycle": 24,
+    "nextDueByCycle": 27,
     "earlierIf": "new model evidence changes the route",
     "cycle5Snapshots": [
       {
@@ -179,7 +180,7 @@
         "sha256": "e016144354d12b35b3e85b6798fe6ab69b296a3ade42d61a3bb2bcd6adacbe56"
       }
     ],
-    "advice": "Stop precision exploration. Consume originalfull/oldcompact/newcompact H2 through unchanged blocks2..26, then concatenate H9/H18/H27 and run the actual FLUX context_embedder. Every branch retains its emitted state; no further compaction.75originalblocks+3contextprojections are paid offline consumers, not additional operation elimination. Complete absolute/relative discrepancies at demanded taps/E/C, active/padded regions, row reversals and signed old/new error alignment. No local threshold certifies image effects; full image consequence remains next.",
+    "advice": "Pass actual sealed E[1,512,7680], not C, via prompt_embeds into one three-branch same-noise native FLUX/VAE assay. Clone one presealed noise state, preserve pinned4step schedule, reset scheduler perbranch, no extra compaction/seedselection/encoder reference. Bind actual E reads, denoiser/context projection/VAE counts (projection may repeat each step); retain final latent, floating-point decoded pixels and PNG, signed/absolute errors and equal-scale visual comparisons. Prompt faithfulness/collateral inspection is distinct from pixel similarity.",
     "cycle6Snapshots": [
       {
         "path": "../obsidian/blog/2026-11-06-010513-predicting-a-complete-denoiser-pass-from-its-own-state.md",
@@ -480,7 +481,18 @@
         "scope": "Cycle22 working snapshot before the subsequent living-log update."
       }
     ],
-    "latestResultSHA256": "f54330bda232f57f0e5cf4ec41d7d4b1c3bc74c3035347b0c0fc40280c9c2144"
+    "latestResultSHA256": "58293b4a92e14c98b80a3259268e11b73ce95656b5320915ffcff5ec2a73fe71",
+    "cycle24Snapshots": [
+      {
+        "path": "../obsidian/blog/2026-11-06-093800-predicting-how-an-error-moves-through-the-next-block.md",
+        "sha256": "0dd4036ed656943403a7155affce3c88378d0014a07df85f36f45c41c7b23ad9"
+      },
+      {
+        "path": "../obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+        "sha256": "b69efa52753de062dc9a41eafb1846af369f4560f894d6ebf6a443f101dfa9c5",
+        "scope": "Cycle23 snapshot before subsequent living-log update."
+      }
+    ]
   },
   "rootReviewedSinceAdvisor": [
     {
@@ -1045,6 +1057,24 @@
       "nativeModuleCalls": 0,
       "newH1Blocks": 0,
       "scope": "One alternative K/V-only accumulation flag; full512/compact28 from own emitted H1. Original consumer, no encoder/FLUX/VAE."
+    },
+    {
+      "jobID": "job-0dddb989549a",
+      "requestSHA256": "551e29bb9ede226399051781ae31247d908a48b1a27b2e1a036cd6d45e601899",
+      "type": "Charged unchanged complete-conditioning consumers from3presealedH2 branches; original blocks2..26 and actual native contextprojection",
+      "schedulerSeconds": 40.0,
+      "workerSecondsAfterFrameworkImports": 25.480881540104747,
+      "sampledPeakRSSMB": 1819.7,
+      "sampledPeakVRAMMB": 692.0,
+      "SDPA": 75,
+      "VAECalls": 0,
+      "denoiserCalls": 0,
+      "fullEncoderCalls": 0,
+      "linear": 528,
+      "nativeContextProjectionCalls": 3,
+      "newImages": 0,
+      "originalQwenBlocks": 75,
+      "scope": "Consumer consequence, no added operation elimination, no new images or zero-neural suffix claim."
     }
   ],
   "failedRuns": [
@@ -1054,6 +1084,17 @@
       "status": "failed compiler receipt generation: own compile.json not admitted by file guard",
       "scientificEvidence": "no serving seal or scored result; retained instrument failure",
       "repair": "allow declared compiler specification; complete synthetic compiler regression; new sealed v4 request, no automatic retry"
+    },
+    {
+      "jobID": "job-6da90f538bf6",
+      "requestSHA256": "cce6ca60c539c711ecf7fb4679d1333d9c1827cce8e694b17dfbcec32649cc89",
+      "schedulerSeconds": 33.92,
+      "sampledPeakRSSMB": 1253.0,
+      "sampledPeakVRAMMB": 480.0,
+      "failure": "Inference-created parameter had no version counter; failed before first consumer block.",
+      "scientificResult": "None; instrument-broken, no continuation/null-effect claim.",
+      "preserved": "artifacts/conditioning-demand-v1 and results/conditioning-demand-evidence/{failed-job.json,failed-log.txt,failure-summary.json}",
+      "repair": "Version-tracked parameter materialization under inference_mode(False), explicit regression; same-science freshv2 succeeded."
     }
   ],
   "unexecutedRuns": [
@@ -1144,14 +1185,14 @@
     }
   ],
   "nextCut": {
-    "status": "Frozen complete-conditioning followup; not staged or executed. No live scientific job remains.",
-    "plan": "plans/conditioning-demand-consequence.md",
-    "question": "Does the retained local H2 improvement survive the actual H9/H18/H27 conditioning demand and first FLUX context projection?",
-    "source": "Originalfull, oldcompact and newcompact H2 authenticated by job332caa7e03a6 and inherited job5f515567890f. One already-scored short context.",
-    "law": "Each branch consumes its emitted state through unchanged blocks2..26; E=concat(H9,H18,H27); actual original context_embedder consumes completeE.75originalblocks+3projections paid offline.",
-    "requirements": "No further compaction, native state refresh or numerical gate. Bind qualified source/checkpoint/parameter/mask/profile and actual projection input. Preserve all512rows, absolute/relative/tap/C errors, regional reversals and signed error alignment.",
-    "nextAction": "Implement one finite guarded CUDA consumer assay, layer-major parameter reuse across3serial branches. No complete denoiser/VAE yet; image consequence follows conditioning observation, with no threshold certifying it.",
-    "scope": "Learned consumers remain original work. This tests usefulness of a reduction, not additional neural elimination or completed arbitrary-prompt generation."
+    "status": "Frozen same-noise three-branch image-consumer assay, not staged/executed. No live scientific job remains.",
+    "plan": "plans/conditioning-image-consequence.md",
+    "question": "Does the local KV policy improvement survive the complete image-producing native consumer, and where does its ranking reverse?",
+    "source": "Sealed E[1,512,7680] for full/oldcompact/newcompact from job0dddb989549a; one already-scored teapot/compass/map prompt.",
+    "law": "Actual E via prompt_embeds (not C), one seed314159 initialnoise sealed then cloned for each branch, original4step native FLUX/VAE; fresh identical scheduler perbranch.",
+    "requirements": "No encoder/reference refresh, added compaction, seedselection or precisionsearch. Bind E reads/noise/schedule, actualdenoiser/context/VAEcounts including repeatedprojection; retainlatent, raw/processedfloatpixels andPNG, signed/absoluteerrors and same-scale visualcollateral. No state/pixel threshold as qualitycertificate.",
+    "nextAction": "Implement one finite guarded mrun CUDA lease, inspect intent-first sizing/compatible measuredhistory, run3serialB1images and retain full costs. Scheduledstorage review25 follows or occurs before if needed.",
+    "scope": "Paid original learned imageconsumer. Does not satisfy arbitraryprompt zero-neural generation or establish semanticquality/generalization."
   },
   "alternativeDiagnostic": {
     "status": "executedcycle20",
@@ -1877,7 +1918,7 @@
     "saturnSweep": "run/verifyexit0,1stream23040records,no watchfires,target-streams-only,no terminalreceipts/physicaladdressjoins.",
     "goalStatus": "Active. Frozen source-score envelope has active trend/overallcountertrend; no selector/tail defect found. No zero-neural arbitraryimage."
   },
-  "previousResearchCycle": 22,
+  "previousResearchCycle": 23,
   "selectorObjectiveEvidence": {
     "directory": "results/selector-objective",
     "evidenceSweep": "results/selector-objective-evidence/sweep.json",
@@ -5601,7 +5642,7 @@
   },
   "previousEvidenceTurn": {
     "classification": "progress",
-    "evidence": "Independently verified new cachedQKV exact mixed-support result/custody/12actualCLI checks and published4.671MBmetadata. Astra redirected fullgoal lane to first-prompt work. Implemented and ran rawstrings->complete lexical atoms->ownH1->compactKV H2, job5f515567890f succeeded firstaccepted execution49.25s/2106.7MB/790VRAM. ShortL28omits484KVrows/2.537554BnominalMACs; H1exact, zero/full consumedoutputs exact, compactactiveprojection drift yieldsH2.3852%endpoint/.6300%update error; all-attendedcontrol exact/no savings. Actual12SDPA78linear receipts,5120rowaccounts/wordzero counts,100files336.15MBbyteverified.105tests pass and Saturnstreamonlyrun/verify0. No native fullencoder/embedding/FLUX/VAE/image. Savedprelease422note rejection; no modelrerun. Cleanup22archives2transports1.538GBwithfullSHA/restorepointers;16pointer/custody/remote metadata checks,64remainingcandidatesnot safedeletions. Livingblog/figures/Astraupdated; nextfixedKVaccumulation contrast planned, fullgoal active."
+    "evidence": "Implemented the one fixed KV-only accumulation-policy contrast, with Astra source review and107passing mechanics tests. Guarded job332caa7e03a6 succeeded once38s/1967MBRSS/582MBVRAM,16linears/2SDPA/2CPUFP64products. Same actual emitted H1 and unchanged original target, allalternativeH2 sealed before references. Original full alternative H2 exact; compact endpoint error .3852%->.1825%, update .6300%->.2985%, same2.537554BnominalMACsaving. Raw25K/34Vword differences remain;500rows improve/12padding worsen.52members103.64MBfullbyteverified,2048losslessrows/public236002bytes, no tensor hydration. Saturnstreamonlyrun/verify0. Astra newest-post/resultreview chooses complete conditioning taps and actual FLUXprojection next; no further precision search. Livingblog/figureupdated. No arbitraryzero-neuralimage solution or speedupclaim; goalactive."
   },
   "signCompositionEvidence": {
     "report": "results/sign-composition/report.json",
@@ -6883,5 +6924,312 @@
       }
     ],
     "scope": "Retrospective one-context fixed-policy result, improved but not exact compact formation. No new images/fullencoder/FLUX/VAE or arbitraryzero-neural backend. Timings are captured single phases, not speedup."
+  },
+  "conditioningDemandEvidence": {
+    "path": "results/conditioning-demand",
+    "reportSHA256": "58293b4a92e14c98b80a3259268e11b73ce95656b5320915ffcff5ec2a73fe71",
+    "consumerSealSHA256": "810c2c78a119e494afc2592dad7cd7f286c07629711b749a5451aad2411186a3",
+    "jobID": "job-0dddb989549a",
+    "retainedByteVerification": {
+      "files": 92,
+      "bytes": 263695137
+    },
+    "publicFiles": 10,
+    "publicBytes": 2596570,
+    "newRetainedArrayBytesNearCompute": 229648512,
+    "observations": 14336,
+    "completeStateFields": 84,
+    "originalParameterPayloadBytesRead": 5093726720,
+    "originalParameterPayloads": 276,
+    "nominalAssayLinearMACs": 3911775682560,
+    "selectedPorts": [
+      {
+        "port": "H2",
+        "all": {
+          "oldRMS": 0.0008318341492141544,
+          "newRMS": 0.000394109459415116,
+          "oldEndpointRelativeRMS": 0.003852448978678026,
+          "newEndpointRelativeRMS": 0.0018252275238344801,
+          "oldNewErrorCosine": 0.23244960575770757
+        },
+        "active": {
+          "oldRMS": 0.0015764673609252342,
+          "newRMS": 0.00044416968700448765,
+          "oldEndpointRelativeRMS": 0.003309327749881777,
+          "newEndpointRelativeRMS": 0.0009324031104567639,
+          "oldNewErrorCosine": 0.1502391973292863
+        },
+        "padding": {
+          "oldRMS": 0.0007669441630079783,
+          "newRMS": 0.00039101735363494914,
+          "oldEndpointRelativeRMS": 0.004031414314497777,
+          "newEndpointRelativeRMS": 0.0020553686079029135,
+          "oldNewErrorCosine": 0.24851701370214707
+        }
+      },
+      {
+        "port": "H9",
+        "all": {
+          "oldRMS": 0.017720067119140516,
+          "newRMS": 0.011606879545908055,
+          "oldEndpointRelativeRMS": 0.0012100207142365783,
+          "newEndpointRelativeRMS": 0.000792579654680157,
+          "oldNewErrorCosine": 0.4893810257008345
+        },
+        "active": {
+          "oldRMS": 0.009723086733374004,
+          "newRMS": 0.008748452231436265,
+          "oldEndpointRelativeRMS": 0.00015541222180981803,
+          "newEndpointRelativeRMS": 0.0001398338239663908,
+          "oldNewErrorCosine": 0.49617128770181906
+        },
+        "padding": {
+          "oldRMS": 0.01807475998379859,
+          "newRMS": 0.011750986469022083,
+          "oldEndpointRelativeRMS": 0.027645584175986077,
+          "newEndpointRelativeRMS": 0.017973289043473662,
+          "oldNewErrorCosine": 0.4898135991331114
+        }
+      },
+      {
+        "port": "H18",
+        "all": {
+          "oldRMS": 0.10081958094196414,
+          "newRMS": 0.10196393512145724,
+          "oldEndpointRelativeRMS": 0.006769415459306004,
+          "newEndpointRelativeRMS": 0.006846251811939143,
+          "oldNewErrorCosine": 0.35312111774392196
+        },
+        "active": {
+          "oldRMS": 0.018988990684709408,
+          "newRMS": 0.017780633888237585,
+          "oldEndpointRelativeRMS": 0.00029907296169735136,
+          "newEndpointRelativeRMS": 0.0002800415738838351,
+          "oldNewErrorCosine": 0.5620091268586881
+        },
+        "padding": {
+          "oldRMS": 0.10359421706783124,
+          "newRMS": 0.104784603301985,
+          "oldEndpointRelativeRMS": 0.0867098418651369,
+          "newEndpointRelativeRMS": 0.08770621217463326,
+          "oldNewErrorCosine": 0.3527471334816885
+        }
+      },
+      {
+        "port": "H27",
+        "all": {
+          "oldRMS": 0.21548001224816,
+          "newRMS": 0.1809465920651518,
+          "oldEndpointRelativeRMS": 0.014282814294653334,
+          "newEndpointRelativeRMS": 0.011993811141706135,
+          "oldNewErrorCosine": 0.45896440934380406
+        },
+        "active": {
+          "oldRMS": 0.046031228458870255,
+          "newRMS": 0.043394604348785566,
+          "oldEndpointRelativeRMS": 0.0007242319202447953,
+          "newEndpointRelativeRMS": 0.0006827486184485689,
+          "oldNewErrorCosine": 0.5303794117583207
+        },
+        "padding": {
+          "oldRMS": 0.2213485574272443,
+          "newRMS": 0.1858140902687975,
+          "oldEndpointRelativeRMS": 0.08323045035526742,
+          "newEndpointRelativeRMS": 0.06986894604230567,
+          "oldNewErrorCosine": 0.4587724234208805
+        }
+      },
+      {
+        "port": "E",
+        "all": {
+          "oldRMS": 0.13773189458568566,
+          "newRMS": 0.12010139174636071,
+          "oldEndpointRelativeRMS": 0.00925870695577062,
+          "newEndpointRelativeRMS": 0.008073537320493153,
+          "oldNewErrorCosine": 0.43578346487139363
+        },
+        "active": {
+          "oldRMS": 0.02929160389532241,
+          "newRMS": 0.027542561273423746,
+          "oldEndpointRelativeRMS": 0.0004634267643949631,
+          "newEndpointRelativeRMS": 0.00043575490436462795,
+          "oldNewErrorCosine": 0.5335693649132391
+        },
+        "padding": {
+          "oldRMS": 0.14148456056344208,
+          "newRMS": 0.12334879396055497,
+          "oldEndpointRelativeRMS": 0.0820167959449303,
+          "newEndpointRelativeRMS": 0.0715037232615904,
+          "oldNewErrorCosine": 0.4355252760426263
+        }
+      },
+      {
+        "port": "C",
+        "all": {
+          "oldRMS": 0.17803895310040355,
+          "newRMS": 0.1499822784745721,
+          "oldEndpointRelativeRMS": 0.00993525504141384,
+          "newEndpointRelativeRMS": 0.008369585208113928,
+          "oldNewErrorCosine": 0.45390442276710885
+        },
+        "active": {
+          "oldRMS": 0.0618809824191522,
+          "newRMS": 0.05697189422288884,
+          "oldEndpointRelativeRMS": 0.0008271750376020963,
+          "newEndpointRelativeRMS": 0.0007615543080242904,
+          "oldNewErrorCosine": 0.4393627724097365
+        },
+        "padding": {
+          "oldRMS": 0.1825105548222165,
+          "newRMS": 0.15364978307458407,
+          "oldEndpointRelativeRMS": 0.04572188919729957,
+          "newEndpointRelativeRMS": 0.038491792235076226,
+          "oldNewErrorCosine": 0.4540233117150305
+        }
+      }
+    ],
+    "rowComparisons": [
+      {
+        "port": "H2",
+        "regions": {
+          "all": {
+            "improved": 500,
+            "worsened": 12,
+            "unchanged": 0,
+            "RmsReductionFraction": 0.5262163019065318
+          },
+          "active": {
+            "improved": 28,
+            "worsened": 0,
+            "unchanged": 0,
+            "RmsReductionFraction": 0.7182499948848906
+          },
+          "padding": {
+            "improved": 472,
+            "worsened": 12,
+            "unchanged": 0,
+            "RmsReductionFraction": 0.4901619016156702
+          }
+        }
+      },
+      {
+        "port": "H9",
+        "regions": {
+          "all": {
+            "improved": 411,
+            "worsened": 101,
+            "unchanged": 0,
+            "RmsReductionFraction": 0.3449867053059431
+          },
+          "active": {
+            "improved": 19,
+            "worsened": 9,
+            "unchanged": 0,
+            "RmsReductionFraction": 0.10023920681406207
+          },
+          "padding": {
+            "improved": 392,
+            "worsened": 92,
+            "unchanged": 0,
+            "RmsReductionFraction": 0.34986763422833034
+          }
+        }
+      },
+      {
+        "port": "H18",
+        "regions": {
+          "all": {
+            "improved": 322,
+            "worsened": 190,
+            "unchanged": 0,
+            "RmsReductionFraction": -0.011350515136061112
+          },
+          "active": {
+            "improved": 19,
+            "worsened": 9,
+            "unchanged": 0,
+            "RmsReductionFraction": 0.06363459841205954
+          },
+          "padding": {
+            "improved": 303,
+            "worsened": 181,
+            "unchanged": 0,
+            "RmsReductionFraction": -0.011490856032767782
+          }
+        }
+      },
+      {
+        "port": "H27",
+        "regions": {
+          "all": {
+            "improved": 344,
+            "worsened": 168,
+            "unchanged": 0,
+            "RmsReductionFraction": 0.16026275394507306
+          },
+          "active": {
+            "improved": 16,
+            "worsened": 12,
+            "unchanged": 0,
+            "RmsReductionFraction": 0.05727902987513267
+          },
+          "padding": {
+            "improved": 328,
+            "worsened": 156,
+            "unchanged": 0,
+            "RmsReductionFraction": 0.1605362491243103
+          }
+        }
+      },
+      {
+        "port": "E",
+        "regions": {
+          "all": {
+            "improved": 349,
+            "worsened": 163,
+            "unchanged": 0,
+            "RmsReductionFraction": 0.12800595600866194
+          },
+          "active": {
+            "improved": 18,
+            "worsened": 10,
+            "unchanged": 0,
+            "RmsReductionFraction": 0.059711398124496995
+          },
+          "padding": {
+            "improved": 331,
+            "worsened": 153,
+            "unchanged": 0,
+            "RmsReductionFraction": 0.12818194812680628
+          }
+        }
+      },
+      {
+        "port": "C",
+        "regions": {
+          "all": {
+            "improved": 347,
+            "worsened": 165,
+            "unchanged": 0,
+            "RmsReductionFraction": 0.15758728153163837
+          },
+          "active": {
+            "improved": 20,
+            "worsened": 8,
+            "unchanged": 0,
+            "RmsReductionFraction": 0.07933112895673733
+          },
+          "padding": {
+            "improved": 327,
+            "worsened": 157,
+            "unchanged": 0,
+            "RmsReductionFraction": 0.15813206954384473
+          }
+        }
+      }
+    ],
+    "maxAbsoluteEnergyIdentityRemainder": 7.275957614183426e-12,
+    "sourceScope": "Fullencoder shardsbytehashed; selectedFLUXheaderentry/payload verified, wholeheaderdigest recorded (notpinneddigestcompared), no fullFLUXfilehashclaim.",
+    "scope": "Original learned75block/3projection consumer consequence of existingreduction. No image, furtheroperationelimination, independent suffixaccuracy or zero-neural generation claim."
   }
 }

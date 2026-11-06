@@ -1,6 +1,6 @@
 # Follow the retained approximation to the actual conditioning consumer
 
-Status: frozen cycle-23 follow-up; not staged or executed. The [one-policy assay](../kv-accumulation-profile.md) preserves a real first-prompt K/V saving and reduces H2 RMS error by 52.62%, with twelve padding-row reversals and nonzero drift. The next question is whether that advantage survives the complete demanded conditioning interface. Do not search more flags, kernels or projection shapes.
+Status: frozen cycle-23 plan, executed in cycle24 as `job-0dddb989549a` after a preserved instrumentation failure. The [result](../conditioning-demand-consequence.md) retains the complete consumer trajectory and reversals. The prospective text below is preserved. The [one-policy assay](../kv-accumulation-profile.md) preserves a real first-prompt K/V saving and reduces H2 RMS error by 52.62%, with twelve padding-row reversals and nonzero drift. The next question is whether that advantage survives the complete demanded conditioning interface. Do not search more flags, kernels or projection shapes.
 
 Freeze exactly three authenticated H2 states for the same short prompt: original full formation, original compact formation and the new compact formation. Parent `job-332caa7e03a6` binds the latter and both inherited references, with independent full-byte verification. Mask/IDs/positions and original weights remain identical. No additional compaction or other approximation is introduced in the suffix.
 

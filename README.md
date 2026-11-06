@@ -52,7 +52,9 @@ The [conditional reuse and composition result](docs/sign-composition-boundary.md
 
 The [transformed-QKV result](docs/cached-qkv-reuse.md) predicts mixed-support updates exactly while omitting three input projections. The [first-prompt mask-aware assay](docs/masked-kv-own-state.md) then starts from fresh raw strings and advances its own H1→H2. It avoids 2.538 billion nominal K/V MACs on the short prompt, with 0.385% endpoint state error from changed projection geometry. Every query and MLP row remains. These are compiler reductions with substantial learned work still present.
 
-The [fixed accumulation-policy follow-up](docs/kv-accumulation-profile.md) preserves that saving while lowering H2 error to 0.183%. Full formation remains exact; compact formation improves on 500/512 rows, with twelve padding reversals retained. Complete conditioning and its actual first FLUX projection are the next consumer; arbitrary-prompt zero-neural image generation remains open.
+The [fixed accumulation-policy follow-up](docs/kv-accumulation-profile.md) preserves that saving while lowering H2 error to 0.183%. Full formation remains exact; compact formation improves on 500/512 rows, with twelve padding reversals retained. The next result follows complete conditioning and its actual first FLUX projection; arbitrary-prompt zero-neural image generation remains open.
+
+The [complete conditioning consequence](docs/conditioning-demand-consequence.md) now carries three actual H2 states through H9/H18/H27 and the native FLUX context projection. C error improves 15.76%, with an H18 pooled reversal and 165 C rows worse. All remaining learned work is charged. Pixel consequence is the next fixed test; this supplies no zero-neural image backend.
 
 The [source-only landmark reader](docs/source-landmark-context.md) supplies an explicit rule for eight new strings, with64live positive prefix statistics. Its initial mixture is inaccurate. Saved-only routing/capacity diagnostics distinguish excessive smoothing from the added restriction of fixed convex response mixing; target-assisted fitted weights are not serving assets. Contextual/image completion remains open.
 

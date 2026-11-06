@@ -1,0 +1,152 @@
+{
+  "schema": "tce-conditioning-demand-derived-accounting-v1",
+  "sourceReportSHA256": "58293b4a92e14c98b80a3259268e11b73ce95656b5320915ffcff5ec2a73fe71",
+  "sourceRowsSHA256": "565f41d6a06d02a63db0ba115154b08d70fce92c5a8b084501a5ef5020ddf600",
+  "rowComparisons": [
+    {
+      "port": "H2",
+      "regions": {
+        "all": {
+          "improved": 500,
+          "worsened": 12,
+          "unchanged": 0,
+          "RmsReductionFraction": 0.5262163019065318
+        },
+        "active": {
+          "improved": 28,
+          "worsened": 0,
+          "unchanged": 0,
+          "RmsReductionFraction": 0.7182499948848906
+        },
+        "padding": {
+          "improved": 472,
+          "worsened": 12,
+          "unchanged": 0,
+          "RmsReductionFraction": 0.4901619016156702
+        }
+      }
+    },
+    {
+      "port": "H9",
+      "regions": {
+        "all": {
+          "improved": 411,
+          "worsened": 101,
+          "unchanged": 0,
+          "RmsReductionFraction": 0.3449867053059431
+        },
+        "active": {
+          "improved": 19,
+          "worsened": 9,
+          "unchanged": 0,
+          "RmsReductionFraction": 0.10023920681406207
+        },
+        "padding": {
+          "improved": 392,
+          "worsened": 92,
+          "unchanged": 0,
+          "RmsReductionFraction": 0.34986763422833034
+        }
+      }
+    },
+    {
+      "port": "H18",
+      "regions": {
+        "all": {
+          "improved": 322,
+          "worsened": 190,
+          "unchanged": 0,
+          "RmsReductionFraction": -0.011350515136061112
+        },
+        "active": {
+          "improved": 19,
+          "worsened": 9,
+          "unchanged": 0,
+          "RmsReductionFraction": 0.06363459841205954
+        },
+        "padding": {
+          "improved": 303,
+          "worsened": 181,
+          "unchanged": 0,
+          "RmsReductionFraction": -0.011490856032767782
+        }
+      }
+    },
+    {
+      "port": "H27",
+      "regions": {
+        "all": {
+          "improved": 344,
+          "worsened": 168,
+          "unchanged": 0,
+          "RmsReductionFraction": 0.16026275394507306
+        },
+        "active": {
+          "improved": 16,
+          "worsened": 12,
+          "unchanged": 0,
+          "RmsReductionFraction": 0.05727902987513267
+        },
+        "padding": {
+          "improved": 328,
+          "worsened": 156,
+          "unchanged": 0,
+          "RmsReductionFraction": 0.1605362491243103
+        }
+      }
+    },
+    {
+      "port": "E",
+      "regions": {
+        "all": {
+          "improved": 349,
+          "worsened": 163,
+          "unchanged": 0,
+          "RmsReductionFraction": 0.12800595600866194
+        },
+        "active": {
+          "improved": 18,
+          "worsened": 10,
+          "unchanged": 0,
+          "RmsReductionFraction": 0.059711398124496995
+        },
+        "padding": {
+          "improved": 331,
+          "worsened": 153,
+          "unchanged": 0,
+          "RmsReductionFraction": 0.12818194812680628
+        }
+      }
+    },
+    {
+      "port": "C",
+      "regions": {
+        "all": {
+          "improved": 347,
+          "worsened": 165,
+          "unchanged": 0,
+          "RmsReductionFraction": 0.15758728153163837
+        },
+        "active": {
+          "improved": 20,
+          "worsened": 8,
+          "unchanged": 0,
+          "RmsReductionFraction": 0.07933112895673733
+        },
+        "padding": {
+          "improved": 327,
+          "worsened": 157,
+          "unchanged": 0,
+          "RmsReductionFraction": 0.15813206954384473
+        }
+      }
+    }
+  ],
+  "stateFields": 84,
+  "newRetainedArrayBytes": 229648512,
+  "originalParameterPayloadBytesRead": 5093726720,
+  "originalParameterPayloads": 276,
+  "nominalAssayLinearMACs": 3911775682560,
+  "maxAbsoluteEnergyIdentityRemainder": 7.275957614183426e-12,
+  "derivation": "Scalar-only derived comparisons across dependent rows and paid original consumers. Aggregate C does not identify separate projected tap cross terms. No image-quality, speedup or added operation-elimination claim."
+}
