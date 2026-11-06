@@ -1,0 +1,101 @@
+{
+  "alphas": [
+    0,
+    0.5,
+    1
+  ],
+  "checkpoint": "dd976d67036c4a0a55642f702dcb3740ba7a4f367557596572baac168330904f",
+  "controlsSeparateProcess": true,
+  "methods": [
+    "polynomial",
+    "endpoint_linear",
+    "copy_base"
+  ],
+  "primaryServingUsesNativeOutputs": false,
+  "requestSHA256": "2186fca2dae9e01e786a740e8a404a7c47c610b45f9620f44a2db0e6f152db1b",
+  "schema": "tce-compiled-mlp-write-request-v1",
+  "scope": "Retrospective 32-row input-line MLP compilation, native CPU BF16 reference. Offline original weights; coefficient-only serving and fixed-parent residual consumer. Supplied inputs/context, no arbitrary prompt or full-block/denoising rollout claim.",
+  "sourceCustodyVerifierSHA256": "e13c79dcb7e41d2583407f8adf2a5e3dae28cdbe6a51342fad1c78ee009ff12a",
+  "sourceHashes": {
+    "compile.json": "4f9e81c50cbe3a6faf726be5bca04009dcb38d5eecba4cbc5a0953da8bcd155b",
+    "evaluation.json": "15a16e3831dc09c72a5a12df1078e2dd40b2ab37531acc0e5cfd65645391becf",
+    "mlp_polynomial.py": "8a46b04595a3bfc64c49884eeff0033782ec6136164693d9f93c811e4b4a373d",
+    "mlp_polynomial_study.py": "41370214461385f3c46dbb12017b1bb0e8665798230ee7de954f84fd8af54ca3",
+    "prompt_closure.py": "aece165a6f0eb7d1353d9e159fa84bb9f247be6413e27b45e98a1c9a7dd3f54e",
+    "response_chart.py": "1d0febad9df24642badb474a521ee819ffb667b4cc22269a8603d36fee22589d",
+    "response_study.py": "4f1213a1b37139454f1358cc66a1fa6e98c715a6d21a398a95e1d2345aabc78c",
+    "retrieve_weights.py": "7cef6f04829dc8638718c25cffa9e3e5ca86703e19cb770d57aa516b719677ae"
+  },
+  "sourceJobID": "job-f0cd6a040823",
+  "sources": [
+    {
+      "custody": {
+        "archive_bytes": 27030864,
+        "archive_sha256": "4435d449b0008f205c68addd69212db91259955d17177d3866913128f0d9a4da",
+        "files": 43,
+        "job_id": "job-f0cd6a040823",
+        "mechanics_status": "verified",
+        "model_reexecution": false,
+        "part_count": 4,
+        "request_sha256": "3bdc68d1a8b5a17a9e518d7922217dadfc3c44bc54d1840dd3dd17102fd89dd6",
+        "schema": "mdb-flux-family-custody-verification-v1"
+      },
+      "inventorySHA256": "20c9ab32b0bb34bab5e2f96e8fe12f0d6ee6eeeae33e5413708b7889517b84a6",
+      "payloadCustody": {
+        "declared": {
+          "sha256": "4d084174f6017f56f4f686b08ab8cf85172771dabf3f215f2aa8a9cb3cd1946b",
+          "size_bytes": 3487992
+        },
+        "executed": {
+          "host": "beast",
+          "reported_ts": 1793919152.3942676,
+          "sha256": "4d084174f6017f56f4f686b08ab8cf85172771dabf3f215f2aa8a9cb3cd1946b",
+          "size_bytes": 3487992
+        },
+        "required": true,
+        "sealed": {
+          "sealed_ts": 1793919152.314274,
+          "sha256": "4d084174f6017f56f4f686b08ab8cf85172771dabf3f215f2aa8a9cb3cd1946b",
+          "size_bytes": 3487992
+        }
+      },
+      "remoteRoot": "/mnt/hdd8tb/mdb/research/job-f0cd6a040823/binding-minimal-result",
+      "reportSHA256": "06597b5678e6d8b0731c1832be0ae6a9342cf1626b279d18018cef0d9f83cff2"
+    },
+    {
+      "custody": {
+        "archive_bytes": 400267259,
+        "archive_sha256": "adf597341e87dfa8e86ac217a47e852afd0dda8d4d89b975daf6d2b7b555b0c4",
+        "files": 707,
+        "job_id": "job-5500509e5fdd",
+        "mechanics_status": "verified",
+        "model_reexecution": false,
+        "part_count": 48,
+        "request_sha256": "6a596b25489852d247326811fac384dcc1a2f889b1fac788b510d40022474b38",
+        "schema": "mdb-flux-family-custody-verification-v1"
+      },
+      "inventorySHA256": "77d7fd65c12da5bbe808c09b07fa9cde5b785dd1d9d1b6649bf576a5c1f28ad0",
+      "payloadCustody": {
+        "declared": {
+          "sha256": "e02c5f327311b241a46698141974f13544a5f486e98d7292c10094aad777abce",
+          "size_bytes": 3156606
+        },
+        "executed": {
+          "host": "beast",
+          "reported_ts": 1793917486.7374833,
+          "sha256": "e02c5f327311b241a46698141974f13544a5f486e98d7292c10094aad777abce",
+          "size_bytes": 3156606
+        },
+        "required": true,
+        "sealed": {
+          "sealed_ts": 1793917486.5465682,
+          "sha256": "e02c5f327311b241a46698141974f13544a5f486e98d7292c10094aad777abce",
+          "size_bytes": 3156606
+        }
+      },
+      "remoteRoot": "/mnt/hdd8tb/mdb/research/job-5500509e5fdd/binding-minimal-result",
+      "reportSHA256": "8910559cf5e53a8db3f48cbb0a084a4434cab39e83f07cd43b1f7d0873617225"
+    }
+  ],
+  "timingRepeats": 31
+}

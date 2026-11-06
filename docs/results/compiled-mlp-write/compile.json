@@ -1,0 +1,170 @@
+{
+  "checkpointFile": "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/diffusion_pytorch_model.safetensors",
+  "checkpointRoot": "/mnt/big/llm-models/FLUX.2-klein-4B",
+  "operands": {
+    "attention": {
+      "kind": "npy",
+      "path": "/mnt/hdd8tb/mdb/research/job-5500509e5fdd/binding-minimal-result/arrays/control.J1.attention_native.npy",
+      "sha256": "6584a63bd54a7d27d54c54c5e0377ef85c780227c5b4bfb0ca668631643b7195",
+      "shape": [
+        1,
+        1024,
+        3072
+      ]
+    },
+    "base": {
+      "kind": "npy",
+      "path": "/mnt/hdd8tb/mdb/research/job-f0cd6a040823/binding-minimal-result/base.npy",
+      "sha256": "5c2efc711c6eeec4d7a01e42c891f0c91d890f71d286fdd76fdba1ef1523cc05",
+      "shape": [
+        1,
+        32,
+        3072
+      ]
+    },
+    "changed": {
+      "kind": "npy",
+      "path": "/mnt/hdd8tb/mdb/research/job-f0cd6a040823/binding-minimal-result/changed.npy",
+      "sha256": "d506dd61fce42195085bc95ab840b0b20136225d27ab08a20e7226be9911e2e3",
+      "shape": [
+        1,
+        32,
+        3072
+      ]
+    },
+    "gateAttention": {
+      "kind": "npy",
+      "path": "/mnt/hdd8tb/mdb/research/job-5500509e5fdd/binding-minimal-result/arrays/control.J1.gate_attention.npy",
+      "sha256": "8dec6052f8bbcfa5040a388d128f8c0a636fdc02e3bd4a728538be09c2cb029e",
+      "shape": [
+        1,
+        1,
+        3072
+      ]
+    },
+    "gateMLP": {
+      "kind": "npy",
+      "path": "/mnt/hdd8tb/mdb/research/job-5500509e5fdd/binding-minimal-result/arrays/control.J1.gate_mlp.npy",
+      "sha256": "d3876b7bd268d5169125b3c5ea40124a32078a4eeca90e291610630173fcfeef",
+      "shape": [
+        1,
+        1,
+        3072
+      ]
+    },
+    "image": {
+      "kind": "safetensors",
+      "path": "/mnt/hdd8tb/mdb/research/job-5500509e5fdd/binding-minimal-result/store/blobs/0551d9b206083207288b5b646aa45884302407eddd68aceb8b47c9015e2a2dba.safetensors",
+      "sha256": "0551d9b206083207288b5b646aa45884302407eddd68aceb8b47c9015e2a2dba",
+      "shape": [
+        1,
+        1024,
+        3072
+      ],
+      "tensor": "tensor_0",
+      "tensorSHA256": "5c50348caff5537818417d7a1fa2584455c90419da7e6630f062b55769b70eea"
+    }
+  },
+  "parameters": {
+    "artifacts": [
+      {
+        "bytes": 113246336,
+        "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDE4NDMyLCAzMDcyKSwgfSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+        "path": "parameters/e5385cef42e11517836829771d38594224ea636ad2f5715854ac8dbd9cfa0183.npy",
+        "sha256": "e5385cef42e11517836829771d38594224ea636ad2f5715854ac8dbd9cfa0183",
+        "source": {
+          "data_offsets": [
+            5938360320,
+            6051606528
+          ],
+          "dtype": "BF16",
+          "file": "transformer/diffusion_pytorch_model.safetensors",
+          "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+          "payload_sha256": "dbccb90b3318d159a25d01405f744f5baec457622a15cc5c4c00ae34197c6516",
+          "shape": [
+            18432,
+            3072
+          ],
+          "tensor": "transformer_blocks.1.ff.linear_in.weight"
+        }
+      },
+      {
+        "bytes": 56623232,
+        "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDkyMTYpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+        "path": "parameters/1f18ec29d89042774e1a6dd9a1234a71522d9b3fe06264114b29d83daa6160f4.npy",
+        "sha256": "1f18ec29d89042774e1a6dd9a1234a71522d9b3fe06264114b29d83daa6160f4",
+        "source": {
+          "data_offsets": [
+            6051606528,
+            6108229632
+          ],
+          "dtype": "BF16",
+          "file": "transformer/diffusion_pytorch_model.safetensors",
+          "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+          "payload_sha256": "d926e22ddde656304ea0da35e77bf13b9ad2c072864d2e84019afb6e26c17a9c",
+          "shape": [
+            3072,
+            9216
+          ],
+          "tensor": "transformer_blocks.1.ff.linear_out.weight"
+        }
+      }
+    ],
+    "defaults": {
+      "artifact_root": "parameter-cache",
+      "checkpoint_root": "/mnt/big/llm-models/FLUX.2-klein-4B",
+      "python": "python3",
+      "ssh_host": "beast"
+    },
+    "provenance": {
+      "checkpoint_file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+      "job_id": "job-4350531b1dcd",
+      "producer_source_sha256": "1ae1a639cb2407adadda597af48ef581d0129f6cf2b87df7e249274247b6129b",
+      "request_sha256": "32696ea315aa3236845417962bef9a990c87a31ef9be83b6c770388090218981",
+      "retrieval_module_sha256": "7cef6f04829dc8638718c25cffa9e3e5ca86703e19cb770d57aa516b719677ae",
+      "scope": "Recipes only; parameter archive paths intentionally absent from producer inventory. Read pinned checkpoint banks ephemerally, or hydrate into a shared external cache with --root before audit. No per-run persistent weight bank."
+    },
+    "schema": "mdb-parameter-artifacts-v1"
+  },
+  "schema": "tce-mlp-line-compile-spec-v1",
+  "scope": "Retrospective 32-row input-line MLP compilation, native CPU BF16 reference. Offline original weights; coefficient-only serving and fixed-parent residual consumer. Supplied inputs/context, no arbitrary prompt or full-block/denoising rollout claim.",
+  "selectedRows": [
+    6,
+    53,
+    149,
+    183,
+    200,
+    205,
+    231,
+    244,
+    318,
+    344,
+    371,
+    417,
+    426,
+    436,
+    462,
+    531,
+    533,
+    541,
+    584,
+    600,
+    606,
+    737,
+    744,
+    757,
+    790,
+    795,
+    863,
+    864,
+    925,
+    938,
+    942,
+    956
+  ],
+  "sourceRoots": [
+    "/mnt/hdd8tb/mdb/research/job-f0cd6a040823/binding-minimal-result",
+    "/mnt/hdd8tb/mdb/research/job-5500509e5fdd/binding-minimal-result",
+    "/mnt/big/llm-models/FLUX.2-klein-4B"
+  ]
+}

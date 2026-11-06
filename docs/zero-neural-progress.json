@@ -1,17 +1,21 @@
 {
   "schema": "tce-zero-neural-goal-progress-v1",
-  "updatedAt": "2026-11-06T06:44:00Z",
+  "updatedAt": "2026-11-06T07:13:48Z",
   "objective": "let’s solve arbitrary prompt to image without any forward zero neural evals. Every few turns have Astra review the newest blog posts and get a big picture of where we are at so that we can find the best route forward",
   "status": "active",
-  "researchCycle": 1,
+  "researchCycle": 2,
+  "previousGoalTurn": {
+    "classification": "progress",
+    "evidence": "Two collected prompt-composition diagnostics changed the next action; source, custody subsets and findings committed/pushed as1a31803."
+  },
   "requirements": {
     "arbitraryRawPromptCoverage": "open",
-    "zeroNeuralServing": "demonstrated only within supplied context/dose RGB chart",
+    "zeroNeuralServing": "demonstrated for supplied context/dose RGB chart and supplied32-row MLP input-line write; no arbitrary prompt capability",
     "reusablePromptOperandFormation": "open; two global calibration directions leave substantial measured conditioning residual",
-    "reducedOwnStateContinuation": "open; full dense reconstruction advances its own state, saved-only diagnostics do not",
+    "reducedOwnStateContinuation": "bounded compiled write feeds fixed-parent residual update; actual next-operator state-only receiver and full autonomous continuation remain open",
     "generalNonNeuralPixelDecoder": "open; interpolated supplied RGB images do not establish it",
     "independentPromptFaithfulnessAndQuality": "open",
-    "astraAdvisoryReview": "completed for initial route, both diagnostics and latest OVC10/OVC11 synthesis; no new general-generation claim"
+    "astraAdvisoryReview": "cycle2 code review and result interpretation complete; reviewed22:56 image-futures post and latest simplifying-assumption development; proposed actual next image-state reader"
   },
   "openPreference": {
     "question": "Reproduce FLUX prompt/seed behavior, or comparable prompt-faithful quality using another recovered computation?",
@@ -20,8 +24,8 @@
   "reviews": {
     "advisor": "astra_zero_forward_advisor",
     "model": "gpt-6-astra",
-    "lastCycle": 1,
-    "nextDueByCycle": 4,
+    "lastCycle": 2,
+    "nextDueByCycle": 5,
     "earlierIf": "new model evidence changes the route",
     "latestPosts": [
       {
@@ -30,12 +34,17 @@
       },
       {
         "path": "../obsidian/blog/2026-11-05-161109-the-one-assumption-that-would-make-model-computation-easier-to-understand.md",
-        "sha256": "453863e1b4eeeeefe9fd6c152d61e58a1eb92edb80dc76a963a6d12c7cf4473a",
-        "scope": "OVC10 results and OVC11 writer plan"
+        "sha256": "fba7e778e60e683c7956322797ca580d1e3bf3786f75d074990ba1c845f2e8ed",
+        "scope": "OVC10, prospective OVC11, and local-defect propagation through later consumers"
       },
       {
         "path": "../obsidian/blog/2026-08-14-what-saturn-can-actually-do.md",
-        "sha256": "affc43eab107208d7072f101d9b32488406c4b0bfdaa213600ba845b8b79576b"
+        "sha256": "affc43eab107208d7072f101d9b32488406c4b0bfdaa213600ba845b8b79576b",
+        "scope": "initial cycle1 review snapshot; subsequently updated by other workspace work"
+      },
+      {
+        "path": "../obsidian/blog/2026-11-05-225618-testing-state-equations-against-fresh-image-futures.md",
+        "sha256": "e016144354d12b35b3e85b6798fe6ab69b296a3ade42d61a3bb2bcd6adacbe56"
       }
     ],
     "advice": [
@@ -45,9 +54,18 @@
       "Target-assisted two-direction projection measures capacity, not a deployable predictor or intrinsic semantic dimension. The well-conditioned conditioning residual excludes only exact reconstruction by those two globally weighted differences; retain later-text counter-trends and distinguish RMS from energy.",
       "OVC11 is a proposed writer-memory-reader experiment, not a result. Distinguish the written K/V from later hidden state and qualify the next receiving operation.",
       "Prioritize a bounded compiled MLP write and residual consumer over another independently calibrated seven-corner history. Compile local gate/value products offline; serve only five projected coefficient arrays and the declared residual update.",
-      "Require own-state continuation, a raw-prompt compiler and a non-neural decoder before claiming arbitrary-prompt generation."
+      "Require own-state continuation, a raw-prompt compiler and a non-neural decoder before claiming arbitrary-prompt generation.",
+      "Compiled-write pooled improvement is heterogeneous: four rows carry90.43percent MLP-effect energy. Do not erase row losses or extrapolate32-row coefficient bytes to whole-model compression.",
+      "Next compile the actual next joint block normalization/modulation-to-QKV reader on a producer-derived basis. Recover coordinates from emitted BF16 state, admit noalpha/native-refresh input, retain out-of-basis residuals and split receiver error from inherited writer error."
     ]
   },
+  "rootReviewedSinceAdvisor": [
+    {
+      "path": "../obsidian/blog/2026-11-05-230617-a-reader-can-predict-a-change-without-carrying-its-main-effect.md",
+      "sha256": "b78079b991ec66e69e540f7c123a4862a47519066e47c4e689c6a25ad314af4a",
+      "implication": "Image stream dominates this measured late color effect, while exact text reading is not its main carrier. Keep own-state image edge and causal behavioral importance separate. Include at next Astra review."
+    }
+  ],
   "completedRuns": [
     {
       "jobID": "job-3ff4ee580893",
@@ -69,6 +87,36 @@
       "schedulerSeconds": 21.74,
       "workerSeconds": 16.418885,
       "peakRSSMB": 390.7
+    },
+    {
+      "jobID": "job-80041334757d",
+      "requestSHA256": "cf49511d1c0f94f9832d7ae927b92df41f3e5c82aa26e018ef1d378a6471531d",
+      "type": "offline original-weight MLP line compilation; fresh coefficient-only primary and fixed-parent residual consumer",
+      "newNativeNeuralEvaluations": 0,
+      "offlineDenseLearnedWeightMath": true,
+      "onlineOriginalDenseMatmuls": 0,
+      "schedulerSeconds": 6.29,
+      "workerSeconds": 4.928182,
+      "compilerSeconds": 4.136392,
+      "compilerHighWaterRSSMiB": 990.36328125,
+      "sampledJobRSSMB": 753.4,
+      "servingHighWaterRSSMiB": 51.359375,
+      "midpointMedianArithmeticSeconds": 0.0003784480504691601,
+      "coefficientPayloadBytes": 3932160,
+      "consumerPayloadBytes": 405504,
+      "midpointRoundedPairedResponseError": 0.09433906306007649,
+      "midpointStatePairedResponseError": 0.12589326710142432,
+      "roundedRowWinsAgainstInterpolation": "7/32",
+      "stateRowWinsAgainstInterpolation": "9/32"
+    }
+  ],
+  "failedRuns": [
+    {
+      "jobID": "job-63f71d0f7684",
+      "requestSHA256": "2186fca2dae9e01e786a740e8a404a7c47c610b45f9620f44a2db0e6f152db1b",
+      "status": "failed compiler receipt generation: own compile.json not admitted by file guard",
+      "scientificEvidence": "no serving seal or scored result; retained instrument failure",
+      "repair": "allow declared compiler specification; complete synthetic compiler regression; new sealed v4 request, no automatic retry"
     }
   ],
   "unexecutedRuns": [
@@ -86,13 +134,28 @@
     "saturnSweep": "run and verify exit0; target-streams-only; two streams, 238 records; no terminal claim receipts or physical address joins",
     "interpretation": "zero neural arithmetic on saved native states; retrospective, per-boundary anchors; no arbitrary-prompt or own-state-rollout claim"
   },
+  "compiledWriteEvidence": {
+    "directory": "results/compiled-mlp-write",
+    "custody": "guarded declared/sealed/executed payload hashes and full collected inventory verified; public subset includes exact coefficient/consumer inputs",
+    "primaryIsolation": "no native output endpoints or matrices; seals before worker opens native result bundle; separate control process",
+    "saturnSweep": "run and verify exit0; target-streams-only;288records; no terminal claim receipts/address joins",
+    "tests": "22 Python mechanics tests passed",
+    "goalStatus": "active; supplied inputs/context and one bounded consumer are not arbitrary-prompt generation"
+  },
+  "workspaceRequests": [
+    {
+      "path": "../saturn/request.jsonl",
+      "handle": "static-mlp-query-lowering",
+      "action": "existing request upvoted1to2 and measured compiled-write note appended; preserve unrelated dirty repository work"
+    }
+  ],
   "nextCut": {
     "status": "proposed, not launched",
-    "question": "Can one dense MLP write be replaced by a coefficient-only input-line polynomial whose prediction feeds the residual update?",
-    "plan": "plans/compiled-mlp-write.md",
-    "source": "existing 32-row MLP corpus, job-f0cd6a040823",
-    "law": "m_hat(alpha) = sum(c_j * alpha^j, j=0..4); I_next = BF16(U0 + BF16(gM * BF16(m_hat)))",
-    "requirements": "bind source custody and parameter recipes; seal coefficients and predictions without midpoint target access; retain BF16 approximation error and fixed-parent consumer scope; no new neural truth run"
+    "question": "Can the actual next joint block row-local reader consume emitted BF16 state without dose or native refresh?",
+    "plan": "plans/compiled-state-receiver.md",
+    "source": "compiled producer job-80041334757d plus pinned next-joint normalization/modulation and QKV parameters/context",
+    "law": "center(u)=Bz+r; q_hat=(WDB)z/s+Wb; retain omitted WDr/s as measured diagnostic",
+    "requirements": "inspect native contracts and source context before staging; basis from producer only; noalpha input; retain rank/out-of-basis error; seal composite then compare R(UP) and R(UT) in six bounded native diagnostics; report inherited/receiver signed error terms"
   },
   "alternativeDiagnostic": {
     "status": "proposed, not launched; lower priority after Astra review",

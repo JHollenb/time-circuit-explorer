@@ -80,6 +80,17 @@ The source is an existing authenticated campaign; these workers execute no model
 
 These launchers require the retained Beast source paths and the qualified worker environment. The checked-in [results](../docs/results/prompt-composition/provenance.json) retain the original requests, raw reports, predictions, controls and custody subset without copying large native state arrays into this repository. Runtime figures are analysis costs, not generator latency.
 
+## Coefficient-only MLP write
+
+The [compiled MLP experiment](../docs/compiled-mlp-write.md) removes original dense projections from serving one supplied32-row input line. Five offline-derived arrays feed a fixed supplied residual update. It does not interpret a prompt or render an image.
+
+```sh
+../common/bin/common exec python generator/render_compiled_mlp.py \
+  --alpha .5 --output artifacts/my-compiled-write
+```
+
+The published3.75MiB coefficient payload and residual/gate context need only NumPy/Pillow. Native outputs and original parameters are absent from primary serving inputs. Native comparisons exist at0,.5,1 only. The result record retains per-row counter-trends, BF16 differences and compilation/serving costs.
+
 ## Provenance and checks
 
 `kernel-manifest.json` pins the original accepted forecast sources, parameter recipes and model-file hashes. `NOTICE.md` and `UPSTREAM-LICENSE` retain attribution and license. `prepare.py` can reproduce those files from the identified immutable campaign run; it is not needed for ordinary generation. Model weights remain external and are not included in Git or the website.

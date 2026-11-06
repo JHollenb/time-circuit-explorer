@@ -1,6 +1,6 @@
 # Compile one MLP write into the state that receives it
 
-Status: proposed after Astra's review of both prompt-composition diagnostics. No compilation or serving result is claimed here. This takes priority over another independently anchored prompt-factorial reconstruction.
+Status: executed as guarded job `job-80041334757d`; see the [measured result and limitations](../compiled-mlp-write.md). Developed after Astra's review of both prompt-composition diagnostics. The original request and earlier failed harness run remain separate in the result bundle.
 
 ## Bounded question
 

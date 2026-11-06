@@ -1,0 +1,30 @@
+<frozen runpy>:130: RuntimeWarning: 'mrun.os_limit' found in sys.modules after import of package 'mrun', but prior to execution of 'mrun.os_limit'; this may result in unpredictable behaviour
+Traceback (most recent call last):
+  File "/mnt/hdd8tb/mrun-work/job-63f71d0f7684/mlp_polynomial.py", line 245, in <module>
+    (compile_line if args.action == 'compile' else serve)(args.spec, args.output)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/hdd8tb/mrun-work/job-63f71d0f7684/mlp_polynomial.py", line 166, in compile_line
+    'schema': 'tce-compiled-mlp-line-v1', 'compileSpecSHA256': sha(spec_path),
+                                                               ~~~^^^^^^^^^^^
+  File "/mnt/hdd8tb/mrun-work/job-63f71d0f7684/response_chart.py", line 21, in sha
+    def sha(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+                                        ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/beast/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/pathlib/__init__.py", line 777, in read_bytes
+    with self.open(mode='rb', buffering=0) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/beast/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/hdd8tb/mrun-work/job-63f71d0f7684/mlp_polynomial.py", line 72, in audit
+    raise PermissionError('Read outside declared operands: ' + str(path))
+PermissionError: Read outside declared operands: /mnt/hdd8tb/mrun-work/job-63f71d0f7684/compile.json
+Traceback (most recent call last):
+  File "/mnt/hdd8tb/mrun-work/job-63f71d0f7684/mlp_polynomial_study.py", line 255, in <module>
+    result = globals()[args.action](args.run)
+  File "/mnt/hdd8tb/mrun-work/job-63f71d0f7684/mlp_polynomial_study.py", line 151, in execute
+    subprocess.run([sys.executable, str(root / 'mlp_polynomial.py'), 'compile', str(root / 'compile.json'), str(output)], check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/beast/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['/mnt/hdd8tb/mdb/uv-cache/builds-v0/.tmpQ0sMMh/bin/python', '/mnt/hdd8tb/mrun-work/job-63f71d0f7684/mlp_polynomial.py', 'compile', '/mnt/hdd8tb/mrun-work/job-63f71d0f7684/compile.json', '/mnt/hdd8tb/mrun-work/job-63f71d0f7684/response-result']' returned non-zero exit status 1.

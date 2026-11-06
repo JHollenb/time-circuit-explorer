@@ -1,0 +1,107 @@
+{
+  "jobID": "job-63f71d0f7684",
+  "payloadCustody": {
+    "declared": {
+      "sha256": "b3c881b0781800d8163a903de5bfdb603f8f19ff0e734bca61ac10545eb8cfb3",
+      "size_bytes": 25864
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1793948443.2612567,
+      "sha256": "b3c881b0781800d8163a903de5bfdb603f8f19ff0e734bca61ac10545eb8cfb3",
+      "size_bytes": 25864
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1793948443.1608107,
+      "sha256": "b3c881b0781800d8163a903de5bfdb603f8f19ff0e734bca61ac10545eb8cfb3",
+      "size_bytes": 25864
+    }
+  },
+  "requestSHA256": "2186fca2dae9e01e786a740e8a404a7c47c610b45f9620f44a2db0e6f152db1b",
+  "result": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-63f71d0f7684",
+      "job_log": {
+        "bytes": 2800,
+        "sha256": "a559725015eeb263fe036979ab8d27a91c9223ad31f546dfc8c70a55959c55f4"
+      },
+      "job_status": "failed",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-63f71d0f7684/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "elapsed_s": 7.35,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "b3c881b0781800d8163a903de5bfdb603f8f19ff0e734bca61ac10545eb8cfb3",
+      "size_bytes": 25864
+    },
+    "failure": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "pillow>=10.0",
+        "python",
+        "-u",
+        "mlp_polynomial_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-63f71d0f7684",
+      "kind": "process_exit",
+      "log_tail": "<frozen runpy>:130: RuntimeWarning: 'mrun.os_limit' found in sys.modules after import of package 'mrun', but prior to execution of 'mrun.os_limit'; this may result in unpredictable behaviour\nTraceback (most recent call last):\n  File \"/mnt/hdd8tb/mrun-work/job-63f71d0f7684/mlp_polynomial.py\", line 245, in <module>\n    (compile_line if args.action == 'compile' else serve)(args.spec, args.output)\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/hdd8tb/mrun-work/job-63f71d0f7684/mlp_polynomial.py\", line 166, in compile_line\n    'schema': 'tce-compiled-mlp-line-v1', 'compileSpecSHA256': sha(spec_path),\n                                                               ~~~^^^^^^^^^^^\n  File \"/mnt/hdd8tb/mrun-work/job-63f71d0f7684/response_chart.py\", line 21, in sha\n    def sha(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()\n                                        ~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/home/beast/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/pathlib/__init__.py\", line 777, in read_bytes\n    with self.open(mode='rb', buffering=0) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/beast/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/pathlib/__init__.py\", line 771, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/hdd8tb/mrun-work/job-63f71d0f7684/mlp_polynomial.py\", line 72, in audit\n    raise PermissionError('Read outside declared operands: ' + str(path))\nPermissionError: Read outside declared operands: /mnt/hdd8tb/mrun-work/job-63f71d0f7684/compile.json\nTraceback (most recent call last):\n  File \"/mnt/hdd8tb/mrun-work/job-63f71d0f7684/mlp_polynomial_study.py\", line 255, in <module>\n    result = globals()[args.action](args.run)\n  File \"/mnt/hdd8tb/mrun-work/job-63f71d0f7684/mlp_polynomial_study.py\", line 151, in execute\n    subprocess.run([sys.executable, str(root / 'mlp_polynomial.py'), 'compile', str(root / 'compile.json'), str(output)], check=True)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/beast/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/subprocess.py\", line 578, in run\n    raise CalledProcessError(retcode, process.args,\n                             output=stdout, stderr=stderr)\nsubprocess.CalledProcessError: Command '['/mnt/hdd8tb/mdb/uv-cache/builds-v0/.tmpQ0sMMh/bin/python', '/mnt/hdd8tb/mrun-work/job-63f71d0f7684/mlp_polynomial.py', 'compile', '/mnt/hdd8tb/mrun-work/job-63f71d0f7684/compile.json', '/mnt/hdd8tb/mrun-work/job-63f71d0f7684/response-result']' returned non-zero exit status 1.\n",
+      "message": "child exited with return code 1",
+      "observed_ts": 1793948450.491888,
+      "phase": "process.finalize",
+      "resources": {
+        "peak_rss_mb": 577.7,
+        "peak_vram_mb": 0.0,
+        "ram_ceiling_mb": 4608.0,
+        "vram_ceiling_mb": null
+      },
+      "returncode": 1
+    },
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 577.7,
+    "peak_vram_mb": 0.0,
+    "returncode": 1,
+    "status": "failed"
+  },
+  "scope": "Compiler receipt was blocked by its own manifest file guard; no serving seal or scored result. Retained as instrument failure, not scientific null. Fixed own-spec permission and added complete synthetic compilation regression.",
+  "state": "failed"
+}
