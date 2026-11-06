@@ -1,0 +1,113 @@
+{
+  "checkpointFile": "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/diffusion_pytorch_model.safetensors",
+  "checkpointRoot": "/mnt/big/llm-models/FLUX.2-klein-4B",
+  "coefficients": {
+    "path": "/mnt/hdd8tb/mrun-work/job-80041334757d/response-result/coefficients.npy",
+    "sha256": "b3532c7f84b1fc0e2816251fed0668b5fbec579d4d30bb1dadeb596e76c14607"
+  },
+  "consumer": {
+    "path": "/mnt/hdd8tb/mrun-work/job-80041334757d/response-result/consumer.npz",
+    "sha256": "7ea1b1a9e26965cff26abd4afef65e48eb2ac7af1b2f4a22991239ed91e69014"
+  },
+  "modulation": {
+    "kind": "safetensors",
+    "path": "/mnt/hdd8tb/mdb/research/job-5500509e5fdd/binding-minimal-result/store/blobs/7b34ed4c73a67ab74a8665995676099450671b04531c326a9dbf729185a5e318.safetensors",
+    "sha256": "7b34ed4c73a67ab74a8665995676099450671b04531c326a9dbf729185a5e318",
+    "shape": [
+      1,
+      18432
+    ],
+    "tensor": "tensor_0",
+    "tensorSHA256": "ce262fc8e7eedc851e0cca5c57b8621b9b3e13654cbef5986bae43127cb75423"
+  },
+  "parameters": {
+    "artifacts": [
+      {
+        "bytes": 18874496,
+        "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDMwNzIpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+        "path": "parameters/9d7e8a769e1334d6ce7e492ea85b03e5f6db55bc6091251692da341d9bdccb0d.npy",
+        "sha256": "9d7e8a769e1334d6ce7e492ea85b03e5f6db55bc6091251692da341d9bdccb0d",
+        "source": {
+          "data_offsets": [
+            6391346176,
+            6410220544
+          ],
+          "dtype": "BF16",
+          "file": "transformer/diffusion_pytorch_model.safetensors",
+          "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+          "payload_sha256": "7815ba41bea66d4c54c80b52ff6161678ed8ac9f1c9576652589c80b078bcdf5",
+          "shape": [
+            3072,
+            3072
+          ],
+          "tensor": "transformer_blocks.2.attn.to_q.weight"
+        }
+      },
+      {
+        "bytes": 18874496,
+        "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDMwNzIpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+        "path": "parameters/6f5516385438f10cc9733dda78655022b6e3f440cd24aaaf258149bdc967f919.npy",
+        "sha256": "6f5516385438f10cc9733dda78655022b6e3f440cd24aaaf258149bdc967f919",
+        "source": {
+          "data_offsets": [
+            6353597440,
+            6372471808
+          ],
+          "dtype": "BF16",
+          "file": "transformer/diffusion_pytorch_model.safetensors",
+          "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+          "payload_sha256": "61128fd0d26f8c96a75d836f1f4d72a8a7f15212af6ca9fda95f32ef31c22ee8",
+          "shape": [
+            3072,
+            3072
+          ],
+          "tensor": "transformer_blocks.2.attn.to_k.weight"
+        }
+      },
+      {
+        "bytes": 18874496,
+        "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDMwNzIpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+        "path": "parameters/383b979c551892607dfcc3d667f8606c24e51fe3a8011ba9695ac7d543da1703.npy",
+        "sha256": "383b979c551892607dfcc3d667f8606c24e51fe3a8011ba9695ac7d543da1703",
+        "source": {
+          "data_offsets": [
+            6410220544,
+            6429094912
+          ],
+          "dtype": "BF16",
+          "file": "transformer/diffusion_pytorch_model.safetensors",
+          "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+          "payload_sha256": "fabaef7b4593ba52db9071b080ef24b31aebb357b76595a73f0c71493cb69556",
+          "shape": [
+            3072,
+            3072
+          ],
+          "tensor": "transformer_blocks.2.attn.to_v.weight"
+        }
+      }
+    ],
+    "defaults": {
+      "artifact_root": "parameter-cache",
+      "checkpoint_root": "/mnt/big/llm-models/FLUX.2-klein-4B",
+      "python": "python3",
+      "ssh_host": "beast"
+    },
+    "provenance": {
+      "checkpoint_file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+      "job_id": "job-4350531b1dcd",
+      "producer_source_sha256": "1ae1a639cb2407adadda597af48ef581d0129f6cf2b87df7e249274247b6129b",
+      "request_sha256": "32696ea315aa3236845417962bef9a990c87a31ef9be83b6c770388090218981",
+      "retrieval_module_sha256": "7cef6f04829dc8638718c25cffa9e3e5ca86703e19cb770d57aa516b719677ae",
+      "scope": "Recipes only; parameter archive paths intentionally absent from producer inventory. Read pinned checkpoint banks ephemerally, or hydrate into a shared external cache with --root before audit. No per-run persistent weight bank."
+    },
+    "schema": "mdb-parameter-artifacts-v1"
+  },
+  "schema": "tce-state-receiver-compile-spec-v1",
+  "scope": "Supplied 32-row producer family at diffusion step2/joint1 -> joint2 image reader. State-fed pre-head-normalization, pre-RoPE Q/K/V affines only; fixed captured modulation. No attention, new prompt, full-block, denoising continuation or RGB claim.",
+  "sourceRoots": [
+    "/mnt/hdd8tb/mdb/research/job-f0cd6a040823/binding-minimal-result",
+    "/mnt/hdd8tb/mdb/research/job-5500509e5fdd/binding-minimal-result",
+    "/mnt/big/llm-models/FLUX.2-klein-4B",
+    "/mnt/hdd8tb/mrun-work/job-80041334757d/response-result"
+  ]
+}

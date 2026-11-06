@@ -1,0 +1,180 @@
+{
+  "checkpointFile": "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/diffusion_pytorch_model.safetensors",
+  "checkpointRoot": "/mnt/big/llm-models/FLUX.2-klein-4B",
+  "eps": 1e-06,
+  "modulation": {
+    "path": "/mnt/hdd8tb/mrun-work/job-2f0a52357bf1/response-result/modulation.npz",
+    "sha256": "44e018f20260b24d6bcf5941e10af95da99d5eaa00e21ee91094ab1a03f9e43d"
+  },
+  "packets": [
+    {
+      "arm": "predicted",
+      "id": "7923e59c3e78a497",
+      "path": "/mnt/hdd8tb/mrun-work/job-2f0a52357bf1/response-result/state-7923e59c3e78a497.npy",
+      "prediction": {
+        "path": "prediction-7923e59c3e78a497.npz",
+        "sha256": "bdadf40a7264201f33b17270e976ef8d42c153a862b8244d7523c7ba5e86d821"
+      },
+      "sha256": "9d8559c996e89d899f95588045ec4aebd9f38d54c20ccc26cf1cf6bd8b53610c",
+      "shape": [
+        1,
+        32,
+        3072
+      ]
+    },
+    {
+      "arm": "native-write",
+      "id": "7923e59c3e78a497-native",
+      "path": "/mnt/hdd8tb/mrun-work/job-2f0a52357bf1/response-result/state-7923e59c3e78a497-native.npy",
+      "sha256": "57b7f7a730ef4e2877a4abd281016d71e9625f56b6a6bb71daa1defe20bbd2bd",
+      "shape": [
+        1,
+        32,
+        3072
+      ]
+    },
+    {
+      "arm": "predicted",
+      "id": "22185a19edaa2661",
+      "path": "/mnt/hdd8tb/mrun-work/job-2f0a52357bf1/response-result/state-22185a19edaa2661.npy",
+      "prediction": {
+        "path": "prediction-22185a19edaa2661.npz",
+        "sha256": "b9ac42f360f9446506f3ac66beed68dee08caa08246beae26e7f970627ae2415"
+      },
+      "sha256": "2c10369d3b924205af6a4bad39c9907d3b06665d8ab906451cd66651d9f1cc26",
+      "shape": [
+        1,
+        32,
+        3072
+      ]
+    },
+    {
+      "arm": "native-write",
+      "id": "22185a19edaa2661-native",
+      "path": "/mnt/hdd8tb/mrun-work/job-2f0a52357bf1/response-result/state-22185a19edaa2661-native.npy",
+      "sha256": "60fe3269c0a9d0dec5c5cfc51d17f886d4056c0cc83319ed5ee5f1167b1f28aa",
+      "shape": [
+        1,
+        32,
+        3072
+      ]
+    },
+    {
+      "arm": "predicted",
+      "id": "7f275c99cce156d0",
+      "path": "/mnt/hdd8tb/mrun-work/job-2f0a52357bf1/response-result/state-7f275c99cce156d0.npy",
+      "prediction": {
+        "path": "prediction-7f275c99cce156d0.npz",
+        "sha256": "64fb12a4b5cf02ef417b4970aa93d95909aee3c4c6bfb5749b50ace5b69a7c31"
+      },
+      "sha256": "a4c6461e523c8b06064ff0f015f3aa49e6cb06aca7e3f99f79028d42509e6e12",
+      "shape": [
+        1,
+        32,
+        3072
+      ]
+    },
+    {
+      "arm": "native-write",
+      "id": "7f275c99cce156d0-native",
+      "path": "/mnt/hdd8tb/mrun-work/job-2f0a52357bf1/response-result/state-7f275c99cce156d0-native.npy",
+      "sha256": "acbeb2dfc5191bf7e5d7c574287cc70a5df8215cad764a2b74f9566ea5e5d71f",
+      "shape": [
+        1,
+        32,
+        3072
+      ]
+    }
+  ],
+  "parameters": {
+    "artifacts": [
+      {
+        "bytes": 18874496,
+        "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDMwNzIpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+        "path": "parameters/9d7e8a769e1334d6ce7e492ea85b03e5f6db55bc6091251692da341d9bdccb0d.npy",
+        "sha256": "9d7e8a769e1334d6ce7e492ea85b03e5f6db55bc6091251692da341d9bdccb0d",
+        "source": {
+          "data_offsets": [
+            6391346176,
+            6410220544
+          ],
+          "dtype": "BF16",
+          "file": "transformer/diffusion_pytorch_model.safetensors",
+          "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+          "payload_sha256": "7815ba41bea66d4c54c80b52ff6161678ed8ac9f1c9576652589c80b078bcdf5",
+          "shape": [
+            3072,
+            3072
+          ],
+          "tensor": "transformer_blocks.2.attn.to_q.weight"
+        }
+      },
+      {
+        "bytes": 18874496,
+        "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDMwNzIpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+        "path": "parameters/6f5516385438f10cc9733dda78655022b6e3f440cd24aaaf258149bdc967f919.npy",
+        "sha256": "6f5516385438f10cc9733dda78655022b6e3f440cd24aaaf258149bdc967f919",
+        "source": {
+          "data_offsets": [
+            6353597440,
+            6372471808
+          ],
+          "dtype": "BF16",
+          "file": "transformer/diffusion_pytorch_model.safetensors",
+          "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+          "payload_sha256": "61128fd0d26f8c96a75d836f1f4d72a8a7f15212af6ca9fda95f32ef31c22ee8",
+          "shape": [
+            3072,
+            3072
+          ],
+          "tensor": "transformer_blocks.2.attn.to_k.weight"
+        }
+      },
+      {
+        "bytes": 18874496,
+        "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDMwNzIpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+        "path": "parameters/383b979c551892607dfcc3d667f8606c24e51fe3a8011ba9695ac7d543da1703.npy",
+        "sha256": "383b979c551892607dfcc3d667f8606c24e51fe3a8011ba9695ac7d543da1703",
+        "source": {
+          "data_offsets": [
+            6410220544,
+            6429094912
+          ],
+          "dtype": "BF16",
+          "file": "transformer/diffusion_pytorch_model.safetensors",
+          "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+          "payload_sha256": "fabaef7b4593ba52db9071b080ef24b31aebb357b76595a73f0c71493cb69556",
+          "shape": [
+            3072,
+            3072
+          ],
+          "tensor": "transformer_blocks.2.attn.to_v.weight"
+        }
+      }
+    ],
+    "defaults": {
+      "artifact_root": "parameter-cache",
+      "checkpoint_root": "/mnt/big/llm-models/FLUX.2-klein-4B",
+      "python": "python3",
+      "ssh_host": "beast"
+    },
+    "provenance": {
+      "checkpoint_file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+      "job_id": "job-4350531b1dcd",
+      "producer_source_sha256": "1ae1a639cb2407adadda597af48ef581d0129f6cf2b87df7e249274247b6129b",
+      "request_sha256": "32696ea315aa3236845417962bef9a990c87a31ef9be83b6c770388090218981",
+      "retrieval_module_sha256": "7cef6f04829dc8638718c25cffa9e3e5ca86703e19cb770d57aa516b719677ae",
+      "scope": "Recipes only; parameter archive paths intentionally absent from producer inventory. Read pinned checkpoint banks ephemerally, or hydrate into a shared external cache with --root before audit. No per-run persistent weight bank."
+    },
+    "schema": "mdb-parameter-artifacts-v1"
+  },
+  "scope": "Supplied 32-row producer family at diffusion step2/joint1 -> joint2 image reader. State-fed pre-head-normalization, pre-RoPE Q/K/V affines only; fixed captured modulation. No attention, new prompt, full-block, denoising continuation or RGB claim.",
+  "seal": {
+    "path": "/mnt/hdd8tb/mrun-work/job-2f0a52357bf1/response-result/receiver-seal.json",
+    "sha256": "02ef66461a7bb057ff2e4fce6701a9621eb9c443a8a692c564a41d23199f0f10"
+  },
+  "source": {
+    "path": "/mnt/hdd8tb/mdb/uv-cache/archive-v0/B1KJlciU-SoDheiW/lib/python3.14/site-packages/diffusers/models/transformers/transformer_flux2.py",
+    "sha256": "0a3c56ed3ca28a416492b50953a433f20b8a89fd26c7b7a49b1b6b45d5236006"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "cpuSecondsAfterImports": 5.719636251000001,
+  "diagnostics": [
+    {
+      "id": "7923e59c3e78a497",
+      "path": "smooth-7923e59c3e78a497.npz",
+      "sha256": "078f702b56ec087cc40481ed6b788bfd7d4f9606c924fdce52d53b579ba13691"
+    },
+    {
+      "id": "22185a19edaa2661",
+      "path": "smooth-22185a19edaa2661.npz",
+      "sha256": "429f8d90b124a3c2112b8771e0ed9fbec8503cd3dee9ac05b0ae565d428ce21c"
+    },
+    {
+      "id": "7f275c99cce156d0",
+      "path": "smooth-7f275c99cce156d0.npz",
+      "sha256": "5ddd1c7584659b2aa23bdac2ff27dae1c52f5111a29b774c6655c94402939cfc"
+    }
+  ],
+  "peakRSSMiB": 1050.4375,
+  "profile": {
+    "cpuCapability": "AVX512",
+    "deterministic": true,
+    "device": "cpu",
+    "dtype": "bfloat16",
+    "interopThreads": 1,
+    "mkldnnEnabled": true,
+    "nativeCUDAParity": "unmeasured",
+    "numpy": "2.5.4",
+    "python": "3.14.6 (main, Jun 23 2026, 15:18:23) [Clang 22.1.3 ]",
+    "source": {
+      "path": "/mnt/hdd8tb/mdb/uv-cache/archive-v0/B1KJlciU-SoDheiW/lib/python3.14/site-packages/diffusers/models/transformers/transformer_flux2.py",
+      "sha256": "0a3c56ed3ca28a416492b50953a433f20b8a89fd26c7b7a49b1b6b45d5236006"
+    },
+    "threads": 1,
+    "torch": "2.13.0+cu130"
+  },
+  "records": [
+    {
+      "cpuSeconds": 0.02957236100000049,
+      "id": "7923e59c3e78a497",
+      "inputSHA256": "9d8559c996e89d899f95588045ec4aebd9f38d54c20ccc26cf1cf6bd8b53610c",
+      "path": "native-7923e59c3e78a497.npz",
+      "sha256": "04af81811e6c83c45b5cc6b7cb6afbe9629c47b18d14d8d7411d556ef5ffdda3",
+      "wallSeconds": 0.8339192876592278
+    },
+    {
+      "cpuSeconds": 0.008618305999999798,
+      "id": "7923e59c3e78a497-native",
+      "inputSHA256": "57b7f7a730ef4e2877a4abd281016d71e9625f56b6a6bb71daa1defe20bbd2bd",
+      "path": "native-7923e59c3e78a497-native.npz",
+      "sha256": "ab3629e3c39c2990c5f0385abd03c0a8c927e2f15e96f275257ecc746d60f54f",
+      "wallSeconds": 0.008625367190688848
+    },
+    {
+      "cpuSeconds": 0.008244053999999501,
+      "id": "22185a19edaa2661",
+      "inputSHA256": "2c10369d3b924205af6a4bad39c9907d3b06665d8ab906451cd66651d9f1cc26",
+      "path": "native-22185a19edaa2661.npz",
+      "sha256": "3bfe042c20030fee92444ed3a4193be1e440a72ddca65bd4699999b0f1b2de01",
+      "wallSeconds": 0.00824311189353466
+    },
+    {
+      "cpuSeconds": 0.008528898000000673,
+      "id": "22185a19edaa2661-native",
+      "inputSHA256": "60fe3269c0a9d0dec5c5cfc51d17f886d4056c0cc83319ed5ee5f1167b1f28aa",
+      "path": "native-22185a19edaa2661-native.npz",
+      "sha256": "3c0b73c715f9ac9205b065535aa4ea4cead0569d57aa37a7efbd6b9e0c0ea9f0",
+      "wallSeconds": 0.0085290870629251
+    },
+    {
+      "cpuSeconds": 0.008210059999999686,
+      "id": "7f275c99cce156d0",
+      "inputSHA256": "a4c6461e523c8b06064ff0f015f3aa49e6cb06aca7e3f99f79028d42509e6e12",
+      "path": "native-7f275c99cce156d0.npz",
+      "sha256": "a80b20d184b455b8ba803af50a3ebc13b184e4ad1841bb1657d1b4b3c5753dd6",
+      "wallSeconds": 0.008209017105400562
+    },
+    {
+      "cpuSeconds": 0.008672377000000786,
+      "id": "7f275c99cce156d0-native",
+      "inputSHA256": "acbeb2dfc5191bf7e5d7c574287cc70a5df8215cad764a2b74f9566ea5e5d71f",
+      "path": "native-7f275c99cce156d0-native.npz",
+      "sha256": "17a8a415fb0467c2565e4011bbddf0a2d69d4c0f5ddc9ff3abce29d837cf68f9",
+      "wallSeconds": 0.008672706317156553
+    }
+  ],
+  "schema": "tce-state-receiver-native-v1",
+  "scope": "Supplied 32-row producer family at diffusion step2/joint1 -> joint2 image reader. State-fed pre-head-normalization, pre-RoPE Q/K/V affines only; fixed captured modulation. No attention, new prompt, full-block, denoising continuation or RGB claim.",
+  "specSHA256": "bc8a42871532825c408b6736e8339e7bf41a0fceb35a28fb1b6041d7212e15b0",
+  "wallSecondsAfterImports": 9.049631007015705,
+  "work": {
+    "cudaCalls": 0,
+    "encoderCalls": 0,
+    "fullBlockCalls": 0,
+    "fullCheckpointBytesHashed": 7751109744,
+    "nativeLayerNormCalls": 6,
+    "nativeLinearCalls": 18,
+    "originalParameterBytes": 56623104,
+    "receiverEvaluations": 6,
+    "smoothDiagnosticOriginalDenseMatmuls": 18,
+    "vaeCalls": 0
+  }
+}

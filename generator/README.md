@@ -84,6 +84,23 @@ These launchers require the retained Beast source paths and the qualified worker
 
 The [compiled MLP experiment](../docs/compiled-mlp-write.md) removes original dense projections from serving one supplied32-row input line. Five offline-derived arrays feed a fixed supplied residual update. It does not interpret a prompt or render an image.
 
+## Compiled state-only receiver
+
+The [next-reader experiment](../docs/compiled-state-reader.md) recovers coordinates and exact normalization scale from the producer's emitted BF16 state, with no dose field or native state refresh. It serves the next joint layer's pre-head-normalization, pre-RoPE Q/K/V affines through three learned reduced banks. It calls no neural framework and evaluates no original dense projection online; learned-map evaluation remains part of its arithmetic.
+
+`state_receiver_study.py stage|submit|collect` runs the source-bound compiler, fresh state-only serving and six post-seal native CPU references in one finite mrun lease. `state_receiver_native.py` is deliberately a separate entry point: serving helpers prohibit importing neural frameworks. `state_reader_attribution.py stage|submit|collect` subsequently analyzes only saved arrays, including a same-final-quantizer full-projection counterfactual.
+
+The checked-in reader needs NumPy and one [1,32,3072] array of FP32-widened BF16 state bytes:
+
+```bash
+python generator/render_state_receiver.py \
+  --bundle docs/results/compiled-state-reader \
+  --state docs/results/compiled-state-reader/state-22185a19edaa2661.npy \
+  --output artifacts/my-reader-output
+```
+
+The supplied midpoint packet reproduces this bounded input. Accuracy for arbitrary states, contexts or prompts is unmeasured. Output is Q/K/V and residual diagnostics, not an image.
+
 ```sh
 ../common/bin/common exec python generator/render_compiled_mlp.py \
   --alpha .5 --output artifacts/my-compiled-write

@@ -18,6 +18,8 @@ The [arbitrary-prompt research record](docs/zero-neural-research.md) tracks the 
 
 The [compiled MLP write](docs/compiled-mlp-write.md) eliminates original dense projections online for a supplied32-row input line. Five offline-derived output arrays feed a residual update at about .38ms arithmetic per evaluation. Errors and row heterogeneity remain measured; arbitrary-prompt generation remains open.
 
+The [compiled state reader](docs/compiled-state-reader.md) now consumes that writer's actual BF16 state without a dose input, recovering coordinates and the next layer's Q/K/V affines in about .93ms for32rows. It uses learned reduced banks, with native and per-row errors retained. A saved-array follow-up separates basis omission, rounding, numerical policy and inherited writer error. This is one supplied-context edge, before attention.
+
 ## Run locally
 
 Requires Node.js 20 or newer. There are no package dependencies to install.

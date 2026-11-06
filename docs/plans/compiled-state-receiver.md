@@ -1,6 +1,6 @@
 # Advance the emitted state into the next QKV reader
 
-Status: proposed after Astra's review of the [compiled MLP write](../compiled-mlp-write.md). No receiver result or native replay is claimed here. The arbitrary-prompt goal remains unchanged.
+Status: implemented and measured in job `job-2f0a52357bf1`, followed by saved-array attribution job `job-15dea027e760`. See [results and limitations](../compiled-state-reader.md). The design below records the experiment's intended scope; the arbitrary-prompt goal remains unchanged.
 
 ## Actual computational edge
 

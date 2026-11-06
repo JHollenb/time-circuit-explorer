@@ -1,21 +1,25 @@
 {
   "schema": "tce-zero-neural-goal-progress-v1",
-  "updatedAt": "2026-11-06T07:13:48Z",
+  "updatedAt": "2026-11-06T07:39:50Z",
   "objective": "let’s solve arbitrary prompt to image without any forward zero neural evals. Every few turns have Astra review the newest blog posts and get a big picture of where we are at so that we can find the best route forward",
   "status": "active",
-  "researchCycle": 2,
+  "researchCycle": 3,
   "previousGoalTurn": {
+    "classification": "no progress",
+    "evidence": "The immediately preceding answer clarified arbitrary-prompt support but changed no authoritative state. Revalidated the actual worktree and completed the next safe action: a state-fed receiver and saved-array defect attribution, not another status restatement."
+  },
+  "thisGoalTurn": {
     "classification": "progress",
-    "evidence": "Two collected prompt-composition diagnostics changed the next action; source, custody subsets and findings committed/pushed as1a31803."
+    "evidence": "Implemented, executed and collected actual-state receiver job-2f0a52357bf1 and saved-array attribution job-15dea027e760; actual errors/cancellation changed next action to a controlled global attention consumer."
   },
   "requirements": {
     "arbitraryRawPromptCoverage": "open",
-    "zeroNeuralServing": "demonstrated for supplied context/dose RGB chart and supplied32-row MLP input-line write; no arbitrary prompt capability",
+    "zeroNeuralServing": "supplied context/dose RGB chart uses no neural evaluation; compiled MLP and receiver remove original dense projections/framework calls but retain learned coefficient/bank arithmetic; no arbitrary prompt capability",
     "reusablePromptOperandFormation": "open; two global calibration directions leave substantial measured conditioning residual",
-    "reducedOwnStateContinuation": "bounded compiled write feeds fixed-parent residual update; actual next-operator state-only receiver and full autonomous continuation remain open",
+    "reducedOwnStateContinuation": "actual emitted BF16 state feeds next joint2 image QKV affine reader without dose/native refresh; bounded supplied32row family, before head normalization/RoPE/attention; full autonomous continuation open",
     "generalNonNeuralPixelDecoder": "open; interpolated supplied RGB images do not establish it",
     "independentPromptFaithfulnessAndQuality": "open",
-    "astraAdvisoryReview": "cycle2 code review and result interpretation complete; reviewed22:56 image-futures post and latest simplifying-assumption development; proposed actual next image-state reader"
+    "astraAdvisoryReview": "cycle3 math/code review and attribution advice completed; newest value-to-image-output-to-RGB evidence and OVC11 failures reviewed; full objective remains active"
   },
   "openPreference": {
     "question": "Reproduce FLUX prompt/seed behavior, or comparable prompt-faithful quality using another recovered computation?",
@@ -24,9 +28,23 @@
   "reviews": {
     "advisor": "astra_zero_forward_advisor",
     "model": "gpt-6-astra",
-    "lastCycle": 2,
-    "nextDueByCycle": 5,
+    "lastCycle": 3,
+    "nextDueByCycle": 6,
     "earlierIf": "new model evidence changes the route",
+    "cycle3Snapshots": [
+      {
+        "path": "../obsidian/blog/2026-11-05-230617-a-reader-can-predict-a-change-without-carrying-its-main-effect.md",
+        "sha256": "cab8e30082e5a594ddddac7e54f74b8a7dde228f73ac680658ec885ef2ac521d"
+      },
+      {
+        "path": "../obsidian/blog/2026-11-05-161109-the-one-assumption-that-would-make-model-computation-easier-to-understand.md",
+        "sha256": "4397f5e4133353494b451110ac336b1b7c8ea98e4379c492081a237c61dd85bc"
+      },
+      {
+        "path": "../saturn-pub/packages/mdb/docs/FLUX-IMAGE-READER.md",
+        "sha256": "56f41c46a21ad15726be3731eb42497674f80fead0b184d22b0d6e58a67b3e9b"
+      }
+    ],
     "latestPosts": [
       {
         "path": "../obsidian/blog/2026-11-05-220837-predicting-the-change-that-the-next-computation-receives.md",
@@ -56,14 +74,18 @@
       "Prioritize a bounded compiled MLP write and residual consumer over another independently calibrated seven-corner history. Compile local gate/value products offline; serve only five projected coefficient arrays and the declared residual update.",
       "Require own-state continuation, a raw-prompt compiler and a non-neural decoder before claiming arbitrary-prompt generation.",
       "Compiled-write pooled improvement is heterogeneous: four rows carry90.43percent MLP-effect energy. Do not erase row losses or extrapolate32-row coefficient bytes to whole-model compression.",
-      "Next compile the actual next joint block normalization/modulation-to-QKV reader on a producer-derived basis. Recover coordinates from emitted BF16 state, admit noalpha/native-refresh input, retain out-of-basis residuals and split receiver error from inherited writer error."
+      "Next compile the actual next joint block normalization/modulation-to-QKV reader on a producer-derived basis. Recover coordinates from emitted BF16 state, admit noalpha/native-refresh input, retain out-of-basis residuals and split receiver error from inherited writer error.",
+      "Keep actual variance/sqrt: polynomial inverse-root normalization can lose its amplitude bound; OVC11 retains3/64 nonfinite branches.",
+      "Before advancing attention, use saved-array signed defect telescopes and BF16(full smooth projection) through the same final quantizer. Basis omission and numerical policy interact; retain both and per-row counter-trends.",
+      "Distinguish zero framework calls, zero original dense projection evaluations and three learned reduced-map contractions. A compiled WDB bank remains learned computation; do not satisfy the arbitrary-prompt objective by renaming a linear network.",
+      "Attribution complete: advance a controlled global attention consumer; do not make BF16 discrepancy a discovery gate. All changed QKV must derive from state packets, changed queries must read the complete bank, and baseline probabilities/head outputs must share arithmetic."
     ]
   },
   "rootReviewedSinceAdvisor": [
     {
       "path": "../obsidian/blog/2026-11-05-230617-a-reader-can-predict-a-change-without-carrying-its-main-effect.md",
-      "sha256": "b78079b991ec66e69e540f7c123a4862a47519066e47c4e689c6a25ad314af4a",
-      "implication": "Image stream dominates this measured late color effect, while exact text reading is not its main carrier. Keep own-state image edge and causal behavioral importance separate. Include at next Astra review."
+      "sha256": "cab8e30082e5a594ddddac7e54f74b8a7dde228f73ac680658ec885ef2ac521d",
+      "implication": "Latest working post directly connects supplied image-V payload through image-output to native RGB across four contexts; native consumers remain. Shared with Astra cycle3."
     }
   ],
   "completedRuns": [
@@ -108,6 +130,41 @@
       "midpointStatePairedResponseError": 0.12589326710142432,
       "roundedRowWinsAgainstInterpolation": "7/32",
       "stateRowWinsAgainstInterpolation": "9/32"
+    },
+    {
+      "jobID": "job-2f0a52357bf1",
+      "requestSHA256": "f721133d0d1e444f25d62d5e3b3d29eb7d6b2428dafde68b7e2a8813bf0b1933",
+      "type": "producer-derived basis; actual BF16 state-fed next joint image QKV reader; six post-seal native CPU references",
+      "servingFrameworkCalls": 0,
+      "servingOriginalDenseProjections": 0,
+      "servingLearnedReducedMapEvaluations": 3,
+      "postSealNativeLayerNormCalls": 6,
+      "postSealNativeLinearCalls": 18,
+      "offlineDenseCompilation": true,
+      "schedulerSeconds": 23.94,
+      "workerSeconds": 20.22499096300453,
+      "compilerSeconds": 5.564682848751545,
+      "servingMedianSecondsRange": [0.0009109140373766422, 0.0009360620751976967],
+      "servingHighWaterRSSMiB": 70.78515625,
+      "basisAndBankPayloadBytes": 15802368,
+      "basisRanks": "5 for all32rows",
+      "midpointPairedQKVError": [0.18728482304523583, 0.18605359315011, 0.13902776892166427],
+      "midpointMedianRowQKVError": [0.9143226475510876, 0.903124048879576, 0.8260086324879493],
+      "nativeCUDAParity": "unmeasured"
+    },
+    {
+      "jobID": "job-15dea027e760",
+      "requestSHA256": "5b007dc424f38c9cbdca5add614beeebd6615cc7b7926413783eae721c662a1d",
+      "type": "saved-array four-term signed telescope and same-final-quantizer full-projection reader counterfactual",
+      "newNeuralEvaluations": 0,
+      "newOriginalDenseMatmuls": 0,
+      "originalWeightBytesRead": 0,
+      "schedulerSeconds": 1.19,
+      "workerSecondsAfterImports": 0.21160757215693593,
+      "highWaterRSSMiB": 111.71875,
+      "sampledSchedulerPeakRSSMB": 13.5,
+      "midpointDeltaResidualOverDeltaCenteredState": 0.10176750999293589,
+      "interpretation": "Both basis omission through quantization and combined native numerical policy remain material; negative cross terms prevent additive attribution."
     }
   ],
   "failedRuns": [
@@ -142,6 +199,17 @@
     "tests": "22 Python mechanics tests passed",
     "goalStatus": "active; supplied inputs/context and one bounded consumer are not arbitrary-prompt generation"
   },
+  "compiledReaderEvidence": {
+    "directory": "results/compiled-state-reader",
+    "attributionDirectory": "results/state-reader-attribution",
+    "custody": "two guarded payload identities and complete remote-before/after/local result inventories verified",
+    "servingIsolation": "exact emitted state, basis and three reduced banks; no dose or target/refreshed state; seals before native bundle/reference reads",
+    "semanticCounterCorrection": "Raw onlineNeuralEvaluations0 means native/framework calls only; three learned reduced-map evaluations still occur. Not a representation-independent zero-learned-computation result.",
+    "rows": "1152 primary and1152 attribution observations; dependent rows, not prompt replications",
+    "tests": "26 generator mechanics tests pass, including4 new synthetic receiver checks",
+    "saturnSweep": "both run and verify exit0 for primary and attribution; each target-streams-only, one stream/1152records, no terminal claim receipts or address joins",
+    "goalStatus": "active; arbitrary raw prompts, global attention, general context, denoising and non-neural pixel decoding remain open"
+  },
   "workspaceRequests": [
     {
       "path": "../saturn/request.jsonl",
@@ -150,12 +218,12 @@
     }
   ],
   "nextCut": {
-    "status": "proposed, not launched",
-    "question": "Can the actual next joint block row-local reader consume emitted BF16 state without dose or native refresh?",
-    "plan": "plans/compiled-state-receiver.md",
-    "source": "compiled producer job-80041334757d plus pinned next-joint normalization/modulation and QKV parameters/context",
-    "law": "center(u)=Bz+r; q_hat=(WDB)z/s+Wb; retain omitted WDr/s as measured diagnostic",
-    "requirements": "inspect native contracts and source context before staging; basis from producer only; noalpha input; retain rank/out-of-basis error; seal composite then compare R(UP) and R(UT) in six bounded native diagnostics; report inherited/receiver signed error terms"
+    "status": "proposed, not launched; Astra reviewed direction",
+    "question": "Can the actual emitted-state QKV drive one complete global attention-head update without dose or native refresh?",
+    "plan": "plans/compiled-global-attention.md",
+    "source": "producer job-80041334757d, receiver job-2f0a52357bf1, attribution job-15dea027e760 and authenticated joint2 full fixed context",
+    "law": "unchanged queries combine fixed-source cached numerator/partition with changed-source terms;32 changed queries recompute over the complete updated bank",
+    "requirements": "inspect native headnorm/RoPE and full context custody; prespecifiedhead0 baseline/midpoint; same-arithmetic cache and direct-reference; noalpha/native refresh; all changed QKV from actual packets; seal complete head field before matched references; retain inherited/consumer errors as diagnostics, not accuracy gates"
   },
   "alternativeDiagnostic": {
     "status": "proposed, not launched; lower priority after Astra review",
