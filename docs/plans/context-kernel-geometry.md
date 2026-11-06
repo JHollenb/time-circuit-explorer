@@ -1,6 +1,6 @@
 # Distinguish feature geometry from context-state capacity
 
-Status: proposed after [cycle6](../compiled-context-statistics.md) and Astra's two code/newest-post reviews. No diagonal-conditioned serving or image result is claimed. The unchanged feature family collapsed at selected keys; retrospective means/scalar balancing improve it but leave large error. Those heuristics are not optimized oracle upper bounds.
+Status: **implemented and measured in cycle7**. The [result and source-frozen follow-up](../source-conditioned-context.md) retain this design. Retrospective diagonal balancing improves selected rank64 head error to80.4% from109.4% scalar/147.8% unconditioned. A separately source-frozen geometry improves broad fresh-string reconstruction but badly distorts several prompt changes. No image result or general small-state impossibility follows; fitted coordinates are not optimized oracle bounds.
 
 ## The next smallest discriminator
 

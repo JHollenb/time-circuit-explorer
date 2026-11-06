@@ -1,0 +1,32 @@
+{
+  "momentFloors": [
+    1e-12,
+    1e-10
+  ],
+  "momentPolicy": "Query moments use all512positions; key moments use activekeys. Centered means use complete arrays. Scalar scale matches prior assay. Diagonal D_l=(max(B_l,eps*meanB)/max(A_l,eps*meanA))**.25; entire zero side uses unit D and a degenerate label.",
+  "parentJobID": "job-cad6090b693f",
+  "parentRequestSHA256": "f3d2276e672b94757d1b00a690bbc226db0fcdd928a8731e19334217288227b6",
+  "querySelection": "Sorted unique activeTokens//2, activeTokens-1, sequenceLength-1; unchanged mask-only rule.",
+  "ranks": [
+    16,
+    32,
+    64
+  ],
+  "requestSHA256": "1d8725b0ede583f541c6fa738814122a58ac9906857e5ff901cea0bc9e01c2c5",
+  "schema": "tce-context-diagonal-diagnostic-request-v1",
+  "scope": "Saved-only retrospective coordinate-moment diagnosis on the same14ports/40mask-selectedqueries. Whole held arrays fit centers/scales with lookahead. No serving, fresh-prompt or image claim.",
+  "sourceHashes": {
+    "context_diagonal_diagnostics.py": "1eeaa148dd1df207d4c9e19a51c28abd0243e904024e64658958ff14b176383a",
+    "context_kernel_diagnostics.py": "3512de8d7ecffaa700e5bf8819308b7b988ba3dca5afec0798aa80eebf4812e0",
+    "context_key_diagnostics.py": "9a6e1f81e52cd427dedbcbfe4662e03ed1728147ee74597cc3c64c3c124f42cc",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "source.json": "8cf6fecc9d5c750855389f86a1b746567c23efd24efdef5313db2e72b58f083d"
+  },
+  "variants": [
+    "original",
+    "centered_scalar",
+    "diagonal_only_eps12",
+    "centered_diagonal_eps12",
+    "centered_diagonal_eps10"
+  ]
+}

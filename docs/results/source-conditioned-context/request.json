@@ -1,0 +1,53 @@
+{
+  "backend": "numpy-fp64",
+  "cpuThreads": 1,
+  "device": "cpu",
+  "featureDraws": "Same frozen PCG64(seed6306)64x128Gaussian array as parent; nested16/32/64rows.",
+  "methods": [
+    "conditioned16",
+    "conditioned32",
+    "conditioned64",
+    "original64",
+    "uniform"
+  ],
+  "pairs": [
+    [
+      "kite-above",
+      "kite-below"
+    ],
+    [
+      "key-inside",
+      "key-outside"
+    ],
+    [
+      "rain-yellow",
+      "rain-blue"
+    ],
+    [
+      "marble-forward",
+      "marble-reverse"
+    ]
+  ],
+  "parentJobID": "job-cad6090b693f",
+  "parentRequestSHA256": "f3d2276e672b94757d1b00a690bbc226db0fcdd928a8731e19334217288227b6",
+  "referencePolicy": "Post-seal FP64 mathematical attention on canonical compiled BF16 operands, not native SDPA/Flash. Saved original W_o slice transported error offline.",
+  "requestSHA256": "abff7fa2ba69da4d93c59bfc6023611237545bbd1f9bb0404bed4f0e4bae6220",
+  "schema": "tce-source-conditioned-context-request-v1",
+  "scope": "Source-only positioned-atom geometry frozen before fresh raw-text forecasts; actual approximate streaming state, one first-layer head; full attention and saved output-slice references post-seal only. Not an image generator or zero-neural terminal result.",
+  "sourceDistribution": "PCG64(seed1707)2048IDs without replacement from all151936IDs; exact ID bytes frozen. All512positionIDs uniform. Key pool uniform; query pool50percent uniformtoken/position plus50percent padID/position. No target operands in fit.",
+  "sourceHashes": {
+    "context_conditioned.py": "610d567539a198cacac27286d1c4b8470da2ebfda1b3dda39ae1f8617ccc3f31",
+    "context_kernel_diagnostics.py": "3512de8d7ecffaa700e5bf8819308b7b988ba3dca5afec0798aa80eebf4812e0",
+    "context_key_diagnostics.py": "9a6e1f81e52cd427dedbcbfe4662e03ed1728147ee74597cc3c64c3c124f42cc",
+    "context_source_geometry.py": "3ce2e0b8e66d2174247f5cac2042d6183b30a45b18704f9c7f600fbefd8d012c",
+    "context_source_study.py": "80d9943878cebbde5996391e8fbc5ffd490149741cbf1d9e3e4467faa8eb6123",
+    "context_statistics.py": "6f86949f47160890bd58a41174fe99809d6dce8a3e67222be09f7e77e961b057",
+    "context_statistics_study.py": "0d44d03f2a8eabd32b5d7034a449f7a46e7d8abe0252dd1b94d229c31f1ea1c8",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "geometry-source.json": "1b3e71c98ae223db4dd052a1d0ca7479ca252632aed61f6a7487b5a94f2d4b84",
+    "reference-source.json": "515e9611d68c6f8cb031a778b9ac31685e14c5cc725c72032193a235ba6a89ec",
+    "serve-source.json": "6f581f2c7a338471c00e3b48dfc70df76b1afb4985ecdecff64c41baffea1a05",
+    "source-ids.npy": "887ef22f692c04965643663162f1026a31d47bc02b2e31ccc07011b4d8d7efaa"
+  },
+  "timeoutSeconds": 600
+}

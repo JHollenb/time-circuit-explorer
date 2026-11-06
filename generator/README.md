@@ -12,6 +12,8 @@ The [complete-vocabulary lexical compiler](../docs/raw-prompt-encoder-atoms.md) 
 
 The [context-state experiment](../docs/compiled-context-statistics.md) tests the first contextual read after that prefix. A positive-feature streaming state closes against its own kernel, but not against exact attention: rank64 median head error is183%. `context_statistics_study.py stage|submit|collect` runs the source-bound assay; `context_kernel_diagnostics.py` and `context_key_diagnostics.py` analyze sealed saved arrays. Diagnostics retain key collapse and lookahead-fitted conditioning separately from serving. They are not an image-generation backend.
 
+The [source-conditioned follow-up](../docs/source-conditioned-context.md) compiles one coordinate geometry from token/position atoms and tests eight fresh strings through actual prefix statistics. `context_diagonal_diagnostics.py` runs the preceding saved-only geometry assay; `context_source_study.py stage|submit|collect` runs compilation, fresh serving and post-seal references. The compiler includes mixture between-mean variance; serving retains both gauge and original-gauge approximate log partitions. Broad reconstruction improves, but prompt-change errors remain large. This is not a faithful full encoder or image-generation backend.
+
 ## Generate from the website
 
 From this repository in the domains workspace, with the configured mrun client and reachable fleet:
