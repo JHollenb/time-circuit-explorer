@@ -1,0 +1,21 @@
+{
+  "avoidedFractionOfLinearMACs": 0.15584415584415584,
+  "geometry": {
+    "hidden": 2560,
+    "kvWidth": 1024,
+    "mlpWidth": 9728,
+    "qWidth": 4096,
+    "rows": 512
+  },
+  "nominalMACs": {
+    "MLPProjections": 38252052480,
+    "QKVFormation": 8053063680,
+    "cachedLinear": 43620761600,
+    "fullLinear": 51673825280,
+    "outputProjection": 5368709120
+  },
+  "schema": "tce-qwen-cached-qkv-nominal-budget-v1",
+  "scope": "One edited block, nominal dense multiply-accumulates only. Not measured hardware operations or speedup. Source-positive construction, SDPA, norms, RoPE, elementwise work and later model stages excluded and still paid where applicable.",
+  "sourceConfigSHA256": "214b4c29a0d975e9fddf9994a5673f22cb2c4c5750352f9227c2c3251ebeab40",
+  "sourceVerificationSHA256": "244d56431cf703cfd91b7e7cb3548f458ae86675171e350c6ba335d2190ebf70"
+}

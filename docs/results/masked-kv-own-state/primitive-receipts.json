@@ -1,0 +1,2400 @@
+{
+  "calls": [
+    {
+      "case": "short",
+      "enableGQA": false,
+      "index": 0,
+      "isCausal": false,
+      "lane": "candidate",
+      "maskDtype": "torch.bool",
+      "maskShape": [
+        1,
+        1,
+        512,
+        512
+      ],
+      "primitive": "SDPA",
+      "shapes": [
+        [
+          1,
+          32,
+          512,
+          128
+        ],
+        [
+          1,
+          32,
+          512,
+          128
+        ],
+        [
+          1,
+          32,
+          512,
+          128
+        ]
+      ],
+      "strides": [
+        [
+          2097152,
+          128,
+          4096,
+          1
+        ],
+        [
+          2097152,
+          65536,
+          128,
+          1
+        ],
+        [
+          2097152,
+          65536,
+          128,
+          1
+        ]
+      ]
+    },
+    {
+      "case": "short",
+      "index": 0,
+      "inputShape": [
+        1,
+        512,
+        4096
+      ],
+      "lane": "candidate",
+      "nominalMACs": 5368709120,
+      "parameter": "model.layers.0.self_attn.o_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        2560,
+        4096
+      ]
+    },
+    {
+      "case": "short",
+      "index": 0,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "candidate",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.0.mlp.gate_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "index": 0,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "candidate",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.0.mlp.up_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "index": 0,
+      "inputShape": [
+        1,
+        512,
+        9728
+      ],
+      "lane": "candidate",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.0.mlp.down_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        2560,
+        9728
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "candidate",
+      "nominalMACs": 5368709120,
+      "parameter": "model.layers.1.self_attn.q_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        4096,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        28,
+        2560
+      ],
+      "lane": "candidate",
+      "nominalMACs": 73400320,
+      "parameter": "model.layers.1.self_attn.k_proj.weight",
+      "primitive": "linear",
+      "rows": 28,
+      "weightShape": [
+        1024,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        28,
+        2560
+      ],
+      "lane": "candidate",
+      "nominalMACs": 73400320,
+      "parameter": "model.layers.1.self_attn.v_proj.weight",
+      "primitive": "linear",
+      "rows": 28,
+      "weightShape": [
+        1024,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "enableGQA": false,
+      "index": 1,
+      "isCausal": false,
+      "lane": "candidate",
+      "maskDtype": "torch.bool",
+      "maskShape": [
+        1,
+        1,
+        512,
+        512
+      ],
+      "primitive": "SDPA",
+      "shapes": [
+        [
+          1,
+          32,
+          512,
+          128
+        ],
+        [
+          1,
+          32,
+          512,
+          128
+        ],
+        [
+          1,
+          32,
+          512,
+          128
+        ]
+      ],
+      "strides": [
+        [
+          2097152,
+          128,
+          4096,
+          1
+        ],
+        [
+          2097152,
+          65536,
+          128,
+          1
+        ],
+        [
+          2097152,
+          65536,
+          128,
+          1
+        ]
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        4096
+      ],
+      "lane": "candidate",
+      "nominalMACs": 5368709120,
+      "parameter": "model.layers.1.self_attn.o_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        2560,
+        4096
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "candidate",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.gate_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "candidate",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.up_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        9728
+      ],
+      "lane": "candidate",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.down_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        2560,
+        9728
+      ]
+    },
+    {
+      "case": "all-attended",
+      "enableGQA": true,
+      "index": 0,
+      "isCausal": true,
+      "lane": "candidate",
+      "maskDtype": null,
+      "maskShape": null,
+      "primitive": "SDPA",
+      "shapes": [
+        [
+          1,
+          32,
+          512,
+          128
+        ],
+        [
+          1,
+          8,
+          512,
+          128
+        ],
+        [
+          1,
+          8,
+          512,
+          128
+        ]
+      ],
+      "strides": [
+        [
+          2097152,
+          128,
+          4096,
+          1
+        ],
+        [
+          524288,
+          128,
+          1024,
+          1
+        ],
+        [
+          524288,
+          128,
+          1024,
+          1
+        ]
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 0,
+      "inputShape": [
+        1,
+        512,
+        4096
+      ],
+      "lane": "candidate",
+      "nominalMACs": 5368709120,
+      "parameter": "model.layers.0.self_attn.o_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        2560,
+        4096
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 0,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "candidate",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.0.mlp.gate_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 0,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "candidate",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.0.mlp.up_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 0,
+      "inputShape": [
+        1,
+        512,
+        9728
+      ],
+      "lane": "candidate",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.0.mlp.down_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        2560,
+        9728
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "candidate",
+      "nominalMACs": 5368709120,
+      "parameter": "model.layers.1.self_attn.q_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        4096,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "candidate",
+      "nominalMACs": 1342177280,
+      "parameter": "model.layers.1.self_attn.k_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        1024,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "candidate",
+      "nominalMACs": 1342177280,
+      "parameter": "model.layers.1.self_attn.v_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        1024,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "enableGQA": true,
+      "index": 1,
+      "isCausal": true,
+      "lane": "candidate",
+      "maskDtype": null,
+      "maskShape": null,
+      "primitive": "SDPA",
+      "shapes": [
+        [
+          1,
+          32,
+          512,
+          128
+        ],
+        [
+          1,
+          8,
+          512,
+          128
+        ],
+        [
+          1,
+          8,
+          512,
+          128
+        ]
+      ],
+      "strides": [
+        [
+          2097152,
+          128,
+          4096,
+          1
+        ],
+        [
+          524288,
+          128,
+          1024,
+          1
+        ],
+        [
+          524288,
+          128,
+          1024,
+          1
+        ]
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        4096
+      ],
+      "lane": "candidate",
+      "nominalMACs": 5368709120,
+      "parameter": "model.layers.1.self_attn.o_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        2560,
+        4096
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "candidate",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.gate_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "candidate",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.up_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        9728
+      ],
+      "lane": "candidate",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.down_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        2560,
+        9728
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "full",
+      "nominalMACs": 5368709120,
+      "parameter": "model.layers.1.self_attn.q_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        4096,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "full",
+      "nominalMACs": 1342177280,
+      "parameter": "model.layers.1.self_attn.k_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        1024,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "full",
+      "nominalMACs": 1342177280,
+      "parameter": "model.layers.1.self_attn.v_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        1024,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "enableGQA": false,
+      "index": 1,
+      "isCausal": false,
+      "lane": "full",
+      "maskDtype": "torch.bool",
+      "maskShape": [
+        1,
+        1,
+        512,
+        512
+      ],
+      "primitive": "SDPA",
+      "shapes": [
+        [
+          1,
+          32,
+          512,
+          128
+        ],
+        [
+          1,
+          32,
+          512,
+          128
+        ],
+        [
+          1,
+          32,
+          512,
+          128
+        ]
+      ],
+      "strides": [
+        [
+          2097152,
+          128,
+          4096,
+          1
+        ],
+        [
+          2097152,
+          65536,
+          128,
+          1
+        ],
+        [
+          2097152,
+          65536,
+          128,
+          1
+        ]
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        4096
+      ],
+      "lane": "full",
+      "nominalMACs": 5368709120,
+      "parameter": "model.layers.1.self_attn.o_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        2560,
+        4096
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "full",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.gate_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "full",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.up_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        9728
+      ],
+      "lane": "full",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.down_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        2560,
+        9728
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "zero",
+      "nominalMACs": 5368709120,
+      "parameter": "model.layers.1.self_attn.q_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        4096,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "zero",
+      "nominalMACs": 1342177280,
+      "parameter": "model.layers.1.self_attn.k_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        1024,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "zero",
+      "nominalMACs": 1342177280,
+      "parameter": "model.layers.1.self_attn.v_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        1024,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "enableGQA": false,
+      "index": 1,
+      "isCausal": false,
+      "lane": "zero",
+      "maskDtype": "torch.bool",
+      "maskShape": [
+        1,
+        1,
+        512,
+        512
+      ],
+      "primitive": "SDPA",
+      "shapes": [
+        [
+          1,
+          32,
+          512,
+          128
+        ],
+        [
+          1,
+          32,
+          512,
+          128
+        ],
+        [
+          1,
+          32,
+          512,
+          128
+        ]
+      ],
+      "strides": [
+        [
+          2097152,
+          128,
+          4096,
+          1
+        ],
+        [
+          2097152,
+          65536,
+          128,
+          1
+        ],
+        [
+          2097152,
+          65536,
+          128,
+          1
+        ]
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        4096
+      ],
+      "lane": "zero",
+      "nominalMACs": 5368709120,
+      "parameter": "model.layers.1.self_attn.o_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        2560,
+        4096
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "zero",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.gate_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "zero",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.up_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        9728
+      ],
+      "lane": "zero",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.down_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        2560,
+        9728
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "full",
+      "nominalMACs": 5368709120,
+      "parameter": "model.layers.1.self_attn.q_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        4096,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "full",
+      "nominalMACs": 1342177280,
+      "parameter": "model.layers.1.self_attn.k_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        1024,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "full",
+      "nominalMACs": 1342177280,
+      "parameter": "model.layers.1.self_attn.v_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        1024,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "enableGQA": true,
+      "index": 1,
+      "isCausal": true,
+      "lane": "full",
+      "maskDtype": null,
+      "maskShape": null,
+      "primitive": "SDPA",
+      "shapes": [
+        [
+          1,
+          32,
+          512,
+          128
+        ],
+        [
+          1,
+          8,
+          512,
+          128
+        ],
+        [
+          1,
+          8,
+          512,
+          128
+        ]
+      ],
+      "strides": [
+        [
+          2097152,
+          128,
+          4096,
+          1
+        ],
+        [
+          524288,
+          128,
+          1024,
+          1
+        ],
+        [
+          524288,
+          128,
+          1024,
+          1
+        ]
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        4096
+      ],
+      "lane": "full",
+      "nominalMACs": 5368709120,
+      "parameter": "model.layers.1.self_attn.o_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        2560,
+        4096
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "full",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.gate_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "full",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.up_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        9728
+      ],
+      "lane": "full",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.down_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        2560,
+        9728
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "zero",
+      "nominalMACs": 5368709120,
+      "parameter": "model.layers.1.self_attn.q_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        4096,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "zero",
+      "nominalMACs": 1342177280,
+      "parameter": "model.layers.1.self_attn.k_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        1024,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "zero",
+      "nominalMACs": 1342177280,
+      "parameter": "model.layers.1.self_attn.v_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        1024,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "enableGQA": true,
+      "index": 1,
+      "isCausal": true,
+      "lane": "zero",
+      "maskDtype": null,
+      "maskShape": null,
+      "primitive": "SDPA",
+      "shapes": [
+        [
+          1,
+          32,
+          512,
+          128
+        ],
+        [
+          1,
+          8,
+          512,
+          128
+        ],
+        [
+          1,
+          8,
+          512,
+          128
+        ]
+      ],
+      "strides": [
+        [
+          2097152,
+          128,
+          4096,
+          1
+        ],
+        [
+          524288,
+          128,
+          1024,
+          1
+        ],
+        [
+          524288,
+          128,
+          1024,
+          1
+        ]
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        4096
+      ],
+      "lane": "zero",
+      "nominalMACs": 5368709120,
+      "parameter": "model.layers.1.self_attn.o_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        2560,
+        4096
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "zero",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.gate_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "zero",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.up_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        9728
+      ],
+      "lane": "zero",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.down_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        2560,
+        9728
+      ]
+    },
+    {
+      "case": "short",
+      "index": 0,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "native",
+      "nominalMACs": 5368709120,
+      "parameter": "model.layers.0.self_attn.q_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        4096,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "index": 0,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "native",
+      "nominalMACs": 1342177280,
+      "parameter": "model.layers.0.self_attn.k_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        1024,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "index": 0,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "native",
+      "nominalMACs": 1342177280,
+      "parameter": "model.layers.0.self_attn.v_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        1024,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "enableGQA": false,
+      "index": 0,
+      "isCausal": false,
+      "lane": "native",
+      "maskDtype": "torch.bool",
+      "maskShape": [
+        1,
+        1,
+        512,
+        512
+      ],
+      "primitive": "SDPA",
+      "shapes": [
+        [
+          1,
+          32,
+          512,
+          128
+        ],
+        [
+          1,
+          32,
+          512,
+          128
+        ],
+        [
+          1,
+          32,
+          512,
+          128
+        ]
+      ],
+      "strides": [
+        [
+          2097152,
+          128,
+          4096,
+          1
+        ],
+        [
+          2097152,
+          65536,
+          128,
+          1
+        ],
+        [
+          2097152,
+          65536,
+          128,
+          1
+        ]
+      ]
+    },
+    {
+      "case": "short",
+      "index": 0,
+      "inputShape": [
+        1,
+        512,
+        4096
+      ],
+      "lane": "native",
+      "nominalMACs": 5368709120,
+      "parameter": "model.layers.0.self_attn.o_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        2560,
+        4096
+      ]
+    },
+    {
+      "case": "short",
+      "index": 0,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "native",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.0.mlp.gate_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "index": 0,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "native",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.0.mlp.up_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "index": 0,
+      "inputShape": [
+        1,
+        512,
+        9728
+      ],
+      "lane": "native",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.0.mlp.down_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        2560,
+        9728
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "native",
+      "nominalMACs": 5368709120,
+      "parameter": "model.layers.1.self_attn.q_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        4096,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "native",
+      "nominalMACs": 1342177280,
+      "parameter": "model.layers.1.self_attn.k_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        1024,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "native",
+      "nominalMACs": 1342177280,
+      "parameter": "model.layers.1.self_attn.v_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        1024,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "enableGQA": false,
+      "index": 1,
+      "isCausal": false,
+      "lane": "native",
+      "maskDtype": "torch.bool",
+      "maskShape": [
+        1,
+        1,
+        512,
+        512
+      ],
+      "primitive": "SDPA",
+      "shapes": [
+        [
+          1,
+          32,
+          512,
+          128
+        ],
+        [
+          1,
+          32,
+          512,
+          128
+        ],
+        [
+          1,
+          32,
+          512,
+          128
+        ]
+      ],
+      "strides": [
+        [
+          2097152,
+          128,
+          4096,
+          1
+        ],
+        [
+          2097152,
+          65536,
+          128,
+          1
+        ],
+        [
+          2097152,
+          65536,
+          128,
+          1
+        ]
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        4096
+      ],
+      "lane": "native",
+      "nominalMACs": 5368709120,
+      "parameter": "model.layers.1.self_attn.o_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        2560,
+        4096
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "native",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.gate_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "native",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.up_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        9728
+      ],
+      "lane": "native",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.down_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        2560,
+        9728
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 0,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "native",
+      "nominalMACs": 5368709120,
+      "parameter": "model.layers.0.self_attn.q_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        4096,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 0,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "native",
+      "nominalMACs": 1342177280,
+      "parameter": "model.layers.0.self_attn.k_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        1024,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 0,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "native",
+      "nominalMACs": 1342177280,
+      "parameter": "model.layers.0.self_attn.v_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        1024,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "enableGQA": true,
+      "index": 0,
+      "isCausal": true,
+      "lane": "native",
+      "maskDtype": null,
+      "maskShape": null,
+      "primitive": "SDPA",
+      "shapes": [
+        [
+          1,
+          32,
+          512,
+          128
+        ],
+        [
+          1,
+          8,
+          512,
+          128
+        ],
+        [
+          1,
+          8,
+          512,
+          128
+        ]
+      ],
+      "strides": [
+        [
+          2097152,
+          128,
+          4096,
+          1
+        ],
+        [
+          524288,
+          128,
+          1024,
+          1
+        ],
+        [
+          524288,
+          128,
+          1024,
+          1
+        ]
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 0,
+      "inputShape": [
+        1,
+        512,
+        4096
+      ],
+      "lane": "native",
+      "nominalMACs": 5368709120,
+      "parameter": "model.layers.0.self_attn.o_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        2560,
+        4096
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 0,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "native",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.0.mlp.gate_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 0,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "native",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.0.mlp.up_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 0,
+      "inputShape": [
+        1,
+        512,
+        9728
+      ],
+      "lane": "native",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.0.mlp.down_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        2560,
+        9728
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "native",
+      "nominalMACs": 5368709120,
+      "parameter": "model.layers.1.self_attn.q_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        4096,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "native",
+      "nominalMACs": 1342177280,
+      "parameter": "model.layers.1.self_attn.k_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        1024,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "native",
+      "nominalMACs": 1342177280,
+      "parameter": "model.layers.1.self_attn.v_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        1024,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "enableGQA": true,
+      "index": 1,
+      "isCausal": true,
+      "lane": "native",
+      "maskDtype": null,
+      "maskShape": null,
+      "primitive": "SDPA",
+      "shapes": [
+        [
+          1,
+          32,
+          512,
+          128
+        ],
+        [
+          1,
+          8,
+          512,
+          128
+        ],
+        [
+          1,
+          8,
+          512,
+          128
+        ]
+      ],
+      "strides": [
+        [
+          2097152,
+          128,
+          4096,
+          1
+        ],
+        [
+          524288,
+          128,
+          1024,
+          1
+        ],
+        [
+          524288,
+          128,
+          1024,
+          1
+        ]
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        4096
+      ],
+      "lane": "native",
+      "nominalMACs": 5368709120,
+      "parameter": "model.layers.1.self_attn.o_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        2560,
+        4096
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "native",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.gate_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        2560
+      ],
+      "lane": "native",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.up_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        9728,
+        2560
+      ]
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "inputShape": [
+        1,
+        512,
+        9728
+      ],
+      "lane": "native",
+      "nominalMACs": 12750684160,
+      "parameter": "model.layers.1.mlp.down_proj.weight",
+      "primitive": "linear",
+      "rows": 512,
+      "weightShape": [
+        2560,
+        9728
+      ]
+    }
+  ],
+  "nativeModuleEntries": [
+    {
+      "case": "short",
+      "index": 0,
+      "lane": "native",
+      "module": ""
+    },
+    {
+      "case": "short",
+      "index": 0,
+      "lane": "native",
+      "module": "input_layernorm"
+    },
+    {
+      "case": "short",
+      "index": 0,
+      "lane": "native",
+      "module": "self_attn"
+    },
+    {
+      "case": "short",
+      "index": 0,
+      "lane": "native",
+      "module": "self_attn.q_proj"
+    },
+    {
+      "case": "short",
+      "index": 0,
+      "lane": "native",
+      "module": "self_attn.q_norm"
+    },
+    {
+      "case": "short",
+      "index": 0,
+      "lane": "native",
+      "module": "self_attn.k_proj"
+    },
+    {
+      "case": "short",
+      "index": 0,
+      "lane": "native",
+      "module": "self_attn.k_norm"
+    },
+    {
+      "case": "short",
+      "index": 0,
+      "lane": "native",
+      "module": "self_attn.v_proj"
+    },
+    {
+      "case": "short",
+      "index": 0,
+      "lane": "native",
+      "module": "self_attn.o_proj"
+    },
+    {
+      "case": "short",
+      "index": 0,
+      "lane": "native",
+      "module": "post_attention_layernorm"
+    },
+    {
+      "case": "short",
+      "index": 0,
+      "lane": "native",
+      "module": "mlp"
+    },
+    {
+      "case": "short",
+      "index": 0,
+      "lane": "native",
+      "module": "mlp.gate_proj"
+    },
+    {
+      "case": "short",
+      "index": 0,
+      "lane": "native",
+      "module": "mlp.act_fn"
+    },
+    {
+      "case": "short",
+      "index": 0,
+      "lane": "native",
+      "module": "mlp.up_proj"
+    },
+    {
+      "case": "short",
+      "index": 0,
+      "lane": "native",
+      "module": "mlp.down_proj"
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "lane": "native",
+      "module": ""
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "lane": "native",
+      "module": "input_layernorm"
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "lane": "native",
+      "module": "self_attn"
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "lane": "native",
+      "module": "self_attn.q_proj"
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "lane": "native",
+      "module": "self_attn.q_norm"
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "lane": "native",
+      "module": "self_attn.k_proj"
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "lane": "native",
+      "module": "self_attn.k_norm"
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "lane": "native",
+      "module": "self_attn.v_proj"
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "lane": "native",
+      "module": "self_attn.o_proj"
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "lane": "native",
+      "module": "post_attention_layernorm"
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "lane": "native",
+      "module": "mlp"
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "lane": "native",
+      "module": "mlp.gate_proj"
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "lane": "native",
+      "module": "mlp.act_fn"
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "lane": "native",
+      "module": "mlp.up_proj"
+    },
+    {
+      "case": "short",
+      "index": 1,
+      "lane": "native",
+      "module": "mlp.down_proj"
+    },
+    {
+      "case": "all-attended",
+      "index": 0,
+      "lane": "native",
+      "module": ""
+    },
+    {
+      "case": "all-attended",
+      "index": 0,
+      "lane": "native",
+      "module": "input_layernorm"
+    },
+    {
+      "case": "all-attended",
+      "index": 0,
+      "lane": "native",
+      "module": "self_attn"
+    },
+    {
+      "case": "all-attended",
+      "index": 0,
+      "lane": "native",
+      "module": "self_attn.q_proj"
+    },
+    {
+      "case": "all-attended",
+      "index": 0,
+      "lane": "native",
+      "module": "self_attn.q_norm"
+    },
+    {
+      "case": "all-attended",
+      "index": 0,
+      "lane": "native",
+      "module": "self_attn.k_proj"
+    },
+    {
+      "case": "all-attended",
+      "index": 0,
+      "lane": "native",
+      "module": "self_attn.k_norm"
+    },
+    {
+      "case": "all-attended",
+      "index": 0,
+      "lane": "native",
+      "module": "self_attn.v_proj"
+    },
+    {
+      "case": "all-attended",
+      "index": 0,
+      "lane": "native",
+      "module": "self_attn.o_proj"
+    },
+    {
+      "case": "all-attended",
+      "index": 0,
+      "lane": "native",
+      "module": "post_attention_layernorm"
+    },
+    {
+      "case": "all-attended",
+      "index": 0,
+      "lane": "native",
+      "module": "mlp"
+    },
+    {
+      "case": "all-attended",
+      "index": 0,
+      "lane": "native",
+      "module": "mlp.gate_proj"
+    },
+    {
+      "case": "all-attended",
+      "index": 0,
+      "lane": "native",
+      "module": "mlp.act_fn"
+    },
+    {
+      "case": "all-attended",
+      "index": 0,
+      "lane": "native",
+      "module": "mlp.up_proj"
+    },
+    {
+      "case": "all-attended",
+      "index": 0,
+      "lane": "native",
+      "module": "mlp.down_proj"
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "lane": "native",
+      "module": ""
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "lane": "native",
+      "module": "input_layernorm"
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "lane": "native",
+      "module": "self_attn"
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "lane": "native",
+      "module": "self_attn.q_proj"
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "lane": "native",
+      "module": "self_attn.q_norm"
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "lane": "native",
+      "module": "self_attn.k_proj"
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "lane": "native",
+      "module": "self_attn.k_norm"
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "lane": "native",
+      "module": "self_attn.v_proj"
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "lane": "native",
+      "module": "self_attn.o_proj"
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "lane": "native",
+      "module": "post_attention_layernorm"
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "lane": "native",
+      "module": "mlp"
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "lane": "native",
+      "module": "mlp.gate_proj"
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "lane": "native",
+      "module": "mlp.act_fn"
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "lane": "native",
+      "module": "mlp.up_proj"
+    },
+    {
+      "case": "all-attended",
+      "index": 1,
+      "lane": "native",
+      "module": "mlp.down_proj"
+    }
+  ]
+}

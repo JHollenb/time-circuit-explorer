@@ -1,0 +1,188 @@
+{
+  "completeCollectedInventory": {
+    "bytes": 2511280,
+    "files": {
+      "observations.jsonl": {
+        "bytes": 2316714,
+        "sha256": "16a845ad90864475b06637518666eddfa629d81a44be904bc7f37d936bd72922"
+      },
+      "prediction-seal.json": {
+        "bytes": 13978,
+        "sha256": "0be98817c9adcf303f1a5589e9b2aebd5c69951d6f4fe0681322890354c44b93"
+      },
+      "primitive-receipts.json": {
+        "bytes": 43261,
+        "sha256": "5019b648a837e055b40d1b0619913d287618157daabba6d9c0a0d1d452b0061d"
+      },
+      "report.json": {
+        "bytes": 81927,
+        "sha256": "5134b8e33ba1a7f586aa22917974c7f4c2213a6fd163a7c52d47a6e9cbdcd0ef"
+      },
+      "request.json": {
+        "bytes": 1494,
+        "sha256": "eb91f4d3b46313044992062249a456d5b42b673e8caa16f3db7f1717d522b410"
+      },
+      "retained-fields.json": {
+        "bytes": 40826,
+        "sha256": "12a0f0a20fafd351c31cf89270a69a2eb4a4e9f5c145834db741299ba032f944"
+      },
+      "source.json": {
+        "bytes": 13080,
+        "sha256": "30b593b7fed31da7400866d8132b42037007c1e2c1c6bf487dddd30ee9b3fa5a"
+      }
+    }
+  },
+  "jobID": "job-5f515567890f",
+  "losslessStreams": [
+    {
+      "published": "observations.jsonl.gz",
+      "publishedBytes": 199199,
+      "publishedSHA256": "8ba9fd1db186db741ec0071aa5951d2f783da61e18ed0eb41a26a280fd235e8c",
+      "source": "observations.jsonl",
+      "sourceBytes": 2316714,
+      "sourceSHA256": "16a845ad90864475b06637518666eddfa629d81a44be904bc7f37d936bd72922"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "f4df202d900471c3994292108c9b98fcc0568f78496dbff7303794ec76b9c4f9",
+      "size_bytes": 26015
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1793986106.2733285,
+      "sha256": "f4df202d900471c3994292108c9b98fcc0568f78496dbff7303794ec76b9c4f9",
+      "size_bytes": 26015
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1793986106.161148,
+      "sha256": "f4df202d900471c3994292108c9b98fcc0568f78496dbff7303794ec76b9c4f9",
+      "size_bytes": 26015
+    }
+  },
+  "requestSHA256": "2a402a0b2c21ee9b0f083bd65f75136febbe079440846e9d0369256dfb5e8816",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-5f515567890f",
+      "job_log": {
+        "bytes": 295,
+        "sha256": "c6165b50bcc77abc1f5fe718dc53f1bdb00ac360c2c83cb8d213f41e04df4147"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-5f515567890f/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "python",
+        "-u",
+        "masked_kv_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-5f515567890f",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-5f515567890f/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1793986106.2615669
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1793986106.2884483
+        },
+        {
+          "name": "process.launch",
+          "ts": 1793986106.314379
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1793986106.3401678
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1793986155.3858225
+        },
+        {
+          "name": "finished",
+          "ts": 1793986155.3965445
+        }
+      ]
+    },
+    "elapsed_s": 49.25,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "f4df202d900471c3994292108c9b98fcc0568f78496dbff7303794ec76b9c4f9",
+      "size_bytes": 26015
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 2106.7,
+    "peak_vram_mb": 790.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-masked-kv-public-v1",
+  "scope": "Two fresh raw strings from compiled E through own H1/H2; original learned tails remain. Same-H1 full/zero controls isolate formation. Native chain starts compiled E, not an independent native tokenizer/embedding. No image or zero-neural encoder claim."
+}
