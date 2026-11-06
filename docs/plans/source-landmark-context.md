@@ -1,6 +1,6 @@
 # Can source-frozen attention readers preserve new prompt changes?
 
-Status: **proposed after cycle8; not staged or measured**. Astra recommends a reusable positive reader law after the [shared-bank experiment](../common-bank-context.md). One signed SVD improves three of four known prompt changes, but its query coordinates are fitted-bank lookups and its Japanese padding reads are unstable. Another fit to those eight prompts would not resolve the unseen-query dependency.
+Status: **implemented and measured in cycle9**. The [source-landmark result](../source-landmark-context.md) retains this design and its interface-freeze implementation detail. The source-only rule runs on eight new strings, but its broad normalized-reader mixture loses changes. A separate retrospective bandwidth/capacity diagnostic finds both excessive smoothing and a remaining fixed-response-bank restriction. This is reduced model-derived attention, not faithful full conditioning or zero-neural images.
 
 The smallest next experiment is64 fixed source-query landmarks with live prefix statistics. This evaluates reduced model-derived attention. It does not satisfy the original zero-neural image objective merely by replacing a dense operation with a smaller learned computation.
 

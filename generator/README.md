@@ -16,6 +16,8 @@ The [source-conditioned follow-up](../docs/source-conditioned-context.md) compil
 
 The [common-bank capacity assay](../docs/common-bank-context.md) fits one globally normalized kernel/SVD across all eight saved prompts. `context_common_study.py stage|submit|collect` runs the finite CPU job; `context_common_bank.py` advances signed prefix statistics in a fresh process. It improves three paired effects but has signed-read failures and no unseen-query rule. Public factors are model-derived fitted information, not a zero-neural generator.
 
+The [source-frozen landmark reader](../docs/source-landmark-context.md) replaces fitted query coordinates with a source-only covariance/routing law. `context_landmark_study.py stage|submit|collect` compiles64landmarks and seals eight new raw-string forecasts; `context_landmarks.py` advances the positive prefix state. `landmark_routing_diagnostics.py` separately tests bandwidth and target-assisted padding-response capacity on saved arrays. Those oracle fits do not serve images or new prompts. Warm timings charge all four reader controls together.
+
 ## Generate from the website
 
 From this repository in the domains workspace, with the configured mrun client and reachable fleet:

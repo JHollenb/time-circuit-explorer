@@ -1,0 +1,166 @@
+{
+  "claimBoundary": "Retrospective development bandwidth and oracle capacity diagnosis. No fresh-input validation, serving oracle weights, fullencoder or image claim.",
+  "completeCollectedInventory": {
+    "bytes": 1330929,
+    "files": {
+      "capacity-receipt.json": {
+        "bytes": 15285,
+        "sha256": "4bba8ff6e9ed4e54be3632d56b1e3c1afc83767639ae8291edb2a64d0f38e391"
+      },
+      "observations.jsonl": {
+        "bytes": 1195029,
+        "sha256": "bbb8e382f82b39d4fc33248ec571aaf1687b0e40e257abf6d4667ced2d4d0dca"
+      },
+      "prediction-seal.json": {
+        "bytes": 9323,
+        "sha256": "b8c0c3e3bec919e3bb535b3ac633a41a387c7b71e974623d42a39f4ba3502250"
+      },
+      "reference-receipt.json": {
+        "bytes": 16524,
+        "sha256": "c6f317f9d613c3fc3148ac7d00576a1c01f8cd4b001acbd9e75ac39e310bedc2"
+      },
+      "report.json": {
+        "bytes": 93167,
+        "sha256": "8e41d3add3516ca113863dda7f2ce2a2ec37537a8a7a00354ed590ef263a848d"
+      },
+      "request.json": {
+        "bytes": 1601,
+        "sha256": "138254a60b22c9a6344402696f35f7331dd60ee77b527239bf6e93d544d955e8"
+      }
+    }
+  },
+  "jobID": "job-0b11cc784689",
+  "losslessStreamTransports": [
+    {
+      "conversion": "Byte-lossless gzip, exact decompression verified.",
+      "published": "observations.jsonl.gz",
+      "publishedBytes": 149422,
+      "publishedSHA256": "55261795dd565f71b55d2e894fdda59630e06bf4f433fec3bd6aac418cafe325",
+      "source": "observations.jsonl",
+      "sourceBytes": 1195029,
+      "sourceSHA256": "bbb8e382f82b39d4fc33248ec571aaf1687b0e40e257abf6d4667ced2d4d0dca"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "b0469bdf6a2927d92f7b35863339bed834c89f4f4e05133c262bca54821d8c34",
+      "size_bytes": 24851
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1793962294.0961788,
+      "sha256": "b0469bdf6a2927d92f7b35863339bed834c89f4f4e05133c262bca54821d8c34",
+      "size_bytes": 24851
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1793962293.9507446,
+      "sha256": "b0469bdf6a2927d92f7b35863339bed834c89f4f4e05133c262bca54821d8c34",
+      "size_bytes": 24851
+    }
+  },
+  "publication": "All compact reports/raw observations preserved; full routing forecasts and target-assisted capacity weights/arrays remain near compute, hash-verified.",
+  "remoteResultRoot": "/mnt/hdd8tb/mrun-work/job-0b11cc784689/response-result",
+  "requestSHA256": "18dd2f3b60a38be059cd2b7da3494ea937d4441f6217b95e4a28b458b289d146",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-0b11cc784689",
+      "job_log": {
+        "bytes": 307,
+        "sha256": "c484fd098a282bb5b50ce19d70b9a22788efd33c6f5f7eae3ce339e5c69db094"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-0b11cc784689/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "pillow>=10.0",
+        "python",
+        "-u",
+        "landmark_routing_diagnostics.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-0b11cc784689",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-0b11cc784689/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1793962294.0853305
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1793962294.1160274
+        },
+        {
+          "name": "process.launch",
+          "ts": 1793962294.123967
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1793962294.1537156
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1793962299.2747083
+        },
+        {
+          "name": "finished",
+          "ts": 1793962299.2957535
+        }
+      ]
+    },
+    "elapsed_s": 5.51,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "b0469bdf6a2927d92f7b35863339bed834c89f4f4e05133c262bca54821d8c34",
+      "size_bytes": 24851
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 260.4,
+    "peak_vram_mb": 0.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-landmark-routing-public-v1"
+}
