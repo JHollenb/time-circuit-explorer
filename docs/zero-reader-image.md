@@ -1,5 +1,7 @@
 # The contextual reader contributes useful image computation
 
+Cycle30 follow-up: the [uniform causal summary](uniform-reader-image.md) now executes its8,208-byte numerical state law exactly, but merges the objects and reaches122.68%pairedPNGerror. Its mixed endpoint/row improvements over zero remain visible. The original cycle29 contribution account follows.
+
 Deleting the first contextual read degrades the tested images. The [frozen rank-one reader](raw-rank-one-image.md) preserves both objects and their left/right swap; zero A produces a distorted textured red object and zero B largely loses the red cube. Signed PNG response error is **104.17% for zero versus10.72% for rank-one**. This establishes useful rank-one contribution compared with deleting the read on this pair. It does not establish that query scoring, top4 selection or the expensive moment representation is necessary.
 
 ![Native, rank-one and zero-reader images with signed response errors](results/zero-reader-image-figure/zero-reader-image.png)

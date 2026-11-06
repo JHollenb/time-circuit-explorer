@@ -1,0 +1,234 @@
+{
+  "conversion": "Chronological FP64 sum/division, then FP64->FP32->BF16 RNE via encoder_atoms.words",
+  "cpuSecondsAfterImports": 0.711352921,
+  "fields": {
+    "A": {
+      "bytes": 4194432,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-b2412411d329/arrays/reader/A-head.npy",
+      "payloadSHA256": "e51a610542f44c79bf053ebb204e470172f8e3bea62a627b84f6812fd1f827d0",
+      "sha256": "6616c8da23b5db55e709b0f38451f1d5d3e1b1c3ea2faa53a66a2813700f8501",
+      "shape": [
+        1,
+        512,
+        4096
+      ],
+      "storedDtype": "uint16"
+    },
+    "B": {
+      "bytes": 4194432,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-b2412411d329/arrays/reader/B-head.npy",
+      "payloadSHA256": "c3d7578ad819c89c8fb67eea3053db6535cfdeec39adf0f8eade30ade7f45bb4",
+      "sha256": "07056e2043aa0dba8a5d952c411338210f013935d4ef9f0a67e386b17a1772f8",
+      "shape": [
+        1,
+        512,
+        4096
+      ],
+      "storedDtype": "uint16"
+    }
+  },
+  "frameworkCalls": 0,
+  "highWaterRSSKiB": 251988,
+  "lexicalRows": [
+    {
+      "activeTokens": 35,
+      "firstArithmeticSeconds": 1.3414965313859284,
+      "id": "A",
+      "idsPayloadSHA256": "e086b3f87eb78664350301224af57a3ad780b19b28f79b90ab0447efbdf13932",
+      "maskPayloadSHA256": "f35cc01b2fecd463167e2973f92e484a95c03ebb0a20d4c70d4e4af59bf702fd",
+      "path": "/mnt/hdd8tb/mrun-work/job-b2412411d329/lexical/A.npz",
+      "prompt": "A red cube to the left of a blue sphere on a plain white tabletop. Two separate objects, studio photograph.",
+      "renderedTextSHA256": "4fb6d2e1b0dfd99e2657123da8674b86fe177746965d701766d7b478a191919f",
+      "sha256": "ad946f690895ca4f657c03cf82d44a22390aa94f8d851acb28817788d5311ea4"
+    },
+    {
+      "activeTokens": 35,
+      "firstArithmeticSeconds": 0.07645197631791234,
+      "id": "B",
+      "idsPayloadSHA256": "0ffc1e5ec4ce8d0ed9977d34fed384f9d0e4981721000906308e969febe9cf60",
+      "maskPayloadSHA256": "f35cc01b2fecd463167e2973f92e484a95c03ebb0a20d4c70d4e4af59bf702fd",
+      "path": "/mnt/hdd8tb/mrun-work/job-b2412411d329/lexical/B.npz",
+      "prompt": "A red cube to the right of a blue sphere on a plain white tabletop. Two separate objects, studio photograph.",
+      "renderedTextSHA256": "fa6b3bf87e9467f3d679aa4a12a020f035f58b13801a9b09a73b6b7a2279e0d4",
+      "sha256": "2940f24ee0944396570606c845792ea96a647ce91111c48b9f98bb7a73bba467"
+    }
+  ],
+  "lexicalSealSHA256": "6dc629927a1eb3c1dcbfa2e46c2d3dc40046be6f431a11f620f6684d45ca0316",
+  "numpyVersion": "2.5.4",
+  "originalDenseProjections": 0,
+  "packets": [
+    {
+      "id": "A",
+      "path": "/mnt/hdd8tb/mrun-work/job-b2412411d329/reader/A-mean.npz",
+      "sha256": "9da1d20e969a5ad962d4298516e626a858fa53b8e0af8270ab4ac1fcd5deed90"
+    },
+    {
+      "id": "B",
+      "path": "/mnt/hdd8tb/mrun-work/job-b2412411d329/reader/B-mean.npz",
+      "sha256": "cc674dd7b2a2897e00babdfa19ebadb8cfda9dc80d654ff12ad18b7e495d6b97"
+    }
+  ],
+  "policy": "uniform-causal-values-fp64-fp32-bf16-v1",
+  "requestSHA256": "1a27311e0ad1508df000954df227d8af7863096a1d9644e3ee1eed0a67f5f62b",
+  "schema": "tce-uniform-reader-seal-v1",
+  "scope": "Uniform live causal V summaries; noQK/anchors/top4/KVindex/quadraticmoments/envelopes. Core state is not total working set; bundled lexical/input/output/diagnostics paid.",
+  "sourceAtomFiles": [
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/manifest.json",
+      "sha256": "9a155bd1410c52909997bacaf1d1aac2f9e90be86dc269d5e7edfab2b5285432"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/tokenizer.json",
+      "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/chat_template.jinja",
+      "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/coverage.npy",
+      "sha256": "e6ae5faf47930cb70a9fa89b594ff6b1ad57d39e4e0d51794fe36c73d9f4f93f"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/row-hashes.npy",
+      "sha256": "25f5a892cc19bc7895f45312e03a5c7e323ff3e9e2a966d20ebdf1860b18ee88"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/rope.npy",
+      "sha256": "bb7217ccf0922b61c986cc94801fd26962c0bb2e848b6ebe47b7cf3d9e0dfc9a"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0000.npy",
+      "sha256": "50d081fe3476649e8d5da584b0c94244bd70493bc6b1e4d71650dc54ee63f333"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0001.npy",
+      "sha256": "c45ce7fb64ac4aee1aa6ba4e20f56fab8a7c4904a61cf19f999d29eef216a143"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0002.npy",
+      "sha256": "fb8651de491441a2d1246c836f44cbbc0008384fcea9bfce16cff58078f1eede"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0004.npy",
+      "sha256": "20d2c3f37d0b2be79f2f07f638ff67748ab8bac75be277efd11abe97c158b826"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0008.npy",
+      "sha256": "98e0a60741fc69d8000527d5ce8d930862397c56efaa70ada4598dd305867230"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0012.npy",
+      "sha256": "0661ed2d3c9a3902178f9f17ad062f9450ed23dd1d2eb56439921479ff04eba5"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0016.npy",
+      "sha256": "24cf7ce5f7d44dcb3c15034101f563a674c2270c548d520635e4858acd88042f"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0017.npy",
+      "sha256": "7fb8433f7844965525d98293cc0f46b43fd48edfe539f3d9d8e37e0cf109a189"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0020.npy",
+      "sha256": "a9299d7f912323c0eeacbeb55d066d169eead4ca8217010630577958d3fbc06c"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0027.npy",
+      "sha256": "4622e5a1bbc2afd9e12ca7a91c3ff2746c8eef0a6faeb3ab20f9ee34bc0b6052"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0028.npy",
+      "sha256": "e0d5f1e2b71298cf8e0faccc243affb655db015ee08ee4eb317129ef70d933d5"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0046.npy",
+      "sha256": "ec39a216671ac103c42851e6a4840e7a8a053f25f2ad51cca25320b01387b47d"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0049.npy",
+      "sha256": "00689403de1c43fdff9f2020a49bb8d278a0476bdbc7c41efa4c7f416cb5a79e"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0150.npy",
+      "sha256": "ad0f932e9d40878f15b2a5305be923cfd5f616098e8631f7a0319677cfea93e2"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0172.npy",
+      "sha256": "c292e5e19c8f3e49d429c2009f7a81a5a9230a5d7c6cb4fd29f85ed1491838b5"
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/atoms-0296.npy",
+      "sha256": "6042c71b4f09814bd7a6bb9502f9b3e3c61f961a24b9f6dbc918fe0ff1af33ad"
+    }
+  ],
+  "states": [
+    {
+      "clock": 512,
+      "count": 35,
+      "id": "A",
+      "path": "/mnt/hdd8tb/mrun-work/job-b2412411d329/reader/A-state.npz",
+      "sha256": "5063bf19b8e0e1301d48313ac331447dc76702d5670717bc8932c22d5d8b08c1"
+    },
+    {
+      "clock": 512,
+      "count": 35,
+      "id": "B",
+      "path": "/mnt/hdd8tb/mrun-work/job-b2412411d329/reader/B-state.npz",
+      "sha256": "5cb9ea08246824cd65a308b0e144bd50c36c5755813527dc0838c6d10af40384"
+    }
+  ],
+  "work": [
+    {
+      "admittedKeys": 35,
+      "arithmeticSeconds": 0.0055358330719172955,
+      "clockPayloadBytes": 8,
+      "coreStatePayloadBytes": 8208,
+      "countPayloadBytes": 8,
+      "decodedInputPayloadBytes": 4194304,
+      "directBF16WordMismatches": 0,
+      "directRawMaxAbsDifference": 0.0,
+      "emittedQueryRows": 512,
+      "expandedQueryScalarWrites": 2097152,
+      "fallbackCalls": 0,
+      "id": "A",
+      "independentDiagnosticSeconds": 0.15716331079602242,
+      "meanDivisions": 524288,
+      "momentEnvelopeBytes": 0,
+      "prefixCountDiagnosticBytes": 4096,
+      "queryKeyScoreProducts": 0,
+      "rawOutputPayloadBytes": 16777216,
+      "retrievalIndexBytes": 0,
+      "roundedOutputPayloadBytes": 4194304,
+      "sumPayloadBytes": 8192,
+      "valueSumAdditions": 35840
+    },
+    {
+      "admittedKeys": 35,
+      "arithmeticSeconds": 0.005498823709785938,
+      "clockPayloadBytes": 8,
+      "coreStatePayloadBytes": 8208,
+      "countPayloadBytes": 8,
+      "decodedInputPayloadBytes": 4194304,
+      "directBF16WordMismatches": 0,
+      "directRawMaxAbsDifference": 0.0,
+      "emittedQueryRows": 512,
+      "expandedQueryScalarWrites": 2097152,
+      "fallbackCalls": 0,
+      "id": "B",
+      "independentDiagnosticSeconds": 0.1572404340840876,
+      "meanDivisions": 524288,
+      "momentEnvelopeBytes": 0,
+      "prefixCountDiagnosticBytes": 4096,
+      "queryKeyScoreProducts": 0,
+      "rawOutputPayloadBytes": 16777216,
+      "retrievalIndexBytes": 0,
+      "roundedOutputPayloadBytes": 4194304,
+      "sumPayloadBytes": 8192,
+      "valueSumAdditions": 35840
+    }
+  ],
+  "workerSecondsAfterImports": 2.5330814216285944
+}
