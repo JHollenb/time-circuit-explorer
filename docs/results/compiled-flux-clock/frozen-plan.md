@@ -1,0 +1,30 @@
+# Compile the deployed FLUX clock-only subgraph
+
+Status: cycle26 Astra-selected next cut; not staged or executed. Follow the [complete masked-encoder image result](../complete-masked-encoder-image.md) with one finite-domain partial-evaluation experiment. This is learned-output memoization with paid offline compilation, not a zero-neural generator or semantic-law claim.
+
+Cycle27 implementation contract: two fresh children isolate paid compilation from selected-weight image serving. Compile each clock separately atB1. The output-normalization replacement checks exact temb and live x.dtype, gathers only the compiled conditioning affine, then calls the original normalization object and identical native scale/shift expression. It thereby removes that clock-only SiLU as well; it never caches normalized live state. Bind the sealed parent's numerical profile, attention-processor classes and checkpoint explicitly. Both children deny actual target-array/PNG reads, recheck original asset signatures and keep version-tracked parameters. Only the parent scoring process opens saved evaluation values after the complete candidate seal. Native checkpoint header has169BF16 tensors; eliminate exactly six and materialize the163-name complement in serving. Guarded CUDA envelope14336MBRAM/13000MBVRAM/4CPU is justified by the actual parent job's7925.7MBRSS/9148MBVRAM and inapplicable genericB64preview; expected120s, timeout600s, no retries. Publish only compact constants/receipts/PNGs, keeping complete image arrays near compute.
+
+For the pinned Klein4B four-step schedule, guidanceNone, no reference-image path, no reference/KV-cache mode and the existing B1/BF16 execution profile, inspect and bind every dependency of
+
+$$
+z_k=T_\theta(\tau_k),\qquad
+(m_k^{img},m_k^{txt},m_k^{single})=
+(M_{img,\theta}(z_k),M_{txt,\theta}(z_k),M_{single,\theta}(z_k)),
+\qquad a_k=W_{out}\operatorname{SiLU}(z_k).
+$$
+
+These operands depend on deployed clock bytes and parameters, not E, latent or live residual state. Compile all four tuples offline with the unchanged original qualified source and precision. Serving gathers the constants. The retained a is only `norm_out.linear`'s conditioning affine; `norm_out.norm`, scale/shift application and every state-dependent path stay live.
+
+The exact modules are `time_guidance_embed` (two timestep-embedding affines), `double_stream_modulation_img`, `double_stream_modulation_txt`, `single_stream_modulation` (one affine each) and `norm_out.linear` (one affine): six eliminated affines per denoiser invocation. Width3072 suggests four clocks ×(3072+18432+18432+9216+6144)×2 =442,368BF16 payload bytes before metadata. Derive actual shapes, removed parameter bytes and MACs from the frozen checkpoint header; do not substitute this estimate for that account.
+
+Preserve the actual source clock path. Pinned `pipeline_flux2_klein.py` expands scheduler t and casts it to latent dtype before passing `timestep/1000`; `transformer_flux2.py` casts that argument to hidden-state dtype and multiplies by1000. Bind the resulting actual bit patterns at every replaced live boundary. Algebraically simplifying divide/multiply or starting from nominal mathematical timesteps can change finite outputs. Reinspect the exact executed source before implementation. Bind checkpoint, schedule, dtype, reduction/attention profile, guidance and mode; unsupported clocks/profiles reject with no dense fallback.
+
+Fresh serving must never load the eliminated learned parameter tensors. Construct the original model on meta, replace those submodules with parameter-free table modules before selected weight materialization, and retain the live `norm_out` normalization. Loading a full checkpoint then ignoring six maps is insufficient. Separate full-file identity hashing from selected tensor loading. Record loaded parameter names/bytes and instrument the actual live calls, table inputs and unchanged parameter versions. Include definitions from `embeddings.py` and `normalization.py` in source custody as well as the transformer/pipeline source.
+
+Reuse the current two full E fields, inherited noise and already sealed full image targets from `job-394733a01129`. Execute only two new candidate renders with independent own-state latent handoffs and identical fresh schedulers. Seal both complete candidates before opening target output fields for comparison. Do not launch another Qwen run, reference-image campaign, precision search or seed search.
+
+Retain every clock operand and complete image boundaries, including C, velocities, committed latents, decoder inputs/raw outputs, floatRGB and originalPNG. Compare signed paired response and endpoint discrepancies after sealing. Preserve finite discrepancies and undefined zero denominators; no accuracy threshold aborts exploration. Verify all retained bytes near compute. Source/shape/finite-value/identity/selected-load/actual-handoff/clock applicability checks protect execution integrity.
+
+Use one guarded mrun CUDA lease, strict preflight, no retries, actual B1/four-step geometry and compatible measured history after intent-first preview. Freeze worker identities and resource rationale before staging. Measure compilation/setup/table loading/gathers, source hashing, candidate image time, CPU, RSS/VRAM and actual removed/remaining primitive counts separately. Keep comparisons honest about cache/loading order; no runtime speedup claim without a matched assay. Keep complete tensors near compute and publish compact evidence.
+
+The dependency analysis makes this finite clock table prompt-independent within its execution contract; two image checks do not certify arbitrary prompts or profiles. Attention, MLPs, context projection and VAE remain paid. The arbitrary-prompt zero-neural goal remains unchanged and unsolved.

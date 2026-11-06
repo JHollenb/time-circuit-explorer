@@ -1,0 +1,496 @@
+{
+  "contract": {
+    "EShape": [
+      1,
+      512,
+      7680
+    ],
+    "KVMode": null,
+    "checkpointSHA256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+    "dtype": "torch.bfloat16",
+    "guidance": null,
+    "latentShape": [
+      1,
+      1024,
+      128
+    ],
+    "numericalProfile": {
+      "bf16ReducedPrecisionReduction": true,
+      "cublasWorkspaceConfig": ":4096:8",
+      "cudaMatmulTF32": false,
+      "cudnnBenchmark": false,
+      "cudnnDeterministic": true,
+      "cudnnTF32": false,
+      "deterministicAlgorithms": true,
+      "float32MatmulPrecision": "highest",
+      "threads": 4
+    },
+    "referenceTokens": 0,
+    "schedule": {
+      "sigmas": [
+        1.0,
+        0.9580853581428528,
+        0.8839818835258484,
+        0.7174965739250183,
+        0.0
+      ],
+      "sigmasPayloadSHA256": "47eb6994cb84cb458fd9a90cd3eb5e5890856680c154abec35f26e833e400852",
+      "timesteps": [
+        1000.0,
+        958.0853881835938,
+        883.9818725585938,
+        717.49658203125
+      ],
+      "timestepsPayloadSHA256": "1e400c851167980caf2cd88333c7b146d8c3168b4b49d817e7df5271dbda734b"
+    }
+  },
+  "rows": [
+    {
+      "clock": 0,
+      "clockOperands": {
+        "internal": {
+          "bytes": 130,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock0-clockOperands-internal.npy",
+          "payloadSHA256": "96ce2eb8334102e2104ca443760fe484dddf47f7d618cc99c0cd5eabc90ef071",
+          "sha256": "34992fd242324b3a4e1a4062d2d22868d2dab69f91ac27eafb9e308f8c613615",
+          "shape": [
+            1
+          ],
+          "storedDtype": "uint16"
+        },
+        "pipeline_cast": {
+          "bytes": 130,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock0-clockOperands-pipeline_cast.npy",
+          "payloadSHA256": "96ce2eb8334102e2104ca443760fe484dddf47f7d618cc99c0cd5eabc90ef071",
+          "sha256": "34992fd242324b3a4e1a4062d2d22868d2dab69f91ac27eafb9e308f8c613615",
+          "shape": [
+            1
+          ],
+          "storedDtype": "uint16"
+        },
+        "scheduler": {
+          "bytes": 132,
+          "logicalDtype": "torch.float32",
+          "path": "clock-constants/clock0-clockOperands-scheduler.npy",
+          "payloadSHA256": "07883481b5c147464597d44401db095d88c2a6b049fbbcd7b278de98a5ceeb71",
+          "sha256": "8ac82041407bb780fb099ce0c0960ad39a7290af298124f0bde5cf62628565a6",
+          "shape": [
+            1
+          ],
+          "storedDtype": "float32"
+        },
+        "transformer_argument": {
+          "bytes": 130,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock0-clockOperands-transformer_argument.npy",
+          "payloadSHA256": "b9c205bdac187f20bf876cea369cb6032ad1bf69043b31d716b36b8defbffdf2",
+          "sha256": "6fb82915d44e59582d5411a2c10b50d5bd9492e6f5aace1d3c02e98d120f65d3",
+          "shape": [
+            1
+          ],
+          "storedDtype": "uint16"
+        }
+      },
+      "fields": {
+        "double_img": {
+          "bytes": 36992,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock0-fields-double_img.npy",
+          "payloadSHA256": "6c371daef6e7eb9faa8ff67ad612256e90db82062332e2c700d94dd4c38e5bfb",
+          "sha256": "46040a0643e3e5d28fd5f815cd7aef9ac5055e8b8ee13930bc9950423869ffe1",
+          "shape": [
+            1,
+            18432
+          ],
+          "storedDtype": "uint16"
+        },
+        "double_txt": {
+          "bytes": 36992,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock0-fields-double_txt.npy",
+          "payloadSHA256": "248f6bbc8c70be5845d4b84b26865efe6ed0eccba4dea50f784796d01af36575",
+          "sha256": "1c3ff7a5cf5a0e3bdf13aac1f42a6982b77197706a78a791786aa9dff60f8061",
+          "shape": [
+            1,
+            18432
+          ],
+          "storedDtype": "uint16"
+        },
+        "output_affine": {
+          "bytes": 12416,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock0-fields-output_affine.npy",
+          "payloadSHA256": "62fbca1dbae2ba4891126d2586a37b8685a3258a371744cd40415aa718bd8534",
+          "sha256": "c0c3b3f5f876352d570870594496a72e3fb0a7b0d613622fbf6a338d239db7f2",
+          "shape": [
+            1,
+            6144
+          ],
+          "storedDtype": "uint16"
+        },
+        "single": {
+          "bytes": 18560,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock0-fields-single.npy",
+          "payloadSHA256": "7dff0f63272f8ce2ba5e62ff85b6a9a864a4be34b135162bacb00c20bcba33c2",
+          "sha256": "80100c1d2900499a9f4cb510daf3bef7b6f8e18d8b6ea499272715d710a05a2d",
+          "shape": [
+            1,
+            9216
+          ],
+          "storedDtype": "uint16"
+        },
+        "temb": {
+          "bytes": 6272,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock0-fields-temb.npy",
+          "payloadSHA256": "45a653d6912ad86bc7f59dfe478ab3668c09d948fbc6b7982636b6a1bf6771fe",
+          "sha256": "d5574b7054d08dfef9d2ee79e2e646aa35efd48ebd4a4451015eace9130fb319",
+          "shape": [
+            1,
+            3072
+          ],
+          "storedDtype": "uint16"
+        }
+      }
+    },
+    {
+      "clock": 1,
+      "clockOperands": {
+        "internal": {
+          "bytes": 130,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock1-clockOperands-internal.npy",
+          "payloadSHA256": "23aceb7ecedebf94a934cdf6c9d08a47590b15ac781ef3c4632dc9cdfe80f9d9",
+          "sha256": "12997b3ebbd56d1e6237a5112aa82324cd39a37888a27d93e847035c132cd3d4",
+          "shape": [
+            1
+          ],
+          "storedDtype": "uint16"
+        },
+        "pipeline_cast": {
+          "bytes": 130,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock1-clockOperands-pipeline_cast.npy",
+          "payloadSHA256": "23aceb7ecedebf94a934cdf6c9d08a47590b15ac781ef3c4632dc9cdfe80f9d9",
+          "sha256": "12997b3ebbd56d1e6237a5112aa82324cd39a37888a27d93e847035c132cd3d4",
+          "shape": [
+            1
+          ],
+          "storedDtype": "uint16"
+        },
+        "scheduler": {
+          "bytes": 132,
+          "logicalDtype": "torch.float32",
+          "path": "clock-constants/clock1-clockOperands-scheduler.npy",
+          "payloadSHA256": "edb10d1fecece64549e46a0555aa2687a3129b743f6142e67c5acb0500a15d1b",
+          "sha256": "ee08465d8556476c6e8fbfa8f443010969c8c6b27bc108155378c3db46c6702c",
+          "shape": [
+            1
+          ],
+          "storedDtype": "float32"
+        },
+        "transformer_argument": {
+          "bytes": 130,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock1-clockOperands-transformer_argument.npy",
+          "payloadSHA256": "1386336317c7913a683ffa98d64405e653e6980f1e58c367dd5c4aa23435f52a",
+          "sha256": "a230ba60e26c71a352be7b161bccc7986cb5034c44d0222d515d519e73428fec",
+          "shape": [
+            1
+          ],
+          "storedDtype": "uint16"
+        }
+      },
+      "fields": {
+        "double_img": {
+          "bytes": 36992,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock1-fields-double_img.npy",
+          "payloadSHA256": "675e633cc55f0d2bcfec6b436da19426f020c61fa08259b5b13710dbe610cf90",
+          "sha256": "4c046c334f2d877b142d97ab01a4c4e403cec7c06607546193d0ca542c1411c6",
+          "shape": [
+            1,
+            18432
+          ],
+          "storedDtype": "uint16"
+        },
+        "double_txt": {
+          "bytes": 36992,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock1-fields-double_txt.npy",
+          "payloadSHA256": "f3e03def055a2219b4788d5dae546e857566e2d948f8e3ab2a52f4b68666862d",
+          "sha256": "09880b63155168820e31d2c6e9a86b7bc0138a9682807ccb9cd41cab56b0b3a2",
+          "shape": [
+            1,
+            18432
+          ],
+          "storedDtype": "uint16"
+        },
+        "output_affine": {
+          "bytes": 12416,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock1-fields-output_affine.npy",
+          "payloadSHA256": "e58f5d052c78e95bcf8bc4894f01e87df0399dbf9571eb31e87c638c685b8154",
+          "sha256": "403b3dbb68d9f7bb05f3f3866642c45ed926d87484b7744166934201ca7b53ac",
+          "shape": [
+            1,
+            6144
+          ],
+          "storedDtype": "uint16"
+        },
+        "single": {
+          "bytes": 18560,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock1-fields-single.npy",
+          "payloadSHA256": "33001806e8c2fd5dfc19515ec247349b0975daf6f45549dd1dce69f47b15fea1",
+          "sha256": "79a0d7739d01088afbf0b0959a0ef88deb1cdbfa05d073208e50ee23bc8bb099",
+          "shape": [
+            1,
+            9216
+          ],
+          "storedDtype": "uint16"
+        },
+        "temb": {
+          "bytes": 6272,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock1-fields-temb.npy",
+          "payloadSHA256": "d3633d92f53cc93827175c24794249cde19e6e7cc435923c55bd288b2423a5d0",
+          "sha256": "df8b5cc3e51731275f24ef5b56b2523236cf90426af584615128252e5d7217f3",
+          "shape": [
+            1,
+            3072
+          ],
+          "storedDtype": "uint16"
+        }
+      }
+    },
+    {
+      "clock": 2,
+      "clockOperands": {
+        "internal": {
+          "bytes": 130,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock2-clockOperands-internal.npy",
+          "payloadSHA256": "921e9994887f6f2bccc7794c6eaeac274fca824fe70c797bf61d354da64b44c4",
+          "sha256": "8cd018ca43026e4d185125ba8a66d08c8bc8757afd1da117f2bd14b04ee65dc7",
+          "shape": [
+            1
+          ],
+          "storedDtype": "uint16"
+        },
+        "pipeline_cast": {
+          "bytes": 130,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock2-clockOperands-pipeline_cast.npy",
+          "payloadSHA256": "921e9994887f6f2bccc7794c6eaeac274fca824fe70c797bf61d354da64b44c4",
+          "sha256": "8cd018ca43026e4d185125ba8a66d08c8bc8757afd1da117f2bd14b04ee65dc7",
+          "shape": [
+            1
+          ],
+          "storedDtype": "uint16"
+        },
+        "scheduler": {
+          "bytes": 132,
+          "logicalDtype": "torch.float32",
+          "path": "clock-constants/clock2-clockOperands-scheduler.npy",
+          "payloadSHA256": "4de021e2e3653ba10074820f45159e3913c575423bb96df44182f04301d800bc",
+          "sha256": "64461f26ceae9bcd7a1df26a44c5295b12f139d7e8a2f4a38cea022371598339",
+          "shape": [
+            1
+          ],
+          "storedDtype": "float32"
+        },
+        "transformer_argument": {
+          "bytes": 130,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock2-clockOperands-transformer_argument.npy",
+          "payloadSHA256": "b1d92f8c179e501dc57bd7618e954f6ac5c9d4f1aeb0a4d2776661601c09252b",
+          "sha256": "85ecb5ffc7305e89aa0a7dc8a4eacda577d190597b5e721d99ab9ab8cef1ec4a",
+          "shape": [
+            1
+          ],
+          "storedDtype": "uint16"
+        }
+      },
+      "fields": {
+        "double_img": {
+          "bytes": 36992,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock2-fields-double_img.npy",
+          "payloadSHA256": "ce262fc8e7eedc851e0cca5c57b8621b9b3e13654cbef5986bae43127cb75423",
+          "sha256": "0e2da16b8491c00fa23fdd2b7e2cd4e131828975980df211f6b66dd60707e178",
+          "shape": [
+            1,
+            18432
+          ],
+          "storedDtype": "uint16"
+        },
+        "double_txt": {
+          "bytes": 36992,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock2-fields-double_txt.npy",
+          "payloadSHA256": "bbaf5213c0f2741d03422acbd4db8c3fb8075eb2bb68975cf9eed3740e2b18c4",
+          "sha256": "58b3d4993f4ddd18ea70703c646e8a6a19ab1dd49115f213b26da4ef1ae91c65",
+          "shape": [
+            1,
+            18432
+          ],
+          "storedDtype": "uint16"
+        },
+        "output_affine": {
+          "bytes": 12416,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock2-fields-output_affine.npy",
+          "payloadSHA256": "f79295fa35a0930798ee781ef41c840bdb1d613cee17cb40c4cc415c172e571c",
+          "sha256": "e19d6b00df9092ec811307a061a13107816ad23cc1caeed1dcba8251e10dce26",
+          "shape": [
+            1,
+            6144
+          ],
+          "storedDtype": "uint16"
+        },
+        "single": {
+          "bytes": 18560,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock2-fields-single.npy",
+          "payloadSHA256": "9ad7cd8c7ea237338c2c4f3faef2891855b54153d52250b1f67c96066cf3a306",
+          "sha256": "ceadd43e954d1388d24a4f0a531e7d571a0cdd91415dc85a0ecd2f8368f2b90a",
+          "shape": [
+            1,
+            9216
+          ],
+          "storedDtype": "uint16"
+        },
+        "temb": {
+          "bytes": 6272,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock2-fields-temb.npy",
+          "payloadSHA256": "51620d17a1fa146af2d06915d47026cbd0b4c2bc754b3414ad78e01a37a628eb",
+          "sha256": "eef3d189305b02f4cb8368e7c5eb7ec1b56e3016297c47f71ae977af758b2c0f",
+          "shape": [
+            1,
+            3072
+          ],
+          "storedDtype": "uint16"
+        }
+      }
+    },
+    {
+      "clock": 3,
+      "clockOperands": {
+        "internal": {
+          "bytes": 130,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock3-clockOperands-internal.npy",
+          "payloadSHA256": "fcffba9828157b107d2a65ae7dfc288eb1d7ccd70196e2ef2ea88f79f0190b4e",
+          "sha256": "ff8d4de1a597174bb004cdf3259ad911542546c6ccbc3c117f109cd8b43ac887",
+          "shape": [
+            1
+          ],
+          "storedDtype": "uint16"
+        },
+        "pipeline_cast": {
+          "bytes": 130,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock3-clockOperands-pipeline_cast.npy",
+          "payloadSHA256": "fcffba9828157b107d2a65ae7dfc288eb1d7ccd70196e2ef2ea88f79f0190b4e",
+          "sha256": "ff8d4de1a597174bb004cdf3259ad911542546c6ccbc3c117f109cd8b43ac887",
+          "shape": [
+            1
+          ],
+          "storedDtype": "uint16"
+        },
+        "scheduler": {
+          "bytes": 132,
+          "logicalDtype": "torch.float32",
+          "path": "clock-constants/clock3-clockOperands-scheduler.npy",
+          "payloadSHA256": "4fdca59d334eb24c5be43407e6625e10a3c309b56ff7ead5ef1004f3cd150a90",
+          "sha256": "621c50637a673c744c5b0022293c83a3b5184365db86a5826ddac328234ca246",
+          "shape": [
+            1
+          ],
+          "storedDtype": "float32"
+        },
+        "transformer_argument": {
+          "bytes": 130,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock3-clockOperands-transformer_argument.npy",
+          "payloadSHA256": "43558d41d9b527c2f0374b9ac126d3c1a4afaf5c91103e3231162f6c565501f7",
+          "sha256": "0a126339208513fe826ea242cb34c1dff7ba8ffe7f95553484124958a66a6049",
+          "shape": [
+            1
+          ],
+          "storedDtype": "uint16"
+        }
+      },
+      "fields": {
+        "double_img": {
+          "bytes": 36992,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock3-fields-double_img.npy",
+          "payloadSHA256": "b68da67c6e8c689a06200e4664e5b3b7f74cc480721e2e5e3dbc4e1d166b8152",
+          "sha256": "a61508715739b6325ab72efa1864eb38ad9e611dfb30a2a82f8e27812c81c15b",
+          "shape": [
+            1,
+            18432
+          ],
+          "storedDtype": "uint16"
+        },
+        "double_txt": {
+          "bytes": 36992,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock3-fields-double_txt.npy",
+          "payloadSHA256": "585d99de22cf74e5d0c59f2a1918d301e8977f84be80e1cf640077110ddb8762",
+          "sha256": "b2334295aec6356a24cd3703aa74d2a27f2876eaaa72770b4b3f203496c6454d",
+          "shape": [
+            1,
+            18432
+          ],
+          "storedDtype": "uint16"
+        },
+        "output_affine": {
+          "bytes": 12416,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock3-fields-output_affine.npy",
+          "payloadSHA256": "e6f918de248664863c9251794abca6dd64ccb660154a9443c6d3236ee661c0ff",
+          "sha256": "ad152984a1d2382ee735070a7732aee7d7b98593ada59124afcfa95cd6b0ae79",
+          "shape": [
+            1,
+            6144
+          ],
+          "storedDtype": "uint16"
+        },
+        "single": {
+          "bytes": 18560,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock3-fields-single.npy",
+          "payloadSHA256": "964dff9bce19fceeb9be42392960eece2e9e438bfb35698fda81faa0be5f3a9e",
+          "sha256": "aa2a89a4d9f625d28140b74153277a6ce78b547a46539ec1d345e587c52751ac",
+          "shape": [
+            1,
+            9216
+          ],
+          "storedDtype": "uint16"
+        },
+        "temb": {
+          "bytes": 6272,
+          "logicalDtype": "torch.bfloat16",
+          "path": "clock-constants/clock3-fields-temb.npy",
+          "payloadSHA256": "09301525bc01e1cfd7f5a3098e4be3b9730df4f218081970cd0085685d0ec0d7",
+          "sha256": "917102fc40a99302f78ab25ac7b214e30bf98b24f9d85a558e900ccffcdda13e",
+          "shape": [
+            1,
+            3072
+          ],
+          "storedDtype": "uint16"
+        }
+      }
+    }
+  ],
+  "schema": "tce-flux-clock-table-v1",
+  "scope": "Byte-identical clock operands with relative transport paths; original learned compilation paid. No image backend by itself.",
+  "sourceTableSHA256": "ee858f422b8fadf42fdb77902851d947e3f981df9605d49d9e846ec6c9c44492"
+}

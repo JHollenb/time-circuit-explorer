@@ -1,0 +1,42 @@
+{
+  "backend": "diffusers",
+  "batch_size": 1,
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "height": 512,
+  "model": "flux2-klein-4b-distilled",
+  "ownedSources": [
+    "flux_clock_study.py",
+    "flux_clock.py",
+    "flux_clock_compile.py",
+    "flux_clock_images.py",
+    "encoder_atoms.py",
+    "paired_fields.py",
+    "masked_kv_study.py",
+    "complete_masked_study.py"
+  ],
+  "parentJobID": "job-394733a01129",
+  "planSHA256": "e0dd10089ffeeefc2b49454bfcef7dec09dd7a1938487e2fc7522f549a7004c2",
+  "protocol": "Compile4actualclockserialB1 with original6affines offline. Fresh serving structurally excludes6learnedtensors and loads remainingweights only. Two candidate ownstate images from supplied2E/inheritednoise. Evaluation target values denied in compile/serve. Sealcompletecandidates then compare alreadysealedfulltargets. No newQwen/referencecampaign, precisionsearch orseedsearch.",
+  "requestSHA256": "c28e77a478c882bebaacb676bcb403a59dbc06485d2cd6e5c89cc53a33761c78",
+  "schema": "tce-compiled-flux-clock-request-v1",
+  "scope": "Finite-domain learned-clock partial evaluation with original live denoiser/VAE paid. Not arbitrary-prompt zero-neural generation.",
+  "seq_len": 1536,
+  "sourceHashes": {
+    "complete_masked_study.py": "f52633bc9d729b2a5032e024331d9b20fcee8cb993941cab87c197089cdcff99",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "flux_clock.py": "bde499ff527f624fcd1b62a8f6f0b2fbaf70eebc7b7835fcd7d4c6403b4e0b2b",
+    "flux_clock_compile.py": "1c2fb06a5bd404f32618d8752dc64010b645bad99fa3693abade3fb94852d89c",
+    "flux_clock_images.py": "07937f34196540c9f998f6749787270b665b1d6de8d4cdc1bd55785eaa5ffb5f",
+    "flux_clock_study.py": "eaccf6bdb75678ac6acb5a371f8858201cf83dbac4de83868b70d5570e4beddc",
+    "frozen-plan.md": "e0dd10089ffeeefc2b49454bfcef7dec09dd7a1938487e2fc7522f549a7004c2",
+    "inputs.json": "49416cb9a9764d15bc1723db51840834c8352fa5f466c8e124231d37d4f8f2b5",
+    "masked_kv_study.py": "920416ce49d823b1337a7f6d9f5fca90c8047723bb6b1d37dc09967114b6ad89",
+    "paired_fields.py": "408e035cb2f2f99558dbbe5abccdc281a5deade195abdbbc003549318ef09e88",
+    "resource-basis.json": "3394140d0c00cee47d586da50063afbf8324dfdf2001d14fd448b8f61495937b",
+    "targets.json": "439caf050e9935debfa4c369adf38801ecf08efacc397c7308e39eb971c4f7fb"
+  },
+  "steps": 4,
+  "timeoutSeconds": 600,
+  "width": 512
+}
