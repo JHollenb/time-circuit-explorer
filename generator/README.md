@@ -28,6 +28,8 @@ The [matched tail-centroid study](../docs/tail-centroid-tilt.md) reuses the prev
 
 The [source-witness study](../docs/source-witness-support.md) compiles source-cell witnesses from retained lexical atoms. `source_witness_study.py stage|submit|collect` compares own-state anchor/witness selectors under the same centroid read, sealing both before reference/consumer work. `publish_source_witness.py verify|publish` also authenticates touched atom shards. The result is heterogeneous and overall worse; this is retrospective component research, not an arbitrary-prompt backend.
 
+The [full-prefix selector diagnostic](../docs/full-prefix-selector-objective.md) supplies the actual query to four-key selection. `selector_objective_study.py stage|submit|collect` seals current-query/envelope supports and raw/BF16 banks before signed correction diagnostics and the original receiving consumer. `publish_selector_objective.py verify|publish` authenticates complete near-compute arrays and publishes lossless diagnostic/observation compression. Current-query selection improves the retained paired state response substantially, but full-prefix scans are diagnostic work; the [next proposed retrieval assay](../docs/plans/certified-current-query-retrieval.md) has not run. This is not the website's arbitrary-prompt image backend.
+
 ## Generate from the website
 
 From this repository in the domains workspace, with the configured mrun client and reachable fleet:

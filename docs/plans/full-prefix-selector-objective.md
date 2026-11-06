@@ -1,6 +1,6 @@
 # Supply the actual query, then separate selector objectives
 
-Status: **proposed after cycle14 and Astra review; not staged or measured**. The [source-witness selector](../source-witness-support.md) slightly improves active state response but worsens padding and overall error, with lower correction-mass capture. No material implementation defect was found. Distinguish inadequate source-query coverage from a poor max-score objective before compiling another candidate.
+Status: **implemented and measured in cycle15**, guarded job`job-deaae907863b`. The [result](../full-prefix-selector-objective.md) reports current-query state error41.76% overall/8.33%active versus95.96%/32.85% for the source anchor; envelope error remains higher. The original protocol below is retained. The [source-witness selector](../source-witness-support.md) motivated separating source-query coverage from a poor max-score objective; neither the diagnostic nor its improvement completes arbitrary-prompt zero-neural images.
 
 Use the same retrospective saved pair,64anchors, routes, source mean c_g, four-key budget and centroid-tail law. For each allowed current causal key, let
 
