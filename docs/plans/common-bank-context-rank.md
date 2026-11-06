@@ -1,6 +1,6 @@
 # Does one shared finite-bank state preserve prompt changes?
 
-Status: proposed after the [cycle7 source-frozen experiment](../source-conditioned-context.md) and Astra's result/newest-post review. Not staged or measured. Better broad reconstruction did not preserve several small contextual changes. The next discriminator tests finite-bank rank capacity rather than another Gaussian seed, mixture or centering adjustment.
+Status: **implemented and measured in cycle8**. The [common-bank result](../common-bank-context.md) preserves this design: one1593query×1108key bank, one actual SVD and actual signed prefix statistics. Rank128 improves three paired effects to20–37%, while Japanese-color all-query error remains117.8% and padding865.1%. This is transductive signed capacity, not an unseen-query feature rule or an image result.
 
 ## One common bank, not one fit per prompt
 

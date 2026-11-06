@@ -14,6 +14,8 @@ The [context-state experiment](../docs/compiled-context-statistics.md) tests the
 
 The [source-conditioned follow-up](../docs/source-conditioned-context.md) compiles one coordinate geometry from token/position atoms and tests eight fresh strings through actual prefix statistics. `context_diagonal_diagnostics.py` runs the preceding saved-only geometry assay; `context_source_study.py stage|submit|collect` runs compilation, fresh serving and post-seal references. The compiler includes mixture between-mean variance; serving retains both gauge and original-gauge approximate log partitions. Broad reconstruction improves, but prompt-change errors remain large. This is not a faithful full encoder or image-generation backend.
 
+The [common-bank capacity assay](../docs/common-bank-context.md) fits one globally normalized kernel/SVD across all eight saved prompts. `context_common_study.py stage|submit|collect` runs the finite CPU job; `context_common_bank.py` advances signed prefix statistics in a fresh process. It improves three paired effects but has signed-read failures and no unseen-query rule. Public factors are model-derived fitted information, not a zero-neural generator.
+
 ## Generate from the website
 
 From this repository in the domains workspace, with the configured mrun client and reachable fleet:

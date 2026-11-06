@@ -1,0 +1,28 @@
+{
+  "backend": "numpy-fp64",
+  "bankPolicy": "Deduplicate queries and active keys by(tokenID,absolutePosition), checking duplicateBF16Q andKV equality. Retain actual occurrence lists, values, masks and padding queries.",
+  "cpuThreads": 1,
+  "device": "cpu",
+  "kernelPolicy": "One FP64 unmasked exp(QK/sqrt128), globally row normalized. One actual thin SVD, unique bank rows equally weighted. A=U sqrt(S), B=V sqrt(S); no clipping.",
+  "parentJobID": "job-b372c2f27c66",
+  "parentRequestSHA256": "abff7fa2ba69da4d93c59bfc6023611237545bbd1f9bb0404bed4f0e4bae6220",
+  "primaryObservable": "Four paired-change errors/cosines/raw scales and output-slice transport, split active/padding. Endpoints and matrix norm are secondary.",
+  "ranks": [
+    16,
+    32,
+    64,
+    128
+  ],
+  "repeats": 5,
+  "requestSHA256": "87617bc79562329e9a58f56866c0570b0d9d4e63f1dd6b7405002520af620965",
+  "schema": "tce-common-bank-context-request-v1",
+  "scope": "Target-assisted transductive common-bank signed-rank capacity on all eight saved prompts. No unseen-query rule, held-out serving or image claim.",
+  "signedReadPolicy": "No epsilon/fallback/clipping. Denominator0/nonfinite reads remain invalid per row; preserve raw heads, masks, signed mass and cancellation. Other rows/ranks continue.",
+  "sourceHashes": {
+    "context_common_bank.py": "b570645360e205268994a339871933e2a540b4bd885e89cd8dd2400c0cebfb0e",
+    "context_common_study.py": "27ae571b7ffd22924765e99dbb2d0a6490b7bc621db5ed85ae0a470a5d3567c5",
+    "context_statistics_study.py": "0d44d03f2a8eabd32b5d7034a449f7a46e7d8abe0252dd1b94d229c31f1ea1c8",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "source.json": "61b61e327d1515aafa105bb6202c74aa2ac9420a948fa3e5c761d6f34c071aa2"
+  }
+}
