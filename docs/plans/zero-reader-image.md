@@ -1,6 +1,6 @@
 # Does the contextual reader contribute beyond lexical residual input?
 
-Status: cycle28 Astra-selected next cut; not staged or executed. The [raw-reader integration](../raw-rank-one-image.md) preserves the left/right image response at10.72% relative error, even though the packed conditioning response error is125.43%. It has no contextual-reader ablation. Test that dependency before adding rank, precision or more prompts.
+Status: executed in cycle29 as `job-0b613bbe336d`; [result](../zero-reader-image.md). Zero has104.17%PNG response error versus10.72%rank-one, with visibly degraded objects. Rank-one still has worse paired E error. The original pre-execution text is retained in the payload's `frozen-plan.md`. The [raw-reader integration](../raw-rank-one-image.md) preserves the left/right image response at10.72% relative error, even though the packed conditioning response error is125.43%. Test that dependency before adding rank, precision or more prompts.
 
 Reuse the exact A/B red-cube/blue-sphere strings, complete lexical source,151936-ID manifest, template/tokenizer/positions/512-row mask, source checkpoint, original numerical profiles and seed314159 noise. Use the already sealed full targets from `job-394733a01129` and rank-one candidate evidence from `job-7b206109b072`. These are previously seen targets; this is a retrospective contribution test, not prospective generalization. No new reference images, prompt selection, seed search or parameter fitting.
 

@@ -1,5 +1,7 @@
 # Follow a frozen contextual reader from raw prompts to pixels
 
+Cycle29 follow-up: the [zero-reader control](zero-reader-image.md) now demonstrates useful rank-one contribution versus deleting the complete first read, with104.17%versus10.72%pairedPNGerror. It does not establish that the query-specific reader machinery is necessary. The original integration account below describes the cycle28 evidence.
+
 The frozen rank-one reader now starts from two raw strings and supplies all 32 first-layer attention heads to a complete image continuation. Both original PNGs preserve the requested red-cube/blue-sphere left/right swap. PNG RMS errors to the previously sealed native images are **6.19 and 4.06** on a 0–255 scale. The signed B−A image response has **10.72% relative RMS error**, despite **125.43%** error in the full conditioning response. This is a measured integration result: most original learned computation remains, and the reader's necessity has not yet been tested.
 
 ![Original references, candidates and state errors](results/raw-rank-one-image-figure/raw-rank-one-image.png)
