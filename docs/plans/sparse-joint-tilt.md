@@ -1,6 +1,8 @@
 # Sparse joint tilt with an append-only memory tail
 
-Status: **proposed after cycle11 and Astra review; not staged or measured**. The [complete-bank attribution](../complete-attention-bank.md) shows substantial partition and value-weighted exponential terms with signed cancellation. A partition-only oracle still leaves 88.4% paired head error. The 273 MB moment core is about 130 times the complete BF16 K/V payload. The next cut tests a joint numerator/partition response while removing C_vy entirely.
+Status: **implemented and measured in cycle12**; the [result](../sparse-joint-tilt.md) retains the original plan below. Four-key state is8.55MB versus272.66MB for covariance. Active paired state error improves to40.8%, padding remains131.6%, and a separately scored full-query-score oracle reaches41.8% overall. The [next proposed cut](tail-centroid-tilt.md) freezes support and tests the tail law before changing selection geometry.
+
+The [complete-bank attribution](../complete-attention-bank.md) shows substantial partition and value-weighted exponential terms with signed cancellation. A partition-only oracle still leaves 88.4% paired head error. The 273 MB moment core is about 130 times the complete BF16 K/V payload. This cut tests a joint numerator/partition response while removing C_vy entirely.
 
 Use the already-scored complete-bank pair as a retrospective representation test, not fresh validation. Preserve the same 64 source landmarks per query head and nearest-source route. Compare fixed support budgets m=1,2,4. No target head, output error or fitted coefficient selects the serving support.
 

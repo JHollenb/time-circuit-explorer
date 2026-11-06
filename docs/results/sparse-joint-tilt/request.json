@@ -1,0 +1,44 @@
+{
+  "backend": "numpy-fp64",
+  "budgets": [
+    1,
+    2,
+    4
+  ],
+  "consumerPolicy": "Recompute original fullblock on all512rows for all six sparse/oracle arms plus exact/zero consistency controls. Parent nearest/transport arrays retained as supplied references, not refreshed candidates. Shared FP64/BF16 equations, nativebackend parity unmeasured.",
+  "cpuThreads": 1,
+  "device": "cpu",
+  "gauge": "t=(x-l) dot(y-mu_l), full live anchor keymean reconstructed from retained entries and positive tail.",
+  "oraclePolicy": "Only after complete primary seal: rank abs(p_l expm1(t)) over every allowed causal key. No future keys or output-error fit. Same selected set updates numerator and partition; mass-ranked support is not output-optimal sparse capacity.",
+  "pairs": [
+    [
+      "crane-behind",
+      "crane-before"
+    ]
+  ],
+  "parentJobID": "job-29760e2a3970",
+  "parentRequestSHA256": "33482c6ce96896df972d5c9781d4287236e6de2af35969e8be1ea34232e234aa",
+  "primaryObservables": "Paired state attention-deletion effect, head response/cosines, active/padding/before8/at8/after8. Perhead diagnostics include support overlap/churn/address8retention/omitted absolute tilt mass/exponential remainder mass and direct restricted-law closure. Raw arrays retained nearcompute.",
+  "requestSHA256": "9028caa1ece44b08b1566ff412694d07edffb2416508c304fbfdba2ab9710f35",
+  "schema": "tce-sparse-joint-tilt-request-v1",
+  "scope": "Already-scored saved pair, all32heads/all512rows. Serving-eligible source-score topm and append-only positive tail, noCvy. Full-query-score oracle after primary seal, original learned consumer offline. No fresh generalization or zero-neural image claim.",
+  "sourceHashes": {
+    "attention_bank.py": "e5617d704fcb66b6a34d2e20b61045a15865df949788c4406ba77e9d32325326",
+    "attention_bank_study.py": "50a788ea1460c41007f1784983f221f4f9e5c48402f8ec395a7aeba75b669e32",
+    "context_landmarks.py": "8e81cd5fa735bdca8169c96225f3df319b09689d30dc3b8e3d96b7f756bb7f2c",
+    "context_source_geometry.py": "3ce2e0b8e66d2174247f5cac2042d6183b30a45b18704f9c7f600fbefd8d012c",
+    "context_statistics.py": "6f86949f47160890bd58a41174fe99809d6dce8a3e67222be09f7e77e961b057",
+    "context_statistics_study.py": "0d44d03f2a8eabd32b5d7034a449f7a46e7d8abe0252dd1b94d229c31f1ea1c8",
+    "context_transport.py": "8b94d46a45cd635a538000d2d2ab5eee39d82369ddcf3ff9a2766f1fb80ab665",
+    "context_transport_study.py": "28d9d7bb4b849a675dcdc0a90db2728100e02505aa3b1ee5c2b657f621895e95",
+    "encoder-atoms-source.json": "9605e7f4a734f0a39bc70dbae880936998289cb5625b1d4dd3327b3c4e6fbc85",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "serve-source.json": "4e29162c5bce88d13a4ac486174dde5a869a5864ea244d1ea25c0d5150467a93",
+    "source.json": "8e341d7af2ca01d8863a07e73ef365fcd5c6a1d8f5e21c3bc395f9fa1bcebf18",
+    "sparse_tilt.py": "1b6033f137bd3981d8ebf9ec42d1178c0208e2857db109e3e6dce56183da8788",
+    "sparse_tilt_study.py": "35e301cb1e52651683bcff7099ab9be6486de2faa4faabb2988aaccddc94eff7",
+    "transport_consumer.py": "ea238479b9a54f3ea61c9a4deffef1099a71ac8af54befed96c0331c3cd27efd"
+  },
+  "supportPolicy": "Fixed anchor scores l dot(y-sourcecenter); retain topm occurrences, earlier position wins ties. Evictions/rejections append to tail with original scores; no subtraction. Separate states per budget; no KVpayload dedup saving claimed.",
+  "timeoutSeconds": 600
+}

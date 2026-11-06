@@ -22,6 +22,8 @@ The [live query-transport experiment](../docs/query-transport-context.md) adds s
 
 The [complete attention-bank study](../docs/complete-attention-bank.md) extends prediction to all 32 first-layer heads, with no exact replacement heads. `attention_bank_study.py stage|submit|collect` freezes one fresh raw-string pair, compiles source-only banks, seals all candidate heads, then evaluates the original block consumer on all 512 rows. `attention_remainder.py stage|submit|collect` separately attributes its already-scored error to exact partition/value remainders and BF16 defects, with baseline-assisted one-address controls. Neither is a new zero-neural image backend.
 
+The [sparse joint-tilt study](../docs/sparse-joint-tilt.md) tests a positive top-m/tail state without the covariance tensor on that retained pair. `sparse_tilt_study.py stage|submit|collect` seals all32head banks before its separate current-prefix oracle and original fullblock consumer; `publish_sparse_tilt.py verify|publish` authenticates retained bytes. Four-key core state is8.55MB, but padding response remains poor. The [next plan](../docs/plans/tail-centroid-tilt.md) compares tail laws with support frozen. These are component experiments on supplied ports, not the site's arbitrary-prompt image backend.
+
 ## Generate from the website
 
 From this repository in the domains workspace, with the configured mrun client and reachable fleet:

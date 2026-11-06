@@ -1,0 +1,44 @@
+{
+  "schema": "tce-sparse-joint-tilt-evidence-v1",
+  "timestamp": "2026-11-06T12:42:02.232Z",
+  "tests": 61,
+  "testScope": "Tiny synthetic mechanics, not pretrained-model or arbitrary-prompt coverage.",
+  "runs": [
+    {
+      "jobID": "job-f1e1fa692435",
+      "result": "sparse-joint-tilt",
+      "requestSHA256": "9028caa1ece44b08b1566ff412694d07edffb2416508c304fbfdba2ab9710f35",
+      "runExit": 0,
+      "verifyExit": 0,
+      "streams": 1,
+      "records": 46080,
+      "watchFires": 0,
+      "instrumentStatus": "target-streams-only",
+      "terminalClaimReceipts": 0,
+      "physicalAddressJoins": 0,
+      "files": 11,
+      "bytes": 2751634,
+      "observations": 46080,
+      "publicHashesAndLosslessStreamsVerified": true,
+      "stagedAndCurrentSourceHashesMatch": true,
+      "workerSourceHashes": {
+        "context_landmarks.py": "8e81cd5fa735bdca8169c96225f3df319b09689d30dc3b8e3d96b7f756bb7f2c",
+        "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+        "sparse_tilt.py": "1b6033f137bd3981d8ebf9ec42d1178c0208e2857db109e3e6dce56183da8788",
+        "context_transport.py": "8b94d46a45cd635a538000d2d2ab5eee39d82369ddcf3ff9a2766f1fb80ab665",
+        "context_statistics.py": "6f86949f47160890bd58a41174fe99809d6dce8a3e67222be09f7e77e961b057",
+        "transport_consumer.py": "ea238479b9a54f3ea61c9a4deffef1099a71ac8af54befed96c0331c3cd27efd",
+        "context_statistics_study.py": "0d44d03f2a8eabd32b5d7034a449f7a46e7d8abe0252dd1b94d229c31f1ea1c8",
+        "context_transport_study.py": "28d9d7bb4b849a675dcdc0a90db2728100e02505aa3b1ee5c2b657f621895e95",
+        "sparse_tilt_study.py": "35e301cb1e52651683bcff7099ab9be6486de2faa4faabb2988aaccddc94eff7",
+        "attention_bank.py": "e5617d704fcb66b6a34d2e20b61045a15865df949788c4406ba77e9d32325326",
+        "context_source_geometry.py": "3ce2e0b8e66d2174247f5cac2042d6183b30a45b18704f9c7f600fbefd8d012c",
+        "attention_bank_study.py": "50a788ea1460c41007f1784983f221f4f9e5c48402f8ec395a7aeba75b669e32"
+      }
+    }
+  ],
+  "verificationOutput": "watch: status=ok ledgers_broken=0 ledgers_checked=0 ledgers_missing=0 ledgers_missing_expected=1; claims: status=skipped; target_scope: status=ok claims_current=0 claims_drifted=0 claims_missing=0 instrument_status=target-streams-only receipts=0 streams=1; exit 0 (ok)",
+  "scope": "Post-job observation-stream sweep; absent fire ledger is expected for this no-fire stream. Instrument verification is not scientific certification.",
+  "localFreeBytesObserved": 10140655616,
+  "storageScope": "Observation only; last actual cold archive cycle10, next review due cycle13 or earlier pressure. No new deletion; full arrays and original weights remain near compute."
+}

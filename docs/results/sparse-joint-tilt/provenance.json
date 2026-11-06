@@ -1,0 +1,194 @@
+{
+  "claimBoundary": "Retrospective serving-eligible sparse law on saved ports, separate current full-query-score oracle and original learned fullblock consumer. Not freshrawtext validation, fullencoder or strictzero-neural images.",
+  "completeCollectedInventory": {
+    "bytes": 10921828,
+    "files": {
+      "observations.jsonl": {
+        "bytes": 9334541,
+        "sha256": "82a1de880e55faed59f672b396704dddf7fd152c5f34f17f7f25d6b06321ee3f"
+      },
+      "prediction-seal.json": {
+        "bytes": 61100,
+        "sha256": "83f3022f4b8b0838445a674cf5fb375aab00c3ebcb2eb3ddffcf3ba963039547"
+      },
+      "reference-receipt.json": {
+        "bytes": 8541,
+        "sha256": "457d836c87d524ad52e12f4c63e14533373e68b1feceee354dd0700062408884"
+      },
+      "report.json": {
+        "bytes": 730439,
+        "sha256": "040486a4bda698a026e30c380c3b2d1d46d13d4d4bd51bf10c347376fe809cb2"
+      },
+      "request.json": {
+        "bytes": 3433,
+        "sha256": "c768a64241faa76a8c3b22c91f33d6dc79afc50b5f7795226a6e2c14d3789cbe"
+      },
+      "serve-source.json": {
+        "bytes": 746,
+        "sha256": "4e29162c5bce88d13a4ac486174dde5a869a5864ea244d1ea25c0d5150467a93"
+      },
+      "source.json": {
+        "bytes": 6209,
+        "sha256": "8e341d7af2ca01d8863a07e73ef365fcd5c6a1d8f5e21c3bc395f9fa1bcebf18"
+      },
+      "support-diagnostics.json": {
+        "bytes": 776819,
+        "sha256": "f908741d233138071606c506821fad51ca795b4a3a43d2bc383f669941c03ec5"
+      }
+    }
+  },
+  "jobID": "job-f1e1fa692435",
+  "losslessStreamTransports": [
+    {
+      "published": "observations.jsonl.gz",
+      "publishedBytes": 1112049,
+      "publishedSHA256": "f42e4af9889ee2431bea58fca2df78da746f04347a86bce81b144afd008d9d12",
+      "source": "observations.jsonl",
+      "sourceBytes": 9334541,
+      "sourceSHA256": "82a1de880e55faed59f672b396704dddf7fd152c5f34f17f7f25d6b06321ee3f"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "de5370c360ee1e5a8b351d5698d244ebcbd187db6b461654ecf2d74de096fcbb",
+      "size_bytes": 46251
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1793967890.57423,
+      "sha256": "de5370c360ee1e5a8b351d5698d244ebcbd187db6b461654ecf2d74de096fcbb",
+      "size_bytes": 46251
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1793967890.4964106,
+      "sha256": "de5370c360ee1e5a8b351d5698d244ebcbd187db6b461654ecf2d74de096fcbb",
+      "size_bytes": 46251
+    }
+  },
+  "publication": "All compact reports and lossless consumer observations retained; full states/support/correction/consumer arrays stay near compute with independent byte checks.",
+  "remoteResultRoot": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/response-result",
+  "requestSHA256": "9028caa1ece44b08b1566ff412694d07edffb2416508c304fbfdba2ab9710f35",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-f1e1fa692435",
+      "job_log": {
+        "bytes": 599,
+        "sha256": "85ff76362227902fc6a2fcfba4fc4477be2395c8cb79b50b739d37fcdc755155"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-f1e1fa692435/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "python",
+        "-u",
+        "sparse_tilt_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1793967890.5632505
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1793967890.5929375
+        },
+        {
+          "name": "process.launch",
+          "ts": 1793967890.604272
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1793967890.648152
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1793967943.8038
+        },
+        {
+          "name": "finished",
+          "ts": 1793967943.825323
+        }
+      ]
+    },
+    "elapsed_s": 53.35,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "de5370c360ee1e5a8b351d5698d244ebcbd187db6b461654ecf2d74de096fcbb",
+      "size_bytes": 46251
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 1472.2,
+    "peak_vram_mb": 0.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-sparse-joint-tilt-public-v1"
+}

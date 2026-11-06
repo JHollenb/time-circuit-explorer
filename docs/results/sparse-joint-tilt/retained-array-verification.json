@@ -1,0 +1,905 @@
+{
+  "allowedRoots": [
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435",
+    "/mnt/hdd8tb/mrun-work/job-29760e2a3970",
+    "/mnt/big/llm-models/FLUX.2-klein-4B/text_encoder/model-00001-of-00002.safetensors",
+    "/mnt/big/llm-models/FLUX.2-klein-4B/text_encoder/config.json"
+  ],
+  "files": {
+    "/mnt/big/llm-models/FLUX.2-klein-4B/text_encoder/config.json": {
+      "bytes": 1536,
+      "sha256": "214b4c29a0d975e9fddf9994a5673f22cb2c4c5750352f9227c2c3251ebeab40"
+    },
+    "/mnt/big/llm-models/FLUX.2-klein-4B/text_encoder/model-00001-of-00002.safetensors": {
+      "bytes": 4967215360,
+      "sha256": "8c0506e7f4936fa7e26183a4fd8da4e2bdbc5990ba64ae441f965d51228f36ea"
+    },
+    "/mnt/hdd8tb/mrun-work/job-29760e2a3970/compiled/bank-assets.npz": {
+      "bytes": 4347690,
+      "sha256": "25d48680c831e45d6841220a3231be1f79e62ebf1303556877613424bd0adafa"
+    },
+    "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-bank.npz": {
+      "bytes": 42765474,
+      "sha256": "571028b845043bf444d0a8747bf93792e8f1f22b4d05996d8780524de561b289"
+    },
+    "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-port.npz": {
+      "bytes": 8926882,
+      "sha256": "cce9881e5836864102cf852cd4617337e221d50aa3eee0e3049a3179c9ce5e19"
+    },
+    "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-bank.npz": {
+      "bytes": 42765474,
+      "sha256": "02a9222623aa9b43f5b2e94408a49ed95b98a0da610aef5884d79cccdfe179f0"
+    },
+    "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-port.npz": {
+      "bytes": 8926882,
+      "sha256": "5839d2ed451c7882aaa638000ff61ab09c5f0ea9dfb7fd888dd569a6920535d0"
+    },
+    "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/prediction-seal.json": {
+      "bytes": 21367,
+      "sha256": "7de7436375d8c9ca12f9d3691d1f13b37c8a0bed726ae9ef0f07abe84e3409e4"
+    },
+    "/mnt/hdd8tb/mrun-work/job-29760e2a3970/reference-work/crane-before-consumer.npz": {
+      "bytes": 56634510,
+      "sha256": "35a09c52f09ac7faef0a7681c6338ad4008a0053b6759d4892a6e732c3e1fe7b"
+    },
+    "/mnt/hdd8tb/mrun-work/job-29760e2a3970/reference-work/crane-behind-consumer.npz": {
+      "bytes": 56634510,
+      "sha256": "d50dd4f62011c9e2d4872102ea5a8e89c068d7a0bac176aa8179904f8416435a"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state0.npz": {
+      "bytes": 171890,
+      "sha256": "3619358ac1d469bd1e6b52651e243d5f1979ead5a5b2c629a212cf090910a9bf"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state1.npz": {
+      "bytes": 171890,
+      "sha256": "126edf4ad5f71a76e78fbd4a3b39fb7c1906594bdb6e31c3c24c121ebc66bda3"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state10.npz": {
+      "bytes": 171890,
+      "sha256": "b811ed079055419a149348c0e79d107105a19c5fb81ec7511df8692a7204ea46"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state11.npz": {
+      "bytes": 171890,
+      "sha256": "28bcbe8baf6244075879c1d6499390a2f9ee5222f9e20dd3cf70f24fae2df19b"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state12.npz": {
+      "bytes": 171890,
+      "sha256": "235cef8553f94a47619722bea39132085737be9c831c6aed8f51d6b754fb9b98"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state13.npz": {
+      "bytes": 171890,
+      "sha256": "6d7596b90d7d7758d7ebd029f773b44fa2e3db2e82bb336d6c1670a16035c10b"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state14.npz": {
+      "bytes": 171890,
+      "sha256": "85714b821dac45c89fa522a07a1faa7ff97a85529cf318e6ae268397b0930dae"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state15.npz": {
+      "bytes": 171890,
+      "sha256": "494cf815781bd137b0f433a5d619157d5bd0b38bdccf16cf12a8b57db1f819df"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state16.npz": {
+      "bytes": 171890,
+      "sha256": "d50b8b32d6da8dc1bd4e2bf8f2b2ef8974fe14c34bb16b664a4b115ed649612f"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state17.npz": {
+      "bytes": 171890,
+      "sha256": "1679dcfc617146605d2aa64fc0436234d0bfaf796aa1578b2736036a386de8ab"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state18.npz": {
+      "bytes": 171890,
+      "sha256": "eb9b0998c5da2801873257594f54e6405fefdffb205ae989f8b5e3524f4d4048"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state19.npz": {
+      "bytes": 171890,
+      "sha256": "18fae8ee11595993fbe863f241d762fe9bf073942d539e6cbd81439c0ba78f61"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state2.npz": {
+      "bytes": 171890,
+      "sha256": "e032f4dbbf85c04dc6f8dce0fbb09325e1bc167d7311eb09ad6b1ebdf9413cf8"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state20.npz": {
+      "bytes": 171890,
+      "sha256": "8def885b053e24be39420f3cfa8fc00554fb5b108069c4fa41d2469b8b2bfcf6"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state21.npz": {
+      "bytes": 171890,
+      "sha256": "dba4bd0e79e7dc177c1ec15f34aaaeb336ad44f727eef58cbe73285fc60e3160"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state22.npz": {
+      "bytes": 171890,
+      "sha256": "c265d96c84dceef4327564e9d7f728bf288bcc6a6590091f574a47ad63019547"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state23.npz": {
+      "bytes": 171890,
+      "sha256": "1cac7963a441ba028819d03427d7a75cd82cc3ed2710a8a28de0f9cdc9aec034"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state24.npz": {
+      "bytes": 171890,
+      "sha256": "db2619e758d01ad4aee2a1856cdc25f898e832708e66f193bdc3e495bfdf9fc5"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state25.npz": {
+      "bytes": 171890,
+      "sha256": "d6f46fd92a214d2ce311f042dfd3fee5bc32ccdd819f31da8cc8976a56173baa"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state26.npz": {
+      "bytes": 171890,
+      "sha256": "2905ef0d5c14aeed6699ca9d220809f625a6de8195cbfe1f4bc04a37ae2f4a53"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state27.npz": {
+      "bytes": 171890,
+      "sha256": "31f8dc8695a5c360498013cb137f05fc14303ea6ad5547bb7d9297b8f780396f"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state28.npz": {
+      "bytes": 171890,
+      "sha256": "a647204bda0b1bf7ce5f48ead5f00ced8971ac89caada4661d47960a2fb66f30"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state29.npz": {
+      "bytes": 171890,
+      "sha256": "86711d07758a7bb55f089d029d995875226737275283837f1777d0d8a7d34940"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state3.npz": {
+      "bytes": 171890,
+      "sha256": "4377d74c044344ffda50673640eedf80c5402f756315f3352da7520d698a2c8d"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state30.npz": {
+      "bytes": 171890,
+      "sha256": "46e3b7718c8505141c7e74afa2006502d1590663ddcb8776a7355e835a5c994b"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state31.npz": {
+      "bytes": 171890,
+      "sha256": "21c1b03eafbcb91831f07ab29d13a2aaa5a5592ba5353ae6059108a838081601"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state4.npz": {
+      "bytes": 171890,
+      "sha256": "75496c9fd0f91d2b81f142fae03ad31a40c84a856510887a6a044bc3397565cf"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state5.npz": {
+      "bytes": 171890,
+      "sha256": "a29e1cfeecb45725336ec4d9589be7914204831f6ca983aa6a536ada53f5f82e"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state6.npz": {
+      "bytes": 171890,
+      "sha256": "09b157a0013f924a70d0e044ce136728af9231f4be87c3226c83e54b9f8e1036"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state7.npz": {
+      "bytes": 171890,
+      "sha256": "70df07c7ad8c7bd249a7a854bb3406d7d734aad5efa0dd4da8446a23683f923a"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state8.npz": {
+      "bytes": 171890,
+      "sha256": "209d587367afc0a92081b834f09043a8b5b2118e9a0d379bfe64194f978cb01c"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1-state9.npz": {
+      "bytes": 171890,
+      "sha256": "d74e94a5c188aa373e63e0338be35e19688eadcc9e7f8f79affbaacba6cb0440"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m1.npz": {
+      "bytes": 22170672,
+      "sha256": "f8f23ac57aa5d6abdfc0f3c5565ad9f54d5e39ffc268de8842638f779bc050b0"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state0.npz": {
+      "bytes": 205682,
+      "sha256": "d768dcae0d3a30e097e9bb2e4428caa660211c3ac46db56181ecf342166e3e60"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state1.npz": {
+      "bytes": 205682,
+      "sha256": "766766e550d3a06b0fd39e91db6a7b86463c242d45ff9aad306d5a6b9233c857"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state10.npz": {
+      "bytes": 205682,
+      "sha256": "47b64f1bcf7025a7a9d0f58bef439ea0058a9987a524a9545abe947b605d06bf"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state11.npz": {
+      "bytes": 205682,
+      "sha256": "1fb2f2e5b7e1ab7587af44bfc25359d2ce81092b06911a51ad79bfc8777204ef"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state12.npz": {
+      "bytes": 205682,
+      "sha256": "ef3b7797e410b172d389d9d2de8f96d8fc5f77e6fadb5c1dc3e519f01066d5d7"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state13.npz": {
+      "bytes": 205682,
+      "sha256": "0bba137293d047bcd7dd58dd6abb32e7f0f6b08aaddcd4e207cca45a0d05502c"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state14.npz": {
+      "bytes": 205682,
+      "sha256": "5de6536ee1f23ebd164edf26d677c45940f245e1dc53469564417c8a465f7364"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state15.npz": {
+      "bytes": 205682,
+      "sha256": "700d96cbd0a5fec4fe9a2b5ed021a9cbd8ed260be996d379c824d93afcb624ed"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state16.npz": {
+      "bytes": 205682,
+      "sha256": "a3a9291f28030c5eba47f9cca2935dbc155de0fbc69a1a2c306347b41a4bec63"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state17.npz": {
+      "bytes": 205682,
+      "sha256": "a837be0e8106585e395f6dcf62094c3c5f14166fe85c08de52787225d0af7739"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state18.npz": {
+      "bytes": 205682,
+      "sha256": "f3272113755619e59df76d19c48dac7d829446401369d456bc9e6ec9c857bc76"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state19.npz": {
+      "bytes": 205682,
+      "sha256": "27f145af8299d781dce7c799caa239100dcb81ec22b68d238fab0e76add6406c"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state2.npz": {
+      "bytes": 205682,
+      "sha256": "d0008bc1f4720b2733974c3d712dff90108450092fd0d6f6293218d0abfb48a1"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state20.npz": {
+      "bytes": 205682,
+      "sha256": "147bb815db6b5b78d1224451ead075876c764406eda985d795205fa22fc9d18e"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state21.npz": {
+      "bytes": 205682,
+      "sha256": "2035a2719683b7e5d0c6f308bbf49a45de5cb91122ee6e2ef1ce38b00dcfb6ed"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state22.npz": {
+      "bytes": 205682,
+      "sha256": "f790e73860ab8383fd327fd641447dbcd1c82e6b7937da8362474dd5fe9ff6cf"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state23.npz": {
+      "bytes": 205682,
+      "sha256": "a71353167635d652803b4af57164a590951cb070620e765c8197f5c85bd12761"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state24.npz": {
+      "bytes": 205682,
+      "sha256": "1b272d684193a8f61fe8b1a9c28cd6eb7a50bcdec60203b798f23ed6b019b617"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state25.npz": {
+      "bytes": 205682,
+      "sha256": "aada689c946694faca72d6dab49a16356c048957c181600fcc8b7d27217d5e9b"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state26.npz": {
+      "bytes": 205682,
+      "sha256": "45fbc821c6134661730e48edc6da2915b28c3350da09f8e4f6e6fdb8118d2b6b"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state27.npz": {
+      "bytes": 205682,
+      "sha256": "7f71ce44b9d541f9d509f90f523f4304c5ccd7fd80c556b06e547785f58ed84b"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state28.npz": {
+      "bytes": 205682,
+      "sha256": "0ff0bab567c098688b5534f5740ea6d3eb7e92b2cc0b1af8e590a855e5912783"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state29.npz": {
+      "bytes": 205682,
+      "sha256": "ceaf3679da88c573c907ebe08859be5a107cc9d47e687e27a87c62413b6f669a"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state3.npz": {
+      "bytes": 205682,
+      "sha256": "532f7013796bee5cc28373df83d0d7072c178ead932e44d2b7d84131a04ee856"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state30.npz": {
+      "bytes": 205682,
+      "sha256": "bd96144c49fbce76930e6e7e76f2ef91395543298403c96d0be0a7aa79aca906"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state31.npz": {
+      "bytes": 205682,
+      "sha256": "df5404a8c8997e373c3cc3364237b87f43475ffeeee9a7e9adb1c1bad88b734f"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state4.npz": {
+      "bytes": 205682,
+      "sha256": "a6ecbf4af57036f1bf772cc49224f51d468ebecb8af0c378705a4237dca9e055"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state5.npz": {
+      "bytes": 205682,
+      "sha256": "8e758594f3c070d1133f5b42dd3cb64a452cd12af6cc61c2f6e86ce511c4d91c"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state6.npz": {
+      "bytes": 205682,
+      "sha256": "3acd19ade4141d04e77b244203471e3abd7c89dbe25cf2ab607719e62bae77e1"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state7.npz": {
+      "bytes": 205682,
+      "sha256": "d2f9d102353ef2624f58f830d3580c7b13ce3e0240761d5a0b70db0c8bc774d1"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state8.npz": {
+      "bytes": 205682,
+      "sha256": "1ee74a518fa4de23d380c02a94acbfecd1954836c6ca31e516cde993bf521bd3"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2-state9.npz": {
+      "bytes": 205682,
+      "sha256": "992ad818ec9df0ec2925395fadf0e235a7cf5c2de5d50d0613b3b41e79652975"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m2.npz": {
+      "bytes": 22301744,
+      "sha256": "16686c8d960af173b949c14a7e7f257e11b26b2b874e5433e2c571ebfe932dfe"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state0.npz": {
+      "bytes": 273266,
+      "sha256": "19028002185192d54264074ee5fafd855bf8d1aaa949533eac93298e7397f001"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state1.npz": {
+      "bytes": 273266,
+      "sha256": "9ce3fbca5e1c6089afc3260571893e8560686356424d3f2c12191e6374cf8977"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state10.npz": {
+      "bytes": 273266,
+      "sha256": "e45c641fa1e297f75519429d6331c839b0545dd9d493af24196ae1e31d6a14ce"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state11.npz": {
+      "bytes": 273266,
+      "sha256": "e0f27b65a2530a21a2d59227ece676d343f40f24f5b54dfce9548dc7bb68a33f"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state12.npz": {
+      "bytes": 273266,
+      "sha256": "ce192748cba1c1928902e9fa202760cdb1c3834b82585632aaab73f2e0b75600"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state13.npz": {
+      "bytes": 273266,
+      "sha256": "b059479a381529c92448009e12fd1396d032f258315eea63b9e0b59d394f3dbe"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state14.npz": {
+      "bytes": 273266,
+      "sha256": "7cfe45ef9486939bb03b16e5fc101f4e1fb151cf9395488b4f9a8875fcf8ff0d"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state15.npz": {
+      "bytes": 273266,
+      "sha256": "73f0b2b58ed3b0a1c443181cb22511c57ca188e09c83179f177d214a08995a3d"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state16.npz": {
+      "bytes": 273266,
+      "sha256": "1d937f405ecc3940f4d7a50a26f710e0f34b74c7ff7e0540a4814cd8fe8b2443"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state17.npz": {
+      "bytes": 273266,
+      "sha256": "381e152a7a5cd89bca0ff96f7e68045e5e0b2ed1a86abfc2430d1a41d63126c9"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state18.npz": {
+      "bytes": 273266,
+      "sha256": "9848c5e9a0ed167bcf94cb56b4f78f6f0487d7de4f432cf1d534aba2cdb9c48b"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state19.npz": {
+      "bytes": 273266,
+      "sha256": "67a7ae525e09aba9a227e98a7eeb077b2e3cc2433a28a33c9581cf1639af8eb1"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state2.npz": {
+      "bytes": 273266,
+      "sha256": "56b93a6de3964316d5035ad25d0e710d69f077c531ebe83cd6b37ed205393004"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state20.npz": {
+      "bytes": 273266,
+      "sha256": "9c7a0f3a12d9bf0b0f718d792f8457017dadd635ab0c9bfe2ef43f38690552b1"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state21.npz": {
+      "bytes": 273266,
+      "sha256": "81f3d42398aef8b15c599334b23295e477a27928aca9cafb0ef6a0ff62412871"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state22.npz": {
+      "bytes": 273266,
+      "sha256": "3ad10d6b66b783e6a7a691fb5834709eee9ae7f42310e6b086f03927b48446c5"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state23.npz": {
+      "bytes": 273266,
+      "sha256": "0ebbfa3afab03ad21180d260f7d6436358bdf94c2233485302c8aa3bfe569bb7"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state24.npz": {
+      "bytes": 273266,
+      "sha256": "32895da8aa62434922779af4278632d57db180b228807c598e959e9ed8a850e0"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state25.npz": {
+      "bytes": 273266,
+      "sha256": "0a7fd68a7993eaf30c453e83dd27aa359d16661319683490878cc8e9cc0e4538"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state26.npz": {
+      "bytes": 273266,
+      "sha256": "b00491092aa1e927c2987835d7995d98d7c25a96d60a9e8937de64636023bc61"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state27.npz": {
+      "bytes": 273266,
+      "sha256": "f18a11c52fd6394626335435aa00069fb3f936279e882924e830c77bee23a6d6"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state28.npz": {
+      "bytes": 273266,
+      "sha256": "5d21ae6b6b893a39361fbc9b1ebd19a53f52a787808352a594ff982c1fe3f109"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state29.npz": {
+      "bytes": 273266,
+      "sha256": "32f61855660e66e6f1035387e332a3e2ea5e8e09632b9fe71972715cbe9c411e"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state3.npz": {
+      "bytes": 273266,
+      "sha256": "4bc86f0b00ac31f0b0911340a4c98187a297314fc154c1a61540b723357ab09f"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state30.npz": {
+      "bytes": 273266,
+      "sha256": "36afed6b03631d3412ac81630151a702e5677f1dfa22868bf8db62c3bb32a440"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state31.npz": {
+      "bytes": 273266,
+      "sha256": "175e6af03b45a5412f40dbc10b4fb1be406a63b35c9e59f6179bf4bbd50d4fe8"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state4.npz": {
+      "bytes": 273266,
+      "sha256": "b04c8ccfe3b55edd8a100d6563f23bef56199972da9b609d306c417c705e9496"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state5.npz": {
+      "bytes": 273266,
+      "sha256": "a2366c547dd6e26f6d82ec43ed7aa033f6a23420677ea86be0f7753f83864da6"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state6.npz": {
+      "bytes": 273266,
+      "sha256": "cc799d8f5595ba492df5b7f44166134bb1b5ddbed339b02afe1f086293dd2154"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state7.npz": {
+      "bytes": 273266,
+      "sha256": "d204bd2cf67149e9be2ce271d03eeedd833cc59bfba41bfcdfd7aa742742c088"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state8.npz": {
+      "bytes": 273266,
+      "sha256": "f04d9dd02a59f8997c87487a77d15e6fed1e50136950893f44d498daf398bd98"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4-state9.npz": {
+      "bytes": 273266,
+      "sha256": "a4552b2cdc29fd5608c76cef0de1b6598e4a014966b597f3956e8156fd7d6aca"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-before-m4.npz": {
+      "bytes": 22563888,
+      "sha256": "d57369d9fb3577ec5e331f5e78e3422b71f27aeb62650ee85bc352c7012014df"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state0.npz": {
+      "bytes": 171890,
+      "sha256": "2096eac506ac1f279783e159075865bbce20af9ef8b6b88d2936bf96fff5a709"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state1.npz": {
+      "bytes": 171890,
+      "sha256": "4205b7c3828abfd3bf3d61831997bdcb74a772b76706108fd503f6a08c288660"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state10.npz": {
+      "bytes": 171890,
+      "sha256": "bb20850cc4af8b99cfb0a5ce59e3875e7b105a977826f81cfca6ee4d9b348b21"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state11.npz": {
+      "bytes": 171890,
+      "sha256": "bf4efbb1715b9010e964fa2e9c1238aebf09a935cfa2f1258af68044c2d0756e"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state12.npz": {
+      "bytes": 171890,
+      "sha256": "c7b38072bb96a8487f48e254720ae4f644bd97d14ca9b29d08b483d558c5049a"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state13.npz": {
+      "bytes": 171890,
+      "sha256": "5c773ccea97f2be55520afce8c4d4226155f01faf5d78971131b33e52797cba7"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state14.npz": {
+      "bytes": 171890,
+      "sha256": "3f1807ec0a9b8fda958941605ef14f18e96ef90f802572e5ad7ae369fd6320bb"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state15.npz": {
+      "bytes": 171890,
+      "sha256": "ac96aee7937c44cab7f9acbb18fdf62d25ad8ef4cad41a5c6f150633035a2d28"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state16.npz": {
+      "bytes": 171890,
+      "sha256": "2617846d14ea20833d500e58ab6fa1ba4a004af5d2e7a36fd1654435efe08315"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state17.npz": {
+      "bytes": 171890,
+      "sha256": "7c8b478aac149bc18bfa4e11653568594b70b4bfe05e102f8e19615ac5d7b0ab"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state18.npz": {
+      "bytes": 171890,
+      "sha256": "9f55ab7ee37b29e2588889d022d3e6a7c6d50043013a811526db63609e9df803"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state19.npz": {
+      "bytes": 171890,
+      "sha256": "c37d6c5569c39ce098bd9ad4ad637855da3412e7ab027d69dfa1ee6ff26712c3"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state2.npz": {
+      "bytes": 171890,
+      "sha256": "09792ac39c383bebadb8db8dee228b7f13e5b295cb8b0a2a580fb5fc69e222c3"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state20.npz": {
+      "bytes": 171890,
+      "sha256": "d2dd5122bc8a85a696b010610cfb840092562d7b8dbfc523e3389b400ec4ace9"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state21.npz": {
+      "bytes": 171890,
+      "sha256": "8ac7c0cd4f7b2cfb94c01a431b766b36def9b484358e08ae694f8bbb48f18b81"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state22.npz": {
+      "bytes": 171890,
+      "sha256": "5075c95b2667862980ed6c58e2bb7baa2c399c618bf08a254d9edcf3d600533b"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state23.npz": {
+      "bytes": 171890,
+      "sha256": "1f0d11c09e7d8cdfcc995bcc54e27785406a5d2bfc512b2c7f080fc2376764f4"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state24.npz": {
+      "bytes": 171890,
+      "sha256": "302ecab41c41b4d9dbcfa9e33468aa0a3d447bf03af543af05f7fe8738da4b47"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state25.npz": {
+      "bytes": 171890,
+      "sha256": "dc6e7ac3ed89eac418c4a151c0ef8947a00648700be03f500b9904f38c6acbe4"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state26.npz": {
+      "bytes": 171890,
+      "sha256": "44a4a09d5631a9e91e7a709211d5883a07dc1bc261cd7620f71004aac344af29"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state27.npz": {
+      "bytes": 171890,
+      "sha256": "15c08c199bcd3ef3014e94981551574dea88c1a2ad8ec9f8f17818f8d91c4e50"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state28.npz": {
+      "bytes": 171890,
+      "sha256": "4660690f9c858d474e9ef9573455a554cb6cd2214d4f6d655d6ef245ea0738e2"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state29.npz": {
+      "bytes": 171890,
+      "sha256": "cd576ef0e830255a859589c4c1f3e47a76d97000325ac497041e73c831c46ec8"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state3.npz": {
+      "bytes": 171890,
+      "sha256": "49fc6ec3bf8f8663e36b51df5c337154ff88ed40c081109249162cd2c5de0cd5"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state30.npz": {
+      "bytes": 171890,
+      "sha256": "220a2f3b95d575816db9f82526394666dd2ccb7e7aa5b37ee37605ecb2da9b59"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state31.npz": {
+      "bytes": 171890,
+      "sha256": "d6ce1293895b3f0bf790334dd8a07d666139ae1ce445dbe956d01a0c62e75c3e"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state4.npz": {
+      "bytes": 171890,
+      "sha256": "85f067f09684361923a71714a054a0f654d444fc8c1b321d24df7629ea95aad5"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state5.npz": {
+      "bytes": 171890,
+      "sha256": "5648dca603f4a749c321fa264033c95fd416f891d649f41fbd7b99a36993138e"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state6.npz": {
+      "bytes": 171890,
+      "sha256": "c48dfabef33af0551058ea7e682cc011223af2b2bacb87d33327c6580d725bf5"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state7.npz": {
+      "bytes": 171890,
+      "sha256": "6662c1baeaa15eb7f2a0599ec5dc85aaac6d943db679392d35cc5bc51c9108e5"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state8.npz": {
+      "bytes": 171890,
+      "sha256": "75a56f075f201091670a4e5250c49b1284e5737dc902fbe8d95d0a186ec4a8a7"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1-state9.npz": {
+      "bytes": 171890,
+      "sha256": "6297c40aa5c4f7e129970bc7e744fff269b03118ba41bfd8e0610028ac85f2ff"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m1.npz": {
+      "bytes": 22170672,
+      "sha256": "d7c3d8477967e5a3b65d5aa7e2cd27911925045bc0a01cd6344535c5f49e9252"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state0.npz": {
+      "bytes": 205682,
+      "sha256": "341a7745fbfb7572ec43a8664b88cedb45a1df63ed4d06b6af21e94045b7396d"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state1.npz": {
+      "bytes": 205682,
+      "sha256": "1fb536249ad01fad07be47fa6ce99827c3849b96013d1f832b5395ef7190205c"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state10.npz": {
+      "bytes": 205682,
+      "sha256": "6bd64e916aa8fcd47c8aa584c988bb1401590c3e351e5b94148ec0347a9d52fb"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state11.npz": {
+      "bytes": 205682,
+      "sha256": "45077e0a7975f53faae968405a5a866e18a4f05a484acbac98d3847ddd030ca3"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state12.npz": {
+      "bytes": 205682,
+      "sha256": "4d0e3948ffe5123efdf0ef45c0b6e257e9f3b8b211103d62ff606fc9b9d694fd"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state13.npz": {
+      "bytes": 205682,
+      "sha256": "d0f57b459ec816017e5625426ac56ec6f1aa0cff6b19b05ada425411534666b7"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state14.npz": {
+      "bytes": 205682,
+      "sha256": "bdca2682ff6cb97adb9be2b84025b629ab3b923b4c98807ecee1723d66cb7821"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state15.npz": {
+      "bytes": 205682,
+      "sha256": "cfd68ee980bb0763443ed13585900f11f100cbc40823a565097d760bde4c2f08"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state16.npz": {
+      "bytes": 205682,
+      "sha256": "3d903b491458cc3f8cf2050e7f4b8d29f55f9c97a2f8606eefcb06f09f9150cb"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state17.npz": {
+      "bytes": 205682,
+      "sha256": "5fc750fd317c87e8f6ff2c7d70846cf2f63e5362e1d1c1447672ed7d4c8752ae"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state18.npz": {
+      "bytes": 205682,
+      "sha256": "89eed5c18bd84c2b40c6a356eb1882247ced9027192c6b62a589036bc6821682"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state19.npz": {
+      "bytes": 205682,
+      "sha256": "f35c1fc0fd32b667db22404c70c460655219214e83a0010386227da12033c957"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state2.npz": {
+      "bytes": 205682,
+      "sha256": "73c5323f61bff197bce35314bc1e773bc06483bea96cc782dc3af89303fecf1a"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state20.npz": {
+      "bytes": 205682,
+      "sha256": "a938efc37d054421c6dc96e0fa7b58af3be3bb36f234a7a30a095e506c6a0b55"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state21.npz": {
+      "bytes": 205682,
+      "sha256": "d6a33f5b4d583f8c7cb3e8228b68aac2d7340b72fce1a3104ea0ebcf21fa9186"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state22.npz": {
+      "bytes": 205682,
+      "sha256": "9f70f757963c5f7d1f247aeb296962ca10ef2cb91e6bccbf4d65c61dc604045a"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state23.npz": {
+      "bytes": 205682,
+      "sha256": "c246a263173fac9eec3a6d5dc3c5db706778045f09c6f1fa4d739605fed66f6a"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state24.npz": {
+      "bytes": 205682,
+      "sha256": "9d01d65c0f1a9c051e1de3a66021d3ec9b25ec3366cc1419a664d68942bb8c93"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state25.npz": {
+      "bytes": 205682,
+      "sha256": "552b3d0a701539dd746da7782457d1519489ccc01d990691ff3ad0bac15cde7c"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state26.npz": {
+      "bytes": 205682,
+      "sha256": "2f1287083dc96ad7c97e77d1afcbe73a06c2a1919dc8806c7c9d4567ff1b43c1"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state27.npz": {
+      "bytes": 205682,
+      "sha256": "f802ffd7eeda2c1250ed52853f544f1fd5c021262947d447cedb46ee7ab3f033"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state28.npz": {
+      "bytes": 205682,
+      "sha256": "d2b3e3ed8f26f3aa8ea20ac876fa1d2eb06ac27a17e16d18c22731466dda9467"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state29.npz": {
+      "bytes": 205682,
+      "sha256": "e8f41b91591a1a8573b597580ff799f316e1b4222fd6ecdcf92edf523d979e20"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state3.npz": {
+      "bytes": 205682,
+      "sha256": "6c40cdf3299016c221b58d42340d94b60abc2602a5cce58f92546928cf7848a7"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state30.npz": {
+      "bytes": 205682,
+      "sha256": "294132c35bdad1ba8e3b547f0e57aa8690f7da56844bac70a86cd6b02b52c577"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state31.npz": {
+      "bytes": 205682,
+      "sha256": "6b05925cdd71344be315cc71024cb6c0a123d65ae414803b1ca21bda9fac9e72"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state4.npz": {
+      "bytes": 205682,
+      "sha256": "cf472681b87769078a22ae0196387c9ac9313d082f4d0e15f43f5d9fecbbae37"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state5.npz": {
+      "bytes": 205682,
+      "sha256": "5f9b3b518c8ca117d2a4ff40e34b5f075419eb76a927a8c4759c33d11ba02377"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state6.npz": {
+      "bytes": 205682,
+      "sha256": "953a530000165f21230f6f15a02383fd46d3a2e54f47bed3d5c7c8a1a31ac662"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state7.npz": {
+      "bytes": 205682,
+      "sha256": "ecd20bea04e78ecb417a9aae1b1013203af1b762da3cae222fb0781b11dbe9de"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state8.npz": {
+      "bytes": 205682,
+      "sha256": "079244e043437461ed2f5e7c774116f90423027daa790d5ef82baf31aa511a6c"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2-state9.npz": {
+      "bytes": 205682,
+      "sha256": "c635a3abe33cfb19f9ea25575c7008054906a04452a5586a2a6e8da32753354c"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m2.npz": {
+      "bytes": 22301744,
+      "sha256": "9a10c07dd8eded56a0778067373f920142e91a3709a4377aaf55dbd9933cd609"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state0.npz": {
+      "bytes": 273266,
+      "sha256": "1cd10e0420096271201400b8737640537af1e21b0e918cea93675f7bfb2699d4"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state1.npz": {
+      "bytes": 273266,
+      "sha256": "717caa2d02c9441956cbc88d35c2d0ed2875903d03a772624479272577f842f4"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state10.npz": {
+      "bytes": 273266,
+      "sha256": "26527bd096c51d57c625c13f1b20224c1faacfd5866b794ba8ac87d5050e7cb2"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state11.npz": {
+      "bytes": 273266,
+      "sha256": "834974c25da1def7f9d3839936a4129b02365572c1974bca6b42a54bb940106c"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state12.npz": {
+      "bytes": 273266,
+      "sha256": "6c062fbca06307d35203912ca07935e7b29b9945d136513db1800bbb3d871c6d"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state13.npz": {
+      "bytes": 273266,
+      "sha256": "873f3f9c76a77c4ad5c216d83b407818f14dec1089ceb276141e6f8fe3d1950c"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state14.npz": {
+      "bytes": 273266,
+      "sha256": "9b53ad1193e60e2b2ed85d7b782d48f77be9711cc083b92f0dc1f1fd2e314d58"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state15.npz": {
+      "bytes": 273266,
+      "sha256": "344664f2f5b4e886e75f62cb065731813350ea8efb9a03efa9764e09e0a6ae24"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state16.npz": {
+      "bytes": 273266,
+      "sha256": "a7b894d3d0e1412b055ee9df62af248c85748577cf418da1280c613f0461595e"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state17.npz": {
+      "bytes": 273266,
+      "sha256": "b9a89c82eb9fb9965eb6e45928c96dcfea590a07d69b8c2535b10b640e13cae4"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state18.npz": {
+      "bytes": 273266,
+      "sha256": "44554a0e2c862de2b6eb690e536f9e8afd9c6bba1faf5a1fd242a8b7d52610db"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state19.npz": {
+      "bytes": 273266,
+      "sha256": "fd5101d9d5db52a6286f72e342723b5b03d2954af833d4e4904a6a148bcf5fa0"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state2.npz": {
+      "bytes": 273266,
+      "sha256": "10c363866908a470aedc5caddb17c1c55a0a37b5577c712f2db030847a77f727"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state20.npz": {
+      "bytes": 273266,
+      "sha256": "007159e3650d9ba2e4d515f2cdb6f1406e2e41c9885bbf8bc06c59203242a25b"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state21.npz": {
+      "bytes": 273266,
+      "sha256": "784ef4a97c35ecb24b1bac1dd603c0acbc645f5536a38069332af966b6877328"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state22.npz": {
+      "bytes": 273266,
+      "sha256": "eb14bb2d2d048603d961097f961fcd609831e81e47b79c0b6e3fb8d72699c839"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state23.npz": {
+      "bytes": 273266,
+      "sha256": "aaeca4a9de45248047a50d11d04830b93a063273f06ccd33119372176172484b"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state24.npz": {
+      "bytes": 273266,
+      "sha256": "755e9182724c9787bf4de44e4f534a86e97350dc0ae9bbc3494c56e920e53f05"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state25.npz": {
+      "bytes": 273266,
+      "sha256": "2269508a93e4c139adf366781670a1ca0e2dd3f675470885adbf63beb7d5d944"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state26.npz": {
+      "bytes": 273266,
+      "sha256": "af6b6001f1af5cbdd447965f4563a1b8298ce2591b59f1d002eab9bbfc51bfa7"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state27.npz": {
+      "bytes": 273266,
+      "sha256": "c49a445402a093c25b60ac5d2e026750d1f7bc8d76a987f1d9c1e6f0b973b81c"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state28.npz": {
+      "bytes": 273266,
+      "sha256": "11bb103825c73bfda4846033c97828d0a250d6de66de661f754bfe83f4f71928"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state29.npz": {
+      "bytes": 273266,
+      "sha256": "ad5e34d3a5f6f2100706fcc63b4db9b7591b61809e11f0b68c50a11641e74ea6"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state3.npz": {
+      "bytes": 273266,
+      "sha256": "ed95e7947f8a70493f1a867eb66fe56d99c57cfadc0679d7ee0bc7721b7c314c"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state30.npz": {
+      "bytes": 273266,
+      "sha256": "6d6844bc3bb132c10021da9dca2a8145e934751c86d42e98624dcbc9d3e08bc8"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state31.npz": {
+      "bytes": 273266,
+      "sha256": "80497227c77274ce472c1d9fb9979d1e4f6ead79321fcfcda1e8dc33a86aae96"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state4.npz": {
+      "bytes": 273266,
+      "sha256": "2ad69ab947984bcf46330be4836bd001944289434c664144f05404e559a16902"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state5.npz": {
+      "bytes": 273266,
+      "sha256": "62816f4d6eddce2c1a37e341930334aefb2517d9420d5543e7d365ade4e7d26a"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state6.npz": {
+      "bytes": 273266,
+      "sha256": "e63856c0949df2d5b1aca988e2ca13f297c231483af706f4af099f584ea69615"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state7.npz": {
+      "bytes": 273266,
+      "sha256": "fc7727ae89a53d70c4a93ef8adcba64d19ef250869d29abd874f89efb06ac308"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state8.npz": {
+      "bytes": 273266,
+      "sha256": "bc3fb87132d571f3e6ea5e9fa0e09650eb1da3a4533229a521881b5aef0f1343"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4-state9.npz": {
+      "bytes": 273266,
+      "sha256": "883f96db5972e1f1e74d413a40f3f167bf5d4a742e1b4e18e8c2dc2a9c8fcc0e"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/predictions/crane-behind-m4.npz": {
+      "bytes": 22563888,
+      "sha256": "2b83cc924c658c0be28b343b6d8521f55c8b1686092bb0edb1d5172c1cf27622"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/reference-work/crane-before-consumers.npz": {
+      "bytes": 131091120,
+      "sha256": "557ca38d46d6e80cf8dab02445208023cff8666190b94aabab5fa379ff1272ac"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/reference-work/crane-before-m1-oracle.npz": {
+      "bytes": 22548220,
+      "sha256": "48b50358290f24a64587bd7cfd659f8de2bc47b662968554c7168228c7c52bdc"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/reference-work/crane-before-m2-oracle.npz": {
+      "bytes": 22679292,
+      "sha256": "4b5fa1ffcb350743d3c5aef1b1fefc7f147bb64595ba53249a776f561bdb88d8"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/reference-work/crane-before-m4-oracle.npz": {
+      "bytes": 22941436,
+      "sha256": "85c2dc122b2b95abb83c461dfdd31f4ffc1a92524bcc1f5b865c267428ab6e7a"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/reference-work/crane-behind-consumers.npz": {
+      "bytes": 131091120,
+      "sha256": "0adf8fb1ddfaedd64263a100b4297efacbc3aa5b9a27caf52aea1a750213ff16"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/reference-work/crane-behind-m1-oracle.npz": {
+      "bytes": 22548220,
+      "sha256": "2f2c93d0b970161c081529c6aab499488ed1b869fd03ca5195961d5f53c12142"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/reference-work/crane-behind-m2-oracle.npz": {
+      "bytes": 22679292,
+      "sha256": "e71c514eb8b5ef192e546feea35e138e312c88eed53eb46e7cd8f09d34b1f767"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/reference-work/crane-behind-m4-oracle.npz": {
+      "bytes": 22941436,
+      "sha256": "b2f32e9c93a0b40c2e60daa385d3d94b01877718cbe60d2a9e457e6f9e4753ac"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/response-result/prediction-seal.json": {
+      "bytes": 61100,
+      "sha256": "83f3022f4b8b0838445a674cf5fb375aab00c3ebcb2eb3ddffcf3ba963039547"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/response-result/reference-receipt.json": {
+      "bytes": 8541,
+      "sha256": "457d836c87d524ad52e12f4c63e14533373e68b1feceee354dd0700062408884"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/response-result/report.json": {
+      "bytes": 730439,
+      "sha256": "040486a4bda698a026e30c380c3b2d1d46d13d4d4bd51bf10c347376fe809cb2"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/response-result/request.json": {
+      "bytes": 3433,
+      "sha256": "c768a64241faa76a8c3b22c91f33d6dc79afc50b5f7795226a6e2c14d3789cbe"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/response-result/source.json": {
+      "bytes": 6209,
+      "sha256": "8e341d7af2ca01d8863a07e73ef365fcd5c6a1d8f5e21c3bc395f9fa1bcebf18"
+    },
+    "/mnt/hdd8tb/mrun-work/job-f1e1fa692435/response-result/support-diagnostics.json": {
+      "bytes": 776819,
+      "sha256": "f908741d233138071606c506821fad51ca795b4a3a43d2bc383f669941c03ec5"
+    }
+  },
+  "jobID": "job-f1e1fa692435",
+  "predictionSealSHA256": "83f3022f4b8b0838445a674cf5fb375aab00c3ebcb2eb3ddffcf3ba963039547",
+  "schema": "tce-sparse-joint-tilt-retained-bytes-v1",
+  "scope": "Authenticated full-byte hashing of all candidate banks/final states, full-query-score oracle arrays, original-consumer outputs and parent operands. Includes original checkpoint and overlapping parents; no local tensor hydration.",
+  "sharedRemoteVerifierSHA256": "9cbce82b70178c52f09ca3065232177a8d01494c7feec4c2c7b703ac4ca9ff93",
+  "totalBytesVerified": 5764072602,
+  "verifierSourceSHA256": "342dd84f653877d8810fbfd8e5092699e772b6231d22ec3e412ed90873589fce"
+}

@@ -1,0 +1,171 @@
+{
+  "asset": {
+    "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/compiled/bank-assets.npz",
+    "sha256": "25d48680c831e45d6841220a3231be1f79e62ebf1303556877613424bd0adafa"
+  },
+  "geometry": {
+    "headDim": 128,
+    "kvWidth": 1024,
+    "qWidth": 4096
+  },
+  "oldPredictions": [
+    {
+      "activeTokens": 27,
+      "headSeconds": [
+        0.08445562282577157,
+        0.03662811405956745,
+        0.03418994881212711,
+        0.03449912602081895,
+        0.034512792248278856,
+        0.03446268802508712,
+        0.0340655567124486,
+        0.034145236015319824,
+        0.03442434733733535,
+        0.03737502917647362,
+        0.03699407819658518,
+        0.036993566900491714,
+        0.03418086189776659,
+        0.035900915041565895,
+        0.03416565386578441,
+        0.034398908726871014,
+        0.034036642871797085,
+        0.03397319419309497,
+        0.034096553921699524,
+        0.03417657408863306,
+        0.034243529196828604,
+        0.03467106772586703,
+        0.03653234522789717,
+        0.039788908790796995,
+        0.039612669963389635,
+        0.0390854561701417,
+        0.039498536847531796,
+        0.038550796918570995,
+        0.03533852519467473,
+        0.03761069988831878,
+        0.03757107583805919,
+        0.03787276986986399
+      ],
+      "id": "crane-behind",
+      "invalidHeadReads": {
+        "nearest64": 0,
+        "transport64": 0
+      },
+      "maximumHullViolations": {
+        "nearest64": 1.734723475976807e-18,
+        "transport64": 0.9956204280687753
+      },
+      "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-bank.npz",
+      "port": {
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-behind-port.npz",
+        "sha256": "5839d2ed451c7882aaa638000ff61ab09c5f0ea9dfb7fd888dd569a6920535d0"
+      },
+      "rawTextBankSeconds": 6.182320940308273,
+      "sha256": "02a9222623aa9b43f5b2e94408a49ed95b98a0da610aef5884d79cccdfe179f0"
+    },
+    {
+      "activeTokens": 27,
+      "headSeconds": [
+        0.06504379492253065,
+        0.036861490458250046,
+        0.036848776042461395,
+        0.036547543946653605,
+        0.037286162842065096,
+        0.03832716774195433,
+        0.03573558619245887,
+        0.033319483045488596,
+        0.03495435696095228,
+        0.03351210197433829,
+        0.034055478405207396,
+        0.03373793512582779,
+        0.03396921558305621,
+        0.03436352265998721,
+        0.034797613974660635,
+        0.035165020264685154,
+        0.03490949282422662,
+        0.03455280605703592,
+        0.03414130816236138,
+        0.034073440823704004,
+        0.03415504330769181,
+        0.03427482722327113,
+        0.03401769697666168,
+        0.0362072279676795,
+        0.03588181966915727,
+        0.034171363804489374,
+        0.03457797411829233,
+        0.03409715509042144,
+        0.03427043929696083,
+        0.0343111059628427,
+        0.034529032185673714,
+        0.03466236079111695
+      ],
+      "id": "crane-before",
+      "invalidHeadReads": {
+        "nearest64": 0,
+        "transport64": 0
+      },
+      "maximumHullViolations": {
+        "nearest64": 1.734723475976807e-18,
+        "transport64": 0.9978504338782344
+      },
+      "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-bank.npz",
+      "port": {
+        "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/crane-before-port.npz",
+        "sha256": "cce9881e5836864102cf852cd4617337e221d50aa3eee0e3049a3179c9ce5e19"
+      },
+      "rawTextBankSeconds": 2.1628758385777473,
+      "sha256": "571028b845043bf444d0a8747bf93792e8f1f22b4d05996d8780524de561b289"
+    }
+  ],
+  "pairs": [
+    [
+      "crane-behind",
+      "crane-before"
+    ]
+  ],
+  "parentConsumerParameterSource": {
+    "assets": {
+      "text_encoder/config.json": "214b4c29a0d975e9fddf9994a5673f22cb2c4c5750352f9227c2c3251ebeab40",
+      "text_encoder/model.safetensors.index.json": "06b3d5319b6d76d1a4a2433419180016cfd54ed62d086a5e6567a809f8c82634",
+      "tokenizer/added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+      "tokenizer/chat_template.jinja": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+      "tokenizer/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+      "tokenizer/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+      "tokenizer/tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+      "tokenizer/tokenizer_config.json": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+      "tokenizer/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    "modelRoot": "/mnt/big/llm-models/FLUX.2-klein-4B",
+    "nativeSourceSHA256": "fbdcfeeb1b54135ca67ba7df924da92f4b264e1252b517eea2de989289ebaeab",
+    "pipelineSourceSHA256": "8a57a8a7f1c22fc0c5bc5d3fd1bd9bc76c17c1f4d6644cc73370651dd955358e",
+    "tensors": {
+      "e": "model.embed_tokens.weight",
+      "input": "model.layers.0.input_layernorm.weight",
+      "k": "model.layers.0.self_attn.k_proj.weight",
+      "kn": "model.layers.0.self_attn.k_norm.weight",
+      "q": "model.layers.0.self_attn.q_proj.weight",
+      "qn": "model.layers.0.self_attn.q_norm.weight",
+      "v": "model.layers.0.self_attn.v_proj.weight"
+    },
+    "weightFile": {
+      "bytes": 4967215360,
+      "path": "text_encoder/model-00001-of-00002.safetensors",
+      "sha256": "8c0506e7f4936fa7e26183a4fd8da4e2bdbc5990ba64ae441f965d51228f36ea"
+    }
+  },
+  "predictionSeal": {
+    "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/predictions/prediction-seal.json",
+    "sha256": "7de7436375d8c9ca12f9d3691d1f13b37c8a0bed726ae9ef0f07abe84e3409e4"
+  },
+  "references": [
+    {
+      "id": "crane-behind",
+      "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/reference-work/crane-behind-consumer.npz",
+      "sha256": "d50dd4f62011c9e2d4872102ea5a8e89c068d7a0bac176aa8179904f8416435a"
+    },
+    {
+      "id": "crane-before",
+      "path": "/mnt/hdd8tb/mrun-work/job-29760e2a3970/reference-work/crane-before-consumer.npz",
+      "sha256": "35a09c52f09ac7faef0a7681c6338ad4008a0053b6759d4892a6e732c3e1fe7b"
+    }
+  ]
+}
