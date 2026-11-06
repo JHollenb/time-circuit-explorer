@@ -1,6 +1,6 @@
 # Transport the current query through live prefix moments
 
-Status: **proposed after cycle9 and Astra's result review; not staged or measured**. The [landmark experiment and routing diagnosis](../source-landmark-context.md) show that broad averaging hurts, while sharper routing cannot repair every fixed convex response mixture. The next bounded test adds the query–memory interaction explicitly, rather than selecting another bandwidth or increasing the landmark count.
+Status: **implemented and measured in cycle10**. The [result and actual receiving computation](../query-transport-context.md) improve all four fresh paired changes, with remaining large errors and explicit signed behavior. The consumer supplies 31 exact other heads and original learned equations; it is not a complete predicted encoder. The next proposed cut is the [complete first-layer attention bank](complete-attention-bank.md). The protocol below preserves the pre-result rationale: add the query–memory interaction explicitly after the [landmark experiment and routing diagnosis](../source-landmark-context.md).
 
 This remains reduced model-derived attention. A better first-head approximation is not the arbitrary-prompt zero-neural image objective. After this representation test, prioritize the demanded contextual conditioning and an actual future consumer; do not make repeated first-head endpoint improvement the goal.
 

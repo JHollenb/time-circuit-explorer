@@ -1,0 +1,26 @@
+{
+  "arms": [
+    "zero",
+    "exact",
+    "nearest64",
+    "transport64"
+  ],
+  "backend": "numpy-fp64",
+  "cpuThreads": 1,
+  "device": "cpu",
+  "numericPolicy": "BF16 exact mathematical head bank; FP64 otherheads output projection grouped separately then add head0 slice. Explicit BF16 writer/residual/RMS/MLP/state. Nativebackend parity unmeasured.",
+  "parentJobID": "job-1149830281fd",
+  "parentRequestSHA256": "3ed739c5fefe6fb9ac5dcdc7e394310dc996376e514d21ab740f63b652f899d9",
+  "primaryObservable": "Predicted head0-specific effect relative to head0 deletion, and its paired change; full endpoint/fullprompt changes secondary because supplied heads/embedding can dominate.",
+  "probePolicy": "Common mask-clock positions within eachpair:0,bothlastactive,min(maxactive,511),511. Output/residual/RMS all512rows; MLP/state only these predeclared clocks.",
+  "requestSHA256": "a5a0b54a3cdd6b5ab5b8da88d24cf70220f485868ea9dc04bcd797371f0beb47",
+  "schema": "tce-transport-consumer-request-v1",
+  "scope": "Offline receiving-operation diagnostic. Predicted head0 with reference other31heads, original output/RMS/MLP equations; not own-state complete encoder or zero-neural serving.",
+  "sourceHashes": {
+    "context_statistics_study.py": "0d44d03f2a8eabd32b5d7034a449f7a46e7d8abe0252dd1b94d229c31f1ea1c8",
+    "encoder-atoms-source.json": "9605e7f4a734f0a39bc70dbae880936998289cb5625b1d4dd3327b3c4e6fbc85",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "source.json": "23eb709765b77beb33047ec0a577b7d82b5b890f769e6b91f195ebfb52929961",
+    "transport_consumer.py": "ea238479b9a54f3ea61c9a4deffef1099a71ac8af54befed96c0331c3cd27efd"
+  }
+}

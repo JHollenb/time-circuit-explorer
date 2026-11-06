@@ -1,0 +1,188 @@
+{
+  "claimBoundary": "Head mode predicts one contextual read from rawtext. Consumer mode evaluates original learned equations with other31heads supplied as references. Neither is complete conditioning or strictzero-neural image generation.",
+  "completeCollectedInventory": {
+    "bytes": 4981616,
+    "files": {
+      "observations.jsonl": {
+        "bytes": 4849966,
+        "sha256": "e96ce3a5aca78fd9048946014ede9b12be9e24e54fdf57c2821dc370d11c5ddb"
+      },
+      "prediction-seal.json": {
+        "bytes": 16017,
+        "sha256": "b47afaeae6fbe770e384bde53aa992f3b953d7aa5ea36306953d01def27d293e"
+      },
+      "reference-receipt.json": {
+        "bytes": 5032,
+        "sha256": "aafef75d61e07cd955521b6ebec3def44be8eb1b174e641d226a1751952dcbb9"
+      },
+      "report.json": {
+        "bytes": 86328,
+        "sha256": "6fcc3ed58fe701e7f6bbfacca207bec51ef88b7a11eeb89eef727a812e0052d8"
+      },
+      "request.json": {
+        "bytes": 1690,
+        "sha256": "9294ef44d64fb1a7431057f2b87f03c89eaa82f357815e1043471b4f44059216"
+      },
+      "source-receipt.json": {
+        "bytes": 22583,
+        "sha256": "e6c341511f55d3f84bb5a0a50d1c05cf1bb775cf88170e0ec8f55f0b34a77f4e"
+      }
+    }
+  },
+  "jobID": "job-d8421ee1f182",
+  "losslessStreamTransports": [
+    {
+      "conversion": "Byte-lossless gzip; exact decompression verified.",
+      "published": "observations.jsonl.gz",
+      "publishedBytes": 593193,
+      "publishedSHA256": "07caf8d72edcc05cd9ad4174cf23fdb6f4dd062c2a7442ffea946bea386a21d0",
+      "source": "observations.jsonl",
+      "sourceBytes": 4849966,
+      "sourceSHA256": "e96ce3a5aca78fd9048946014ede9b12be9e24e54fdf57c2821dc370d11c5ddb"
+    }
+  ],
+  "mode": "consumer",
+  "payloadCustody": {
+    "declared": {
+      "sha256": "058a1765f103b74a53142b217ca5bd038a80dbbc6838241bc9fd79e22a746900",
+      "size_bytes": 18401
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1793963836.1797247,
+      "sha256": "058a1765f103b74a53142b217ca5bd038a80dbbc6838241bc9fd79e22a746900",
+      "size_bytes": 18401
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1793963836.0933998,
+      "sha256": "058a1765f103b74a53142b217ca5bd038a80dbbc6838241bc9fd79e22a746900",
+      "size_bytes": 18401
+    }
+  },
+  "publication": "Every compact result preserved; complete state/head/reference-consumer arrays remain near compute with independent byte checks.",
+  "remoteResultRoot": "/mnt/hdd8tb/mrun-work/job-d8421ee1f182/response-result",
+  "requestSHA256": "a5a0b54a3cdd6b5ab5b8da88d24cf70220f485868ea9dc04bcd797371f0beb47",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-d8421ee1f182",
+      "job_log": {
+        "bytes": 219,
+        "sha256": "71b11ec5cdb7ec75d5b2b7f3aece84d602c397bb5e05f17fe5b6e1223b12fe04"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-d8421ee1f182/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "python",
+        "-u",
+        "transport_consumer.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-d8421ee1f182",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-d8421ee1f182/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1793963836.1666086
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1793963836.1961231
+        },
+        {
+          "name": "process.launch",
+          "ts": 1793963836.205716
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1793963836.2328258
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1793963858.7325568
+        },
+        {
+          "name": "finished",
+          "ts": 1793963858.7503524
+        }
+      ]
+    },
+    "elapsed_s": 22.68,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "058a1765f103b74a53142b217ca5bd038a80dbbc6838241bc9fd79e22a746900",
+      "size_bytes": 18401
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 1280.2,
+    "peak_vram_mb": 0.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-query-transport-public-v1"
+}

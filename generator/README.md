@@ -18,6 +18,8 @@ The [common-bank capacity assay](../docs/common-bank-context.md) fits one global
 
 The [source-frozen landmark reader](../docs/source-landmark-context.md) replaces fitted query coordinates with a source-only covariance/routing law. `context_landmark_study.py stage|submit|collect` compiles64landmarks and seals eight new raw-string forecasts; `context_landmarks.py` advances the positive prefix state. `landmark_routing_diagnostics.py` separately tests bandwidth and target-assisted padding-response capacity on saved arrays. Those oracle fits do not serve images or new prompts. Warm timings charge all four reader controls together.
 
+The [live query-transport experiment](../docs/query-transport-context.md) adds stable causal value–key cross moments to those source-selected readers. `context_transport_study.py stage|submit|collect` seals fresh raw-string head forecasts; `transport_consumer.py stage|submit|collect` separately measures the original output/RMS/MLP consumer with 31 exact other heads. Both improve the four paired effects at their measured scopes. This is component research, not the website's arbitrary-prompt image backend. The next proposed cut predicts the [complete attention bank](../docs/plans/complete-attention-bank.md).
+
 ## Generate from the website
 
 From this repository in the domains workspace, with the configured mrun client and reachable fleet:

@@ -1,0 +1,46 @@
+{
+  "backend": "numpy-fp64",
+  "cpuThreads": 1,
+  "device": "cpu",
+  "diagnosticPositions": "Source/mask clocks0,lastactive,firstpad,511 plus16uniformly spaced positions; exact exponential transport and signed firstorder keyweights evaluated postseal only.",
+  "futureConsumerPlan": "Next guarded diagnostic replaces only predicted head0 through actual output/residual/postattentionRMS and fixed mask-clock MLP probes; otherheads explicitly supplied reference context, not closedencoder.",
+  "interfaceFreeze": "Rawtext/sourcehashes requestbound; worker seals tokenizer/template IDs/masks before serving. Canonical full-prefix refs follow complete forecast seal.",
+  "methods": [
+    "nearest64",
+    "transport64"
+  ],
+  "momentPolicy": "Weighted centered cross-sum with running-max rescaling; fixed sourcekey center. No targetfit, clip or native fallback; optional invalid read rows retained with masks.",
+  "pairs": [
+    [
+      "compass-inside",
+      "compass-outside"
+    ],
+    [
+      "balloon-pink",
+      "balloon-brown"
+    ],
+    [
+      "tower-above",
+      "tower-below"
+    ],
+    [
+      "compass-forward",
+      "compass-reverse"
+    ]
+  ],
+  "parentJobID": "job-7bafdd5e6846",
+  "parentRequestSHA256": "3ec4511d6b4e40823a96700f9e8621efb862aef541b99bfee60fcfdd136918af",
+  "requestSHA256": "3ed739c5fefe6fb9ac5dcdc7e394310dc996376e514d21ab740f63b652f899d9",
+  "routePolicy": "Nearest in frozen source key-covariance metric. Actual query displacement contracts actual-prefix Cov(v,y).",
+  "schema": "tce-query-transport-request-v1",
+  "scope": "Eight new rawstrings, existing source-only64landmarks, actual causal stable cross moments. Nearest and firstorder reads seal before references. One firstlayerhead, model-derived computation, not strictzero-neural images.",
+  "sourceHashes": {
+    "context_statistics.py": "6f86949f47160890bd58a41174fe99809d6dce8a3e67222be09f7e77e961b057",
+    "context_statistics_study.py": "0d44d03f2a8eabd32b5d7034a449f7a46e7d8abe0252dd1b94d229c31f1ea1c8",
+    "context_transport.py": "8b94d46a45cd635a538000d2d2ab5eee39d82369ddcf3ff9a2766f1fb80ab665",
+    "context_transport_study.py": "28d9d7bb4b849a675dcdc0a90db2728100e02505aa3b1ee5c2b657f621895e95",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "serve-source.json": "69c2360e261cf9cd1d8d084ee4d832fa84da55f56d43172f4c5fb210fbc47709",
+    "source.json": "33fa96cb43ec736520f317ac9c0d6c58050ab7c7221d449d5e97acf70aaed637"
+  }
+}

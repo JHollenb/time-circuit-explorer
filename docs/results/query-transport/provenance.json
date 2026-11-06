@@ -1,0 +1,213 @@
+{
+  "claimBoundary": "Head mode predicts one contextual read from rawtext. Consumer mode evaluates original learned equations with other31heads supplied as references. Neither is complete conditioning or strictzero-neural image generation.",
+  "completeCollectedInventory": {
+    "bytes": 4393518,
+    "files": {
+      "observations.jsonl": {
+        "bytes": 2862523,
+        "sha256": "14a75e38a638bd4d3d69a987c6e342ea5018811e116d1f22a3d8c253fb598738"
+      },
+      "paired-observations.jsonl": {
+        "bytes": 888917,
+        "sha256": "f4ed3896f96e52df8c2eb79371f563d8206441ca029d810229ec148483a5c54e"
+      },
+      "prediction-seal.json": {
+        "bytes": 16017,
+        "sha256": "b47afaeae6fbe770e384bde53aa992f3b953d7aa5ea36306953d01def27d293e"
+      },
+      "prompt-interfaces.json": {
+        "bytes": 110400,
+        "sha256": "1cce7463cef0edccf9616755f6a12eb03811d5e8efd31a1b16f04dd1a526e1b1"
+      },
+      "reference-receipt.json": {
+        "bytes": 100687,
+        "sha256": "2ffc4435c8466477a8a9e9f08834bf187078649dd65d5a7d042a7d35264be7e4"
+      },
+      "report.json": {
+        "bytes": 196463,
+        "sha256": "7376985c29f4b43c1387d7c8b000531fd6e7a91e832764819cb97adf123dfb07"
+      },
+      "request.json": {
+        "bytes": 2479,
+        "sha256": "200affa3f167dd73b0bf66beaae24ede6c53f31919ec99deefe831f745d99777"
+      },
+      "serve.json": {
+        "bytes": 13817,
+        "sha256": "6b932b8b745cb071752d1fb65a28b5b952a5eb0c6ec65159e66a46dffffa6a79"
+      },
+      "source-receipt.json": {
+        "bytes": 3809,
+        "sha256": "33fa96cb43ec736520f317ac9c0d6c58050ab7c7221d449d5e97acf70aaed637"
+      },
+      "transport-asset.npz": {
+        "bytes": 198406,
+        "sha256": "0530d46e82b361547dc9c9445b12f625a80bfaff3f0570c2aab07306c090bffa"
+      }
+    }
+  },
+  "jobID": "job-1149830281fd",
+  "losslessStreamTransports": [
+    {
+      "conversion": "Byte-lossless gzip; exact decompression verified.",
+      "published": "observations.jsonl.gz",
+      "publishedBytes": 464170,
+      "publishedSHA256": "449e37162e78a2f8fce3a2dd5a805affd8ce9696990ce7042ac6d66e44ecde04",
+      "source": "observations.jsonl",
+      "sourceBytes": 2862523,
+      "sourceSHA256": "14a75e38a638bd4d3d69a987c6e342ea5018811e116d1f22a3d8c253fb598738"
+    },
+    {
+      "conversion": "Byte-lossless gzip; exact decompression verified.",
+      "published": "paired-observations.jsonl.gz",
+      "publishedBytes": 101033,
+      "publishedSHA256": "31867de349da77697bcde04504dab823edb912812df938c9daaa02a9feed1c69",
+      "source": "paired-observations.jsonl",
+      "sourceBytes": 888917,
+      "sourceSHA256": "f4ed3896f96e52df8c2eb79371f563d8206441ca029d810229ec148483a5c54e"
+    }
+  ],
+  "mode": "head",
+  "payloadCustody": {
+    "declared": {
+      "sha256": "28284f3b0311fbcdfdb446832f35d7800eba1ea105fbadcc4b066edfdf8854f2",
+      "size_bytes": 20902
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1793963614.5846376,
+      "sha256": "28284f3b0311fbcdfdb446832f35d7800eba1ea105fbadcc4b066edfdf8854f2",
+      "size_bytes": 20902
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1793963614.5019548,
+      "sha256": "28284f3b0311fbcdfdb446832f35d7800eba1ea105fbadcc4b066edfdf8854f2",
+      "size_bytes": 20902
+    }
+  },
+  "publication": "Every compact result preserved; complete state/head/reference-consumer arrays remain near compute with independent byte checks.",
+  "remoteResultRoot": "/mnt/hdd8tb/mrun-work/job-1149830281fd/response-result",
+  "requestSHA256": "3ed739c5fefe6fb9ac5dcdc7e394310dc996376e514d21ab740f63b652f899d9",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-1149830281fd",
+      "job_log": {
+        "bytes": 304,
+        "sha256": "916c1fd34880146dffb20de43a4dc5871fffa3cce8ef2b118f4de64474d36caf"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-1149830281fd/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "python",
+        "-u",
+        "context_transport_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-1149830281fd",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-1149830281fd/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1793963614.5742118
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1793963614.6060593
+        },
+        {
+          "name": "process.launch",
+          "ts": 1793963614.6139662
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1793963614.6433759
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1793963627.942601
+        },
+        {
+          "name": "finished",
+          "ts": 1793963627.9604657
+        }
+      ]
+    },
+    "elapsed_s": 13.56,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "28284f3b0311fbcdfdb446832f35d7800eba1ea105fbadcc4b066edfdf8854f2",
+      "size_bytes": 20902
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 550.9,
+    "peak_vram_mb": 0.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-query-transport-public-v1"
+}

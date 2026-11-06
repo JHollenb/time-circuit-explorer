@@ -1,0 +1,2984 @@
+{
+  "frameworkCalls": 0,
+  "goalStatus": "Active. Receiving-operation diagnostic with explicit reference context/original weights, not closedencoder or strictzero-neural image serving.",
+  "instrument_status": "executed",
+  "mechanics_status": "complete",
+  "observations": 24696,
+  "originalEquationWork": {
+    "exactHeadEvaluations": 256,
+    "head0SliceProjections": 32,
+    "mlpDenseProjections": 96,
+    "postAttentionRMSCalls": 32,
+    "sharedOtherHeadOutputProjections": 8
+  },
+  "originalLearnedEquationsEvaluated": true,
+  "pairedScores": [
+    {
+      "a": "compass-inside",
+      "arm": "nearest64",
+      "b": "compass-outside",
+      "endpoint": {
+        "cosine": 0.9989646210706681,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.04550299352617843,
+        "rmsError": 0.00028799992140386937,
+        "targetRms": 0.006329252189489016
+      },
+      "head0Effect": {
+        "cosine": 0.5778039224701602,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.8860153290478665,
+        "rmsError": 0.00028799992140386937,
+        "targetRms": 0.0003250507208643456
+      },
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "a": "compass-inside",
+      "arm": "nearest64",
+      "b": "compass-outside",
+      "endpoint": {
+        "cosine": 0.9987181227436885,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.050629979852406914,
+        "rmsError": 0.00032574846728168356,
+        "targetRms": 0.006433904738482682
+      },
+      "head0Effect": {
+        "cosine": 0.5658462100721835,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.9015605273691265,
+        "rmsError": 0.00032574846728168356,
+        "targetRms": 0.0003613162482082716
+      },
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "a": "compass-inside",
+      "arm": "nearest64",
+      "b": "compass-outside",
+      "endpoint": {
+        "cosine": 0.9988001866862954,
+        "maxAbs": 0.0263671875,
+        "relativeRms": 0.04899933047199961,
+        "rmsError": 0.0008710544428631605,
+        "targetRms": 0.01777686418309164
+      },
+      "head0Effect": {
+        "cosine": 0.6458343577024774,
+        "maxAbs": 0.0263671875,
+        "relativeRms": 0.8255969962918416,
+        "rmsError": 0.0008710544428631605,
+        "targetRms": 0.0010550600920006862
+      },
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "a": "compass-inside",
+      "arm": "nearest64",
+      "b": "compass-outside",
+      "endpoint": {
+        "cosine": 0.9981759056629943,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.06048162117341266,
+        "rmsError": 0.0006471399072418922,
+        "targetRms": 0.010699777795082828
+      },
+      "head0Effect": {
+        "cosine": 0.8804223536076676,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.48123045227490163,
+        "rmsError": 0.0006471399072418922,
+        "targetRms": 0.0013447609231350456
+      },
+      "invalidQueries": 0,
+      "queries": 4,
+      "stage": "mlp",
+      "validQueries": 4
+    },
+    {
+      "a": "compass-inside",
+      "arm": "nearest64",
+      "b": "compass-outside",
+      "endpoint": {
+        "cosine": 0.9980720267456696,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.062207748034399775,
+        "rmsError": 0.0008688569336735005,
+        "targetRms": 0.013967021169019623
+      },
+      "head0Effect": {
+        "cosine": 0.8248938989013153,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.5765930490686411,
+        "rmsError": 0.0008688569336735005,
+        "targetRms": 0.0015068806935445152
+      },
+      "invalidQueries": 0,
+      "queries": 4,
+      "stage": "state",
+      "validQueries": 4
+    },
+    {
+      "a": "compass-inside",
+      "arm": "transport64",
+      "b": "compass-outside",
+      "endpoint": {
+        "cosine": 0.9993543792960535,
+        "maxAbs": 0.01953125,
+        "relativeRms": 0.03593427192009147,
+        "rmsError": 0.00022743706922793262,
+        "targetRms": 0.006329252189489016
+      },
+      "head0Effect": {
+        "cosine": 0.7543900598508166,
+        "maxAbs": 0.01953125,
+        "relativeRms": 0.6996971691776361,
+        "rmsError": 0.00022743706922793262,
+        "targetRms": 0.0003250507208643456
+      },
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "a": "compass-inside",
+      "arm": "transport64",
+      "b": "compass-outside",
+      "endpoint": {
+        "cosine": 0.9991899248796635,
+        "maxAbs": 0.01953125,
+        "relativeRms": 0.04025124565782338,
+        "rmsError": 0.0002589726801677003,
+        "targetRms": 0.006433904738482682
+      },
+      "head0Effect": {
+        "cosine": 0.7428333073803494,
+        "maxAbs": 0.01953125,
+        "relativeRms": 0.7167479498968506,
+        "rmsError": 0.0002589726801677003,
+        "targetRms": 0.0003613162482082716
+      },
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "a": "compass-inside",
+      "arm": "transport64",
+      "b": "compass-outside",
+      "endpoint": {
+        "cosine": 0.99925363350208,
+        "maxAbs": 0.0244140625,
+        "relativeRms": 0.03863072269695549,
+        "rmsError": 0.0006867331106784533,
+        "targetRms": 0.01777686418309164
+      },
+      "head0Effect": {
+        "cosine": 0.7869604022044369,
+        "maxAbs": 0.0244140625,
+        "relativeRms": 0.6508947839892391,
+        "rmsError": 0.0006867331106784533,
+        "targetRms": 0.0010550600920006862
+      },
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "a": "compass-inside",
+      "arm": "transport64",
+      "b": "compass-outside",
+      "endpoint": {
+        "cosine": 0.9991331404817554,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.04163320838800522,
+        "rmsError": 0.0004454660786480344,
+        "targetRms": 0.010699777795082828
+      },
+      "head0Effect": {
+        "cosine": 0.9443731304729455,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.331260427771442,
+        "rmsError": 0.0004454660786480344,
+        "targetRms": 0.0013447609231350456
+      },
+      "invalidQueries": 0,
+      "queries": 4,
+      "stage": "mlp",
+      "validQueries": 4
+    },
+    {
+      "a": "compass-inside",
+      "arm": "transport64",
+      "b": "compass-outside",
+      "endpoint": {
+        "cosine": 0.9989388309818173,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.04605726686261564,
+        "rmsError": 0.0006432828212573386,
+        "targetRms": 0.013967021169019623
+      },
+      "head0Effect": {
+        "cosine": 0.9082895549398496,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.42689698262985626,
+        "rmsError": 0.0006432828212573386,
+        "targetRms": 0.0015068806935445152
+      },
+      "invalidQueries": 0,
+      "queries": 4,
+      "stage": "state",
+      "validQueries": 4
+    },
+    {
+      "a": "balloon-pink",
+      "arm": "nearest64",
+      "b": "balloon-brown",
+      "endpoint": {
+        "cosine": 0.9992022813660918,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.03994726056731831,
+        "rmsError": 0.0003761064811721815,
+        "targetRms": 0.009415075673045828
+      },
+      "head0Effect": {
+        "cosine": 0.4084068332290327,
+        "maxAbs": 0.015625,
+        "relativeRms": 1.161273492672527,
+        "rmsError": 0.0003761064811721815,
+        "targetRms": 0.0003238741636189586
+      },
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "a": "balloon-pink",
+      "arm": "nearest64",
+      "b": "balloon-brown",
+      "endpoint": {
+        "cosine": 0.9991044900675663,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.0423239530950759,
+        "rmsError": 0.0004065181506635447,
+        "targetRms": 0.00960491922269993
+      },
+      "head0Effect": {
+        "cosine": 0.43191997173335944,
+        "maxAbs": 0.015625,
+        "relativeRms": 1.1279934354306793,
+        "rmsError": 0.0004065181506635447,
+        "targetRms": 0.00036039052878737005
+      },
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "a": "balloon-pink",
+      "arm": "nearest64",
+      "b": "balloon-brown",
+      "endpoint": {
+        "cosine": 0.999035138830985,
+        "maxAbs": 0.03515625,
+        "relativeRms": 0.04394430611684124,
+        "rmsError": 0.0011367788381244763,
+        "targetRms": 0.02586862641776511
+      },
+      "head0Effect": {
+        "cosine": 0.5242090024710427,
+        "maxAbs": 0.03515625,
+        "relativeRms": 1.0505112079588572,
+        "rmsError": 0.0011367788381244763,
+        "targetRms": 0.001082119666608067
+      },
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "a": "balloon-pink",
+      "arm": "nearest64",
+      "b": "balloon-brown",
+      "endpoint": {
+        "cosine": 0.9965391569002535,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.08327382290778577,
+        "rmsError": 0.0008577409310490831,
+        "targetRms": 0.010300246837459502
+      },
+      "head0Effect": {
+        "cosine": 0.6512194195455403,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.8376751272621904,
+        "rmsError": 0.0008577409310490831,
+        "targetRms": 0.0010239541597140106
+      },
+      "invalidQueries": 0,
+      "queries": 4,
+      "stage": "mlp",
+      "validQueries": 4
+    },
+    {
+      "a": "balloon-pink",
+      "arm": "nearest64",
+      "b": "balloon-brown",
+      "endpoint": {
+        "cosine": 0.9959945507604493,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.08944800528573053,
+        "rmsError": 0.0010762675466053262,
+        "targetRms": 0.012032325854191195
+      },
+      "head0Effect": {
+        "cosine": 0.5781355179773229,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.9322703772216703,
+        "rmsError": 0.0010762675466053262,
+        "targetRms": 0.0011544585915223358
+      },
+      "invalidQueries": 0,
+      "queries": 4,
+      "stage": "state",
+      "validQueries": 4
+    },
+    {
+      "a": "balloon-pink",
+      "arm": "transport64",
+      "b": "balloon-brown",
+      "endpoint": {
+        "cosine": 0.9995448850839865,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.030173263980110564,
+        "rmsError": 0.0002840835636755289,
+        "targetRms": 0.009415075673045828
+      },
+      "head0Effect": {
+        "cosine": 0.664003435195688,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.8771417901977394,
+        "rmsError": 0.0002840835636755289,
+        "targetRms": 0.0003238741636189586
+      },
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "a": "balloon-pink",
+      "arm": "transport64",
+      "b": "balloon-brown",
+      "endpoint": {
+        "cosine": 0.9994681539947569,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.03261750431047896,
+        "rmsError": 0.0003132884941482172,
+        "targetRms": 0.00960491922269993
+      },
+      "head0Effect": {
+        "cosine": 0.6625569189898618,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.8693027955045317,
+        "rmsError": 0.0003132884941482172,
+        "targetRms": 0.00036039052878737005
+      },
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "a": "balloon-pink",
+      "arm": "transport64",
+      "b": "balloon-brown",
+      "endpoint": {
+        "cosine": 0.9994614517481405,
+        "maxAbs": 0.025390625,
+        "relativeRms": 0.03282701134480402,
+        "rmsError": 0.0008491896928904723,
+        "targetRms": 0.02586862641776511
+      },
+      "head0Effect": {
+        "cosine": 0.7210575265540179,
+        "maxAbs": 0.025390625,
+        "relativeRms": 0.7847465664793618,
+        "rmsError": 0.0008491896928904723,
+        "targetRms": 0.001082119666608067
+      },
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "a": "balloon-pink",
+      "arm": "transport64",
+      "b": "balloon-brown",
+      "endpoint": {
+        "cosine": 0.9988768198110176,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.047387378726319006,
+        "rmsError": 0.000488101697861263,
+        "targetRms": 0.010300246837459502
+      },
+      "head0Effect": {
+        "cosine": 0.8832902961367043,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.4766831534700629,
+        "rmsError": 0.000488101697861263,
+        "targetRms": 0.0010239541597140106
+      },
+      "invalidQueries": 0,
+      "queries": 4,
+      "stage": "mlp",
+      "validQueries": 4
+    },
+    {
+      "a": "balloon-pink",
+      "arm": "transport64",
+      "b": "balloon-brown",
+      "endpoint": {
+        "cosine": 0.9987538082615622,
+        "maxAbs": 0.0078125,
+        "relativeRms": 0.049909657259514795,
+        "rmsError": 0.0006005292594174811,
+        "targetRms": 0.012032325854191195
+      },
+      "head0Effect": {
+        "cosine": 0.8604551941980013,
+        "maxAbs": 0.0078125,
+        "relativeRms": 0.5201825893344416,
+        "rmsError": 0.0006005292594174811,
+        "targetRms": 0.0011544585915223358
+      },
+      "invalidQueries": 0,
+      "queries": 4,
+      "stage": "state",
+      "validQueries": 4
+    },
+    {
+      "a": "tower-above",
+      "arm": "nearest64",
+      "b": "tower-below",
+      "endpoint": {
+        "cosine": 0.998147142322681,
+        "maxAbs": 0.150390625,
+        "relativeRms": 0.06090953100375745,
+        "rmsError": 0.001328349326557137,
+        "targetRms": 0.0218085627104105
+      },
+      "head0Effect": {
+        "cosine": 0.31710894484020774,
+        "maxAbs": 0.150390625,
+        "relativeRms": 1.0047578707688007,
+        "rmsError": 0.001328349326557137,
+        "targetRms": 0.001322059140020209
+      },
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "a": "tower-above",
+      "arm": "nearest64",
+      "b": "tower-below",
+      "endpoint": {
+        "cosine": 0.99820900357498,
+        "maxAbs": 0.150390625,
+        "relativeRms": 0.05987844135971254,
+        "rmsError": 0.0013373477006354277,
+        "targetRms": 0.022334377286166687
+      },
+      "head0Effect": {
+        "cosine": 0.32122501166218037,
+        "maxAbs": 0.150390625,
+        "relativeRms": 1.0042463139885087,
+        "rmsError": 0.0013373477006354277,
+        "targetRms": 0.0013316929143846782
+      },
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "a": "tower-above",
+      "arm": "nearest64",
+      "b": "tower-below",
+      "endpoint": {
+        "cosine": 0.9974949898181846,
+        "maxAbs": 0.21343994140625,
+        "relativeRms": 0.07090858508302011,
+        "rmsError": 0.0037054868031879927,
+        "targetRms": 0.05225723794727523
+      },
+      "head0Effect": {
+        "cosine": 0.3292697267346374,
+        "maxAbs": 0.21343994140625,
+        "relativeRms": 1.0303309135239653,
+        "rmsError": 0.0037054868031879927,
+        "targetRms": 0.003596404567261199
+      },
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "a": "tower-above",
+      "arm": "nearest64",
+      "b": "tower-below",
+      "endpoint": {
+        "cosine": 0.9990371884164806,
+        "maxAbs": 0.07421875,
+        "relativeRms": 0.04465070403470574,
+        "rmsError": 0.006659182500827832,
+        "targetRms": 0.1491394737169617
+      },
+      "head0Effect": {
+        "cosine": 0.867673227964834,
+        "maxAbs": 0.07421875,
+        "relativeRms": 0.5695237679826466,
+        "rmsError": 0.006659182500827832,
+        "targetRms": 0.011692545377721159
+      },
+      "invalidQueries": 0,
+      "queries": 5,
+      "stage": "mlp",
+      "validQueries": 5
+    },
+    {
+      "a": "tower-above",
+      "arm": "nearest64",
+      "b": "tower-below",
+      "endpoint": {
+        "cosine": 0.9990115326006554,
+        "maxAbs": 0.08984375,
+        "relativeRms": 0.0448447204276811,
+        "rmsError": 0.007641983697211214,
+        "targetRms": 0.1704098860318478
+      },
+      "head0Effect": {
+        "cosine": 0.8478724269769485,
+        "maxAbs": 0.08984375,
+        "relativeRms": 0.5619620795969517,
+        "rmsError": 0.007641983697211214,
+        "targetRms": 0.013598753322808133
+      },
+      "invalidQueries": 0,
+      "queries": 5,
+      "stage": "state",
+      "validQueries": 5
+    },
+    {
+      "a": "tower-above",
+      "arm": "transport64",
+      "b": "tower-below",
+      "endpoint": {
+        "cosine": 0.999516526185298,
+        "maxAbs": 0.044921875,
+        "relativeRms": 0.031148434218016528,
+        "rmsError": 0.0006793025809747098,
+        "targetRms": 0.0218085627104105
+      },
+      "head0Effect": {
+        "cosine": 0.9222170968855559,
+        "maxAbs": 0.044921875,
+        "relativeRms": 0.5138216290114873,
+        "rmsError": 0.0006793025809747098,
+        "targetRms": 0.001322059140020209
+      },
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "a": "tower-above",
+      "arm": "transport64",
+      "b": "tower-below",
+      "endpoint": {
+        "cosine": 0.9995181323863201,
+        "maxAbs": 0.044921875,
+        "relativeRms": 0.031092763366352746,
+        "rmsError": 0.0006944375078936244,
+        "targetRms": 0.022334377286166687
+      },
+      "head0Effect": {
+        "cosine": 0.9182230524203657,
+        "maxAbs": 0.044921875,
+        "relativeRms": 0.5214697025060737,
+        "rmsError": 0.0006944375078936244,
+        "targetRms": 0.0013316929143846782
+      },
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "a": "tower-above",
+      "arm": "transport64",
+      "b": "tower-below",
+      "endpoint": {
+        "cosine": 0.9993142327149436,
+        "maxAbs": 0.1171875,
+        "relativeRms": 0.03709420505796999,
+        "rmsError": 0.001938440700179358,
+        "targetRms": 0.05225723794727523
+      },
+      "head0Effect": {
+        "cosine": 0.9134754067418059,
+        "maxAbs": 0.1171875,
+        "relativeRms": 0.5389940602971582,
+        "rmsError": 0.001938440700179358,
+        "targetRms": 0.003596404567261199
+      },
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "a": "tower-above",
+      "arm": "transport64",
+      "b": "tower-below",
+      "endpoint": {
+        "cosine": 0.9997947405036522,
+        "maxAbs": 0.04296875,
+        "relativeRms": 0.021187230824532763,
+        "rmsError": 0.003159852454690605,
+        "targetRms": 0.1491394737169617
+      },
+      "head0Effect": {
+        "cosine": 0.9748986136651727,
+        "maxAbs": 0.04296875,
+        "relativeRms": 0.2702450452500575,
+        "rmsError": 0.003159852454690605,
+        "targetRms": 0.011692545377721159
+      },
+      "invalidQueries": 0,
+      "queries": 5,
+      "stage": "mlp",
+      "validQueries": 5
+    },
+    {
+      "a": "tower-above",
+      "arm": "transport64",
+      "b": "tower-below",
+      "endpoint": {
+        "cosine": 0.9998065106298869,
+        "maxAbs": 0.0546875,
+        "relativeRms": 0.020475646495335315,
+        "rmsError": 0.003489252585698495,
+        "targetRms": 0.1704098860318478
+      },
+      "head0Effect": {
+        "cosine": 0.9793203081762819,
+        "maxAbs": 0.0546875,
+        "relativeRms": 0.2565862107261143,
+        "rmsError": 0.003489252585698495,
+        "targetRms": 0.013598753322808133
+      },
+      "invalidQueries": 0,
+      "queries": 5,
+      "stage": "state",
+      "validQueries": 5
+    },
+    {
+      "a": "compass-forward",
+      "arm": "nearest64",
+      "b": "compass-reverse",
+      "endpoint": {
+        "cosine": 0.9993728452053992,
+        "maxAbs": 0.06640625,
+        "relativeRms": 0.035414644430394444,
+        "rmsError": 0.0018149390509182603,
+        "targetRms": 0.05124826410400432
+      },
+      "head0Effect": {
+        "cosine": 0.27390016958806523,
+        "maxAbs": 0.06640625,
+        "relativeRms": 1.3745379247908336,
+        "rmsError": 0.0018149390509182603,
+        "targetRms": 0.0013203993998160825
+      },
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "a": "compass-forward",
+      "arm": "nearest64",
+      "b": "compass-reverse",
+      "endpoint": {
+        "cosine": 0.9995733127089084,
+        "maxAbs": 0.06640625,
+        "relativeRms": 0.029211837728507207,
+        "rmsError": 0.001822033395652956,
+        "targetRms": 0.06237311779514894
+      },
+      "head0Effect": {
+        "cosine": 0.2775128834140271,
+        "maxAbs": 0.06640625,
+        "relativeRms": 1.3681240143257387,
+        "rmsError": 0.001822033395652956,
+        "targetRms": 0.0013317750266600796
+      },
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "a": "compass-forward",
+      "arm": "nearest64",
+      "b": "compass-reverse",
+      "endpoint": {
+        "cosine": 0.9995286206958515,
+        "maxAbs": 0.1099853515625,
+        "relativeRms": 0.03074856889209632,
+        "rmsError": 0.005957802953356949,
+        "targetRms": 0.19375870708858764
+      },
+      "head0Effect": {
+        "cosine": 0.6962077479948071,
+        "maxAbs": 0.1099853515625,
+        "relativeRms": 0.8158017690954393,
+        "rmsError": 0.005957802953356949,
+        "targetRms": 0.007303003228300128
+      },
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "a": "compass-forward",
+      "arm": "nearest64",
+      "b": "compass-reverse",
+      "endpoint": {
+        "cosine": 0.9995075636958859,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.03193061048158706,
+        "rmsError": 0.004128970224113814,
+        "targetRms": 0.12931071977138692
+      },
+      "head0Effect": {
+        "cosine": 0.9441495318080615,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.33557758789580105,
+        "rmsError": 0.004128970224113814,
+        "targetRms": 0.012304070274788094
+      },
+      "invalidQueries": 0,
+      "queries": 2,
+      "stage": "mlp",
+      "validQueries": 2
+    },
+    {
+      "a": "compass-forward",
+      "arm": "nearest64",
+      "b": "compass-reverse",
+      "endpoint": {
+        "cosine": 0.9995425051573061,
+        "maxAbs": 0.046875,
+        "relativeRms": 0.030616221597234036,
+        "rmsError": 0.004619696890403488,
+        "targetRms": 0.1508904969129452
+      },
+      "head0Effect": {
+        "cosine": 0.9309884121227144,
+        "maxAbs": 0.046875,
+        "relativeRms": 0.3729999551293941,
+        "rmsError": 0.004619696890403488,
+        "targetRms": 0.012385247844871484
+      },
+      "invalidQueries": 0,
+      "queries": 2,
+      "stage": "state",
+      "validQueries": 2
+    },
+    {
+      "a": "compass-forward",
+      "arm": "transport64",
+      "b": "compass-reverse",
+      "endpoint": {
+        "cosine": 0.9998057756207699,
+        "maxAbs": 0.0390625,
+        "relativeRms": 0.019709805201452962,
+        "rmsError": 0.0010100933024025395,
+        "targetRms": 0.05124826410400432
+      },
+      "head0Effect": {
+        "cosine": 0.7592367875807381,
+        "maxAbs": 0.0390625,
+        "relativeRms": 0.7649907312463446,
+        "rmsError": 0.0010100933024025395,
+        "targetRms": 0.0013203993998160825
+      },
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "a": "compass-forward",
+      "arm": "transport64",
+      "b": "compass-reverse",
+      "endpoint": {
+        "cosine": 0.9998656780829323,
+        "maxAbs": 0.0390625,
+        "relativeRms": 0.016390595216674592,
+        "rmsError": 0.0010223325261822492,
+        "targetRms": 0.06237311779514894
+      },
+      "head0Effect": {
+        "cosine": 0.7565458483052249,
+        "maxAbs": 0.0390625,
+        "relativeRms": 0.767646566211808,
+        "rmsError": 0.0010223325261822492,
+        "targetRms": 0.0013317750266600796
+      },
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "a": "compass-forward",
+      "arm": "transport64",
+      "b": "compass-reverse",
+      "endpoint": {
+        "cosine": 0.9998526474536742,
+        "maxAbs": 0.0517578125,
+        "relativeRms": 0.017178978353867336,
+        "rmsError": 0.003328576634948169,
+        "targetRms": 0.19375870708858764
+      },
+      "head0Effect": {
+        "cosine": 0.9058965304629064,
+        "maxAbs": 0.0517578125,
+        "relativeRms": 0.45578189285874654,
+        "rmsError": 0.003328576634948169,
+        "targetRms": 0.007303003228300128
+      },
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "a": "compass-forward",
+      "arm": "transport64",
+      "b": "compass-reverse",
+      "endpoint": {
+        "cosine": 0.9999090761666422,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.013518401564399958,
+        "rmsError": 0.0017480742364512016,
+        "targetRms": 0.12931071977138692
+      },
+      "head0Effect": {
+        "cosine": 0.9903940714307911,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.1420728423530812,
+        "rmsError": 0.0017480742364512016,
+        "targetRms": 0.012304070274788094
+      },
+      "invalidQueries": 0,
+      "queries": 2,
+      "stage": "mlp",
+      "validQueries": 2
+    },
+    {
+      "a": "compass-forward",
+      "arm": "transport64",
+      "b": "compass-reverse",
+      "endpoint": {
+        "cosine": 0.9999110295769612,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.013360763205717273,
+        "rmsError": 0.002016012199246874,
+        "targetRms": 0.1508904969129452
+      },
+      "head0Effect": {
+        "cosine": 0.9873655689558702,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.1627752810842352,
+        "rmsError": 0.002016012199246874,
+        "targetRms": 0.012385247844871484
+      },
+      "invalidQueries": 0,
+      "queries": 2,
+      "stage": "state",
+      "validQueries": 2
+    }
+  ],
+  "parameters": {
+    "float64ResidentMatrixBytes": 681579520,
+    "numericPolicy": "FP64 mathematical attention/output/MLP contractions on BF16 operands, explicit BF16 boundaries; FP32 RMS variance and SiLU. Shared equation reference, not nativeCUDA/Flash/Torch numerical parity.",
+    "parameterPayloadBytes": 170398720,
+    "source": {
+      "assets": {
+        "text_encoder/config.json": "214b4c29a0d975e9fddf9994a5673f22cb2c4c5750352f9227c2c3251ebeab40",
+        "text_encoder/model.safetensors.index.json": "06b3d5319b6d76d1a4a2433419180016cfd54ed62d086a5e6567a809f8c82634",
+        "tokenizer/added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+        "tokenizer/chat_template.jinja": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+        "tokenizer/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "tokenizer/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "tokenizer/tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "tokenizer/tokenizer_config.json": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+        "tokenizer/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      },
+      "modelRoot": "/mnt/big/llm-models/FLUX.2-klein-4B",
+      "nativeSourceSHA256": "fbdcfeeb1b54135ca67ba7df924da92f4b264e1252b517eea2de989289ebaeab",
+      "pipelineSourceSHA256": "8a57a8a7f1c22fc0c5bc5d3fd1bd9bc76c17c1f4d6644cc73370651dd955358e",
+      "tensors": {
+        "e": "model.embed_tokens.weight",
+        "input": "model.layers.0.input_layernorm.weight",
+        "k": "model.layers.0.self_attn.k_proj.weight",
+        "kn": "model.layers.0.self_attn.k_norm.weight",
+        "q": "model.layers.0.self_attn.q_proj.weight",
+        "qn": "model.layers.0.self_attn.q_norm.weight",
+        "v": "model.layers.0.self_attn.v_proj.weight"
+      },
+      "weightFile": {
+        "bytes": 4967215360,
+        "path": "text_encoder/model-00001-of-00002.safetensors",
+        "sha256": "8c0506e7f4936fa7e26183a4fd8da4e2bdbc5990ba64ae441f965d51228f36ea"
+      }
+    },
+    "sourceShardBytesHashed": 4967215360,
+    "tensors": [
+      {
+        "header": {
+          "data_offsets": [
+            932587776,
+            953559296
+          ],
+          "dtype": "BF16",
+          "shape": [
+            2560,
+            4096
+          ]
+        },
+        "key": "output",
+        "payloadBytes": 20971520,
+        "payloadSHA256": "619b512cd8923f4f7fe0aba1aa51182f15295ea3f4b5e994d2f96cc28bd87d1b",
+        "tensor": "model.layers.0.self_attn.o_proj.weight"
+      },
+      {
+        "header": {
+          "data_offsets": [
+            927339520,
+            927344640
+          ],
+          "dtype": "BF16",
+          "shape": [
+            2560
+          ]
+        },
+        "key": "gamma",
+        "payloadBytes": 5120,
+        "payloadSHA256": "1b62e6af917bfad75a9271a8d89a8d565517abbedef85a68cbd5f4ba3a0a0584",
+        "tensor": "model.layers.0.post_attention_layernorm.weight"
+      },
+      {
+        "header": {
+          "data_offsets": [
+            827724800,
+            877532160
+          ],
+          "dtype": "BF16",
+          "shape": [
+            9728,
+            2560
+          ]
+        },
+        "key": "gate",
+        "payloadBytes": 49807360,
+        "payloadSHA256": "fe440e8f6cc7c56de2d5a97fef5ee04f65388dd8460821ef2ed1645c39c6a47a",
+        "tensor": "model.layers.0.mlp.gate_proj.weight"
+      },
+      {
+        "header": {
+          "data_offsets": [
+            877532160,
+            927339520
+          ],
+          "dtype": "BF16",
+          "shape": [
+            9728,
+            2560
+          ]
+        },
+        "key": "up",
+        "payloadBytes": 49807360,
+        "payloadSHA256": "9a957c5a0f2bd6a240eaf6e5de83dd91a58ed1acd1829fcb72ab95aa7624181d",
+        "tensor": "model.layers.0.mlp.up_proj.weight"
+      },
+      {
+        "header": {
+          "data_offsets": [
+            777917440,
+            827724800
+          ],
+          "dtype": "BF16",
+          "shape": [
+            2560,
+            9728
+          ]
+        },
+        "key": "down",
+        "payloadBytes": 49807360,
+        "payloadSHA256": "edf534353405dab5179894b9641d12c6e53c4c6a8100b8c079257a9f3584945f",
+        "tensor": "model.layers.0.mlp.down_proj.weight"
+      }
+    ]
+  },
+  "predictionSealSHA256": "b47afaeae6fbe770e384bde53aa992f3b953d7aa5ea36306953d01def27d293e",
+  "reference": {
+    "head0ReferenceChecks": [
+      {
+        "head0ReferenceWordMismatches": 0,
+        "id": "compass-inside"
+      },
+      {
+        "head0ReferenceWordMismatches": 0,
+        "id": "compass-outside"
+      },
+      {
+        "head0ReferenceWordMismatches": 0,
+        "id": "balloon-pink"
+      },
+      {
+        "head0ReferenceWordMismatches": 0,
+        "id": "balloon-brown"
+      },
+      {
+        "head0ReferenceWordMismatches": 0,
+        "id": "tower-above"
+      },
+      {
+        "head0ReferenceWordMismatches": 0,
+        "id": "tower-below"
+      },
+      {
+        "head0ReferenceWordMismatches": 0,
+        "id": "compass-forward"
+      },
+      {
+        "head0ReferenceWordMismatches": 0,
+        "id": "compass-reverse"
+      }
+    ],
+    "rows": [
+      {
+        "context": {
+          "path": "/mnt/hdd8tb/mrun-work/job-d8421ee1f182/consumer-arrays/compass-inside-context.npz",
+          "sha256": "39e9ac5a21d90ee6efcc61c01e233b33e8ee55219a8f54c94a141c64e3aa3b76"
+        },
+        "id": "compass-inside",
+        "path": "/mnt/hdd8tb/mrun-work/job-d8421ee1f182/consumer-arrays/compass-inside-consumer.npz",
+        "probePositions": [
+          0,
+          25,
+          26,
+          511
+        ],
+        "sha256": "b2aa81e6895965507c9e4c30877895bffe9024bdf695de9bcb9d8516197b8ec3"
+      },
+      {
+        "context": {
+          "path": "/mnt/hdd8tb/mrun-work/job-d8421ee1f182/consumer-arrays/compass-outside-context.npz",
+          "sha256": "82f1c1b7099225584801d85391668f78a68a130c31a31cfeb1eedffe9b032b84"
+        },
+        "id": "compass-outside",
+        "path": "/mnt/hdd8tb/mrun-work/job-d8421ee1f182/consumer-arrays/compass-outside-consumer.npz",
+        "probePositions": [
+          0,
+          25,
+          26,
+          511
+        ],
+        "sha256": "896102f39699ed4eda69a42378c5f6c420f381a660bc97a6baeb468c9e4243dc"
+      },
+      {
+        "context": {
+          "path": "/mnt/hdd8tb/mrun-work/job-d8421ee1f182/consumer-arrays/balloon-pink-context.npz",
+          "sha256": "a292ed4ee5eacfac908c2fe946833eee1b39e2328d520637522c9288632cc4f4"
+        },
+        "id": "balloon-pink",
+        "path": "/mnt/hdd8tb/mrun-work/job-d8421ee1f182/consumer-arrays/balloon-pink-consumer.npz",
+        "probePositions": [
+          0,
+          25,
+          26,
+          511
+        ],
+        "sha256": "c7cfefa9f704b465c473c3659e04d60747332ca7f33816b515a5ba5a159aeca7"
+      },
+      {
+        "context": {
+          "path": "/mnt/hdd8tb/mrun-work/job-d8421ee1f182/consumer-arrays/balloon-brown-context.npz",
+          "sha256": "e908892df4dd43bf8a94b95ee39599b631d6ba388facfcf9506839e954955801"
+        },
+        "id": "balloon-brown",
+        "path": "/mnt/hdd8tb/mrun-work/job-d8421ee1f182/consumer-arrays/balloon-brown-consumer.npz",
+        "probePositions": [
+          0,
+          25,
+          26,
+          511
+        ],
+        "sha256": "04256580aba3879aae80108ef1317fe376d6ae98f56086f927f7a55a024a2d79"
+      },
+      {
+        "context": {
+          "path": "/mnt/hdd8tb/mrun-work/job-d8421ee1f182/consumer-arrays/tower-above-context.npz",
+          "sha256": "d25d0acdc59a569f5fd339c43b697b9704665296176a829d44a89445d42f2bed"
+        },
+        "id": "tower-above",
+        "path": "/mnt/hdd8tb/mrun-work/job-d8421ee1f182/consumer-arrays/tower-above-consumer.npz",
+        "probePositions": [
+          0,
+          32,
+          33,
+          34,
+          511
+        ],
+        "sha256": "562bf1b69c672b672cfc63d49ff3b534314aaeaabe7783968d0a87138bd07fee"
+      },
+      {
+        "context": {
+          "path": "/mnt/hdd8tb/mrun-work/job-d8421ee1f182/consumer-arrays/tower-below-context.npz",
+          "sha256": "8e3d683e1dcc8241e258858af256ef8bb4e708bc413aa89383af01f44c650ab3"
+        },
+        "id": "tower-below",
+        "path": "/mnt/hdd8tb/mrun-work/job-d8421ee1f182/consumer-arrays/tower-below-consumer.npz",
+        "probePositions": [
+          0,
+          32,
+          33,
+          34,
+          511
+        ],
+        "sha256": "8f1c13f522284c9cba71ae009db04723b634d46e358bbfe216b0ab94579ae940"
+      },
+      {
+        "context": {
+          "path": "/mnt/hdd8tb/mrun-work/job-d8421ee1f182/consumer-arrays/compass-forward-context.npz",
+          "sha256": "ff394446aaf2e7927fb9d79957252a6e8d7eff97a25f6b295f021ef0eba4d413"
+        },
+        "id": "compass-forward",
+        "path": "/mnt/hdd8tb/mrun-work/job-d8421ee1f182/consumer-arrays/compass-forward-consumer.npz",
+        "probePositions": [
+          0,
+          511
+        ],
+        "sha256": "1fecee6f663593fa336b0c84e62e8c042e162b45561356c63d4a51a3a767c763"
+      },
+      {
+        "context": {
+          "path": "/mnt/hdd8tb/mrun-work/job-d8421ee1f182/consumer-arrays/compass-reverse-context.npz",
+          "sha256": "41d87e9c27648e23a3bb86f04568fd0b3d0a7f3aa89a69ac5d9a4fd491ba208d"
+        },
+        "id": "compass-reverse",
+        "path": "/mnt/hdd8tb/mrun-work/job-d8421ee1f182/consumer-arrays/compass-reverse-consumer.npz",
+        "probePositions": [
+          0,
+          511
+        ],
+        "sha256": "68ad66c9d5cc304d8cf034ce576d7dc74c22901a463a30804444ee60ebf16fde"
+      }
+    ],
+    "scope": "Original-equation offline consumer arrays. All512writer/residual/RMS rows; source-clock MLP/state probes only. Parent seal is inherited, not a separately forecast fullencoder."
+  },
+  "requestSHA256": "a5a0b54a3cdd6b5ab5b8da88d24cf70220f485868ea9dc04bcd797371f0beb47",
+  "schema": "tce-transport-consumer-result-v1",
+  "scope": "Offline receiving-operation diagnostic. Predicted head0 with reference other31heads, original output/RMS/MLP equations; not own-state complete encoder or zero-neural serving.",
+  "scores": [
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9998257841418305,
+        "maxAbs": 0.0546875,
+        "relativeRms": 0.018672098722592914,
+        "rmsError": 0.0014007914604324693,
+        "targetRms": 0.0750205684558392
+      },
+      "head0Effect": {
+        "cosine": 0.9550259305276142,
+        "maxAbs": 0.0546875,
+        "relativeRms": 0.2971433420465651,
+        "rmsError": 0.0014007914604324693,
+        "targetRms": 0.004714194337266868
+      },
+      "id": "compass-inside",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9998347742929301,
+        "maxAbs": 0.0546875,
+        "relativeRms": 0.01818334184598468,
+        "rmsError": 0.0014050340930229686,
+        "targetRms": 0.07727039973860657
+      },
+      "head0Effect": {
+        "cosine": 0.9547637772292593,
+        "maxAbs": 0.0546875,
+        "relativeRms": 0.29800489263806224,
+        "rmsError": 0.0014050340930229686,
+        "targetRms": 0.0047148020979958655
+      },
+      "id": "compass-inside",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9995040747470318,
+        "maxAbs": 0.0933837890625,
+        "relativeRms": 0.03151155911930392,
+        "rmsError": 0.0037762888189943056,
+        "targetRms": 0.11983820935984592
+      },
+      "head0Effect": {
+        "cosine": 0.9466593219970898,
+        "maxAbs": 0.0933837890625,
+        "relativeRms": 0.3232015376168419,
+        "rmsError": 0.0037762888189943056,
+        "targetRms": 0.011684006353556174
+      },
+      "id": "compass-inside",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9999703222426813,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.007714293718604571,
+        "rmsError": 0.0014374080030779622,
+        "targetRms": 0.18633047372974193
+      },
+      "head0Effect": {
+        "cosine": 0.9970257158527219,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.07733179070948029,
+        "rmsError": 0.0014374080030779622,
+        "targetRms": 0.018587543232743826
+      },
+      "id": "compass-inside",
+      "invalidQueries": 0,
+      "queries": 4,
+      "stage": "mlp",
+      "validQueries": 4
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9999718505533051,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.007522444579508661,
+        "rmsError": 0.0017530111101429074,
+        "targetRms": 0.23303742441893907
+      },
+      "head0Effect": {
+        "cosine": 0.9964361697071175,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.08473182482779064,
+        "rmsError": 0.0017530111101429074,
+        "targetRms": 0.020688933747216413
+      },
+      "id": "compass-inside",
+      "invalidQueries": 0,
+      "queries": 4,
+      "stage": "state",
+      "validQueries": 4
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999738804007594,
+        "maxAbs": 0.02734375,
+        "relativeRms": 0.007228528708936678,
+        "rmsError": 0.000542288332843783,
+        "targetRms": 0.0750205684558392
+      },
+      "head0Effect": {
+        "cosine": 0.9936011846594873,
+        "maxAbs": 0.02734375,
+        "relativeRms": 0.11503308816882242,
+        "rmsError": 0.000542288332843783,
+        "targetRms": 0.004714194337266868
+      },
+      "id": "compass-inside",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999746982826448,
+        "maxAbs": 0.02734375,
+        "relativeRms": 0.007114457029772593,
+        "rmsError": 0.0005497369386136678,
+        "targetRms": 0.07727039973860657
+      },
+      "head0Effect": {
+        "cosine": 0.993423694033654,
+        "maxAbs": 0.02734375,
+        "relativeRms": 0.11659809408487072,
+        "rmsError": 0.0005497369386136678,
+        "targetRms": 0.0047148020979958655
+      },
+      "id": "compass-inside",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999254455079459,
+        "maxAbs": 0.07958984375,
+        "relativeRms": 0.01221117924635674,
+        "rmsError": 0.0014633658550555044,
+        "targetRms": 0.11983820935984592
+      },
+      "head0Effect": {
+        "cosine": 0.9924001170935135,
+        "maxAbs": 0.07958984375,
+        "relativeRms": 0.1252452121964236,
+        "rmsError": 0.0014633658550555044,
+        "targetRms": 0.011684006353556174
+      },
+      "id": "compass-inside",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999766251152393,
+        "maxAbs": 0.0625,
+        "relativeRms": 0.006904134864507157,
+        "rmsError": 0.001286450719997646,
+        "targetRms": 0.18633047372974193
+      },
+      "head0Effect": {
+        "cosine": 0.997799835468284,
+        "maxAbs": 0.0625,
+        "relativeRms": 0.06921036868021557,
+        "rmsError": 0.001286450719997646,
+        "targetRms": 0.018587543232743826
+      },
+      "id": "compass-inside",
+      "invalidQueries": 0,
+      "queries": 4,
+      "stage": "mlp",
+      "validQueries": 4
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999781018456468,
+        "maxAbs": 0.0625,
+        "relativeRms": 0.0067124213735181276,
+        "rmsError": 0.0015642453884993019,
+        "targetRms": 0.23303742441893907
+      },
+      "head0Effect": {
+        "cosine": 0.997435834749945,
+        "maxAbs": 0.0625,
+        "relativeRms": 0.07560783013816566,
+        "rmsError": 0.0015642453884993019,
+        "targetRms": 0.020688933747216413
+      },
+      "id": "compass-inside",
+      "invalidQueries": 0,
+      "queries": 4,
+      "stage": "state",
+      "validQueries": 4
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9998237597958272,
+        "maxAbs": 0.0546875,
+        "relativeRms": 0.018780595645030068,
+        "rmsError": 0.0014027223131182246,
+        "targetRms": 0.07468998000015131
+      },
+      "head0Effect": {
+        "cosine": 0.9551318993155098,
+        "maxAbs": 0.0546875,
+        "relativeRms": 0.29672578316315995,
+        "rmsError": 0.0014027223131182246,
+        "targetRms": 0.004727335448119494
+      },
+      "id": "compass-outside",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9998329325392411,
+        "maxAbs": 0.0546875,
+        "relativeRms": 0.018285301122724758,
+        "rmsError": 0.0014066666419134352,
+        "targetRms": 0.07692882017486966
+      },
+      "head0Effect": {
+        "cosine": 0.9548938044917092,
+        "maxAbs": 0.0546875,
+        "relativeRms": 0.29750586495696435,
+        "rmsError": 0.0014066666419134352,
+        "targetRms": 0.004728198020959742
+      },
+      "id": "compass-outside",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9995029134324441,
+        "maxAbs": 0.0933837890625,
+        "relativeRms": 0.031550372454170875,
+        "rmsError": 0.0037967882325124483,
+        "targetRms": 0.12034052016430388
+      },
+      "head0Effect": {
+        "cosine": 0.9470075919922024,
+        "maxAbs": 0.0933837890625,
+        "relativeRms": 0.3221057989447156,
+        "rmsError": 0.0037967882325124483,
+        "targetRms": 0.01178739484030248
+      },
+      "id": "compass-outside",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9999679888212489,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.008037164712496337,
+        "rmsError": 0.0014988363200207357,
+        "targetRms": 0.18648819249533563
+      },
+      "head0Effect": {
+        "cosine": 0.9967808743220234,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.08048358443930717,
+        "rmsError": 0.0014988363200207357,
+        "targetRms": 0.018622882299073187
+      },
+      "id": "compass-outside",
+      "invalidQueries": 0,
+      "queries": 4,
+      "stage": "mlp",
+      "validQueries": 4
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9999699249843544,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.007810118519849126,
+        "rmsError": 0.0018185070719063158,
+        "targetRms": 0.23283988165924085
+      },
+      "head0Effect": {
+        "cosine": 0.996208670975182,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.0875383809398644,
+        "rmsError": 0.0018185070719063158,
+        "targetRms": 0.020773825747994613
+      },
+      "id": "compass-outside",
+      "invalidQueries": 0,
+      "queries": 4,
+      "stage": "state",
+      "validQueries": 4
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999731250990817,
+        "maxAbs": 0.02734375,
+        "relativeRms": 0.007332198507995204,
+        "rmsError": 0.0005476417599193011,
+        "targetRms": 0.07468998000015131
+      },
+      "head0Effect": {
+        "cosine": 0.9935174038027259,
+        "maxAbs": 0.02734375,
+        "relativeRms": 0.11584575834091691,
+        "rmsError": 0.0005476417599193011,
+        "targetRms": 0.004727335448119494
+      },
+      "id": "compass-outside",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999740065006213,
+        "maxAbs": 0.02734375,
+        "relativeRms": 0.007210900991978588,
+        "rmsError": 0.00055472610571071,
+        "targetRms": 0.07692882017486966
+      },
+      "head0Effect": {
+        "cosine": 0.9933479930106689,
+        "maxAbs": 0.02734375,
+        "relativeRms": 0.11732294274724776,
+        "rmsError": 0.00055472610571071,
+        "targetRms": 0.004728198020959742
+      },
+      "id": "compass-outside",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999242732180625,
+        "maxAbs": 0.064208984375,
+        "relativeRms": 0.012306900566327134,
+        "rmsError": 0.0014810188157621733,
+        "targetRms": 0.12034052016430388
+      },
+      "head0Effect": {
+        "cosine": 0.9923613008585408,
+        "maxAbs": 0.064208984375,
+        "relativeRms": 0.1256442866152576,
+        "rmsError": 0.0014810188157621733,
+        "targetRms": 0.01178739484030248
+      },
+      "id": "compass-outside",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999763103085887,
+        "maxAbs": 0.046875,
+        "relativeRms": 0.006924613991942975,
+        "rmsError": 0.001291358747085356,
+        "targetRms": 0.18648819249533563
+      },
+      "head0Effect": {
+        "cosine": 0.9978245121559091,
+        "maxAbs": 0.046875,
+        "relativeRms": 0.06934258222475173,
+        "rmsError": 0.001291358747085356,
+        "targetRms": 0.018622882299073187
+      },
+      "id": "compass-outside",
+      "invalidQueries": 0,
+      "queries": 4,
+      "stage": "mlp",
+      "validQueries": 4
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999788829723902,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.006545912869905137,
+        "rmsError": 0.0015241495779804138,
+        "targetRms": 0.23283988165924085
+      },
+      "head0Effect": {
+        "cosine": 0.9976111019511896,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.0733687475994905,
+        "rmsError": 0.0015241495779804138,
+        "targetRms": 0.020773825747994613
+      },
+      "id": "compass-outside",
+      "invalidQueries": 0,
+      "queries": 4,
+      "stage": "state",
+      "validQueries": 4
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9998122508196196,
+        "maxAbs": 0.0546875,
+        "relativeRms": 0.019376878933435204,
+        "rmsError": 0.001435747971608692,
+        "targetRms": 0.07409593549822305
+      },
+      "head0Effect": {
+        "cosine": 0.9545682859324012,
+        "maxAbs": 0.0546875,
+        "relativeRms": 0.3052879489785003,
+        "rmsError": 0.001435747971608692,
+        "targetRms": 0.004702930385600657
+      },
+      "id": "balloon-pink",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9998222947163548,
+        "maxAbs": 0.0546875,
+        "relativeRms": 0.01885150892602002,
+        "rmsError": 0.00143986855688931,
+        "targetRms": 0.07637948572392071
+      },
+      "head0Effect": {
+        "cosine": 0.9543256270035569,
+        "maxAbs": 0.0546875,
+        "relativeRms": 0.3060950202077906,
+        "rmsError": 0.00143986855688931,
+        "targetRms": 0.004703992099942902
+      },
+      "id": "balloon-pink",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9995097773478883,
+        "maxAbs": 0.0933837890625,
+        "relativeRms": 0.03133221054184974,
+        "rmsError": 0.0038766665340734963,
+        "targetRms": 0.12372783365844932
+      },
+      "head0Effect": {
+        "cosine": 0.9509095937859657,
+        "maxAbs": 0.0933837890625,
+        "relativeRms": 0.3189857487475387,
+        "rmsError": 0.0038766665340734963,
+        "targetRms": 0.012153102605037332
+      },
+      "id": "balloon-pink",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9999570227286699,
+        "maxAbs": 0.046875,
+        "relativeRms": 0.0092710696183945,
+        "rmsError": 0.001746631622538126,
+        "targetRms": 0.1883959127081386
+      },
+      "head0Effect": {
+        "cosine": 0.995840633198515,
+        "maxAbs": 0.046875,
+        "relativeRms": 0.09248100713772103,
+        "rmsError": 0.001746631622538126,
+        "targetRms": 0.018886381935018008
+      },
+      "id": "balloon-pink",
+      "invalidQueries": 0,
+      "queries": 4,
+      "stage": "mlp",
+      "validQueries": 4
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9999559561488501,
+        "maxAbs": 0.0625,
+        "relativeRms": 0.009393174998731744,
+        "rmsError": 0.0021975692938365292,
+        "targetRms": 0.23395383287687527
+      },
+      "head0Effect": {
+        "cosine": 0.9947560340059719,
+        "maxAbs": 0.0625,
+        "relativeRms": 0.10407982642117382,
+        "rmsError": 0.0021975692938365292,
+        "targetRms": 0.021114267475271842
+      },
+      "id": "balloon-pink",
+      "invalidQueries": 0,
+      "queries": 4,
+      "stage": "state",
+      "validQueries": 4
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999676027937902,
+        "maxAbs": 0.021396636962890625,
+        "relativeRms": 0.008049441524535857,
+        "rmsError": 0.000596430899998727,
+        "targetRms": 0.07409593549822305
+      },
+      "head0Effect": {
+        "cosine": 0.9924260383026637,
+        "maxAbs": 0.021396636962890625,
+        "relativeRms": 0.12682112025831127,
+        "rmsError": 0.000596430899998727,
+        "targetRms": 0.004702930385600657
+      },
+      "id": "balloon-pink",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999687342039182,
+        "maxAbs": 0.02142333984375,
+        "relativeRms": 0.007907631832991178,
+        "rmsError": 0.0006039808526979707,
+        "targetRms": 0.07637948572392071
+      },
+      "head0Effect": {
+        "cosine": 0.9922289697908704,
+        "maxAbs": 0.02142333984375,
+        "relativeRms": 0.12839750574948924,
+        "rmsError": 0.0006039808526979707,
+        "targetRms": 0.004703992099942902
+      },
+      "id": "balloon-pink",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999115809708975,
+        "maxAbs": 0.044921875,
+        "relativeRms": 0.013308629029209484,
+        "rmsError": 0.0016466478387480409,
+        "targetRms": 0.12372783365844932
+      },
+      "head0Effect": {
+        "cosine": 0.9913516301712548,
+        "maxAbs": 0.044921875,
+        "relativeRms": 0.1354919720718496,
+        "rmsError": 0.0016466478387480409,
+        "targetRms": 0.012153102605037332
+      },
+      "id": "balloon-pink",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999863552784247,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.0052499106274300515,
+        "rmsError": 0.0009890617042908412,
+        "targetRms": 0.1883959127081386
+      },
+      "head0Effect": {
+        "cosine": 0.9987697215490885,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.05236904070318422,
+        "rmsError": 0.0009890617042908412,
+        "targetRms": 0.018886381935018008
+      },
+      "id": "balloon-pink",
+      "invalidQueries": 0,
+      "queries": 4,
+      "stage": "mlp",
+      "validQueries": 4
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.999984148093471,
+        "maxAbs": 0.0625,
+        "relativeRms": 0.005704310075555081,
+        "rmsError": 0.0013345452060942891,
+        "targetRms": 0.23395383287687527
+      },
+      "head0Effect": {
+        "cosine": 0.9982523900989231,
+        "maxAbs": 0.0625,
+        "relativeRms": 0.06320584920396852,
+        "rmsError": 0.0013345452060942891,
+        "targetRms": 0.021114267475271842
+      },
+      "id": "balloon-pink",
+      "invalidQueries": 0,
+      "queries": 4,
+      "stage": "state",
+      "validQueries": 4
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9998112686173045,
+        "maxAbs": 0.0546875,
+        "relativeRms": 0.019427487824288187,
+        "rmsError": 0.0014401263094296146,
+        "targetRms": 0.0741282826917628
+      },
+      "head0Effect": {
+        "cosine": 0.9541530346753673,
+        "maxAbs": 0.0546875,
+        "relativeRms": 0.3062108263938773,
+        "rmsError": 0.0014401263094296146,
+        "targetRms": 0.004703054840971521
+      },
+      "id": "balloon-brown",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9998213588998452,
+        "maxAbs": 0.0546875,
+        "relativeRms": 0.01890107362087828,
+        "rmsError": 0.001444225007804283,
+        "targetRms": 0.07640968109922498
+      },
+      "head0Effect": {
+        "cosine": 0.953911116326263,
+        "maxAbs": 0.0546875,
+        "relativeRms": 0.30702296029411513,
+        "rmsError": 0.001444225007804283,
+        "targetRms": 0.0047039641804664245
+      },
+      "id": "balloon-brown",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9995037981744632,
+        "maxAbs": 0.0933837890625,
+        "relativeRms": 0.03151913009516028,
+        "rmsError": 0.003900429907281921,
+        "targetRms": 0.12374801891759146
+      },
+      "head0Effect": {
+        "cosine": 0.9502440225832003,
+        "maxAbs": 0.0933837890625,
+        "relativeRms": 0.3207523923758334,
+        "rmsError": 0.003900429907281921,
+        "targetRms": 0.012160251957565111
+      },
+      "id": "balloon-brown",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9999589918467946,
+        "maxAbs": 0.046875,
+        "relativeRms": 0.009082529966698985,
+        "rmsError": 0.0017224858655393211,
+        "targetRms": 0.18964824469115987
+      },
+      "head0Effect": {
+        "cosine": 0.9960100276951577,
+        "maxAbs": 0.046875,
+        "relativeRms": 0.09103021654637716,
+        "rmsError": 0.0017224858655393211,
+        "targetRms": 0.018922133011314613
+      },
+      "id": "balloon-brown",
+      "invalidQueries": 0,
+      "queries": 4,
+      "stage": "mlp",
+      "validQueries": 4
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9999565904237309,
+        "maxAbs": 0.0625,
+        "relativeRms": 0.009373571451066176,
+        "rmsError": 0.0022035546806481905,
+        "targetRms": 0.2350816540047339
+      },
+      "head0Effect": {
+        "cosine": 0.994808230962521,
+        "maxAbs": 0.0625,
+        "relativeRms": 0.1040766000651965,
+        "rmsError": 0.0022035546806481905,
+        "targetRms": 0.021172431452101837
+      },
+      "id": "balloon-brown",
+      "invalidQueries": 0,
+      "queries": 4,
+      "stage": "state",
+      "validQueries": 4
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999673892386987,
+        "maxAbs": 0.0234375,
+        "relativeRms": 0.008075981109996562,
+        "rmsError": 0.0005986586107351615,
+        "targetRms": 0.0741282826917628
+      },
+      "head0Effect": {
+        "cosine": 0.9923863400179147,
+        "maxAbs": 0.0234375,
+        "relativeRms": 0.12729143736956622,
+        "rmsError": 0.0005986586107351615,
+        "targetRms": 0.004703054840971521
+      },
+      "id": "balloon-brown",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999685827038373,
+        "maxAbs": 0.0234375,
+        "relativeRms": 0.007926859893468044,
+        "rmsError": 0.0006056888365781297,
+        "targetRms": 0.07640968109922498
+      },
+      "head0Effect": {
+        "cosine": 0.9922028132835726,
+        "maxAbs": 0.0234375,
+        "relativeRms": 0.12876136240435238,
+        "rmsError": 0.0006056888365781297,
+        "targetRms": 0.0047039641804664245
+      },
+      "id": "balloon-brown",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999110915049206,
+        "maxAbs": 0.038330078125,
+        "relativeRms": 0.013347233236866122,
+        "rmsError": 0.0016516936710932145,
+        "targetRms": 0.12374801891759146
+      },
+      "head0Effect": {
+        "cosine": 0.9913412529033139,
+        "maxAbs": 0.038330078125,
+        "relativeRms": 0.13582725726876624,
+        "rmsError": 0.0016516936710932145,
+        "targetRms": 0.012160251957565111
+      },
+      "id": "balloon-brown",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999857032408401,
+        "maxAbs": 0.046875,
+        "relativeRms": 0.005368522817301499,
+        "rmsError": 0.0010181309288856697,
+        "targetRms": 0.18964824469115987
+      },
+      "head0Effect": {
+        "cosine": 0.9986916563748135,
+        "maxAbs": 0.046875,
+        "relativeRms": 0.053806350915981384,
+        "rmsError": 0.0010181309288856697,
+        "targetRms": 0.018922133011314613
+      },
+      "id": "balloon-brown",
+      "invalidQueries": 0,
+      "queries": 4,
+      "stage": "mlp",
+      "validQueries": 4
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999851190499742,
+        "maxAbs": 0.0625,
+        "relativeRms": 0.0055173743609695115,
+        "rmsError": 0.0012970334905400246,
+        "targetRms": 0.2350816540047339
+      },
+      "head0Effect": {
+        "cosine": 0.9983457309315998,
+        "maxAbs": 0.0625,
+        "relativeRms": 0.061260488360738795,
+        "rmsError": 0.0012970334905400246,
+        "targetRms": 0.021172431452101837
+      },
+      "id": "balloon-brown",
+      "invalidQueries": 0,
+      "queries": 4,
+      "stage": "state",
+      "validQueries": 4
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9997212432757305,
+        "maxAbs": 0.109375,
+        "relativeRms": 0.02361036880293112,
+        "rmsError": 0.0017151793261946532,
+        "targetRms": 0.0726451729962694
+      },
+      "head0Effect": {
+        "cosine": 0.9514657787697082,
+        "maxAbs": 0.109375,
+        "relativeRms": 0.3092766081024398,
+        "rmsError": 0.0017151793261946532,
+        "targetRms": 0.005545777731843673
+      },
+      "id": "tower-above",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9997369087000652,
+        "maxAbs": 0.109375,
+        "relativeRms": 0.022937546282809057,
+        "rmsError": 0.001718285068721855,
+        "targetRms": 0.0749114594706956
+      },
+      "head0Effect": {
+        "cosine": 0.951307843941401,
+        "maxAbs": 0.109375,
+        "relativeRms": 0.30978373617869687,
+        "rmsError": 0.001718285068721855,
+        "targetRms": 0.0055467245954147594
+      },
+      "id": "tower-above",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9992034264027709,
+        "maxAbs": 0.1806640625,
+        "relativeRms": 0.039921403016333255,
+        "rmsError": 0.004589736787839682,
+        "targetRms": 0.11496932575144862
+      },
+      "head0Effect": {
+        "cosine": 0.9525137956581643,
+        "maxAbs": 0.1806640625,
+        "relativeRms": 0.3060820981502134,
+        "rmsError": 0.004589736787839682,
+        "targetRms": 0.014995116720570878
+      },
+      "id": "tower-above",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9999137158412335,
+        "maxAbs": 0.046875,
+        "relativeRms": 0.013190735098885397,
+        "rmsError": 0.002045272985990323,
+        "targetRms": 0.15505375330925616
+      },
+      "head0Effect": {
+        "cosine": 0.9928689905347547,
+        "maxAbs": 0.046875,
+        "relativeRms": 0.1207166660664448,
+        "rmsError": 0.002045272985990323,
+        "targetRms": 0.016942755732373898
+      },
+      "id": "tower-above",
+      "invalidQueries": 0,
+      "queries": 5,
+      "stage": "mlp",
+      "validQueries": 5
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9999056020630673,
+        "maxAbs": 0.0390625,
+        "relativeRms": 0.013750815242960944,
+        "rmsError": 0.002738688271342243,
+        "targetRms": 0.19916552022209594
+      },
+      "head0Effect": {
+        "cosine": 0.9901743248619496,
+        "maxAbs": 0.0390625,
+        "relativeRms": 0.14259116141932732,
+        "rmsError": 0.002738688271342243,
+        "targetRms": 0.019206578052116428
+      },
+      "id": "tower-above",
+      "invalidQueries": 0,
+      "queries": 5,
+      "stage": "state",
+      "validQueries": 5
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999304066815705,
+        "maxAbs": 0.072265625,
+        "relativeRms": 0.011926103790082146,
+        "rmsError": 0.0008663738730019816,
+        "targetRms": 0.0726451729962694
+      },
+      "head0Effect": {
+        "cosine": 0.9902997163474557,
+        "maxAbs": 0.072265625,
+        "relativeRms": 0.15622224959130462,
+        "rmsError": 0.0008663738730019816,
+        "targetRms": 0.005545777731843673
+      },
+      "id": "tower-above",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999334864411052,
+        "maxAbs": 0.072265625,
+        "relativeRms": 0.011644009842633002,
+        "rmsError": 0.0008722697714027827,
+        "targetRms": 0.0749114594706956
+      },
+      "head0Effect": {
+        "cosine": 0.9901470613126114,
+        "maxAbs": 0.072265625,
+        "relativeRms": 0.15725853274270205,
+        "rmsError": 0.0008722697714027827,
+        "targetRms": 0.0055467245954147594
+      },
+      "id": "tower-above",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.999793399648416,
+        "maxAbs": 0.15625,
+        "relativeRms": 0.020334027684149894,
+        "rmsError": 0.002337789452658004,
+        "targetRms": 0.11496932575144862
+      },
+      "head0Effect": {
+        "cosine": 0.9902769903768313,
+        "maxAbs": 0.15625,
+        "relativeRms": 0.155903384830005,
+        "rmsError": 0.002337789452658004,
+        "targetRms": 0.014995116720570878
+      },
+      "id": "tower-above",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999936625350927,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.003568616083294215,
+        "rmsError": 0.0005533273178345452,
+        "targetRms": 0.15505375330925616
+      },
+      "head0Effect": {
+        "cosine": 0.999495320706577,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.03265863750707671,
+        "rmsError": 0.0005533273178345452,
+        "targetRms": 0.016942755732373898
+      },
+      "id": "tower-above",
+      "invalidQueries": 0,
+      "queries": 5,
+      "stage": "mlp",
+      "validQueries": 5
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999921141526494,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.003979088134479613,
+        "rmsError": 0.0007924971583132013,
+        "targetRms": 0.19916552022209594
+      },
+      "head0Effect": {
+        "cosine": 0.9992099888472066,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.04126175710023857,
+        "rmsError": 0.0007924971583132013,
+        "targetRms": 0.019206578052116428
+      },
+      "id": "tower-above",
+      "invalidQueries": 0,
+      "queries": 5,
+      "stage": "state",
+      "validQueries": 5
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9996999559285409,
+        "maxAbs": 0.0859375,
+        "relativeRms": 0.024498369480096937,
+        "rmsError": 0.0017842809893604985,
+        "targetRms": 0.07283264262995508
+      },
+      "head0Effect": {
+        "cosine": 0.9482534268388867,
+        "maxAbs": 0.0859375,
+        "relativeRms": 0.3192310654490247,
+        "rmsError": 0.0017842809893604985,
+        "targetRms": 0.005589308756184993
+      },
+      "id": "tower-below",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9997169328264985,
+        "maxAbs": 0.0859375,
+        "relativeRms": 0.023794832918859327,
+        "rmsError": 0.0017869119053842,
+        "targetRms": 0.07509663595779771
+      },
+      "head0Effect": {
+        "cosine": 0.9481271259047678,
+        "maxAbs": 0.0859375,
+        "relativeRms": 0.31963451836115486,
+        "rmsError": 0.0017869119053842,
+        "targetRms": 0.005590484765369332
+      },
+      "id": "tower-below",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9991190650936442,
+        "maxAbs": 0.1806640625,
+        "relativeRms": 0.04197232892086368,
+        "rmsError": 0.004822542978518782,
+        "targetRms": 0.11489815081768273
+      },
+      "head0Effect": {
+        "cosine": 0.948088050234862,
+        "maxAbs": 0.1806640625,
+        "relativeRms": 0.31974449028597113,
+        "rmsError": 0.004822542978518782,
+        "targetRms": 0.015082489691083105
+      },
+      "id": "tower-below",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.999576019494494,
+        "maxAbs": 0.0703125,
+        "relativeRms": 0.029386526441302987,
+        "rmsError": 0.006243037936180472,
+        "targetRms": 0.21244558960210536
+      },
+      "head0Effect": {
+        "cosine": 0.9506841284849973,
+        "maxAbs": 0.0703125,
+        "relativeRms": 0.33380050899521707,
+        "rmsError": 0.006243037936180472,
+        "targetRms": 0.01870290118781672
+      },
+      "id": "tower-below",
+      "invalidQueries": 0,
+      "queries": 5,
+      "stage": "mlp",
+      "validQueries": 5
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9996532445240446,
+        "maxAbs": 0.0625,
+        "relativeRms": 0.02647533469030993,
+        "rmsError": 0.006670124712735075,
+        "targetRms": 0.251937314136254
+      },
+      "head0Effect": {
+        "cosine": 0.9519489922945301,
+        "maxAbs": 0.0625,
+        "relativeRms": 0.3212464505688002,
+        "rmsError": 0.006670124712735075,
+        "targetRms": 0.020763263534662957
+      },
+      "id": "tower-below",
+      "invalidQueries": 0,
+      "queries": 5,
+      "stage": "state",
+      "validQueries": 5
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999162369589341,
+        "maxAbs": 0.072265625,
+        "relativeRms": 0.013049981127119815,
+        "rmsError": 0.0009504646117591759,
+        "targetRms": 0.07283264262995508
+      },
+      "head0Effect": {
+        "cosine": 0.9889419884425158,
+        "maxAbs": 0.072265625,
+        "relativeRms": 0.1700504755095905,
+        "rmsError": 0.0009504646117591759,
+        "targetRms": 0.005589308756184993
+      },
+      "id": "tower-below",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999201876465483,
+        "maxAbs": 0.072265625,
+        "relativeRms": 0.012726344265457996,
+        "rmsError": 0.0009557056423767057,
+        "targetRms": 0.07509663595779771
+      },
+      "head0Effect": {
+        "cosine": 0.9887995789075564,
+        "maxAbs": 0.072265625,
+        "relativeRms": 0.17095219511139614,
+        "rmsError": 0.0009557056423767057,
+        "targetRms": 0.005590484765369332
+      },
+      "id": "tower-below",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9997467053626405,
+        "maxAbs": 0.15625,
+        "relativeRms": 0.022507704816125115,
+        "rmsError": 0.0025860936625230276,
+        "targetRms": 0.11489815081768273
+      },
+      "head0Effect": {
+        "cosine": 0.9887527601458336,
+        "maxAbs": 0.15625,
+        "relativeRms": 0.17146331378246843,
+        "rmsError": 0.0025860936625230276,
+        "targetRms": 0.015082489691083105
+      },
+      "id": "tower-below",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999003834266402,
+        "maxAbs": 0.0390625,
+        "relativeRms": 0.014522503815458271,
+        "rmsError": 0.003085241885573857,
+        "targetRms": 0.21244558960210536
+      },
+      "head0Effect": {
+        "cosine": 0.9879570594271612,
+        "maxAbs": 0.0390625,
+        "relativeRms": 0.1649606044854484,
+        "rmsError": 0.003085241885573857,
+        "targetRms": 0.01870290118781672
+      },
+      "id": "tower-below",
+      "invalidQueries": 0,
+      "queries": 5,
+      "stage": "mlp",
+      "validQueries": 5
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999173999075244,
+        "maxAbs": 0.046875,
+        "relativeRms": 0.013111712134014622,
+        "rmsError": 0.0033033295387713746,
+        "targetRms": 0.251937314136254
+      },
+      "head0Effect": {
+        "cosine": 0.9888902631603523,
+        "maxAbs": 0.046875,
+        "relativeRms": 0.15909490977931645,
+        "rmsError": 0.0033033295387713746,
+        "targetRms": 0.020763263534662957
+      },
+      "id": "tower-below",
+      "invalidQueries": 0,
+      "queries": 5,
+      "stage": "state",
+      "validQueries": 5
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9996022724807718,
+        "maxAbs": 0.0546875,
+        "relativeRms": 0.028224609106807536,
+        "rmsError": 0.0016505384856823147,
+        "targetRms": 0.05847870131474093
+      },
+      "head0Effect": {
+        "cosine": 0.9500111251532531,
+        "maxAbs": 0.0546875,
+        "relativeRms": 0.31712796022455664,
+        "rmsError": 0.0016505384856823147,
+        "targetRms": 0.00520464510449844
+      },
+      "id": "compass-forward",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9996614657261763,
+        "maxAbs": 0.0546875,
+        "relativeRms": 0.026036792689137934,
+        "rmsError": 0.001654485768209013,
+        "targetRms": 0.06354414646851775
+      },
+      "head0Effect": {
+        "cosine": 0.9498038377216207,
+        "maxAbs": 0.0546875,
+        "relativeRms": 0.3177668188406042,
+        "rmsError": 0.001654485768209013,
+        "targetRms": 0.005206603301897684
+      },
+      "id": "compass-forward",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9993973285361418,
+        "maxAbs": 0.0909423828125,
+        "relativeRms": 0.034800894742624384,
+        "rmsError": 0.0053327399904286935,
+        "targetRms": 0.15323571505467978
+      },
+      "head0Effect": {
+        "cosine": 0.9363347639158344,
+        "maxAbs": 0.0909423828125,
+        "relativeRms": 0.3638663675697426,
+        "rmsError": 0.0053327399904286935,
+        "targetRms": 0.014655765043760363
+      },
+      "id": "compass-forward",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9999638943738112,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.008638448024808563,
+        "rmsError": 0.002132758648820291,
+        "targetRms": 0.24689141414004806
+      },
+      "head0Effect": {
+        "cosine": 0.9966673270203734,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.08175457201242237,
+        "rmsError": 0.002132758648820291,
+        "targetRms": 0.026087331831377267
+      },
+      "id": "compass-forward",
+      "invalidQueries": 0,
+      "queries": 2,
+      "stage": "mlp",
+      "validQueries": 2
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.999970575705397,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.0077580099062491,
+        "rmsError": 0.0022628449475390437,
+        "targetRms": 0.2916785328820366
+      },
+      "head0Effect": {
+        "cosine": 0.9968189814772144,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.07982081128677021,
+        "rmsError": 0.0022628449475390437,
+        "targetRms": 0.028349059738435607
+      },
+      "id": "compass-forward",
+      "invalidQueries": 0,
+      "queries": 2,
+      "stage": "state",
+      "validQueries": 2
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.999889201212268,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.014936056512576144,
+        "rmsError": 0.0008734411876190314,
+        "targetRms": 0.05847870131474093
+      },
+      "head0Effect": {
+        "cosine": 0.9866786263611284,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.16781954774670518,
+        "rmsError": 0.0008734411876190314,
+        "targetRms": 0.00520464510449844
+      },
+      "id": "compass-forward",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.999904580528107,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.013850063337003544,
+        "rmsError": 0.0008800904532848009,
+        "targetRms": 0.06354414646851775
+      },
+      "head0Effect": {
+        "cosine": 0.9864718387831768,
+        "maxAbs": 0.03125,
+        "relativeRms": 0.16903351422299231,
+        "rmsError": 0.0008800904532848009,
+        "targetRms": 0.005206603301897684
+      },
+      "id": "compass-forward",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9998289377110217,
+        "maxAbs": 0.0440673828125,
+        "relativeRms": 0.01850924238239811,
+        "rmsError": 0.002836276991587159,
+        "targetRms": 0.15323571505467978
+      },
+      "head0Effect": {
+        "cosine": 0.9820395521534203,
+        "maxAbs": 0.0440673828125,
+        "relativeRms": 0.19352636884655117,
+        "rmsError": 0.002836276991587159,
+        "targetRms": 0.014655765043760363
+      },
+      "id": "compass-forward",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999858000302516,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.005447447947121391,
+        "rmsError": 0.001344928127119102,
+        "targetRms": 0.24689141414004806
+      },
+      "head0Effect": {
+        "cosine": 0.9986837611085884,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.05155483649352948,
+        "rmsError": 0.001344928127119102,
+        "targetRms": 0.026087331831377267
+      },
+      "id": "compass-forward",
+      "invalidQueries": 0,
+      "queries": 2,
+      "stage": "mlp",
+      "validQueries": 2
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.999987559366891,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.005079176715317147,
+        "rmsError": 0.0014814868125723071,
+        "targetRms": 0.2916785328820366
+      },
+      "head0Effect": {
+        "cosine": 0.9986407457690666,
+        "maxAbs": 0.015625,
+        "relativeRms": 0.05225876365005891,
+        "rmsError": 0.0014814868125723071,
+        "targetRms": 0.028349059738435607
+      },
+      "id": "compass-forward",
+      "invalidQueries": 0,
+      "queries": 2,
+      "stage": "state",
+      "validQueries": 2
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9996633945072726,
+        "maxAbs": 0.03515625,
+        "relativeRms": 0.02595929338770928,
+        "rmsError": 0.0015208530032985344,
+        "targetRms": 0.05858607091434158
+      },
+      "head0Effect": {
+        "cosine": 0.9577101452985548,
+        "maxAbs": 0.03515625,
+        "relativeRms": 0.2933183115234688,
+        "rmsError": 0.0015208530032985344,
+        "targetRms": 0.005184991674741892
+      },
+      "id": "compass-reverse",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9997129408359602,
+        "maxAbs": 0.03515625,
+        "relativeRms": 0.023970713459544806,
+        "rmsError": 0.0015256511181533572,
+        "targetRms": 0.06364646261898659
+      },
+      "head0Effect": {
+        "cosine": 0.957478749322705,
+        "maxAbs": 0.03515625,
+        "relativeRms": 0.2940988591914735,
+        "rmsError": 0.0015256511181533572,
+        "targetRms": 0.005187545175617562
+      },
+      "id": "compass-reverse",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9994794274203579,
+        "maxAbs": 0.06353759765625,
+        "relativeRms": 0.03234809958803428,
+        "rmsError": 0.004959417819326032,
+        "targetRms": 0.15331403954130726
+      },
+      "head0Effect": {
+        "cosine": 0.9449854484854107,
+        "maxAbs": 0.06353759765625,
+        "relativeRms": 0.34078053065850883,
+        "rmsError": 0.004959417819326032,
+        "targetRms": 0.014553113729069787
+      },
+      "id": "compass-reverse",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9998866708722959,
+        "maxAbs": 0.0625,
+        "relativeRms": 0.015392422942915124,
+        "rmsError": 0.0037145682568112547,
+        "targetRms": 0.2413244666279787
+      },
+      "head0Effect": {
+        "cosine": 0.9895484881525851,
+        "maxAbs": 0.0625,
+        "relativeRms": 0.14549369785174215,
+        "rmsError": 0.0037145682568112547,
+        "targetRms": 0.025530784574575825
+      },
+      "id": "compass-reverse",
+      "invalidQueries": 0,
+      "queries": 2,
+      "stage": "mlp",
+      "validQueries": 2
+    },
+    {
+      "arm": "nearest64",
+      "endpoint": {
+        "cosine": 0.9999006857877137,
+        "maxAbs": 0.0625,
+        "relativeRms": 0.014345891970934275,
+        "rmsError": 0.004088118992799988,
+        "targetRms": 0.28496791981166364
+      },
+      "head0Effect": {
+        "cosine": 0.9893764195020177,
+        "maxAbs": 0.0625,
+        "relativeRms": 0.14740932038913476,
+        "rmsError": 0.004088118992799988,
+        "targetRms": 0.027733110647332682
+      },
+      "id": "compass-reverse",
+      "invalidQueries": 0,
+      "queries": 2,
+      "stage": "state",
+      "validQueries": 2
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999117925295448,
+        "maxAbs": 0.0234375,
+        "relativeRms": 0.013339758348508741,
+        "rmsError": 0.0007815240285859132,
+        "targetRms": 0.05858607091434158
+      },
+      "head0Effect": {
+        "cosine": 0.989252969391696,
+        "maxAbs": 0.0234375,
+        "relativeRms": 0.1507281163811738,
+        "rmsError": 0.0007815240285859132,
+        "targetRms": 0.005184991674741892
+      },
+      "id": "compass-reverse",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "projection",
+      "validQueries": 512
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999235637786257,
+        "maxAbs": 0.0234375,
+        "relativeRms": 0.012407156202265714,
+        "rmsError": 0.0007896716034354323,
+        "targetRms": 0.06364646261898659
+      },
+      "head0Effect": {
+        "cosine": 0.9890321785558068,
+        "maxAbs": 0.0234375,
+        "relativeRms": 0.1522245256093455,
+        "rmsError": 0.0007896716034354323,
+        "targetRms": 0.005187545175617562
+      },
+      "id": "compass-reverse",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "residual",
+      "validQueries": 512
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9998589334498638,
+        "maxAbs": 0.04248046875,
+        "relativeRms": 0.01681506465873577,
+        "rmsError": 0.002577985487979054,
+        "targetRms": 0.15331403954130726
+      },
+      "head0Effect": {
+        "cosine": 0.9849283884953998,
+        "maxAbs": 0.04248046875,
+        "relativeRms": 0.17714322419054132,
+        "rmsError": 0.002577985487979054,
+        "targetRms": 0.014553113729069787
+      },
+      "id": "compass-reverse",
+      "invalidQueries": 0,
+      "queries": 512,
+      "stage": "rms",
+      "validQueries": 512
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.9999862207985923,
+        "maxAbs": 0.01171875,
+        "relativeRms": 0.005256578129471721,
+        "rmsError": 0.001268540913383061,
+        "targetRms": 0.2413244666279787
+      },
+      "head0Effect": {
+        "cosine": 0.9987824103659582,
+        "maxAbs": 0.01171875,
+        "relativeRms": 0.049686718779739535,
+        "rmsError": 0.001268540913383061,
+        "targetRms": 0.025530784574575825
+      },
+      "id": "compass-reverse",
+      "invalidQueries": 0,
+      "queries": 2,
+      "stage": "mlp",
+      "validQueries": 2
+    },
+    {
+      "arm": "transport64",
+      "endpoint": {
+        "cosine": 0.999987789077067,
+        "maxAbs": 0.01171875,
+        "relativeRms": 0.004942643257435386,
+        "rmsError": 0.0014084947674425073,
+        "targetRms": 0.28496791981166364
+      },
+      "head0Effect": {
+        "cosine": 0.9987260063868632,
+        "maxAbs": 0.01171875,
+        "relativeRms": 0.05078747874169584,
+        "rmsError": 0.0014084947674425073,
+        "targetRms": 0.027733110647332682
+      },
+      "id": "compass-reverse",
+      "invalidQueries": 0,
+      "queries": 2,
+      "stage": "state",
+      "validQueries": 2
+    }
+  ],
+  "terminal_status": "unassessed",
+  "workerSeconds": 20.66863805009052
+}

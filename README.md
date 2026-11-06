@@ -26,6 +26,8 @@ The [source-frozen context reader](docs/source-conditioned-context.md) improves 
 
 The [common-bank rank diagnostic](docs/common-bank-context.md) finds a better shared state for three of those four changes. Rank128 errors are20–37%, with a retained Japanese-padding failure. All eight prompts fit the signed factors; this is finite-bank capacity, with no feature rule for unseen queries or image-generation claim.
 
+The [live query-transport reader](docs/query-transport-context.md) adds actual prefix value–key covariance. It improves all four new paired head changes and their measured downstream MLP/state effects, at 8.52 MB of core state per head. The consumer still supplies the other 31 heads and evaluates original learned equations; complete conditioning and zero-neural images remain open.
+
 The [source-only landmark reader](docs/source-landmark-context.md) supplies an explicit rule for eight new strings, with64live positive prefix statistics. Its initial mixture is inaccurate. Saved-only routing/capacity diagnostics distinguish excessive smoothing from the added restriction of fixed convex response mixing; target-assisted fitted weights are not serving assets. Contextual/image completion remains open.
 
 The [compiled state reader](docs/compiled-state-reader.md) now consumes that writer's actual BF16 state without a dose input, recovering coordinates and the next layer's Q/K/V affines in about .93ms for32rows. It uses learned reduced banks, with native and per-row errors retained. A saved-array follow-up separates basis omission, rounding, numerical policy and inherited writer error. This is one supplied-context edge, before attention.
