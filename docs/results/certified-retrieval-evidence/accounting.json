@@ -1,0 +1,11 @@
+{
+  "schema": "tce-retrieval-counter-interpretation-v1",
+  "jobID": "job-d1b6e831e7fb",
+  "rawRecordsUnchanged": true,
+  "scoreProducts": "Initial full row dots + progressive coordinate products + whole-prefix full calls. This includes short-prefix/fallback work; it is the primary exact logical score-work comparison.",
+  "sortCounterScope": "Raw sortCalls/sortComparatorCalls count Python interval-maintenance sorting only. NumPy lexsort inside select is not instrumented by those counters. Zero sortCalls in full mode is not free sorting.",
+  "derivedLexsortCallsPerPrompt": {"full": 16384, "certifiedShortPrefixCalls": 128},
+  "derivation": "Every real query has a nonempty prefix. Full mode calls full -> select -> lexsort once per query/head. Certified mode calls full only on128short-prefix queries here; there are no ambiguity/range fallbacks. Verified from declared source/control flow and raw counters.",
+  "additionalCosts": "Norm/bound/qualification/loop/array/library/constant arithmetic is represented by logical categories and measured phase time, not a complete hardware FLOP census. Internal NumPy sort comparisons are unmeasured. No net scalar-FLOP, energy or universal algorithmic speed claim.",
+  "zeroSavingsCaution": "Pruning at coordinate128 saves0score products. A certified query can also save0products. Lead with total products including full calls and measured total time, not prunedKeys/certifiedQueries."
+}

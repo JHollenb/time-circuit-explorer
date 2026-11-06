@@ -88,7 +88,7 @@ The value direction and numerator/partition cancellation matter together. Captur
 
 Actual-query envelope selection beats the old source witnesses. That supports source geometry as a lead, but the new arm both adds the actual query and removes three source directions; it does not isolate missing coverage from removing distractors. Current beats the actual-query envelope, suggesting that anchor protection can retain less useful keys under this read. The useful next direction is actual-query retrieval, rather than immediately growing the failed witness family.
 
-This is still a bounded trend. Full-prefix access supplies information unavailable to the previous compact admission rule. Four-key sufficiency, a cheap retrieval method, a faithful own-state encoder and general pixels remain unestablished. The [next proposed assay](plans/certified-current-query-retrieval.md) tests whether the useful ranking can be recovered with less score work, with no approximation to its support membership and explicit fallback/storage costs.
+This is still a bounded trend. Full-prefix access supplies information unavailable to the previous compact admission rule. Four-key sufficiency, a cheap retrieval method, a faithful own-state encoder and general pixels remain unestablished. The subsequent [certified retrieval assay](certified-current-query-retrieval.md) recovers the same ordered support with about10.6%fewer score products, but its overhead is much larger. The next [tail mass/value diagnostic](plans/current-support-tail-factorial.md) keeps this support fixed and returns to its remaining approximation error.
 
 ## Compute, custody and instruments
 

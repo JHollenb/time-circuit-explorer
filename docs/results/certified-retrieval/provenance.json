@@ -1,0 +1,190 @@
+{
+  "claimBoundary": "One retrospective selection-cost assay. Source-model-derived keys/queries and fullprefix centroid arithmetic remain. No smaller/faster attention claim from coordinateproducts alone, no new originalconsumer evaluations, no fullencoder or strictzero-neural image.",
+  "completeCollectedInventory": {
+    "bytes": 13920496,
+    "files": {
+      "fullscan-seal.json": {
+        "bytes": 19792,
+        "sha256": "1b3903358647fbb4834bcfe52232d3f8d13d3b91701d357d5320746d9ba9f716"
+      },
+      "observations.jsonl": {
+        "bytes": 13131209,
+        "sha256": "985191bf4acf4a1c8e3235a2c29bf48ed662165afc284ab2bc20e0ee782de4ba"
+      },
+      "prediction-seal.json": {
+        "bytes": 22379,
+        "sha256": "69d838412731e29bb427f1f3ebc92202bd17e6cf15dcdf6ba375d040188b3edf"
+      },
+      "report.json": {
+        "bytes": 739961,
+        "sha256": "5f213ebf0ec0b9a831ca0c85ff305cca470488c56ff6792abd33496c83b7e356"
+      },
+      "request.json": {
+        "bytes": 3997,
+        "sha256": "41deaea77c7212be34602aa50f7eedf5723efb7d7aeda3a390b5fc5e057d012c"
+      },
+      "serve-source.json": {
+        "bytes": 736,
+        "sha256": "a0a1b72fd55fe80a26864dd8106f2b18b015dcec366dd27c19e8dbffa85162be"
+      },
+      "source.json": {
+        "bytes": 2422,
+        "sha256": "fdc9b3bf9a5890012645866998e0b5257184bc070df0a3369c33781fc25f1a3c"
+      }
+    }
+  },
+  "jobID": "job-d1b6e831e7fb",
+  "losslessStreamTransports": [
+    {
+      "published": "observations.jsonl.gz",
+      "publishedBytes": 281261,
+      "publishedSHA256": "a99484c82a53b22a0f0cd44bd30d1521f5e3fd5662c3bdbd93dc498c18766385",
+      "source": "observations.jsonl",
+      "sourceBytes": 13131209,
+      "sourceSHA256": "985191bf4acf4a1c8e3235a2c29bf48ed662165afc284ab2bc20e0ee782de4ba"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "99a98437f52d87d4e42f1b4afe6c46185808f4aa86cf03090fce8bb6a9e0f52d",
+      "size_bytes": 60436
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1793974818.903144,
+      "sha256": "99a98437f52d87d4e42f1b4afe6c46185808f4aa86cf03090fce8bb6a9e0f52d",
+      "size_bytes": 60436
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1793974818.7147005,
+      "sha256": "99a98437f52d87d4e42f1b4afe6c46185808f4aa86cf03090fce8bb6a9e0f52d",
+      "size_bytes": 60436
+    }
+  },
+  "publication": "All compact reports/lossless observations retained; full indexes/counters/banks and inherited consumers remain near compute with independent complete byte hashes.",
+  "remoteResultRoot": "/mnt/hdd8tb/mrun-work/job-d1b6e831e7fb/response-result",
+  "requestSHA256": "8d0fc6b1adb030b463390165107e5ec59a548ec24ad0a16cf7a55341cd8b28f0",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-d1b6e831e7fb",
+      "job_log": {
+        "bytes": 1059,
+        "sha256": "5c02d6f6e3b54b8317d9d35c68e99e44743da5005036425c2810596e19ec02fa"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-d1b6e831e7fb/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "python",
+        "-u",
+        "certified_retrieval_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-d1b6e831e7fb",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-d1b6e831e7fb/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1793974818.8939643
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1793974818.924459
+        },
+        {
+          "name": "process.launch",
+          "ts": 1793974818.9341884
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1793974818.9620473
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1793974846.5549135
+        },
+        {
+          "name": "finished",
+          "ts": 1793974846.5750272
+        }
+      ]
+    },
+    "elapsed_s": 27.89,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "99a98437f52d87d4e42f1b4afe6c46185808f4aa86cf03090fce8bb6a9e0f52d",
+      "size_bytes": 60436
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 321.5,
+    "peak_vram_mb": 0.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-certified-retrieval-public-v1"
+}

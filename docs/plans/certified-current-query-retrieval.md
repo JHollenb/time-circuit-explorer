@@ -1,6 +1,6 @@
 # Can we retrieve the same four keys with less score work?
 
-Status: **proposed after cycle15/Astra review; not implemented, staged or measured**. The [current-query result](../full-prefix-selector-objective.md) identifies a much better ranking rule on the retained pair. Its full-prefix score scan is still paid work. Test availability of that same rule before adding source witnesses or another oracle tail decomposition.
+Status: **implemented and measured in cycle16**, guarded job`job-d1b6e831e7fb`. The [result](../certified-current-query-retrieval.md) preserves ordered support/raw/BF16 output and avoids about10.6%of score products, but bound/sort overhead makes this implementation much slower. The original protocol below is retained. One pre-execution clarification uses the completed progressive dot itself as f, under the same error allowance, without an extra hidden dot. The [current-query result](../full-prefix-selector-objective.md) motivated this bounded cost assay; the next test returns to [tail mass/value](current-support-tail-factorial.md).
 
 Freeze one protocol: the same saved operands,64source anchors/head, source gauge, routes, four-key budget, centroid read and causal masks. Use a per-KV-group coordinate order sorted by descending diagonal of the existing source key covariance; coordinate index breaks ties. Use eight blocks of16coordinates, with no prompt fitting or block-size sweep. Derive order only from the authenticated original source asset.
 
