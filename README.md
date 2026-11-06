@@ -10,6 +10,8 @@ The [prediction-only generator](generator/README.md) turns those reconstructed e
 
 The [first measured benchmark](docs/prediction-only-benchmark.md) records 365.55–418.85 seconds of denoiser wall time per image on four configured CPU threads, with native encoding and decoding measured separately.
 
+The [zero-network image response experiment](docs/zero-network-image-response.md) goes further within a supplied scene: a compiled RGB chart renders new doses with no encoder, denoiser or VAE evaluation. It measured 1.075 ms of arithmetic per primary output. The public chart and CLI are runnable with NumPy/Pillow; broad changes interpolate well, while fine contextual effects remain weak. Arbitrary new prompts and seeds remain outside this experiment.
+
 ## Run locally
 
 Requires Node.js 20 or newer. There are no package dependencies to install.

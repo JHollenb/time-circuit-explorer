@@ -4,6 +4,8 @@ This generator makes a fresh 512 × 512 image from a prompt and seed. It evaluat
 
 The native text encoder supplies conditioning and the native VAE renders the final predicted latent. This remains a full dense learned-weight calculation, using the original parameter banks and pinned NumPy equations with FP64 reductions and explicit BF16 boundaries. It is an executable reconstruction, with no compact student or claimed speedup.
 
+The separate [zero-network response chart](../docs/zero-network-image-response.md) eliminates all neural evaluation for a supplied context/dose family. Its public RGB bundle and `render_response.py` need only NumPy and Pillow. It interpolates a known scene, with measured limitations on small contextual effects; it does not replace this prompt/seed generator.
+
 ## Generate from the website
 
 From this repository in the domains workspace, with the configured mrun client and reachable fleet:
