@@ -36,6 +36,8 @@ The [fixed-support tail factorial](../docs/current-support-tail-factorial.md) cr
 
 The [positive-quadratic follow-up](../docs/positive-tail-moment-closure.md) predicts tail mass/value with one positive measure, reducing paired receiving-state error to 24.15%. `positive_tail_study.py stage|submit|collect` seals the sole new bank before exact/negative-tail/Gaussian diagnostics and two original receiving consumers; `publish_positive_tail.py verify|publish` authenticates retained arrays and lossless descriptions. `plot_positive_tail.py` renders published scalar records only. The [next plan](../docs/plans/rank-one-tail-state.md) tests a source-defined streaming mixed-moment state; current full-prefix operands remain supplied and this is not a zero-neural image backend.
 
+The [rank-one state follow-up](../docs/rank-one-tail-state.md) implements source-only coordinate compilation and actual causal mixed moments in `rank_one_tail.py`. `rank_one_tail_study.py stage|submit|collect` seals complete banks/states before independent direct-law references and original consumers; `publish_rank_one_tail.py verify|publish` authenticates source shards and retained arrays. Serving/direct BF16 outputs match with no fallbacks, while paired state error rises to39.02% from the full-direction law's24.15%. `plot_rank_one_tail.py` renders published scalars only. This is component research, not the website's arbitrary-prompt image backend.
+
 ## Generate from the website
 
 From this repository in the domains workspace, with the configured mrun client and reachable fleet:

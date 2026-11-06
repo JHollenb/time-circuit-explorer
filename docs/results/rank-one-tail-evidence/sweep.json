@@ -1,0 +1,139 @@
+{
+  "additionalFocusedTestsAfterReferenceExtension": 5,
+  "currentWorkerHashesMatch": true,
+  "focusedTestWallSeconds": 0.384,
+  "fullTestWallSeconds": 9.247,
+  "initialVerifyInvocation": {
+    "exit": 2,
+    "reason": "verify does not accept run-only xref flags; corrected invocation preserved separately",
+    "stage": "argument parsing; no verification ran"
+  },
+  "jobID": "job-49e50c9cb996",
+  "jobState": "succeeded",
+  "localFreeBytesObserved": 13440790528,
+  "predictionSealSHA256": "1994cd7fdecc6d707dbf44f0b84ea1333398068f7a5403985bc06ccef07230d3",
+  "publicBytes": 6070496,
+  "publicFiles": 14,
+  "publicHashesAndLosslessStreamsVerified": true,
+  "requestSHA256": "367bb3b9225a5a5fb90d919ad295081341d842b09126872731437c556a243190",
+  "retainedBytes": 8161671237,
+  "retainedFiles": 348,
+  "run": {
+    "broken": false,
+    "command": "run",
+    "exit_code": 0,
+    "findings": 0,
+    "instrument_status": "target-streams-only",
+    "pack": "saturn-evidence-pack-v1",
+    "schema": "saturn-evidence-pipeline-v1",
+    "steps": {
+      "claims": {
+        "chain_ok": true,
+        "errors": [],
+        "ingested": 0,
+        "ingested_claims": [],
+        "receipts_accepted": 0,
+        "receipts_found": 0,
+        "registry": "artifacts/rank-one-tail-v1-claims-auto.jsonl",
+        "skipped_invalid": 0,
+        "skipped_invalid_receipts": [],
+        "skipped_too_large": 0,
+        "skipped_unchanged": 0,
+        "status": "ok"
+      },
+      "target_scope": {
+        "instrument_status": "target-streams-only",
+        "invalid_receipts": 0,
+        "receipts": 0,
+        "status": "ok",
+        "streams": 1
+      },
+      "watch": {
+        "fires": 0,
+        "ledgers_broken": 0,
+        "ledgers_unchanged": 0,
+        "ledgers_verified": 0,
+        "ledgers_written": 0,
+        "per_stream": [
+          {
+            "error": null,
+            "fires": 0,
+            "ledger": "/Users/jakeholl/domains/time-circuit-explorer/artifacts/rank-one-tail-v1-watch/result/_/observations-e431dd32.fires.jsonl",
+            "ledger_status": "no_fires",
+            "ledger_verified": null,
+            "predicates": 3,
+            "records": 38400,
+            "stream": "/Users/jakeholl/domains/time-circuit-explorer/artifacts/rank-one-tail-v1/result/observations.jsonl"
+          }
+        ],
+        "records": 38400,
+        "status": "ok",
+        "stream_errors": 0,
+        "streams": 1,
+        "streams_too_large": 0,
+        "streams_with_predicates": 1
+      },
+      "xref": {
+        "db": "artifacts/rank-one-tail-v1-xref.sqlite",
+        "distinct_addresses": 0,
+        "files_scanned": 10,
+        "files_skipped_unchanged": 0,
+        "files_too_large": 0,
+        "files_unparseable": 0,
+        "refs_added": 0,
+        "refs_from_citations": 0,
+        "refs_with_model_id": 0,
+        "root": "artifacts/rank-one-tail-v1/result",
+        "status": "ok"
+      }
+    },
+    "target": "/Users/jakeholl/domains/time-circuit-explorer/artifacts/rank-one-tail-v1/result"
+  },
+  "schema": "tce-rank-one-tail-evidence-v1",
+  "scope": "One target observation stream, no fires, no terminal image claims or physical address joins. Full arrays nearcompute; cleanup19 separately receipted.",
+  "testScope": "Tiny sourceobjective/singularsupport, independentpositive probabilities, causal/maskedclock/update, actualNPZresume, cancellationfallback, guardedsourcecompiler/serving plus independentpostsealreference and prior mechanics. No arbitraryprompt/fullmodel quality coverage.",
+  "tests": 94,
+  "timestamp": "2026-11-06T16:08:32.361113+00:00",
+  "verify": {
+    "broken": false,
+    "command": "verify",
+    "exit_code": 0,
+    "findings": 0,
+    "instrument_status": "target-streams-only",
+    "pack": "saturn-evidence-pack-v1",
+    "schema": "saturn-evidence-pipeline-v1",
+    "steps": {
+      "claims": {
+        "registry": "artifacts/rank-one-tail-v1-claims-auto.jsonl",
+        "status": "skipped"
+      },
+      "target_scope": {
+        "claims": [],
+        "claims_current": 0,
+        "claims_drifted": 0,
+        "claims_missing": 0,
+        "instrument_status": "target-streams-only",
+        "receipts": 0,
+        "status": "ok",
+        "streams": 1
+      },
+      "watch": {
+        "ledgers": [
+          {
+            "expected_missing": true,
+            "fires": 0,
+            "ledger": "/Users/jakeholl/domains/time-circuit-explorer/artifacts/rank-one-tail-v1-watch/result/_/observations-e431dd32.fires.jsonl",
+            "reason": "no_fires",
+            "verified": null
+          }
+        ],
+        "ledgers_broken": 0,
+        "ledgers_checked": 0,
+        "ledgers_missing": 0,
+        "ledgers_missing_expected": 1,
+        "status": "ok"
+      }
+    },
+    "target": "/Users/jakeholl/domains/time-circuit-explorer/artifacts/rank-one-tail-v1/result"
+  }
+}
