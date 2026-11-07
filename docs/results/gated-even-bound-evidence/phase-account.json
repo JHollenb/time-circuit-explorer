@@ -1,0 +1,28 @@
+{
+  "normCalls": 37050,
+  "physicalWork": {
+    "newCheckpointLoads": 0,
+    "newFullProductArrays": 0,
+    "newImages": 0,
+    "newLearnedProjections": 0,
+    "newMatrixMACs": 0,
+    "newNeuralEvaluations": 0,
+    "newRetainedArrays": 1
+  },
+  "reservation": {
+    "cpu_threads": 4,
+    "disk_gb": 1.0,
+    "est_wall_s": null,
+    "ram_mb": 4096.0,
+    "source": "probe-default",
+    "vram_mb": 0.0
+  },
+  "scheduler": {
+    "elapsed_s": 5.43,
+    "peak_rss_mb": 1291.6,
+    "peak_vram_mb": 0.0
+  },
+  "schema": "tce-gated-even-bound-phases-v1",
+  "scope": "Worker3.562s begins after imports/source verification, includes source hashes/scans/row reductions/retention/final source hashes. Scheduler5.43s includes more startup/finalization. Numerical thread environments1; scheduler reserves4CPU. Zero new model matrix MACs does not mean zero scalar arithmetic; no matched serving speed claim.",
+  "workerWallSeconds": 3.562109577935189
+}

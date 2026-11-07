@@ -1,0 +1,397 @@
+{
+  "fixedAddress": {
+    "clock": 3,
+    "singleBlock": 0
+  },
+  "instrument_status": "saved-number-operator-envelope-conditional-FP64",
+  "mapNormUpper": {
+    "full": 1533.4266572234596,
+    "omitted": 1316.9613931175504,
+    "selected": 785.4998421412964
+  },
+  "mechanics_status": "complete",
+  "numericalDiagnostics": {
+    "historicalContractionModelAttested": false,
+    "nonNormalInputs": 0,
+    "nonNormalProducts": 0,
+    "normCalls": 37050,
+    "normalityScanApplicable": true,
+    "scope": "Normality scans cover norm/dot inputs and products, not every historical or current internal reduction instruction. Overall numerical envelope remains conditional."
+  },
+  "numericalModel": {
+    "elementwise": "IEEE binary64 round-to-nearest; no overflow/underflow; stored products are the target, not ideal native activations.",
+    "historicalContractions": "Conditional only: each original FP64 contraction satisfies elementwise |fl(AD^T)-AD^T| <= gamma_(2m)|A||D|^T, m=9216. Source/operand fingerprints do not certify cuBLAS rounding.",
+    "intervalArithmetic": "Positive scalar bounds expanded with nextafter after each operation; norm/dot/reduction assumptions remain explicit and are not hardware certification.",
+    "norms": "IEEE binary64 round-to-nearest, finite normal nonzero intermediates; n-term reductions use at most n-1 additions; sqrt correctly rounded. Norm allowance gamma_(2n+4).",
+    "scope": "All conclusions involving eta are conditional, even when normality scans and independent toy references agree."
+  },
+  "observations": 1536,
+  "panels": {
+    "all": {
+      "componentNormUpper": {
+        "closure1": 1.4029127873917153e-10,
+        "closure2": 2.8428231945258533e-10,
+        "finiteProduct": 554.167697305888,
+        "groupingArithmetic": 9.654065192213301e-12,
+        "groupingMismatch": 0.0,
+        "historicalContractions": 1.4920176464511451e-06,
+        "selectedResidue": 0.0
+      },
+      "conditionalNegativeAlignment": true,
+      "directAlternativeEtaUpper": 554.1676987443167,
+      "etaOverRemainingNormUpper": 0.1993022704322021,
+      "etaUpper": 554.167698744332,
+      "evenOutputNormInterval": [
+        2226.371115703578,
+        3334.706513195094
+      ],
+      "maxGatedReplayAbs": 0.0,
+      "maxRemainingReplayAbs": 0.0,
+      "maxStoredClosureReplayNormUpper": 0.0,
+      "negativeAlignmentRowsConditional": 443,
+      "quadraticEvenCosineInterval": [
+        -1.0,
+        -0.3916109871223212
+      ],
+      "quadraticEvenInnerInterval": [
+        -11509732.098103985,
+        -6225822.0131634595
+      ],
+      "quadraticNormInterval": [
+        4767.428791762533,
+        4767.428791767422
+      ],
+      "remainingNormInterval": [
+        2780.5388144479107,
+        2780.5388144507615
+      ],
+      "retainedQuadraticRemainingInnerInterval": [
+        -8867777.05564276,
+        -8867777.055624684
+      ],
+      "rows": 1536,
+      "selectedStoredNonzeros": 0
+    },
+    "image": {
+      "componentNormUpper": {
+        "closure1": 1.239855708741927e-10,
+        "closure2": 2.0295149683985526e-10,
+        "finiteProduct": 491.5492359879358,
+        "groupingArithmetic": 8.115723024672185e-12,
+        "groupingMismatch": 0.0,
+        "historicalContractions": 1.197998224411804e-06,
+        "selectedResidue": 0.0
+      },
+      "conditionalNegativeAlignment": false,
+      "directAlternativeEtaUpper": 491.54923718386937,
+      "etaOverRemainingNormUpper": 0.518905004266432,
+      "etaUpper": 491.54923718389324,
+      "evenOutputNormInterval": [
+        455.7325063768359,
+        1438.8309807454862
+      ],
+      "maxGatedReplayAbs": 0.0,
+      "maxRemainingReplayAbs": 0.0,
+      "maxStoredClosureReplayNormUpper": 0.0,
+      "negativeAlignmentRowsConditional": 365,
+      "quadraticEvenCosineInterval": [
+        -1.0,
+        0.0076132377938770875
+      ],
+      "quadraticEvenInnerInterval": [
+        -3640144.1508680466,
+        12892.478225567846
+      ],
+      "quadraticNormInterval": [
+        3715.8399939887718,
+        3715.839993992159
+      ],
+      "remainingNormInterval": [
+        947.2817435607292,
+        947.2817435615927
+      ],
+      "retainedQuadraticRemainingInnerInterval": [
+        -1813625.8363237977,
+        -1813625.8363186808
+      ],
+      "rows": 1024,
+      "selectedStoredNonzeros": 0
+    },
+    "text": {
+      "componentNormUpper": {
+        "closure1": 6.564465785781611e-11,
+        "closure2": 1.990656351151305e-10,
+        "finiteProduct": 255.89291771548613,
+        "groupingArithmetic": 5.228385460378425e-12,
+        "groupingMismatch": 0.0,
+        "historicalContractions": 8.893350952410659e-07,
+        "selectedResidue": 0.0
+      },
+      "conditionalNegativeAlignment": true,
+      "directAlternativeEtaUpper": 255.89291853329075,
+      "etaOverRemainingNormUpper": 0.09788566231366505,
+      "etaUpper": 255.8929185332782,
+      "evenOutputNormInterval": [
+        2358.309330140223,
+        2870.0951672088663
+      ],
+      "maxGatedReplayAbs": 0.0,
+      "maxRemainingReplayAbs": 0.0,
+      "maxStoredClosureReplayNormUpper": 0.0,
+      "negativeAlignmentRowsConditional": 78,
+      "quadraticEvenCosineInterval": [
+        -1.0,
+        -0.7337356284477843
+      ],
+      "quadraticEvenInnerInterval": [
+        -7818449.454666603,
+        -6289852.983958363
+      ],
+      "quadraticNormInterval": [
+        2986.7893169092954,
+        2986.789316911679
+      ],
+      "remainingNormInterval": [
+        2614.202248673502,
+        2614.2022486755877
+      ],
+      "retainedQuadraticRemainingInnerInterval": [
+        -7054151.2193180565,
+        -7054151.2193069095
+      ],
+      "rows": 512,
+      "selectedStoredNonzeros": 0
+    }
+  },
+  "physicalWork": {
+    "newCheckpointLoads": 0,
+    "newFullProductArrays": 0,
+    "newImages": 0,
+    "newLearnedProjections": 0,
+    "newMatrixMACs": 0,
+    "newNeuralEvaluations": 0,
+    "newRetainedArrays": 1
+  },
+  "requestSHA256": "5a4be6bfd5908282cfaaf4365c1388a00a2e0d9b9ff8d7390ffed268af79cdd9",
+  "retainedAdverseTextRows": [
+    {
+      "closure1ComputedNormInterval": [
+        2.546135436454331e-15,
+        2.5461354364582414e-15
+      ],
+      "closure2ComputedNormInterval": [
+        1.5717678407930936e-14,
+        1.5717678407955078e-14
+      ],
+      "closureFormationAllowances": [
+        1.7248331261529068e-14,
+        1.105536970210474e-13
+      ],
+      "components": {
+        "closure1": 2.6068548438600334e-11,
+        "closure2": 1.662945264958484e-10,
+        "finiteProduct": 101.24645573890643,
+        "groupingArithmetic": 3.577944326443155e-12,
+        "groupingMismatch": 0.0,
+        "historicalContractions": 6.254630522894284e-07,
+        "selectedResidue": 0.0
+      },
+      "conditionalNegativeAlignment": true,
+      "directAlternativeEtaUpper": 101.24645636459826,
+      "directProductFormationAllowance": 1.5390528532152325e-13,
+      "directProductResidualComputedNormInterval": [
+        1.7082398131759176e-14,
+        1.7082398131785414e-14
+      ],
+      "etaOverRemainingNormUpper": 0.04175873504293414,
+      "etaUpper": 101.24645636456545,
+      "evenOutputNormInterval": [
+        2323.3110945399135,
+        2525.8040072707017
+      ],
+      "gatedReplayMaxAbs": 0.0,
+      "omittedProductNormIntervals": {
+        "B": [
+          31.52103895109364,
+          31.52103895114205
+        ],
+        "F": [
+          0.07687883355416916,
+          0.07687883355428725
+        ],
+        "H": [
+          147.16468201311244,
+          147.16468201333848
+        ],
+        "L": [
+          15.894086684555568,
+          15.894086684579976
+        ],
+        "R": [
+          30.26445260641659,
+          30.26445260646307
+        ],
+        "T": [
+          153.16379267400953,
+          153.16379267424477
+        ]
+      },
+      "quadraticEvenCosineInterval": [
+        -1.0,
+        -0.8965266394949986
+      ],
+      "quadraticEvenInnerInterval": [
+        -6270861.706299776,
+        -5756133.640301993
+      ],
+      "quadraticNormInterval": [
+        2541.9559581206286,
+        2541.9559581223652
+      ],
+      "remainingNormInterval": [
+        2424.5575509044793,
+        2424.557550906136
+      ],
+      "remainingReplayMaxAbs": 0.0,
+      "retainedQuadraticRemainingInnerInterval": [
+        -6013497.673305092,
+        -6013497.673296677
+      ],
+      "row": 3,
+      "selectedStoredNonzeros": {
+        "L": 0,
+        "R": 0,
+        "T": 0
+      },
+      "storedClosureVsRecomputedNormInterval": [
+        0.0,
+        0.0
+      ],
+      "stratum": "text"
+    },
+    {
+      "closure1ComputedNormInterval": [
+        1.618244255460218e-15,
+        1.6182442554627033e-15
+      ],
+      "closure2ComputedNormInterval": [
+        5.9235056596958096e-15,
+        5.9235056597049075e-15
+      ],
+      "closureFormationAllowances": [
+        1.211856322131881e-14,
+        4.345624705209884e-14
+      ],
+      "components": {
+        "closure1": 1.809084511160977e-11,
+        "closure2": 6.503122792313722e-11,
+        "finiteProduct": 70.57663660658582,
+        "groupingArithmetic": 1.6150680195662386e-12,
+        "groupingMismatch": 0.0,
+        "historicalContractions": 2.815333203135972e-07,
+        "selectedResidue": 0.0
+      },
+      "conditionalNegativeAlignment": true,
+      "directAlternativeEtaUpper": 70.57663688821152,
+      "directProductFormationAllowance": 6.233303767955068e-14,
+      "directProductResidualComputedNormInterval": [
+        6.58066239988891e-15,
+        6.580662399899016e-15
+      ],
+      "etaOverRemainingNormUpper": 0.0862115517369553,
+      "etaUpper": 70.5766368882039,
+      "evenOutputNormInterval": [
+        748.0681440750719,
+        889.2214178520393
+      ],
+      "gatedReplayMaxAbs": 0.0,
+      "omittedProductNormIntervals": {
+        "B": [
+          22.34432976415791,
+          22.344329764192224
+        ],
+        "F": [
+          0.05359051296060114,
+          0.05359051296068344
+        ],
+        "H": [
+          50.58899872289432,
+          50.588998722972015
+        ],
+        "L": [
+          10.620182047725873,
+          10.620182047742183
+        ],
+        "R": [
+          21.612644995829537,
+          21.61264499586273
+        ],
+        "T": [
+          57.48610635362171,
+          57.48610635370999
+        ]
+      },
+      "quadraticEvenCosineInterval": [
+        -1.0,
+        -0.767362231074424
+      ],
+      "quadraticEvenInnerInterval": [
+        -767308.7260433269,
+        -635788.313696884
+      ],
+      "quadraticNormInterval": [
+        931.7560183098885,
+        931.7560183105251
+      ],
+      "remainingNormInterval": [
+        818.6447809632759,
+        818.6447809638353
+      ],
+      "remainingReplayMaxAbs": 0.0,
+      "retainedQuadraticRemainingInnerInterval": [
+        -701548.5198706262,
+        -701548.5198695847
+      ],
+      "row": 35,
+      "selectedStoredNonzeros": {
+        "L": 0,
+        "R": 0,
+        "T": 0
+      },
+      "storedClosureVsRecomputedNormInterval": [
+        0.0,
+        0.0
+      ],
+      "stratum": "text"
+    }
+  ],
+  "rowBoundColumns": [
+    "remainingLower",
+    "remainingUpper",
+    "quadraticLower",
+    "quadraticUpper",
+    "etaUpper",
+    "evenLower",
+    "evenUpper",
+    "alignmentLower",
+    "alignmentUpper",
+    "directAlternativeEtaUpper"
+  ],
+  "rowBounds": {
+    "bytes": 123008,
+    "logicalDtype": "float64",
+    "path": "/mnt/hdd8tb/mrun-work/job-5d8e81f4c47d/arrays/rowBounds.npy",
+    "payloadSHA256": "6fab7ed3f9185e6102abf4a7772ffb0023eb59599426546efc62a185d7b2ba0f",
+    "sha256": "e6666afbc178e945db68f3eac4836a9475348a59f2928c13bce10cf2b6c045f5",
+    "shape": [
+      1536,
+      10
+    ],
+    "storedDtype": "float64"
+  },
+  "schema": "tce-gated-even-bound-result-v1",
+  "scope": "Attribution to exact projection of retainedH, not native/ideal activation recovery. Qseparate. Norm/operator inequality exact-real; numeric intervals/contraction envelope conditional, cuBLASnotattested. No actual H/FDown/stateupdate/consumer/image or economical arbitrarypromptzero-neuralproducer; originalmaps/source/historypaid.",
+  "terminal_status": "unassessed",
+  "trend_status": "All conditional magnitude/alignment intervals retained without effect gate",
+  "workerWallSeconds": 3.562109577935189
+}
