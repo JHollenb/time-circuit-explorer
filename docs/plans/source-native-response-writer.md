@@ -1,6 +1,6 @@
 # Is endpoint fitting obscuring the available nonlocal response?
 
-Status: **written and unexecuted**. Selected after the [source-native reader result](../source-native-global-reader.md). This is a saved-array response discriminator, not another image generator. It requires no new H0, encoder, native denoiser, VAE, image or noise computation.
+Status: **executed exploration**; see the [response-only result](../source-native-response-writer.md). The frozen pre-run version remains in the result bundle. Selected after the [source-native reader result](../source-native-global-reader.md), this is a saved-array response discriminator, not another image generator. It requires no new H0, encoder, native denoiser, VAE, image or noise computation.
 
 The shared writer loses to hold on every feedback/evaluation/main velocity endpoint. Its four remote unchanged-query response cosines are near zero. That does not distinguish poor available features from a writer objective that favors endpoint fitting over response transfer. Change only that objective before adding native depth.
 
@@ -20,7 +20,7 @@ B_\Delta=\arg\min_B
 \frac1{1888}\|X_\Delta B-Y_\Delta\|_F^2+.01\|B\|_F^2.
 \]
 
-Use FP64 and one declared closed-form solve at fixed unit gain. Preserve coefficients and source normalization fingerprints as Saturn typed artifact state. The immutable zero response is the baseline; baseline reselection is not a mutable optimizer rollback claim. There are no epochs, RNG, prompt/seed features, coefficient selection or gain sweeps. All source loss/rank/conditioning statistics are observations.
+Use FP64 and one declared closed-form solve at fixed unit gain. With1,888rows and3,072features, use the equivalent dual ridge formula B=Xᵀ(XXᵀ+NλI)⁻¹Y to reduce the solve dimension. Preserve coefficients and source normalization fingerprints as Saturn typed artifact state. The immutable zero response is the baseline; baseline reselection is not a mutable optimizer rollback claim. There are no epochs, RNG, prompt/seed features, coefficient selection or gain sweeps. All source loss/rank/conditioning statistics are observations.
 
 The proposed prediction is a raw response, not a complete velocity:
 
@@ -40,7 +40,7 @@ A strong discovery fit with bad same-location transfer would narrow the coverage
 
 ## Execution and cost
 
-Use one finite model-free mrun CPU lease, an explicit one-lease contract, no retries and host-local source bindings. Fresh fit and response actors may read only declared source fields; evaluation targets remain inaccessible until outputs seal. Load retained BF16 words with NumPy without importing a neural framework. No original parameter bank or module is needed.
+Use one finite model-free mrun CPU lease, an explicit one-lease contract, no retries and host-local source bindings. Fresh fit and response actors may read only declared source fields; evaluation targets remain inaccessible until outputs seal. Numerical actors load retained BF16 words with NumPy and prohibit neural frameworks. The current canonical Saturn Frame/Act layer imports Torch in the control process; this dependency is charged explicitly, with no model construction/evaluation. No original parameter bank or model module is needed.
 
 Start with a tiny independent ridge/response oracle and source/target/mask integrity checks. Prefer intent-first CPU planning and measured compatible history; do not reuse a CUDA reservation. Retain Gram/RHS/solve/post-fit/raw-response work and CPU/wall/RSS separately. Source H0, discovery labels and old image prefixes remain paid historical preparation. Mechanics/custody/finite/resource checks may stop execution; response quality cannot suppress evidence.
 

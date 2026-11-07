@@ -80,6 +80,8 @@ The [omitted-score diagnostic](../docs/rank-one-omission-diagnostic.md) expands 
 
 The [source-native global reader assay](../docs/source-native-global-reader.md) uses **`source_native_study.py stage|submit|collect`** with one guarded Saturn lease. It recomputes46first-joint image reads, fits one discovery-only paired ridge writer, seals coefficients before fresh readout serving, then commits two main candidates through the native scheduler/VAE. `publish_source_native.py verify|publish`, `audit_source_native.py` and `plot_source_native.py` authenticate complete bytes, typed handoffs, all dependent observations and original PNGs. This program costs1.092%of full-call affine MACs per served read/writer, but loses to hold on every feedback/evaluation/main velocity field. It remains learned computation and is separate from the website's arbitrary-prompt reconstructed generator.
 
+The [response-only objective diagnostic](../docs/source-native-response-writer.md) uses `source_response_study.py stage|submit|collect`, with `publish_source_response.py verify|publish|audit` and `plot_source_response.py`. It fits one response-only ridge map on the retained discovery pair, then seals raw responses before historical comparisons. Fresh NumPy actors exclude neural frameworks; the typed control plane imports current Saturn's Torch dependency without loading/evaluating a model. The assay still evaluates learned affine maps and cannot generate a complete velocity or image. All231 mechanics tests pass.
+
 ## Generate from the website
 
 From this repository in the domains workspace, with the configured mrun client and reachable fleet:

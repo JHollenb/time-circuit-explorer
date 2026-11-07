@@ -1,0 +1,22 @@
+{
+  "schema":"tce-astra-source-response-review-v1",
+  "advisor":"/root/astra_zero_forward_advisor",
+  "reportSHA256":"8ac0a175b2b9e7b86c54b57bd6a3274465425cf6b82f8df4e9575c430b4b69a8",
+  "candidateSealSHA256":"9f24585fe98fec8b36dc766a22f45062137824bc39087f637830141b495e0f7e",
+  "coefficientSealSHA256":"663853b807628fea69086fec98ffd7dde2edc6dc29bbcc6ad6fcddf56faa161a",
+  "checks":"Staged/current source hashes, report/candidate/serving/coefficient/fit joins and all24 outputs with944 applicable rows agree. No material implementation defect found.",
+  "assessment":"Removing endpoint loss improves source fitting without producing a transferable response direction. Source81.6-81.8% error is not strong interpolation evidence. Same-location feedback retains weak positive cosines .105/.116; all four top-left evaluation cosines are negative. Seed and location remain confounded.",
+  "scalarConclusion":"For each fixed evaluation field, relative error squared at gain g is1+g^2*a^2-2*g*a*c. With a>0,c<0,every g>0 is worse than zero. This is retrospective aggregate-field algebra, not a serving rule or per-row statement.",
+  "vocabulary":"No new pretrained-model evaluations;16 served learned affine products still cost5.939 billion MACs, with fitting/post-fit work additional. Framework-free does not mean zero learned arithmetic.",
+  "nextCut":"One saved-array source-spectrum diagnosis: freeze X,Y,s_H,lambda=.01; thin SVD, reconstruct existing ridge prediction and decompose source residual using continuous attenuation factors. Report numerical-rank ambiguity and coefficient amplification. No new predictor, pseudoinverse serving or rank/gain/regularization sweep.",
+  "interpretationLimit":"At1888<3072,a small source-span residual can be trivial interpolation. No H0-information sufficiency or transferable-decoder claim follows.",
+  "newBlogSnapshots":[
+    {"path":"../../../../obsidian/blog/2026-11-06-184700-compiling-cheaper-transitions-on-the-states-they-create.md","sha256":"8a358ad4b557646a4c565a230d0e3bfe7033d450417388516e468c48141d007f"},
+    {"path":"../../../../obsidian/blog/2026-11-06-185301-the-right-query-can-rescue-a-memory-that-an-exact-read-cannot.md","sha256":"92f8fcd3c6f60d0f6a18dd3b1459c1015555f58e70578b595af17df80b305912"},
+    {"path":"../../../../obsidian/blog/2026-11-06-185200-producing-a-state-and-consuming-it-are-different-computations.md","sha256":"e19c97f968096ab862895b15d2dcb2ba8e2e214f65eb3762b178287031b40cf6"},
+    {"path":"../../../../obsidian/blog/2026-11-06-184252-the-same-query-program-visits-a-different-future.md","sha256":"41b14c2d17001de28c46f5f84d5400fd1ab48d5431d981242244713dbb8165ef"}
+  ],
+  "bigPicture":"Better receiver geometry/local writes do not guarantee useful all-layer composition. Supplied native query rescue leaves the cheap producer missing; faithful consumption of an incorrect supplied state preserves the producer's error.",
+  "goalStatus":"Active and unsolved: arbitrary-prompt images with zero learned evaluations remain unachieved.",
+  "reviewerExecution":"Read-only review; no edits/scientific execution. Snapshot hashes identify historical mutable posts."
+}

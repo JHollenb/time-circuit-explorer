@@ -1,0 +1,425 @@
+{
+  "coefficientBytes": 3145728,
+  "coefficientNominalMACs": 742391808,
+  "costScope": "Shape-derived contraction sizes/approximate dense-LU solve, not hardware counters; reductions and data movement separate.",
+  "cpuSeconds": 0.761370133,
+  "discoveryPairs": [
+    {
+      "X": {
+        "bytes": 23199872,
+        "logicalDtype": "float64",
+        "path": "/mnt/hdd8tb/mrun-work/job-2d99ab01e1ac/fit/discovery-s60672.base/X.npy",
+        "payloadSHA256": "3a60e7222de7e1f26ca3d457b7a8bbf8cacf825d85df6e8a78c038b5cf1a6757",
+        "sha256": "5de0014d8525943f368e06c4ce347cd3ccd7194f7507666608a6ef2fbcd615de",
+        "shape": [
+          944,
+          3072
+        ],
+        "storedDtype": "float64"
+      },
+      "Y": {
+        "bytes": 966784,
+        "logicalDtype": "float64",
+        "path": "/mnt/hdd8tb/mrun-work/job-2d99ab01e1ac/fit/discovery-s60672.base/Y.npy",
+        "payloadSHA256": "782b99ce50919b1830ced8edea20107df5ac5fd389db350ce2218af537d9e48c",
+        "sha256": "f51f223e32d740e88c231dac8a112d9e2e83efbefbb3707c515d4e267043ea48",
+        "shape": [
+          944,
+          128
+        ],
+        "storedDtype": "float64"
+      },
+      "applicableQueries": 944,
+      "declaredQueries": 944,
+      "id": "discovery-s60672.base",
+      "inapplicableQueries": [],
+      "mask": {
+        "bytes": 1152,
+        "logicalDtype": "bool",
+        "path": "/mnt/hdd8tb/mrun-work/job-2d99ab01e1ac/fit/discovery-s60672.base/mask.npy",
+        "payloadSHA256": "08d2fa58bbc39e0cf4ccd03f0fded13aeca74dd0149cf3f0ce415816eb7e3786",
+        "sha256": "1a2aa55df44986c11785a7a844385bdcf6b131f071e9337e51f5ae3380018838",
+        "shape": [
+          1024
+        ],
+        "storedDtype": "bool"
+      }
+    },
+    {
+      "X": {
+        "bytes": 23199872,
+        "logicalDtype": "float64",
+        "path": "/mnt/hdd8tb/mrun-work/job-2d99ab01e1ac/fit/discovery-s60672.shape/X.npy",
+        "payloadSHA256": "f510b2a10c827bc08a25726a9e8d4a769bcd5ed83748d1b2c190a31e4b7b4d0b",
+        "sha256": "efff7fccca7b064c5ed2145526a99c7b435b5e7407b307532e6c5cf24c7cc3a6",
+        "shape": [
+          944,
+          3072
+        ],
+        "storedDtype": "float64"
+      },
+      "Y": {
+        "bytes": 966784,
+        "logicalDtype": "float64",
+        "path": "/mnt/hdd8tb/mrun-work/job-2d99ab01e1ac/fit/discovery-s60672.shape/Y.npy",
+        "payloadSHA256": "06ae0996b735edede17eb8960b4a7b23338bc26f9eb0f48a2e343448569edeb1",
+        "sha256": "55f52b3b63edf8021111b232660f6b0e70db073ff341c8324a05ee94ac011769",
+        "shape": [
+          944,
+          128
+        ],
+        "storedDtype": "float64"
+      },
+      "applicableQueries": 944,
+      "declaredQueries": 944,
+      "id": "discovery-s60672.shape",
+      "inapplicableQueries": [],
+      "mask": {
+        "bytes": 1152,
+        "logicalDtype": "bool",
+        "path": "/mnt/hdd8tb/mrun-work/job-2d99ab01e1ac/fit/discovery-s60672.shape/mask.npy",
+        "payloadSHA256": "08d2fa58bbc39e0cf4ccd03f0fded13aeca74dd0149cf3f0ce415816eb7e3786",
+        "sha256": "1a2aa55df44986c11785a7a844385bdcf6b131f071e9337e51f5ae3380018838",
+        "shape": [
+          1024
+        ],
+        "storedDtype": "bool"
+      }
+    }
+  ],
+  "estimatedSolveFLOPs": 5399095978.666667,
+  "features": 3072,
+  "fields": {
+    "baseline": {
+      "bytes": 3145856,
+      "logicalDtype": "float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-2d99ab01e1ac/fit/baseline.npy",
+      "payloadSHA256": "bbd05cf6097ac9b1f89ea29d2542c1b7b67ee46848393895f5a9e43fa1f621e5",
+      "sha256": "32c43e0b75aa40b99ead101b99ae66a57acf5c82ba56cd4d619acbeddbcb26ff",
+      "shape": [
+        3072,
+        128
+      ],
+      "storedDtype": "float64"
+    },
+    "weight": {
+      "bytes": 3145856,
+      "logicalDtype": "float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-2d99ab01e1ac/fit/weight.npy",
+      "payloadSHA256": "16fb40e541dfc19202a64e5412677ede574fed46f265606f4e652689fcc97b99",
+      "sha256": "85f49c8087e9f74738d80e01b3095b75d54b3ea915cdd553a1f169eeaf2ef53a",
+      "shape": [
+        3072,
+        128
+      ],
+      "storedDtype": "float64"
+    }
+  },
+  "fileQuarantine": {
+    "allowedReadFiles": [
+      "/home/beast/.cache/mdb-research/job-61160292d353/velocity-nonlocal-result/arrays/s60672.base.far_bottom_right.native_n.npy",
+      "/home/beast/.cache/mdb-research/job-61160292d353/velocity-nonlocal-result/arrays/s60672.shape.far_bottom_right.native_n.npy",
+      "/home/beast/.cache/mdb-research/job-8582e821ef86/velocity-closure-student-result/arrays/s60672.base.step3.n.npy",
+      "/home/beast/.cache/mdb-research/job-8582e821ef86/velocity-closure-student-result/arrays/s60672.shape.step3.n.npy",
+      "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.base.canonical/H0.npy",
+      "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.base.canonical/previous.npy",
+      "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.base.canonical/z.npy",
+      "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.base.far_bottom_right/H0.npy",
+      "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.base.far_bottom_right/previous.npy",
+      "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.base.far_bottom_right/z.npy",
+      "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.shape.canonical/H0.npy",
+      "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.shape.canonical/previous.npy",
+      "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.shape.canonical/z.npy",
+      "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.shape.far_bottom_right/H0.npy",
+      "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.shape.far_bottom_right/previous.npy",
+      "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.shape.far_bottom_right/z.npy",
+      "/mnt/hdd8tb/mrun-work/job-1892a00329e9/fit/scale.npy",
+      "/mnt/hdd8tb/mrun-work/job-2d99ab01e1ac/fit-spec.json"
+    ],
+    "deniedCanaries": [
+      "/home/beast/.cache/mdb-research/job-3264b738b16d/global-reader-result/arrays/s60675.shape.remote.native_n.npy",
+      "/mnt/hdd8tb/mrun-work/job-1892a00329e9/reader-00.png"
+    ],
+    "outputRoots": [
+      "/mnt/hdd8tb/mrun-work/job-2d99ab01e1ac/fit"
+    ],
+    "scope": "Trusted-code Python audit hook, not adversarial sandbox."
+  },
+  "frameworksLoaded": [],
+  "gain": 1,
+  "gramNominalMACs": 10950279168,
+  "intercept": false,
+  "meanSquaredError": 0.004484635666859725,
+  "numpyVersion": "2.5.4",
+  "outputs": 128,
+  "postFitNominalMACs": 742391808,
+  "pythonVersion": "3.14.6 (main, Jun 23 2026, 15:18:23) [Clang 22.1.3 ]",
+  "ridge": 0.01,
+  "rows": 1888,
+  "schema": "tce-source-response-fit-v1",
+  "solver": "FP64 dual ridge, numpy.linalg.solve(XXT+N*ridge*I,Y), B=XT*alpha",
+  "sourceInputs": [
+    {
+      "A": {
+        "H0": {
+          "bytes": 6291584,
+          "logicalDtype": "torch.bfloat16",
+          "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.base.canonical/H0.npy",
+          "payloadSHA256": "5d06064ce2a2155757269eacf29f68fc2217fb564f165704c244a2f5cb2d767c",
+          "sha256": "9b6444918be80b3f1af6d034867abc0b32422d975ab02e61e438527c6e58c47b",
+          "shape": [
+            1,
+            1024,
+            3072
+          ],
+          "storedDtype": "uint16"
+        },
+        "previous": {
+          "bytes": 262272,
+          "logicalDtype": "torch.bfloat16",
+          "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.base.canonical/previous.npy",
+          "payloadSHA256": "b1e7b7b96a3f19abe0cabe87034b1b23feedf2e0d4add4e2cabc7002bedbad9a",
+          "sha256": "24198055d7defd0aa4f11deeff12f523455bef3d90463536bf0bb2ccbca6994d",
+          "shape": [
+            1,
+            1024,
+            128
+          ],
+          "storedDtype": "uint16"
+        },
+        "z": {
+          "bytes": 262272,
+          "logicalDtype": "torch.bfloat16",
+          "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.base.canonical/z.npy",
+          "payloadSHA256": "2a44a19e844d5c39c3317fdea0b2539f816fea2dad9d2b802b70e6c9a9bcc249",
+          "sha256": "7f14148486a8d4617f626f5a868e2dc35ef024b349c56ffa3c4841d6083f5aae",
+          "shape": [
+            1,
+            1024,
+            128
+          ],
+          "storedDtype": "uint16"
+        }
+      },
+      "B": {
+        "H0": {
+          "bytes": 6291584,
+          "logicalDtype": "torch.bfloat16",
+          "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.base.far_bottom_right/H0.npy",
+          "payloadSHA256": "b6c5a41df2a38d1049e8bc9b19fbf3011ba65a593d36f57e8ef735a7d077fff7",
+          "sha256": "b3326f6f82c4ed9f49c8b2aeda93cf5cdf951737610d325a1418274d395b3737",
+          "shape": [
+            1,
+            1024,
+            3072
+          ],
+          "storedDtype": "uint16"
+        },
+        "previous": {
+          "bytes": 262272,
+          "logicalDtype": "torch.bfloat16",
+          "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.base.far_bottom_right/previous.npy",
+          "payloadSHA256": "b1e7b7b96a3f19abe0cabe87034b1b23feedf2e0d4add4e2cabc7002bedbad9a",
+          "sha256": "24198055d7defd0aa4f11deeff12f523455bef3d90463536bf0bb2ccbca6994d",
+          "shape": [
+            1,
+            1024,
+            128
+          ],
+          "storedDtype": "uint16"
+        },
+        "z": {
+          "bytes": 262272,
+          "logicalDtype": "torch.bfloat16",
+          "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.base.far_bottom_right/z.npy",
+          "payloadSHA256": "f77311636d5dce5530193daf9cba04a07373d658101cc702cba9dc0afdf4582f",
+          "sha256": "45dacb70e70866e6f822fe148689079457bdf55d22c7c60bec1193feb02f5be1",
+          "shape": [
+            1,
+            1024,
+            128
+          ],
+          "storedDtype": "uint16"
+        }
+      },
+      "id": "discovery-s60672.base",
+      "location": "bottom-right",
+      "population": "discovery",
+      "targets": [
+        {
+          "bytes": 262272,
+          "format": "legacy-npy",
+          "logicalDtype": "torch.bfloat16",
+          "nativeStride": [
+            131072,
+            128,
+            1
+          ],
+          "path": "/home/beast/.cache/mdb-research/job-8582e821ef86/velocity-closure-student-result/arrays/s60672.base.step3.n.npy",
+          "payloadSHA256": "210ad2a51efb23aba3ebcf06bda28d113a18151ff6c31686d2d91745b8457574",
+          "sha256": "f92334afaaaaea70c5777afb6d4acecabfc09eb652824ee30b0b715e7237eeb7",
+          "shape": [
+            1,
+            1024,
+            128
+          ]
+        },
+        {
+          "bytes": 262272,
+          "format": "legacy-npy",
+          "logicalDtype": "torch.bfloat16",
+          "nativeStride": [
+            131072,
+            128,
+            1
+          ],
+          "path": "/home/beast/.cache/mdb-research/job-61160292d353/velocity-nonlocal-result/arrays/s60672.base.far_bottom_right.native_n.npy",
+          "payloadSHA256": "4cc2ef2fa71329f6c76baa75c83f3dda3be8f0ac564d6ed4bfb49900a52fd5b7",
+          "sha256": "90126f114e9188242bc1c8789272e5d246d7b2aff229d45b574fe3a52099b78d",
+          "shape": [
+            1,
+            1024,
+            128
+          ]
+        }
+      ]
+    },
+    {
+      "A": {
+        "H0": {
+          "bytes": 6291584,
+          "logicalDtype": "torch.bfloat16",
+          "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.shape.canonical/H0.npy",
+          "payloadSHA256": "6842d75aa6cc35511f9ede6b10cb39da57c6ffa6926b209efa4bb3bef30ef894",
+          "sha256": "ade6d2c8acc8677aab4e994f86063f8944eed0949ca1b696027a739c056e5056",
+          "shape": [
+            1,
+            1024,
+            3072
+          ],
+          "storedDtype": "uint16"
+        },
+        "previous": {
+          "bytes": 262272,
+          "logicalDtype": "torch.bfloat16",
+          "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.shape.canonical/previous.npy",
+          "payloadSHA256": "15a18257d81548bb121093887d04706f85906f95f3c4787030cc3076c705bb0d",
+          "sha256": "d0cccd3844e663b020bb04496a1305d44f0ee8bdbcc1aa2c298b9239e67e080a",
+          "shape": [
+            1,
+            1024,
+            128
+          ],
+          "storedDtype": "uint16"
+        },
+        "z": {
+          "bytes": 262272,
+          "logicalDtype": "torch.bfloat16",
+          "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.shape.canonical/z.npy",
+          "payloadSHA256": "d96ae1abc7d4677ffd67760e60a9c3b1035b1510e029fb5d9d34660221048fa8",
+          "sha256": "94da3333909439a72c01d28a08b8efa12a0b47123c8cd2ee0e8be0f123eef730",
+          "shape": [
+            1,
+            1024,
+            128
+          ],
+          "storedDtype": "uint16"
+        }
+      },
+      "B": {
+        "H0": {
+          "bytes": 6291584,
+          "logicalDtype": "torch.bfloat16",
+          "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.shape.far_bottom_right/H0.npy",
+          "payloadSHA256": "7203287d6901ff077eb44d6b95c0acd1da5e7fe5cd103de38941705aede2ce6f",
+          "sha256": "141ccd862765fc57bb99354110e9b3daeec7e3571fc6926adc96a8356fab0398",
+          "shape": [
+            1,
+            1024,
+            3072
+          ],
+          "storedDtype": "uint16"
+        },
+        "previous": {
+          "bytes": 262272,
+          "logicalDtype": "torch.bfloat16",
+          "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.shape.far_bottom_right/previous.npy",
+          "payloadSHA256": "15a18257d81548bb121093887d04706f85906f95f3c4787030cc3076c705bb0d",
+          "sha256": "d0cccd3844e663b020bb04496a1305d44f0ee8bdbcc1aa2c298b9239e67e080a",
+          "shape": [
+            1,
+            1024,
+            128
+          ],
+          "storedDtype": "uint16"
+        },
+        "z": {
+          "bytes": 262272,
+          "logicalDtype": "torch.bfloat16",
+          "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.shape.far_bottom_right/z.npy",
+          "payloadSHA256": "a6699cde2621e32af61af3a370cdef9dd47e14aebc07a009eede310a5acbcf32",
+          "sha256": "ebe1ae0474dce4401dc9f41639bf177cf2ea2415288f9291abab902dcc8f9597",
+          "shape": [
+            1,
+            1024,
+            128
+          ],
+          "storedDtype": "uint16"
+        }
+      },
+      "id": "discovery-s60672.shape",
+      "location": "bottom-right",
+      "population": "discovery",
+      "targets": [
+        {
+          "bytes": 262272,
+          "format": "legacy-npy",
+          "logicalDtype": "torch.bfloat16",
+          "nativeStride": [
+            131072,
+            128,
+            1
+          ],
+          "path": "/home/beast/.cache/mdb-research/job-8582e821ef86/velocity-closure-student-result/arrays/s60672.shape.step3.n.npy",
+          "payloadSHA256": "a0bdfb3dd909367ba42b1199c973cc8f4318b6cedb5fed6a8d3cdef602fa7bd4",
+          "sha256": "6c6a192596cd567916625da21b5dbae1cf7291b7bbba3898bd2fcf04f0be7fa2",
+          "shape": [
+            1,
+            1024,
+            128
+          ]
+        },
+        {
+          "bytes": 262272,
+          "format": "legacy-npy",
+          "logicalDtype": "torch.bfloat16",
+          "nativeStride": [
+            131072,
+            128,
+            1
+          ],
+          "path": "/home/beast/.cache/mdb-research/job-61160292d353/velocity-nonlocal-result/arrays/s60672.shape.far_bottom_right.native_n.npy",
+          "payloadSHA256": "8c67ed4a519a7d5fead48209fd8d82fd6c5f015e98717f1aa7214e4fb260569f",
+          "sha256": "42615e0133bb32eabe813e6d0de7173be940e5a8acd7968440d0f2b83b9f0d86",
+          "shape": [
+            1,
+            1024,
+            128
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceScale": {
+    "bytes": 26752,
+    "logicalDtype": "float64",
+    "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/fit/scale.npy",
+    "payloadSHA256": "e093b977e0ced48f4f8bc12a794fed2fc2079cd6aacf46225dd285467c59ab41",
+    "sha256": "e938943cca0c6aebdf9c8ead7d494869e7c51f0cf8bc47b1534e07e32319e623",
+    "shape": [
+      3328
+    ],
+    "storedDtype": "float64"
+  },
+  "wallSeconds": 1.6036702627316117
+}

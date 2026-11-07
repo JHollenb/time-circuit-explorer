@@ -1,0 +1,200 @@
+{
+  "completeCollectedInventory": {
+    "bytes": 10006184,
+    "files": {
+      "candidate-seal.json": {
+        "bytes": 40690,
+        "sha256": "9f24585fe98fec8b36dc766a22f45062137824bc39087f637830141b495e0f7e"
+      },
+      "coefficient-seal.json": {
+        "bytes": 6117,
+        "sha256": "663853b807628fea69086fec98ffd7dde2edc6dc29bbcc6ad6fcddf56faa161a"
+      },
+      "diagnostic-fields.json": {
+        "bytes": 3822,
+        "sha256": "396b2c6a317c11f891b6cda712adf9124e5073553830fb3a790d092cbb307b39"
+      },
+      "fit.json": {
+        "bytes": 16137,
+        "sha256": "e29e0f082877bf665096b1ef60c9d81b6a52112bc7a9ca30fa687fd8a3d4cf85"
+      },
+      "frozen-plan.md": {
+        "bytes": 4618,
+        "sha256": "94a7a7f6e91933adbedc3e92f109a5c3a080f904ca346a97fa7ab45c630b7242"
+      },
+      "observations.jsonl": {
+        "bytes": 8484309,
+        "sha256": "313bf5e89db317932fa06ff987339ce9069e2f8d62a60dd115eaa893ad97ae0b"
+      },
+      "output-accounts.json": {
+        "bytes": 1345177,
+        "sha256": "fd371711f21a92034e046c70ddc87075f0ddeccc0eb668fe67e28ef7b1504704"
+      },
+      "report.json": {
+        "bytes": 18296,
+        "sha256": "8ac0a175b2b9e7b86c54b57bd6a3274465425cf6b82f8df4e9575c430b4b69a8"
+      },
+      "request.json": {
+        "bytes": 2974,
+        "sha256": "20466b65f5d0d11c5a6340023e1fa5e2f4fb2ab5c96d18791d55b329692b5723"
+      },
+      "serving.json": {
+        "bytes": 46830,
+        "sha256": "13323113bfdbd7782897a949f769759b890c506834fe3e18053e9baca350d9a7"
+      },
+      "source.json": {
+        "bytes": 28242,
+        "sha256": "5dfb5ef428e40882d429da621d11e71996a7e03a34ad3d0a3178b8aeb736bba0"
+      },
+      "targets.json": {
+        "bytes": 8972,
+        "sha256": "466ff447bb8e861b5d1b7f0eaec33f15756d2866b890aec65d27f4ce9d2e100c"
+      }
+    }
+  },
+  "jobID": "job-2d99ab01e1ac",
+  "losslessStreams": [
+    {
+      "published": "observations.jsonl.gz",
+      "publishedBytes": 1431262,
+      "publishedSHA256": "19e977b4b632e95da2bde665a7de276fc5c5f77f7718cd11cf1fee0ee4a8a998",
+      "source": "observations.jsonl",
+      "sourceBytes": 8484309,
+      "sourceSHA256": "313bf5e89db317932fa06ff987339ce9069e2f8d62a60dd115eaa893ad97ae0b"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "03b2073a21e00bbe6f4ec3a4d3ba9fed0d9270978bf6ecd5911b1853aec8457d",
+      "size_bytes": 1119895
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794020825.275996,
+      "sha256": "03b2073a21e00bbe6f4ec3a4d3ba9fed0d9270978bf6ecd5911b1853aec8457d",
+      "size_bytes": 1119895
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794020825.1865454,
+      "sha256": "03b2073a21e00bbe6f4ec3a4d3ba9fed0d9270978bf6ecd5911b1853aec8457d",
+      "size_bytes": 1119895
+    }
+  },
+  "requestSHA256": "f33dea6538f85e56400b4418f92065a3c960b86df4387d8aa7d322a47ccd7a89",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-2d99ab01e1ac",
+      "job_log": {
+        "bytes": 332,
+        "sha256": "428cfb32866fe336d0b4bb09b3600b86123c510700f1dcdca577a97aa9619bbb"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-2d99ab01e1ac/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "CUDA_VISIBLE_DEVICES=",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "./mdb_runtime-0.1.0-py3-none-any.whl",
+        "python",
+        "-u",
+        "source_response_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-2d99ab01e1ac",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-2d99ab01e1ac/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794020825.244936
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794020825.2975354
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794020825.3076923
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794020825.3346288
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794020854.017173
+        },
+        {
+          "name": "finished",
+          "ts": 1794020854.026766
+        }
+      ]
+    },
+    "elapsed_s": 28.88,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "03b2073a21e00bbe6f4ec3a4d3ba9fed0d9270978bf6ecd5911b1853aec8457d",
+      "size_bytes": 1119895
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 833.9,
+    "peak_vram_mb": 0.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-source-response-publication-v1",
+  "scope": "Retrospective raw-response objective/transfer discriminator. No original model/H0/VAE/image evaluations;16 served learned affine products plus one post-fit product remain paid. Old learned operands/labels are preparation. Not a full velocity or arbitrary-prompt zero-neural generator."
+}

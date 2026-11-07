@@ -1,0 +1,16 @@
+{
+  "schema": "tce-source-response-report-clarification-v1",
+  "field": "work.newModelEvaluations",
+  "rawValue": 0,
+  "meaning": "No original pretrained model/runtime evaluations; no new H0, encoder, denoiser or VAE calls.",
+  "newH0ReadsMeaning": "No new attention-read computation. Cached H0 arrays are loaded and their bytes/computation provenance remain paid.",
+  "notEstablished": "Zero learned-function computation or arbitrary-prompt zero-neural generation.",
+  "paidLearnedArithmetic": {
+    "servedLearnedAffineProducts": 16,
+    "postFitLearnedAffineProducts": 1,
+    "servedNominalMACs": 5939134464,
+    "postFitNominalMACs": 742391808,
+    "closedFormFits": 1
+  },
+  "scope": "Additive clarification. The immutable raw report retains its historical field and all costs. Framework-free arithmetic can still evaluate learned maps."
+}

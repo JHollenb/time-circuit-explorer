@@ -1,0 +1,16 @@
+{
+  "schema": "tce-source-response-preexecution-refusals-v1",
+  "staging": {
+    "run": "artifacts/source-response-v1",
+    "status": "unsubmitted-partial-payload",
+    "reason": "The model_free scheduling contract lacked explicit task_family=analysis. Contract validation refused before request sealing or submission.",
+    "correction": "Explicit analysis family; new independently staged artifacts/source-response-v2."
+  },
+  "publication": {
+    "status": "refused-before-destination-creation",
+    "reason": "Clarifying publication prose changed the publisher's complete-source hash after byte verification.",
+    "correction": "Preserve first byte receipt; perform v2 verification under corrected publisher, same133 files/395602450 bytes. Both receipts published."
+  },
+  "scientificExecutionsOnRejectedVersions": 0,
+  "scope": "Preexecution/publication mechanics; neither refusal is a scientific null."
+}
