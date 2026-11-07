@@ -1,5 +1,7 @@
 # Prediction-only FLUX generator
 
+The [physical terminal rewrite](../docs/terminal-output-liveness.md) removes **57.982 billion nominal model matrix MACs** from one final FLUX block/head: 203.359 → 145.377 billion. Its own native-write error is 0.398%, velocity error 0.249%; all original learned maps remain paid. The 38.07-second assay has 308 passing mechanics tests, exact source/physical-slice custody and no new reference or image. The next test is one own-state four-clock trajectory. Arbitrary-prompt zero-neural generation remains open.
+
 The [native terminal-state capture](../docs/terminal-native-capture.md) now saves complete source/target StateCuts and original final velocity for the last FLUX single block. The 79.94-second capture pays 4.871 trillion nominal matrix MACs; the failed 69.80-second persistence attempt stays recorded. Both 13-slot cuts roundtrip, 305 mechanics tests pass, and byte/work custody verifies. The physically reduced terminal producer has not run. Arbitrary-prompt zero-neural generation remains open.
 
 This generator makes a fresh 512 × 512 image from a prompt and seed. It evaluates the recovered FLUX.2 Klein 4B computation through all four denoising passes, feeding each predicted state into the next computation. The native transformer is never constructed; calling its forward method raises an error.

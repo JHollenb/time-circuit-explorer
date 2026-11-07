@@ -1,0 +1,44 @@
+{
+  "attentionCalls": 1,
+  "exception": "Parent streams491MBmax nativeblock at1999MBRSS1196MBdevice. This singleterminal+head loads284MBoriginal plus170MBphysical maps, smaller activations.4096MBRAM2048MBVRAM4CPU1GBdisk,60sexpected240cap,no retries. Fresh saved-only analysis child; no co-resident full model or reference.",
+  "intentFirstPreview": {
+    "beast": {
+      "artifact_id": null,
+      "artifact_kind": null,
+      "artifact_locator": {},
+      "artifact_mount": null,
+      "backend": "diffusers",
+      "device": "cuda",
+      "dtype": "bfloat16",
+      "engine_options": {},
+      "engine_profile": "backend:diffusers",
+      "est_ram_mb": 8410.0,
+      "est_vram_mb": 40212.3,
+      "est_wall_s": null,
+      "max_batch": 64,
+      "model": "flux2-klein-4b-distilled",
+      "ram_limit_mb": 52809.0,
+      "reasons": [
+        "host=beast ram=66513MB cuda=True mps=False ane=False task=forward",
+        "dtype=bfloat16 (explicit opt-in \u2014 not the canonical path)",
+        "device=cuda (explicit)",
+        "TF32 forced OFF on cuda (breaches 4-decimal stats)",
+        "backend=diffusers (explicit)",
+        "max_batch=64 threads=4 ram_limit=52809MB (est x 1.3)",
+        "selector fallback: explicit backend has no matching local artifact",
+        "science runtime envelope: diffusers"
+      ],
+      "threads": 4,
+      "weights_gb": 9.6
+    }
+  },
+  "measuredParent": {
+    "elapsed_s": 79.94,
+    "peak_rss_mb": 1999.1,
+    "peak_vram_mb": 1196.0
+  },
+  "originalParameterBytes": 283902464,
+  "physicalAffines": 5,
+  "physicalSliceBytes": 169869312,
+  "residentNativeBlocks": 0
+}

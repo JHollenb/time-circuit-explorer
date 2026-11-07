@@ -1,0 +1,91 @@
+{
+  "analysisSeconds": 1.0044325687922537,
+  "avoidedAffineMACs": 53150220288,
+  "avoidedAttentionMACs": 4831838208,
+  "avoidedMatrixMACs": 57982058496,
+  "candidateSealSHA256": "88f075939a41cd7d6a678006b58d208389048bde1025f5e0dc304ac1cd087276",
+  "instrument_status": "complete-state-and-velocity-comparison",
+  "mechanics_status": "complete",
+  "newEncoderCalls": 0,
+  "newImages": 0,
+  "newMatrixMACs": 145376673792,
+  "newNativeReferenceCalls": 0,
+  "newOriginalHeadCalls": 1,
+  "newReconstructedBlockCalls": 1,
+  "newVAECalls": 0,
+  "observations": 5248,
+  "originalParameterBytes": 283902464,
+  "referenceBlockAndHeadMatrixMACs": 203358732288,
+  "requestSHA256": "5184563e226717cffa3650c9419761711a08de5ca83a377133653a3916d8e933",
+  "schema": "tce-terminal-liveness-result-v1",
+  "scope": "One known native terminalsource. Physical dead textQ/MLP/output elimination with allcurrentKV and ownimage consumed by originalhead. Originallearned maps, sourceprefix/context/capture and failedpredecessor remainpaid; no independentfullmodel parity/image/latencygain/arbitrary-promptzero-neural claim.",
+  "scores": {
+    "image": {
+      "endpoint": {
+        "candidateRms": 52.84999361561605,
+        "changedValues": 443488,
+        "cosine": 0.9999984177862385,
+        "mae": 0.01659911425910347,
+        "maxAbs": 8.0,
+        "referenceRms": 52.84909631223982,
+        "relativeRms": 0.0017789799105965682,
+        "rms": 0.09401748063265782,
+        "scalars": 3145728
+      },
+      "holdWrite": {
+        "candidateRms": 0.0,
+        "changedValues": 3122387,
+        "cosine": null,
+        "mae": 10.44391866233127,
+        "maxAbs": 768.0,
+        "referenceRms": 23.62289585446784,
+        "relativeRms": 1.0,
+        "rms": 23.62289585446784,
+        "scalars": 3145728
+      },
+      "maxError": 8.0,
+      "minError": -8.0,
+      "nativeWrite": {
+        "candidateRms": 23.623450004076023,
+        "changedValues": 443488,
+        "cosine": 0.9999920805380446,
+        "mae": 0.01659911425910347,
+        "maxAbs": 8.0,
+        "referenceRms": 23.62289585446784,
+        "relativeRms": 0.003979930369750842,
+        "rms": 0.09401748063265782,
+        "scalars": 3145728
+      },
+      "payloadExact": false,
+      "rowsVersusHold": {
+        "equal": 0,
+        "improve": 1024,
+        "worsen": 0
+      },
+      "signedMeanError": -1.2816082744393498e-05
+    },
+    "velocity": {
+      "endpoint": {
+        "candidateRms": 1.1811736211748987,
+        "changedValues": 48852,
+        "cosine": 0.9999968947761615,
+        "mae": 0.0013749652102887922,
+        "maxAbs": 0.03125,
+        "referenceRms": 1.1812002544007851,
+        "relativeRms": 0.002492150886370137,
+        "rms": 0.002943729260985548,
+        "scalars": 131072
+      },
+      "maxError": 0.03125,
+      "minError": -0.03125,
+      "payloadExact": false,
+      "signedMeanError": 4.639052804122912e-06
+    }
+  },
+  "terminal_status": "unassessed",
+  "trend_status": "measured finite-arithmetic differences retained; no effect-size gate",
+  "workByPhase": {
+    "candidate": 145376673792,
+    "postSealAnalysis": 0
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "tce-terminal-liveness-tests-v1",
+  "command": "rtk proxy ../common/bin/common exec python -m pytest generator -q",
+  "passed": 308,
+  "seconds": 18.4,
+  "exitCode": 0,
+  "sourceHashes": {
+    "terminal_liveness.py": "b7db91c6914d33385444dfb3e8732ea3e76abdc4ee1e78a18872b72ea42eed92",
+    "terminal_liveness_worker.py": "29df7b512d2af0a0f0b943221dfb09215218a2a86825da0e5584d54f076af01c",
+    "terminal_liveness_analysis.py": "27a8e5ecb839f436fafbd4776645c769e7ae89dd58720eb29a8d0a5d6cc54c86",
+    "terminal_liveness_study.py": "0f4ba592b369debb55453d7e11de9c9c1dbdd3ac2e4ff7cecf463cd708f64fa6",
+    "terminal_capture_guard_v2.py": "eb577f23577062efef8107a51ae7e2baf8ae860678612532c17b55cda3fe7849",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "paired_fields.py": "408e035cb2f2f99558dbbe5abccdc281a5deade195abdbbc003549318ef09e88",
+    "flux_clock.py": "bde499ff527f624fcd1b62a8f6f0b2fbaf70eebc7b7835fcd7d4c6403b4e0b2b",
+    "flux_clock_study.py": "eaccf6bdb75678ac6acb5a371f8858201cf83dbac4de83868b70d5570e4beddc",
+    "complete_masked_study.py": "f52633bc9d729b2a5032e024331d9b20fcee8cb993941cab87c197089cdcff99",
+    "masked_kv_study.py": "920416ce49d823b1337a7f6d9f5fca90c8047723bb6b1d37dc09967114b6ad89",
+    "projected_complement.py": "c9a7bfb8d5bdae210fa87ebb460f116567cc3206974cf77974944e2e3f47d225",
+    "sparse_text_kv.py": "872f0871dbe67c24197e9fcf6a92607673c5d66fb976b4657e1075425ab1b652",
+    "test_terminal_liveness.py": "a295451dbae4112abdcb2dafa3ff9aadd3fa2bf38d967423f21e5d5921f492e3"
+  },
+  "prestageFixtureCorrection": {
+    "initialResult": "1 failed,3 passed in4.15s; no model/stage/job",
+    "cause": "Tiny full reference omitted identity RoPE, whose native primitive casts internally.4.2e-10FP64 mismatch; instrument reference error, not scientificnull.",
+    "repair": "Same originalRoPE inbotharms, unchanged1e-12tolerance; then nontrivial absolutepositions. Targeted4pass3.95s, finalfull308pass18.40s; actualworker toyreceipt also succeeds."
+  },
+  "scope": "Synthetic projection/layout/position/work/guard mechanics plus full generator suite; no imagequality or arbitrary-prompt zero-neural certification."
+}
