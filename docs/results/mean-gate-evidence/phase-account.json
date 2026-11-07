@@ -1,0 +1,41 @@
+{
+  "actor": {
+    "CPUSecondsAfterImports": 11.873261819,
+    "peakCUDAAllocatedBytes": 822403072,
+    "peakCUDAReservedBytes": 834666496,
+    "setupSecondsAfterImports": 4.121927521191537,
+    "timings": [
+      {
+        "instrumentedSynchronizedSecondsBeforeFinalOutputFingerprint": 1.6428628712892532,
+        "scope": "Mean/product/one Down/gating/centering plus internal affine fingerprints; excludes outer input hashes, final ABI/finite/output hashes and retained-array writes.",
+        "stage": "meanGate"
+      }
+    ],
+    "wallSecondsAfterImports": 12.646705399267375
+  },
+  "analysisSecondsAfterImports": 8.612178416922688,
+  "producerExit": {
+    "candidateSealSHA256": "f5a9932236a0ea3f1a7cf08cf5990012f09824bdc973d9323b13a9770fe7fa0a",
+    "producerPID": 1124801,
+    "producerProcessSeconds": 14.610459969379008,
+    "requestSHA256": "2760b02026a7bf29812407fd982b79ba3cdebfd2adebf40e97780287408f3a78",
+    "returncode": 0,
+    "schema": "tce-mean-gate-producer-exit-v1",
+    "scope": "Parent observed successful producer process exit before launching comparison analysis."
+  },
+  "reservation": {
+    "cpu_threads": 4,
+    "disk_gb": 2.0,
+    "est_wall_s": 90.0,
+    "ram_mb": 4096.0,
+    "source": "declared",
+    "vram_mb": 3072.0
+  },
+  "scheduler": {
+    "elapsed_s": 27.94,
+    "peak_rss_mb": 2043.6,
+    "peak_vram_mb": 1104.0
+  },
+  "schema": "tce-mean-gate-phases-v1",
+  "scope": "1.643s synchronized operation includes internal affine fingerprints, excludes outer/post hashes/ABI/retention.12.647s actor wall includes setup/checks/retention; post-exit analysis8.612s.27.94s scheduler includes environment/process overhead. No serving or matched speed claim."
+}

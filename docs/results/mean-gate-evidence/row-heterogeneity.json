@@ -1,0 +1,83 @@
+{
+  "schema": "tce-mean-gate-row-summary-v1",
+  "scope": "Published scalar rows only. Improvement=2<total,linear>-||linear||^2; positive alignment can still worsen error. Centered and full rows use different targets. Dependent rows, not prompt replications.",
+  "sourceSHA256": "c2642545d0487711a5f67e2f5582d9a83468c5316e56fd196f8b45ca05060d19",
+  "strata": {
+    "all": {
+      "centered": {
+        "improved": 1354,
+        "maxEnergyImprovement": 11936.349656142876,
+        "medianEnergyImprovement": 892.1214540542608,
+        "minEnergyImprovement": -40109.58613223932,
+        "negativeAlignment": 34,
+        "positiveAlignment": 1502,
+        "positiveAlignmentButWorse": 148,
+        "worsened": 182,
+        "zeroCorrectionRows": 0
+      },
+      "full": {
+        "improved": 1289,
+        "maxEnergyImprovement": 12278.816372778761,
+        "medianEnergyImprovement": 1053.068857993195,
+        "minEnergyImprovement": -39864.89219289139,
+        "negativeAlignment": 95,
+        "positiveAlignment": 1441,
+        "positiveAlignmentButWorse": 152,
+        "worsened": 247,
+        "zeroCorrectionRows": 0
+      },
+      "rows": 1536
+    },
+    "image": {
+      "centered": {
+        "improved": 870,
+        "maxEnergyImprovement": 2064.7165742937977,
+        "medianEnergyImprovement": 876.7574680764285,
+        "minEnergyImprovement": -5940.562602131875,
+        "negativeAlignment": 34,
+        "positiveAlignment": 990,
+        "positiveAlignmentButWorse": 120,
+        "worsened": 154,
+        "zeroCorrectionRows": 0
+      },
+      "full": {
+        "improved": 807,
+        "maxEnergyImprovement": 3099.0408626624258,
+        "medianEnergyImprovement": 1207.640089263513,
+        "minEnergyImprovement": -8681.787092370607,
+        "negativeAlignment": 95,
+        "positiveAlignment": 929,
+        "positiveAlignmentButWorse": 122,
+        "worsened": 217,
+        "zeroCorrectionRows": 0
+      },
+      "rows": 1024
+    },
+    "text": {
+      "centered": {
+        "improved": 484,
+        "maxEnergyImprovement": 11936.349656142876,
+        "medianEnergyImprovement": 924.9543689470265,
+        "minEnergyImprovement": -40109.58613223932,
+        "negativeAlignment": 0,
+        "positiveAlignment": 512,
+        "positiveAlignmentButWorse": 28,
+        "worsened": 28,
+        "zeroCorrectionRows": 0
+      },
+      "full": {
+        "improved": 482,
+        "maxEnergyImprovement": 12278.816372778761,
+        "medianEnergyImprovement": 942.2356360263946,
+        "minEnergyImprovement": -39864.89219289139,
+        "negativeAlignment": 0,
+        "positiveAlignment": 512,
+        "positiveAlignmentButWorse": 30,
+        "worsened": 30,
+        "zeroCorrectionRows": 0
+      },
+      "rows": 512
+    }
+  },
+  "summarizerSHA256": "90ed11c64b15ef92c53fccd1562d71e4ed3f66a4eed83b4247692aae8edf6b25"
+}
