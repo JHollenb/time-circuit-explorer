@@ -1,0 +1,62 @@
+{
+  "backend": "numpy-fp64",
+  "cpuThreads": 1,
+  "device": "cpu",
+  "needs": {
+    "cpu": true
+  },
+  "ownedSources": [
+    "minimum_response.py",
+    "minimum_response_study.py",
+    "source_response.py",
+    "encoder_atoms.py",
+    "paired_fields.py",
+    "masked_kv_study.py",
+    "flux_clock_study.py"
+  ],
+  "parentJobID": "job-7a556e85153a",
+  "parentRequestSHA256": "22839c8a87ac6e0b385f2f9ef25f673e2c3178af0d2e8ead535ae87de68b17b5",
+  "protocol": "One allmode minimum-norm B from retainedV/sigma/C, inheritedscale/nointercept/unitgain. Sealcoeff ->freshactor8archivedinputresponses ->allseal ->oldtargets/24fixedcontrols. No newSVD/rank/gain/regularization sweep/model/H0/VAE/image/noise. Retrospective seed/locationconfounded.",
+  "requestSHA256": "05b5726a1931c2dff1f0f2b68c9c114351fc2e8a1ec371079aa25f519a7f544f",
+  "responseParentJobID": "job-2d99ab01e1ac",
+  "scheduling_contract": {
+    "additional_scheduler_submissions": 0,
+    "branch_execution": "in_process",
+    "checkpoint_policy": "one outer Saturn worker lease; all logical branches and analysis remain in process",
+    "collection_policy": "direct_job_only",
+    "controlPlaneImports": "Current canonical Frames/Acts import Torch; no model construction/evaluation. Fresh coefficient/forecast actors exclude neural frameworks.",
+    "control_plane": "mrun_outer_lease",
+    "data_plane": "resident_worker",
+    "execution_model": "finite_local_program",
+    "interactive": false,
+    "lease_scope": "entire-worker",
+    "logical_branches": 32,
+    "logical_checkpoint_replays": 0,
+    "logical_operations": 9,
+    "max_local_work_items": 256,
+    "max_mrun_submissions": 1,
+    "model_free": true,
+    "model_loads": 0,
+    "mrun_retry_policy": "none_for_finite_lease",
+    "per_branch_mrun_submissions": 0,
+    "per_transition_mrun_submissions": 0,
+    "replay_policy": "none_source_only",
+    "schema": "saturn-single-lease-scheduling-contract-v1",
+    "task_family": "analysis"
+  },
+  "schema": "tce-minimum-response-request-v1",
+  "sourceHashes": {
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "flux_clock_study.py": "eaccf6bdb75678ac6acb5a371f8858201cf83dbac4de83868b70d5570e4beddc",
+    "frozen-plan.md": "1bfe5cd28d0a140833dc7c50bcd4e45ca25ebb1d3d68fe517d47371b418108ec",
+    "masked_kv_study.py": "920416ce49d823b1337a7f6d9f5fca90c8047723bb6b1d37dc09967114b6ad89",
+    "mdb_runtime-0.1.0-py3-none-any.whl": "038963b98dd9605581ca7307b6695fb8bbe46f91df34b6d9b134aa5d39a1ae94",
+    "minimum_response.py": "7c307d25b564fdea3f308a8921981f2d7beed215a1c7705439a1e2129fd0f81f",
+    "minimum_response_study.py": "f8ed5c9dfb8d5b46c497994660bf5e661b04a3e51b00f549ed83e0fb69aadf84",
+    "paired_fields.py": "408e035cb2f2f99558dbbe5abccdc281a5deade195abdbbc003549318ef09e88",
+    "scoring-source.json": "892941d05ffab86258a5cd3a3257a43e80e017f7626e36d5fdb95478e12ec204",
+    "source.json": "927556e02cc9f21b9456daf49dd1c17a4a4423b3e5e2fede610c2ee71392253e",
+    "source_response.py": "0b85fd57be6fa233e0111c549f7894a9e2a2fdaceb89fef761b3805796e41ef7"
+  },
+  "timeoutSeconds": 300
+}

@@ -1,6 +1,6 @@
 # One untuned interpolation endpoint for the source response
 
-Status: **written and unexecuted**. Selected after the [completed source-spectrum result](../source-response-spectrum.md) and [Astra43 review](../results/source-spectrum-evidence/advisor.json). This is a saved-array response forecast, not a complete velocity or image generator.
+Status: **executed and completed**, job job-3ad8f94c32ea. The [result](../minimum-norm-source-response.md) preserves the [original frozen protocol](../results/minimum-response/frozen-plan.md). Selected after the [completed source-spectrum result](../source-response-spectrum.md) and [Astra43 review](../results/source-spectrum-evidence/advisor.json). This is a saved-array response forecast, not a complete velocity or image generator.
 
 The fixed ridge .01 suppresses source directions that are numerically resolved. Exactly one endpoint contrast will ask whether the suppressed directions carry reusable responses or source-specific detail. Historical held labels already exist; proposal selection is justified by source algebra, not by their scores. This remains a retrospective experiment.
 

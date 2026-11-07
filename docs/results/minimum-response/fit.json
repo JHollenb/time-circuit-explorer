@@ -1,0 +1,99 @@
+{
+  "allModesUsed": true,
+  "coefficientBytes": 3145728,
+  "coefficientEnergy": 144842.47427218317,
+  "coefficientNominalMACs": 742391808,
+  "cpuSeconds": 0.10869168,
+  "features": 3072,
+  "fields": {
+    "weight": {
+      "bytes": 3145856,
+      "logicalDtype": "float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-3ad8f94c32ea/fit/weight.npy",
+      "payloadSHA256": "94ca2187c2730c1d25b07d32ac160179f0988aafd3ac3ab760aecc30b9139745",
+      "sha256": "242aec3f3dbf5b2dd06d9b06958747561328edcd39215f5127993edaff66b4bc",
+      "shape": [
+        3072,
+        128
+      ],
+      "storedDtype": "float64"
+    }
+  },
+  "fileQuarantine": {
+    "allowedReadFiles": [
+      "/mnt/hdd8tb/mrun-work/job-1892a00329e9/fit/scale.npy",
+      "/mnt/hdd8tb/mrun-work/job-3ad8f94c32ea/fit-spec.json",
+      "/mnt/hdd8tb/mrun-work/job-7a556e85153a/arrays/Vt.npy",
+      "/mnt/hdd8tb/mrun-work/job-7a556e85153a/arrays/sigma.npy",
+      "/mnt/hdd8tb/mrun-work/job-7a556e85153a/arrays/targetModes.npy"
+    ],
+    "deniedCanaries": [
+      "/mnt/hdd8tb/mrun-work/job-2d99ab01e1ac/arrays/diagnostic/evaluation-s60674.base/target.npy",
+      "/mnt/hdd8tb/mrun-work/job-2d99ab01e1ac/served/evaluation-s60674.base/response-only.npy"
+    ],
+    "outputRoots": [
+      "/mnt/hdd8tb/mrun-work/job-3ad8f94c32ea/fit"
+    ],
+    "scope": "Trusted-code Python audit hook, not adversarial sandbox."
+  },
+  "frameworksLoaded": [],
+  "gain": 1,
+  "intercept": false,
+  "modeCoefficientEnergy": 144842.47427218317,
+  "modes": 1888,
+  "numpyVersion": "2.5.4",
+  "outputs": 128,
+  "pythonVersion": "3.14.6 (main, Jun 23 2026, 15:18:23) [Clang 22.1.3 ]",
+  "regularization": 0,
+  "schema": "tce-minimum-response-fit-v1",
+  "solver": "Retained FP64 Vt.T @ (C / sigma); no new SVD or rank selection",
+  "sourceFactors": {
+    "Vt": {
+      "bytes": 46399616,
+      "logicalDtype": "float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-7a556e85153a/arrays/Vt.npy",
+      "payloadSHA256": "803dc799b4a9cb154581fc1f38f7cde6e209cc373928168748f8b79d03244f2b",
+      "sha256": "4adba27e3cd81ece06a22598907b55adc0dc8255cedb1548891c84223a94677f",
+      "shape": [
+        1888,
+        3072
+      ],
+      "storedDtype": "float64"
+    },
+    "sigma": {
+      "bytes": 15232,
+      "logicalDtype": "float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-7a556e85153a/arrays/sigma.npy",
+      "payloadSHA256": "2c6e24f08bc70cb1d73decde57a840ecd2f2e49d84729c86a1256762f18f8313",
+      "sha256": "53adac178a6a189cd7a436bbbc77903e7a84d5cd70932fd1af70241907d24b5c",
+      "shape": [
+        1888
+      ],
+      "storedDtype": "float64"
+    },
+    "targetModes": {
+      "bytes": 1933440,
+      "logicalDtype": "float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-7a556e85153a/arrays/targetModes.npy",
+      "payloadSHA256": "529fa4c600488e53eea71be042be027b24a161063f9e7f62f8e7ea4fcb57116c",
+      "sha256": "dcf70207db0a26cc09f6205a4f9aab04a9d10b1ba0d3ba3a78ac44ae0b94e750",
+      "shape": [
+        1888,
+        128
+      ],
+      "storedDtype": "float64"
+    }
+  },
+  "sourceScale": {
+    "bytes": 26752,
+    "logicalDtype": "float64",
+    "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/fit/scale.npy",
+    "payloadSHA256": "e093b977e0ced48f4f8bc12a794fed2fc2079cd6aacf46225dd285467c59ab41",
+    "sha256": "e938943cca0c6aebdf9c8ead7d494869e7c51f0cf8bc47b1534e07e32319e623",
+    "shape": [
+      3328
+    ],
+    "storedDtype": "float64"
+  },
+  "wallSeconds": 1.3026086729951203
+}

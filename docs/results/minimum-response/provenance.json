@@ -1,0 +1,196 @@
+{
+  "completeCollectedInventory": {
+    "bytes": 13379282,
+    "files": {
+      "candidate-seal.json": {
+        "bytes": 13637,
+        "sha256": "e2aab62d8446728850e3013ea634a45f3db377e38144e4b43979a39fc1fa95e3"
+      },
+      "coefficient-seal.json": {
+        "bytes": 5723,
+        "sha256": "7669581adfb93ce1f7ad30632c5f5958a51b59ea9cbb3d903a0f476a43a3557a"
+      },
+      "fit.json": {
+        "bytes": 3422,
+        "sha256": "57d6fd450928a5811f1ed14c95ccfcc75bd6b482af1a0775693df93b37a69810"
+      },
+      "frozen-plan.md": {
+        "bytes": 4364,
+        "sha256": "1bfe5cd28d0a140833dc7c50bcd4e45ca25ebb1d3d68fe517d47371b418108ec"
+      },
+      "observations.jsonl": {
+        "bytes": 11439874,
+        "sha256": "798b3982c4fcc815ef04ccd72c6ab39cb4ec0059efad1101d2c67f42e231397f"
+      },
+      "output-accounts.json": {
+        "bytes": 1810946,
+        "sha256": "8ab6258d78e938545944b062bb948cf16eeb1c96e5e817e57a8ed64dbf81e3d3"
+      },
+      "report.json": {
+        "bytes": 24201,
+        "sha256": "49c3b3a333b323716faaf18de17716837a3b932cdbc9fee6de4b4658906ae7a9"
+      },
+      "request.json": {
+        "bytes": 3101,
+        "sha256": "01b1325aaac0bab55940efc05d8b125e2dbaf8dab344f775c0dfc1fdb1963b60"
+      },
+      "scoring-source.json": {
+        "bytes": 44077,
+        "sha256": "892941d05ffab86258a5cd3a3257a43e80e017f7626e36d5fdb95478e12ec204"
+      },
+      "serving.json": {
+        "bytes": 16289,
+        "sha256": "2505263ba33f63ad7f74d83c73bdf159e11f118fa2224667f8b004cd82c0fb14"
+      },
+      "source.json": {
+        "bytes": 13648,
+        "sha256": "927556e02cc9f21b9456daf49dd1c17a4a4423b3e5e2fede610c2ee71392253e"
+      }
+    }
+  },
+  "jobID": "job-3ad8f94c32ea",
+  "losslessStreams": [
+    {
+      "published": "observations.jsonl.gz",
+      "publishedBytes": 1996486,
+      "publishedSHA256": "e1cc3afb442b1d1070f5392d51647279896e6051faffc7629a7e2892be8b010d",
+      "source": "observations.jsonl",
+      "sourceBytes": 11439874,
+      "sourceSHA256": "798b3982c4fcc815ef04ccd72c6ab39cb4ec0059efad1101d2c67f42e231397f"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "14599647a84b270b204de865a7bb8043a849bc55f15c7efefc9e204e0ee411b6",
+      "size_bytes": 1120265
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794022971.2959728,
+      "sha256": "14599647a84b270b204de865a7bb8043a849bc55f15c7efefc9e204e0ee411b6",
+      "size_bytes": 1120265
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794022971.1933713,
+      "sha256": "14599647a84b270b204de865a7bb8043a849bc55f15c7efefc9e204e0ee411b6",
+      "size_bytes": 1120265
+    }
+  },
+  "requestSHA256": "05b5726a1931c2dff1f0f2b68c9c114351fc2e8a1ec371079aa25f519a7f544f",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-3ad8f94c32ea",
+      "job_log": {
+        "bytes": 334,
+        "sha256": "65e657202583038f4ab3777136b8bcd7f7c6da75427e09cd5688da5f6eebd243"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-3ad8f94c32ea/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "CUDA_VISIBLE_DEVICES=",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "numpy==2.5.4",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "./mdb_runtime-0.1.0-py3-none-any.whl",
+        "python",
+        "-u",
+        "minimum_response_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-3ad8f94c32ea",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-3ad8f94c32ea/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794022971.2838454
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794022971.3185883
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794022971.3263853
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794022971.3560607
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794022995.8934948
+        },
+        {
+          "name": "finished",
+          "ts": 1794022995.9019654
+        }
+      ]
+    },
+    "elapsed_s": 24.75,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "14599647a84b270b204de865a7bb8043a849bc55f15c7efefc9e204e0ee411b6",
+      "size_bytes": 1120265
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 799.9,
+    "peak_vram_mb": 0.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-minimum-response-publication-v1",
+  "scope": "One retrospective allmode minimum-norm learned response map;8new/24reused controls, not completevelocity or arbitrary-prompt zero-neural images. Original operands/labels/factorization remain paid."
+}

@@ -1,0 +1,169 @@
+{
+  "baselineField": {
+    "bytes": 3145856,
+    "logicalDtype": "float64",
+    "path": "/mnt/hdd8tb/mrun-work/job-3ad8f94c32ea/arrays/baseline/coefficients.npy",
+    "payloadSHA256": "bbd05cf6097ac9b1f89ea29d2542c1b7b67ee46848393895f5a9e43fa1f621e5",
+    "sha256": "32c43e0b75aa40b99ead101b99ae66a57acf5c82ba56cd4d619acbeddbcb26ff",
+    "shape": [
+      3072,
+      128
+    ],
+    "storedDtype": "float64"
+  },
+  "baselineFrame": {
+    "act": "root:v1",
+    "frame_id": "069013f44f18fdeb72406db1bfc822c210feb6141a1933054294ae0a6e430291",
+    "implementation": "saturn",
+    "metadata": {},
+    "parent_frame_id": null,
+    "program_fingerprint": "05b5726a1931c2dff1f0f2b68c9c114351fc2e8a1ec371079aa25f519a7f544f",
+    "schema": "saturn-frame-v1",
+    "slots": {
+      "coefficients": {
+        "abi": {
+          "dtype": "float64",
+          "shape": [
+            3072,
+            128
+          ]
+        },
+        "fingerprint": "d653f9bcb72140852bf5f127ee25ad1f8bc2fbce11bcb95a689e7c5e1614150f",
+        "handle": "saturn://coefficients",
+        "kind": "tensor-artifact",
+        "name": "coefficients"
+      },
+      "factorContract": {
+        "abi": {},
+        "fingerprint": "dc7fba7da77eee4807f7798087fa6d46b1ae1492392761f0ccedbd14b6e17093",
+        "handle": "saturn://factorContract",
+        "kind": "source-artifact-contract",
+        "name": "factorContract"
+      }
+    }
+  },
+  "fields": {
+    "weight": {
+      "bytes": 3145856,
+      "logicalDtype": "float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-3ad8f94c32ea/fit/weight.npy",
+      "payloadSHA256": "94ca2187c2730c1d25b07d32ac160179f0988aafd3ac3ab760aecc30b9139745",
+      "sha256": "242aec3f3dbf5b2dd06d9b06958747561328edcd39215f5127993edaff66b4bc",
+      "shape": [
+        3072,
+        128
+      ],
+      "storedDtype": "float64"
+    }
+  },
+  "fitEvidence": {
+    "act": "tce.minimum_norm_response:v1",
+    "elapsed_ms": 1466.0611650906503,
+    "implementation": "isolated-factor-response-form",
+    "input_frame_id": "069013f44f18fdeb72406db1bfc822c210feb6141a1933054294ae0a6e430291",
+    "metrics": {
+      "allModesUsed": true,
+      "fitReceiptSHA256": "57d6fd450928a5811f1ed14c95ccfcc75bd6b482af1a0775693df93b37a69810",
+      "gain": 1,
+      "newSVDs": 0
+    },
+    "numerical_contract": "allmode-FP64-retained-factor-minimum-norm-nointercept-unitgain",
+    "output_frame_id": "f713579102b10e690f1ad85f1dfa1998a6e13475fffd650835b645de3ab84040"
+  },
+  "fitReceiptSHA256": "57d6fd450928a5811f1ed14c95ccfcc75bd6b482af1a0775693df93b37a69810",
+  "fittedFrame": {
+    "act": "tce.minimum_norm_response:v1",
+    "frame_id": "f713579102b10e690f1ad85f1dfa1998a6e13475fffd650835b645de3ab84040",
+    "implementation": "isolated-factor-response-form",
+    "metadata": {},
+    "parent_frame_id": "069013f44f18fdeb72406db1bfc822c210feb6141a1933054294ae0a6e430291",
+    "program_fingerprint": "05b5726a1931c2dff1f0f2b68c9c114351fc2e8a1ec371079aa25f519a7f544f",
+    "schema": "saturn-frame-v1",
+    "slots": {
+      "coefficients": {
+        "abi": {
+          "dtype": "float64",
+          "shape": [
+            3072,
+            128
+          ]
+        },
+        "fingerprint": "0d9982b837dedfe27e9579c746b80899126e14bccfa48c63b9623d0d19194ec1",
+        "handle": "saturn://coefficients",
+        "kind": "tensor-artifact",
+        "name": "coefficients"
+      },
+      "factorContract": {
+        "abi": {},
+        "fingerprint": "dc7fba7da77eee4807f7798087fa6d46b1ae1492392761f0ccedbd14b6e17093",
+        "handle": "saturn://factorContract",
+        "kind": "source-artifact-contract",
+        "name": "factorContract"
+      }
+    }
+  },
+  "restoredFrame": {
+    "act": "root:v1",
+    "frame_id": "069013f44f18fdeb72406db1bfc822c210feb6141a1933054294ae0a6e430291",
+    "implementation": "saturn",
+    "metadata": {},
+    "parent_frame_id": null,
+    "program_fingerprint": "05b5726a1931c2dff1f0f2b68c9c114351fc2e8a1ec371079aa25f519a7f544f",
+    "schema": "saturn-frame-v1",
+    "slots": {
+      "coefficients": {
+        "abi": {
+          "dtype": "float64",
+          "shape": [
+            3072,
+            128
+          ]
+        },
+        "fingerprint": "d653f9bcb72140852bf5f127ee25ad1f8bc2fbce11bcb95a689e7c5e1614150f",
+        "handle": "saturn://coefficients",
+        "kind": "tensor-artifact",
+        "name": "coefficients"
+      },
+      "factorContract": {
+        "abi": {},
+        "fingerprint": "dc7fba7da77eee4807f7798087fa6d46b1ae1492392761f0ccedbd14b6e17093",
+        "handle": "saturn://factorContract",
+        "kind": "source-artifact-contract",
+        "name": "factorContract"
+      }
+    }
+  },
+  "schema": "tce-minimum-response-coefficient-seal-v1",
+  "scope": "Immutable coefficient branches, not mutable optimizer rollback.",
+  "sourceFrame": {
+    "act": "root:v1",
+    "frame_id": "069013f44f18fdeb72406db1bfc822c210feb6141a1933054294ae0a6e430291",
+    "implementation": "saturn",
+    "metadata": {},
+    "parent_frame_id": null,
+    "program_fingerprint": "05b5726a1931c2dff1f0f2b68c9c114351fc2e8a1ec371079aa25f519a7f544f",
+    "schema": "saturn-frame-v1",
+    "slots": {
+      "coefficients": {
+        "abi": {
+          "dtype": "float64",
+          "shape": [
+            3072,
+            128
+          ]
+        },
+        "fingerprint": "d653f9bcb72140852bf5f127ee25ad1f8bc2fbce11bcb95a689e7c5e1614150f",
+        "handle": "saturn://coefficients",
+        "kind": "tensor-artifact",
+        "name": "coefficients"
+      },
+      "factorContract": {
+        "abi": {},
+        "fingerprint": "dc7fba7da77eee4807f7798087fa6d46b1ae1492392761f0ccedbd14b6e17093",
+        "handle": "saturn://factorContract",
+        "kind": "source-artifact-contract",
+        "name": "factorContract"
+      }
+    }
+  }
+}
