@@ -1,0 +1,41 @@
+{
+  "actor": {
+    "CPUSecondsAfterImports": 11.293607130000002,
+    "peakCUDAAllocatedBytes": 1544970240,
+    "peakCUDAReservedBytes": 1587544064,
+    "setupSecondsAfterImports": 6.0436298181302845,
+    "timings": [
+      {
+        "instrumentedSynchronizedSecondsBeforeFinalOutputFingerprint": 0.8171477159485221,
+        "scope": "Two projections/means/product/gating/forecast plus internal affine fingerprints; excludes outer input hashes, subsequent ABI/finite/final output hashes and array writes.",
+        "stage": "oddGate"
+      }
+    ],
+    "wallSecondsAfterImports": 14.85540074808523
+  },
+  "analysisSecondsAfterImports": 15.578360981307924,
+  "producerExit": {
+    "candidateSealSHA256": "ddc85fe909a244c1b65d88169fc82be7fc761eee1017394317443bd65b2691ce",
+    "producerPID": 1127189,
+    "producerProcessSeconds": 22.163743700366467,
+    "requestSHA256": "d1cb7cb05fc98b115343a802588b4731d8673460ea99f4c4e0bf753530b2318b",
+    "returncode": 0,
+    "schema": "tce-odd-gate-producer-exit-v1",
+    "scope": "Parent observed successful producer exit before comparison analysis launch."
+  },
+  "reservation": {
+    "cpu_threads": 4,
+    "disk_gb": 4.0,
+    "est_wall_s": 120.0,
+    "ram_mb": 6144.0,
+    "source": "declared",
+    "vram_mb": 4096.0
+  },
+  "scheduler": {
+    "elapsed_s": 43.15,
+    "peak_rss_mb": 2894.6,
+    "peak_vram_mb": 1822.0
+  },
+  "schema": "tce-odd-gate-phases-v1",
+  "scope": "0.817s instrumented interval includes internal affine fingerprints, excludes outer/post hashes/ABI/retention; actor14.855s afterimports,analysis15.578s,scheduler43.15s differ in scope. No serving or matched speed claim."
+}

@@ -1,0 +1,151 @@
+{
+  "analysisBytesByField": {
+    "centeredGram": 384,
+    "centeredResidual": 37748736,
+    "evenProduct": 113246208,
+    "finiteProduct": 113246208,
+    "fullGram": 384,
+    "fullResidual": 37748736,
+    "gatedPolicyMean": 49152,
+    "gatedRemaining": 37748736,
+    "gatedRemainingMean": 49152,
+    "meanGram": 384,
+    "productClosure": 113246208,
+    "productGram": 216,
+    "remainingOutput": 37748736,
+    "rowStatistics": 405504
+  },
+  "analysisExtraLogicalBudgetBytes": 3221225472,
+  "analysisOutputLogicalBytes": 491238744,
+  "intentFirstFullModelPreview": {
+    "beast": {
+      "artifact_id": null,
+      "artifact_kind": null,
+      "artifact_locator": {},
+      "artifact_mount": null,
+      "backend": "diffusers",
+      "device": "cuda",
+      "dtype": "bfloat16",
+      "engine_options": {},
+      "engine_profile": "backend:diffusers",
+      "est_ram_mb": 8410.0,
+      "est_vram_mb": 40212.3,
+      "est_wall_s": null,
+      "max_batch": 64,
+      "model": "flux2-klein-4b-distilled",
+      "ram_limit_mb": 52809.0,
+      "reasons": [
+        "host=beast ram=66513MB cuda=True mps=False ane=False task=forward",
+        "dtype=bfloat16 (explicit opt-in \u2014 not the canonical path)",
+        "device=cuda (explicit)",
+        "TF32 forced OFF on cuda (breaches 4-decimal stats)",
+        "backend=diffusers (explicit)",
+        "max_batch=64 threads=4 ram_limit=52809MB (est x 1.3)",
+        "selector fallback: explicit backend has no matching local artifact",
+        "science runtime envelope: diffusers"
+      ],
+      "threads": 4,
+      "weights_gb": 9.6
+    }
+  },
+  "liveHost": {
+    "active_jobs": [],
+    "admission": {
+      "enabled": true,
+      "max_concurrent": null,
+      "ram_margin_mb": 3325.6384512,
+      "vram_margin_mb": 819.0
+    },
+    "name": "beast",
+    "ram_total_mb": 66512.769024,
+    "telemetry": {
+      "cpu_pct": 0.1,
+      "disk_free_gb": 68.452442112,
+      "disks": [
+        {
+          "free_gb": 68.5,
+          "mount": "/",
+          "total_gb": 235.5
+        },
+        {
+          "free_gb": 310.8,
+          "mount": "/mnt/big",
+          "total_gb": 1999.6
+        },
+        {
+          "free_gb": 2466.6,
+          "mount": "/mnt/hdd8tb",
+          "total_gb": 7937.3
+        },
+        {
+          "free_gb": 533.9,
+          "mount": "/mnt/ssd1tb",
+          "total_gb": 1000.0
+        },
+        {
+          "free_gb": 197.4,
+          "mount": "/mnt/usb-storage",
+          "total_gb": 502.9
+        },
+        {
+          "free_gb": 0.4,
+          "mount": "/recovery",
+          "total_gb": 4.3
+        }
+      ],
+      "host": "beast",
+      "load1": 0.43896484375,
+      "mem_pressure": null,
+      "pressure_external": false,
+      "ram_free_mb": 52013.428736,
+      "running": [],
+      "swap_total_mb": 21474.299904,
+      "swap_used_mb": 5413.040128,
+      "top_external": [
+        {
+          "name": "bitcoind",
+          "pid": 3661879,
+          "rss_mb": 16033
+        },
+        {
+          "name": "mount.ntfs-3g",
+          "pid": 815703,
+          "rss_mb": 1329
+        }
+      ],
+      "ts": 1794086070.9759986,
+      "vram_free_mb": 15943.0
+    },
+    "vram_total_mb": 16376.0
+  },
+  "measuredCovariance": {
+    "elapsed_s": 51.3,
+    "peak_rss_mb": 1836.8,
+    "peak_vram_mb": 2926.0
+  },
+  "measuredCovarianceJobID": "job-32438e275442",
+  "measuredParent": {
+    "elapsed_s": 27.94,
+    "peak_rss_mb": 2043.6,
+    "peak_vram_mb": 1104.0
+  },
+  "measuredParentJobID": "job-d5b3a1b3bad4",
+  "originalCheckpointTensorBytes": 169869312,
+  "producerBytesByField": {
+    "forecast": 37748736,
+    "forecastCentered": 37748736,
+    "forecastMean": 49152,
+    "gateMean": 147456,
+    "gateReference": 113246208,
+    "gatedQuadratic": 37748736,
+    "gatedQuadraticMean": 49152,
+    "normalizedFP64": 37748736,
+    "quadraticOutput": 37748736,
+    "quadraticProduct": 113246208,
+    "weightG": 226492416
+  },
+  "producerExtraFullMLPTemporaryBudgetBytes": 452984832,
+  "producerOutputLogicalBytes": 641974272,
+  "scope": "One169.9MBoriginalfusedBF16tensor plusphysical56.6MBGview; promotedGmap/Z retained, originalD226.5MB andUp/L/history supplied. Produceroutputs+inputs+fourfullMLPtemporaries budget; CUDAcontext/workspace extra. Post-exit analysis skipsD/Z/weightG, loads actualA and product/output comparisons with3GiBextra logical budget, not a measuredpeak. Parent77actual27.94s2043.6MBRSS1104device,76actual51.3s1836.8RSS2926device.6144RAM4096VRAM4CPU4GBdisk120expected360cap,no retries. Fullmodel planner inapplicable to two explicit projections.",
+  "sourceFileBytes": 387097472
+}

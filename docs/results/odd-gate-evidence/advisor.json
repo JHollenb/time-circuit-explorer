@@ -1,0 +1,63 @@
+{
+  "schema": "tce-odd-gate-advisor-v1",
+  "cycle": 78,
+  "advisor": "/root/astra_zero_forward_advisor",
+  "model": "gpt-6-astra",
+  "newFullNewestPostSurvey": true,
+  "lastFullNewestPostSurveyCycle": 78,
+  "nextFullSurveyDueCycle": 81,
+  "fullSurveySHA256": "d3d2901b31357c917e83a78685d0c171d1cf7aee3e98d7dc735f4dabf920cf3c",
+  "preStageReview": {
+    "advisor": "/root/astra_zero_forward_advisor",
+    "cycle": 78,
+    "fullNewestPostSurvey": "../research-review-cycle78/advisor-survey.json",
+    "model": "gpt-6-astra",
+    "nextFullSurveyDueCycle": 81,
+    "planSHA256": "303a42447393eab506ab2050e7507ec38fd4a6c96a5d7a7e0b22e22656017647",
+    "resourceScope": "6144RAM4096VRAM4CPU4GBdisk120expected360cap,no retries; actualpeaksunmeasured atreview.",
+    "reviewedSources": {
+      "odd_gate.py": "bb91659e7f078d78d454f6fb750934ee60df1d710989985de25df90cb37fe7ee",
+      "odd_gate_analysis.py": "d87144882d9a92433ce0043fe3bbdcbb5599476b26772651eace47cc8de0afd9",
+      "odd_gate_ledger.py": "07cff1d46001d298ac8341ad0baee60a6d8ca41545c51ee4ecf8cb639ac3b0e3",
+      "odd_gate_study.py": "560faa06b27eef4b4b7b92688407921d58f863e3cd629ada58f61e2d5356dc39",
+      "odd_gate_worker.py": "bf0da44478ecbdcdfbcd988d10c8c14f16db37a9477696c0e2528850381b46f8",
+      "publish_odd_gate.py": "869dcfecc84289161fce9dbf0f714687a9d417b0172d618b8b715b1b604ba78d",
+      "test_odd_gate.py": "5e53996efd1557b4438afb17aaf9f8884189e4bd57f4634978b89d996823c5d9"
+    },
+    "schema": "tce-odd-gate-advisor-prestage-v1",
+    "verdict": "Proceed single guarded assay; no material pre-freeze blocker. Exact gate slice/factor/centering/mask/fullforecast/finiteH-F boundary/isolation/exit/work/ABIs/lineage/byteaudit/resources reviewed. No advisor models/tests/arrays/edits."
+  },
+  "reviewedResultSnapshots": {
+    "report.json": "0fdf0981c66f1b4cc62a0b7160d7ad8c8a963700f4120e628424857afb0528ff",
+    "execution.json": "b20be5b6cca834b1ea97c91d5669a41e68ca1c3ed71d886c25ca5d622ceba506",
+    "candidate.json": "be9324c60bad3ad65d1eee7911f27443b2ce0828be7d84cb4564d29f55384e71",
+    "candidate-seal.json": "ddc85fe909a244c1b65d88169fc82be7fc761eee1017394317443bd65b2691ce",
+    "producer-exit.json": "c94f755377f5c2187e2ee448ea6e9ab355058d569afa514b8a6d0a703fb4d648",
+    "retained-array-verification.json": "ffc02e6f7a0bdc051f67f482756c456eb7a15f6d722c60ccee1acb8c57f56852"
+  },
+  "finalReviewedSynthesisSnapshots": {
+    "docs/odd-gate.md": "94cadb1354e30dd67d6f5193bca31f8625eed8f3edf4cace7dd4caa8e4b0939d",
+    "docs/plans/gated-even-operator-bound.md": "04f0de9e4ab22a00e1e7d838ba0ff8a8b25fa66761d3201e4e4a4614b8938386",
+    "docs/results/odd-gate-evidence/README.md": "b665a09fd94223da3af2e6cbeba86a062813a9dc803ac6456b03dad106b4c314",
+    "../obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md": "947ef4b736f28d5e63137a27c5927bbac641958525a1662dada6b7c1faf0fda0"
+  },
+  "actualInterpretation": "One fixed quadratic component reduces image missing-write RMS97.48% to27.75%, all1024rows improve. Text510/512 improve but rows3/35 overshoot, pooled text RMS88.68% to180.66%; they account for95.82%new text residual energy. Full pooled RMS74.98%; centered89.00%uses different denominator. Product odd/even and output quadratic/remainder cancellation observed; H/F not separately Down-projected. Original maps, inherited fullUp/L/source/history paid;86,973,087,744newMAC; no new image or economical zero-neural generator.",
+  "nextCut": "One saved-only residual-gated omitted operator-bound assay, zero new learned matrix products. Restrict9216-column product and both closure arrays to6912omitted columns for K=diag(g)D[:,omitted], selected residue separate. Eta bounds ||R_g-Y_H^g|| with Q separate. Distinguish exact-real inequality, observed regrouping and conditional FP64 envelope; no automatic H Down, gain fitting or rank/order/anchor sweep. Written and unexecuted.",
+  "storageAndFigureBindings": {
+    "docs/results/storage-cleanup-cycle78/README.md": "14e82945224362e2eada4a43f8d5661ab0f268f2c686597c58a4a6ea694ec93a",
+    "docs/results/storage-cleanup-cycle78/publication.json": "0b55807db4a4f140548c6b69dd316e8d3655d2327a4625de3dc9b62da6907a72",
+    "docs/results/storage-audit-cycle78/publication.json": "8f0984a27947f079ae188293ab35cc20ba8070bd1dbb12f6a9ab241cb50f5cf3",
+    "docs/results/odd-gate-figure-v2/odd-gate.png": "e5b4481cce4bf5f75762d432ab6b935023d3a4abbb357a8bb7d63d07d4db3c5b"
+  },
+  "scope": "Full newest-post survey78 is recorded separately. Pre-stage source/resource, actual result/math and final synthesis reviews use source/scalar evidence. No advisor tests, models, scientific-array processing or edits; no new remote custody verification by advisor.",
+  "publicationCorrection": {
+    "finding": "Initial final synthesis omitted the product restriction for6912-column K while saved product fields have9216columns; eta target needed explicit definition.",
+    "priorSynthesisSnapshots": {
+      "docs/odd-gate.md": "2622e943c3be5606a312c3b885b0fecf959a9acb6a7f73b685b48937873b96d6",
+      "docs/plans/gated-even-operator-bound.md": "4e44020159426ab0c461b3b2959d1bb28c6f25929b1cad5f69ddf4bef5ff4a60",
+      "../obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md": "3d765950de80639cf4288b818ebb2cf3792eea658f5379ed8d2fa7822c205426"
+    },
+    "repair": "Omitted-column restriction now covers H/F and both closure terms; selected-column residue separate; eta explicitly bounds ||R_g-Y_H^g||. Advisor inspected actual corrected files and rebound final hashes. Evidence README unchanged."
+  },
+  "finalVerdict": "Approved: no remaining synthesis blocker. Next assay remains written and unexecuted. Strict arbitrary-prompt zero-neural goal active and unsolved."
+}

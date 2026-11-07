@@ -1,0 +1,889 @@
+{
+  "analysisSecondsAfterImports": 15.578360981307924,
+  "candidateSealSHA256": "ddc85fe909a244c1b65d88169fc82be7fc761eee1017394317443bd65b2691ce",
+  "diagnostics": {
+    "activationMeanReduction": {
+      "candidateRms": 0.1438038298585149,
+      "changedValues": 0,
+      "cosine": 1.0,
+      "mae": 0.0,
+      "maxAbs": 0.0,
+      "referenceRms": 0.1438038298585149,
+      "relativeRms": 0.0,
+      "rms": 0.0,
+      "scalars": 18432
+    },
+    "centeredResidualDistributivity": {
+      "candidateRms": 1.2641674642886236,
+      "changedValues": 4462154,
+      "cosine": 1.0,
+      "mae": 4.653498506643642e-16,
+      "maxAbs": 1.4210854715202004e-13,
+      "referenceRms": 1.2641674642886236,
+      "relativeRms": 1.720012854999067e-15,
+      "rms": 2.1743842894480065e-15,
+      "scalars": 4718592
+    },
+    "evaluatedActivationVsAdmitted": {
+      "candidateRms": 0.18965683921983637,
+      "changedValues": 14155776,
+      "cosine": 0.999997176181054,
+      "mae": 0.00027257620754774317,
+      "maxAbs": 0.03090530036886463,
+      "referenceRms": 0.1896374406095702,
+      "relativeRms": 0.002378797909507451,
+      "rms": 0.0004511091472863889,
+      "scalars": 14155776
+    },
+    "forecastRegrouping": {
+      "candidateRms": 2.245159239817598,
+      "changedValues": 2023997,
+      "cosine": 1.0,
+      "mae": 6.407626695726191e-17,
+      "maxAbs": 5.684341886080802e-14,
+      "referenceRms": 2.2451592398175975,
+      "relativeRms": 9.628891951059151e-17,
+      "rms": 2.1618395733125747e-16,
+      "scalars": 4718592
+    },
+    "outputClosure": {
+      "candidateRms": 1.7070155789122001,
+      "changedValues": 2545048,
+      "cosine": 1.0,
+      "mae": 8.511705992549648e-17,
+      "maxAbs": 7.194245199571014e-14,
+      "referenceRms": 1.7070155789122001,
+      "relativeRms": 1.3939800828722567e-16,
+      "rms": 2.379545718156262e-16,
+      "scalars": 4718592
+    },
+    "productClosureMaxAbs": 7.049916206369744e-15,
+    "productExpansion": {
+      "candidateRms": 0.04272062098785989,
+      "changedValues": 8312962,
+      "cosine": 1.0,
+      "mae": 4.136323341419838e-18,
+      "maxAbs": 7.049916206369744e-15,
+      "referenceRms": 0.04272062098785989,
+      "relativeRms": 2.770855887728001e-16,
+      "rms": 1.18372684191608e-17,
+      "scalars": 14155776
+    }
+  },
+  "fixedAddress": {
+    "clock": 3,
+    "singleBlock": 0
+  },
+  "instrument_status": "one-paid-own-state-quadratic-diagnostic",
+  "mechanics_status": "complete",
+  "newContinuations": 0,
+  "newFits": 0,
+  "newImages": 0,
+  "observations": 1536,
+  "panels": {
+    "all": {
+      "additionalRemovedBaselineEnergyFraction": 0.39237574659098906,
+      "baselineResidualOverTotalRMS": 0.9619588837633277,
+      "centeredBaselineResidualOverCenteredTotalRMS": 0.9445736850778838,
+      "centeredGramEnergyClosureResidual": 5.587935447692871e-09,
+      "centeredImprovedVsLinear": 1534,
+      "centeredResidualOverCenteredTotalRMS": 0.8899502962050149,
+      "centeredResidualOverFullTotalRMS": 0.740571720554664,
+      "centeredWorsenedVsLinear": 2,
+      "energies": {
+        "baselineResidualEnergy": 12723318.997131139,
+        "centeredBaselineResidualEnergy": 8494969.52951297,
+        "centeredForecastEnergy": 17982816.69394574,
+        "centeredForecastTotalInner": 9981554.731030267,
+        "centeredLinearEnergy": 2435454.484676269,
+        "centeredPolicyEnergy": 97.58028784122675,
+        "centeredQuadraticEnergy": 16925998.48313957,
+        "centeredRemainingEnergy": 7541462.107455783,
+        "centeredResidualEnergy": 7540873.31097129,
+        "centeredTotalEnergy": 9521166.079086088,
+        "forecastEnergy": 23785195.495355844,
+        "forecastTotalInner": 14901856.917771805,
+        "fullResidualEnergy": 7730997.206516494,
+        "linearEnergy": 2435454.484676269,
+        "outputClosureEnergy": 2.6717790102178866e-25,
+        "policyEnergy": 103.80560114184377,
+        "quadraticBaselineInner": 13860349.53758216,
+        "quadraticEnergy": 22728377.284549676,
+        "remainingEnergy": 7731396.098659322,
+        "residualMeanEnergy": 190123.8955452026,
+        "totalEnergy": 13749515.546704257,
+        "twiceCenteredLinearPolicy": 53.20151297771438,
+        "twiceCenteredLinearQuadratic": -1378636.2738700998,
+        "twiceCenteredLinearRemaining": -30674.86274602839,
+        "twiceCenteredQuadraticPolicy": 664.8817851313356,
+        "twiceCenteredQuadraticRemaining": -15972567.14638302,
+        "twiceCenteredRemainingPolicy": -686.3767723351434,
+        "twiceLinearPolicy": 53.20151297771433,
+        "twiceLinearQuadratic": -1378636.2738700998,
+        "twiceLinearRemaining": -30674.862746028433,
+        "twiceQuadraticPolicy": -501.3826675852242,
+        "twiceQuadraticRemaining": -17735554.111267444,
+        "twiceRemainingPolicy": -502.6977439694917
+      },
+      "fullGramEnergyClosureResidual": -1.862645149230957e-09,
+      "fullImprovedVsLinear": 1534,
+      "fullImprovedVsZero": 1533,
+      "fullRemovedEnergyFraction": 0.43772584712123874,
+      "fullResidualOverBaselineResidualRMS": 0.7795025679297092,
+      "fullResidualOverTotalRMS": 0.7498494201363106,
+      "fullWorsenedVsLinear": 2,
+      "fullWorsenedVsZero": 3,
+      "gramAccounts": {
+        "centered": {
+          "cosines": {
+            "linear_policy": 0.0017255316567731415,
+            "linear_quadratic": -0.1073624832345992,
+            "linear_remaining": -0.00357877872638398,
+            "quadratic_policy": 0.00818005537104393,
+            "quadratic_remaining": -0.7068704086906784,
+            "remaining_policy": -0.012650968035288597
+          },
+          "energies": [
+            2435454.48467627,
+            16925998.48313957,
+            7541462.107455784,
+            97.58028784122675
+          ],
+          "gram": [
+            [
+              2435454.48467627,
+              -689318.13693505,
+              -15337.431373014188,
+              26.600756488857186
+            ],
+            [
+              -689318.13693505,
+              16925998.48313957,
+              -7986283.57319151,
+              332.4408925656678
+            ],
+            [
+              -15337.431373014188,
+              -7986283.57319151,
+              7541462.107455784,
+              -343.18838616757176
+            ],
+            [
+              26.600756488857186,
+              332.4408925656678,
+              -343.18838616757176,
+              97.58028784122675
+            ]
+          ],
+          "terms": [
+            "linear",
+            "quadratic",
+            "remaining",
+            "policy"
+          ],
+          "twiceCross": {
+            "linear_policy": 53.20151297771437,
+            "linear_quadratic": -1378636.2738701,
+            "linear_remaining": -30674.862746028375,
+            "quadratic_policy": 664.8817851313356,
+            "quadratic_remaining": -15972567.14638302,
+            "remaining_policy": -686.3767723351435
+          }
+        },
+        "full": {
+          "cosines": {
+            "linear_policy": 0.0016729909236951565,
+            "linear_quadratic": -0.09265001239822242,
+            "linear_remaining": -0.0035345461925773885,
+            "quadratic_policy": -0.0051611289753605615,
+            "quadratic_remaining": -0.6689622164152813,
+            "remaining_policy": -0.008872327916015608
+          },
+          "energies": [
+            2435454.48467627,
+            22728377.284549676,
+            7731396.098659323,
+            103.80560114184377
+          ],
+          "gram": [
+            [
+              2435454.48467627,
+              -689318.1369350499,
+              -15337.431373014231,
+              26.600756488857158
+            ],
+            [
+              -689318.1369350499,
+              22728377.284549676,
+              -8867777.055633724,
+              -250.69133379261223
+            ],
+            [
+              -15337.431373014231,
+              -8867777.055633724,
+              7731396.098659323,
+              -251.34887198474573
+            ],
+            [
+              26.600756488857158,
+              -250.69133379261223,
+              -251.34887198474573,
+              103.80560114184377
+            ]
+          ],
+          "terms": [
+            "linear",
+            "quadratic",
+            "remaining",
+            "policy"
+          ],
+          "twiceCross": {
+            "linear_policy": 53.201512977714316,
+            "linear_quadratic": -1378636.2738700998,
+            "linear_remaining": -30674.862746028462,
+            "quadratic_policy": -501.38266758522445,
+            "quadratic_remaining": -17735554.111267447,
+            "remaining_policy": -502.69774396949146
+          }
+        },
+        "mean": {
+          "cosines": {
+            "linear_policy": -0.0426789304616589,
+            "linear_quadratic": -0.01323773830652227,
+            "linear_remaining": -0.005214319634714197,
+            "quadratic_policy": -0.09702494330508146,
+            "quadratic_remaining": -0.8396817602666717,
+            "remaining_policy": 0.08445932845539593
+          },
+          "energies": [
+            5.592903625283496e-26,
+            5802378.801410098,
+            189933.9912035362,
+            6.225313300616995
+          ],
+          "gram": [
+            [
+              5.592903625283496e-26,
+              -7.541113861997559e-12,
+              -5.374247520562742e-13,
+              -2.5183309435417813e-14
+            ],
+            [
+              -7.541113861997559e-12,
+              5802378.801410098,
+              -881493.4824422105,
+              -583.13222635828
+            ],
+            [
+              -5.374247520562742e-13,
+              -881493.4824422105,
+              189933.9912035362,
+              91.83951418282615
+            ],
+            [
+              -2.5183309435417813e-14,
+              -583.13222635828,
+              91.83951418282615,
+              6.225313300616995
+            ]
+          ],
+          "terms": [
+            "linear",
+            "quadratic",
+            "remaining",
+            "policy"
+          ],
+          "twiceCross": {
+            "linear_policy": -5.0366618870835627e-14,
+            "linear_quadratic": -1.5082227723995118e-11,
+            "linear_remaining": -1.0748495041125485e-12,
+            "quadratic_policy": -1166.26445271656,
+            "quadratic_remaining": -1762986.964884421,
+            "remaining_policy": 183.6790283656523
+          }
+        }
+      },
+      "paidConstantOnlyResidualOverTotalRMS": 0.8321495298250465,
+      "productSpaceAccount": {
+        "cosines": {
+          "even_finite": -0.0013747131544085383,
+          "quadratic_even": -0.7276026280088534,
+          "quadratic_finite": -0.031076402618000737
+        },
+        "energies": [
+          54889.52457638191,
+          27966.65618469558,
+          0.1770664688306411
+        ],
+        "gram": [
+          [
+            54889.52457638191,
+            -28507.508682301323,
+            -3.0636816630300068
+          ],
+          [
+            -28507.508682301323,
+            27966.65618469558,
+            -0.09673876155063403
+          ],
+          [
+            -3.0636816630300068,
+            -0.09673876155063403,
+            0.1770664688306411
+          ]
+        ],
+        "terms": [
+          "quadratic",
+          "even",
+          "finite"
+        ],
+        "twiceCross": {
+          "even_finite": -0.19347752310126806,
+          "quadratic_even": -57015.017364602645,
+          "quadratic_finite": -6.1273633260600135
+        }
+      },
+      "residualMeanOverFullTotalRMS": 0.11759115440145043,
+      "residualPythagoreanDiscrepancy": 1.862645149230957e-09,
+      "rows": 1536
+    },
+    "image": {
+      "additionalRemovedBaselineEnergyFraction": 0.9189577319111412,
+      "baselineResidualOverTotalRMS": 0.9748409122900528,
+      "centeredBaselineResidualOverCenteredTotalRMS": 0.9605020579445614,
+      "centeredGramEnergyClosureResidual": -1.862645149230957e-09,
+      "centeredImprovedVsLinear": 1024,
+      "centeredResidualOverCenteredTotalRMS": 0.3129769948190755,
+      "centeredResidualOverFullTotalRMS": 0.2507004036587136,
+      "centeredWorsenedVsLinear": 0,
+      "energies": {
+        "baselineResidualEnergy": 11076667.691764131,
+        "centeredBaselineResidualEnergy": 6899592.880705013,
+        "centeredForecastEnergy": 8585075.613980994,
+        "centeredForecastTotalInner": 7665607.129684099,
+        "centeredLinearEnergy": 1555959.7675185,
+        "centeredPolicyEnergy": 59.571921460056885,
+        "centeredQuadraticEnergy": 8096984.427193727,
+        "centeredRemainingEnergy": 732415.0834360251,
+        "centeredResidualEnergy": 732574.3329698171,
+        "centeredTotalEnergy": 7478712.978357021,
+        "forecastEnergy": 14295558.047726326,
+        "forecastTotalInner": 12526833.782267656,
+        "fullResidualEnergy": 897678.2726071501,
+        "linearEnergy": 1555959.7675185,
+        "outputClosureEnergy": 1.782691243971534e-25,
+        "policyEnergy": 61.94994442314114,
+        "quadraticBaselineInner": 11993228.14004802,
+        "quadraticEnergy": 13807466.86093906,
+        "remainingEnergy": 897342.7016842732,
+        "residualMeanEnergy": 165103.93963733313,
+        "totalEnergy": 11655787.789416138,
+        "twiceCenteredLinearPolicy": 26.58620181369417,
+        "twiceCenteredLinearQuadratic": -1067868.5807312336,
+        "twiceCenteredLinearRemaining": 91002.3246629267,
+        "twiceCenteredQuadraticPolicy": -284.5718137444625,
+        "twiceCenteredQuadraticRemaining": -1929681.3076447875,
+        "twiceCenteredRemainingPolicy": 99.67761233197696,
+        "twiceLinearPolicy": 26.58620181369414,
+        "twiceLinearQuadratic": -1067868.5807312336,
+        "twiceLinearRemaining": 91002.3246629267,
+        "twiceQuadraticPolicy": -1225.7691395994957,
+        "twiceQuadraticRemaining": -3627251.6726424787,
+        "twiceRemainingPolicy": 273.6209784538036
+      },
+      "fullGramEnergyClosureResidual": 0.0,
+      "fullImprovedVsLinear": 1024,
+      "fullImprovedVsZero": 1024,
+      "fullRemovedEnergyFraction": 0.9229843328631744,
+      "fullResidualOverBaselineResidualRMS": 0.2846792371931238,
+      "fullResidualOverTotalRMS": 0.2775169672953811,
+      "fullWorsenedVsLinear": 0,
+      "fullWorsenedVsZero": 0,
+      "gramAccounts": {
+        "centered": {
+          "cosines": {
+            "linear_policy": 0.0013807222253726427,
+            "linear_quadratic": -0.1504274104725763,
+            "linear_remaining": 0.04262306432199285,
+            "quadratic_policy": -0.006478574094647474,
+            "quadratic_remaining": -0.3962007583619872,
+            "remaining_policy": 0.00754515536267475
+          },
+          "energies": [
+            1555959.7675185,
+            8096984.427193727,
+            732415.0834360251,
+            59.571921460056885
+          ],
+          "gram": [
+            [
+              1555959.7675185,
+              -533934.2903656169,
+              45501.16233146335,
+              13.293100906847082
+            ],
+            [
+              -533934.2903656169,
+              8096984.427193727,
+              -964840.6538223936,
+              -142.28590687223124
+            ],
+            [
+              45501.16233146335,
+              -964840.6538223936,
+              732415.0834360251,
+              49.83880616598849
+            ],
+            [
+              13.293100906847082,
+              -142.28590687223124,
+              49.83880616598849,
+              59.571921460056885
+            ]
+          ],
+          "terms": [
+            "linear",
+            "quadratic",
+            "remaining",
+            "policy"
+          ],
+          "twiceCross": {
+            "linear_policy": 26.586201813694164,
+            "linear_quadratic": -1067868.5807312338,
+            "linear_remaining": 91002.3246629267,
+            "quadratic_policy": -284.5718137444625,
+            "quadratic_remaining": -1929681.3076447872,
+            "remaining_policy": 99.67761233197697
+          }
+        },
+        "full": {
+          "cosines": {
+            "linear_policy": 0.0013539625723447957,
+            "linear_quadratic": -0.11519446886062842,
+            "linear_remaining": 0.03850739517073605,
+            "quadratic_policy": -0.020955654146591413,
+            "quadratic_remaining": -0.5152423136631984,
+            "remaining_policy": 0.018349311269020382
+          },
+          "energies": [
+            1555959.7675185,
+            13807466.86093906,
+            897342.7016842732,
+            61.94994442314114
+          ],
+          "gram": [
+            [
+              1555959.7675185,
+              -533934.2903656168,
+              45501.16233146335,
+              13.293100906847064
+            ],
+            [
+              -533934.2903656168,
+              13807466.86093906,
+              -1813625.8363212394,
+              -612.8845697997479
+            ],
+            [
+              45501.16233146335,
+              -1813625.8363212394,
+              897342.7016842732,
+              136.8104892269018
+            ],
+            [
+              13.293100906847064,
+              -612.8845697997479,
+              136.8104892269018,
+              61.94994442314114
+            ]
+          ],
+          "terms": [
+            "linear",
+            "quadratic",
+            "remaining",
+            "policy"
+          ],
+          "twiceCross": {
+            "linear_policy": 26.586201813694128,
+            "linear_quadratic": -1067868.5807312336,
+            "linear_remaining": 91002.3246629267,
+            "quadratic_policy": -1225.7691395994957,
+            "quadratic_remaining": -3627251.6726424787,
+            "remaining_policy": 273.6209784538036
+          }
+        },
+        "mean": {
+          "cosines": {
+            "linear_policy": -0.06976835322515341,
+            "linear_quadratic": -0.02321901097780812,
+            "linear_remaining": 0.0022740147623532708,
+            "quadratic_policy": -0.12770451938442604,
+            "quadratic_remaining": -0.8746105178186723,
+            "remaining_policy": 0.13887470803170332
+          },
+          "energies": [
+            3.87078771668729e-26,
+            5710482.433745325,
+            164927.6182482481,
+            2.3780229630842644
+          ],
+          "gram": [
+            [
+              3.87078771668729e-26,
+              -1.0916408877422174e-11,
+              1.8169360858484498e-13,
+              -2.116733442696124e-14
+            ],
+            [
+              -1.0916408877422174e-11,
+              5710482.433745325,
+              -848785.1824988453,
+              -470.5986629275165
+            ],
+            [
+              1.8169360858484498e-13,
+              -848785.1824988453,
+              164927.6182482481,
+              86.97168306091336
+            ],
+            [
+              -2.116733442696124e-14,
+              -470.5986629275165,
+              86.97168306091336,
+              2.3780229630842644
+            ]
+          ],
+          "terms": [
+            "linear",
+            "quadratic",
+            "remaining",
+            "policy"
+          ],
+          "twiceCross": {
+            "linear_policy": -4.233466885392248e-14,
+            "linear_quadratic": -2.1832817754844348e-11,
+            "linear_remaining": 3.6338721716968996e-13,
+            "quadratic_policy": -941.197325855033,
+            "quadratic_remaining": -1697570.3649976905,
+            "remaining_policy": 173.94336612182673
+          }
+        }
+      },
+      "paidConstantOnlyResidualOverTotalRMS": 0.8010186301508757,
+      "productSpaceAccount": {
+        "cosines": {
+          "even_finite": 0.0002777405934190308,
+          "quadratic_even": -0.35717820368275793,
+          "quadratic_finite": -0.04323443018566098
+        },
+        "energies": [
+          23611.403234143116,
+          2764.428346626325,
+          0.13931181914947388
+        ],
+        "gram": [
+          [
+            23611.403234143116,
+            -2885.6823068910735,
+            -2.479617085984904
+          ],
+          [
+            -2885.6823068910735,
+            2764.428346626325,
+            0.005450495802756096
+          ],
+          [
+            -2.479617085984904,
+            0.005450495802756096,
+            0.13931181914947388
+          ]
+        ],
+        "terms": [
+          "quadratic",
+          "even",
+          "finite"
+        ],
+        "twiceCross": {
+          "even_finite": 0.010900991605512191,
+          "quadratic_even": -5771.364613782147,
+          "quadratic_finite": -4.959234171969808
+        }
+      },
+      "residualMeanOverFullTotalRMS": 0.1190166994256845,
+      "residualPythagoreanDiscrepancy": -1.1641532182693481e-10,
+      "rows": 1024
+    },
+    "text": {
+      "additionalRemovedBaselineEnergyFraction": -3.1498275388585264,
+      "baselineResidualOverTotalRMS": 0.8868306940509048,
+      "centeredBaselineResidualOverCenteredTotalRMS": 0.8838031987407191,
+      "centeredGramEnergyClosureResidual": -9.313225746154785e-10,
+      "centeredImprovedVsLinear": 510,
+      "centeredResidualOverCenteredTotalRMS": 1.825758213309348,
+      "centeredResidualOverFullTotalRMS": 1.803263549708489,
+      "centeredWorsenedVsLinear": 2,
+      "energies": {
+        "baselineResidualEnergy": 1646651.3053670065,
+        "centeredBaselineResidualEnergy": 1595376.6488079554,
+        "centeredForecastEnergy": 9397741.079964746,
+        "centeredForecastTotalInner": 2315947.6013461696,
+        "centeredLinearEnergy": 879494.7171577694,
+        "centeredPolicyEnergy": 38.00836638116988,
+        "centeredQuadraticEnergy": 8829014.055945842,
+        "centeredRemainingEnergy": 6809047.024019758,
+        "centeredResidualEnergy": 6808298.978001474,
+        "centeredTotalEnergy": 2042453.1007290678,
+        "forecastEnergy": 9489637.44762952,
+        "forecastTotalInner": 2375023.1355041466,
+        "fullResidualEnergy": 6833318.933909344,
+        "linearEnergy": 879494.7171577695,
+        "outputClosureEnergy": 8.890877662463528e-26,
+        "policyEnergy": 41.85565671870262,
+        "quadraticBaselineInner": 1867121.3975341392,
+        "quadraticEnergy": 8920910.423610615,
+        "remainingEnergy": 6834053.396975048,
+        "residualMeanEnergy": 25019.955907869462,
+        "totalEnergy": 2093727.7572881188,
+        "twiceCenteredLinearPolicy": 26.615311164020223,
+        "twiceCenteredLinearQuadratic": -310767.6931388663,
+        "twiceCenteredLinearRemaining": -121677.18740895507,
+        "twiceCenteredQuadraticPolicy": 949.4535988757981,
+        "twiceCenteredQuadraticRemaining": -14042885.838738233,
+        "twiceCenteredRemainingPolicy": -786.0543846671205,
+        "twiceLinearPolicy": 26.615311164020184,
+        "twiceLinearQuadratic": -310767.69313886616,
+        "twiceLinearRemaining": -121677.18740895511,
+        "twiceQuadraticPolicy": 724.3864720142714,
+        "twiceQuadraticRemaining": -14108302.43862496,
+        "twiceRemainingPolicy": -776.3187224232952
+      },
+      "fullGramEnergyClosureResidual": 1.862645149230957e-09,
+      "fullImprovedVsLinear": 510,
+      "fullImprovedVsZero": 509,
+      "fullRemovedEnergyFraction": -2.263709386343588,
+      "fullResidualOverBaselineResidualRMS": 2.037112549384183,
+      "fullResidualOverTotalRMS": 1.8065739360301831,
+      "fullWorsenedVsLinear": 2,
+      "fullWorsenedVsZero": 3,
+      "gramAccounts": {
+        "centered": {
+          "cosines": {
+            "linear_policy": 0.0023016820605624346,
+            "linear_quadratic": -0.05576133292595465,
+            "linear_remaining": -0.02486104515634913,
+            "quadratic_policy": 0.02591481085148536,
+            "quadratic_remaining": -0.9055805762052872,
+            "remaining_policy": -0.024430920487666395
+          },
+          "energies": [
+            879494.7171577694,
+            8829014.05594584,
+            6809047.02401976,
+            38.00836638116989
+          ],
+          "gram": [
+            [
+              879494.7171577694,
+              -155383.8465694331,
+              -60838.59370447755,
+              13.307655582010103
+            ],
+            [
+              -155383.8465694331,
+              8829014.05594584,
+              -7021442.919369117,
+              474.72679943789905
+            ],
+            [
+              -60838.59370447755,
+              -7021442.919369117,
+              6809047.02401976,
+              -393.0271923335603
+            ],
+            [
+              13.307655582010103,
+              474.72679943789905,
+              -393.0271923335603,
+              38.00836638116989
+            ]
+          ],
+          "terms": [
+            "linear",
+            "quadratic",
+            "remaining",
+            "policy"
+          ],
+          "twiceCross": {
+            "linear_policy": 26.615311164020206,
+            "linear_quadratic": -310767.6931388662,
+            "linear_remaining": -121677.1874089551,
+            "quadratic_policy": 949.4535988757981,
+            "quadratic_remaining": -14042885.838738235,
+            "remaining_policy": -786.0543846671206
+          }
+        },
+        "full": {
+          "cosines": {
+            "linear_policy": 0.002193349573280543,
+            "linear_quadratic": -0.05547338423702091,
+            "linear_remaining": -0.0248155191505592,
+            "quadratic_policy": 0.018743844214758644,
+            "quadratic_remaining": -0.9034434887164936,
+            "remaining_policy": -0.022950587134148256
+          },
+          "energies": [
+            879494.7171577694,
+            8920910.423610615,
+            6834053.396975048,
+            41.85565671870262
+          ],
+          "gram": [
+            [
+              879494.7171577694,
+              -155383.8465694331,
+              -60838.59370447756,
+              13.307655582010113
+            ],
+            [
+              -155383.8465694331,
+              8920910.423610615,
+              -7054151.219312482,
+              362.19323600713557
+            ],
+            [
+              -60838.59370447756,
+              -7054151.219312482,
+              6834053.396975048,
+              -388.1593612116477
+            ],
+            [
+              13.307655582010113,
+              362.19323600713557,
+              -388.1593612116477,
+              41.85565671870262
+            ]
+          ],
+          "terms": [
+            "linear",
+            "quadratic",
+            "remaining",
+            "policy"
+          ],
+          "twiceCross": {
+            "linear_policy": 26.615311164020227,
+            "linear_quadratic": -310767.6931388662,
+            "linear_remaining": -121677.18740895511,
+            "quadratic_policy": 724.3864720142711,
+            "quadratic_remaining": -14108302.438624963,
+            "remaining_policy": -776.3187224232954
+          }
+        },
+        "mean": {
+          "cosines": {
+            "linear_policy": -0.015602073923542925,
+            "linear_quadratic": 0.0848460006330202,
+            "linear_remaining": -0.03465323916629982,
+            "quadratic_policy": -0.18925851039180464,
+            "quadratic_remaining": -0.6823126872142758,
+            "remaining_policy": 0.015693964649329782
+          },
+          "energies": [
+            1.722115908596206e-26,
+            91896.36766477376,
+            25006.37295528811,
+            3.847290337532731
+          ],
+          "gram": [
+            [
+              1.722115908596206e-26,
+              3.375295015424619e-12,
+              -7.191183606411201e-13,
+              -4.0159750084565735e-15
+            ],
+            [
+              3.375295015424619e-12,
+              91896.36766477376,
+              -32708.299943365415,
+              -112.53356343076358
+            ],
+            [
+              -7.191183606411201e-13,
+              -32708.299943365415,
+              25006.37295528811,
+              4.867831121912797
+            ],
+            [
+              -4.0159750084565735e-15,
+              -112.53356343076358,
+              4.867831121912797,
+              3.847290337532731
+            ]
+          ],
+          "terms": [
+            "linear",
+            "quadratic",
+            "remaining",
+            "policy"
+          ],
+          "twiceCross": {
+            "linear_policy": -8.031950016913147e-15,
+            "linear_quadratic": 6.750590030849238e-12,
+            "linear_remaining": -1.4382367212822402e-12,
+            "quadratic_policy": -225.06712686152716,
+            "quadratic_remaining": -65416.59988673083,
+            "remaining_policy": 9.735662243825594
+          }
+        }
+      },
+      "paidConstantOnlyResidualOverTotalRMS": 0.9876792756911195,
+      "productSpaceAccount": {
+        "cosines": {
+          "even_finite": -0.0033128407058137252,
+          "quadratic_even": -0.9125786142277599,
+          "quadratic_finite": -0.01699633627118029
+        },
+        "energies": [
+          31278.121342238785,
+          25202.22783806927,
+          0.03775464968116723
+        ],
+        "gram": [
+          [
+            31278.121342238785,
+            -25621.82637541025,
+            -0.5840645770451027
+          ],
+          [
+            -25621.82637541025,
+            25202.22783806927,
+            -0.10218925735339016
+          ],
+          [
+            -0.5840645770451027,
+            -0.10218925735339016,
+            0.03775464968116723
+          ]
+        ],
+        "terms": [
+          "quadratic",
+          "even",
+          "finite"
+        ],
+        "twiceCross": {
+          "even_finite": -0.2043785147067803,
+          "quadratic_even": -51243.6527508205,
+          "quadratic_finite": -1.1681291540902055
+        }
+      },
+      "residualMeanOverFullTotalRMS": 0.10931585720437854,
+      "residualPythagoreanDiscrepancy": 0.0,
+      "rows": 512
+    }
+  },
+  "requestSHA256": "d1cb7cb05fc98b115343a802588b4731d8673460ea99f4c4e0bf753530b2318b",
+  "schema": "tce-odd-gate-result-v1",
+  "scope": "Paid originalG/Down plus inheritedUp/L/maps/history. G*notnativeG. H*=.5G*tanh(.5G*),A*=.5G*+H*,F=A-A* postrelease only; finite causes unseparated. Full correction scored first; centered/constant oracle diagnostic only. No nativefiniteblock/imagecausality/economicalcompiler/generalization/zero-neuralclaim.",
+  "terminal_status": "unassessed",
+  "totalMatrixMACs": 86973087744,
+  "trend_status": "Full/centered signed terms and all rows retained"
+}
