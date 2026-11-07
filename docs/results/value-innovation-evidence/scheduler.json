@@ -1,0 +1,148 @@
+{
+  "executedPayload": {
+    "host": "beast",
+    "reported_ts": 1794033432.5545926,
+    "sha256": "99aaab1b2c00108831ae02a7d6e571ea6d88f9910c657e6554684483d5c2fe9b",
+    "size_bytes": 3162313
+  },
+  "jobID": "job-b187c2bccbdd",
+  "reservation": {
+    "cpu_threads": 4,
+    "disk_gb": 6.0,
+    "est_wall_s": 240.0,
+    "ram_mb": 6144.0,
+    "source": "declared",
+    "vram_mb": 1536.0
+  },
+  "result": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-b187c2bccbdd",
+      "job_log": {
+        "bytes": 522,
+        "sha256": "e326e4a122b45d385ecb7f64a4e550b4d4ac85ee1dd96fefc6ac53f4b7410071"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-b187c2bccbdd/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=4",
+        "OPENBLAS_NUM_THREADS=4",
+        "MKL_NUM_THREADS=4",
+        "CUBLAS_WORKSPACE_CONFIG=:4096:8",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "--with",
+        "./mdb_runtime-0.1.0-py3-none-any.whl",
+        "--with",
+        "./saturn_pub-0.4.1-py3-none-any.whl",
+        "--with",
+        "./mrun_pub-0.1.2-py3-none-any.whl",
+        "python",
+        "-u",
+        "value_innovation_study_v2.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-b187c2bccbdd",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-b187c2bccbdd/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794033432.5201356
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794033432.5808342
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794033432.6075418
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794033432.634727
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794033557.3256314
+        },
+        {
+          "name": "finished",
+          "ts": 1794033557.3467262
+        }
+      ]
+    },
+    "elapsed_s": 125.07,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "99aaab1b2c00108831ae02a7d6e571ea6d88f9910c657e6554684483d5c2fe9b",
+      "size_bytes": 3162313
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 3086.0,
+    "peak_vram_mb": 748.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-value-innovation-scheduler-v1",
+  "state": "succeeded"
+}

@@ -1,0 +1,19 @@
+<frozen runpy>:130: RuntimeWarning: 'mrun.os_limit' found in sys.modules after import of package 'mrun', but prior to execution of 'mrun.os_limit'; this may result in unpredictable behaviour
+Installed 65 packages in 2.58s
+Traceback (most recent call last):
+  File "/mnt/hdd8tb/mrun-work/job-0e973f3b508d/value_innovation_primary.py", line 166, in <module>
+    execute(sys.argv[1])
+    ~~~~~~~^^^^^^^^^^^^^
+  File "/mnt/hdd8tb/mrun-work/job-0e973f3b508d/value_innovation_primary.py", line 58, in execute
+    raise ValueError('Distinct selected parameter admission differs')
+ValueError: Distinct selected parameter admission differs
+Traceback (most recent call last):
+  File "/mnt/hdd8tb/mrun-work/job-0e973f3b508d/value_innovation_study.py", line 160, in <module>
+    value = globals()[args.action](args.run)
+  File "/mnt/hdd8tb/mrun-work/job-0e973f3b508d/value_innovation_study.py", line 126, in execute
+    subprocess.run([sys.executable, '-u', str(root / ('value_innovation_' + name + '.py')), str(root)], check=True, cwd=root)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/beast/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['/mnt/hdd8tb/mdb/uv-cache/builds-v0/.tmp04NMVD/bin/python', '-u', '/mnt/hdd8tb/mrun-work/job-0e973f3b508d/value_innovation_primary.py', '/mnt/hdd8tb/mrun-work/job-0e973f3b508d']' returned non-zero exit status 1.

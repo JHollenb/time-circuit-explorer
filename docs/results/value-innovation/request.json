@@ -1,0 +1,113 @@
+{
+  "arithmeticSubplans": {
+    "acquisition": "source-native-cuda-bf16-seven-affine-before-SDPA",
+    "candidateProductDownResidual": "native-cuda-bfloat16",
+    "reference": "post-seal-native-cuda-SDPA-Wo-MLP",
+    "scoresFactorsSecant": "torch-cpu-float64"
+  },
+  "backend": "diffusers",
+  "batch_size": 1,
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "event": {
+    "clock": 3,
+    "fullKeyCount": 1536,
+    "heads": 24,
+    "imageRows": [
+      264,
+      792
+    ],
+    "keyIndices": [
+      776,
+      1304
+    ],
+    "nearGridChebyshevRadius": 2,
+    "receiver": "s60672.base.canonical"
+  },
+  "height": 512,
+  "model": "flux2-klein-4b-distilled",
+  "needs": {
+    "cuda": true
+  },
+  "ownedSources": [
+    "value_innovation.py",
+    "value_innovation_primary_v2.py",
+    "value_innovation_reference.py",
+    "value_innovation_analysis.py",
+    "value_innovation_study_v2.py",
+    "source_native_reader.py",
+    "native_reader_corpus.py",
+    "first_consumer.py",
+    "normalization_innovation.py",
+    "product_transport.py",
+    "flux_clock_study.py",
+    "flux_clock.py",
+    "complete_masked_study.py",
+    "encoder_atoms.py",
+    "paired_fields.py",
+    "masked_kv_study.py",
+    "source_response.py"
+  ],
+  "parentJobIDs": [
+    "job-0807587485a6",
+    "job-524c9a8e838e",
+    "job-1892a00329e9"
+  ],
+  "protocol": "One frozen Vswap; no fittedrank/extraevents. Candidate33affines+QK/2assemblies86.857BMAC seals/exits; postseal2SDPA/2Wo/1BMLP125.628BMAC, extraAMLPonlyifshamfailsinheritance. Savedcompletequeries, nofullTransformer/encoder/clocknet/fit/scheduler/VAE/image. Alloriginalmaps/baselines/historicalbeta paid.",
+  "requestSHA256": "4c5c1aae080bc7c1b108e7b85c580615aace4c578373d7f340a916cbb5a6803d",
+  "scheduling_contract": {
+    "additional_scheduler_submissions": 0,
+    "branch_execution": "in_process",
+    "checkpoint_policy": "one outer Saturn worker lease; all logical branches and analysis remain in process",
+    "collection_policy": "direct_job_only",
+    "conditioner_policy": "Supplied natural A conditioning/latent/baseline and clock; fresh seven-affine QKV, no new B before seal.",
+    "control_plane": "mrun_outer_lease",
+    "data_plane": "resident_worker",
+    "execution_model": "finite_local_program",
+    "interactive": false,
+    "lease_scope": "entire-worker",
+    "logical_branches": 1,
+    "logical_checkpoint_replays": 0,
+    "logical_operations": 36,
+    "max_local_work_items": 256,
+    "max_mrun_submissions": 1,
+    "modelLoadScope": "Primary thirteen tensors; reference reloads three. Fixed QK all-key scores, two-address V event, own BF16 B local state.",
+    "model_loads": 1,
+    "mrun_retry_policy": "none_for_finite_lease",
+    "per_branch_mrun_submissions": 0,
+    "per_transition_mrun_submissions": 0,
+    "replay_policy": "none_source_only",
+    "schema": "saturn-single-lease-scheduling-contract-v1",
+    "targetIsolation": "Primary child seals/exits before native reference child; no automatic retries."
+  },
+  "schema": "tce-value-innovation-request-v1",
+  "seq_len": 1536,
+  "sourceHashes": {
+    "complete_masked_study.py": "f52633bc9d729b2a5032e024331d9b20fcee8cb993941cab87c197089cdcff99",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "first_consumer.py": "e95ab1a36edf86902259361d20b4a9028019fe539e88b03446a90f29c7c9a616",
+    "flux_clock.py": "bde499ff527f624fcd1b62a8f6f0b2fbaf70eebc7b7835fcd7d4c6403b4e0b2b",
+    "flux_clock_study.py": "eaccf6bdb75678ac6acb5a371f8858201cf83dbac4de83868b70d5570e4beddc",
+    "frozen-plan.md": "91a0793c992a8fd54c32234d70d00c590b29b8421dbc192c4144ccdb6e872235",
+    "inputs.json": "04776a10b8e1ad47d5e072507d1a8e43692414845d14f73b4689f39e4ba5c876",
+    "masked_kv_study.py": "920416ce49d823b1337a7f6d9f5fca90c8047723bb6b1d37dc09967114b6ad89",
+    "mdb_runtime-0.1.0-py3-none-any.whl": "038963b98dd9605581ca7307b6695fb8bbe46f91df34b6d9b134aa5d39a1ae94",
+    "mrun_pub-0.1.2-py3-none-any.whl": "2e474bfaacc781905da723fa29db51fc885972aa8a56f9001c57041987e7f65b",
+    "native_reader_corpus.py": "7aed11834cbbc22fead0f957019c4b8bfefce9b4896831ea00b947997cda9f73",
+    "normalization_innovation.py": "c0e8bef722616c8abca95d62e34f6400f80796c7103ddec37f7a406edb91e3d7",
+    "paired_fields.py": "408e035cb2f2f99558dbbe5abccdc281a5deade195abdbbc003549318ef09e88",
+    "product_transport.py": "fcf1a27040e75785ac1d432018eb6e306002b307aa075db6cef891ef1e99805c",
+    "resource-basis.json": "c987cfc87f0b94c64cdc37aa41aa31da7aaffe8d1375929cdafa0d2b6bac9895",
+    "saturn_pub-0.4.1-py3-none-any.whl": "384ba7d15745c9638a5147752ae5ed3536971c7cb1ec054cc1b5303fa18e49ca",
+    "source_native_reader.py": "8f83a325be9bfc02f12f67dc9037eaf535f95fc426b25f58150d8658ae95cb53",
+    "source_response.py": "0b85fd57be6fa233e0111c549f7894a9e2a2fdaceb89fef761b3805796e41ef7",
+    "targets.json": "faa0342d572b4ffd859b05062527838652ec54b1a66b20e6dde03fcae813e4b1",
+    "value_innovation.py": "eca06d17bf863cfbb3b64eb57718ef70e3943c69b1fb70389ebd4e7ae84252b7",
+    "value_innovation_analysis.py": "aeaf3c32d41231b6eeb7f96506ed95c54cd112607f6c0e1b9e5f205af58f3eb2",
+    "value_innovation_primary_v2.py": "f5c06680cdc5deb782d9bac1048cb16a7ccbbdd7eac4ef77d87a59b436d328c9",
+    "value_innovation_reference.py": "3eac6595ec5c1d835ed9425df85be7a3adbfff818b206d2227ad8150dbc4a2df",
+    "value_innovation_study_v2.py": "3da6cd6d81bbb3555a8c9cd451e475bfa6c8a9e497e72e10e378a7040ef193d7"
+  },
+  "timeoutSeconds": 900,
+  "width": 512
+}

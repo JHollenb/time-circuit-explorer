@@ -1,0 +1,241 @@
+{
+  "attention": [
+    {
+      "keyShape": [
+        1,
+        1536,
+        24,
+        128
+      ],
+      "keyStride": [
+        4718592,
+        3072,
+        128,
+        1
+      ],
+      "nominalQKAVMACs": 9663676416,
+      "outputPayloadSHA256": "5d06064ce2a2155757269eacf29f68fc2217fb564f165704c244a2f5cb2d767c",
+      "phase": "A-sham",
+      "queryShape": [
+        1,
+        1024,
+        24,
+        128
+      ],
+      "queryStride": [
+        3145728,
+        3072,
+        128,
+        1
+      ],
+      "requestedBackend": "auto",
+      "valueShape": [
+        1,
+        1536,
+        24,
+        128
+      ],
+      "valueStride": [
+        4718592,
+        3072,
+        128,
+        1
+      ]
+    },
+    {
+      "keyShape": [
+        1,
+        1536,
+        24,
+        128
+      ],
+      "keyStride": [
+        4718592,
+        3072,
+        128,
+        1
+      ],
+      "nominalQKAVMACs": 9663676416,
+      "outputPayloadSHA256": "98ba654bdc8b4b44df447600b6606c131f052a562526cf04aebf0c1790aca78c",
+      "phase": "B-new-local",
+      "queryShape": [
+        1,
+        1024,
+        24,
+        128
+      ],
+      "queryStride": [
+        3145728,
+        3072,
+        128,
+        1
+      ],
+      "requestedBackend": "auto",
+      "valueShape": [
+        1,
+        1536,
+        24,
+        128
+      ],
+      "valueStride": [
+        4718592,
+        3072,
+        128,
+        1
+      ]
+    }
+  ],
+  "header": {
+    "bytes": 20584,
+    "sha256": "012278fec8c5203622e33f14a7da845b344c5dcd869980b04692348ff02420f6"
+  },
+  "linears": [
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        1024,
+        3072
+      ],
+      "inputStorageOffset": 1572864,
+      "inputStride": [
+        4718592,
+        3072,
+        1
+      ],
+      "nominalMACs": 9663676416,
+      "parameter": "transformer_blocks.0.attn.to_out.0.weight",
+      "phase": "A-sham",
+      "weightShape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        1024,
+        3072
+      ],
+      "inputStorageOffset": 1572864,
+      "inputStride": [
+        4718592,
+        3072,
+        1
+      ],
+      "nominalMACs": 9663676416,
+      "parameter": "transformer_blocks.0.attn.to_out.0.weight",
+      "phase": "B-new-local",
+      "weightShape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        1024,
+        3072
+      ],
+      "inputStorageOffset": 0,
+      "inputStride": [
+        3145728,
+        3072,
+        1
+      ],
+      "nominalMACs": 57982058496,
+      "parameter": "transformer_blocks.0.ff.linear_in.weight",
+      "phase": "B-new-local",
+      "weightShape": [
+        18432,
+        3072
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        1024,
+        9216
+      ],
+      "inputStorageOffset": 0,
+      "inputStride": [
+        9437184,
+        9216,
+        1
+      ],
+      "nominalMACs": 28991029248,
+      "parameter": "transformer_blocks.0.ff.linear_out.weight",
+      "phase": "B-new-local",
+      "weightShape": [
+        3072,
+        9216
+      ]
+    }
+  ],
+  "loadedParameters": [
+    {
+      "bytes": 18874368,
+      "dataOffsets": [
+        5391002624,
+        5409876992
+      ],
+      "name": "transformer_blocks.0.attn.to_out.0.weight",
+      "payloadSHA256": "1e39bcf86fd8b064b0d631384cf89da3edef13305ba385b2e351a3e739e24913",
+      "shape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "bytes": 113246208,
+      "dataOffsets": [
+        5447625728,
+        5560871936
+      ],
+      "name": "transformer_blocks.0.ff.linear_in.weight",
+      "payloadSHA256": "11ef5a54a5420e5e147308185b9b98be9b91b4ba28e79fe8a3aaa6316638d6d2",
+      "shape": [
+        18432,
+        3072
+      ]
+    },
+    {
+      "bytes": 56623104,
+      "dataOffsets": [
+        5560871936,
+        5617495040
+      ],
+      "name": "transformer_blocks.0.ff.linear_out.weight",
+      "payloadSHA256": "e23f12e4b3e53006cc565e27f657be26b0a73a8a3a2a98d767d615e2552f2073",
+      "shape": [
+        3072,
+        9216
+      ]
+    }
+  ],
+  "nominalReferenceMACs": 125627793408,
+  "numericalProfile": {
+    "bf16ReducedPrecisionReduction": true,
+    "cublasWorkspaceConfig": ":4096:8",
+    "cudaMatmulTF32": false,
+    "cudnnBenchmark": false,
+    "cudnnDeterministic": true,
+    "cudnnTF32": false,
+    "deterministicAlgorithms": true,
+    "float32MatmulPrecision": "highest",
+    "threads": 4
+  },
+  "parameterInputRNGClosure": true,
+  "peakCUDAAllocatedBytes": 382767104,
+  "peakCUDAReservedBytes": 404750336,
+  "scope": "New native A attention sham and B local reference only, post-candidate seal/process exit. Conditional extra A MLP is counted if sham does not qualify inherited outputs.",
+  "workerCPUSecondsAfterImports": 6.5316030529999995,
+  "workerWallSecondsAfterImports": 7.837047823704779
+}

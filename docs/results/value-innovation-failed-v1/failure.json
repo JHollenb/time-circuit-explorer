@@ -1,0 +1,226 @@
+{
+  "candidateSealPresent": false,
+  "jobID": "job-0e973f3b508d",
+  "payloadCustody": {
+    "declared": {
+      "sha256": "cdd5e23bf6c10d148efdb5ae467658b3d990f18d163c650902e0e3aae99698e1",
+      "size_bytes": 3161954
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794033173.6478949,
+      "sha256": "cdd5e23bf6c10d148efdb5ae467658b3d990f18d163c650902e0e3aae99698e1",
+      "size_bytes": 3161954
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794033173.5293107,
+      "sha256": "cdd5e23bf6c10d148efdb5ae467658b3d990f18d163c650902e0e3aae99698e1",
+      "size_bytes": 3161954
+    }
+  },
+  "repair": "New primary/driver v2 adds manual Wo dataOffsets to match selected loader receipt; old execution source preserved.",
+  "requestSHA256": "8be9605ec96e77a45a632ce241127013e3938f944d87b4cdfeabcb0fe9ad3c08",
+  "result": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-0e973f3b508d",
+      "job_log": {
+        "bytes": 1643,
+        "sha256": "1e35333b05241009f0738b03e59d232acb198d41e4b3a0f7b2434274b29bd747"
+      },
+      "job_status": "failed",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-0e973f3b508d/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=4",
+        "OPENBLAS_NUM_THREADS=4",
+        "MKL_NUM_THREADS=4",
+        "CUBLAS_WORKSPACE_CONFIG=:4096:8",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "--with",
+        "./mdb_runtime-0.1.0-py3-none-any.whl",
+        "--with",
+        "./saturn_pub-0.4.1-py3-none-any.whl",
+        "--with",
+        "./mrun_pub-0.1.2-py3-none-any.whl",
+        "python",
+        "-u",
+        "value_innovation_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-0e973f3b508d",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-0e973f3b508d/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794033173.6129107
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794033173.6711857
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794033173.6984255
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794033173.7244782
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794033211.5253882
+        },
+        {
+          "name": "finished",
+          "ts": 1794033211.544921
+        }
+      ]
+    },
+    "elapsed_s": 38.01,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "cdd5e23bf6c10d148efdb5ae467658b3d990f18d163c650902e0e3aae99698e1",
+      "size_bytes": 3161954
+    },
+    "failure": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=4",
+        "OPENBLAS_NUM_THREADS=4",
+        "MKL_NUM_THREADS=4",
+        "CUBLAS_WORKSPACE_CONFIG=:4096:8",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "--with",
+        "./mdb_runtime-0.1.0-py3-none-any.whl",
+        "--with",
+        "./saturn_pub-0.4.1-py3-none-any.whl",
+        "--with",
+        "./mrun_pub-0.1.2-py3-none-any.whl",
+        "python",
+        "-u",
+        "value_innovation_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-0e973f3b508d",
+      "kind": "process_exit",
+      "log_tail": "<frozen runpy>:130: RuntimeWarning: 'mrun.os_limit' found in sys.modules after import of package 'mrun', but prior to execution of 'mrun.os_limit'; this may result in unpredictable behaviour\nInstalled 65 packages in 2.58s\nTraceback (most recent call last):\n  File \"/mnt/hdd8tb/mrun-work/job-0e973f3b508d/value_innovation_primary.py\", line 166, in <module>\n    execute(sys.argv[1])\n    ~~~~~~~^^^^^^^^^^^^^\n  File \"/mnt/hdd8tb/mrun-work/job-0e973f3b508d/value_innovation_primary.py\", line 58, in execute\n    raise ValueError('Distinct selected parameter admission differs')\nValueError: Distinct selected parameter admission differs\nTraceback (most recent call last):\n  File \"/mnt/hdd8tb/mrun-work/job-0e973f3b508d/value_innovation_study.py\", line 160, in <module>\n    value = globals()[args.action](args.run)\n  File \"/mnt/hdd8tb/mrun-work/job-0e973f3b508d/value_innovation_study.py\", line 126, in execute\n    subprocess.run([sys.executable, '-u', str(root / ('value_innovation_' + name + '.py')), str(root)], check=True, cwd=root)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/beast/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/subprocess.py\", line 578, in run\n    raise CalledProcessError(retcode, process.args,\n                             output=stdout, stderr=stderr)\nsubprocess.CalledProcessError: Command '['/mnt/hdd8tb/mdb/uv-cache/builds-v0/.tmp04NMVD/bin/python', '-u', '/mnt/hdd8tb/mrun-work/job-0e973f3b508d/value_innovation_primary.py', '/mnt/hdd8tb/mrun-work/job-0e973f3b508d']' returned non-zero exit status 1.\n",
+      "message": "child exited with return code 1",
+      "observed_ts": 1794033211.5334997,
+      "phase": "process.finalize",
+      "resources": {
+        "peak_rss_mb": 1275.0,
+        "peak_vram_mb": 466.0,
+        "ram_ceiling_mb": 6758.400000000001,
+        "vram_ceiling_mb": 1689.6000000000001
+      },
+      "returncode": 1
+    },
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 1275.0,
+    "peak_vram_mb": 466.0,
+    "returncode": 1,
+    "status": "failed"
+  },
+  "schema": "tce-value-innovation-failure-v1",
+  "scientificOutcome": "none; failed at selected-parameter metadata admission before Q/K/V or candidate computation",
+  "state": "failed",
+  "workerLogSHA256": "1e35333b05241009f0738b03e59d232acb198d41e4b3a0f7b2434274b29bd747"
+}
