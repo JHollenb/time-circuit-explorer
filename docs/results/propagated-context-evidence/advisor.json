@@ -1,0 +1,48 @@
+{
+  "schema": "tce-propagated-context-advisor-v1",
+  "advisor": "Astra (gpt-6-astra), existing authorized advisor",
+  "cycle": 56,
+  "reviewedSources": {
+    "propagated_context.py": "02d765502656adaed6e6fd92a8a1c30681a74fe879f508e56b2e781d74503974",
+    "propagated_context_worker.py": "ebb896de900fe83d4bc1bd3e6fdc77844c3850132261da4bed33e15a7a1cf084",
+    "propagated_context_study.py": "12ad4799faf62b85166f1d748aae6bf9ad4b583cedf9c6cb371d0c28add1fffe",
+    "propagated_context_analysis.py": "b69a3605e5d4b2a3179525f9927a4372038bbd6d1661c27dd24f82d8a8eabff9"
+  },
+  "reviewedResults": {
+    "report.json": "5172e93bb0e21bfb0732b216ac41b17333bb72b9636b2dabe75fdee8b81d23a5",
+    "primary-seal.json": "d6b329bad47396198545b11a02fbd89fbd1444c6a40cb039731db1c610bb0054",
+    "control-seal.json": "90f1a62641b2df71663f4f2f64fcd50b403635ee32a153b627b8ad57e9fbd181"
+  },
+  "preStageCorrection": "Selected RoPE outputs could inherit full input geometry; renaming inputs alone left new ABI empty. Explicit write_abis for all seven Acts plus actual output shape/dtype checks resolve this before stage. Actual Frame/Act roundtrip test passes.",
+  "sourceReview": "No remaining blocker. Native joint1 attention\u2192residual\u2192normalization/modulation\u2192sequential MLP\u2192actual T\u2192joint2 query preserved; global txt_mod reused as in native forward. Identical selected P operands and absolute positions; only complementary bank changes. Primary/control quarantine, phase exits, seals, imports and17affine2SDPA58,925,776,896MAC ledger agree.",
+  "resultReview": "Changed propagated complement changes the selected write, ownMLP update and every selected next-query head. Both own-T\u2192query Frame joins intact; executed source hashes match. Endpoint differences do not establish semantic failure or a general interface impossibility. Attention/MLP writes partly cancel; signed write decomposition is accounting, not a predictive law or causal percentages.",
+  "qualifications": [
+    "Every relative effect uses its corresponding P-control endpoint denominator, not the small context-response denominator.",
+    "No new full-width native parity reference is run for selected-query finite execution.",
+    "Native source states, original maps and full bank production remain paid; no arbitrary-prompt or zero-neural image capability."
+  ],
+  "blogSnapshots": [
+    {
+      "path": "../../../../obsidian/blog/2026-11-07-005623-a-third-family-separates-attention-routing-from-values.md",
+      "sha256": "f6f3e3ab03f9afce1a6614ce9550518cbfaa110e47d71242a5e32d6bf9091cd2",
+      "interpretation": "Frozen coherent Q/K-route versus value ranking survives four fresh contexts/full native futures; full-transfer image collateral remains. Different clock/receiver/route definition cannot decide our stale-key outcome."
+    },
+    {
+      "path": "../../../../obsidian/blog/2026-11-07-000659-the-read-was-observed-before-the-future-was-tested.md",
+      "sha256": "1077faad2c431b44621e61330f8938385a08cb4a480e1eb87f4c424759a28408",
+      "interpretation": "Receiver-assisted composition improves8/8localrows but12/24laterlogit comparisons; original native baseline and dense MLP work paid."
+    },
+    {
+      "path": "../../../../obsidian/blog/2026-11-07-003606-how-a-historical-payload-becomes-the-next-computation.md",
+      "sha256": "1437fafef902b66156f2b90f83eeacfb7631ba6890c5476b492a77c8dadd997e",
+      "interpretation": "Historical values change a fixed first read, own nonlinear state and next query; semantics and economical source production open."
+    }
+  ],
+  "recommendation": "Prespecify F_PQ retained-Pkeys/Qvalues as candidate for existing F_QQ response against F_PP baseline; compute F_QP only as diagnostic. Two new ownMLP/nextquery actors seal before archived diagonal targets open. Score actual response plus per-row/head andfourcornerinteraction. No fit/image/precision arm.",
+  "nextPlan": "../../plans/stale-key-context-response.md",
+  "plannedNewMatrixMACs": 905969664,
+  "plannedAffines": 8,
+  "plannedAttentionCalls": 2,
+  "conditionalFutureKeyFormationOpportunityMACs": 14495514624,
+  "scope": "Advice and actual source/result/newest-post review. No extra model run. The next assay itself reuses paid banks and does not establish a serving saving."
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "tce-propagated-context-tests-v1",
+  "command": "rtk proxy ../common/bin/common exec python -m pytest generator -q",
+  "passed": 284,
+  "seconds": 16.74,
+  "exitCode": 0,
+  "focused": {
+    "passed": 4,
+    "seconds": 0.99
+  },
+  "sourceSHA256": "feace312cc495a3822f46718eb83c2b3ef57a6bb00e865b097382a1465559a09",
+  "source": "generator/test_propagated_context.py",
+  "preservedPreFreezeDiagnostic": {
+    "failed": 1,
+    "passed": 283,
+    "seconds": 17.17,
+    "error": "KeyError: shape in selected output ropeCos/ropeSin ABI; new output slots had empty ABI without explicit write_abis.",
+    "resolution": "Declare all seven Acts output ABIs and verify actual shapes/dtypes before capture. Runtime round-trip passes. No staged/executed scientific source was edited."
+  }
+}

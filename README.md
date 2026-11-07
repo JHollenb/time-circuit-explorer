@@ -1,5 +1,7 @@
 # Time Circuit Explorer
 
+The [propagated-context result](docs/propagated-context-query.md) holds four selected P operands fixed while changing actual surrounding K/V. Attention changes by 6.97%, own emitted state by 2.40%, and its own next query by 2.05%, relative to each P-control endpoint. The 89.14-second assay pays 58.926 billion matrix MACs; full banks account for 98.398%. All 284 mechanics tests, seven typed Acts and independent byte splices verify. Context production, original maps and native prefixes remain paid; arbitrary-prompt zero-neural images remain open.
+
 The [source-complement assay](docs/source-complement-transfer.md) reuses paid banks while producing its own four selected rows, at 1.799 billion new matrix MACs. Both arms match exactly because their outside-support context was already byte-identical; context sufficiency remains untested. Native response error is 9.6285%, with 57.33% median query error and 73/1,024 rows losing to zero. The 111.68-second assay has 280 passing mechanics tests and full-byte custody. The next plan first inventories an actually changed propagated context. Arbitrary-prompt zero-neural images remain open.
 
 An interactive field guide to model computation: native execution, recovered time circuits, and the state that connects one computation to the next.
