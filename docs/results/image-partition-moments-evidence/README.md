@@ -1,0 +1,15 @@
+# Live image-key moments: evidence and limitations
+
+Successful guarded job `job-34fbcd783e7c` runs one four-clock own-state trajectory and an actual VAE decode. Its [article](../../image-partition-moments.md) shows two objects in the requested order with remaining appearance errors. PNG RMS error is 12.26%, versus 11.34% for the previous full-partition candidate; first velocity is 34.89%, versus 32.93%. Actual matrix/convolution work is 21.121 trillion MACs, 96.486 billion less than cycle69. This is a bounded fidelity/work tradeoff, not a runtime gain or arbitrary-prompt zero-neural result.
+
+- [Mechanics](mechanics.json): nine Acts, 909 output ABIs, 100 coupled joins, 96 live moment reads, 480 explicit FP32 products; 980 full-byte files, 944 NPY payload witnesses, 169 original parameters, two physical slices/eight records, four terminal own-row byte joins.
+- [Tests](tests.json): 327 passing tiny mechanics tests, including full population covariance and independent direct-score moment reference over two own commits. These establish the declared approximate program, not native BF16 parity or Gaussian sufficiency.
+- [Offline Saturn instrument](saturn-instrument.json): run/verify exit zero, five streams/16,553 records, no formal claims or addresses; no fires or fire ledgers written. Five missing expected fire ledgers are explicitly reported by verify.
+- [Actual image/figure inspection](render-qa.json): candidate/native original PNG identities and notebook copies, clean measured figure, retained sphere-base artifact.
+- [Storage](storage.json): 924 new raw arrays/1,547,521,536 bytes stay near compute. Primary compact publication is 26 files/4,538,511 bytes. Cleanup69/restore pointers are retained; next review72 or pressure.
+- [Affine allocation](affine-allocation.json): exact MAC arithmetic assigns 12.872 trillion MACs (60.95% of the nominal total) to MLP expansion/contraction. This is a physical partition of two fused single-block maps, not a measured runtime split.
+- [Astra source/result/route review](advisor.json): exact snapshots, one-input limitations, finite-bank moment caveat and the gate-first MLP direction. Last full notebook survey remains69.
+
+[Original result](../image-partition-moments/report.json), [actual state/work ledger](../image-partition-moments/execution.json), [complete retained-byte witnesses](../image-partition-moments/retained-array-verification.json), [scheduler/custody](../image-partition-moments/scheduler.json), [provenance](../image-partition-moments/provenance.json), [frozen prospective protocol](../image-partition-moments/frozen-plan.md), [next unexecuted MLP plan](../../plans/gate-first-terminal-mlp.md).
+
+Current keys, original learned maps, supplied E/noise and decoder remain paid. No exact current-bank partition error was computed, and diverged state histories prevent sole attribution to higher cumulants. Quality metrics have no boolean discovery authority. Final latent unpack/BN/unpatchify is source-audited, not independently numerically replayed.
