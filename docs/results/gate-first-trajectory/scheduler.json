@@ -1,0 +1,165 @@
+{
+  "admission": {
+    "claim_key": "mrun:41077dd843133712bbdf298ecfec580d036275f0203abedfc68389a61e15cfc1",
+    "fencing_epoch": 1,
+    "idempotency_key": "mrun:41077dd843133712bbdf298ecfec580d036275f0203abedfc68389a61e15cfc1",
+    "scope_sha256": "f23b0e933c7e802dda3914ddf547478cbac5fd5bb4ff778158cb31b5e9338d44"
+  },
+  "job_id": "job-e02711cf1c88",
+  "payload_custody": {
+    "declared": {
+      "sha256": "bc3cf7d5cf6e7fd8f3fd4237e2c4245c28cfff4f84ba2bc92359442fcab3e442",
+      "size_bytes": 3171571
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794074120.7018592,
+      "sha256": "bc3cf7d5cf6e7fd8f3fd4237e2c4245c28cfff4f84ba2bc92359442fcab3e442",
+      "size_bytes": 3171571
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794074120.3410778,
+      "sha256": "bc3cf7d5cf6e7fd8f3fd4237e2c4245c28cfff4f84ba2bc92359442fcab3e442",
+      "size_bytes": 3171571
+    }
+  },
+  "reservation": {
+    "cpu_threads": 4,
+    "disk_gb": 3.0,
+    "est_wall_s": 240.0,
+    "ram_mb": 14336.0,
+    "source": "declared",
+    "vram_mb": 13000.0
+  },
+  "result": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-e02711cf1c88",
+      "job_log": {
+        "bytes": 340,
+        "sha256": "d8f9a2eb182faabb6ba5e9180582d3d55e0477d66fbbfbdeb34a9375fb8737df"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-e02711cf1c88/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=4",
+        "OPENBLAS_NUM_THREADS=4",
+        "MKL_NUM_THREADS=4",
+        "CUBLAS_WORKSPACE_CONFIG=:4096:8",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "--with",
+        "./mdb_runtime-0.1.0-py3-none-any.whl",
+        "--with",
+        "./saturn_pub-0.4.1-py3-none-any.whl",
+        "--with",
+        "./mrun_pub-0.1.2-py3-none-any.whl",
+        "python",
+        "-u",
+        "gate_trajectory_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-e02711cf1c88",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-e02711cf1c88/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794074120.6729708
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794074120.7280774
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794074120.7553256
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794074120.7815814
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794074220.0198112
+        },
+        {
+          "name": "finished",
+          "ts": 1794074220.0409155
+        }
+      ]
+    },
+    "elapsed_s": 99.67,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "bc3cf7d5cf6e7fd8f3fd4237e2c4245c28cfff4f84ba2bc92359442fcab3e442",
+      "size_bytes": 3171571
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 8030.8,
+    "peak_vram_mb": 9374.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "state": "succeeded"
+}

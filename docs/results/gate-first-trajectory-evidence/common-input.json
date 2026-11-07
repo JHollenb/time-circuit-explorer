@@ -1,0 +1,76 @@
+{
+  "byteWitnesses": [
+    "../image-partition-moments/retained-array-verification.json",
+    "../gate-first-trajectory/retained-array-verification.json"
+  ],
+  "candidateRecords": {
+    "artifacts/gate-first-trajectory-v1/result/candidate.json": "c3c361504a3a2045840807b7eb0bcec1b0078bf62754f5e9cb23faca1f4cea34",
+    "artifacts/image-partition-moments-v1/result/candidate.json": "4b1509fa37b72d384429b0d5fb89fbc518fcebb985002e5f7d52b312becf1b70"
+  },
+  "fields": {
+    "b_joint4_imageOut0": {
+      "cycle70": "/mnt/hdd8tb/mrun-work/job-34fbcd783e7c/arrays/candidate/b_joint4_imageOut0.npy",
+      "cycle72": "/mnt/hdd8tb/mrun-work/job-e02711cf1c88/arrays/candidate/b_joint4_imageOut0.npy",
+      "logicalDtype": "torch.bfloat16",
+      "payloadSHA256": "cb7fd645a60491a7ea7073e5cd548ba6c7449b61eaa4e2cab4d5988d80b2f825",
+      "shape": [
+        1,
+        1024,
+        3072
+      ]
+    },
+    "b_joint4_textOut0": {
+      "cycle70": "/mnt/hdd8tb/mrun-work/job-34fbcd783e7c/arrays/candidate/b_joint4_textOut0.npy",
+      "cycle72": "/mnt/hdd8tb/mrun-work/job-e02711cf1c88/arrays/candidate/b_joint4_textOut0.npy",
+      "logicalDtype": "torch.bfloat16",
+      "payloadSHA256": "a1253f3d694807c03d9f64ba57b765a36f13cc240f3aa371c729ae556929d562",
+      "shape": [
+        1,
+        512,
+        3072
+      ]
+    },
+    "cosine0": {
+      "cycle70": "/mnt/hdd8tb/mrun-work/job-34fbcd783e7c/arrays/candidate/cosine0.npy",
+      "cycle72": "/mnt/hdd8tb/mrun-work/job-e02711cf1c88/arrays/candidate/cosine0.npy",
+      "logicalDtype": "torch.float32",
+      "payloadSHA256": "e360761cf776cb57fb6cb9a2520522d79df6f9cc5c538f2696dc02b3916dc187",
+      "shape": [
+        1536,
+        128
+      ]
+    },
+    "sine0": {
+      "cycle70": "/mnt/hdd8tb/mrun-work/job-34fbcd783e7c/arrays/candidate/sine0.npy",
+      "cycle72": "/mnt/hdd8tb/mrun-work/job-e02711cf1c88/arrays/candidate/sine0.npy",
+      "logicalDtype": "torch.float32",
+      "payloadSHA256": "b114dbf5c14984bd361c8047894067768a6c0432c79e079bc11719a3052baff2",
+      "shape": [
+        1536,
+        128
+      ]
+    },
+    "singleMod0": {
+      "cycle70": "/mnt/hdd8tb/mrun-work/job-34fbcd783e7c/arrays/candidate/singleMod0.npy",
+      "cycle72": "/mnt/hdd8tb/mrun-work/job-e02711cf1c88/arrays/candidate/singleMod0.npy",
+      "logicalDtype": "torch.bfloat16",
+      "payloadSHA256": "7dff0f63272f8ce2ba5e62ff85b6a9a864a4be34b135162bacb00c20bcba33c2",
+      "shape": [
+        1,
+        9216
+      ]
+    },
+    "temb0": {
+      "cycle70": "/mnt/hdd8tb/mrun-work/job-34fbcd783e7c/arrays/candidate/temb0.npy",
+      "cycle72": "/mnt/hdd8tb/mrun-work/job-e02711cf1c88/arrays/candidate/temb0.npy",
+      "logicalDtype": "torch.bfloat16",
+      "payloadSHA256": "45a653d6912ad86bc7f59dfe478ab3668c09d948fbc6b7982636b6a1bf6771fe",
+      "shape": [
+        1,
+        3072
+      ]
+    }
+  },
+  "schema": "tce-gate-trajectory-common-input-v1",
+  "scope": "Metadata payload equality, backed by existing complete NPY byte audits. No local tensor numerics or new model call; no claim that sparse/dense internal gates or image attention match."
+}

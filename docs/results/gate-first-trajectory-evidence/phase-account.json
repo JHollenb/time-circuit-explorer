@@ -1,0 +1,27 @@
+{
+  "executionSHA256": "196e111fab5f6c8bd5522557a96e636612ff6678698acc16507acef59da30497",
+  "operations": {
+    "SDPA": {
+      "decode": {
+        "count": 1,
+        "nominalMACs": 17179869184
+      },
+      "denoise": {
+        "count": 100,
+        "nominalMACs": 966367641600
+      }
+    },
+    "linears": {
+      "decode": {
+        "count": 4,
+        "nominalMACs": 4294967296
+      },
+      "denoise": {
+        "count": 520,
+        "nominalMACs": 13552378183680
+      }
+    }
+  },
+  "schema": "tce-gate-trajectory-phase-account-v1",
+  "scope": "Scalar metadata partition of existing measured operator counters. NativeSDPAMACs includes denoiser plus decoder attention; affine total includes denoiser plus decoder affines. No new tensor/model computation."
+}
