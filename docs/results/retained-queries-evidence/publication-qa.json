@@ -1,0 +1,217 @@
+{
+  "schema": "tce-retained-query-publication-qa-v1",
+  "status": "verified",
+  "mechanics": {
+    "schema": "tce-retained-query-publication-qa-v1",
+    "manifestMembers": 22,
+    "ownedSourcePins": 12,
+    "originalVisibilityPositionWitnesses": "Exact bit hashes recomputed from declared current source positions/mask; selected indices and native consumed mask joined. RoPE fields independently full-byte verified near compute.",
+    "ownEncoderHandoffs": 54,
+    "actualDenoiserInputJoins": 8,
+    "compactStateFields": 58,
+    "expandedEncoderFields": 8,
+    "setupWitnessFields": 24,
+    "imageFields": 32,
+    "originalNewPNGs": 2,
+    "historicalPNGs": 4,
+    "observations": 16386,
+    "caseObservationCounts": {
+      "10": 8193,
+      "00": 8193
+    },
+    "conditioningRowDistributions": [
+      {
+        "case": "00",
+        "reference": "full",
+        "port": "E",
+        "region": "active",
+        "rows": 37,
+        "definedRelativeErrors": 37,
+        "medianRowRelativeRms": 0.012841765647358151,
+        "p90RowRelativeRms": 0.017867504697196765,
+        "maxRowRelativeRms": 0.029195736745522623
+      },
+      {
+        "case": "10",
+        "reference": "full",
+        "port": "E",
+        "region": "active",
+        "rows": 37,
+        "definedRelativeErrors": 37,
+        "medianRowRelativeRms": 0.01203304110572751,
+        "p90RowRelativeRms": 0.01785432676225711,
+        "maxRowRelativeRms": 0.020535560286298434
+      },
+      {
+        "case": "00",
+        "reference": "full",
+        "port": "E",
+        "region": "padding",
+        "rows": 475,
+        "definedRelativeErrors": 475,
+        "medianRowRelativeRms": 0.9214056819876055,
+        "p90RowRelativeRms": 1.0879973249405905,
+        "maxRowRelativeRms": 1.2838786072840238
+      },
+      {
+        "case": "10",
+        "reference": "full",
+        "port": "E",
+        "region": "padding",
+        "rows": 475,
+        "definedRelativeErrors": 475,
+        "medianRowRelativeRms": 0.9294262649465665,
+        "p90RowRelativeRms": 1.0811651753207139,
+        "maxRowRelativeRms": 1.2811220353644726
+      },
+      {
+        "case": "00",
+        "reference": "top4",
+        "port": "E",
+        "region": "active",
+        "rows": 37,
+        "definedRelativeErrors": 37,
+        "medianRowRelativeRms": 0.027372419100414717,
+        "p90RowRelativeRms": 0.07028824942823256,
+        "maxRowRelativeRms": 0.0946804742254771
+      },
+      {
+        "case": "10",
+        "reference": "top4",
+        "port": "E",
+        "region": "active",
+        "rows": 37,
+        "definedRelativeErrors": 37,
+        "medianRowRelativeRms": 0.028030414823860966,
+        "p90RowRelativeRms": 0.06985446219912544,
+        "maxRowRelativeRms": 0.09462714766915449
+      },
+      {
+        "case": "00",
+        "reference": "top4",
+        "port": "E",
+        "region": "padding",
+        "rows": 475,
+        "definedRelativeErrors": 475,
+        "medianRowRelativeRms": 0.9245448756926975,
+        "p90RowRelativeRms": 1.117742230257376,
+        "maxRowRelativeRms": 1.3021390711056757
+      },
+      {
+        "case": "10",
+        "reference": "top4",
+        "port": "E",
+        "region": "padding",
+        "rows": 475,
+        "definedRelativeErrors": 475,
+        "medianRowRelativeRms": 0.9351350062368848,
+        "p90RowRelativeRms": 1.136486549566477,
+        "maxRowRelativeRms": 1.3324806035000454
+      }
+    ],
+    "candidateSealSHA256": "3fb46c456f06238701b73ce476e025b052a71d49b70ca7f27628e550bcdced4f",
+    "reportSHA256": "82c3e9e25df7c11a93ded490b3d34803237502f63169e1a06f95df493a8c17bc",
+    "scope": "Mechanics, source/custody/actual inputs and complete observations. No semantic certification or zero-neural completion."
+  },
+  "sourceAndTerminalRevalidation": [
+    {
+      "jobID": "job-a9e0a0f370fb",
+      "state": "succeeded",
+      "requestSHA256": "2114a8b31432bdcc61d00e1e66e54f679a7b1709c6874b2e9011283300e58826",
+      "executedPayload": {
+        "host": "beast",
+        "reported_ts": 1794009183.2535055,
+        "sha256": "a1523d3aa9b9899b1b5f05ad1883c65fdfb97dad690095b3840ab7cc43a35781",
+        "size_bytes": 90537
+      },
+      "ownedSourcePins": 12,
+      "collectedMembers": 20,
+      "actualDenoiserInputJoins": 8,
+      "observations": 16386,
+      "mechanicsUnchanged": true
+    }
+  ],
+  "linksAndFindings": {
+    "jsonFilesParsed": 30,
+    "manifests": [
+      {
+        "directory": "docs/results/retained-queries",
+        "members": 22
+      },
+      {
+        "directory": "docs/results/retained-query-preflight",
+        "members": 4
+      },
+      {
+        "directory": "docs/results/storage-cleanup-cycle36",
+        "members": 4
+      }
+    ],
+    "localLinksChecked": 944,
+    "missing": [],
+    "blogSHA256": "187530345dedc94499fe12a8b22f5f9cb202afad0f00897dbd4d71b0ea7bbf45",
+    "figureSHA256": "e0164e13088bdee13ec41e5febc4dba87214a2d0b87ec695b6c5002cbbc5e192",
+    "copiedFigureIdentical": true,
+    "currentFreeBytes": 6739156992,
+    "advisorSnapshots": [
+      {
+        "file": "2026-11-06-154253-a-hypothesis-for-cheaper-model-state-transitions.md",
+        "reviewedSHA256": "0d61889ba9ed1a926b5c05d6b969a94c7b6368f6a3ee1f608212e04dc7054e29",
+        "currentSHA256": "0d61889ba9ed1a926b5c05d6b969a94c7b6368f6a3ee1f608212e04dc7054e29"
+      },
+      {
+        "file": "2026-11-06-154200-context-coverage-and-the-alternative-of-a-better-small-program.md",
+        "reviewedSHA256": "6b0292aeb385863f063cc44253c1c85377e2a5bdc703f935991979b35922b5f4",
+        "currentSHA256": "95930a25828ab1c28d6682c24fe4e099d60eb457a3532653a928f959b88bcc08"
+      },
+      {
+        "file": "2026-11-06-154200-how-a-binding-computation-changes-carriers.md",
+        "reviewedSHA256": "e0452aabe56c8aa3f55d08bea6676210103ff516def9eaac5fbdbf0c15c8733e",
+        "currentSHA256": "e0452aabe56c8aa3f55d08bea6676210103ff516def9eaac5fbdbf0c15c8733e"
+      },
+      {
+        "file": "2026-11-06-154048-where-eye-shape-is-carried-in-the-final-diffusion-pass.md",
+        "reviewedSHA256": "b203dfa08bc49ce440413e88c8d6d9ce93dedd3edd645a3e2b796a2dc75548f2",
+        "currentSHA256": "b203dfa08bc49ce440413e88c8d6d9ce93dedd3edd645a3e2b796a2dc75548f2"
+      },
+      {
+        "file": "2026-11-06-144600-a-program-that-produces-queries-and-updates-its-own-memory.md",
+        "reviewedSHA256": "9212a7c0b0838c15c367301738b89bce4882db16934ee9e6a046c65315435755",
+        "currentSHA256": "be6d4f036d552207bbb75f11a4c0fdbee33a407f7d0f623db1a07e8e0b007782"
+      },
+      {
+        "file": "2026-11-06-125544-a-frozen-mlp-program-updates-a-conversation.md",
+        "reviewedSHA256": "65a6e418153b252f0a296c232bbe899babe3915f3996f65f56217ac50989ad23",
+        "currentSHA256": "02cf01f22468fbce12ed42cfe8caaf6f485387a8a00e7c03a4dad2126e457944"
+      }
+    ],
+    "frozenPlanCopies": "Byte-bound historical snapshots, retain original source text; link checks apply to current narrative and README wrappers."
+  },
+  "mechanicsTests": {
+    "schema": "tce-retained-query-tests-v1",
+    "tests": 190,
+    "seconds": 14.702,
+    "status": "OK",
+    "newMethods": 7,
+    "coverage": [
+      "Fixed endpoint selection, nearest ties and original addresses",
+      "Small/empty-padding selection domain",
+      "Reject padding-key visibility or omitted active keys",
+      "Multilayer nonlinear closed-query commutation with original positions; renumbering counterexample",
+      "Complete signed finite/reconstruction error telescope",
+      "Actual lexical bridge authenticates before target-value guard",
+      "Candidate images seal before scoring, failed image child cannot release"
+    ],
+    "exactPayloadImports": "Isolated imports and frozen source/request pins verified; no eager torch."
+  },
+  "storage": {
+    "archivedTransportFiles": 4,
+    "archivedBytes": 1631201526,
+    "pointerCustodyMetadataChecks": 32,
+    "priorObjectsNotFreshlyByteHashed": 28,
+    "remainingNameSizeCandidates": 48,
+    "remainingCandidateLogicalBytes": 13611295315,
+    "scope": "New four objects receive full remote SHA before unlink; prior 28 receive metadata audit. Extracted science remains local. Shared-volume current free bytes are an observation, not attributed to this cycle."
+  },
+  "scope": "Published manifests and lossless rows, guarded executed payload, original mask/positions and actual state/consumer joins, original PNGs, figure/blog hash and local links. Source values remain immutable. Mutable advisory snapshots retain reviewed and current hashes separately. No semantic, arbitrary-prompt zero-neural or speedup certification."
+}

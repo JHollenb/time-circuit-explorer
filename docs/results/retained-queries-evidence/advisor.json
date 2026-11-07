@@ -1,0 +1,61 @@
+{
+  "schema": "tce-retained-query-astra-review-v1",
+  "advisor": "Astra (gpt-6-astra)",
+  "cycle": 36,
+  "primaryReportSHA256": "82c3e9e25df7c11a93ded490b3d34803237502f63169e1a06f95df493a8c17bc",
+  "sourceReview": "No material closure defect found in the reviewed selection, original mask/positions, own-state handoffs or error decomposition. Real-arithmetic closure remains distinct from compact BF16 parity.",
+  "interpretation": "89.65% fewer nominal encoder affine MACs with complete retained-query trajectories. Coarse color assignment and object order survive, while 48.93% signed PNG color-response error and nozzle/pitcher contact changes remain. Active-state improvement and padding reconstruction failure stay separate.",
+  "fluxPositionBoundary": {
+    "textIDs": "[0,0,0,j]",
+    "groupMass": "Z_g(q)=sum_j exp(q^T Omega_j k_g / sqrt(d))",
+    "consequence": "Equal copied conditioning rows do not establish equal rotated attention scores. A row-count/log-multiplicity replacement is not exact; later text states can diverge.",
+    "pipelineSHA256": "8a57a8a7f1c22fc0c5bc5d3fd1bd9bc76c17c1f4d6644cc73370651dd955358e",
+    "transformerSHA256": "0a3c56ed3ca28a416492b50953a433f20b8a89fd26c7b7a49b1b6b45d5236006"
+  },
+  "nextCut": {
+    "status": "written-unexecuted",
+    "plan": "../../plans/last-velocity-forecast.md",
+    "rule": "Replace only the fourth denoiser velocity with the fixed own-trajectory secant vhat3=v2+a*(v2-v1); previous-velocity hold vhat3=v2 is the single control.",
+    "a": 2.2466599638045444,
+    "finalEulerGap": -0.7174965739250183,
+    "finiteContract": "Separate FP32 subtraction/multiply/add, then BF16 forecast rounding; preserve the pinned finite native scheduler commit and unchanged VAE.",
+    "schedulerSourceSHA256": "8b96f25a6170480fb02decb58904e026250d6d68be5de8a7b8785b4c721e9d80",
+    "inputs": "Authenticated cycle36 own-prefix Z3,v1,v2, exact schedule and decoding context. Deny v3,Z4,target images and all transformer tensors until all four candidate images seal.",
+    "newWork": "Four paid VAE decodes; no new encoder/denoiser/reference-image/noise run. Three original denoisers per context remain charged prefix inputs.",
+    "prospectivePairReduction": {
+      "denoiserCalls": 2,
+      "linearCalls": 206,
+      "nominalAffineMACs": 9447854309376,
+      "denoiserAffineFraction": 0.25
+    },
+    "scope": "Known own-prefix replay first; no fresh raw-prompt execution, measured speedup or whole-generator zero-neural claim."
+  },
+  "reviewedSnapshots": [
+    {
+      "file": "2026-11-06-154253-a-hypothesis-for-cheaper-model-state-transitions.md",
+      "sha256": "0d61889ba9ed1a926b5c05d6b969a94c7b6368f6a3ee1f608212e04dc7054e29"
+    },
+    {
+      "file": "2026-11-06-154200-context-coverage-and-the-alternative-of-a-better-small-program.md",
+      "sha256": "6b0292aeb385863f063cc44253c1c85377e2a5bdc703f935991979b35922b5f4"
+    },
+    {
+      "file": "2026-11-06-154200-how-a-binding-computation-changes-carriers.md",
+      "sha256": "e0452aabe56c8aa3f55d08bea6676210103ff516def9eaac5fbdbf0c15c8733e"
+    },
+    {
+      "file": "2026-11-06-154048-where-eye-shape-is-carried-in-the-final-diffusion-pass.md",
+      "sha256": "b203dfa08bc49ce440413e88c8d6d9ce93dedd3edd645a3e2b796a2dc75548f2"
+    },
+    {
+      "file": "2026-11-06-144600-a-program-that-produces-queries-and-updates-its-own-memory.md",
+      "sha256": "9212a7c0b0838c15c367301738b89bce4882db16934ee9e6a046c65315435755"
+    },
+    {
+      "file": "2026-11-06-125544-a-frozen-mlp-program-updates-a-conversation.md",
+      "sha256": "65a6e418153b252f0a296c232bbe899babe3915f3996f65f56217ac50989ad23"
+    }
+  ],
+  "relatedWorkSynthesis": "The newest eye-shape work distinguishes a supplied velocity plus carry from still-unresolved velocity formation, and its strong shape-write effect cautions against assuming carry makes the last pass expendable. Memory/binding results reinforce retaining the actual incoming trajectory rather than an independent native replacement.",
+  "scope": "Periodic newest-post/source/result/original-image advisory review and next experiment selection. No new execution by advisor. Mutable post hashes record reviewed snapshots; arbitrary-prompt zero-neural generation remains open."
+}

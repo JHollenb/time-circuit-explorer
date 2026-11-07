@@ -1,0 +1,36 @@
+{
+  "schema": "tce-flux-text-position-source-read-v1",
+  "scope": "Read-only inspection of local qualified source whose full file hashes match this executed image worker's nativeSources; no new model execution or duplicate-collapse result.",
+  "pipeline": {
+    "file": "pipelines/flux2/pipeline_flux2_klein.py",
+    "sha256": "8a57a8a7f1c22fc0c5bc5d3fd1bd9bc76c17c1f4d6644cc73370651dd955358e",
+    "function": "_prepare_text_ids",
+    "lines": [
+      266,
+      282
+    ],
+    "law": "t=h=w=arange(1); l=arange(L); cartesian_prod yields text coordinates [0,0,0,j]."
+  },
+  "transformer": {
+    "file": "models/transformers/transformer_flux2.py",
+    "sha256": "0a3c56ed3ca28a416492b50953a433f20b8a89fd26c7b7a49b1b6b45d5236006",
+    "lines": [
+      1274,
+      1284
+    ],
+    "law": "text_rotary_emb=self.pos_embed(txt_ids), concatenated with image rotary embeddings."
+  },
+  "binding": {
+    "axesDims": [
+      32,
+      32,
+      32,
+      32
+    ],
+    "ropeTheta": 2000,
+    "bindingsSHA256": "51258f8622d48d2db73d3699833e60171dd93f07844c933ac5f32bafcf378c02",
+    "transformerConfigSHA256": "09733c74a3da6d17dd0a0472a091a8950c7c6935889c32c16cc800ede05029de",
+    "checks": "Bindings file agrees with kernel-manifest; checkpoint-files transformer/config.json SHA agrees with this primary's imageAssets."
+  },
+  "implication": "Copied E rows do not imply identical rotated Q/K. A plain log-multiplicity collapse is not exact from row equality alone. Position-dependent partition/value factors and later text-state divergence require explicit computation."
+}

@@ -1,0 +1,67 @@
+{
+  "backend": "diffusers",
+  "batch_size": 1,
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "height": 512,
+  "manifestSHA256": "9a155bd1410c52909997bacaf1d1aac2f9e90be86dc269d5e7edfab2b5285432",
+  "model": "flux2-klein-4b-distilled",
+  "ownedSources": [
+    "retained_query_study.py",
+    "retained_query_encoder.py",
+    "retained_query_images.py",
+    "retained_queries.py",
+    "encoder_atoms.py",
+    "paired_fields.py",
+    "padding_mlp.py",
+    "masked_kv_study.py",
+    "conditioning_demand.py",
+    "complete_masked_study.py",
+    "flux_clock.py",
+    "flux_clock_study.py"
+  ],
+  "paddingQueries": 16,
+  "parentRequestSHA256": "beeff453d9412eaef5ae67b122483561880cc1a70825cea0b2497340e9e7ef92",
+  "prompts": [
+    {
+      "id": "00",
+      "prompt": "A studio photograph of a orange ceramic pitcher to the left of a teal metal watering can on a white table, soft lighting."
+    },
+    {
+      "id": "10",
+      "prompt": "A studio photograph of a teal ceramic pitcher to the left of a orange metal watering can on a white table, soft lighting."
+    }
+  ],
+  "protocol": "Own compiled lexicalH0; native attention/MLP all27blocks at retained originalpositions/mask/RoPE. Expand onlyH9/H18/H27/E. Both images seal before savedfull/top4target diagnosis. No fit/sweep/newnoise/refimages/refresh.",
+  "requestSHA256": "2114a8b31432bdcc61d00e1e66e54f679a7b1709c6874b2e9011283300e58826",
+  "schema": "tce-retained-query-request-v1",
+  "scope": "Structural querytrajectory reduction with original learned computation on retained rows. Copying preserves rowcount/multiplicity, not attention mass. No speedup or strictzero-neural claim.",
+  "seed": 271828,
+  "selection": "Allactive + P[floor(j*(len(P)-1)/15)] j0..15, allpaddingif<=16. Nearest original padding position, ties earlier; no embedding scaling.",
+  "seq_len": 1536,
+  "sourceHashes": {
+    "clock-table.json": "ee858f422b8fadf42fdb77902851d947e3f981df9605d49d9e846ec6c9c44492",
+    "complete_masked_study.py": "f52633bc9d729b2a5032e024331d9b20fcee8cb993941cab87c197089cdcff99",
+    "conditioning_demand.py": "6536da5e73e89b7d2a18085d963edf578d0567ed20680c4022c1c82a10c10e9f",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "flux_clock.py": "bde499ff527f624fcd1b62a8f6f0b2fbaf70eebc7b7835fcd7d4c6403b4e0b2b",
+    "flux_clock_study.py": "eaccf6bdb75678ac6acb5a371f8858201cf83dbac4de83868b70d5570e4beddc",
+    "flux_functional_qwen_prefix.py": "763ae441d33396fe5cede5d96214c76e01aae779916ce5cf28e79cf5f5eb618a",
+    "frozen-plan.md": "16be711e9f0f5977056bd5831b0347b2a125a07a60290e54c94d45ba953aed30",
+    "inputs.json": "b81868d79eb1e0e6cd46bba16fb4d25e93f73caac8ccfb1f14005d35355847fd",
+    "masked_kv_study.py": "920416ce49d823b1337a7f6d9f5fca90c8047723bb6b1d37dc09967114b6ad89",
+    "noise-seal.json": "3971848ac18fbef7d6ff616284fedd20e07fffd4c313be2297087bf7740336d8",
+    "padding_mlp.py": "c8c60b1909c69647691f3345d208ede575219ad86a48c8245dadf5d3560f5aad",
+    "paired_fields.py": "408e035cb2f2f99558dbbe5abccdc281a5deade195abdbbc003549318ef09e88",
+    "qwen_h18_state_history.py": "17084d404f5ae00557e4ad8e94a8b84704787c47ebf9c875228cb452c4857036",
+    "resource-basis.json": "92023fba2a5eb5490146437773341f80ba05c90fb797ad2ab5161c30b99f267c",
+    "retained_queries.py": "7a4305ada53f304e4728daf7cd112f5b7b85cc4378a672f8f7194ae81c942cb1",
+    "retained_query_encoder.py": "badedd1d48b848e32b6b264a34cc1c72ccf2e789aa46464ef68d5a0397f09019",
+    "retained_query_images.py": "77db9fed9b6d60404bae3ebea8d1dcef0ae2c4b93d89efd60bf32f67af68e9c3",
+    "retained_query_study.py": "d1d6b03191014ac798b0956414c75bdc6b23daccb069f178eed67fbfc54f3e62",
+    "targets.json": "522941e1cace98f2e0a3a112ae7fff717fbfe45eee958fc2c2d134a2c417c52a"
+  },
+  "steps": 4,
+  "timeoutSeconds": 600,
+  "width": 512
+}
