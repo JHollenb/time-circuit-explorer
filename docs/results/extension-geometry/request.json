@@ -1,0 +1,57 @@
+{
+  "backend": "numpy-fp64",
+  "cpuThreads": 1,
+  "device": "cpu",
+  "needs": {
+    "cpu": true
+  },
+  "ownedSources": [
+    "extension_geometry.py",
+    "extension_geometry_study.py",
+    "source_response.py",
+    "encoder_atoms.py",
+    "paired_fields.py",
+    "flux_clock_study.py"
+  ],
+  "parentJobID": "job-3ad8f94c32ea",
+  "parentRequestSHA256": "05b5726a1931c2dff1f0f2b68c9c114351fc2e8a1ec371079aa25f519a7f544f",
+  "protocol": "Six archived heldX; allmode Z=XV,A=Z/sigma,Xparallel=ZVt,r=X-Xparallel,Yhat=AC,D=AtYhat. Retainqueryenergies/leverage/signedmodepower/crossclosure/actualimageindices. Sealgeometry beforeoldforecast/erroraccountaccess. No SVD/fit/newpredictor/select/rank/gain/regularization sweep,T/U,model/H0/VAE/images. 68.439BleadingMAC.",
+  "requestSHA256": "a58ee3338eb92d615b37d39d47d492bd9659152b39b99d21f6df6c69633d28a4",
+  "scheduling_contract": {
+    "additional_scheduler_submissions": 0,
+    "branch_execution": "in_process",
+    "checkpoint_policy": "one outer Saturn worker lease; all logical branches and analysis remain in process",
+    "collection_policy": "direct_job_only",
+    "control_plane": "mrun_outer_lease",
+    "data_plane": "resident_worker",
+    "execution_model": "finite_local_program",
+    "interactive": false,
+    "lease_scope": "entire-worker",
+    "logical_branches": 6,
+    "logical_checkpoint_replays": 0,
+    "logical_operations": 6,
+    "max_local_work_items": 256,
+    "max_mrun_submissions": 1,
+    "model_free": true,
+    "model_loads": 0,
+    "mrun_retry_policy": "none_for_finite_lease",
+    "per_branch_mrun_submissions": 0,
+    "per_transition_mrun_submissions": 0,
+    "replay_policy": "none_source_only",
+    "schema": "saturn-single-lease-scheduling-contract-v1",
+    "task_family": "analysis"
+  },
+  "schema": "tce-extension-geometry-request-v1",
+  "sourceHashes": {
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "extension_geometry.py": "01fbc635d9144b59b658d0617d08f88e848b258800ac05c65f457b4e308bbd65",
+    "extension_geometry_study.py": "db0f22c4d3abca25e748d69ea5ade7a1d13a67df3fbd1df6380468b311ebc345",
+    "flux_clock_study.py": "eaccf6bdb75678ac6acb5a371f8858201cf83dbac4de83868b70d5570e4beddc",
+    "frozen-plan.md": "4ab524fafe0f3dd1d09fefddcbbc37e0d18c55a292610088cb07e638f62aceea",
+    "paired_fields.py": "408e035cb2f2f99558dbbe5abccdc281a5deade195abdbbc003549318ef09e88",
+    "reference-source.json": "161af07f4b5182c5a56d2c4a35491616289b4ba75544737b2a1d02dfbb670b25",
+    "source.json": "2dd14c8136de6efe5166b2371e397ffcac0055032eee7996f025e82fc9c3d6d0",
+    "source_response.py": "0b85fd57be6fa233e0111c549f7894a9e2a2fdaceb89fef761b3805796e41ef7"
+  },
+  "timeoutSeconds": 300
+}

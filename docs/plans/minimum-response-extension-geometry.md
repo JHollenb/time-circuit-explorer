@@ -1,6 +1,6 @@
 # Separate determined response from unconstrained extension
 
-Status: **written and unexecuted**. Selected after the [minimum-norm result](../minimum-norm-source-response.md) and [Astra44 review](../results/minimum-response-evidence/advisor.json). One saved-array audit of the fixed map; no new fit, predictor selection, original model or image.
+Status: **executed and completed**, job job-4150ce136012. The [result](../minimum-response-extension-geometry.md) preserves the [original frozen protocol](../results/extension-geometry/frozen-plan.md). Selected after the [minimum-norm result](../minimum-norm-source-response.md) and [Astra44 review](../results/minimum-response-evidence/advisor.json). One saved-array audit of the fixed map; no new fit, predictor selection, original model or image.
 
 The all-mode map interpolates discovery exactly but produces large, poorly aligned held responses. This audit will determine which supplied-input geometry is fixed by source interpolation and where the source leaves extension freedom. It cannot causally identify missing receiver conditioning or certify a generator.
 

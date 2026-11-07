@@ -1,0 +1,192 @@
+{
+  "completeCollectedInventory": {
+    "bytes": 7021225,
+    "files": {
+      "frozen-plan.md": {
+        "bytes": 5060,
+        "sha256": "4ab524fafe0f3dd1d09fefddcbbc37e0d18c55a292610088cb07e638f62aceea"
+      },
+      "geometry-seal.json": {
+        "bytes": 9377,
+        "sha256": "5c9d63ae84aa463fadb8b78619fe5b430d9ab9d34cada31307191beeefa42ed8"
+      },
+      "geometry.json": {
+        "bytes": 16904,
+        "sha256": "712f298e95560acdf1d2ce6aa58af2bc4b3e1de123716754d6c64e2a18c66d28"
+      },
+      "modes.jsonl": {
+        "bytes": 4662940,
+        "sha256": "25aad418d3a490e4f1c11700bafc02c0f1797351a4491cd59a1f7ddaf1f59b07"
+      },
+      "queries.jsonl": {
+        "bytes": 2297455,
+        "sha256": "a7a05fad61396753753c8259f1a7b091166347eba8f407c55f0a3bdd0a40e2b4"
+      },
+      "reference-source.json": {
+        "bytes": 2935,
+        "sha256": "161af07f4b5182c5a56d2c4a35491616289b4ba75544737b2a1d02dfbb670b25"
+      },
+      "report.json": {
+        "bytes": 12770,
+        "sha256": "9d0b90d458791049be6d7cb5284f4ce5abafcf2d264118667ed7e1336810f610"
+      },
+      "request.json": {
+        "bytes": 2712,
+        "sha256": "8a108399e187a4ef132d35e450f21929aad00b0049bfa94c71f0c4162b80c8a1"
+      },
+      "source.json": {
+        "bytes": 11072,
+        "sha256": "2dd14c8136de6efe5166b2371e397ffcac0055032eee7996f025e82fc9c3d6d0"
+      }
+    }
+  },
+  "jobID": "job-4150ce136012",
+  "losslessStreams": [
+    {
+      "published": "modes.jsonl.gz",
+      "publishedBytes": 901553,
+      "publishedSHA256": "2eef1a382e0040162988609e133117b288352c90fa43fef2ffff7ae4b1e1836f",
+      "source": "modes.jsonl",
+      "sourceBytes": 4662940,
+      "sourceSHA256": "25aad418d3a490e4f1c11700bafc02c0f1797351a4491cd59a1f7ddaf1f59b07"
+    },
+    {
+      "published": "queries.jsonl.gz",
+      "publishedBytes": 455295,
+      "publishedSHA256": "c24816b9c012ea89a1e96950a49fcd01bdd30afae91d3105b1c4014f44a7e866",
+      "source": "queries.jsonl",
+      "sourceBytes": 2297455,
+      "sourceSHA256": "a7a05fad61396753753c8259f1a7b091166347eba8f407c55f0a3bdd0a40e2b4"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "188a84e30d2913f606285b0e97b270db4c4b0dceb59e5920816c4c5b2894aaf1",
+      "size_bytes": 24279
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794023893.9782045,
+      "sha256": "188a84e30d2913f606285b0e97b270db4c4b0dceb59e5920816c4c5b2894aaf1",
+      "size_bytes": 24279
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794023893.5881975,
+      "sha256": "188a84e30d2913f606285b0e97b270db4c4b0dceb59e5920816c4c5b2894aaf1",
+      "size_bytes": 24279
+    }
+  },
+  "requestSHA256": "a58ee3338eb92d615b37d39d47d492bd9659152b39b99d21f6df6c69633d28a4",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-4150ce136012",
+      "job_log": {
+        "bytes": 306,
+        "sha256": "0b0a36e89df6a396a5e19fa611faca4dae8749672e6b8ef6a912ec632e307179"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-4150ce136012/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "CUDA_VISIBLE_DEVICES=",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "numpy==2.5.4",
+        "--with",
+        "psutil>=5.9",
+        "python",
+        "-u",
+        "extension_geometry_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-4150ce136012",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-4150ce136012/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794023893.9659855
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794023893.9937165
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794023894.0052063
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794023894.0311995
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794023901.202786
+        },
+        {
+          "name": "finished",
+          "ts": 1794023901.2229202
+        }
+      ]
+    },
+    "elapsed_s": 7.67,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "188a84e30d2913f606285b0e97b270db4c4b0dceb59e5920816c4c5b2894aaf1",
+      "size_bytes": 24279
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 333.8,
+    "peak_vram_mb": 0.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-extension-geometry-publication-v1",
+  "scope": "Retrospective fixed-map geometry; no new predictor, fit, original model, image or causal conditioning test. Old learned factors/labels/state remain paid."
+}
