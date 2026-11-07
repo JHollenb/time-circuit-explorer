@@ -1,0 +1,38 @@
+{
+  "backend": "numpy",
+  "device": "cpu",
+  "dtype": "float64",
+  "fixedAddress": {
+    "clock": 3,
+    "singleBlock": 0
+  },
+  "fixedTileRows": 16,
+  "imageRows": 1024,
+  "newCheckpointTensorLoads": 0,
+  "newRectifierElements": 14155776,
+  "ownedSources": [
+    "rectifier_sign_support.py",
+    "rectifier_sign_support_study.py",
+    "test_rectifier_sign_support.py",
+    "encoder_atoms.py",
+    "paired_fields.py",
+    "terminal_capture_guard_v2.py"
+  ],
+  "plannedLearnedMatrixMACs": 0,
+  "protocol": "Exact nonzero omitted coefficients for ReLU(Gstar),r-rbar,r+(Abar-rbar),fixed16-row stream tiles. Four paid inputs; no U/maps/outputerrors/threshold/fit/sorting/tile sweep. Packed complete supports plus row/channel/tile counts. Prospective Up/Down and dense stream fold counts only; no learned products/new state/image.",
+  "requestSHA256": "42934301d793ff45279706605ef8f91e0090724d66ba00fd77fcdbd2fa70b347",
+  "schema": "tce-rectifier-sign-support-request-v1",
+  "sourceHashes": {
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "frozen-plan.md": "a4c61a4c18105dbe057dcdfc6fb66241eebbe642eb7d40237f16e0b1892d1478",
+    "inputs.json": "1576b4d07b059ed9041ed669a35c0eee178d58cdf2b6567a00c03e6f5b45f398",
+    "paired_fields.py": "408e035cb2f2f99558dbbe5abccdc281a5deade195abdbbc003549318ef09e88",
+    "rectifier_sign_support.py": "f91e92accac1b7f56d5f9c0c496e49bff5116ce1bfb4f249c65095194e9ef261",
+    "rectifier_sign_support_study.py": "6758df28e0deb21c7e0ca4e0940bef7c4f2b786b76a14db68b949675dc7c479e",
+    "resource-basis.json": "3eadf771e39e306c8da3691b709c4580e23ee774b1428a23f25153332dc9c5c5",
+    "terminal_capture_guard_v2.py": "eb577f23577062efef8107a51ae7e2baf8ae860678612532c17b55cda3fe7849",
+    "test_rectifier_sign_support.py": "2bace8893ff3e2b315b7f3c00fa742c6c80ee02dc5393d8a6f71895455a95a82"
+  },
+  "textRows": 512,
+  "timeoutSeconds": 180
+}

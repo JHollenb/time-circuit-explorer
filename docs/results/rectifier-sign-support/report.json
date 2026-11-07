@@ -1,0 +1,214 @@
+{
+  "denseStreamFold": {
+    "constructed": false,
+    "hypotheticalApplyMACs": 14495514624,
+    "hypotheticalCompileMACs": 130459631616,
+    "hypotheticalFP64MapBytes": 150994944,
+    "plusRawFixedTileBranchMACs": 196416995328,
+    "plusRawRowwiseBranchMACs": 168457531392,
+    "rowwiseSavingsVsOmittedBaselineMACs": -103227715584,
+    "scope": "Shape-derived arithmetic only. No maps/Upmeans accessed. Bias/mean/gather/launch/storage costs excluded, not zero; no cross-prompt reuse or finite reassociation parity established.",
+    "streams": {
+      "image": {
+        "directStreamTermUpDownMACs": 43486543872,
+        "hypotheticalApplyMACs": 9663676416,
+        "hypotheticalCompileMACs": 65229815808,
+        "hypotheticalFP64MapBytes": 75497472,
+        "liveOmittedChannels": 6912,
+        "rows": 1024,
+        "zeroOmittedChannels": 0
+      },
+      "text": {
+        "directStreamTermUpDownMACs": 21743271936,
+        "hypotheticalApplyMACs": 4831838208,
+        "hypotheticalCompileMACs": 65229815808,
+        "hypotheticalFP64MapBytes": 75497472,
+        "liveOmittedChannels": 6912,
+        "rows": 512,
+        "zeroOmittedChannels": 0
+      }
+    },
+    "tileSavingsVsOmittedBaselineMACs": -131187179520
+  },
+  "fixedAddress": {
+    "clock": 3,
+    "singleBlock": 0
+  },
+  "fullWidthUpDownBaselineMACs": 86973087744,
+  "instrument_status": "saved-source-coefficient-support-census",
+  "mechanics_status": "complete",
+  "observations": 1536,
+  "paidFreshGateFormationMACs": 43486543872,
+  "panels": {
+    "all": {
+      "denseOmittedUpDownMACs": 65229815808,
+      "expressions": {
+        "centered": {
+          "coefficientDensity": 0.9987461419753086,
+          "fixedTileSavingsFraction": 0.001253858024691358,
+          "fixedTileSavingsMACs": 81788928,
+          "fixedTileUpDownMACs": 65148026880,
+          "idealRowwiseSavingsFraction": 0.001253858024691358,
+          "idealRowwiseSavingsMACs": 81788928,
+          "idealRowwiseUpDownMACs": 65148026880,
+          "liveCoefficients": 10603520,
+          "rowCountMax": 6909,
+          "rowCountMedian": 6909.0,
+          "rowCountMin": 6892,
+          "tileUnionCountMax": 6909,
+          "tileUnionCountMin": 6892
+        },
+        "combined": {
+          "coefficientDensity": 1.0,
+          "fixedTileSavingsFraction": 0.0,
+          "fixedTileSavingsMACs": 0,
+          "fixedTileUpDownMACs": 65229815808,
+          "idealRowwiseSavingsFraction": 0.0,
+          "idealRowwiseSavingsMACs": 0,
+          "idealRowwiseUpDownMACs": 65229815808,
+          "liveCoefficients": 10616832,
+          "rowCountMax": 6912,
+          "rowCountMedian": 6912.0,
+          "rowCountMin": 6912,
+          "tileUnionCountMax": 6912,
+          "tileUnionCountMin": 6912
+        },
+        "raw": {
+          "coefficientDensity": 0.3603012650101273,
+          "fixedTileSavingsFraction": 0.21106861255787038,
+          "fixedTileSavingsMACs": 13767966720,
+          "fixedTileUpDownMACs": 51461849088,
+          "idealRowwiseSavingsFraction": 0.6396987349898727,
+          "idealRowwiseSavingsMACs": 41727430656,
+          "idealRowwiseUpDownMACs": 23502385152,
+          "liveCoefficients": 3825258,
+          "rowCountMax": 3481,
+          "rowCountMedian": 2553.0,
+          "rowCountMin": 1960,
+          "tileUnionCountMax": 6690,
+          "tileUnionCountMin": 3635
+        }
+      },
+      "omittedChannels": 6912,
+      "rows": 1536
+    },
+    "image": {
+      "denseOmittedUpDownMACs": 43486543872,
+      "expressions": {
+        "centered": {
+          "coefficientDensity": 0.9995659722222222,
+          "fixedTileSavingsFraction": 0.00043402777777777775,
+          "fixedTileSavingsMACs": 18874368,
+          "fixedTileUpDownMACs": 43467669504,
+          "idealRowwiseSavingsFraction": 0.00043402777777777775,
+          "idealRowwiseSavingsMACs": 18874368,
+          "idealRowwiseUpDownMACs": 43467669504,
+          "liveCoefficients": 7074816,
+          "rowCountMax": 6909,
+          "rowCountMedian": 6909.0,
+          "rowCountMin": 6909,
+          "tileUnionCountMax": 6909,
+          "tileUnionCountMin": 6909
+        },
+        "combined": {
+          "coefficientDensity": 1.0,
+          "fixedTileSavingsFraction": 0.0,
+          "fixedTileSavingsMACs": 0,
+          "fixedTileUpDownMACs": 43486543872,
+          "idealRowwiseSavingsFraction": 0.0,
+          "idealRowwiseSavingsMACs": 0,
+          "idealRowwiseUpDownMACs": 43486543872,
+          "liveCoefficients": 7077888,
+          "rowCountMax": 6912,
+          "rowCountMedian": 6912.0,
+          "rowCountMin": 6912,
+          "tileUnionCountMax": 6912,
+          "tileUnionCountMin": 6912
+        },
+        "raw": {
+          "coefficientDensity": 0.3818617926703559,
+          "fixedTileSavingsFraction": 0.1463600441261574,
+          "fixedTileSavingsMACs": 6364692480,
+          "fixedTileUpDownMACs": 37121851392,
+          "idealRowwiseSavingsFraction": 0.6181382073296441,
+          "idealRowwiseSavingsMACs": 26880694272,
+          "idealRowwiseUpDownMACs": 16605849600,
+          "liveCoefficients": 2702775,
+          "rowCountMax": 3026,
+          "rowCountMedian": 2617.0,
+          "rowCountMin": 2287,
+          "tileUnionCountMax": 6589,
+          "tileUnionCountMin": 5146
+        }
+      },
+      "omittedChannels": 6912,
+      "rows": 1024
+    },
+    "text": {
+      "denseOmittedUpDownMACs": 21743271936,
+      "expressions": {
+        "centered": {
+          "coefficientDensity": 0.9971064814814815,
+          "fixedTileSavingsFraction": 0.0028935185185185184,
+          "fixedTileSavingsMACs": 62914560,
+          "fixedTileUpDownMACs": 21680357376,
+          "idealRowwiseSavingsFraction": 0.0028935185185185184,
+          "idealRowwiseSavingsMACs": 62914560,
+          "idealRowwiseUpDownMACs": 21680357376,
+          "liveCoefficients": 3528704,
+          "rowCountMax": 6892,
+          "rowCountMedian": 6892.0,
+          "rowCountMin": 6892,
+          "tileUnionCountMax": 6892,
+          "tileUnionCountMin": 6892
+        },
+        "combined": {
+          "coefficientDensity": 1.0,
+          "fixedTileSavingsFraction": 0.0,
+          "fixedTileSavingsMACs": 0,
+          "fixedTileUpDownMACs": 21743271936,
+          "idealRowwiseSavingsFraction": 0.0,
+          "idealRowwiseSavingsMACs": 0,
+          "idealRowwiseUpDownMACs": 21743271936,
+          "liveCoefficients": 3538944,
+          "rowCountMax": 6912,
+          "rowCountMedian": 6912.0,
+          "rowCountMin": 6912,
+          "tileUnionCountMax": 6912,
+          "tileUnionCountMin": 6912
+        },
+        "raw": {
+          "coefficientDensity": 0.31718020968967015,
+          "fixedTileSavingsFraction": 0.3404857494212963,
+          "fixedTileSavingsMACs": 7403274240,
+          "fixedTileUpDownMACs": 14339997696,
+          "idealRowwiseSavingsFraction": 0.6828197903103299,
+          "idealRowwiseSavingsMACs": 14846736384,
+          "idealRowwiseUpDownMACs": 6896535552,
+          "liveCoefficients": 1122483,
+          "rowCountMax": 3481,
+          "rowCountMedian": 2108.0,
+          "rowCountMin": 1960,
+          "tileUnionCountMax": 6690,
+          "tileUnionCountMin": 3635
+        }
+      },
+      "omittedChannels": 6912,
+      "rows": 512
+    }
+  },
+  "physicalWork": {
+    "newCheckpointTensorLoads": 0,
+    "newImages": 0,
+    "newLearnedMatrixMACs": 0,
+    "newNativeStateUpdates": 0,
+    "newRectifierElements": 14155776,
+    "newRetainedArrays": 6
+  },
+  "requestSHA256": "42934301d793ff45279706605ef8f91e0090724d66ba00fd77fcdbd2fa70b347",
+  "schema": "tce-rectifier-sign-support-result-v1",
+  "scope": "Exact nonzero support of named FP64 coefficient expressions on one paid saved state. Coefficient demand is not actual product support, native finite output parity, speed or prompt generalization. Learned G/means/support/history remain paid; no U/maps/errors/output/state/image evaluation.",
+  "terminal_status": "unassessed",
+  "tiles": 96,
+  "trend_status": "All coefficient and fixed-tile densities retained without quality threshold"
+}

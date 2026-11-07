@@ -1,0 +1,25 @@
+{
+  "schema": "tce-rectifier-sign-support-instrument-v1",
+  "target": "artifacts/rectifier-sign-support-v1/result",
+  "runExit": 0,
+  "verifyExit": 0,
+  "instrument_status": "target-streams-only",
+  "streams": 2,
+  "records": 1632,
+  "fires": 0,
+  "formalClaims": 0,
+  "qualifiedAddresses": 0,
+  "verifyMissingExpectedFireLedgers": 2,
+  "entrypoint": "Common exec python ../saturn/src/saturn/evidence_pipeline.py; standard source fallback because CLI entrypoint absent from PATH.",
+  "pipelineSourceSHA256": "ffeb0a22846b221c0e2173b037ae880ef0aefc6438421566b9dcb510087058a4",
+  "rawReceipts": {
+    "saturn-run.json": "a62420f924584d0fd00e70c564a7848ba06892711e1af3e82c07a9f58f577056",
+    "saturn-verify.json": "ff70694d78ebf6562b07da01097949cb31575589066fa481d6a1b429328fb72f"
+  },
+  "initialFindings": [
+    "CLI entrypoint saturn-evidence absent from PATH; no sweep ran in that attempt.",
+    "Initial direct-source run returned2: watch root was inside declared results root. Its verify returned0 with expected missing ledgers, which did not establish that a sweep ran. Initial refusal and verification retained separately.",
+    "Corrected results-root to the finished result directory and used new outside watch/registry/xref paths. Actual standard run/verify return0 on2streams/1632records, no fires/formal claims/qualified addresses."
+  ],
+  "scope": "Offline instrument applied only to target scalar streams. Two expected missing no-fire ledgers; no support arithmetic, finite-output, quality, semantic or generalization certification."
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "tce-rectifier-sign-support-advisor-v1",
+  "cycle": 81,
+  "advisor": "/root/astra_zero_forward_advisor",
+  "model": "gpt-6-astra",
+  "recordedAt": "2026-11-07T23:07:56.287895+00:00",
+  "newFullNewestPostSurvey": true,
+  "lastFullNewestPostSurveyCycle": 81,
+  "nextFullSurveyDueCycle": 84,
+  "fullSurveySHA256": "00221b48036692682b64df4f94ed5f7cc789f8a678ae5858784a2f130c58863c",
+  "storageReviewSHA256": "6474acb176692ffa847be6aee0c1dc1040b2cb6186e6df98db6623c8aa0176d3",
+  "preStageReview": {
+    "schema": "tce-rectifier-sign-support-advisor-prestage-v1",
+    "cycle": 81,
+    "advisor": "/root/astra_zero_forward_advisor",
+    "model": "gpt-6-astra",
+    "newFullNewestPostSurvey": true,
+    "fullSurveySHA256": "00221b48036692682b64df4f94ed5f7cc789f8a678ae5858784a2f130c58863c",
+    "nextFullSurveyDueCycle": 84,
+    "storageReviewSHA256": "6474acb176692ffa847be6aee0c1dc1040b2cb6186e6df98db6623c8aa0176d3",
+    "reviewedSources": {
+      "rectifier_sign_support.py": "f91e92accac1b7f56d5f9c0c496e49bff5116ce1bfb4f249c65095194e9ef261",
+      "rectifier_sign_support_study.py": "6758df28e0deb21c7e0ca4e0940bef7c4f2b786b76a14db68b949675dc7c479e",
+      "test_rectifier_sign_support.py": "2bace8893ff3e2b315b7f3c00fa742c6c80ee02dc5393d8a6f71895455a95a82",
+      "publish_rectifier_sign_support.py": "85ff01afd441781d19fd215f63abe8842ce052b85e56fc875424414db0808f8a"
+    },
+    "planSHA256": "a4c61a4c18105dbe057dcdfc6fb66241eebbe642eb7d40237f16e0b1892d1478",
+    "verdict": "Bounded proceed, no material blocker. Explicit FP64 expression order/omitted supports/exact zeros/fixed16row unions, signed row/tile counts/dense stream cost, four source fields/read-only custody/quarantine/6ABIs/full-byte and scalar publication scopes reviewed.",
+    "resourceScope": "Intent-first CPU, host-local Beast, one numerical thread, strict preflight,180scap,noretry. No guessed RAM/VRAM;113.56MB source files plus6.124MB retained arrays/16row temporaries. Prospective, not a measured peak.",
+    "scope": "Read-only source/math/publisher/resource review only; no advisor models/tests/scientific arrays/edits/new agents. Full newest-post survey recorded separately. No sparse implementation or zero-neural generation claim."
+  },
+  "reviewedResultSnapshots": {
+    "report.json": "7c8696014bf555bee7e55757c0cc95be814a97c7fef34e16bfcaa5f00fdf67ff",
+    "execution.json": "45823daf7bc8a602552c2234d99c6683dec54b64f13e08c67efbdeade33d6dce",
+    "result-seal.json": "10756694df725165ddc5c00078f1a9747da0a0b6988f0b61d4c92326ba96380d",
+    "retained-array-verification.json": "3ed415587eca27a6bc186ed72e0399079f42f940932e31c4e6009f0d064c9823",
+    "observations.jsonl.gz": "2ee7892fcccc6a150f208334d750bb664a3b96c36ae6faa0d79d4e1c83614706",
+    "tiles.jsonl.gz": "3add4235d167b9a31e50232765aa427a014fdaa045aef8dbc56dc3c697d680b2",
+    "scheduler.json": "37caaa1fb91e3383ee4bd21413482af76f990448b32d960e1230de74e6ecac43"
+  },
+  "initialReviewedSynthesisSnapshots": {
+    "docs/rectifier-liveness.md": "2fece587d52b9e81612a9906efcf85bfb635d2b017a71b6f09a564469f02c883",
+    "docs/plans/current-state-gate-up-basis.md": "6a1a52e9c30738ab89cf2b3d8d76c17195e5e9ba6d1b827a6bc476572f823894",
+    "docs/results/rectifier-sign-support-evidence/README.md": "629bacddc21940342d58063924827e6d94f6396807682e56695dead4330fd2ee",
+    "../obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md": "864ac061659bdf0656b7b7b362f29faadf72888d3c39e2a4e8dbdedbb856289e"
+  },
+  "initialSynthesisFinding": "Blog latest paragraph attributed the G/Up-basis proposal to the full newest-post survey, which instead recommended the census. The later actual-result review recommended stopping this branch and forming complete G/Up from current Z.",
+  "correctionApplied": "Latest paragraph now explicitly attributes the new route to Astra reviewing the actual census. Exact corrected blog hash reverified; three other approved syntheses unchanged.",
+  "finalReviewedSynthesisSnapshots": {
+    "docs/rectifier-liveness.md": "2fece587d52b9e81612a9906efcf85bfb635d2b017a71b6f09a564469f02c883",
+    "docs/plans/current-state-gate-up-basis.md": "6a1a52e9c30738ab89cf2b3d8d76c17195e5e9ba6d1b827a6bc476572f823894",
+    "docs/results/rectifier-sign-support-evidence/README.md": "629bacddc21940342d58063924827e6d94f6396807682e56695dead4330fd2ee",
+    "../obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md": "73f6f5c64a55da7d4a37ad3c91f4c32130eda08f5ebcb6ac7e3702d0b32aad5f"
+  },
+  "actualInterpretation": "Raw coefficient density36.03% gives21.11% fixed-tile prospective saving, not credited to combined expression. Centered99.8746%dense; combined100%dense on every1536row/96tile. Dense c_s channels6912eachstream; folded alternative168.458B to196.417B versus65.230Bbaseline before overhead. Stop the centered sparse-correction branch on this specimen; no generic compression exclusion. No U/product/output/consumer/image measured.",
+  "nextCut": "Written/unexecuted complete G/Up producer from current normalized Z at cycle73clock0single0 with paid moment-attention read. Fixed rank128 input-only Rademacher sketch and FP64 reduced Householder QR; exact seed/finite consumer geometry/casts/quarantine specified, no Abar/Ubar/L/support. All basis/map/reconstruction/nativefullout work paid:77.309Bvs144.955Bmatrixsubtotal, QR397.1MFLOPsseparate. No first-prompt, trajectory, runtime or zero-neural success claim; no automatic run this cycle.",
+  "figureSHA256": "ca1df1a979bc2fc6e02e62fbad4d8967db7a0eb3aa2382876ef4dfd06fd37027",
+  "scope": "Read-only full newest-post survey, exact source/publisher/resource review, actual result/scalar mathematics and corrected final synthesis reviews. No advisor models/tests/scientific arrays/edits/new agents. Full surveyed livinglog80 snapshot is historical and distinct from final81log. Source/means/history and new scalar rectification paid; no sparse implementation/image or arbitrary-prompt zero-neural certification.",
+  "finalVerdict": "Approved exact corrected four final syntheses and figure hash. Attribution corrected and prior snapshot retained. Goal active and unsolved."
+}

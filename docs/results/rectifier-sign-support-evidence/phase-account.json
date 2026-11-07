@@ -1,0 +1,29 @@
+{
+  "schema": "tce-rectifier-sign-support-phases-v1",
+  "scheduler": {
+    "elapsed_s": 3.46,
+    "peak_rss_mb": 152.9,
+    "peak_vram_mb": 0.0
+  },
+  "reservation": {
+    "cpu_threads": 4,
+    "disk_gb": 1.0,
+    "est_wall_s": null,
+    "ram_mb": 4096.0,
+    "source": "probe-default",
+    "vram_mb": 0.0
+  },
+  "worker": {
+    "setupSecondsAfterImports": 1.3429245366714895,
+    "supportCountingSeconds": 0.05314268218353391,
+    "wallSecondsAfterImports": 1.4607816748321056,
+    "CPUSecondsAfterImports": 0.259798276,
+    "threadEnvironments": {
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    },
+    "numpyVersion": "2.5.4"
+  },
+  "scope": "Counts/CPU timing on one saved-only assay, not serving latency or matched speedup. Worker afterimports includes source/byte checks and retention; scheduler includes startup. Four reserved CPU slots differ from one numerical thread."
+}
