@@ -1,0 +1,158 @@
+{
+  "actorsMACs": 19528679424,
+  "cacheLogicalBytes": 25559040,
+  "compilerMACs": 48318382080,
+  "compilerSealSHA256": "81677772d9dce36a3ca4da1c7629c3107f41ed59e3c5ef7bd2572fd9cfefcf7d",
+  "endpoints": [
+    {
+      "arm": "QQQ",
+      "candidateRms": 1.4521290799787578,
+      "changedValues": 471597,
+      "cosine": 0.9999992543535532,
+      "mae": 0.00041675686676020024,
+      "maxAbs": 0.25,
+      "referenceRms": 1.4521431552384059,
+      "relativeRms": 0.0012212175844716537,
+      "rms": 0.0017733827563472917,
+      "scalars": 3145728
+    },
+    {
+      "arm": "PQP",
+      "candidateRms": 1.4524707846820968,
+      "changedValues": 472786,
+      "cosine": 0.9999991034365928,
+      "mae": 0.0004177304179317313,
+      "maxAbs": 0.5,
+      "referenceRms": 1.452467418883955,
+      "relativeRms": 0.0013390804081660228,
+      "rms": 0.001944970664126976,
+      "scalars": 3145728
+    }
+  ],
+  "instrument_status": "executed",
+  "limits": [
+    "Retrospective single family invocation; historical P/Q source formation and original learned matrices remain paid.",
+    "Cache assumes fixed queries, complement, support, positions, profile and revision.",
+    "Compact GEMM and FP64 softmax alter original numerical boundaries; sham errors remain separate.",
+    "No changed text continuation, joint1 MLP, later own-state diffusion, new image or arbitrary-prompt zero-neural generator."
+  ],
+  "mechanics_status": "complete",
+  "phases": [
+    {
+      "phase": "compile",
+      "wallSecondsIncludingFreshProcess": 32.75819912785664
+    },
+    {
+      "phase": "actors",
+      "wallSecondsIncludingFreshProcess": 17.415973492898047
+    }
+  ],
+  "primarySealSHA256": "9241fec922084585312377815ff140c400fbffd9ee218b32076d28b48313df21",
+  "queryPanels": [
+    {
+      "candidateRms": 0.0363354949966923,
+      "changedValues": 770175,
+      "cosine": 0.9974228431555165,
+      "dependentQueries": 1024,
+      "mae": 0.0007507241523398989,
+      "maxAbs": 0.5,
+      "medianRowRelativeError": 0.40032834505498616,
+      "panel": "all",
+      "referenceRms": 0.03634224634546078,
+      "relativeRms": 0.07178712054449163,
+      "rms": 0.002608905219259203,
+      "rowsBetterThanZero": 1004,
+      "rowsWorseThanZero": 20,
+      "scalars": 3145728
+    },
+    {
+      "candidateRms": 0.02776432665851596,
+      "changedValues": 378845,
+      "cosine": 0.9956074169285088,
+      "dependentQueries": 512,
+      "mae": 0.0007422073360885406,
+      "maxAbs": 0.5,
+      "medianRowRelativeError": 0.5141252421851358,
+      "panel": "left-grid",
+      "referenceRms": 0.027724270949020285,
+      "relativeRms": 0.09380802878487693,
+      "rms": 0.002600759207225422,
+      "rowsBetterThanZero": 495,
+      "rowsWorseThanZero": 17,
+      "scalars": 1572864
+    },
+    {
+      "candidateRms": 0.043239779815680404,
+      "changedValues": 391330,
+      "cosine": 0.9981703824441334,
+      "dependentQueries": 512,
+      "mae": 0.0007592409685912571,
+      "maxAbs": 0.5,
+      "medianRowRelativeError": 0.3132755546527272,
+      "panel": "right-grid",
+      "referenceRms": 0.04327681295120546,
+      "relativeRms": 0.060471779155470085,
+      "rms": 0.002617025875337884,
+      "rowsBetterThanZero": 509,
+      "rowsWorseThanZero": 3,
+      "scalars": 1572864
+    }
+  ],
+  "queryRecords": 1024,
+  "requestSHA256": "76900b37c686af5944cb79c73ca24150e8fab3af8cd41e28eeca84dbe12549ee",
+  "response": {
+    "candidateRms": 0.0363354949966923,
+    "changedValues": 770175,
+    "cosine": 0.9974228431555165,
+    "mae": 0.0007507241523398989,
+    "maxAbs": 0.5,
+    "referenceRms": 0.03634224634546078,
+    "relativeRms": 0.07178712054449163,
+    "rms": 0.002608905219259203,
+    "scalars": 3145728
+  },
+  "schema": "tce-sparse-text-kv-result-v1",
+  "terminal_status": "unassessed",
+  "textEndpoints": [
+    {
+      "arm": "QQQ",
+      "bitExact": true,
+      "candidateRms": 23.52386918018314,
+      "changedValues": 0,
+      "cosine": 1.0,
+      "mae": 0.0,
+      "maxAbs": 0.0,
+      "referenceRms": 23.52386918018314,
+      "relativeRms": 0.0,
+      "rms": 0.0,
+      "scalars": 1572864
+    },
+    {
+      "arm": "PQP",
+      "bitExact": true,
+      "candidateRms": 23.522637227609398,
+      "changedValues": 0,
+      "cosine": 1.0,
+      "mae": 0.0,
+      "maxAbs": 0.0,
+      "referenceRms": 23.522637227609398,
+      "relativeRms": 0.0,
+      "rms": 0.0,
+      "scalars": 1572864
+    }
+  ],
+  "totalNewMACs": 67847061504,
+  "work": {
+    "actorAffines": 6,
+    "actorContractions": 4,
+    "compilerAffines": 5,
+    "compilerContractions": 2,
+    "distinctParameterBytes": 113246976,
+    "newFullTransformer": 0,
+    "newImages": 0,
+    "newMLP": 0,
+    "newNativeSDPA": 0,
+    "processParameterBytes": 150995968
+  },
+  "workerWallSeconds": 52.953387934248894
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "tce-sparse-text-kv-instrument-v1",
+  "runtime": "mdb.evidence_pipeline",
+  "target": "artifacts/sparse-text-kv-v1/result",
+  "explicitResultsRoot": "artifacts/sparse-text-kv-v1",
+  "explicitXrefRoot": "artifacts/sparse-text-kv-v1/result",
+  "instrumentStatus": "target-streams-only",
+  "streams": 1,
+  "records": 1024,
+  "predicates": 28,
+  "formalReceipts": 0,
+  "runExit": 0,
+  "verifyExit": 0,
+  "watchFires": 0,
+  "developmentDiagnostics": [
+    {
+      "exit": 2,
+      "instrumentStatus": "evidence-incomplete-empty-target",
+      "target": "docs/results/sparse-text-kv",
+      "reason": "Public query stream is byte-lossless gzip, which this instrument does not read as a stream. Pointed run/verify at the retained original uncompressed stream; no scientific rerun."
+    }
+  ],
+  "scope": "Actual run/verify with explicit local roots and complete original query rows. No accepted formal claims receipts; actual typed Acts, full bytes, seals and input/output lineage have separate audited evidence. No image or generator certification."
+}

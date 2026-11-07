@@ -1,0 +1,542 @@
+{
+  "context": {
+    "attributes": [
+      "red",
+      "blue"
+    ],
+    "id": "sphere-cube-plain-2027",
+    "objects": [
+      "sphere",
+      "cube"
+    ],
+    "panel": "primary",
+    "prompts": {
+      "base": "A red sphere on the left and a blue cube on the right, on a plain white background.",
+      "source": "A blue sphere on the left and a red cube on the right, on a plain white background."
+    },
+    "seed": 2027
+  },
+  "deniedTargets": [
+    "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/cases/sphere-cube-plain-2027/QQQ/consumer/native/R_attention.npy",
+    "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/cases/sphere-cube-plain-2027/PQP/consumer/native/R_attention.npy",
+    "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/endpoints/sphere-cube-plain-2027/native/QQQ.npy",
+    "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/endpoints/sphere-cube-plain-2027/native/PQP.npy"
+  ],
+  "familyPoint": {
+    "edge": "before",
+    "family": "flux2-klein",
+    "index": 1,
+    "local_clock": 1,
+    "logical_step": 2,
+    "next_operation": "joint_block.1",
+    "operator": "joint",
+    "phase": "joint"
+  },
+  "image": {
+    "bytes": 6291584,
+    "logicalDtype": "torch.bfloat16",
+    "nativeStride": [
+      3145728,
+      3072,
+      1
+    ],
+    "path": "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/image_out.npy",
+    "payloadSHA256": "b093a4d211bf08d598755887767f2bb9d4f13ddf590011d83cd8f4dc2c7f7e22",
+    "sha256": "179d78e063a6cc2dbf1275626570759c8868a12a961c5500ac3bef11197925ef",
+    "shape": [
+      1,
+      1024,
+      3072
+    ]
+  },
+  "imageAssets": {
+    "transformer/config.json": "09733c74a3da6d17dd0a0472a091a8950c7c6935889c32c16cc800ede05029de",
+    "transformer/diffusion_pytorch_model.safetensors": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e"
+  },
+  "modelRoot": "/mnt/big/llm-models/FLUX.2-klein-4B",
+  "nativeSources": {
+    "image_processor.py": "d7558c34e9dfd36ea2a8721fc670615ca868de551ba232992a7f5382924b98f8",
+    "models/activations.py": "ab1767e8e44e7d4bf1cb18299ba33654329e2711fa983b1423fc4fe12de2c3ab",
+    "models/attention_dispatch.py": "2acfeb88d200a6466c0b4c718e5699efd8dc2e61d8b7c96d9d7c938ffbb25bc8",
+    "models/attention_processor.py": "7158a23bff0ce5bb1c03d66e2441dfd8d169b3598b2d494d32c6f88a3301ea01",
+    "models/autoencoders/autoencoder_kl_flux2.py": "7d9a976c1e4f42615e8c422f1643d86b49c4339221bd04b67f518b718ebd6c2d",
+    "models/cache_utils.py": "fc50ad113031b47244917ca04cd1f28d9751b75d91931c62f79505f4cf8a8d81",
+    "models/embeddings.py": "4eb810f715786eb1f24f2a4641e529817f7c951b9caf2f7925811329a03ec796",
+    "models/normalization.py": "e92ebbb130082578f3cff3361891a1adaa32331347e7bb09e4c70b208a0a6059",
+    "models/transformers/transformer_flux2.py": "0a3c56ed3ca28a416492b50953a433f20b8a89fd26c7b7a49b1b6b45d5236006",
+    "pipelines/flux2/pipeline_flux2_klein.py": "8a57a8a7f1c22fc0c5bc5d3fd1bd9bc76c17c1f4d6644cc73370651dd955358e",
+    "schedulers/scheduling_flow_match_euler_discrete.py": "8b96f25a6170480fb02decb58904e026250d6d68be5de8a7b8785b4c721e9d80"
+  },
+  "numericalProfile": {
+    "bf16ReducedPrecisionReduction": true,
+    "cublasWorkspaceConfig": ":4096:8",
+    "cudaMatmulTF32": false,
+    "cudnnBenchmark": false,
+    "cudnnDeterministic": true,
+    "cudnnTF32": false,
+    "deterministicAlgorithms": true,
+    "float32MatmulPrecision": "highest",
+    "threads": 4
+  },
+  "originalParameterArtifacts": [
+    {
+      "bytes": 18874496,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDMwNzIpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/e3d25f6e2bdecc0fb902c1595c258f4346151a90e118e5e9e98e93fe86894d29.npy",
+      "sha256": "e3d25f6e2bdecc0fb902c1595c258f4346151a90e118e5e9e98e93fe86894d29",
+      "source": {
+        "data_offsets": [
+          5900611584,
+          5919485952
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "7b87db87b38dbbcc4e055b8eec314b69da84dfca7c9f230ffa7fa9ac3f0abb04",
+        "shape": [
+          3072,
+          3072
+        ],
+        "tensor": "transformer_blocks.1.attn.to_q.weight"
+      }
+    },
+    {
+      "bytes": 18874496,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDMwNzIpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/b451cc6dc95b8d9dc7726ea42cabc009bca12e6721c631f5bb126416ee2229a1.npy",
+      "sha256": "b451cc6dc95b8d9dc7726ea42cabc009bca12e6721c631f5bb126416ee2229a1",
+      "source": {
+        "data_offsets": [
+          5862862848,
+          5881737216
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "5b350549392f8b1880c5b1d83a7088370c4e5fead05f55304db349ccf4958bc1",
+        "shape": [
+          3072,
+          3072
+        ],
+        "tensor": "transformer_blocks.1.attn.to_k.weight"
+      }
+    },
+    {
+      "bytes": 18874496,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDMwNzIpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/9bcf5f8720216c6b1f1a7baf78466d209e1ee3da78605d324ae72258d080e69c.npy",
+      "sha256": "9bcf5f8720216c6b1f1a7baf78466d209e1ee3da78605d324ae72258d080e69c",
+      "source": {
+        "data_offsets": [
+          5919485952,
+          5938360320
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "1c70ef54d0dd7d85e570841aa7707337a789d93b0bafbc5df59e67761de93e44",
+        "shape": [
+          3072,
+          3072
+        ],
+        "tensor": "transformer_blocks.1.attn.to_v.weight"
+      }
+    },
+    {
+      "bytes": 384,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDEyOCwpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/409c1dbdb4fd377bd5d4817a0493a8ad9ecab714c8d2e0f706229d66dfc937f1.npy",
+      "sha256": "409c1dbdb4fd377bd5d4817a0493a8ad9ecab714c8d2e0f706229d66dfc937f1",
+      "source": {
+        "data_offsets": [
+          5843988224,
+          5843988480
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "b5eb227a932c0c1f343cd3674f4c15c453c20c8f424b32a09cfa294b6951f257",
+        "shape": [
+          128
+        ],
+        "tensor": "transformer_blocks.1.attn.norm_q.weight"
+      }
+    },
+    {
+      "bytes": 384,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDEyOCwpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/9ad79f5fdbc3b0d073ffc57633e0ab8bf617c1b666d9decf7c377e5601c898db.npy",
+      "sha256": "9ad79f5fdbc3b0d073ffc57633e0ab8bf617c1b666d9decf7c377e5601c898db",
+      "source": {
+        "data_offsets": [
+          5843987968,
+          5843988224
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "838aec166d795b2c10ddc28dafb25e5f00645ddb3a7eede9d48b7ee3aa33a586",
+        "shape": [
+          128
+        ],
+        "tensor": "transformer_blocks.1.attn.norm_k.weight"
+      }
+    },
+    {
+      "bytes": 18874496,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDMwNzIpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/44a409d466adc7ad138cbbbaaaaf1d2db69ededb988ef62df81e5ae87551a178.npy",
+      "sha256": "44a409d466adc7ad138cbbbaaaaf1d2db69ededb988ef62df81e5ae87551a178",
+      "source": {
+        "data_offsets": [
+          5881737216,
+          5900611584
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "70674ebb1c115f32e67ef32130128edb9cd89b14a39e98c114466bb157279af0",
+        "shape": [
+          3072,
+          3072
+        ],
+        "tensor": "transformer_blocks.1.attn.to_out.0.weight"
+      }
+    },
+    {
+      "bytes": 384,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDEyOCwpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/dffc6af2047795181dca84017ae081f3c7bbd5d746e6edd1edbab74672e96c45.npy",
+      "sha256": "dffc6af2047795181dca84017ae081f3c7bbd5d746e6edd1edbab74672e96c45",
+      "source": {
+        "data_offsets": [
+          5843987456,
+          5843987712
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "bb6e6c1417d4f1d1a5aef381baf01ac26564b7316d63c97f5546035a32692278",
+        "shape": [
+          128
+        ],
+        "tensor": "transformer_blocks.1.attn.norm_added_k.weight"
+      }
+    },
+    {
+      "bytes": 18874496,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDMwNzIpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/157480f8f89f6f4fc231efa85a5fab992a08c51746d32c06a7fec06963e0a77b.npy",
+      "sha256": "157480f8f89f6f4fc231efa85a5fab992a08c51746d32c06a7fec06963e0a77b",
+      "source": {
+        "data_offsets": [
+          5787364352,
+          5806238720
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "a33610550fb3ba089bcdfe7b236dbdc390841410eab29845d63d00d6e020ef5c",
+        "shape": [
+          3072,
+          3072
+        ],
+        "tensor": "transformer_blocks.1.attn.add_k_proj.weight"
+      }
+    },
+    {
+      "bytes": 18874496,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDMwNzIpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/2ec11742a186da1cc1d7f181a33be7ab7b4b42702c43bc97e42fc276af74d0c0.npy",
+      "sha256": "2ec11742a186da1cc1d7f181a33be7ab7b4b42702c43bc97e42fc276af74d0c0",
+      "source": {
+        "data_offsets": [
+          5825113088,
+          5843987456
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "fdd7cae711ee7afd76e1833fd64cf6be9f081339b0bbce790d71415060aa001d",
+        "shape": [
+          3072,
+          3072
+        ],
+        "tensor": "transformer_blocks.1.attn.add_v_proj.weight"
+      }
+    }
+  ],
+  "parentCustody": {
+    "declared": {
+      "sha256": "01e22886882c7da1fa02e64772f9cb12befb87faf8612f08895a6a4a4ca9488a",
+      "size_bytes": 3404287
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794030864.2578847,
+      "sha256": "01e22886882c7da1fa02e64772f9cb12befb87faf8612f08895a6a4a4ca9488a",
+      "size_bytes": 3404287
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794030864.1439233,
+      "sha256": "01e22886882c7da1fa02e64772f9cb12befb87faf8612f08895a6a4a4ca9488a",
+      "size_bytes": 3404287
+    }
+  },
+  "parentJobID": "job-a2048028d7bf",
+  "sourceMetadataFiles": {
+    "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/consumer-ports.json": "7add56418aa47672146b605269727c29dbf692d5fd8b47f61a8f5d36f7a9b466",
+    "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/native-source-writers.json": "b282318bcd075315d823acdbc0f9c8418e93108f48e84db8ebc8ac1a568a39e2",
+    "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/plan.json": "ab050ddddf441a5d3f5ad3f0a34a4e702d93baed5bebd52bf664f333952d6e4e"
+  },
+  "sourceRootCorrection": {
+    "actual": "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result",
+    "authority": "Original frozen family plan.output/output_scratch; original array hashes unchanged.",
+    "planned": "/mnt/hdd8tb/mrun-work/job-a2048028d7bf/flux-binding-family-result"
+  },
+  "supportResolution": {
+    "candidates": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "changed": [
+      4,
+      11
+    ],
+    "input": "original IDs, masks, attribute spans, offsets and pieces only",
+    "support": [
+      4,
+      11,
+      12,
+      13
+    ],
+    "unchanged": [
+      12,
+      13
+    ]
+  },
+  "versions": {
+    "diffusers": "0.39.0",
+    "torch": "2.13.0+cu130"
+  },
+  "writerPorts": {
+    "P": {
+      "text_attention_gate": {
+        "bytes": 6272,
+        "logicalDtype": "torch.bfloat16",
+        "nativeStride": [
+          18432,
+          18432,
+          1
+        ],
+        "path": "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_attention_gate.npy",
+        "payloadSHA256": "1d6ef3fd24dd3d009578f66f2d27939cd80a8b5f04fdd7a2e158bb43c3237798",
+        "sha256": "5d0f129a4c4e08fac84efc5bb0851932d71b9b5636d1a094e9691427d1bf4637",
+        "shape": [
+          1,
+          1,
+          3072
+        ]
+      },
+      "text_attention_return_used": {
+        "bytes": 3145856,
+        "logicalDtype": "torch.bfloat16",
+        "nativeStride": [
+          1572864,
+          3072,
+          1
+        ],
+        "path": "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_attention_return_used.npy",
+        "payloadSHA256": "ed3ec12f398934ab6a218964e9056f3020ad28dbe69a6baeb3453037a70774bd",
+        "sha256": "1be80318c83fc1ef6b6e4f3c73fffe8737b1a384fc6a2a82e809d34f5b9d2bf4",
+        "shape": [
+          1,
+          512,
+          3072
+        ]
+      },
+      "text_in": {
+        "bytes": 3145856,
+        "logicalDtype": "torch.bfloat16",
+        "nativeStride": [
+          1572864,
+          3072,
+          1
+        ],
+        "path": "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_in.npy",
+        "payloadSHA256": "3285adde138ec6bd3b427d3882ce2b3ecb12e0034f6ab009dfc6a76e99d635f8",
+        "sha256": "b7db9f2a97d26da03061de0e13b9d227e324ff4a0bdeed45662429a92d9aa412",
+        "shape": [
+          1,
+          512,
+          3072
+        ]
+      },
+      "text_mlp_gate": {
+        "bytes": 6272,
+        "logicalDtype": "torch.bfloat16",
+        "nativeStride": [
+          18432,
+          18432,
+          1
+        ],
+        "path": "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_mlp_gate.npy",
+        "payloadSHA256": "041ad31541ab976412d04146814eaa504b3c8abfa73653928dc6ffd2e4d76fff",
+        "sha256": "a0f573ba86d4893edf28ac2c0cb1a64d5606a4b298987fac78196bfa9f2bbf9b",
+        "shape": [
+          1,
+          1,
+          3072
+        ]
+      },
+      "text_mlp_return_used": {
+        "bytes": 3145856,
+        "logicalDtype": "torch.bfloat16",
+        "nativeStride": [
+          1572864,
+          3072,
+          1
+        ],
+        "path": "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_mlp_return_used.npy",
+        "payloadSHA256": "353781588ebf0eda287112e389c30b7e90be7b376a6cac3e3434f06f7e8f8cdc",
+        "sha256": "129f7ba4c1eadb58da12c450ac83678d19a4ec30213e8e488b91dc0377426a95",
+        "shape": [
+          1,
+          512,
+          3072
+        ]
+      },
+      "text_out": {
+        "bytes": 3145856,
+        "logicalDtype": "torch.bfloat16",
+        "nativeStride": [
+          1572864,
+          3072,
+          1
+        ],
+        "path": "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_out.npy",
+        "payloadSHA256": "92314ddef7546cc4a82a224961e150da4a5cc5618bc24306306341561015829b",
+        "sha256": "287edad91bcbf5a4aab4ad847fb39718c891a477884c126ca51bb5d8bab33711",
+        "shape": [
+          1,
+          512,
+          3072
+        ]
+      }
+    },
+    "Q": {
+      "text_attention_gate": {
+        "bytes": 6272,
+        "logicalDtype": "torch.bfloat16",
+        "nativeStride": [
+          18432,
+          18432,
+          1
+        ],
+        "path": "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/text_attention_gate.npy",
+        "payloadSHA256": "1d6ef3fd24dd3d009578f66f2d27939cd80a8b5f04fdd7a2e158bb43c3237798",
+        "sha256": "5d0f129a4c4e08fac84efc5bb0851932d71b9b5636d1a094e9691427d1bf4637",
+        "shape": [
+          1,
+          1,
+          3072
+        ]
+      },
+      "text_attention_return_used": {
+        "bytes": 3145856,
+        "logicalDtype": "torch.bfloat16",
+        "nativeStride": [
+          1572864,
+          3072,
+          1
+        ],
+        "path": "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/text_attention_return_used.npy",
+        "payloadSHA256": "b54b90db44f7b8f3f69a6e70bbe125a05ec6914c8476241ab54945db7eeacfbd",
+        "sha256": "a3b30eaf35dcde02223f675d491cdbac387cae866074ebe988180bb3f7a12cb1",
+        "shape": [
+          1,
+          512,
+          3072
+        ]
+      },
+      "text_in": {
+        "bytes": 3145856,
+        "logicalDtype": "torch.bfloat16",
+        "nativeStride": [
+          1572864,
+          3072,
+          1
+        ],
+        "path": "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/text_in.npy",
+        "payloadSHA256": "d4c38b5ba1cb633b27d675198b64b57ebf54e7792e188aa81c3ecdc1f59c95d7",
+        "sha256": "aeff4be8035e4b3e24e412a520f4ea904090457482bff8c28002261040281caf",
+        "shape": [
+          1,
+          512,
+          3072
+        ]
+      },
+      "text_mlp_gate": {
+        "bytes": 6272,
+        "logicalDtype": "torch.bfloat16",
+        "nativeStride": [
+          18432,
+          18432,
+          1
+        ],
+        "path": "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/text_mlp_gate.npy",
+        "payloadSHA256": "041ad31541ab976412d04146814eaa504b3c8abfa73653928dc6ffd2e4d76fff",
+        "sha256": "a0f573ba86d4893edf28ac2c0cb1a64d5606a4b298987fac78196bfa9f2bbf9b",
+        "shape": [
+          1,
+          1,
+          3072
+        ]
+      },
+      "text_mlp_return_used": {
+        "bytes": 3145856,
+        "logicalDtype": "torch.bfloat16",
+        "nativeStride": [
+          1572864,
+          3072,
+          1
+        ],
+        "path": "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/text_mlp_return_used.npy",
+        "payloadSHA256": "03ac4ef5a031bf03fe2ce983192d836f30b7ff0886e34c22df984b80ee55929b",
+        "sha256": "1ab333f59e3de858dfdfe1ae319302fcf7106d13010658d586aa1aa87be3b48d",
+        "shape": [
+          1,
+          512,
+          3072
+        ]
+      },
+      "text_out": {
+        "bytes": 3145856,
+        "logicalDtype": "torch.bfloat16",
+        "nativeStride": [
+          1572864,
+          3072,
+          1
+        ],
+        "path": "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/text_out.npy",
+        "payloadSHA256": "6bed9144ebce761f3566248dfaeb5a3ceb9dad22b133944b8fe5df6649865344",
+        "sha256": "58ada85274c2367491dd0d2f6aa559632db49c91b2df6590736d2b89d51de36f",
+        "shape": [
+          1,
+          512,
+          3072
+        ]
+      }
+    }
+  }
+}

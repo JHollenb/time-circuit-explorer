@@ -1,0 +1,328 @@
+{
+  "CPUSecondsAfterImports": 10.839061883,
+  "assets": [
+    {
+      "bytesHashed": 541,
+      "path": "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/config.json",
+      "sha256": "09733c74a3da6d17dd0a0472a091a8950c7c6935889c32c16cc800ede05029de",
+      "signature": [
+        66311,
+        298051,
+        541,
+        1784967358756501000,
+        1784967358757491000
+      ]
+    },
+    {
+      "bytesHashed": 7751109744,
+      "path": "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/diffusion_pytorch_model.safetensors",
+      "sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+      "signature": [
+        66311,
+        298058,
+        7751109744,
+        1784967508577765300,
+        1784967508615361800
+      ]
+    }
+  ],
+  "contractions": [
+    {
+      "kind": "baseline-all-key-QK",
+      "nominalMACs": 4831838208
+    },
+    {
+      "kind": "baseline-physical-all-key-AV-selected-weights-zero",
+      "nominalMACs": 4831838208
+    }
+  ],
+  "fileQuarantine": {
+    "allowedFiles": [
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/config.json",
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/diffusion_pytorch_model.safetensors",
+      "/mnt/big/mdb/research/job-311678309d46/flux-binding-family-fresh-inputs/files.json",
+      "/mnt/big/mdb/research/job-311678309d46/flux-binding-family-fresh-inputs/token-addresses.json",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/consumer-ports.json",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/native-source-writers.json",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/plan.json",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/blobs/34c8692938e0ea8f97f09b53d4a16153408472d562bfbdf6c3beef43e4a3f686.safetensors",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/blobs/7b34ed4c73a67ab74a8665995676099450671b04531c326a9dbf729185a5e318.safetensors",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/cuts/b7f0fe0b6ef01e52bb5b14dafcf9202188c3b354e84f53d9979b1706c242e500.json",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/pages/1e8d2a6663924798743e7dd350fea2a5b9d275a6a31fbfce8c3e45146b80d551.json",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/pages/8dfcda9c1b88d9e75aa94be0a9aecb67767947741e8b17392d66e21a4851616c.json",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_attention_gate.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_attention_return_used.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_in.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_mlp_gate.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_mlp_return_used.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_out.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/image_out.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/text_attention_gate.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/text_attention_return_used.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/text_in.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/text_mlp_gate.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/text_mlp_return_used.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/text_out.npy"
+    ],
+    "deniedCanaries": [
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/targets.json",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/cases/sphere-cube-plain-2027/QQQ/consumer/native/R_attention.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/cases/sphere-cube-plain-2027/PQP/consumer/native/R_attention.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/endpoints/sphere-cube-plain-2027/native/QQQ.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/endpoints/sphere-cube-plain-2027/native/PQP.npy"
+    ],
+    "scope": "Trusted Python audit hook; exact numeric read allowlist applies inside and outside worker root.",
+    "successfulFileOpenCounts": {
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/config.json": 1,
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/diffusion_pytorch_model.safetensors": 2,
+      "/mnt/big/mdb/research/job-311678309d46/flux-binding-family-fresh-inputs/files.json": 1,
+      "/mnt/big/mdb/research/job-311678309d46/flux-binding-family-fresh-inputs/token-addresses.json": 1,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/consumer-ports.json": 1,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/native-source-writers.json": 1,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/plan.json": 1,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/blobs/34c8692938e0ea8f97f09b53d4a16153408472d562bfbdf6c3beef43e4a3f686.safetensors": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/blobs/7b34ed4c73a67ab74a8665995676099450671b04531c326a9dbf729185a5e318.safetensors": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/cuts/b7f0fe0b6ef01e52bb5b14dafcf9202188c3b354e84f53d9979b1706c242e500.json": 1,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/pages/1e8d2a6663924798743e7dd350fea2a5b9d275a6a31fbfce8c3e45146b80d551.json": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/pages/8dfcda9c1b88d9e75aa94be0a9aecb67767947741e8b17392d66e21a4851616c.json": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_attention_gate.npy": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_attention_return_used.npy": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_in.npy": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_mlp_gate.npy": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_mlp_return_used.npy": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_out.npy": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/image_out.npy": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/text_attention_gate.npy": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/text_attention_return_used.npy": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/text_in.npy": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/text_mlp_gate.npy": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/text_mlp_return_used.npy": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/text_out.npy": 2
+    }
+  },
+  "header": {
+    "bytes": 20584,
+    "sha256": "012278fec8c5203622e33f14a7da845b344c5dcd869980b04692348ff02420f6"
+  },
+  "linears": [
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        1024,
+        3072
+      ],
+      "inputStride": [
+        3145728,
+        3072,
+        1
+      ],
+      "nominalMACs": 9663676416,
+      "parameter": "transformer_blocks.1.attn.to_q.weight",
+      "weightShape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        1024,
+        3072
+      ],
+      "inputStride": [
+        3145728,
+        3072,
+        1
+      ],
+      "nominalMACs": 9663676416,
+      "parameter": "transformer_blocks.1.attn.to_k.weight",
+      "weightShape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        1024,
+        3072
+      ],
+      "inputStride": [
+        3145728,
+        3072,
+        1
+      ],
+      "nominalMACs": 9663676416,
+      "parameter": "transformer_blocks.1.attn.to_v.weight",
+      "weightShape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        512,
+        3072
+      ],
+      "inputStride": [
+        1572864,
+        3072,
+        1
+      ],
+      "nominalMACs": 4831838208,
+      "parameter": "transformer_blocks.1.attn.add_k_proj.weight",
+      "weightShape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        512,
+        3072
+      ],
+      "inputStride": [
+        1572864,
+        3072,
+        1
+      ],
+      "nominalMACs": 4831838208,
+      "parameter": "transformer_blocks.1.attn.add_v_proj.weight",
+      "weightShape": [
+        3072,
+        3072
+      ]
+    }
+  ],
+  "loadedParameters": [
+    {
+      "bytes": 18874368,
+      "dataOffsets": [
+        5900611584,
+        5919485952
+      ],
+      "name": "transformer_blocks.1.attn.to_q.weight",
+      "payloadSHA256": "7b87db87b38dbbcc4e055b8eec314b69da84dfca7c9f230ffa7fa9ac3f0abb04",
+      "shape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "bytes": 18874368,
+      "dataOffsets": [
+        5862862848,
+        5881737216
+      ],
+      "name": "transformer_blocks.1.attn.to_k.weight",
+      "payloadSHA256": "5b350549392f8b1880c5b1d83a7088370c4e5fead05f55304db349ccf4958bc1",
+      "shape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "bytes": 18874368,
+      "dataOffsets": [
+        5919485952,
+        5938360320
+      ],
+      "name": "transformer_blocks.1.attn.to_v.weight",
+      "payloadSHA256": "1c70ef54d0dd7d85e570841aa7707337a789d93b0bafbc5df59e67761de93e44",
+      "shape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "bytes": 18874368,
+      "dataOffsets": [
+        5787364352,
+        5806238720
+      ],
+      "name": "transformer_blocks.1.attn.add_k_proj.weight",
+      "payloadSHA256": "a33610550fb3ba089bcdfe7b236dbdc390841410eab29845d63d00d6e020ef5c",
+      "shape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "bytes": 18874368,
+      "dataOffsets": [
+        5825113088,
+        5843987456
+      ],
+      "name": "transformer_blocks.1.attn.add_v_proj.weight",
+      "payloadSHA256": "fdd7cae711ee7afd76e1833fd64cf6be9f081339b0bbce790d71415060aa001d",
+      "shape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "bytes": 256,
+      "dataOffsets": [
+        5843988224,
+        5843988480
+      ],
+      "name": "transformer_blocks.1.attn.norm_q.weight",
+      "payloadSHA256": "b5eb227a932c0c1f343cd3674f4c15c453c20c8f424b32a09cfa294b6951f257",
+      "shape": [
+        128
+      ]
+    },
+    {
+      "bytes": 256,
+      "dataOffsets": [
+        5843987968,
+        5843988224
+      ],
+      "name": "transformer_blocks.1.attn.norm_k.weight",
+      "payloadSHA256": "838aec166d795b2c10ddc28dafb25e5f00645ddb3a7eede9d48b7ee3aa33a586",
+      "shape": [
+        128
+      ]
+    },
+    {
+      "bytes": 256,
+      "dataOffsets": [
+        5843987456,
+        5843987712
+      ],
+      "name": "transformer_blocks.1.attn.norm_added_k.weight",
+      "payloadSHA256": "bb6e6c1417d4f1d1a5aef381baf01ac26564b7316d63c97f5546035a32692278",
+      "shape": [
+        128
+      ]
+    }
+  ],
+  "nominalMACs": 48318382080,
+  "numericalProfile": {
+    "bf16ReducedPrecisionReduction": true,
+    "cublasWorkspaceConfig": ":4096:8",
+    "cudaMatmulTF32": false,
+    "cudnnBenchmark": false,
+    "cudnnDeterministic": true,
+    "cudnnTF32": false,
+    "deterministicAlgorithms": true,
+    "float32MatmulPrecision": "highest",
+    "threads": 4
+  },
+  "parameterInputRNGClosure": true,
+  "peakCUDAAllocatedBytes": 274351616,
+  "peakCUDAReservedBytes": 297795584,
+  "wallSecondsAfterImports": 12.563044295180589
+}

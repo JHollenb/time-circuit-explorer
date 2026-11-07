@@ -2,7 +2,9 @@
 
 An interactive field guide to model computation: native execution, recovered time circuits, and the state that connects one computation to the next.
 
-The [addressed value-event producer](docs/addressed-value-innovation.md) now forms its own changed attention carrier and MLP operands from a fixed-Q/K value swap. Exit response error is 18.34% overall, 5.93% near the event and 68.22% far away; median row error remains 95.49%. Fresh Q/K/V and original maps remain paid. The 125.07-second run has 266 passing mechanics tests and full-byte custody. Arbitrary-prompt zero-neural images remain open.
+The [sparse text K/V producer](docs/sparse-text-kv-innovation.md) now reconstructs four family-resolved rows and updates the next image-attention read through a paid complement cache. Native response error is 7.18%, with 40.03% median query error and 20/1,024 rows losing to zero. Both source text endpoints match original BF16 words. The 59.49-second assay pays 67.847 billion matrix MACs, has 270 passing tests and full-byte custody; original learned maps/source production remain required. Arbitrary-prompt zero-neural images remain open.
+
+The [addressed value-event producer](docs/addressed-value-innovation.md) forms its own changed attention carrier and MLP operands from a fixed-Q/K value swap. Exit response error is 18.34% overall, 5.93% near the event and 68.22% far away; median row error remains 95.49%. Fresh Q/K/V and original maps remain paid. The 125.07-second run has 266 passing mechanics tests and full-byte custody. Arbitrary-prompt zero-neural images remain open.
 
 The [shared normalization innovation](docs/shared-normalization-innovation.md) produces both changed gate/up operands without receiving either native B operand. Local-exit response error is 2.69%/2.60% across two receivers, about 19% nonlocal. Four learned contractions cost 116.021 billion nominal MACs; native A baselines/carriers remain paid. The 176.10-second assay has 260 passing mechanics tests and full-byte custody, with 96 R1 exit rows worse than the older predictor.
 

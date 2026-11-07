@@ -1,0 +1,55 @@
+{
+  "schema": "tce-sparse-text-kv-advisor-v1",
+  "cycle": 52,
+  "advisor": "gpt-6-astra",
+  "agent": "/root/astra_zero_forward_advisor",
+  "reviewedSources": {
+    "sparse_text_kv.py": "872f0871dbe67c24197e9fcf6a92607673c5d66fb976b4657e1075425ab1b652",
+    "sparse_text_kv_worker.py": "44ffce9f5ca8de258018b55898ab08b50a7634b1eeaf1fe1c76c635610eb3732",
+    "sparse_text_kv_study.py": "a83d878d3a138ccb041a85c471a49279759ed4c1f36efa65b7dabf8f88650069",
+    "sparse_text_kv_analysis.py": "655b2a3709477c5dfd34c68752323790f830ca2db5dc3035273b92881d95eef2",
+    "report.json": "2eff58e258c605f9ec0c632a271427cdf2a7a87ebe77ec8c03ad46a3efda2558",
+    "compiler.json": "b98d648d30df7f21948fc3854057c591eb79a025b5d29c0a3bc350e97688e7f2",
+    "compiler-seal.json": "81677772d9dce36a3ca4da1c7629c3107f41ed59e3c5ef7bd2572fd9cfefcf7d",
+    "primary.json": "1dd07f7ab9f3d226ae5cfc779dff958c696ecf568c80a3cd17585f9808c98d58",
+    "primary-seal.json": "9241fec922084585312377815ff140c400fbffd9ee218b32076d28b48313df21"
+  },
+  "blogSnapshots": [
+    {
+      "path": "../../../../obsidian/blog/2026-11-06-224703-testing-whether-a-model-separates-operands-from-instructions.md",
+      "sha256": "75e78f951c0de932c9fe4a76df5f91dd642b2e0e378513e916bd580d7f655969",
+      "interpretation": "Prepared proposal and checked corpus mechanics; no executed native operand/instruction role result."
+    }
+  ],
+  "priorRelatedReview": "../value-innovation-evidence/advisor.json",
+  "sourceReview": "No execution-blocking mathematical or native API defect. Positive complement, original rotary positions and physical dense compiler AV accounting match the plan. All four sources match staged pins.",
+  "preRunQualifications": [
+    "Actor/scorer bind compiler seal and individual array hashes; independent publication audit must additionally check complete compiler.json-to-seal join.",
+    "Decoded floating equality is not signed-zero-sensitive BF16 equality; supplement with original payload bytes.",
+    "Fresh contiguous Wo input and compact GEMM/FP64 attention boundaries differ from the original native profile's concatenated attention slice."
+  ],
+  "postRunReview": "Useful conditional read program:7.18%relative responseRMS/cosine.99742. Medianqueryerror40.03%,20of1024lose tozero. Left/rightabsoluteerrorsnearlyequal withdifferent native magnitudes; no regionalmechanism inferred. Small endpoints do not qualify subsequent MLP or image.",
+  "qualificationResolution": "Astra independently checked compiler/primary JSON-to-seal joins. Root publication audit additionally verifies85completefiles and57NPYpayloads; both complete source-text BF16 payloads match. Frozen science unchanged.",
+  "nextCut": {
+    "status": "written-unexecuted",
+    "plan": "../../plans/projected-complement-reader.md",
+    "law": "Compile Ntilde_h=Wo_h*N_h. Fresh actor forms own4KV rows and projectedvalue directions. Literal perhead A_h=w_h*Vtilde_h;T_h=(c_h*Ntilde_h+A_h)/D_h; fixedascendingheadsum, FP64→FP32→BF16, nativegate/residual.",
+    "compilerMatrixMACs": 9663676416,
+    "perActorMatrixMACs": 427819008,
+    "perActorCacheScalarMultiplyAddPairs": 75497472,
+    "perActorDivisions": 75497472,
+    "perActorHeadReductionAdditions": 72351744,
+    "projectedCacheBytes": 604372992,
+    "numericalScope": "Exact real-arithmetic linear composition removes intermediate BF16 head rounding; no native-exactness claim or precision sweep.",
+    "validation": "Seal/exit both actors before opening cycle52 outputs or original family R_attention. Retain sham, signed response, every actual query and countertrends; no newMLP/suffix/image.",
+    "dependencyScope": "Amortized source-assisted producer. Original source production, baseline cache, K/V maps, selected Wo evaluations and fixed-query assumption remain paid."
+  },
+  "accountingCorrection": {
+    "preliminaryAdvisorNumber": 503316480,
+    "preliminaryComparison": "19.4x recurring MAC reduction",
+    "correction": "Preliminary count included75,497,472cache scale-add pairs as MAC-equivalents, inconsistent with cycle52's matrix-contraction convention. Correct matrixMACs427,819,008; record scalar operations separately. Retire bare19.4xcomparison.",
+    "status": "Corrected before the new plan was staged or executed. No changed historical measurement."
+  },
+  "goalStatus": "active-unsolved",
+  "nextPeriodicReviewCycle": 55
+}
