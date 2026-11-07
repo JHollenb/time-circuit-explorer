@@ -1,0 +1,197 @@
+{
+  "assets": [
+    {
+      "bytesHashed": 541,
+      "path": "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/config.json",
+      "sha256": "09733c74a3da6d17dd0a0472a091a8950c7c6935889c32c16cc800ede05029de",
+      "signature": [
+        66311,
+        298051,
+        541,
+        1784967358756501000,
+        1784967358757491000
+      ]
+    },
+    {
+      "bytesHashed": 7751109744,
+      "path": "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/diffusion_pytorch_model.safetensors",
+      "sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+      "signature": [
+        66311,
+        298058,
+        7751109744,
+        1784967508577765300,
+        1784967508615361800
+      ]
+    }
+  ],
+  "fileQuarantine": {
+    "allowedFiles": [
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/config.json",
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/diffusion_pytorch_model.safetensors",
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/cells/R0A/fused.npy",
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/cells/R1A/fused.npy",
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/shared/A.gatedCarrier.npy",
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/shared/B.gatedCarrier.npy",
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/shared/R0.embedding.npy",
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/shared/R1.embedding.npy",
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/shared/onePlusScale.npy",
+      "/mnt/hdd8tb/mrun-work/job-31811b103879/clock-arrays/3/double_img.npy"
+    ],
+    "deniedCanaries": [
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/cells/R0B/fused.npy",
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/cells/R1B/fused.npy",
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/cells/R0A/product.npy",
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/cells/R1A/product.npy",
+      "/mnt/hdd8tb/mrun-work/job-f21da64e0e39/arrays/candidate/imageExit.npy",
+      "/mnt/hdd8tb/mrun-work/job-524c9a8e838e/targets.json"
+    ],
+    "scope": "Trusted-code guard; both B fused and all target/control outputs denied until complete primary seal/child exit.",
+    "successfulFileOpenCounts": {
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/config.json": 1,
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/diffusion_pytorch_model.safetensors": 2,
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/cells/R0A/fused.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/cells/R1A/fused.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/shared/A.gatedCarrier.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/shared/B.gatedCarrier.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/shared/R0.embedding.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/shared/R1.embedding.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/shared/onePlusScale.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-31811b103879/clock-arrays/3/double_img.npy": 2
+    }
+  },
+  "header": {
+    "bytes": 20584,
+    "sha256": "012278fec8c5203622e33f14a7da845b344c5dcd869980b04692348ff02420f6"
+  },
+  "linears": [
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        1,
+        1024,
+        3072
+      ],
+      "nominalMACs": 57982058496,
+      "parameter": "transformer_blocks.0.ff.linear_in.weight",
+      "role": "shared-innovation",
+      "weightShape": [
+        18432,
+        3072
+      ]
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        1,
+        1,
+        3072
+      ],
+      "nominalMACs": 56623104,
+      "parameter": "transformer_blocks.0.ff.linear_in.weight",
+      "role": "shared-innovation",
+      "weightShape": [
+        18432,
+        3072
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        1024,
+        9216
+      ],
+      "nominalMACs": 28991029248,
+      "parameter": "transformer_blocks.0.ff.linear_out.weight",
+      "receiver": "R0",
+      "role": "recipient-exit",
+      "weightShape": [
+        3072,
+        9216
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        1024,
+        9216
+      ],
+      "nominalMACs": 28991029248,
+      "parameter": "transformer_blocks.0.ff.linear_out.weight",
+      "receiver": "R1",
+      "role": "recipient-exit",
+      "weightShape": [
+        3072,
+        9216
+      ]
+    }
+  ],
+  "loadedParameters": [
+    {
+      "bytes": 113246208,
+      "dataOffsets": [
+        5447625728,
+        5560871936
+      ],
+      "name": "transformer_blocks.0.ff.linear_in.weight",
+      "payloadSHA256": "11ef5a54a5420e5e147308185b9b98be9b91b4ba28e79fe8a3aaa6316638d6d2",
+      "shape": [
+        18432,
+        3072
+      ]
+    },
+    {
+      "bytes": 56623104,
+      "dataOffsets": [
+        5560871936,
+        5617495040
+      ],
+      "name": "transformer_blocks.0.ff.linear_out.weight",
+      "payloadSHA256": "e23f12e4b3e53006cc565e27f657be26b0a73a8a3a2a98d767d615e2552f2073",
+      "shape": [
+        3072,
+        9216
+      ]
+    }
+  ],
+  "numericalProfile": {
+    "bf16ReducedPrecisionReduction": true,
+    "cublasWorkspaceConfig": ":4096:8",
+    "cudaMatmulTF32": false,
+    "cudnnBenchmark": false,
+    "cudnnDeterministic": true,
+    "cudnnTF32": false,
+    "deterministicAlgorithms": true,
+    "float32MatmulPrecision": "highest",
+    "threads": 4
+  },
+  "parameterInputRNGClosure": true,
+  "peakCUDAAllocatedBytes": 216012800,
+  "peakCUDAReservedBytes": 230686720,
+  "schema": "tce-normalization-innovation-execution-v1",
+  "setupSecondsAfterImports": 10.591309669893235,
+  "timings": [
+    {
+      "role": "shared-innovation",
+      "wallSecondsInstrumented": 1.8933164128102362
+    },
+    {
+      "receiver": "R0",
+      "role": "recipient-exit",
+      "wallSecondsInstrumented": 5.507791338954121
+    },
+    {
+      "receiver": "R1",
+      "role": "recipient-exit",
+      "wallSecondsInstrumented": 4.982140505220741
+    }
+  ],
+  "workerCPUSecondsAfterImports": 22.282337665,
+  "workerWallSecondsAfterImports": 24.781761145684868
+}

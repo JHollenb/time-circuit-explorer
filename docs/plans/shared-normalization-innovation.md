@@ -1,6 +1,6 @@
 # Produce both B operands from one shared normalization innovation
 
-Status: **written, unexecuted**. [Astra49](../results/product-transport-evidence/advisor.json) selects this constructive upstream cut after the [recipient-conditioned product result](../recipient-conditioned-product.md). It removes both supplied B fused operands, with no fit, rank scan, full suffix or new reference campaign.
+Status: **executed**, job-524c9a8e838e. The [result](../shared-normalization-innovation.md) retains both sealed B predictions, native prefix closure, finite defects, inherited controls and query countertrends. The [pre-execution plan](../results/normalization-innovation/frozen-plan.md) remains immutable. [Astra49](../results/product-transport-evidence/advisor.json) selected this upstream cut after the [recipient-conditioned product result](../recipient-conditioned-product.md). Both supplied B fused operands were removed; no fit, rank scan, full suffix or new reference campaign ran.
 
 ## The finite-change structure to test
 
@@ -27,6 +27,8 @@ J is one complete 1,024-row shared projection. Beta is one clock-shift row, broa
 \]
 
 Freeze FP64 for J, beta and the displayed formula; explicitly convert FP64→FP32→BF16 afterward. Feed each complete predicted fused B through native BF16 SiLU/product, one original down, clock gate and original residual commit. No native B operand is refreshed during this computation.
+
+Implementation clarification before staging: both FP64 contractions and the scalar statistics/secant use Torch on CPU with four threads. Original parameters load on CPU; only the BF16 down matrix moves to CUDA. Residual additions and both native nonlinear/down paths use the qualified CUDA BF16 profile. Two typed exit Acts bind the shared J/beta payloads and original allowed operands. The shared projection is counted once outside those Acts; neither Act recomputes it. Candidate and scorer run in separate processes.
 
 ## What is exact and what remains unclosed
 

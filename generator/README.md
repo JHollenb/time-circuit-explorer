@@ -102,6 +102,8 @@ The hosted static Site displays saved measured examples. It cannot execute the m
 
 ## Generate from the command line
 
+The [shared normalization-innovation assay](../docs/shared-normalization-innovation.md) uses `normalization_innovation_study.py stage|submit|collect`, `publish_normalization_innovation.py verify|publish|audit`, `summarize_normalization_innovation.py` and `plot_normalization_innovation.py`. One CPU FP64 shared projection/clock row produces two B operands, then two native CUDA downs finish the candidates. Both seal before native targets and cycle 49 controls are admitted. All 260 mechanics tests pass; learned arithmetic and supplied A/carrier preparation remain paid. This is separate from arbitrary-prompt image serving.
+
 The [recipient-conditioned product assay](../docs/recipient-conditioned-product.md) uses `product_transport_study.py stage|submit|collect`, `publish_product_transport.py verify|publish|audit`, `summarize_product_transport.py` and `plot_product_transport.py`. An isolated child seals its FP64→FP32→BF16 transport and one original native down before separate endpoint/control scoring. All 256 mechanics tests pass; full arrays remain near compute. This conditional local prediction still pays native input preparation and learned arithmetic and is separate from arbitrary-prompt image serving.
 
 ```sh

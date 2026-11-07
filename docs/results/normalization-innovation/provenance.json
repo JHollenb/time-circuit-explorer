@@ -1,0 +1,224 @@
+{
+  "completeCollectedInventory": {
+    "bytes": 17346187,
+    "files": {
+      "execution.json": {
+        "bytes": 6166,
+        "sha256": "3238cf26fc9ffb8661565a8169e3471b10d42d644ee714c1d4608d03229121b3"
+      },
+      "frozen-plan.md": {
+        "bytes": 6033,
+        "sha256": "160a58cf1e56c73d33eb923b0f5837cc361bc029f1cf90d8c7527e9a2ca9d2cd"
+      },
+      "inputs.json": {
+        "bytes": 9747,
+        "sha256": "a1ab1184163df7c279e0c78e2f666ef92d223231aaaf44e14da84540995bdd42"
+      },
+      "operand-queries.jsonl": {
+        "bytes": 3168874,
+        "sha256": "ed441d599c25319f33d2a2bf5fa763cd79fc0d7490361b18c7fb483ccc1af86e"
+      },
+      "primary-seal.json": {
+        "bytes": 228,
+        "sha256": "722ed3cc694adfad94813620ea703d980c80bcd0100821f2d86d8bd8ad7f8c95"
+      },
+      "primary.json": {
+        "bytes": 41918,
+        "sha256": "94b2a7b4491751d581489b26b4138362c16f8b5d88741611f838a16b5368f7ff"
+      },
+      "queries.jsonl": {
+        "bytes": 14030229,
+        "sha256": "14f5d47392ca99cb8168e53abadeb519b747b379060a6fb1c34ef9d9cad5f810"
+      },
+      "report.json": {
+        "bytes": 48437,
+        "sha256": "63c281e73789bf1c1d0a3c053906e0c03663be0c60090d3f52ec02da3a2649a5"
+      },
+      "request.json": {
+        "bytes": 4560,
+        "sha256": "583a8a528aa8baa01adfc92ceebeb6ed8015d2310838e41b48d1573c82b009e2"
+      },
+      "resource-basis.json": {
+        "bytes": 2162,
+        "sha256": "7f756a902eac48ac15158f7dd488dcf19f751e0e852a9cbab523519ba80da783"
+      },
+      "response-fields.json": {
+        "bytes": 14170,
+        "sha256": "a1032bd6f3e13b0381a89a13fc733fef6107ef6bd96405606e5222b88ad2daab"
+      },
+      "targets.json": {
+        "bytes": 13663,
+        "sha256": "f9432901ee6521ed321a6abee5ff057be497aed358b84fbed5710102843f477f"
+      }
+    }
+  },
+  "jobID": "job-524c9a8e838e",
+  "losslessStreams": [
+    {
+      "published": "operand-queries.jsonl.gz",
+      "publishedBytes": 634053,
+      "publishedSHA256": "ad4691d10feb04ff229e7401f90e23044aea8bc6d03a137c2d3ab8857b6cdf03",
+      "source": "operand-queries.jsonl",
+      "sourceBytes": 3168874,
+      "sourceSHA256": "ed441d599c25319f33d2a2bf5fa763cd79fc0d7490361b18c7fb483ccc1af86e"
+    },
+    {
+      "published": "queries.jsonl.gz",
+      "publishedBytes": 2560634,
+      "publishedSHA256": "9d0e3e15ac0fcfed1226fb1d23f84f27e248b40a3353a32daf022393c467ea25",
+      "source": "queries.jsonl",
+      "sourceBytes": 14030229,
+      "sourceSHA256": "14f5d47392ca99cb8168e53abadeb519b747b379060a6fb1c34ef9d9cad5f810"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "d543d71886c5c0148a88d0b753c076ccede78f4c4ad4036d228eecd2c1247d30",
+      "size_bytes": 3147355
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794031076.3198528,
+      "sha256": "d543d71886c5c0148a88d0b753c076ccede78f4c4ad4036d228eecd2c1247d30",
+      "size_bytes": 3147355
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794031057.9889371,
+      "sha256": "d543d71886c5c0148a88d0b753c076ccede78f4c4ad4036d228eecd2c1247d30",
+      "size_bytes": 3147355
+    }
+  },
+  "requestSHA256": "243fa6ba37fa172c7fef3bea32fd9ab38a4aa8ac003b62afbb820f17a07bdec9",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-524c9a8e838e",
+      "job_log": {
+        "bytes": 455,
+        "sha256": "9c24e8aa3408eb898fb2cbe918b2a740e6d0fd4e7626acbec5e680a4062373ef"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-524c9a8e838e/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=4",
+        "OPENBLAS_NUM_THREADS=4",
+        "MKL_NUM_THREADS=4",
+        "CUBLAS_WORKSPACE_CONFIG=:4096:8",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "--with",
+        "./mdb_runtime-0.1.0-py3-none-any.whl",
+        "--with",
+        "./saturn_pub-0.4.1-py3-none-any.whl",
+        "--with",
+        "./mrun_pub-0.1.2-py3-none-any.whl",
+        "python",
+        "-u",
+        "normalization_innovation_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-524c9a8e838e",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-524c9a8e838e/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794031076.2873166
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794031076.3470142
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794031076.3702197
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794031076.3996475
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794031252.2741861
+        },
+        {
+          "name": "finished",
+          "ts": 1794031252.2949398
+        }
+      ]
+    },
+    "elapsed_s": 176.1,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "d543d71886c5c0148a88d0b753c076ccede78f4c4ad4036d228eecd2c1247d30",
+      "size_bytes": 3147355
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 2719.9,
+    "peak_vram_mb": 534.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-normalization-innovation-publication-v1",
+  "scope": "Both supplied B fused operands omitted. Original A baselines/embeddings/carriers, FP64 learned contractions and two native down paths paid. No cheap first prompt, own-state/image or strictzero-neural claim."
+}

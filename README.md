@@ -2,6 +2,8 @@
 
 An interactive field guide to model computation: native execution, recovered time circuits, and the state that connects one computation to the next.
 
+The [shared normalization innovation](docs/shared-normalization-innovation.md) now produces both changed gate/up operands without receiving either native B operand. Local-exit response error is 2.69%/2.60% across two receivers, about 19% nonlocal. Four learned contractions cost 116.021 billion nominal MACs; native A baselines/carriers remain paid. The 176.10-second assay has 260 passing mechanics tests and full-byte custody, with 96 R1 exit rows worse than the older predictor. Arbitrary-prompt zero-neural images remain open.
+
 The [recipient-conditioned MLP prediction](docs/recipient-conditioned-product.md) reduces local-exit response error from 50.57% to 4.48% on a supplied pair (50.25% to 22.90% nonlocal). One original down costs 28.991 billion nominal MACs; native baselines/source increments remain paid. The 77.34-second assay has 256 passing mechanics tests, complete byte custody and retained countertrends. Arbitrary-prompt zero-neural images remain open.
 
 Two interchangeable model packs explore the frozen R3 Mamba ISA model and FLUX.2 Klein 4B. Both connect an expandable architecture, recorded native evidence, mathematical reconstructions, and the state that makes the next input. Small browser calculations expose the relevant algebra without downloading a model.

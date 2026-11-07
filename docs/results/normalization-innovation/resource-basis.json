@@ -1,0 +1,61 @@
+{
+  "exception": "Generic full-model/B64 planning cannot represent2CPUFP64contractions+2CUDA BF16downs. Cycle49 measured1664MBRSS/494MBVRAM; add453MBFP64CPUweight and shared151MBJ with streamed recipient captures. Cycle48 four-matrix job measured2907MBRSS/700MBVRAM. Select4096MBRAM/1024MBVRAM CPU4/disk6GB;5325MBguardceil fits66513MB host less3326margin. Weights/operands are Beast-local; hard pin. Actual measurement replaces this basis for matching future runs.",
+  "intentFirstPreview": {
+    "beast": {
+      "artifact_id": null,
+      "artifact_kind": null,
+      "artifact_locator": {},
+      "artifact_mount": null,
+      "backend": "diffusers",
+      "device": "cuda",
+      "dtype": "bfloat16",
+      "engine_options": {},
+      "engine_profile": "backend:diffusers",
+      "est_ram_mb": 8410.0,
+      "est_vram_mb": 27327.4,
+      "est_wall_s": null,
+      "max_batch": 64,
+      "model": "flux2-klein-4b-distilled",
+      "ram_limit_mb": 36058.6,
+      "reasons": [
+        "host=beast ram=66513MB cuda=True mps=False ane=False task=forward",
+        "dtype=bfloat16 (explicit opt-in \u2014 not the canonical path)",
+        "device=cuda (explicit)",
+        "TF32 forced OFF on cuda (breaches 4-decimal stats)",
+        "backend=diffusers (explicit)",
+        "max_batch=64 threads=4 ram_limit=36059MB (est x 1.3)",
+        "selector fallback: explicit backend has no matching local artifact",
+        "science runtime envelope: diffusers"
+      ],
+      "threads": 4,
+      "weights_gb": 9.6
+    }
+  },
+  "measuredParents": [
+    {
+      "jobID": "job-0807587485a6",
+      "result": {
+        "elapsed_s": 123.92,
+        "peak_rss_mb": 2907.1,
+        "peak_vram_mb": 700.0
+      }
+    },
+    {
+      "jobID": "job-f21da64e0e39",
+      "result": {
+        "elapsed_s": 77.34,
+        "peak_rss_mb": 1663.9,
+        "peak_vram_mb": 494.0
+      }
+    }
+  ],
+  "workingSet": {
+    "BF16ParameterBytes": 169869312,
+    "FP64Contractions": "CPU4",
+    "FP64InputMatrixBytes": 452984832,
+    "FP64SharedJBytes": 150994944,
+    "nativeProductDownResidual": "CUDA BF16 B1",
+    "retainedBytesApprox": 3300000000,
+    "separatePrimaryAndScorer": true
+  }
+}
