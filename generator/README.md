@@ -78,6 +78,8 @@ The [rank-one state follow-up](../docs/rank-one-tail-state.md) implements source
 
 The [omitted-score diagnostic](../docs/rank-one-omission-diagnostic.md) expands the fixed rank-one/full-quadratic difference into signed mass and value terms. `rank_one_omission_study.py stage|submit|collect` runs the saved-array CPU assay; `publish_rank_one_omission.py verify|publish` authenticates complete arrays and lossless observations. No original parameters, consumers or model calls run. `plot_rank_one_omission.py` renders published scalars. The useful mixed-value term is diagnostic, with full-direction inputs still supplied; it is not a serving correction.
 
+The [source-native global reader assay](../docs/source-native-global-reader.md) uses **`source_native_study.py stage|submit|collect`** with one guarded Saturn lease. It recomputes46first-joint image reads, fits one discovery-only paired ridge writer, seals coefficients before fresh readout serving, then commits two main candidates through the native scheduler/VAE. `publish_source_native.py verify|publish`, `audit_source_native.py` and `plot_source_native.py` authenticate complete bytes, typed handoffs, all dependent observations and original PNGs. This program costs1.092%of full-call affine MACs per served read/writer, but loses to hold on every feedback/evaluation/main velocity field. It remains learned computation and is separate from the website's arbitrary-prompt reconstructed generator.
+
 ## Generate from the website
 
 From this repository in the domains workspace, with the configured mrun client and reachable fleet:

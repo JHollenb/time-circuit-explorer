@@ -1,0 +1,150 @@
+{
+  "baselineWriter": {
+    "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/baseline-writer.npy",
+    "sha256": "9aa0e891382f49e178c40fc71d4207f78e4bf38003b004343092b780393d4daf"
+  },
+  "discoveryPacket": {
+    "bytes": 264243206,
+    "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/discovery.npz",
+    "sha256": "4a3ac41b9b784d836e1d8fc251e5db2966908fb32445ecaad70fc7171b15271a"
+  },
+  "fields": {
+    "bias": {
+      "bytes": 1152,
+      "logicalDtype": "float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/fit/bias.npy",
+      "payloadSHA256": "6e3de31a0498e4ed3159d6c4d9787ffde54d7f4a7b2fc6180624c8f6dc75030e",
+      "sha256": "1b94280048703dc90a09602b33cf691232008e2cebab569d402fa7a87ad4dc22",
+      "shape": [
+        128
+      ],
+      "storedDtype": "float64"
+    },
+    "mean": {
+      "bytes": 26752,
+      "logicalDtype": "float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/fit/mean.npy",
+      "payloadSHA256": "6fc69eefe4331a080ea6b70d7892515354257717c2c91bf8286fb0a2a5835608",
+      "sha256": "941c8e621a0efefbc841ca0379bb62c8a145b2b36fec30c1441774de51cd5c79",
+      "shape": [
+        3328
+      ],
+      "storedDtype": "float64"
+    },
+    "scale": {
+      "bytes": 26752,
+      "logicalDtype": "float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/fit/scale.npy",
+      "payloadSHA256": "e093b977e0ced48f4f8bc12a794fed2fc2079cd6aacf46225dd285467c59ab41",
+      "sha256": "e938943cca0c6aebdf9c8ead7d494869e7c51f0cf8bc47b1534e07e32319e623",
+      "shape": [
+        3328
+      ],
+      "storedDtype": "float64"
+    },
+    "weight": {
+      "bytes": 3408000,
+      "logicalDtype": "float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/fit/weight.npy",
+      "payloadSHA256": "64a42846c7e34f839a7503c1dd8446e879759e836b53355f3ffa4132ac8f74b0",
+      "sha256": "6d743f6f17840dff0bb5fdb3aff40952f9ba53171b02c3ee5f38eeb58cb8e46d",
+      "shape": [
+        3328,
+        128
+      ],
+      "storedDtype": "float64"
+    }
+  },
+  "fitEvidence": {
+    "act": "tce.fit_velocity_writer:v1",
+    "elapsed_ms": 7327.099998947233,
+    "implementation": "one-closed-form-proposal",
+    "input_frame_id": "f03a2f7c7b279da2a89c3a066d58a3904e08afceeb26fd9c21d6e588483571e6",
+    "metrics": {
+      "discoveryOnly": true,
+      "epochs": 0,
+      "gain": 1
+    },
+    "numerical_contract": "discovery-only-FP64-ridge-and-paired-response",
+    "output_frame_id": "c6d23ed9b3495e827101b4073ff84e60301378f1984e2730e872f4007b14688b"
+  },
+  "fitReceiptSHA256": "8c54a31f842bfad4af5a03f142d12c3a7c646225d76788424192a9f90202483c",
+  "fittedFrame": {
+    "act": "tce.fit_velocity_writer:v1",
+    "frame_id": "c6d23ed9b3495e827101b4073ff84e60301378f1984e2730e872f4007b14688b",
+    "implementation": "one-closed-form-proposal",
+    "metadata": {},
+    "parent_frame_id": "f03a2f7c7b279da2a89c3a066d58a3904e08afceeb26fd9c21d6e588483571e6",
+    "program_fingerprint": "bc7d236f5526e38a8e50c02d53568e83b8721af7279299ef5015a726d77ad360",
+    "schema": "saturn-frame-v1",
+    "slots": {
+      "discoveryPacket": {
+        "abi": {},
+        "fingerprint": "0013805abbee1cca11bf767564d154613235ea37c7aafa0fe76ae3a58b590d6d",
+        "handle": "saturn://discoveryPacket",
+        "kind": "opaque",
+        "name": "discoveryPacket"
+      },
+      "writer": {
+        "abi": {},
+        "fingerprint": "232bccb3f62825f16d13b15f6bb7abe8c3b911fc0a0caf88d8337fe9aa2adf9d",
+        "handle": "saturn://writer",
+        "kind": "opaque",
+        "name": "writer"
+      }
+    }
+  },
+  "gain": 1,
+  "restoredFrame": {
+    "act": "root:v1",
+    "frame_id": "f03a2f7c7b279da2a89c3a066d58a3904e08afceeb26fd9c21d6e588483571e6",
+    "implementation": "saturn",
+    "metadata": {},
+    "parent_frame_id": null,
+    "program_fingerprint": "bc7d236f5526e38a8e50c02d53568e83b8721af7279299ef5015a726d77ad360",
+    "schema": "saturn-frame-v1",
+    "slots": {
+      "discoveryPacket": {
+        "abi": {},
+        "fingerprint": "0013805abbee1cca11bf767564d154613235ea37c7aafa0fe76ae3a58b590d6d",
+        "handle": "saturn://discoveryPacket",
+        "kind": "opaque",
+        "name": "discoveryPacket"
+      },
+      "writer": {
+        "abi": {},
+        "fingerprint": "20328e4cb4ab7068b1a670bbdf5954fee76e3a49eee74aa7bdb6487ed7ade3af",
+        "handle": "saturn://writer",
+        "kind": "opaque",
+        "name": "writer"
+      }
+    }
+  },
+  "rollbackScope": "Reselect the immutable baseline Frame; not restoration of mutated solver/model state. No optimizer/RNG/epoch state exists. Original reader parameters remain separately fingerprinted.",
+  "schema": "tce-source-native-coefficient-seal-v1",
+  "sourceFrame": {
+    "act": "root:v1",
+    "frame_id": "f03a2f7c7b279da2a89c3a066d58a3904e08afceeb26fd9c21d6e588483571e6",
+    "implementation": "saturn",
+    "metadata": {},
+    "parent_frame_id": null,
+    "program_fingerprint": "bc7d236f5526e38a8e50c02d53568e83b8721af7279299ef5015a726d77ad360",
+    "schema": "saturn-frame-v1",
+    "slots": {
+      "discoveryPacket": {
+        "abi": {},
+        "fingerprint": "0013805abbee1cca11bf767564d154613235ea37c7aafa0fe76ae3a58b590d6d",
+        "handle": "saturn://discoveryPacket",
+        "kind": "opaque",
+        "name": "discoveryPacket"
+      },
+      "writer": {
+        "abi": {},
+        "fingerprint": "20328e4cb4ab7068b1a670bbdf5954fee76e3a49eee74aa7bdb6487ed7ade3af",
+        "handle": "saturn://writer",
+        "kind": "opaque",
+        "name": "writer"
+      }
+    }
+  }
+}

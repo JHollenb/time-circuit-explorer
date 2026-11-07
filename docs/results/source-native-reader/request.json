@@ -1,0 +1,90 @@
+{
+  "backend": "diffusers",
+  "batch_size": 1,
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "height": 512,
+  "model": "flux2-klein-4b-distilled",
+  "needs": {
+    "cuda": true
+  },
+  "ownedSources": [
+    "source_native_study.py",
+    "source_native_worker.py",
+    "source_native_reader.py",
+    "source_native_writer.py",
+    "native_reader_corpus.py",
+    "last_velocity_decode.py",
+    "encoder_atoms.py",
+    "paired_fields.py",
+    "flux_clock.py",
+    "flux_clock_study.py",
+    "complete_masked_study.py",
+    "masked_kv_study.py"
+  ],
+  "parentJobID": "job-766f3552f96d",
+  "parentRequestSHA256": "e1ef83eb71c9424f40bf1482db34ce5d4cfe7666f653235dc54f8547ff4f1750",
+  "prompts": [
+    {
+      "id": "00",
+      "prompt": "A studio photograph of a orange ceramic pitcher to the left of a teal metal watering can on a white table, soft lighting."
+    },
+    {
+      "id": "10",
+      "prompt": "A studio photograph of a teal ceramic pitcher to the left of a orange metal watering can on a white table, soft lighting."
+    }
+  ],
+  "protocol": "18discovery live H0 reads -> isolated fixed .01 FP64 paired ridge -> coefficient seal ->28own serving reads -> isolated readout-only actor30outputs ->2native scheduler/VAEimages ->allcandidate seal ->18feedback/8evaluation/main historical scoring. Seven original affines/read and fitted learned writer paid. No arbitraryprompt/zero-neural claim.",
+  "requestSHA256": "bc7d236f5526e38a8e50c02d53568e83b8721af7279299ef5015a726d77ad360",
+  "scheduling_contract": {
+    "additional_scheduler_submissions": 0,
+    "branch_execution": "in_process",
+    "checkpoint_policy": "one outer Saturn worker lease; all logical branches and analysis remain in process",
+    "collection_policy": "direct_job_only",
+    "conditioner_policy": "Reuse source-bound historical conditioning; no new encoding.",
+    "control_plane": "mrun_outer_lease",
+    "data_plane": "resident_worker",
+    "execution_model": "finite_local_program",
+    "interactive": false,
+    "lease_scope": "entire-worker",
+    "logical_branches": 30,
+    "logical_checkpoint_replays": 0,
+    "logical_operations": 78,
+    "max_local_work_items": 256,
+    "max_mrun_submissions": 1,
+    "modelLoadScope": "One resident composite selective-reader/VAE consumer; fit and readout-only CPU actors under same lease, no per-branch jobs.",
+    "model_loads": 1,
+    "mrun_retry_policy": "none_for_finite_lease",
+    "per_branch_mrun_submissions": 0,
+    "per_transition_mrun_submissions": 0,
+    "replay_policy": "none_source_only",
+    "schema": "saturn-single-lease-scheduling-contract-v1"
+  },
+  "schema": "tce-source-native-reader-request-v1",
+  "seed": 271828,
+  "seq_len": 1536,
+  "sourceHashes": {
+    "complete_masked_study.py": "f52633bc9d729b2a5032e024331d9b20fcee8cb993941cab87c197089cdcff99",
+    "corpus.json": "f2abfe4b7d8ea7e10518275b715c77aa4437210685c30e1d3c0959b676122bc1",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "flux_clock.py": "bde499ff527f624fcd1b62a8f6f0b2fbaf70eebc7b7835fcd7d4c6403b4e0b2b",
+    "flux_clock_study.py": "eaccf6bdb75678ac6acb5a371f8858201cf83dbac4de83868b70d5570e4beddc",
+    "frozen-plan.md": "fb6fd066de81938999aee40ac6c8f9b3a5f77789a440bacf8a0f308fb88a28fc",
+    "inputs.json": "704a5137d6562aaa0748fe9342cb4a3f341bf3aaf835f7bfa1d528890ccf760c",
+    "last_velocity_decode.py": "b3081184e171753f334e9e9896d7d0378791ba0ee00682918303c7bd6a2769be",
+    "masked_kv_study.py": "920416ce49d823b1337a7f6d9f5fca90c8047723bb6b1d37dc09967114b6ad89",
+    "mdb_runtime-0.1.0-py3-none-any.whl": "038963b98dd9605581ca7307b6695fb8bbe46f91df34b6d9b134aa5d39a1ae94",
+    "mrun_pub-0.1.2-py3-none-any.whl": "2e474bfaacc781905da723fa29db51fc885972aa8a56f9001c57041987e7f65b",
+    "native_reader_corpus.py": "7aed11834cbbc22fead0f957019c4b8bfefce9b4896831ea00b947997cda9f73",
+    "paired_fields.py": "408e035cb2f2f99558dbbe5abccdc281a5deade195abdbbc003549318ef09e88",
+    "resource-basis.json": "7fa3b1031ecf5636215ce83b274513c1d18a4222de9d2b3212c3525094147fbb",
+    "saturn_pub-0.4.1-py3-none-any.whl": "384ba7d15745c9638a5147752ae5ed3536971c7cb1ec054cc1b5303fa18e49ca",
+    "source_native_reader.py": "8f83a325be9bfc02f12f67dc9037eaf535f95fc426b25f58150d8658ae95cb53",
+    "source_native_study.py": "efe2f483694104e06885ed3feaec2e932116f003ac07367f73f4e2b1afd3dfd9",
+    "source_native_worker.py": "a5f877042b9218b89a67ef4ac1ff1d09f704fd553bc90d994e9f6ef2ee2eeb3d",
+    "source_native_writer.py": "2322495a7ecba0f9c03bc2f32ba0be8e3d6ef17848031c4ac2ada6785521977c",
+    "targets.json": "ba83604e2ea440db1de9903bda56d57b3f464789842f7182d70db2b3f8cc0366"
+  },
+  "timeoutSeconds": 900,
+  "width": 512
+}

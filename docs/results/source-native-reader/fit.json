@@ -1,0 +1,89 @@
+{
+  "biasNominalMACs": 425984,
+  "coefficientBytes": 3462144,
+  "costScope": "Nominal contraction sizes and approximate dense-LU operation count; excludes reductions/standardization/pivot bookkeeping and is not a hardware FLOP measurement.",
+  "cpuSeconds": 11.190342681,
+  "discoveryFields": 18,
+  "discoveryPacketSHA256": "4a3ac41b9b784d836e1d8fc251e5db2966908fb32445ecaad70fc7171b15271a",
+  "discoveryRows": 18432,
+  "features": 3328,
+  "fields": {
+    "bias": {
+      "bytes": 1152,
+      "logicalDtype": "float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/fit/bias.npy",
+      "payloadSHA256": "6e3de31a0498e4ed3159d6c4d9787ffde54d7f4a7b2fc6180624c8f6dc75030e",
+      "sha256": "1b94280048703dc90a09602b33cf691232008e2cebab569d402fa7a87ad4dc22",
+      "shape": [
+        128
+      ],
+      "storedDtype": "float64"
+    },
+    "mean": {
+      "bytes": 26752,
+      "logicalDtype": "float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/fit/mean.npy",
+      "payloadSHA256": "6fc69eefe4331a080ea6b70d7892515354257717c2c91bf8286fb0a2a5835608",
+      "sha256": "941c8e621a0efefbc841ca0379bb62c8a145b2b36fec30c1441774de51cd5c79",
+      "shape": [
+        3328
+      ],
+      "storedDtype": "float64"
+    },
+    "scale": {
+      "bytes": 26752,
+      "logicalDtype": "float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/fit/scale.npy",
+      "payloadSHA256": "e093b977e0ced48f4f8bc12a794fed2fc2079cd6aacf46225dd285467c59ab41",
+      "sha256": "e938943cca0c6aebdf9c8ead7d494869e7c51f0cf8bc47b1534e07e32319e623",
+      "shape": [
+        3328
+      ],
+      "storedDtype": "float64"
+    },
+    "weight": {
+      "bytes": 3408000,
+      "logicalDtype": "float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/fit/weight.npy",
+      "payloadSHA256": "64a42846c7e34f839a7503c1dd8446e879759e836b53355f3ffa4132ac8f74b0",
+      "sha256": "6d743f6f17840dff0bb5fdb3aff40952f9ba53171b02c3ee5f38eeb58cb8e46d",
+      "shape": [
+        3328,
+        128
+      ],
+      "storedDtype": "float64"
+    }
+  },
+  "fileQuarantine": {
+    "allowedReadFiles": [
+      "/mnt/hdd8tb/mrun-work/job-1892a00329e9/discovery.npz",
+      "/mnt/hdd8tb/mrun-work/job-1892a00329e9/fit-spec.json"
+    ],
+    "deniedCanaries": [
+      "/mnt/hdd8tb/mrun-work/job-1892a00329e9/targets.json",
+      "/mnt/hdd8tb/mrun-work/job-766f3552f96d/arrays/images/HN-00/velocity3.npy",
+      "/home/beast/.cache/mdb-research/job-3264b738b16d/global-reader-result/arrays/s60675.shape.remote.native_n.npy"
+    ],
+    "mode": "fit",
+    "outputRoots": [
+      "/mnt/hdd8tb/mrun-work/job-1892a00329e9/fit"
+    ],
+    "scope": "Python trusted-code audit hook, not an adversarial sandbox"
+  },
+  "frameworksLoaded": [],
+  "gramNominalMACs": 225055866880,
+  "meanPairedLoss": 0.0055291307163029026,
+  "meanTargetLoss": 0.07346790411502893,
+  "outputs": 128,
+  "pairedRows": 1888,
+  "postFitTrainingWriterNominalMACs": 8655994880,
+  "postFitTrainingWriterProducts": 2,
+  "rhsNominalMACs": 8655994880,
+  "ridge": 0.01,
+  "roundingPolicy": "FP64 raw writer -> FP32 -> BF16 round-to-nearest-even",
+  "schema": "tce-source-native-fit-v1",
+  "scope": "Discovery packet only; no original model, target evaluation, feedback selection, epochs, gain tuning or neural frameworks.",
+  "solveEstimatedDenseLUFLOPs": 27408378538.666668,
+  "solver": "numpy.linalg.solve, FP64 centered normal equations; intercept unregularized",
+  "wallSeconds": 6.978267450351268
+}

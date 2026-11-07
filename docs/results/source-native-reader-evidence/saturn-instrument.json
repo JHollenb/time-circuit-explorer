@@ -1,0 +1,18 @@
+{
+  "schema": "tce-source-native-saturn-instrument-v1",
+  "initialTarget": "docs/results/source-native-reader",
+  "initialRunExit": 2,
+  "initialVerifyExit": 2,
+  "initialInstrumentStatus": "evidence-incomplete-empty-target",
+  "reason": "The public bundle stores its observation stream as byte-lossless gzip; this scanner does not discover compressed streams.",
+  "correctedTarget": "artifacts/source-native-reader-v1/result",
+  "correctedRunExit": 0,
+  "correctedVerifyExit": 0,
+  "instrumentStatus": "target-streams-only",
+  "records": 33792,
+  "streams": 1,
+  "watchFires": 0,
+  "formalReceipts": 0,
+  "verifyExpectedMissingEmptyFireLedger": 1,
+  "scope": "Scanner applicability and uncompressed observation-stream mechanics only; no semantic quality, learned-computation elimination, or arbitrary-prompt certification. The original compressed publication is unchanged."
+}
