@@ -1,6 +1,6 @@
 # Factor the first image consumer before another full future
 
-Status: **written and unexecuted**. [Astra47](../results/text-crossing-evidence/advisor.json) selects one four-cell local operator assay after the [first-text-write result](../first-text-write-crossing.md). It stops immediately after joint0's image MLP. No full-denoiser crossing, new predictor or image campaign is planned.
+Status: **executed**, job-0807587485a6. The [result](../first-image-consumer.md) retains all local stage/factor fields, finite-policy countertrends and complete query records. The [pre-execution plan](../results/first-consumer/frozen-plan.md) remains immutable. [Astra47](../results/text-crossing-evidence/advisor.json) selects one four-cell local operator assay after the [first-text-write result](../first-text-write-crossing.md). It stops immediately after joint0's image MLP. No full-denoiser crossing, new predictor or image campaign is planned.
 
 ## The exact local question
 
@@ -15,7 +15,7 @@ Load only these four original BF16 matrices, after reading/validating their sour
 - `transformer_blocks.0.ff.linear_in.weight`: [18432,3072].
 - `transformer_blocks.0.ff.linear_out.weight`: [3072,9216].
 
-Total selected parameter payload is **189,530,112 bytes**. There are no biases in this pinned configuration. Do not use the all169-parameter loader without changing its declared contract; implement a separate bounded selected-tensor admission for these four named tensors. Verify full original asset/header identity, each selected payload, dtype/shape and absent meta parameters. Record actual parameter reads separately from a full-file custody hash.
+Total selected parameter payload is **189,530,112 bytes**. There are no biases in this pinned configuration. Source inspection confirms the existing selected loader is generic and enforces exact agreement with its module's parameter set. Admit a separate four-parameter local module and use that unchanged exact-set loader; never instantiate/load the169-parameter full transformer. Verify full original asset/header identity, each selected payload, dtype/shape and absent meta parameters. Record actual parameter reads separately from a full-file custody hash. This clarification precedes staging/execution.
 
 Form two native B1 input projections E_r=x_embedder(Z_r). Preserve the archived Z stride and verify E0/E1 against the first-block hidden-state hashes in cycle46's original prefix receipt. Form two shared B1 image projections P_h=to_out(H_h), preserving the qualified image-input stride [4718592,3072,1] and offset1572864 in independent backing storage. Reuse each projection across the two receivers; do not batch B2 or silently change projection geometry.
 
