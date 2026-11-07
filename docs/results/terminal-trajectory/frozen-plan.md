@@ -1,0 +1,13 @@
+# Correct the attention observer, retain the trajectory experiment
+
+Status: **written and unexecuted**. This is a mechanics amendment to the frozen [four-clock protocol](terminal-liveness-trajectory.md), after [v1](../results/terminal-trajectory-failed-v1/failure.json) stopped at its first joint attention. Its guarded job `job-f5d33304c764` used 61.76 scheduler seconds. The native dispatcher called SDPA with `query`, `key` and `value` keywords; the measurement wrapper required positional names `q`, `k` and `v`. The original sources and failed job remain unchanged.
+
+The new `terminal_attention_ledger.py` observer uses the native keyword names and forwards positional arguments, remaining keywords and results unchanged. Tiny tests cover positional, keyword and mixed invocation. The v2 worker changes only that observer import/construction. It leaves the frozen terminal rewrite, precision, original preceding modules, own-state scheduler commits, supplied conditioning/noise and actual final VAE decode intact.
+
+Submit one separate guarded v2 lease after source review and mechanics checks. Preserve the v1 request identity `2ee8f6d7e5d8ae97b1ffde307497b3fc9961a4570e5e90a20d70a0952a2fc978` in the new inputs. Use the same one historical native comparator; do not draw new noise, regenerate a native shadow or add another prompt/seed. The producer must seal and exit before comparison. No quality threshold blocks evidence collection.
+
+All scientific scope and work accounting in the original protocol remain in force: four own denoisers and native scheduler commits, one actual candidate VAE decode, 231,928,233,984 nominal matrix MACs prospectively removed from terminal text computation, and all remaining learned work paid. The observed failure's 8,251.5 MB RSS / 8,250 MB device usage fits the original measured full-image envelope, but does not establish a successful trajectory memory peak or speedup.
+
+The final-latent unpack/BN/unpatchify path is pinned and source-audited. A decode Frame's declared final-commit ID is not an independent numerical witness of that transformation. Bind the actual VAE input and output directly, and preserve this qualification in the publication.
+
+The separate scheduled storage cleanup66 is complete: four redundant transports / 1,296,894,473 bytes have full-hash-verified cold copies, with 72 pointer/custody joins in the post-audit. Next scheduled maintenance69 or earlier pressure. Astra's periodic newest-post review65 remains current, next68; v2 requires its own source and actual-result review. Arbitrary-prompt zero-neural generation remains open.

@@ -1,0 +1,240 @@
+{
+  "admission": {
+    "claim_key": "mrun:8b5b456243040dc434da90620892c1ff6027c3e2999ee0af1bc0510141bf5b7c",
+    "fencing_epoch": 1,
+    "idempotency_key": "mrun:8b5b456243040dc434da90620892c1ff6027c3e2999ee0af1bc0510141bf5b7c",
+    "scope_sha256": "07aeb4acaf7765c1d147ebc50cd39ee75f5ae63940e1f61153f2a43f76564ef0"
+  },
+  "cause": "Native attention dispatch calls SDPA with query/key/value keywords; v1 measurement wrapper required q/k/v positional names. First denoiser aborts at first joint attention.",
+  "completeLogSHA256": "1a1236ab4189ea45640d121dd2228d915f0213b0b29e57e11acc99412158b57f",
+  "instrument_status": "keyword-API-mismatch",
+  "jobID": "job-f5d33304c764",
+  "mechanics_status": "failed-at-instrument-call",
+  "observedArrays": [],
+  "observedImages": [],
+  "partialResultFiles": [
+    "toy-mechanics.json"
+  ],
+  "partialWork": "Original model/VAE loaded; clock/context/image projections and first joint pre-attention work reached. No durable complete denoiser/work ledger, so exact completed MACs unavailable.",
+  "payloadCustody": {
+    "declared": {
+      "sha256": "aa32f4bb7fc88d73fa72e8d1453546fad175b12d5e6b3cae37231799c864652e",
+      "size_bytes": 3151704
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794062020.9813528,
+      "sha256": "aa32f4bb7fc88d73fa72e8d1453546fad175b12d5e6b3cae37231799c864652e",
+      "size_bytes": 3151704
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794062020.6644924,
+      "sha256": "aa32f4bb7fc88d73fa72e8d1453546fad175b12d5e6b3cae37231799c864652e",
+      "size_bytes": 3151704
+    }
+  },
+  "requestSHA256": "2ee8f6d7e5d8ae97b1ffde307497b3fc9961a4570e5e90a20d70a0952a2fc978",
+  "result": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-f5d33304c764",
+      "job_log": {
+        "bytes": 7658,
+        "sha256": "1a1236ab4189ea45640d121dd2228d915f0213b0b29e57e11acc99412158b57f"
+      },
+      "job_status": "failed",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-f5d33304c764/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=4",
+        "OPENBLAS_NUM_THREADS=4",
+        "MKL_NUM_THREADS=4",
+        "CUBLAS_WORKSPACE_CONFIG=:4096:8",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "--with",
+        "./mdb_runtime-0.1.0-py3-none-any.whl",
+        "--with",
+        "./saturn_pub-0.4.1-py3-none-any.whl",
+        "--with",
+        "./mrun_pub-0.1.2-py3-none-any.whl",
+        "python",
+        "-u",
+        "terminal_trajectory_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-f5d33304c764",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-f5d33304c764/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794062020.9684954
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794062021.0077507
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794062021.0340407
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794062021.0609794
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794062082.380609
+        },
+        {
+          "name": "finished",
+          "ts": 1794062082.4027991
+        }
+      ]
+    },
+    "elapsed_s": 61.76,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "aa32f4bb7fc88d73fa72e8d1453546fad175b12d5e6b3cae37231799c864652e",
+      "size_bytes": 3151704
+    },
+    "failure": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=4",
+        "OPENBLAS_NUM_THREADS=4",
+        "MKL_NUM_THREADS=4",
+        "CUBLAS_WORKSPACE_CONFIG=:4096:8",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "--with",
+        "./mdb_runtime-0.1.0-py3-none-any.whl",
+        "--with",
+        "./saturn_pub-0.4.1-py3-none-any.whl",
+        "--with",
+        "./mrun_pub-0.1.2-py3-none-any.whl",
+        "python",
+        "-u",
+        "terminal_trajectory_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-f5d33304c764",
+      "kind": "process_exit",
+      "log_tail": "<frozen runpy>:130: RuntimeWarning: 'mrun.os_limit' found in sys.modules after import of package 'mrun', but prior to execution of 'mrun.os_limit'; this may result in unpredictable behaviour\nInstalled 65 packages in 1.44s\nTraceback (most recent call last):\n  File \"/mnt/hdd8tb/mrun-work/job-f5d33304c764/terminal_trajectory_worker.py\", line 175, in <module>\n    if __name__=='__main__':execute(sys.argv[1])\n                            ~~~~~~~^^^^^^^^^^^^^\n  File \"/mnt/hdd8tb/mrun-work/job-f5d33304c764/terminal_trajectory_worker.py\", line 146, in execute\n    result=pipe(prompt=None,prompt_embeds=embedding,height=512,width=512,num_inference_steps=4,guidance_scale=1.,latents=raw_noise.clone(),output_type='np',\n           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        callback_on_step_end=callback,callback_on_step_end_tensor_inputs=['latents']).images\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/torch/utils/_contextlib.py\", line 124, in decorate_context\n    return func(*args, **kwargs)\n  File \"/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/diffusers/pipelines/flux2/pipeline_flux2_klein.py\", line 849, in __call__\n    noise_pred = self.transformer(\n                 ~~~~~~~~~~~~~~~~^\n        hidden_states=latent_model_input,  # (B, image_seq_len, C)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<6 lines>...\n        return_dict=False,\n        ^^^^^^^^^^^^^^^^^^\n    )[0]\n    ^\n  File \"/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/torch/nn/modules/module.py\", line 1778, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/torch/nn/modules/module.py\", line 1789, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/mnt/hdd8tb/mrun-work/job-f5d33304c764/terminal_trajectory_worker.py\", line 110, in adapter\n    got=ledger.run('denoise'+str(k),inputs,operation,abis,{'precedingCommitFrameID':last.get('commitFrame'),'expectedOwnLatentPayloadSHA256':expected})\n  File \"/mnt/hdd8tb/mrun-work/job-f5d33304c764/terminal_trajectory_ledger.py\", line 24, in run\n    registry.register(spec,name,act);after,evidence=registry.run(spec.identity,name,frame)\n                                                    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/mdb/titan.py\", line 788, in run\n    outputs, metrics = function(declared_inputs)\n                       ~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/mnt/hdd8tb/mrun-work/job-f5d33304c764/terminal_trajectory_ledger.py\", line 20, in act\n    torch.cuda.synchronize();tick=time.perf_counter();result=operation(values);torch.cuda.synchronize()\n                                                             ~~~~~~~~~^^^^^^^^\n  File \"/mnt/hdd8tb/mrun-work/job-f5d33304c764/terminal_trajectory_worker.py\", line 108, in operation\n    captured={};result=denoise(this,{**kwargs,**values},maps,native,native.dispatch_attention_fn,lambda n,v:captured.setdefault(n,v))\n                       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/hdd8tb/mrun-work/job-f5d33304c764/terminal_trajectory.py\", line 28, in denoise\n    text,image=block(hidden_states=image,encoder_hidden_states=text,temb_mod_img=img_mod,temb_mod_txt=txt_mod,image_rotary_emb=rope,joint_attention_kwargs=None)\n               ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/torch/nn/modules/module.py\", line 1778, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/torch/nn/modules/module.py\", line 1884, in _call_impl\n    return inner()\n  File \"/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/torch/nn/modules/module.py\", line 1832, in inner\n    result = forward_call(*args, **kwargs)\n  File \"/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/diffusers/models/transformers/transformer_flux2.py\", line 917, in forward\n    attention_outputs = self.attn(\n        hidden_states=norm_hidden_states,\n    ...<2 lines>...\n        **joint_attention_kwargs,\n    )\n  File \"/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/torch/nn/modules/module.py\", line 1778, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/torch/nn/modules/module.py\", line 1789, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/diffusers/models/transformers/transformer_flux2.py\", line 566, in forward\n    return self.processor(self, hidden_states, encoder_hidden_states, attention_mask, image_rotary_emb, **kwargs)\n           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/diffusers/models/transformers/transformer_flux2.py\", line 369, in __call__\n    hidden_states = dispatch_attention_fn(\n        query,\n    ...<4 lines>...\n        parallel_config=self._parallel_config,\n    )\n  File \"/mnt/hdd8tb/mrun-work/job-f5d33304c764/terminal_trajectory_worker.py\", line 82, in dispatch_attention\n    return old_dispatch(q,k,v,*args,**kwargs)\n  File \"/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/diffusers/models/attention_dispatch.py\", line 442, in dispatch_attention_fn\n    return backend_fn(**kwargs)\n  File \"/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/diffusers/models/attention_dispatch.py\", line 3334, in _native_attention\n    out = torch.nn.functional.scaled_dot_product_attention(\n        query=query,\n    ...<6 lines>...\n        enable_gqa=enable_gqa,\n    )\nTypeError: execute.<locals>.attention() missing 3 required positional arguments: 'q', 'k', and 'v'\nTraceback (most recent call last):\n  File \"/mnt/hdd8tb/mrun-work/job-f5d33304c764/terminal_trajectory_study.py\", line 85, in <module>\n    else:value=globals()[a.action](a.root)\n               ~~~~~~~~~~~~~~~~~~~^^^^^^^^\n  File \"/mnt/hdd8tb/mrun-work/job-f5d33304c764/terminal_trajectory_study.py\", line 77, in execute\n    subprocess.run([sys.executable,'-u',str(root/name),str(root)],cwd=root,check=True)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/beast/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/subprocess.py\", line 578, in run\n    raise CalledProcessError(retcode, process.args,\n                             output=stdout, stderr=stderr)\nsubprocess.CalledProcessError: Command '['/mnt/hdd8tb/mdb/uv-cache/builds-v0/.tmpjgwTOo/bin/python', '-u', '/mnt/hdd8tb/mrun-work/job-f5d33304c764/terminal_trajectory_worker.py', '/mnt/hdd8tb/mrun-work/job-f5d33304c764']' returned non-zero exit status 1.\n",
+      "message": "child exited with return code 1",
+      "observed_ts": 1794062082.3915007,
+      "phase": "process.finalize",
+      "resources": {
+        "peak_rss_mb": 8251.5,
+        "peak_vram_mb": 8250.0,
+        "ram_ceiling_mb": 15769.600000000002,
+        "vram_ceiling_mb": 14300.000000000002
+      },
+      "returncode": 1
+    },
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 8251.5,
+    "peak_vram_mb": 8250.0,
+    "returncode": 1,
+    "status": "failed"
+  },
+  "schema": "tce-terminal-trajectory-failure-v1",
+  "scope": "Tiny toy mechanics result retained; no candidate model arrays, sealed trajectory, final decode or image. An instrument failure, not a scientific null.",
+  "state": "failed",
+  "terminal_status": "unassessed"
+}

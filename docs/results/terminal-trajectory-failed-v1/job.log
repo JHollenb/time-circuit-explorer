@@ -1,0 +1,94 @@
+<frozen runpy>:130: RuntimeWarning: 'mrun.os_limit' found in sys.modules after import of package 'mrun', but prior to execution of 'mrun.os_limit'; this may result in unpredictable behaviour
+Installed 65 packages in 1.44s
+Traceback (most recent call last):
+  File "/mnt/hdd8tb/mrun-work/job-f5d33304c764/terminal_trajectory_worker.py", line 175, in <module>
+    if __name__=='__main__':execute(sys.argv[1])
+                            ~~~~~~~^^^^^^^^^^^^^
+  File "/mnt/hdd8tb/mrun-work/job-f5d33304c764/terminal_trajectory_worker.py", line 146, in execute
+    result=pipe(prompt=None,prompt_embeds=embedding,height=512,width=512,num_inference_steps=4,guidance_scale=1.,latents=raw_noise.clone(),output_type='np',
+           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        callback_on_step_end=callback,callback_on_step_end_tensor_inputs=['latents']).images
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/diffusers/pipelines/flux2/pipeline_flux2_klein.py", line 849, in __call__
+    noise_pred = self.transformer(
+                 ~~~~~~~~~~~~~~~~^
+        hidden_states=latent_model_input,  # (B, image_seq_len, C)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        return_dict=False,
+        ^^^^^^^^^^^^^^^^^^
+    )[0]
+    ^
+  File "/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/mnt/hdd8tb/mrun-work/job-f5d33304c764/terminal_trajectory_worker.py", line 110, in adapter
+    got=ledger.run('denoise'+str(k),inputs,operation,abis,{'precedingCommitFrameID':last.get('commitFrame'),'expectedOwnLatentPayloadSHA256':expected})
+  File "/mnt/hdd8tb/mrun-work/job-f5d33304c764/terminal_trajectory_ledger.py", line 24, in run
+    registry.register(spec,name,act);after,evidence=registry.run(spec.identity,name,frame)
+                                                    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/mdb/titan.py", line 788, in run
+    outputs, metrics = function(declared_inputs)
+                       ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/mnt/hdd8tb/mrun-work/job-f5d33304c764/terminal_trajectory_ledger.py", line 20, in act
+    torch.cuda.synchronize();tick=time.perf_counter();result=operation(values);torch.cuda.synchronize()
+                                                             ~~~~~~~~~^^^^^^^^
+  File "/mnt/hdd8tb/mrun-work/job-f5d33304c764/terminal_trajectory_worker.py", line 108, in operation
+    captured={};result=denoise(this,{**kwargs,**values},maps,native,native.dispatch_attention_fn,lambda n,v:captured.setdefault(n,v))
+                       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/hdd8tb/mrun-work/job-f5d33304c764/terminal_trajectory.py", line 28, in denoise
+    text,image=block(hidden_states=image,encoder_hidden_states=text,temb_mod_img=img_mod,temb_mod_txt=txt_mod,image_rotary_emb=rope,joint_attention_kwargs=None)
+               ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1884, in _call_impl
+    return inner()
+  File "/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1832, in inner
+    result = forward_call(*args, **kwargs)
+  File "/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/diffusers/models/transformers/transformer_flux2.py", line 917, in forward
+    attention_outputs = self.attn(
+        hidden_states=norm_hidden_states,
+    ...<2 lines>...
+        **joint_attention_kwargs,
+    )
+  File "/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/diffusers/models/transformers/transformer_flux2.py", line 566, in forward
+    return self.processor(self, hidden_states, encoder_hidden_states, attention_mask, image_rotary_emb, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/diffusers/models/transformers/transformer_flux2.py", line 369, in __call__
+    hidden_states = dispatch_attention_fn(
+        query,
+    ...<4 lines>...
+        parallel_config=self._parallel_config,
+    )
+  File "/mnt/hdd8tb/mrun-work/job-f5d33304c764/terminal_trajectory_worker.py", line 82, in dispatch_attention
+    return old_dispatch(q,k,v,*args,**kwargs)
+  File "/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/diffusers/models/attention_dispatch.py", line 442, in dispatch_attention_fn
+    return backend_fn(**kwargs)
+  File "/mnt/hdd8tb/mdb/uv-cache/archive-v0/Ka6V91db9Abyy4Hh/lib/python3.14/site-packages/diffusers/models/attention_dispatch.py", line 3334, in _native_attention
+    out = torch.nn.functional.scaled_dot_product_attention(
+        query=query,
+    ...<6 lines>...
+        enable_gqa=enable_gqa,
+    )
+TypeError: execute.<locals>.attention() missing 3 required positional arguments: 'q', 'k', and 'v'
+Traceback (most recent call last):
+  File "/mnt/hdd8tb/mrun-work/job-f5d33304c764/terminal_trajectory_study.py", line 85, in <module>
+    else:value=globals()[a.action](a.root)
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/mnt/hdd8tb/mrun-work/job-f5d33304c764/terminal_trajectory_study.py", line 77, in execute
+    subprocess.run([sys.executable,'-u',str(root/name),str(root)],cwd=root,check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/beast/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['/mnt/hdd8tb/mdb/uv-cache/builds-v0/.tmpjgwTOo/bin/python', '-u', '/mnt/hdd8tb/mrun-work/job-f5d33304c764/terminal_trajectory_worker.py', '/mnt/hdd8tb/mrun-work/job-f5d33304c764']' returned non-zero exit status 1.
