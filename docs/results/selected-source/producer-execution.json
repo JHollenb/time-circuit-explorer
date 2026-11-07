@@ -1,0 +1,729 @@
+{
+  "CPUSecondsAfterImports": 10.478117335,
+  "QKAVMatrixMACs": 75497472,
+  "affineMatrixMACs": 58812530688,
+  "arithmeticTimings": [
+    {
+      "arithmeticSecondsBeforeCapture": 2.561554054263979,
+      "role": "P"
+    },
+    {
+      "arithmeticSecondsBeforeCapture": 0.0019435090944170952,
+      "role": "Q"
+    }
+  ],
+  "assets": [
+    {
+      "bytesHashed": 541,
+      "path": "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/config.json",
+      "sha256": "09733c74a3da6d17dd0a0472a091a8950c7c6935889c32c16cc800ede05029de",
+      "signature": [
+        66311,
+        298051,
+        541,
+        1784967358756501000,
+        1784967358757491000
+      ]
+    },
+    {
+      "bytesHashed": 7751109744,
+      "path": "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/diffusion_pytorch_model.safetensors",
+      "sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+      "signature": [
+        66311,
+        298058,
+        7751109744,
+        1784967508577765300,
+        1784967508615361800
+      ]
+    }
+  ],
+  "attentions": [
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "keyShape": [
+        1,
+        1536,
+        24,
+        128
+      ],
+      "nominalQKAVMACs": 37748736,
+      "outputPayloadSHA256": "a5d86728408e6a90ff220d12c5292e02b2e331db8c9df02e79a20a3581683e2a",
+      "queryShape": [
+        1,
+        4,
+        24,
+        128
+      ],
+      "queryStride": [
+        12288,
+        3072,
+        128,
+        1
+      ],
+      "requestedBackend": "auto",
+      "role": "P",
+      "valueShape": [
+        1,
+        1536,
+        24,
+        128
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "keyShape": [
+        1,
+        1536,
+        24,
+        128
+      ],
+      "nominalQKAVMACs": 37748736,
+      "outputPayloadSHA256": "8cc9e97808b9e13627ebe249ce69957b8856138ed5c2c5aa1b930c284ccb8c86",
+      "queryShape": [
+        1,
+        4,
+        24,
+        128
+      ],
+      "queryStride": [
+        12288,
+        3072,
+        128,
+        1
+      ],
+      "requestedBackend": "auto",
+      "role": "Q",
+      "valueShape": [
+        1,
+        1536,
+        24,
+        128
+      ]
+    }
+  ],
+  "fileQuarantine": {
+    "allowedFiles": [
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/config.json",
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/diffusion_pytorch_model.safetensors",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/native-source-writers.json",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/plan.json",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/source-roots.json",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/blobs/728e060b47404decf4d63e0fc86889005d6d9e844c91496e898e7dd107bd9f69.safetensors",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/blobs/728e060b47404decf4d63e0fc86889005d6d9e844c91496e898e7dd107bd9f69.safetensors",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/blobs/7b34ed4c73a67ab74a8665995676099450671b04531c326a9dbf729185a5e318.safetensors",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/blobs/7b34ed4c73a67ab74a8665995676099450671b04531c326a9dbf729185a5e318.safetensors",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/blobs/7b34ed4c73a67ab74a8665995676099450671b04531c326a9dbf729185a5e318.safetensors",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/blobs/85ac7cd678c056d3a40ac27b1da4f004aa005c1af4e5ea765698ae4f07120d75.safetensors",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/blobs/85ac7cd678c056d3a40ac27b1da4f004aa005c1af4e5ea765698ae4f07120d75.safetensors",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/blobs/85ac7cd678c056d3a40ac27b1da4f004aa005c1af4e5ea765698ae4f07120d75.safetensors",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/blobs/cae883155a3fbe966452425640cbddb2c0e3ab115caa8af7f0819bb48b1a2f3d.safetensors",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/blobs/cae883155a3fbe966452425640cbddb2c0e3ab115caa8af7f0819bb48b1a2f3d.safetensors",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/cuts/504bcfb16f8a8063162dca0cd318b760cbfc7a1dd3afecdda5f7e66c925d9f2d.json",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/cuts/8ccb66606eb879c23f819b49060f23624ae7bd523ad1aface825af3119d88bfa.json",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/pages/79ddde68a1b4a38c42490be9ae2f30b8d27cd1a8f6687b76dc897252d0e42135.json",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/pages/79ddde68a1b4a38c42490be9ae2f30b8d27cd1a8f6687b76dc897252d0e42135.json",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/pages/79ddde68a1b4a38c42490be9ae2f30b8d27cd1a8f6687b76dc897252d0e42135.json",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/pages/7c16ad3315af9ea7aa40051cb609915a05f1963ea8243f5e0f9754b38db3d532.json",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/pages/7c16ad3315af9ea7aa40051cb609915a05f1963ea8243f5e0f9754b38db3d532.json",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/pages/80d82b8c72049fcf18cf78db113fae216e79b3a0a387b2fc9cc38d36423a8bd6.json",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/pages/80d82b8c72049fcf18cf78db113fae216e79b3a0a387b2fc9cc38d36423a8bd6.json",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/pages/8dfcda9c1b88d9e75aa94be0a9aecb67767947741e8b17392d66e21a4851616c.json",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/pages/8dfcda9c1b88d9e75aa94be0a9aecb67767947741e8b17392d66e21a4851616c.json",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/pages/8dfcda9c1b88d9e75aa94be0a9aecb67767947741e8b17392d66e21a4851616c.json"
+    ],
+    "deniedCanaries": [
+      "/mnt/hdd8tb/mrun-work/job-3505d6effb40/targets.json",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/response-result/primary.json",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/response-result/primary-seal.json",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/cases/sphere-cube-plain-2027/PQP/consumer/native/R_attention.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/cases/sphere-cube-plain-2027/QQQ/consumer/native/R_attention.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/endpoints/sphere-cube-plain-2027/native/PQP.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/endpoints/sphere-cube-plain-2027/native/QQQ.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_after_attention.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_attention_return_used.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_in.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_mlp_input.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_mlp_return_used.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_out.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/text_after_attention.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/text_attention_return_used.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/text_in.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/text_mlp_input.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/text_mlp_return_used.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/Q/native/text_out.npy",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/PQP/K.npy",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/PQP/R_attention.npy",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/PQP/V.npy",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/PQP/attentionReturn.npy",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/PQP/cacheScale.npy",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/PQP/carrier.npy",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/PQP/denominator.npy",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/PQP/peak.npy",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/PQP/projectedValues.npy",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/PQP/projectionFP64.npy",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/PQP/scores.npy",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/PQP/selectedWeights.npy",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/QQQ/K.npy",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/QQQ/R_attention.npy",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/QQQ/V.npy",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/QQQ/attentionReturn.npy",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/QQQ/cacheScale.npy",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/QQQ/carrier.npy",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/QQQ/denominator.npy",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/QQQ/peak.npy",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/QQQ/projectedValues.npy",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/QQQ/projectionFP64.npy",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/QQQ/scores.npy",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/QQQ/selectedWeights.npy",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/response-result/primary-seal.json",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/response-result/primary.json",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/H_BF16.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/H_FP64.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/K.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/R_attention.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/V.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/attentionReturn.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/cacheScale.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/carrier.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/denominator.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/numerator.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/peak.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/scores.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/selectedWeights.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/H_BF16.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/H_FP64.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/K.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/R_attention.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/V.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/attentionReturn.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/cacheScale.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/carrier.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/denominator.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/numerator.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/peak.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/scores.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/selectedWeights.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/PQP.rows.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/QQQ.rows.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/diagnostics/imageIDs.npy"
+    ],
+    "scope": "No historical writer return, finished row or cached source KV admitted.",
+    "successfulFileOpenCounts": {
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/config.json": 1,
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/diffusion_pytorch_model.safetensors": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/blobs/728e060b47404decf4d63e0fc86889005d6d9e844c91496e898e7dd107bd9f69.safetensors": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/blobs/7b34ed4c73a67ab74a8665995676099450671b04531c326a9dbf729185a5e318.safetensors": 4,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/blobs/85ac7cd678c056d3a40ac27b1da4f004aa005c1af4e5ea765698ae4f07120d75.safetensors": 4,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/blobs/cae883155a3fbe966452425640cbddb2c0e3ab115caa8af7f0819bb48b1a2f3d.safetensors": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/cuts/504bcfb16f8a8063162dca0cd318b760cbfc7a1dd3afecdda5f7e66c925d9f2d.json": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/cuts/8ccb66606eb879c23f819b49060f23624ae7bd523ad1aface825af3119d88bfa.json": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/pages/79ddde68a1b4a38c42490be9ae2f30b8d27cd1a8f6687b76dc897252d0e42135.json": 4,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/pages/7c16ad3315af9ea7aa40051cb609915a05f1963ea8243f5e0f9754b38db3d532.json": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/pages/80d82b8c72049fcf18cf78db113fae216e79b3a0a387b2fc9cc38d36423a8bd6.json": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/pages/8dfcda9c1b88d9e75aa94be0a9aecb67767947741e8b17392d66e21a4851616c.json": 4
+    }
+  },
+  "header": {
+    "bytes": 20584,
+    "sha256": "012278fec8c5203622e33f14a7da845b344c5dcd869980b04692348ff02420f6"
+  },
+  "linears": [
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        1024,
+        3072
+      ],
+      "inputStride": [
+        3145728,
+        3072,
+        1
+      ],
+      "nominalMACs": 9663676416,
+      "parameter": "transformer_blocks.0.attn.to_k.weight",
+      "role": "P",
+      "weightShape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        1024,
+        3072
+      ],
+      "inputStride": [
+        3145728,
+        3072,
+        1
+      ],
+      "nominalMACs": 9663676416,
+      "parameter": "transformer_blocks.0.attn.to_v.weight",
+      "role": "P",
+      "weightShape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        512,
+        3072
+      ],
+      "inputStride": [
+        1572864,
+        3072,
+        1
+      ],
+      "nominalMACs": 4831838208,
+      "parameter": "transformer_blocks.0.attn.add_k_proj.weight",
+      "role": "P",
+      "weightShape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        512,
+        3072
+      ],
+      "inputStride": [
+        1572864,
+        3072,
+        1
+      ],
+      "nominalMACs": 4831838208,
+      "parameter": "transformer_blocks.0.attn.add_v_proj.weight",
+      "role": "P",
+      "weightShape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        4,
+        3072
+      ],
+      "inputStride": [
+        12288,
+        3072,
+        1
+      ],
+      "nominalMACs": 37748736,
+      "parameter": "transformer_blocks.0.attn.add_q_proj.weight",
+      "role": "P",
+      "weightShape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        4,
+        3072
+      ],
+      "inputStride": [
+        12288,
+        3072,
+        1
+      ],
+      "nominalMACs": 37748736,
+      "parameter": "transformer_blocks.0.attn.to_add_out.weight",
+      "role": "P",
+      "weightShape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        4,
+        3072
+      ],
+      "inputStride": [
+        12288,
+        3072,
+        1
+      ],
+      "nominalMACs": 226492416,
+      "parameter": "transformer_blocks.0.ff_context.linear_in.weight",
+      "role": "P",
+      "weightShape": [
+        18432,
+        3072
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        4,
+        9216
+      ],
+      "inputStride": [
+        36864,
+        9216,
+        1
+      ],
+      "nominalMACs": 113246208,
+      "parameter": "transformer_blocks.0.ff_context.linear_out.weight",
+      "role": "P",
+      "weightShape": [
+        3072,
+        9216
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        1024,
+        3072
+      ],
+      "inputStride": [
+        3145728,
+        3072,
+        1
+      ],
+      "nominalMACs": 9663676416,
+      "parameter": "transformer_blocks.0.attn.to_k.weight",
+      "role": "Q",
+      "weightShape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        1024,
+        3072
+      ],
+      "inputStride": [
+        3145728,
+        3072,
+        1
+      ],
+      "nominalMACs": 9663676416,
+      "parameter": "transformer_blocks.0.attn.to_v.weight",
+      "role": "Q",
+      "weightShape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        512,
+        3072
+      ],
+      "inputStride": [
+        1572864,
+        3072,
+        1
+      ],
+      "nominalMACs": 4831838208,
+      "parameter": "transformer_blocks.0.attn.add_k_proj.weight",
+      "role": "Q",
+      "weightShape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        512,
+        3072
+      ],
+      "inputStride": [
+        1572864,
+        3072,
+        1
+      ],
+      "nominalMACs": 4831838208,
+      "parameter": "transformer_blocks.0.attn.add_v_proj.weight",
+      "role": "Q",
+      "weightShape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        4,
+        3072
+      ],
+      "inputStride": [
+        12288,
+        3072,
+        1
+      ],
+      "nominalMACs": 37748736,
+      "parameter": "transformer_blocks.0.attn.add_q_proj.weight",
+      "role": "Q",
+      "weightShape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        4,
+        3072
+      ],
+      "inputStride": [
+        12288,
+        3072,
+        1
+      ],
+      "nominalMACs": 37748736,
+      "parameter": "transformer_blocks.0.attn.to_add_out.weight",
+      "role": "Q",
+      "weightShape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        4,
+        3072
+      ],
+      "inputStride": [
+        12288,
+        3072,
+        1
+      ],
+      "nominalMACs": 226492416,
+      "parameter": "transformer_blocks.0.ff_context.linear_in.weight",
+      "role": "Q",
+      "weightShape": [
+        18432,
+        3072
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        4,
+        9216
+      ],
+      "inputStride": [
+        36864,
+        9216,
+        1
+      ],
+      "nominalMACs": 113246208,
+      "parameter": "transformer_blocks.0.ff_context.linear_out.weight",
+      "role": "Q",
+      "weightShape": [
+        3072,
+        9216
+      ]
+    }
+  ],
+  "loadedParameters": [
+    {
+      "bytes": 18874368,
+      "dataOffsets": [
+        5372128256,
+        5391002624
+      ],
+      "name": "transformer_blocks.0.attn.to_k.weight",
+      "payloadSHA256": "2974ccc84fb92dfad76aba8fb1a0fbca3931ae6152b83c2ccbe7b95877793132",
+      "shape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "bytes": 18874368,
+      "dataOffsets": [
+        5428751360,
+        5447625728
+      ],
+      "name": "transformer_blocks.0.attn.to_v.weight",
+      "payloadSHA256": "6b647c18ebe55c3fcb0ed8a4741afa104da2de8bfbda5bf05eba372ccdaa4943",
+      "shape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "bytes": 18874368,
+      "dataOffsets": [
+        5296629760,
+        5315504128
+      ],
+      "name": "transformer_blocks.0.attn.add_k_proj.weight",
+      "payloadSHA256": "c51528a6e4c6d39c4271f921114fa889c794cd2b7b22d2222582c82cf70e2ae4",
+      "shape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "bytes": 18874368,
+      "dataOffsets": [
+        5334378496,
+        5353252864
+      ],
+      "name": "transformer_blocks.0.attn.add_v_proj.weight",
+      "payloadSHA256": "cd9309cc262bd808a8c7b53f4665d5214502bd8e476a17f6e677cee3884bbb36",
+      "shape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "bytes": 18874368,
+      "dataOffsets": [
+        5315504128,
+        5334378496
+      ],
+      "name": "transformer_blocks.0.attn.add_q_proj.weight",
+      "payloadSHA256": "4d583ed1a91efda5ab94b3fbf14aa3cec06a1a2288c7120fc7a9ab4b8479d5b8",
+      "shape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "bytes": 18874368,
+      "dataOffsets": [
+        5353253888,
+        5372128256
+      ],
+      "name": "transformer_blocks.0.attn.to_add_out.weight",
+      "payloadSHA256": "b164a1d5d9a3c70906216856bb12c2ead6099ea5f8340f474f421c48f5b75f93",
+      "shape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "bytes": 113246208,
+      "dataOffsets": [
+        5617495040,
+        5730741248
+      ],
+      "name": "transformer_blocks.0.ff_context.linear_in.weight",
+      "payloadSHA256": "284575f2c14ed44ff52b43ca48a72ad83597acec487c7d85910a0d77ea50b170",
+      "shape": [
+        18432,
+        3072
+      ]
+    },
+    {
+      "bytes": 56623104,
+      "dataOffsets": [
+        5730741248,
+        5787364352
+      ],
+      "name": "transformer_blocks.0.ff_context.linear_out.weight",
+      "payloadSHA256": "0e63555317d978143d9ffcffa1ab4ff256952424f265e7e898f2ce33e4f7d7fb",
+      "shape": [
+        3072,
+        9216
+      ]
+    },
+    {
+      "bytes": 256,
+      "dataOffsets": [
+        5353253376,
+        5353253632
+      ],
+      "name": "transformer_blocks.0.attn.norm_k.weight",
+      "payloadSHA256": "4822188b204b4cc4eea0ae74c8b5167795eba38ae03b66c86dfe4e258c55cc42",
+      "shape": [
+        128
+      ]
+    },
+    {
+      "bytes": 256,
+      "dataOffsets": [
+        5353252864,
+        5353253120
+      ],
+      "name": "transformer_blocks.0.attn.norm_added_k.weight",
+      "payloadSHA256": "d0ef1180a76078bd5e2de6bb163298b0b45f538e838dfa2cab890c75b7972b16",
+      "shape": [
+        128
+      ]
+    },
+    {
+      "bytes": 256,
+      "dataOffsets": [
+        5353253120,
+        5353253376
+      ],
+      "name": "transformer_blocks.0.attn.norm_added_q.weight",
+      "payloadSHA256": "54399ad379d8df64b4ac9eebd952abff78ae52359e8730ebea1d31418e677aa8",
+      "shape": [
+        128
+      ]
+    }
+  ],
+  "nominalMatrixMACs": 58888028160,
+  "numericalProfile": {
+    "bf16ReducedPrecisionReduction": true,
+    "cublasWorkspaceConfig": ":4096:8",
+    "cudaMatmulTF32": false,
+    "cudnnBenchmark": false,
+    "cudnnDeterministic": true,
+    "cudnnTF32": false,
+    "deterministicAlgorithms": true,
+    "float32MatmulPrecision": "highest",
+    "threads": 4
+  },
+  "parameterInputRNGClosure": true,
+  "peakCUDAAllocatedBytes": 442820096,
+  "peakCUDAReservedBytes": 463470592,
+  "wallSecondsAfterImports": 12.74619541829452
+}

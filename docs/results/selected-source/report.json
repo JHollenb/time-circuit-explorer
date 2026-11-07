@@ -1,0 +1,495 @@
+{
+  "actorsMatrixMACs": 855638016,
+  "cacheLogicalBytes": 604372992,
+  "compilerMatrixMACs": 0,
+  "compilerSealSHA256": "da976e830d1828099d2516233223a6ab7269cffa3a9e8af7973ac50714c0913e",
+  "endpoints": [
+    {
+      "arm": "QQQ",
+      "candidateRms": 1.452195901384988,
+      "changedValues": 719911,
+      "cosine": 0.9999983797177668,
+      "mae": 0.0006702737508703649,
+      "maxAbs": 0.5,
+      "reference": "family",
+      "referenceRms": 1.4521431552384059,
+      "relativeRms": 0.001800555895071674,
+      "rms": 0.0026146649186524927,
+      "scalars": 3145728
+    },
+    {
+      "arm": "PQP",
+      "candidateRms": 1.452517201442431,
+      "changedValues": 723448,
+      "cosine": 0.9999983030421237,
+      "mae": 0.0006728493906393851,
+      "maxAbs": 0.5,
+      "reference": "family",
+      "referenceRms": 1.452467418883955,
+      "relativeRms": 0.0018426086988872405,
+      "rms": 0.002676329100885873,
+      "scalars": 3145728
+    },
+    {
+      "arm": "QQQ",
+      "candidateRms": 1.452195901384988,
+      "changedValues": 95012,
+      "cosine": 0.9999998827928148,
+      "mae": 6.979242857596546e-05,
+      "maxAbs": 0.25,
+      "reference": "parent",
+      "referenceRms": 1.4522091204179564,
+      "relativeRms": 0.0004842469369435408,
+      "rms": 0.0007032278183638689,
+      "scalars": 3145728
+    },
+    {
+      "arm": "PQP",
+      "candidateRms": 1.452517201442431,
+      "changedValues": 135231,
+      "cosine": 0.9999997902629316,
+      "mae": 0.00010214658686891198,
+      "maxAbs": 0.5,
+      "reference": "parent",
+      "referenceRms": 1.452520848025794,
+      "relativeRms": 0.0006476722831397345,
+      "rms": 0.0009407574939489294,
+      "scalars": 3145728
+    }
+  ],
+  "historicalBaselineCompilerMatrixMACs": 48318382080,
+  "historicalProjectedCompilerMatrixMACs": 9663676416,
+  "instrument_status": "executed",
+  "limits": [
+    "One retrospective source family. Full current source KV and original learned maps remain paid.",
+    "Only four source text rows produced; original prefixes and receiving image queries/complement remain supplied.",
+    "Shortened GEMMs/rectangular SDPA change finite arithmetic; source and downstream discrepancies retained.",
+    "No full successor state, new reference, later diffusion, VAE, image or arbitrary-prompt zero-neural generator."
+  ],
+  "mechanics_status": "complete",
+  "phases": [
+    {
+      "phase": "producer",
+      "wallSecondsIncludingFreshProcess": 28.744210939854383
+    },
+    {
+      "phase": "readers",
+      "wallSecondsIncludingFreshProcess": 39.74230604991317
+    }
+  ],
+  "primarySealSHA256": "fa1a8d03467b99181dd0e21588b829c489727e8b5dfd71654c68dd60f38d47b4",
+  "producerSealSHA256": "e8d40460096a08aaf4127a6734e6f6b077d17e1cfe7d3f55f96a8632779e8e61",
+  "queryPanels": [
+    {
+      "candidateRms": 0.03631935479542246,
+      "changedValues": 1044812,
+      "cosine": 0.9953612497197708,
+      "dependentQueries": 1024,
+      "mae": 0.0010969807318209253,
+      "maxAbs": 1.0,
+      "medianRowRelativeError": 0.5720581502802758,
+      "panel": "all",
+      "reference": "family",
+      "referenceRms": 0.03634224634546078,
+      "relativeRms": 0.09629150290621122,
+      "rms": 0.0034994495195921804,
+      "rowsBetterThanZero": 953,
+      "rowsWorseThanZero": 71,
+      "scalars": 3145728
+    },
+    {
+      "candidateRms": 0.027769677786619963,
+      "changedValues": 514656,
+      "cosine": 0.9919358448927341,
+      "dependentQueries": 512,
+      "mae": 0.001082366557398018,
+      "maxAbs": 1.0,
+      "medianRowRelativeError": 0.7292381218058923,
+      "panel": "left-grid",
+      "reference": "family",
+      "referenceRms": 0.027724270949020285,
+      "relativeRms": 0.1271117916185819,
+      "rms": 0.0035240817516489706,
+      "rowsBetterThanZero": 461,
+      "rowsWorseThanZero": 51,
+      "scalars": 1572864
+    },
+    {
+      "candidateRms": 0.04320921268825502,
+      "changedValues": 530156,
+      "cosine": 0.9967730349430802,
+      "dependentQueries": 512,
+      "mae": 0.0011115949062438328,
+      "maxAbs": 0.5,
+      "medianRowRelativeError": 0.4267405227682233,
+      "panel": "right-grid",
+      "reference": "family",
+      "referenceRms": 0.04327681295120546,
+      "relativeRms": 0.0802887836142833,
+      "rms": 0.003474642670555148,
+      "rowsBetterThanZero": 492,
+      "rowsWorseThanZero": 20,
+      "scalars": 1572864
+    },
+    {
+      "candidateRms": 0.03631935479542246,
+      "changedValues": 205469,
+      "cosine": 0.9994768992759976,
+      "dependentQueries": 1024,
+      "mae": 0.00016454040458787253,
+      "maxAbs": 0.5,
+      "medianRowRelativeError": 0.1009878425617333,
+      "panel": "all",
+      "reference": "parent",
+      "referenceRms": 0.036303315614463115,
+      "relativeRms": 0.032355198454632264,
+      "rms": 0.0011746009812671043,
+      "rowsBetterThanZero": 1024,
+      "rowsWorseThanZero": 0,
+      "scalars": 3145728
+    },
+    {
+      "candidateRms": 0.027769677786619963,
+      "changedValues": 92137,
+      "cosine": 0.9990809329957925,
+      "dependentQueries": 512,
+      "mae": 0.0001485637768610104,
+      "maxAbs": 0.5,
+      "medianRowRelativeError": 0.120434476671782,
+      "panel": "left-grid",
+      "reference": "parent",
+      "referenceRms": 0.027716367900825316,
+      "relativeRms": 0.04295775819133571,
+      "rms": 0.0011906330302257529,
+      "rowsBetterThanZero": 512,
+      "rowsWorseThanZero": 0,
+      "scalars": 1572864
+    },
+    {
+      "candidateRms": 0.04320921268825502,
+      "changedValues": 113332,
+      "cosine": 0.9996407435900309,
+      "dependentQueries": 512,
+      "mae": 0.00018051703231473462,
+      "maxAbs": 0.25,
+      "medianRowRelativeError": 0.08568797264881224,
+      "panel": "right-grid",
+      "reference": "parent",
+      "referenceRms": 0.043216482961860085,
+      "relativeRms": 0.026803362590770916,
+      "rms": 0.0011583470627246093,
+      "rowsBetterThanZero": 512,
+      "rowsWorseThanZero": 0,
+      "scalars": 1572864
+    }
+  ],
+  "queryRecords": 1024,
+  "requestSHA256": "12d531637dfc78d1b5f4f749b2cea589ea61628f5d35d36e595261ce23d93742",
+  "responses": [
+    {
+      "candidateRms": 0.03631935479542246,
+      "changedValues": 1044812,
+      "cosine": 0.9953612497197708,
+      "mae": 0.0010969807318209253,
+      "maxAbs": 1.0,
+      "reference": "family",
+      "referenceRms": 0.03634224634546078,
+      "relativeRms": 0.09629150290621122,
+      "rms": 0.0034994495195921804,
+      "scalars": 3145728
+    },
+    {
+      "candidateRms": 0.03631935479542246,
+      "changedValues": 205469,
+      "cosine": 0.9994768992759976,
+      "mae": 0.00016454040458787253,
+      "maxAbs": 0.5,
+      "reference": "parent",
+      "referenceRms": 0.036303315614463115,
+      "relativeRms": 0.032355198454632264,
+      "rms": 0.0011746009812671043,
+      "scalars": 3145728
+    }
+  ],
+  "scalarWorkPerActor": {
+    "cacheMultiplyAddPairs": 75497472,
+    "interHeadAdditions": 72351744,
+    "perHeadDivisions": 75497472
+  },
+  "schema": "tce-selected-source-result-v1",
+  "selectedTextMetrics": [
+    {
+      "arm": "QQQ",
+      "candidateRms": 10.466662151439772,
+      "changedValues": 6238,
+      "cosine": 0.9999984762445807,
+      "mae": 0.0105820099512736,
+      "maxAbs": 0.25,
+      "referenceRms": 10.467163699004692,
+      "relativeRms": 0.0017463277995336227,
+      "rms": 0.018279098949841078,
+      "scalars": 12288
+    },
+    {
+      "arm": "PQP",
+      "candidateRms": 10.103560163189725,
+      "changedValues": 6861,
+      "cosine": 0.9999971945564682,
+      "mae": 0.012967134515444437,
+      "maxAbs": 1.0,
+      "referenceRms": 10.10656992386413,
+      "relativeRms": 0.0023870279410597695,
+      "rms": 0.02412466479653799,
+      "scalars": 12288
+    }
+  ],
+  "sourceMatrixMACs": 58888028160,
+  "sourceMetrics": [
+    {
+      "candidateRms": 2.9251850800892254,
+      "changedValues": 0,
+      "cosine": 1.0,
+      "field": "R",
+      "mae": 0.0,
+      "maxAbs": 0.0,
+      "referenceRms": 2.9251850800892254,
+      "relativeRms": 0.0,
+      "rms": 0.0,
+      "role": "P",
+      "scalars": 12288
+    },
+    {
+      "candidateRms": 1.9075112813023194,
+      "changedValues": 6786,
+      "cosine": 0.9999939040639108,
+      "field": "A",
+      "mae": 0.004017292987555265,
+      "maxAbs": 0.125,
+      "referenceRms": 1.9074377708743775,
+      "relativeRms": 0.003491966105329604,
+      "rms": 0.006660708043918781,
+      "role": "P",
+      "scalars": 12288
+    },
+    {
+      "candidateRms": 7.233450002919699,
+      "changedValues": 3565,
+      "cosine": 0.9999964811114779,
+      "field": "U",
+      "mae": 0.0029779449105262756,
+      "maxAbs": 2.0,
+      "referenceRms": 7.229131666634756,
+      "relativeRms": 0.0027200754567994964,
+      "rms": 0.01966378362038524,
+      "role": "P",
+      "scalars": 12288
+    },
+    {
+      "candidateRms": 0.49723838271001125,
+      "changedValues": 3829,
+      "cosine": 0.9999918510345276,
+      "field": "X",
+      "mae": 0.0008879378437995911,
+      "maxAbs": 0.03125,
+      "referenceRms": 0.49759295985722424,
+      "relativeRms": 0.004098059820449501,
+      "rms": 0.0020391657157294322,
+      "role": "P",
+      "scalars": 12288
+    },
+    {
+      "candidateRms": 2.338018460922343,
+      "changedValues": 8497,
+      "cosine": 0.9999813313143302,
+      "field": "M",
+      "mae": 0.009634030061230684,
+      "maxAbs": 0.125,
+      "referenceRms": 2.3427837646851946,
+      "relativeRms": 0.006434183980271745,
+      "rms": 0.01507390176797821,
+      "role": "P",
+      "scalars": 12288
+    },
+    {
+      "candidateRms": 10.026388761778128,
+      "changedValues": 6937,
+      "cosine": 0.9999958225117288,
+      "field": "T",
+      "mae": 0.013154909014701843,
+      "maxAbs": 2.0,
+      "referenceRms": 10.024303247351043,
+      "relativeRms": 0.002898274974066043,
+      "rms": 0.02905318723424649,
+      "role": "P",
+      "scalars": 12288
+    },
+    {
+      "candidateRms": 3.0537163278266477,
+      "changedValues": 0,
+      "cosine": 1.0,
+      "field": "R",
+      "mae": 0.0,
+      "maxAbs": 0.0,
+      "referenceRms": 3.0537163278266477,
+      "relativeRms": 0.0,
+      "rms": 0.0,
+      "role": "Q",
+      "scalars": 12288
+    },
+    {
+      "candidateRms": 1.9005319311002178,
+      "changedValues": 7072,
+      "cosine": 0.9999931930486026,
+      "field": "A",
+      "mae": 0.004389348536885033,
+      "maxAbs": 0.03125,
+      "referenceRms": 1.9008442044546383,
+      "relativeRms": 0.003693054922877375,
+      "rms": 0.00701992204688413,
+      "role": "Q",
+      "scalars": 12288
+    },
+    {
+      "candidateRms": 7.346381358039006,
+      "changedValues": 3644,
+      "cosine": 0.9999994630497269,
+      "field": "U",
+      "mae": 0.003061001499493917,
+      "maxAbs": 0.25,
+      "referenceRms": 7.346418391937611,
+      "relativeRms": 0.001036301377674042,
+      "rms": 0.007613103500534867,
+      "role": "Q",
+      "scalars": 12288
+    },
+    {
+      "candidateRms": 0.5258878576192949,
+      "changedValues": 2951,
+      "cosine": 0.9999950944345055,
+      "field": "X",
+      "mae": 0.0006384526689847311,
+      "maxAbs": 0.015625,
+      "referenceRms": 0.5259088286130258,
+      "relativeRms": 0.0031324638603024936,
+      "rms": 0.0016473903994443212,
+      "role": "Q",
+      "scalars": 12288
+    },
+    {
+      "candidateRms": 2.4858904568684013,
+      "changedValues": 7898,
+      "cosine": 0.9999899380162476,
+      "field": "M",
+      "mae": 0.007555863043914239,
+      "maxAbs": 0.0625,
+      "referenceRms": 2.4868091137863413,
+      "relativeRms": 0.004500333169301394,
+      "rms": 0.011191469540493675,
+      "role": "Q",
+      "scalars": 12288
+    },
+    {
+      "candidateRms": 10.466662151439772,
+      "changedValues": 6238,
+      "cosine": 0.9999984762445807,
+      "field": "T",
+      "mae": 0.0105820099512736,
+      "maxAbs": 0.25,
+      "referenceRms": 10.467163699004692,
+      "relativeRms": 0.0017463277995336227,
+      "rms": 0.018279098949841078,
+      "role": "Q",
+      "scalars": 12288
+    }
+  ],
+  "terminal_status": "unassessed",
+  "totalIncrementalMatrixMACs": 59743666176,
+  "upstreamBoundaryIdentity": [
+    {
+      "arm": "QQQ",
+      "field": "K",
+      "payloadExact": false
+    },
+    {
+      "arm": "QQQ",
+      "field": "V",
+      "payloadExact": false
+    },
+    {
+      "arm": "QQQ",
+      "field": "scores",
+      "payloadExact": false
+    },
+    {
+      "arm": "QQQ",
+      "field": "peak",
+      "payloadExact": false
+    },
+    {
+      "arm": "QQQ",
+      "field": "cacheScale",
+      "payloadExact": false
+    },
+    {
+      "arm": "QQQ",
+      "field": "selectedWeights",
+      "payloadExact": false
+    },
+    {
+      "arm": "QQQ",
+      "field": "denominator",
+      "payloadExact": false
+    },
+    {
+      "arm": "PQP",
+      "field": "K",
+      "payloadExact": false
+    },
+    {
+      "arm": "PQP",
+      "field": "V",
+      "payloadExact": false
+    },
+    {
+      "arm": "PQP",
+      "field": "scores",
+      "payloadExact": false
+    },
+    {
+      "arm": "PQP",
+      "field": "peak",
+      "payloadExact": false
+    },
+    {
+      "arm": "PQP",
+      "field": "cacheScale",
+      "payloadExact": false
+    },
+    {
+      "arm": "PQP",
+      "field": "selectedWeights",
+      "payloadExact": false
+    },
+    {
+      "arm": "PQP",
+      "field": "denominator",
+      "payloadExact": false
+    }
+  ],
+  "work": {
+    "WoFP64CopyBytesPerProcess": 75497472,
+    "actorAffines": 52,
+    "actorOtherContractions": 4,
+    "compilerAffines": 0,
+    "distinctBF16ParameterBytes": 339739648,
+    "newFullTransformer": 0,
+    "newImages": 0,
+    "newMLP": 2,
+    "newNativeSDPA": 2,
+    "processBF16ParameterBytes": 339739648,
+    "sourceAffines": 16,
+    "sourceMLPs": 2,
+    "sourceSDPA": 2
+  },
+  "workerWallSeconds": 69.54094730690122
+}

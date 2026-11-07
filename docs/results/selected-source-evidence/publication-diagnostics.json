@@ -1,0 +1,10 @@
+{
+  "schema": "tce-selected-source-publication-diagnostics-v1",
+  "firstAuditExit": 1,
+  "firstAuditMessage": "Source typed output capture differs",
+  "reason": "The initial publisher audit equated raw producer byte SHA directly to MDB native structured fingerprint. Native output fingerprints hash {dtype,shape,bytes}; provided input hashes retain the producer convention.",
+  "resolution": "Standalone audit_selected_source.py independently verifies both conventions, all complete output captures, phase seals and source\u2192splice\u2192reader joins. Frozen publisher/worker/results remain unchanged; no model rerun.",
+  "verifierSourceSHA256": "7ae7bd4a8ea9bca1dc0673996009140584b640dc9a0354153dc8e899c2bada39",
+  "correctedAuditSourceSHA256": "82a346ef79e425a42d4e9e4be3131867aeddf8c53dcfffa4ea8c6018b8891626",
+  "scope": "Publication instrument correction only; raw arrays, measurements and historical audit outcome retained."
+}
