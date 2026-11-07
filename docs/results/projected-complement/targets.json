@@ -1,0 +1,408 @@
+{
+  "family": {
+    "PQP": {
+      "bytes": 6291584,
+      "logicalDtype": "torch.bfloat16",
+      "nativeStride": [
+        3145728,
+        3072,
+        1
+      ],
+      "path": "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/cases/sphere-cube-plain-2027/PQP/consumer/native/R_attention.npy",
+      "payloadSHA256": "35abd5d4bed3dafc76bb37ec995babe82d37af754493d8c107a47df781b1c08a",
+      "sha256": "b870318d7b3a16febe6b2949a0a8a87e17ad785d7e05d81a4d4779dff3f1d16a",
+      "shape": [
+        1,
+        1024,
+        3072
+      ]
+    },
+    "QQQ": {
+      "bytes": 6291584,
+      "logicalDtype": "torch.bfloat16",
+      "nativeStride": [
+        3145728,
+        3072,
+        1
+      ],
+      "path": "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/cases/sphere-cube-plain-2027/QQQ/consumer/native/R_attention.npy",
+      "payloadSHA256": "29d100245fe5fbd7e336a6aa88440c2e007a07b8a9b8e1e99b23828b32fa1fb6",
+      "sha256": "c19e777cefe5989406d10bd4c10e0679e8659dbdf1f40f0d49ba8e0873c0f2aa",
+      "shape": [
+        1,
+        1024,
+        3072
+      ]
+    }
+  },
+  "imageIDs": {
+    "bytes": 32896,
+    "logicalDtype": "torch.int64",
+    "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/diagnostics/imageIDs.npy",
+    "payloadSHA256": "87b4f95cfb97df0287488b86742472e263ea5e9c080c2e3348f6f64224f797af",
+    "sha256": "5eaeec651a5ca7e48a9ec778cff91e3e2a98eda31fef6eadcd406cc403770e33",
+    "shape": [
+      1,
+      1024,
+      4
+    ],
+    "storedDtype": "int64"
+  },
+  "parent": {
+    "PQP": {
+      "H_BF16": {
+        "bytes": 6291584,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/H_BF16.npy",
+        "payloadSHA256": "caa33f83c328d41a8864eadf4bbb7aff987544cf6d04174af23af5a49553e2c0",
+        "sha256": "fbb070679a5d488b9deeb6ab623242e89430644e30ad16b84a5957bcf5110b38",
+        "shape": [
+          1,
+          1024,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "H_FP64": {
+        "bytes": 25165952,
+        "logicalDtype": "torch.float64",
+        "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/H_FP64.npy",
+        "payloadSHA256": "77af0ac6562869fa5f6afac81be5ddf9a303488fbe5d8a04d5b9584ef73e345c",
+        "sha256": "cb93bf692aa108f6221058c051a62a32b2de54e80339aea7c569568c62326706",
+        "shape": [
+          24,
+          1024,
+          128
+        ],
+        "storedDtype": "float64"
+      },
+      "K": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/K.npy",
+        "payloadSHA256": "70aaace13c6fa53dc3ea52272e91b10b09c7285b01fc23c4ae81c58de94a95f3",
+        "sha256": "fcb50ee025ff9d9381fab88f261f7e73ef9485272b4ee4624df162e64b72c6db",
+        "shape": [
+          1,
+          4,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "R_attention": {
+        "bytes": 6291584,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/R_attention.npy",
+        "payloadSHA256": "0d0a580b80080ebce47198f8d8741e7eedfaa0c60ed82aee5f647bd0d029de65",
+        "sha256": "2cfcb0a70364d1b3abb2eeb01287c75eef23f2ec3b0d375fc542ba0f51ef136d",
+        "shape": [
+          1,
+          1024,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "V": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/V.npy",
+        "payloadSHA256": "39a5c6afc5bd7ea436cdaba9f52012f7bb22bde8f3fe48cc1eaefd082b1599bd",
+        "sha256": "8619887370018ac7147a9c5b59b2d8376f3ec3fdc12017c3aa8f383df59bcd11",
+        "shape": [
+          1,
+          4,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "attentionReturn": {
+        "bytes": 6291584,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/attentionReturn.npy",
+        "payloadSHA256": "2f3872349c0996cb7731301065b5b2747cdfa98e0aad7294a9d320462f14942c",
+        "sha256": "c75429688312eb8972aa926663d5b0aa2479020256dd14db603bbbf6bf3ff78d",
+        "shape": [
+          1,
+          1024,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "cacheScale": {
+        "bytes": 196736,
+        "logicalDtype": "torch.float64",
+        "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/cacheScale.npy",
+        "payloadSHA256": "4bed243af515e6c701cb0c6084769a7d0c2c7aae7386918a40c0055f130b5887",
+        "sha256": "8acdfe95c50867b6ae99eb83fe9f88b90e77a6c9d7817fa4080bcf1928df490c",
+        "shape": [
+          24,
+          1024,
+          1
+        ],
+        "storedDtype": "float64"
+      },
+      "carrier": {
+        "bytes": 6291584,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/carrier.npy",
+        "payloadSHA256": "5c9a365cf9610cfd8a98f91db7b5737314d9642f44c793bbbcd8d537a5ec82e1",
+        "sha256": "2f8bdf938240c9671ae03dd780ffe7230022d4f22e0c350c0aed2f7a7da6ef77",
+        "shape": [
+          1,
+          1024,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "denominator": {
+        "bytes": 196736,
+        "logicalDtype": "torch.float64",
+        "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/denominator.npy",
+        "payloadSHA256": "7f85558d37e5c3953ee2ac44ef43df47bf3c2e81e21303bb0a2ffd1db06b26bd",
+        "sha256": "6cfbd0b7c515424061b439f2aa94cb910e92245468aa23a529369248e83e0cd4",
+        "shape": [
+          24,
+          1024,
+          1
+        ],
+        "storedDtype": "float64"
+      },
+      "numerator": {
+        "bytes": 25165952,
+        "logicalDtype": "torch.float64",
+        "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/numerator.npy",
+        "payloadSHA256": "6e3fb7a59a96be8fdd12225cbb8d52235847d735267bf48cb4ed27af820d0aee",
+        "sha256": "cbf39e6d7e09c86cc2c813ca0ce6b8c8a181169938dd46185e6795c8730ccde0",
+        "shape": [
+          24,
+          1024,
+          128
+        ],
+        "storedDtype": "float64"
+      },
+      "peak": {
+        "bytes": 196736,
+        "logicalDtype": "torch.float64",
+        "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/peak.npy",
+        "payloadSHA256": "c31606323e377c599cd9f39d40333f3ff7499e10a3912deb0532f70a6cf086fe",
+        "sha256": "a10609dd6e4275091b08194069c2a1ff201902fc3ebdfead30c36dfbc463f77c",
+        "shape": [
+          24,
+          1024,
+          1
+        ],
+        "storedDtype": "float64"
+      },
+      "scores": {
+        "bytes": 786560,
+        "logicalDtype": "torch.float64",
+        "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/scores.npy",
+        "payloadSHA256": "d5a0bd1a9011c7088c81fc98e38ca7e15799dbdf97d79a5a06060f2de7d11cd7",
+        "sha256": "b13e5e8d78ae6323103966859680edb5e177289398b41972283fcb94ea1f68b1",
+        "shape": [
+          24,
+          1024,
+          4
+        ],
+        "storedDtype": "float64"
+      },
+      "selectedWeights": {
+        "bytes": 786560,
+        "logicalDtype": "torch.float64",
+        "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/selectedWeights.npy",
+        "payloadSHA256": "007e54106d55a1108f32737c5e356d4e0ed74ef397216d0157849c726e45b792",
+        "sha256": "eaa3ecbd81edfc13dc39c937d98255e2003c4534242b91c5b07340f9a928ab02",
+        "shape": [
+          24,
+          1024,
+          4
+        ],
+        "storedDtype": "float64"
+      }
+    },
+    "QQQ": {
+      "H_BF16": {
+        "bytes": 6291584,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/H_BF16.npy",
+        "payloadSHA256": "f94fee8156e90a4ac47122a6e2e19da23dbced2a08d6eb4ab7c39ad23675511b",
+        "sha256": "ae37007767742f8303c591ab712e95d4fbce02972cd3a032f06d78f574fa772c",
+        "shape": [
+          1,
+          1024,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "H_FP64": {
+        "bytes": 25165952,
+        "logicalDtype": "torch.float64",
+        "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/H_FP64.npy",
+        "payloadSHA256": "c063744c4ae3e2addf8d0a5bdbc17fe57cdded1c197e5fe699b45a1a91ba3aa7",
+        "sha256": "3a09a013f8ba24f7496c15d00b8af4af336271f1c52635ed75bb316e2afa9204",
+        "shape": [
+          24,
+          1024,
+          128
+        ],
+        "storedDtype": "float64"
+      },
+      "K": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/K.npy",
+        "payloadSHA256": "57bd3376468fa78abd4da200cf6480067033b457e4b6f60b2441d0873a737c48",
+        "sha256": "79d9d86a4d30dbff26c1ce48b2aed757e5dd272e363ef4470247802e68ef8e09",
+        "shape": [
+          1,
+          4,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "R_attention": {
+        "bytes": 6291584,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/R_attention.npy",
+        "payloadSHA256": "78aa696146620f118f6fc9ac7f2ab3fa25dc9427ccde1e0e0dcfa7572e550210",
+        "sha256": "293dafc7c0d8dd29f0abea74bda69885c4b5d57094d649a689dc816cf051f6f8",
+        "shape": [
+          1,
+          1024,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "V": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/V.npy",
+        "payloadSHA256": "d2ceade0a5582082d8f5af6c30614623b7cbae8b9bc9a900570d85c3049ad17d",
+        "sha256": "0ffcd11df624fdb7ee8128200462058907b451718e92597460f280d12f057245",
+        "shape": [
+          1,
+          4,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "attentionReturn": {
+        "bytes": 6291584,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/attentionReturn.npy",
+        "payloadSHA256": "edeb1708539cc9f36c44abae91242dd00e6c217a44e4ee57416743784993eae7",
+        "sha256": "917b6f0666a399cf6500220870ef96bf64a2b0eb9d6313ad59508f739e4d5b1c",
+        "shape": [
+          1,
+          1024,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "cacheScale": {
+        "bytes": 196736,
+        "logicalDtype": "torch.float64",
+        "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/cacheScale.npy",
+        "payloadSHA256": "b39ee3b68e1b7449618333499cfb734009ed1652830d863ceda3e4b668d9d193",
+        "sha256": "d81e13e7b44c09470df41d957cd58cbc05408c74490bbfc936de45b7f1841552",
+        "shape": [
+          24,
+          1024,
+          1
+        ],
+        "storedDtype": "float64"
+      },
+      "carrier": {
+        "bytes": 6291584,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/carrier.npy",
+        "payloadSHA256": "9479087889c6534df16aa507604cb0286e3e23fc0723e1a1c6f1826ae2b1c93d",
+        "sha256": "26e3ae0fc7cd6b66e97531d58928fb5a049b5ac91a62db31fecaffaff91da56b",
+        "shape": [
+          1,
+          1024,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "denominator": {
+        "bytes": 196736,
+        "logicalDtype": "torch.float64",
+        "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/denominator.npy",
+        "payloadSHA256": "d98c1325739d5007086a53d8ae3d8b758a12f086c4d60bb6fca216553fca9fb3",
+        "sha256": "6e1586f49a7fc2616b13d089a3761a3e09f900ac2865069836abd484285469b0",
+        "shape": [
+          24,
+          1024,
+          1
+        ],
+        "storedDtype": "float64"
+      },
+      "numerator": {
+        "bytes": 25165952,
+        "logicalDtype": "torch.float64",
+        "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/numerator.npy",
+        "payloadSHA256": "d5ad520f8ce9b924ad4b53c699b057e50900596e3f2ca9ca998461b3a0c5708a",
+        "sha256": "9184198feba03fc3a289a5aba2c40e6a62a64678c443d37386a5f85841ffa686",
+        "shape": [
+          24,
+          1024,
+          128
+        ],
+        "storedDtype": "float64"
+      },
+      "peak": {
+        "bytes": 196736,
+        "logicalDtype": "torch.float64",
+        "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/peak.npy",
+        "payloadSHA256": "5a233683b5bcaa9f17f092a9aa86b624f25acc960c638d0e8b56a7dc2d5142c3",
+        "sha256": "20bff9a47925fd7fea621bdde6fa154a344902732344ef2766b5b0a5d6e99f62",
+        "shape": [
+          24,
+          1024,
+          1
+        ],
+        "storedDtype": "float64"
+      },
+      "scores": {
+        "bytes": 786560,
+        "logicalDtype": "torch.float64",
+        "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/scores.npy",
+        "payloadSHA256": "48ff27544339bd20343f44fa5f1756d4a3f331ba5f9ce9bfa99450c20203b6e5",
+        "sha256": "623d8ec8069bbc2cb5d81acccd3c258823ca0186f9d87c9d1fff458fb443fa8a",
+        "shape": [
+          24,
+          1024,
+          4
+        ],
+        "storedDtype": "float64"
+      },
+      "selectedWeights": {
+        "bytes": 786560,
+        "logicalDtype": "torch.float64",
+        "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/selectedWeights.npy",
+        "payloadSHA256": "541775febff42e5d5c58af998022fcd6a81812b5445adbcd12596da149654a31",
+        "sha256": "f018e33867e0c1620481d101b5b2e9c4aa7777b5d184a4341107e973003d29ed",
+        "shape": [
+          24,
+          1024,
+          4
+        ],
+        "storedDtype": "float64"
+      }
+    }
+  },
+  "parentPrimary": {
+    "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/response-result/primary.json",
+    "sha256": "1dd07f7ab9f3d226ae5cfc779dff958c696ecf568c80a3cd17585f9808c98d58"
+  },
+  "parentPrimarySeal": {
+    "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/response-result/primary-seal.json",
+    "sha256": "9241fec922084585312377815ff140c400fbffd9ee218b32076d28b48313df21"
+  },
+  "scope": "Both references already observed; admitted only after complete new actor seal and child exit."
+}

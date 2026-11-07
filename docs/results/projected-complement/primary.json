@@ -1,0 +1,1731 @@
+{
+  "actors": {
+    "PQP": {
+      "evidence": {
+        "act": "tce.projected_complement:v1",
+        "elapsed_ms": 677.343687042594,
+        "implementation": "projected-positive-fixed-query-read",
+        "input_frame_id": "c7c8b97a9bdf035bfb70c357a5010536bba8cb43dd329013c957a8e0b36d567d",
+        "metrics": {
+          "arithmeticWallSeconds": 0.20054640900343657,
+          "capturedPayloadSHA256": "05929c94e01497c36d512b7b639431171b42dfb5bad69d7fc70b334c985424a0",
+          "intermediateHeadRounding": false,
+          "projectedNumeratorBytes": 603979776
+        },
+        "numerical_contract": "own-fourrow-native-KV-positive-projected-FP64-complement-fixed-headsum-native-gate-residual",
+        "output_frame_id": "136aa587195d04fffaa224b75a62c1675f606a6bd28cd07e4bf75ebc46e4f538"
+      },
+      "fields": {
+        "K": {
+          "bytes": 24704,
+          "logicalDtype": "torch.bfloat16",
+          "path": "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/PQP/K.npy",
+          "payloadSHA256": "70aaace13c6fa53dc3ea52272e91b10b09c7285b01fc23c4ae81c58de94a95f3",
+          "sha256": "fcb50ee025ff9d9381fab88f261f7e73ef9485272b4ee4624df162e64b72c6db",
+          "shape": [
+            1,
+            4,
+            24,
+            128
+          ],
+          "storedDtype": "uint16"
+        },
+        "R_attention": {
+          "bytes": 6291584,
+          "logicalDtype": "torch.bfloat16",
+          "path": "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/PQP/R_attention.npy",
+          "payloadSHA256": "05929c94e01497c36d512b7b639431171b42dfb5bad69d7fc70b334c985424a0",
+          "sha256": "a89faff5f28536092bea4943807eb4a8ec87c660b389fa46422cddb70f185e38",
+          "shape": [
+            1,
+            1024,
+            3072
+          ],
+          "storedDtype": "uint16"
+        },
+        "V": {
+          "bytes": 24704,
+          "logicalDtype": "torch.bfloat16",
+          "path": "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/PQP/V.npy",
+          "payloadSHA256": "39a5c6afc5bd7ea436cdaba9f52012f7bb22bde8f3fe48cc1eaefd082b1599bd",
+          "sha256": "8619887370018ac7147a9c5b59b2d8376f3ec3fdc12017c3aa8f383df59bcd11",
+          "shape": [
+            1,
+            4,
+            24,
+            128
+          ],
+          "storedDtype": "uint16"
+        },
+        "attentionReturn": {
+          "bytes": 6291584,
+          "logicalDtype": "torch.bfloat16",
+          "path": "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/PQP/attentionReturn.npy",
+          "payloadSHA256": "237b348faf9cdf203c50330dcc9682ca0eca696ac19d4743f67b2a111aec701e",
+          "sha256": "68b3256a08705007e2650683813e08dd3bdd8802264314d2a75e772556a39562",
+          "shape": [
+            1,
+            1024,
+            3072
+          ],
+          "storedDtype": "uint16"
+        },
+        "cacheScale": {
+          "bytes": 196736,
+          "logicalDtype": "torch.float64",
+          "path": "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/PQP/cacheScale.npy",
+          "payloadSHA256": "4bed243af515e6c701cb0c6084769a7d0c2c7aae7386918a40c0055f130b5887",
+          "sha256": "8acdfe95c50867b6ae99eb83fe9f88b90e77a6c9d7817fa4080bcf1928df490c",
+          "shape": [
+            24,
+            1024,
+            1
+          ],
+          "storedDtype": "float64"
+        },
+        "carrier": {
+          "bytes": 6291584,
+          "logicalDtype": "torch.bfloat16",
+          "path": "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/PQP/carrier.npy",
+          "payloadSHA256": "0518cd10805bb645d44412e2d56bf97d5da5a97bfcb8bb48e76b807831d67de7",
+          "sha256": "357671aaf4fe920de34a25854ced98330618669dcf4fd0ef8a63d70e4b527e94",
+          "shape": [
+            1,
+            1024,
+            3072
+          ],
+          "storedDtype": "uint16"
+        },
+        "denominator": {
+          "bytes": 196736,
+          "logicalDtype": "torch.float64",
+          "path": "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/PQP/denominator.npy",
+          "payloadSHA256": "7f85558d37e5c3953ee2ac44ef43df47bf3c2e81e21303bb0a2ffd1db06b26bd",
+          "sha256": "6cfbd0b7c515424061b439f2aa94cb910e92245468aa23a529369248e83e0cd4",
+          "shape": [
+            24,
+            1024,
+            1
+          ],
+          "storedDtype": "float64"
+        },
+        "peak": {
+          "bytes": 196736,
+          "logicalDtype": "torch.float64",
+          "path": "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/PQP/peak.npy",
+          "payloadSHA256": "c31606323e377c599cd9f39d40333f3ff7499e10a3912deb0532f70a6cf086fe",
+          "sha256": "a10609dd6e4275091b08194069c2a1ff201902fc3ebdfead30c36dfbc463f77c",
+          "shape": [
+            24,
+            1024,
+            1
+          ],
+          "storedDtype": "float64"
+        },
+        "projectedValues": {
+          "bytes": 2359424,
+          "logicalDtype": "torch.float64",
+          "path": "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/PQP/projectedValues.npy",
+          "payloadSHA256": "8a87ae1616096e807ac6e89c21034f1a16fd39485a62052897744f15f04eb5a9",
+          "sha256": "e72b77aac01faf943e38ec2986ffff785756ae0c94f862a2526c1cb95866da20",
+          "shape": [
+            24,
+            4,
+            3072
+          ],
+          "storedDtype": "float64"
+        },
+        "projectionFP64": {
+          "bytes": 25165952,
+          "logicalDtype": "torch.float64",
+          "path": "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/PQP/projectionFP64.npy",
+          "payloadSHA256": "efa0b92aeeac1371b954d9073f85915b1a2fd7e25a311617d231629fd4b0e1d8",
+          "sha256": "448b209431351567cf08ca3935a95be57c7586f74807969a0382f4b5b0145ae0",
+          "shape": [
+            1024,
+            3072
+          ],
+          "storedDtype": "float64"
+        },
+        "scores": {
+          "bytes": 786560,
+          "logicalDtype": "torch.float64",
+          "path": "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/PQP/scores.npy",
+          "payloadSHA256": "d5a0bd1a9011c7088c81fc98e38ca7e15799dbdf97d79a5a06060f2de7d11cd7",
+          "sha256": "b13e5e8d78ae6323103966859680edb5e177289398b41972283fcb94ea1f68b1",
+          "shape": [
+            24,
+            1024,
+            4
+          ],
+          "storedDtype": "float64"
+        },
+        "selectedWeights": {
+          "bytes": 786560,
+          "logicalDtype": "torch.float64",
+          "path": "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/PQP/selectedWeights.npy",
+          "payloadSHA256": "007e54106d55a1108f32737c5e356d4e0ed74ef397216d0157849c726e45b792",
+          "sha256": "eaa3ecbd81edfc13dc39c937d98255e2003c4534242b91c5b07340f9a928ab02",
+          "shape": [
+            24,
+            1024,
+            4
+          ],
+          "storedDtype": "float64"
+        }
+      },
+      "outputFrame": {
+        "act": "tce.projected_complement:v1",
+        "frame_id": "136aa587195d04fffaa224b75a62c1675f606a6bd28cd07e4bf75ebc46e4f538",
+        "implementation": "projected-positive-fixed-query-read",
+        "metadata": {
+          "arm": "PQP",
+          "familyPoint": {
+            "edge": "before",
+            "family": "flux2-klein",
+            "index": 1,
+            "local_clock": 1,
+            "logical_step": 2,
+            "next_operation": "joint_block.1",
+            "operator": "joint",
+            "phase": "joint"
+          },
+          "support": [
+            4,
+            11,
+            12,
+            13
+          ]
+        },
+        "parent_frame_id": "c7c8b97a9bdf035bfb70c357a5010536bba8cb43dd329013c957a8e0b36d567d",
+        "program_fingerprint": "86c8b548385b2b0711789b5259ea2009edf0c622e60be4ba68613993548902b4",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "KnormWeight": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                128
+              ],
+              "stride": [
+                1
+              ]
+            },
+            "fingerprint": "bb6e6c1417d4f1d1a5aef381baf01ac26564b7316d63c97f5546035a32692278",
+            "handle": "saturn://KnormWeight",
+            "kind": "tensor",
+            "name": "KnormWeight"
+          },
+          "Kweight": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                3072,
+                3072
+              ],
+              "stride": [
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "a33610550fb3ba089bcdfe7b236dbdc390841410eab29845d63d00d6e020ef5c",
+            "handle": "saturn://Kweight",
+            "kind": "tensor",
+            "name": "Kweight"
+          },
+          "Q": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                24,
+                128
+              ],
+              "stride": [
+                3145728,
+                3072,
+                128,
+                1
+              ]
+            },
+            "fingerprint": "268b26875b5e81adda46614ccc6a1f6e75559dfb90311f38c4f4cf747d35c748",
+            "handle": "saturn://Q",
+            "kind": "tensor",
+            "name": "Q"
+          },
+          "R_attention": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "shape": [
+                1,
+                1024,
+                3072
+              ]
+            },
+            "fingerprint": "4f742a5bfe87784753e2e8cc63bd5d99b86d86d1614fead33398a78b3081af7d",
+            "handle": "saturn://R_attention",
+            "kind": "tensor",
+            "name": "R_attention"
+          },
+          "Vweight": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                3072,
+                3072
+              ],
+              "stride": [
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "fdd7cae711ee7afd76e1833fd64cf6be9f081339b0bbce790d71415060aa001d",
+            "handle": "saturn://Vweight",
+            "kind": "tensor",
+            "name": "Vweight"
+          },
+          "WoFP64": {
+            "abi": {
+              "dtype": "torch.float64",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                3072,
+                3072
+              ],
+              "stride": [
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "331b49ee693bff4839da46c64ca57c967bf438839d3e9ad5459ddb90cbdb4f34",
+            "handle": "saturn://WoFP64",
+            "kind": "tensor",
+            "name": "WoFP64"
+          },
+          "gate": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1,
+                3072
+              ],
+              "stride": [
+                3072,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "75fa5fd81f330eac4816436710c47580621dc70f22c451e6210dc8b826e6352d",
+            "handle": "saturn://gate",
+            "kind": "tensor",
+            "name": "gate"
+          },
+          "image": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "stride": [
+                3145728,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "b093a4d211bf08d598755887767f2bb9d4f13ddf590011d83cd8f4dc2c7f7e22",
+            "handle": "saturn://image",
+            "kind": "tensor",
+            "name": "image"
+          },
+          "m": {
+            "abi": {
+              "dtype": "torch.float64",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                24,
+                1024,
+                1
+              ],
+              "stride": [
+                1024,
+                1,
+                1
+              ]
+            },
+            "fingerprint": "622451cf215842bdc68e0430b62c3d15b2c006c77f3d7439648c57a1ffee3cc1",
+            "handle": "saturn://m",
+            "kind": "tensor",
+            "name": "m"
+          },
+          "projectedN": {
+            "abi": {
+              "dtype": "torch.float64",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                24,
+                1024,
+                3072
+              ],
+              "stride": [
+                3145728,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "1d501da95e723a9dbae7c7e65412edfaa3e31210e68bacbbafae491995f1562a",
+            "handle": "saturn://projectedN",
+            "kind": "tensor",
+            "name": "projectedN"
+          },
+          "ropeCos": {
+            "abi": {
+              "dtype": "torch.float32",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                4,
+                128
+              ],
+              "stride": [
+                128,
+                1
+              ]
+            },
+            "fingerprint": "b7a6bd799ca12d884f7672dd61e987709ba32dd820f5ca96d4e42a875f59ff59",
+            "handle": "saturn://ropeCos",
+            "kind": "tensor",
+            "name": "ropeCos"
+          },
+          "ropeSin": {
+            "abi": {
+              "dtype": "torch.float32",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                4,
+                128
+              ],
+              "stride": [
+                128,
+                1
+              ]
+            },
+            "fingerprint": "19e8e8a831e9c3aeca1ac7e4a503faae4f4821b1dd8326ffa888af57129afad8",
+            "handle": "saturn://ropeSin",
+            "kind": "tensor",
+            "name": "ropeSin"
+          },
+          "textRows": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                4,
+                3072
+              ],
+              "stride": [
+                12288,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "254ef4effd652eacd877cec7e309bb960c8638287300a0a24e124ece06af42cd",
+            "handle": "saturn://textRows",
+            "kind": "tensor",
+            "name": "textRows"
+          },
+          "txtMod": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                18432
+              ],
+              "stride": [
+                18432,
+                1
+              ]
+            },
+            "fingerprint": "bbaf5213c0f2741d03422acbd4db8c3fb8075eb2bb68975cf9eed3740e2b18c4",
+            "handle": "saturn://txtMod",
+            "kind": "tensor",
+            "name": "txtMod"
+          },
+          "z": {
+            "abi": {
+              "dtype": "torch.float64",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                24,
+                1024,
+                1
+              ],
+              "stride": [
+                1024,
+                1,
+                1
+              ]
+            },
+            "fingerprint": "a13370f628d7828dad12b031f9f5ea43766e434eebf82538991e0c3ef1f4e8f9",
+            "handle": "saturn://z",
+            "kind": "tensor",
+            "name": "z"
+          }
+        }
+      },
+      "sourceFrame": {
+        "act": "root:v1",
+        "frame_id": "c7c8b97a9bdf035bfb70c357a5010536bba8cb43dd329013c957a8e0b36d567d",
+        "implementation": "saturn",
+        "metadata": {
+          "arm": "PQP",
+          "familyPoint": {
+            "edge": "before",
+            "family": "flux2-klein",
+            "index": 1,
+            "local_clock": 1,
+            "logical_step": 2,
+            "next_operation": "joint_block.1",
+            "operator": "joint",
+            "phase": "joint"
+          },
+          "support": [
+            4,
+            11,
+            12,
+            13
+          ]
+        },
+        "parent_frame_id": null,
+        "program_fingerprint": "86c8b548385b2b0711789b5259ea2009edf0c622e60be4ba68613993548902b4",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "KnormWeight": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                128
+              ],
+              "stride": [
+                1
+              ]
+            },
+            "fingerprint": "bb6e6c1417d4f1d1a5aef381baf01ac26564b7316d63c97f5546035a32692278",
+            "handle": "saturn://KnormWeight",
+            "kind": "tensor",
+            "name": "KnormWeight"
+          },
+          "Kweight": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                3072,
+                3072
+              ],
+              "stride": [
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "a33610550fb3ba089bcdfe7b236dbdc390841410eab29845d63d00d6e020ef5c",
+            "handle": "saturn://Kweight",
+            "kind": "tensor",
+            "name": "Kweight"
+          },
+          "Q": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                24,
+                128
+              ],
+              "stride": [
+                3145728,
+                3072,
+                128,
+                1
+              ]
+            },
+            "fingerprint": "268b26875b5e81adda46614ccc6a1f6e75559dfb90311f38c4f4cf747d35c748",
+            "handle": "saturn://Q",
+            "kind": "tensor",
+            "name": "Q"
+          },
+          "Vweight": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                3072,
+                3072
+              ],
+              "stride": [
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "fdd7cae711ee7afd76e1833fd64cf6be9f081339b0bbce790d71415060aa001d",
+            "handle": "saturn://Vweight",
+            "kind": "tensor",
+            "name": "Vweight"
+          },
+          "WoFP64": {
+            "abi": {
+              "dtype": "torch.float64",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                3072,
+                3072
+              ],
+              "stride": [
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "331b49ee693bff4839da46c64ca57c967bf438839d3e9ad5459ddb90cbdb4f34",
+            "handle": "saturn://WoFP64",
+            "kind": "tensor",
+            "name": "WoFP64"
+          },
+          "gate": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1,
+                3072
+              ],
+              "stride": [
+                3072,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "75fa5fd81f330eac4816436710c47580621dc70f22c451e6210dc8b826e6352d",
+            "handle": "saturn://gate",
+            "kind": "tensor",
+            "name": "gate"
+          },
+          "image": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "stride": [
+                3145728,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "b093a4d211bf08d598755887767f2bb9d4f13ddf590011d83cd8f4dc2c7f7e22",
+            "handle": "saturn://image",
+            "kind": "tensor",
+            "name": "image"
+          },
+          "m": {
+            "abi": {
+              "dtype": "torch.float64",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                24,
+                1024,
+                1
+              ],
+              "stride": [
+                1024,
+                1,
+                1
+              ]
+            },
+            "fingerprint": "622451cf215842bdc68e0430b62c3d15b2c006c77f3d7439648c57a1ffee3cc1",
+            "handle": "saturn://m",
+            "kind": "tensor",
+            "name": "m"
+          },
+          "projectedN": {
+            "abi": {
+              "dtype": "torch.float64",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                24,
+                1024,
+                3072
+              ],
+              "stride": [
+                3145728,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "1d501da95e723a9dbae7c7e65412edfaa3e31210e68bacbbafae491995f1562a",
+            "handle": "saturn://projectedN",
+            "kind": "tensor",
+            "name": "projectedN"
+          },
+          "ropeCos": {
+            "abi": {
+              "dtype": "torch.float32",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                4,
+                128
+              ],
+              "stride": [
+                128,
+                1
+              ]
+            },
+            "fingerprint": "b7a6bd799ca12d884f7672dd61e987709ba32dd820f5ca96d4e42a875f59ff59",
+            "handle": "saturn://ropeCos",
+            "kind": "tensor",
+            "name": "ropeCos"
+          },
+          "ropeSin": {
+            "abi": {
+              "dtype": "torch.float32",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                4,
+                128
+              ],
+              "stride": [
+                128,
+                1
+              ]
+            },
+            "fingerprint": "19e8e8a831e9c3aeca1ac7e4a503faae4f4821b1dd8326ffa888af57129afad8",
+            "handle": "saturn://ropeSin",
+            "kind": "tensor",
+            "name": "ropeSin"
+          },
+          "textRows": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                4,
+                3072
+              ],
+              "stride": [
+                12288,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "254ef4effd652eacd877cec7e309bb960c8638287300a0a24e124ece06af42cd",
+            "handle": "saturn://textRows",
+            "kind": "tensor",
+            "name": "textRows"
+          },
+          "txtMod": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                18432
+              ],
+              "stride": [
+                18432,
+                1
+              ]
+            },
+            "fingerprint": "bbaf5213c0f2741d03422acbd4db8c3fb8075eb2bb68975cf9eed3740e2b18c4",
+            "handle": "saturn://txtMod",
+            "kind": "tensor",
+            "name": "txtMod"
+          },
+          "z": {
+            "abi": {
+              "dtype": "torch.float64",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                24,
+                1024,
+                1
+              ],
+              "stride": [
+                1024,
+                1,
+                1
+              ]
+            },
+            "fingerprint": "a13370f628d7828dad12b031f9f5ea43766e434eebf82538991e0c3ef1f4e8f9",
+            "handle": "saturn://z",
+            "kind": "tensor",
+            "name": "z"
+          }
+        }
+      }
+    },
+    "QQQ": {
+      "evidence": {
+        "act": "tce.projected_complement:v1",
+        "elapsed_ms": 2993.891193997115,
+        "implementation": "projected-positive-fixed-query-read",
+        "input_frame_id": "676463fefeea0807eddfcbf9b639b232948b141e1d6b7592b48d8193f7431549",
+        "metrics": {
+          "arithmeticWallSeconds": 2.9221993694081903,
+          "capturedPayloadSHA256": "7747e6e355b93b837f97be1d4652b737d627c2764ef71ffe9c582bd1bd9fbd9b",
+          "intermediateHeadRounding": false,
+          "projectedNumeratorBytes": 603979776
+        },
+        "numerical_contract": "own-fourrow-native-KV-positive-projected-FP64-complement-fixed-headsum-native-gate-residual",
+        "output_frame_id": "488f02076a58f47e3143955692cc68941cbc154369ceaafdad3b53d9c37415be"
+      },
+      "fields": {
+        "K": {
+          "bytes": 24704,
+          "logicalDtype": "torch.bfloat16",
+          "path": "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/QQQ/K.npy",
+          "payloadSHA256": "57bd3376468fa78abd4da200cf6480067033b457e4b6f60b2441d0873a737c48",
+          "sha256": "79d9d86a4d30dbff26c1ce48b2aed757e5dd272e363ef4470247802e68ef8e09",
+          "shape": [
+            1,
+            4,
+            24,
+            128
+          ],
+          "storedDtype": "uint16"
+        },
+        "R_attention": {
+          "bytes": 6291584,
+          "logicalDtype": "torch.bfloat16",
+          "path": "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/QQQ/R_attention.npy",
+          "payloadSHA256": "7747e6e355b93b837f97be1d4652b737d627c2764ef71ffe9c582bd1bd9fbd9b",
+          "sha256": "eac34e105bac0bdb8f662dd0ccc23920b06b992ed29869eb042de4042779a370",
+          "shape": [
+            1,
+            1024,
+            3072
+          ],
+          "storedDtype": "uint16"
+        },
+        "V": {
+          "bytes": 24704,
+          "logicalDtype": "torch.bfloat16",
+          "path": "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/QQQ/V.npy",
+          "payloadSHA256": "d2ceade0a5582082d8f5af6c30614623b7cbae8b9bc9a900570d85c3049ad17d",
+          "sha256": "0ffcd11df624fdb7ee8128200462058907b451718e92597460f280d12f057245",
+          "shape": [
+            1,
+            4,
+            24,
+            128
+          ],
+          "storedDtype": "uint16"
+        },
+        "attentionReturn": {
+          "bytes": 6291584,
+          "logicalDtype": "torch.bfloat16",
+          "path": "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/QQQ/attentionReturn.npy",
+          "payloadSHA256": "3a5e86595e6b54c4b1d58dcfbb1e3bc18f0ce9f691eaf6b5a5165a40c62abdc0",
+          "sha256": "bec62984fbd526f0f639e4b256e7ddd0af09aceb878aee6d1662c7baab759aaa",
+          "shape": [
+            1,
+            1024,
+            3072
+          ],
+          "storedDtype": "uint16"
+        },
+        "cacheScale": {
+          "bytes": 196736,
+          "logicalDtype": "torch.float64",
+          "path": "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/QQQ/cacheScale.npy",
+          "payloadSHA256": "b39ee3b68e1b7449618333499cfb734009ed1652830d863ceda3e4b668d9d193",
+          "sha256": "d81e13e7b44c09470df41d957cd58cbc05408c74490bbfc936de45b7f1841552",
+          "shape": [
+            24,
+            1024,
+            1
+          ],
+          "storedDtype": "float64"
+        },
+        "carrier": {
+          "bytes": 6291584,
+          "logicalDtype": "torch.bfloat16",
+          "path": "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/QQQ/carrier.npy",
+          "payloadSHA256": "fb3009cb2d09eac3fab2998341e49370d46d4d2384b2a07e631be255ed87d7b6",
+          "sha256": "751d3f2475bea8abb2829207e914b05f00e2118a18bbc9545871f9ad2f9b0d68",
+          "shape": [
+            1,
+            1024,
+            3072
+          ],
+          "storedDtype": "uint16"
+        },
+        "denominator": {
+          "bytes": 196736,
+          "logicalDtype": "torch.float64",
+          "path": "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/QQQ/denominator.npy",
+          "payloadSHA256": "d98c1325739d5007086a53d8ae3d8b758a12f086c4d60bb6fca216553fca9fb3",
+          "sha256": "6e1586f49a7fc2616b13d089a3761a3e09f900ac2865069836abd484285469b0",
+          "shape": [
+            24,
+            1024,
+            1
+          ],
+          "storedDtype": "float64"
+        },
+        "peak": {
+          "bytes": 196736,
+          "logicalDtype": "torch.float64",
+          "path": "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/QQQ/peak.npy",
+          "payloadSHA256": "5a233683b5bcaa9f17f092a9aa86b624f25acc960c638d0e8b56a7dc2d5142c3",
+          "sha256": "20bff9a47925fd7fea621bdde6fa154a344902732344ef2766b5b0a5d6e99f62",
+          "shape": [
+            24,
+            1024,
+            1
+          ],
+          "storedDtype": "float64"
+        },
+        "projectedValues": {
+          "bytes": 2359424,
+          "logicalDtype": "torch.float64",
+          "path": "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/QQQ/projectedValues.npy",
+          "payloadSHA256": "a083a7eab20b605cd2950b2098e64dcfce9e7d784d9a5be90052ab957c40887b",
+          "sha256": "8d18751f66645dafbd85a16997ec1099f8ef5edde7f12ffb954ec57c2dca534c",
+          "shape": [
+            24,
+            4,
+            3072
+          ],
+          "storedDtype": "float64"
+        },
+        "projectionFP64": {
+          "bytes": 25165952,
+          "logicalDtype": "torch.float64",
+          "path": "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/QQQ/projectionFP64.npy",
+          "payloadSHA256": "cc5de27e40699bba410e6fd2dc0df7936f525e91582036253cd93c27c1c3438c",
+          "sha256": "60290c8f32dc23494ed034575df7904c2e73ef55a8c6fcfa31b88cee05810fb2",
+          "shape": [
+            1024,
+            3072
+          ],
+          "storedDtype": "float64"
+        },
+        "scores": {
+          "bytes": 786560,
+          "logicalDtype": "torch.float64",
+          "path": "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/QQQ/scores.npy",
+          "payloadSHA256": "48ff27544339bd20343f44fa5f1756d4a3f331ba5f9ce9bfa99450c20203b6e5",
+          "sha256": "623d8ec8069bbc2cb5d81acccd3c258823ca0186f9d87c9d1fff458fb443fa8a",
+          "shape": [
+            24,
+            1024,
+            4
+          ],
+          "storedDtype": "float64"
+        },
+        "selectedWeights": {
+          "bytes": 786560,
+          "logicalDtype": "torch.float64",
+          "path": "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/actors/QQQ/selectedWeights.npy",
+          "payloadSHA256": "541775febff42e5d5c58af998022fcd6a81812b5445adbcd12596da149654a31",
+          "sha256": "f018e33867e0c1620481d101b5b2e9c4aa7777b5d184a4341107e973003d29ed",
+          "shape": [
+            24,
+            1024,
+            4
+          ],
+          "storedDtype": "float64"
+        }
+      },
+      "outputFrame": {
+        "act": "tce.projected_complement:v1",
+        "frame_id": "488f02076a58f47e3143955692cc68941cbc154369ceaafdad3b53d9c37415be",
+        "implementation": "projected-positive-fixed-query-read",
+        "metadata": {
+          "arm": "QQQ",
+          "familyPoint": {
+            "edge": "before",
+            "family": "flux2-klein",
+            "index": 1,
+            "local_clock": 1,
+            "logical_step": 2,
+            "next_operation": "joint_block.1",
+            "operator": "joint",
+            "phase": "joint"
+          },
+          "support": [
+            4,
+            11,
+            12,
+            13
+          ]
+        },
+        "parent_frame_id": "676463fefeea0807eddfcbf9b639b232948b141e1d6b7592b48d8193f7431549",
+        "program_fingerprint": "86c8b548385b2b0711789b5259ea2009edf0c622e60be4ba68613993548902b4",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "KnormWeight": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                128
+              ],
+              "stride": [
+                1
+              ]
+            },
+            "fingerprint": "bb6e6c1417d4f1d1a5aef381baf01ac26564b7316d63c97f5546035a32692278",
+            "handle": "saturn://KnormWeight",
+            "kind": "tensor",
+            "name": "KnormWeight"
+          },
+          "Kweight": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                3072,
+                3072
+              ],
+              "stride": [
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "a33610550fb3ba089bcdfe7b236dbdc390841410eab29845d63d00d6e020ef5c",
+            "handle": "saturn://Kweight",
+            "kind": "tensor",
+            "name": "Kweight"
+          },
+          "Q": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                24,
+                128
+              ],
+              "stride": [
+                3145728,
+                3072,
+                128,
+                1
+              ]
+            },
+            "fingerprint": "268b26875b5e81adda46614ccc6a1f6e75559dfb90311f38c4f4cf747d35c748",
+            "handle": "saturn://Q",
+            "kind": "tensor",
+            "name": "Q"
+          },
+          "R_attention": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "shape": [
+                1,
+                1024,
+                3072
+              ]
+            },
+            "fingerprint": "0ca06c358b5f09b4f6f2f9dc7a68566044e1013c24429b4db0064d96beeee322",
+            "handle": "saturn://R_attention",
+            "kind": "tensor",
+            "name": "R_attention"
+          },
+          "Vweight": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                3072,
+                3072
+              ],
+              "stride": [
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "fdd7cae711ee7afd76e1833fd64cf6be9f081339b0bbce790d71415060aa001d",
+            "handle": "saturn://Vweight",
+            "kind": "tensor",
+            "name": "Vweight"
+          },
+          "WoFP64": {
+            "abi": {
+              "dtype": "torch.float64",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                3072,
+                3072
+              ],
+              "stride": [
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "331b49ee693bff4839da46c64ca57c967bf438839d3e9ad5459ddb90cbdb4f34",
+            "handle": "saturn://WoFP64",
+            "kind": "tensor",
+            "name": "WoFP64"
+          },
+          "gate": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1,
+                3072
+              ],
+              "stride": [
+                3072,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "75fa5fd81f330eac4816436710c47580621dc70f22c451e6210dc8b826e6352d",
+            "handle": "saturn://gate",
+            "kind": "tensor",
+            "name": "gate"
+          },
+          "image": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "stride": [
+                3145728,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "b093a4d211bf08d598755887767f2bb9d4f13ddf590011d83cd8f4dc2c7f7e22",
+            "handle": "saturn://image",
+            "kind": "tensor",
+            "name": "image"
+          },
+          "m": {
+            "abi": {
+              "dtype": "torch.float64",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                24,
+                1024,
+                1
+              ],
+              "stride": [
+                1024,
+                1,
+                1
+              ]
+            },
+            "fingerprint": "622451cf215842bdc68e0430b62c3d15b2c006c77f3d7439648c57a1ffee3cc1",
+            "handle": "saturn://m",
+            "kind": "tensor",
+            "name": "m"
+          },
+          "projectedN": {
+            "abi": {
+              "dtype": "torch.float64",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                24,
+                1024,
+                3072
+              ],
+              "stride": [
+                3145728,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "1d501da95e723a9dbae7c7e65412edfaa3e31210e68bacbbafae491995f1562a",
+            "handle": "saturn://projectedN",
+            "kind": "tensor",
+            "name": "projectedN"
+          },
+          "ropeCos": {
+            "abi": {
+              "dtype": "torch.float32",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                4,
+                128
+              ],
+              "stride": [
+                128,
+                1
+              ]
+            },
+            "fingerprint": "b7a6bd799ca12d884f7672dd61e987709ba32dd820f5ca96d4e42a875f59ff59",
+            "handle": "saturn://ropeCos",
+            "kind": "tensor",
+            "name": "ropeCos"
+          },
+          "ropeSin": {
+            "abi": {
+              "dtype": "torch.float32",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                4,
+                128
+              ],
+              "stride": [
+                128,
+                1
+              ]
+            },
+            "fingerprint": "19e8e8a831e9c3aeca1ac7e4a503faae4f4821b1dd8326ffa888af57129afad8",
+            "handle": "saturn://ropeSin",
+            "kind": "tensor",
+            "name": "ropeSin"
+          },
+          "textRows": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                4,
+                3072
+              ],
+              "stride": [
+                12288,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "d42153bb0eb8c0e78217a7f0972d631508a2253f7ef1f8ba79811070a45bed86",
+            "handle": "saturn://textRows",
+            "kind": "tensor",
+            "name": "textRows"
+          },
+          "txtMod": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                18432
+              ],
+              "stride": [
+                18432,
+                1
+              ]
+            },
+            "fingerprint": "bbaf5213c0f2741d03422acbd4db8c3fb8075eb2bb68975cf9eed3740e2b18c4",
+            "handle": "saturn://txtMod",
+            "kind": "tensor",
+            "name": "txtMod"
+          },
+          "z": {
+            "abi": {
+              "dtype": "torch.float64",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                24,
+                1024,
+                1
+              ],
+              "stride": [
+                1024,
+                1,
+                1
+              ]
+            },
+            "fingerprint": "a13370f628d7828dad12b031f9f5ea43766e434eebf82538991e0c3ef1f4e8f9",
+            "handle": "saturn://z",
+            "kind": "tensor",
+            "name": "z"
+          }
+        }
+      },
+      "sourceFrame": {
+        "act": "root:v1",
+        "frame_id": "676463fefeea0807eddfcbf9b639b232948b141e1d6b7592b48d8193f7431549",
+        "implementation": "saturn",
+        "metadata": {
+          "arm": "QQQ",
+          "familyPoint": {
+            "edge": "before",
+            "family": "flux2-klein",
+            "index": 1,
+            "local_clock": 1,
+            "logical_step": 2,
+            "next_operation": "joint_block.1",
+            "operator": "joint",
+            "phase": "joint"
+          },
+          "support": [
+            4,
+            11,
+            12,
+            13
+          ]
+        },
+        "parent_frame_id": null,
+        "program_fingerprint": "86c8b548385b2b0711789b5259ea2009edf0c622e60be4ba68613993548902b4",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "KnormWeight": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                128
+              ],
+              "stride": [
+                1
+              ]
+            },
+            "fingerprint": "bb6e6c1417d4f1d1a5aef381baf01ac26564b7316d63c97f5546035a32692278",
+            "handle": "saturn://KnormWeight",
+            "kind": "tensor",
+            "name": "KnormWeight"
+          },
+          "Kweight": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                3072,
+                3072
+              ],
+              "stride": [
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "a33610550fb3ba089bcdfe7b236dbdc390841410eab29845d63d00d6e020ef5c",
+            "handle": "saturn://Kweight",
+            "kind": "tensor",
+            "name": "Kweight"
+          },
+          "Q": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                24,
+                128
+              ],
+              "stride": [
+                3145728,
+                3072,
+                128,
+                1
+              ]
+            },
+            "fingerprint": "268b26875b5e81adda46614ccc6a1f6e75559dfb90311f38c4f4cf747d35c748",
+            "handle": "saturn://Q",
+            "kind": "tensor",
+            "name": "Q"
+          },
+          "Vweight": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                3072,
+                3072
+              ],
+              "stride": [
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "fdd7cae711ee7afd76e1833fd64cf6be9f081339b0bbce790d71415060aa001d",
+            "handle": "saturn://Vweight",
+            "kind": "tensor",
+            "name": "Vweight"
+          },
+          "WoFP64": {
+            "abi": {
+              "dtype": "torch.float64",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                3072,
+                3072
+              ],
+              "stride": [
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "331b49ee693bff4839da46c64ca57c967bf438839d3e9ad5459ddb90cbdb4f34",
+            "handle": "saturn://WoFP64",
+            "kind": "tensor",
+            "name": "WoFP64"
+          },
+          "gate": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1,
+                3072
+              ],
+              "stride": [
+                3072,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "75fa5fd81f330eac4816436710c47580621dc70f22c451e6210dc8b826e6352d",
+            "handle": "saturn://gate",
+            "kind": "tensor",
+            "name": "gate"
+          },
+          "image": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "stride": [
+                3145728,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "b093a4d211bf08d598755887767f2bb9d4f13ddf590011d83cd8f4dc2c7f7e22",
+            "handle": "saturn://image",
+            "kind": "tensor",
+            "name": "image"
+          },
+          "m": {
+            "abi": {
+              "dtype": "torch.float64",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                24,
+                1024,
+                1
+              ],
+              "stride": [
+                1024,
+                1,
+                1
+              ]
+            },
+            "fingerprint": "622451cf215842bdc68e0430b62c3d15b2c006c77f3d7439648c57a1ffee3cc1",
+            "handle": "saturn://m",
+            "kind": "tensor",
+            "name": "m"
+          },
+          "projectedN": {
+            "abi": {
+              "dtype": "torch.float64",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                24,
+                1024,
+                3072
+              ],
+              "stride": [
+                3145728,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "1d501da95e723a9dbae7c7e65412edfaa3e31210e68bacbbafae491995f1562a",
+            "handle": "saturn://projectedN",
+            "kind": "tensor",
+            "name": "projectedN"
+          },
+          "ropeCos": {
+            "abi": {
+              "dtype": "torch.float32",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                4,
+                128
+              ],
+              "stride": [
+                128,
+                1
+              ]
+            },
+            "fingerprint": "b7a6bd799ca12d884f7672dd61e987709ba32dd820f5ca96d4e42a875f59ff59",
+            "handle": "saturn://ropeCos",
+            "kind": "tensor",
+            "name": "ropeCos"
+          },
+          "ropeSin": {
+            "abi": {
+              "dtype": "torch.float32",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                4,
+                128
+              ],
+              "stride": [
+                128,
+                1
+              ]
+            },
+            "fingerprint": "19e8e8a831e9c3aeca1ac7e4a503faae4f4821b1dd8326ffa888af57129afad8",
+            "handle": "saturn://ropeSin",
+            "kind": "tensor",
+            "name": "ropeSin"
+          },
+          "textRows": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                4,
+                3072
+              ],
+              "stride": [
+                12288,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "d42153bb0eb8c0e78217a7f0972d631508a2253f7ef1f8ba79811070a45bed86",
+            "handle": "saturn://textRows",
+            "kind": "tensor",
+            "name": "textRows"
+          },
+          "txtMod": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                18432
+              ],
+              "stride": [
+                18432,
+                1
+              ]
+            },
+            "fingerprint": "bbaf5213c0f2741d03422acbd4db8c3fb8075eb2bb68975cf9eed3740e2b18c4",
+            "handle": "saturn://txtMod",
+            "kind": "tensor",
+            "name": "txtMod"
+          },
+          "z": {
+            "abi": {
+              "dtype": "torch.float64",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                24,
+                1024,
+                1
+              ],
+              "stride": [
+                1024,
+                1,
+                1
+              ]
+            },
+            "fingerprint": "a13370f628d7828dad12b031f9f5ea43766e434eebf82538991e0c3ef1f4e8f9",
+            "handle": "saturn://z",
+            "kind": "tensor",
+            "name": "z"
+          }
+        }
+      }
+    }
+  },
+  "compilerSealSHA256": "3f90ec44bb280aa2a3eff61704410eecc14b31c7404efb202abc6c96abc4edd4"
+}

@@ -1,0 +1,783 @@
+{
+  "CPUSecondsAfterImports": 9.687304269999998,
+  "WoFP64": {
+    "bytes": 75497472,
+    "payloadSHA256": "331b49ee693bff4839da46c64ca57c967bf438839d3e9ad5459ddb90cbdb4f34",
+    "shape": [
+      3072,
+      3072
+    ],
+    "sourceBF16SHA256": "70674ebb1c115f32e67ef32130128edb9cd89b14a39e98c114466bb157279af0"
+  },
+  "arithmeticTimings": [
+    {
+      "phase": "project-complement-only",
+      "wallSeconds": 0.6093937600962818
+    }
+  ],
+  "assets": [
+    {
+      "bytesHashed": 541,
+      "path": "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/config.json",
+      "sha256": "09733c74a3da6d17dd0a0472a091a8950c7c6935889c32c16cc800ede05029de",
+      "signature": [
+        66311,
+        298051,
+        541,
+        1784967358756501000,
+        1784967358757491000
+      ]
+    },
+    {
+      "bytesHashed": 7751109744,
+      "path": "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/diffusion_pytorch_model.safetensors",
+      "sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+      "signature": [
+        66311,
+        298058,
+        7751109744,
+        1784967508577765300,
+        1784967508615361800
+      ]
+    }
+  ],
+  "contractions": [],
+  "fileQuarantine": {
+    "allowedFiles": [
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/config.json",
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/diffusion_pytorch_model.safetensors",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/n.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/response-result/compiler-seal.json",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/response-result/compiler.json"
+    ],
+    "deniedCanaries": [
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/targets.json",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/response-result/primary.json",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/response-result/primary-seal.json",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/H_BF16.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/H_FP64.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/K.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/R_attention.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/V.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/attentionReturn.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/cacheScale.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/carrier.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/denominator.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/numerator.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/peak.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/scores.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/PQP/selectedWeights.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/H_BF16.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/H_FP64.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/K.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/R_attention.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/V.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/attentionReturn.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/cacheScale.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/carrier.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/denominator.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/numerator.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/peak.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/scores.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/actors/QQQ/selectedWeights.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/cases/sphere-cube-plain-2027/PQP/consumer/native/R_attention.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/cases/sphere-cube-plain-2027/QQQ/consumer/native/R_attention.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/endpoints/sphere-cube-plain-2027/native/PQP.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/endpoints/sphere-cube-plain-2027/native/QQQ.npy"
+    ],
+    "scope": "Trusted-code read allowlist; old N and all target/old-head fields unavailable to actors.",
+    "successfulFileOpenCounts": {
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/config.json": 1,
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/diffusion_pytorch_model.safetensors": 2,
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/n.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/response-result/compiler-seal.json": 2,
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/response-result/compiler.json": 2
+    }
+  },
+  "header": {
+    "bytes": 20584,
+    "sha256": "012278fec8c5203622e33f14a7da845b344c5dcd869980b04692348ff02420f6"
+  },
+  "linears": [
+    {
+      "arm": null,
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 0,
+      "inputShape": [
+        1024,
+        128
+      ],
+      "inputStride": [
+        128,
+        1
+      ],
+      "nominalMACs": 402653184,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "phase": "compile",
+      "physicalColumnSlice": true,
+      "storageOffset": 0,
+      "weightShape": [
+        3072,
+        128
+      ],
+      "weightStride": [
+        3072,
+        1
+      ]
+    },
+    {
+      "arm": null,
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 1,
+      "inputShape": [
+        1024,
+        128
+      ],
+      "inputStride": [
+        128,
+        1
+      ],
+      "nominalMACs": 402653184,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "phase": "compile",
+      "physicalColumnSlice": true,
+      "storageOffset": 128,
+      "weightShape": [
+        3072,
+        128
+      ],
+      "weightStride": [
+        3072,
+        1
+      ]
+    },
+    {
+      "arm": null,
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 2,
+      "inputShape": [
+        1024,
+        128
+      ],
+      "inputStride": [
+        128,
+        1
+      ],
+      "nominalMACs": 402653184,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "phase": "compile",
+      "physicalColumnSlice": true,
+      "storageOffset": 256,
+      "weightShape": [
+        3072,
+        128
+      ],
+      "weightStride": [
+        3072,
+        1
+      ]
+    },
+    {
+      "arm": null,
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 3,
+      "inputShape": [
+        1024,
+        128
+      ],
+      "inputStride": [
+        128,
+        1
+      ],
+      "nominalMACs": 402653184,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "phase": "compile",
+      "physicalColumnSlice": true,
+      "storageOffset": 384,
+      "weightShape": [
+        3072,
+        128
+      ],
+      "weightStride": [
+        3072,
+        1
+      ]
+    },
+    {
+      "arm": null,
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 4,
+      "inputShape": [
+        1024,
+        128
+      ],
+      "inputStride": [
+        128,
+        1
+      ],
+      "nominalMACs": 402653184,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "phase": "compile",
+      "physicalColumnSlice": true,
+      "storageOffset": 512,
+      "weightShape": [
+        3072,
+        128
+      ],
+      "weightStride": [
+        3072,
+        1
+      ]
+    },
+    {
+      "arm": null,
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 5,
+      "inputShape": [
+        1024,
+        128
+      ],
+      "inputStride": [
+        128,
+        1
+      ],
+      "nominalMACs": 402653184,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "phase": "compile",
+      "physicalColumnSlice": true,
+      "storageOffset": 640,
+      "weightShape": [
+        3072,
+        128
+      ],
+      "weightStride": [
+        3072,
+        1
+      ]
+    },
+    {
+      "arm": null,
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 6,
+      "inputShape": [
+        1024,
+        128
+      ],
+      "inputStride": [
+        128,
+        1
+      ],
+      "nominalMACs": 402653184,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "phase": "compile",
+      "physicalColumnSlice": true,
+      "storageOffset": 768,
+      "weightShape": [
+        3072,
+        128
+      ],
+      "weightStride": [
+        3072,
+        1
+      ]
+    },
+    {
+      "arm": null,
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 7,
+      "inputShape": [
+        1024,
+        128
+      ],
+      "inputStride": [
+        128,
+        1
+      ],
+      "nominalMACs": 402653184,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "phase": "compile",
+      "physicalColumnSlice": true,
+      "storageOffset": 896,
+      "weightShape": [
+        3072,
+        128
+      ],
+      "weightStride": [
+        3072,
+        1
+      ]
+    },
+    {
+      "arm": null,
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 8,
+      "inputShape": [
+        1024,
+        128
+      ],
+      "inputStride": [
+        128,
+        1
+      ],
+      "nominalMACs": 402653184,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "phase": "compile",
+      "physicalColumnSlice": true,
+      "storageOffset": 1024,
+      "weightShape": [
+        3072,
+        128
+      ],
+      "weightStride": [
+        3072,
+        1
+      ]
+    },
+    {
+      "arm": null,
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 9,
+      "inputShape": [
+        1024,
+        128
+      ],
+      "inputStride": [
+        128,
+        1
+      ],
+      "nominalMACs": 402653184,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "phase": "compile",
+      "physicalColumnSlice": true,
+      "storageOffset": 1152,
+      "weightShape": [
+        3072,
+        128
+      ],
+      "weightStride": [
+        3072,
+        1
+      ]
+    },
+    {
+      "arm": null,
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 10,
+      "inputShape": [
+        1024,
+        128
+      ],
+      "inputStride": [
+        128,
+        1
+      ],
+      "nominalMACs": 402653184,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "phase": "compile",
+      "physicalColumnSlice": true,
+      "storageOffset": 1280,
+      "weightShape": [
+        3072,
+        128
+      ],
+      "weightStride": [
+        3072,
+        1
+      ]
+    },
+    {
+      "arm": null,
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 11,
+      "inputShape": [
+        1024,
+        128
+      ],
+      "inputStride": [
+        128,
+        1
+      ],
+      "nominalMACs": 402653184,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "phase": "compile",
+      "physicalColumnSlice": true,
+      "storageOffset": 1408,
+      "weightShape": [
+        3072,
+        128
+      ],
+      "weightStride": [
+        3072,
+        1
+      ]
+    },
+    {
+      "arm": null,
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 12,
+      "inputShape": [
+        1024,
+        128
+      ],
+      "inputStride": [
+        128,
+        1
+      ],
+      "nominalMACs": 402653184,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "phase": "compile",
+      "physicalColumnSlice": true,
+      "storageOffset": 1536,
+      "weightShape": [
+        3072,
+        128
+      ],
+      "weightStride": [
+        3072,
+        1
+      ]
+    },
+    {
+      "arm": null,
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 13,
+      "inputShape": [
+        1024,
+        128
+      ],
+      "inputStride": [
+        128,
+        1
+      ],
+      "nominalMACs": 402653184,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "phase": "compile",
+      "physicalColumnSlice": true,
+      "storageOffset": 1664,
+      "weightShape": [
+        3072,
+        128
+      ],
+      "weightStride": [
+        3072,
+        1
+      ]
+    },
+    {
+      "arm": null,
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 14,
+      "inputShape": [
+        1024,
+        128
+      ],
+      "inputStride": [
+        128,
+        1
+      ],
+      "nominalMACs": 402653184,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "phase": "compile",
+      "physicalColumnSlice": true,
+      "storageOffset": 1792,
+      "weightShape": [
+        3072,
+        128
+      ],
+      "weightStride": [
+        3072,
+        1
+      ]
+    },
+    {
+      "arm": null,
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 15,
+      "inputShape": [
+        1024,
+        128
+      ],
+      "inputStride": [
+        128,
+        1
+      ],
+      "nominalMACs": 402653184,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "phase": "compile",
+      "physicalColumnSlice": true,
+      "storageOffset": 1920,
+      "weightShape": [
+        3072,
+        128
+      ],
+      "weightStride": [
+        3072,
+        1
+      ]
+    },
+    {
+      "arm": null,
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 16,
+      "inputShape": [
+        1024,
+        128
+      ],
+      "inputStride": [
+        128,
+        1
+      ],
+      "nominalMACs": 402653184,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "phase": "compile",
+      "physicalColumnSlice": true,
+      "storageOffset": 2048,
+      "weightShape": [
+        3072,
+        128
+      ],
+      "weightStride": [
+        3072,
+        1
+      ]
+    },
+    {
+      "arm": null,
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 17,
+      "inputShape": [
+        1024,
+        128
+      ],
+      "inputStride": [
+        128,
+        1
+      ],
+      "nominalMACs": 402653184,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "phase": "compile",
+      "physicalColumnSlice": true,
+      "storageOffset": 2176,
+      "weightShape": [
+        3072,
+        128
+      ],
+      "weightStride": [
+        3072,
+        1
+      ]
+    },
+    {
+      "arm": null,
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 18,
+      "inputShape": [
+        1024,
+        128
+      ],
+      "inputStride": [
+        128,
+        1
+      ],
+      "nominalMACs": 402653184,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "phase": "compile",
+      "physicalColumnSlice": true,
+      "storageOffset": 2304,
+      "weightShape": [
+        3072,
+        128
+      ],
+      "weightStride": [
+        3072,
+        1
+      ]
+    },
+    {
+      "arm": null,
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 19,
+      "inputShape": [
+        1024,
+        128
+      ],
+      "inputStride": [
+        128,
+        1
+      ],
+      "nominalMACs": 402653184,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "phase": "compile",
+      "physicalColumnSlice": true,
+      "storageOffset": 2432,
+      "weightShape": [
+        3072,
+        128
+      ],
+      "weightStride": [
+        3072,
+        1
+      ]
+    },
+    {
+      "arm": null,
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 20,
+      "inputShape": [
+        1024,
+        128
+      ],
+      "inputStride": [
+        128,
+        1
+      ],
+      "nominalMACs": 402653184,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "phase": "compile",
+      "physicalColumnSlice": true,
+      "storageOffset": 2560,
+      "weightShape": [
+        3072,
+        128
+      ],
+      "weightStride": [
+        3072,
+        1
+      ]
+    },
+    {
+      "arm": null,
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 21,
+      "inputShape": [
+        1024,
+        128
+      ],
+      "inputStride": [
+        128,
+        1
+      ],
+      "nominalMACs": 402653184,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "phase": "compile",
+      "physicalColumnSlice": true,
+      "storageOffset": 2688,
+      "weightShape": [
+        3072,
+        128
+      ],
+      "weightStride": [
+        3072,
+        1
+      ]
+    },
+    {
+      "arm": null,
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 22,
+      "inputShape": [
+        1024,
+        128
+      ],
+      "inputStride": [
+        128,
+        1
+      ],
+      "nominalMACs": 402653184,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "phase": "compile",
+      "physicalColumnSlice": true,
+      "storageOffset": 2816,
+      "weightShape": [
+        3072,
+        128
+      ],
+      "weightStride": [
+        3072,
+        1
+      ]
+    },
+    {
+      "arm": null,
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 23,
+      "inputShape": [
+        1024,
+        128
+      ],
+      "inputStride": [
+        128,
+        1
+      ],
+      "nominalMACs": 402653184,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "phase": "compile",
+      "physicalColumnSlice": true,
+      "storageOffset": 2944,
+      "weightShape": [
+        3072,
+        128
+      ],
+      "weightStride": [
+        3072,
+        1
+      ]
+    }
+  ],
+  "loadedParameters": [
+    {
+      "bytes": 18874368,
+      "dataOffsets": [
+        5881737216,
+        5900611584
+      ],
+      "name": "transformer_blocks.1.attn.to_out.0.weight",
+      "payloadSHA256": "70674ebb1c115f32e67ef32130128edb9cd89b14a39e98c114466bb157279af0",
+      "shape": [
+        3072,
+        3072
+      ]
+    }
+  ],
+  "nominalMatrixMACs": 9663676416,
+  "numericalProfile": {
+    "bf16ReducedPrecisionReduction": true,
+    "cublasWorkspaceConfig": ":4096:8",
+    "cudaMatmulTF32": false,
+    "cudnnBenchmark": false,
+    "cudnnDeterministic": true,
+    "cudnnTF32": false,
+    "deterministicAlgorithms": true,
+    "float32MatmulPrecision": "highest",
+    "threads": 4
+  },
+  "parameterInputRNGClosure": true,
+  "peakCUDAAllocatedBytes": 0,
+  "peakCUDAReservedBytes": 0,
+  "scalarWorkPerActor": null,
+  "wallSecondsAfterImports": 13.916623618919402
+}

@@ -1,0 +1,99 @@
+{
+  "artifacts": [
+    {
+      "bytes": 18874496,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDMwNzIpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/44a409d466adc7ad138cbbbaaaaf1d2db69ededb988ef62df81e5ae87551a178.npy",
+      "sha256": "44a409d466adc7ad138cbbbaaaaf1d2db69ededb988ef62df81e5ae87551a178",
+      "source": {
+        "data_offsets": [
+          5881737216,
+          5900611584
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "70674ebb1c115f32e67ef32130128edb9cd89b14a39e98c114466bb157279af0",
+        "shape": [
+          3072,
+          3072
+        ],
+        "tensor": "transformer_blocks.1.attn.to_out.0.weight"
+      }
+    },
+    {
+      "bytes": 384,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDEyOCwpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/dffc6af2047795181dca84017ae081f3c7bbd5d746e6edd1edbab74672e96c45.npy",
+      "sha256": "dffc6af2047795181dca84017ae081f3c7bbd5d746e6edd1edbab74672e96c45",
+      "source": {
+        "data_offsets": [
+          5843987456,
+          5843987712
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "bb6e6c1417d4f1d1a5aef381baf01ac26564b7316d63c97f5546035a32692278",
+        "shape": [
+          128
+        ],
+        "tensor": "transformer_blocks.1.attn.norm_added_k.weight"
+      }
+    },
+    {
+      "bytes": 18874496,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDMwNzIpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/157480f8f89f6f4fc231efa85a5fab992a08c51746d32c06a7fec06963e0a77b.npy",
+      "sha256": "157480f8f89f6f4fc231efa85a5fab992a08c51746d32c06a7fec06963e0a77b",
+      "source": {
+        "data_offsets": [
+          5787364352,
+          5806238720
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "a33610550fb3ba089bcdfe7b236dbdc390841410eab29845d63d00d6e020ef5c",
+        "shape": [
+          3072,
+          3072
+        ],
+        "tensor": "transformer_blocks.1.attn.add_k_proj.weight"
+      }
+    },
+    {
+      "bytes": 18874496,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDMwNzIpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/2ec11742a186da1cc1d7f181a33be7ab7b4b42702c43bc97e42fc276af74d0c0.npy",
+      "sha256": "2ec11742a186da1cc1d7f181a33be7ab7b4b42702c43bc97e42fc276af74d0c0",
+      "source": {
+        "data_offsets": [
+          5825113088,
+          5843987456
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "fdd7cae711ee7afd76e1833fd64cf6be9f081339b0bbce790d71415060aa001d",
+        "shape": [
+          3072,
+          3072
+        ],
+        "tensor": "transformer_blocks.1.attn.add_v_proj.weight"
+      }
+    }
+  ],
+  "defaults": {
+    "artifact_root": "parameter-cache",
+    "checkpoint_root": "/mnt/big/llm-models/FLUX.2-klein-4B",
+    "python": "python3",
+    "ssh_host": "beast"
+  },
+  "provenance": {
+    "originalParametersOnly": true,
+    "schema": "mdb-flux-binding-family-v1",
+    "scope": "169transformer and142decoder/BN recipes; no parameter-bank export"
+  },
+  "schema": "mdb-parameter-artifacts-v1"
+}

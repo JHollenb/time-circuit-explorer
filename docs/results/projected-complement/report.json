@@ -1,0 +1,306 @@
+{
+  "actorsMatrixMACs": 855638016,
+  "cacheLogicalBytes": 604372992,
+  "compilerMatrixMACs": 9663676416,
+  "compilerSealSHA256": "3f90ec44bb280aa2a3eff61704410eecc14b31c7404efb202abc6c96abc4edd4",
+  "endpoints": [
+    {
+      "arm": "QQQ",
+      "candidateRms": 1.4522091204179564,
+      "changedValues": 712014,
+      "cosine": 0.9999984015635904,
+      "mae": 0.000661724278188558,
+      "maxAbs": 0.5,
+      "reference": "family",
+      "referenceRms": 1.4521431552384059,
+      "relativeRms": 0.001788597654617169,
+      "rms": 0.0025972998416277883,
+      "scalars": 3145728
+    },
+    {
+      "arm": "PQP",
+      "candidateRms": 1.452520848025794,
+      "changedValues": 711908,
+      "cosine": 0.9999982920982977,
+      "mae": 0.0006616676207613637,
+      "maxAbs": 0.5,
+      "reference": "family",
+      "referenceRms": 1.452467418883955,
+      "relativeRms": 0.001848589245440474,
+      "rms": 0.0026850156499015634,
+      "scalars": 3145728
+    },
+    {
+      "arm": "QQQ",
+      "candidateRms": 1.4522091204179564,
+      "changedValues": 694902,
+      "cosine": 0.9999983591016753,
+      "mae": 0.0006451801443366397,
+      "maxAbs": 0.5,
+      "reference": "parent",
+      "referenceRms": 1.4521290799787578,
+      "relativeRms": 0.0018124612229607144,
+      "rms": 0.0026319276481951166,
+      "scalars": 3145728
+    },
+    {
+      "arm": "PQP",
+      "candidateRms": 1.452520848025794,
+      "changedValues": 694305,
+      "cosine": 0.9999983087736048,
+      "mae": 0.0006445231894076642,
+      "maxAbs": 0.5,
+      "reference": "parent",
+      "referenceRms": 1.4524707846820968,
+      "relativeRms": 0.0018394992249833716,
+      "rms": 0.0026718188827337067,
+      "scalars": 3145728
+    }
+  ],
+  "historicalBaselineCompilerMatrixMACs": 48318382080,
+  "instrument_status": "executed",
+  "limits": [
+    "One retrospective fixed-query/source-resolved four-text-row family update; old source/cache production paid.",
+    "Original K/V maps, selected learned Wo value projections and new604MBprojectedcache remain required.",
+    "Real-arithmetic commutation removes intermediate BF16 head rounding; this is a changed finite program.",
+    "No new MLP, text continuation, later own-state diffusion, image or arbitrary-prompt zero-neural generator.",
+    "Matrix MACs omit separately counted scalar cache operations and I/O; no measured serving-speed comparison."
+  ],
+  "mechanics_status": "complete",
+  "phases": [
+    {
+      "phase": "compile",
+      "wallSecondsIncludingFreshProcess": 35.89322796370834
+    },
+    {
+      "phase": "actors",
+      "wallSecondsIncludingFreshProcess": 38.7138804262504
+    }
+  ],
+  "primarySealSHA256": "c25d7afd1c8f67621cc466d711b051609c0eacc323e9831d4adb19e1942534d1",
+  "queryPanels": [
+    {
+      "candidateRms": 0.036303315614463115,
+      "changedValues": 1031959,
+      "cosine": 0.9953711878573993,
+      "dependentQueries": 1024,
+      "mae": 0.0010805842298395874,
+      "maxAbs": 1.0,
+      "medianRowRelativeError": 0.5719501579233949,
+      "panel": "all",
+      "reference": "family",
+      "referenceRms": 0.03634224634546078,
+      "relativeRms": 0.09617096655451794,
+      "rms": 0.0034950689578053607,
+      "rowsBetterThanZero": 953,
+      "rowsWorseThanZero": 71,
+      "scalars": 3145728
+    },
+    {
+      "candidateRms": 0.027716367900825316,
+      "changedValues": 508215,
+      "cosine": 0.9918935230376461,
+      "dependentQueries": 512,
+      "mae": 0.0010656917070264171,
+      "maxAbs": 1.0,
+      "medianRowRelativeError": 0.7234133246395205,
+      "panel": "left-grid",
+      "reference": "family",
+      "referenceRms": 0.027724270949020285,
+      "relativeRms": 0.12731226782047664,
+      "rms": 0.003529639808189131,
+      "rowsBetterThanZero": 461,
+      "rowsWorseThanZero": 51,
+      "scalars": 1572864
+    },
+    {
+      "candidateRms": 0.043216482961860085,
+      "changedValues": 523744,
+      "cosine": 0.9968001928598595,
+      "dependentQueries": 512,
+      "mae": 0.0010954767526527576,
+      "maxAbs": 0.5,
+      "medianRowRelativeError": 0.4352933934143386,
+      "panel": "right-grid",
+      "reference": "family",
+      "referenceRms": 0.04327681295120546,
+      "relativeRms": 0.07995396348971665,
+      "rms": 0.003460152722651978,
+      "rowsBetterThanZero": 492,
+      "rowsWorseThanZero": 20,
+      "scalars": 1572864
+    },
+    {
+      "candidateRms": 0.036303315614463115,
+      "changedValues": 1013564,
+      "cosine": 0.9953310484469703,
+      "dependentQueries": 1024,
+      "mae": 0.0010592278220732017,
+      "maxAbs": 1.0,
+      "medianRowRelativeError": 0.5710805886586348,
+      "panel": "all",
+      "reference": "parent",
+      "referenceRms": 0.0363354949966923,
+      "relativeRms": 0.09659408681358529,
+      "rms": 0.0035097939581250903,
+      "rowsBetterThanZero": 948,
+      "rowsWorseThanZero": 76,
+      "scalars": 3145728
+    },
+    {
+      "candidateRms": 0.027716367900825316,
+      "changedValues": 500679,
+      "cosine": 0.9920507114553471,
+      "dependentQueries": 512,
+      "mae": 0.001048545669239805,
+      "maxAbs": 1.0,
+      "medianRowRelativeError": 0.7132128451966777,
+      "panel": "left-grid",
+      "reference": "parent",
+      "referenceRms": 0.02776432665851596,
+      "relativeRms": 0.12599245373697235,
+      "rms": 0.0034980956420612597,
+      "rowsBetterThanZero": 460,
+      "rowsWorseThanZero": 52,
+      "scalars": 1572864
+    },
+    {
+      "candidateRms": 0.043216482961860085,
+      "changedValues": 512885,
+      "cosine": 0.9966821099020466,
+      "dependentQueries": 512,
+      "mae": 0.0010699099749065983,
+      "maxAbs": 0.5,
+      "medianRowRelativeError": 0.43765227309041,
+      "panel": "right-grid",
+      "reference": "parent",
+      "referenceRms": 0.043239779815680404,
+      "relativeRms": 0.08144013284640945,
+      "rms": 0.003521453412438506,
+      "rowsBetterThanZero": 488,
+      "rowsWorseThanZero": 24,
+      "scalars": 1572864
+    }
+  ],
+  "queryRecords": 1024,
+  "requestSHA256": "86c8b548385b2b0711789b5259ea2009edf0c622e60be4ba68613993548902b4",
+  "responses": [
+    {
+      "candidateRms": 0.036303315614463115,
+      "changedValues": 1031959,
+      "cosine": 0.9953711878573993,
+      "mae": 0.0010805842298395874,
+      "maxAbs": 1.0,
+      "reference": "family",
+      "referenceRms": 0.03634224634546078,
+      "relativeRms": 0.09617096655451794,
+      "rms": 0.0034950689578053607,
+      "scalars": 3145728
+    },
+    {
+      "candidateRms": 0.036303315614463115,
+      "changedValues": 1013564,
+      "cosine": 0.9953310484469703,
+      "mae": 0.0010592278220732017,
+      "maxAbs": 1.0,
+      "reference": "parent",
+      "referenceRms": 0.0363354949966923,
+      "relativeRms": 0.09659408681358529,
+      "rms": 0.0035097939581250903,
+      "scalars": 3145728
+    }
+  ],
+  "scalarWorkPerActor": {
+    "cacheMultiplyAddPairs": 75497472,
+    "interHeadAdditions": 72351744,
+    "perHeadDivisions": 75497472
+  },
+  "schema": "tce-projected-complement-result-v1",
+  "terminal_status": "unassessed",
+  "totalIncrementalMatrixMACs": 10519314432,
+  "upstreamBoundaryIdentity": [
+    {
+      "arm": "QQQ",
+      "field": "K",
+      "payloadExact": true
+    },
+    {
+      "arm": "QQQ",
+      "field": "V",
+      "payloadExact": true
+    },
+    {
+      "arm": "QQQ",
+      "field": "scores",
+      "payloadExact": true
+    },
+    {
+      "arm": "QQQ",
+      "field": "peak",
+      "payloadExact": true
+    },
+    {
+      "arm": "QQQ",
+      "field": "cacheScale",
+      "payloadExact": true
+    },
+    {
+      "arm": "QQQ",
+      "field": "selectedWeights",
+      "payloadExact": true
+    },
+    {
+      "arm": "QQQ",
+      "field": "denominator",
+      "payloadExact": true
+    },
+    {
+      "arm": "PQP",
+      "field": "K",
+      "payloadExact": true
+    },
+    {
+      "arm": "PQP",
+      "field": "V",
+      "payloadExact": true
+    },
+    {
+      "arm": "PQP",
+      "field": "scores",
+      "payloadExact": true
+    },
+    {
+      "arm": "PQP",
+      "field": "peak",
+      "payloadExact": true
+    },
+    {
+      "arm": "PQP",
+      "field": "cacheScale",
+      "payloadExact": true
+    },
+    {
+      "arm": "PQP",
+      "field": "selectedWeights",
+      "payloadExact": true
+    },
+    {
+      "arm": "PQP",
+      "field": "denominator",
+      "payloadExact": true
+    }
+  ],
+  "work": {
+    "WoFP64CopyBytesPerProcess": 75497472,
+    "actorAffines": 52,
+    "actorOtherContractions": 4,
+    "compilerAffines": 24,
+    "distinctBF16ParameterBytes": 56623360,
+    "newFullTransformer": 0,
+    "newImages": 0,
+    "newMLP": 0,
+    "newNativeSDPA": 0,
+    "processBF16ParameterBytes": 75497728
+  },
+  "workerWallSeconds": 75.86550006177276
+}

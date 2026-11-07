@@ -1,0 +1,28 @@
+{
+  "schema": "tce-projected-complement-instrument-v1",
+  "runtime": "mdb.evidence_pipeline",
+  "target": "artifacts/projected-complement-v1/result",
+  "explicitResultsRoot": "artifacts/projected-complement-v1",
+  "explicitXrefRoot": "artifacts/projected-complement-v1/result",
+  "instrumentStatus": "partial-nested-metric-coverage",
+  "streams": 1,
+  "records": 1024,
+  "predicates": 1,
+  "recognizedNumericField": "imageQueryIndex",
+  "runExit": 0,
+  "verifyExit": 0,
+  "watchFires": 0,
+  "formalReceipts": 0,
+  "boundXrefAddresses": 0,
+  "coverageLimitation": "The numeric adapter discovers top-level and exactly one nested level. references.family.response.rms and references.parent.response.relativeRms are deeper; the one adapted predicate does not cover these response metrics. Zero fires is not response finite-value or numerical certification.",
+  "adapterSource": {
+    "path": "../../../../saturn/src/saturn/evidence_specs.py",
+    "sha256": "8c46a6b7e91837d2e91c010586d40cbd4b3c2afd0e3b8024db1b5d9919929933"
+  },
+  "workspaceRequest": {
+    "path": "../../../../saturn/request.jsonl",
+    "handle": "evidence-plane-declared-nested-metric-paths",
+    "status": "requested-not-implemented"
+  },
+  "separateEvidence": "Executed array finite checks, complete source/seal and typed input/output bindings, complete byte custody and dedicated scalar audits remain independent evidence. No scientific null, accepted formal claim, image inheritance or generator certification."
+}
