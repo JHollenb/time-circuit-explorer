@@ -1,0 +1,60 @@
+{
+  "activeMapScope": "Logical one-mapset callback bound, not independent GPU residency measurement",
+  "exception": "Cycle67 sameB1/512 measured8290.5MBRSS9116MBdevice,119.85s. Compiler then actor sequential, one37.7MBterminalslice plus157MBcurrentclockcache, ~1.2GBretainedarrays. Reuse14336RAM13000VRAM4CPU3GBdisk;180sexpected600cap,noretries. Models never co-resident; noencoder/shadow/newreference.",
+  "intentFirstPreview": {
+    "beast": {
+      "artifact_id": null,
+      "artifact_kind": null,
+      "artifact_locator": {},
+      "artifact_mount": null,
+      "backend": "diffusers",
+      "device": "cuda",
+      "dtype": "bfloat16",
+      "engine_options": {},
+      "engine_profile": "backend:diffusers",
+      "est_ram_mb": 8410.0,
+      "est_vram_mb": 40212.3,
+      "est_wall_s": null,
+      "max_batch": 64,
+      "model": "flux2-klein-4b-distilled",
+      "ram_limit_mb": 52809.0,
+      "reasons": [
+        "host=beast ram=66513MB cuda=True mps=False ane=False task=forward",
+        "dtype=bfloat16 (explicit opt-in \u2014 not the canonical path)",
+        "device=cuda (explicit)",
+        "TF32 forced OFF on cuda (breaches 4-decimal stats)",
+        "backend=diffusers (explicit)",
+        "max_batch=64 threads=4 ram_limit=52809MB (est x 1.3)",
+        "selector fallback: explicit backend has no matching local artifact",
+        "science runtime envelope: diffusers"
+      ],
+      "threads": 4,
+      "weights_gb": 9.6
+    }
+  },
+  "logicalCacheBytes": 629145600,
+  "maxActivePhysicalSliceBytes": 37748736,
+  "nativeImageParentJobID": "job-394733a01129",
+  "nativeImageParentReservation": {
+    "cpu_threads": 4,
+    "disk_gb": 2.0,
+    "est_wall_s": 300.0,
+    "ram_mb": 14336.0,
+    "source": "declared",
+    "vram_mb": 13000.0
+  },
+  "nativeImageParentResult": {
+    "elapsed_s": 109.59,
+    "peak_rss_mb": 7925.7,
+    "peak_vram_mb": 9148.0
+  },
+  "perClockCacheGPUBytes": 157286400,
+  "priorTrajectoryJobID": "job-96e74e161844",
+  "priorTrajectoryResult": {
+    "elapsed_s": 119.85,
+    "peak_rss_mb": 8290.5,
+    "peak_vram_mb": 9116.0
+  },
+  "retainedTextStateBytes": 314572800,
+  "scope": "Sequential compiler full model then fresh actor full model+VAE; <=oneclock157MBKV outputs live in compiler/actor plus small current state. ~950MBcompiler/150MBactor diagnostic arrays on disk. Model weights never co-resident across children."
+}
