@@ -1,0 +1,1080 @@
+{
+  "diagnosticMatrixOperations": [
+    {
+      "device": "cpu",
+      "dtype": "float64",
+      "inputShape": [
+        24,
+        4,
+        1536
+      ],
+      "nominalMACs": 18874368,
+      "operation": "post-seal-native-bank-AV",
+      "rightShape": [
+        24,
+        1536,
+        128
+      ]
+    }
+  ],
+  "diagnostics": {
+    "deferredRawVsSameAllocationNativeV": {
+      "candidateRms": 1.3409844285377746,
+      "changedValues": 12288,
+      "cosine": 0.9999986365470622,
+      "mae": 0.0011525184005945187,
+      "maxAbs": 0.033885296268326925,
+      "referenceRms": 1.3409732178025162,
+      "relativeRms": 0.0016513626386925287,
+      "rms": 0.002214433071366374,
+      "scalars": 12288
+    },
+    "nativeBankAVVsRetainedRaw": {
+      "candidateRms": 1.3409732178025162,
+      "changedValues": 370,
+      "cosine": 1.0,
+      "mae": 4.499368429735906e-18,
+      "maxAbs": 8.881784197001252e-16,
+      "referenceRms": 1.3409732178025162,
+      "relativeRms": 2.5508972317929172e-17,
+      "rms": 3.4206848692008794e-17,
+      "scalars": 12288
+    },
+    "newAdmittedVsRetainedAdmitted": {
+      "candidateRms": 1.340988223555667,
+      "changedValues": 3752,
+      "cosine": 0.9999966863404381,
+      "mae": 0.0011499607935547829,
+      "maxAbs": 0.0625,
+      "referenceRms": 1.3409383117404376,
+      "relativeRms": 0.002574674978991882,
+      "rms": 0.0034524803196097206,
+      "scalars": 12288
+    },
+    "scope": "Native V per-row BF16 projection policy and deferred FP64 reassociation differ jointly; no isolated rounding-cause claim.",
+    "valueAttributionApplicability": "matched-allocation"
+  },
+  "distinctBF16ParameterBytes": 245367040,
+  "headDifferenceCrossEnergy": {
+    "allocationOrContraction": {
+      "allocationOrContraction": 1.1701084974379838e-33,
+      "deferredVsNativeBank": 4.305192741970697e-22,
+      "negativeOldAdmission": 2.4598529332593167e-21,
+      "newAdmission": -4.583256655227347e-22
+    },
+    "deferredVsNativeBank": {
+      "allocationOrContraction": 4.305192741970697e-22,
+      "deferredVsNativeBank": 4.903713827561113e-06,
+      "negativeOldAdmission": -6.88417758005285e-08,
+      "newAdmission": 1.7062400396448155e-08
+    },
+    "negativeOldAdmission": {
+      "allocationOrContraction": 2.4598529332593167e-21,
+      "deferredVsNativeBank": -6.88417758005285e-08,
+      "negativeOldAdmission": 5.001781621868706e-06,
+      "newAdmission": -1.4094366093256093e-06
+    },
+    "newAdmission": {
+      "allocationOrContraction": -4.583256655227347e-22,
+      "deferredVsNativeBank": 1.7062400396448155e-08,
+      "negativeOldAdmission": -1.4094366093256093e-06,
+      "newAdmission": 4.936556877321993e-06
+    }
+  },
+  "headDifferenceTelescope": {
+    "allocationOrContraction": {
+      "maxAbs": 8.881784197001252e-16,
+      "relativeToActualResponse": 2.900877642012373e-16,
+      "rms": 3.4206848692008794e-17,
+      "signedMean": -2.323693718634297e-19,
+      "signedMeanProduct": 4.340881959384247e-20
+    },
+    "deferredVsNativeBank": {
+      "maxAbs": 0.033885296268326925,
+      "relativeToActualResponse": 0.01877927851319492,
+      "rms": 0.002214433071366374,
+      "signedMean": 3.0492285168796934e-05,
+      "signedMeanProduct": -3.877725556802218e-07
+    },
+    "negativeOldAdmission": {
+      "maxAbs": 0.03032437872927929,
+      "relativeToActualResponse": 0.018966129318364982,
+      "rms": 0.002236466324778602,
+      "signedMean": 3.190387093698905e-05,
+      "signedMeanProduct": -4.0824212788131605e-06
+    },
+    "newAdmission": {
+      "maxAbs": 0.022456396505706522,
+      "relativeToActualResponse": 0.01884206149040826,
+      "rms": 0.0022218363750109936,
+      "signedMean": -3.2274157244353676e-05,
+      "signedMeanProduct": -7.153036821828082e-07
+    },
+    "telescopingRoundoffMaxAbs": 0.0,
+    "total": {
+      "maxAbs": 0.0625,
+      "relativeToActualResponse": 0.029278414562003394,
+      "rms": 0.0034524803196097206,
+      "signedMean": 3.0121998861432076e-05,
+      "signedMeanProduct": -5.185497516676148e-06
+    }
+  },
+  "instrument_status": "executed",
+  "matchedControlPayloads": {
+    "actualImageModLNInput": true,
+    "imageNumerator": true,
+    "logits": true,
+    "partition": true,
+    "peak": true,
+    "probability": true,
+    "textK_hybrid": true,
+    "textLogits": true
+  },
+  "mechanics_status": "complete",
+  "observations": 444,
+  "phases": [
+    {
+      "phase": "actor",
+      "secondsIncludingFreshProcess": 35.156179978046566
+    },
+    {
+      "phase": "postSealAnalysis",
+      "seconds": 0.7045605289749801
+    }
+  ],
+  "primaryCandidate": "Same cycle58 live allocation, deferred head-specific V projections, own native MLP and next query",
+  "requestSHA256": "db604310e5eb3220f5ee5925ca26a2ea5d50f857b27531380a969f878e3ec6bb",
+  "retainedDecomposition": {
+    "allocationOrContraction": {
+      "bytes": 98432,
+      "logicalDtype": "float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-c5be79476937/arrays/decomposition/allocationOrContraction.npy",
+      "payloadSHA256": "1915b6b878db37746bf67ed6a0c4004f3359b508001d20facf7fea2804188fa8",
+      "sha256": "24c1baf4824c323beb50921a81675508c46bcce3adf33401c4e8efb67bf74cda",
+      "shape": [
+        24,
+        4,
+        128
+      ],
+      "storedDtype": "float64"
+    },
+    "deferredVsNativeBank": {
+      "bytes": 98432,
+      "logicalDtype": "float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-c5be79476937/arrays/decomposition/deferredVsNativeBank.npy",
+      "payloadSHA256": "ea9a318b40ae63e301810081a42d058ce9546c2b23e5abf72e62e0f37d85e775",
+      "sha256": "aead5ed88ef800e8290c0af7df9cea6ba459d750919575fa29d429c1029b1d6c",
+      "shape": [
+        24,
+        4,
+        128
+      ],
+      "storedDtype": "float64"
+    },
+    "negativeOldAdmission": {
+      "bytes": 98432,
+      "logicalDtype": "float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-c5be79476937/arrays/decomposition/negativeOldAdmission.npy",
+      "payloadSHA256": "455765e6d9d541bd6d7f3c39f8b444fa0fae351219884c33b4584dc4c7e77295",
+      "sha256": "fcf3da8a42f0bba7676203a604f8cf9a34e2fe3c4df77651e26ab3b18573bb0d",
+      "shape": [
+        24,
+        4,
+        128
+      ],
+      "storedDtype": "float64"
+    },
+    "newAdmission": {
+      "bytes": 98432,
+      "logicalDtype": "float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-c5be79476937/arrays/decomposition/newAdmission.npy",
+      "payloadSHA256": "bcb3876899307d292264e85234cd45ae40c825139ab0d678593d8a2dd297d9ec",
+      "sha256": "a1affd144047548d13d2fa1e676fc21f9e0fecba9f024d293fadbb60ac40067e",
+      "shape": [
+        24,
+        4,
+        128
+      ],
+      "storedDtype": "float64"
+    }
+  },
+  "sameAllocationNativeBankH": {
+    "bytes": 98432,
+    "logicalDtype": "float64",
+    "path": "/mnt/hdd8tb/mrun-work/job-c5be79476937/arrays/diagnostics/sameAllocationNativeBankH.npy",
+    "payloadSHA256": "05d6e9b0aa3ee43d64350f79693b9ae43ecfdb3c19f6d95f347d97659a377261",
+    "sha256": "76316fabb9b1374e8a6b6557cc6bb5ba107d03bde5d07d006182cae678b8b448",
+    "shape": [
+      24,
+      4,
+      128
+    ],
+    "storedDtype": "float64"
+  },
+  "schema": "tce-deferred-value-result-v1",
+  "scope": "One supplied P/Q source pair and four demanded queries. Original states/ModLN/maps/duals/textkeys/retainedPnorm/native references remain paid. No full V or selected V numerical input before seal; post-seal original-bank AV only, no extra consumer,fit,suffix,image or arbitrary-prompt zero-neural completion.",
+  "scores": {
+    "A": {
+      "primaryEndpoint": {
+        "candidateRms": 3.0958615377875627,
+        "changedValues": 9248,
+        "cosine": 0.9999761365855772,
+        "mae": 0.01597226659456889,
+        "maxAbs": 0.09375,
+        "referenceRms": 3.094988490279867,
+        "relativeRms": 0.006915190767926922,
+        "rms": 0.02140243583482342,
+        "scalars": 12288
+      },
+      "primaryResponse": {
+        "candidateRms": 0.21770446625460338,
+        "changedValues": 9248,
+        "cosine": 0.9951624441838762,
+        "mae": 0.01597226659456889,
+        "maxAbs": 0.09375,
+        "referenceRms": 0.21586440688378947,
+        "relativeRms": 0.09914759058145892,
+        "rms": 0.02140243583482342,
+        "scalars": 12288
+      },
+      "retainedResponse": {
+        "candidateRms": 0.21761618417799938,
+        "changedValues": 9140,
+        "cosine": 0.9954798590811385,
+        "mae": 0.015352406228582064,
+        "maxAbs": 0.09375,
+        "referenceRms": 0.21586440688378947,
+        "relativeRms": 0.09580971430558373,
+        "rms": 0.02068190715228015,
+        "scalars": 12288
+      },
+      "staleResponse": {
+        "candidateRms": 0.19009375761786002,
+        "changedValues": 11616,
+        "cosine": 0.8308139031191303,
+        "mae": 0.09163618662084143,
+        "maxAbs": 0.59375,
+        "referenceRms": 0.21586440688378947,
+        "relativeRms": 0.5587741553162046,
+        "rms": 0.12061945161932296,
+        "scalars": 12288
+      },
+      "zeroResponse": {
+        "candidateRms": 0.0,
+        "changedValues": 11824,
+        "cosine": null,
+        "mae": 0.1541715224739164,
+        "maxAbs": 1.40625,
+        "referenceRms": 0.21586440688378947,
+        "relativeRms": 1.0,
+        "rms": 0.21586440688378947,
+        "scalars": 12288
+      }
+    },
+    "D_attention": {
+      "primaryEndpoint": {
+        "candidateRms": 2.7257360496548766,
+        "changedValues": 8825,
+        "cosine": 0.9999728746545994,
+        "mae": 0.011323772642451027,
+        "maxAbs": 1.0,
+        "referenceRms": 2.7262335678237606,
+        "relativeRms": 0.007367095362644877,
+        "rms": 0.020084422675001226,
+        "scalars": 12288
+      },
+      "primaryResponse": {
+        "candidateRms": 0.18968025552520196,
+        "changedValues": 8825,
+        "cosine": 0.9945677253065276,
+        "mae": 0.011323772642451027,
+        "maxAbs": 1.0,
+        "referenceRms": 0.18496821944299177,
+        "relativeRms": 0.10858310003460543,
+        "rms": 0.020084422675001226,
+        "scalars": 12288
+      },
+      "retainedResponse": {
+        "candidateRms": 0.18979323128101278,
+        "changedValues": 8723,
+        "cosine": 0.9948250494284268,
+        "mae": 0.01092306039451311,
+        "maxAbs": 1.0,
+        "referenceRms": 0.18496821944299177,
+        "relativeRms": 0.10630307941025005,
+        "rms": 0.019662691319820912,
+        "scalars": 12288
+      },
+      "staleResponse": {
+        "candidateRms": 0.1513681809476025,
+        "changedValues": 11495,
+        "cosine": 0.829301602956276,
+        "mae": 0.06472950289025903,
+        "maxAbs": 3.5234375,
+        "referenceRms": 0.18496821944299177,
+        "relativeRms": 0.5589086288772269,
+        "rms": 0.10338033391474456,
+        "scalars": 12288
+      },
+      "zeroResponse": {
+        "candidateRms": 0.0,
+        "changedValues": 11752,
+        "cosine": null,
+        "mae": 0.10896392106466617,
+        "maxAbs": 6.8671875,
+        "referenceRms": 0.18496821944299177,
+        "relativeRms": 1.0,
+        "rms": 0.18496821944299177,
+        "scalars": 12288
+      }
+    },
+    "D_mlp": {
+      "primaryEndpoint": {
+        "candidateRms": 5.300203309177082,
+        "changedValues": 9607,
+        "cosine": 0.9999753186280173,
+        "mae": 0.024187379516661167,
+        "maxAbs": 1.0,
+        "referenceRms": 5.288465859591727,
+        "relativeRms": 0.00737551556744773,
+        "rms": 0.039005162275334626,
+        "scalars": 12288
+      },
+      "primaryResponse": {
+        "candidateRms": 0.18018552341086475,
+        "changedValues": 9607,
+        "cosine": 0.9762960735408526,
+        "mae": 0.024187379516661167,
+        "maxAbs": 1.0,
+        "referenceRms": 0.17659460622333936,
+        "relativeRms": 0.2208740295612696,
+        "rms": 0.039005162275334626,
+        "scalars": 12288
+      },
+      "retainedResponse": {
+        "candidateRms": 0.1803016182878881,
+        "changedValues": 9626,
+        "cosine": 0.9750129808695578,
+        "mae": 0.024569047925372917,
+        "maxAbs": 1.0,
+        "referenceRms": 0.17659460622333936,
+        "relativeRms": 0.22685617712149558,
+        "rms": 0.04006157726810264,
+        "scalars": 12288
+      },
+      "staleResponse": {
+        "candidateRms": 0.15736845175845618,
+        "changedValues": 11180,
+        "cosine": 0.8037690839006024,
+        "mae": 0.07003494771197438,
+        "maxAbs": 3.5,
+        "referenceRms": 0.17659460622333936,
+        "relativeRms": 0.6013209566637331,
+        "rms": 0.10619003755587365,
+        "scalars": 12288
+      },
+      "zeroResponse": {
+        "candidateRms": 0.0,
+        "changedValues": 11488,
+        "cosine": null,
+        "mae": 0.11123336820552747,
+        "maxAbs": 6.5,
+        "referenceRms": 0.17659460622333936,
+        "relativeRms": 1.0,
+        "rms": 0.17659460622333936,
+        "scalars": 12288
+      }
+    },
+    "H": {
+      "primaryEndpoint": {
+        "candidateRms": 1.340988223555667,
+        "changedValues": 8123,
+        "cosine": 0.9999735280320047,
+        "mae": 0.005591375675673286,
+        "maxAbs": 0.116455078125,
+        "referenceRms": 1.3406953442650957,
+        "relativeRms": 0.007280331283740763,
+        "rms": 0.009760706256818769,
+        "scalars": 12288
+      },
+      "primaryResponse": {
+        "candidateRms": 0.11855461950490993,
+        "changedValues": 8123,
+        "cosine": 0.9966069946792121,
+        "mae": 0.005591375675673286,
+        "maxAbs": 0.116455078125,
+        "referenceRms": 0.11791896423552391,
+        "relativeRms": 0.08277469463964549,
+        "rms": 0.009760706256818769,
+        "scalars": 12288
+      },
+      "retainedResponse": {
+        "candidateRms": 0.11856167427245197,
+        "changedValues": 7470,
+        "cosine": 0.9969185984363212,
+        "mae": 0.005082941303650538,
+        "maxAbs": 0.115478515625,
+        "referenceRms": 0.11791896423552391,
+        "relativeRms": 0.07890564227560262,
+        "rms": 0.00930447160947783,
+        "scalars": 12288
+      },
+      "staleResponse": {
+        "candidateRms": 0.10481514420460837,
+        "changedValues": 10983,
+        "cosine": 0.8411525296430556,
+        "mae": 0.030922059105553974,
+        "maxAbs": 1.03125,
+        "referenceRms": 0.11791896423552391,
+        "relativeRms": 0.5428994338191899,
+        "rms": 0.06401813892001124,
+        "scalars": 12288
+      },
+      "zeroResponse": {
+        "candidateRms": 0.0,
+        "changedValues": 11496,
+        "cosine": null,
+        "mae": 0.05129390462146451,
+        "maxAbs": 1.90234375,
+        "referenceRms": 0.11791896423552391,
+        "relativeRms": 1.0,
+        "rms": 0.11791896423552391,
+        "scalars": 12288
+      }
+    },
+    "M": {
+      "primaryEndpoint": {
+        "candidateRms": 3.2943432448474543,
+        "changedValues": 9974,
+        "cosine": 0.9999688481480814,
+        "mae": 0.019860082616408665,
+        "maxAbs": 0.125,
+        "referenceRms": 3.290326171687162,
+        "relativeRms": 0.00799188974785676,
+        "rms": 0.02629592399861141,
+        "scalars": 12288
+      },
+      "primaryResponse": {
+        "candidateRms": 0.12708476608401062,
+        "changedValues": 9974,
+        "cosine": 0.97836147403143,
+        "mae": 0.019860082616408665,
+        "maxAbs": 0.125,
+        "referenceRms": 0.12463493171697368,
+        "relativeRms": 0.21098357929320583,
+        "rms": 0.02629592399861141,
+        "scalars": 12288
+      },
+      "retainedResponse": {
+        "candidateRms": 0.1267873838070039,
+        "changedValues": 10006,
+        "cosine": 0.9780406832191024,
+        "mae": 0.020032004142800968,
+        "maxAbs": 0.125,
+        "referenceRms": 0.12463493171697368,
+        "relativeRms": 0.2120739624663939,
+        "rms": 0.026431823830947044,
+        "scalars": 12288
+      },
+      "staleResponse": {
+        "candidateRms": 0.10919337992999292,
+        "changedValues": 11342,
+        "cosine": 0.80119038851701,
+        "mae": 0.05756901662486295,
+        "maxAbs": 0.3828125,
+        "referenceRms": 0.12463493171697368,
+        "relativeRms": 0.6030806515346889,
+        "rms": 0.07516491582385396,
+        "scalars": 12288
+      },
+      "zeroResponse": {
+        "candidateRms": 0.0,
+        "changedValues": 11607,
+        "cosine": null,
+        "mae": 0.09119533747434616,
+        "maxAbs": 0.703125,
+        "referenceRms": 0.12463493171697368,
+        "relativeRms": 1.0,
+        "rms": 0.12463493171697368,
+        "scalars": 12288
+      }
+    },
+    "T": {
+      "primaryEndpoint": {
+        "candidateRms": 10.307857133497446,
+        "changedValues": 8533,
+        "cosine": 0.9999861601673901,
+        "mae": 0.029086291790008545,
+        "maxAbs": 2.0,
+        "referenceRms": 10.315807611561839,
+        "relativeRms": 0.00531529147695647,
+        "rms": 0.054831524275657316,
+        "scalars": 12288
+      },
+      "primaryResponse": {
+        "candidateRms": 0.251725902576665,
+        "changedValues": 8533,
+        "cosine": 0.975998522226336,
+        "mae": 0.029086291790008545,
+        "maxAbs": 2.0,
+        "referenceRms": 0.24680098072183765,
+        "relativeRms": 0.22216898861296003,
+        "rms": 0.054831524275657316,
+        "scalars": 12288
+      },
+      "retainedResponse": {
+        "candidateRms": 0.2528846070984122,
+        "changedValues": 8531,
+        "cosine": 0.9781328927162436,
+        "mae": 0.02913437287012736,
+        "maxAbs": 2.0,
+        "referenceRms": 0.24680098072183765,
+        "relativeRms": 0.21311940021354794,
+        "rms": 0.05259807698355345,
+        "scalars": 12288
+      },
+      "staleResponse": {
+        "candidateRms": 0.20969034187228544,
+        "changedValues": 10933,
+        "cosine": 0.8164000423022307,
+        "mae": 0.09683118263880412,
+        "maxAbs": 4.0,
+        "referenceRms": 0.24680098072183765,
+        "relativeRms": 0.5784422383326436,
+        "rms": 0.1427601117114314,
+        "scalars": 12288
+      },
+      "zeroResponse": {
+        "candidateRms": 0.0,
+        "changedValues": 11367,
+        "cosine": null,
+        "mae": 0.1575674513975779,
+        "maxAbs": 7.0,
+        "referenceRms": 0.24680098072183765,
+        "relativeRms": 1.0,
+        "rms": 0.24680098072183765,
+        "scalars": 12288
+      }
+    },
+    "U": {
+      "primaryEndpoint": {
+        "candidateRms": 11.172759023679303,
+        "changedValues": 6237,
+        "cosine": 0.9999934362920916,
+        "mae": 0.011765634020169577,
+        "maxAbs": 2.0,
+        "referenceRms": 11.174190057063187,
+        "relativeRms": 0.0036252083432565868,
+        "rms": 0.04050876702400026,
+        "scalars": 12288
+      },
+      "primaryResponse": {
+        "candidateRms": 0.1939724431092497,
+        "changedValues": 6237,
+        "cosine": 0.9782929487343995,
+        "mae": 0.011765634020169577,
+        "maxAbs": 2.0,
+        "referenceRms": 0.18473991212081847,
+        "relativeRms": 0.21927458208114683,
+        "rms": 0.04050876702400026,
+        "scalars": 12288
+      },
+      "retainedResponse": {
+        "candidateRms": 0.19391047567568362,
+        "changedValues": 6115,
+        "cosine": 0.9784823353869091,
+        "mae": 0.011392210920651754,
+        "maxAbs": 2.0,
+        "referenceRms": 0.18473991212081847,
+        "relativeRms": 0.21825624806578647,
+        "rms": 0.04032064008749295,
+        "scalars": 12288
+      },
+      "staleResponse": {
+        "candidateRms": 0.15823826457397103,
+        "changedValues": 10657,
+        "cosine": 0.8334469316392574,
+        "mae": 0.06441253920396169,
+        "maxAbs": 4.0,
+        "referenceRms": 0.18473991212081847,
+        "relativeRms": 0.5530820798526828,
+        "rms": 0.10217633482758412,
+        "scalars": 12288
+      },
+      "zeroResponse": {
+        "candidateRms": 0.0,
+        "changedValues": 11150,
+        "cosine": null,
+        "mae": 0.10931165516376495,
+        "maxAbs": 6.0,
+        "referenceRms": 0.18473991212081847,
+        "relativeRms": 1.0,
+        "rms": 0.18473991212081847,
+        "scalars": 12288
+      }
+    },
+    "X": {
+      "primaryEndpoint": {
+        "candidateRms": 0.5791643748245452,
+        "changedValues": 6364,
+        "cosine": 0.9999846806253652,
+        "mae": 0.0018911386529604595,
+        "maxAbs": 0.03125,
+        "referenceRms": 0.5789754130240411,
+        "relativeRms": 0.005545743241220904,
+        "rms": 0.0032108489836111575,
+        "scalars": 12288
+      },
+      "primaryResponse": {
+        "candidateRms": 0.02044905935009324,
+        "changedValues": 6364,
+        "cosine": 0.9876025288242055,
+        "mae": 0.0018911386529604595,
+        "maxAbs": 0.03125,
+        "referenceRms": 0.020269494729823985,
+        "relativeRms": 0.15840794387867999,
+        "rms": 0.0032108489836111575,
+        "scalars": 12288
+      },
+      "retainedResponse": {
+        "candidateRms": 0.020444072962311925,
+        "changedValues": 6287,
+        "cosine": 0.9879550515395945,
+        "mae": 0.0018484617273012798,
+        "maxAbs": 0.03125,
+        "referenceRms": 0.020269494729823985,
+        "relativeRms": 0.15611393598469955,
+        "rms": 0.0031643506026939466,
+        "scalars": 12288
+      },
+      "staleResponse": {
+        "candidateRms": 0.017608946586413148,
+        "changedValues": 10414,
+        "cosine": 0.8195800485610435,
+        "mae": 0.008650283018747965,
+        "maxAbs": 0.06640625,
+        "referenceRms": 0.020269494729823985,
+        "relativeRms": 0.5750698824125592,
+        "rms": 0.011656375950841867,
+        "scalars": 12288
+      },
+      "zeroResponse": {
+        "candidateRms": 0.0,
+        "changedValues": 11113,
+        "cosine": null,
+        "mae": 0.01444775735338529,
+        "maxAbs": 0.15625,
+        "referenceRms": 0.020269494729823985,
+        "relativeRms": 1.0,
+        "rms": 0.020269494729823985,
+        "scalars": 12288
+      }
+    },
+    "fused": {
+      "primaryEndpoint": {
+        "candidateRms": 1.4131905124700623,
+        "changedValues": 48212,
+        "cosine": 0.9999888728573025,
+        "mae": 0.004601025601409169,
+        "maxAbs": 0.0625,
+        "referenceRms": 1.4126110466395425,
+        "relativeRms": 0.004736210063537945,
+        "rms": 0.006690422654959071,
+        "scalars": 73728
+      },
+      "primaryResponse": {
+        "candidateRms": 0.041478498943602234,
+        "changedValues": 48212,
+        "cosine": 0.9869084375375974,
+        "mae": 0.004601025601409169,
+        "maxAbs": 0.0625,
+        "referenceRms": 0.041032698468713054,
+        "relativeRms": 0.1630510033372638,
+        "rms": 0.006690422654959071,
+        "scalars": 73728
+      },
+      "retainedResponse": {
+        "candidateRms": 0.041431486247699656,
+        "changedValues": 48093,
+        "cosine": 0.9870679572221205,
+        "mae": 0.004556872286937303,
+        "maxAbs": 0.0625,
+        "referenceRms": 0.041032698468713054,
+        "relativeRms": 0.16189474237492518,
+        "rms": 0.006642978147540287,
+        "scalars": 73728
+      },
+      "staleResponse": {
+        "candidateRms": 0.03461293503791234,
+        "changedValues": 65457,
+        "cosine": 0.7969112891453619,
+        "mae": 0.018710915503712993,
+        "maxAbs": 0.2890625,
+        "referenceRms": 0.041032698468713054,
+        "relativeRms": 0.6058936516084835,
+        "rms": 0.02486145151055838,
+        "scalars": 73728
+      },
+      "zeroResponse": {
+        "candidateRms": 0.0,
+        "changedValues": 68081,
+        "cosine": null,
+        "mae": 0.02990586900139331,
+        "maxAbs": 0.3671875,
+        "referenceRms": 0.041032698468713054,
+        "relativeRms": 1.0,
+        "rms": 0.041032698468713054,
+        "scalars": 73728
+      }
+    },
+    "nextLayerNorm": {
+      "primaryEndpoint": {
+        "candidateRms": 1.0000049816288832,
+        "changedValues": 8868,
+        "cosine": 0.9999861134010111,
+        "mae": 0.003087757620960474,
+        "maxAbs": 0.25,
+        "referenceRms": 0.9995910034811021,
+        "relativeRms": 0.00528736402739361,
+        "rms": 0.00528520151391226,
+        "scalars": 12288
+      },
+      "primaryResponse": {
+        "candidateRms": 0.02313109556514055,
+        "changedValues": 8868,
+        "cosine": 0.9735652235562632,
+        "mae": 0.003087757620960474,
+        "maxAbs": 0.25,
+        "referenceRms": 0.022659338738350545,
+        "relativeRms": 0.23324606136749906,
+        "rms": 0.00528520151391226,
+        "scalars": 12288
+      },
+      "retainedResponse": {
+        "candidateRms": 0.023351076521646544,
+        "changedValues": 8922,
+        "cosine": 0.9719567542378852,
+        "mae": 0.003104432951658964,
+        "maxAbs": 0.25,
+        "referenceRms": 0.022659338738350545,
+        "relativeRms": 0.24234402214244624,
+        "rms": 0.005491355288940014,
+        "scalars": 12288
+      },
+      "staleResponse": {
+        "candidateRms": 0.01898299633634305,
+        "changedValues": 11046,
+        "cosine": 0.8014310919900447,
+        "mae": 0.00936556770466268,
+        "maxAbs": 0.375,
+        "referenceRms": 0.022659338738350545,
+        "relativeRms": 0.5991892035549378,
+        "rms": 0.013577231131713812,
+        "scalars": 12288
+      },
+      "zeroResponse": {
+        "candidateRms": 0.0,
+        "changedValues": 11575,
+        "cosine": null,
+        "mae": 0.014940933479617039,
+        "maxAbs": 0.625,
+        "referenceRms": 0.022659338738350545,
+        "relativeRms": 1.0,
+        "rms": 0.022659338738350545,
+        "scalars": 12288
+      }
+    },
+    "nextQ": {
+      "primaryEndpoint": {
+        "candidateRms": 1.2443198582350792,
+        "changedValues": 8569,
+        "cosine": 0.9999861594829026,
+        "mae": 0.00455206796565714,
+        "maxAbs": 0.03125,
+        "referenceRms": 1.2443790841684983,
+        "relativeRms": 0.005261366931126462,
+        "rms": 0.0065471349632295695,
+        "scalars": 12288
+      },
+      "primaryResponse": {
+        "candidateRms": 0.025871978974711423,
+        "changedValues": 8569,
+        "cosine": 0.9676273810817183,
+        "mae": 0.00455206796565714,
+        "maxAbs": 0.03125,
+        "referenceRms": 0.025512586783784787,
+        "relativeRms": 0.25662372140918216,
+        "rms": 0.0065471349632295695,
+        "scalars": 12288
+      },
+      "retainedResponse": {
+        "candidateRms": 0.0259197452947737,
+        "changedValues": 8491,
+        "cosine": 0.9668734376189438,
+        "mae": 0.004589277057675645,
+        "maxAbs": 0.03125,
+        "referenceRms": 0.025512586783784787,
+        "relativeRms": 0.2599329916305695,
+        "rms": 0.0066315630069437095,
+        "scalars": 12288
+      },
+      "staleResponse": {
+        "candidateRms": 0.020546205281595575,
+        "changedValues": 10629,
+        "cosine": 0.7046306012055229,
+        "mae": 0.01327033928828314,
+        "maxAbs": 0.171875,
+        "referenceRms": 0.025512586783784787,
+        "relativeRms": 0.7166849368098285,
+        "rms": 0.018284486646992067,
+        "scalars": 12288
+      },
+      "zeroResponse": {
+        "candidateRms": 0.0,
+        "changedValues": 11057,
+        "cosine": null,
+        "mae": 0.01873577670388234,
+        "maxAbs": 0.1875,
+        "referenceRms": 0.025512586783784787,
+        "relativeRms": 1.0,
+        "rms": 0.025512586783784787,
+        "scalars": 12288
+      }
+    },
+    "nextQNormalized": {
+      "primaryEndpoint": {
+        "candidateRms": 1.2443247464844371,
+        "changedValues": 8556,
+        "cosine": 0.9999863348013268,
+        "mae": 0.004507894210595016,
+        "maxAbs": 0.03125,
+        "referenceRms": 1.2443748468293292,
+        "relativeRms": 0.00522789804508958,
+        "rms": 0.006505464829097697,
+        "scalars": 12288
+      },
+      "primaryResponse": {
+        "candidateRms": 0.025856509281898952,
+        "changedValues": 8556,
+        "cosine": 0.9680002721482529,
+        "mae": 0.004507894210595016,
+        "maxAbs": 0.03125,
+        "referenceRms": 0.025496279038256475,
+        "relativeRms": 0.25515349982389285,
+        "rms": 0.006505464829097697,
+        "scalars": 12288
+      },
+      "retainedResponse": {
+        "candidateRms": 0.025900619386524788,
+        "changedValues": 8528,
+        "cosine": 0.9671621109389077,
+        "mae": 0.0045659780444111675,
+        "maxAbs": 0.03125,
+        "referenceRms": 0.025496279038256475,
+        "relativeRms": 0.2587833428376956,
+        "rms": 0.006598012319442677,
+        "scalars": 12288
+      },
+      "staleResponse": {
+        "candidateRms": 0.020527825423886596,
+        "changedValues": 10631,
+        "cosine": 0.7054758075885522,
+        "mae": 0.013230502780061215,
+        "maxAbs": 0.171875,
+        "referenceRms": 0.025496279038256475,
+        "relativeRms": 0.7157058698085731,
+        "rms": 0.01824783656595744,
+        "scalars": 12288
+      },
+      "zeroResponse": {
+        "candidateRms": 0.0,
+        "changedValues": 11077,
+        "cosine": null,
+        "mae": 0.018712084594881162,
+        "maxAbs": 0.1875,
+        "referenceRms": 0.025496279038256475,
+        "relativeRms": 1.0,
+        "rms": 0.025496279038256475,
+        "scalars": 12288
+      }
+    },
+    "nextQProjected": {
+      "primaryEndpoint": {
+        "candidateRms": 4.411650920605641,
+        "changedValues": 8890,
+        "cosine": 0.9999850002763397,
+        "mae": 0.01732642164764305,
+        "maxAbs": 0.125,
+        "referenceRms": 4.4079479420956105,
+        "relativeRms": 0.005543497461893977,
+        "rms": 0.024435448229167794,
+        "scalars": 12288
+      },
+      "primaryResponse": {
+        "candidateRms": 0.09026712926098897,
+        "changedValues": 8890,
+        "cosine": 0.9632228517102022,
+        "mae": 0.01732642164764305,
+        "maxAbs": 0.125,
+        "referenceRms": 0.08991050276666834,
+        "relativeRms": 0.27177523734442416,
+        "rms": 0.024435448229167794,
+        "scalars": 12288
+      },
+      "retainedResponse": {
+        "candidateRms": 0.09023242788505222,
+        "changedValues": 8732,
+        "cosine": 0.9644701512555809,
+        "mae": 0.01690229478602608,
+        "maxAbs": 0.125,
+        "referenceRms": 0.08991050276666834,
+        "relativeRms": 0.2670710527293186,
+        "rms": 0.024012492625316424,
+        "scalars": 12288
+      },
+      "staleResponse": {
+        "candidateRms": 0.0729157744406689,
+        "changedValues": 10776,
+        "cosine": 0.7115289411131174,
+        "mae": 0.04793318023439497,
+        "maxAbs": 0.5,
+        "referenceRms": 0.08991050276666834,
+        "relativeRms": 0.7096600747991458,
+        "rms": 0.06380589411862267,
+        "scalars": 12288
+      },
+      "zeroResponse": {
+        "candidateRms": 0.0,
+        "changedValues": 11239,
+        "cosine": null,
+        "mae": 0.06818725137660901,
+        "maxAbs": 0.5625,
+        "referenceRms": 0.08991050276666834,
+        "relativeRms": 1.0,
+        "rms": 0.08991050276666834,
+        "scalars": 12288
+      }
+    },
+    "nextX": {
+      "primaryEndpoint": {
+        "candidateRms": 1.3575824324989427,
+        "changedValues": 8210,
+        "cosine": 0.9999733695575297,
+        "mae": 0.006565064191818237,
+        "maxAbs": 0.0625,
+        "referenceRms": 1.3562032554601597,
+        "relativeRms": 0.007372191978457329,
+        "rms": 0.009998190761061105,
+        "scalars": 12288
+      },
+      "primaryResponse": {
+        "candidateRms": 0.04446248521045338,
+        "changedValues": 8210,
+        "cosine": 0.9745289944544498,
+        "mae": 0.006565064191818237,
+        "maxAbs": 0.0625,
+        "referenceRms": 0.044063793739987145,
+        "relativeRms": 0.22690263167213215,
+        "rms": 0.009998190761061105,
+        "scalars": 12288
+      },
+      "retainedResponse": {
+        "candidateRms": 0.044410505715214287,
+        "changedValues": 8259,
+        "cosine": 0.9743471978318158,
+        "mae": 0.00659350057442983,
+        "maxAbs": 0.09375,
+        "referenceRms": 0.044063793739987145,
+        "relativeRms": 0.2275328761123759,
+        "rms": 0.01002596172208178,
+        "scalars": 12288
+      },
+      "staleResponse": {
+        "candidateRms": 0.03852662721436357,
+        "changedValues": 10674,
+        "cosine": 0.7969248162099217,
+        "mae": 0.0198967307806015,
+        "maxAbs": 0.19921875,
+        "referenceRms": 0.044063793739987145,
+        "relativeRms": 0.6090185225122877,
+        "rms": 0.026835666559813162,
+        "scalars": 12288
+      },
+      "zeroResponse": {
+        "candidateRms": 0.0,
+        "changedValues": 11312,
+        "cosine": null,
+        "mae": 0.031764728327592216,
+        "maxAbs": 0.37890625,
+        "referenceRms": 0.044063793739987145,
+        "relativeRms": 1.0,
+        "rms": 0.044063793739987145,
+        "scalars": 12288
+      }
+    },
+    "product": {
+      "primaryEndpoint": {
+        "candidateRms": 0.9955457985504391,
+        "changedValues": 28400,
+        "cosine": 0.9999654993420651,
+        "mae": 0.0032888710047700442,
+        "maxAbs": 0.25,
+        "referenceRms": 0.9943747592168158,
+        "relativeRms": 0.008394609501164276,
+        "rms": 0.008347387801439421,
+        "scalars": 36864
+      },
+      "primaryResponse": {
+        "candidateRms": 0.043730516925702144,
+        "changedValues": 28400,
+        "cosine": 0.9816151268198752,
+        "mae": 0.0032888710047700442,
+        "maxAbs": 0.25,
+        "referenceRms": 0.04301788397152647,
+        "relativeRms": 0.194044593336217,
+        "rms": 0.008347387801439421,
+        "scalars": 36864
+      },
+      "retainedResponse": {
+        "candidateRms": 0.04363177230410317,
+        "changedValues": 28428,
+        "cosine": 0.9812463468008515,
+        "mae": 0.0032794044925847426,
+        "maxAbs": 0.25,
+        "referenceRms": 0.04301788397152647,
+        "relativeRms": 0.19556636743269812,
+        "rms": 0.008412851302952721,
+        "scalars": 36864
+      },
+      "staleResponse": {
+        "candidateRms": 0.0372913525250054,
+        "changedValues": 34465,
+        "cosine": 0.8036712511249244,
+        "mae": 0.012124326733303152,
+        "maxAbs": 0.62890625,
+        "referenceRms": 0.04301788397152647,
+        "relativeRms": 0.5984211671432339,
+        "rms": 0.025742812334273085,
+        "scalars": 36864
+      },
+      "zeroResponse": {
+        "candidateRms": 0.0,
+        "changedValues": 35268,
+        "cosine": null,
+        "mae": 0.019271907732117042,
+        "maxAbs": 1.2734375,
+        "referenceRms": 0.04301788397152647,
+        "relativeRms": 1.0,
+        "rms": 0.04301788397152647,
+        "scalars": 36864
+      }
+    }
+  },
+  "terminal_status": "unassessed",
+  "totalNewMatrixMACs": 1874853888,
+  "workByPhase": {
+    "actor": 1855979520,
+    "postSealBankAV": 18874368
+  },
+  "workerWallSeconds": 35.86378022423014
+}
