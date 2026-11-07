@@ -1,0 +1,208 @@
+{
+  "completeCollectedInventory": {
+    "bytes": 985193,
+    "files": {
+      "derived-fields.json": {
+        "bytes": 2971,
+        "sha256": "866441e23475ab1d67eb338535e3e0c375fa6f10ef1af756a810a5dfab1cdf3d"
+      },
+      "execution.json": {
+        "bytes": 148434,
+        "sha256": "88047dc5ad87c5024b7e6fd3ef7265b98864af2178b68eb2f3bdf21e63c79126"
+      },
+      "frozen-plan.md": {
+        "bytes": 4435,
+        "sha256": "57e6af8fac5fe49b59970d52c1de5658d7d0451d4087d946806d6524c43d166b"
+      },
+      "inputs.json": {
+        "bytes": 13557,
+        "sha256": "bb1723f2c16212e292d74d610318a977723f9cff074c6e591d9981c637ce5d46"
+      },
+      "observations.jsonl": {
+        "bytes": 768395,
+        "sha256": "372973dd1fc72160a2c081ef92124ddcbdaeeefa8566410ec22b818eccaae144"
+      },
+      "report.json": {
+        "bytes": 3285,
+        "sha256": "01eee3655e812c8443329ac7ec1973b328becfac6232331e6120e85e91a0ca40"
+      },
+      "request.json": {
+        "bytes": 4146,
+        "sha256": "f252d9f54e39ee85ae9ad1cd15e87fcec9de685b1f13f14373592769ea50b44d"
+      },
+      "resource-basis.json": {
+        "bytes": 5109,
+        "sha256": "5023b3f7a9f28ee0a701c2afbeb2204eb58cf0369e1e09f001a2c590a7e1985a"
+      },
+      "targets.json": {
+        "bytes": 1873,
+        "sha256": "544dd2cbc87c3fd7f4f233f675c40023af2cbeed6b53772eb4e0c18bc46d3a8c"
+      },
+      "velocity-seal.json": {
+        "bytes": 32988,
+        "sha256": "7b59db98acb21b89d893b35d54fe77473ab99847d630860a605fc15baa15fea4"
+      }
+    }
+  },
+  "jobID": "job-718ece4a9087",
+  "losslessStreams": [
+    {
+      "published": "observations.jsonl.gz",
+      "publishedBytes": 160563,
+      "publishedSHA256": "7d5d73e99f48e1865bc71c74c5a1ad55bbe69f7b42379cd1874079e437a0410e",
+      "source": "observations.jsonl",
+      "sourceBytes": 768395,
+      "sourceSHA256": "372973dd1fc72160a2c081ef92124ddcbdaeeefa8566410ec22b818eccaae144"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "75c072923d796f88529bbb0e122d4dfa5d86a3229d992dac4001a8e874d98e30",
+      "size_bytes": 3147962
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794026839.7647867,
+      "sha256": "75c072923d796f88529bbb0e122d4dfa5d86a3229d992dac4001a8e874d98e30",
+      "size_bytes": 3147962
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794026839.6010742,
+      "sha256": "75c072923d796f88529bbb0e122d4dfa5d86a3229d992dac4001a8e874d98e30",
+      "size_bytes": 3147962
+    }
+  },
+  "requestSHA256": "4c97213d82a123ad69d5522ab1b91311320194a7380f8fbdcdbbfbaa039391a3",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-718ece4a9087",
+      "job_log": {
+        "bytes": 499,
+        "sha256": "37ca71dbb8ad8d1fc5a551f15111f36722a6063ace3e1db6697e87ee47b0eff7"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-718ece4a9087/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=4",
+        "OPENBLAS_NUM_THREADS=4",
+        "MKL_NUM_THREADS=4",
+        "CUBLAS_WORKSPACE_CONFIG=:4096:8",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "--with",
+        "./mdb_runtime-0.1.0-py3-none-any.whl",
+        "--with",
+        "./saturn_pub-0.4.1-py3-none-any.whl",
+        "--with",
+        "./mrun_pub-0.1.2-py3-none-any.whl",
+        "python",
+        "-u",
+        "text_crossing_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-718ece4a9087",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-718ece4a9087/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794026839.7517326
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794026839.792215
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794026839.8183074
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794026839.8458056
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794026907.3170345
+        },
+        {
+          "name": "finished",
+          "ts": 1794026907.3289378
+        }
+      ]
+    },
+    "elapsed_s": 67.75,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "75c072923d796f88529bbb0e122d4dfa5d86a3229d992dac4001a8e874d98e30",
+      "size_bytes": 3147962
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 8470.2,
+    "peak_vram_mb": 8100.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-text-crossing-publication-v1",
+  "scope": "Two native first-text-write/output plus whole-image/input clamp interventions; ordered signed response decomposition with all learned work paid. No causal percentages, cheap operator, images or arbitrary-prompt zero-neural claim."
+}

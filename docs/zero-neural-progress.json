@@ -1,35 +1,35 @@
 {
   "schema": "tce-zero-neural-goal-progress-v1",
-  "updatedAt": "2026-11-06T20:36:20-08:00",
+  "updatedAt": "2026-11-06T20:52:37-08:00",
   "objective": "let\u2019s solve arbitrary prompt to image without any forward zero neural evals. Every few turns have Astra review the newest blog posts and get a big picture of where we are at so that we can find the best route forward. Keep a log of your findings and with as a blog post - update it with your high level summaries and findings. Clean up the accumulated artifacts every few turns so as not to consume all of the system storage too",
   "status": "active",
-  "researchCycle": 46,
+  "researchCycle": 47,
   "previousGoalTurn": {
     "classification": "progress",
-    "evidence": "Executed fixed six-pair extension audit job-4150ce136012:7.67s,333.8MB RSS,0VRAM,68.439B leading MACs. Feedback residual input energy.0909-.0973% yet poor prior transfer; median leverage4.29/4.32. Evaluation residual6.55-6.80%,median leverage304-315,max32877-34502. All old forecasts reconstruct maxAbs<=7.82e-14. Signed powers/cancellation retained;no newfit/predictor/originalmodel/H0/VAE/images.240tests;6sourcepins,5664actual-address query rows/11328modes,57files303445618B byteverified,18newarrays102951168B nearcompute;12compactfiles1437477B. Saturn2streams16992records run/verify0. Astra45 plus new20:05 synthesis -> stop spectral line;one supported 2x2 identicalcarrier/differentreceiver crossing writtenunexecuted. Four ordinary native calls pay recomputed discardedH0/originalclock:436affines/100attention/18.896T affineMAC. Allinterventions,no naturalparity/informationabsenceclaim. Blog/figureupdated. Scheduledcleanup4transports645412771B fullSHA/restorationpointers;44pointerpostchecks,40name-sizecandidatesnotcerts. Lastcleanup45,next48. Full arbitrarypromptzero-neuralgoal activeunsolved.",
-    "commit": "6a0f8454a9bfbd79c4310f75088632c63f451540"
+    "evidence": "Executed one2x2 complete-carrier/receiver native crossing job-0b06996e8215:55.38s,7546.3MBRSS/8120MBVRAM. Same H_A/H_B BF16 fields across R0/R1 give allrowcos.010960 and interaction/d0=141.876%, amplitude ratio1.01744;944nonlocalcos.012549, interaction158.346%, amplitude1.24036. Supplied-carrier receiverdependence, no natural informationabsence or soleZ inference. All4fullnative calls/169originaltensors/436affines/100attention paid:18.896Taffine+1.44955TQKAV;nativeimageH0discarded4,text/clockpaid. No newdonor/encoder/fit/schedulercommit/VAE/images.244tests;11sourcepins,4typedFrames/Acts,4velocitiessealedbeforeFP64factorial,1024losslessqueryrows;43files7806875075B fullbyteverified;16arrays32507904Bnearcompute;12compactfiles387877B. Saturnrunverify0one stream;Astra46newestposts/source review ->twoR1calls clamp firsttextWriteR0,ordered signeddecomp,writtenunexecuted9.448Taffine. Blog/figureupdated. Promptinterfaceclarification reaffirmed;no new arbitrarypromptgeneration. Noarchive/deletion;lastactual45,next48. Fullgoalactiveunsolved.",
+    "commit": "0db13fd86ca4733822586405aaa8fcb97707aefb"
   },
   "thisGoalTurn": {
     "classification": "progress",
-    "evidence": "Executed one2x2 complete-carrier/receiver native crossing job-0b06996e8215:55.38s,7546.3MBRSS/8120MBVRAM. Same H_A/H_B BF16 fields across R0/R1 give allrowcos.010960 and interaction/d0=141.876%, amplitude ratio1.01744;944nonlocalcos.012549, interaction158.346%, amplitude1.24036. Supplied-carrier receiverdependence, no natural informationabsence or soleZ inference. All4fullnative calls/169originaltensors/436affines/100attention paid:18.896Taffine+1.44955TQKAV;nativeimageH0discarded4,text/clockpaid. No newdonor/encoder/fit/schedulercommit/VAE/images.244tests;11sourcepins,4typedFrames/Acts,4velocitiessealedbeforeFP64factorial,1024losslessqueryrows;43files7806875075B fullbyteverified;16arrays32507904Bnearcompute;12compactfiles387877B. Saturnrunverify0one stream;Astra46newestposts/source review ->twoR1calls clamp firsttextWriteR0,ordered signeddecomp,writtenunexecuted9.448Taffine. Blog/figureupdated. Promptinterfaceclarification reaffirmed;no new arbitrarypromptgeneration. Noarchive/deletion;lastactual45,next48. Fullgoalactiveunsolved."
+    "evidence": "Executed one2call firsttextWriteR0 clamp atR1 withsamecompleteH_A/B:job-718ece4a9087,67.75s,8470.2MBRSS/8100MBVRAM. RemainingU/I=.998378all/1.004880944nonlocal;texteffectT/I=.502808/.681965;cross2dot=-210.657/-205.956,notpositivecausalshares. d0vsd10cos.021708/.026830;fixingfirsttextwritefailsrestoreoriginaldirection. CompleteFP64closuremax0,energy5.68e-14/0. All169tensors/2fullnativecalls218affines50attention9.448Taffine+.7248TQKAVpaid,discardedimage+textreadspaid. Oldveltargetsquarantineduntil2newvelseal;4typedwrites source-byte/layout/storage/order/nativeparentprefixclosure. No newdonor/encoder/fit/noise/scheduler/VAE/images.248tests,12sourcepins,1024losslessqueryrecords;46files7810361500Bbyteverified;12arrays20448768Bnearcompute;13compactfiles395795B. Saturnrunverify0streamscope. Astra47actualsource/newest20:36postreview ->one4cellfirstimageconsumerendingafterjoint0MLP,12affines368.025BMAC/4selectedmatrices189530112B,noattention/text/fulltransformer/image,writtenunexecuted. Blog/figureupdated. Noarchive/deletion;lastactual45,next48. Fullarbitrarypromptzero-neuralgoalactiveunsolved."
   },
   "requirements": {
-    "arbitraryRawPromptCoverage": "Full reconstructed local generator accepts arbitrary strings/seeds with learned denoiser equations/native encoder/VAE; hosted page shows saved outputs. Zero-neural chart supports compiled-scene variations. Cycle46 is a supplied-state diagnostic, no new arbitrary-prompt test.",
-    "zeroNeuralServing": "Open. Cycle46 pays four complete original transformer evaluations; no encoder/VAE/image is added. Receiver dependence of supplied-carrier responses identifies a constraint on a possible replacement, not a zero-neural producer.",
+    "arbitraryRawPromptCoverage": "Full reconstructed local generator accepts arbitrary strings/seeds using learned denoiser equations/native encoder/VAE; hosted page shows saved outputs. Strict zero-neural chart remains compiled-scene variations. Cycle47 is a supplied-state co-carrier diagnostic, no new arbitrary-prompt image test.",
+    "zeroNeuralServing": "Open. Cycle47 pays two complete native transformers. Holding the first text write fixed leaves almost the original receiver difference, with signed cancellation. It supplies no cheap velocity, pixel decoder or zero-neural generator.",
     "reusablePromptOperandFormation": "implemented for all151936IDs at actual first Qwen3 E/inputRMS/QKV/QKRMS prefix; eight frozen rawstrings exactly match isolated source-qualified native prefix and positions. Later contextual operands remain open.",
-    "reducedOwnStateContinuation": "Cycle41 own-state reader/writer remains bounded and worse than hold. Cycles42-45 diagnose fixed maps;46 shows supplied-carrier receiver dependence. No complete cheaper velocity or multiclock zero-neural generator is established.",
+    "reducedOwnStateContinuation": "Known own-state reader/writer41 remains worse than hold. Diagnostic47 localizes one co-carrier's signed response effect but does not deliver a complete cheaper velocity or multiclock continuation.",
     "generalNonNeuralPixelDecoder": "open; interpolated supplied RGB images do not establish it",
     "independentPromptFaithfulnessAndQuality": "open",
-    "findingsBlog": "Living log through46: controlled carrier-receiver crossing, complete cost/custody/signed math/query maps, latest contextual-query/repair synthesis, exact scope and next first-text-write clamp.",
+    "findingsBlog": "Living log through47: exact ordered text-write/remainingreceiver decomposition, signed cancellation, full computation/custody/query maps, newest operation-selection synthesis and first-local-image-consumer finite-change plan.",
     "periodicStorageCleanup": "Cycle45 archives4terminal transport copies645412771B after full local/remoteSHA, original custody, restoration pointers and fresh local identity. Extracted science intact.44pointer audit;historical40notfreshhashed.40remaining name-size candidates11690724030B notdeletioncerts. Next48 or pressure.",
-    "astraAdvisoryReview": "Astra46 reviews actual crossing, frozen sources/seals and newest working posts, selects one two-call first-text-write clamp before fitting another operator. Next49 or material evidence."
+    "astraAdvisoryReview": "Astra47 reviews actual two-clamp source/result and newest operation-selection/context posts. Next is one four-cell local norm/MLP assay, not more full-denoiser crossings or a fit. Next periodic50 or material evidence."
   },
   "findingsLog": {
     "path": "../obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
     "role": "One living highlevel blog for this active goal; keep summaries, findings, constraints and next mathematical question current after each research cycle.",
-    "lastUpdatedCycle": 46,
+    "lastUpdatedCycle": 47,
     "scope": "Local notebook post, not a public-site publication. Source/code/artifact/related-post backlinks verified; unrelated dirty notebook files preserved.",
-    "sha256": "95ec75eb945add8df25f08b94bb7352e37f81f92cde273028ee1300e762236cb"
+    "sha256": "cadb1b7608c1b5f3b79b3676a5d3ee3b8f5cbaceefb822d208f9314c94f262b0"
   },
   "storageMaintenance": {
     "lastCycle": 45,
@@ -53,8 +53,8 @@
     "latestPointerCheck": "44pointer/custody joins and fresh remote regular-file/size checks.4new objects fullSHA verified in archive;40historical objects not freshly bytehashed.40name-size candidates11690724030B are not deletion certificates.",
     "cycle8Practice": "Bounded audit142top-level artifact directories for100MB-or-larger archive.tar.gz/worker.log.gz: none. All6restoration pointers match the cycle5receipt; authenticated remote type/size checks total7701454599bytes, not a fresh byte rehash. No new archive/deletion. Full common-bank/kernel/head arrays remain near compute; compact public evidence6201541bytes.",
     "latestSpaceObservation": {
-      "cycle": 46,
-      "localFreeBytes": 16163151872,
+      "cycle": 47,
+      "localFreeBytes": 15986618368,
       "scope": "Shared-volume observation only; not cleanup attribution."
     },
     "cycle9Practice": "Full states/ports/heads and target-assisted capacity weights remain near compute. Two compact publications2895986bytes; no full lexical table or forecast hydration. Last actual archive remainscycle5, last bounded transport auditcycle8, next storage reviewcycle11 or earlier under pressure.",
@@ -169,7 +169,8 @@
     "cycle43Practice": "All14new arrays86608128B remain nearcompute. Primary10files204477B plus scalar evidence/figure/blogcopy;no newtransportarchive/deletion/bulkmodelortablehydration. Actualcleanup/review42,next45orpressure.",
     "cycle44Practice": "10newarrays14025984Bremainnearcompute;14compactprimaryfiles3959490Bplusfigure/evidence/blogcopy. No newarchive/deletion/bulkarraymodelortablehydration. Captiondraftretainedunderlocalrun. Lastactualcleanup42,next45orpressure.",
     "cycle45Practice": "18newarrays102951168B remainnearcompute;12compactfiles1437477B plus scalar evidence/figure/blogcopy.4verified terminal transport copies645412771B archived with restorationpointers and all extracted evidence retained.44pointer post-audit. No bulk model/table/array hydration.",
-    "cycle46Practice": "All16newcompletearrays32507904B staynearcompute.12compactscientificfiles387877B plusfigure/evidencesummaries. Full7.807GBbytecheckincludesinheritedoriginalmodelassets,notnewfootprint. Noarchive/deletion or bulkmodel/tablehydration;lastactual45,next48 orpressure."
+    "cycle46Practice": "All16newcompletearrays32507904B staynearcompute.12compactscientificfiles387877B plusfigure/evidencesummaries. Full7.807GBbytecheckincludesinheritedoriginalmodelassets,notnewfootprint. Noarchive/deletion or bulkmodel/tablehydration;lastactual45,next48 orpressure.",
+    "cycle47Practice": "All12newcompletearrays20448768B remainnearcompute.13compactresultfiles395795B plusfigure/evidencesummaries. Full7.810GBbytecheck includesinheritedoriginalassets,notnewfootprint. Noarchive/deletion/bulkmodelhydration;lastactual45,nextreview48 orpressure."
   },
   "openPreference": {
     "question": "Reproduce FLUX prompt/seed behavior, or comparable prompt-faithful quality using another recovered computation?",
@@ -178,8 +179,8 @@
   "reviews": {
     "advisor": "astra_zero_forward_advisor",
     "model": "gpt-6-astra",
-    "lastCycle": 46,
-    "nextDueByCycle": 49,
+    "lastCycle": 47,
+    "nextDueByCycle": 50,
     "earlierIf": "new model evidence changes the route",
     "cycle5Snapshots": [
       {
@@ -226,32 +227,27 @@
     ],
     "latestPosts": [
       {
-        "path": "../obsidian/blog/2026-11-06-212122-a-better-query-transfers-but-the-next-layer-loses-a-binding.md",
-        "sha256": "5b4c95b4d218fde1743cf1b3252764a229fa7208b6760a89a9a945e490e464b1",
-        "scope": "Exact working-post snapshot at advisory review; later drift retained separately."
-      },
-      {
-        "path": "../obsidian/blog/2026-11-06-201200-correcting-a-reported-state-can-restore-the-remaining-computation.md",
-        "sha256": "7891fd30c5868f4b65a3c71511623dcf377f97a4e63a34bc3ff709ea1b93a712",
-        "scope": "Exact working-post snapshot at advisory review; later drift retained separately."
-      },
-      {
-        "path": "../obsidian/blog/2026-11-06-200500-model-computation-and-the-remaining-work-for-free-chat.md",
-        "sha256": "7c6fdf97046ed8774a6113d451e559b8ce8744884ef500c615e76f28c13c6a7b",
-        "scope": "Exact working-post snapshot at advisory review; later drift retained separately."
-      },
-      {
-        "path": "../obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
-        "sha256": "ea0c85695d109426884360e22f639562f1125198ef699101c84cffad29ed0059",
-        "scope": "Exact working-post snapshot at advisory review; later drift retained separately."
+        "path": "../obsidian/blog/2026-11-06-203600-knowing-an-operation-and-selecting-it-in-context-are-different-problems.md",
+        "sha256": "24bd392a9ec9c8cfabb663897e8e1c87c5024a949d9559e6597564f80de9e538",
+        "scope": "Exact working-post snapshot reported by advisor; later drift retained separately."
       },
       {
         "path": "../obsidian/blog/2026-11-06-154200-context-coverage-and-the-alternative-of-a-better-small-program.md",
-        "sha256": "5628a0313fbe53e2ac14afe937898c745d5674bfd1f4175de257fb6a2a8f684a",
-        "scope": "Exact working-post snapshot at advisory review; later drift retained separately."
+        "sha256": "afb9b8853d343d6e38aea2823943784e512915aa55971031c0750cdbc1fbe6c9",
+        "scope": "Exact working-post snapshot reported by advisor; later drift retained separately."
+      },
+      {
+        "path": "../obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+        "sha256": "95ec75eb945add8df25f08b94bb7352e37f81f92cde273028ee1300e762236cb",
+        "scope": "Exact working-post snapshot reported by advisor; later drift retained separately."
+      },
+      {
+        "path": "../obsidian/blog/2026-11-06-212122-a-better-query-transfers-but-the-next-layer-loses-a-binding.md",
+        "sha256": "5b4c95b4d218fde1743cf1b3252764a229fa7208b6760a89a9a945e490e464b1",
+        "scope": "Exact working-post snapshot reported by advisor; later drift retained separately."
       }
     ],
-    "advice": "One two-call R1 contrast fixing the first joint text projection write to archived R0 textWrite while preserving the existing H_A/H_B image clamps. No new fit/rank/gain/derivative sweep. d10=Delta_H F(R1,T0); I=(d10-d0)+(d1-d10). First term is remaining receiver dependence with one initial text write fixed, including later text-image feedback. Second is controlled effect of changing that write on the carrier response at R1. Keep signed cross energy; no additive causal percentages.",
+    "advice": "One four-cell first-image-consumer assay stopping immediately after joint0 image MLP. Reuse two receiver inputs/two complete H0 donors and qualified clock3 modulation. No further full-denoiser crossing now. Local source-conditioned operator assay, not an independently predicted future. Small local discrepancies may amplify later. No whole-future mediation, cheap complete velocity or zero-neural generation claim.",
     "cycle6Snapshots": [
       {
         "path": "../obsidian/blog/2026-11-06-010513-predicting-a-complete-denoiser-pass-from-its-own-state.md",
@@ -422,7 +418,7 @@
         "scope": "Mutable working-post snapshot reported by Astra cycle15."
       }
     ],
-    "latestReceipt": "results/carrier-crossing-evidence/advisor.json",
+    "latestReceipt": "results/text-crossing-evidence/advisor.json",
     "cycle16Snapshots": [
       {
         "path": "../obsidian/blog/2026-11-06-054800-five-attention-values-become-a-different-hidden-state.md",
@@ -552,7 +548,7 @@
         "scope": "Cycle22 working snapshot before the subsequent living-log update."
       }
     ],
-    "latestResultSHA256": "0ed3cfb0478c8598bb31a773ba08d75e46db9df60e8f757d6f7708a44534bfb3",
+    "latestResultSHA256": "01eee3655e812c8443329ac7ec1973b328becfac6232331e6120e85e91a0ca40",
     "cycle24Snapshots": [
       {
         "path": "../obsidian/blog/2026-11-06-093800-predicting-how-an-error-moves-through-the-next-block.md",
@@ -1063,6 +1059,29 @@
         "path": "../obsidian/blog/2026-11-06-154200-context-coverage-and-the-alternative-of-a-better-small-program.md",
         "sha256": "5628a0313fbe53e2ac14afe937898c745d5674bfd1f4175de257fb6a2a8f684a",
         "scope": "Exact working-post snapshot at advisory review; later drift retained separately."
+      }
+    ],
+    "cycle47Receipt": "results/text-crossing-evidence/advisor.json",
+    "cycle47Snapshots": [
+      {
+        "path": "../obsidian/blog/2026-11-06-203600-knowing-an-operation-and-selecting-it-in-context-are-different-problems.md",
+        "sha256": "24bd392a9ec9c8cfabb663897e8e1c87c5024a949d9559e6597564f80de9e538",
+        "scope": "Exact working-post snapshot reported by advisor; later drift retained separately."
+      },
+      {
+        "path": "../obsidian/blog/2026-11-06-154200-context-coverage-and-the-alternative-of-a-better-small-program.md",
+        "sha256": "afb9b8853d343d6e38aea2823943784e512915aa55971031c0750cdbc1fbe6c9",
+        "scope": "Exact working-post snapshot reported by advisor; later drift retained separately."
+      },
+      {
+        "path": "../obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+        "sha256": "95ec75eb945add8df25f08b94bb7352e37f81f92cde273028ee1300e762236cb",
+        "scope": "Exact working-post snapshot reported by advisor; later drift retained separately."
+      },
+      {
+        "path": "../obsidian/blog/2026-11-06-212122-a-better-query-transfers-but-the-next-layer-loses-a-binding.md",
+        "sha256": "5b4c95b4d218fde1743cf1b3252764a229fa7208b6760a89a9a945e490e464b1",
+        "scope": "Exact working-post snapshot reported by advisor; later drift retained separately."
       }
     ]
   },
@@ -2352,6 +2371,41 @@
       "nominalAffineMACs": 18896391241728,
       "nominalQKAVMACs": 1449551462400,
       "scope": "Four full native calls with supplied original H0 donors/receiverstates;alloriginallearnedclock/text/imageworkpaid. No naturaldistribution informationabsence, cheapproducer or arbitrarypromptzero-neural claim."
+    },
+    {
+      "jobID": "job-718ece4a9087",
+      "requestSHA256": "4c97213d82a123ad69d5522ab1b91311320194a7380f8fbdcdbbfbaa039391a3",
+      "type": "First-text-write output clamp plus complete image-input pair, ordered signed response decomposition",
+      "schedulerSeconds": 67.75,
+      "sampledPeakRSSMB": 8470.2,
+      "sampledPeakVRAMMB": 8100.0,
+      "reservation": {
+        "cpu_threads": 4,
+        "disk_gb": 1.0,
+        "est_wall_s": 60.0,
+        "ram_mb": 10240.0,
+        "source": "declared",
+        "vram_mb": 10240.0
+      },
+      "work": {
+        "affineCalls": 218,
+        "attentionDispatches": 50,
+        "imageClamps": 2,
+        "modelLoads": 1,
+        "newDonorFormation": 0,
+        "newEncoderCalls": 0,
+        "newFits": 0,
+        "newImages": 0,
+        "newSchedulerCommits": 0,
+        "newVAECalls": 0,
+        "originalTransformerCalls": 2,
+        "recipientH0Computations": 2,
+        "recipientTextProjectionComputations": 2,
+        "textClamps": 2
+      },
+      "nominalAffineMACs": 9448195620864,
+      "nominalQKAVMACs": 724775731200,
+      "scope": "Two original native calls with suppliedfirsttext/imagecarriers; alloriginallearnedworkpaid. Signedco-carrier contrast,notcausalpercentages/cheapoperator/image/arbitrarypromptzero-neural."
     }
   ],
   "failedRuns": [
@@ -2537,23 +2591,28 @@
   ],
   "nextCut": {
     "status": "written-unexecuted",
-    "plan": "plans/carrier-text-write-crossing.md",
-    "law": "TwoR1nativecallswithsameH_A/H_Bimageclampsandfirstjointtext to_add_out outputheldatarchivedR0T0. Sealnewvelocities -> d10. I=(d10-d0)+(d1-d10);retain signedfields/crossenergy. Remainingreceiverdependence includeslatertext-imagefeedback;noadditivecausalpercentages.",
+    "plan": "plans/first-image-consumer.md",
+    "law": "One2receiver x2imagecarrier local consumer endingafterjoint0imageMLP. Sharedgatedwrite ->BF16residual ->LayerNorm/modulation ->fusedgate/up ->SiLUproduct ->down ->exit. ExactfiniteLNandSwiGLUproductidentitiesonmeasuredoperands, nativepolicyroundingseparate.",
     "physicalWork": {
-      "originalTransformerCalls": 2,
-      "affineCalls": 218,
-      "attentionDispatches": 50,
-      "nominalAffineMACs": 9448195620864,
-      "nominalQKAVMACs": 724775731200,
-      "newDonorFormation": 0,
-      "newEncoderCalls": 0,
+      "selectedOriginalMatrices": 4,
+      "selectedBF16ParameterBytes": 189530112,
+      "inputProjections": 2,
+      "sharedImageOutputProjections": 2,
+      "MLPPaths": 4,
+      "affineCalls": 12,
+      "nominalAffineMACs": 368025010176,
+      "fullTransformerCalls": 0,
+      "attentionCalls": 0,
+      "newTextPathCalls": 0,
+      "newEncoders": 0,
+      "newClockNetworks": 0,
       "newFits": 0,
       "newSchedulerCommits": 0,
       "newVAECalls": 0,
       "newImages": 0
     },
-    "fixed": "SameR1Z/E/clock/IDs/169weights/profile. Twoordinaryfullnativecalls;originalimage/textreads/projections computedanddiscarded. Existingdonorsreused;no fit/gain/rank/derivativesweep.",
-    "scope": "One concrete co-carrier intervention before designing another operator. Offmanifold/orderdependent contrasts,nottext-sufficiency/naturalH0absence/cheapproducer/image/zero-neural claim."
+    "fixed": "OriginalZ/Hdonors/profile/sourcegeometry/clock3double_img. TwoB1inputprojectionsmatcharchivedprefixhashes;twoB1sharedcarrierprojections preserveinputstride/offset;fourMLPpaths. Selected4tensorboundedloader,noall169load/fullTransformer/attention/text/suffix/VAE/fit/image.",
+    "scope": "Localreceiver-qualifiedoperatorquestion. Source-order/prefixclosure doesnotcertifyfullblockexitparity; no wholefuturemediation or independentlypredictedfuture,cheapcompletevelocity or zero-neuralgoalclaim."
   },
   "alternativeDiagnostic": {
     "status": "executedcycle20",
@@ -3279,7 +3338,7 @@
     "saturnSweep": "run/verifyexit0,1stream23040records,no watchfires,target-streams-only,no terminalreceipts/physicaladdressjoins.",
     "goalStatus": "Active. Frozen source-score envelope has active trend/overallcountertrend; no selector/tail defect found. No zero-neural arbitraryimage."
   },
-  "previousResearchCycle": 45,
+  "previousResearchCycle": 46,
   "selectorObjectiveEvidence": {
     "directory": "results/selector-objective",
     "evidenceSweep": "results/selector-objective-evidence/sweep.json",
@@ -18133,6 +18192,115 @@
       "All original transformer/clock/text/image attention is paid, including discarded recipient H0. Historical learned donors/conditioning/prefixes remain paid.",
       "Two receivers/one donor pair are dependent contrasts, not broad arbitrary-prompt coverage; no full image or zero-neural generator claim.",
       "Wall/CPU/CUDA-event intervals include instrumentation, hashing and captures; no matched runtime speedup claim."
+    ]
+  },
+  "rootReviewedCycle47": {
+    "path": "../obsidian/blog/2026-11-06-203600-knowing-an-operation-and-selecting-it-in-context-are-different-problems.md",
+    "sha256": "24bd392a9ec9c8cfabb663897e8e1c87c5024a949d9559e6597564f80de9e538",
+    "scope": "Read complete operation/reflection diagnostic and growing-backing/active-memory architecture. Useful isolated operation does not establish reliable contextual invocation; exact algebra does not establish a cheap producer."
+  },
+  "textCrossingEvidence": {
+    "cycle": 47,
+    "jobID": "job-718ece4a9087",
+    "requestSHA256": "4c97213d82a123ad69d5522ab1b91311320194a7380f8fbdcdbbfbaa039391a3",
+    "reportSHA256": "01eee3655e812c8443329ac7ec1973b328becfac6232331e6120e85e91a0ca40",
+    "velocitySealSHA256": "7b59db98acb21b89d893b35d54fe77473ab99847d630860a605fc15baa15fea4",
+    "executedPayload": {
+      "host": "beast",
+      "reported_ts": 1794026839.7647867,
+      "sha256": "75c072923d796f88529bbb0e122d4dfa5d86a3229d992dac4001a8e874d98e30",
+      "size_bytes": 3147962
+    },
+    "accounts": [
+      {
+        "energyClosure": 5.684341886080802e-14,
+        "firstTextWriteEnergy": 213.39294591755305,
+        "maxClosureAbs": 0.0,
+        "originalInteractionEnergy": 844.0636552606597,
+        "queries": 1024,
+        "remainingOriginalCosine": 0.873387889091366,
+        "remainingOverOriginalInteraction": 0.9983782133558972,
+        "remainingReceiverEnergy": 841.3280929843162,
+        "remainingTextCosine": -0.24858445412711286,
+        "responseR0Rms": 0.05656196870621704,
+        "responseR0TextR0Cosine": 0.02170811749434169,
+        "responseR1Rms": 0.05754815162591989,
+        "responseR1TextR0Cosine": 0.7560715339872095,
+        "responseR1TextR0Rms": 0.05798237150447168,
+        "scalars": 131072,
+        "scope": "all",
+        "textOriginalCosine": 0.254626986676885,
+        "textOverOriginalInteraction": 0.502808289856363,
+        "twiceRemainingText": -210.65738364120955
+      },
+      {
+        "energyClosure": 0.0,
+        "firstTextWriteEnergy": 201.71324943723914,
+        "maxClosureAbs": 0.0,
+        "originalInteractionEnergy": 433.72142499936024,
+        "queries": 944,
+        "remainingOriginalCosine": 0.7686032584757126,
+        "remainingOverOriginalInteraction": 1.0048797133177407,
+        "remainingReceiverEnergy": 437.9646250288564,
+        "remainingTextCosine": -0.34646444360936784,
+        "responseR0Rms": 0.03783608297509743,
+        "responseR0TextR0Cosine": 0.02683013062186981,
+        "responseR1Rms": 0.046930332443188005,
+        "responseR1TextR0Cosine": 0.6285396543913782,
+        "responseR1TextR0Rms": 0.04785568688056704,
+        "scalars": 120832,
+        "scope": "source-nonlocal",
+        "textOriginalCosine": 0.3338094201648695,
+        "textOverOriginalInteraction": 0.6819645109338417,
+        "twiceRemainingText": -205.9564494667353
+      }
+    ],
+    "work": {
+      "affineCalls": 218,
+      "attentionDispatches": 50,
+      "imageClamps": 2,
+      "modelLoads": 1,
+      "newDonorFormation": 0,
+      "newEncoderCalls": 0,
+      "newFits": 0,
+      "newImages": 0,
+      "newSchedulerCommits": 0,
+      "newVAECalls": 0,
+      "originalTransformerCalls": 2,
+      "recipientH0Computations": 2,
+      "recipientTextProjectionComputations": 2,
+      "textClamps": 2
+    },
+    "nominalAffineMACs": 9448195620864,
+    "nominalQKAVMACs": 724775731200,
+    "byteCustody": {
+      "files": 46,
+      "bytes": 7810361500,
+      "receipt": "results/text-crossing/retained-array-verification.json"
+    },
+    "publication": {
+      "files": 13,
+      "bytes": 395795,
+      "newArrays": 12,
+      "newArrayBytes": 20448768,
+      "queryRecords": 1024
+    },
+    "mechanics": "results/text-crossing-evidence/mechanics.json",
+    "instrument": "results/text-crossing-evidence/saturn-instrument.json",
+    "advisor": "results/text-crossing-evidence/advisor.json",
+    "scheduler": "results/text-crossing-evidence/scheduler.json",
+    "figure": "results/text-crossing-figure/text-write-crossing.png",
+    "tests": {
+      "passed": 248,
+      "wallSeconds": 17.27,
+      "scope": "Generator mechanics including4new independenttext-mediated/cancellingdecomposition and realBF16input+outputhook geometry/order/alias/byteclosure checks. No scientific qualitygate."
+    },
+    "limits": [
+      "Supplied-carrier hybrids, one ordered co-carrier contrast/two dependent outcomes; no natural-manifold or universal causal-share claim.",
+      "Remaining receiver difference includes later text-image feedback. Signed terms may cancel; no additive causal percentages.",
+      "All original transformer/clock/text/image work is paid, including discarded native image read and text projection. Old donors/conditioning/velocities remain paid.",
+      "No fit, cheap receiver-conditioned operator, full image, arbitrary-prompt coverage or zero-neural generation is established.",
+      "Instrumented wall/CPU/CUDA-event intervals include captures/hash/hooks; no matched serving speedup claim."
     ]
   }
 }

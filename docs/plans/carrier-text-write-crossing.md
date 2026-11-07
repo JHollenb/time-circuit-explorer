@@ -1,6 +1,6 @@
 # Hold the first joint text write fixed across the image-carrier response
 
-Status: **written and unexecuted**. Astra46 selects this single follow-up to the [carrier–receiver crossing](../carrier-receiver-crossing.md), before another fit, gain/rank scan or derivative sweep.
+Status: **executed**, job-718ece4a9087. The [result](../first-text-write-crossing.md) retains the remaining receiver difference, substantial first-text-write effect and their signed cancellation. The [pre-execution plan](../results/text-crossing/frozen-plan.md) remains immutable. Astra46 selects this single follow-up to the [carrier–receiver crossing](../carrier-receiver-crossing.md), before another fit, gain/rank scan or derivative sweep.
 
 The first joint text attention reads the image keys/values. Identical initial text conditioning therefore does not hold its output write fixed across different image receivers. Cycle46 kept that path native. The next question is how much of its measured response difference changes when this one concrete co-carrier is fixed.
 

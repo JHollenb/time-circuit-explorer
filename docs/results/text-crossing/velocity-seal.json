@@ -1,0 +1,1020 @@
+{
+  "fields": {
+    "A": {
+      "bytes": 262272,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-718ece4a9087/arrays/velocity/A.npy",
+      "payloadSHA256": "bd05a885aa554d815db7d5f9d53440f05a2c0de45d442d659205097d4acfa8bd",
+      "sha256": "ddd80d8618b0dc5dd966d856e4d3e0af12c60f63e784627851e86208d1946baf",
+      "shape": [
+        1,
+        1024,
+        128
+      ],
+      "storedDtype": "uint16"
+    },
+    "B": {
+      "bytes": 262272,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-718ece4a9087/arrays/velocity/B.npy",
+      "payloadSHA256": "97ac70e948083907e421176f18975c264e1d8d1979991ddd160868b19c21b19b",
+      "sha256": "1b0efc38a58839b8201c58ef09ea1c758fb7cfc723351624c8edca51c9229c9d",
+      "shape": [
+        1,
+        1024,
+        128
+      ],
+      "storedDtype": "uint16"
+    }
+  },
+  "frames": [
+    {
+      "carrier": "A",
+      "cell": "A",
+      "earlierTextOutputFrameID": null,
+      "kind": "text",
+      "outputFrame": {
+        "act": "tce.text_crossing.replace_text:v1",
+        "frame_id": "b40b4d21aab4fc3272704fab43adc2a07a3c4dc3e08e9dcc7792380b5c1e4322",
+        "implementation": "native-boundary-clamp",
+        "metadata": {
+          "carrier": "A",
+          "cell": "A",
+          "earlierTextOutputFrameID": null,
+          "kind": "text",
+          "receiver": "R1",
+          "text": "T0"
+        },
+        "parent_frame_id": "1709d80ec7a1f1606d5ce7f7a8fd0ce11606193a5633e94d6493fe56154c0aba",
+        "program_fingerprint": "4c97213d82a123ad69d5522ab1b91311320194a7380f8fbdcdbbfbaa039391a3",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "consumed": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "shape": [
+                1,
+                512,
+                3072
+              ]
+            },
+            "fingerprint": "41b067fe92daa1c488183c0a348f515bcfe6b10018e3a2da8f9dbc29e3e20cc4",
+            "handle": "saturn://consumed",
+            "kind": "tensor",
+            "name": "consumed"
+          },
+          "donor": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                512,
+                3072
+              ],
+              "storageOffset": 0,
+              "stride": [
+                1572864,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "059a411d1b427a345372e102fd17c70980050a220a9a779b2f2b68c002d60bf6",
+            "handle": "saturn://donor",
+            "kind": "tensor",
+            "name": "donor"
+          },
+          "native": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                512,
+                3072
+              ],
+              "storageOffset": 0,
+              "stride": [
+                1572864,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "6e34cee852f05ab0230961231a8b4af3c7b62672dad51987fe5f1db5953c84c9",
+            "handle": "saturn://native",
+            "kind": "tensor",
+            "name": "native"
+          },
+          "receiverContract": {
+            "abi": {
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              }
+            },
+            "fingerprint": "a39594d8d8ec5cd39b915d80c0237fe3de4485c9219018d54811fa007fddf75a",
+            "handle": "saturn://receiverContract",
+            "kind": "receiver-contract",
+            "name": "receiverContract"
+          }
+        }
+      },
+      "receiver": "R1",
+      "sourceFrame": {
+        "act": "root:v1",
+        "frame_id": "1709d80ec7a1f1606d5ce7f7a8fd0ce11606193a5633e94d6493fe56154c0aba",
+        "implementation": "saturn",
+        "metadata": {
+          "carrier": "A",
+          "cell": "A",
+          "earlierTextOutputFrameID": null,
+          "kind": "text",
+          "receiver": "R1",
+          "text": "T0"
+        },
+        "parent_frame_id": null,
+        "program_fingerprint": "4c97213d82a123ad69d5522ab1b91311320194a7380f8fbdcdbbfbaa039391a3",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "donor": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                512,
+                3072
+              ],
+              "storageOffset": 0,
+              "stride": [
+                1572864,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "059a411d1b427a345372e102fd17c70980050a220a9a779b2f2b68c002d60bf6",
+            "handle": "saturn://donor",
+            "kind": "tensor",
+            "name": "donor"
+          },
+          "native": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                512,
+                3072
+              ],
+              "storageOffset": 0,
+              "stride": [
+                1572864,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "6e34cee852f05ab0230961231a8b4af3c7b62672dad51987fe5f1db5953c84c9",
+            "handle": "saturn://native",
+            "kind": "tensor",
+            "name": "native"
+          },
+          "receiverContract": {
+            "abi": {
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              }
+            },
+            "fingerprint": "a39594d8d8ec5cd39b915d80c0237fe3de4485c9219018d54811fa007fddf75a",
+            "handle": "saturn://receiverContract",
+            "kind": "receiver-contract",
+            "name": "receiverContract"
+          }
+        }
+      },
+      "text": "T0"
+    },
+    {
+      "carrier": "A",
+      "cell": "A",
+      "earlierTextOutputFrameID": "b40b4d21aab4fc3272704fab43adc2a07a3c4dc3e08e9dcc7792380b5c1e4322",
+      "kind": "image",
+      "outputFrame": {
+        "act": "tce.text_crossing.replace_image:v1",
+        "frame_id": "db620ab93dc9e2649643dbbcdf95166b8872a45b4b5bfa94871baadeb7da1e11",
+        "implementation": "native-boundary-clamp",
+        "metadata": {
+          "carrier": "A",
+          "cell": "A",
+          "earlierTextOutputFrameID": "b40b4d21aab4fc3272704fab43adc2a07a3c4dc3e08e9dcc7792380b5c1e4322",
+          "kind": "image",
+          "receiver": "R1",
+          "text": "T0"
+        },
+        "parent_frame_id": "296e1f9839b2af922e757db0d68c893c750140a73062b610c4c479f524dd952b",
+        "program_fingerprint": "4c97213d82a123ad69d5522ab1b91311320194a7380f8fbdcdbbfbaa039391a3",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "consumed": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "shape": [
+                1,
+                1024,
+                3072
+              ]
+            },
+            "fingerprint": "56f3ed3a98cbdeab8d3a6952e703bca5120918944c72e94f019a358d3345ea18",
+            "handle": "saturn://consumed",
+            "kind": "tensor",
+            "name": "consumed"
+          },
+          "donor": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "storageOffset": 0,
+              "stride": [
+                3145728,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "5d06064ce2a2155757269eacf29f68fc2217fb564f165704c244a2f5cb2d767c",
+            "handle": "saturn://donor",
+            "kind": "tensor",
+            "name": "donor"
+          },
+          "native": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "storageOffset": 1572864,
+              "stride": [
+                4718592,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "1eceec65f6944ecb2eda93c37946101f587ee1ee333eff9f7c22f51a3425d131",
+            "handle": "saturn://native",
+            "kind": "tensor",
+            "name": "native"
+          },
+          "receiverContract": {
+            "abi": {
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              }
+            },
+            "fingerprint": "a39594d8d8ec5cd39b915d80c0237fe3de4485c9219018d54811fa007fddf75a",
+            "handle": "saturn://receiverContract",
+            "kind": "receiver-contract",
+            "name": "receiverContract"
+          }
+        }
+      },
+      "receiver": "R1",
+      "sourceFrame": {
+        "act": "root:v1",
+        "frame_id": "296e1f9839b2af922e757db0d68c893c750140a73062b610c4c479f524dd952b",
+        "implementation": "saturn",
+        "metadata": {
+          "carrier": "A",
+          "cell": "A",
+          "earlierTextOutputFrameID": "b40b4d21aab4fc3272704fab43adc2a07a3c4dc3e08e9dcc7792380b5c1e4322",
+          "kind": "image",
+          "receiver": "R1",
+          "text": "T0"
+        },
+        "parent_frame_id": null,
+        "program_fingerprint": "4c97213d82a123ad69d5522ab1b91311320194a7380f8fbdcdbbfbaa039391a3",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "donor": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "storageOffset": 0,
+              "stride": [
+                3145728,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "5d06064ce2a2155757269eacf29f68fc2217fb564f165704c244a2f5cb2d767c",
+            "handle": "saturn://donor",
+            "kind": "tensor",
+            "name": "donor"
+          },
+          "native": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "storageOffset": 1572864,
+              "stride": [
+                4718592,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "1eceec65f6944ecb2eda93c37946101f587ee1ee333eff9f7c22f51a3425d131",
+            "handle": "saturn://native",
+            "kind": "tensor",
+            "name": "native"
+          },
+          "receiverContract": {
+            "abi": {
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              }
+            },
+            "fingerprint": "a39594d8d8ec5cd39b915d80c0237fe3de4485c9219018d54811fa007fddf75a",
+            "handle": "saturn://receiverContract",
+            "kind": "receiver-contract",
+            "name": "receiverContract"
+          }
+        }
+      },
+      "text": "T0"
+    },
+    {
+      "carrier": "B",
+      "cell": "B",
+      "earlierTextOutputFrameID": null,
+      "kind": "text",
+      "outputFrame": {
+        "act": "tce.text_crossing.replace_text:v1",
+        "frame_id": "165b1c2d1a9c8e7bca04951df4a9be7be9ea777a9433f6964e532aa31aa8aeb8",
+        "implementation": "native-boundary-clamp",
+        "metadata": {
+          "carrier": "B",
+          "cell": "B",
+          "earlierTextOutputFrameID": null,
+          "kind": "text",
+          "receiver": "R1",
+          "text": "T0"
+        },
+        "parent_frame_id": "dee1173a073e08f77c728cdf6dbdbb2c16baad4b87cae9d211f9e7773d5c5806",
+        "program_fingerprint": "4c97213d82a123ad69d5522ab1b91311320194a7380f8fbdcdbbfbaa039391a3",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "consumed": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "shape": [
+                1,
+                512,
+                3072
+              ]
+            },
+            "fingerprint": "41b067fe92daa1c488183c0a348f515bcfe6b10018e3a2da8f9dbc29e3e20cc4",
+            "handle": "saturn://consumed",
+            "kind": "tensor",
+            "name": "consumed"
+          },
+          "donor": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                512,
+                3072
+              ],
+              "storageOffset": 0,
+              "stride": [
+                1572864,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "059a411d1b427a345372e102fd17c70980050a220a9a779b2f2b68c002d60bf6",
+            "handle": "saturn://donor",
+            "kind": "tensor",
+            "name": "donor"
+          },
+          "native": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                512,
+                3072
+              ],
+              "storageOffset": 0,
+              "stride": [
+                1572864,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "6e34cee852f05ab0230961231a8b4af3c7b62672dad51987fe5f1db5953c84c9",
+            "handle": "saturn://native",
+            "kind": "tensor",
+            "name": "native"
+          },
+          "receiverContract": {
+            "abi": {
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              }
+            },
+            "fingerprint": "a39594d8d8ec5cd39b915d80c0237fe3de4485c9219018d54811fa007fddf75a",
+            "handle": "saturn://receiverContract",
+            "kind": "receiver-contract",
+            "name": "receiverContract"
+          }
+        }
+      },
+      "receiver": "R1",
+      "sourceFrame": {
+        "act": "root:v1",
+        "frame_id": "dee1173a073e08f77c728cdf6dbdbb2c16baad4b87cae9d211f9e7773d5c5806",
+        "implementation": "saturn",
+        "metadata": {
+          "carrier": "B",
+          "cell": "B",
+          "earlierTextOutputFrameID": null,
+          "kind": "text",
+          "receiver": "R1",
+          "text": "T0"
+        },
+        "parent_frame_id": null,
+        "program_fingerprint": "4c97213d82a123ad69d5522ab1b91311320194a7380f8fbdcdbbfbaa039391a3",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "donor": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                512,
+                3072
+              ],
+              "storageOffset": 0,
+              "stride": [
+                1572864,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "059a411d1b427a345372e102fd17c70980050a220a9a779b2f2b68c002d60bf6",
+            "handle": "saturn://donor",
+            "kind": "tensor",
+            "name": "donor"
+          },
+          "native": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                512,
+                3072
+              ],
+              "storageOffset": 0,
+              "stride": [
+                1572864,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "6e34cee852f05ab0230961231a8b4af3c7b62672dad51987fe5f1db5953c84c9",
+            "handle": "saturn://native",
+            "kind": "tensor",
+            "name": "native"
+          },
+          "receiverContract": {
+            "abi": {
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              }
+            },
+            "fingerprint": "a39594d8d8ec5cd39b915d80c0237fe3de4485c9219018d54811fa007fddf75a",
+            "handle": "saturn://receiverContract",
+            "kind": "receiver-contract",
+            "name": "receiverContract"
+          }
+        }
+      },
+      "text": "T0"
+    },
+    {
+      "carrier": "B",
+      "cell": "B",
+      "earlierTextOutputFrameID": "165b1c2d1a9c8e7bca04951df4a9be7be9ea777a9433f6964e532aa31aa8aeb8",
+      "kind": "image",
+      "outputFrame": {
+        "act": "tce.text_crossing.replace_image:v1",
+        "frame_id": "3e01d97172ab9f78f3d98e557c861a342c2807abe01a88cbb24b8bab87e7a538",
+        "implementation": "native-boundary-clamp",
+        "metadata": {
+          "carrier": "B",
+          "cell": "B",
+          "earlierTextOutputFrameID": "165b1c2d1a9c8e7bca04951df4a9be7be9ea777a9433f6964e532aa31aa8aeb8",
+          "kind": "image",
+          "receiver": "R1",
+          "text": "T0"
+        },
+        "parent_frame_id": "0602467f84bd5a855ea60aa076cb5c1aee77a4e668a0f9d2914b937d1875eecc",
+        "program_fingerprint": "4c97213d82a123ad69d5522ab1b91311320194a7380f8fbdcdbbfbaa039391a3",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "consumed": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "shape": [
+                1,
+                1024,
+                3072
+              ]
+            },
+            "fingerprint": "681a12a652692a5adac159a26f113f56927b72c573c673ebe7549952f1aa6ab6",
+            "handle": "saturn://consumed",
+            "kind": "tensor",
+            "name": "consumed"
+          },
+          "donor": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "storageOffset": 0,
+              "stride": [
+                3145728,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "b6c5a41df2a38d1049e8bc9b19fbf3011ba65a593d36f57e8ef735a7d077fff7",
+            "handle": "saturn://donor",
+            "kind": "tensor",
+            "name": "donor"
+          },
+          "native": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "storageOffset": 1572864,
+              "stride": [
+                4718592,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "1eceec65f6944ecb2eda93c37946101f587ee1ee333eff9f7c22f51a3425d131",
+            "handle": "saturn://native",
+            "kind": "tensor",
+            "name": "native"
+          },
+          "receiverContract": {
+            "abi": {
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              }
+            },
+            "fingerprint": "a39594d8d8ec5cd39b915d80c0237fe3de4485c9219018d54811fa007fddf75a",
+            "handle": "saturn://receiverContract",
+            "kind": "receiver-contract",
+            "name": "receiverContract"
+          }
+        }
+      },
+      "receiver": "R1",
+      "sourceFrame": {
+        "act": "root:v1",
+        "frame_id": "0602467f84bd5a855ea60aa076cb5c1aee77a4e668a0f9d2914b937d1875eecc",
+        "implementation": "saturn",
+        "metadata": {
+          "carrier": "B",
+          "cell": "B",
+          "earlierTextOutputFrameID": "165b1c2d1a9c8e7bca04951df4a9be7be9ea777a9433f6964e532aa31aa8aeb8",
+          "kind": "image",
+          "receiver": "R1",
+          "text": "T0"
+        },
+        "parent_frame_id": null,
+        "program_fingerprint": "4c97213d82a123ad69d5522ab1b91311320194a7380f8fbdcdbbfbaa039391a3",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "donor": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "storageOffset": 0,
+              "stride": [
+                3145728,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "b6c5a41df2a38d1049e8bc9b19fbf3011ba65a593d36f57e8ef735a7d077fff7",
+            "handle": "saturn://donor",
+            "kind": "tensor",
+            "name": "donor"
+          },
+          "native": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "storageOffset": 1572864,
+              "stride": [
+                4718592,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "1eceec65f6944ecb2eda93c37946101f587ee1ee333eff9f7c22f51a3425d131",
+            "handle": "saturn://native",
+            "kind": "tensor",
+            "name": "native"
+          },
+          "receiverContract": {
+            "abi": {
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              }
+            },
+            "fingerprint": "a39594d8d8ec5cd39b915d80c0237fe3de4485c9219018d54811fa007fddf75a",
+            "handle": "saturn://receiverContract",
+            "kind": "receiver-contract",
+            "name": "receiverContract"
+          }
+        }
+      },
+      "text": "T0"
+    }
+  ],
+  "requestSHA256": "4c97213d82a123ad69d5522ab1b91311320194a7380f8fbdcdbbfbaa039391a3",
+  "schema": "tce-text-crossing-velocity-seal-v1",
+  "writes": [
+    {
+      "carrier": "A",
+      "cell": "A",
+      "consumedPayloadSHA256": "059a411d1b427a345372e102fd17c70980050a220a9a779b2f2b68c002d60bf6",
+      "consumedStorageOffset": 0,
+      "consumedStoragePointer": 137075567362048,
+      "consumedStride": [
+        1572864,
+        3072,
+        1
+      ],
+      "donor": {
+        "bytes": 3145856,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-0b06996e8215/arrays/receiver/R0/textWrite.npy",
+        "payloadSHA256": "059a411d1b427a345372e102fd17c70980050a220a9a779b2f2b68c002d60bf6",
+        "sha256": "4c235f212cccd4e388b231bd34d171078fec22e3fc571cc91eaf1abbd8e2d633",
+        "shape": [
+          1,
+          512,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "donorStoragePointer": 137060975378432,
+      "dtype": "torch.bfloat16",
+      "evidence": {
+        "act": "tce.text_crossing.replace_text:v1",
+        "elapsed_ms": 8.485436905175447,
+        "implementation": "native-boundary-clamp",
+        "input_frame_id": "1709d80ec7a1f1606d5ce7f7a8fd0ce11606193a5633e94d6493fe56154c0aba",
+        "metrics": {
+          "consumedPayloadSHA256": "059a411d1b427a345372e102fd17c70980050a220a9a779b2f2b68c002d60bf6",
+          "nativePayloadSHA256": "6e34cee852f05ab0230961231a8b4af3c7b62672dad51987fe5f1db5953c84c9",
+          "separateStorage": true
+        },
+        "numerical_contract": "whole-tensor-replacement-native-stride-offset-independent-storage",
+        "output_frame_id": "b40b4d21aab4fc3272704fab43adc2a07a3c4dc3e08e9dcc7792380b5c1e4322"
+      },
+      "kind": "text",
+      "nativeField": {
+        "bytes": 3145856,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-718ece4a9087/arrays/receiver/textWriteFields.npy",
+        "payloadSHA256": "6e34cee852f05ab0230961231a8b4af3c7b62672dad51987fe5f1db5953c84c9",
+        "sha256": "3dfbea4303b5ba336de71a81e1f6243589a10d8099c1b0080af35ba1cc481924",
+        "shape": [
+          1,
+          512,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "receiver": "R1",
+      "recipientStorageOffset": 0,
+      "recipientStoragePointer": 137075583090688,
+      "recipientStride": [
+        1572864,
+        3072,
+        1
+      ],
+      "shape": [
+        1,
+        512,
+        3072
+      ],
+      "text": "T0"
+    },
+    {
+      "carrier": "A",
+      "cell": "A",
+      "consumedPayloadSHA256": "5d06064ce2a2155757269eacf29f68fc2217fb564f165704c244a2f5cb2d767c",
+      "consumedStorageOffset": 1572864,
+      "consumedStoragePointer": 137075878789120,
+      "consumedStride": [
+        4718592,
+        3072,
+        1
+      ],
+      "donor": {
+        "bytes": 6291584,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.base.canonical/H0.npy",
+        "payloadSHA256": "5d06064ce2a2155757269eacf29f68fc2217fb564f165704c244a2f5cb2d767c",
+        "sha256": "9b6444918be80b3f1af6d034867abc0b32422d975ab02e61e438527c6e58c47b",
+        "shape": [
+          1,
+          1024,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "donorStoragePointer": 137060781916160,
+      "dtype": "torch.bfloat16",
+      "evidence": {
+        "act": "tce.text_crossing.replace_image:v1",
+        "elapsed_ms": 16.492681112140417,
+        "implementation": "native-boundary-clamp",
+        "input_frame_id": "296e1f9839b2af922e757db0d68c893c750140a73062b610c4c479f524dd952b",
+        "metrics": {
+          "consumedPayloadSHA256": "5d06064ce2a2155757269eacf29f68fc2217fb564f165704c244a2f5cb2d767c",
+          "nativePayloadSHA256": "1eceec65f6944ecb2eda93c37946101f587ee1ee333eff9f7c22f51a3425d131",
+          "separateStorage": true
+        },
+        "numerical_contract": "whole-tensor-replacement-native-stride-offset-independent-storage",
+        "output_frame_id": "db620ab93dc9e2649643dbbcdf95166b8872a45b4b5bfa94871baadeb7da1e11"
+      },
+      "kind": "image",
+      "nativeField": {
+        "bytes": 6291584,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-718ece4a9087/arrays/receiver/nativeH0Fields.npy",
+        "payloadSHA256": "1eceec65f6944ecb2eda93c37946101f587ee1ee333eff9f7c22f51a3425d131",
+        "sha256": "380c1267b67301af7e3051ed43be92a52a542adb52e40bf5606c7b57ac38e64c",
+        "shape": [
+          1,
+          1024,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "receiver": "R1",
+      "recipientStorageOffset": 1572864,
+      "recipientStoragePointer": 137075762397184,
+      "recipientStride": [
+        4718592,
+        3072,
+        1
+      ],
+      "shape": [
+        1,
+        1024,
+        3072
+      ],
+      "text": "T0"
+    },
+    {
+      "carrier": "B",
+      "cell": "B",
+      "consumedPayloadSHA256": "059a411d1b427a345372e102fd17c70980050a220a9a779b2f2b68c002d60bf6",
+      "consumedStorageOffset": 0,
+      "consumedStoragePointer": 137076171341824,
+      "consumedStride": [
+        1572864,
+        3072,
+        1
+      ],
+      "donor": {
+        "bytes": 3145856,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-0b06996e8215/arrays/receiver/R0/textWrite.npy",
+        "payloadSHA256": "059a411d1b427a345372e102fd17c70980050a220a9a779b2f2b68c002d60bf6",
+        "sha256": "4c235f212cccd4e388b231bd34d171078fec22e3fc571cc91eaf1abbd8e2d633",
+        "shape": [
+          1,
+          512,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "donorStoragePointer": 137060975378432,
+      "dtype": "torch.bfloat16",
+      "evidence": {
+        "act": "tce.text_crossing.replace_text:v1",
+        "elapsed_ms": 8.274863939732313,
+        "implementation": "native-boundary-clamp",
+        "input_frame_id": "dee1173a073e08f77c728cdf6dbdbb2c16baad4b87cae9d211f9e7773d5c5806",
+        "metrics": {
+          "consumedPayloadSHA256": "059a411d1b427a345372e102fd17c70980050a220a9a779b2f2b68c002d60bf6",
+          "nativePayloadSHA256": "6e34cee852f05ab0230961231a8b4af3c7b62672dad51987fe5f1db5953c84c9",
+          "separateStorage": true
+        },
+        "numerical_contract": "whole-tensor-replacement-native-stride-offset-independent-storage",
+        "output_frame_id": "165b1c2d1a9c8e7bca04951df4a9be7be9ea777a9433f6964e532aa31aa8aeb8"
+      },
+      "kind": "text",
+      "nativeField": {
+        "bytes": 3145856,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-718ece4a9087/arrays/receiver/textWriteFields.npy",
+        "payloadSHA256": "6e34cee852f05ab0230961231a8b4af3c7b62672dad51987fe5f1db5953c84c9",
+        "sha256": "3dfbea4303b5ba336de71a81e1f6243589a10d8099c1b0080af35ba1cc481924",
+        "shape": [
+          1,
+          512,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "receiver": "R1",
+      "recipientStorageOffset": 0,
+      "recipientStoragePointer": 137060991107072,
+      "recipientStride": [
+        1572864,
+        3072,
+        1
+      ],
+      "shape": [
+        1,
+        512,
+        3072
+      ],
+      "text": "T0"
+    },
+    {
+      "carrier": "B",
+      "cell": "B",
+      "consumedPayloadSHA256": "b6c5a41df2a38d1049e8bc9b19fbf3011ba65a593d36f57e8ef735a7d077fff7",
+      "consumedStorageOffset": 1572864,
+      "consumedStoragePointer": 137076482768896,
+      "consumedStride": [
+        4718592,
+        3072,
+        1
+      ],
+      "donor": {
+        "bytes": 6291584,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.base.far_bottom_right/H0.npy",
+        "payloadSHA256": "b6c5a41df2a38d1049e8bc9b19fbf3011ba65a593d36f57e8ef735a7d077fff7",
+        "sha256": "b3326f6f82c4ed9f49c8b2aeda93cf5cdf951737610d325a1418274d395b3737",
+        "shape": [
+          1,
+          1024,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "donorStoragePointer": 137060788207616,
+      "dtype": "torch.bfloat16",
+      "evidence": {
+        "act": "tce.text_crossing.replace_image:v1",
+        "elapsed_ms": 15.269356779754162,
+        "implementation": "native-boundary-clamp",
+        "input_frame_id": "0602467f84bd5a855ea60aa076cb5c1aee77a4e668a0f9d2914b937d1875eecc",
+        "metrics": {
+          "consumedPayloadSHA256": "b6c5a41df2a38d1049e8bc9b19fbf3011ba65a593d36f57e8ef735a7d077fff7",
+          "nativePayloadSHA256": "1eceec65f6944ecb2eda93c37946101f587ee1ee333eff9f7c22f51a3425d131",
+          "separateStorage": true
+        },
+        "numerical_contract": "whole-tensor-replacement-native-stride-offset-independent-storage",
+        "output_frame_id": "3e01d97172ab9f78f3d98e557c861a342c2807abe01a88cbb24b8bab87e7a538"
+      },
+      "kind": "image",
+      "nativeField": {
+        "bytes": 6291584,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-718ece4a9087/arrays/receiver/nativeH0Fields.npy",
+        "payloadSHA256": "1eceec65f6944ecb2eda93c37946101f587ee1ee333eff9f7c22f51a3425d131",
+        "sha256": "380c1267b67301af7e3051ed43be92a52a542adb52e40bf5606c7b57ac38e64c",
+        "shape": [
+          1,
+          1024,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "receiver": "R1",
+      "recipientStorageOffset": 1572864,
+      "recipientStoragePointer": 137076366376960,
+      "recipientStride": [
+        4718592,
+        3072,
+        1
+      ],
+      "shape": [
+        1,
+        1024,
+        3072
+      ],
+      "text": "T0"
+    }
+  ]
+}
