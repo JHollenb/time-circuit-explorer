@@ -1,0 +1,144 @@
+{
+  "additionalLiveFP64ActivationAndTemporaryBytesUpperBound": 452984832,
+  "intentFirstOriginalStoragePreview": {
+    "beast": {
+      "artifact_id": null,
+      "artifact_kind": null,
+      "artifact_locator": {},
+      "artifact_mount": null,
+      "backend": "diffusers",
+      "device": "cuda",
+      "dtype": "bfloat16",
+      "engine_options": {},
+      "engine_profile": "backend:diffusers",
+      "est_ram_mb": 8410.0,
+      "est_vram_mb": 40212.3,
+      "est_wall_s": null,
+      "max_batch": 64,
+      "model": "flux2-klein-4b-distilled",
+      "ram_limit_mb": 52809.0,
+      "reasons": [
+        "host=beast ram=66513MB cuda=True mps=False ane=False task=forward",
+        "dtype=bfloat16 (explicit opt-in \u2014 not the canonical path)",
+        "device=cuda (explicit)",
+        "TF32 forced OFF on cuda (breaches 4-decimal stats)",
+        "backend=diffusers (explicit)",
+        "max_batch=64 threads=4 ram_limit=52809MB (est x 1.3)",
+        "selector fallback: explicit backend has no matching local artifact",
+        "science runtime envelope: diffusers"
+      ],
+      "threads": 4,
+      "weights_gb": 9.6
+    }
+  },
+  "liveHost": {
+    "active_jobs": [],
+    "admission": {
+      "enabled": true,
+      "max_concurrent": null,
+      "ram_margin_mb": 3325.6384512,
+      "vram_margin_mb": 819.0
+    },
+    "name": "beast",
+    "ram_total_mb": 66512.769024,
+    "telemetry": {
+      "cpu_pct": 0.1,
+      "disk_free_gb": 68.459552768,
+      "disks": [
+        {
+          "free_gb": 68.5,
+          "mount": "/",
+          "total_gb": 235.5
+        },
+        {
+          "free_gb": 310.8,
+          "mount": "/mnt/big",
+          "total_gb": 1999.6
+        },
+        {
+          "free_gb": 2473.1,
+          "mount": "/mnt/hdd8tb",
+          "total_gb": 7937.3
+        },
+        {
+          "free_gb": 533.9,
+          "mount": "/mnt/ssd1tb",
+          "total_gb": 1000.0
+        },
+        {
+          "free_gb": 197.4,
+          "mount": "/mnt/usb-storage",
+          "total_gb": 502.9
+        },
+        {
+          "free_gb": 0.4,
+          "mount": "/recovery",
+          "total_gb": 4.3
+        }
+      ],
+      "host": "beast",
+      "load1": 0.2060546875,
+      "mem_pressure": null,
+      "pressure_external": false,
+      "ram_free_mb": 52040.843264,
+      "running": [],
+      "swap_total_mb": 21474.299904,
+      "swap_used_mb": 5419.372544,
+      "top_external": [
+        {
+          "name": "bitcoind",
+          "pid": 3661879,
+          "rss_mb": 15831
+        },
+        {
+          "name": "mount.ntfs-3g",
+          "pid": 815703,
+          "rss_mb": 1329
+        }
+      ],
+      "ts": 1794082528.987387,
+      "vram_free_mb": 15943.0
+    },
+    "vram_total_mb": 16376.0
+  },
+  "measuredLocalHistory": {
+    "elapsed_s": 90.33,
+    "peak_rss_mb": 2050.5,
+    "peak_vram_mb": 1508.0
+  },
+  "measuredLocalHistoryJobID": "job-62e5183c03aa",
+  "originalParameterBytes": 245366784,
+  "outputBytesByField": {
+    "centeredOutput": 37748736,
+    "centeredProduct": 113246208,
+    "centeredProductMean": 147456,
+    "covarianceDirect": 147456,
+    "covarianceResidual": 147456,
+    "gatedCentered": 37748736,
+    "gatedMean": 49152,
+    "gatedPolicy": 37748736,
+    "gatedTotal": 37748736,
+    "idealCompleted": 113246208,
+    "omittedAnchorAdmissionProduct": 113246208,
+    "oracleMean": 49152,
+    "oracleResidual": 37748736,
+    "outputClosure": 37748736,
+    "policyExpansionResidual": 113246208,
+    "policyOutput": 37748736,
+    "policyProduct": 113246208,
+    "productReference": 113246208,
+    "productRounding": 113246208,
+    "rowStatistics": 122880,
+    "selectedAdmissionProduct": 28311552,
+    "stratumGram": 216,
+    "totalOutput": 37748736,
+    "totalProductError": 113246208,
+    "upMean": 147456,
+    "upReference": 113246208,
+    "weightD": 226492416,
+    "weightU": 226492416
+  },
+  "outputPayloadBytes": 1803313368,
+  "scope": "No fullmodel object.2originalBF16params245MB+~100MBsource+1.803GBretainedFP64outputs, <=453MBextraactivation/reduction/temp bound; CUDAcontext/workspace additional. Measured73local2050.5MBRSS1508device. Declared4096RAM4096VRAM4CPU3GBdisk120expected300cap,noretries; fullmodelfallbackplanning inapplicable to3explicitprojections. Exact output sizes are logical,not observedpeak.",
+  "sourcePayloadBytes": 101548032
+}

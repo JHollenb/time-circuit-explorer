@@ -1,0 +1,781 @@
+{
+  "byteTemplateSourceSHA256": "ca15c7292e2e1513d44e1e9f46402a46b4ff41d3b60540e6bb9fe0a5070a4198",
+  "candidateSealSHA256": "fd1e83f5151307c21861462f8a319731dc99e69b228d8613fbabfd7e99dba5c4",
+  "files": {
+    "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/config.json": {
+      "bytes": 541,
+      "sha256": "09733c74a3da6d17dd0a0472a091a8950c7c6935889c32c16cc800ede05029de"
+    },
+    "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/diffusion_pytorch_model.safetensors": {
+      "bytes": 7751109744,
+      "sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/centeredOutput.npy": {
+      "bytes": 37748864,
+      "sha256": "1e6ef9af1c07262027cd4eab071bbf98e0011dd00ca15f28aa049739c3fae86b"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/centeredProduct.npy": {
+      "bytes": 113246336,
+      "sha256": "52f5868dd1c37c45f97ce78990bea0c81f829cacb69e6726f6cbdff676ab50e6"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/centeredProductMean.npy": {
+      "bytes": 147584,
+      "sha256": "790c2b83e345b8b1d1f4cd0183a12a15b303ea7c1b93f7e3ef4b26fc3efa61f2"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/covarianceDirect.npy": {
+      "bytes": 147584,
+      "sha256": "3b992392c67749b96e59bb97f50875fe9af04fbdcde415d7c8a598fa986727d6"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/covarianceResidual.npy": {
+      "bytes": 147584,
+      "sha256": "bade215f69b6ce744eb037c86edb5bc91ddbc0693b6423048616238359f87230"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/gatedCentered.npy": {
+      "bytes": 37748864,
+      "sha256": "c92bb36e78da64a1c6358b7120dff96090966411dc5d7c705ba89c05c9606f73"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/gatedMean.npy": {
+      "bytes": 49280,
+      "sha256": "5c5f691968833d500c3fa0d653084cad2ab912bfb1becbb04cf371f4ddd386ec"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/gatedPolicy.npy": {
+      "bytes": 37748864,
+      "sha256": "e8642006687343cb9795e4c9815ce77a2feecc2de00f53d3b841cbf402a82788"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/gatedTotal.npy": {
+      "bytes": 37748864,
+      "sha256": "927df8660bd39c845c50043e5404af976a9cc57a23db81e63777bc002c9f3a60"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/idealCompleted.npy": {
+      "bytes": 113246336,
+      "sha256": "99b18b59114e7d13f6a129b434e09c5ec46f2c44c7de6d191a24ed5bbf83084c"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/omittedAnchorAdmissionProduct.npy": {
+      "bytes": 113246336,
+      "sha256": "7f98adc2b52668c8e176cb67a385bd2d451a145269a35b3c7fc6a7ab61ff4c41"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/oracleMean.npy": {
+      "bytes": 49280,
+      "sha256": "0880bf9a8cb2b0579053a739c87f2523b6ad849cfb7f3f78fcaab19375f2c190"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/oracleResidual.npy": {
+      "bytes": 37748864,
+      "sha256": "4984fcc8234e13a8ae4eede0f27aca4fddd129296e60da399480af04e83b5211"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/outputClosure.npy": {
+      "bytes": 37748864,
+      "sha256": "70ae0c4201f2c488e6d2c5b22c030ad6d277f9298303f489b029744a92847ef2"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/policyExpansionResidual.npy": {
+      "bytes": 113246336,
+      "sha256": "01138ab74f3bc83e92a60ceb3554da0c967430f6d497ba76d6c191971d7a8d90"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/policyOutput.npy": {
+      "bytes": 37748864,
+      "sha256": "5566b74cc36ecd866b8ccb2ed374ef890e85b5474969556d4768586879679868"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/policyProduct.npy": {
+      "bytes": 113246336,
+      "sha256": "4e90cc7b10996351b685cb50a93a0039c2eaef0e6411ba2087bfec0e547e27c4"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/productReference.npy": {
+      "bytes": 113246336,
+      "sha256": "1cc24e6399187aa2fc4fa7bebadcd54ef96432581cce2027c5f44add46a311c6"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/productRounding.npy": {
+      "bytes": 113246336,
+      "sha256": "582662bf4a12a018c6bc830e5a290ce8bbf7c104b9844e1e0531f5ac7042a932"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/rowStatistics.npy": {
+      "bytes": 123008,
+      "sha256": "289e6f86bcbb4830fe63b73a43ce41c70d2a73da616b7bace56a480462d42724"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/selectedAdmissionProduct.npy": {
+      "bytes": 28311680,
+      "sha256": "6801f3ed1f8122bcd886d7bc176419eedb7eed0ebcb9a55b556ab0778588960b"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/stratumGram.npy": {
+      "bytes": 344,
+      "sha256": "9cc6541af1c4998bbf1662194e8c01a73024f870a9f9264cadd0f69ac2309091"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/totalOutput.npy": {
+      "bytes": 37748864,
+      "sha256": "1efcff35e23f5d2c544340558ca4e3f5ababdf0fbdb425c81c9ccd94d378c178"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/totalProductError.npy": {
+      "bytes": 113246336,
+      "sha256": "aeec7978ecd0445c95e4ba76af3f64a16ce78f42dc7cf0b3ea39d0a30d058062"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/upMean.npy": {
+      "bytes": 147584,
+      "sha256": "2c82f3d01bbca8519085f6820a5d5402b3dcb09a8d19eec18c8a40e097edca28"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/upReference.npy": {
+      "bytes": 113246336,
+      "sha256": "dc3765e45ccc2544599e3b6b3cc1a15dd96756472594d1dbe86be6ec9ba343b4"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/weightD.npy": {
+      "bytes": 226492544,
+      "sha256": "cd74f4f5dade7532ee066a0d79d6744167e73ea9c34e514c10fc3eb1888e9920"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/weightU.npy": {
+      "bytes": 226492544,
+      "sha256": "117272949e5d7ec75b701c092b7aec82efb67695870e42437ed1bc256753ecaf"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/response-result/candidate-seal.json": {
+      "bytes": 267,
+      "sha256": "fd1e83f5151307c21861462f8a319731dc99e69b228d8613fbabfd7e99dba5c4"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/response-result/candidate.json": {
+      "bytes": 13104,
+      "sha256": "2578b04e77aa9e744a81660cd53c1b0bdf043258eef3959bee04d22480c28456"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/response-result/channel-observations.jsonl": {
+      "bytes": 5257262,
+      "sha256": "00e42089cb2c713544ebe72f39997b04670840a38a1ade342b8c39ec2bf2da8e"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/response-result/execution.json": {
+      "bytes": 477180,
+      "sha256": "5f5a6d55f15237d13c8cf074341105b3c38cecf6ead6f7aa43d105951892812d"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/response-result/frozen-plan.md": {
+      "bytes": 5405,
+      "sha256": "1f3dcebf2df81afff7118887a82b3a945af6a0a3b75c9cc6200d7cbd037d1177"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/response-result/inputs.json": {
+      "bytes": 469064,
+      "sha256": "6c57e087c1f0706ca2651b3f68e762986ca689323120ae57ead0487df799682d"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/response-result/observations.jsonl": {
+      "bytes": 832201,
+      "sha256": "e8266697268615c3087fac90510658d28e127bb71d6c966040e84cab34fedda6"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/response-result/report.json": {
+      "bytes": 8236,
+      "sha256": "c5800d77ff16cb1aa82b1f04f36895c164ebb41aa35b8249e9dc13d8e63aee7e"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/response-result/request.json": {
+      "bytes": 4581,
+      "sha256": "900ceb7fe6490c8a624644e80a5e4f8de3eb284a7bb4ec2d679222256120bfd2"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/response-result/resource-basis.json": {
+      "bytes": 4300,
+      "sha256": "563fba248e6fe517bd5243fc15cd37bb26a86aefc272c5184654a576589aa5f0"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/response-result/toy-mechanics.json": {
+      "bytes": 402,
+      "sha256": "57a099fb4312519470900367c59271e86b289b41769ed4166cef5f8bef218679"
+    },
+    "/mnt/hdd8tb/mrun-work/job-371242570594/arrays/candidate/s_single0_support3.npy": {
+      "bytes": 18560,
+      "sha256": "a40f2798377d60c30a285e6e44a3008e68de0eb767a76b74ef95ab1f0d575d08"
+    },
+    "/mnt/hdd8tb/mrun-work/job-371242570594/arrays/candidate/u_single0_activation3.npy": {
+      "bytes": 28311680,
+      "sha256": "85aab4a5a8e5be96142aef081dbf31e26d09720ce6ef6b31efce122cfd8909d7"
+    },
+    "/mnt/hdd8tb/mrun-work/job-371242570594/arrays/candidate/u_single0_anchorUp3.npy": {
+      "bytes": 36992,
+      "sha256": "5633483bfcda546e515c378163b4f3de1ffb0a4e3fdc8d636c719abf8348258e"
+    },
+    "/mnt/hdd8tb/mrun-work/job-371242570594/arrays/candidate/u_single0_completedUp3.npy": {
+      "bytes": 28311680,
+      "sha256": "c5f5134acb6ef37741692c1f9aa575ddc65cd9dcfb34fcec9c05ddf3c5dc2daf"
+    },
+    "/mnt/hdd8tb/mrun-work/job-371242570594/arrays/candidate/u_single0_gate3.npy": {
+      "bytes": 6272,
+      "sha256": "dd0d90981b8fac632d03307ddbb38fb07b58454ac11259944f7f3f8cba8a5f41"
+    },
+    "/mnt/hdd8tb/mrun-work/job-371242570594/arrays/candidate/u_single0_normalized3.npy": {
+      "bytes": 9437312,
+      "sha256": "a4baa8741c8e13be2b2360870e1f2fd8c934bedf27b8eb4bea0ef54da115992d"
+    },
+    "/mnt/hdd8tb/mrun-work/job-371242570594/arrays/candidate/u_single0_product3.npy": {
+      "bytes": 28311680,
+      "sha256": "dc56b077121903e72a6e214396f9a0a8da1033939c965afe94226df0ce3b7689"
+    },
+    "/mnt/hdd8tb/mrun-work/job-371242570594/arrays/candidate/u_single0_streamMean3.npy": {
+      "bytes": 12416,
+      "sha256": "52a8b8734efd09e256b5b8080415f3edbb21776eb4ad026bb02893f294236340"
+    },
+    "/mnt/hdd8tb/mrun-work/job-371242570594/arrays/candidate/u_single0_streamMeanFP323.npy": {
+      "bytes": 24704,
+      "sha256": "3125aa1293ff9764bf81cc0f3d2746ba0d475b474f3d67d56401262774dfb414"
+    },
+    "/mnt/hdd8tb/mrun-work/job-371242570594/arrays/candidate/u_single0_upRaw3.npy": {
+      "bytes": 7078016,
+      "sha256": "d8efc08be9591d9347a030e7565324a83feaa240ad04e594c195c98a5ba8bca4"
+    },
+    "/mnt/hdd8tb/mrun-work/job-371242570594/response-result/candidate-seal.json": {
+      "bytes": 352,
+      "sha256": "9333b5ed390a74c48678f3390edf8f562eae4552adde182cfd01ff673c8d7720"
+    },
+    "/mnt/hdd8tb/mrun-work/job-371242570594/response-result/candidate.json": {
+      "bytes": 1054230,
+      "sha256": "399dfcf5ec45913b7e351d3b77885de050fd0ccb7e07bd816c7ef424b9cc08ec"
+    },
+    "/mnt/hdd8tb/mrun-work/job-371242570594/response-result/execution.json": {
+      "bytes": 5402023,
+      "sha256": "1aad90e5b1c33f35e993c74576cd84db894952819acd98a72fd6adef14f6ebe2"
+    },
+    "/mnt/hdd8tb/mrun-work/job-371242570594/response-result/report.json": {
+      "bytes": 13850,
+      "sha256": "4bd548bdd6b228602ae9d5d758bfa472af43de3aae8455f8b6ca5061bcd91f71"
+    },
+    "/mnt/hdd8tb/mrun-work/job-371242570594/response-result/request.json": {
+      "bytes": 6051,
+      "sha256": "d49886c2ac34693ede1291195e2d484409213514514e84dc943764086cabbe5d"
+    }
+  },
+  "jobID": "job-32438e275442",
+  "npyPayloadWitnesses": {
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/centeredOutput.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          1,
+          1536,
+          3072
+        ]
+      },
+      "payloadBytes": 37748736,
+      "payloadSHA256": "07d04d8b80e71bae83efae6886bc774f5daa3023a7b825bff25f979db4db26e9"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/centeredProduct.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          1,
+          1536,
+          9216
+        ]
+      },
+      "payloadBytes": 113246208,
+      "payloadSHA256": "6dfdd0cb84117766ebb10cccad9bdb78df59e6276d1055a518e5a8bdad357d35"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/centeredProductMean.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          1,
+          2,
+          9216
+        ]
+      },
+      "payloadBytes": 147456,
+      "payloadSHA256": "7e4ad7dd79f4eaa722054095abdb752926d846a5fdfedcea5550a4aa93cf39d5"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/covarianceDirect.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          1,
+          2,
+          9216
+        ]
+      },
+      "payloadBytes": 147456,
+      "payloadSHA256": "a1f4c24a31e281625d85cf7c6c2367f2c9c989d5c16ba03388042bf32c60046a"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/covarianceResidual.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          1,
+          2,
+          9216
+        ]
+      },
+      "payloadBytes": 147456,
+      "payloadSHA256": "64dac1bdcef70841f493899d1d953c79e761d4388cedabe8cf700d3fa6af453e"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/gatedCentered.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          1,
+          1536,
+          3072
+        ]
+      },
+      "payloadBytes": 37748736,
+      "payloadSHA256": "af4b82fd8a0396d59dc84d31ee90800def87ced685b503776b9b7be0a9562f9d"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/gatedMean.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          1,
+          2,
+          3072
+        ]
+      },
+      "payloadBytes": 49152,
+      "payloadSHA256": "e80198e2a7828544cb021abb674b3da69103393cd697e0d0fb47c53a6b9a7785"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/gatedPolicy.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          1,
+          1536,
+          3072
+        ]
+      },
+      "payloadBytes": 37748736,
+      "payloadSHA256": "4e9eefef61ebd6a3da1272d5e60fb0f4ef5bb69baa04fb62ef2410348e65ba7a"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/gatedTotal.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          1,
+          1536,
+          3072
+        ]
+      },
+      "payloadBytes": 37748736,
+      "payloadSHA256": "c76b1a5e3040c53e32b75abd89e3ab42d5ed7dd7acb0bc49a97cac47c37237c8"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/idealCompleted.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          1,
+          1536,
+          9216
+        ]
+      },
+      "payloadBytes": 113246208,
+      "payloadSHA256": "22c5447485f198a72dac4eb0f103e1167b13fa7ddca8adfd72277b8ff3808ae2"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/omittedAnchorAdmissionProduct.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          1,
+          1536,
+          9216
+        ]
+      },
+      "payloadBytes": 113246208,
+      "payloadSHA256": "5a37fbf0b85915d92a85dcee2d7f9c93db99dc784d7fe73c92ec99e828f97c1d"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/oracleMean.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          1,
+          2,
+          3072
+        ]
+      },
+      "payloadBytes": 49152,
+      "payloadSHA256": "daeb24bd04a5871da573b12d41833b312c836fa423d6976b37acc374c0dc6580"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/oracleResidual.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          1,
+          1536,
+          3072
+        ]
+      },
+      "payloadBytes": 37748736,
+      "payloadSHA256": "32935aec83e024bf89eaa5382ffdd0c14617207b8dc8c9d44c24f8c815ae3fc7"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/outputClosure.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          1,
+          1536,
+          3072
+        ]
+      },
+      "payloadBytes": 37748736,
+      "payloadSHA256": "b55601864bf2857c33a8874069bf4354c7cd238f3a41d7fcd1e403a739b83036"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/policyExpansionResidual.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          1,
+          1536,
+          9216
+        ]
+      },
+      "payloadBytes": 113246208,
+      "payloadSHA256": "0fee0d28819aa4727329f725d387791730d0534e634206bb2ef99f693d8bb794"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/policyOutput.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          1,
+          1536,
+          3072
+        ]
+      },
+      "payloadBytes": 37748736,
+      "payloadSHA256": "4dc25a52a1805d03157645411114ce39995d91ef8346a05b36ea061842eafc24"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/policyProduct.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          1,
+          1536,
+          9216
+        ]
+      },
+      "payloadBytes": 113246208,
+      "payloadSHA256": "3291674366f3eeaa18bcee00d4206da4162739a0b85c851a9c3be4bbbd451b89"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/productReference.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          1,
+          1536,
+          9216
+        ]
+      },
+      "payloadBytes": 113246208,
+      "payloadSHA256": "0b3ec8afc97f29fe87d2b87edbbba390a1be7720c0e623413bedaa89847b3911"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/productRounding.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          1,
+          1536,
+          9216
+        ]
+      },
+      "payloadBytes": 113246208,
+      "payloadSHA256": "e36354bf03de4cde200eff58fd84f198f2db5fb5702acadbe79c7a47a6b8de95"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/rowStatistics.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          1,
+          1536,
+          10
+        ]
+      },
+      "payloadBytes": 122880,
+      "payloadSHA256": "5ddaa45b0076133b56e3db077b9286aea89998d2bc026da8f29d06537cf58565"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/selectedAdmissionProduct.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          1,
+          1536,
+          2304
+        ]
+      },
+      "payloadBytes": 28311552,
+      "payloadSHA256": "58d044e65418687d68a3ff95e0cfe1b80998bfdeefd0351c94282f2f9230485e"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/stratumGram.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          3,
+          3,
+          3
+        ]
+      },
+      "payloadBytes": 216,
+      "payloadSHA256": "2fd4b3734f521e78d0225a40052e0d11530a25cba3b71aa96928ce52c725303d"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/totalOutput.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          1,
+          1536,
+          3072
+        ]
+      },
+      "payloadBytes": 37748736,
+      "payloadSHA256": "aa3873a61fcf2f0635813733138fa1a7c3644db92272f9a58fa226dd204caffd"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/totalProductError.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          1,
+          1536,
+          9216
+        ]
+      },
+      "payloadBytes": 113246208,
+      "payloadSHA256": "3366045a317cfaab03a353602706161a51f0608a56fbe194a8b577c0bd4fb6c6"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/upMean.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          1,
+          2,
+          9216
+        ]
+      },
+      "payloadBytes": 147456,
+      "payloadSHA256": "4370d5b30660a4ed521ade127ad97d0d4eb8d33dc584aa15d85fb202fb196af4"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/upReference.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          1,
+          1536,
+          9216
+        ]
+      },
+      "payloadBytes": 113246208,
+      "payloadSHA256": "40c1a89b40368fc3fedd0167b3a5d7a78a860810e0e0ea05b10b905d0d38cd1a"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/weightD.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          3072,
+          9216
+        ]
+      },
+      "payloadBytes": 226492416,
+      "payloadSHA256": "217b2cd7c4882581b88b72dc62d935327a939dea1e24ab271b6b668cb47265a7"
+    },
+    "/mnt/hdd8tb/mrun-work/job-32438e275442/arrays/diagnostic/weightU.npy": {
+      "header": {
+        "descr": "<f8",
+        "fortran_order": false,
+        "shape": [
+          9216,
+          3072
+        ]
+      },
+      "payloadBytes": 226492416,
+      "payloadSHA256": "e4a8b3da7bbf7bc62b255c82fb7f17a2c5ff4107b93f057a44c1b6149c2e71d2"
+    },
+    "/mnt/hdd8tb/mrun-work/job-371242570594/arrays/candidate/s_single0_support3.npy": {
+      "header": {
+        "descr": "<i8",
+        "fortran_order": false,
+        "shape": [
+          2304
+        ]
+      },
+      "payloadBytes": 18432,
+      "payloadSHA256": "1903baa6731b8b6ae7475798321e366c1236dbd931ebf8d982b9ff4d7a9f139d"
+    },
+    "/mnt/hdd8tb/mrun-work/job-371242570594/arrays/candidate/u_single0_activation3.npy": {
+      "header": {
+        "descr": "<u2",
+        "fortran_order": false,
+        "shape": [
+          1,
+          1536,
+          9216
+        ]
+      },
+      "payloadBytes": 28311552,
+      "payloadSHA256": "cded73e3f3d89886d27bc60190967242e423e118540fc475c4cd9cf0d7f1ed01"
+    },
+    "/mnt/hdd8tb/mrun-work/job-371242570594/arrays/candidate/u_single0_anchorUp3.npy": {
+      "header": {
+        "descr": "<u2",
+        "fortran_order": false,
+        "shape": [
+          1,
+          2,
+          9216
+        ]
+      },
+      "payloadBytes": 36864,
+      "payloadSHA256": "c5693d32b63b40d732b978983b75fb8bdbe7df3a618e8df04d61a43ec2fe1f53"
+    },
+    "/mnt/hdd8tb/mrun-work/job-371242570594/arrays/candidate/u_single0_completedUp3.npy": {
+      "header": {
+        "descr": "<u2",
+        "fortran_order": false,
+        "shape": [
+          1,
+          1536,
+          9216
+        ]
+      },
+      "payloadBytes": 28311552,
+      "payloadSHA256": "7565b67b771afd975a41f0b3f8b47a9c4e3cceed54d12075d6e2406675970890"
+    },
+    "/mnt/hdd8tb/mrun-work/job-371242570594/arrays/candidate/u_single0_gate3.npy": {
+      "header": {
+        "descr": "<u2",
+        "fortran_order": false,
+        "shape": [
+          1,
+          1,
+          3072
+        ]
+      },
+      "payloadBytes": 6144,
+      "payloadSHA256": "d4b14c4e67b0406738ab7867f2657637d770a07ffe4e6f7f4e2e5429ae4e1d99"
+    },
+    "/mnt/hdd8tb/mrun-work/job-371242570594/arrays/candidate/u_single0_normalized3.npy": {
+      "header": {
+        "descr": "<u2",
+        "fortran_order": false,
+        "shape": [
+          1,
+          1536,
+          3072
+        ]
+      },
+      "payloadBytes": 9437184,
+      "payloadSHA256": "d323a3af409ada41741379e590822eab32cc12afc5a1ccae337a38bfdd839f42"
+    },
+    "/mnt/hdd8tb/mrun-work/job-371242570594/arrays/candidate/u_single0_product3.npy": {
+      "header": {
+        "descr": "<u2",
+        "fortran_order": false,
+        "shape": [
+          1,
+          1536,
+          9216
+        ]
+      },
+      "payloadBytes": 28311552,
+      "payloadSHA256": "e0814eb6d80d4f83ab585c25c9a06904a55899e8f2839d0da90e4acf2857ce29"
+    },
+    "/mnt/hdd8tb/mrun-work/job-371242570594/arrays/candidate/u_single0_streamMean3.npy": {
+      "header": {
+        "descr": "<u2",
+        "fortran_order": false,
+        "shape": [
+          1,
+          2,
+          3072
+        ]
+      },
+      "payloadBytes": 12288,
+      "payloadSHA256": "cf846d45433085a1aeff61856f204454434e21a99b8a23fde08d43ef97dbeaff"
+    },
+    "/mnt/hdd8tb/mrun-work/job-371242570594/arrays/candidate/u_single0_streamMeanFP323.npy": {
+      "header": {
+        "descr": "<f4",
+        "fortran_order": false,
+        "shape": [
+          1,
+          2,
+          3072
+        ]
+      },
+      "payloadBytes": 24576,
+      "payloadSHA256": "1e7a6bb9a64d24e26e965cfca589d5f77033c28ab90616db744cafd7b6b8c26c"
+    },
+    "/mnt/hdd8tb/mrun-work/job-371242570594/arrays/candidate/u_single0_upRaw3.npy": {
+      "header": {
+        "descr": "<u2",
+        "fortran_order": false,
+        "shape": [
+          1,
+          1536,
+          2304
+        ]
+      },
+      "payloadBytes": 7077888,
+      "payloadSHA256": "7b0024551fce268f0d7342c497f624427dd948c8add094b703d680497fc43414"
+    }
+  },
+  "originalParameterWitnesses": {
+    "single_transformer_blocks.0.attn.to_out.weight": {
+      "bytes": 75497472,
+      "dataOffsets": [
+        368837120,
+        444334592
+      ],
+      "payloadSHA256": "fa0d9f6d0635f79a101f0f90c6d220edc36afd625c7d1153a8e98f1f743d089d",
+      "shape": [
+        3072,
+        12288
+      ]
+    },
+    "single_transformer_blocks.0.attn.to_qkv_mlp_proj.weight": {
+      "bytes": 169869312,
+      "dataOffsets": [
+        444334592,
+        614203904
+      ],
+      "payloadSHA256": "0c6b0efd6f51122ab17a93577d1bcb0f3351bc2a9c4999463cecf90672e0cf13",
+      "shape": [
+        27648,
+        3072
+      ]
+    }
+  },
+  "schema": "tce-gated-covariance-bytes-v1",
+  "scope": "Completefiles/NPY/twooriginalBF16parameters/U-Dsourceviewoffsets and rawbytes. FP64promotion/projections/reductions/productidentities sourceauditedandtinytested,not independently numerically replayed bySSHbyteverifier.",
+  "sourceViewWitnesses": {
+    "D": {
+      "bytes": 56623104,
+      "columns": [
+        3072,
+        12288
+      ],
+      "payloadSHA256": "4247b101ef2ea0452e4e4044b4c7cc726d684a02a28827f35f3388f93c4199d0",
+      "shape": [
+        3072,
+        9216
+      ],
+      "sourceParameter": "single_transformer_blocks.0.attn.to_out.weight"
+    },
+    "U": {
+      "bytes": 56623104,
+      "payloadSHA256": "c9c2c44a65b3a632dd8b15f2cc1cdb2a4a1651f6381c6785c0d05830fa0085b5",
+      "rows": [
+        18432,
+        27648
+      ],
+      "shape": [
+        9216,
+        3072
+      ],
+      "sourceParameter": "single_transformer_blocks.0.attn.to_qkv_mlp_proj.weight"
+    }
+  },
+  "totalBytesVerified": 9669525057,
+  "verifierSourceSHA256": "bfe2a8f12cccfeae7ad4861ef992699e69dcf1ae05027e4c0d87022ce7133170"
+}

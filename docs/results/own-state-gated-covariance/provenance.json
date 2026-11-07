@@ -1,0 +1,91 @@
+{
+  "completeCollectedInventory": {
+    "bytes": 7072002,
+    "files": {
+      "candidate-seal.json": {
+        "bytes": 267,
+        "sha256": "fd1e83f5151307c21861462f8a319731dc99e69b228d8613fbabfd7e99dba5c4"
+      },
+      "candidate.json": {
+        "bytes": 13104,
+        "sha256": "2578b04e77aa9e744a81660cd53c1b0bdf043258eef3959bee04d22480c28456"
+      },
+      "channel-observations.jsonl": {
+        "bytes": 5257262,
+        "sha256": "00e42089cb2c713544ebe72f39997b04670840a38a1ade342b8c39ec2bf2da8e"
+      },
+      "execution.json": {
+        "bytes": 477180,
+        "sha256": "5f5a6d55f15237d13c8cf074341105b3c38cecf6ead6f7aa43d105951892812d"
+      },
+      "frozen-plan.md": {
+        "bytes": 5405,
+        "sha256": "1f3dcebf2df81afff7118887a82b3a945af6a0a3b75c9cc6200d7cbd037d1177"
+      },
+      "inputs.json": {
+        "bytes": 469064,
+        "sha256": "6c57e087c1f0706ca2651b3f68e762986ca689323120ae57ead0487df799682d"
+      },
+      "observations.jsonl": {
+        "bytes": 832201,
+        "sha256": "e8266697268615c3087fac90510658d28e127bb71d6c966040e84cab34fedda6"
+      },
+      "report.json": {
+        "bytes": 8236,
+        "sha256": "c5800d77ff16cb1aa82b1f04f36895c164ebb41aa35b8249e9dc13d8e63aee7e"
+      },
+      "request.json": {
+        "bytes": 4581,
+        "sha256": "900ceb7fe6490c8a624644e80a5e4f8de3eb284a7bb4ec2d679222256120bfd2"
+      },
+      "resource-basis.json": {
+        "bytes": 4300,
+        "sha256": "563fba248e6fe517bd5243fc15cd37bb26a86aefc272c5184654a576589aa5f0"
+      },
+      "toy-mechanics.json": {
+        "bytes": 402,
+        "sha256": "57a099fb4312519470900367c59271e86b289b41769ed4166cef5f8bef218679"
+      }
+    }
+  },
+  "jobID": "job-32438e275442",
+  "losslessStreams": [
+    {
+      "published": "observations.jsonl.gz",
+      "publishedBytes": 195120,
+      "publishedSHA256": "fbcd1080855f240090a99291b3ce523af79cd2a744a929973be60da84c6931a0",
+      "source": "observations.jsonl",
+      "sourceBytes": 832201,
+      "sourceSHA256": "e8266697268615c3087fac90510658d28e127bb71d6c966040e84cab34fedda6"
+    },
+    {
+      "published": "channel-observations.jsonl.gz",
+      "publishedBytes": 803374,
+      "publishedSHA256": "f72799b95207745c6ebdb49e9c17793549b603de25b06ce447eec694ea174ea6",
+      "source": "channel-observations.jsonl",
+      "sourceBytes": 5257262,
+      "sourceSHA256": "00e42089cb2c713544ebe72f39997b04670840a38a1ade342b8c39ec2bf2da8e"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "0b2b8025bcef9203417f8bd082c3d5e7dd16cf3a026492be9f66036f5e43b06d",
+      "size_bytes": 3167781
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794082550.5925355,
+      "sha256": "0b2b8025bcef9203417f8bd082c3d5e7dd16cf3a026492be9f66036f5e43b06d",
+      "size_bytes": 3167781
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794082550.4728081,
+      "sha256": "0b2b8025bcef9203417f8bd082c3d5e7dd16cf3a026492be9f66036f5e43b06d",
+      "size_bytes": 3167781
+    }
+  },
+  "requestSHA256": "48ad5fd57ed75add1e71249d1f60d9f89b36b3650edb478eb7d20245f8b7646b",
+  "schema": "tce-gated-covariance-publication-v1",
+  "scope": "One fixedpaidownstate,1FP64Up/2Down; reconstructedMLPwrite/covariance/oracleconstantrepresentationdiagnostic,no servingproducer/correction/future/image/zero-neuralclaim."
+}

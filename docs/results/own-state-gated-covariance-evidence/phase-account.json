@@ -1,0 +1,32 @@
+{
+  "actor": {
+    "CPUSecondsAfterImports": 33.449262358,
+    "peakCUDAAllocatedBytes": 2498355712,
+    "peakCUDAReservedBytes": 2745171968,
+    "setupSecondsAfterImports": 6.981161686126143,
+    "timings": [
+      {
+        "instrumentedSynchronizedSecondsBeforeFinalOutputFingerprint": 4.530148502904922,
+        "scope": "Includes three projections, diagnostic arithmetic and their internal operand/map/result fingerprints; excludes initial outer input hashes, subsequent ABI/finite checks, final Act-output hashes and later retained-array writes. No nested transaction or progress fsync.",
+        "stage": "ownStateCovariance"
+      }
+    ],
+    "wallSecondsAfterImports": 37.14689469290897
+  },
+  "analysisSecondsAfterImports": 0.9268148802220821,
+  "reservation": {
+    "cpu_threads": 4,
+    "disk_gb": 3.0,
+    "est_wall_s": 120.0,
+    "ram_mb": 4096.0,
+    "source": "declared",
+    "vram_mb": 4096.0
+  },
+  "scheduler": {
+    "elapsed_s": 51.3,
+    "peak_rss_mb": 1836.8,
+    "peak_vram_mb": 2926.0
+  },
+  "schema": "tce-gated-covariance-phases-v1",
+  "scope": "4.530s synchronized operation includes internalaffine fingerprints; excludesouterinput/postchecks/finalhash/arraywrite.37.147sactorwall includes those overheads. Notservingtime or speedgain."
+}
