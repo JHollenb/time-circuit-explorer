@@ -1,0 +1,682 @@
+{
+  "actual": [
+    {
+      "IDsPayloadSHA256": "87b4f95cfb97df0287488b86742472e263ea5e9c080c2e3348f6f64224f797af",
+      "kind": "initial-state",
+      "latentPayloadSHA256": "ccffb82730563d7bcbe6660efb25e2e02d540652d1846e84a4b6c4fba9c5b797"
+    },
+    {
+      "EPayloadSHA256": "ea808d6cc663f545f8a3eeb373a110cad92837faa397882410c4141cfcfa7feb",
+      "clockArgumentPayloadSHA256": "b9c205bdac187f20bf876cea369cb6032ad1bf69043b31d716b36b8defbffdf2",
+      "kind": "own-denoiser-input",
+      "latentPayloadSHA256": "ccffb82730563d7bcbe6660efb25e2e02d540652d1846e84a4b6c4fba9c5b797",
+      "step": 0
+    },
+    {
+      "EPayloadSHA256": "ea808d6cc663f545f8a3eeb373a110cad92837faa397882410c4141cfcfa7feb",
+      "clockArgumentPayloadSHA256": "1386336317c7913a683ffa98d64405e653e6980f1e58c367dd5c4aa23435f52a",
+      "kind": "own-denoiser-input",
+      "latentPayloadSHA256": "ab91743c0c80ad06a23e9058c9ce9bffdd16d7cd0fce04667b92849850e5b91d",
+      "step": 1
+    },
+    {
+      "EPayloadSHA256": "ea808d6cc663f545f8a3eeb373a110cad92837faa397882410c4141cfcfa7feb",
+      "clockArgumentPayloadSHA256": "b1d92f8c179e501dc57bd7618e954f6ac5c9d4f1aeb0a4d2776661601c09252b",
+      "kind": "own-denoiser-input",
+      "latentPayloadSHA256": "11d263233dd88fa37228660018fe4806838f1827b450619ad93616d29a244774",
+      "step": 2
+    },
+    {
+      "EPayloadSHA256": "ea808d6cc663f545f8a3eeb373a110cad92837faa397882410c4141cfcfa7feb",
+      "clockArgumentPayloadSHA256": "43558d41d9b527c2f0374b9ac126d3c1a4afaf5c91103e3231162f6c565501f7",
+      "kind": "own-denoiser-input",
+      "latentPayloadSHA256": "8dba3604752694c1bac223e4de575169ee9fee553eb2b45c93aaef9f60310845",
+      "step": 3
+    }
+  ],
+  "counts": {
+    "VAE": 1,
+    "denoiser": 4,
+    "reducedJoint": 20,
+    "reducedSingle": 80,
+    "scheduler": 4
+  },
+  "fields": {
+    "C0": {
+      "bytes": 3145856,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/C0.npy",
+      "payloadSHA256": "35aef0b61867b582fca422ac10b0fe0a80f0e2e14a715fbc102a91c056b28a15",
+      "sha256": "a4ccaf4cc3d1c6b42cc26562859542fd41ea2f1531d95bf50f45beedae1f21bd",
+      "shape": [
+        1,
+        512,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "C1": {
+      "bytes": 3145856,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/C1.npy",
+      "payloadSHA256": "35aef0b61867b582fca422ac10b0fe0a80f0e2e14a715fbc102a91c056b28a15",
+      "sha256": "a4ccaf4cc3d1c6b42cc26562859542fd41ea2f1531d95bf50f45beedae1f21bd",
+      "shape": [
+        1,
+        512,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "C2": {
+      "bytes": 3145856,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/C2.npy",
+      "payloadSHA256": "35aef0b61867b582fca422ac10b0fe0a80f0e2e14a715fbc102a91c056b28a15",
+      "sha256": "a4ccaf4cc3d1c6b42cc26562859542fd41ea2f1531d95bf50f45beedae1f21bd",
+      "shape": [
+        1,
+        512,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "C3": {
+      "bytes": 3145856,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/C3.npy",
+      "payloadSHA256": "35aef0b61867b582fca422ac10b0fe0a80f0e2e14a715fbc102a91c056b28a15",
+      "sha256": "a4ccaf4cc3d1c6b42cc26562859542fd41ea2f1531d95bf50f45beedae1f21bd",
+      "shape": [
+        1,
+        512,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "cosine0": {
+      "bytes": 786560,
+      "logicalDtype": "torch.float32",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/cosine0.npy",
+      "payloadSHA256": "e360761cf776cb57fb6cb9a2520522d79df6f9cc5c538f2696dc02b3916dc187",
+      "sha256": "9668e7f274bee4e6b39425ab2de4cd494a02fbbcc69ca5babf82544877306883",
+      "shape": [
+        1536,
+        128
+      ],
+      "storedDtype": "float32"
+    },
+    "cosine1": {
+      "bytes": 786560,
+      "logicalDtype": "torch.float32",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/cosine1.npy",
+      "payloadSHA256": "e360761cf776cb57fb6cb9a2520522d79df6f9cc5c538f2696dc02b3916dc187",
+      "sha256": "9668e7f274bee4e6b39425ab2de4cd494a02fbbcc69ca5babf82544877306883",
+      "shape": [
+        1536,
+        128
+      ],
+      "storedDtype": "float32"
+    },
+    "cosine2": {
+      "bytes": 786560,
+      "logicalDtype": "torch.float32",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/cosine2.npy",
+      "payloadSHA256": "e360761cf776cb57fb6cb9a2520522d79df6f9cc5c538f2696dc02b3916dc187",
+      "sha256": "9668e7f274bee4e6b39425ab2de4cd494a02fbbcc69ca5babf82544877306883",
+      "shape": [
+        1536,
+        128
+      ],
+      "storedDtype": "float32"
+    },
+    "cosine3": {
+      "bytes": 786560,
+      "logicalDtype": "torch.float32",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/cosine3.npy",
+      "payloadSHA256": "e360761cf776cb57fb6cb9a2520522d79df6f9cc5c538f2696dc02b3916dc187",
+      "sha256": "9668e7f274bee4e6b39425ab2de4cd494a02fbbcc69ca5babf82544877306883",
+      "shape": [
+        1536,
+        128
+      ],
+      "storedDtype": "float32"
+    },
+    "decodedRaw": {
+      "bytes": 1572992,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/decodedRaw.npy",
+      "payloadSHA256": "832ddf6b63549960b0b7d6e4066ae2c4b895350c8196df48d33271b5b6d924ab",
+      "sha256": "a5d13b160afb7b89184cce6cb13e340478df545cff20ba5c0829c9c48cff6502",
+      "shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "storedDtype": "uint16"
+    },
+    "imageStart0": {
+      "bytes": 6291584,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/imageStart0.npy",
+      "payloadSHA256": "64d56c976656bf59fcc71214ca8095378d9e4e55d85cde060064ac0e0e114f87",
+      "sha256": "56bc99d36f6c4da1bf4f937546b0f5c280590ec71855b727745d969755e6e9d8",
+      "shape": [
+        1,
+        1024,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "imageStart1": {
+      "bytes": 6291584,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/imageStart1.npy",
+      "payloadSHA256": "8dcf11fdcc44ff9f2e9e22d8e80d9d265ae570482e67696af2b588c3b38961f0",
+      "sha256": "4fd1fce8091948ff655cab3b79e1d6f173b81d55027a92f774ca679e6fbe504f",
+      "shape": [
+        1,
+        1024,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "imageStart2": {
+      "bytes": 6291584,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/imageStart2.npy",
+      "payloadSHA256": "2b535848a210c1786508af7265b0e95cf9aa8c22d65c9706ac326fbbdc55514e",
+      "sha256": "a4b9689961904d315eb5bda92ed9954afa43a85c715d24b2f7fef3e98eb44c35",
+      "shape": [
+        1,
+        1024,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "imageStart3": {
+      "bytes": 6291584,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/imageStart3.npy",
+      "payloadSHA256": "ceb972ef06d25b0632187a8a6ac3ee2281836e077ca6478163e0952f51aef1b0",
+      "sha256": "eb592de0ba38f6d5a1d4887175a52ced1909ca85ff29c04f423e6e56f912e3c5",
+      "shape": [
+        1,
+        1024,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "latent1": {
+      "bytes": 262272,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/latent1.npy",
+      "payloadSHA256": "ab91743c0c80ad06a23e9058c9ce9bffdd16d7cd0fce04667b92849850e5b91d",
+      "sha256": "b4bfe55c2ae2264c4cc1f95966b324247bba9173143ccdf9fd5eee64d85b8656",
+      "shape": [
+        1,
+        1024,
+        128
+      ],
+      "storedDtype": "uint16"
+    },
+    "latent2": {
+      "bytes": 262272,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/latent2.npy",
+      "payloadSHA256": "11d263233dd88fa37228660018fe4806838f1827b450619ad93616d29a244774",
+      "sha256": "7895b0834a37e299a801e7b5aa8c6efc658f063c71aee311f007f3b37311bb5c",
+      "shape": [
+        1,
+        1024,
+        128
+      ],
+      "storedDtype": "uint16"
+    },
+    "latent3": {
+      "bytes": 262272,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/latent3.npy",
+      "payloadSHA256": "8dba3604752694c1bac223e4de575169ee9fee553eb2b45c93aaef9f60310845",
+      "sha256": "241ea59cc13ef0e0656612e406061223a4cd5064d142bb6774b40d7eea8b0aa7",
+      "shape": [
+        1,
+        1024,
+        128
+      ],
+      "storedDtype": "uint16"
+    },
+    "latent4": {
+      "bytes": 262272,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/latent4.npy",
+      "payloadSHA256": "c424e3cf2c9f0c285c356e26ee7f50ee2a152bcf719d1d1c8e9f93cb067e5886",
+      "sha256": "9877982b251fac751cdf1861ee6672cffda7d0e752e2169e5eb4338f2c5a6104",
+      "shape": [
+        1,
+        1024,
+        128
+      ],
+      "storedDtype": "uint16"
+    },
+    "pngRGB": {
+      "bytes": 786560,
+      "logicalDtype": "uint8",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/pngRGB.npy",
+      "payloadSHA256": "331334a3cc3eb634d36a493a6e923a4d0a84cc3371fea0e6a840d11c3045a254",
+      "sha256": "2e32700ae14ec186d4e21caacac6ba639d6ad70c66068975dd4ee93eecb09d71",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "storedDtype": "uint8"
+    },
+    "rgbFloat": {
+      "bytes": 3145856,
+      "logicalDtype": "float32",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/rgbFloat.npy",
+      "payloadSHA256": "1057b08ebea7b27599310ef00a3fd9822057f64fdae48abcb423a298add3c7c9",
+      "sha256": "df9278bc649c8fe6034ba300875a797d967b2402a20832966f454375e3ad48a0",
+      "shape": [
+        1,
+        512,
+        512,
+        3
+      ],
+      "storedDtype": "float32"
+    },
+    "sine0": {
+      "bytes": 786560,
+      "logicalDtype": "torch.float32",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/sine0.npy",
+      "payloadSHA256": "b114dbf5c14984bd361c8047894067768a6c0432c79e079bc11719a3052baff2",
+      "sha256": "1c3cf09187f81ae66c9f720c8de77eb23e81737f8b0d38c06dea51b080c5e3e2",
+      "shape": [
+        1536,
+        128
+      ],
+      "storedDtype": "float32"
+    },
+    "sine1": {
+      "bytes": 786560,
+      "logicalDtype": "torch.float32",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/sine1.npy",
+      "payloadSHA256": "b114dbf5c14984bd361c8047894067768a6c0432c79e079bc11719a3052baff2",
+      "sha256": "1c3cf09187f81ae66c9f720c8de77eb23e81737f8b0d38c06dea51b080c5e3e2",
+      "shape": [
+        1536,
+        128
+      ],
+      "storedDtype": "float32"
+    },
+    "sine2": {
+      "bytes": 786560,
+      "logicalDtype": "torch.float32",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/sine2.npy",
+      "payloadSHA256": "b114dbf5c14984bd361c8047894067768a6c0432c79e079bc11719a3052baff2",
+      "sha256": "1c3cf09187f81ae66c9f720c8de77eb23e81737f8b0d38c06dea51b080c5e3e2",
+      "shape": [
+        1536,
+        128
+      ],
+      "storedDtype": "float32"
+    },
+    "sine3": {
+      "bytes": 786560,
+      "logicalDtype": "torch.float32",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/sine3.npy",
+      "payloadSHA256": "b114dbf5c14984bd361c8047894067768a6c0432c79e079bc11719a3052baff2",
+      "sha256": "1c3cf09187f81ae66c9f720c8de77eb23e81737f8b0d38c06dea51b080c5e3e2",
+      "shape": [
+        1536,
+        128
+      ],
+      "storedDtype": "float32"
+    },
+    "singleMod0": {
+      "bytes": 18560,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/singleMod0.npy",
+      "payloadSHA256": "7dff0f63272f8ce2ba5e62ff85b6a9a864a4be34b135162bacb00c20bcba33c2",
+      "sha256": "80100c1d2900499a9f4cb510daf3bef7b6f8e18d8b6ea499272715d710a05a2d",
+      "shape": [
+        1,
+        9216
+      ],
+      "storedDtype": "uint16"
+    },
+    "singleMod1": {
+      "bytes": 18560,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/singleMod1.npy",
+      "payloadSHA256": "33001806e8c2fd5dfc19515ec247349b0975daf6f45549dd1dce69f47b15fea1",
+      "sha256": "79a0d7739d01088afbf0b0959a0ef88deb1cdbfa05d073208e50ee23bc8bb099",
+      "shape": [
+        1,
+        9216
+      ],
+      "storedDtype": "uint16"
+    },
+    "singleMod2": {
+      "bytes": 18560,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/singleMod2.npy",
+      "payloadSHA256": "9ad7cd8c7ea237338c2c4f3faef2891855b54153d52250b1f67c96066cf3a306",
+      "sha256": "ceadd43e954d1388d24a4f0a531e7d571a0cdd91415dc85a0ecd2f8368f2b90a",
+      "shape": [
+        1,
+        9216
+      ],
+      "storedDtype": "uint16"
+    },
+    "singleMod3": {
+      "bytes": 18560,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/singleMod3.npy",
+      "payloadSHA256": "964dff9bce19fceeb9be42392960eece2e9e438bfb35698fda81faa0be5f3a9e",
+      "sha256": "aa2a89a4d9f625d28140b74153277a6ce78b547a46539ec1d345e587c52751ac",
+      "shape": [
+        1,
+        9216
+      ],
+      "storedDtype": "uint16"
+    },
+    "temb0": {
+      "bytes": 6272,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/temb0.npy",
+      "payloadSHA256": "45a653d6912ad86bc7f59dfe478ab3668c09d948fbc6b7982636b6a1bf6771fe",
+      "sha256": "d5574b7054d08dfef9d2ee79e2e646aa35efd48ebd4a4451015eace9130fb319",
+      "shape": [
+        1,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "temb1": {
+      "bytes": 6272,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/temb1.npy",
+      "payloadSHA256": "d3633d92f53cc93827175c24794249cde19e6e7cc435923c55bd288b2423a5d0",
+      "sha256": "df8b5cc3e51731275f24ef5b56b2523236cf90426af584615128252e5d7217f3",
+      "shape": [
+        1,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "temb2": {
+      "bytes": 6272,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/temb2.npy",
+      "payloadSHA256": "51620d17a1fa146af2d06915d47026cbd0b4c2bc754b3414ad78e01a37a628eb",
+      "sha256": "eef3d189305b02f4cb8368e7c5eb7ec1b56e3016297c47f71ae977af758b2c0f",
+      "shape": [
+        1,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "temb3": {
+      "bytes": 6272,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/temb3.npy",
+      "payloadSHA256": "09301525bc01e1cfd7f5a3098e4be3b9730df4f218081970cd0085685d0ec0d7",
+      "sha256": "917102fc40a99302f78ab25ac7b214e30bf98b24f9d85a558e900ccffcdda13e",
+      "shape": [
+        1,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "terminalImage0": {
+      "bytes": 6291584,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/terminalImage0.npy",
+      "payloadSHA256": "31b622764371dfbfe63702039197caf113205263a3da559813ec6aedf7a2dd7e",
+      "sha256": "1ca228a8480b6390a633c16c5410ad3bc53f467c4b570f183d9babc05cd55886",
+      "shape": [
+        1,
+        1024,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "terminalImage1": {
+      "bytes": 6291584,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/terminalImage1.npy",
+      "payloadSHA256": "381b16e16d0f032f556bc29a8a993ef8e18c5d31b11749c6f8c0322ca67a6793",
+      "sha256": "679b1ec467c48c0a197172cef42f6bb01f9965359da336bc23aad48ff9de80e5",
+      "shape": [
+        1,
+        1024,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "terminalImage2": {
+      "bytes": 6291584,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/terminalImage2.npy",
+      "payloadSHA256": "130d499d4b4010eb47cfca956134cee30e226ecd55f8e28003308707670c7d79",
+      "sha256": "961bba7898e6749a05c37688e81be092c388713fc72edaa85d5c5999ad256e73",
+      "shape": [
+        1,
+        1024,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "terminalImage3": {
+      "bytes": 6291584,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/terminalImage3.npy",
+      "payloadSHA256": "6dbeaedd74f22051513e960d3d7b77d677a9fc09ee2cf49c9e79c89a6526dd1c",
+      "sha256": "befb8f69b48c9c254e5946897b06e7bda8d37ad07248cc83c903c57bafc1540d",
+      "shape": [
+        1,
+        1024,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "terminalRows0": {
+      "bytes": 9437312,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/terminalRows0.npy",
+      "payloadSHA256": "a1cb3ac02c8f30b571f0927054b938250986d47b7138191556fd27979f703e73",
+      "sha256": "0e4556085238f4b0f18fa8b4cdc9043b057da35e7afa0af2c61481abf30fa16b",
+      "shape": [
+        1,
+        1536,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "terminalRows1": {
+      "bytes": 9437312,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/terminalRows1.npy",
+      "payloadSHA256": "cc0d9b325c99c1abb0dc582067fce6caba779fb44d0e570379081a8b97ea0029",
+      "sha256": "7d05051d18c435c3b31ee7d583c628ac7670c650c8224ffafb3804e89486db09",
+      "shape": [
+        1,
+        1536,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "terminalRows2": {
+      "bytes": 9437312,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/terminalRows2.npy",
+      "payloadSHA256": "437808f04e7b58960156ea021897e2a6f2980cab78e1d29846bd7dbef991d276",
+      "sha256": "9cfa5920d086cdf030afc5f1e6db4be6787a83bde639ceb5fb75abb992351444",
+      "shape": [
+        1,
+        1536,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "terminalRows3": {
+      "bytes": 9437312,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/terminalRows3.npy",
+      "payloadSHA256": "10de1f5bb62f89da245097707746481512d21154cb498e49871f627fabb53e80",
+      "sha256": "b20b3d319b9115dce9981ebbfb09130220d5d4caa571831fda25fcb7f535f018",
+      "shape": [
+        1,
+        1536,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "vaeInput": {
+      "bytes": 262272,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/vaeInput.npy",
+      "payloadSHA256": "241a43a23b0b7b5de47cedaa0eec96ce46c6aefef8fcbe1c5c5ae0a6faafcfec",
+      "sha256": "79f7edaee7a27496293f324406dc64a33d665c548134e9c6e3185ee59d893b27",
+      "shape": [
+        1,
+        32,
+        64,
+        64
+      ],
+      "storedDtype": "uint16"
+    },
+    "velocity0": {
+      "bytes": 262272,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/velocity0.npy",
+      "payloadSHA256": "254ebbfef2ac87c21c17ae6aeaa1af5a3932760284e6be042228f1a6ce6c3d96",
+      "sha256": "c4e6bac6e9dd108426375b1a3cf97020f61e6e4b27c949fe6c2ed58b4c3af63a",
+      "shape": [
+        1,
+        1024,
+        128
+      ],
+      "storedDtype": "uint16"
+    },
+    "velocity1": {
+      "bytes": 262272,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/velocity1.npy",
+      "payloadSHA256": "96f57a31cc73cc73a10b64e872232a3fee127b925f3376aab5d25c5446d67a8e",
+      "sha256": "fd3a1eb13382e3cc9c7e97734f09e0cf27ab191f3da4d14ed18a46ced9090af7",
+      "shape": [
+        1,
+        1024,
+        128
+      ],
+      "storedDtype": "uint16"
+    },
+    "velocity2": {
+      "bytes": 262272,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/velocity2.npy",
+      "payloadSHA256": "5311164d92b632819007fe05beef0547aeec605f70741dd878fdc7ec468de829",
+      "sha256": "3725405a70238d8eae7da784c652c344d40e9fecab3876431a674a1d6f8660c1",
+      "shape": [
+        1,
+        1024,
+        128
+      ],
+      "storedDtype": "uint16"
+    },
+    "velocity3": {
+      "bytes": 262272,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/arrays/candidate/velocity3.npy",
+      "payloadSHA256": "d5177dbe3aae9905205524db5320e448be7265b29daa5b57fadf5be89758e1bb",
+      "sha256": "c6146ac4409b93f6d33ed85f2e66947568f17bcad3b9cf58e8dde7ef8c339964",
+      "shape": [
+        1,
+        1024,
+        128
+      ],
+      "storedDtype": "uint16"
+    }
+  },
+  "image": {
+    "bytes": 385823,
+    "path": "/mnt/hdd8tb/mrun-work/job-96e74e161844/candidate-A.png",
+    "sha256": "f96607893b112e3bce13d13827b864b71336b65847f769baa8db9bd8d799aed8"
+  },
+  "schedules": [
+    {
+      "sigmas": [
+        1.0,
+        0.9580853581428528,
+        0.8839818835258484,
+        0.7174965739250183,
+        0.0
+      ],
+      "sigmasPayloadSHA256": "47eb6994cb84cb458fd9a90cd3eb5e5890856680c154abec35f26e833e400852",
+      "timesteps": [
+        1000.0,
+        958.0853881835938,
+        883.9818725585938,
+        717.49658203125
+      ],
+      "timestepsPayloadSHA256": "1e400c851167980caf2cd88333c7b146d8c3168b4b49d817e7df5271dbda734b"
+    },
+    {
+      "sigmas": [
+        1.0,
+        0.9580853581428528,
+        0.8839818835258484,
+        0.7174965739250183,
+        0.0
+      ],
+      "sigmasPayloadSHA256": "47eb6994cb84cb458fd9a90cd3eb5e5890856680c154abec35f26e833e400852",
+      "timesteps": [
+        1000.0,
+        958.0853881835938,
+        883.9818725585938,
+        717.49658203125
+      ],
+      "timestepsPayloadSHA256": "1e400c851167980caf2cd88333c7b146d8c3168b4b49d817e7df5271dbda734b"
+    },
+    {
+      "sigmas": [
+        1.0,
+        0.9580853581428528,
+        0.8839818835258484,
+        0.7174965739250183,
+        0.0
+      ],
+      "sigmasPayloadSHA256": "47eb6994cb84cb458fd9a90cd3eb5e5890856680c154abec35f26e833e400852",
+      "timesteps": [
+        1000.0,
+        958.0853881835938,
+        883.9818725585938,
+        717.49658203125
+      ],
+      "timestepsPayloadSHA256": "1e400c851167980caf2cd88333c7b146d8c3168b4b49d817e7df5271dbda734b"
+    },
+    {
+      "sigmas": [
+        1.0,
+        0.9580853581428528,
+        0.8839818835258484,
+        0.7174965739250183,
+        0.0
+      ],
+      "sigmasPayloadSHA256": "47eb6994cb84cb458fd9a90cd3eb5e5890856680c154abec35f26e833e400852",
+      "timesteps": [
+        1000.0,
+        958.0853881835938,
+        883.9818725585938,
+        717.49658203125
+      ],
+      "timestepsPayloadSHA256": "1e400c851167980caf2cd88333c7b146d8c3168b4b49d817e7df5271dbda734b"
+    }
+  ],
+  "scope": "One fixed projected-text-memory own four-clock trajectory and actual VAE/PNG. Historical E/noise supplied; all live KV/image/clock/head/decoder learned work paid.",
+  "sourceEPayloadSHA256": "ea808d6cc663f545f8a3eeb373a110cad92837faa397882410c4141cfcfa7feb"
+}
