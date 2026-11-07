@@ -1,0 +1,60 @@
+{
+  "activeMapScope": "Logical one-mapset callback bound, not independent GPU residency measurement",
+  "capturedBlockOutputsPerClockBytes": 309460992,
+  "exception": "Cycle68sameB1/512 sampled8227.2MBRSS9248MBdevice;actor CUDAallocated8.61GB,reserved9.36GB. New~310MBcurrentclockcapturedoutputs+~200MBscore/softmax/FP32workspace,one170MBterminalmap. Same14336MBRAM13000MBVRAM4CPU3GBdisk envelope,180sexpected600cap,noretries. No compiler/secondmodel/shadow/reference.",
+  "intentFirstPreview": {
+    "beast": {
+      "artifact_id": null,
+      "artifact_kind": null,
+      "artifact_locator": {},
+      "artifact_mount": null,
+      "backend": "diffusers",
+      "device": "cuda",
+      "dtype": "bfloat16",
+      "engine_options": {},
+      "engine_profile": "backend:diffusers",
+      "est_ram_mb": 8410.0,
+      "est_vram_mb": 40212.3,
+      "est_wall_s": null,
+      "max_batch": 64,
+      "model": "flux2-klein-4b-distilled",
+      "ram_limit_mb": 52809.0,
+      "reasons": [
+        "host=beast ram=66513MB cuda=True mps=False ane=False task=forward",
+        "dtype=bfloat16 (explicit opt-in \u2014 not the canonical path)",
+        "device=cuda (explicit)",
+        "TF32 forced OFF on cuda (breaches 4-decimal stats)",
+        "backend=diffusers (explicit)",
+        "max_batch=64 threads=4 ram_limit=52809MB (est x 1.3)",
+        "selector fallback: explicit backend has no matching local artifact",
+        "science runtime envelope: diffusers"
+      ],
+      "threads": 4,
+      "weights_gb": 9.6
+    }
+  },
+  "maxActivePhysicalSliceBytes": 169869312,
+  "nativeImageParentJobID": "job-394733a01129",
+  "nativeImageParentReservation": {
+    "cpu_threads": 4,
+    "disk_gb": 2.0,
+    "est_wall_s": 300.0,
+    "ram_mb": 14336.0,
+    "source": "declared",
+    "vram_mb": 13000.0
+  },
+  "nativeImageParentResult": {
+    "elapsed_s": 109.59,
+    "peak_rss_mb": 7925.7,
+    "peak_vram_mb": 9148.0
+  },
+  "oneTextScoreFP32Bytes": 75497472,
+  "priorTrajectoryJobID": "job-b9dc640f60cb",
+  "priorTrajectoryResult": {
+    "elapsed_s": 128.97,
+    "peak_rss_mb": 8227.2,
+    "peak_vram_mb": 9248.0
+  },
+  "scope": "One full image model/VAE; each clock retains ~310MB typed blockoutputs. One75.5MBFP32score plussoftmax/conversionworkspace during liveblocks, released before terminal170MBmapset. ~1.4GBnewarrays,3GBdisk. No compiler/secondmodel.",
+  "scoreAndSoftmaxLogicalBytes": 150994944
+}
