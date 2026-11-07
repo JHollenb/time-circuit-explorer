@@ -1,0 +1,25 @@
+{
+  "schema": "tce-source-complement-instrument-v1",
+  "runtime": "mdb.evidence_pipeline",
+  "target": "artifacts/source-complement-v1/result",
+  "explicitResultsRoot": "artifacts/source-complement-v1",
+  "explicitXrefRoot": "artifacts/source-complement-v1/result",
+  "watchRoot": "artifacts/source-complement-instrument/watch",
+  "registry": "artifacts/source-complement-instrument/claims-auto.jsonl",
+  "xrefDB": "artifacts/source-complement-instrument/xref.sqlite",
+  "instrumentStatus": "target-streams-only",
+  "streams": 2,
+  "records": 3072,
+  "perStream": [
+    {"name": "context-effect.jsonl", "records": 1024, "predicates": 7},
+    {"name": "queries.jsonl", "records": 2048, "predicates": 19}
+  ],
+  "runExit": 0,
+  "verifyExit": 0,
+  "watchFires": 0,
+  "formalReceipts": 0,
+  "boundXrefAddresses": 0,
+  "coverage": "Top-level and one nested numeric level now expose native/parent response metrics. Zero fires does not establish context sufficiency, image quality or an arbitrary-prompt capability.",
+  "preservedInvocationDiagnostic": "First verify invocation incorrectly included run-only xref flags and returned argparse exit2. Correct verify invocation without those flags returned0; no scientific rerun or result change.",
+  "separateDiagnosis": "The complementary-context causal instrument is inapplicable because P/Q outside-support banks are byte-identical. This is separate from successful numerical stream adaptation."
+}

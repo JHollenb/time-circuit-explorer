@@ -1,0 +1,903 @@
+{
+  "CPUSecondsAfterImports": 20.555056621,
+  "WoFP64": {
+    "bytes": 75497472,
+    "payloadSHA256": "331b49ee693bff4839da46c64ca57c967bf438839d3e9ad5459ddb90cbdb4f34"
+  },
+  "arithmeticTimings": [
+    {
+      "arithmeticSecondsBeforeCapture": 0.5237329448573291,
+      "stage": "source-return"
+    },
+    {
+      "arithmeticSecondsBeforeCapture": 0.36296194279566407,
+      "stage": "recipient"
+    }
+  ],
+  "assets": [
+    {
+      "bytesHashed": 541,
+      "path": "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/config.json",
+      "sha256": "09733c74a3da6d17dd0a0472a091a8950c7c6935889c32c16cc800ede05029de",
+      "signature": [
+        66311,
+        298051,
+        541,
+        1784967358756501000,
+        1784967358757491000
+      ]
+    },
+    {
+      "bytesHashed": 7751109744,
+      "path": "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/diffusion_pytorch_model.safetensors",
+      "sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+      "signature": [
+        66311,
+        298058,
+        7751109744,
+        1784967508577765300,
+        1784967508615361800
+      ]
+    }
+  ],
+  "attentions": [
+    {
+      "keyShape": [
+        1,
+        1536,
+        24,
+        128
+      ],
+      "keyStride": [
+        4718592,
+        3072,
+        128,
+        1
+      ],
+      "nominalMACs": 37748736,
+      "outputPayloadSHA256": "5957718c8338dc1ec374182db7f0c5f31022c6d54d2895ecce0db67904e65b85",
+      "queryShape": [
+        1,
+        4,
+        24,
+        128
+      ],
+      "requestedBackend": "auto",
+      "valueShape": [
+        1,
+        1536,
+        24,
+        128
+      ],
+      "valueStride": [
+        4718592,
+        3072,
+        128,
+        1
+      ]
+    }
+  ],
+  "contractions": [
+    {
+      "kind": "recipient-QK",
+      "nominalMACs": 12582912
+    },
+    {
+      "kind": "recipient-projected-AV",
+      "nominalMACs": 301989888
+    }
+  ],
+  "fileQuarantine": {
+    "allowedFiles": [
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/config.json",
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/diffusion_pytorch_model.safetensors",
+      "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/source/P/K.npy",
+      "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/source/P/V.npy",
+      "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/source/Q/A.npy",
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/compile/admitted/projectedN.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/shared/operands/K.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/shared/operands/Q.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/shared/operands/R.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/shared/operands/V.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/shared/operands/txtMod.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/Q.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/gate.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/image.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/m.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/ropeCos.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/ropeSin.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/txtMod.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/z.npy"
+    ],
+    "deniedCanaries": [
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/targets.json",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/cases/sphere-cube-plain-2027/PQP/consumer/native/R_attention.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/cases/sphere-cube-plain-2027/QQQ/consumer/native/R_attention.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/endpoints/sphere-cube-plain-2027/native/PQP.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_after_attention.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_attention_return_used.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_in.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_mlp_input.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_mlp_return_used.npy",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_out.npy",
+      "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/actors/PQP/R_attention.npy",
+      "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/actors/QQQ/R_attention.npy",
+      "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/source/P/A.npy",
+      "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/source/P/M.npy",
+      "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/source/P/R.npy",
+      "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/source/P/T.npy",
+      "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/source/P/U.npy",
+      "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/source/P/X.npy",
+      "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/splice/PQP.npy",
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/diagnostics/imageIDs.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/primary/recipient/K.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/primary/recipient/R_attention.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/primary/recipient/V.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/primary/recipient/attentionReturn.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/primary/recipient/cacheScale.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/primary/recipient/carrier.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/primary/recipient/denominator.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/primary/recipient/peak.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/primary/recipient/projectedValues.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/primary/recipient/projectionFP64.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/primary/recipient/scores.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/primary/recipient/selectedWeights.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/primary/source/A.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/primary/source/H.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/primary/source/K_hybrid.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/primary/source/M.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/primary/source/PQP.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/primary/source/T.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/primary/source/U.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/primary/source/V_hybrid.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/primary/source/X.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/primary/source/fused.npy",
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/primary/source/product.npy"
+    ],
+    "scope": "Exact numeric read allowlist. Primary cannot read P complement; control cannot read primary arrays; archived targets denied throughout.",
+    "successfulFileOpenCounts": {
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/config.json": 1,
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/diffusion_pytorch_model.safetensors": 2,
+      "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/source/P/K.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/source/P/V.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/source/Q/A.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/compile/admitted/projectedN.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/shared/operands/K.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/shared/operands/Q.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/shared/operands/R.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/shared/operands/V.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-9f27e8bc9efd/arrays/shared/operands/txtMod.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/Q.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/gate.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/image.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/m.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/ropeCos.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/ropeSin.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/txtMod.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/z.npy": 2
+    }
+  },
+  "header": {
+    "bytes": 20584,
+    "sha256": "012278fec8c5203622e33f14a7da845b344c5dcd869980b04692348ff02420f6"
+  },
+  "linears": [
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        4,
+        3072
+      ],
+      "inputStride": [
+        12288,
+        3072,
+        1
+      ],
+      "nominalMACs": 37748736,
+      "parameter": "transformer_blocks.0.attn.to_add_out.weight",
+      "stage": "control",
+      "weightShape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        4,
+        3072
+      ],
+      "inputStride": [
+        12288,
+        3072,
+        1
+      ],
+      "nominalMACs": 226492416,
+      "parameter": "transformer_blocks.0.ff_context.linear_in.weight",
+      "stage": "control",
+      "weightShape": [
+        18432,
+        3072
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        4,
+        9216
+      ],
+      "inputStride": [
+        36864,
+        9216,
+        1
+      ],
+      "nominalMACs": 113246208,
+      "parameter": "transformer_blocks.0.ff_context.linear_out.weight",
+      "stage": "control",
+      "weightShape": [
+        3072,
+        9216
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        4,
+        3072
+      ],
+      "inputStride": [
+        12288,
+        3072,
+        1
+      ],
+      "nominalMACs": 37748736,
+      "parameter": "transformer_blocks.1.attn.add_k_proj.weight",
+      "stage": "recipient",
+      "weightShape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "inputShape": [
+        1,
+        4,
+        3072
+      ],
+      "inputStride": [
+        12288,
+        3072,
+        1
+      ],
+      "nominalMACs": 37748736,
+      "parameter": "transformer_blocks.1.attn.add_v_proj.weight",
+      "stage": "recipient",
+      "weightShape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 0,
+      "inputShape": [
+        4,
+        128
+      ],
+      "inputStride": [
+        3072,
+        1
+      ],
+      "nominalMACs": 1572864,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "physicalColumnSlice": true,
+      "stage": "recipient",
+      "weightShape": [
+        3072,
+        128
+      ]
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 1,
+      "inputShape": [
+        4,
+        128
+      ],
+      "inputStride": [
+        3072,
+        1
+      ],
+      "nominalMACs": 1572864,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "physicalColumnSlice": true,
+      "stage": "recipient",
+      "weightShape": [
+        3072,
+        128
+      ]
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 2,
+      "inputShape": [
+        4,
+        128
+      ],
+      "inputStride": [
+        3072,
+        1
+      ],
+      "nominalMACs": 1572864,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "physicalColumnSlice": true,
+      "stage": "recipient",
+      "weightShape": [
+        3072,
+        128
+      ]
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 3,
+      "inputShape": [
+        4,
+        128
+      ],
+      "inputStride": [
+        3072,
+        1
+      ],
+      "nominalMACs": 1572864,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "physicalColumnSlice": true,
+      "stage": "recipient",
+      "weightShape": [
+        3072,
+        128
+      ]
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 4,
+      "inputShape": [
+        4,
+        128
+      ],
+      "inputStride": [
+        3072,
+        1
+      ],
+      "nominalMACs": 1572864,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "physicalColumnSlice": true,
+      "stage": "recipient",
+      "weightShape": [
+        3072,
+        128
+      ]
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 5,
+      "inputShape": [
+        4,
+        128
+      ],
+      "inputStride": [
+        3072,
+        1
+      ],
+      "nominalMACs": 1572864,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "physicalColumnSlice": true,
+      "stage": "recipient",
+      "weightShape": [
+        3072,
+        128
+      ]
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 6,
+      "inputShape": [
+        4,
+        128
+      ],
+      "inputStride": [
+        3072,
+        1
+      ],
+      "nominalMACs": 1572864,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "physicalColumnSlice": true,
+      "stage": "recipient",
+      "weightShape": [
+        3072,
+        128
+      ]
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 7,
+      "inputShape": [
+        4,
+        128
+      ],
+      "inputStride": [
+        3072,
+        1
+      ],
+      "nominalMACs": 1572864,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "physicalColumnSlice": true,
+      "stage": "recipient",
+      "weightShape": [
+        3072,
+        128
+      ]
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 8,
+      "inputShape": [
+        4,
+        128
+      ],
+      "inputStride": [
+        3072,
+        1
+      ],
+      "nominalMACs": 1572864,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "physicalColumnSlice": true,
+      "stage": "recipient",
+      "weightShape": [
+        3072,
+        128
+      ]
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 9,
+      "inputShape": [
+        4,
+        128
+      ],
+      "inputStride": [
+        3072,
+        1
+      ],
+      "nominalMACs": 1572864,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "physicalColumnSlice": true,
+      "stage": "recipient",
+      "weightShape": [
+        3072,
+        128
+      ]
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 10,
+      "inputShape": [
+        4,
+        128
+      ],
+      "inputStride": [
+        3072,
+        1
+      ],
+      "nominalMACs": 1572864,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "physicalColumnSlice": true,
+      "stage": "recipient",
+      "weightShape": [
+        3072,
+        128
+      ]
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 11,
+      "inputShape": [
+        4,
+        128
+      ],
+      "inputStride": [
+        3072,
+        1
+      ],
+      "nominalMACs": 1572864,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "physicalColumnSlice": true,
+      "stage": "recipient",
+      "weightShape": [
+        3072,
+        128
+      ]
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 12,
+      "inputShape": [
+        4,
+        128
+      ],
+      "inputStride": [
+        3072,
+        1
+      ],
+      "nominalMACs": 1572864,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "physicalColumnSlice": true,
+      "stage": "recipient",
+      "weightShape": [
+        3072,
+        128
+      ]
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 13,
+      "inputShape": [
+        4,
+        128
+      ],
+      "inputStride": [
+        3072,
+        1
+      ],
+      "nominalMACs": 1572864,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "physicalColumnSlice": true,
+      "stage": "recipient",
+      "weightShape": [
+        3072,
+        128
+      ]
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 14,
+      "inputShape": [
+        4,
+        128
+      ],
+      "inputStride": [
+        3072,
+        1
+      ],
+      "nominalMACs": 1572864,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "physicalColumnSlice": true,
+      "stage": "recipient",
+      "weightShape": [
+        3072,
+        128
+      ]
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 15,
+      "inputShape": [
+        4,
+        128
+      ],
+      "inputStride": [
+        3072,
+        1
+      ],
+      "nominalMACs": 1572864,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "physicalColumnSlice": true,
+      "stage": "recipient",
+      "weightShape": [
+        3072,
+        128
+      ]
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 16,
+      "inputShape": [
+        4,
+        128
+      ],
+      "inputStride": [
+        3072,
+        1
+      ],
+      "nominalMACs": 1572864,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "physicalColumnSlice": true,
+      "stage": "recipient",
+      "weightShape": [
+        3072,
+        128
+      ]
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 17,
+      "inputShape": [
+        4,
+        128
+      ],
+      "inputStride": [
+        3072,
+        1
+      ],
+      "nominalMACs": 1572864,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "physicalColumnSlice": true,
+      "stage": "recipient",
+      "weightShape": [
+        3072,
+        128
+      ]
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 18,
+      "inputShape": [
+        4,
+        128
+      ],
+      "inputStride": [
+        3072,
+        1
+      ],
+      "nominalMACs": 1572864,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "physicalColumnSlice": true,
+      "stage": "recipient",
+      "weightShape": [
+        3072,
+        128
+      ]
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 19,
+      "inputShape": [
+        4,
+        128
+      ],
+      "inputStride": [
+        3072,
+        1
+      ],
+      "nominalMACs": 1572864,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "physicalColumnSlice": true,
+      "stage": "recipient",
+      "weightShape": [
+        3072,
+        128
+      ]
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 20,
+      "inputShape": [
+        4,
+        128
+      ],
+      "inputStride": [
+        3072,
+        1
+      ],
+      "nominalMACs": 1572864,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "physicalColumnSlice": true,
+      "stage": "recipient",
+      "weightShape": [
+        3072,
+        128
+      ]
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 21,
+      "inputShape": [
+        4,
+        128
+      ],
+      "inputStride": [
+        3072,
+        1
+      ],
+      "nominalMACs": 1572864,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "physicalColumnSlice": true,
+      "stage": "recipient",
+      "weightShape": [
+        3072,
+        128
+      ]
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 22,
+      "inputShape": [
+        4,
+        128
+      ],
+      "inputStride": [
+        3072,
+        1
+      ],
+      "nominalMACs": 1572864,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "physicalColumnSlice": true,
+      "stage": "recipient",
+      "weightShape": [
+        3072,
+        128
+      ]
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "head": 23,
+      "inputShape": [
+        4,
+        128
+      ],
+      "inputStride": [
+        3072,
+        1
+      ],
+      "nominalMACs": 1572864,
+      "parameter": "transformer_blocks.1.attn.to_out.0.weight",
+      "physicalColumnSlice": true,
+      "stage": "recipient",
+      "weightShape": [
+        3072,
+        128
+      ]
+    }
+  ],
+  "loadedParameters": [
+    {
+      "bytes": 18874368,
+      "dataOffsets": [
+        5353253888,
+        5372128256
+      ],
+      "name": "transformer_blocks.0.attn.to_add_out.weight",
+      "payloadSHA256": "b164a1d5d9a3c70906216856bb12c2ead6099ea5f8340f474f421c48f5b75f93",
+      "shape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "bytes": 113246208,
+      "dataOffsets": [
+        5617495040,
+        5730741248
+      ],
+      "name": "transformer_blocks.0.ff_context.linear_in.weight",
+      "payloadSHA256": "284575f2c14ed44ff52b43ca48a72ad83597acec487c7d85910a0d77ea50b170",
+      "shape": [
+        18432,
+        3072
+      ]
+    },
+    {
+      "bytes": 56623104,
+      "dataOffsets": [
+        5730741248,
+        5787364352
+      ],
+      "name": "transformer_blocks.0.ff_context.linear_out.weight",
+      "payloadSHA256": "0e63555317d978143d9ffcffa1ab4ff256952424f265e7e898f2ce33e4f7d7fb",
+      "shape": [
+        3072,
+        9216
+      ]
+    },
+    {
+      "bytes": 18874368,
+      "dataOffsets": [
+        5787364352,
+        5806238720
+      ],
+      "name": "transformer_blocks.1.attn.add_k_proj.weight",
+      "payloadSHA256": "a33610550fb3ba089bcdfe7b236dbdc390841410eab29845d63d00d6e020ef5c",
+      "shape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "bytes": 18874368,
+      "dataOffsets": [
+        5825113088,
+        5843987456
+      ],
+      "name": "transformer_blocks.1.attn.add_v_proj.weight",
+      "payloadSHA256": "fdd7cae711ee7afd76e1833fd64cf6be9f081339b0bbce790d71415060aa001d",
+      "shape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "bytes": 18874368,
+      "dataOffsets": [
+        5881737216,
+        5900611584
+      ],
+      "name": "transformer_blocks.1.attn.to_out.0.weight",
+      "payloadSHA256": "70674ebb1c115f32e67ef32130128edb9cd89b14a39e98c114466bb157279af0",
+      "shape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "bytes": 256,
+      "dataOffsets": [
+        5843987456,
+        5843987712
+      ],
+      "name": "transformer_blocks.1.attn.norm_added_k.weight",
+      "payloadSHA256": "bb6e6c1417d4f1d1a5aef381baf01ac26564b7316d63c97f5546035a32692278",
+      "shape": [
+        128
+      ]
+    }
+  ],
+  "nominalMatrixMACs": 843055104,
+  "numericalProfile": {
+    "bf16ReducedPrecisionReduction": true,
+    "cublasWorkspaceConfig": ":4096:8",
+    "cudaMatmulTF32": false,
+    "cudnnBenchmark": false,
+    "cudnnDeterministic": true,
+    "cudnnTF32": false,
+    "deterministicAlgorithms": true,
+    "float32MatmulPrecision": "highest",
+    "threads": 4
+  },
+  "parameterInputRNGClosure": true,
+  "peakCUDAAllocatedBytes": 310757888,
+  "peakCUDAReservedBytes": 325058560,
+  "wallSecondsAfterImports": 25.05536081129685
+}

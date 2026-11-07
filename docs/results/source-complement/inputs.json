@@ -1,0 +1,4146 @@
+{
+  "banks": {
+    "P": {
+      "K": {
+        "bytes": 9437312,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/source/P/K.npy",
+        "payloadSHA256": "1aff2482df92f914933afc9654af3158bb3b1b598358ba49917fa379cb6e20b7",
+        "sha256": "f909111df605f10c6e1e27602aab544289be6cdb6f19f58687d5e46f07ed0d21",
+        "shape": [
+          1,
+          1536,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "V": {
+        "bytes": 9437312,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/source/P/V.npy",
+        "payloadSHA256": "ff2127e4171c1f08bb0d9ad4a00b5a0d757971651b71db717b8d04825706d25c",
+        "sha256": "41f1b9b54f7d15ece32b968414a2592f2dde1dcf8cc2f3d8ae17741353f81a67",
+        "shape": [
+          1,
+          1536,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      }
+    },
+    "Q": {
+      "K": {
+        "bytes": 9437312,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/source/Q/K.npy",
+        "payloadSHA256": "ce91a1c00dfd1358dc9d277b89bf869a59967ad74b296497a61665ae60c6b187",
+        "sha256": "e969556739a334140e0cd01e9089d8cf32bf8ccdb3356dab2727bcf4171b71ed",
+        "shape": [
+          1,
+          1536,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "V": {
+        "bytes": 9437312,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/source/Q/V.npy",
+        "payloadSHA256": "fe72c1dcdfa479841c632f10286008aa9c8d2f3fd592279b9fdb10dc76924373",
+        "sha256": "0ab210aa9f0e7d3e04ec5f616fcf1b8c8050c935e49a011a5b0aaf705339ad5c",
+        "shape": [
+          1,
+          1536,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      }
+    }
+  },
+  "deniedTargets": [
+    "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/cases/sphere-cube-plain-2027/PQP/consumer/native/R_attention.npy",
+    "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/cases/sphere-cube-plain-2027/QQQ/consumer/native/R_attention.npy",
+    "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/endpoints/sphere-cube-plain-2027/native/PQP.npy",
+    "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_after_attention.npy",
+    "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_attention_return_used.npy",
+    "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_in.npy",
+    "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_mlp_input.npy",
+    "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_mlp_return_used.npy",
+    "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/writer/sphere-cube-plain-2027/P/native/text_out.npy",
+    "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/actors/PQP/R_attention.npy",
+    "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/actors/QQQ/R_attention.npy",
+    "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/source/P/A.npy",
+    "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/source/P/M.npy",
+    "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/source/P/R.npy",
+    "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/source/P/T.npy",
+    "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/source/P/U.npy",
+    "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/source/P/X.npy",
+    "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/splice/PQP.npy",
+    "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/diagnostics/imageIDs.npy"
+  ],
+  "familyPoint": {
+    "edge": "before",
+    "family": "flux2-klein",
+    "index": 1,
+    "local_clock": 1,
+    "logical_step": 2,
+    "next_operation": "joint_block.1",
+    "operator": "joint",
+    "phase": "joint"
+  },
+  "imageAssets": {
+    "transformer/config.json": "09733c74a3da6d17dd0a0472a091a8950c7c6935889c32c16cc800ede05029de",
+    "transformer/diffusion_pytorch_model.safetensors": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e"
+  },
+  "modelRoot": "/mnt/big/llm-models/FLUX.2-klein-4B",
+  "nativeSources": {
+    "image_processor.py": "d7558c34e9dfd36ea2a8721fc670615ca868de551ba232992a7f5382924b98f8",
+    "models/activations.py": "ab1767e8e44e7d4bf1cb18299ba33654329e2711fa983b1423fc4fe12de2c3ab",
+    "models/attention_dispatch.py": "2acfeb88d200a6466c0b4c718e5699efd8dc2e61d8b7c96d9d7c938ffbb25bc8",
+    "models/attention_processor.py": "7158a23bff0ce5bb1c03d66e2441dfd8d169b3598b2d494d32c6f88a3301ea01",
+    "models/autoencoders/autoencoder_kl_flux2.py": "7d9a976c1e4f42615e8c422f1643d86b49c4339221bd04b67f518b718ebd6c2d",
+    "models/cache_utils.py": "fc50ad113031b47244917ca04cd1f28d9751b75d91931c62f79505f4cf8a8d81",
+    "models/embeddings.py": "4eb810f715786eb1f24f2a4641e529817f7c951b9caf2f7925811329a03ec796",
+    "models/normalization.py": "e92ebbb130082578f3cff3361891a1adaa32331347e7bb09e4c70b208a0a6059",
+    "models/transformers/transformer_flux2.py": "0a3c56ed3ca28a416492b50953a433f20b8a89fd26c7b7a49b1b6b45d5236006",
+    "pipelines/flux2/pipeline_flux2_klein.py": "8a57a8a7f1c22fc0c5bc5d3fd1bd9bc76c17c1f4d6644cc73370651dd955358e",
+    "schedulers/scheduling_flow_match_euler_discrete.py": "8b96f25a6170480fb02decb58904e026250d6d68be5de8a7b8785b4c721e9d80"
+  },
+  "numericalProfile": {
+    "bf16ReducedPrecisionReduction": true,
+    "cublasWorkspaceConfig": ":4096:8",
+    "cudaMatmulTF32": false,
+    "cudnnBenchmark": false,
+    "cudnnDeterministic": true,
+    "cudnnTF32": false,
+    "deterministicAlgorithms": true,
+    "float32MatmulPrecision": "highest",
+    "threads": 4
+  },
+  "originalParameterArtifacts": [
+    {
+      "bytes": 384,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDEyOCwpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/93e98aa066df8b6f9302347eb5c6cde335af66324f7e617b231942e95494eab9.npy",
+      "sha256": "93e98aa066df8b6f9302347eb5c6cde335af66324f7e617b231942e95494eab9",
+      "source": {
+        "data_offsets": [
+          5353253120,
+          5353253376
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "54399ad379d8df64b4ac9eebd952abff78ae52359e8730ebea1d31418e677aa8",
+        "shape": [
+          128
+        ],
+        "tensor": "transformer_blocks.0.attn.norm_added_q.weight"
+      }
+    },
+    {
+      "bytes": 384,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDEyOCwpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/3cc5c19e90de214d821cb35e0d897e0b58b2c1c9045e6b037a104ebf7b84e87f.npy",
+      "sha256": "3cc5c19e90de214d821cb35e0d897e0b58b2c1c9045e6b037a104ebf7b84e87f",
+      "source": {
+        "data_offsets": [
+          5353252864,
+          5353253120
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "d0ef1180a76078bd5e2de6bb163298b0b45f538e838dfa2cab890c75b7972b16",
+        "shape": [
+          128
+        ],
+        "tensor": "transformer_blocks.0.attn.norm_added_k.weight"
+      }
+    },
+    {
+      "bytes": 18874496,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDMwNzIpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/0e33aa66554eda558ce7a7ee0c644d1ebe38afb5d458596c19613f98faed96c7.npy",
+      "sha256": "0e33aa66554eda558ce7a7ee0c644d1ebe38afb5d458596c19613f98faed96c7",
+      "source": {
+        "data_offsets": [
+          5315504128,
+          5334378496
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "4d583ed1a91efda5ab94b3fbf14aa3cec06a1a2288c7120fc7a9ab4b8479d5b8",
+        "shape": [
+          3072,
+          3072
+        ],
+        "tensor": "transformer_blocks.0.attn.add_q_proj.weight"
+      }
+    },
+    {
+      "bytes": 18874496,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDMwNzIpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/f929958b9cce3376cc33f07c31e5952ff9c52961afb61ef8f06b7371106b3261.npy",
+      "sha256": "f929958b9cce3376cc33f07c31e5952ff9c52961afb61ef8f06b7371106b3261",
+      "source": {
+        "data_offsets": [
+          5296629760,
+          5315504128
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "c51528a6e4c6d39c4271f921114fa889c794cd2b7b22d2222582c82cf70e2ae4",
+        "shape": [
+          3072,
+          3072
+        ],
+        "tensor": "transformer_blocks.0.attn.add_k_proj.weight"
+      }
+    },
+    {
+      "bytes": 18874496,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDMwNzIpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/74fca8e08659f5ce8c3c69f9053c292da114a742d602f5ac2f4177a2aba8f1ad.npy",
+      "sha256": "74fca8e08659f5ce8c3c69f9053c292da114a742d602f5ac2f4177a2aba8f1ad",
+      "source": {
+        "data_offsets": [
+          5334378496,
+          5353252864
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "cd9309cc262bd808a8c7b53f4665d5214502bd8e476a17f6e677cee3884bbb36",
+        "shape": [
+          3072,
+          3072
+        ],
+        "tensor": "transformer_blocks.0.attn.add_v_proj.weight"
+      }
+    },
+    {
+      "bytes": 18874496,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDMwNzIpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/2c4411e52842cace49daee8f3ba4bbfdb75121d2b4e9409b5f1b274ef30e27ee.npy",
+      "sha256": "2c4411e52842cace49daee8f3ba4bbfdb75121d2b4e9409b5f1b274ef30e27ee",
+      "source": {
+        "data_offsets": [
+          5353253888,
+          5372128256
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "b164a1d5d9a3c70906216856bb12c2ead6099ea5f8340f474f421c48f5b75f93",
+        "shape": [
+          3072,
+          3072
+        ],
+        "tensor": "transformer_blocks.0.attn.to_add_out.weight"
+      }
+    },
+    {
+      "bytes": 113246336,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDE4NDMyLCAzMDcyKSwgfSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/5985327cd60aa8338d5fa548254b6a31d98ae19ad130d47a5a8df796cef61af8.npy",
+      "sha256": "5985327cd60aa8338d5fa548254b6a31d98ae19ad130d47a5a8df796cef61af8",
+      "source": {
+        "data_offsets": [
+          5617495040,
+          5730741248
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "284575f2c14ed44ff52b43ca48a72ad83597acec487c7d85910a0d77ea50b170",
+        "shape": [
+          18432,
+          3072
+        ],
+        "tensor": "transformer_blocks.0.ff_context.linear_in.weight"
+      }
+    },
+    {
+      "bytes": 56623232,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDkyMTYpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/4c72c6e1180a651318c32b08954b4a9023509beec149259e42cc5e8b82d1f522.npy",
+      "sha256": "4c72c6e1180a651318c32b08954b4a9023509beec149259e42cc5e8b82d1f522",
+      "source": {
+        "data_offsets": [
+          5730741248,
+          5787364352
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "0e63555317d978143d9ffcffa1ab4ff256952424f265e7e898f2ce33e4f7d7fb",
+        "shape": [
+          3072,
+          9216
+        ],
+        "tensor": "transformer_blocks.0.ff_context.linear_out.weight"
+      }
+    },
+    {
+      "bytes": 18874496,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDMwNzIpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/44a409d466adc7ad138cbbbaaaaf1d2db69ededb988ef62df81e5ae87551a178.npy",
+      "sha256": "44a409d466adc7ad138cbbbaaaaf1d2db69ededb988ef62df81e5ae87551a178",
+      "source": {
+        "data_offsets": [
+          5881737216,
+          5900611584
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "70674ebb1c115f32e67ef32130128edb9cd89b14a39e98c114466bb157279af0",
+        "shape": [
+          3072,
+          3072
+        ],
+        "tensor": "transformer_blocks.1.attn.to_out.0.weight"
+      }
+    },
+    {
+      "bytes": 384,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDEyOCwpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/dffc6af2047795181dca84017ae081f3c7bbd5d746e6edd1edbab74672e96c45.npy",
+      "sha256": "dffc6af2047795181dca84017ae081f3c7bbd5d746e6edd1edbab74672e96c45",
+      "source": {
+        "data_offsets": [
+          5843987456,
+          5843987712
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "bb6e6c1417d4f1d1a5aef381baf01ac26564b7316d63c97f5546035a32692278",
+        "shape": [
+          128
+        ],
+        "tensor": "transformer_blocks.1.attn.norm_added_k.weight"
+      }
+    },
+    {
+      "bytes": 18874496,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDMwNzIpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/157480f8f89f6f4fc231efa85a5fab992a08c51746d32c06a7fec06963e0a77b.npy",
+      "sha256": "157480f8f89f6f4fc231efa85a5fab992a08c51746d32c06a7fec06963e0a77b",
+      "source": {
+        "data_offsets": [
+          5787364352,
+          5806238720
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "a33610550fb3ba089bcdfe7b236dbdc390841410eab29845d63d00d6e020ef5c",
+        "shape": [
+          3072,
+          3072
+        ],
+        "tensor": "transformer_blocks.1.attn.add_k_proj.weight"
+      }
+    },
+    {
+      "bytes": 18874496,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDMwNzIpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/2ec11742a186da1cc1d7f181a33be7ab7b4b42702c43bc97e42fc276af74d0c0.npy",
+      "sha256": "2ec11742a186da1cc1d7f181a33be7ab7b4b42702c43bc97e42fc276af74d0c0",
+      "source": {
+        "data_offsets": [
+          5825113088,
+          5843987456
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "fdd7cae711ee7afd76e1833fd64cf6be9f081339b0bbce790d71415060aa001d",
+        "shape": [
+          3072,
+          3072
+        ],
+        "tensor": "transformer_blocks.1.attn.add_v_proj.weight"
+      }
+    }
+  ],
+  "pCut": {
+    "cut": {
+      "execution_point": {
+        "edge": "before",
+        "family": "flux2-klein",
+        "index": 0,
+        "local_clock": 0,
+        "logical_step": 2,
+        "next_operation": "joint_block.0",
+        "operator": "joint",
+        "phase": "joint"
+      },
+      "fingerprint": "8ccb66606eb879c23f819b49060f23624ae7bd523ad1aface825af3119d88bfa",
+      "logical_parent": "e526d7321b1135488109cab9fd49de00dcc184a00dc80bf6094c55103b5cb850",
+      "manifest": {
+        "boundary": "diffusion-step:2/joint:0",
+        "execution": {
+          "adapter": "native-boundary-v2",
+          "batch": {
+            "guidance": 1.0,
+            "reference_images": false,
+            "size": 1
+          },
+          "decoder_normalization_device": "cpu",
+          "device": {
+            "index": 0,
+            "type": "cuda"
+          },
+          "dtype": "torch.bfloat16",
+          "environment_versions": {
+            "diffusers": "0.39.0",
+            "python": "3.14.6",
+            "torch": "2.13.0+cu130"
+          },
+          "family": "flux2-klein",
+          "granularity": "operation",
+          "guidance": 1.0,
+          "kernel": {
+            "scheduler": "FlowMatchEulerDiscreteScheduler",
+            "transformer": "Flux2Transformer2DModel"
+          },
+          "model_program": "project->joint_block[*]->single_block[*]->norm/proj_readout->flow_commit",
+          "numeric_scope": {
+            "autocast": false,
+            "deterministic_algorithms": true,
+            "float32_matmul_precision": "highest",
+            "inference_mode": true,
+            "stochastic_sampling": false,
+            "tensor_layout": "state-slot-bound-stride",
+            "tf32_matmul": false,
+            "torch_num_threads": 4
+          },
+          "parity": "same-program-exact",
+          "reference_images": false
+        },
+        "execution_point": {
+          "items": [
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "edge"
+              },
+              "value": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "before"
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "family"
+              },
+              "value": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "flux2-klein"
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "index"
+              },
+              "value": {
+                "kind": "scalar",
+                "type": "int",
+                "value": 0
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "local_clock"
+              },
+              "value": {
+                "kind": "scalar",
+                "type": "int",
+                "value": 0
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "logical_step"
+              },
+              "value": {
+                "kind": "scalar",
+                "type": "int",
+                "value": 2
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "next_operation"
+              },
+              "value": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "joint_block.0"
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "operator"
+              },
+              "value": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "joint"
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "phase"
+              },
+              "value": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "joint"
+              }
+            }
+          ],
+          "kind": "mapping"
+        },
+        "model_identity": "a09191c5ff813af77bf89d8e4b9a07237befb67c1aef3e722322d3491250fcd0",
+        "parent": "e526d7321b1135488109cab9fd49de00dcc184a00dc80bf6094c55103b5cb850",
+        "payload": {
+          "items": [
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "conditioning"
+              },
+              "value": {
+                "dtype": "torch.bfloat16",
+                "kind": "tensor",
+                "layout": "strided-dense",
+                "sha256": "6ebb687c3eecd2750b176ed9d211bc240f79a21f59c6fcf0bb3d0f638e75e471",
+                "shape": [
+                  1,
+                  512,
+                  7680
+                ],
+                "stride": [
+                  3932160,
+                  7680,
+                  1
+                ],
+                "tensor": "6ebb687c3eecd2750b176ed9d211bc240f79a21f59c6fcf0bb3d0f638e75e471"
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "context"
+              },
+              "value": {
+                "items": [
+                  {
+                    "key": {
+                      "kind": "scalar",
+                      "type": "str",
+                      "value": "img_mod"
+                    },
+                    "value": {
+                      "dtype": "torch.bfloat16",
+                      "kind": "tensor",
+                      "layout": "strided-dense",
+                      "sha256": "ce262fc8e7eedc851e0cca5c57b8621b9b3e13654cbef5986bae43127cb75423",
+                      "shape": [
+                        1,
+                        18432
+                      ],
+                      "stride": [
+                        18432,
+                        1
+                      ],
+                      "tensor": "ce262fc8e7eedc851e0cca5c57b8621b9b3e13654cbef5986bae43127cb75423"
+                    }
+                  },
+                  {
+                    "key": {
+                      "kind": "scalar",
+                      "type": "str",
+                      "value": "rope"
+                    },
+                    "value": {
+                      "items": [
+                        {
+                          "dtype": "torch.float32",
+                          "kind": "tensor",
+                          "layout": "strided-dense",
+                          "sha256": "e360761cf776cb57fb6cb9a2520522d79df6f9cc5c538f2696dc02b3916dc187",
+                          "shape": [
+                            1536,
+                            128
+                          ],
+                          "stride": [
+                            128,
+                            1
+                          ],
+                          "tensor": "e360761cf776cb57fb6cb9a2520522d79df6f9cc5c538f2696dc02b3916dc187"
+                        },
+                        {
+                          "dtype": "torch.float32",
+                          "kind": "tensor",
+                          "layout": "strided-dense",
+                          "sha256": "b114dbf5c14984bd361c8047894067768a6c0432c79e079bc11719a3052baff2",
+                          "shape": [
+                            1536,
+                            128
+                          ],
+                          "stride": [
+                            128,
+                            1
+                          ],
+                          "tensor": "b114dbf5c14984bd361c8047894067768a6c0432c79e079bc11719a3052baff2"
+                        }
+                      ],
+                      "kind": "tuple"
+                    }
+                  },
+                  {
+                    "key": {
+                      "kind": "scalar",
+                      "type": "str",
+                      "value": "single_mod"
+                    },
+                    "value": {
+                      "dtype": "torch.bfloat16",
+                      "kind": "tensor",
+                      "layout": "strided-dense",
+                      "sha256": "9ad7cd8c7ea237338c2c4f3faef2891855b54153d52250b1f67c96066cf3a306",
+                      "shape": [
+                        1,
+                        9216
+                      ],
+                      "stride": [
+                        9216,
+                        1
+                      ],
+                      "tensor": "9ad7cd8c7ea237338c2c4f3faef2891855b54153d52250b1f67c96066cf3a306"
+                    }
+                  },
+                  {
+                    "key": {
+                      "kind": "scalar",
+                      "type": "str",
+                      "value": "temb"
+                    },
+                    "value": {
+                      "dtype": "torch.bfloat16",
+                      "kind": "tensor",
+                      "layout": "strided-dense",
+                      "sha256": "51620d17a1fa146af2d06915d47026cbd0b4c2bc754b3414ad78e01a37a628eb",
+                      "shape": [
+                        1,
+                        3072
+                      ],
+                      "stride": [
+                        3072,
+                        1
+                      ],
+                      "tensor": "51620d17a1fa146af2d06915d47026cbd0b4c2bc754b3414ad78e01a37a628eb"
+                    }
+                  },
+                  {
+                    "key": {
+                      "kind": "scalar",
+                      "type": "str",
+                      "value": "txt_mod"
+                    },
+                    "value": {
+                      "dtype": "torch.bfloat16",
+                      "kind": "tensor",
+                      "layout": "strided-dense",
+                      "sha256": "bbaf5213c0f2741d03422acbd4db8c3fb8075eb2bb68975cf9eed3740e2b18c4",
+                      "shape": [
+                        1,
+                        18432
+                      ],
+                      "stride": [
+                        18432,
+                        1
+                      ],
+                      "tensor": "bbaf5213c0f2741d03422acbd4db8c3fb8075eb2bb68975cf9eed3740e2b18c4"
+                    }
+                  }
+                ],
+                "kind": "mapping"
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "cursor"
+              },
+              "value": {
+                "kind": "scalar",
+                "type": "int",
+                "value": 0
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "image"
+              },
+              "value": {
+                "dtype": "torch.bfloat16",
+                "kind": "tensor",
+                "layout": "strided-dense",
+                "sha256": "9dab252874e58810c53c7b5a5fc84a3b21b5838d2127e9d50cde7118acdf68f0",
+                "shape": [
+                  1,
+                  1024,
+                  3072
+                ],
+                "stride": [
+                  3145728,
+                  3072,
+                  1
+                ],
+                "tensor": "9dab252874e58810c53c7b5a5fc84a3b21b5838d2127e9d50cde7118acdf68f0"
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "img_ids"
+              },
+              "value": {
+                "dtype": "torch.int64",
+                "kind": "tensor",
+                "layout": "strided-dense",
+                "sha256": "87b4f95cfb97df0287488b86742472e263ea5e9c080c2e3348f6f64224f797af",
+                "shape": [
+                  1,
+                  1024,
+                  4
+                ],
+                "stride": [
+                  4096,
+                  4,
+                  1
+                ],
+                "tensor": "87b4f95cfb97df0287488b86742472e263ea5e9c080c2e3348f6f64224f797af"
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "latent"
+              },
+              "value": {
+                "dtype": "torch.bfloat16",
+                "kind": "tensor",
+                "layout": "strided-dense",
+                "sha256": "135c4c210ae6ad70e0a0fab9a31ec9cbfad3571a0a5c7727b5cbc3251267a1ab",
+                "shape": [
+                  1,
+                  1024,
+                  128
+                ],
+                "stride": [
+                  131072,
+                  1,
+                  1024
+                ],
+                "tensor": "135c4c210ae6ad70e0a0fab9a31ec9cbfad3571a0a5c7727b5cbc3251267a1ab"
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "noise_prediction"
+              },
+              "value": {
+                "kind": "scalar",
+                "type": "none",
+                "value": null
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "phase"
+              },
+              "value": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "joint"
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "sigmas"
+              },
+              "value": {
+                "dtype": "torch.float32",
+                "kind": "tensor",
+                "layout": "strided-dense",
+                "sha256": "47eb6994cb84cb458fd9a90cd3eb5e5890856680c154abec35f26e833e400852",
+                "shape": [
+                  5
+                ],
+                "stride": [
+                  1
+                ],
+                "tensor": "47eb6994cb84cb458fd9a90cd3eb5e5890856680c154abec35f26e833e400852"
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "step"
+              },
+              "value": {
+                "kind": "scalar",
+                "type": "int",
+                "value": 2
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "text"
+              },
+              "value": {
+                "dtype": "torch.bfloat16",
+                "kind": "tensor",
+                "layout": "strided-dense",
+                "sha256": "3285adde138ec6bd3b427d3882ce2b3ecb12e0034f6ab009dfc6a76e99d635f8",
+                "shape": [
+                  1,
+                  512,
+                  3072
+                ],
+                "stride": [
+                  1572864,
+                  3072,
+                  1
+                ],
+                "tensor": "3285adde138ec6bd3b427d3882ce2b3ecb12e0034f6ab009dfc6a76e99d635f8"
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "timesteps"
+              },
+              "value": {
+                "dtype": "torch.float32",
+                "kind": "tensor",
+                "layout": "strided-dense",
+                "sha256": "1e400c851167980caf2cd88333c7b146d8c3168b4b49d817e7df5271dbda734b",
+                "shape": [
+                  4
+                ],
+                "stride": [
+                  1
+                ],
+                "tensor": "1e400c851167980caf2cd88333c7b146d8c3168b4b49d817e7df5271dbda734b"
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "txt_ids"
+              },
+              "value": {
+                "dtype": "torch.int64",
+                "kind": "tensor",
+                "layout": "strided-dense",
+                "sha256": "14787eca2e15009073d22c1a9bc4782762d6b6b46ee5ff1bd46178ca6d97cbe7",
+                "shape": [
+                  1,
+                  512,
+                  4
+                ],
+                "stride": [
+                  2048,
+                  4,
+                  1
+                ],
+                "tensor": "14787eca2e15009073d22c1a9bc4782762d6b6b46ee5ff1bd46178ca6d97cbe7"
+              }
+            }
+          ],
+          "kind": "mapping"
+        },
+        "schema": "saturn-pub-statecut-v2",
+        "surface": {
+          "items": [
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "consumer"
+              },
+              "value": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "native-flux2-suffix"
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "horizon"
+              },
+              "value": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "native-diffusion-suffix"
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "schema"
+              },
+              "value": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "saturn-pub-surface-v1"
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "slots"
+              },
+              "value": {
+                "items": [
+                  {
+                    "items": [
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "consumer"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "transformer"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "invalidates"
+                        },
+                        "value": {
+                          "items": [],
+                          "kind": "list"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "name"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "latent"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "persistence"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "authoritative"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "producer"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "flow_scheduler"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "role"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "carrier"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "schema"
+                        },
+                        "value": {
+                          "items": [
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "device"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "cuda:0"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "dtype"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "torch.bfloat16"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "kind"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "tensor"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "optional"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "bool",
+                                "value": false
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "shape"
+                              },
+                              "value": {
+                                "items": [
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 1
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 1024
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 128
+                                  }
+                                ],
+                                "kind": "list"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "stride"
+                              },
+                              "value": {
+                                "items": [
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 131072
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 1
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 1024
+                                  }
+                                ],
+                                "kind": "list"
+                              }
+                            }
+                          ],
+                          "kind": "mapping"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "writable"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "bool",
+                          "value": false
+                        }
+                      }
+                    ],
+                    "kind": "mapping"
+                  },
+                  {
+                    "items": [
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "consumer"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "transformer"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "invalidates"
+                        },
+                        "value": {
+                          "items": [],
+                          "kind": "list"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "name"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "conditioning"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "persistence"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "authoritative"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "producer"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "caller"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "role"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "conditioning"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "schema"
+                        },
+                        "value": {
+                          "items": [
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "device"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "cuda:0"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "dtype"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "torch.bfloat16"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "kind"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "tensor"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "optional"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "bool",
+                                "value": false
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "shape"
+                              },
+                              "value": {
+                                "items": [
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 1
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 512
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 7680
+                                  }
+                                ],
+                                "kind": "list"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "stride"
+                              },
+                              "value": {
+                                "items": [
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 3932160
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 7680
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 1
+                                  }
+                                ],
+                                "kind": "list"
+                              }
+                            }
+                          ],
+                          "kind": "mapping"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "writable"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "bool",
+                          "value": true
+                        }
+                      }
+                    ],
+                    "kind": "mapping"
+                  },
+                  {
+                    "items": [
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "consumer"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "rope"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "invalidates"
+                        },
+                        "value": {
+                          "items": [],
+                          "kind": "list"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "name"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "img_ids"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "persistence"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "authoritative"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "producer"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "caller"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "role"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "address"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "schema"
+                        },
+                        "value": {
+                          "items": [
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "device"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "cuda:0"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "dtype"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "torch.int64"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "kind"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "tensor"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "optional"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "bool",
+                                "value": false
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "shape"
+                              },
+                              "value": {
+                                "items": [
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 1
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 1024
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 4
+                                  }
+                                ],
+                                "kind": "list"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "stride"
+                              },
+                              "value": {
+                                "items": [
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 4096
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 4
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 1
+                                  }
+                                ],
+                                "kind": "list"
+                              }
+                            }
+                          ],
+                          "kind": "mapping"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "writable"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "bool",
+                          "value": false
+                        }
+                      }
+                    ],
+                    "kind": "mapping"
+                  },
+                  {
+                    "items": [
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "consumer"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "rope"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "invalidates"
+                        },
+                        "value": {
+                          "items": [],
+                          "kind": "list"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "name"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "txt_ids"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "persistence"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "authoritative"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "producer"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "caller"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "role"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "address"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "schema"
+                        },
+                        "value": {
+                          "items": [
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "device"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "cuda:0"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "dtype"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "torch.int64"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "kind"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "tensor"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "optional"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "bool",
+                                "value": false
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "shape"
+                              },
+                              "value": {
+                                "items": [
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 1
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 512
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 4
+                                  }
+                                ],
+                                "kind": "list"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "stride"
+                              },
+                              "value": {
+                                "items": [
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 2048
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 4
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 1
+                                  }
+                                ],
+                                "kind": "list"
+                              }
+                            }
+                          ],
+                          "kind": "mapping"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "writable"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "bool",
+                          "value": false
+                        }
+                      }
+                    ],
+                    "kind": "mapping"
+                  },
+                  {
+                    "items": [
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "consumer"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "transformer_and_scheduler"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "invalidates"
+                        },
+                        "value": {
+                          "items": [],
+                          "kind": "list"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "name"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "timesteps"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "persistence"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "authoritative"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "producer"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "caller"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "role"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "schedule"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "schema"
+                        },
+                        "value": {
+                          "items": [
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "device"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "cuda:0"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "dtype"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "torch.float32"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "kind"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "tensor"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "optional"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "bool",
+                                "value": false
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "shape"
+                              },
+                              "value": {
+                                "items": [
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 4
+                                  }
+                                ],
+                                "kind": "list"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "stride"
+                              },
+                              "value": {
+                                "items": [
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 1
+                                  }
+                                ],
+                                "kind": "list"
+                              }
+                            }
+                          ],
+                          "kind": "mapping"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "writable"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "bool",
+                          "value": false
+                        }
+                      }
+                    ],
+                    "kind": "mapping"
+                  },
+                  {
+                    "items": [
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "consumer"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "scheduler"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "invalidates"
+                        },
+                        "value": {
+                          "items": [],
+                          "kind": "list"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "name"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "sigmas"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "persistence"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "authoritative"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "producer"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "caller"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "role"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "schedule"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "schema"
+                        },
+                        "value": {
+                          "items": [
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "device"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "cuda:0"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "dtype"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "torch.float32"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "kind"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "tensor"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "optional"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "bool",
+                                "value": false
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "shape"
+                              },
+                              "value": {
+                                "items": [
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 5
+                                  }
+                                ],
+                                "kind": "list"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "stride"
+                              },
+                              "value": {
+                                "items": [
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 1
+                                  }
+                                ],
+                                "kind": "list"
+                              }
+                            }
+                          ],
+                          "kind": "mapping"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "writable"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "bool",
+                          "value": false
+                        }
+                      }
+                    ],
+                    "kind": "mapping"
+                  },
+                  {
+                    "items": [
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "consumer"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "native_suffix"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "invalidates"
+                        },
+                        "value": {
+                          "items": [],
+                          "kind": "list"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "name"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "text"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "persistence"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "authoritative"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "producer"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "native_block"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "role"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "carrier"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "schema"
+                        },
+                        "value": {
+                          "items": [
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "device"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "cuda:0"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "dtype"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "torch.bfloat16"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "kind"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "tensor"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "optional"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "bool",
+                                "value": false
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "shape"
+                              },
+                              "value": {
+                                "items": [
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 1
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 512
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 3072
+                                  }
+                                ],
+                                "kind": "list"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "stride"
+                              },
+                              "value": {
+                                "items": [
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 1572864
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 3072
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 1
+                                  }
+                                ],
+                                "kind": "list"
+                              }
+                            }
+                          ],
+                          "kind": "mapping"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "writable"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "bool",
+                          "value": true
+                        }
+                      }
+                    ],
+                    "kind": "mapping"
+                  },
+                  {
+                    "items": [
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "consumer"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "native_suffix"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "invalidates"
+                        },
+                        "value": {
+                          "items": [],
+                          "kind": "list"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "name"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "image"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "persistence"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "authoritative"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "producer"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "native_block"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "role"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "carrier"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "schema"
+                        },
+                        "value": {
+                          "items": [
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "device"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "cuda:0"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "dtype"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "torch.bfloat16"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "kind"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "tensor"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "optional"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "bool",
+                                "value": false
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "shape"
+                              },
+                              "value": {
+                                "items": [
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 1
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 1024
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 3072
+                                  }
+                                ],
+                                "kind": "list"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "stride"
+                              },
+                              "value": {
+                                "items": [
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 3145728
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 3072
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "int",
+                                    "value": 1
+                                  }
+                                ],
+                                "kind": "list"
+                              }
+                            }
+                          ],
+                          "kind": "mapping"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "writable"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "bool",
+                          "value": true
+                        }
+                      }
+                    ],
+                    "kind": "mapping"
+                  },
+                  {
+                    "items": [
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "consumer"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "flow_scheduler"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "invalidates"
+                        },
+                        "value": {
+                          "items": [],
+                          "kind": "list"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "name"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "noise_prediction"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "persistence"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "authoritative"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "producer"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "norm_and_projection"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "role"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "derived"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "schema"
+                        },
+                        "value": {
+                          "items": [
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "kind"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "tensor"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "optional"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "bool",
+                                "value": true
+                              }
+                            }
+                          ],
+                          "kind": "mapping"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "writable"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "bool",
+                          "value": false
+                        }
+                      }
+                    ],
+                    "kind": "mapping"
+                  },
+                  {
+                    "items": [
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "consumer"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "native_suffix"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "invalidates"
+                        },
+                        "value": {
+                          "items": [],
+                          "kind": "list"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "name"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "context"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "persistence"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "authoritative"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "producer"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "project"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "role"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "closure"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "schema"
+                        },
+                        "value": {
+                          "items": [
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "kind"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "tensor_mapping"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "optional"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "bool",
+                                "value": false
+                              }
+                            }
+                          ],
+                          "kind": "mapping"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "writable"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "bool",
+                          "value": false
+                        }
+                      }
+                    ],
+                    "kind": "mapping"
+                  },
+                  {
+                    "items": [
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "consumer"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "runtime"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "invalidates"
+                        },
+                        "value": {
+                          "items": [],
+                          "kind": "list"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "name"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "step"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "persistence"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "authoritative"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "producer"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "flow_scheduler"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "role"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "clock"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "schema"
+                        },
+                        "value": {
+                          "items": [
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "kind"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "integer"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "maximum"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "int",
+                                "value": 4
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "minimum"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "int",
+                                "value": 0
+                              }
+                            }
+                          ],
+                          "kind": "mapping"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "writable"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "bool",
+                          "value": false
+                        }
+                      }
+                    ],
+                    "kind": "mapping"
+                  },
+                  {
+                    "items": [
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "consumer"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "runtime"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "invalidates"
+                        },
+                        "value": {
+                          "items": [],
+                          "kind": "list"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "name"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "phase"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "persistence"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "authoritative"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "producer"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "runtime"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "role"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "clock"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "schema"
+                        },
+                        "value": {
+                          "items": [
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "kind"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "enum"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "values"
+                              },
+                              "value": {
+                                "items": [
+                                  {
+                                    "kind": "scalar",
+                                    "type": "str",
+                                    "value": "project"
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "str",
+                                    "value": "joint"
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "str",
+                                    "value": "single"
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "str",
+                                    "value": "readout"
+                                  },
+                                  {
+                                    "kind": "scalar",
+                                    "type": "str",
+                                    "value": "scheduler"
+                                  }
+                                ],
+                                "kind": "list"
+                              }
+                            }
+                          ],
+                          "kind": "mapping"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "writable"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "bool",
+                          "value": false
+                        }
+                      }
+                    ],
+                    "kind": "mapping"
+                  },
+                  {
+                    "items": [
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "consumer"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "runtime"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "invalidates"
+                        },
+                        "value": {
+                          "items": [],
+                          "kind": "list"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "name"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "cursor"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "persistence"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "authoritative"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "producer"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "native_block"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "role"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "clock"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "schema"
+                        },
+                        "value": {
+                          "items": [
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "kind"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "integer"
+                              }
+                            },
+                            {
+                              "key": {
+                                "kind": "scalar",
+                                "type": "str",
+                                "value": "minimum"
+                              },
+                              "value": {
+                                "kind": "scalar",
+                                "type": "int",
+                                "value": 0
+                              }
+                            }
+                          ],
+                          "kind": "mapping"
+                        }
+                      },
+                      {
+                        "key": {
+                          "kind": "scalar",
+                          "type": "str",
+                          "value": "writable"
+                        },
+                        "value": {
+                          "kind": "scalar",
+                          "type": "bool",
+                          "value": false
+                        }
+                      }
+                    ],
+                    "kind": "mapping"
+                  }
+                ],
+                "kind": "list"
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "state_schema"
+              },
+              "value": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "saturn-pub-flux2-klein-state-v2"
+              }
+            }
+          ],
+          "kind": "mapping"
+        }
+      },
+      "physical_blobs": [
+        "23a59628d83d3920bf93f10d7e2f955cd3c3d46dead93239840f502e1402e0a4",
+        "34c8692938e0ea8f97f09b53d4a16153408472d562bfbdf6c3beef43e4a3f686",
+        "490f29b1ca6151d1d77bce1d6ecad10f5a3b236ce2170dbac1e615a951386dda",
+        "51a8545dc82dd0b100aba7bf0562c2b822e5e2a83846e358fefb9b9132f42b00",
+        "7b34ed4c73a67ab74a8665995676099450671b04531c326a9dbf729185a5e318",
+        "85ac7cd678c056d3a40ac27b1da4f004aa005c1af4e5ea765698ae4f07120d75",
+        "cae883155a3fbe966452425640cbddb2c0e3ab115caa8af7f0819bb48b1a2f3d",
+        "efc40a7fb8733344b3b6285d61a1994a071bb122d72c5bf03c3b9c1f9099d9ae",
+        "f944dbec8104bcd6dc8140f040a8b5121d2de43e62064d213f5b6816fbccbb13"
+      ],
+      "schema": "saturn-pub-local-cut-v2",
+      "slots": {
+        "conditioning": "978d90a6650cc3d4a3e2b9cd08c6675fe719634baf4b2e34584814899f50555a",
+        "context": "8dfcda9c1b88d9e75aa94be0a9aecb67767947741e8b17392d66e21a4851616c",
+        "cursor": "fc3b0a5dfbf3dd297aa00174749d465132b91366f6dddc78f28b2fb2361c32e4",
+        "image": "79ddde68a1b4a38c42490be9ae2f30b8d27cd1a8f6687b76dc897252d0e42135",
+        "img_ids": "1e8d2a6663924798743e7dd350fea2a5b9d275a6a31fbfce8c3e45146b80d551",
+        "latent": "f664ae3b70af56a1cb05cdc924dec7bb97675dd0e92932a0a8e734fd4ccdcb42",
+        "noise_prediction": "a35d30e9f469e74e01856f7788f524b6afbeb6e1e0f81e8ed7091e552948ecdd",
+        "phase": "ad9b3e75e68ae6f9bbaf0a87b99628a8e9e67b91acacda47cde0f68c87db54d8",
+        "sigmas": "3f8c25a069a463b69eb36a66913c7e75ada5139129706bf5609738f4cc4a541e",
+        "step": "caa24e6d128812e3e0b1bd8b975338790d408f09e2ae6f41854d5a5041bc33ae",
+        "text": "7c16ad3315af9ea7aa40051cb609915a05f1963ea8243f5e0f9754b38db3d532",
+        "timesteps": "9e3ab429fa5a88bb86c263e92e5af1d79e4de95de4949d8205562c3e6002c972",
+        "txt_ids": "09b30d7571db51b1e5a6e3101c9a680093864da6cab4c81047a6c9111086bfe8"
+      },
+      "surface": {
+        "consumer": "native-flux2-suffix",
+        "horizon": "native-diffusion-suffix",
+        "schema": "saturn-pub-surface-v1",
+        "slots": [
+          {
+            "consumer": "transformer",
+            "invalidates": [],
+            "name": "latent",
+            "persistence": "authoritative",
+            "producer": "flow_scheduler",
+            "role": "carrier",
+            "schema": {
+              "device": "cuda:0",
+              "dtype": "torch.bfloat16",
+              "kind": "tensor",
+              "optional": false,
+              "shape": [
+                1,
+                1024,
+                128
+              ],
+              "stride": [
+                131072,
+                1,
+                1024
+              ]
+            },
+            "writable": false
+          },
+          {
+            "consumer": "transformer",
+            "invalidates": [],
+            "name": "conditioning",
+            "persistence": "authoritative",
+            "producer": "caller",
+            "role": "conditioning",
+            "schema": {
+              "device": "cuda:0",
+              "dtype": "torch.bfloat16",
+              "kind": "tensor",
+              "optional": false,
+              "shape": [
+                1,
+                512,
+                7680
+              ],
+              "stride": [
+                3932160,
+                7680,
+                1
+              ]
+            },
+            "writable": true
+          },
+          {
+            "consumer": "rope",
+            "invalidates": [],
+            "name": "img_ids",
+            "persistence": "authoritative",
+            "producer": "caller",
+            "role": "address",
+            "schema": {
+              "device": "cuda:0",
+              "dtype": "torch.int64",
+              "kind": "tensor",
+              "optional": false,
+              "shape": [
+                1,
+                1024,
+                4
+              ],
+              "stride": [
+                4096,
+                4,
+                1
+              ]
+            },
+            "writable": false
+          },
+          {
+            "consumer": "rope",
+            "invalidates": [],
+            "name": "txt_ids",
+            "persistence": "authoritative",
+            "producer": "caller",
+            "role": "address",
+            "schema": {
+              "device": "cuda:0",
+              "dtype": "torch.int64",
+              "kind": "tensor",
+              "optional": false,
+              "shape": [
+                1,
+                512,
+                4
+              ],
+              "stride": [
+                2048,
+                4,
+                1
+              ]
+            },
+            "writable": false
+          },
+          {
+            "consumer": "transformer_and_scheduler",
+            "invalidates": [],
+            "name": "timesteps",
+            "persistence": "authoritative",
+            "producer": "caller",
+            "role": "schedule",
+            "schema": {
+              "device": "cuda:0",
+              "dtype": "torch.float32",
+              "kind": "tensor",
+              "optional": false,
+              "shape": [
+                4
+              ],
+              "stride": [
+                1
+              ]
+            },
+            "writable": false
+          },
+          {
+            "consumer": "scheduler",
+            "invalidates": [],
+            "name": "sigmas",
+            "persistence": "authoritative",
+            "producer": "caller",
+            "role": "schedule",
+            "schema": {
+              "device": "cuda:0",
+              "dtype": "torch.float32",
+              "kind": "tensor",
+              "optional": false,
+              "shape": [
+                5
+              ],
+              "stride": [
+                1
+              ]
+            },
+            "writable": false
+          },
+          {
+            "consumer": "native_suffix",
+            "invalidates": [],
+            "name": "text",
+            "persistence": "authoritative",
+            "producer": "native_block",
+            "role": "carrier",
+            "schema": {
+              "device": "cuda:0",
+              "dtype": "torch.bfloat16",
+              "kind": "tensor",
+              "optional": false,
+              "shape": [
+                1,
+                512,
+                3072
+              ],
+              "stride": [
+                1572864,
+                3072,
+                1
+              ]
+            },
+            "writable": true
+          },
+          {
+            "consumer": "native_suffix",
+            "invalidates": [],
+            "name": "image",
+            "persistence": "authoritative",
+            "producer": "native_block",
+            "role": "carrier",
+            "schema": {
+              "device": "cuda:0",
+              "dtype": "torch.bfloat16",
+              "kind": "tensor",
+              "optional": false,
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "stride": [
+                3145728,
+                3072,
+                1
+              ]
+            },
+            "writable": true
+          },
+          {
+            "consumer": "flow_scheduler",
+            "invalidates": [],
+            "name": "noise_prediction",
+            "persistence": "authoritative",
+            "producer": "norm_and_projection",
+            "role": "derived",
+            "schema": {
+              "kind": "tensor",
+              "optional": true
+            },
+            "writable": false
+          },
+          {
+            "consumer": "native_suffix",
+            "invalidates": [],
+            "name": "context",
+            "persistence": "authoritative",
+            "producer": "project",
+            "role": "closure",
+            "schema": {
+              "kind": "tensor_mapping",
+              "optional": false
+            },
+            "writable": false
+          },
+          {
+            "consumer": "runtime",
+            "invalidates": [],
+            "name": "step",
+            "persistence": "authoritative",
+            "producer": "flow_scheduler",
+            "role": "clock",
+            "schema": {
+              "kind": "integer",
+              "maximum": 4,
+              "minimum": 0
+            },
+            "writable": false
+          },
+          {
+            "consumer": "runtime",
+            "invalidates": [],
+            "name": "phase",
+            "persistence": "authoritative",
+            "producer": "runtime",
+            "role": "clock",
+            "schema": {
+              "kind": "enum",
+              "values": [
+                "project",
+                "joint",
+                "single",
+                "readout",
+                "scheduler"
+              ]
+            },
+            "writable": false
+          },
+          {
+            "consumer": "runtime",
+            "invalidates": [],
+            "name": "cursor",
+            "persistence": "authoritative",
+            "producer": "native_block",
+            "role": "clock",
+            "schema": {
+              "kind": "integer",
+              "minimum": 0
+            },
+            "writable": false
+          }
+        ],
+        "state_schema": "saturn-pub-flux2-klein-state-v2"
+      }
+    },
+    "cutFile": {
+      "path": "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/cuts/8ccb66606eb879c23f819b49060f23624ae7bd523ad1aface825af3119d88bfa.json",
+      "sha256": "5399bbd36361bab39a9c76f2ad8e80ed7057834654c7caa111ec66df3e7eb963"
+    },
+    "cutID": "8ccb66606eb879c23f819b49060f23624ae7bd523ad1aface825af3119d88bfa",
+    "pages": {
+      "context": {
+        "declaredDescriptor": {
+          "items": [
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "img_mod"
+              },
+              "value": {
+                "dtype": "torch.bfloat16",
+                "kind": "tensor",
+                "layout": "strided-dense",
+                "sha256": "ce262fc8e7eedc851e0cca5c57b8621b9b3e13654cbef5986bae43127cb75423",
+                "shape": [
+                  1,
+                  18432
+                ],
+                "stride": [
+                  18432,
+                  1
+                ],
+                "tensor": "ce262fc8e7eedc851e0cca5c57b8621b9b3e13654cbef5986bae43127cb75423"
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "rope"
+              },
+              "value": {
+                "items": [
+                  {
+                    "dtype": "torch.float32",
+                    "kind": "tensor",
+                    "layout": "strided-dense",
+                    "sha256": "e360761cf776cb57fb6cb9a2520522d79df6f9cc5c538f2696dc02b3916dc187",
+                    "shape": [
+                      1536,
+                      128
+                    ],
+                    "stride": [
+                      128,
+                      1
+                    ],
+                    "tensor": "e360761cf776cb57fb6cb9a2520522d79df6f9cc5c538f2696dc02b3916dc187"
+                  },
+                  {
+                    "dtype": "torch.float32",
+                    "kind": "tensor",
+                    "layout": "strided-dense",
+                    "sha256": "b114dbf5c14984bd361c8047894067768a6c0432c79e079bc11719a3052baff2",
+                    "shape": [
+                      1536,
+                      128
+                    ],
+                    "stride": [
+                      128,
+                      1
+                    ],
+                    "tensor": "b114dbf5c14984bd361c8047894067768a6c0432c79e079bc11719a3052baff2"
+                  }
+                ],
+                "kind": "tuple"
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "single_mod"
+              },
+              "value": {
+                "dtype": "torch.bfloat16",
+                "kind": "tensor",
+                "layout": "strided-dense",
+                "sha256": "9ad7cd8c7ea237338c2c4f3faef2891855b54153d52250b1f67c96066cf3a306",
+                "shape": [
+                  1,
+                  9216
+                ],
+                "stride": [
+                  9216,
+                  1
+                ],
+                "tensor": "9ad7cd8c7ea237338c2c4f3faef2891855b54153d52250b1f67c96066cf3a306"
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "temb"
+              },
+              "value": {
+                "dtype": "torch.bfloat16",
+                "kind": "tensor",
+                "layout": "strided-dense",
+                "sha256": "51620d17a1fa146af2d06915d47026cbd0b4c2bc754b3414ad78e01a37a628eb",
+                "shape": [
+                  1,
+                  3072
+                ],
+                "stride": [
+                  3072,
+                  1
+                ],
+                "tensor": "51620d17a1fa146af2d06915d47026cbd0b4c2bc754b3414ad78e01a37a628eb"
+              }
+            },
+            {
+              "key": {
+                "kind": "scalar",
+                "type": "str",
+                "value": "txt_mod"
+              },
+              "value": {
+                "dtype": "torch.bfloat16",
+                "kind": "tensor",
+                "layout": "strided-dense",
+                "sha256": "bbaf5213c0f2741d03422acbd4db8c3fb8075eb2bb68975cf9eed3740e2b18c4",
+                "shape": [
+                  1,
+                  18432
+                ],
+                "stride": [
+                  18432,
+                  1
+                ],
+                "tensor": "bbaf5213c0f2741d03422acbd4db8c3fb8075eb2bb68975cf9eed3740e2b18c4"
+              }
+            }
+          ],
+          "kind": "mapping"
+        },
+        "files": {
+          "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/blobs/7b34ed4c73a67ab74a8665995676099450671b04531c326a9dbf729185a5e318.safetensors": "7b34ed4c73a67ab74a8665995676099450671b04531c326a9dbf729185a5e318",
+          "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/pages/8dfcda9c1b88d9e75aa94be0a9aecb67767947741e8b17392d66e21a4851616c.json": "8dfcda9c1b88d9e75aa94be0a9aecb67767947741e8b17392d66e21a4851616c"
+        },
+        "metadata": {
+          "encoded": {
+            "items": {
+              "img_mod": {
+                "kind": "tensor",
+                "name": "tensor_0",
+                "shape": [
+                  1,
+                  18432
+                ],
+                "stride": [
+                  18432,
+                  1
+                ]
+              },
+              "rope": {
+                "items": [
+                  {
+                    "kind": "tensor",
+                    "name": "tensor_1",
+                    "shape": [
+                      1536,
+                      128
+                    ],
+                    "stride": [
+                      128,
+                      1
+                    ]
+                  },
+                  {
+                    "kind": "tensor",
+                    "name": "tensor_2",
+                    "shape": [
+                      1536,
+                      128
+                    ],
+                    "stride": [
+                      128,
+                      1
+                    ]
+                  }
+                ],
+                "kind": "tuple"
+              },
+              "single_mod": {
+                "kind": "tensor",
+                "name": "tensor_3",
+                "shape": [
+                  1,
+                  9216
+                ],
+                "stride": [
+                  9216,
+                  1
+                ]
+              },
+              "temb": {
+                "kind": "tensor",
+                "name": "tensor_4",
+                "shape": [
+                  1,
+                  3072
+                ],
+                "stride": [
+                  3072,
+                  1
+                ]
+              },
+              "txt_mod": {
+                "kind": "tensor",
+                "name": "tensor_5",
+                "shape": [
+                  1,
+                  18432
+                ],
+                "stride": [
+                  18432,
+                  1
+                ]
+              }
+            },
+            "kind": "mapping"
+          },
+          "schema": "saturn-pub-slot-page-v1",
+          "tensor_blob": "7b34ed4c73a67ab74a8665995676099450671b04531c326a9dbf729185a5e318",
+          "value": {
+            "items": [
+              {
+                "key": {
+                  "kind": "scalar",
+                  "type": "str",
+                  "value": "img_mod"
+                },
+                "value": {
+                  "dtype": "torch.bfloat16",
+                  "kind": "tensor",
+                  "layout": "strided-dense",
+                  "sha256": "ce262fc8e7eedc851e0cca5c57b8621b9b3e13654cbef5986bae43127cb75423",
+                  "shape": [
+                    1,
+                    18432
+                  ],
+                  "stride": [
+                    18432,
+                    1
+                  ],
+                  "tensor": "ce262fc8e7eedc851e0cca5c57b8621b9b3e13654cbef5986bae43127cb75423"
+                }
+              },
+              {
+                "key": {
+                  "kind": "scalar",
+                  "type": "str",
+                  "value": "rope"
+                },
+                "value": {
+                  "items": [
+                    {
+                      "dtype": "torch.float32",
+                      "kind": "tensor",
+                      "layout": "strided-dense",
+                      "sha256": "e360761cf776cb57fb6cb9a2520522d79df6f9cc5c538f2696dc02b3916dc187",
+                      "shape": [
+                        1536,
+                        128
+                      ],
+                      "stride": [
+                        128,
+                        1
+                      ],
+                      "tensor": "e360761cf776cb57fb6cb9a2520522d79df6f9cc5c538f2696dc02b3916dc187"
+                    },
+                    {
+                      "dtype": "torch.float32",
+                      "kind": "tensor",
+                      "layout": "strided-dense",
+                      "sha256": "b114dbf5c14984bd361c8047894067768a6c0432c79e079bc11719a3052baff2",
+                      "shape": [
+                        1536,
+                        128
+                      ],
+                      "stride": [
+                        128,
+                        1
+                      ],
+                      "tensor": "b114dbf5c14984bd361c8047894067768a6c0432c79e079bc11719a3052baff2"
+                    }
+                  ],
+                  "kind": "tuple"
+                }
+              },
+              {
+                "key": {
+                  "kind": "scalar",
+                  "type": "str",
+                  "value": "single_mod"
+                },
+                "value": {
+                  "dtype": "torch.bfloat16",
+                  "kind": "tensor",
+                  "layout": "strided-dense",
+                  "sha256": "9ad7cd8c7ea237338c2c4f3faef2891855b54153d52250b1f67c96066cf3a306",
+                  "shape": [
+                    1,
+                    9216
+                  ],
+                  "stride": [
+                    9216,
+                    1
+                  ],
+                  "tensor": "9ad7cd8c7ea237338c2c4f3faef2891855b54153d52250b1f67c96066cf3a306"
+                }
+              },
+              {
+                "key": {
+                  "kind": "scalar",
+                  "type": "str",
+                  "value": "temb"
+                },
+                "value": {
+                  "dtype": "torch.bfloat16",
+                  "kind": "tensor",
+                  "layout": "strided-dense",
+                  "sha256": "51620d17a1fa146af2d06915d47026cbd0b4c2bc754b3414ad78e01a37a628eb",
+                  "shape": [
+                    1,
+                    3072
+                  ],
+                  "stride": [
+                    3072,
+                    1
+                  ],
+                  "tensor": "51620d17a1fa146af2d06915d47026cbd0b4c2bc754b3414ad78e01a37a628eb"
+                }
+              },
+              {
+                "key": {
+                  "kind": "scalar",
+                  "type": "str",
+                  "value": "txt_mod"
+                },
+                "value": {
+                  "dtype": "torch.bfloat16",
+                  "kind": "tensor",
+                  "layout": "strided-dense",
+                  "sha256": "bbaf5213c0f2741d03422acbd4db8c3fb8075eb2bb68975cf9eed3740e2b18c4",
+                  "shape": [
+                    1,
+                    18432
+                  ],
+                  "stride": [
+                    18432,
+                    1
+                  ],
+                  "tensor": "bbaf5213c0f2741d03422acbd4db8c3fb8075eb2bb68975cf9eed3740e2b18c4"
+                }
+              }
+            ],
+            "kind": "mapping"
+          }
+        },
+        "pageID": "8dfcda9c1b88d9e75aa94be0a9aecb67767947741e8b17392d66e21a4851616c",
+        "store": "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store"
+      },
+      "text": {
+        "declaredDescriptor": {
+          "dtype": "torch.bfloat16",
+          "kind": "tensor",
+          "layout": "strided-dense",
+          "sha256": "3285adde138ec6bd3b427d3882ce2b3ecb12e0034f6ab009dfc6a76e99d635f8",
+          "shape": [
+            1,
+            512,
+            3072
+          ],
+          "stride": [
+            1572864,
+            3072,
+            1
+          ],
+          "tensor": "3285adde138ec6bd3b427d3882ce2b3ecb12e0034f6ab009dfc6a76e99d635f8"
+        },
+        "files": {
+          "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/blobs/cae883155a3fbe966452425640cbddb2c0e3ab115caa8af7f0819bb48b1a2f3d.safetensors": "cae883155a3fbe966452425640cbddb2c0e3ab115caa8af7f0819bb48b1a2f3d",
+          "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/pages/7c16ad3315af9ea7aa40051cb609915a05f1963ea8243f5e0f9754b38db3d532.json": "7c16ad3315af9ea7aa40051cb609915a05f1963ea8243f5e0f9754b38db3d532"
+        },
+        "metadata": {
+          "encoded": {
+            "kind": "tensor",
+            "name": "tensor_0",
+            "shape": [
+              1,
+              512,
+              3072
+            ],
+            "stride": [
+              1572864,
+              3072,
+              1
+            ]
+          },
+          "schema": "saturn-pub-slot-page-v1",
+          "tensor_blob": "cae883155a3fbe966452425640cbddb2c0e3ab115caa8af7f0819bb48b1a2f3d",
+          "value": {
+            "dtype": "torch.bfloat16",
+            "kind": "tensor",
+            "layout": "strided-dense",
+            "sha256": "3285adde138ec6bd3b427d3882ce2b3ecb12e0034f6ab009dfc6a76e99d635f8",
+            "shape": [
+              1,
+              512,
+              3072
+            ],
+            "stride": [
+              1572864,
+              3072,
+              1
+            ],
+            "tensor": "3285adde138ec6bd3b427d3882ce2b3ecb12e0034f6ab009dfc6a76e99d635f8"
+          }
+        },
+        "pageID": "7c16ad3315af9ea7aa40051cb609915a05f1963ea8243f5e0f9754b38db3d532",
+        "store": "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store"
+      }
+    }
+  },
+  "parentCustody": {
+    "declared": {
+      "sha256": "5a10f50846d36462cbf7d361c7d597d5f7e02ec0065b05457a031eec2f574d3c",
+      "size_bytes": 3186426
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794038704.9796717,
+      "sha256": "5a10f50846d36462cbf7d361c7d597d5f7e02ec0065b05457a031eec2f574d3c",
+      "size_bytes": 3186426
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794038704.772596,
+      "sha256": "5a10f50846d36462cbf7d361c7d597d5f7e02ec0065b05457a031eec2f574d3c",
+      "size_bytes": 3186426
+    }
+  },
+  "parentJobID": "job-3505d6effb40",
+  "parentRecords": {
+    "compiler-seal.json": {
+      "path": "/mnt/hdd8tb/mrun-work/job-3505d6effb40/response-result/compiler-seal.json",
+      "sha256": "da976e830d1828099d2516233223a6ab7269cffa3a9e8af7973ac50714c0913e"
+    },
+    "compiler.json": {
+      "path": "/mnt/hdd8tb/mrun-work/job-3505d6effb40/response-result/compiler.json",
+      "sha256": "6559743e405087a25d7f1b800f46465898dbe87b39a3d5a9f777e662d1797cf7"
+    },
+    "primary-seal.json": {
+      "path": "/mnt/hdd8tb/mrun-work/job-3505d6effb40/response-result/primary-seal.json",
+      "sha256": "fa1a8d03467b99181dd0e21588b829c489727e8b5dfd71654c68dd60f38d47b4"
+    },
+    "primary.json": {
+      "path": "/mnt/hdd8tb/mrun-work/job-3505d6effb40/response-result/primary.json",
+      "sha256": "3f1ed8140e286640611aef684d9dc5dbad22a48653d680617d3d604e8304a20b"
+    },
+    "producer-seal.json": {
+      "path": "/mnt/hdd8tb/mrun-work/job-3505d6effb40/response-result/producer-seal.json",
+      "sha256": "e8d40460096a08aaf4127a6734e6f6b077d17e1cfe7d3f55f96a8632779e8e61"
+    },
+    "producer.json": {
+      "path": "/mnt/hdd8tb/mrun-work/job-3505d6effb40/response-result/producer.json",
+      "sha256": "d52968b9c845241fc59a2d7c4e95f4cd56e58b4fd30776c4ea908d24b456ea81"
+    }
+  },
+  "qAttention": {
+    "bytes": 24704,
+    "logicalDtype": "torch.bfloat16",
+    "path": "/mnt/hdd8tb/mrun-work/job-3505d6effb40/arrays/source/Q/A.npy",
+    "payloadSHA256": "9bd0d2dbb6011dea527e13727ba9088b57d598523d73da22fcd567c7c7e3022a",
+    "sha256": "d1b656c125dc82a69178e57c37ef01e8fc96beab22634f44c1bd5eea056af481",
+    "shape": [
+      1,
+      4,
+      3072
+    ],
+    "storedDtype": "uint16"
+  },
+  "qGatePayloads": {
+    "gateA": "1d6ef3fd24dd3d009578f66f2d27939cd80a8b5f04fdd7a2e158bb43c3237798",
+    "gateM": "041ad31541ab976412d04146814eaa504b3c8abfa73653928dc6ffd2e4d76fff"
+  },
+  "readerInputs": {
+    "Q": {
+      "bytes": 6291584,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/Q.npy",
+      "payloadSHA256": "268b26875b5e81adda46614ccc6a1f6e75559dfb90311f38c4f4cf747d35c748",
+      "sha256": "d67e9552e3ef6ba600af04e30728e1260cb7a6205856ef42879f2116bc7a4ea8",
+      "shape": [
+        1,
+        1024,
+        24,
+        128
+      ],
+      "storedDtype": "uint16"
+    },
+    "gate": {
+      "bytes": 6272,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/gate.npy",
+      "payloadSHA256": "75fa5fd81f330eac4816436710c47580621dc70f22c451e6210dc8b826e6352d",
+      "sha256": "640c463b290ac7af1cf444ee076aaa5519eaa8221b60825269c0176afbcd8809",
+      "shape": [
+        1,
+        1,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "image": {
+      "bytes": 6291584,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/image.npy",
+      "payloadSHA256": "b093a4d211bf08d598755887767f2bb9d4f13ddf590011d83cd8f4dc2c7f7e22",
+      "sha256": "179d78e063a6cc2dbf1275626570759c8868a12a961c5500ac3bef11197925ef",
+      "shape": [
+        1,
+        1024,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "m": {
+      "bytes": 196736,
+      "logicalDtype": "torch.float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/m.npy",
+      "payloadSHA256": "622451cf215842bdc68e0430b62c3d15b2c006c77f3d7439648c57a1ffee3cc1",
+      "sha256": "7b89d7aa62a93e1f47ca4a27ece880c7c2675c33d09cb58dc8b735e770956a10",
+      "shape": [
+        24,
+        1024,
+        1
+      ],
+      "storedDtype": "float64"
+    },
+    "projectedN": {
+      "bytes": 603979904,
+      "logicalDtype": "torch.float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-832603af095e/arrays/compile/admitted/projectedN.npy",
+      "payloadSHA256": "1d501da95e723a9dbae7c7e65412edfaa3e31210e68bacbbafae491995f1562a",
+      "sha256": "bf1a3878eac210601e22ee467cf9f01ee675e8622716424b7552fc76b6e4fc20",
+      "shape": [
+        24,
+        1024,
+        3072
+      ],
+      "storedDtype": "float64"
+    },
+    "ropeCos": {
+      "bytes": 2176,
+      "logicalDtype": "torch.float32",
+      "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/ropeCos.npy",
+      "payloadSHA256": "b7a6bd799ca12d884f7672dd61e987709ba32dd820f5ca96d4e42a875f59ff59",
+      "sha256": "4755145df1c60b1d3098d662b464023e1721c8dadd3193864b3f32d7bb48075a",
+      "shape": [
+        4,
+        128
+      ],
+      "storedDtype": "float32"
+    },
+    "ropeSin": {
+      "bytes": 2176,
+      "logicalDtype": "torch.float32",
+      "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/ropeSin.npy",
+      "payloadSHA256": "19e8e8a831e9c3aeca1ac7e4a503faae4f4821b1dd8326ffa888af57129afad8",
+      "sha256": "405ad147c88b87628909fc027c4dd8278ba753fbd74eee1ef3fc3d3e2ec57352",
+      "shape": [
+        4,
+        128
+      ],
+      "storedDtype": "float32"
+    },
+    "txtMod": {
+      "bytes": 36992,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/txtMod.npy",
+      "payloadSHA256": "bbaf5213c0f2741d03422acbd4db8c3fb8075eb2bb68975cf9eed3740e2b18c4",
+      "sha256": "58b3d4993f4ddd18ea70703c646e8a6a19ab1dd49115f213b26da4ef1ae91c65",
+      "shape": [
+        1,
+        18432
+      ],
+      "storedDtype": "uint16"
+    },
+    "z": {
+      "bytes": 196736,
+      "logicalDtype": "torch.float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-cd781e9a2a10/arrays/compile/admitted/z.npy",
+      "payloadSHA256": "a13370f628d7828dad12b031f9f5ea43766e434eebf82538991e0c3ef1f4e8f9",
+      "sha256": "8878629da127f933a77efc267d217c6bba05be55c75cdc86717e3b7a79e061d4",
+      "shape": [
+        24,
+        1024,
+        1
+      ],
+      "storedDtype": "float64"
+    }
+  },
+  "sourceCustody": {
+    "declared": {
+      "sha256": "01e22886882c7da1fa02e64772f9cb12befb87faf8612f08895a6a4a4ca9488a",
+      "size_bytes": 3404287
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794030864.2578847,
+      "sha256": "01e22886882c7da1fa02e64772f9cb12befb87faf8612f08895a6a4a4ca9488a",
+      "size_bytes": 3404287
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794030864.1439233,
+      "sha256": "01e22886882c7da1fa02e64772f9cb12befb87faf8612f08895a6a4a4ca9488a",
+      "size_bytes": 3404287
+    }
+  },
+  "sourceJobID": "job-a2048028d7bf",
+  "versions": {
+    "diffusers": "0.39.0",
+    "torch": "2.13.0+cu130"
+  }
+}

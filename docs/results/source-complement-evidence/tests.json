@@ -1,0 +1,21 @@
+{
+  "schema": "tce-source-complement-tests-v1",
+  "command": "rtk proxy ../common/bin/common exec python -m pytest generator -q",
+  "passed": 280,
+  "seconds": 18.12,
+  "exitCode": 0,
+  "focused": {
+    "passed": 4,
+    "seconds": 1.04,
+    "scope": "Independent full-complement source oracle, own-MLP splice, raw-byte selected/complement positive and rehashed hostile fixtures."
+  },
+  "sources": {
+    "test_source_complement.py": "cc6afe635cc332aeec6f1bcf32af818f28c56bd452124c20696b7db82624dad3",
+    "test_source_complement_bytes.py": "6b4830f16932e43f78e58c079866e0a8b46fa23d8d6e5602c9e8867b2391228c"
+  },
+  "earlierSuite": {
+    "passed": 278,
+    "seconds": 18.97,
+    "scope": "Before adding the two independent byte fixtures; preserved historical check."
+  }
+}

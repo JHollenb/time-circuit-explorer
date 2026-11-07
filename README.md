@@ -1,5 +1,7 @@
 # Time Circuit Explorer
 
+The [source-complement assay](docs/source-complement-transfer.md) reuses paid banks while producing its own four selected rows, at 1.799 billion new matrix MACs. Both arms match exactly because their outside-support context was already byte-identical; context sufficiency remains untested. Native response error is 9.6285%, with 57.33% median query error and 73/1,024 rows losing to zero. The 111.68-second assay has 280 passing mechanics tests and full-byte custody. The next plan first inventories an actually changed propagated context. Arbitrary-prompt zero-neural images remain open.
+
 An interactive field guide to model computation: native execution, recovered time circuits, and the state that connects one computation to the next.
 
 The [demanded source-row producer](docs/selected-source-text-producer.md) now computes four text rows and their sequential MLP ancestry from actual incoming states, then feeds its own rows into the projected reader. Native response error is 9.63% versus 9.62% with supplied rows; 409 query errors improve and 615 worsen. The 73.87-second assay pays 59.744 billion new matrix MACs, with 276 passing mechanics tests and complete byte custody. Original maps, native prefixes and receiving context remain required; arbitrary-prompt zero-neural images remain open.
