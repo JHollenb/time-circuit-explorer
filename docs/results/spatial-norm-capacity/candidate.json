@@ -1,0 +1,59 @@
+{
+  "arithmetic": {
+    "interpolationAccumulatorAdds": 98304,
+    "interpolationMultiplications": 98304,
+    "knotSquares": 6144,
+    "secondEpsilonAdditions": 0,
+    "squareRoots": 24576
+  },
+  "fields": {
+    "norm": {
+      "bytes": 196736,
+      "logicalDtype": "float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-a8cbc7c17161/arrays/candidate/norm.npy",
+      "payloadSHA256": "bf1235e22e908c0a0559c53a9d82a370079d848d859f1220707e30ddf637da76",
+      "sha256": "61390600b9ffbf1c68fae2a06428c9763a3f46cafe9b5eda7ef0d157ad12e9da",
+      "shape": [
+        1024,
+        24
+      ],
+      "storedDtype": "float64"
+    },
+    "squaredNorm": {
+      "bytes": 196736,
+      "logicalDtype": "float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-a8cbc7c17161/arrays/candidate/squaredNorm.npy",
+      "payloadSHA256": "7d27801211e8b240647992eb73a79a3dcfcaa7db0f6f4e060ef227189ea622b7",
+      "sha256": "1471d7601f2b8382a45b8b819825f79ad2a8fc832be2c7fdc8331c68ae1d20db",
+      "shape": [
+        1024,
+        24
+      ],
+      "storedDtype": "float64"
+    }
+  },
+  "fileQuarantine": {
+    "allowedFiles": [
+      "/mnt/hdd8tb/mrun-work/job-a8cbc7c17161/arrays/intake/ids.npy",
+      "/mnt/hdd8tb/mrun-work/job-a8cbc7c17161/arrays/intake/knotRows.npy",
+      "/mnt/hdd8tb/mrun-work/job-a8cbc7c17161/arrays/intake/knots.npy",
+      "/mnt/hdd8tb/mrun-work/job-a8cbc7c17161/arrays/intake/strata.npy"
+    ],
+    "deniedCanaries": [
+      "/mnt/hdd8tb/mrun-work/job-5051d169e298/arrays/compiler/compile/pDenominator.npy",
+      "/mnt/hdd8tb/mrun-work/job-5051d169e298/arrays/reference/reference/qDenominator.npy",
+      "/mnt/hdd8tb/mrun-work/job-919ded371096/arrays/actor/read/imageNumerator.npy",
+      "/mnt/hdd8tb/mrun-work/job-919ded371096/arrays/actor/read/textLogits.npy"
+    ],
+    "successfulFileOpenCounts": {
+      "/mnt/hdd8tb/mrun-work/job-a8cbc7c17161/arrays/intake/ids.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-a8cbc7c17161/arrays/intake/knotRows.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-a8cbc7c17161/arrays/intake/knots.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-a8cbc7c17161/arrays/intake/strata.npy": 2
+    }
+  },
+  "intakeSHA256": "02291ec8752022f97d1c45affc2b1712415bcd814ecc46dc6ced3fdea3548f84",
+  "requestSHA256": "727ede1924283bff37c7bb7b009de987b012a9d2e772fb38099c3eadb7232e35",
+  "schema": "tce-spatial-norm-candidate-v1",
+  "scope": "Only current paid norm knots and authenticated physical IDs; no full current or previous norm, scores, raw keys, learned maps or consumer."
+}

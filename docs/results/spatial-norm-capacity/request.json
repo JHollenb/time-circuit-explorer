@@ -1,0 +1,42 @@
+{
+  "backend": "numpy",
+  "device": "cpu",
+  "dtype": "float64",
+  "knotsPerHead": 256,
+  "newOriginalProjections": 0,
+  "ownedSources": [
+    "spatial_norm.py",
+    "spatial_norm_worker.py",
+    "spatial_norm_study.py",
+    "encoder_atoms.py",
+    "paired_fields.py",
+    "masked_kv_study.py",
+    "sparse_text_kv.py"
+  ],
+  "plannedMatrixMACs": 0,
+  "protocol": "Authenticate native THWL IDs; byte-extract fixed even Qnorm rows; fresh knot-only candidate seals/exits before Q/Pnorm and numerator/text score diagnostics. Bilinear squared smoothnorm,31clamps30,no extraepsilon. Separate sampled/interior/edge,fullsigneddelta,fulljointweightedvariance/KL. No valuebank/AV/MLP/nextQ/image/refit/gridsearch.",
+  "requestSHA256": "727ede1924283bff37c7bb7b009de987b012a9d2e772fb38099c3eadb7232e35",
+  "schema": "tce-spatial-norm-request-v1",
+  "sourceHashes": {
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "frozen-plan.md": "20fd871e2930e527f84d3779517fc58be40bd095da88e2cc16f96b5198c806c8",
+    "inputs.json": "dc8e0d8d897860a43b67f48e83ca28b3853f21b342df746527fcfcd1b6dda8d2",
+    "masked_kv_study.py": "920416ce49d823b1337a7f6d9f5fca90c8047723bb6b1d37dc09967114b6ad89",
+    "paired_fields.py": "408e035cb2f2f99558dbbe5abccdc281a5deade195abdbbc003549318ef09e88",
+    "sparse_text_kv.py": "872f0871dbe67c24197e9fcf6a92607673c5d66fb976b4657e1075425ab1b652",
+    "spatial_norm.py": "4ef189099b59b06df2551b6a3a0a7136bb4c73a7a5517c5922f901b39593ea78",
+    "spatial_norm_study.py": "d35ceaa946d0e22d075647e8ef766f0cf9cd1de357b0ab3bf31792d5275515dc",
+    "spatial_norm_worker.py": "359de14a84f6f6185d40ffe101da9c268cabf4eda92c53cfa8910a126efcf3ae"
+  },
+  "strataPerHead": [
+    256,
+    705,
+    63
+  ],
+  "support": [
+    4,
+    11,
+    12,
+    13
+  ]
+}
