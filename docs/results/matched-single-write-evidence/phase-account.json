@@ -1,0 +1,61 @@
+{
+  "actors": {
+    "dense": {
+      "CPUSecondsAfterImports": 12.63152812,
+      "peakCUDAAllocatedBytes": 584711168,
+      "peakCUDAReservedBytes": 658505728,
+      "setupSecondsAfterImports": 5.976513992063701,
+      "timings": [
+        {
+          "instrumentedSynchronizedSecondsBeforeFinalOutputFingerprint": 1.0324063771404326,
+          "scope": "Operation time including any internal diagnostics/copies; excludes subsequent finite checks and output fingerprints.",
+          "stage": "dense"
+        }
+      ],
+      "wallSecondsAfterImports": 11.115714884828776
+    },
+    "sparse": {
+      "CPUSecondsAfterImports": 11.870745760000002,
+      "peakCUDAAllocatedBytes": 539271168,
+      "peakCUDAReservedBytes": 616562688,
+      "setupSecondsAfterImports": 7.254910457879305,
+      "timings": [
+        {
+          "instrumentedSynchronizedSecondsBeforeFinalOutputFingerprint": 4.029032185208052,
+          "scope": "Operation time including any internal diagnostics/copies; excludes subsequent finite checks and output fingerprints.",
+          "stage": "sparse"
+        }
+      ],
+      "wallSecondsAfterImports": 14.020125633571297
+    }
+  },
+  "analysisSecondsAfterImports": 22.680375806055963,
+  "anatomy": {
+    "CPUSecondsAfterImportsBeforeComparisons": 8.172172499999999,
+    "peakCUDAAllocatedBytes": 1063388160,
+    "peakCUDAReservedBytes": 1258291200,
+    "timings": [
+      {
+        "instrumentedSynchronizedSecondsBeforeFinalOutputFingerprint": 0.8630349058657885,
+        "scope": "Operation time including any internal diagnostics/copies; excludes subsequent finite checks and output fingerprints.",
+        "stage": "anatomy"
+      }
+    ],
+    "wallSecondsAfterImportsBeforeComparisons": 8.067596549168229
+  },
+  "reservation": {
+    "cpu_threads": 4,
+    "disk_gb": 2.0,
+    "est_wall_s": 180.0,
+    "ram_mb": 6144.0,
+    "source": "declared",
+    "vram_mb": 3072.0
+  },
+  "scheduler": {
+    "elapsed_s": 90.33,
+    "peak_rss_mb": 2050.5,
+    "peak_vram_mb": 1508.0
+  },
+  "schema": "tce-matched-single-phases-v1",
+  "scope": "Instrumented operations include internal diagnostics/copies, exclude later finite checks/fingerprints. Fresh-process walls include setup/checks/I/O. Scheduler includes orchestration/imports. Serial diagnostic timings do not establish serving speed."
+}

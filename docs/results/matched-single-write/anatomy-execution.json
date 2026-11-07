@@ -1,0 +1,569 @@
+{
+  "CPUSecondsAfterImportsBeforeComparisons": 8.172172499999999,
+  "assets": [
+    {
+      "bytesHashed": 541,
+      "path": "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/config.json",
+      "sha256": "09733c74a3da6d17dd0a0472a091a8950c7c6935889c32c16cc800ede05029de",
+      "signature": [
+        66311,
+        298051,
+        541,
+        1784967358756501000,
+        1784967358757491000
+      ]
+    },
+    {
+      "bytesHashed": 7751109744,
+      "path": "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/diffusion_pytorch_model.safetensors",
+      "sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+      "signature": [
+        66311,
+        298058,
+        7751109744,
+        1784967508577765300,
+        1784967508615361800
+      ]
+    }
+  ],
+  "candidateSealSHA256": "9063beeb2e8e7244c5e59b93624667f29476f1b9700ee11d6cc246cb788fb759",
+  "header": {
+    "bytes": 20584,
+    "sha256": "012278fec8c5203622e33f14a7da845b344c5dcd869980b04692348ff02420f6"
+  },
+  "loadedParameters": [
+    {
+      "bytes": 75497472,
+      "dataOffsets": [
+        368837120,
+        444334592
+      ],
+      "name": "single_transformer_blocks.0.attn.to_out.weight",
+      "payloadSHA256": "fa0d9f6d0635f79a101f0f90c6d220edc36afd625c7d1153a8e98f1f743d089d",
+      "shape": [
+        3072,
+        12288
+      ]
+    }
+  ],
+  "numericalProfile": {
+    "bf16ReducedPrecisionReduction": true,
+    "cublasWorkspaceConfig": ":4096:8",
+    "cudaMatmulTF32": false,
+    "cudnnBenchmark": false,
+    "cudnnDeterministic": true,
+    "cudnnTF32": false,
+    "deterministicAlgorithms": true,
+    "float32MatmulPrecision": "highest",
+    "threads": 4
+  },
+  "originalDownPayloadSHA256": "4247b101ef2ea0452e4e4044b4c7cc726d684a02a28827f35f3388f93c4199d0",
+  "originalDownShape": [
+    3072,
+    9216
+  ],
+  "parameterManifestSHA256": "0225e8a052718fe66b99cf3dbc68b583b2c86253221c5ae7f78d6db24b447367",
+  "peakCUDAAllocatedBytes": 1063388160,
+  "peakCUDAReservedBytes": 1258291200,
+  "products": [
+    {
+      "device": "cuda",
+      "dtype": "torch.float64",
+      "leftShape": [
+        1,
+        1536,
+        9216
+      ],
+      "nominalMACs": 43486543872,
+      "operator": "fullDown",
+      "outputShape": [
+        1,
+        1536,
+        3072
+      ],
+      "rightShape": [
+        9216,
+        3072
+      ]
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float64",
+      "leftShape": [
+        1,
+        1536,
+        2304
+      ],
+      "nominalMACs": 10871635968,
+      "operator": "selectedDown",
+      "outputShape": [
+        1,
+        1536,
+        3072
+      ],
+      "rightShape": [
+        2304,
+        3072
+      ]
+    }
+  ],
+  "sourceInputClosure": true,
+  "timings": [
+    {
+      "instrumentedSynchronizedSecondsBeforeFinalOutputFingerprint": 0.8630349058657885,
+      "scope": "Operation time including any internal diagnostics/copies; excludes subsequent finite checks and output fingerprints.",
+      "stage": "anatomy"
+    }
+  ],
+  "typedActs": [
+    {
+      "evidence": {
+        "act": "tce.matched_single_anatomy:v1",
+        "elapsed_ms": 2207.0316751487553,
+        "implementation": "anatomy",
+        "input_frame_id": "c8bc82810799289bdaaa90caf4d3d1bb54d851befbc3375de5366ae3fb886f67",
+        "metrics": {
+          "outputPayloads": {
+            "accountClosure": "d4d77915154843d612e41c6a72645b31766b8f0d9d53c4980d8b31bacb90c8f3",
+            "channelMagnitude": "043b65815d05dab50bcbf23bdd096ef5d7a2b98747283154557983944271369a",
+            "deltaExit": "6e5d3c20d8aedd045436df300d1610eb18b4b87ff295946bcea1567d33e3aa39",
+            "energyTable": "48a902f446c7cfc66af805965d622b340153c4c9cd62b4d1dcd99e0657b3d3d4",
+            "finiteRemainder": "7034a4668abeb5981829e2b8376b550fcbc0d1e04d96fe75114453151a61e0ef",
+            "fullWrite": "7856a3ef060097a02d9b1220b2255789e4c43056b244978cf7e23268c09070a1",
+            "gatedOmission": "a0c882abc74ea22f1873e59a640f7e953e99ede77638b1ae5f8d2050106ed3ca",
+            "omittedWrite": "0b3cccfd72687c5acea0a59f4b8260ffbd52b57ecb41c2ab92dc066172b6f1fa",
+            "selectedWrite": "74a52790dd755cfb5635e6c6856745540683caeb0259f311e395d527b4bf001a"
+          }
+        },
+        "numerical_contract": "One common-input single block: exact frozen sparse or dense moment operator; passive actual operand capture, original fused contractions; later FP64common-product write analysis, paid original learned maps and state",
+        "output_frame_id": "cf932dd922c12d9c8219fe33752f78344ee4821897f92ca6e410a43cf8a2fb0a"
+      },
+      "outputFrame": {
+        "act": "tce.matched_single_anatomy:v1",
+        "frame_id": "cf932dd922c12d9c8219fe33752f78344ee4821897f92ca6e410a43cf8a2fb0a",
+        "implementation": "anatomy",
+        "metadata": {
+          "candidateSealSHA256": "9063beeb2e8e7244c5e59b93624667f29476f1b9700ee11d6cc246cb788fb759",
+          "denseProducerFrameID": "6da8b3239364286dbe0a4b805a4f1b039264ed98c8e3da092fda2fc56fb72920",
+          "originalParameterManifestSHA256": "0225e8a052718fe66b99cf3dbc68b583b2c86253221c5ae7f78d6db24b447367",
+          "phase": "anatomy",
+          "policy": "FP64 common admitted dense product and original down; no alternate support or new model consumer.",
+          "sparseProducerFrameID": "7dd3d537fa6a1aeff8ea4f4dd3a26105bc071c9fe419d6ca7b8455be1baebec8"
+        },
+        "parent_frame_id": "c8bc82810799289bdaaa90caf4d3d1bb54d851befbc3375de5366ae3fb886f67",
+        "program_fingerprint": "7268d8e5486492f2f99f0c79357c950f0534e8b3bd3a29c0456902e9476c0c41",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "accountClosure": {
+            "abi": {
+              "dtype": "torch.float64",
+              "shape": [
+                1,
+                1536,
+                3072
+              ]
+            },
+            "fingerprint": "c850b8a03f80e71ff8ad78de111e4c817f717f934298f30d0a868ddffc7c3c7c",
+            "handle": "saturn://accountClosure",
+            "kind": "tensor",
+            "name": "accountClosure"
+          },
+          "admittedProduct": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1536,
+                9216
+              ],
+              "stride": [
+                14155776,
+                9216,
+                1
+              ]
+            },
+            "fingerprint": "4fd3baa92ec0ec368f896f77d567f5a4ed2197b3a5d73d362e51ec096b42b6e7",
+            "handle": "saturn://admittedProduct",
+            "kind": "tensor",
+            "name": "admittedProduct"
+          },
+          "channelMagnitude": {
+            "abi": {
+              "dtype": "torch.float64",
+              "shape": [
+                3,
+                9216
+              ]
+            },
+            "fingerprint": "60df6a5f42d65cec7c03ad5221d01b03af3bba5f167ada9a9eb8d048b42d2128",
+            "handle": "saturn://channelMagnitude",
+            "kind": "tensor",
+            "name": "channelMagnitude"
+          },
+          "deltaExit": {
+            "abi": {
+              "dtype": "torch.float64",
+              "shape": [
+                1,
+                1536,
+                3072
+              ]
+            },
+            "fingerprint": "a4973878685f88bdf44c6549ca2eec6cb66629d0d16f06305141e889ed7fcfdb",
+            "handle": "saturn://deltaExit",
+            "kind": "tensor",
+            "name": "deltaExit"
+          },
+          "denseExit": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1536,
+                3072
+              ],
+              "stride": [
+                4718592,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "9985c8f025adacba1949494ab0f82da5c8470df170bf6f47b207e87b4b45051c",
+            "handle": "saturn://denseExit",
+            "kind": "tensor",
+            "name": "denseExit"
+          },
+          "energyTable": {
+            "abi": {
+              "dtype": "torch.float64",
+              "shape": [
+                6,
+                8
+              ]
+            },
+            "fingerprint": "6624f554f3128aedb3bfffd13c8924aad001a05f8402de4e0181ae6c41553f1c",
+            "handle": "saturn://energyTable",
+            "kind": "tensor",
+            "name": "energyTable"
+          },
+          "finiteRemainder": {
+            "abi": {
+              "dtype": "torch.float64",
+              "shape": [
+                1,
+                1536,
+                3072
+              ]
+            },
+            "fingerprint": "17ace521967993846ca9ffe4aab4a7273cd842eeacbc531d21e30ecde9208906",
+            "handle": "saturn://finiteRemainder",
+            "kind": "tensor",
+            "name": "finiteRemainder"
+          },
+          "fullWrite": {
+            "abi": {
+              "dtype": "torch.float64",
+              "shape": [
+                1,
+                1536,
+                3072
+              ]
+            },
+            "fingerprint": "1f0982a584f75926867f9d050a11dd5b3d23764746e3cdea499b716e5621977e",
+            "handle": "saturn://fullWrite",
+            "kind": "tensor",
+            "name": "fullWrite"
+          },
+          "gate": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1,
+                3072
+              ],
+              "stride": [
+                3072,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "fca40c6b2aa80ab1622e862bbe0107aef32a9f70401c508ee5bfb6134129e301",
+            "handle": "saturn://gate",
+            "kind": "tensor",
+            "name": "gate"
+          },
+          "gatedOmission": {
+            "abi": {
+              "dtype": "torch.float64",
+              "shape": [
+                1,
+                1536,
+                3072
+              ]
+            },
+            "fingerprint": "91fe860b026dd67cb66192a6f5fc04bba5d072ef98b8514eb18ce84eeea09b00",
+            "handle": "saturn://gatedOmission",
+            "kind": "tensor",
+            "name": "gatedOmission"
+          },
+          "omittedWrite": {
+            "abi": {
+              "dtype": "torch.float64",
+              "shape": [
+                1,
+                1536,
+                3072
+              ]
+            },
+            "fingerprint": "27e0f1a1f4378303cb9ba71d6e7473fac3f2eb46969d8de521bf48fa6a59bd8e",
+            "handle": "saturn://omittedWrite",
+            "kind": "tensor",
+            "name": "omittedWrite"
+          },
+          "originalDown": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                3072,
+                9216
+              ],
+              "stride": [
+                12288,
+                1
+              ]
+            },
+            "fingerprint": "4247b101ef2ea0452e4e4044b4c7cc726d684a02a28827f35f3388f93c4199d0",
+            "handle": "saturn://originalDown",
+            "kind": "tensor",
+            "name": "originalDown"
+          },
+          "ownSupport": {
+            "abi": {
+              "dtype": "torch.int64",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                2304
+              ],
+              "stride": [
+                1
+              ]
+            },
+            "fingerprint": "8fc7c4cb79aab1bf5c062f7708e1a57e2372e9cbe0d4e99c93f2e1fd8eec95af",
+            "handle": "saturn://ownSupport",
+            "kind": "tensor",
+            "name": "ownSupport"
+          },
+          "selectedWrite": {
+            "abi": {
+              "dtype": "torch.float64",
+              "shape": [
+                1,
+                1536,
+                3072
+              ]
+            },
+            "fingerprint": "cbc73bc4fbc626ce3dbabe3127223cac71ae6b307049d3e20f2b62af08e8c7d0",
+            "handle": "saturn://selectedWrite",
+            "kind": "tensor",
+            "name": "selectedWrite"
+          },
+          "sparseExit": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1536,
+                3072
+              ],
+              "stride": [
+                4718592,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "808ec62b149172c803c5cca2833bdfe70613dc35251e6b7030b095e170117605",
+            "handle": "saturn://sparseExit",
+            "kind": "tensor",
+            "name": "sparseExit"
+          }
+        }
+      },
+      "sourceFrame": {
+        "act": "root:v1",
+        "frame_id": "c8bc82810799289bdaaa90caf4d3d1bb54d851befbc3375de5366ae3fb886f67",
+        "implementation": "saturn",
+        "metadata": {
+          "candidateSealSHA256": "9063beeb2e8e7244c5e59b93624667f29476f1b9700ee11d6cc246cb788fb759",
+          "denseProducerFrameID": "6da8b3239364286dbe0a4b805a4f1b039264ed98c8e3da092fda2fc56fb72920",
+          "originalParameterManifestSHA256": "0225e8a052718fe66b99cf3dbc68b583b2c86253221c5ae7f78d6db24b447367",
+          "phase": "anatomy",
+          "policy": "FP64 common admitted dense product and original down; no alternate support or new model consumer.",
+          "sparseProducerFrameID": "7dd3d537fa6a1aeff8ea4f4dd3a26105bc071c9fe419d6ca7b8455be1baebec8"
+        },
+        "parent_frame_id": null,
+        "program_fingerprint": "7268d8e5486492f2f99f0c79357c950f0534e8b3bd3a29c0456902e9476c0c41",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "admittedProduct": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1536,
+                9216
+              ],
+              "stride": [
+                14155776,
+                9216,
+                1
+              ]
+            },
+            "fingerprint": "4fd3baa92ec0ec368f896f77d567f5a4ed2197b3a5d73d362e51ec096b42b6e7",
+            "handle": "saturn://admittedProduct",
+            "kind": "tensor",
+            "name": "admittedProduct"
+          },
+          "denseExit": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1536,
+                3072
+              ],
+              "stride": [
+                4718592,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "9985c8f025adacba1949494ab0f82da5c8470df170bf6f47b207e87b4b45051c",
+            "handle": "saturn://denseExit",
+            "kind": "tensor",
+            "name": "denseExit"
+          },
+          "gate": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1,
+                3072
+              ],
+              "stride": [
+                3072,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "fca40c6b2aa80ab1622e862bbe0107aef32a9f70401c508ee5bfb6134129e301",
+            "handle": "saturn://gate",
+            "kind": "tensor",
+            "name": "gate"
+          },
+          "originalDown": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                3072,
+                9216
+              ],
+              "stride": [
+                12288,
+                1
+              ]
+            },
+            "fingerprint": "4247b101ef2ea0452e4e4044b4c7cc726d684a02a28827f35f3388f93c4199d0",
+            "handle": "saturn://originalDown",
+            "kind": "tensor",
+            "name": "originalDown"
+          },
+          "ownSupport": {
+            "abi": {
+              "dtype": "torch.int64",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                2304
+              ],
+              "stride": [
+                1
+              ]
+            },
+            "fingerprint": "8fc7c4cb79aab1bf5c062f7708e1a57e2372e9cbe0d4e99c93f2e1fd8eec95af",
+            "handle": "saturn://ownSupport",
+            "kind": "tensor",
+            "name": "ownSupport"
+          },
+          "sparseExit": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1536,
+                3072
+              ],
+              "stride": [
+                4718592,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "808ec62b149172c803c5cca2833bdfe70613dc35251e6b7030b095e170117605",
+            "handle": "saturn://sparseExit",
+            "kind": "tensor",
+            "name": "sparseExit"
+          }
+        }
+      },
+      "stage": "anatomy"
+    }
+  ],
+  "wallSecondsAfterImportsBeforeComparisons": 8.067596549168229
+}

@@ -1,0 +1,91 @@
+{
+  "schema": "tce-matched-single-row-heterogeneity-v1",
+  "scope": "Descriptive arithmetic on published scalar RMS/cosine rows only. Half/quarter counts describe distributions and have no gate authority. No model or tensor-array computation.",
+  "sourceRows": 1536,
+  "sourceSHA256": "bc2e3f5e143cacbe53ca269cf36331937b13c37fac00b76b1b0b715492afea09",
+  "strata": {
+    "image": {
+      "largestRemainderRows": [
+        {
+          "actualDeltaRMS": 1.864115640813717,
+          "finiteRemainderRMS": 0.08471561743588751,
+          "gatedOmissionRMS": 1.9041412419907353,
+          "negativeOmissionRemainderCrossEnergy": -485.38669965689604,
+          "omissionDeltaCosine": 0.9992147309344351,
+          "remainderOverDelta": 0.0454454732212363,
+          "row": 968,
+          "stratum": "image"
+        },
+        {
+          "actualDeltaRMS": 1.8671161174856354,
+          "finiteRemainderRMS": 0.08025802889325127,
+          "gatedOmissionRMS": 1.8882752003125929,
+          "negativeOmissionRemainderCrossEnergy": -263.8909045025569,
+          "omissionDeltaCosine": 0.9991499893618313,
+          "remainderOverDelta": 0.04298502280690035,
+          "row": 1159,
+          "stratum": "image"
+        },
+        {
+          "actualDeltaRMS": 1.9757556895977066,
+          "finiteRemainderRMS": 0.0810004189223007,
+          "gatedOmissionRMS": 2.0112478369460893,
+          "negativeOmissionRemainderCrossEnergy": -454.86607720919784,
+          "omissionDeltaCosine": 0.9993329479444443,
+          "remainderOverDelta": 0.040997183684584805,
+          "row": 1106,
+          "stratum": "image"
+        }
+      ],
+      "maxRemainderOverDelta": 0.0454454732212363,
+      "medianRemainderOverDelta": 0.015907670078579073,
+      "minOmissionDeltaCosine": 0.9991499893618313,
+      "rows": 1024,
+      "rowsAboveHalf": 0,
+      "rowsAboveQuarter": 0,
+      "zeroDeltaRows": 0
+    },
+    "text": {
+      "largestRemainderRows": [
+        {
+          "actualDeltaRMS": 0.5823702582298439,
+          "finiteRemainderRMS": 0.5466465895692545,
+          "gatedOmissionRMS": 0.23510049472350023,
+          "negativeOmissionRemainderCrossEnergy": -45.89450906491851,
+          "omissionDeltaCosine": 0.34913812310702175,
+          "remainderOverDelta": 0.9386581506253873,
+          "row": 41,
+          "stratum": "text"
+        },
+        {
+          "actualDeltaRMS": 0.5647258528661218,
+          "finiteRemainderRMS": 0.5292276405363276,
+          "gatedOmissionRMS": 0.22431911191089302,
+          "negativeOmissionRemainderCrossEnergy": -35.283980024130294,
+          "omissionDeltaCosine": 0.35188388308793545,
+          "remainderOverDelta": 0.9371408053135304,
+          "row": 40,
+          "stratum": "text"
+        },
+        {
+          "actualDeltaRMS": 1.2437687437324039,
+          "finiteRemainderRMS": 1.1570173439271985,
+          "gatedOmissionRMS": 0.2801907798201103,
+          "negativeOmissionRemainderCrossEnergy": 398.6370989295549,
+          "omissionDeltaCosine": 0.4114556248293013,
+          "remainderOverDelta": 0.9302511819481211,
+          "row": 34,
+          "stratum": "text"
+        }
+      ],
+      "maxRemainderOverDelta": 0.9386581506253873,
+      "medianRemainderOverDelta": 0.013650365806620471,
+      "minOmissionDeltaCosine": 0.34913812310702175,
+      "rows": 512,
+      "rowsAboveHalf": 8,
+      "rowsAboveQuarter": 10,
+      "zeroDeltaRows": 0
+    }
+  },
+  "summarizerSHA256": "33cd87abb2be9a59ae01d843b3ed6a45654d18a03501647d0b8be6e32cfda01d"
+}
