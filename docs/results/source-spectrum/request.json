@@ -1,0 +1,56 @@
+{
+  "backend": "numpy-fp64",
+  "cpuThreads": 1,
+  "device": "cpu",
+  "needs": {
+    "cpu": true
+  },
+  "ownedSources": [
+    "source_spectrum.py",
+    "source_spectrum_study.py",
+    "source_response.py",
+    "encoder_atoms.py",
+    "paired_fields.py",
+    "flux_clock_study.py"
+  ],
+  "parentJobID": "job-2d99ab01e1ac",
+  "parentRequestSHA256": "f33dea6538f85e56400b4418f92065a3c960b86df4387d8aa7d322a47ccd7a89",
+  "protocol": "One thin SVD of sealed discoveryX/Y; lambda .01/scales fixed. Reconstruct existing ridge source prediction, continuous mode/target/residual/coefficient amplification; full source vectors retained. No new predictor,heldlabels,rank/gain/regularization sweep,model/reader/VAE/image/noise. No neural frameworks.",
+  "requestSHA256": "22839c8a87ac6e0b385f2f9ef25f673e2c3178af0d2e8ead535ae87de68b17b5",
+  "scheduling_contract": {
+    "additional_scheduler_submissions": 0,
+    "branch_execution": "in_process",
+    "checkpoint_policy": "one outer Saturn worker lease; all logical branches and analysis remain in process",
+    "collection_policy": "direct_job_only",
+    "control_plane": "mrun_outer_lease",
+    "data_plane": "resident_worker",
+    "execution_model": "finite_local_program",
+    "interactive": false,
+    "lease_scope": "entire-worker",
+    "logical_branches": 1,
+    "logical_checkpoint_replays": 0,
+    "logical_operations": 1,
+    "max_local_work_items": 256,
+    "max_mrun_submissions": 1,
+    "model_free": true,
+    "model_loads": 0,
+    "mrun_retry_policy": "none_for_finite_lease",
+    "per_branch_mrun_submissions": 0,
+    "per_transition_mrun_submissions": 0,
+    "replay_policy": "none_source_only",
+    "schema": "saturn-single-lease-scheduling-contract-v1",
+    "task_family": "analysis"
+  },
+  "schema": "tce-source-spectrum-request-v1",
+  "sourceHashes": {
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "flux_clock_study.py": "eaccf6bdb75678ac6acb5a371f8858201cf83dbac4de83868b70d5570e4beddc",
+    "frozen-plan.md": "5bc7da959a9dea76689cbc99d7e849615c799db008bfc163bd7535c611d8d754",
+    "paired_fields.py": "408e035cb2f2f99558dbbe5abccdc281a5deade195abdbbc003549318ef09e88",
+    "source.json": "0d7039938653f353b8a17183f778d4082032dd7b27716ccd8dc06687c5f072bd",
+    "source_response.py": "0b85fd57be6fa233e0111c549f7894a9e2a2fdaceb89fef761b3805796e41ef7",
+    "source_spectrum.py": "9b9d6d0f114391d221286d0a06cff4ea85bd2b06470b5b8397f770ebf05663fd",
+    "source_spectrum_study.py": "7a9927ff0373d29cdc74a99db636b8693dea909af723982b987eb1953c5e94fc"
+  },
+  "timeoutSeconds": 300
+}

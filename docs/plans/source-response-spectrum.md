@@ -1,6 +1,6 @@
 # Is the weak source fit attenuation or unresolved response structure?
 
-Status: **written and unexecuted**. Selected after the [response-only writer result](../source-native-response-writer.md) and [Astra42 review](../results/source-response-evidence/advisor.json). This is one saved-array diagnostic of the existing program, not a new predictor or image campaign.
+Status: **executed and completed**, job job-7a556e85153a. The [result](../source-response-spectrum.md) preserves the [original frozen protocol](../results/source-spectrum/frozen-plan.md). Selected after the [response-only writer result](../source-native-response-writer.md) and [Astra42 review](../results/source-response-evidence/advisor.json). This is one saved-array diagnostic of the existing program, not a new predictor or image campaign.
 
 Freeze the actual discovery X,Y, inherited scale and lambda=.01. There are1,888rows and3,072features. The source response error remains about82%, so interpreting the poor feedback solely as transfer is premature. A fixed ridge penalty can suppress directions that the matrix represents; numerical rank alone does not tell us which explanation matters.
 

@@ -1,0 +1,176 @@
+{
+  "completeCollectedInventory": {
+    "bytes": 763387,
+    "files": {
+      "analysis-seal.json": {
+        "bytes": 6143,
+        "sha256": "598201a4bfa3add9dac44ba29ffe9d05563e6ccc90305ff5bab5ada6fcfeaed6"
+      },
+      "fields.json": {
+        "bytes": 5586,
+        "sha256": "dba4e1690626e6379fd6974bcb969c7861ccb89290aeb6707fd23b96ad1b85ae"
+      },
+      "frozen-plan.md": {
+        "bytes": 3789,
+        "sha256": "5bc7da959a9dea76689cbc99d7e849615c799db008bfc163bd7535c611d8d754"
+      },
+      "modes.jsonl": {
+        "bytes": 734405,
+        "sha256": "e4c803380825c6d7b71b75e611ba9c662a943015087de48a20c2982c4bb2b1ac"
+      },
+      "report.json": {
+        "bytes": 4526,
+        "sha256": "a55f56ffc47579b655bb2ed1970775e569e444c4af5f80adb9ec590b5941fdf5"
+      },
+      "request.json": {
+        "bytes": 2584,
+        "sha256": "f0daf9c6075e5fc4d96b955c12905c1a8750c84421439df51c1c4e027212ef07"
+      },
+      "source.json": {
+        "bytes": 6354,
+        "sha256": "0d7039938653f353b8a17183f778d4082032dd7b27716ccd8dc06687c5f072bd"
+      }
+    }
+  },
+  "jobID": "job-7a556e85153a",
+  "losslessStreams": [
+    {
+      "published": "modes.jsonl.gz",
+      "publishedBytes": 161516,
+      "publishedSHA256": "d07ccbb52b3f0db610ef5244fb88a1e3b9623afacc0fb7db6b67199f65b715ad",
+      "source": "modes.jsonl",
+      "sourceBytes": 734405,
+      "sourceSHA256": "e4c803380825c6d7b71b75e611ba9c662a943015087de48a20c2982c4bb2b1ac"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "294aa56962d5406010ae9dff78a638236b8abc6f517284eb5a733f481c43b9b9",
+      "size_bytes": 21650
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794021941.7452025,
+      "sha256": "294aa56962d5406010ae9dff78a638236b8abc6f517284eb5a733f481c43b9b9",
+      "size_bytes": 21650
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794021941.440704,
+      "sha256": "294aa56962d5406010ae9dff78a638236b8abc6f517284eb5a733f481c43b9b9",
+      "size_bytes": 21650
+    }
+  },
+  "requestSHA256": "22839c8a87ac6e0b385f2f9ef25f673e2c3178af0d2e8ead535ae87de68b17b5",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-7a556e85153a",
+      "job_log": {
+        "bytes": 307,
+        "sha256": "55b5fed8fd80a0bbf9db6a15d8d407cc7f4ccf94fecf83fc47d3a80ee7ce7ca6"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-7a556e85153a/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "CUDA_VISIBLE_DEVICES=",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "numpy==2.5.4",
+        "--with",
+        "psutil>=5.9",
+        "python",
+        "-u",
+        "source_spectrum_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-7a556e85153a",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-7a556e85153a/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794021941.732382
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794021941.761169
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794021941.7716544
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794021941.7982268
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794021946.9246898
+        },
+        {
+          "name": "finished",
+          "ts": 1794021946.9448123
+        }
+      ]
+    },
+    "elapsed_s": 5.74,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "294aa56962d5406010ae9dff78a638236b8abc6f517284eb5a733f481c43b9b9",
+      "size_bytes": 21650
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 542.8,
+    "peak_vram_mb": 0.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-source-spectrum-publication-v1",
+  "scope": "One fixed-source SVD/ridge reconstruction. Target-assisted discovery analysis; no new predictor, selection, original model or image. Old learned operands/labels/products remain paid."
+}

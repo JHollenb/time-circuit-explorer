@@ -1,0 +1,30 @@
+{
+  "schema": "tce-astra-source-spectrum-review-v1",
+  "advisor": "/root/astra_zero_forward_advisor",
+  "reportSHA256": "a55f56ffc47579b655bb2ed1970775e569e444c4af5f80adb9ec590b5941fdf5",
+  "analysisSealSHA256": "598201a4bfa3add9dac44ba29ffe9d05563e6ccc90305ff5bab5ada6fcfeaed6",
+  "reviewedSourceSHA256": {
+    "source_spectrum.py": "9b9d6d0f114391d221286d0a06cff4ea85bd2b06470b5b8397f770ebf05663fd",
+    "source_spectrum_study.py": "7a9927ff0373d29cdc74a99db636b8693dea909af723982b987eb1953c5e94fc"
+  },
+  "checks": "Source code, report/seal joins and decompressed mode records agree. No material implementation defect found.",
+  "assessment": "All1888 singular directions are numerically resolved. Fixed ridge attenuation reproduces81.706% source error; no unresolved source-span floor was observed. This is an algebraic limitation of this fit, not useful transferable information in H0.",
+  "amplification": "Interpolating source requires about174x coefficient norm relative to ridge. FP64 rank does not establish robustness to different receivers, seeds or BF16 operand perturbations; instability was not tested.",
+  "nextCut": "Exactly one source-only minimum-norm response forecast B0=V diag(1/sigma) U^T Y using retained decomposition/all modes, inherited scale/nointercept/unitgain. Seal coefficients before a fresh actor predicts same2source/6held-role pairs. Reuse existing ridge/original/zero controls. No new SVD, rank/regularization/gain sweep, H0, decoder or images.",
+  "nextCutCost": "742391808 nominal coefficient-formation MACs plus2969567232 prediction MACs;3145728-byte FP64 coefficient array. Still learned affine arithmetic.",
+  "interpretationLimit": "Source interpolation is expected algebraically and only a mechanics observation. Held direction/amplitude/heterogeneity test whether suppressed directions transfer. Historical labels and seed/location confound remain explicit.",
+  "bigPicture": "Newest all-layer result improves receiver coverage/local writes but retains about49% write error and failed useful behavior. Composition alone is not isolated. Better source algebra must earn usefulness through subsequent predictions.",
+  "blogSnapshots": [
+    {
+      "path": "../../../../obsidian/blog/2026-11-06-184700-compiling-cheaper-transitions-on-the-states-they-create.md",
+      "sha256": "8ff0e03faf7dc0d1c5a22bf911412339b45273c3c87daeb459d7d153bcf928b5"
+    },
+    {
+      "path": "../../../../obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+      "sha256": "6c7382643876b23a7cae499add1647b1be66d867027b2599a6ea123ceb057ce1",
+      "scope": "Pre-cycle43-update living-post snapshot."
+    }
+  ],
+  "goalStatus": "Active and unsolved: arbitrary-prompt zero-neural images remain unachieved.",
+  "reviewerExecution": "Read-only advice; no edits/scientific execution. Snapshot hashes identify mutable historical working posts."
+}

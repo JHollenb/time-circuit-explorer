@@ -1,35 +1,35 @@
 {
   "schema": "tce-zero-neural-goal-progress-v1",
-  "updatedAt": "2026-11-06T19:19:10-08:00",
-  "objective": "let’s solve arbitrary prompt to image without any forward zero neural evals. Every few turns have Astra review the newest blog posts and get a big picture of where we are at so that we can find the best route forward. Keep a log of your findings and with as a blog post - update it with your high level summaries and findings. Clean up the accumulated artifacts every few turns so as not to consume all of the system storage too",
+  "updatedAt": "2026-11-06T19:37:34-08:00",
+  "objective": "let\u2019s solve arbitrary prompt to image without any forward zero neural evals. Every few turns have Astra review the newest blog posts and get a big picture of where we are at so that we can find the best route forward. Keep a log of your findings and with as a blog post - update it with your high level summaries and findings. Clean up the accumulated artifacts every few turns so as not to consume all of the system storage too",
   "status": "active",
-  "researchCycle": 42,
+  "researchCycle": 43,
   "previousGoalTurn": {
     "classification": "progress",
-    "evidence": "Executed frozen source-native firstjoint image read + discovery-only affine innovation writer, job-1892a00329e9,65.57s/3867.7MBRSS/1802MBVRAM.46reads/322affines2.352T MAC+444.529B QKAV;one6.978s FP64 paired ridgefit;30readouts13.086B MAC;2paidVAE80ops2.481T MAC. Servedread+writer1.092%fullaffine plusattention. Hold wins all18feedback/8evaluation/2main velocityendpoints. MainPNGRMS31.37/31.80 vs9.46/13.06hold;signedPNG54.40%vs25.59%;rawzeroendpointsworse butpairedvelocitybetter. Remoteall-row93.60-93.81%error weakpositive;unchanged-query147.11-159.38%/cosnear0.228tests;46typedreads/30writerhandoffs/33792losslessrows.518files8688976825Bbyteverified;29compactfiles6982540B;arraysnearcompute. Saturncompressedscanemptyexit2,uncompressedrunverify0streamscope. Blog/figureupdated. Astra41 finalsource/result6PNGs/newestposts selects saved-array response-only objectivecontrast,no newreads/images,writtenunexecuted,seed/locationconfounded. Cleanup39next42;17GiBsharedfree,no newdeletion. Whole arbitrarypromptzero-neuralgoal activeunsolved.",
-    "commit": "7b06dec6f78c3ac3ac05cf52b3992a8a6f4c5c9f"
+    "evidence": "Executed fixed saved-H0 response-only objective contrast job-2d99ab01e1ac,28.88s/833.9MBRSS/0VRAM. One FP64 dual ridge .01/nointercept/unitgain, inherited scales. Source error81.79/81.61% vs90.77/90.66% old; same-location feedback103.06/106.03% vs102.37/104.75%; top-left evaluation116.29-121.22% vs147.06-159.32%, but every new evaluation cosine negative. All held responses lose to zero; gain identity isolates amplitude reduction from direction recovery, no serving/tuning. No original model/H0/VAE/images;16served learned affine products5.939B MAC and fitting/postfit remain paid.231tests;typedcoefficientbranches/24responses/22656losslessrows;133files395602450B verified,16compactfiles3018110B. Additive cost vocabulary correction and both byte receipts preserve raw science. Saturnrunverify0streamscope. Astra42 final source/seals/newest completedall-layer/queryrescue/stateproducer posts ->one source-spectrum diagnostic, no newpredictor/sweep, writtenunexecuted. Blog/figureupdated. Scheduledcleanup4transportcopies743778934B fullSHA/custody/restore pointers,40pointer audit;44name-sizecandidates12336136801B notdeletioncerts. Actualcleanup/review42 next45. Full arbitrarypromptzero-neuralgoal remains activeunsolved.",
+    "commit": "517a87b92cbd32de68a06bef42a293d716cc028f"
   },
   "thisGoalTurn": {
     "classification": "progress",
-    "evidence": "Executed fixed saved-H0 response-only objective contrast job-2d99ab01e1ac,28.88s/833.9MBRSS/0VRAM. One FP64 dual ridge .01/nointercept/unitgain, inherited scales. Source error81.79/81.61% vs90.77/90.66% old; same-location feedback103.06/106.03% vs102.37/104.75%; top-left evaluation116.29-121.22% vs147.06-159.32%, but every new evaluation cosine negative. All held responses lose to zero; gain identity isolates amplitude reduction from direction recovery, no serving/tuning. No original model/H0/VAE/images;16served learned affine products5.939B MAC and fitting/postfit remain paid.231tests;typedcoefficientbranches/24responses/22656losslessrows;133files395602450B verified,16compactfiles3018110B. Additive cost vocabulary correction and both byte receipts preserve raw science. Saturnrunverify0streamscope. Astra42 final source/seals/newest completedall-layer/queryrescue/stateproducer posts ->one source-spectrum diagnostic, no newpredictor/sweep, writtenunexecuted. Blog/figureupdated. Scheduledcleanup4transportcopies743778934B fullSHA/custody/restore pointers,40pointer audit;44name-sizecandidates12336136801B notdeletioncerts. Actualcleanup/review42 next45. Full arbitrarypromptzero-neuralgoal remains activeunsolved."
+    "evidence": "Executed one fixed-source FP64 SVD/ridge reconstruction job-7a556e85153a,5.74s/542.8MBRSS/0VRAM. All1888 modes numerically resolved; existing81.706% source error reconstructed maxAbs1.1782e-14.73.375%target/98.576%residual energy in directions fixedridge passes<=half; no rank selection. Minimum-norm coefficient-energy diagnostic implies173.68x norm, not served or tested.12.319B nominal contractionMAC excludingSVD; no new predictor/fit/model/H0/VAE/images.234tests,14arrays86.608MBnearcompute,35files137795521Bbyteverified;10compactfiles204477B. Saturnrunverify0streamscope. Astra43 source/seal/modes/latestalllayer review selects one source-only allmode minimum-norm endpointcontrast, writtenunexecuted/noSVDor sweep. Blog/figureupdated. No newarchive/deletion;actualcleanup42 next45. Arbitraryprompt strictzero-neuralgoal remainsactiveunsolved."
   },
   "requirements": {
-    "arbitraryRawPromptCoverage": "Full reconstructed generator accepts arbitrary strings with learned arithmetic/native encoder/VAE. Strict zero-neural arbitrary-prompt coverage remains open; cycle42 is retrospective supplied-array response diagnosis only.",
-    "zeroNeuralServing": "Open. Cycle42 runs no original model/H0/VAE/image computation but fits and evaluates learned affine response maps. Framework exclusion is not elimination of learned computation.",
+    "arbitraryRawPromptCoverage": "Full reconstructed generator accepts arbitrary strings using learned arithmetic/native encoder/VAE; hosted page presents recorded outputs. Strict zero-neural arbitrary-prompt coverage remains open. Cycle43 is a fixed-source spectrum analysis only.",
+    "zeroNeuralServing": "Open. Cycle43 computes one saved-array SVD/reconstruction with no original model or new predictor. Old learned operands/labels/response fitting remain paid; avoiding neural frameworks does not eliminate learned computation.",
     "reusablePromptOperandFormation": "implemented for all151936IDs at actual first Qwen3 E/inputRMS/QKV/QKRMS prefix; eight frozen rawstrings exactly match isolated source-qualified native prefix and positions. Later contextual operands remain open.",
-    "reducedOwnStateContinuation": "Cycle41 actual own H0/velocity -> finite commit/VAE remains bounded and worse than hold. Cycle42 predicts paired raw responses only; it is not a full velocity or multi-clock generator.",
+    "reducedOwnStateContinuation": "Cycle41 ownH0/velocity->finitecommit/VAE remains bounded and worse than hold. Cycle42 raw response maps and cycle43 source decomposition are not complete velocity/multiclock generators.",
     "generalNonNeuralPixelDecoder": "open; interpolated supplied RGB images do not establish it",
     "independentPromptFaithfulnessAndQuality": "open",
-    "findingsBlog": "Living log through42 with objective/transfer distinction, exact ridge and amplitude-direction math, measured costs/custody, current all-layer context, source-spectrum next cut and actual storage cleanup.",
+    "findingsBlog": "Living log through43 explains exact fixed-ridge spectrum/attenuation, source-versus-transfer distinction, coefficient amplification diagnostic, measured costs/custody and one unexecuted minimum-norm next contrast.",
     "periodicStorageCleanup": "Cycle42 archives4terminal transport copies743778934B with fullSHA/fsync/originalcustody/restorationpointers/freshlocalidentity. Extractedscienceintact.40pointer audit and fresh remote type/size;44remaining name-size candidates notdeletioncerts. Next45 or pressure.",
-    "astraAdvisoryReview": "Astra42 reviews source/seals/24outputs and latest completed all-layer, query rescue, producer-consumer and own-history posts. Selects one fixed-source spectrum analysis before deeper producer. Next45 or material evidence."
+    "astraAdvisoryReview": "Astra43 reviews source/report/seal/complete mode stream and newest all-layer/living-post snapshots. Selects one untuned allmode minimum-norm response endpoint. Next46 or material evidence."
   },
   "findingsLog": {
     "path": "../obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
     "role": "One living highlevel blog for this active goal; keep summaries, findings, constraints and next mathematical question current after each research cycle.",
-    "lastUpdatedCycle": 42,
+    "lastUpdatedCycle": 43,
     "scope": "Local notebook post, not a public-site publication. Source/code/artifact/related-post backlinks verified; unrelated dirty notebook files preserved.",
-    "sha256": "6c7382643876b23a7cae499add1647b1be66d867027b2599a6ea123ceb057ce1"
+    "sha256": "83c9a41fdfbb96d22658ce57bc8c782a8c584f569770bbb28118cf7d90a6f5a6"
   },
   "storageMaintenance": {
     "lastCycle": 42,
@@ -53,9 +53,9 @@
     "latestPointerCheck": "40pointer/custodyjoins and fresh remote regular-file/size checks. New4fullSHA inarchive;historical36notfreshbytehashed.44name-size candidates12336136801B notdeletioncerts.",
     "cycle8Practice": "Bounded audit142top-level artifact directories for100MB-or-larger archive.tar.gz/worker.log.gz: none. All6restoration pointers match the cycle5receipt; authenticated remote type/size checks total7701454599bytes, not a fresh byte rehash. No new archive/deletion. Full common-bank/kernel/head arrays remain near compute; compact public evidence6201541bytes.",
     "latestSpaceObservation": {
-      "cycle": 42,
-      "localFreeBytes": 15482171392,
-      "scope": "Shared-volume post-audit observation; concurrent/APFS changes are not cleanup attribution."
+      "cycle": 43,
+      "localFreeBytes": 15457005568,
+      "scope": "Shared-volume observation only; no cleanup attribution."
     },
     "cycle9Practice": "Full states/ports/heads and target-assisted capacity weights remain near compute. Two compact publications2895986bytes; no full lexical table or forecast hydration. Last actual archive remainscycle5, last bounded transport auditcycle8, next storage reviewcycle11 or earlier under pressure.",
     "cycle5Archive": {
@@ -165,7 +165,8 @@
     "lastSpaceObservationCycle": 40,
     "lastSpaceObservationBytes": 20843761664,
     "cycle41Practice": "Large H0/fit packet/coefficients/targets remain near compute;29compactfiles6982540B plus small figure/receipts. Shared free about17GiB. No newarchive/deletion/model-table hydration;actual cleanup39,next42orpressure.",
-    "cycle42Practice": "Full normalized responsefeatures/coefficients/rawpredictions/targets remain near compute. Compact16files3018110B plus figure/evidence;no model/table hydration.4verifiedtransports archived743778934B;extracted evidence retained."
+    "cycle42Practice": "Full normalized responsefeatures/coefficients/rawpredictions/targets remain near compute. Compact16files3018110B plus figure/evidence;no model/table hydration.4verifiedtransports archived743778934B;extracted evidence retained.",
+    "cycle43Practice": "All14new arrays86608128B remain nearcompute. Primary10files204477B plus scalar evidence/figure/blogcopy;no newtransportarchive/deletion/bulkmodelortablehydration. Actualcleanup/review42,next45orpressure."
   },
   "openPreference": {
     "question": "Reproduce FLUX prompt/seed behavior, or comparable prompt-faithful quality using another recovered computation?",
@@ -174,8 +175,8 @@
   "reviews": {
     "advisor": "astra_zero_forward_advisor",
     "model": "gpt-6-astra",
-    "lastCycle": 42,
-    "nextDueByCycle": 45,
+    "lastCycle": 43,
+    "nextDueByCycle": 46,
     "earlierIf": "new model evidence changes the route",
     "cycle5Snapshots": [
       {
@@ -222,25 +223,17 @@
     ],
     "latestPosts": [
       {
-        "path": "../obsidian/blog/2026-11-05-220837-predicting-the-change-that-the-next-computation-receives.md",
-        "sha256": "c52ed01157c74ee89c559c5f298aac2f9b1695fd15b40aa115baa24c21c5214a"
+        "path": "../obsidian/blog/2026-11-06-184700-compiling-cheaper-transitions-on-the-states-they-create.md",
+        "sha256": "8ff0e03faf7dc0d1c5a22bf911412339b45273c3c87daeb459d7d153bcf928b5",
+        "scope": "Newest all-layer working post snapshot."
       },
       {
-        "path": "../obsidian/blog/2026-11-05-161109-the-one-assumption-that-would-make-model-computation-easier-to-understand.md",
-        "sha256": "fba7e778e60e683c7956322797ca580d1e3bf3786f75d074990ba1c845f2e8ed",
-        "scope": "OVC10, prospective OVC11, and local-defect propagation through later consumers"
-      },
-      {
-        "path": "../obsidian/blog/2026-08-14-what-saturn-can-actually-do.md",
-        "sha256": "affc43eab107208d7072f101d9b32488406c4b0bfdaa213600ba845b8b79576b",
-        "scope": "initial cycle1 review snapshot; subsequently updated by other workspace work"
-      },
-      {
-        "path": "../obsidian/blog/2026-11-05-225618-testing-state-equations-against-fresh-image-futures.md",
-        "sha256": "e016144354d12b35b3e85b6798fe6ab69b296a3ade42d61a3bb2bcd6adacbe56"
+        "path": "../obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+        "sha256": "6c7382643876b23a7cae499add1647b1be66d867027b2599a6ea123ceb057ce1",
+        "scope": "Pre-cycle43-update living-post snapshot."
       }
     ],
-    "advice": "Removing endpoint loss improves source fitting without producing a transferable response direction. Source81.6-81.8% error is not strong interpolation evidence. Same-location feedback retains weak positive cosines .105/.116; all four top-left evaluation cosines are negative. Seed and location remain confounded. One saved-array source-spectrum diagnosis: freeze X,Y,s_H,lambda=.01; thin SVD, reconstruct existing ridge prediction and decompose source residual using continuous attenuation factors. Report numerical-rank ambiguity and coefficient amplification. No new predictor, pseudoinverse serving or rank/gain/regularization sweep. At1888<3072,a small source-span residual can be trivial interpolation. No H0-information sufficiency or transferable-decoder claim follows.",
+    "advice": "All1888 singular directions are numerically resolved. Fixed ridge attenuation reproduces81.706% source error; no unresolved source-span floor was observed. This is an algebraic limitation of this fit, not useful transferable information in H0. Exactly one source-only minimum-norm response forecast B0=V diag(1/sigma) U^T Y using retained decomposition/all modes, inherited scale/nointercept/unitgain. Seal coefficients before a fresh actor predicts same2source/6held-role pairs. Reuse existing ridge/original/zero controls. No new SVD, rank/regularization/gain sweep, H0, decoder or images. Source interpolation is expected algebraically and only a mechanics observation. Held direction/amplitude/heterogeneity test whether suppressed directions transfer. Historical labels and seed/location confound remain explicit.",
     "cycle6Snapshots": [
       {
         "path": "../obsidian/blog/2026-11-06-010513-predicting-a-complete-denoiser-pass-from-its-own-state.md",
@@ -352,7 +345,7 @@
       {
         "path": "../obsidian/blog/2026-11-06-042000-predicting-the-image-from-the-raw-prompt.md",
         "sha256": "d87d516784c6af686e96af69d36f57eab413d3371e6509399ee490baa93fbf54",
-        "scope": "Astra and root observed working-post snapshot. Original-parameter/Torch rawprompt→Qwen→112transitions→pixels; not reduced learned computation."
+        "scope": "Astra and root observed working-post snapshot. Original-parameter/Torch rawprompt\u2192Qwen\u2192112transitions\u2192pixels; not reduced learned computation."
       },
       {
         "path": "../obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
@@ -411,7 +404,7 @@
         "scope": "Mutable working-post snapshot reported by Astra cycle15."
       }
     ],
-    "latestReceipt": "results/source-response-evidence/advisor.json",
+    "latestReceipt": "results/source-spectrum-evidence/advisor.json",
     "cycle16Snapshots": [
       {
         "path": "../obsidian/blog/2026-11-06-054800-five-attention-values-become-a-different-hidden-state.md",
@@ -541,7 +534,7 @@
         "scope": "Cycle22 working snapshot before the subsequent living-log update."
       }
     ],
-    "latestResultSHA256": "8ac0a175b2b9e7b86c54b57bd6a3274465425cf6b82f8df4e9575c430b4b69a8",
+    "latestResultSHA256": "a55f56ffc47579b655bb2ed1970775e569e444c4af5f80adb9ec590b5941fdf5",
     "cycle24Snapshots": [
       {
         "path": "../obsidian/blog/2026-11-06-093800-predicting-how-an-error-moves-through-the-next-block.md",
@@ -965,6 +958,19 @@
       {
         "path": "../../../../obsidian/blog/2026-11-06-184252-the-same-query-program-visits-a-different-future.md",
         "sha256": "41b14c2d17001de28c46f5f84d5400fd1ab48d5431d981242244713dbb8165ef"
+      }
+    ],
+    "cycle43Receipt": "results/source-spectrum-evidence/advisor.json",
+    "cycle43Snapshots": [
+      {
+        "path": "../obsidian/blog/2026-11-06-184700-compiling-cheaper-transitions-on-the-states-they-create.md",
+        "sha256": "8ff0e03faf7dc0d1c5a22bf911412339b45273c3c87daeb459d7d153bcf928b5",
+        "scope": "Newest all-layer working post snapshot."
+      },
+      {
+        "path": "../obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+        "sha256": "6c7382643876b23a7cae499add1647b1be66d867027b2599a6ea123ceb057ce1",
+        "scope": "Pre-cycle43-update living-post snapshot."
       }
     ]
   },
@@ -2173,6 +2179,24 @@
       "learnedServedAffineProducts": 16,
       "servingNominalMACs": 5939134464,
       "scope": "No original-model/H0/VAE/image evaluations; learned response arithmetic and old operands/labels paid. Raw responses only, no complete velocity or strictzero-neural serving."
+    },
+    {
+      "jobID": "job-7a556e85153a",
+      "requestSHA256": "22839c8a87ac6e0b385f2f9ef25f673e2c3178af0d2e8ead535ae87de68b17b5",
+      "type": "Fixed-source SVD and existing-ridge reconstruction",
+      "schedulerSeconds": 5.74,
+      "sampledPeakRSSMB": 542.8,
+      "sampledPeakVRAMMB": 0,
+      "work": {
+        "SVDs": 1,
+        "newH0Computations": 0,
+        "newImages": 0,
+        "newLearnedFits": 0,
+        "newPredictors": 0,
+        "originalModelEvaluations": 0
+      },
+      "nominalContractionMACsExcludingSVD": 12319064064,
+      "scope": "Target-assisted saved-source analysis. No predictor construction or transfer claim; prior learned state/labels/fitting remain paid."
     }
   ],
   "failedRuns": [
@@ -2358,10 +2382,10 @@
   ],
   "nextCut": {
     "status": "written-unexecuted",
-    "plan": "plans/source-response-spectrum.md",
-    "law": "One thin FP64SVD of fixed discoveryX,Y; reconstruct sealed ridge prediction and decompose continuous attenuation/source residual. Report coefficient amplification and numerical-rank ambiguity.",
-    "fixed": "Existing scales,X,Y,lambda=.01;no new predictor or rank/gain/regularization sweep;no heldlabels.",
-    "scope": "Saved-array source-fit interpretation only. N<d makes source interpolation potentially trivial; no transferable information or generator claim."
+    "plan": "plans/minimum-norm-source-response.md",
+    "law": "One B0=Vdiag(1/sigma)U^TY from retained decomposition/allmodes, inheritedscale/nointercept/unitgain. Sealcoefficients beforefreshactor predicts2source/6archivedheldrolepairs;scoreafterallpredictionsseal.",
+    "fixed": "One untuned minimum-norm regularization endpoint. No newSVD/rank/gain/regularization sweep,H0/model/VAE/images;reuse existingridge/original/zero controls.",
+    "scope": "Retrospective learned affine response forecast, no completevelocity/image/zero-neural serving. Sourceinterpolationexpectedmechanics;helddirection/amplitude/heterogeneity testtransfer;seed/locationconfound remains."
   },
   "alternativeDiagnostic": {
     "status": "executedcycle20",
@@ -3087,7 +3111,7 @@
     "saturnSweep": "run/verifyexit0,1stream23040records,no watchfires,target-streams-only,no terminalreceipts/physicaladdressjoins.",
     "goalStatus": "Active. Frozen source-score envelope has active trend/overallcountertrend; no selector/tail defect found. No zero-neural arbitraryimage."
   },
-  "previousResearchCycle": 41,
+  "previousResearchCycle": 42,
   "selectorObjectiveEvidence": {
     "directory": "results/selector-objective",
     "evidenceSweep": "results/selector-objective-evidence/sweep.json",
@@ -16449,5 +16473,102 @@
       "path": "../obsidian/blog/2026-11-06-184700-compiling-cheaper-transitions-on-the-states-they-create.md",
       "scope": "Current executed all-layer result read; historical prospective snapshot remains in cycle41 record."
     }
-  ]
+  ],
+  "sourceSpectrumEvidence": {
+    "status": "completed-exploration",
+    "publicRoot": "results/source-spectrum",
+    "result": "source-response-spectrum.md",
+    "publicationQA": "results/source-spectrum-evidence/publication-qa.json",
+    "jobID": "job-7a556e85153a",
+    "requestSHA256": "22839c8a87ac6e0b385f2f9ef25f673e2c3178af0d2e8ead535ae87de68b17b5",
+    "reportSHA256": "a55f56ffc47579b655bb2ed1970775e569e444c4af5f80adb9ec590b5941fdf5",
+    "analysisSealSHA256": "598201a4bfa3add9dac44ba29ffe9d05563e6ccc90305ff5bab5ada6fcfeaed6",
+    "executedPayload": {
+      "host": "beast",
+      "reported_ts": 1794021941.7452025,
+      "sha256": "294aa56962d5406010ae9dff78a638236b8abc6f517284eb5a733f481c43b9b9",
+      "size_bytes": 21650
+    },
+    "summary": {
+      "SVDArithmeticScope": "SVD work measured by CPU/wall and geometry; not included in nominal contraction MACs or represented as a hardware FLOP count.",
+      "actualResidualEnergy": 1083.7749937959888,
+      "contractionNominalMACs": {
+        "ridgePredictionReconstruction": 456261632,
+        "sourceSVDReconstruction": 10950279168,
+        "targetProjection": 456261632,
+        "thinTargetReconstruction": 456261632
+      },
+      "energyClosure": 1.741222436225626e-13,
+      "features": 3072,
+      "modalResidualEnergy": 1083.7749937959886,
+      "originalPredictionDifferenceEnergy": 4.0172350381828135e-25,
+      "originalPredictionDifferenceMaxAbs": 1.1782241848834474e-14,
+      "outputs": 128,
+      "outsideThinUEnergy": 1.7402703999419947e-26,
+      "perpModalTwiceCross": 5.325143182066946e-14,
+      "rankPolicy": "No numerical rank chosen or predictor selected. Full mode/attenuation/target-energy records; a square thin U complement is not an information-sufficiency test.",
+      "ridge": 0.01,
+      "ridgeCoefficientEnergy": 4.801527256500833,
+      "rows": 1888,
+      "singularMaximum": 220.78094675556866,
+      "singularMinimum": 0.01751989317372815,
+      "singularSumSquares": 72966.56185106706,
+      "solver": "numpy.linalg.svd(full_matrices=False), FP64; one fixed ridge reconstruction",
+      "sourceInputEnergy": 72966.56185106703,
+      "sourceSVDReconstructionMaxAbs": 1.048665277877947e-13,
+      "sourceSVDReconstructionRMS": 8.125412667385428e-16,
+      "spectralResidualEnergy": 1083.7749937959888,
+      "spectralVsModalEnergyDifference": 2.2737367544323206e-13,
+      "svdWallSeconds": 2.5343046761117876,
+      "targetEnergy": 1623.4207220889898,
+      "tau": 18.88,
+      "thinDirections": 1888,
+      "thinUIsSquare": true,
+      "undefinedPseudoinverseDirections": 0
+    },
+    "scalarSummary": {
+      "schema": "tce-source-spectrum-scalar-summary-v1",
+      "sourceReportSHA256": "a55f56ffc47579b655bb2ed1970775e569e444c4af5f80adb9ec590b5941fdf5",
+      "losslessModeStreamSHA256": "d07ccbb52b3f0db610ef5244fb88a1e3b9623afacc0fb7db6b67199f65b715ad",
+      "sourceRelativeRMS": 0.8170601332211369,
+      "conditionNumber": 12601.729049731843,
+      "descriptiveRoundoffReference": 1.505993259949505e-10,
+      "halfResponseModeCount": 68,
+      "targetEnergyFractionAtResponseFilterAtMostHalf": 0.7337482747699908,
+      "residualEnergyFractionAtResponseFilterAtMostHalf": 0.9857570984261184,
+      "pseudoinverseCoefficientEnergyDiagnostic": 144842.47427218303,
+      "ridgeCoefficientEnergy": 4.801527256500833,
+      "pseudoinverseToRidgeCoefficientNormRatio": 173.68338242020954,
+      "nominalContractionMACsExcludingSVD": 12319064064,
+      "newRetainedArrays": 14,
+      "newRetainedArrayBytes": 86608128,
+      "scope": "Posthoc arithmetic over published scalar records only. The roundoff reference and half-response point describe this fixed ridge; neither selects modes or certifies transfer. No pseudoinverse coefficients or predictor constructed."
+    },
+    "byteCustody": {
+      "files": 35,
+      "bytes": 137795521,
+      "receipt": "results/source-spectrum/retained-array-verification.json"
+    },
+    "publication": {
+      "files": 10,
+      "bytes": 204477,
+      "completeModeRecords": 1888,
+      "newRetainedArrays": 14,
+      "newRetainedArrayBytes": 86608128
+    },
+    "mechanics": "results/source-spectrum-evidence/mechanics.json",
+    "instrument": "results/source-spectrum-evidence/saturn-instrument.json",
+    "advisor": "results/source-spectrum-evidence/advisor.json",
+    "figure": "results/source-spectrum-figure/source-spectrum.png",
+    "tests": {
+      "passed": 234,
+      "scope": "Generator mechanics suite, including3new tiny SVD/ridge/zero-direction tests; no semantic quality gate."
+    },
+    "limits": [
+      "Only fixed discovery X/Y and sealed original source predictions; no new predictor or feedback/evaluation access.",
+      "Thin U is square here. Its near-zero complement is not evidence of informative source span; numerical-rank ambiguity remains explicit.",
+      "Old learned H0/native label production and fitted response products remain paid. Reconstruction is a target-assisted analysis, not arbitrary-prompt zero-neural serving.",
+      "No modes, gains or regularization selected; SVD/dual-solve finite differences retained as numerical observations."
+    ]
+  }
 }

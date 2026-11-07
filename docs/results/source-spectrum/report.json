@@ -1,0 +1,89 @@
+{
+  "analysisSealSHA256": "598201a4bfa3add9dac44ba29ffe9d05563e6ccc90305ff5bab5ada6fcfeaed6",
+  "cpuSecondsIncludingSourceRetention": 3.072333028,
+  "fileQuarantine": {
+    "allowedReadFiles": [
+      "/mnt/hdd8tb/mrun-work/job-1892a00329e9/fit/scale.npy",
+      "/mnt/hdd8tb/mrun-work/job-2d99ab01e1ac/fit/discovery-s60672.base/X.npy",
+      "/mnt/hdd8tb/mrun-work/job-2d99ab01e1ac/fit/discovery-s60672.base/Y.npy",
+      "/mnt/hdd8tb/mrun-work/job-2d99ab01e1ac/fit/discovery-s60672.base/mask.npy",
+      "/mnt/hdd8tb/mrun-work/job-2d99ab01e1ac/fit/discovery-s60672.shape/X.npy",
+      "/mnt/hdd8tb/mrun-work/job-2d99ab01e1ac/fit/discovery-s60672.shape/Y.npy",
+      "/mnt/hdd8tb/mrun-work/job-2d99ab01e1ac/fit/discovery-s60672.shape/mask.npy",
+      "/mnt/hdd8tb/mrun-work/job-2d99ab01e1ac/served/discovery-s60672.base/response-only.npy",
+      "/mnt/hdd8tb/mrun-work/job-2d99ab01e1ac/served/discovery-s60672.shape/response-only.npy",
+      "/mnt/hdd8tb/mrun-work/job-7a556e85153a/frozen-plan.md",
+      "/mnt/hdd8tb/mrun-work/job-7a556e85153a/request.json",
+      "/mnt/hdd8tb/mrun-work/job-7a556e85153a/source.json"
+    ],
+    "deniedCanaries": [
+      "/mnt/hdd8tb/mrun-work/job-2d99ab01e1ac/served/evaluation-s60674.base/response-only.npy",
+      "/home/beast/.cache/mdb-research/job-3264b738b16d/global-reader-result/arrays/s60674.base.remote.native_n.npy"
+    ],
+    "outputRoots": [
+      "/mnt/hdd8tb/mrun-work/job-7a556e85153a/arrays",
+      "/mnt/hdd8tb/mrun-work/job-7a556e85153a/response-result"
+    ],
+    "scope": "Trusted-code Python audit hook, not adversarial sandbox."
+  },
+  "frameworksLoaded": [],
+  "instrument_status": "executed",
+  "limits": [
+    "Only fixed discovery X/Y and sealed original source predictions; no new predictor or feedback/evaluation access.",
+    "Thin U is square here. Its near-zero complement is not evidence of informative source span; numerical-rank ambiguity remains explicit.",
+    "Old learned H0/native label production and fitted response products remain paid. Reconstruction is a target-assisted analysis, not arbitrary-prompt zero-neural serving.",
+    "No modes, gains or regularization selected; SVD/dual-solve finite differences retained as numerical observations."
+  ],
+  "mechanics_status": "complete",
+  "numpyVersion": "2.5.4",
+  "pythonVersion": "3.14.6 (main, Jun 23 2026, 15:18:23) [Clang 22.1.3 ]",
+  "requestSHA256": "22839c8a87ac6e0b385f2f9ef25f673e2c3178af0d2e8ead535ae87de68b17b5",
+  "schema": "tce-source-spectrum-result-v1",
+  "summary": {
+    "SVDArithmeticScope": "SVD work measured by CPU/wall and geometry; not included in nominal contraction MACs or represented as a hardware FLOP count.",
+    "actualResidualEnergy": 1083.7749937959888,
+    "contractionNominalMACs": {
+      "ridgePredictionReconstruction": 456261632,
+      "sourceSVDReconstruction": 10950279168,
+      "targetProjection": 456261632,
+      "thinTargetReconstruction": 456261632
+    },
+    "energyClosure": 1.741222436225626e-13,
+    "features": 3072,
+    "modalResidualEnergy": 1083.7749937959886,
+    "originalPredictionDifferenceEnergy": 4.0172350381828135e-25,
+    "originalPredictionDifferenceMaxAbs": 1.1782241848834474e-14,
+    "outputs": 128,
+    "outsideThinUEnergy": 1.7402703999419947e-26,
+    "perpModalTwiceCross": 5.325143182066946e-14,
+    "rankPolicy": "No numerical rank chosen or predictor selected. Full mode/attenuation/target-energy records; a square thin U complement is not an information-sufficiency test.",
+    "ridge": 0.01,
+    "ridgeCoefficientEnergy": 4.801527256500833,
+    "rows": 1888,
+    "singularMaximum": 220.78094675556866,
+    "singularMinimum": 0.01751989317372815,
+    "singularSumSquares": 72966.56185106706,
+    "solver": "numpy.linalg.svd(full_matrices=False), FP64; one fixed ridge reconstruction",
+    "sourceInputEnergy": 72966.56185106703,
+    "sourceSVDReconstructionMaxAbs": 1.048665277877947e-13,
+    "sourceSVDReconstructionRMS": 8.125412667385428e-16,
+    "spectralResidualEnergy": 1083.7749937959888,
+    "spectralVsModalEnergyDifference": 2.2737367544323206e-13,
+    "svdWallSeconds": 2.5343046761117876,
+    "targetEnergy": 1623.4207220889898,
+    "tau": 18.88,
+    "thinDirections": 1888,
+    "thinUIsSquare": true,
+    "undefinedPseudoinverseDirections": 0
+  },
+  "terminal_status": "unassessed",
+  "wallSecondsIncludingSourceRetention": 3.5987221128307283,
+  "work": {
+    "SVDs": 1,
+    "newH0Computations": 0,
+    "newImages": 0,
+    "newLearnedFits": 0,
+    "newPredictors": 0,
+    "originalModelEvaluations": 0
+  }
+}
