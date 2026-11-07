@@ -1,0 +1,27 @@
+{
+  "schema": "tce-last-velocity-saturn-run-record-v1",
+  "command": "saturn-evidence run --json --xref-db artifacts/last-velocity-v1/evidence/xref.sqlite --xref-root artifacts/last-velocity-v1/result artifacts/last-velocity-v1/result",
+  "exit_code": 0,
+  "broken": false,
+  "findings": 0,
+  "instrument_status": "target-streams-only",
+  "watch": {
+    "streams": 1,
+    "records": 10240,
+    "predicatesPerStream": 10,
+    "fires": 0,
+    "stream_errors": 0
+  },
+  "claims": {
+    "ingested": 0,
+    "receipts_found": 0,
+    "chain_ok": true
+  },
+  "xref": {
+    "files_scanned": 9,
+    "files_unparseable": 0,
+    "distinct_addresses": 0,
+    "refs_added": 0
+  },
+  "scope": "Faithful compact record of returned run output; observation-stream mechanics only, no semantic or physical-address certificate."
+}

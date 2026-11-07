@@ -1,0 +1,63 @@
+{
+  "schema": "tce-last-velocity-astra-review-v1",
+  "advisor": "Astra (gpt-6-astra)",
+  "cycle": 37,
+  "trigger": "Early material-evidence review after complete final-velocity replacement",
+  "primaryReportSHA256": "8c8710debbf7e7847af3020ed8ae6218801a7a904f1ade93f132979a203566d6",
+  "sourceReview": "No integrity blocker found. Four forecast/actual-state/image joins, seal and original PNG hashes checked. Native v3/Z4 excluded before seal; exact postseal scheduler reproductions support finite contract.",
+  "interpretation": "Hold retains clean surfaces much better, but still changes signed color response by17.66%. Secant adds strong highlights, dark streaks and distorted rims. Finite commit errors are far smaller than velocity discrepancy.",
+  "factorization": {
+    "cleanEstimate": "c_i=Z_i-sigma_i*v_i",
+    "finiteInnovation": "c_(i+1)-c_i=-sigma_(i+1)*(v_(i+1)-v_i)+epsilon_i",
+    "secantCleanEstimate": "Z4_secant approximately c2+(sigma3*a/sigma2)*(c2-c1)",
+    "limits": "Hold freezes an already formed clean estimate; no globally constant velocity or useless final information claim. Secant failure alone does not separate magnitude from direction."
+  },
+  "nextCut": {
+    "status": "written-unexecuted",
+    "plan": "../../plans/two-clock-velocity-factorial.md",
+    "question": "Can the final native reader recompute what an omitted earlier reader would have supplied?",
+    "commonParent": "Actual own Z2 immediately before clock2, v1, same complete E/IDs/compiled clocks/schedule/profile.",
+    "existingCorners": {
+      "NN": "Native v2 then native v3:cycle36",
+      "NH": "Native v2 then hold v2:cycle37"
+    },
+    "newCorners": {
+      "HH": "Z3H=U2(Z2,v1);Z4HH=U3(Z3H,v1). Holds v1 again; never reads v2.",
+      "HN": "Same Z3H;v3H=F_theta(Z3H,sigma3,E);Z4HN=U3(Z3H,v3H). Actual emitted state, no refresh."
+    },
+    "release": "Deny historical v2,Z3N,v3N,Z4 and images until all four candidate images seal.",
+    "newWork": {
+      "nativeDenoisers": 2,
+      "nativeVAE": 4,
+      "newImages": 4,
+      "newReferenceImages": 0,
+      "newNoiseDraws": 0
+    },
+    "chargedPrefix": "Four historical denoisers across pair plus original encoding. Potential serving HH2 calls,HN/NH3 perimage.",
+    "interaction": "J_Y=Y_NN-Y_NH-Y_HN+Y_HH;policy interaction, not isolated denoiser curvature because held velocity changes with history."
+  },
+  "reviewedSnapshots": [
+    {
+      "file": "2026-11-06-161445-a-better-query-from-the-same-small-code.md",
+      "sha256": "b565ad4595c9ffa87bc428b061f85eca48a53614e0fae5443d63fda53eae46bb"
+    },
+    {
+      "file": "2026-11-06-154200-context-coverage-and-the-alternative-of-a-better-small-program.md",
+      "sha256": "aae4d9086d4882d5ad9d40cb63abdc7ad6f5f059870b6493353e4e1927c0878b"
+    },
+    {
+      "file": "2026-11-06-144600-a-program-that-produces-queries-and-updates-its-own-memory.md",
+      "sha256": "f9f66ddad6eca4545d9893983cf6f510daa3037d811a18b5e05d9c5f6bedc17e"
+    },
+    {
+      "file": "2026-11-06-125544-a-frozen-mlp-program-updates-a-conversation.md",
+      "sha256": "ead3e710a357fa34ff970677609b1eee9d32ee23670a923aec608dc7903ce190"
+    },
+    {
+      "file": "2026-11-06-143449-why-more-weight-energy-did-not-preserve-the-mlp-write.md",
+      "sha256": "36afefab3619b328c2e58f548b647129acbe760601d6f6b4a97feb208c9f6f86"
+    }
+  ],
+  "relatedWorkSynthesis": "Receiver-aware allocation beats weight-energy bases but retains learned down maps/native state generation. Same-code query refitting improves many readouts modestly, with unchanged answers and probability countertrends. Test downstream recovery rather than retune a scalar or rank.",
+  "scope": "Newest-post/source/result/original-image review; no new computation or edits by advisor. Mutable hashes are historical snapshots. Full arbitrary-prompt zero-neural goal unresolved."
+}

@@ -1,0 +1,3444 @@
+{
+  "VAEParameterBytes": 168092230,
+  "actual": [
+    {
+      "Z3PayloadSHA256": "4389cb0897ceb3ae833edbaee6d57898f2d2ce82f1312833cdc54dd1f13efcc0",
+      "Z4PayloadSHA256": "8d32fe67878a16b2d721bd8a43a6a733d6424077a0073d6421d52f3a94517a65",
+      "case": "00",
+      "finalStepIndex": 4,
+      "policy": "hold",
+      "sigmaDevice": "cuda:0",
+      "sigmaDtype": "torch.float32",
+      "velocityPayloadSHA256": "d760c30d19ac06ba01996f3148ea91cc1364ed895c086e2283d8692f77e9d797"
+    },
+    {
+      "Z3PayloadSHA256": "b860df7b84b629c70d303000589023dc4d9c8d1a12d64d7b52c3997bcb6dbce3",
+      "Z4PayloadSHA256": "92deba98519111d1f40a007fe3ab89a426b35ee6237a7118c5d22a80e91b76ee",
+      "case": "10",
+      "finalStepIndex": 4,
+      "policy": "hold",
+      "sigmaDevice": "cuda:0",
+      "sigmaDtype": "torch.float32",
+      "velocityPayloadSHA256": "aacbba6081e81a8a4b1547ec6adbea0ce1aaf7d8409b1c6f0d330fcb4456c212"
+    },
+    {
+      "Z3PayloadSHA256": "4389cb0897ceb3ae833edbaee6d57898f2d2ce82f1312833cdc54dd1f13efcc0",
+      "Z4PayloadSHA256": "c1cd9525739076541d6b4aa19ff371aa9648739be367c7802a9a448e4a078c87",
+      "case": "00",
+      "finalStepIndex": 4,
+      "policy": "secant",
+      "sigmaDevice": "cuda:0",
+      "sigmaDtype": "torch.float32",
+      "velocityPayloadSHA256": "74ed0adb00db609ced9c97eb64dc693330ca445247fd8c0540ddfe25446fd5d5"
+    },
+    {
+      "Z3PayloadSHA256": "b860df7b84b629c70d303000589023dc4d9c8d1a12d64d7b52c3997bcb6dbce3",
+      "Z4PayloadSHA256": "6a042d8b89d700689d7a762413de5208a8cc39c934059ef0eb51b518cfc9795f",
+      "case": "10",
+      "finalStepIndex": 4,
+      "policy": "secant",
+      "sigmaDevice": "cuda:0",
+      "sigmaDtype": "torch.float32",
+      "velocityPayloadSHA256": "7e3beb5b814a3b713f77e5e98cf740c28b3880a69d1de58c7eb054c8078920d8"
+    }
+  ],
+  "assets": [
+    {
+      "bytesHashed": 486,
+      "path": "/mnt/big/llm-models/FLUX.2-klein-4B/scheduler/scheduler_config.json",
+      "sha256": "067afb012cef64553a763447d1efd93daeffcc0123ca7e25b09f8de20b90762e",
+      "signature": [
+        66311,
+        298005,
+        486,
+        1784967339307434100,
+        1784967339307928700
+      ]
+    },
+    {
+      "bytesHashed": 821,
+      "path": "/mnt/big/llm-models/FLUX.2-klein-4B/vae/config.json",
+      "sha256": "0d6dfb69ae95a5e2ac9836284bbb63d8b38ce67b25ba2dff380752b2a10ab948",
+      "signature": [
+        66311,
+        294850,
+        821,
+        1784967491832496600,
+        1784967491834162900
+      ]
+    },
+    {
+      "bytesHashed": 168120878,
+      "path": "/mnt/big/llm-models/FLUX.2-klein-4B/vae/diffusion_pytorch_model.safetensors",
+      "sha256": "ca70d2202afe6415bdbcb8793ba8cd99fd159cfe6192381504d6c4d3036e0f04",
+      "signature": [
+        66311,
+        298074,
+        168120878,
+        1784967511525412600,
+        1784967511529305200
+      ]
+    }
+  ],
+  "cpuSecondsAfterImports": 1.9013070239999998,
+  "fields": {
+    "hold-00": {
+      "decodedRaw": {
+        "bytes": 1572992,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-de0d876cd53c/arrays/images/hold-00/decodedRaw.npy",
+        "payloadSHA256": "627e59656c5e878433de1865dc5e6fd33efb5304bf4f2a5e4105f489b6798495",
+        "sha256": "da0ab755038aff858acf7517314784e0aed579399d801bac9bb343b8d01b3571",
+        "shape": [
+          1,
+          3,
+          512,
+          512
+        ],
+        "storedDtype": "uint16"
+      },
+      "latent4": {
+        "bytes": 262272,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-de0d876cd53c/arrays/images/hold-00/latent4.npy",
+        "payloadSHA256": "8d32fe67878a16b2d721bd8a43a6a733d6424077a0073d6421d52f3a94517a65",
+        "sha256": "0a59252e7e645f86a1be59d9fe84b73cca9641aeace30a1d2abdc1d4335dbd4a",
+        "shape": [
+          1,
+          1024,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "pngRGB": {
+        "bytes": 786560,
+        "logicalDtype": "uint8",
+        "path": "/mnt/hdd8tb/mrun-work/job-de0d876cd53c/arrays/images/hold-00/pngRGB.npy",
+        "payloadSHA256": "ad95363be0422d32b4c6faf24743504378fae547743754069b6c345fbd466450",
+        "sha256": "2dabb7cef9520b44a6374f255612527e7b74be367efa82990f770f37e2df0234",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "storedDtype": "uint8"
+      },
+      "rgbFloat": {
+        "bytes": 3145856,
+        "logicalDtype": "float32",
+        "path": "/mnt/hdd8tb/mrun-work/job-de0d876cd53c/arrays/images/hold-00/rgbFloat.npy",
+        "payloadSHA256": "aa5115486920bdd1c971032edda00031c22e233e14f4bc8c6b08b5f614c029dc",
+        "sha256": "d3adb48581c49d77b8ae471d91689b02f3b81a9bf9b5b9a65b222b8c5c1b19d0",
+        "shape": [
+          1,
+          512,
+          512,
+          3
+        ],
+        "storedDtype": "float32"
+      },
+      "vaeInput": {
+        "bytes": 262272,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-de0d876cd53c/arrays/images/hold-00/vaeInput.npy",
+        "payloadSHA256": "71969404ff59737eb2a1713970412efd0515ad10ffdff6280cd8b0cde6f7b54f",
+        "sha256": "57dcc726c71e40d345402306a18f739d6078b72e106a8ebb37daa608decdf05d",
+        "shape": [
+          1,
+          32,
+          64,
+          64
+        ],
+        "storedDtype": "uint16"
+      }
+    },
+    "hold-10": {
+      "decodedRaw": {
+        "bytes": 1572992,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-de0d876cd53c/arrays/images/hold-10/decodedRaw.npy",
+        "payloadSHA256": "84f52135a0845d39fff033866ec71614fa525b9ab069dfea45096205d968560c",
+        "sha256": "f9b10992a53a42111c8b1d68109126cc10590334589b3fec851de855524e3a1f",
+        "shape": [
+          1,
+          3,
+          512,
+          512
+        ],
+        "storedDtype": "uint16"
+      },
+      "latent4": {
+        "bytes": 262272,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-de0d876cd53c/arrays/images/hold-10/latent4.npy",
+        "payloadSHA256": "92deba98519111d1f40a007fe3ab89a426b35ee6237a7118c5d22a80e91b76ee",
+        "sha256": "93557f5798d37212b8594d9f734cbe69a201b89c7b86463f00df8b5d54335a19",
+        "shape": [
+          1,
+          1024,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "pngRGB": {
+        "bytes": 786560,
+        "logicalDtype": "uint8",
+        "path": "/mnt/hdd8tb/mrun-work/job-de0d876cd53c/arrays/images/hold-10/pngRGB.npy",
+        "payloadSHA256": "f2ddefae289298aa4d8255e019c2ce6e80abfcc58490f770928860806a0b1cab",
+        "sha256": "6105bf7ee5151783644f80375738c0f8293b670cfb391574aff1d781bb7d8445",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "storedDtype": "uint8"
+      },
+      "rgbFloat": {
+        "bytes": 3145856,
+        "logicalDtype": "float32",
+        "path": "/mnt/hdd8tb/mrun-work/job-de0d876cd53c/arrays/images/hold-10/rgbFloat.npy",
+        "payloadSHA256": "e7bd6b0db95f8bd9f6412a5e52ed3a237584bf0e53f245ed549cd241836dabd6",
+        "sha256": "41bcaaaa0a870c4ad97dee46e3bb0ee03d9a09610f79c01e83604089faedf9a8",
+        "shape": [
+          1,
+          512,
+          512,
+          3
+        ],
+        "storedDtype": "float32"
+      },
+      "vaeInput": {
+        "bytes": 262272,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-de0d876cd53c/arrays/images/hold-10/vaeInput.npy",
+        "payloadSHA256": "e13cf9bc8793a83075414f4adb93ece0df1006788a59257533d839fd8d7bc769",
+        "sha256": "1bcab185d78645248726c229caeba62a8031035e06b4f93e377f094b7d4b938a",
+        "shape": [
+          1,
+          32,
+          64,
+          64
+        ],
+        "storedDtype": "uint16"
+      }
+    },
+    "secant-00": {
+      "decodedRaw": {
+        "bytes": 1572992,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-de0d876cd53c/arrays/images/secant-00/decodedRaw.npy",
+        "payloadSHA256": "f44a7e06db6e563c5dcbc46fa25d30e837fd6e9d06b454d410133b371e99c78d",
+        "sha256": "a29441ed3400e38716a61a5415d20b480c0b7d9c93f38d7a56c1f7efd618b4aa",
+        "shape": [
+          1,
+          3,
+          512,
+          512
+        ],
+        "storedDtype": "uint16"
+      },
+      "latent4": {
+        "bytes": 262272,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-de0d876cd53c/arrays/images/secant-00/latent4.npy",
+        "payloadSHA256": "c1cd9525739076541d6b4aa19ff371aa9648739be367c7802a9a448e4a078c87",
+        "sha256": "8ed26f5ea2d27870c9dcb208760312b8f9e5a0e80b7032b3016b0a903d926787",
+        "shape": [
+          1,
+          1024,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "pngRGB": {
+        "bytes": 786560,
+        "logicalDtype": "uint8",
+        "path": "/mnt/hdd8tb/mrun-work/job-de0d876cd53c/arrays/images/secant-00/pngRGB.npy",
+        "payloadSHA256": "e5cf69d25f1a2211cb4e94688f93fcfe915c75de52fb2548edd4b427948d4931",
+        "sha256": "09a18cc96ee2828b33b893563aa915b8e95f3df5050f27e3ef388be22386ecfa",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "storedDtype": "uint8"
+      },
+      "rgbFloat": {
+        "bytes": 3145856,
+        "logicalDtype": "float32",
+        "path": "/mnt/hdd8tb/mrun-work/job-de0d876cd53c/arrays/images/secant-00/rgbFloat.npy",
+        "payloadSHA256": "3e1b60c2ec8fffdcae4a66d0da916bd4fe8dac2956da5cc69ba21cce12411346",
+        "sha256": "a9a4fca8321ae337b55eaa2249e9bd42ac9c3b870db3839e04f67506262dab95",
+        "shape": [
+          1,
+          512,
+          512,
+          3
+        ],
+        "storedDtype": "float32"
+      },
+      "vaeInput": {
+        "bytes": 262272,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-de0d876cd53c/arrays/images/secant-00/vaeInput.npy",
+        "payloadSHA256": "fdfcfe929accac259a6b4af65d4aa7542e921a06b05c3f832b4c1046e1dfed2a",
+        "sha256": "45585315338312d543210e056167aa07e2955119a83ad77b206c732a92475172",
+        "shape": [
+          1,
+          32,
+          64,
+          64
+        ],
+        "storedDtype": "uint16"
+      }
+    },
+    "secant-10": {
+      "decodedRaw": {
+        "bytes": 1572992,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-de0d876cd53c/arrays/images/secant-10/decodedRaw.npy",
+        "payloadSHA256": "d68c22945a07cf2d8be4894989145a6b57d117c2cebce084acf44978b9137bc0",
+        "sha256": "82f054768efbe32db1e33f82307896229bef6a6320ee7f1f6c5383ad24add9ed",
+        "shape": [
+          1,
+          3,
+          512,
+          512
+        ],
+        "storedDtype": "uint16"
+      },
+      "latent4": {
+        "bytes": 262272,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-de0d876cd53c/arrays/images/secant-10/latent4.npy",
+        "payloadSHA256": "6a042d8b89d700689d7a762413de5208a8cc39c934059ef0eb51b518cfc9795f",
+        "sha256": "60dbca7479ffb9cf3297a5288088feee2c16b74a91a5fcd2a6ae68358877dc5d",
+        "shape": [
+          1,
+          1024,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "pngRGB": {
+        "bytes": 786560,
+        "logicalDtype": "uint8",
+        "path": "/mnt/hdd8tb/mrun-work/job-de0d876cd53c/arrays/images/secant-10/pngRGB.npy",
+        "payloadSHA256": "47f21a2a70f374efe34c51b702f6d6a9126cb91956f86f8b0e5a078694ebd7b2",
+        "sha256": "b8b29400928c6547068f0f7353edde80372b7b6557dd42203cf1c7a527bdcce1",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "storedDtype": "uint8"
+      },
+      "rgbFloat": {
+        "bytes": 3145856,
+        "logicalDtype": "float32",
+        "path": "/mnt/hdd8tb/mrun-work/job-de0d876cd53c/arrays/images/secant-10/rgbFloat.npy",
+        "payloadSHA256": "c1601290b920701811776cc7a9f935f356caaeb189493debcafc1186a5930ff3",
+        "sha256": "72fcd7c02e7f953991eb076c1b6099084db6ef34e43adb483151e7b389e92fa5",
+        "shape": [
+          1,
+          512,
+          512,
+          3
+        ],
+        "storedDtype": "float32"
+      },
+      "vaeInput": {
+        "bytes": 262272,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-de0d876cd53c/arrays/images/secant-10/vaeInput.npy",
+        "payloadSHA256": "1fca31bd69a3773765f4912dbea357f451c0edcef3d93485c0f86a2bf500ef4c",
+        "sha256": "80a992fc4b66cc1c41f1e6bb7ccb21cb9f8046738392ba1a8f7d7ce1f061756d",
+        "shape": [
+          1,
+          32,
+          64,
+          64
+        ],
+        "storedDtype": "uint16"
+      }
+    }
+  },
+  "forecastSealSHA256": "58ca26fdbf48975265ce856de84ce6442b605962ea57023015a06cb6e0822275",
+  "images": {
+    "hold-00": {
+      "bytes": 219627,
+      "path": "/mnt/hdd8tb/mrun-work/job-de0d876cd53c/hold-00.png",
+      "sha256": "d6b1f254675d3e317c30a0cf405bf4ba4de62ad33de98a6e772dc7d3adf0955a"
+    },
+    "hold-10": {
+      "bytes": 216323,
+      "path": "/mnt/hdd8tb/mrun-work/job-de0d876cd53c/hold-10.png",
+      "sha256": "32754e14f91821acfce481d0087b2f72ddeeaf6a86278367008b1fbf30b7b9df"
+    },
+    "secant-00": {
+      "bytes": 232580,
+      "path": "/mnt/hdd8tb/mrun-work/job-de0d876cd53c/secant-00.png",
+      "sha256": "2272842e3427a1e1eb294bdf2c8dc5c1d88cf623f6f142152147f549e08c53ef"
+    },
+    "secant-10": {
+      "bytes": 253318,
+      "path": "/mnt/hdd8tb/mrun-work/job-de0d876cd53c/secant-10.png",
+      "sha256": "7853c8c88275e8513fc281b4f294144c97f8d559e700084e894b0b3c670639c0"
+    }
+  },
+  "nativeVAEDecodes": 4,
+  "newDenoiserEvaluations": 0,
+  "newEncoderEvaluations": 0,
+  "numericalProfile": {
+    "bf16ReducedPrecisionReduction": true,
+    "cublasWorkspaceConfig": ":4096:8",
+    "cudaMatmulTF32": false,
+    "cudnnBenchmark": false,
+    "cudnnDeterministic": true,
+    "cudnnTF32": false,
+    "deterministicAlgorithms": true,
+    "float32MatmulPrecision": "highest",
+    "threads": 4
+  },
+  "operations": [
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        32,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "post_quant_conv",
+      "nominalMACs": 4194304,
+      "outputShape": [
+        1,
+        32,
+        64,
+        64
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        32,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.conv_in",
+      "nominalMACs": 603979776,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.mid_block.resnets.0.conv1",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.mid_block.resnets.0.conv2",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        4096,
+        512
+      ],
+      "kind": "Linear",
+      "module": "decoder.mid_block.attentions.0.to_q",
+      "nominalMACs": 1073741824,
+      "outputShape": [
+        1,
+        4096,
+        512
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        4096,
+        512
+      ],
+      "kind": "Linear",
+      "module": "decoder.mid_block.attentions.0.to_k",
+      "nominalMACs": 1073741824,
+      "outputShape": [
+        1,
+        4096,
+        512
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        4096,
+        512
+      ],
+      "kind": "Linear",
+      "module": "decoder.mid_block.attentions.0.to_v",
+      "nominalMACs": 1073741824,
+      "outputShape": [
+        1,
+        4096,
+        512
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        4096,
+        512
+      ],
+      "kind": "Linear",
+      "module": "decoder.mid_block.attentions.0.to_out.0",
+      "nominalMACs": 1073741824,
+      "outputShape": [
+        1,
+        4096,
+        512
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.mid_block.resnets.1.conv1",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.mid_block.resnets.1.conv2",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.resnets.0.conv1",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.resnets.0.conv2",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.resnets.1.conv1",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.resnets.1.conv2",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.resnets.2.conv1",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.resnets.2.conv2",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.upsamplers.0.conv",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.resnets.0.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.resnets.0.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.resnets.1.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.resnets.1.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.resnets.2.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.resnets.2.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.upsamplers.0.conv",
+      "nominalMACs": 154618822656,
+      "outputShape": [
+        1,
+        512,
+        256,
+        256
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.0.conv1",
+      "nominalMACs": 77309411328,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.0.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.0.conv_shortcut",
+      "nominalMACs": 8589934592,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.1.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.1.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.2.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.2.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        256,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.upsamplers.0.conv",
+      "nominalMACs": 154618822656,
+      "outputShape": [
+        1,
+        256,
+        512,
+        512
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        256,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.0.conv1",
+      "nominalMACs": 77309411328,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.0.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        256,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.0.conv_shortcut",
+      "nominalMACs": 8589934592,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.1.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.1.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.2.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.2.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.conv_out",
+      "nominalMACs": 905969664,
+      "outputShape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        32,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "post_quant_conv",
+      "nominalMACs": 4194304,
+      "outputShape": [
+        1,
+        32,
+        64,
+        64
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        32,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.conv_in",
+      "nominalMACs": 603979776,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.mid_block.resnets.0.conv1",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.mid_block.resnets.0.conv2",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        4096,
+        512
+      ],
+      "kind": "Linear",
+      "module": "decoder.mid_block.attentions.0.to_q",
+      "nominalMACs": 1073741824,
+      "outputShape": [
+        1,
+        4096,
+        512
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        4096,
+        512
+      ],
+      "kind": "Linear",
+      "module": "decoder.mid_block.attentions.0.to_k",
+      "nominalMACs": 1073741824,
+      "outputShape": [
+        1,
+        4096,
+        512
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        4096,
+        512
+      ],
+      "kind": "Linear",
+      "module": "decoder.mid_block.attentions.0.to_v",
+      "nominalMACs": 1073741824,
+      "outputShape": [
+        1,
+        4096,
+        512
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        4096,
+        512
+      ],
+      "kind": "Linear",
+      "module": "decoder.mid_block.attentions.0.to_out.0",
+      "nominalMACs": 1073741824,
+      "outputShape": [
+        1,
+        4096,
+        512
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.mid_block.resnets.1.conv1",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.mid_block.resnets.1.conv2",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.resnets.0.conv1",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.resnets.0.conv2",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.resnets.1.conv1",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.resnets.1.conv2",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.resnets.2.conv1",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.resnets.2.conv2",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.upsamplers.0.conv",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.resnets.0.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.resnets.0.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.resnets.1.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.resnets.1.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.resnets.2.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.resnets.2.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.upsamplers.0.conv",
+      "nominalMACs": 154618822656,
+      "outputShape": [
+        1,
+        512,
+        256,
+        256
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.0.conv1",
+      "nominalMACs": 77309411328,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.0.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.0.conv_shortcut",
+      "nominalMACs": 8589934592,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.1.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.1.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.2.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.2.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        256,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.upsamplers.0.conv",
+      "nominalMACs": 154618822656,
+      "outputShape": [
+        1,
+        256,
+        512,
+        512
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        256,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.0.conv1",
+      "nominalMACs": 77309411328,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.0.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        256,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.0.conv_shortcut",
+      "nominalMACs": 8589934592,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.1.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.1.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.2.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.2.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.conv_out",
+      "nominalMACs": 905969664,
+      "outputShape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "policy": "hold"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        32,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "post_quant_conv",
+      "nominalMACs": 4194304,
+      "outputShape": [
+        1,
+        32,
+        64,
+        64
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        32,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.conv_in",
+      "nominalMACs": 603979776,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.mid_block.resnets.0.conv1",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.mid_block.resnets.0.conv2",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        4096,
+        512
+      ],
+      "kind": "Linear",
+      "module": "decoder.mid_block.attentions.0.to_q",
+      "nominalMACs": 1073741824,
+      "outputShape": [
+        1,
+        4096,
+        512
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        4096,
+        512
+      ],
+      "kind": "Linear",
+      "module": "decoder.mid_block.attentions.0.to_k",
+      "nominalMACs": 1073741824,
+      "outputShape": [
+        1,
+        4096,
+        512
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        4096,
+        512
+      ],
+      "kind": "Linear",
+      "module": "decoder.mid_block.attentions.0.to_v",
+      "nominalMACs": 1073741824,
+      "outputShape": [
+        1,
+        4096,
+        512
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        4096,
+        512
+      ],
+      "kind": "Linear",
+      "module": "decoder.mid_block.attentions.0.to_out.0",
+      "nominalMACs": 1073741824,
+      "outputShape": [
+        1,
+        4096,
+        512
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.mid_block.resnets.1.conv1",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.mid_block.resnets.1.conv2",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.resnets.0.conv1",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.resnets.0.conv2",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.resnets.1.conv1",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.resnets.1.conv2",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.resnets.2.conv1",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.resnets.2.conv2",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.upsamplers.0.conv",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.resnets.0.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.resnets.0.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.resnets.1.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.resnets.1.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.resnets.2.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.resnets.2.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.upsamplers.0.conv",
+      "nominalMACs": 154618822656,
+      "outputShape": [
+        1,
+        512,
+        256,
+        256
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.0.conv1",
+      "nominalMACs": 77309411328,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.0.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.0.conv_shortcut",
+      "nominalMACs": 8589934592,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.1.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.1.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.2.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.2.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        256,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.upsamplers.0.conv",
+      "nominalMACs": 154618822656,
+      "outputShape": [
+        1,
+        256,
+        512,
+        512
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        256,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.0.conv1",
+      "nominalMACs": 77309411328,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.0.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        256,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.0.conv_shortcut",
+      "nominalMACs": 8589934592,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.1.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.1.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.2.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.2.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.conv_out",
+      "nominalMACs": 905969664,
+      "outputShape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        32,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "post_quant_conv",
+      "nominalMACs": 4194304,
+      "outputShape": [
+        1,
+        32,
+        64,
+        64
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        32,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.conv_in",
+      "nominalMACs": 603979776,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.mid_block.resnets.0.conv1",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.mid_block.resnets.0.conv2",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        4096,
+        512
+      ],
+      "kind": "Linear",
+      "module": "decoder.mid_block.attentions.0.to_q",
+      "nominalMACs": 1073741824,
+      "outputShape": [
+        1,
+        4096,
+        512
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        4096,
+        512
+      ],
+      "kind": "Linear",
+      "module": "decoder.mid_block.attentions.0.to_k",
+      "nominalMACs": 1073741824,
+      "outputShape": [
+        1,
+        4096,
+        512
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        4096,
+        512
+      ],
+      "kind": "Linear",
+      "module": "decoder.mid_block.attentions.0.to_v",
+      "nominalMACs": 1073741824,
+      "outputShape": [
+        1,
+        4096,
+        512
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        4096,
+        512
+      ],
+      "kind": "Linear",
+      "module": "decoder.mid_block.attentions.0.to_out.0",
+      "nominalMACs": 1073741824,
+      "outputShape": [
+        1,
+        4096,
+        512
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.mid_block.resnets.1.conv1",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.mid_block.resnets.1.conv2",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.resnets.0.conv1",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.resnets.0.conv2",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.resnets.1.conv1",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.resnets.1.conv2",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.resnets.2.conv1",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.resnets.2.conv2",
+      "nominalMACs": 9663676416,
+      "outputShape": [
+        1,
+        512,
+        64,
+        64
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.0.upsamplers.0.conv",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.resnets.0.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.resnets.0.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.resnets.1.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.resnets.1.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.resnets.2.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.resnets.2.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        512,
+        128,
+        128
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.1.upsamplers.0.conv",
+      "nominalMACs": 154618822656,
+      "outputShape": [
+        1,
+        512,
+        256,
+        256
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.0.conv1",
+      "nominalMACs": 77309411328,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.0.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        512,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.0.conv_shortcut",
+      "nominalMACs": 8589934592,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.1.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.1.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.2.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.resnets.2.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        256,
+        256,
+        256
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        256,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.2.upsamplers.0.conv",
+      "nominalMACs": 154618822656,
+      "outputShape": [
+        1,
+        256,
+        512,
+        512
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        256,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.0.conv1",
+      "nominalMACs": 77309411328,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.0.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        256,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.0.conv_shortcut",
+      "nominalMACs": 8589934592,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.1.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.1.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.2.conv1",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.up_blocks.3.resnets.2.conv2",
+      "nominalMACs": 38654705664,
+      "outputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "policy": "secant"
+    },
+    {
+      "case": "10",
+      "inputShape": [
+        1,
+        128,
+        512,
+        512
+      ],
+      "kind": "Conv2d",
+      "module": "decoder.conv_out",
+      "nominalMACs": 905969664,
+      "outputShape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "policy": "secant"
+    }
+  ],
+  "requestSHA256": "24f5009740303c4855ffb78023d20064cf1d9473fd1f237edb8587a5ec637188",
+  "schema": "tce-last-velocity-images-v1",
+  "scope": "Four original VAE decodes on forecast-driven finite scheduler outputs; paid three-pass prefixes supplied.",
+  "setupSecondsAfterImports": 0.656963471788913,
+  "timings": [
+    {
+      "VAESeconds": 3.736035062931478,
+      "case": "00",
+      "policy": "hold",
+      "schedulerSeconds": 0.3063671183772385
+    },
+    {
+      "VAESeconds": 0.05397611577063799,
+      "case": "10",
+      "policy": "hold",
+      "schedulerSeconds": 0.00011179782450199127
+    },
+    {
+      "VAESeconds": 0.05385810509324074,
+      "case": "00",
+      "policy": "secant",
+      "schedulerSeconds": 7.648160681128502e-05
+    },
+    {
+      "VAESeconds": 0.05176029819995165,
+      "case": "10",
+      "policy": "secant",
+      "schedulerSeconds": 7.695285603404045e-05
+    }
+  ],
+  "workerSecondsAfterImports": 6.289328276645392
+}

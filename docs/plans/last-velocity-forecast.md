@@ -1,6 +1,6 @@
 # Forecast the fourth denoiser velocity from its own preceding trajectory
 
-Status: **written and unexecuted**, selected after the cycle 36 retained-query result and [Astra review](../results/retained-queries-evidence/advisor.json). This is a component replay with a paid three-pass prefix, not arbitrary-prompt zero-neural generation.
+Status: **executed in cycle37**; [measured result](../last-velocity-forecast.md). Hold gives 17.66% signed PNG response error against the own parent, versus 54.52% secant. Preserve the original law and immutable payload snapshot. Selected after the cycle 36 retained-query result and [Astra review](../results/retained-queries-evidence/advisor.json), this remains a component replay with a paid three-pass prefix, not arbitrary-prompt zero-neural generation.
 
 ## Why this boundary
 

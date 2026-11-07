@@ -1,0 +1,21 @@
+{
+  "schema": "tce-last-velocity-saturn-verify-record-v1",
+  "command": "saturn-evidence verify --json artifacts/last-velocity-v1/result",
+  "exit_code": 0,
+  "broken": false,
+  "findings": 0,
+  "instrument_status": "target-streams-only",
+  "streams": 1,
+  "watch": {
+    "ledgers_broken": 0,
+    "ledgers_missing": 0,
+    "ledgers_missing_expected": 1,
+    "reason": "no_fires"
+  },
+  "claims": {
+    "claims_current": 0,
+    "claims_drifted": 0,
+    "claims_missing": 0
+  },
+  "scope": "Compact faithful record of returned verification output; no semantic or physical-address certificate."
+}

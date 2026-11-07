@@ -1,0 +1,37 @@
+{
+  "schema": "tce-last-velocity-tests-v1",
+  "tests": 198,
+  "seconds": 16.099,
+  "status": "OK",
+  "newMethods": 8,
+  "attempts": [
+    {
+      "tests": 197,
+      "seconds": 15.651,
+      "status": "OK",
+      "scope": "Scientific worker mechanics before staging and execution."
+    },
+    {
+      "tests": 198,
+      "seconds": 14.595,
+      "status": "FAILED",
+      "error": "New adapter regression patched package-exported submit function instead of the importlib module; test harness AttributeError, no scientific run failure."
+    },
+    {
+      "tests": 198,
+      "seconds": 16.099,
+      "status": "OK",
+      "scope": "Corrected adapter mock target; original scientific workers unchanged."
+    }
+  ],
+  "coverage": [
+    "Affine-path extrapolation and hold distinction",
+    "Actual nonuniform schedule",
+    "BF16 hold words including signed zero",
+    "Malformed/nonfinite operands and schedule",
+    "Target/sibling-array/transformer guards with allowed VAE and prefix reads",
+    "All four images seal before target scoring; decode failure never releases",
+    "Lazy source imports without neural runtime",
+    "Automatic submission omits all declared-resource arguments and refuses duplicate submission"
+  ]
+}

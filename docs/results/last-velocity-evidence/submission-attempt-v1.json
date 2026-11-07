@@ -1,0 +1,8 @@
+{
+  "schema": "tce-last-velocity-local-submission-rejection-v1",
+  "requestSHA256": "24f5009740303c4855ffb78023d20064cf1d9473fd1f237edb8587a5ec637188",
+  "stage": "local launch argument validation before scheduler job creation",
+  "error": "cpu_threads and est_wall_s require a declared ram_mb",
+  "jobCreated": false,
+  "correction": "Use last_velocity_submit.py to omit all declared-resource arguments. Scientific payload remains byte-identical. Verify the scheduler-selected CPU4 and memory/guard geometry after admission."
+}

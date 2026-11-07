@@ -1,0 +1,60 @@
+{
+  "backend": "diffusers",
+  "batch_size": 1,
+  "component": "vae-only",
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "height": 512,
+  "ownedSources": [
+    "last_velocity_study.py",
+    "last_velocity.py",
+    "last_velocity_decode.py",
+    "encoder_atoms.py",
+    "paired_fields.py",
+    "flux_clock.py",
+    "flux_clock_study.py",
+    "complete_masked_study.py",
+    "masked_kv_study.py",
+    "retained_queries.py"
+  ],
+  "parentRequestSHA256": "2114a8b31432bdcc61d00e1e66e54f679a7b1709c6874b2e9011283300e58826",
+  "policies": [
+    "secant",
+    "hold"
+  ],
+  "prompts": [
+    {
+      "id": "00",
+      "prompt": "A studio photograph of a orange ceramic pitcher to the left of a teal metal watering can on a white table, soft lighting."
+    },
+    {
+      "id": "10",
+      "prompt": "A studio photograph of a teal ceramic pitcher to the left of a orange metal watering can on a white table, soft lighting."
+    }
+  ],
+  "protocol": "Framework-free FP32secant/hold forecasts from authenticated own Z3/v1/v2. Four native finite commits/VAE images seal before target release. Two postseal scheduler-only exact parent replays. No new encoder/denoiser/reference/noise/fitting.",
+  "requestSHA256": "24f5009740303c4855ffb78023d20064cf1d9473fd1f237edb8587a5ec637188",
+  "schema": "tce-last-velocity-request-v1",
+  "seed": 271828,
+  "seq_len": 1024,
+  "sourceHashes": {
+    "complete_masked_study.py": "f52633bc9d729b2a5032e024331d9b20fcee8cb993941cab87c197089cdcff99",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "flux_clock.py": "bde499ff527f624fcd1b62a8f6f0b2fbaf70eebc7b7835fcd7d4c6403b4e0b2b",
+    "flux_clock_study.py": "eaccf6bdb75678ac6acb5a371f8858201cf83dbac4de83868b70d5570e4beddc",
+    "frozen-plan.md": "66cc075dfa324488e934770d38d6cc02bd8cfe4033885cc1120f3751f231faa5",
+    "inputs.json": "ad1169f8d3c58052d40911f9a7af764ae8534865031a3db730b321117b9c1cb6",
+    "last_velocity.py": "1ad3acc51fc0142c26ef4f9732a57a73ebb9a548acfcb62c8b527b8cc2de073d",
+    "last_velocity_decode.py": "b3081184e171753f334e9e9896d7d0378791ba0ee00682918303c7bd6a2769be",
+    "last_velocity_study.py": "3610d05832a0292a95ee2ca26657fc398a056d0b9b41c460b7949ef824e3dae0",
+    "masked_kv_study.py": "920416ce49d823b1337a7f6d9f5fca90c8047723bb6b1d37dc09967114b6ad89",
+    "paired_fields.py": "408e035cb2f2f99558dbbe5abccdc281a5deade195abdbbc003549318ef09e88",
+    "resource-basis.json": "c6d2a731e2619af186116d1ea25774334ad06df88905553fbb4652df396bad0b",
+    "retained_queries.py": "7a4305ada53f304e4728daf7cd112f5b7b85cc4378a672f8f7194ae81c942cb1",
+    "targets.json": "9abff5603c49aba96223a3b8a623de99eaa7f7f27408de02c5b2daac386419f9"
+  },
+  "specimen": "flux2-klein-4b-distilled",
+  "task_family": "vae-decode",
+  "timeoutSeconds": 300,
+  "width": 512
+}
