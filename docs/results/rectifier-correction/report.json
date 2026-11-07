@@ -1,0 +1,776 @@
+{
+  "analysisSecondsAfterImports": 17.038542275782675,
+  "candidateSealSHA256": "9a6cd658615704fee0e4c41cbfb52a751d9dd6ab75fe44b834933aa23455924c",
+  "diagnostics": {
+    "activationResidualMeanRegrouping": {
+      "candidateRms": 0.13627954900182618,
+      "changedValues": 2,
+      "cosine": 1.0,
+      "mae": 3.7645908766857795e-21,
+      "maxAbs": 5.551115123125783e-17,
+      "referenceRms": 0.13627954900182618,
+      "relativeRms": 3.092628722042037e-18,
+      "rms": 4.214620474699829e-19,
+      "scalars": 18432
+    },
+    "activationResidualRange": {
+      "max": 0.030639844888355583,
+      "maxAbs": 0.28516007447615266,
+      "min": -0.28516007447615266,
+      "scope": "Observed admittedA minus newrectifier; includes source/finite differences. IdealrealSiLU softening bound is not imposed on this field."
+    },
+    "centeredResidualDistributivity": {
+      "candidateRms": 0.5082649780331019,
+      "changedValues": 4355536,
+      "cosine": 1.0000000000000002,
+      "mae": 3.77153387253957e-16,
+      "maxAbs": 4.973799150320701e-14,
+      "referenceRms": 0.5082649780331019,
+      "relativeRms": 1.9742548002246897e-15,
+      "rms": 1.0034445726679479e-15,
+      "scalars": 4718592
+    },
+    "forecastRegrouping": {
+      "candidateRms": 1.6833705006717832,
+      "changedValues": 2029824,
+      "cosine": 1.0,
+      "mae": 5.981844619682576e-17,
+      "maxAbs": 1.4210854715202004e-14,
+      "referenceRms": 1.6833705006717832,
+      "relativeRms": 9.630267027818724e-17,
+      "rms": 1.6211307428222172e-16,
+      "scalars": 4718592
+    },
+    "newProductVsChanging": {
+      "candidateRms": 0.0460752899303068,
+      "changedValues": 10616832,
+      "cosine": 0.9188184327650263,
+      "mae": 0.008854667151967095,
+      "maxAbs": 1.577912369620467,
+      "referenceRms": 0.04272062098785989,
+      "relativeRms": 0.42576885258108665,
+      "rms": 0.018189109779552595,
+      "scalars": 14155776
+    },
+    "outputClosure": {
+      "candidateRms": 1.7070155789122001,
+      "changedValues": 2553136,
+      "cosine": 1.0,
+      "mae": 8.276909170204707e-17,
+      "maxAbs": 2.842170943040401e-14,
+      "referenceRms": 1.7070155789122001,
+      "relativeRms": 1.1929444024000817e-16,
+      "rms": 2.0363746796730442e-16,
+      "scalars": 4718592
+    },
+    "productClosureMaxAbs": 3.885780586188048e-16,
+    "productResidualExpression": {
+      "candidateRms": 0.018189109779552595,
+      "changedValues": 5589683,
+      "cosine": 1.0,
+      "mae": 9.61514213633242e-19,
+      "maxAbs": 3.885780586188048e-16,
+      "referenceRms": 0.018189109779552595,
+      "relativeRms": 1.741327455135363e-16,
+      "rms": 3.1673196243606062e-18,
+      "scalars": 14155776
+    }
+  },
+  "fixedAddress": {
+    "clock": 3,
+    "singleBlock": 0
+  },
+  "instrument_status": "one-paid-own-state-rectifier-diagnostic",
+  "mechanics_status": "complete",
+  "newContinuations": 0,
+  "newFits": 0,
+  "newImages": 0,
+  "observations": 1536,
+  "panels": {
+    "all": {
+      "additionalRemovedLinearEnergyFraction": 0.8921959430627918,
+      "additionalRemovedQuadraticEnergyFraction": 0.822581050159889,
+      "centeredGramClosureResidual": 1.862645149230957e-09,
+      "centeredResidualOverCenteredTotalRMS": {
+        "linear": 0.9445736850778838,
+        "quadratic": 0.8899502962050149,
+        "rectifier": 0.35780905657600615,
+        "zero": 1.0
+      },
+      "centeredResidualOverFullTotalRMS": 0.297750638196867,
+      "energies": {
+        "centeredLinearEnergy": 2435454.484676269,
+        "centeredLinearResidualEnergy": 8494969.52951297,
+        "centeredPolicyEnergy": 97.58028784122675,
+        "centeredQuadraticResidualEnergy": 7540873.31097129,
+        "centeredRectifierEnergy": 9109715.576138899,
+        "centeredRemainingEnergy": 1218872.9378735423,
+        "centeredResidualEnergy": 1218969.3855949943,
+        "centeredTotalEnergy": 9521166.079086088,
+        "forecastEnergy": 13371245.164121414,
+        "forecastTotalInner": 12874567.65261434,
+        "fullResidualEnergy": 1371625.4055969878,
+        "linearEnergy": 2435454.484676269,
+        "linearResidualEnergy": 12723318.997131139,
+        "outputClosureEnergy": 1.956716034083858e-25,
+        "policyEnergy": 103.80560114184377,
+        "quadraticResidualEnergy": 7730997.206516494,
+        "rectifierEnergy": 12114863.55856017,
+        "remainingEnergy": 1371750.4813433872,
+        "residualMeanEnergy": 152656.0200019934,
+        "totalEnergy": 13749515.546704257,
+        "twiceCenteredLinearPolicy": 53.20151297771438,
+        "twiceCenteredLinearRectifier": -1179072.8791150283,
+        "twiceCenteredLinearRemaining": -230238.25750109996,
+        "twiceCenteredRectifierPolicy": -20.362420814746102,
+        "twiceCenteredRectifierRemaining": -1833695.0698001077,
+        "twiceCenteredRemainingPolicy": -1.1325663890617363,
+        "twiceLinearPolicy": 53.20151297771433,
+        "twiceLinearRectifier": -1179072.8791150283,
+        "twiceLinearRemaining": -230238.2575010999,
+        "twiceRectifierPolicy": -775.1990640137635,
+        "twiceRectifierRemaining": -762394.7679620076,
+        "twiceRemainingPolicy": -228.881347540952
+      },
+      "fullGramClosureResidual": 1.862645149230957e-09,
+      "fullRemovedEnergyFraction": 0.9002419102740121,
+      "fullResidualOverTotalRMS": {
+        "linear": 0.9619588837633277,
+        "quadratic": 0.7498494201363106,
+        "rectifier": 0.3158450406860741,
+        "zero": 1.0
+      },
+      "gramAccounts": {
+        "centered": {
+          "cosines": {
+            "linear_policy": 0.0017255316567731415,
+            "linear_rectifier": -0.12516077297177136,
+            "linear_remaining": -0.06681566080757502,
+            "rectifier_policy": -0.00034148053765035573,
+            "rectifier_remaining": -0.2751474520648974,
+            "remaining_policy": -5.192462976270402e-05
+          },
+          "gram": [
+            [
+              2435454.48467627,
+              -589536.4395575142,
+              -115119.12875054998,
+              26.600756488857186
+            ],
+            [
+              -589536.4395575142,
+              9109715.576138899,
+              -916847.5349000539,
+              -10.181210407373012
+            ],
+            [
+              -115119.12875054998,
+              -916847.5349000539,
+              1218872.9378735423,
+              -0.5662831945308753
+            ],
+            [
+              26.600756488857186,
+              -10.181210407373012,
+              -0.5662831945308753,
+              97.58028784122675
+            ]
+          ],
+          "terms": [
+            "linear",
+            "rectifier",
+            "remaining",
+            "policy"
+          ],
+          "twiceCross": {
+            "linear_policy": 53.20151297771437,
+            "linear_rectifier": -1179072.8791150283,
+            "linear_remaining": -230238.25750109996,
+            "rectifier_policy": -20.362420814746024,
+            "rectifier_remaining": -1833695.0698001077,
+            "remaining_policy": -1.1325663890617506
+          }
+        },
+        "full": {
+          "cosines": {
+            "linear_policy": 0.0016729909236951565,
+            "linear_rectifier": -0.10853289356206124,
+            "linear_remaining": -0.0629825042519998,
+            "rectifier_policy": -0.010929834513594453,
+            "rectifier_remaining": -0.09350892995114922,
+            "remaining_policy": -0.009590305712932474
+          },
+          "gram": [
+            [
+              2435454.48467627,
+              -589536.4395575142,
+              -115119.12875054996,
+              26.600756488857158
+            ],
+            [
+              -589536.4395575142,
+              12114863.55856017,
+              -381197.3839810038,
+              -387.5995320068818
+            ],
+            [
+              -115119.12875054996,
+              -381197.3839810038,
+              1371750.4813433872,
+              -114.440673770476
+            ],
+            [
+              26.600756488857158,
+              -387.5995320068818,
+              -114.440673770476,
+              103.80560114184377
+            ]
+          ],
+          "terms": [
+            "linear",
+            "rectifier",
+            "remaining",
+            "policy"
+          ],
+          "twiceCross": {
+            "linear_policy": 53.201512977714316,
+            "linear_rectifier": -1179072.8791150283,
+            "linear_remaining": -230238.25750109993,
+            "rectifier_policy": -775.1990640137636,
+            "rectifier_remaining": -762394.7679620076,
+            "remaining_policy": -228.881347540952
+          }
+        },
+        "mean": {
+          "cosines": {
+            "linear_policy": -0.0426789304616589,
+            "linear_rectifier": -0.022423107418050325,
+            "linear_remaining": 0.012050169110509115,
+            "rectifier_policy": -0.08725884116195001,
+            "rectifier_remaining": 0.7902717409008219,
+            "remaining_policy": -0.11672761484817924
+          },
+          "gram": [
+            [
+              5.592903625283496e-26,
+              -9.192791217490936e-12,
+              1.1142526034370646e-12,
+              -2.5183309435417813e-14
+            ],
+            [
+              -9.192791217490936e-12,
+              3005147.9824212748,
+              535650.1509190508,
+              -377.4183215995089
+            ],
+            [
+              1.1142526034370646e-12,
+              535650.1509190508,
+              152877.54346984494,
+              -113.87439057594517
+            ],
+            [
+              -2.5183309435417813e-14,
+              -377.4183215995089,
+              -113.87439057594517,
+              6.225313300616995
+            ]
+          ],
+          "terms": [
+            "linear",
+            "rectifier",
+            "remaining",
+            "policy"
+          ],
+          "twiceCross": {
+            "linear_policy": -5.0366618870835627e-14,
+            "linear_rectifier": -1.8385582434981872e-11,
+            "linear_remaining": 2.228505206874129e-12,
+            "rectifier_policy": -754.8366431990178,
+            "rectifier_remaining": 1071300.3018381016,
+            "remaining_policy": -227.74878115189034
+          }
+        }
+      },
+      "residualMeanOverFullTotalRMS": 0.10536909973681206,
+      "residualPythagoreanDiscrepancy": 0.0,
+      "rows": 1536,
+      "rowsVs": {
+        "linear": {
+          "equal": 0,
+          "improve": 1536,
+          "worsen": 0
+        },
+        "quadratic": {
+          "equal": 0,
+          "improve": 124,
+          "worsen": 1412
+        },
+        "zero": {
+          "equal": 0,
+          "improve": 1530,
+          "worsen": 6
+        }
+      }
+    },
+    "image": {
+      "additionalRemovedLinearEnergyFraction": 0.9011071902486414,
+      "additionalRemovedQuadraticEnergyFraction": -0.2202621185641982,
+      "centeredGramClosureResidual": 0.0,
+      "centeredResidualOverCenteredTotalRMS": {
+        "linear": 0.9605020579445614,
+        "quadratic": 0.3129769948190755,
+        "rectifier": 0.35642194461720467,
+        "zero": 1.0
+      },
+      "centeredResidualOverFullTotalRMS": 0.2855006178329846,
+      "energies": {
+        "centeredLinearEnergy": 1555959.7675185,
+        "centeredLinearResidualEnergy": 6899592.880705013,
+        "centeredPolicyEnergy": 59.571921460056885,
+        "centeredQuadraticResidualEnergy": 732574.3329698171,
+        "centeredRectifierEnergy": 7409497.275192135,
+        "centeredRemainingEnergy": 950060.280652375,
+        "centeredResidualEnergy": 950070.2886262259,
+        "centeredTotalEnergy": 7478712.978357021,
+        "forecastEnergy": 11106892.534261437,
+        "forecastTotalInner": 10833638.766478462,
+        "fullResidualEnergy": 1095402.790720651,
+        "linearEnergy": 1555959.7675185,
+        "linearResidualEnergy": 11076667.691764131,
+        "outputClosureEnergy": 1.6457128510905118e-25,
+        "policyEnergy": 61.94994442314114,
+        "quadraticResidualEnergy": 897678.2726071501,
+        "rectifierEnergy": 10382045.622395208,
+        "remainingEnergy": 1095567.5716470056,
+        "residualMeanEnergy": 145332.50209442485,
+        "totalEnergy": 11655787.789416138,
+        "twiceCenteredLinearPolicy": 26.58620181369417,
+        "twiceCenteredLinearRectifier": -831112.8556522712,
+        "twiceCenteredLinearRemaining": -145753.40041603573,
+        "twiceCenteredRectifierPolicy": -135.33025380325859,
+        "twiceCenteredRectifierRemaining": -1459839.3528595436,
+        "twiceCenteredRemainingPolicy": -49.56394760922692,
+        "twiceLinearPolicy": 26.58620181369414,
+        "twiceLinearRectifier": -831112.8556522712,
+        "twiceLinearRemaining": -145753.40041603573,
+        "twiceRectifierPolicy": -725.417290367693,
+        "twiceRectifierRemaining": -400055.3040613588,
+        "twiceRemainingPolicy": -226.730870777999
+      },
+      "fullGramClosureResidual": 3.725290298461914e-09,
+      "fullRemovedEnergyFraction": 0.906020698856982,
+      "fullResidualOverTotalRMS": {
+        "linear": 0.9748409122900528,
+        "quadratic": 0.2775169672953811,
+        "rectifier": 0.3065604363629103,
+        "zero": 1.0
+      },
+      "gramAccounts": {
+        "centered": {
+          "cosines": {
+            "linear_policy": 0.0013807222253726427,
+            "linear_rectifier": -0.1223873274887865,
+            "linear_remaining": -0.059939613387390574,
+            "rectifier_policy": -0.0032206959353853442,
+            "rectifier_remaining": -0.275109203063139,
+            "remaining_policy": -0.0032941207030581375
+          },
+          "gram": [
+            [
+              1555959.7675185,
+              -415556.42782613565,
+              -72876.70020801786,
+              13.293100906847082
+            ],
+            [
+              -415556.42782613565,
+              7409497.275192135,
+              -729919.6764297718,
+              -67.66512690162929
+            ],
+            [
+              -72876.70020801786,
+              -729919.6764297718,
+              950060.2806523751,
+              -24.781973804613465
+            ],
+            [
+              13.293100906847082,
+              -67.66512690162929,
+              -24.781973804613465,
+              59.571921460056885
+            ]
+          ],
+          "terms": [
+            "linear",
+            "rectifier",
+            "remaining",
+            "policy"
+          ],
+          "twiceCross": {
+            "linear_policy": 26.586201813694164,
+            "linear_rectifier": -831112.8556522713,
+            "linear_remaining": -145753.40041603573,
+            "rectifier_policy": -135.33025380325859,
+            "rectifier_remaining": -1459839.3528595436,
+            "remaining_policy": -49.56394760922693
+          }
+        },
+        "full": {
+          "cosines": {
+            "linear_policy": 0.0013539625723447957,
+            "linear_rectifier": -0.10339257610744816,
+            "linear_remaining": -0.05581744253123158,
+            "rectifier_policy": -0.014301973865276523,
+            "rectifier_remaining": -0.05931014505952917,
+            "remaining_policy": -0.01376070280525447
+          },
+          "gram": [
+            [
+              1555959.7675185,
+              -415556.4278261356,
+              -72876.70020801786,
+              13.293100906847064
+            ],
+            [
+              -415556.4278261356,
+              10382045.622395208,
+              -200027.6520306794,
+              -362.70864518384644
+            ],
+            [
+              -72876.70020801786,
+              -200027.6520306794,
+              1095567.5716470056,
+              -113.36543538899951
+            ],
+            [
+              13.293100906847064,
+              -362.70864518384644,
+              -113.36543538899951,
+              61.94994442314114
+            ]
+          ],
+          "terms": [
+            "linear",
+            "rectifier",
+            "remaining",
+            "policy"
+          ],
+          "twiceCross": {
+            "linear_policy": 26.586201813694128,
+            "linear_rectifier": -831112.8556522712,
+            "linear_remaining": -145753.40041603573,
+            "rectifier_policy": -725.4172903676929,
+            "rectifier_remaining": -400055.3040613588,
+            "remaining_policy": -226.73087077799903
+          }
+        },
+        "mean": {
+          "cosines": {
+            "linear_policy": -0.06976835322515341,
+            "linear_rectifier": -0.032245278549661964,
+            "linear_remaining": 0.002706145455830933,
+            "rectifier_policy": -0.11097204586875585,
+            "rectifier_remaining": 0.8057133168549634,
+            "remaining_policy": -0.15059212013513673
+          },
+          "gram": [
+            [
+              3.87078771668729e-26,
+              -1.0937807444008625e-11,
+              2.0309217517125803e-13,
+              -2.116733442696124e-14
+            ],
+            [
+              -1.0937807444008625e-11,
+              2972548.3472030736,
+              529892.024399093,
+              -295.04351828221724
+            ],
+            [
+              2.0309217517125803e-13,
+              529892.024399093,
+              145507.29099463084,
+              -88.58346158438609
+            ],
+            [
+              -2.116733442696124e-14,
+              -295.04351828221724,
+              -88.58346158438609,
+              2.3780229630842644
+            ]
+          ],
+          "terms": [
+            "linear",
+            "rectifier",
+            "remaining",
+            "policy"
+          ],
+          "twiceCross": {
+            "linear_policy": -4.233466885392248e-14,
+            "linear_rectifier": -2.187561488801725e-11,
+            "linear_remaining": 4.0618435034251606e-13,
+            "rectifier_policy": -590.0870365644345,
+            "rectifier_remaining": 1059784.048798186,
+            "remaining_policy": -177.16692316877217
+          }
+        }
+      },
+      "residualMeanOverFullTotalRMS": 0.11166332594008672,
+      "residualPythagoreanDiscrepancy": 2.3283064365386963e-10,
+      "rows": 1024,
+      "rowsVs": {
+        "linear": {
+          "equal": 0,
+          "improve": 1024,
+          "worsen": 0
+        },
+        "quadratic": {
+          "equal": 0,
+          "improve": 111,
+          "worsen": 913
+        },
+        "zero": {
+          "equal": 0,
+          "improve": 1024,
+          "worsen": 0
+        }
+      }
+    },
+    "text": {
+      "additionalRemovedLinearEnergyFraction": 0.8322519078714286,
+      "additionalRemovedQuadraticEnergyFraction": 0.9595770931303056,
+      "centeredGramClosureResidual": 4.656612873077393e-10,
+      "centeredResidualOverCenteredTotalRMS": {
+        "linear": 0.8838031987407191,
+        "quadratic": 1.825758213309348,
+        "rectifier": 0.36284289669516523,
+        "zero": 1.0
+      },
+      "centeredResidualOverFullTotalRMS": 0.35837240939754844,
+      "energies": {
+        "centeredLinearEnergy": 879494.7171577694,
+        "centeredLinearResidualEnergy": 1595376.6488079554,
+        "centeredPolicyEnergy": 38.00836638116988,
+        "centeredQuadraticResidualEnergy": 6808298.978001474,
+        "centeredRectifierEnergy": 1700218.300946763,
+        "centeredRemainingEnergy": 268812.65722116723,
+        "centeredResidualEnergy": 268899.09696876863,
+        "centeredTotalEnergy": 2042453.1007290678,
+        "forecastEnergy": 2264352.6298599765,
+        "forecastTotalInner": 2040928.8861358792,
+        "fullResidualEnergy": 276222.61487633706,
+        "linearEnergy": 879494.7171577695,
+        "linearResidualEnergy": 1646651.3053670065,
+        "outputClosureEnergy": 3.1100318299334615e-26,
+        "policyEnergy": 41.85565671870262,
+        "quadraticResidualEnergy": 6833318.933909344,
+        "rectifierEnergy": 1732817.9361649642,
+        "remainingEnergy": 276182.90969638136,
+        "residualMeanEnergy": 7323.517907568502,
+        "totalEnergy": 2093727.7572881188,
+        "twiceCenteredLinearPolicy": 26.615311164020223,
+        "twiceCenteredLinearRectifier": -347960.02346275706,
+        "twiceCenteredLinearRemaining": -84484.85708506421,
+        "twiceCenteredRectifierPolicy": 114.96783298851248,
+        "twiceCenteredRectifierRemaining": -373855.71694056434,
+        "twiceCenteredRemainingPolicy": 48.43138122016517,
+        "twiceLinearPolicy": 26.615311164020184,
+        "twiceLinearRectifier": -347960.0234627571,
+        "twiceLinearRemaining": -84484.85708506421,
+        "twiceRectifierPolicy": -49.78177364607059,
+        "twiceRectifierRemaining": -362339.4639006488,
+        "twiceRemainingPolicy": -2.1504767629529837
+      },
+      "fullGramClosureResidual": 0.0,
+      "fullRemovedEnergyFraction": 0.8680713794260855,
+      "fullResidualOverTotalRMS": {
+        "linear": 0.8868306940509048,
+        "quadratic": 1.8065739360301831,
+        "rectifier": 0.3632197965060749,
+        "zero": 1.0
+      },
+      "gramAccounts": {
+        "centered": {
+          "cosines": {
+            "linear_policy": 0.0023016820605624346,
+            "linear_rectifier": -0.1422755898993338,
+            "linear_remaining": -0.0868775176983316,
+            "rectifier_policy": 0.007150796265102719,
+            "rectifier_remaining": -0.2765010789300056,
+            "remaining_policy": 0.0075758680239509536
+          },
+          "gram": [
+            [
+              879494.7171577694,
+              -173980.01173137853,
+              -42242.428542532114,
+              13.307655582010103
+            ],
+            [
+              -173980.01173137853,
+              1700218.3009467633,
+              -186927.85847028214,
+              57.48391649425626
+            ],
+            [
+              -42242.428542532114,
+              -186927.85847028214,
+              268812.6572211673,
+              24.21569061008259
+            ],
+            [
+              13.307655582010103,
+              57.48391649425626,
+              24.21569061008259,
+              38.00836638116989
+            ]
+          ],
+          "terms": [
+            "linear",
+            "rectifier",
+            "remaining",
+            "policy"
+          ],
+          "twiceCross": {
+            "linear_policy": 26.615311164020206,
+            "linear_rectifier": -347960.02346275706,
+            "linear_remaining": -84484.85708506423,
+            "rectifier_policy": 114.96783298851253,
+            "rectifier_remaining": -373855.7169405643,
+            "remaining_policy": 48.43138122016518
+          }
+        },
+        "full": {
+          "cosines": {
+            "linear_policy": 0.002193349573280543,
+            "linear_rectifier": -0.14093091477203817,
+            "linear_remaining": -0.08571046675293569,
+            "rectifier_policy": -0.0029227173831150016,
+            "rectifier_remaining": -0.2618850904758039,
+            "remaining_policy": -0.0003162490851614329
+          },
+          "gram": [
+            [
+              879494.7171577694,
+              -173980.01173137856,
+              -42242.428542532114,
+              13.307655582010113
+            ],
+            [
+              -173980.01173137856,
+              1732817.9361649647,
+              -181169.7319503244,
+              -24.890886823035306
+            ],
+            [
+              -42242.428542532114,
+              -181169.7319503244,
+              276182.9096963813,
+              -1.075238381476499
+            ],
+            [
+              13.307655582010113,
+              -24.890886823035306,
+              -1.075238381476499,
+              41.85565671870262
+            ]
+          ],
+          "terms": [
+            "linear",
+            "rectifier",
+            "remaining",
+            "policy"
+          ],
+          "twiceCross": {
+            "linear_policy": 26.615311164020227,
+            "linear_rectifier": -347960.0234627571,
+            "linear_remaining": -84484.85708506423,
+            "rectifier_policy": -49.78177364607061,
+            "rectifier_remaining": -362339.4639006488,
+            "remaining_policy": -2.150476762952998
+          }
+        },
+        "mean": {
+          "cosines": {
+            "linear_policy": -0.015602073923542925,
+            "linear_rectifier": 0.07364816154321328,
+            "linear_remaining": 0.08087652412302747,
+            "rectifier_policy": -0.23260044407919772,
+            "rectifier_remaining": 0.3714784718076653,
+            "remaining_policy": -0.15019176420395453
+          },
+          "gram": [
+            [
+              1.722115908596206e-26,
+              1.7450162265176908e-12,
+              9.111604282658058e-13,
+              -4.0159750084565735e-15
+            ],
+            [
+              1.7450162265176908e-12,
+              32599.6352182014,
+              5758.126519957731,
+              -82.3748033172916
+            ],
+            [
+              9.111604282658058e-13,
+              5758.126519957731,
+              7370.252475214085,
+              -25.290928991559067
+            ],
+            [
+              -4.0159750084565735e-15,
+              -82.3748033172916,
+              -25.290928991559067,
+              3.847290337532731
+            ]
+          ],
+          "terms": [
+            "linear",
+            "rectifier",
+            "remaining",
+            "policy"
+          ],
+          "twiceCross": {
+            "linear_policy": -8.031950016913147e-15,
+            "linear_rectifier": 3.4900324530353817e-12,
+            "linear_remaining": 1.8223208565316115e-12,
+            "rectifier_policy": -164.7496066345832,
+            "rectifier_remaining": 11516.253039915462,
+            "remaining_policy": -50.581857983118134
+          }
+        }
+      },
+      "residualMeanOverFullTotalRMS": 0.05914251226072846,
+      "residualPythagoreanDiscrepancy": -5.820766091346741e-11,
+      "rows": 512,
+      "rowsVs": {
+        "linear": {
+          "equal": 0,
+          "improve": 512,
+          "worsen": 0
+        },
+        "quadratic": {
+          "equal": 0,
+          "improve": 13,
+          "worsen": 499
+        },
+        "zero": {
+          "equal": 0,
+          "improve": 506,
+          "worsen": 6
+        }
+      }
+    }
+  },
+  "rectifierElements": 14155776,
+  "requestSHA256": "18ae9d736a0c9f692b9ca1f5b197474f21f06c97aaa508768b740930b074ac16",
+  "schema": "tce-rectifier-correction-result-v1",
+  "scope": "OriginalsavedGstar/Up/L/support/D/g/source/historypaid. One new rectifier plus learnedDown; no economical/zero-neuralservingclaim. New expression uses actualA-minusrectifier bookkeeping,not oldF. Full reconstructedmissingwrite notnativefiniteblockerror/imagecause. No tail/HDown/fit/meanrepair/continuation.",
+  "terminal_status": "unassessed",
+  "totalMatrixMACs": 43486543872,
+  "trend_status": "Full/centered/mean/signed accounts and everyrow retained"
+}

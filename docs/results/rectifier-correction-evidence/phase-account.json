@@ -1,0 +1,41 @@
+{
+  "actor": {
+    "CPUSecondsAfterImports": 17.993355084,
+    "peakCUDAAllocatedBytes": 1057906688,
+    "peakCUDAReservedBytes": 1119879168,
+    "setupSecondsAfterImports": 8.724809890147299,
+    "timings": [
+      {
+        "instrumentedSynchronizedSecondsBeforeFinalOutputFingerprint": 2.533144135028124,
+        "scope": "Rectification/means/product/Down/gating/forecast plus internal affine fingerprints; excludes outer source hashes, final ABI/output fingerprint/array writes.",
+        "stage": "rectifierCorrection"
+      }
+    ],
+    "wallSecondsAfterImports": 22.645328157115728
+  },
+  "analysisSecondsAfterImports": 17.038542275782675,
+  "producerExit": {
+    "candidateSealSHA256": "9a6cd658615704fee0e4c41cbfb52a751d9dd6ab75fe44b834933aa23455924c",
+    "producerPID": 1130887,
+    "producerProcessSeconds": 36.72104457486421,
+    "requestSHA256": "18ae9d736a0c9f692b9ca1f5b197474f21f06c97aaa508768b740930b074ac16",
+    "returncode": 0,
+    "schema": "tce-rectifier-correction-producer-exit-v1",
+    "scope": "Parent observed successful producer exit before starting comparison process."
+  },
+  "reservation": {
+    "cpu_threads": 4,
+    "disk_gb": 3.0,
+    "est_wall_s": 90.0,
+    "ram_mb": 6144.0,
+    "source": "declared",
+    "vram_mb": 3072.0
+  },
+  "scheduler": {
+    "elapsed_s": 58.96,
+    "peak_rss_mb": 2541.8,
+    "peak_vram_mb": 1376.0
+  },
+  "schema": "tce-rectifier-correction-phases-v1",
+  "scope": "Instrumented synchronized interval includes rectifier/means/product/Down/gating/forecast and internal affine fingerprints; excludes outer source/finaloutputhashes/ABI/retention. Actor/analysis/scheduler scopes differ; no matched serving speed claim."
+}
