@@ -1,0 +1,16 @@
+{
+  "schema": "tce-image-dual-tests-v1",
+  "command": "rtk proxy ../common/bin/common exec python -m pytest generator -q",
+  "passed": 290,
+  "seconds": 19.78,
+  "exitCode": 0,
+  "source": "generator/test_image_dual.py",
+  "sourceSHA256": "4ff60f74062ce93582fa91f2d3426dc3f29665f9e023a913cbb420784c6b35e3",
+  "newIndependentFixtures": 4,
+  "earlierPreCorrectionMechanicsRun": {
+    "passed": 290,
+    "seconds": 17.23,
+    "scope": "Prior fixture assumed incorrect axis order; retained as mechanics history, not qualification of the final geometry."
+  },
+  "scope": "Independent stored-map transpose, full explicit-matrix THWL dual identity/group membership, unchanged receiving law, and raw-byte text-prefix preparation; not semantic generalization."
+}

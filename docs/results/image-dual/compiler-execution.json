@@ -1,0 +1,1255 @@
+{
+  "CPUSecondsAfterImports": 8.336919098,
+  "arithmeticTimings": [
+    {
+      "arithmeticSecondsBeforeCapture": 0.29383176006376743,
+      "stage": "modln"
+    },
+    {
+      "arithmeticSecondsBeforeCapture": 0.368652671109885,
+      "stage": "compile"
+    }
+  ],
+  "assets": [
+    {
+      "bytesHashed": 541,
+      "path": "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/config.json",
+      "sha256": "09733c74a3da6d17dd0a0472a091a8950c7c6935889c32c16cc800ede05029de",
+      "signature": [
+        66311,
+        298051,
+        541,
+        1784967358756501000,
+        1784967358757491000
+      ]
+    },
+    {
+      "bytesHashed": 7751109744,
+      "path": "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/diffusion_pytorch_model.safetensors",
+      "sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+      "signature": [
+        66311,
+        298058,
+        7751109744,
+        1784967508577765300,
+        1784967508615361800
+      ]
+    }
+  ],
+  "fileQuarantine": {
+    "allowedFiles": [
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/config.json",
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/diffusion_pytorch_model.safetensors",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/blobs/7b34ed4c73a67ab74a8665995676099450671b04531c326a9dbf729185a5e318.safetensors",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/blobs/b84d7915c97bfcc7272f0ede2d4c11e62b3ecd263e47478f7be9fa213bc7d39a.safetensors",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/cuts/8551691e8094d927d8521d0b5e6a0416520b2d90abea800d65d14c8d986062e3.json",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/pages/8dfcda9c1b88d9e75aa94be0a9aecb67767947741e8b17392d66e21a4851616c.json",
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/pages/d1451acfd9414996c16a70e2977f20e538c7bcb10196d54221b1b5ae66cd7d1b.json",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/banks/selected/Q.npy"
+    ],
+    "deniedCanaries": [
+      "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/next_query/nextLayerNorm.npy",
+      "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/next_query/nextQ.npy",
+      "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/next_query/nextQNormalized.npy",
+      "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/next_query/nextQProjected.npy",
+      "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/next_query/nextX.npy",
+      "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/source/A.npy",
+      "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/source/D_attention.npy",
+      "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/source/D_mlp.npy",
+      "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/source/H.npy",
+      "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/source/M.npy",
+      "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/source/T.npy",
+      "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/source/U.npy",
+      "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/source/X.npy",
+      "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/source/fused.npy",
+      "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/source/product.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/next_query/nextLayerNorm.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/next_query/nextQ.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/next_query/nextQNormalized.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/next_query/nextQProjected.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/next_query/nextX.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/A.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/D_attention.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/D_mlp.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/H.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/M.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/T.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/U.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/X.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/fused.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/product.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/next_query/nextLayerNorm.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/next_query/nextQ.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/next_query/nextQNormalized.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/next_query/nextQProjected.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/next_query/nextX.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/A.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/D_attention.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/D_mlp.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/H.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/M.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/T.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/U.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/X.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/fused.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/product.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/banks/bank_P/K.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/banks/bank_Q/K.npy",
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/banks/bank_Q/V.npy"
+    ],
+    "successfulFileOpenCounts": {
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/config.json": 1,
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/diffusion_pytorch_model.safetensors": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/blobs/7b34ed4c73a67ab74a8665995676099450671b04531c326a9dbf729185a5e318.safetensors": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/blobs/b84d7915c97bfcc7272f0ede2d4c11e62b3ecd263e47478f7be9fa213bc7d39a.safetensors": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/cuts/8551691e8094d927d8521d0b5e6a0416520b2d90abea800d65d14c8d986062e3.json": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/pages/8dfcda9c1b88d9e75aa94be0a9aecb67767947741e8b17392d66e21a4851616c.json": 2,
+      "/mnt/big/mdb/research/job-a2048028d7bf/flux-binding-family-result/state-store/pages/d1451acfd9414996c16a70e2977f20e538c7bcb10196d54221b1b5ae66cd7d1b.json": 2,
+      "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/banks/selected/Q.npy": 2
+    }
+  },
+  "header": {
+    "bytes": 20584,
+    "sha256": "012278fec8c5203622e33f14a7da845b344c5dcd869980b04692348ff02420f6"
+  },
+  "loadedParameters": [
+    {
+      "bytes": 18874368,
+      "dataOffsets": [
+        5862862848,
+        5881737216
+      ],
+      "name": "transformer_blocks.1.attn.to_k.weight",
+      "payloadSHA256": "5b350549392f8b1880c5b1d83a7088370c4e5fead05f55304db349ccf4958bc1",
+      "shape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "bytes": 256,
+      "dataOffsets": [
+        5843987968,
+        5843988224
+      ],
+      "name": "transformer_blocks.1.attn.norm_k.weight",
+      "payloadSHA256": "838aec166d795b2c10ddc28dafb25e5f00645ddb3a7eede9d48b7ee3aa33a586",
+      "shape": [
+        128
+      ]
+    }
+  ],
+  "nominalMatrixMACs": 10286530560,
+  "numericalProfile": {
+    "bf16ReducedPrecisionReduction": true,
+    "cublasWorkspaceConfig": ":4096:8",
+    "cudaMatmulTF32": false,
+    "cudnnBenchmark": false,
+    "cudnnDeterministic": true,
+    "cudnnTF32": false,
+    "deterministicAlgorithms": true,
+    "float32MatmulPrecision": "highest",
+    "threads": 4
+  },
+  "operations": [
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        1024,
+        3072
+      ],
+      "nominalMACs": 9663676416,
+      "operation": "P-denominator-projection",
+      "rightShape": [
+        3072,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        4,
+        64
+      ],
+      "nominalMACs": 786432,
+      "operation": "dual-constant",
+      "rightShape": [
+        64,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-1",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-2",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        4,
+        64
+      ],
+      "nominalMACs": 786432,
+      "operation": "dual-constant",
+      "rightShape": [
+        64,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-1",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-2",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        4,
+        64
+      ],
+      "nominalMACs": 786432,
+      "operation": "dual-constant",
+      "rightShape": [
+        64,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-1",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-2",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        4,
+        64
+      ],
+      "nominalMACs": 786432,
+      "operation": "dual-constant",
+      "rightShape": [
+        64,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-1",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-2",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        4,
+        64
+      ],
+      "nominalMACs": 786432,
+      "operation": "dual-constant",
+      "rightShape": [
+        64,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-1",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-2",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        4,
+        64
+      ],
+      "nominalMACs": 786432,
+      "operation": "dual-constant",
+      "rightShape": [
+        64,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-1",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-2",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        4,
+        64
+      ],
+      "nominalMACs": 786432,
+      "operation": "dual-constant",
+      "rightShape": [
+        64,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-1",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-2",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        4,
+        64
+      ],
+      "nominalMACs": 786432,
+      "operation": "dual-constant",
+      "rightShape": [
+        64,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-1",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-2",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        4,
+        64
+      ],
+      "nominalMACs": 786432,
+      "operation": "dual-constant",
+      "rightShape": [
+        64,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-1",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-2",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        4,
+        64
+      ],
+      "nominalMACs": 786432,
+      "operation": "dual-constant",
+      "rightShape": [
+        64,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-1",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-2",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        4,
+        64
+      ],
+      "nominalMACs": 786432,
+      "operation": "dual-constant",
+      "rightShape": [
+        64,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-1",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-2",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        4,
+        64
+      ],
+      "nominalMACs": 786432,
+      "operation": "dual-constant",
+      "rightShape": [
+        64,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-1",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-2",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        4,
+        64
+      ],
+      "nominalMACs": 786432,
+      "operation": "dual-constant",
+      "rightShape": [
+        64,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-1",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-2",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        4,
+        64
+      ],
+      "nominalMACs": 786432,
+      "operation": "dual-constant",
+      "rightShape": [
+        64,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-1",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-2",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        4,
+        64
+      ],
+      "nominalMACs": 786432,
+      "operation": "dual-constant",
+      "rightShape": [
+        64,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-1",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-2",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        4,
+        64
+      ],
+      "nominalMACs": 786432,
+      "operation": "dual-constant",
+      "rightShape": [
+        64,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-1",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-2",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        4,
+        64
+      ],
+      "nominalMACs": 786432,
+      "operation": "dual-constant",
+      "rightShape": [
+        64,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-1",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-2",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        4,
+        64
+      ],
+      "nominalMACs": 786432,
+      "operation": "dual-constant",
+      "rightShape": [
+        64,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-1",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-2",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        4,
+        64
+      ],
+      "nominalMACs": 786432,
+      "operation": "dual-constant",
+      "rightShape": [
+        64,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-1",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-2",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        4,
+        64
+      ],
+      "nominalMACs": 786432,
+      "operation": "dual-constant",
+      "rightShape": [
+        64,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-1",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-2",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        4,
+        64
+      ],
+      "nominalMACs": 786432,
+      "operation": "dual-constant",
+      "rightShape": [
+        64,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-1",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-2",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        4,
+        64
+      ],
+      "nominalMACs": 786432,
+      "operation": "dual-constant",
+      "rightShape": [
+        64,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-1",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-2",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        4,
+        64
+      ],
+      "nominalMACs": 786432,
+      "operation": "dual-constant",
+      "rightShape": [
+        64,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-1",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-2",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        4,
+        64
+      ],
+      "nominalMACs": 786432,
+      "operation": "dual-constant",
+      "rightShape": [
+        64,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-1",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "inputShape": [
+        128,
+        32
+      ],
+      "nominalMACs": 12582912,
+      "operation": "dual-axis-2",
+      "rightShape": [
+        32,
+        3072
+      ],
+      "stage": "compile"
+    }
+  ],
+  "parameterInputRNGClosure": true,
+  "peakCUDAAllocatedBytes": 39426560,
+  "peakCUDAReservedBytes": 44040192,
+  "wallSecondsAfterImports": 14.788088514003903
+}
