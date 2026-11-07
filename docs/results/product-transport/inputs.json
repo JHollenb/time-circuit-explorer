@@ -1,0 +1,178 @@
+{
+  "carrier": {
+    "bytes": 6291584,
+    "logicalDtype": "torch.bfloat16",
+    "path": "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/shared/B.gatedCarrier.npy",
+    "payloadSHA256": "e2308c625f3c13dd7109379d7da264dcd341c438ba36a4e90c234ce391b2af80",
+    "sha256": "b7c259b6aaf1bff5ba61e00672de30abcdf17b2616cd1188391e1aeff1b4a211",
+    "shape": [
+      1,
+      1024,
+      3072
+    ],
+    "storedDtype": "uint16"
+  },
+  "deniedCanaries": [
+    "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/cells/R1B/fused.npy",
+    "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/cells/R1A/product.npy",
+    "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/cells/R1A/mlpWrite.npy",
+    "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/cells/R1A/imageExit.npy"
+  ],
+  "embedding": {
+    "bytes": 6291584,
+    "logicalDtype": "torch.bfloat16",
+    "path": "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/shared/R1.embedding.npy",
+    "payloadSHA256": "9dd453f72a208461837d1a6007a8dbeaff9e9c3f5ae21e4e1150526348d214b3",
+    "sha256": "9581e9ce5881bf91fc25b26aa3dcc91403aa726d0fb0458dae512fa723281764",
+    "shape": [
+      1,
+      1024,
+      3072
+    ],
+    "storedDtype": "uint16"
+  },
+  "fused": {
+    "R0A": {
+      "bytes": 37748864,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/cells/R0A/fused.npy",
+      "payloadSHA256": "ef8dc3327b305b38e5c9ae916972e535a8c73ddd942bf7dfacdf0bc323e608b1",
+      "sha256": "139f61e8eb93f4af769ed0553956bdbbe2356026ae318f18f63346be1bce9cb2",
+      "shape": [
+        1,
+        1024,
+        18432
+      ],
+      "storedDtype": "uint16"
+    },
+    "R0B": {
+      "bytes": 37748864,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/cells/R0B/fused.npy",
+      "payloadSHA256": "0e449263081b2e67eee07b6df8e2033ce51f608c692c47f5f1947290ee411265",
+      "sha256": "9dc0d2a396d3ef91c9d66e9b2f48904c6675df8a45d6e4605d7650d6296d5809",
+      "shape": [
+        1,
+        1024,
+        18432
+      ],
+      "storedDtype": "uint16"
+    },
+    "R1A": {
+      "bytes": 37748864,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/cells/R1A/fused.npy",
+      "payloadSHA256": "c47b31aa6e1f46e4237873a99a0104488aa08186afb6dfe4323bb7f1e907fd09",
+      "sha256": "d823b51091c3ac8fd89d62c4a8ff7bc1238e5d27f7e7484ed99fe6e1fd88ccf1",
+      "shape": [
+        1,
+        1024,
+        18432
+      ],
+      "storedDtype": "uint16"
+    }
+  },
+  "imageAssets": {
+    "transformer/config.json": "09733c74a3da6d17dd0a0472a091a8950c7c6935889c32c16cc800ede05029de",
+    "transformer/diffusion_pytorch_model.safetensors": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e"
+  },
+  "modelRoot": "/mnt/big/llm-models/FLUX.2-klein-4B",
+  "modulation": {
+    "bytes": 36992,
+    "logicalDtype": "torch.bfloat16",
+    "path": "/mnt/hdd8tb/mrun-work/job-31811b103879/clock-arrays/3/double_img.npy",
+    "payloadSHA256": "b68da67c6e8c689a06200e4664e5b3b7f74cc480721e2e5e3dbc4e1d166b8152",
+    "sha256": "a61508715739b6325ab72efa1864eb38ad9e611dfb30a2a82f8e27812c81c15b",
+    "shape": [
+      1,
+      18432
+    ],
+    "storedDtype": "uint16"
+  },
+  "nativeSources": {
+    "image_processor.py": "d7558c34e9dfd36ea2a8721fc670615ca868de551ba232992a7f5382924b98f8",
+    "models/activations.py": "ab1767e8e44e7d4bf1cb18299ba33654329e2711fa983b1423fc4fe12de2c3ab",
+    "models/attention_dispatch.py": "2acfeb88d200a6466c0b4c718e5699efd8dc2e61d8b7c96d9d7c938ffbb25bc8",
+    "models/attention_processor.py": "7158a23bff0ce5bb1c03d66e2441dfd8d169b3598b2d494d32c6f88a3301ea01",
+    "models/autoencoders/autoencoder_kl_flux2.py": "7d9a976c1e4f42615e8c422f1643d86b49c4339221bd04b67f518b718ebd6c2d",
+    "models/cache_utils.py": "fc50ad113031b47244917ca04cd1f28d9751b75d91931c62f79505f4cf8a8d81",
+    "models/embeddings.py": "4eb810f715786eb1f24f2a4641e529817f7c951b9caf2f7925811329a03ec796",
+    "models/normalization.py": "e92ebbb130082578f3cff3361891a1adaa32331347e7bb09e4c70b208a0a6059",
+    "models/transformers/transformer_flux2.py": "0a3c56ed3ca28a416492b50953a433f20b8a89fd26c7b7a49b1b6b45d5236006",
+    "pipelines/flux2/pipeline_flux2_klein.py": "8a57a8a7f1c22fc0c5bc5d3fd1bd9bc76c17c1f4d6644cc73370651dd955358e",
+    "schedulers/scheduling_flow_match_euler_discrete.py": "8b96f25a6170480fb02decb58904e026250d6d68be5de8a7b8785b4c721e9d80"
+  },
+  "numericalProfile": {
+    "bf16ReducedPrecisionReduction": true,
+    "cublasWorkspaceConfig": ":4096:8",
+    "cudaMatmulTF32": false,
+    "cudnnBenchmark": false,
+    "cudnnDeterministic": true,
+    "cudnnTF32": false,
+    "deterministicAlgorithms": true,
+    "float32MatmulPrecision": "highest",
+    "threads": 4
+  },
+  "parentJobID": "job-0807587485a6",
+  "parentRecords": {
+    "execution.json": {
+      "path": "/mnt/hdd8tb/mrun-work/job-0807587485a6/response-result/execution.json",
+      "sha256": "ee18e848205308b2ecd2080d30bb40067a36c78df8983e5dd51a8efe86771023"
+    },
+    "inputs.json": {
+      "path": "/mnt/hdd8tb/mrun-work/job-0807587485a6/response-result/inputs.json",
+      "sha256": "1c5976566580345037bd0114d7654fdd0c1d8fc9bbedabaca95fe20c50282c5f"
+    },
+    "primary-seal.json": {
+      "path": "/mnt/hdd8tb/mrun-work/job-0807587485a6/response-result/primary-seal.json",
+      "sha256": "508de2a63bd037f16a865a2c93f9d53a4b3e81f11820a8ec2a772f5742f8d77e"
+    },
+    "primary.json": {
+      "path": "/mnt/hdd8tb/mrun-work/job-0807587485a6/response-result/primary.json",
+      "sha256": "b0b55625fb933d533243e8ad55963951afccdf498eeb9b629f4413bcd1df2ca0"
+    },
+    "report.json": {
+      "path": "/mnt/hdd8tb/mrun-work/job-0807587485a6/response-result/report.json",
+      "sha256": "b57201b8ce460921ac80bf057b8c82ca73bf47efea87d2a6d3939969d6c67a8c"
+    }
+  },
+  "protectedRoots": [
+    "/mnt/hdd8tb/mrun-work/job-0807587485a6",
+    "/mnt/hdd8tb/mrun-work/job-718ece4a9087",
+    "/mnt/hdd8tb/mrun-work/job-0b06996e8215",
+    "/mnt/hdd8tb/mrun-work/job-1892a00329e9",
+    "/home/beast/.cache/mdb-research/job-2cd63c445200/velocity-dose-result",
+    "/home/beast/.cache/mdb-research/job-3264b738b16d/global-reader-result",
+    "/home/beast/.cache/mdb-research/job-32a4f027137f/velocity-closure-result",
+    "/home/beast/.cache/mdb-research/job-61160292d353/velocity-nonlocal-result",
+    "/home/beast/.cache/mdb-research/job-6d06f87a3f1a/velocity-memory-result",
+    "/home/beast/.cache/mdb-research/job-8582e821ef86/velocity-closure-student-result",
+    "/home/beast/.cache/mdb-research/job-b31068b78b60/velocity-student-result",
+    "/home/beast/.cache/mdb-research/job-d286e4c1099b/eye-pose-result/store",
+    "/mnt/hdd8tb/mrun-work/job-766f3552f96d",
+    "/mnt/hdd8tb/mrun-work/job-a9e0a0f370fb",
+    "/mnt/hdd8tb/mrun-work/job-b69f30eff20a",
+    "/mnt/hdd8tb/mrun-work/job-de0d876cd53c",
+    "/mnt/big/llm-models/FLUX.2-klein-4B"
+  ],
+  "selectedParameters": [
+    {
+      "bytes": 56623104,
+      "dataOffsets": [
+        5560871936,
+        5617495040
+      ],
+      "name": "transformer_blocks.0.ff.linear_out.weight",
+      "payloadSHA256": "e23f12e4b3e53006cc565e27f657be26b0a73a8a3a2a98d767d615e2552f2073",
+      "shape": [
+        3072,
+        9216
+      ]
+    }
+  ],
+  "sourceByteVerificationSHA256": "05ef97a1840a04ad64c90b8f11173f9234ccb0df8e366a91667c3dedc460a214",
+  "versions": {
+    "diffusers": "0.39.0",
+    "torch": "2.13.0+cu130"
+  }
+}

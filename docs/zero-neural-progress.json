@@ -1,17 +1,17 @@
 {
   "schema": "tce-zero-neural-goal-progress-v1",
-  "updatedAt": "2026-11-07T05:26:44.198683+00:00",
+  "updatedAt": "2026-11-07T05:49:19.067979+00:00",
   "objective": "let’s solve arbitrary prompt to image without any forward zero neural evals. Every few turns have Astra review the newest blog posts and get a big picture of where we are at so that we can find the best route forward. Keep a log of your findings and with as a blog post - update it with your high level summaries and findings. Clean up the accumulated artifacts every few turns so as not to consume all of the system storage too",
   "status": "active",
-  "researchCycle": 48,
+  "researchCycle": 49,
   "previousGoalTurn": {
     "classification": "progress",
-    "evidence": "Executed one2call firsttextWriteR0 clamp atR1 withsamecompleteH_A/B:job-718ece4a9087,67.75s,8470.2MBRSS/8100MBVRAM. RemainingU/I=.998378all/1.004880944nonlocal;texteffectT/I=.502808/.681965;cross2dot=-210.657/-205.956,notpositivecausalshares. d0vsd10cos.021708/.026830;fixingfirsttextwritefailsrestoreoriginaldirection. CompleteFP64closuremax0,energy5.68e-14/0. All169tensors/2fullnativecalls218affines50attention9.448Taffine+.7248TQKAVpaid,discardedimage+textreadspaid. Oldveltargetsquarantineduntil2newvelseal;4typedwrites source-byte/layout/storage/order/nativeparentprefixclosure. No newdonor/encoder/fit/noise/scheduler/VAE/images.248tests,12sourcepins,1024losslessqueryrecords;46files7810361500Bbyteverified;12arrays20448768Bnearcompute;13compactfiles395795B. Saturnrunverify0streamscope. Astra47actualsource/newest20:36postreview ->one4cellfirstimageconsumerendingafterjoint0MLP,12affines368.025BMAC/4selectedmatrices189530112B,noattention/text/fulltransformer/image,writtenunexecuted. Blog/figureupdated. Noarchive/deletion;lastactual45,next48. Fullarbitrarypromptzero-neuralgoalactiveunsolved.",
-    "commit": "86c4130ec584ae64079a740e0cd30c403c696fb4"
+    "evidence": "Executed one four-cell local first-image consumer: job-0807587485a6,123.92s,2907.1MBRSS/700MBVRAM. Gate/up response cosine about.999 falls to.788 product; exit.873. Nonlocal upstream discrepancies20–23%, normalization native-policy16%; exact finite LN/product identities retain signed cancellation. Four matrices189530112B,12affines368025010176MAC; no attention/fullTransformer/text/encoder/fit/scheduler/VAE/images. Native and historical inputs remain paid.252mechanics tests;12sourcepins,4typedActs;143files11335670670Bfullbyteverified,8semanticviewhashes reread150994944B;116newarrays3560985088Bnearcompute,15compactfiles2257229B;17408query/factor records,Saturnrunverify0. Astra48four-source/seal/newestpostreview ->one recipient-baseline gate/up transport with explicit FP64→FP32→BF16 and one original down projection28991029248MAC, written unexecuted. Livingblog/figureupdated. Cleanup4transports600212652B with fullSHA/restorationpointers;48pointerpost-audit,historical44metadataonly;nextstorage/advisor51. Arbitrarypromptinterface revalidated: full reconstructed localgenerator yes, learned work paid; strictzero-neural suppliedsceneonly. Fullgoalactiveunsolved.",
+    "commit": "15959dcb2964ad4c2f11a6f92b9973cd5550e5ee"
   },
   "thisGoalTurn": {
     "classification": "progress",
-    "evidence": "Executed one four-cell local first-image consumer: job-0807587485a6,123.92s,2907.1MBRSS/700MBVRAM. Gate/up response cosine about.999 falls to.788 product; exit.873. Nonlocal upstream discrepancies20–23%, normalization native-policy16%; exact finite LN/product identities retain signed cancellation. Four matrices189530112B,12affines368025010176MAC; no attention/fullTransformer/text/encoder/fit/scheduler/VAE/images. Native and historical inputs remain paid.252mechanics tests;12sourcepins,4typedActs;143files11335670670Bfullbyteverified,8semanticviewhashes reread150994944B;116newarrays3560985088Bnearcompute,15compactfiles2257229B;17408query/factor records,Saturnrunverify0. Astra48four-source/seal/newestpostreview ->one recipient-baseline gate/up transport with explicit FP64→FP32→BF16 and one original down projection28991029248MAC, written unexecuted. Livingblog/figureupdated. Cleanup4transports600212652B with fullSHA/restorationpointers;48pointerpost-audit,historical44metadataonly;nextstorage/advisor51. Arbitrarypromptinterface revalidated: full reconstructed localgenerator yes, learned work paid; strictzero-neural suppliedsceneonly. Fullgoalactiveunsolved."
+    "evidence": "Executed sealed recipient-baseline product transport job-f21da64e0e39:77.34s,1663.9MBRSS/494MBVRAM. Product responseerror65.33→4.67%all/61.37→21.48%nonlocal;exit50.57→4.48%all/50.25→22.90%nonlocal. 995/1024exitrows improve,29nonlocal worsen;medianrowexiterror33.12%all/34.23%nonlocal. Nonlocalgate/up24.14/21.14%remain. CPUFP64→FP32→BF16, nativeCUDA SiLU/product andONE original down28,991,029,248MAC/56,623,104parameterB; no norm/gateup/attention/fullTransformer/encoder/fit/scheduler/VAE/images. Source preparation paid. Primary child complete seal/exit precedes native target/control scoring; originalBresidual payloadexact.256tests18.15s,11frozen sources,1typedAct7inputs;69files9,085,768,740B fullbyteverified,clock6144Bviewreread;26newarrays1,006,642,432Bnearcompute;15compactfiles1,411,062B;6144queryrecords,Saturnrunverify0. Astra49actualsource/newestpostreview confirmsconditionalresult;nextsharedLayerNorm-affineinnovation removesbothBfusedtargets,4affines116,020,740,096MAC, writtenunexecuted. Livingblog/figureupdated. No newarchive/deletion;lastactual48nextstorage51,advisor52. Fullarbitrarypromptzero-neuralgoalactiveunsolved."
   },
   "requirements": {
     "arbitraryRawPromptCoverage": "Full reconstructed local generator accepts arbitrary strings/seeds using learned denoiser equations/native encoder/VAE; hosted page shows saved outputs. Strict zero-neural chart remains compiled-scene variations. Cycle47 is a supplied-state co-carrier diagnostic, no new arbitrary-prompt image test.",
@@ -27,9 +27,9 @@
   "findingsLog": {
     "path": "../obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
     "role": "One living highlevel blog for this active goal; keep summaries, findings, constraints and next mathematical question current after each research cycle.",
-    "lastUpdatedCycle": 48,
+    "lastUpdatedCycle": 49,
     "scope": "Local notebook post, not a public-site publication. Source/code/artifact/related-post backlinks verified; unrelated dirty notebook files preserved.",
-    "sha256": "670af43a8e2b346e843733f35f0574ee4f92239ffdb90e0b71f26df45b8ba68c"
+    "sha256": "d8ec9031a4529dd3885d39a694d1b50b676eaec04917194c2aaf8d72519e19f8"
   },
   "storageMaintenance": {
     "lastCycle": 48,
@@ -53,9 +53,9 @@
     "latestPointerCheck": "48pointer/custody joins plus fresh remote type/size.4newcold objects fullSHA verified in transaction;44historicalobjects not freshly bytehashed.42remainingname-size candidates11845041231B are not deletion certificates.",
     "cycle8Practice": "Bounded audit142top-level artifact directories for100MB-or-larger archive.tar.gz/worker.log.gz: none. All6restoration pointers match the cycle5receipt; authenticated remote type/size checks total7701454599bytes, not a fresh byte rehash. No new archive/deletion. Full common-bank/kernel/head arrays remain near compute; compact public evidence6201541bytes.",
     "latestSpaceObservation": {
-      "cycle": 48,
-      "localFreeBytes": 16094281728,
-      "scope": "Shared-volume observation only; not full cleanup attribution."
+      "cycle": 49,
+      "localFreeBytes": 14019321856,
+      "scope": "Observation at scalar-summary creation only; not cleanup attribution."
     },
     "cycle9Practice": "Full states/ports/heads and target-assisted capacity weights remain near compute. Two compact publications2895986bytes; no full lexical table or forecast hydration. Last actual archive remainscycle5, last bounded transport auditcycle8, next storage reviewcycle11 or earlier under pressure.",
     "cycle5Archive": {
@@ -177,7 +177,8 @@
       "bytes": 600212652,
       "scope": "Originalcustody/fullcoldSHA/fsync restorationpointers/freshlocalidentity before unlink; extractedscience remainslocal."
     },
-    "cycle48Practice": "116newcompletearrays3560985088Bnearcompute;143file11335670670Bbytecheckincludesancestors.8semanticviews150994944Brereadnotuniquestorage.15primarypublicfiles2257229Bplusfigure/evidence.4transportcopies600212652Barchived;48pointerpostaudit,next51orpressure."
+    "cycle48Practice": "116newcompletearrays3560985088Bnearcompute;143file11335670670Bbytecheckincludesancestors.8semanticviews150994944Brereadnotuniquestorage.15primarypublicfiles2257229Bplusfigure/evidence.4transportcopies600212652Barchived;48pointerpostaudit,next51orpressure.",
+    "cycle49Practice": "26newcompletearrays1006642432Bstaynearcompute;69file9085768740Bfullbytecheckincludesancestors/assets;6144Bclockviewrereadnotuniquestorage.15primarypublicfiles1411062Bplusderivedfigure/evidence. No newarchive/deletion;actualcleanup48,nextstorage51orpressure."
   },
   "openPreference": {
     "question": "Reproduce FLUX prompt/seed behavior, or comparable prompt-faithful quality using another recovered computation?",
@@ -186,8 +187,8 @@
   "reviews": {
     "advisor": "astra_zero_forward_advisor",
     "model": "gpt-6-astra",
-    "lastCycle": 48,
-    "nextDueByCycle": 51,
+    "lastCycle": 49,
+    "nextDueByCycle": 52,
     "earlierIf": "new model evidence changes the route",
     "cycle5Snapshots": [
       {
@@ -1112,6 +1113,24 @@
         "path": "../obsidian/blog/2026-11-06-134300-from-a-state-machine-to-a-forward-pass-free-chat-emulator.md",
         "sha256": "91ddef273e64002327967839dd76dd4889ca51f0bea6ab3e97e54f3adc52519d",
         "scope": "Exact working-post snapshot reported by Astra; later drift remains historical evidence."
+      }
+    ],
+    "cycle49Receipt": "results/product-transport-evidence/advisor.json",
+    "cycle49Snapshots": [
+      {
+        "path": "../obsidian/blog/2026-11-06-213500-what-our-model-computation-work-has-established.md",
+        "sha256": "9f7aed8213cd04d39064682b7175a7b20485a5ca28ef8565b78ca4a3c35db2df",
+        "scope": "Exact working-post snapshot reported by Astra; subsequent drift does not rewrite the review."
+      },
+      {
+        "path": "../obsidian/blog/2026-11-06-213504-from-explicit-model-execution-to-automated-computation-discovery.md",
+        "sha256": "a647726ed3944577056de4dd558c83cecbba7e428c94fe33f417ead91c4f4c18",
+        "scope": "Exact working-post snapshot reported by Astra; subsequent drift does not rewrite the review."
+      },
+      {
+        "path": "../obsidian/blog/2026-11-06-182756-binding-needs-incoming-state-and-new-writing.md",
+        "sha256": "67bdadc2870efce6a22e32c1da25827bd053d729c3d7827bdd35073379799ede",
+        "scope": "Exact working-post snapshot reported by Astra; subsequent drift does not rewrite the review."
       }
     ]
   },
@@ -2473,6 +2492,41 @@
       },
       "nominalAffineMACs": 368025010176,
       "scope": "Original learned local work and historical inputs paid; no complete native-block parity witness, future mediation, new predictor, image or strictzero-neural claim."
+    },
+    {
+      "jobID": "job-f21da64e0e39",
+      "requestSHA256": "1437103d3cfb6af3acfcc9e6ebf0caa9d6bdc1b1f501fa2a2fcfdf0cfb393ae5",
+      "type": "Sealed recipient-baseline gate/up increment transport plus one original down and separate saved-target scoring",
+      "schedulerSeconds": 77.34,
+      "sampledPeakRSSMB": 1663.9,
+      "sampledPeakVRAMMB": 494.0,
+      "reservation": {
+        "cpu_threads": 4,
+        "disk_gb": 4.0,
+        "est_wall_s": 60.0,
+        "ram_mb": 4096.0,
+        "source": "declared",
+        "vram_mb": 1024.0
+      },
+      "work": {
+        "affineCalls": 1,
+        "attentionCalls": 0,
+        "fullTransformerCalls": 0,
+        "nativeProductScalars": 9437184,
+        "nativeSiLUScalars": 9437184,
+        "newClockNetworks": 0,
+        "newEncoders": 0,
+        "newFits": 0,
+        "newGateUpProjections": 0,
+        "newImages": 0,
+        "newNorms": 0,
+        "newSchedulerCommits": 0,
+        "newVAECalls": 0,
+        "selectedOriginalMatrices": 1,
+        "selectedParameterBytes": 56623104
+      },
+      "nominalAffineMACs": 28991029248,
+      "scope": "Conditional local replacement; native baselines/source increments and original down/nativeSiLU paid. No cheap producer, later wholefuture/image/arbitraryprompt/zero-neural claim."
     }
   ],
   "failedRuns": [
@@ -2658,24 +2712,24 @@
   ],
   "nextCut": {
     "status": "written-unexecuted",
-    "plan": "plans/receiver-conditioned-product.md",
-    "law": "Freeze sourceR0gate/upincrements;addtoactualR1AbaselineinFP64;explicitFP64→FP32→BF16;nativeSiLU/product,oneoriginaldown,clockgateandresidual. RebuildBresidualfromsuppliedR1embedding/sharedBgatedcarrierinsourceorder. DenyR1Bandoldproduct/write/exittargetsuntilcompletecandidateseal.",
+    "plan": "plans/shared-normalization-innovation.md",
+    "law": "ActualBF16residuals give FP64sA/sB; actualBF16d=1+scale widened, originalW_in widened. One shared J=W[d*C(aB-aA)], one beta=W*shift; FhatB=(sA/sB)*(FA-beta)+beta+J/sB. FP64→FP32→BF16 then2nativeSwiGLU/down/gatedexits. BothBtargets denieduntil completecandidateseal;noextra rho projection.",
     "physicalWork": {
-      "selectedOriginalMatrices": 1,
-      "selectedBF16ParameterBytes": 56623104,
-      "affineCalls": 1,
-      "nominalAffineMACs": 28991029248,
-      "SiLUScalars": 9437184,
-      "productScalars": 9437184,
-      "newNorms": 0,
-      "newGateUpProjections": 0,
+      "selectedOriginalMatrices": 2,
+      "selectedBF16ParameterBytes": 169869312,
+      "affineCalls": 4,
+      "sharedInnovationMACs": 57982058496,
+      "clockShiftMACs": 56623104,
+      "twoDownMACs": 57982058496,
+      "nominalAffineMACs": 116020740096,
+      "originalFusedBProjections": 0,
       "attentionCalls": 0,
       "fullTransformerCalls": 0,
       "newFits": 0,
-      "newImages": 0,
-      "newVAECalls": 0
+      "newVAECalls": 0,
+      "newImages": 0
     },
-    "scope": "Conditional local replacement;suppliednativebaselines/sourceincrementsandoriginaldown/nativeSiLUremainpaid. No cheapbaselineproducer,wholefuturemediation,arbitrarypromptorzero-neuralclaim."
+    "scope": "RemovesbothsuppliedBfusedoperands; keepsnativeA baselines,embeddings/carriers,originallearnedmaps/FP64arithmetic. Realshared-innovation identity notnative-exact;rho/eta defects unclosed. No economicalfirstprompt/ownstateclosure/strictzero-neuralclaim."
   },
   "alternativeDiagnostic": {
     "status": "executedcycle20",
@@ -3401,7 +3455,7 @@
     "saturnSweep": "run/verifyexit0,1stream23040records,no watchfires,target-streams-only,no terminalreceipts/physicaladdressjoins.",
     "goalStatus": "Active. Frozen source-score envelope has active trend/overallcountertrend; no selector/tail defect found. No zero-neural arbitraryimage."
   },
-  "previousResearchCycle": 47,
+  "previousResearchCycle": 48,
   "selectorObjectiveEvidence": {
     "directory": "results/selector-objective",
     "evidenceSweep": "results/selector-objective-evidence/sweep.json",
@@ -19173,6 +19227,753 @@
       "Original four-matrix/norm/MLP learned work and old donor/clock/state preparation remain paid. No cheap complete velocity, pixel decoder or arbitrary-prompt zero-neural generation.",
       "FP64 references approximate real arithmetic; native normalization/activation/product/commit policy differences are retained separately. No extra down-projection of attribution terms.",
       "Instrumented time includes capture/hash/I/O/diagnostic arithmetic; no matched serving speedup claim."
+    ]
+  },
+  "rootReviewedCycle49": [
+    {
+      "path": "../obsidian/blog/2026-11-06-213500-what-our-model-computation-work-has-established.md",
+      "sha256": "1ead0f67ff4ad39f37802d5dff2cc0ad32ad45a13483ddf7f3d75dc7ea7564ee",
+      "scope": "Read current synthesis/discovery content and relevant binding/global-reader continuation/status sections. Advisor snapshots remain historical."
+    },
+    {
+      "path": "../obsidian/blog/2026-11-06-213504-from-explicit-model-execution-to-automated-computation-discovery.md",
+      "sha256": "c3d1f56cdf3268f78e517439edc8eb086389732a7aaf3602967bce7c0ce30461",
+      "scope": "Read current synthesis/discovery content and relevant binding/global-reader continuation/status sections. Advisor snapshots remain historical."
+    },
+    {
+      "path": "../obsidian/blog/2026-11-06-182756-binding-needs-incoming-state-and-new-writing.md",
+      "sha256": "67bdadc2870efce6a22e32c1da25827bd053d729c3d7827bdd35073379799ede",
+      "scope": "Read current synthesis/discovery content and relevant binding/global-reader continuation/status sections. Advisor snapshots remain historical."
+    },
+    {
+      "path": "../obsidian/blog/2026-11-06-174218-a-small-global-reader-needs-the-right-response-basis.md",
+      "sha256": "c5000dd7d14ac5d4970e736259f97ffe04d3d134b9f204aeba042d67112160ab",
+      "scope": "Read current synthesis/discovery content and relevant binding/global-reader continuation/status sections. Advisor snapshots remain historical."
+    }
+  ],
+  "productTransportEvidence": {
+    "cycle": 49,
+    "jobID": "job-f21da64e0e39",
+    "requestSHA256": "1437103d3cfb6af3acfcc9e6ebf0caa9d6bdc1b1f501fa2a2fcfdf0cfb393ae5",
+    "reportSHA256": "35d5d19886e8779927ead410d3a420aa2284fc7334919d3c596b5b175e0bae86",
+    "primarySealSHA256": "4272a3d97a8e4bd0c641d346c0fa82b0eaaaaf01b52c9124ec4b9016dbc6579d",
+    "executedPayload": {
+      "host": "beast",
+      "reported_ts": 1794029771.3071556,
+      "sha256": "9068cfa6a9f0f695d50749afa42f5daf11cf79145d494e14a5e46fcb2e505a48",
+      "size_bytes": 3143927
+    },
+    "accounts": [
+      {
+        "endpoint": {
+          "candidateRms": 0.09065890059154934,
+          "changedValues": 7264851,
+          "cosine": 0.9999351696964687,
+          "mae": 0.000428895025690064,
+          "maxAbs": 0.171875,
+          "referenceRms": 0.09065233171664835,
+          "relativeRms": 0.011387504263374398,
+          "rms": 0.0010323038139081633,
+          "scalars": 9437184
+        },
+        "queries": 1024,
+        "response": {
+          "raw-source-transfer": {
+            "candidateRms": 0.022295842220581417,
+            "changedValues": 8635707,
+            "cosine": 0.7882671057411275,
+            "mae": 0.0027585746021828545,
+            "maxAbs": 2.330078125,
+            "referenceRms": 0.02212478149895054,
+            "relativeRms": 0.653299050469236,
+            "rms": 0.014454098745103708,
+            "scalars": 9437184
+          },
+          "recipient-baseline-product": {
+            "candidateRms": 0.02216008462999445,
+            "changedValues": 7264851,
+            "cosine": 0.9989145084541605,
+            "mae": 0.000428895025690064,
+            "maxAbs": 0.171875,
+            "referenceRms": 0.02212478149895054,
+            "relativeRms": 0.04665826028415825,
+            "rms": 0.0010323038139081633,
+            "scalars": 9437184
+          },
+          "zero-response": {
+            "candidateRms": 0.0,
+            "changedValues": 8640548,
+            "cosine": null,
+            "mae": 0.0047366918505168335,
+            "maxAbs": 3.71484375,
+            "referenceRms": 0.02212478149895054,
+            "relativeRms": 1.0,
+            "rms": 0.02212478149895054,
+            "scalars": 9437184
+          }
+        },
+        "scope": "all",
+        "signedErrorEnergy": {
+          "candidateEnergy": 4634.3118203405165,
+          "errorEnergy": 10.056746116457756,
+          "minusTwiceDot": -9243.812853643212,
+          "targetEnergy": 4619.557779419155
+        },
+        "stage": "product"
+      },
+      {
+        "endpoint": {
+          "candidateRms": 0.09012991371733012,
+          "changedValues": 6582466,
+          "cosine": 0.9999730542130917,
+          "mae": 0.0003381942567011668,
+          "maxAbs": 0.125,
+          "referenceRms": 0.09011628806515969,
+          "relativeRms": 0.007343199843205016,
+          "rms": 0.0006617419123902987,
+          "scalars": 8699904
+        },
+        "queries": 944,
+        "response": {
+          "raw-source-transfer": {
+            "candidateRms": 0.0031729217419018507,
+            "changedValues": 7903139,
+            "cosine": 0.8176171915566287,
+            "mae": 0.000834163419631953,
+            "maxAbs": 0.6220703125,
+            "referenceRms": 0.0030805896351207324,
+            "relativeRms": 0.6136748208088265,
+            "rms": 0.0018904802923182436,
+            "scalars": 8699904
+          },
+          "recipient-baseline-product": {
+            "candidateRms": 0.0030817007534367914,
+            "changedValues": 6582466,
+            "cosine": 0.9769366839786606,
+            "mae": 0.0003381942567011668,
+            "maxAbs": 0.125,
+            "referenceRms": 0.0030805896351207324,
+            "relativeRms": 0.21481014700757575,
+            "rms": 0.0006617419123902987,
+            "scalars": 8699904
+          },
+          "zero-response": {
+            "candidateRms": 0.0,
+            "changedValues": 7904818,
+            "cosine": null,
+            "mae": 0.0012821614584302414,
+            "maxAbs": 1.46484375,
+            "referenceRms": 0.0030805896351207324,
+            "relativeRms": 1.0,
+            "rms": 0.0030805896351207324,
+            "scalars": 8699904
+          }
+        },
+        "scope": "source-nonlocal",
+        "signedErrorEnergy": {
+          "candidateEnergy": 82.6219402430409,
+          "errorEnergy": 3.80970848131511,
+          "minusTwiceDot": -161.37460346872138,
+          "targetEnergy": 82.5623717069956
+        },
+        "stage": "product"
+      },
+      {
+        "endpoint": {
+          "candidateRms": 0.38489088060079457,
+          "changedValues": 2347077,
+          "cosine": 0.9999423182144731,
+          "mae": 0.0021508307865906553,
+          "maxAbs": 0.173828125,
+          "referenceRms": 0.38488934114718026,
+          "relativeRms": 0.01074076573037473,
+          "rms": 0.004134006245380142,
+          "scalars": 3145728
+        },
+        "queries": 1024,
+        "response": {
+          "raw-source-transfer": {
+            "candidateRms": 0.07250013232035346,
+            "changedValues": 2835861,
+            "cosine": 0.8116370329942558,
+            "mae": 0.012342077567407609,
+            "maxAbs": 1.8095703125,
+            "referenceRms": 0.07197589207692745,
+            "relativeRms": 0.6160542894620856,
+            "rms": 0.0443410570518513,
+            "scalars": 3145728
+          },
+          "recipient-baseline-product": {
+            "candidateRms": 0.07210470132424084,
+            "changedValues": 2347077,
+            "cosine": 0.9983550989292254,
+            "mae": 0.0021508307865906553,
+            "maxAbs": 0.173828125,
+            "referenceRms": 0.07197589207692745,
+            "relativeRms": 0.057435984828944374,
+            "rms": 0.004134006245380142,
+            "scalars": 3145728
+          },
+          "zero-response": {
+            "candidateRms": 0.0,
+            "changedValues": 2816295,
+            "cosine": null,
+            "mae": 0.01975012889623251,
+            "maxAbs": 2.248046875,
+            "referenceRms": 0.07197589207692745,
+            "relativeRms": 1.0,
+            "rms": 0.07197589207692745,
+            "scalars": 3145728
+          }
+        },
+        "scope": "all",
+        "signedErrorEnergy": {
+          "candidateEnergy": 16354.91654839717,
+          "errorEnergy": 53.760515543427786,
+          "minusTwiceDot": -32597.69128964266,
+          "targetEnergy": 16296.535256788919
+        },
+        "stage": "mlpWrite"
+      },
+      {
+        "endpoint": {
+          "candidateRms": 0.383334727956353,
+          "changedValues": 2120487,
+          "cosine": 0.9999778989749503,
+          "mae": 0.0016718553409295425,
+          "maxAbs": 0.07421875,
+          "referenceRms": 0.3832768847270634,
+          "relativeRms": 0.006650676438540886,
+          "rms": 0.002549050546691632,
+          "scalars": 2899968
+        },
+        "queries": 944,
+        "response": {
+          "raw-source-transfer": {
+            "candidateRms": 0.009920788310432728,
+            "changedValues": 2590744,
+            "cosine": 0.8298719900484378,
+            "mae": 0.0034971393948076105,
+            "maxAbs": 0.244140625,
+            "referenceRms": 0.009591578154461752,
+            "relativeRms": 0.5942328064000314,
+            "rms": 0.005699630404531041,
+            "scalars": 2899968
+          },
+          "recipient-baseline-product": {
+            "candidateRms": 0.009618907234892962,
+            "changedValues": 2120487,
+            "cosine": 0.9647903936383345,
+            "mae": 0.0016718553409295425,
+            "maxAbs": 0.07421875,
+            "referenceRms": 0.009591578154461752,
+            "relativeRms": 0.2657592427066739,
+            "rms": 0.002549050546691632,
+            "scalars": 2899968
+          },
+          "zero-response": {
+            "candidateRms": 0.0,
+            "changedValues": 2571283,
+            "cosine": null,
+            "mae": 0.005345122372094494,
+            "maxAbs": 0.38503265380859375,
+            "referenceRms": 0.009591578154461752,
+            "relativeRms": 1.0,
+            "rms": 0.009591578154461752,
+            "scalars": 2899968
+          }
+        },
+        "scope": "source-nonlocal",
+        "signedErrorEnergy": {
+          "candidateEnergy": 268.3148307930363,
+          "errorEnergy": 18.843002274729763,
+          "minusTwiceDot": -516.2641619005477,
+          "targetEnergy": 266.79233338224117
+        },
+        "stage": "mlpWrite"
+      },
+      {
+        "endpoint": {
+          "candidateRms": 0.3744273571780433,
+          "changedValues": 2269994,
+          "cosine": 0.9999320491161037,
+          "mae": 0.0020090703667021703,
+          "maxAbs": 0.90625,
+          "referenceRms": 0.3744268294482197,
+          "relativeRms": 0.011657699658327296,
+          "rms": 0.004364955521727084,
+          "scalars": 3145728
+        },
+        "queries": 1024,
+        "response": {
+          "raw-source-transfer": {
+            "candidateRms": 0.08361685498951589,
+            "changedValues": 2838852,
+            "cosine": 0.7926267955197008,
+            "mae": 0.012479234416022722,
+            "maxAbs": 14.15625,
+            "referenceRms": 0.08391959152452862,
+            "relativeRms": 0.6428555372834114,
+            "rms": 0.05394817409810526,
+            "scalars": 3145728
+          },
+          "recipient-baseline-product": {
+            "candidateRms": 0.08405392739256164,
+            "changedValues": 2269994,
+            "cosine": 0.9986507366131546,
+            "mae": 0.0020090703667021703,
+            "maxAbs": 0.90625,
+            "referenceRms": 0.08391959152452862,
+            "relativeRms": 0.05201354585301173,
+            "rms": 0.004364955521727084,
+            "scalars": 3145728
+          },
+          "zero-response": {
+            "candidateRms": 0.0,
+            "changedValues": 2774331,
+            "cosine": null,
+            "mae": 0.019780631005061517,
+            "maxAbs": 12.46875,
+            "referenceRms": 0.08391959152452862,
+            "relativeRms": 1.0,
+            "rms": 0.08391959152452862,
+            "scalars": 3145728
+          }
+        },
+        "scope": "all",
+        "signedErrorEnergy": {
+          "candidateEnergy": 22224.765588961563,
+          "errorEnergy": 59.935041907554805,
+          "minusTwiceDot": -44318.61319745227,
+          "targetEnergy": 22153.78265039826
+        },
+        "stage": "gatedMLP"
+      },
+      {
+        "endpoint": {
+          "candidateRms": 0.37174147562421134,
+          "changedValues": 2045933,
+          "cosine": 0.9999736877520511,
+          "mae": 0.0015630206037022935,
+          "maxAbs": 0.25,
+          "referenceRms": 0.37171015417584147,
+          "relativeRms": 0.007255069294667113,
+          "rms": 0.002696782926077126,
+          "scalars": 2899968
+        },
+        "queries": 944,
+        "response": {
+          "raw-source-transfer": {
+            "candidateRms": 0.01128234809836237,
+            "changedValues": 2593710,
+            "cosine": 0.83738439713661,
+            "mae": 0.0034914456674743737,
+            "maxAbs": 0.453125,
+            "referenceRms": 0.010884994429272824,
+            "relativeRms": 0.5817527604021292,
+            "rms": 0.006332375556191264,
+            "scalars": 2899968
+          },
+          "recipient-baseline-product": {
+            "candidateRms": 0.010913813758766704,
+            "changedValues": 2045933,
+            "cosine": 0.9693939252729563,
+            "mae": 0.0015630206037022935,
+            "maxAbs": 0.25,
+            "referenceRms": 0.010884994429272824,
+            "relativeRms": 0.24775234783995068,
+            "rms": 0.002696782926077126,
+            "scalars": 2899968
+          },
+          "zero-response": {
+            "candidateRms": 0.0,
+            "changedValues": 2529426,
+            "cosine": null,
+            "mae": 0.005282029433220441,
+            "maxAbs": 1.28125,
+            "referenceRms": 0.010884994429272824,
+            "relativeRms": 1.0,
+            "rms": 0.010884994429272824,
+            "scalars": 2899968
+          }
+        },
+        "scope": "source-nonlocal",
+        "signedErrorEnergy": {
+          "candidateEnergy": 345.4190476444473,
+          "errorEnergy": 21.090417911684394,
+          "minusTwiceDot": -667.925839076815,
+          "targetEnergy": 343.597209344052
+        },
+        "stage": "gatedMLP"
+      },
+      {
+        "endpoint": {
+          "candidateRms": 1.0252125272289776,
+          "changedValues": 1754940,
+          "cosine": 0.9999890733735246,
+          "mae": 0.0020075069846067586,
+          "maxAbs": 1.0,
+          "referenceRms": 1.0252019117291207,
+          "relativeRms": 0.00467478196794045,
+          "rms": 0.004792595410449371,
+          "scalars": 3145728
+        },
+        "queries": 1024,
+        "response": {
+          "raw-source-transfer": {
+            "candidateRms": 0.10724064224608064,
+            "changedValues": 2590877,
+            "cosine": 0.8725778605510542,
+            "mae": 0.012866051895192262,
+            "maxAbs": 14.125,
+            "referenceRms": 0.10687032567525082,
+            "relativeRms": 0.505706779892918,
+            "rms": 0.05404504826333852,
+            "scalars": 3145728
+          },
+          "recipient-baseline-product": {
+            "candidateRms": 0.10695534206661958,
+            "changedValues": 1754940,
+            "cosine": 0.9989955802541948,
+            "mae": 0.0020075069846067586,
+            "maxAbs": 1.0,
+            "referenceRms": 0.10687032567525082,
+            "relativeRms": 0.044844959348329626,
+            "rms": 0.004792595410449371,
+            "scalars": 3145728
+          },
+          "zero-response": {
+            "candidateRms": 0.0,
+            "changedValues": 2620107,
+            "cosine": null,
+            "mae": 0.026182734854349594,
+            "maxAbs": 12.75,
+            "referenceRms": 0.10687032567525082,
+            "relativeRms": 1.0,
+            "rms": 0.10687032567525082,
+            "scalars": 3145728
+          }
+        },
+        "scope": "all",
+        "signedErrorEnergy": {
+          "candidateEnergy": 35985.38305937113,
+          "errorEnergy": 72.25413447689817,
+          "minusTwiceDot": -71841.32678065644,
+          "targetEnergy": 35928.197855762206
+        },
+        "stage": "imageExit"
+      },
+      {
+        "endpoint": {
+          "candidateRms": 1.0223031470288586,
+          "changedValues": 1554764,
+          "cosine": 0.999994751083232,
+          "mae": 0.0015614908100612262,
+          "maxAbs": 0.25,
+          "referenceRms": 1.0223106227141845,
+          "relativeRms": 0.0032400324448259715,
+          "rms": 0.0033123195862842006,
+          "scalars": 2899968
+        },
+        "queries": 944,
+        "response": {
+          "raw-source-transfer": {
+            "candidateRms": 0.014776610324219714,
+            "changedValues": 2348086,
+            "cosine": 0.876638809435559,
+            "mae": 0.0039035727998036574,
+            "maxAbs": 0.5,
+            "referenceRms": 0.01446268465893146,
+            "relativeRms": 0.502542396348812,
+            "rms": 0.0072681122061366175,
+            "scalars": 2899968
+          },
+          "recipient-baseline-product": {
+            "candidateRms": 0.014474519298946577,
+            "changedValues": 1554764,
+            "cosine": 0.973795501124759,
+            "mae": 0.0015614908100612262,
+            "maxAbs": 0.25,
+            "referenceRms": 0.01446268465893146,
+            "relativeRms": 0.22902522349048599,
+            "rms": 0.0033123195862842006,
+            "scalars": 2899968
+          },
+          "zero-response": {
+            "candidateRms": 0.0,
+            "changedValues": 2376353,
+            "cosine": null,
+            "mae": 0.0071061791064175595,
+            "maxAbs": 1.3203125,
+            "referenceRms": 0.01446268465893146,
+            "relativeRms": 1.0,
+            "rms": 0.01446268465893146,
+            "scalars": 2899968
+          }
+        },
+        "scope": "source-nonlocal",
+        "signedErrorEnergy": {
+          "candidateEnergy": 607.5772515384872,
+          "errorEnergy": 31.816885934124286,
+          "minusTwiceDot": -1182.3444900651466,
+          "targetEnergy": 606.5841244607836
+        },
+        "stage": "imageExit"
+      }
+    ],
+    "operandAccounts": [
+      {
+        "nativeOperandResponse": {
+          "candidateRms": 0.08222735970775269,
+          "changedValues": 5982521,
+          "cosine": 0.99906340461218,
+          "mae": 0.0019388561146917265,
+          "maxAbs": 0.1484375,
+          "referenceRms": 0.08203485547828858,
+          "relativeRms": 0.043394619893904814,
+          "rms": 0.0035598713715317477,
+          "scalars": 9437184
+        },
+        "operand": "gate",
+        "prequantOperandResponse": {
+          "candidateRms": 0.08222486570727806,
+          "changedValues": 6697745,
+          "cosine": 0.9990989329183985,
+          "mae": 0.0019496047500376552,
+          "maxAbs": 0.1484375,
+          "referenceRms": 0.08203485547828858,
+          "relativeRms": 0.04256375376791264,
+          "rms": 0.0034917113889641744,
+          "scalars": 9437184
+        },
+        "quantizationDifferenceRms": 0.0006960024989602277,
+        "queries": 1024,
+        "scope": "all"
+      },
+      {
+        "nativeOperandResponse": {
+          "candidateRms": 0.01081717902529602,
+          "changedValues": 5354792,
+          "cosine": 0.9709426675799047,
+          "mae": 0.0015802127632260376,
+          "maxAbs": 0.0625,
+          "referenceRms": 0.010787582108469633,
+          "relativeRms": 0.24141589882157552,
+          "rms": 0.002604293830827743,
+          "scalars": 8699904
+        },
+        "operand": "gate",
+        "prequantOperandResponse": {
+          "candidateRms": 0.010796846864197185,
+          "changedValues": 6037234,
+          "cosine": 0.9728287028054567,
+          "mae": 0.0015914355009576206,
+          "maxAbs": 0.0625,
+          "referenceRms": 0.010787582108469633,
+          "relativeRms": 0.23321664460851393,
+          "rms": 0.0025158437027761257,
+          "scalars": 8699904
+        },
+        "quantizationDifferenceRms": 0.0006750569468099802,
+        "queries": 944,
+        "scope": "source-nonlocal"
+      },
+      {
+        "nativeOperandResponse": {
+          "candidateRms": 0.07019164131786468,
+          "changedValues": 6315156,
+          "cosine": 0.9991576168710135,
+          "mae": 0.001608649812116367,
+          "maxAbs": 0.10302734375,
+          "referenceRms": 0.06998880283427576,
+          "relativeRms": 0.04120738141627106,
+          "rms": 0.0028840552932601943,
+          "scalars": 9437184
+        },
+        "operand": "up",
+        "prequantOperandResponse": {
+          "candidateRms": 0.070189886854821,
+          "changedValues": 7113535,
+          "cosine": 0.999183795737874,
+          "mae": 0.0016205807736340777,
+          "maxAbs": 0.10302734375,
+          "referenceRms": 0.06998880283427576,
+          "relativeRms": 0.04056295373264661,
+          "rms": 0.0028389525711700536,
+          "scalars": 9437184
+        },
+        "quantizationDifferenceRms": 0.0005129969079376084,
+        "queries": 1024,
+        "scope": "all"
+      },
+      {
+        "nativeOperandResponse": {
+          "candidateRms": 0.009175251893486275,
+          "changedValues": 5666285,
+          "cosine": 0.9777161709157655,
+          "mae": 0.0012777530400312049,
+          "maxAbs": 0.03515625,
+          "referenceRms": 0.00915348924775236,
+          "relativeRms": 0.2113747182012558,
+          "rms": 0.0019348162103018799,
+          "scalars": 8699904
+        },
+        "operand": "up",
+        "prequantOperandResponse": {
+          "candidateRms": 0.009162040943823066,
+          "changedValues": 6431916,
+          "cosine": 0.979174246821477,
+          "mae": 0.0012901414654208699,
+          "maxAbs": 0.03515625,
+          "referenceRms": 0.00915348924775236,
+          "relativeRms": 0.20418445663580811,
+          "rms": 0.0018690002283740274,
+          "scalars": 8699904
+        },
+        "quantizationDifferenceRms": 0.0005019448306727409,
+        "queries": 944,
+        "scope": "source-nonlocal"
+      }
+    ],
+    "queryTrends": [
+      {
+        "dependentQueries": 1024,
+        "equalErrorToSourceTransfer": 0,
+        "higherErrorThanSourceTransfer": 1,
+        "lowerErrorThanSourceTransfer": 1023,
+        "lowerErrorThanZero": 1023,
+        "medianRelativeResponseError": 0.40188595439075214,
+        "negativeResponseCosines": 0,
+        "scope": "all",
+        "stage": "product"
+      },
+      {
+        "dependentQueries": 944,
+        "equalErrorToSourceTransfer": 0,
+        "higherErrorThanSourceTransfer": 1,
+        "lowerErrorThanSourceTransfer": 943,
+        "lowerErrorThanZero": 943,
+        "medianRelativeResponseError": 0.41682952020262454,
+        "negativeResponseCosines": 0,
+        "scope": "source-nonlocal",
+        "stage": "product"
+      },
+      {
+        "dependentQueries": 1024,
+        "equalErrorToSourceTransfer": 0,
+        "higherErrorThanSourceTransfer": 2,
+        "lowerErrorThanSourceTransfer": 1022,
+        "lowerErrorThanZero": 1020,
+        "medianRelativeResponseError": 0.4346484712486126,
+        "negativeResponseCosines": 0,
+        "scope": "all",
+        "stage": "mlpWrite"
+      },
+      {
+        "dependentQueries": 944,
+        "equalErrorToSourceTransfer": 0,
+        "higherErrorThanSourceTransfer": 2,
+        "lowerErrorThanSourceTransfer": 942,
+        "lowerErrorThanZero": 940,
+        "medianRelativeResponseError": 0.44418012852059696,
+        "negativeResponseCosines": 0,
+        "scope": "source-nonlocal",
+        "stage": "mlpWrite"
+      },
+      {
+        "dependentQueries": 1024,
+        "equalErrorToSourceTransfer": 0,
+        "higherErrorThanSourceTransfer": 1,
+        "lowerErrorThanSourceTransfer": 1023,
+        "lowerErrorThanZero": 1018,
+        "medianRelativeResponseError": 0.408088805549234,
+        "negativeResponseCosines": 0,
+        "scope": "all",
+        "stage": "gatedMLP"
+      },
+      {
+        "dependentQueries": 944,
+        "equalErrorToSourceTransfer": 0,
+        "higherErrorThanSourceTransfer": 1,
+        "lowerErrorThanSourceTransfer": 943,
+        "lowerErrorThanZero": 938,
+        "medianRelativeResponseError": 0.4183246066006727,
+        "negativeResponseCosines": 0,
+        "scope": "source-nonlocal",
+        "stage": "gatedMLP"
+      },
+      {
+        "dependentQueries": 1024,
+        "equalErrorToSourceTransfer": 0,
+        "higherErrorThanSourceTransfer": 29,
+        "lowerErrorThanSourceTransfer": 995,
+        "lowerErrorThanZero": 1024,
+        "medianRelativeResponseError": 0.3311526359762939,
+        "negativeResponseCosines": 0,
+        "scope": "all",
+        "stage": "imageExit"
+      },
+      {
+        "dependentQueries": 944,
+        "equalErrorToSourceTransfer": 0,
+        "higherErrorThanSourceTransfer": 29,
+        "lowerErrorThanSourceTransfer": 915,
+        "lowerErrorThanZero": 944,
+        "medianRelativeResponseError": 0.3423438471237473,
+        "negativeResponseCosines": 0,
+        "scope": "source-nonlocal",
+        "stage": "imageExit"
+      }
+    ],
+    "work": {
+      "affineCalls": 1,
+      "attentionCalls": 0,
+      "fullTransformerCalls": 0,
+      "nativeProductScalars": 9437184,
+      "nativeSiLUScalars": 9437184,
+      "newClockNetworks": 0,
+      "newEncoders": 0,
+      "newFits": 0,
+      "newGateUpProjections": 0,
+      "newImages": 0,
+      "newNorms": 0,
+      "newSchedulerCommits": 0,
+      "newVAECalls": 0,
+      "selectedOriginalMatrices": 1,
+      "selectedParameterBytes": 56623104
+    },
+    "nominalAffineMACs": 28991029248,
+    "nativeResidualPayloadExact": true,
+    "byteCustody": {
+      "files": 69,
+      "bytes": 9085768740,
+      "clockViewBytesReadAgain": 6144,
+      "receipt": "results/product-transport/retained-array-verification.json"
+    },
+    "publication": {
+      "files": 15,
+      "bytes": 1411062,
+      "newArrays": 26,
+      "newArrayBytes": 1006642432,
+      "responseRecords": 4096,
+      "operandRecords": 2048
+    },
+    "mechanics": "results/product-transport-evidence/mechanics.json",
+    "instrument": "results/product-transport-evidence/saturn-instrument.json",
+    "advisor": "results/product-transport-evidence/advisor.json",
+    "scheduler": "results/product-transport-evidence/scheduler.json",
+    "figure": "results/product-transport-figure/recipient-product-transport.png",
+    "tests": {
+      "passed": 256,
+      "wallSeconds": 18.15,
+      "scope": "4newindependentquantization/nonlinearbaseline/selecteddowncommit/quarantine/nonfinite checks, generator mechanics only; no scientific qualitygate."
+    },
+    "limits": [
+      "Retrospective conditional local prediction from supplied original operands; not raw-prompt serving or a cheap baseline/increment producer.",
+      "Original down/nativeSiLU and historical donor/receiver/clock/MLP preparation remain paid. No strictzero-neural claim.",
+      "Local native outputs are the cycle48 source-order implementation; no independent complete-block parity witness or later whole-future mediation.",
+      "All-row and dependent per-query observations, signed controls, quantization and nonlocal countertrends retained; no effect-size gate.",
+      "Wall times include imports/hash/transfers/captures/diagnostics and lack a matched speedup baseline."
     ]
   }
 }

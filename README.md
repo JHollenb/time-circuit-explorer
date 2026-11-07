@@ -2,6 +2,8 @@
 
 An interactive field guide to model computation: native execution, recovered time circuits, and the state that connects one computation to the next.
 
+The [recipient-conditioned MLP prediction](docs/recipient-conditioned-product.md) reduces local-exit response error from 50.57% to 4.48% on a supplied pair (50.25% to 22.90% nonlocal). One original down costs 28.991 billion nominal MACs; native baselines/source increments remain paid. The 77.34-second assay has 256 passing mechanics tests, complete byte custody and retained countertrends. Arbitrary-prompt zero-neural images remain open.
+
 Two interchangeable model packs explore the frozen R3 Mamba ISA model and FLUX.2 Klein 4B. Both connect an expandable architecture, recorded native evidence, mathematical reconstructions, and the state that makes the next input. Small browser calculations expose the relevant algebra without downloading a model.
 
 The FLUX pack follows a four-pass, 112-transition history from initial noise: joint and single blocks, before/after boundaries, full and matched forecasts, spatial latent previews, BF16 Euler calculations, synthetic attention/SiLU sandboxes, and original terminal images with pixel-error inspection. Open it directly with `?model=flux2-klein-4b`.

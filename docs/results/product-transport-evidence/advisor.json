@@ -1,0 +1,54 @@
+{
+  "schema": "tce-product-transport-advisor-v1",
+  "cycle": 49,
+  "advisor": "gpt-6-astra",
+  "agent": "/root/astra_zero_forward_advisor",
+  "reviewedSources": {
+    "product_transport.py": "fcf1a27040e75785ac1d432018eb6e306002b307aa075db6cef891ef1e99805c",
+    "product_transport_primary.py": "d453fd70ad668b364558d6ce0cf3af255eb95f52aededc2f813fdfe0e0de35d6",
+    "product_transport_analysis.py": "fdfa40486ea4e5dad9e8ab53d76636fb6c68fa74994a5e11de2db0c0106afb19",
+    "product_transport_study.py": "8a49d41ada44f1cdb0991472f15b7abf3d664a5739d25afaa2000f8688b5194b",
+    "report.json": "35d5d19886e8779927ead410d3a420aa2284fc7334919d3c596b5b175e0bae86",
+    "primary-seal.json": "4272a3d97a8e4bd0c641d346c0fa82b0eaaaaf01b52c9124ec4b9016dbc6579d",
+    "frozen-plan.md": "f3a46f1c81e0e5090e011be55782466b63ee23bd28cf5ff3adbd750f85ac4ebd"
+  },
+  "blogSnapshots": [
+    {
+      "path": "../../../../obsidian/blog/2026-11-06-213500-what-our-model-computation-work-has-established.md",
+      "sha256": "9f7aed8213cd04d39064682b7175a7b20485a5ca28ef8565b78ca4a3c35db2df",
+      "scope": "Exact working-post snapshot reported by Astra; subsequent drift does not rewrite the review."
+    },
+    {
+      "path": "../../../../obsidian/blog/2026-11-06-213504-from-explicit-model-execution-to-automated-computation-discovery.md",
+      "sha256": "a647726ed3944577056de4dd558c83cecbba7e428c94fe33f417ead91c4f4c18",
+      "scope": "Exact working-post snapshot reported by Astra; subsequent drift does not rewrite the review."
+    },
+    {
+      "path": "../../../../obsidian/blog/2026-11-06-182756-binding-needs-incoming-state-and-new-writing.md",
+      "sha256": "67bdadc2870efce6a22e32c1da25827bd053d729c3d7827bdd35073379799ede",
+      "scope": "Exact working-post snapshot reported by Astra; subsequent drift does not rewrite the review."
+    }
+  ],
+  "sourceReview": "No material execution/quarantine flaw; four sources match staged request-pinned bytes and explicit FP64→FP32→BF16 is implemented correctly.",
+  "finding": "Strong conditional computation: all-row product error65.33→4.67%, exit50.57→4.48%; survives native down/finite residual commit.",
+  "qualifications": [
+    "Nonlocal gate/up errors24.14%/21.14%, exit22.90%; median row exit error33.12% and29worsening exit rows retained.",
+    "No economical baseline/source increment formation, later-state closure or strictzero-neural image generation."
+  ],
+  "nextCut": {
+    "plan": "../../plans/shared-normalization-innovation.md",
+    "status": "written-unexecuted",
+    "law": "Actual BF16 residuals give FP64 sA/sB; actual BF16(1+scale) widened. Original W_in widened to FP64 forms shared J=W[d*C(aB-aA)] and beta=W*shift once. FhatB=alpha*(FA-beta)+beta+J/sB. Explicit FP64→FP32→BF16, two native SwiGLU/down/gated exits; no B fused endpoint before complete candidate seal.",
+    "defect": "In real arithmetic, prediction defect alpha*etaA-etaB-W[d*C(rho)]/sB with rho=(uB-uA)-(aB-aA). No extra rho projections; retain rho and combined prediction error without causal shares.",
+    "affineCalls": 4,
+    "nominalAffineMACs": 116020740096,
+    "sharedInnovationMACs": 57982058496,
+    "clockShiftMACs": 56623104,
+    "twoDownMACs": 57982058496,
+    "selectedBF16ParameterBytes": 169869312,
+    "scope": "Removes both supplied native B fused endpoints; retains A baselines, original learned matrices, embeddings/carriers and FP64 work. No first-prompt economy or own-state closure."
+  },
+  "nativeSourceSHA256": "0a3c56ed3ca28a416492b50953a433f20b8a89fd26c7b7a49b1b6b45d5236006",
+  "goalStatus": "active-unsolved",
+  "nextPeriodicReviewCycle": 52
+}

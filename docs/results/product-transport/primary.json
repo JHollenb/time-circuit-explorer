@@ -1,0 +1,438 @@
+{
+  "clockGateLastAxisSlice": [
+    15360,
+    18432
+  ],
+  "clockGateParent": {
+    "bytes": 36992,
+    "logicalDtype": "torch.bfloat16",
+    "path": "/mnt/hdd8tb/mrun-work/job-31811b103879/clock-arrays/3/double_img.npy",
+    "payloadSHA256": "b68da67c6e8c689a06200e4664e5b3b7f74cc480721e2e5e3dbc4e1d166b8152",
+    "sha256": "a61508715739b6325ab72efa1864eb38ad9e611dfb30a2a82f8e27812c81c15b",
+    "shape": [
+      1,
+      18432
+    ],
+    "storedDtype": "uint16"
+  },
+  "evidence": {
+    "act": "tce.recipient_product_transport:v1",
+    "elapsed_ms": 7231.312301009893,
+    "implementation": "recipient-baseline-native-product",
+    "input_frame_id": "e36556f3465347cc3c42926807e0d4bc06e982441576cf6740f2d513d0cb80b8",
+    "metrics": {
+      "affineCalls": 1,
+      "capturedImageExitPayloadSHA256": "04142b62e9591172c186d5d87db8f32d5148631035b2232cc4f262476dc78dea"
+    },
+    "numerical_contract": "cpu-fp64-fp32-bf16-transport-native-cuda-swiglu-one-down",
+    "output_frame_id": "1a05e04c9cfebf54ab7592e562a3730e4062757463c2598942338f9014141005"
+  },
+  "fields": {
+    "activation": {
+      "bytes": 18874496,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-f21da64e0e39/arrays/candidate/activation.npy",
+      "payloadSHA256": "466ab587eb175c05883454de87924ec4b89512115129f5511e2e54ce24c7c81f",
+      "sha256": "a955b81526fe320e7c46c8e347b594d0b7e3aa138c44cb906e9f7966751f3b80",
+      "shape": [
+        1,
+        1024,
+        9216
+      ],
+      "storedDtype": "uint16"
+    },
+    "clockGate": {
+      "bytes": 6272,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-f21da64e0e39/arrays/candidate/clockGate.npy",
+      "payloadSHA256": "f84bf6ff64aa76b83b94699d4052e6217db5a2cf114273270fd28b107928bbaf",
+      "sha256": "2c9c6cd9263740ec1898ae8d7d948133b20455e9a5483d3a1d2d47bfad3cb8e1",
+      "shape": [
+        1,
+        1,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "fused": {
+      "bytes": 37748864,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-f21da64e0e39/arrays/candidate/fused.npy",
+      "payloadSHA256": "21363622bb839f77b38b27a86dc940d59c305b3eb5175e1a2939dcceb4d0afe3",
+      "sha256": "556f464348b7c474119a8007ba12a94656877ce015276510800600e181246225",
+      "shape": [
+        1,
+        1024,
+        18432
+      ],
+      "storedDtype": "uint16"
+    },
+    "gatedMLP": {
+      "bytes": 6291584,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-f21da64e0e39/arrays/candidate/gatedMLP.npy",
+      "payloadSHA256": "52c7e7ad787feb1e6ddff6bbce171131bbfd7391543bf1685d2cae7e4d7f2bb1",
+      "sha256": "3bbcc0679553e53b8b65f89a19df74a34e3200a5b792deabcd6231f1d6fecdca",
+      "shape": [
+        1,
+        1024,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "imageExit": {
+      "bytes": 6291584,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-f21da64e0e39/arrays/candidate/imageExit.npy",
+      "payloadSHA256": "04142b62e9591172c186d5d87db8f32d5148631035b2232cc4f262476dc78dea",
+      "sha256": "d13181fe46883074feb85ca434bc9806a7becead31d7a7526480078266367c5f",
+      "shape": [
+        1,
+        1024,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "mlpWrite": {
+      "bytes": 6291584,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-f21da64e0e39/arrays/candidate/mlpWrite.npy",
+      "payloadSHA256": "a729fa726b96ec743dc84d2dbe3efb2c39e2f3aaf5b845ff7b259467da5a9b58",
+      "sha256": "f5508466e317a3f2250fe9aa999468af63627ef8f9b74bb892b2147bb2a4f022",
+      "shape": [
+        1,
+        1024,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "prequantFP64": {
+      "bytes": 150995072,
+      "logicalDtype": "torch.float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-f21da64e0e39/arrays/candidate/prequantFP64.npy",
+      "payloadSHA256": "0399850559a013da54d77422b0404c92540634ada497354ef01eef7e54078bc9",
+      "sha256": "ebf51772cd586cd1fa1468c9db4992049a90998633c64d3722da8a9284f04826",
+      "shape": [
+        1,
+        1024,
+        18432
+      ],
+      "storedDtype": "float64"
+    },
+    "product": {
+      "bytes": 18874496,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-f21da64e0e39/arrays/candidate/product.npy",
+      "payloadSHA256": "c48ffcbdc9fc853d0b51e35bcd76b356f4ea33fca9a3b72e1f2add75f60b4350",
+      "sha256": "dea4a0d4b69f1ca24b6918b62f89ddbf54c878da7f34f5a310a6ddaf62c37b34",
+      "shape": [
+        1,
+        1024,
+        9216
+      ],
+      "storedDtype": "uint16"
+    },
+    "quantizationDifference": {
+      "bytes": 150995072,
+      "logicalDtype": "torch.float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-f21da64e0e39/arrays/candidate/quantizationDifference.npy",
+      "payloadSHA256": "7324c03862c051d66306a76518341d8518bab329eeb0e1a3ce26176947b5cb81",
+      "sha256": "0d59c7ac2164ea728ceb56f9c69e9cfd6477ba4c53b55c685c128e9f61f231c8",
+      "shape": [
+        1,
+        1024,
+        18432
+      ],
+      "storedDtype": "float64"
+    },
+    "residualCommit": {
+      "bytes": 6291584,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-f21da64e0e39/arrays/candidate/residualCommit.npy",
+      "payloadSHA256": "60c9042c5bde470a003125621bf25ada67a3fda07fe843e61bbb21af9f3635b5",
+      "sha256": "9efbbeece92a4f3e54c591f82ed6d1b9acafa331eae0bec1c4ffcb07a22189af",
+      "shape": [
+        1,
+        1024,
+        3072
+      ],
+      "storedDtype": "uint16"
+    }
+  },
+  "outputFrame": {
+    "act": "tce.recipient_product_transport:v1",
+    "frame_id": "1a05e04c9cfebf54ab7592e562a3730e4062757463c2598942338f9014141005",
+    "implementation": "recipient-baseline-native-product",
+    "metadata": {
+      "clockGateSlice": [
+        15360,
+        18432
+      ],
+      "sourceJobID": "job-0807587485a6"
+    },
+    "parent_frame_id": "e36556f3465347cc3c42926807e0d4bc06e982441576cf6740f2d513d0cb80b8",
+    "program_fingerprint": "1437103d3cfb6af3acfcc9e6ebf0caa9d6bdc1b1f501fa2a2fcfdf0cfb393ae5",
+    "schema": "saturn-frame-v1",
+    "slots": {
+      "carrier": {
+        "abi": {
+          "device": "cuda",
+          "dtype": "torch.bfloat16",
+          "saturn:fingerprint": {
+            "durable": true,
+            "policy": "producer-content-sha256-v1"
+          },
+          "shape": [
+            1,
+            1024,
+            3072
+          ]
+        },
+        "fingerprint": "e2308c625f3c13dd7109379d7da264dcd341c438ba36a4e90c234ce391b2af80",
+        "handle": "saturn://carrier",
+        "kind": "tensor",
+        "name": "carrier"
+      },
+      "embedding": {
+        "abi": {
+          "device": "cuda",
+          "dtype": "torch.bfloat16",
+          "saturn:fingerprint": {
+            "durable": true,
+            "policy": "producer-content-sha256-v1"
+          },
+          "shape": [
+            1,
+            1024,
+            3072
+          ]
+        },
+        "fingerprint": "9dd453f72a208461837d1a6007a8dbeaff9e9c3f5ae21e4e1150526348d214b3",
+        "handle": "saturn://embedding",
+        "kind": "tensor",
+        "name": "embedding"
+      },
+      "fusedR0A": {
+        "abi": {
+          "device": "cpu",
+          "dtype": "torch.bfloat16",
+          "saturn:fingerprint": {
+            "durable": true,
+            "policy": "producer-content-sha256-v1"
+          },
+          "shape": [
+            1,
+            1024,
+            18432
+          ]
+        },
+        "fingerprint": "ef8dc3327b305b38e5c9ae916972e535a8c73ddd942bf7dfacdf0bc323e608b1",
+        "handle": "saturn://fusedR0A",
+        "kind": "tensor",
+        "name": "fusedR0A"
+      },
+      "fusedR0B": {
+        "abi": {
+          "device": "cpu",
+          "dtype": "torch.bfloat16",
+          "saturn:fingerprint": {
+            "durable": true,
+            "policy": "producer-content-sha256-v1"
+          },
+          "shape": [
+            1,
+            1024,
+            18432
+          ]
+        },
+        "fingerprint": "0e449263081b2e67eee07b6df8e2033ce51f608c692c47f5f1947290ee411265",
+        "handle": "saturn://fusedR0B",
+        "kind": "tensor",
+        "name": "fusedR0B"
+      },
+      "fusedR1A": {
+        "abi": {
+          "device": "cpu",
+          "dtype": "torch.bfloat16",
+          "saturn:fingerprint": {
+            "durable": true,
+            "policy": "producer-content-sha256-v1"
+          },
+          "shape": [
+            1,
+            1024,
+            18432
+          ]
+        },
+        "fingerprint": "c47b31aa6e1f46e4237873a99a0104488aa08186afb6dfe4323bb7f1e907fd09",
+        "handle": "saturn://fusedR1A",
+        "kind": "tensor",
+        "name": "fusedR1A"
+      },
+      "gate": {
+        "abi": {
+          "device": "cuda",
+          "dtype": "torch.bfloat16",
+          "saturn:fingerprint": {
+            "durable": true,
+            "policy": "producer-content-sha256-v1"
+          },
+          "shape": [
+            1,
+            1,
+            3072
+          ]
+        },
+        "fingerprint": "f84bf6ff64aa76b83b94699d4052e6217db5a2cf114273270fd28b107928bbaf",
+        "handle": "saturn://gate",
+        "kind": "tensor",
+        "name": "gate"
+      },
+      "imageExit": {
+        "abi": {
+          "dtype": "torch.bfloat16",
+          "shape": [
+            1,
+            1024,
+            3072
+          ]
+        },
+        "fingerprint": "a9adea1bdfbefd6b845096ee4f642c2613248f2bb6e3dc68683443f118217c8a",
+        "handle": "saturn://imageExit",
+        "kind": "tensor",
+        "name": "imageExit"
+      }
+    }
+  },
+  "sourceFrame": {
+    "act": "root:v1",
+    "frame_id": "e36556f3465347cc3c42926807e0d4bc06e982441576cf6740f2d513d0cb80b8",
+    "implementation": "saturn",
+    "metadata": {
+      "clockGateSlice": [
+        15360,
+        18432
+      ],
+      "sourceJobID": "job-0807587485a6"
+    },
+    "parent_frame_id": null,
+    "program_fingerprint": "1437103d3cfb6af3acfcc9e6ebf0caa9d6bdc1b1f501fa2a2fcfdf0cfb393ae5",
+    "schema": "saturn-frame-v1",
+    "slots": {
+      "carrier": {
+        "abi": {
+          "device": "cuda",
+          "dtype": "torch.bfloat16",
+          "saturn:fingerprint": {
+            "durable": true,
+            "policy": "producer-content-sha256-v1"
+          },
+          "shape": [
+            1,
+            1024,
+            3072
+          ]
+        },
+        "fingerprint": "e2308c625f3c13dd7109379d7da264dcd341c438ba36a4e90c234ce391b2af80",
+        "handle": "saturn://carrier",
+        "kind": "tensor",
+        "name": "carrier"
+      },
+      "embedding": {
+        "abi": {
+          "device": "cuda",
+          "dtype": "torch.bfloat16",
+          "saturn:fingerprint": {
+            "durable": true,
+            "policy": "producer-content-sha256-v1"
+          },
+          "shape": [
+            1,
+            1024,
+            3072
+          ]
+        },
+        "fingerprint": "9dd453f72a208461837d1a6007a8dbeaff9e9c3f5ae21e4e1150526348d214b3",
+        "handle": "saturn://embedding",
+        "kind": "tensor",
+        "name": "embedding"
+      },
+      "fusedR0A": {
+        "abi": {
+          "device": "cpu",
+          "dtype": "torch.bfloat16",
+          "saturn:fingerprint": {
+            "durable": true,
+            "policy": "producer-content-sha256-v1"
+          },
+          "shape": [
+            1,
+            1024,
+            18432
+          ]
+        },
+        "fingerprint": "ef8dc3327b305b38e5c9ae916972e535a8c73ddd942bf7dfacdf0bc323e608b1",
+        "handle": "saturn://fusedR0A",
+        "kind": "tensor",
+        "name": "fusedR0A"
+      },
+      "fusedR0B": {
+        "abi": {
+          "device": "cpu",
+          "dtype": "torch.bfloat16",
+          "saturn:fingerprint": {
+            "durable": true,
+            "policy": "producer-content-sha256-v1"
+          },
+          "shape": [
+            1,
+            1024,
+            18432
+          ]
+        },
+        "fingerprint": "0e449263081b2e67eee07b6df8e2033ce51f608c692c47f5f1947290ee411265",
+        "handle": "saturn://fusedR0B",
+        "kind": "tensor",
+        "name": "fusedR0B"
+      },
+      "fusedR1A": {
+        "abi": {
+          "device": "cpu",
+          "dtype": "torch.bfloat16",
+          "saturn:fingerprint": {
+            "durable": true,
+            "policy": "producer-content-sha256-v1"
+          },
+          "shape": [
+            1,
+            1024,
+            18432
+          ]
+        },
+        "fingerprint": "c47b31aa6e1f46e4237873a99a0104488aa08186afb6dfe4323bb7f1e907fd09",
+        "handle": "saturn://fusedR1A",
+        "kind": "tensor",
+        "name": "fusedR1A"
+      },
+      "gate": {
+        "abi": {
+          "device": "cuda",
+          "dtype": "torch.bfloat16",
+          "saturn:fingerprint": {
+            "durable": true,
+            "policy": "producer-content-sha256-v1"
+          },
+          "shape": [
+            1,
+            1,
+            3072
+          ]
+        },
+        "fingerprint": "f84bf6ff64aa76b83b94699d4052e6217db5a2cf114273270fd28b107928bbaf",
+        "handle": "saturn://gate",
+        "kind": "tensor",
+        "name": "gate"
+      }
+    }
+  }
+}

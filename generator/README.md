@@ -102,6 +102,8 @@ The hosted static Site displays saved measured examples. It cannot execute the m
 
 ## Generate from the command line
 
+The [recipient-conditioned product assay](../docs/recipient-conditioned-product.md) uses `product_transport_study.py stage|submit|collect`, `publish_product_transport.py verify|publish|audit`, `summarize_product_transport.py` and `plot_product_transport.py`. An isolated child seals its FP64→FP32→BF16 transport and one original native down before separate endpoint/control scoring. All 256 mechanics tests pass; full arrays remain near compute. This conditional local prediction still pays native input preparation and learned arithmetic and is separate from arbitrary-prompt image serving.
+
 ```sh
 ../common/bin/common exec python generator/run.py stage artifacts/my-prediction \
   --prompt 'A blue glass sphere beside an orange cube on a white background.' --seed 2718

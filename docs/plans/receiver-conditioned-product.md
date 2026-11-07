@@ -1,6 +1,6 @@
 # Transport the increment into the recipient's nonlinear baseline
 
-Status: **written, unexecuted**. [Astra48](../results/first-consumer-evidence/advisor.json) recommends one conditional local prediction after the [first-image-consumer result](../first-image-consumer.md). No new full suffix, image, fit or rank scan is part of this cut.
+Status: **executed**, job-f21da64e0e39. The [result](../recipient-conditioned-product.md) retains the sealed candidate, controls, quantization and complete queries. The [pre-execution plan](../results/product-transport/frozen-plan.md) remains immutable. [Astra48](../results/first-consumer-evidence/advisor.json) recommended this conditional prediction after the [first-image-consumer result](../first-image-consumer.md). No full suffix, image, fit or rank scan ran.
 
 ## The mathematical question
 
@@ -34,6 +34,8 @@ u_{1B}=\operatorname{BF16}(E_1+a_B),\qquad
 \]
 
 Bind the exact four native operand cells, cycle48 source/profile, original down payload, qualified clock gate, query geometry and inherited 944-row source-nonlocal subset. Validate the source files and semantic gate/up views through their existing complete custody and view hashes. Original donor/receiver/clock preparation remains paid.
+
+Implementation clarification before staging: the qualified clock gate is the final 3,072-channel slice of the existing clock3 image modulation parent. Authenticate the complete 36,992-byte parent file and retain only that semantic gate view for the Act; no clock network runs. Form the FP64 transport on CPU, then transfer the predicted contiguous BF16 fused operand to CUDA for the original nonlinear/down path. Both devices and their arithmetic/transfer costs are recorded. A separate primary child exits before the scoring process starts.
 
 ## Seal before the unavailable endpoint is admitted
 

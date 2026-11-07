@@ -1,0 +1,150 @@
+{
+  "executedPayload": {
+    "host": "beast",
+    "reported_ts": 1794029771.3071556,
+    "sha256": "9068cfa6a9f0f695d50749afa42f5daf11cf79145d494e14a5e46fcb2e505a48",
+    "size_bytes": 3143927
+  },
+  "futureSizing": "Measured1663.9MBRSS/494MBVRAM/77.34s. Original reservation4096MBRAM1024MBVRAM CPU4disk4GB. No matching recommendation field in this raw job record. Future sizing should use this one-down/process-separated geometry and actual I/O, not full-model or parent12affine sizing; no rerun for reservations.",
+  "jobID": "job-f21da64e0e39",
+  "reservation": {
+    "cpu_threads": 4,
+    "disk_gb": 4.0,
+    "est_wall_s": 60.0,
+    "ram_mb": 4096.0,
+    "source": "declared",
+    "vram_mb": 1024.0
+  },
+  "result": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-f21da64e0e39",
+      "job_log": {
+        "bytes": 368,
+        "sha256": "e1dd2e7b742fbab96550c8faa6906ae13f0d1ca46ea53314cf62d94fc3e68709"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-f21da64e0e39/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=4",
+        "OPENBLAS_NUM_THREADS=4",
+        "MKL_NUM_THREADS=4",
+        "CUBLAS_WORKSPACE_CONFIG=:4096:8",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "--with",
+        "./mdb_runtime-0.1.0-py3-none-any.whl",
+        "--with",
+        "./saturn_pub-0.4.1-py3-none-any.whl",
+        "--with",
+        "./mrun_pub-0.1.2-py3-none-any.whl",
+        "python",
+        "-u",
+        "product_transport_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-f21da64e0e39",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-f21da64e0e39/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794029771.292908
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794029771.3354237
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794029771.3601496
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794029771.3897095
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794029848.0455172
+        },
+        {
+          "name": "finished",
+          "ts": 1794029848.056957
+        }
+      ]
+    },
+    "elapsed_s": 77.34,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "9068cfa6a9f0f695d50749afa42f5daf11cf79145d494e14a5e46fcb2e505a48",
+      "size_bytes": 3143927
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 1663.9,
+    "peak_vram_mb": 494.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "rightSizeRecommendation": null,
+  "schema": "tce-product-transport-scheduler-v1",
+  "state": "succeeded"
+}

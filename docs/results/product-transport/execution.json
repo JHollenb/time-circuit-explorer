@@ -1,0 +1,116 @@
+{
+  "assets": [
+    {
+      "bytesHashed": 541,
+      "path": "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/config.json",
+      "sha256": "09733c74a3da6d17dd0a0472a091a8950c7c6935889c32c16cc800ede05029de",
+      "signature": [
+        66311,
+        298051,
+        541,
+        1784967358756501000,
+        1784967358757491000
+      ]
+    },
+    {
+      "bytesHashed": 7751109744,
+      "path": "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/diffusion_pytorch_model.safetensors",
+      "sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+      "signature": [
+        66311,
+        298058,
+        7751109744,
+        1784967508577765300,
+        1784967508615361800
+      ]
+    }
+  ],
+  "fileQuarantine": {
+    "allowedFiles": [
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/config.json",
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/diffusion_pytorch_model.safetensors",
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/cells/R0A/fused.npy",
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/cells/R0B/fused.npy",
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/cells/R1A/fused.npy",
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/shared/B.gatedCarrier.npy",
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/shared/R1.embedding.npy",
+      "/mnt/hdd8tb/mrun-work/job-31811b103879/clock-arrays/3/double_img.npy"
+    ],
+    "deniedCanaries": [
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/cells/R1B/fused.npy",
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/cells/R1A/product.npy",
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/cells/R1A/mlpWrite.npy",
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/cells/R1A/imageExit.npy",
+      "/mnt/hdd8tb/mrun-work/job-f21da64e0e39/targets.json"
+    ],
+    "scope": "Trusted-code audit hook. No target arrays or scoring metadata admitted to candidate after source verification; separate process exits before scoring.",
+    "successfulFileOpenCounts": {
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/config.json": 1,
+      "/mnt/big/llm-models/FLUX.2-klein-4B/transformer/diffusion_pytorch_model.safetensors": 2,
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/cells/R0A/fused.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/cells/R0B/fused.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/cells/R1A/fused.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/shared/B.gatedCarrier.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-0807587485a6/arrays/shared/R1.embedding.npy": 2,
+      "/mnt/hdd8tb/mrun-work/job-31811b103879/clock-arrays/3/double_img.npy": 2
+    }
+  },
+  "header": {
+    "bytes": 20584,
+    "sha256": "012278fec8c5203622e33f14a7da845b344c5dcd869980b04692348ff02420f6"
+  },
+  "linears": [
+    {
+      "inputShape": [
+        1,
+        1024,
+        9216
+      ],
+      "inputStride": [
+        9437184,
+        9216,
+        1
+      ],
+      "nominalMACs": 28991029248,
+      "parameter": "transformer_blocks.0.ff.linear_out.weight",
+      "weightShape": [
+        3072,
+        9216
+      ]
+    }
+  ],
+  "loadedParameters": [
+    {
+      "bytes": 56623104,
+      "dataOffsets": [
+        5560871936,
+        5617495040
+      ],
+      "name": "transformer_blocks.0.ff.linear_out.weight",
+      "payloadSHA256": "e23f12e4b3e53006cc565e27f657be26b0a73a8a3a2a98d767d615e2552f2073",
+      "shape": [
+        3072,
+        9216
+      ]
+    }
+  ],
+  "numericalProfile": {
+    "bf16ReducedPrecisionReduction": true,
+    "cublasWorkspaceConfig": ":4096:8",
+    "cudaMatmulTF32": false,
+    "cudnnBenchmark": false,
+    "cudnnDeterministic": true,
+    "cudnnTF32": false,
+    "deterministicAlgorithms": true,
+    "float32MatmulPrecision": "highest",
+    "threads": 4
+  },
+  "parameterInputRNGClosure": true,
+  "pathWallSecondsInstrumented": 7.231389605905861,
+  "peakCUDAAllocatedBytes": 184555520,
+  "peakCUDAReservedBytes": 188743680,
+  "schema": "tce-product-transport-execution-v1",
+  "setupSecondsAfterImports": 6.742335624992847,
+  "workerCPUSecondsAfterImports": 8.856335943000001,
+  "workerWallSecondsAfterImports": 14.117752249818295
+}

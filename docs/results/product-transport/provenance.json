@@ -1,0 +1,224 @@
+{
+  "completeCollectedInventory": {
+    "bytes": 7000829,
+    "files": {
+      "execution.json": {
+        "bytes": 4134,
+        "sha256": "8afd417f42de7ff86420f3dd177aad3816a42cb7542adfe6c1a8c372e03d2573"
+      },
+      "frozen-plan.md": {
+        "bytes": 6967,
+        "sha256": "f3a46f1c81e0e5090e011be55782466b63ee23bd28cf5ff3adbd750f85ac4ebd"
+      },
+      "inputs.json": {
+        "bytes": 7373,
+        "sha256": "46d735fbf0c428b9a5182eabb333ffc82b95a53ad2752ebff16782ea3b274667"
+      },
+      "operand-queries.jsonl": {
+        "bytes": 1426822,
+        "sha256": "07db468dcd46931f6777ce0ff9e02b750e8a1ec06e750b6ff625530c0196242a"
+      },
+      "primary-seal.json": {
+        "bytes": 221,
+        "sha256": "4272a3d97a8e4bd0c641d346c0fa82b0eaaaaf01b52c9124ec4b9016dbc6579d"
+      },
+      "primary.json": {
+        "bytes": 13132,
+        "sha256": "f3af71411033938727699401966834771fe0a3631349952648c1e1fd3e3420d5"
+      },
+      "queries.jsonl": {
+        "bytes": 5499185,
+        "sha256": "ec485911ef6d71a53895a4b38014a95f2e451d4f316b773a1c5b4dd53230ba27"
+      },
+      "report.json": {
+        "bytes": 20372,
+        "sha256": "35d5d19886e8779927ead410d3a420aa2284fc7334919d3c596b5b175e0bae86"
+      },
+      "request.json": {
+        "bytes": 4145,
+        "sha256": "7eb4d010d889481f4794f86592c89e07b52780c0d2af95477c2451a5492e02d9"
+      },
+      "resource-basis.json": {
+        "bytes": 1982,
+        "sha256": "b654859fd78ebc7afad30f0f98fbfcb927ce1d3786cbd57737e9c22eae4e683c"
+      },
+      "response-fields.json": {
+        "bytes": 7506,
+        "sha256": "8b9788d35f4976c769c0531d7f6e9cc0cb0980ac7c2d6a8623dd505f00485331"
+      },
+      "targets.json": {
+        "bytes": 8990,
+        "sha256": "3c3167e58a90940115a3b49669a5d170cc15ec9fc4d0f9b7722a8cc2ec03dd58"
+      }
+    }
+  },
+  "jobID": "job-f21da64e0e39",
+  "losslessStreams": [
+    {
+      "published": "operand-queries.jsonl.gz",
+      "publishedBytes": 282753,
+      "publishedSHA256": "d94c3edf7c74f4ff8bd46897c1c8fbb2b2c8a1949741bb2fde68c5c04eda709c",
+      "source": "operand-queries.jsonl",
+      "sourceBytes": 1426822,
+      "sourceSHA256": "07db468dcd46931f6777ce0ff9e02b750e8a1ec06e750b6ff625530c0196242a"
+    },
+    {
+      "published": "queries.jsonl.gz",
+      "publishedBytes": 1030956,
+      "publishedSHA256": "c520eea72d79ef4eebcb6b3c3d94e815ddca930c6ab984149bcf1286df08e838",
+      "source": "queries.jsonl",
+      "sourceBytes": 5499185,
+      "sourceSHA256": "ec485911ef6d71a53895a4b38014a95f2e451d4f316b773a1c5b4dd53230ba27"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "9068cfa6a9f0f695d50749afa42f5daf11cf79145d494e14a5e46fcb2e505a48",
+      "size_bytes": 3143927
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794029771.3071556,
+      "sha256": "9068cfa6a9f0f695d50749afa42f5daf11cf79145d494e14a5e46fcb2e505a48",
+      "size_bytes": 3143927
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794029771.019598,
+      "sha256": "9068cfa6a9f0f695d50749afa42f5daf11cf79145d494e14a5e46fcb2e505a48",
+      "size_bytes": 3143927
+    }
+  },
+  "requestSHA256": "1437103d3cfb6af3acfcc9e6ebf0caa9d6bdc1b1f501fa2a2fcfdf0cfb393ae5",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-f21da64e0e39",
+      "job_log": {
+        "bytes": 368,
+        "sha256": "e1dd2e7b742fbab96550c8faa6906ae13f0d1ca46ea53314cf62d94fc3e68709"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-f21da64e0e39/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=4",
+        "OPENBLAS_NUM_THREADS=4",
+        "MKL_NUM_THREADS=4",
+        "CUBLAS_WORKSPACE_CONFIG=:4096:8",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "--with",
+        "./mdb_runtime-0.1.0-py3-none-any.whl",
+        "--with",
+        "./saturn_pub-0.4.1-py3-none-any.whl",
+        "--with",
+        "./mrun_pub-0.1.2-py3-none-any.whl",
+        "python",
+        "-u",
+        "product_transport_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-f21da64e0e39",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-f21da64e0e39/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794029771.292908
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794029771.3354237
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794029771.3601496
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794029771.3897095
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794029848.0455172
+        },
+        {
+          "name": "finished",
+          "ts": 1794029848.056957
+        }
+      ]
+    },
+    "elapsed_s": 77.34,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "9068cfa6a9f0f695d50749afa42f5daf11cf79145d494e14a5e46fcb2e505a48",
+      "size_bytes": 3143927
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 1663.9,
+    "peak_vram_mb": 494.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-product-transport-publication-v1",
+  "scope": "One sealed conditional local replacement, with supplied native baselines/increments and one original down/SiLU paid. No cheap producer, complete velocity, image or strictzero-neural claim."
+}
