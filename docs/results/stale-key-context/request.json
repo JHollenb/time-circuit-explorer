@@ -1,0 +1,113 @@
+{
+  "arithmeticSubplans": {
+    "diagnostic": "K_Q/V_P-same-finite-geometry",
+    "primary": "K_P/V_Q-original-ownMLP-ownnextQ"
+  },
+  "backend": "diffusers",
+  "batch_size": 1,
+  "case": "sphere-cube-plain-2027",
+  "corners": {
+    "diagnostic": [
+      "Q",
+      "P"
+    ],
+    "primary": [
+      "P",
+      "Q"
+    ]
+  },
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "height": 512,
+  "logicalStep": 2,
+  "model": "flux2-klein-4b-distilled",
+  "needs": {
+    "cuda": true
+  },
+  "nextJoint": 2,
+  "ownedSources": [
+    "stale_key_context_worker.py",
+    "stale_key_context_analysis.py",
+    "stale_key_context_study.py",
+    "propagated_context.py",
+    "propagated_context_worker.py",
+    "propagated_context_analysis.py",
+    "propagated_context_study.py",
+    "propagated_context_intake.py",
+    "selected_source_v2.py",
+    "projected_complement.py",
+    "paired_fields.py",
+    "encoder_atoms.py",
+    "flux_clock.py",
+    "flux_clock_study.py",
+    "complete_masked_study.py",
+    "masked_kv_study.py",
+    "sparse_text_kv.py"
+  ],
+  "protocol": "Prespecified stale-key primaryPQ anddiagnosticQP; twoownMLP/nextqueryactors905,969,664MAC. Bothsealexit beforePP/QQtargets; score actualresponses vsQQ-PP andfourcornerinteraction. No newbanks/fit/reference/suffix/image.",
+  "requestSHA256": "30dec7fea7deda25a8bfa00b3e8ec66f583729f7bcbb4651f211d5f7a5c0a1b6",
+  "scheduling_contract": {
+    "additional_scheduler_submissions": 0,
+    "branch_execution": "in_process",
+    "checkpoint_policy": "one outer Saturn worker lease; all logical branches and analysis remain in process",
+    "collection_policy": "direct_job_only",
+    "conditioner_policy": "Paid native source states, sealed fresh parent K/V, identical shared selected P operands, original maps and post-seal diagonal targets.",
+    "control_plane": "mrun_outer_lease",
+    "data_plane": "resident_worker",
+    "execution_model": "finite_local_program",
+    "interactive": false,
+    "lease_scope": "entire-worker",
+    "logical_branches": 2,
+    "logical_checkpoint_replays": 0,
+    "logical_operations": 10,
+    "max_local_work_items": 256,
+    "max_mrun_submissions": 1,
+    "modelLoadScope": "Five original tensors per actor; no bank/fullmodel formation.",
+    "model_loads": 1,
+    "mrun_retry_policy": "none_for_finite_lease",
+    "per_branch_mrun_submissions": 0,
+    "per_transition_mrun_submissions": 0,
+    "replay_policy": "none_source_only",
+    "schema": "saturn-single-lease-scheduling-contract-v1",
+    "targetIsolation": "Both diagonals denied until both new actors seal/exit; diagnostic denies primary arrays. Primary also denies Q-key bank and P-value bank."
+  },
+  "schema": "tce-stale-key-context-request-v1",
+  "seq_len": 1536,
+  "sourceHashes": {
+    "complete_masked_study.py": "f52633bc9d729b2a5032e024331d9b20fcee8cb993941cab87c197089cdcff99",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "flux_clock.py": "bde499ff527f624fcd1b62a8f6f0b2fbaf70eebc7b7835fcd7d4c6403b4e0b2b",
+    "flux_clock_study.py": "eaccf6bdb75678ac6acb5a371f8858201cf83dbac4de83868b70d5570e4beddc",
+    "frozen-plan.md": "b31aff409033a587e87c5df9eabb86937c97a6ad11ed73181886b341f6118286",
+    "inputs.json": "d4ce947107d4b69a7ce52bc717429489d246ad5909aea488caa760708e1e983e",
+    "masked_kv_study.py": "920416ce49d823b1337a7f6d9f5fca90c8047723bb6b1d37dc09967114b6ad89",
+    "mdb_runtime-0.1.0-py3-none-any.whl": "038963b98dd9605581ca7307b6695fb8bbe46f91df34b6d9b134aa5d39a1ae94",
+    "mrun_pub-0.1.2-py3-none-any.whl": "2e474bfaacc781905da723fa29db51fc885972aa8a56f9001c57041987e7f65b",
+    "paired_fields.py": "408e035cb2f2f99558dbbe5abccdc281a5deade195abdbbc003549318ef09e88",
+    "parameter-artifacts.json": "be4fec4e4014875edfa818e57d116ec1f17bb2437149a51e3a5e59b60d9578fc",
+    "projected_complement.py": "c9a7bfb8d5bdae210fa87ebb460f116567cc3206974cf77974944e2e3f47d225",
+    "propagated_context.py": "02d765502656adaed6e6fd92a8a1c30681a74fe879f508e56b2e781d74503974",
+    "propagated_context_analysis.py": "b69a3605e5d4b2a3179525f9927a4372038bbd6d1661c27dd24f82d8a8eabff9",
+    "propagated_context_intake.py": "cd9cc39cbcb39900cc2986527583915d795bc5de04fbf3a501998a5e873eb410",
+    "propagated_context_study.py": "12ad4799faf62b85166f1d748aae6bf9ad4b583cedf9c6cb371d0c28add1fffe",
+    "propagated_context_worker.py": "ebb896de900fe83d4bc1bd3e6fdc77844c3850132261da4bed33e15a7a1cf084",
+    "resource-basis.json": "0d6cb4534fe39399067ebf571b205a89e8dd1ae6268c6ba569ccb10a2ae7c3b5",
+    "retrieve_weights.py": "7cef6f04829dc8638718c25cffa9e3e5ca86703e19cb770d57aa516b719677ae",
+    "saturn_pub-0.4.1-py3-none-any.whl": "384ba7d15745c9638a5147752ae5ed3536971c7cb1ec054cc1b5303fa18e49ca",
+    "selected_source_v2.py": "687983313cef934635db8dbe09be4817b0606fac05cd32b7da4f5db6e0e46800",
+    "sparse_text_kv.py": "872f0871dbe67c24197e9fcf6a92607673c5d66fb976b4657e1075425ab1b652",
+    "stale_key_context_analysis.py": "601db6427f335bf744025d3bcc87d87e0984a2d4c78423f845f50ce4e861b757",
+    "stale_key_context_study.py": "4119d5063c3617076ef09d98508a222faa7773436f2109acc1e1880d1945a23a",
+    "stale_key_context_worker.py": "3cfc3adebc38bd1b401118a209a3b446c75f7f8d8c044fc9a064bc58404a5976",
+    "targets.json": "7c55a631bf313bbd9a1036aa8552d876980fa0d4567b0b6b7db582031dd91683"
+  },
+  "sourceJoint": 1,
+  "support": [
+    4,
+    11,
+    12,
+    13
+  ],
+  "timeoutSeconds": 600,
+  "width": 512
+}

@@ -1,0 +1,383 @@
+{
+  "banks": {
+    "P": {
+      "K": {
+        "bytes": 9437312,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/banks/bank_P/K.npy",
+        "payloadSHA256": "49db3ddc863b69cc08b7eed729d083fe3e4a4c54f48044819a4be135e794bf6a",
+        "sha256": "690a28869b99611df9f41e74ab2db73406909cc0cbef0f479529edc46b4e7c2a",
+        "shape": [
+          1,
+          1536,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "V": {
+        "bytes": 9437312,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/banks/bank_P/V.npy",
+        "payloadSHA256": "9c3cc7887c153e3bd0645e4b1cce21ee263c1fcb5a7ba0520b0f43ddc2aadd58",
+        "sha256": "b955863732768b82924c03df6981fd57abc55d987bd5e5d795083800fcc928ca",
+        "shape": [
+          1,
+          1536,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      }
+    },
+    "Q": {
+      "K": {
+        "bytes": 9437312,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/banks/bank_Q/K.npy",
+        "payloadSHA256": "7cbd003fa4103f3e4762713b5d5abc9f4d48b1a25e003be7c699e4674f378acd",
+        "sha256": "868af7a1b15473111cef404c3da9a2d2171d63ffc79f8e0880a194dde2e542e0",
+        "shape": [
+          1,
+          1536,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "V": {
+        "bytes": 9437312,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/banks/bank_Q/V.npy",
+        "payloadSHA256": "4ff63fb48aaabddabc9e86f2e79f7b2a1ac2b4417fc228e9b7f58ecf54172057",
+        "sha256": "017d2989efb8a11a298af545a263a794df6ec6bb0bf8ac5757646f009a7f6e61",
+        "shape": [
+          1,
+          1536,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      }
+    }
+  },
+  "deniedTargets": [
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/next_query/nextLayerNorm.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/next_query/nextQ.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/next_query/nextQNormalized.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/next_query/nextQProjected.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/next_query/nextX.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/A.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/D_attention.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/D_mlp.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/H.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/M.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/T.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/U.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/X.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/fused.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/product.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/next_query/nextLayerNorm.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/next_query/nextQ.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/next_query/nextQNormalized.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/next_query/nextQProjected.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/next_query/nextX.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/A.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/D_attention.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/D_mlp.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/H.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/M.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/T.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/U.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/X.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/fused.npy",
+    "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/product.npy"
+  ],
+  "imageAssets": {
+    "transformer/config.json": "09733c74a3da6d17dd0a0472a091a8950c7c6935889c32c16cc800ede05029de",
+    "transformer/diffusion_pytorch_model.safetensors": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e"
+  },
+  "modelRoot": "/mnt/big/llm-models/FLUX.2-klein-4B",
+  "nativeSources": {
+    "image_processor.py": "d7558c34e9dfd36ea2a8721fc670615ca868de551ba232992a7f5382924b98f8",
+    "models/activations.py": "ab1767e8e44e7d4bf1cb18299ba33654329e2711fa983b1423fc4fe12de2c3ab",
+    "models/attention_dispatch.py": "2acfeb88d200a6466c0b4c718e5699efd8dc2e61d8b7c96d9d7c938ffbb25bc8",
+    "models/attention_processor.py": "7158a23bff0ce5bb1c03d66e2441dfd8d169b3598b2d494d32c6f88a3301ea01",
+    "models/autoencoders/autoencoder_kl_flux2.py": "7d9a976c1e4f42615e8c422f1643d86b49c4339221bd04b67f518b718ebd6c2d",
+    "models/cache_utils.py": "fc50ad113031b47244917ca04cd1f28d9751b75d91931c62f79505f4cf8a8d81",
+    "models/embeddings.py": "4eb810f715786eb1f24f2a4641e529817f7c951b9caf2f7925811329a03ec796",
+    "models/normalization.py": "e92ebbb130082578f3cff3361891a1adaa32331347e7bb09e4c70b208a0a6059",
+    "models/transformers/transformer_flux2.py": "0a3c56ed3ca28a416492b50953a433f20b8a89fd26c7b7a49b1b6b45d5236006",
+    "pipelines/flux2/pipeline_flux2_klein.py": "8a57a8a7f1c22fc0c5bc5d3fd1bd9bc76c17c1f4d6644cc73370651dd955358e",
+    "schedulers/scheduling_flow_match_euler_discrete.py": "8b96f25a6170480fb02decb58904e026250d6d68be5de8a7b8785b4c721e9d80"
+  },
+  "numericalProfile": {
+    "bf16ReducedPrecisionReduction": true,
+    "cublasWorkspaceConfig": ":4096:8",
+    "cudaMatmulTF32": false,
+    "cudnnBenchmark": false,
+    "cudnnDeterministic": true,
+    "cudnnTF32": false,
+    "deterministicAlgorithms": true,
+    "float32MatmulPrecision": "highest",
+    "threads": 4
+  },
+  "originalParameterArtifacts": [
+    {
+      "bytes": 18874496,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDMwNzIpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/541caf9c82d6cb8c8b5525dedef396660626c1e6493d38dc8858e7a526c24640.npy",
+      "sha256": "541caf9c82d6cb8c8b5525dedef396660626c1e6493d38dc8858e7a526c24640",
+      "source": {
+        "data_offsets": [
+          5843988480,
+          5862862848
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "c79de6b0136cd01a4a560b8baed91f4642e7c926b916b30c13e645f1a83ebb6e",
+        "shape": [
+          3072,
+          3072
+        ],
+        "tensor": "transformer_blocks.1.attn.to_add_out.weight"
+      }
+    },
+    {
+      "bytes": 113246336,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDE4NDMyLCAzMDcyKSwgfSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/f6705d8efe5f215690785159c3ffe2cffcffcf6aafd0b54adf4029207ba617ec.npy",
+      "sha256": "f6705d8efe5f215690785159c3ffe2cffcffcf6aafd0b54adf4029207ba617ec",
+      "source": {
+        "data_offsets": [
+          6108229632,
+          6221475840
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "4deca5162c329673a8ad5f8d0b08047bcb91c5ca8192760bdce799c9eb6b6688",
+        "shape": [
+          18432,
+          3072
+        ],
+        "tensor": "transformer_blocks.1.ff_context.linear_in.weight"
+      }
+    },
+    {
+      "bytes": 56623232,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDkyMTYpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/b6a2ec8b8f26e136abc1341fc8ff2085f4a88b856ba650c57600ac39ba9becb8.npy",
+      "sha256": "b6a2ec8b8f26e136abc1341fc8ff2085f4a88b856ba650c57600ac39ba9becb8",
+      "source": {
+        "data_offsets": [
+          6221475840,
+          6278098944
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "c82d7537723bc1f4d655092bbbe58e3d729fa2abdd16581e21f902d7d24078ff",
+        "shape": [
+          3072,
+          9216
+        ],
+        "tensor": "transformer_blocks.1.ff_context.linear_out.weight"
+      }
+    },
+    {
+      "bytes": 384,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDEyOCwpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/44289a3d2ed11cd090377ed0d6d6d54c3c00509f6ec93d853995405b3b6b9cbc.npy",
+      "sha256": "44289a3d2ed11cd090377ed0d6d6d54c3c00509f6ec93d853995405b3b6b9cbc",
+      "source": {
+        "data_offsets": [
+          6334722304,
+          6334722560
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "7b687d8d4cc16daef3a0f61cc091aa5a1036dc33431508adf2b754b1ba7666a9",
+        "shape": [
+          128
+        ],
+        "tensor": "transformer_blocks.2.attn.norm_added_q.weight"
+      }
+    },
+    {
+      "bytes": 18874496,
+      "npy_prefix_b64": "k05VTVBZAQB2AHsnZGVzY3InOiAnPHUyJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDMwNzIsIDMwNzIpLCB9ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "path": "parameters/3f2ff51ad3a75c721b37200145741be5a7af1216269edcfaed58f6ce6cfdd272.npy",
+      "sha256": "3f2ff51ad3a75c721b37200145741be5a7af1216269edcfaed58f6ce6cfdd272",
+      "source": {
+        "data_offsets": [
+          6296973312,
+          6315847680
+        ],
+        "dtype": "BF16",
+        "file": "transformer/diffusion_pytorch_model.safetensors",
+        "file_sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+        "payload_sha256": "abec6bfe64868e9ae95b573cab739a843595182eacd471bc6462b34005e9d2cd",
+        "shape": [
+          3072,
+          3072
+        ],
+        "tensor": "transformer_blocks.2.attn.add_q_proj.weight"
+      }
+    }
+  ],
+  "parentBankSealSHA256": "0ad15055caf7bc037e0a4a3fda692e1780e25aa66997cd540cb2a9e49a7dc761",
+  "parentByteReceiptSHA256": "d5ab5ee6997adc99d8a57355bbd1e949ba703919cc4224707e743856b0a5fca2",
+  "parentCustody": {
+    "declared": {
+      "sha256": "31653581ee0f4ffa0b40f523248dc4b2ba45a6788ddfc47bfb5483b6e75b2571",
+      "size_bytes": 3197314
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794042041.1115162,
+      "sha256": "31653581ee0f4ffa0b40f523248dc4b2ba45a6788ddfc47bfb5483b6e75b2571",
+      "size_bytes": 3197314
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794042035.654161,
+      "sha256": "31653581ee0f4ffa0b40f523248dc4b2ba45a6788ddfc47bfb5483b6e75b2571",
+      "size_bytes": 3197314
+    }
+  },
+  "parentJobID": "job-52b170ce67d8",
+  "parentRecords": {
+    "banks-seal.json": {
+      "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/response-result/banks-seal.json",
+      "sha256": "0ad15055caf7bc037e0a4a3fda692e1780e25aa66997cd540cb2a9e49a7dc761"
+    },
+    "banks.json": {
+      "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/response-result/banks.json",
+      "sha256": "87c7e38242c4b10b87fb527fde3df3e45b0208094300c60634d89efde0f6290b"
+    },
+    "control-seal.json": {
+      "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/response-result/control-seal.json",
+      "sha256": "90f1a62641b2df71663f4f2f64fcd50b403635ee32a153b627b8ad57e9fbd181"
+    },
+    "control.json": {
+      "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/response-result/control.json",
+      "sha256": "8de4f9a69efd082112b3494e052e211a626ae13e06a516679bbfb37b508e3d74"
+    },
+    "primary-seal.json": {
+      "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/response-result/primary-seal.json",
+      "sha256": "d6b329bad47396198545b11a02fbd89fbd1444c6a40cb039731db1c610bb0054"
+    },
+    "primary.json": {
+      "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/response-result/primary.json",
+      "sha256": "315e15efcca6b3ab689be94ac9c44d3a6a10917e92917043da30d7b7d09e38e4"
+    },
+    "report.json": {
+      "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/response-result/report.json",
+      "sha256": "5172e93bb0e21bfb0732b216ac41b17333bb72b9636b2dabe75fdee8b81d23a5"
+    },
+    "request.json": {
+      "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/response-result/request.json",
+      "sha256": "9ad60881fd76ac5a914f57185535694ede044b7cf8b3a81ee69f155b984d5dea"
+    }
+  },
+  "selected": {
+    "K": {
+      "bytes": 24704,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/banks/selected/K.npy",
+      "payloadSHA256": "5e80b154f3f4aa701e3c074a7515cf51bb07672ccd21782fb92222338a3ba5e8",
+      "sha256": "151ef4238a946887f9a78fe561e0d9f6bf05200399af69079688de00faabd079",
+      "shape": [
+        1,
+        4,
+        24,
+        128
+      ],
+      "storedDtype": "uint16"
+    },
+    "Q": {
+      "bytes": 24704,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/banks/selected/Q.npy",
+      "payloadSHA256": "4815e05004750c9f9777ece531801b901815e20363aa0fa056f4d4f27ce47350",
+      "sha256": "da2238d6f80c6c982a739df2cd9b475c5cf068eaa45c6798802f4a9d5ab77492",
+      "shape": [
+        1,
+        4,
+        24,
+        128
+      ],
+      "storedDtype": "uint16"
+    },
+    "R": {
+      "bytes": 24704,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/banks/selected/R.npy",
+      "payloadSHA256": "aca457bf32cef2c8608f43629b1341f71757b337593bb1d7867023dc12b219f3",
+      "sha256": "aacdaaaad024a31735fc88ae234440e2cc5a0614a91460ffc19b09b2cd9a871b",
+      "shape": [
+        1,
+        4,
+        3072
+      ],
+      "storedDtype": "uint16"
+    },
+    "V": {
+      "bytes": 24704,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/banks/selected/V.npy",
+      "payloadSHA256": "a255b3cf88273fca1012052a160d26ac3ba0ae9dcce8ddcf00b21ed5ebc5b654",
+      "sha256": "50d8e33d265a16ba14a3c9ef518dee7e5df895e9c86209ae6646a6f649b73ac2",
+      "shape": [
+        1,
+        4,
+        24,
+        128
+      ],
+      "storedDtype": "uint16"
+    },
+    "ropeCos": {
+      "bytes": 2176,
+      "logicalDtype": "torch.float32",
+      "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/banks/selected/ropeCos.npy",
+      "payloadSHA256": "b7a6bd799ca12d884f7672dd61e987709ba32dd820f5ca96d4e42a875f59ff59",
+      "sha256": "4755145df1c60b1d3098d662b464023e1721c8dadd3193864b3f32d7bb48075a",
+      "shape": [
+        4,
+        128
+      ],
+      "storedDtype": "float32"
+    },
+    "ropeSin": {
+      "bytes": 2176,
+      "logicalDtype": "torch.float32",
+      "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/banks/selected/ropeSin.npy",
+      "payloadSHA256": "19e8e8a831e9c3aeca1ac7e4a503faae4f4821b1dd8326ffa888af57129afad8",
+      "sha256": "405ad147c88b87628909fc027c4dd8278ba753fbd74eee1ef3fc3d3e2ec57352",
+      "shape": [
+        4,
+        128
+      ],
+      "storedDtype": "float32"
+    },
+    "txtMod": {
+      "bytes": 36992,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/banks/selected/txtMod.npy",
+      "payloadSHA256": "bbaf5213c0f2741d03422acbd4db8c3fb8075eb2bb68975cf9eed3740e2b18c4",
+      "sha256": "58b3d4993f4ddd18ea70703c646e8a6a19ab1dd49115f213b26da4ef1ae91c65",
+      "shape": [
+        1,
+        18432
+      ],
+      "storedDtype": "uint16"
+    }
+  },
+  "versions": {
+    "diffusers": "0.39.0",
+    "torch": "2.13.0+cu130"
+  }
+}

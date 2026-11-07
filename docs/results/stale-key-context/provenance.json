@@ -1,0 +1,227 @@
+{
+  "completeCollectedInventory": {
+    "bytes": 508575,
+    "files": {
+      "diagnostic-execution.json": {
+        "bytes": 11228,
+        "sha256": "1d98f59fd74bb8085f9f5d4d499fbad610d07bf6ca31eaedb4f7f73e48d8b9e8"
+      },
+      "diagnostic-seal.json": {
+        "bytes": 179,
+        "sha256": "8f3c5aa125e488306b6977859ebca8478adf1bbee107f0cdf2d4a80a459f9585"
+      },
+      "diagnostic.json": {
+        "bytes": 36478,
+        "sha256": "7daa1763fd223accd2bd24243a319a7fc9f8253c25a62cf13d7e687d257f2c38"
+      },
+      "frozen-plan.md": {
+        "bytes": 4658,
+        "sha256": "b31aff409033a587e87c5df9eabb86937c97a6ad11ed73181886b341f6118286"
+      },
+      "inputs.json": {
+        "bytes": 16391,
+        "sha256": "d4ce947107d4b69a7ce52bc717429489d246ad5909aea488caa760708e1e983e"
+      },
+      "observations.jsonl": {
+        "bytes": 301554,
+        "sha256": "dfb41cbb78e19e841628db1d768a3fb2d150093f746fea5af20da3c3f2dd8cd6"
+      },
+      "parameter-artifacts.json": {
+        "bytes": 5049,
+        "sha256": "be4fec4e4014875edfa818e57d116ec1f17bb2437149a51e3a5e59b60d9578fc"
+      },
+      "primary-execution.json": {
+        "bytes": 9832,
+        "sha256": "0f5268bea57dbf7b8ab17572253743e87dbc5ebe7896b97117cbb2828120c7ce"
+      },
+      "primary-seal.json": {
+        "bytes": 176,
+        "sha256": "e15d1498c582352bdf2f6c4743596a48add652d2ed31beff14d10097b654c147"
+      },
+      "primary.json": {
+        "bytes": 36366,
+        "sha256": "717ed9183446619a258f8f2148bb9f44588198cb23f7aee60dd65af6f310559f"
+      },
+      "report.json": {
+        "bytes": 39646,
+        "sha256": "b0bc1e8a4185baebea34e089237c5bad2ce04e824233e9aa5db61c3705b635bb"
+      },
+      "request.json": {
+        "bytes": 5404,
+        "sha256": "a2d3fa1958808a49b76824ff493631f35d632a36b7734279008b7b4e815bd3d5"
+      },
+      "resource-basis.json": {
+        "bytes": 4845,
+        "sha256": "0d6cb4534fe39399067ebf571b205a89e8dd1ae6268c6ba569ccb10a2ae7c3b5"
+      },
+      "retrieve_weights.py": {
+        "bytes": 22624,
+        "sha256": "7cef6f04829dc8638718c25cffa9e3e5ca86703e19cb770d57aa516b719677ae"
+      },
+      "targets.json": {
+        "bytes": 14145,
+        "sha256": "7c55a631bf313bbd9a1036aa8552d876980fa0d4567b0b6b7db582031dd91683"
+      }
+    }
+  },
+  "jobID": "job-03c1bd316b2b",
+  "losslessStreams": [
+    {
+      "published": "observations.jsonl.gz",
+      "publishedSHA256": "018cfcb7bed20680ab8cbead124a48aef38cbad12bf3a4d56761e2adf2ac1bc4",
+      "source": "observations.jsonl",
+      "sourceBytes": 301554,
+      "sourceSHA256": "dfb41cbb78e19e841628db1d768a3fb2d150093f746fea5af20da3c3f2dd8cd6"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "44fc827d80bb59dee219f4b461daed4709fc9c1b9a3202acc5734c29cc769402",
+      "size_bytes": 3170080
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794043141.8495724,
+      "sha256": "44fc827d80bb59dee219f4b461daed4709fc9c1b9a3202acc5734c29cc769402",
+      "size_bytes": 3170080
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794043141.71176,
+      "sha256": "44fc827d80bb59dee219f4b461daed4709fc9c1b9a3202acc5734c29cc769402",
+      "size_bytes": 3170080
+    }
+  },
+  "requestSHA256": "30dec7fea7deda25a8bfa00b3e8ec66f583729f7bcbb4651f211d5f7a5c0a1b6",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-03c1bd316b2b",
+      "job_log": {
+        "bytes": 360,
+        "sha256": "0a3de499ab086aba8d7db225e687baed15e51827866a3c69a2d3fdd7c7b220d9"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-03c1bd316b2b/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=4",
+        "OPENBLAS_NUM_THREADS=4",
+        "MKL_NUM_THREADS=4",
+        "CUBLAS_WORKSPACE_CONFIG=:4096:8",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "--with",
+        "./mdb_runtime-0.1.0-py3-none-any.whl",
+        "--with",
+        "./saturn_pub-0.4.1-py3-none-any.whl",
+        "--with",
+        "./mrun_pub-0.1.2-py3-none-any.whl",
+        "python",
+        "-u",
+        "stale_key_context_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794043141.835438
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794043141.8772256
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794043141.899821
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794043141.928759
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794043194.0357542
+        },
+        {
+          "name": "finished",
+          "ts": 1794043194.0452573
+        }
+      ]
+    },
+    "elapsed_s": 52.36,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "44fc827d80bb59dee219f4b461daed4709fc9c1b9a3202acc5734c29cc769402",
+      "size_bytes": 3170080
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 1776.5,
+    "peak_vram_mb": 586.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-stale-key-context-publication-v1",
+  "scope": "Two fixed cross-corners with paid banks/diagonals/originalmaps; actual-response and finite interaction measurements, no image or serving saving."
+}
