@@ -1,0 +1,29 @@
+"""Typed component boundaries for the own-state trajectory, no model loading."""
+import time
+from paired_fields import payload
+
+
+class Ledger:
+    def __init__(self,request_id,parameter_manifest):
+        self.request_id=request_id;self.parameter_manifest=parameter_manifest;self.records=[];self.timings=[]
+
+    def run(self,name,inputs,operation,outputs,metadata=None):
+        import torch
+        from mdb.titan import Frame,ActSpec,ActRegistry,ProvidedFingerprint
+        before={n:payload(v) for n,v in inputs.items()};registry=ActRegistry();got={}
+        frame=Frame.from_values(inputs,kinds={n:'tensor' for n in inputs},abis={n:{'shape':list(v.shape),'stride':list(v.stride()),'dtype':str(v.dtype)} for n,v in inputs.items()},
+            slot_fingerprints={n:ProvidedFingerprint.content_sha256(h) for n,h in before.items()},program_fingerprint=self.request_id,
+            metadata={'phase':name,'originalParameterManifestSHA256':self.parameter_manifest,**(metadata or {})})
+        spec=ActSpec('tce.mean_trajectory_'+name,'v1',reads=tuple(inputs),writes=tuple(outputs),write_kinds={n:'tensor' for n in outputs},write_abis=outputs,
+            numerical_contract='Current-stream mean-Up completion with ownquarter/currentgates/fulloutput and immutablepaid source norms; owncoupled states, moment-text law, terminal liveimageonly; streamingcompletegate/product/proxybank evidence, no targetrefresh')
+        def act(values):
+            torch.cuda.synchronize();tick=time.perf_counter();result=operation(values);torch.cuda.synchronize()
+            self.timings.append({'stage':name,'instrumentedSynchronizedSecondsBeforeFinalOutputFingerprint':time.perf_counter()-tick,
+                'scope':'Includes internal maps/copies/fingerprints/progress fsync and nested completion transactions; excludes subsequent ABI/finite checks and final Act-output fingerprints. Nested and parent intervals overlap, do not sum.'});got.update(result)
+            if {n:{'shape':list(v.shape),'dtype':str(v.dtype)} for n,v in result.items()}!=outputs:raise ValueError('Trajectory component output ABI differs')
+            if any(v.is_floating_point() and not bool(torch.isfinite(v).all()) for v in result.values()):raise ValueError('Nonfinite trajectory output')
+            return result,{'outputPayloads':{n:payload(v) for n,v in result.items()}}
+        registry.register(spec,name,act);after,evidence=registry.run(spec.identity,name,frame)
+        if before!={n:payload(v) for n,v in inputs.items()}:raise ValueError('Read-only trajectory operand mutation')
+        self.records.append({'stage':name,'sourceFrame':frame.to_dict(),'outputFrame':after.to_dict(),'evidence':evidence.to_dict()})
+        return got

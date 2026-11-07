@@ -1,0 +1,10 @@
+{
+  "schema": "tce-publication-copy-correction-v1",
+  "initialPublicationQAExit": 1,
+  "initialFinding": "Storage receipt copy differs",
+  "cause": "Text patch copies added trailing newlines to generated cleanup/audit receipts, changing their complete-file hashes.",
+  "repair": "Replaced the four generated public copies with byte-identical original receipt files; original receipts and executed audit source were not edited.",
+  "followupPublicationQAExit": 0,
+  "followupReceipt": "publication-qa.json",
+  "scope": "Engineering publication-copy correction; no scientific outcome reclassification or model rerun."
+}

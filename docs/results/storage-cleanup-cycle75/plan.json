@@ -1,0 +1,44 @@
+{
+  "bytesToArchive": 677763634,
+  "createdAtUnix": 1794079498.2288032,
+  "items": [
+    {
+      "bytes": 337946912,
+      "custodyPath": "/Users/jakeholl/domains/artifacts/mdb-flux-binding-search-20261105/round2-02/archive-custody.json",
+      "custodySHA256": "b335d7dab44f52075f0b35185004732452eb4e50a139027a2d017e8819ee2e5b",
+      "extractedRoot": "/Users/jakeholl/domains/artifacts/mdb-flux-binding-search-20261105/round2-02/extracted",
+      "jobID": "job-a84ab88fb0eb",
+      "jobStateAtPlan": "failed",
+      "path": "/Users/jakeholl/domains/artifacts/mdb-flux-binding-search-20261105/round2-02/archive.tar.gz",
+      "remote": "/mnt/hdd8tb/cold-storage/mbp1/time-circuit-explorer/transports/sha256/dc/dc0898db32120b38903d83b67d5051b8527b4c8dd9025f5e3c3a4736fbbc2b60",
+      "sha256": "dc0898db32120b38903d83b67d5051b8527b4c8dd9025f5e3c3a4736fbbc2b60",
+      "statIdentity": [
+        16777234,
+        214389123,
+        337946912,
+        1793912451821617675
+      ]
+    },
+    {
+      "bytes": 339816722,
+      "custodyPath": "/Users/jakeholl/domains/artifacts/mdb-flux-binding-search-20261105/round2-02/log-custody.json",
+      "custodySHA256": "f50ca270e2180a1cf7c5a6b4d83379f054e45e31caaedff475a3308aa9ef8aa5",
+      "extractedRoot": "/Users/jakeholl/domains/artifacts/mdb-flux-binding-search-20261105/round2-02/extracted",
+      "jobID": "job-a84ab88fb0eb",
+      "jobStateAtPlan": "failed",
+      "path": "/Users/jakeholl/domains/artifacts/mdb-flux-binding-search-20261105/round2-02/worker.log.gz",
+      "remote": "/mnt/hdd8tb/cold-storage/mbp1/time-circuit-explorer/transports/sha256/00/004c06c6c24003dbe65e9c058050e53c61a89f8b5248b203b396e04265f7159c",
+      "sha256": "004c06c6c24003dbe65e9c058050e53c61a89f8b5248b203b396e04265f7159c",
+      "statIdentity": [
+        16777234,
+        214389124,
+        339816722,
+        1793912453338133994
+      ]
+    }
+  ],
+  "localFreeBytesBefore": 14005637120,
+  "planSHA256": "347a7fd90783aedb103668d46a6cc89bbfff15f8bc74d7a613370417a5a2dfa2",
+  "schema": "tce-transport-cleanup-plan-v1",
+  "scope": "Explicit complete-custody terminal snapshot archive/log copies, including failed outcomes. Terminal failure is not a byte-integrity failure. Full cold verification/restoration pointers precede local unlink; extracted science and original outcome/custody unchanged."
+}
