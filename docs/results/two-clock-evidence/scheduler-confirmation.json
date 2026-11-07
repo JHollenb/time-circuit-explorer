@@ -1,0 +1,81 @@
+{
+  "schema": "tce-two-clock-terminal-confirmation-v1",
+  "source": "Fresh scheduler GET /api/jobs/<jobID> after both collections",
+  "jobs": [
+    {
+      "jobID": "job-766f3552f96d",
+      "state": "succeeded",
+      "host": "beast",
+      "payloadCustody": {
+        "required": true,
+        "declared": {
+          "sha256": "d7600e39ab5c3407362bf687f1ac2b6bfa71e6ee72019953e74fbd69943f8167",
+          "size_bytes": 68629
+        },
+        "sealed": {
+          "sha256": "d7600e39ab5c3407362bf687f1ac2b6bfa71e6ee72019953e74fbd69943f8167",
+          "size_bytes": 68629,
+          "sealed_ts": 1794012720.342607
+        },
+        "executed": {
+          "sha256": "d7600e39ab5c3407362bf687f1ac2b6bfa71e6ee72019953e74fbd69943f8167",
+          "size_bytes": 68629,
+          "reported_ts": 1794012720.4444144,
+          "host": "beast"
+        }
+      },
+      "reservation": {
+        "ram_mb": 14336,
+        "vram_mb": 13000,
+        "cpu_threads": 4,
+        "disk_gb": 1,
+        "est_wall_s": 120,
+        "source": "declared"
+      },
+      "result": {
+        "returncode": 0,
+        "elapsedSeconds": 28.83,
+        "peakRSSMB": 7599.8,
+        "peakVRAMMB": 8684
+      }
+    },
+    {
+      "jobID": "job-c25e485747f0",
+      "state": "succeeded",
+      "host": "beast",
+      "payloadCustody": {
+        "required": true,
+        "declared": {
+          "sha256": "c5b1de5456ca5e1e2b3d9744ded6cb41d2177c95fefae53b3f83d41bbfdaf235",
+          "size_bytes": 19404
+        },
+        "sealed": {
+          "sha256": "c5b1de5456ca5e1e2b3d9744ded6cb41d2177c95fefae53b3f83d41bbfdaf235",
+          "size_bytes": 19404,
+          "sealed_ts": 1794013464.5828986
+        },
+        "executed": {
+          "sha256": "c5b1de5456ca5e1e2b3d9744ded6cb41d2177c95fefae53b3f83d41bbfdaf235",
+          "size_bytes": 19404,
+          "reported_ts": 1794013464.6698508,
+          "host": "beast"
+        }
+      },
+      "reservation": {
+        "ram_mb": 4096,
+        "vram_mb": 0,
+        "cpu_threads": 4,
+        "disk_gb": 1,
+        "est_wall_s": null,
+        "source": "probe-default"
+      },
+      "result": {
+        "returncode": 0,
+        "elapsedSeconds": 2.23,
+        "peakRSSMB": 130.7,
+        "peakVRAMMB": 0
+      }
+    }
+  ],
+  "scope": "Authoritative successful terminal states and executed payload identity; late telemetry rejection after inactive terminal leases does not change these results."
+}

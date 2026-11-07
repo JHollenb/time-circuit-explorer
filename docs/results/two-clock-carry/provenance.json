@@ -1,0 +1,166 @@
+{
+  "completeCollectedInventory": {
+    "bytes": 6076045,
+    "files": {
+      "fields.json": {
+        "bytes": 13481,
+        "sha256": "8ae95dc851fbc2ce1c9227ff62f143818cdfc237b0e2b97d50ab9486d8a078c5"
+      },
+      "frozen-plan.md": {
+        "bytes": 2793,
+        "sha256": "018e349c35ddc54f93f660152c760c8d77336000046555bddb4a4d23fd164140"
+      },
+      "inputs.json": {
+        "bytes": 9328,
+        "sha256": "b7281fac845f18c4447be66d77e340493f797295a093d15d942967b9f16fd008"
+      },
+      "observations.jsonl": {
+        "bytes": 6039277,
+        "sha256": "d0a96fc7352ed6cc7c918e1134409e998b1b56b993a07f61bd241d2a76ba3ad5"
+      },
+      "report.json": {
+        "bytes": 9747,
+        "sha256": "65c0b233cd592fa5199fe51868348ef0be70bb816e3928984bb1f9fe7e4e7730"
+      },
+      "request.json": {
+        "bytes": 1419,
+        "sha256": "abf3ff10350f6d9929c2fda12592898ed3eed357b5a9e16028024ced9c843345"
+      }
+    }
+  },
+  "goalStatus": "Active. Context-state approximation and retrospective diagnostics do not establish arbitrary-prompt zero-neural images.",
+  "jobID": "job-c25e485747f0",
+  "losslessStreamTransports": [
+    {
+      "conversion": "gzip only; decompressed bytes exactly equal source, verified; no row/value/schema changes.",
+      "published": "observations.jsonl.gz",
+      "publishedBytes": 1052279,
+      "publishedSHA256": "7ab3db81acb4af44b97f97b1bea368059aaa61fca4d36c168b39998cdbf54944",
+      "source": "observations.jsonl",
+      "sourceBytes": 6039277,
+      "sourceSHA256": "d0a96fc7352ed6cc7c918e1134409e998b1b56b993a07f61bd241d2a76ba3ad5"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "c5b1de5456ca5e1e2b3d9744ded6cb41d2177c95fefae53b3f83d41bbfdaf235",
+      "size_bytes": 19404
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794013464.6698508,
+      "sha256": "c5b1de5456ca5e1e2b3d9744ded6cb41d2177c95fefae53b3f83d41bbfdaf235",
+      "size_bytes": 19404
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794013464.5828986,
+      "sha256": "c5b1de5456ca5e1e2b3d9744ded6cb41d2177c95fefae53b3f83d41bbfdaf235",
+      "size_bytes": 19404
+    }
+  },
+  "publication": "All collected result files retained; JSONL transported as byte-lossless gzip. Large sealed heads/state/ports/reference slice remain near compute, separately hash-verified for primary assay.",
+  "remoteResultRoot": "/mnt/hdd8tb/mrun-work/job-c25e485747f0/response-result",
+  "requestSHA256": "15d1cbc2ce1640b44bf9e16cac7db78f3ac1f18aba2fcfb98d37f0aa800dc331",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-c25e485747f0",
+      "job_log": {
+        "bytes": 212,
+        "sha256": "e186de1b7743dd905a6f619c2b438d14bd840ef5660bb891ef8207a0a358491a"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-c25e485747f0/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "pillow>=10.0",
+        "python",
+        "-u",
+        "two_clock_carry.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-c25e485747f0",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-c25e485747f0/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794013464.660899
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794013464.6912742
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794013464.6992106
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794013464.7283542
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794013466.7817025
+        },
+        {
+          "name": "finished",
+          "ts": 1794013466.7914138
+        }
+      ]
+    },
+    "elapsed_s": 2.23,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "c5b1de5456ca5e1e2b3d9744ded6cb41d2177c95fefae53b3f83d41bbfdaf235",
+      "size_bytes": 19404
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 130.7,
+    "peak_vram_mb": 0.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-context-evidence-public-v1"
+}

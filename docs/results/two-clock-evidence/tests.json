@@ -1,0 +1,28 @@
+{
+  "schema": "tce-two-clock-tests-v1",
+  "command": "../common/bin/common exec python -m unittest discover -s generator -p 'test_*.py'",
+  "primary": {
+    "tests": 205,
+    "seconds": 15.271,
+    "status": "OK"
+  },
+  "carry": {
+    "tests": 210,
+    "seconds": 15.181,
+    "status": "OK"
+  },
+  "retainedEarlierOutcome": {
+    "tests": 205,
+    "seconds": 15.645,
+    "status": "FAILED",
+    "cause": "Test fixture epsilon linear in policy index cancels its factorial while the fixture expected nonzero; corrected fixture to quadratic before scientific execution. Primary workers unchanged.",
+    "scientificFailure": false
+  },
+  "payloadChecks": {
+    "primaryOwnedPins": 11,
+    "carryOwnedPins": 4,
+    "isolatedLazyImports": true
+  },
+  "publicationCommandRepair": "First local receipt-generation one-liner lacked generator/ on sys.path and stopped before writing files; corrected command generated the audits. Not a scientific job failure.",
+  "scope": "Mechanics and guards, affine-policy/finite telescope, fixed-radial/orthogonal counterexamples, zero-denominator behavior; no arbitrary-prompt quality or zero-neural completion certification."
+}

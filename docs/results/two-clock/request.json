@@ -1,0 +1,63 @@
+{
+  "backend": "diffusers",
+  "batch_size": 1,
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "height": 512,
+  "holdRequestSHA256": "24f5009740303c4855ffb78023d20064cf1d9473fd1f237edb8587a5ec637188",
+  "model": "flux2-klein-4b-distilled",
+  "ownedSources": [
+    "two_clock_study.py",
+    "two_clock_images.py",
+    "two_clock.py",
+    "last_velocity_decode.py",
+    "encoder_atoms.py",
+    "paired_fields.py",
+    "flux_clock.py",
+    "flux_clock_study.py",
+    "complete_masked_study.py",
+    "masked_kv_study.py",
+    "retained_queries.py"
+  ],
+  "parentRequestSHA256": "2114a8b31432bdcc61d00e1e66e54f679a7b1709c6874b2e9011283300e58826",
+  "policies": [
+    "HH",
+    "HN"
+  ],
+  "prompts": [
+    {
+      "id": "00",
+      "prompt": "A studio photograph of a orange ceramic pitcher to the left of a teal metal watering can on a white table, soft lighting."
+    },
+    {
+      "id": "10",
+      "prompt": "A studio photograph of a teal ceramic pitcher to the left of a orange metal watering can on a white table, soft lighting."
+    }
+  ],
+  "protocol": "Actual own Z2/v1/E; shared U2(Z2,v1). HH holds v1 again; HN nativeclock3 consumes actual emittedZ3H. Fourimages seal before inheritedNN/NH/full targets;4postseal scheduler-only exact native/hold replays. No fit/newref/noise.",
+  "requestSHA256": "e1ef83eb71c9424f40bf1482db34ce5d4cfe7666f653235dc54f8547ff4f1750",
+  "schema": "tce-two-clock-request-v1",
+  "seed": 271828,
+  "seq_len": 1536,
+  "sourceHashes": {
+    "complete_masked_study.py": "f52633bc9d729b2a5032e024331d9b20fcee8cb993941cab87c197089cdcff99",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "flux_clock.py": "bde499ff527f624fcd1b62a8f6f0b2fbaf70eebc7b7835fcd7d4c6403b4e0b2b",
+    "flux_clock_study.py": "eaccf6bdb75678ac6acb5a371f8858201cf83dbac4de83868b70d5570e4beddc",
+    "frozen-plan.md": "b483f97bc0dd47e8b6e51d670ebd60d02b070b48514eb5d99826c18ee10cea93",
+    "inherited-bindings.json": "ec484bd545e165f74cf6f9de1aab7945bf87f5778b202f999a8703c0ac3f09b4",
+    "inputs.json": "dbd3a2dc1f70ba4ba75542101317ec14c27f129eee7ab07e14cbc06ef853dece",
+    "last_velocity_decode.py": "b3081184e171753f334e9e9896d7d0378791ba0ee00682918303c7bd6a2769be",
+    "masked_kv_study.py": "920416ce49d823b1337a7f6d9f5fca90c8047723bb6b1d37dc09967114b6ad89",
+    "paired_fields.py": "408e035cb2f2f99558dbbe5abccdc281a5deade195abdbbc003549318ef09e88",
+    "resource-basis.json": "62a1d198a8834baa4cc07ffb1064f7e2a5e4dfa4becb94dbc6b42cfce065a33e",
+    "retained_queries.py": "7a4305ada53f304e4728daf7cd112f5b7b85cc4378a672f8f7194ae81c942cb1",
+    "targets.json": "f9015874e9db3361d9816f453e0323d5e98bc772804e78dd11329a06edb37d13",
+    "two_clock.py": "92484acf922d1328115c5214581a1d9ad6ab4de96ce09ea2efd71d780101ee96",
+    "two_clock_images.py": "e4fa03fc5c459af47b807dcacb3f67cf8c942e30633de48eaaf1e5a9eb8ce4ab",
+    "two_clock_study.py": "8373b9715ed0336062c0e12655a1fe27269e2027c954f98b3d5e9a10dc5b4287"
+  },
+  "steps": 4,
+  "timeoutSeconds": 600,
+  "width": 512
+}
