@@ -1,0 +1,37 @@
+{
+  "consumedBiasDtype": "torch.bfloat16",
+  "consumedLog4": 1.3828125,
+  "independentFP64Comparison": {
+    "maxAbs": 0.002444680916451558,
+    "rms": 0.0006446745680645533
+  },
+  "mechanics_status": "complete",
+  "outputShape": [
+    1,
+    8,
+    24,
+    128
+  ],
+  "queryShape": [
+    1,
+    8,
+    24,
+    128
+  ],
+  "requestSHA256": "e3332168deb54b68785e011232b73f88b6546b164f007aad35b7ca14f853a44d",
+  "requestedFP32Outcome": {
+    "error": "invalid dtype for bias - should match query's dtype",
+    "status": "rejected"
+  },
+  "requestedLog4": 1.3862943649291992,
+  "schema": "tce-coarse-bias-kernel-result-v2",
+  "scope": "Tiny synthetic numericalcontract check, not realmodel quality or zero-neural generation. Rawlog4request and roundedBF16kerneloperand remain distinct.",
+  "terminal_status": "unassessed",
+  "work": {
+    "learnedMapEvaluations": 0,
+    "newImages": 0,
+    "sourceWeightBytesRead": 0,
+    "syntheticAttentionDispatches": 2
+  },
+  "workerSecondsAfterImports": 2.0981891988776624
+}

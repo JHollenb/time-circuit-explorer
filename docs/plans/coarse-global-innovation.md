@@ -1,6 +1,6 @@
 # Produce a coarse global innovation while retaining detailed velocity carry
 
-Status: **written and unexecuted**, selected by [Astra38](../results/two-clock-evidence/advisor.json) after the [two-clock/carry result](../two-clock-velocity-factorial.md). This tests a source-defined nonlocal producer on known development inputs. It retains original learned computation and does not satisfy arbitrary-prompt zero-neural generation.
+Status: **executed**, successful corrected v2 job `job-35352e10295f`; see the [result](../coarse-global-innovation.md). The original v1 job stopped at its first attention-bias contract failure and remains preserved. Selected by [Astra38](../results/two-clock-evidence/advisor.json) after the [two-clock/carry result](../two-clock-velocity-factorial.md). This tests a source-defined nonlocal producer on known development inputs. It retains original learned computation and does not satisfy arbitrary-prompt zero-neural generation.
 
 ## Computation to replace
 
@@ -54,3 +54,9 @@ The first smooth term measures failure to produce the coarse innovation. The sec
 Measure actual final latent and original PNG differences to HN/HH, signed response and inherited comparison where applicable. Retain complete1024-token fields, per-row trends, paid-work receipts and original images. A coherent image is not a global-read closure certificate. Inspect coarse and high-frequency errors to choose the next representation or producer, rather than retune a failed gain.
 
 The new candidate can establish useful nonlocal computation at reduced token geometry. It cannot establish fresh prompt coverage, exact source equivalence, a general zero-neural velocity producer, or non-neural pixel decoding. The whole objective stays active.
+
+## Numerical-contract correction after first execution
+
+The frozen v1 job job-976d565ca3f5 stopped at its first attention dispatch: the pinned CUDA kernel rejects FP32 additive bias for BF16 queries. No candidate image or complete velocity was produced; partial source projection work and7retained input/context arrays remain immutable. This is an instrument/implementation failure, not a scientific rejection of the coarse producer.
+
+Fresh v2 preserves the raw FP32 log4 request and explicitly casts only the bias consumed by the backend to the query's BF16 dtype. Retain both raw and consumed key-logweight fields, their actual dispatch hashes and the rounding difference. A shared narrow conversion helper is exercised first with a tiny synthetic CUDA attention call. No gain or alternative approximation is chosen from image targets. The original v1 payload/source/plan and all prior clock guards stay unchanged.

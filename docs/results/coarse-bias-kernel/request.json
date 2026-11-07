@@ -1,0 +1,22 @@
+{
+  "attentionDispatchSHA256": "2acfeb88d200a6466c0b4c718e5699efd8dc2e61d8b7c96d9d7c938ffbb25bc8",
+  "backend": "diffusers-sdpa",
+  "device": "cuda",
+  "ownedSources": [
+    "coarse_bias_mechanics_v2.py",
+    "encoder_atoms.py",
+    "coarse_bias.py"
+  ],
+  "protocol": "Synthetic1x8x24x128BF16QKV,sourcefixedlog4bias. RecordFP32biasoutcome;requirefinitequerydtypebiasdispatch,compareindependentFP64softmaxasobservation. No weights/images/fits/learnedmaps.",
+  "requestSHA256": "e3332168deb54b68785e011232b73f88b6546b164f007aad35b7ca14f853a44d",
+  "schema": "tce-coarse-bias-kernel-request-v2",
+  "sourceHashes": {
+    "coarse_bias.py": "6d7bfe72f99a3813d15057b06439ddda8f2b75bae7041366f0340886b03c30ef",
+    "coarse_bias_mechanics_v2.py": "6bd518d362fb57ebd1296b9cabfecb68845b2b6bcb8a9b96c6652a7704fbb415",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922"
+  },
+  "versions": {
+    "diffusers": "0.39.0",
+    "torch": "2.13.0+cu130"
+  }
+}

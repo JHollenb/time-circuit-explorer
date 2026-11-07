@@ -1,0 +1,62 @@
+{
+  "backend": "diffusers",
+  "batch_size": 1,
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "height": 512,
+  "model": "flux2-klein-4b-distilled",
+  "ownedSources": [
+    "coarse_global_study.py",
+    "coarse_global_images.py",
+    "coarse_global.py",
+    "two_clock.py",
+    "two_clock_carry.py",
+    "last_velocity_decode.py",
+    "encoder_atoms.py",
+    "paired_fields.py",
+    "flux_clock.py",
+    "flux_clock_study.py",
+    "complete_masked_study.py",
+    "masked_kv_study.py",
+    "retained_queries.py"
+  ],
+  "parentJobID": "job-766f3552f96d",
+  "parentReportSHA256": "2a3ec4582d92806a5c405da98512944becf12ac1ad089c9732d5c2d1f406c96e",
+  "parentRequestSHA256": "e1ef83eb71c9424f40bf1482db34ce5d4cfe7666f653235dc54f8547ff4f1750",
+  "prompts": [
+    {
+      "id": "00",
+      "prompt": "A studio photograph of a orange ceramic pitcher to the left of a teal metal watering can on a white table, soft lighting."
+    },
+    {
+      "id": "10",
+      "prompt": "A studio photograph of a teal ceramic pitcher to the left of a orange metal watering can on a white table, soft lighting."
+    }
+  ],
+  "protocol": "OwnZ3H/v1/E -> fixed2x2FP32pool/BF16coarseinput ->256image512text full25blocks withphysicalcenters/fixedFP32log4imagekeymass -> liftinnovation/FP32carry/BF16velocity -> originalfinitecommit/VAE. Twoimagessealbefore existingHN/HH/NN/NH/full targets. No fit/gainsweep/newprefix/noise/reference.",
+  "requestSHA256": "5bb4558f2f2447ed6c0ddb9d73ab00080dde9210e78b975424ce6cf77cceca27",
+  "schema": "tce-coarse-global-request-v1",
+  "seed": 271828,
+  "seq_len": 768,
+  "sourceHashes": {
+    "coarse_global.py": "125cd20738a0c6a0676a50271d514b93aaaf50e1399298e2521f344911703c6c",
+    "coarse_global_images.py": "587e28260bb753e83ebf03b873fc0b831945437eb9206d2b576e3ba3e5bd47bc",
+    "coarse_global_study.py": "bdddc26ecf716c5e4cd44331fbf9ec05d6eef3e7742db09016b6fc6463d3dcd9",
+    "complete_masked_study.py": "f52633bc9d729b2a5032e024331d9b20fcee8cb993941cab87c197089cdcff99",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "flux_clock.py": "bde499ff527f624fcd1b62a8f6f0b2fbaf70eebc7b7835fcd7d4c6403b4e0b2b",
+    "flux_clock_study.py": "eaccf6bdb75678ac6acb5a371f8858201cf83dbac4de83868b70d5570e4beddc",
+    "frozen-plan.md": "64b8265c2505f0443c2289166357d7f4927972b2d9e888314d243dc344cd1f0d",
+    "inputs.json": "deea1f12deea62e655dbd9ca8f2d2a46475221cb0253893387d878e80594ee63",
+    "last_velocity_decode.py": "b3081184e171753f334e9e9896d7d0378791ba0ee00682918303c7bd6a2769be",
+    "masked_kv_study.py": "920416ce49d823b1337a7f6d9f5fca90c8047723bb6b1d37dc09967114b6ad89",
+    "paired_fields.py": "408e035cb2f2f99558dbbe5abccdc281a5deade195abdbbc003549318ef09e88",
+    "resource-basis.json": "bddd97344caeff7c0820e2b3445c5d97b3dfe390a1ce019f0f16dc56755051d6",
+    "retained_queries.py": "7a4305ada53f304e4728daf7cd112f5b7b85cc4378a672f8f7194ae81c942cb1",
+    "targets.json": "ba83604e2ea440db1de9903bda56d57b3f464789842f7182d70db2b3f8cc0366",
+    "two_clock.py": "92484acf922d1328115c5214581a1d9ad6ab4de96ce09ea2efd71d780101ee96",
+    "two_clock_carry.py": "30c0d9ddc6d9c22141722107597334eecd92cffc9f3274e6ea6e8eadde19d49a"
+  },
+  "timeoutSeconds": 600,
+  "width": 512
+}

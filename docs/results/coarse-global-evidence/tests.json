@@ -1,0 +1,31 @@
+{
+  "schema": "tce-coarse-global-tests-v1",
+  "command": "../common/bin/common exec python -m unittest discover -s generator -p 'test_*.py'",
+  "v1": {
+    "tests": 217,
+    "seconds": 15.436,
+    "status": "OK"
+  },
+  "v2": {
+    "tests": 218,
+    "seconds": 15.475,
+    "status": "OK"
+  },
+  "retainedInitialOutcome": {
+    "tests": 217,
+    "seconds": 15.645,
+    "status": "FAILED",
+    "cause": "Synthetic field varied only by channel, so fine innovation was zero while fixture expected nonzero. Corrected token variation before scientific execution; producer functions unchanged."
+  },
+  "frozenPayloadChecks": {
+    "v1OwnedPins": 13,
+    "v2OwnedPins": 14,
+    "v2SourceFiles": 18,
+    "isolatedLazyImports": true
+  },
+  "kernel": {
+    "failedV1": "Exact Torch version check omitted +cu130 suffix; stopped before synthetic CUDA arithmetic. Retained separately.",
+    "passedV2": "Source-qualified full Torch/Diffusers identities, raw FP32 bias rejection reproduced, shared BF16 conversion executed; independent FP64 error diagnostic retained."
+  },
+  "scope": "Projection/error split, physical centers, key multiplicity, typed bias conversion, lazy imports and seal-before-target order. No prompt-quality certification."
+}
