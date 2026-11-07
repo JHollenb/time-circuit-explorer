@@ -1,0 +1,125 @@
+{
+  "schema": "tce-source-reader-evidence-sweep-v1",
+  "run": {
+    "broken": false,
+    "command": "run",
+    "exit_code": 0,
+    "findings": 0,
+    "instrument_status": "target-streams-only",
+    "pack": "saturn-evidence-pack-v1",
+    "schema": "saturn-evidence-pipeline-v1",
+    "steps": {
+      "claims": {
+        "chain_ok": true,
+        "errors": [],
+        "ingested": 0,
+        "ingested_claims": [],
+        "receipts_accepted": 0,
+        "receipts_found": 0,
+        "registry": "artifacts/source-reader-instrument/claims-auto.jsonl",
+        "skipped_invalid": 0,
+        "skipped_invalid_receipts": [],
+        "skipped_too_large": 0,
+        "skipped_unchanged": 0,
+        "status": "ok"
+      },
+      "target_scope": {
+        "instrument_status": "target-streams-only",
+        "invalid_receipts": 0,
+        "receipts": 0,
+        "status": "ok",
+        "streams": 1
+      },
+      "watch": {
+        "fires": 0,
+        "ledgers_broken": 0,
+        "ledgers_unchanged": 0,
+        "ledgers_verified": 0,
+        "ledgers_written": 0,
+        "per_stream": [
+          {
+            "error": null,
+            "fires": 0,
+            "ledger": "/Users/jakeholl/domains/time-circuit-explorer/artifacts/source-reader-instrument/watch/result/_/observations-e431dd32.fires.jsonl",
+            "ledger_status": "no_fires",
+            "ledger_verified": null,
+            "predicates": 38,
+            "records": 37308,
+            "stream": "/Users/jakeholl/domains/time-circuit-explorer/artifacts/source-reader-v1/result/observations.jsonl"
+          }
+        ],
+        "records": 37308,
+        "status": "ok",
+        "stream_errors": 0,
+        "streams": 1,
+        "streams_too_large": 0,
+        "streams_with_predicates": 1
+      },
+      "xref": {
+        "db": "artifacts/source-reader-instrument/xref.sqlite",
+        "distinct_addresses": 0,
+        "files_scanned": 9,
+        "files_skipped_unchanged": 0,
+        "files_too_large": 0,
+        "files_unparseable": 0,
+        "refs_added": 0,
+        "refs_from_citations": 0,
+        "refs_with_model_id": 0,
+        "root": "artifacts/source-reader-v1/result",
+        "status": "ok"
+      }
+    },
+    "target": "/Users/jakeholl/domains/time-circuit-explorer/artifacts/source-reader-v1/result"
+  },
+  "verify": {
+    "broken": false,
+    "command": "verify",
+    "exit_code": 0,
+    "findings": 0,
+    "instrument_status": "target-streams-only",
+    "pack": "saturn-evidence-pack-v1",
+    "schema": "saturn-evidence-pipeline-v1",
+    "steps": {
+      "claims": {
+        "registry": "artifacts/source-reader-instrument/claims-auto.jsonl",
+        "status": "skipped"
+      },
+      "target_scope": {
+        "claims": [],
+        "claims_current": 0,
+        "claims_drifted": 0,
+        "claims_missing": 0,
+        "instrument_status": "target-streams-only",
+        "receipts": 0,
+        "status": "ok",
+        "streams": 1
+      },
+      "watch": {
+        "ledgers": [
+          {
+            "expected_missing": true,
+            "fires": 0,
+            "ledger": "/Users/jakeholl/domains/time-circuit-explorer/artifacts/source-reader-instrument/watch/result/_/observations-e431dd32.fires.jsonl",
+            "reason": "no_fires",
+            "verified": null
+          }
+        ],
+        "ledgers_broken": 0,
+        "ledgers_checked": 0,
+        "ledgers_missing": 0,
+        "ledgers_missing_expected": 1,
+        "status": "ok"
+      }
+    },
+    "target": "/Users/jakeholl/domains/time-circuit-explorer/artifacts/source-reader-v1/result"
+  },
+  "runExit": 0,
+  "verifyExit": 0,
+  "scope": "Target observation stream only:37308records38predicates; no formal claims or model/input-bound ar citations. Exit0 is instrument mechanics, not semantic or zero-neural certification.",
+  "preservedArgumentRejection": {
+    "exit": 2,
+    "cause": "verify rejects run-only --xref-root/--xref-db flags",
+    "correctedCommand": "verify with target/results/watch/registry only",
+    "scienceChanged": false
+  }
+}

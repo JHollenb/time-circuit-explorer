@@ -1,0 +1,363 @@
+{
+  "reportSHA256": "72ac9e05544c57bbc5f0c2c49c9076d2585759ffa458ba7af0ee0742e63f5a3c",
+  "responseErrors": {
+    "A": {
+      "assistedResponse": 0.09914759058145892,
+      "primaryEndpoint": 0.002809665514733592,
+      "primaryResponse": 0.0402840030701224,
+      "retainedResponse": 0.09580971430558373,
+      "staleResponse": 0.5587741553162046,
+      "zeroResponse": 1.0
+    },
+    "D_attention": {
+      "assistedResponse": 0.10858310003460543,
+      "primaryEndpoint": 0.0024600435028065215,
+      "primaryResponse": 0.03625840804357698,
+      "retainedResponse": 0.10630307941025005,
+      "staleResponse": 0.5589086288772269,
+      "zeroResponse": 1.0
+    },
+    "D_mlp": {
+      "assistedResponse": 0.2208740295612696,
+      "primaryEndpoint": 0.0032636664292153327,
+      "primaryResponse": 0.09773678175749295,
+      "retainedResponse": 0.22685617712149558,
+      "staleResponse": 0.6013209566637331,
+      "zeroResponse": 1.0
+    },
+    "H": {
+      "assistedResponse": 0.08277469463964549,
+      "primaryEndpoint": 0.002645785250310665,
+      "primaryResponse": 0.0300816072292819,
+      "retainedResponse": 0.07890564227560262,
+      "staleResponse": 0.5428994338191899,
+      "zeroResponse": 1.0
+    },
+    "M": {
+      "assistedResponse": 0.21098357929320583,
+      "primaryEndpoint": 0.0038970170381273338,
+      "primaryResponse": 0.10288012337647792,
+      "retainedResponse": 0.2120739624663939,
+      "staleResponse": 0.6030806515346889,
+      "zeroResponse": 1.0
+    },
+    "T": {
+      "assistedResponse": 0.22216898861296003,
+      "primaryEndpoint": 0.0027838159896128034,
+      "primaryResponse": 0.11635816879999261,
+      "retainedResponse": 0.21311940021354794,
+      "staleResponse": 0.5784422383326436,
+      "zeroResponse": 1.0
+    },
+    "U": {
+      "assistedResponse": 0.21927458208114683,
+      "primaryEndpoint": 0.001791298034303465,
+      "primaryResponse": 0.10834856666522663,
+      "retainedResponse": 0.21825624806578647,
+      "staleResponse": 0.5530820798526828,
+      "zeroResponse": 1.0
+    },
+    "X": {
+      "assistedResponse": 0.15840794387867999,
+      "primaryEndpoint": 0.0028752889933411287,
+      "primaryResponse": 0.08212940947332707,
+      "retainedResponse": 0.15611393598469955,
+      "staleResponse": 0.5750698824125592,
+      "zeroResponse": 1.0
+    },
+    "fused": {
+      "assistedResponse": 0.1630510033372638,
+      "primaryEndpoint": 0.0026652712854066157,
+      "primaryResponse": 0.09175588739130379,
+      "retainedResponse": 0.16189474237492518,
+      "staleResponse": 0.6058936516084835,
+      "zeroResponse": 1.0
+    },
+    "nextLayerNorm": {
+      "assistedResponse": 0.23324606136749906,
+      "primaryEndpoint": 0.003370375689208087,
+      "primaryResponse": 0.1486802971695662,
+      "retainedResponse": 0.24234402214244624,
+      "staleResponse": 0.5991892035549378,
+      "zeroResponse": 1.0
+    },
+    "nextQ": {
+      "assistedResponse": 0.25662372140918216,
+      "primaryEndpoint": 0.0036598690879679012,
+      "primaryResponse": 0.17851049689546494,
+      "retainedResponse": 0.2599329916305695,
+      "staleResponse": 0.7166849368098285,
+      "zeroResponse": 1.0
+    },
+    "nextQNormalized": {
+      "assistedResponse": 0.25515349982389285,
+      "primaryEndpoint": 0.003613154382837148,
+      "primaryResponse": 0.17634410201454856,
+      "retainedResponse": 0.2587833428376956,
+      "staleResponse": 0.7157058698085731,
+      "zeroResponse": 1.0
+    },
+    "nextQProjected": {
+      "assistedResponse": 0.27177523734442416,
+      "primaryEndpoint": 0.00342397181068464,
+      "primaryResponse": 0.16786347570392976,
+      "retainedResponse": 0.2670710527293186,
+      "staleResponse": 0.7096600747991458,
+      "zeroResponse": 1.0
+    },
+    "nextX": {
+      "assistedResponse": 0.22690263167213215,
+      "primaryEndpoint": 0.004325642328605737,
+      "primaryResponse": 0.13313538644966155,
+      "retainedResponse": 0.2275328761123759,
+      "staleResponse": 0.6090185225122877,
+      "zeroResponse": 1.0
+    },
+    "product": {
+      "assistedResponse": 0.194044593336217,
+      "primaryEndpoint": 0.004006126627933307,
+      "primaryResponse": 0.09260314160687204,
+      "retainedResponse": 0.19556636743269812,
+      "staleResponse": 0.5984211671432339,
+      "zeroResponse": 1.0
+    }
+  },
+  "headPanels": {
+    "nextQProjected": {
+      "assisted": {
+        "improve": 96,
+        "worsen": 0,
+        "equal": 0
+      },
+      "retained": {
+        "improve": 96,
+        "worsen": 0,
+        "equal": 0
+      },
+      "stale": {
+        "improve": 96,
+        "worsen": 0,
+        "equal": 0
+      },
+      "zero": {
+        "improve": 96,
+        "worsen": 0
+      }
+    },
+    "nextQNormalized": {
+      "assisted": {
+        "improve": 92,
+        "worsen": 4,
+        "equal": 0
+      },
+      "retained": {
+        "improve": 90,
+        "worsen": 6,
+        "equal": 0
+      },
+      "stale": {
+        "improve": 96,
+        "worsen": 0,
+        "equal": 0
+      },
+      "zero": {
+        "improve": 96,
+        "worsen": 0
+      }
+    },
+    "nextQ": {
+      "assisted": {
+        "improve": 92,
+        "worsen": 4,
+        "equal": 0
+      },
+      "retained": {
+        "improve": 90,
+        "worsen": 6,
+        "equal": 0
+      },
+      "stale": {
+        "improve": 96,
+        "worsen": 0,
+        "equal": 0
+      },
+      "zero": {
+        "improve": 96,
+        "worsen": 0
+      }
+    }
+  },
+  "sourceComparisons": {
+    "Q": {
+      "metrics": {
+        "candidateRms": 1.2489218928536976,
+        "changedValues": 0,
+        "cosine": 1.0,
+        "mae": 0.0,
+        "maxAbs": 0.0,
+        "referenceRms": 1.2489218928536976,
+        "relativeRms": 0.0,
+        "rms": 0.0,
+        "scalars": 12288
+      },
+      "payloadExact": true
+    },
+    "R": {
+      "metrics": {
+        "candidateRms": 10.024303247351043,
+        "changedValues": 0,
+        "cosine": 1.0,
+        "mae": 0.0,
+        "maxAbs": 0.0,
+        "referenceRms": 10.024303247351043,
+        "relativeRms": 0.0,
+        "rms": 0.0,
+        "scalars": 12288
+      },
+      "payloadExact": true
+    },
+    "ropeCos": {
+      "metrics": {
+        "candidateRms": 0.9661947516270968,
+        "changedValues": 0,
+        "cosine": 1.0,
+        "mae": 0.0,
+        "maxAbs": 0.0,
+        "referenceRms": 0.9661947516270968,
+        "relativeRms": 0.0,
+        "rms": 0.0,
+        "scalars": 512
+      },
+      "payloadExact": true
+    },
+    "ropeSin": {
+      "metrics": {
+        "candidateRms": 0.2578133082755418,
+        "changedValues": 0,
+        "cosine": 1.0,
+        "mae": 0.0,
+        "maxAbs": 0.0,
+        "referenceRms": 0.2578133082755418,
+        "relativeRms": 0.0,
+        "rms": 0.0,
+        "scalars": 512
+      },
+      "payloadExact": true
+    },
+    "txtMod": {
+      "metrics": {
+        "candidateRms": 0.9023510605918277,
+        "changedValues": 0,
+        "cosine": 1.0,
+        "mae": 0.0,
+        "maxAbs": 0.0,
+        "referenceRms": 0.9023510605918277,
+        "relativeRms": 0.0,
+        "rms": 0.0,
+        "scalars": 18432
+      },
+      "payloadExact": true
+    }
+  },
+  "diagnostics": {
+    "imageModLNMatchesAssisted": true,
+    "ownKeysVsNativeHybrid": {
+      "candidateRms": 1.1916671911484473,
+      "changedValues": 0,
+      "cosine": 1.0,
+      "mae": 0.0,
+      "maxAbs": 0.0,
+      "referenceRms": 1.1916671911484473,
+      "relativeRms": 0.0,
+      "rms": 0.0,
+      "scalars": 4718592
+    },
+    "probabilityVsAssisted": {
+      "candidateRms": 0.009010976516080854,
+      "changedValues": 147456,
+      "cosine": 0.9999657141503763,
+      "mae": 6.10933993568901e-06,
+      "maxAbs": 0.01434792310588126,
+      "referenceRms": 0.009006643884727647,
+      "relativeRms": 0.00829675195997517,
+      "rms": 7.472589030341248e-05,
+      "scalars": 147456
+    },
+    "scope": "Actual source-derived Q/K and changed live allocation are retained even if finite/input differences occur. No assertion of native attention/V policy parity.",
+    "splicedTextMatchesAssisted": true,
+    "textModLNMatchesAssisted": true
+  },
+  "phases": [
+    {
+      "phase": "actor",
+      "secondsIncludingFreshProcess": 29.889959712978452
+    },
+    {
+      "phase": "postSealAnalysis",
+      "seconds": 1.261373562272638
+    }
+  ],
+  "workerWallSeconds": 31.154488037806004,
+  "execution": {
+    "nominalMatrixMACs": 15495856128,
+    "wallSecondsAfterImports": 13.169585229363292,
+    "CPUSecondsAfterImports": 10.294413455,
+    "arithmeticTimings": [
+      {
+        "arithmeticSecondsBeforeCapture": 0.6071806908585131,
+        "stage": "image_modln"
+      },
+      {
+        "arithmeticSecondsBeforeCapture": 0.00014579202979803085,
+        "stage": "text_modln"
+      },
+      {
+        "arithmeticSecondsBeforeCapture": 8.744420483708382e-05,
+        "stage": "p_text_modln"
+      },
+      {
+        "arithmeticSecondsBeforeCapture": 0.13208255637437105,
+        "stage": "source_inputs"
+      },
+      {
+        "arithmeticSecondsBeforeCapture": 0.6581520773470402,
+        "stage": "splice"
+      },
+      {
+        "arithmeticSecondsBeforeCapture": 1.7981612631119788,
+        "stage": "query"
+      },
+      {
+        "arithmeticSecondsBeforeCapture": 0.08255555666983128,
+        "stage": "keys"
+      },
+      {
+        "arithmeticSecondsBeforeCapture": 0.5726830260828137,
+        "stage": "allocate"
+      },
+      {
+        "arithmeticSecondsBeforeCapture": 0.09879883797839284,
+        "stage": "value"
+      },
+      {
+        "arithmeticSecondsBeforeCapture": 0.14014423359185457,
+        "stage": "source"
+      },
+      {
+        "arithmeticSecondsBeforeCapture": 0.00040872441604733467,
+        "stage": "next_query"
+      }
+    ],
+    "peakCUDAAllocatedBytes": 461699072,
+    "peakCUDAReservedBytes": 482344960
+  },
+  "originalParameterBytes": 301990912,
+  "keyInputRows": {
+    "count": 36864,
+    "exact": 36864
+  },
+  "newArrays": {
+    "count": 47,
+    "NPYBytes": 66305408
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema": "tce-astra-source-reader-review-v1",
+  "advisor": "/root/astra_zero_forward_advisor",
+  "model": "gpt-6-astra",
+  "cycle": 63,
+  "mode": "Read-only pre-stage implementation, actual result/article, then proposed next-plan review. No tests, numerical tensor processing, model execution or new full newest-post survey by advisor.",
+  "executedPlanSHA256": "5dc0aa896e496457b228f53125e56c917d3902a3457fa39ff76a08753d47a5f8",
+  "reviewedSources": {
+    "source_reader.py": "caa183efa463d78bce922d6a78fa4fa896b958f0e2995716e83e527486c0e7af",
+    "source_reader_worker.py": "11097482392362a92cd53102180102336a093a410cf9649ffd9039a64f4e0a82",
+    "source_reader_analysis.py": "d52ca92994eb96ae64d8aad90dd7504f70050d302d220ba059088d2a5784ac78",
+    "source_reader_study.py": "9513281bd4936cb5596803d0d775c3047baab9f373e9134f7902cadea4f59c51"
+  },
+  "reviewedTestSourceSHA256": "0fed92cf1cfbeddd1eb21c27e8aba80af1260221f7123df0719f357cad28febb",
+  "reportSHA256": "72ac9e05544c57bbc5f0c2c49c9076d2585759ffa458ba7af0ee0742e63f5a3c",
+  "actorSealSHA256": "128ef09cc73b1daa608271b69864963eea709e3943dfffd720deed5856a17bc7",
+  "sealedActorSHA256": "46de8a56643e0a606a169a604cd4851d3afc0efdb5dd09b6ed5604ed71b739fb",
+  "actorExecutionSHA256": "ab83872365c23212de32c5ac3e513bf2b01ca22050baeaadf007e5f542004621",
+  "articleSHA256": "fd113174f04e5dd3bf0c1d49e80492dbe8dca7e7e282e9f815b02c29746ef59f",
+  "blockers": [],
+  "findings": [
+    "Source-input closure replaces supplied Q/K/dual/norm operands with actual StateCut-derived computation and consumes own emitted state.",
+    "Q and all4,718,592hybridKvalues match; deferredV/finitecontinuation remain approximate. nextQresponse17.851%,92/96heads improve,4worsen vsassisted.",
+    "15.496BMACs,13originaltensors,nativeprefix/clockcontext remainpaid; noimage/speedup/arbitrary-promptzero-neural claim.",
+    "Native source discards text output aftersingle19 inordinarygeneration. Fulltext/imageKVremain live; textQ/MLP/outputwrites have no downstreamconsumer.",
+    "Fusedwidth/rowcount/rectangularSDPA finitegeometry must be measured. Real-arithmetic liveness is not nativeBF16parity. No tolerance-based inheritance of historicalimages."
+  ],
+  "recommendation": "Authenticate one complete incoming terminal single19 StateCut, physically eliminate dead textQ/MLP/output work while retaining allcurrentK/V, and seal own finalvelocity before native target comparison. No fit or imagecampaign.",
+  "nativeSource": {
+    "path": "diffusers/models/transformers/transformer_flux2.py",
+    "sha256": "0a3c56ed3ca28a416492b50953a433f20b8a89fd26c7b7a49b1b6b45d5236006"
+  },
+  "nextCut": {
+    "status": "written-unexecuted",
+    "plan": "plans/terminal-output-liveness.md",
+    "sha256": "21ab4c488b6490b7bff4038b9d644cb0c59fcbb4932b679428359ffb86b4ae71",
+    "law": "Source-defined terminal outputliveness; allcurrentKV, imageQ/MLP/output/residual/velocity live; textQ/MLP/output dead only afterfinalsingleblock.",
+    "nativeTerminalBlockMatrixMACs": 202937204736,
+    "candidateTerminalBlockMatrixMACs": 144955146240,
+    "removedAffineMACs": 53150220288,
+    "removedAttentionMACs": 4831838208,
+    "scope": "Prospective singleterminalblock matrix account; finalvelocityhead,normalization,softmax,prefix/context and originalmaps remainpaid. Cutavailability intake pending. No stage/job/image/zero-neural completion."
+  },
+  "resolvedPlanCorrection": {
+    "reviewedOriginalSHA256": "a90cf8aa495b934c116de7dd48c3460917331939f1a3c00e8c7939f9d3d850fa",
+    "issue": "Displayed SwiGLU omitted original gate/up input projection.",
+    "correction": "SwiGLU(W_GU N_c(X)_I), with original fused gate/up rows2M\u2192M.",
+    "confirmedCorrectedSHA256": "21ab4c488b6490b7bff4038b9d644cb0c59fcbb4932b679428359ffb86b4ae71",
+    "finalAdvisorStatement": "Confirmed corrected plan SHA. The gate/up projection and dimensions are now correct. No remaining issue found within the reviewed scope."
+  },
+  "periodicNewestPosts": {
+    "lastCycle": 62,
+    "nextDueByCycle": 65
+  },
+  "terminal_status": "unassessed"
+}
