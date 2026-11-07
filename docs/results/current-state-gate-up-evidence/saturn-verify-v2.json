@@ -1,0 +1,21 @@
+{
+  "schema": "tce-current-state-gate-up-saturn-verify-v2",
+  "args": [
+    "/Users/jakeholl/domains/common/.venv/bin/python",
+    "../saturn/src/saturn/evidence_pipeline.py",
+    "verify",
+    "artifacts/current-state-gate-up-v1/result",
+    "--watch-root",
+    "artifacts/current-state-gate-up-v1/saturn-watch-v2",
+    "--registry",
+    "artifacts/current-state-gate-up-v1/claims-auto-v2.jsonl",
+    "--results-root",
+    "artifacts/current-state-gate-up-v1/result",
+    "--json"
+  ],
+  "returncode": 0,
+  "seconds": 0.09506429079920053,
+  "stdout": "saturn-verify-v2-stdout.txt",
+  "stderr": "saturn-verify-v2-stderr.txt",
+  "scope": "Correct supported verify arguments; initial invalid xref arguments preserved."
+}

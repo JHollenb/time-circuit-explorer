@@ -1,0 +1,25 @@
+{
+  "schema": "tce-current-state-gate-up-saturn-run-v1",
+  "args": [
+    "/Users/jakeholl/domains/common/.venv/bin/python",
+    "../saturn/src/saturn/evidence_pipeline.py",
+    "run",
+    "docs/results/current-state-gate-up",
+    "--watch-root",
+    "artifacts/current-state-gate-up-v1/saturn-watch",
+    "--registry",
+    "artifacts/current-state-gate-up-v1/claims-auto.jsonl",
+    "--results-root",
+    "docs/results/current-state-gate-up",
+    "--xref-db",
+    "artifacts/current-state-gate-up-v1/xref.sqlite",
+    "--xref-root",
+    "docs/results/current-state-gate-up",
+    "--json"
+  ],
+  "returncode": 2,
+  "seconds": 0.06059524999000132,
+  "stdout": "saturn-run-stdout.txt",
+  "stderr": "saturn-run-stderr.txt",
+  "scope": "Actual standard Saturn source-entry sweep over finished compact results; watch/registry/xref outside results root."
+}

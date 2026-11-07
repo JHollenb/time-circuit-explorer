@@ -1,0 +1,18 @@
+{
+  "schema": "tce-current-state-gate-up-prestage-findings-v1",
+  "findings": [
+    {
+      "stage": "First focused toy run",
+      "finding": "Test assumed direct Torch FP64-to-BF16 differed from FP64-to-FP32-to-BF16. Torch direct conversion can use FP32 too; assertion failed.",
+      "correction": "Independent ideal nearest-BF16 scalar reference now distinguishes declared double rounding without assuming Torch implementation.",
+      "scienceStagedOrExecuted": false
+    },
+    {
+      "stage": "Astra source review",
+      "finding": "Shared check_act expects originalParameterManifestSHA256; new Ledger initially declared sourceManifestSHA256.",
+      "correction": "Aligned new producer metadata key before freeze and added actual typed Act/output publication join test; all351 tests pass.",
+      "scienceStagedOrExecuted": false
+    }
+  ],
+  "scope": "Preserved pre-stage engineering findings. No executed scientific source was edited."
+}

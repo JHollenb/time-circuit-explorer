@@ -1,0 +1,35 @@
+{
+  "schema": "tce-current-state-gate-up-advisor-prestage-v1",
+  "advisor": "/root/astra_zero_forward_advisor",
+  "model": "gpt-6-astra",
+  "decision": "bounded-proceed",
+  "reviewedSHA256": {
+    "generator/gate_up_basis.py": "5de6751ec1a8beed8cbd41e354855ac0f3814138272a31f85cbf354a8a78436d",
+    "generator/gate_up_basis_worker.py": "7a3c3396255c7ffd029cab599419975cbd36e13b44b3759981681a929f004ca3",
+    "generator/gate_up_basis_ledger.py": "bce52f88094d926dc22c79bc1e9b4e2f4ce482d498850d72d71b3bc083064323",
+    "generator/gate_up_basis_analysis.py": "41f21734cddbe09e1f4f3874ac6391e9b5b0ab40e552a0a540c137101447a6c5",
+    "generator/gate_up_basis_study.py": "2a64c8d586020d9aea35f3c9e1f3db36b4a2b8dd180c477f816601ddefaabca3",
+    "generator/test_gate_up_basis.py": "6fed112a7c5e586d65e10c4e6dc918a294248634d8186c84606a71e049b12c79",
+    "generator/publish_gate_up_basis.py": "0d39b4a2c4e51aae1a57f1d46f8dcea16bf395dd33051e29726bfcc620c74d91",
+    "docs/plans/current-state-gate-up-implementation.md": "8a39e77b6b12091c655f6ee3e2a7abb521cc9f80f9c1c35280c8843e5221c9ea"
+  },
+  "planSHA256": "6a1a52e9c30738ab89cf2b3d8d76c17195e5e9ba6d1b827a6bc476572f823894",
+  "initialFinding": "Shared check_act required originalParameterManifestSHA256; fixed in new Ledger before stage, actual typed integration test passes. See initial-findings.json.",
+  "confirmed": [
+    "Fixed seeded all-row FP64 sketch/Householder QR, all128 columns retained.",
+    "Source-derived GU geometry and double admission; native Flux2SwiGLU once, actual F.linear fullout, separate BF16 gate multiplication/residual add.",
+    "Five fields/two original parameters, target denial until producer seal and parent-observed exit.",
+    "All full/within-stream-centered rows plus actual FP64-loaded exit-increment denominator.",
+    "77309411328 candidate plus704643072 post-exit diagnostic=78014054400 assay MACs; QR/scalar/data work separate.",
+    "Complete byte/original tensor/GU view/typed/geometry/operation/row publisher coverage.",
+    "6144RAM4096VRAM4GBdisk360cap reasonable against live buffers/parent measurement; not a runtime guarantee."
+  ],
+  "limits": [
+    "cuSOLVER preference is configuration, not vendor-kernel attestation.",
+    "Unpivoted R diagonals are not numerical-rank certification.",
+    "46.67% reduction is the GU-plus-output matrix subtotal, not wholeblock/trajectory/runtime.",
+    "Original source formation/learned maps remain paid; no arbitrary-prompt zero-neural claim."
+  ],
+  "testEvidence": "351 tests parent-run18.38s, independently recorded tests.json; advisor did no tests.",
+  "scope": "Read-only source/contract/resource/publication review and hashing. No advisor models, arrays, tests, edits or new full newest-post survey."
+}

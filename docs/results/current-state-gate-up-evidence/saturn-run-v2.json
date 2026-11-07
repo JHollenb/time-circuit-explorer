@@ -1,0 +1,25 @@
+{
+  "schema": "tce-current-state-gate-up-saturn-run-v2",
+  "args": [
+    "/Users/jakeholl/domains/common/.venv/bin/python",
+    "../saturn/src/saturn/evidence_pipeline.py",
+    "run",
+    "artifacts/current-state-gate-up-v1/result",
+    "--watch-root",
+    "artifacts/current-state-gate-up-v1/saturn-watch-v2",
+    "--registry",
+    "artifacts/current-state-gate-up-v1/claims-auto-v2.jsonl",
+    "--results-root",
+    "artifacts/current-state-gate-up-v1/result",
+    "--xref-db",
+    "artifacts/current-state-gate-up-v1/xref-v2.sqlite",
+    "--xref-root",
+    "artifacts/current-state-gate-up-v1/result",
+    "--json"
+  ],
+  "returncode": 0,
+  "seconds": 0.10251462506130338,
+  "stdout": "saturn-run-v2-stdout.txt",
+  "stderr": "saturn-run-v2-stderr.txt",
+  "scope": "Actual finished raw compact result target. Initial compressed-publication target empty/unsupported is preserved, not a scientific null."
+}

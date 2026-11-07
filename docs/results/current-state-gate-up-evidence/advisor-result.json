@@ -1,0 +1,37 @@
+{
+  "schema": "tce-current-state-gate-up-advisor-result-v1",
+  "advisor": "/root/astra_zero_forward_advisor",
+  "model": "gpt-6-astra",
+  "decision": "useful-local-computation-reduction-no-publication-blocker",
+  "reviewedSHA256": {
+    "docs/results/current-state-gate-up/report.json": "5ff2185e489df972f9eb5b77aa7eaf3a5e068c77cdf8e709d212057c7fa46cf9",
+    "docs/results/current-state-gate-up/execution.json": "5acd4db3e773a8226daaa52dca88284bf85e75c70824f5567b5847f423cc16f5",
+    "docs/results/current-state-gate-up/analysis-execution.json": "15c66620f829519f59ae64d4edeb302df5d92f9ecbe6af29114f37708d05c692",
+    "docs/results/current-state-gate-up/candidate-seal.json": "93dd971ad346b5a5dc962717e65e8e88cfa02e5de0bd3bb3fa0f1febcdc73cf9",
+    "docs/results/current-state-gate-up/producer-exit.json": "ec6fbe198f8ebbcb193dd2c1da2c5420ed7da4261ab2ea082fa5bc15d3448388",
+    "docs/results/current-state-gate-up/retained-array-verification.json": "e45f7d00b6565f11f2566b53b36f0187ba215eab91cbbc4ff76e247d570a8510",
+    "docs/results/current-state-gate-up/scheduler.json": "9cf33687965206ac395363618dd11d733cd19eae632751692613af12d8cc620b",
+    "docs/results/current-state-gate-up/provenance.json": "88f15cc71e218a3c67e4e11904f83a357990b3ce2d30b730eb1891bb8bf3aed3",
+    "docs/results/current-state-gate-up/observations.jsonl.gz": "6355c2d605a65d5f0a184f6c452a737a8e3805c4ade6c97207ccf5907c7ce25e"
+  },
+  "findings": [
+    "Current-input basis produces complete local operands; actual increment error18.00%, all1536rows improve vsno update,median17.18%,range3.58-37.95%,no negative increment cosines.",
+    "Centered increment23.88% and centered image-product45.70% remain. Fullstate1.40% is carry-dominated; median individualstate row7.36%.",
+    "15.24%fullout vs33.52%product doesnot establish pureMLP attenuation: fixed paid attention and different denominators.",
+    "Orthogonality supports mechanics, not sufficientstate. First-useQR prevents matched speed interpretation."
+  ],
+  "nextCut": {
+    "law": "C=U R; K=U.T[paidRead,own82Product]; B=K Wout.T; Yhat=U B",
+    "rank": 128,
+    "projectionMACs": 2415919104,
+    "compressedOriginalMapMACs": 9663676416,
+    "reconstructionMACs": 603979776,
+    "outputSubtotalMACs": 12683575296,
+    "inheritedGateUpFormationMACs": 19327352832,
+    "prospectiveComposedMACs": 32010928128,
+    "additionalQRApproxFLOPs": 95070891,
+    "release": "New completeupdate/gated/exit seal+process exit before82outputs/73targets;82primary73secondary signedtotalerroridentity.",
+    "scope": "Written/unexecuted source-defined row-space test, no output-derived basis/rank/seed/fit/newGU/reference/image/continuation. Original source/maps/history paid."
+  },
+  "scope": "Read-only code, metadata and complete lossless scalar rows. No advisor models, tests, scientific tensors, edits or repeat remote byte audit."
+}

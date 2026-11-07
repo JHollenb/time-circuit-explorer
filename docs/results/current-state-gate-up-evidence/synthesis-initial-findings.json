@@ -1,0 +1,30 @@
+{
+  "schema": "tce-current-state-gate-up-synthesis-initial-findings-v1",
+  "advisor": "/root/astra_zero_forward_advisor",
+  "reviewedSHA256": {
+    "docs/current-state-gate-up.md": "bef2306ee42e19c4c94c85992eb6f5abfd3bf59deb81759d17f9774a3ba752e2",
+    "docs/plans/current-row-output-projection.md": "01d8f49bae0c0f1fc816655b0b9328488331afbc4774d6b5b3ef85fc5d69a949",
+    "docs/results/current-state-gate-up-evidence/README.md": "915198a0595a4fbce701dc67916778eb1d2e7194ade253db99e4e01015f92b0d",
+    "../obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md": "71980b726f50cee3de14946089d08d4c4e736a554d93fecb69d08d1222a46402"
+  },
+  "findings": [
+    {
+      "priorWording": "The full output contains an exact supplied attention contribution.",
+      "correction": "The full output affine receives a byte-identical supplied attention read. Native fused finite accumulation does not separately establish an exact output-space attention contribution."
+    },
+    {
+      "priorWording": "Seal and exit before opening cycle82 outputs.",
+      "correction": "Seal and exit before opening cycle82 update/gated-write/exit targets or cycle73 targets. Own82 coordinates/product are admitted source fields."
+    }
+  ],
+  "supersededPrestageLedger": {
+    "observedAdvisorReadHash": "f50600374eae5e066d09e2a7d3eb1b59c9f09e2f8a391595582aa3b17772fcae",
+    "finding": "Metadata key differed from shared publication checker; fixed before staging, actual typed integration test added.",
+    "scope": "Advisor-observed initial read/hash snapshot, not independent historical retained-byte custody."
+  },
+  "sourceNoteRestoration": {
+    "finding": "Post-run prose formatting briefly touched the root implementation-note copy.",
+    "correction": "Restored exact staged bytes, SHA8a39e77b6b12091c655f6ee3e2a7abb521cc9f80f9c1c35280c8843e5221c9ea, before final checks. Staged/executed payload and scientific sources were never changed."
+  },
+  "scope": "Preserved engineering/publication findings and superseded observed hashes; numerical science unchanged."
+}

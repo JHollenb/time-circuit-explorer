@@ -1,0 +1,75 @@
+{
+  "candidateSealSHA256": "93dd971ad346b5a5dc962717e65e8e88cfa02e5de0bd3bb3fa0f1febcdc73cf9",
+  "fields": {
+    "basisGram": {
+      "bytes": 262272,
+      "logicalDtype": "torch.float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-77ff707619cf/arrays/analysis/basisGram.npy",
+      "payloadSHA256": "16e04b9bcdf1edb8affdab58f323666273b8dbdbd7e72b0ab83f5fba360080d2",
+      "sha256": "5221bdc2d80df26434559aee38f4fdf98ddbeffe3821661b2af2888c20821177",
+      "shape": [
+        2,
+        128,
+        128
+      ],
+      "storedDtype": "float64"
+    },
+    "inputResidual": {
+      "bytes": 37748864,
+      "logicalDtype": "torch.float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-77ff707619cf/arrays/analysis/inputResidual.npy",
+      "payloadSHA256": "fe3753817b19eb29f56819517436852d63b88eab6e5500b3b4dd13a39305c84b",
+      "sha256": "41327f9ad7228fcd6c79e913e1ab8b85aff6962970f1b4dffa6a328d1169aea6",
+      "shape": [
+        1,
+        1536,
+        3072
+      ],
+      "storedDtype": "float64"
+    },
+    "inputRowStatistics": {
+      "bytes": 98432,
+      "logicalDtype": "float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-77ff707619cf/arrays/analysis/inputRowStatistics.npy",
+      "payloadSHA256": "9da4fa73bd0de8711dcdc49944782235f821bf7574a41d3b67c72945f1369814",
+      "sha256": "bf1872fa5e7bd30f2384d5ea554c17f0178266d711fcbe65f57052761e5f120d",
+      "shape": [
+        1536,
+        8
+      ],
+      "storedDtype": "float64"
+    },
+    "rowStatistics": {
+      "bytes": 688256,
+      "logicalDtype": "float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-77ff707619cf/arrays/analysis/rowStatistics.npy",
+      "payloadSHA256": "2512042b911a0090e73c0d98616ae602289fea4954a63019f27b5dc90a6139ad",
+      "sha256": "528f3c1db5cd5ddba5dd25e535c155c748b2bca76ab421aeca98d4a460674d78",
+      "shape": [
+        1536,
+        7,
+        8
+      ],
+      "storedDtype": "float64"
+    }
+  },
+  "ports": [
+    "gateRaw",
+    "upRaw",
+    "activation",
+    "product",
+    "preResidualUpdate",
+    "exit",
+    "exitIncrement"
+  ],
+  "rowColumns": [
+    "targetEnergy",
+    "candidateEnergy",
+    "errorEnergy",
+    "inner",
+    "centeredTargetEnergy",
+    "centeredCandidateEnergy",
+    "centeredErrorEnergy",
+    "centeredInner"
+  ]
+}
