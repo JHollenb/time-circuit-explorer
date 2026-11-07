@@ -1,0 +1,11 @@
+# Fixed coherent norm sketch evidence
+
+The [mathematical account](../../coherent-key-norm.md) records one fixed source-only output sketch. Energy and consumer improvements over the diagonal remain visible alongside every failure against zero/stale/retained responses. This is one supplied pair and reduced learned arithmetic, with no image or arbitrary-prompt zero-neural claim.
+
+- [Report](../coherent-norm/report.json), [complete lossless observations](../coherent-norm/observations.jsonl.gz), [source-pinned request](../coherent-norm/request.json), [compiler](../coherent-norm/compiler-seal.json) and [actor](../coherent-norm/actor-seal.json) seals.
+- [Full-byte custody](../coherent-norm/retained-array-verification.json), [typed/sign/work mechanics](mechanics.json), [complete scalar trends](scalar-summary.json), [scheduler](scheduler.json), [294-test receipt](tests.json) and [pre-stage advisor snapshots and census correction](pre-stage-advisor.json).
+- [Actual storage cleanup](../storage-cleanup-cycle60/README.md), [post-cleanup pointer audit](../storage-audit-cycle60/README.md) and [frozen original sketch plan](../../plans/coherent-output-key-norm.md).
+- [Actual-result Astra review](advisor.json), [separate paired-error report](../paired-sketch-diagnostic/report.json), [paired custody](../paired-sketch-diagnostic/retained-array-verification.json), [complete lossless paired cells](../paired-sketch-diagnostic/observations.jsonl.gz), [paired scalar summary](../paired-sketch-evidence/scalar-summary.json), [paired instrument](../paired-sketch-evidence/saturn-instrument.json) and [the next fixed spatial capacity plan](../../plans/spatial-key-norm-capacity.md), written and unexecuted.
+- [Publication audit](publication-qa.json) binds the executed sources, inherited targets, paired inputs, figures, living log, active goal record and completed storage transaction.
+
+The exact sign payload is independently regenerated; all five payload controls match. These are execution and attribution mechanics. Unbiased ideal energy does not certify the one realized sketch, and none of the 96 dependent heads beats zero response. Original states, dual compilation, text keys/full values, learned receiving maps and historical targets remain paid.

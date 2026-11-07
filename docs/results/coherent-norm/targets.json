@@ -1,0 +1,1056 @@
+{
+  "norms": {
+    "P": {
+      "bytes": 196736,
+      "logicalDtype": "torch.float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-5051d169e298/arrays/compiler/compile/pDenominator.npy",
+      "payloadSHA256": "23b72fc4823d90c50c1e9f116b3b78eb1bc8c26884082903bdfaa4975e435d45",
+      "sha256": "a87a8bd4b3e1a1e982aabb713a616e843526255ce089156bf49bb8a8ec9b32ff",
+      "shape": [
+        1024,
+        24
+      ],
+      "storedDtype": "float64"
+    },
+    "Q": {
+      "bytes": 196736,
+      "logicalDtype": "torch.float64",
+      "path": "/mnt/hdd8tb/mrun-work/job-5051d169e298/arrays/reference/reference/qDenominator.npy",
+      "payloadSHA256": "89d72089632bca529bf9bf51667d26c98d05c22cc5323162b257ee07552c3648",
+      "sha256": "2b7bfb1a01238935e5a303b32571a2f705e4eb29f912a273e4971ed7586b0b0c",
+      "shape": [
+        1024,
+        24
+      ],
+      "storedDtype": "float64"
+    }
+  },
+  "smoothImageLogits": {
+    "bytes": 786560,
+    "logicalDtype": "torch.float64",
+    "path": "/mnt/hdd8tb/mrun-work/job-5051d169e298/arrays/reference/reference/smoothImageLogits.npy",
+    "payloadSHA256": "808831d145d68497d42435a1c17e282f0f96e3166260763e69c6d7fa9c76c6f3",
+    "sha256": "2121688276dc847acb5d879f8b1f0905d9c9650e396890701037ea35d2343343",
+    "shape": [
+      24,
+      4,
+      1024
+    ],
+    "storedDtype": "float64"
+  },
+  "smoothLogPartition": {
+    "bytes": 896,
+    "logicalDtype": "torch.float64",
+    "path": "/mnt/hdd8tb/mrun-work/job-5051d169e298/arrays/reference/reference/smoothLogPartition.npy",
+    "payloadSHA256": "b2eb2e765f4d8b64107e98b3b9ec9567ac356cfedb433f763be78138a8b48372",
+    "sha256": "d8fe66ec98249fce649b8662b3de30e9fea50aa3b6bd2d43f440b155064748c3",
+    "shape": [
+      24,
+      4,
+      1
+    ],
+    "storedDtype": "float64"
+  },
+  "trajectories": {
+    "PP": {
+      "A": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/A.npy",
+        "payloadSHA256": "37263f108c6ec4126576253213682e660a7f4120c89d694e7b0142d9404826a3",
+        "sha256": "f5ed036b31879abc7e6f02a2e11dd588a94852a46d79e1d962626d1c27f014b1",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "D_attention": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/D_attention.npy",
+        "payloadSHA256": "e4d40e3af8cb1ae9d32b6eda1687f4b1bf9174f77b16e07e7c65a41efbb24498",
+        "sha256": "bc9cfcbb5de4504c1cf4896ab4fc5dc95ffe248509cc5b88021113512510746d",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "D_mlp": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/D_mlp.npy",
+        "payloadSHA256": "67847e6c566b0ad5272fcbcdefa06dc347b4deb8e1cf54969b013d9fb52cb368",
+        "sha256": "594ad306d5fdb6bfff11b904c30e16b992f20fd22c618970640ebf9ff8bcddb3",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "H": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/H.npy",
+        "payloadSHA256": "647938bc494c176f35bbde18efeeb0ae0c415679d34568702ba0cf6dcc2bdfab",
+        "sha256": "448dda1de3cdac7102eec67632db2ec5fc661cebe1ce5d863ebf542c89079c20",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "M": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/M.npy",
+        "payloadSHA256": "c9423c0aee3146fa652ab23370d64d188a6045550a119487c2b0eb4deb7a8323",
+        "sha256": "05740dca5a71f720de61d7931b2abfb46d0ee5efc02b91b26a8a50df0d4db715",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "T": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/T.npy",
+        "payloadSHA256": "d5dd961526bc97ec4a86675d65eb0f43a381c6071a284ead82b0ee6eb6be9788",
+        "sha256": "f3935658b38e6e28f5919193649c159197f3a50e46301f5ae7e5f972d242c77b",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "U": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/U.npy",
+        "payloadSHA256": "c14cc9fc23d552651381f525ddf34542f0591c59af5215c6979984f50f6d2e58",
+        "sha256": "370a56a10db114032915337170b93c7e3c563fab0fde8c66a498d92558a0c6bc",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "X": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/X.npy",
+        "payloadSHA256": "30a59769b55132f63e63a866274c3e5458372c31810047d4d9883af58018baed",
+        "sha256": "4141decb665fc186c0aecf8b8713d31cd550e137690fd450673ed386181922b2",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "fused": {
+        "bytes": 147584,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/fused.npy",
+        "payloadSHA256": "ad7f4a09a33322eb9074cba80103939461917726afefbf5b255efb1c553a4e11",
+        "sha256": "9579f68f68d3973e1958d2473d9a5498f1742a7622fc46ba55108a86309956e4",
+        "shape": [
+          1,
+          4,
+          18432
+        ],
+        "storedDtype": "uint16"
+      },
+      "nextLayerNorm": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/next_query/nextLayerNorm.npy",
+        "payloadSHA256": "902d243bf6bdef729326f9dcbb1fb8ad8f1cbb464f127d77d362a9ebe9c264c1",
+        "sha256": "14f2e73eb16e59678154cdf1d98b140fdb1166205c4b1e86a1f6df74fb1fff0d",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "nextQ": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/next_query/nextQ.npy",
+        "payloadSHA256": "2916f73b50e393df2745e1c0a18c857a5ff470d7a61ee7714909d41e6aebcfe5",
+        "sha256": "faf901f3eb2d573c42a3d52d669fb808a726c9eefef913b69f16fb17967d351a",
+        "shape": [
+          1,
+          4,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "nextQNormalized": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/next_query/nextQNormalized.npy",
+        "payloadSHA256": "e0e5faaf22f7244a8307724d30266f41cfd52aab43f995f3fee43f5d33f77301",
+        "sha256": "94e2b672d0a97919809b6e710abd80dac0b276f8ca070d019dbbc8ddc390669b",
+        "shape": [
+          1,
+          4,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "nextQProjected": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/next_query/nextQProjected.npy",
+        "payloadSHA256": "88970ea45b5dad45a956ca332fa10c11e3d53cc0fbab615abe294462719ef256",
+        "sha256": "1db63cb2dedabbbb85d818a4bcbf393ad9456ffabafcc5ba0cfdaeb52a4f0de3",
+        "shape": [
+          1,
+          4,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "nextX": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/next_query/nextX.npy",
+        "payloadSHA256": "59be187076a7692df798ea26c79e6817aeb895bd3488dde0e027d76dbc266d9b",
+        "sha256": "79e150c5c00d8b7ce03f78e23f9e40d368180020fcf66a2bb884b0cd5e8e2398",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "product": {
+        "bytes": 73856,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/control/source/product.npy",
+        "payloadSHA256": "ccf3065fd370960c4ee7a228555673c8b79d2d62974d1a769fdeca00b1323c15",
+        "sha256": "3c73209cb0e53e45fc031207ed4c9a3b9d0d44fb2fb9e991c9840117d1347910",
+        "shape": [
+          1,
+          4,
+          9216
+        ],
+        "storedDtype": "uint16"
+      }
+    },
+    "QQ": {
+      "A": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/A.npy",
+        "payloadSHA256": "a8a45d4058aacff2a46fa64d5f767f5534a04e1256dcfcdbccbba3c5137d5695",
+        "sha256": "b1c6b5dc3fbf79e84f0f0be4bf27d7d985c1ec619ca2b05034569fbd12fd251c",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "D_attention": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/D_attention.npy",
+        "payloadSHA256": "480d1c9560789c08d6dc91db17043c7ec811d915df53d8f8cc791d8bf8cfeba9",
+        "sha256": "b3365a5a4f9045d53e2f6f6d82fc78e9a21a32212e603cb430451e7efbe5ccc7",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "D_mlp": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/D_mlp.npy",
+        "payloadSHA256": "934c2824180675d2be25db0e61551d789358a2c0500c563a8283fd243c21b325",
+        "sha256": "61f30071ebf853c225ee9878480ae0b29799f375b1fad1eadb77d1c61e7532e9",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "H": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/H.npy",
+        "payloadSHA256": "70d3357ba044f8771c7addaae92890525e12826832d7c88a83763996fc98ec6f",
+        "sha256": "b33f231ba84aa0b9e4ec5179991fd8364b2abffc7b3a17c2968047499cac81ab",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "M": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/M.npy",
+        "payloadSHA256": "8bb66f137038a03ac4d175fb781c34306855f2ba1b0b3d660a3ddc307b65afd6",
+        "sha256": "0542b0fa53d67e6cc483ef1d97a2baac2d7573869b8448d03627de6a85a87fb5",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "T": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/T.npy",
+        "payloadSHA256": "e423f7bf590b69e9ba74f4f669e62cece92c1198bd824692c89e8e7a429a3ede",
+        "sha256": "eb4ecabb80a32992c5db8f67ee90b1700dca06caae2a58127efb791aac678af2",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "U": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/U.npy",
+        "payloadSHA256": "ed42a273f416a74986188d12dd0ef43550ed463e7566cbee85b504f950091583",
+        "sha256": "9424b609fd1605a98fc54f6426a0f6582b72359abbb79074c72a2c2e72af1ff9",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "X": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/X.npy",
+        "payloadSHA256": "b45d5476de6a6ac750f73f96acc8a418e6887986d2ed574c134d50cb45cfe024",
+        "sha256": "5c663d1c7d0fe36d58f704f5d6b57bf21c9b10f6459416bf768a8fe6455ea022",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "fused": {
+        "bytes": 147584,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/fused.npy",
+        "payloadSHA256": "4040a1efa464faa3b9ea59029da3b064e879b7046dbeb306a2504256cb23ed36",
+        "sha256": "3dd97255c7755bcad209f74e6d719e03a36002182280c04c9822157838f4f49c",
+        "shape": [
+          1,
+          4,
+          18432
+        ],
+        "storedDtype": "uint16"
+      },
+      "nextLayerNorm": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/next_query/nextLayerNorm.npy",
+        "payloadSHA256": "b386a91634f418f5ccc2c712b88526aa2b80440ee8a9c3cdeb797b7442afdc5f",
+        "sha256": "073fbc2539c1ca550e42ac081e9b9409aeaf53238fb94e8a48730853bf936280",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "nextQ": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/next_query/nextQ.npy",
+        "payloadSHA256": "f41da66b1f4f4d9b255bf0082c57657fd0484b090f56dd51fbe81cce6ac60353",
+        "sha256": "bb9f85f2f8ff5bf69c41e8f68d205cf244f98e32982d86681df036b51a98e1b0",
+        "shape": [
+          1,
+          4,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "nextQNormalized": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/next_query/nextQNormalized.npy",
+        "payloadSHA256": "0e311cdc75f60e106b038227889b26444afe541532512a34b3d093514db6ca04",
+        "sha256": "be86cb7f2eb9134e79f52f6e37bb1be15eb08bc9389e74d3b474f52a15cd881b",
+        "shape": [
+          1,
+          4,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "nextQProjected": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/next_query/nextQProjected.npy",
+        "payloadSHA256": "166a2219892323c7f44854ad81fa05c847580df3fcb44fbac223c685d033ae34",
+        "sha256": "7195df037327481cdec1f70036206d63c0a5706caa178d84ad9086b571faf85d",
+        "shape": [
+          1,
+          4,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "nextX": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/next_query/nextX.npy",
+        "payloadSHA256": "a4d32fb0d0de0b65371df7656e444a4665189175598ec5e73c803b31acd1bed8",
+        "sha256": "016897db0bcba791c9a1c8035b6d14a44d0c59f0533c6481f587d87bf3e4bcaa",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "product": {
+        "bytes": 73856,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-52b170ce67d8/arrays/primary/source/product.npy",
+        "payloadSHA256": "9568cdfca6b11176c9a5a6b7e5438268e7f2749bedb3227df2f0273b272f4406",
+        "sha256": "15e4965e0dd87ad91905178b34d9b37cc5fddb85dfec2e2fa2a2f9114bf7e2f6",
+        "shape": [
+          1,
+          4,
+          9216
+        ],
+        "storedDtype": "uint16"
+      }
+    },
+    "diagonal": {
+      "A": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-188150561700/arrays/actor/source/A.npy",
+        "payloadSHA256": "739833c538146dbac7542566ad82fe0789156028bfc033cec83913e6e88b1226",
+        "sha256": "61e30ef44b7e328c535de32148c63db1d08d84840b319b581875fabba9b923f7",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "D_attention": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-188150561700/arrays/actor/source/D_attention.npy",
+        "payloadSHA256": "64b10c6225b36ef53f8a6238caaf483ddf8fa02874d37bab0f9308a24a493709",
+        "sha256": "31d1e4499eb40b4cf57a8fabf85866f77400b9e46a0cf28c00ae26a0dd78f4f4",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "D_mlp": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-188150561700/arrays/actor/source/D_mlp.npy",
+        "payloadSHA256": "3dfca9433f38a50afd246d4e0fe13ccb3b85c4abe541df1e84c559bccfd91d7a",
+        "sha256": "b23b3b823f41ef25b0c32e6d4395c53e72df941eca192e8359644eed3b13bb7c",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "H": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-188150561700/arrays/actor/source/H.npy",
+        "payloadSHA256": "1b74ac16c362dea8d3792ee37239d91ea978c1b73e9c222c77db24e91c3de676",
+        "sha256": "f874ff2f7838604e3722bb677c84a32564220420b9e6c2fba07a6db5e70ae69d",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "M": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-188150561700/arrays/actor/source/M.npy",
+        "payloadSHA256": "b5807f8fd21b856136577de86b82d8d27219ca2d91d6593f8e2cef1b88f2a193",
+        "sha256": "d765a06f917f62370f7c4f331b1f7a2baed39a8ab0d304e45b9c4de497061b23",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "T": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-188150561700/arrays/actor/source/T.npy",
+        "payloadSHA256": "53128074c285d4b5b0f9f3809716b9952c0b91f1e8183e1d1c497cc8fda2a7e6",
+        "sha256": "2cf63d7f456ec73f8c81ea7aac90092ebc23d911e867d2e0fe2402fade2bce62",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "U": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-188150561700/arrays/actor/source/U.npy",
+        "payloadSHA256": "2be6acbd21c5c645832e7614531e827658e6d9a1089ec8e7a652c0b41169e9bc",
+        "sha256": "d4736e959b4cc5afe1568a9886aaef189084382912d43721bcd26822d9ea7c48",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "X": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-188150561700/arrays/actor/source/X.npy",
+        "payloadSHA256": "40748662131433f1bd89041822c5f02093c55093c36342a4bde1d7dfa22880d3",
+        "sha256": "94b81a52c627721939e927329fcc486b5e1bca7d685ff88ed5a893995e1ed6b7",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "fused": {
+        "bytes": 147584,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-188150561700/arrays/actor/source/fused.npy",
+        "payloadSHA256": "df02cf6f83ccb66d23bde965b7ffc971371032a3b8f8ebf2442ab49c5a4f7c52",
+        "sha256": "3a9382606e05c0d7edefd0653fbe93dc747ccab366adde12b759e4d3f1319455",
+        "shape": [
+          1,
+          4,
+          18432
+        ],
+        "storedDtype": "uint16"
+      },
+      "nextLayerNorm": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-188150561700/arrays/actor/next_query/nextLayerNorm.npy",
+        "payloadSHA256": "527f19b1daf3c30febc567a75785074af729031aed6a8bd78266cb96783f5b07",
+        "sha256": "ce1de9bcb8ccc7bbbd27298b6cc847301f7d7567243002a7ded30111031f1eda",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "nextQ": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-188150561700/arrays/actor/next_query/nextQ.npy",
+        "payloadSHA256": "669b0f04b0a5a5daa72aa766a5c5bb59abc386a30bdeefab036f40194ab047c3",
+        "sha256": "52689266f5ddbfb84cd5463837284e58b80853d66a238880e366dd18c59cc98a",
+        "shape": [
+          1,
+          4,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "nextQNormalized": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-188150561700/arrays/actor/next_query/nextQNormalized.npy",
+        "payloadSHA256": "e8d48a5a602eba79a7fa11d25175af5c50eaf3ebbd37ff70f69604150ad994ec",
+        "sha256": "f704f1ce88aa43bf09e52760c99a51ddb3dc6c13a8a89cdad65b321979ac478c",
+        "shape": [
+          1,
+          4,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "nextQProjected": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-188150561700/arrays/actor/next_query/nextQProjected.npy",
+        "payloadSHA256": "a6a50f5fb35604a4440fc9bf9a7c48bd763520b0a94571ed5b1029cdbff32195",
+        "sha256": "6345712049470320cf6024f076056857cd9cf552cd6710f6fdebadf90baaf9d1",
+        "shape": [
+          1,
+          4,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "nextX": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-188150561700/arrays/actor/next_query/nextX.npy",
+        "payloadSHA256": "22104242b257003e076ba1382f9c62532f7e697ef004813afbbbe7355b3952b4",
+        "sha256": "c38b90c1d8a44ed3c85dcbdd29578a58bc74914a7090f44cfc686dc8aaf2eba0",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "product": {
+        "bytes": 73856,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-188150561700/arrays/actor/source/product.npy",
+        "payloadSHA256": "3052704f6eff400f126adb20fee41e30a66f87331581393b54d2c65d5621d06b",
+        "sha256": "a1457d10e1d104fa6d0ac40bc4f67b5802cc327f6a5129238b53c1195fc78e31",
+        "shape": [
+          1,
+          4,
+          9216
+        ],
+        "storedDtype": "uint16"
+      }
+    },
+    "retained": {
+      "A": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-5051d169e298/arrays/actor/source/A.npy",
+        "payloadSHA256": "28b25dbd8fd06af697aece2c32d0cee575646a0ba838ed3dcaf43bbe042d73f8",
+        "sha256": "7c88eff22d012f192c9adc9260655600120eee728299efa283077194d717e02a",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "D_attention": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-5051d169e298/arrays/actor/source/D_attention.npy",
+        "payloadSHA256": "3f0d0c2d8415b2bd14da5c78e6223ffadbca5c08335d429e039ee05cee5f0180",
+        "sha256": "ab10cfd6c15bbbecc25fbaac77629aa0c1966b27efbde9f2efcfb5c918960df8",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "D_mlp": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-5051d169e298/arrays/actor/source/D_mlp.npy",
+        "payloadSHA256": "8d1d555144b279f81cc47947477db2307090eeb5bdea7d3dcb90b2fafc892415",
+        "sha256": "bd86f7b1316cf7dbd8948fa391d93d876d2a2cd3e186334b73d6b32c426f16ff",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "H": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-5051d169e298/arrays/actor/source/H.npy",
+        "payloadSHA256": "b54e7de9d89cd9bd732a6fb549b3ae8a0b9e2600ffe29deea5036c8feeda3295",
+        "sha256": "0d563857f7d96af5c9e091716851305d97083d327410e7c64c95eee05e8b2b66",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "M": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-5051d169e298/arrays/actor/source/M.npy",
+        "payloadSHA256": "77dcafa0657cdc2bbf1ac7895fc8c51621cba97dd8c3451b00d279da7f182334",
+        "sha256": "9ec6bde3ed374b2114b44ccce728e8369fe01ba5bdd9deeac0a87c2a8fff9efa",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "T": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-5051d169e298/arrays/actor/source/T.npy",
+        "payloadSHA256": "c46fb3f0c9f216f1e6eb815ac86d444ff36c44614729340d7b788ae5e85f2676",
+        "sha256": "9a5c87d600c50b1e8a238d349856bdb4d64e5f787b7094e086026564bb5b20e7",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "U": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-5051d169e298/arrays/actor/source/U.npy",
+        "payloadSHA256": "949e4855e4c4419b45bdc83611018f1675049cee59727f86540c9b0c2888a9e7",
+        "sha256": "494f4d21863cff85ad6a2149f4025d11edf58ff59afc28733b5f7153d61149bf",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "X": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-5051d169e298/arrays/actor/source/X.npy",
+        "payloadSHA256": "1a15a4a6ac3d50c457c7a89ee5bb4a6439f1c86faa19cafd897f150171d5917e",
+        "sha256": "c8b3839458bec4e0872b6de8ea573049c6b02e0f01b2c11b2d885bb0b3741242",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "fused": {
+        "bytes": 147584,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-5051d169e298/arrays/actor/source/fused.npy",
+        "payloadSHA256": "1ff424a3075ce83c37cfa7566187dc66c1f42da1e409522692d7e438fec07280",
+        "sha256": "087c03d52c4995b2ab836980aef36382c2c2e5e558ed6839babb4045741c7279",
+        "shape": [
+          1,
+          4,
+          18432
+        ],
+        "storedDtype": "uint16"
+      },
+      "nextLayerNorm": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-5051d169e298/arrays/actor/next_query/nextLayerNorm.npy",
+        "payloadSHA256": "222f186dd1a67d6aad95a3fa0786513d499782040d255e53bf1caae7ca71d8c5",
+        "sha256": "b09f5d2858f396952ab300a80bcdd005022e24918c2197e0611954629f1e0f03",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "nextQ": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-5051d169e298/arrays/actor/next_query/nextQ.npy",
+        "payloadSHA256": "74ad9e94ec9c146f1ff9d32839c12b0fbce136ca16531af17ca984fbbfb08bb3",
+        "sha256": "129fdfde2d90b4aae847beb885bf6b14423f2bb6e2d7b78c4e014b31b9bef1a7",
+        "shape": [
+          1,
+          4,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "nextQNormalized": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-5051d169e298/arrays/actor/next_query/nextQNormalized.npy",
+        "payloadSHA256": "43da8f0f3f82055b1827ae9b34e3d2c76b18914f9cc5e056152769c860edab6a",
+        "sha256": "44ab975db1723021698f673c33298a1f41f33b034d87a6d15c90d8e760540f7f",
+        "shape": [
+          1,
+          4,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "nextQProjected": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-5051d169e298/arrays/actor/next_query/nextQProjected.npy",
+        "payloadSHA256": "7995649e143cdea4d05409234a38cb7a605d5255de7c5975bb020a2df6d5e80f",
+        "sha256": "fc0093594747e7b1eaf08db473727918e21144b990a0d592af05fb94402daa36",
+        "shape": [
+          1,
+          4,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "nextX": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-5051d169e298/arrays/actor/next_query/nextX.npy",
+        "payloadSHA256": "d926e400a57a014b64ea5ba8f98747c8194bbbb2510cef84e744a6f0042566a7",
+        "sha256": "55bb7d7c2bdd610eb1d5597464f134179f562de7af60a1cef405170b5c654e02",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "product": {
+        "bytes": 73856,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-5051d169e298/arrays/actor/source/product.npy",
+        "payloadSHA256": "a11e6f209bc6aac10d66a8d5f651a6aa161c2844ca1f6bfe524ff7929e26164d",
+        "sha256": "84c7e89941974c23da3f871e6609a165afae287993dd4ce0dc082bc0cfb885c5",
+        "shape": [
+          1,
+          4,
+          9216
+        ],
+        "storedDtype": "uint16"
+      }
+    },
+    "stale": {
+      "A": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/source/A.npy",
+        "payloadSHA256": "fc3ce1a49dfaf660189020d29c188c724441fcb152147a2792833057ecd4df3a",
+        "sha256": "f6c38111cd00eee617098da0b34819ea402ea6128bc0679af09b501420a85c47",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "D_attention": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/source/D_attention.npy",
+        "payloadSHA256": "9031fc5254f67ec63d69398cff64c4b4ff28d50e06bc40439ec3b1216e9df90c",
+        "sha256": "0d030c0a948bcb3f33d0f2318d31e5ff70924d9ed64932c03ddccc23a528c277",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "D_mlp": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/source/D_mlp.npy",
+        "payloadSHA256": "f898ca036b07b07e75605d2f7d1d1a9e406ee00309cb589eba72f59ad7a067c6",
+        "sha256": "b7029ad76a44e8152d6db64648d813981e0ccdd6750f2d7f62d9c341b9965f68",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "H": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/source/H.npy",
+        "payloadSHA256": "e0c2312b7259b45f660094630d26b86e65219a2195d6e4626ec442fb31b2b2f4",
+        "sha256": "07f5a61554590abedfe4634b84cf4e7b29acd58d1ce2d2cd058be6bf58c8bd73",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "M": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/source/M.npy",
+        "payloadSHA256": "010b034f29261c793649b8be265ab5062514d1dc2105250db3028f3be243e8d5",
+        "sha256": "26bc1a0fa35599c58012df025bc4f6847947cc4d3c457260d4c6586895236439",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "T": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/source/T.npy",
+        "payloadSHA256": "368fa0afbe3c416d5498d2bd930af771d8bd6c74bb365a5f238abd24f4215862",
+        "sha256": "c74f07704e2d7d69b33d823c1d46ddac870c1ace1f33830547492587431cd42b",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "U": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/source/U.npy",
+        "payloadSHA256": "b2c47a48c7af4669a94d5e5a29ad3a1a90adb9da230f91a340dc0402354d19e3",
+        "sha256": "df6b658506031bdd6f4da88496772c0667b62879fe41a7eac1fe1d55b69248b7",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "X": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/source/X.npy",
+        "payloadSHA256": "a8827facdaedecfd38c3b4b100249e6ff8b09865636fbe0d65fc7fc24dffc21c",
+        "sha256": "74a58bee214905a6ca5e32b34366d8e8610928c659540c48f5e60fb99c5ae904",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "fused": {
+        "bytes": 147584,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/source/fused.npy",
+        "payloadSHA256": "8823af765177a863a933c7d796d7340629ad4e58ad872c10253e0f14387ec9c5",
+        "sha256": "11c3483f9b73a43008bfda9bcd9c20d339b1c7c881e07f8336bbe44b211a0d3d",
+        "shape": [
+          1,
+          4,
+          18432
+        ],
+        "storedDtype": "uint16"
+      },
+      "nextLayerNorm": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/next_query/nextLayerNorm.npy",
+        "payloadSHA256": "ada81b678bb8cf2b7b1b276760064f9ea4add2d00420c0424a519a170e494be1",
+        "sha256": "8b1136c366e82b530cb47f3b0413343d2ec0b8082e67cf7077b0f260271bb2b6",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "nextQ": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/next_query/nextQ.npy",
+        "payloadSHA256": "a0a94d81e74d6bcf0e11b8b3fbc79c3a40358cc5f4cad912c7c21c5778b6226a",
+        "sha256": "31703b51aee282e7919402c0a0c7f370f3b88c7fe22ce235535a56c3764e2e32",
+        "shape": [
+          1,
+          4,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "nextQNormalized": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/next_query/nextQNormalized.npy",
+        "payloadSHA256": "c969c90cc3ccf1ea2b54b680cb78a0679cb2cae53994859fd13f6f270acc0290",
+        "sha256": "bc016212490dda02aa608a186e81cdde0b931098b0f4c1ca0c10d099e5a19f48",
+        "shape": [
+          1,
+          4,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "nextQProjected": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/next_query/nextQProjected.npy",
+        "payloadSHA256": "c4b7ea09b81e72eaa5b3727fe7ae00c2bae070708ec88bca0dd31c87064ca4d6",
+        "sha256": "fbd51defa067fbcba1cc5cc6a2156c43dd76c4fac905199303461efdf905f277",
+        "shape": [
+          1,
+          4,
+          24,
+          128
+        ],
+        "storedDtype": "uint16"
+      },
+      "nextX": {
+        "bytes": 24704,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/next_query/nextX.npy",
+        "payloadSHA256": "3a7927286b564eb2ba62af8b4abecd0454522a40865ce0ee0c6580562f1b1f59",
+        "sha256": "d62e9e4c60fc9ae5ee1e539d4ec2d5b782847476565945818c8f9fc278535ab1",
+        "shape": [
+          1,
+          4,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "product": {
+        "bytes": 73856,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-03c1bd316b2b/arrays/primary/source/product.npy",
+        "payloadSHA256": "bd747c29fd2adb1b9736e8f56eab3f3890a67931f1e094a5075c1f104b4f713c",
+        "sha256": "de1451b978626e6286661fe299d0af0a2db96c5687b9c8bed81097535f14932f",
+        "shape": [
+          1,
+          4,
+          9216
+        ],
+        "storedDtype": "uint16"
+      }
+    }
+  }
+}
