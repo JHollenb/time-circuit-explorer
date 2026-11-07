@@ -1,5 +1,7 @@
 # Prediction-only FLUX generator
 
+The [native terminal-state capture](../docs/terminal-native-capture.md) now saves complete source/target StateCuts and original final velocity for the last FLUX single block. The 79.94-second capture pays 4.871 trillion nominal matrix MACs; the failed 69.80-second persistence attempt stays recorded. Both 13-slot cuts roundtrip, 305 mechanics tests pass, and byte/work custody verifies. The physically reduced terminal producer has not run. Arbitrary-prompt zero-neural generation remains open.
+
 This generator makes a fresh 512 × 512 image from a prompt and seed. It evaluates the recovered FLUX.2 Klein 4B computation through all four denoising passes, feeding each predicted state into the next computation. The native transformer is never constructed; calling its forward method raises an error.
 
 The native text encoder supplies conditioning and the native VAE renders the final predicted latent. This remains a full dense learned-weight calculation, using the original parameter banks and pinned NumPy equations with FP64 reductions and explicit BF16 boundaries. It is an executable reconstruction, with no compact student or claimed speedup.

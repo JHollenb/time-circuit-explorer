@@ -1,0 +1,17 @@
+<frozen runpy>:130: RuntimeWarning: 'mrun.os_limit' found in sys.modules after import of package 'mrun', but prior to execution of 'mrun.os_limit'; this may result in unpredictable behaviour
+Installed 65 packages in 2.12s
+Traceback (most recent call last):
+  File "/mnt/hdd8tb/mrun-work/job-c266fd593526/terminal_capture_worker.py", line 147, in <module>
+    if __name__=='__main__':execute(sys.argv[1])
+                            ~~~~~~~^^^^^^^^^^^^^
+  File "/mnt/hdd8tb/mrun-work/job-c266fd593526/terminal_capture_worker.py", line 99, in execute
+    captured['source']=persist(complete,original,root/'terminal-store',r['requestSHA256'],'single',19,original.fingerprint)
+                       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/hdd8tb/mrun-work/job-c266fd593526/terminal_capture_cut.py", line 30, in persist
+    with local_store_only(root):store.save(cut)
+         ~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/beast/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "/mnt/hdd8tb/mrun-work/job-c266fd593526/terminal_capture_guard.py", line 46, in local_store_only
+    import saturn_pub.shared_store as shared
+ModuleNotFoundError: No module named 'saturn_pub.shared_store'

@@ -1,0 +1,236 @@
+{
+  "admission": {
+    "claim_key": "mrun:240cc67de3a09586ef0cbaaf2f9f05b7de8f80a9e45223a94ca496b651ff3b24",
+    "fencing_epoch": 1,
+    "idempotency_key": "mrun:240cc67de3a09586ef0cbaaf2f9f05b7de8f80a9e45223a94ca496b651ff3b24",
+    "scope_sha256": "bacf66e277e42cfacfc6d3b7657239bc8ca61d130a1188bb0d843fac47dddc75"
+  },
+  "cause": "Pinned saturn_pub0.4.1 wheel has no shared_store module; development source did. Failure at first persist before any terminal cut or numerical artifact sealed.",
+  "completeLogSHA256": "61e598d34daae02f9b7c755e9b3c0f9b8527bf7bbb4fd651e53ca2f8a7d77d18",
+  "instrument_status": "package-mismatch-no-sealed-capture",
+  "jobID": "job-c266fd593526",
+  "mechanics_status": "failed-at-persistence",
+  "observedEmptyResult": [],
+  "observedEmptyTerminalStore": [],
+  "observedNoArrays": [],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "d573a9f1ea578aec8ce951d92ad4053f773445169788ef9fff71b7e0e38fafcf",
+      "size_bytes": 3223385
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794056860.7148945,
+      "sha256": "d573a9f1ea578aec8ce951d92ad4053f773445169788ef9fff71b7e0e38fafcf",
+      "size_bytes": 3223385
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794056860.5889754,
+      "sha256": "d573a9f1ea578aec8ce951d92ad4053f773445169788ef9fff71b7e0e38fafcf",
+      "size_bytes": 3223385
+    }
+  },
+  "prefixWork": "Traceback reaches single19 source persist after the four-joint/nineteen-single loop. This is code/trace inference; live counters were not durable and exact completed arithmetic is not separately measured.",
+  "requestSHA256": "248f5fbb736babc2a215ddf41fbe31fd965d3463a29706506c1e2dfbcab8ba26",
+  "result": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-c266fd593526",
+      "job_log": {
+        "bytes": 1337,
+        "sha256": "61e598d34daae02f9b7c755e9b3c0f9b8527bf7bbb4fd651e53ca2f8a7d77d18"
+      },
+      "job_status": "failed",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-c266fd593526/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=4",
+        "OPENBLAS_NUM_THREADS=4",
+        "MKL_NUM_THREADS=4",
+        "CUBLAS_WORKSPACE_CONFIG=:4096:8",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "--with",
+        "./mdb_runtime-0.1.0-py3-none-any.whl",
+        "--with",
+        "./saturn_pub-0.4.1-py3-none-any.whl",
+        "--with",
+        "./mrun_pub-0.1.2-py3-none-any.whl",
+        "python",
+        "-u",
+        "terminal_capture_worker.py",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-c266fd593526",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-c266fd593526/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794056860.7020953
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794056860.7427847
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794056860.768611
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794056860.7953446
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794056930.3759196
+        },
+        {
+          "name": "finished",
+          "ts": 1794056930.3868604
+        }
+      ]
+    },
+    "elapsed_s": 69.8,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "d573a9f1ea578aec8ce951d92ad4053f773445169788ef9fff71b7e0e38fafcf",
+      "size_bytes": 3223385
+    },
+    "failure": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=4",
+        "OPENBLAS_NUM_THREADS=4",
+        "MKL_NUM_THREADS=4",
+        "CUBLAS_WORKSPACE_CONFIG=:4096:8",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "--with",
+        "./mdb_runtime-0.1.0-py3-none-any.whl",
+        "--with",
+        "./saturn_pub-0.4.1-py3-none-any.whl",
+        "--with",
+        "./mrun_pub-0.1.2-py3-none-any.whl",
+        "python",
+        "-u",
+        "terminal_capture_worker.py",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-c266fd593526",
+      "kind": "process_exit",
+      "log_tail": "<frozen runpy>:130: RuntimeWarning: 'mrun.os_limit' found in sys.modules after import of package 'mrun', but prior to execution of 'mrun.os_limit'; this may result in unpredictable behaviour\nInstalled 65 packages in 2.12s\nTraceback (most recent call last):\n  File \"/mnt/hdd8tb/mrun-work/job-c266fd593526/terminal_capture_worker.py\", line 147, in <module>\n    if __name__=='__main__':execute(sys.argv[1])\n                            ~~~~~~~^^^^^^^^^^^^^\n  File \"/mnt/hdd8tb/mrun-work/job-c266fd593526/terminal_capture_worker.py\", line 99, in execute\n    captured['source']=persist(complete,original,root/'terminal-store',r['requestSHA256'],'single',19,original.fingerprint)\n                       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/hdd8tb/mrun-work/job-c266fd593526/terminal_capture_cut.py\", line 30, in persist\n    with local_store_only(root):store.save(cut)\n         ~~~~~~~~~~~~~~~~^^^^^^\n  File \"/home/beast/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/contextlib.py\", line 141, in __enter__\n    return next(self.gen)\n  File \"/mnt/hdd8tb/mrun-work/job-c266fd593526/terminal_capture_guard.py\", line 46, in local_store_only\n    import saturn_pub.shared_store as shared\nModuleNotFoundError: No module named 'saturn_pub.shared_store'\n",
+      "message": "child exited with return code 1",
+      "observed_ts": 1794056930.38661,
+      "phase": "process.finalize",
+      "resources": {
+        "peak_rss_mb": 1931.1,
+        "peak_vram_mb": 1192.0,
+        "ram_ceiling_mb": 6758.400000000001,
+        "vram_ceiling_mb": 3379.2000000000003
+      },
+      "returncode": 1
+    },
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 1931.1,
+    "peak_vram_mb": 1192.0,
+    "returncode": 1,
+    "status": "failed"
+  },
+  "schema": "tce-terminal-capture-failure-v1",
+  "scope": "Failed native prefix attempt retained immutably; no terminal source, target, velocity, reduced producer or image result. No model/scientific null.",
+  "state": "failed",
+  "terminal_status": "unassessed"
+}

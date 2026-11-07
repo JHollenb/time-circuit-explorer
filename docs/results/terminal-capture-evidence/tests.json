@@ -1,0 +1,27 @@
+{
+  "schema": "tce-terminal-capture-tests-v1",
+  "command": "rtk proxy ../common/bin/common exec python -m pytest generator -q",
+  "passed": 305,
+  "seconds": 18.84,
+  "exitCode": 0,
+  "sourceHashes": {
+    "terminal_capture_study_v2.py": "d4dff86e9d54e56b262526fcdd9bdafc0b29c207b3d566e4d610302b8d978f88",
+    "terminal_capture_worker_v2.py": "c2b32fb46f84bf8af1dfb4f67fda2964ad0358ecb200a7432a12cea4fa897e6b",
+    "terminal_capture_cut_v2.py": "d02e3472d3a336783c8a7d2a634cdeb6aced67ef3269de3d0f82b6a794ff677c",
+    "terminal_capture_guard_v2.py": "eb577f23577062efef8107a51ae7e2baf8ae860678612532c17b55cda3fe7849",
+    "terminal_capture_mechanics.py": "13639ef08ff5003bd079b4938b922b9739ccc5ebce2b50b5a4571b3a80b79155",
+    "terminal_liveness_intake.py": "00ea97b1e6d0f113612b8c2bc1583f1b704c3ba20ad56c5ac1a6168aec83784f",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "paired_fields.py": "408e035cb2f2f99558dbbe5abccdc281a5deade195abdbbc003549318ef09e88",
+    "flux_clock.py": "bde499ff527f624fcd1b62a8f6f0b2fbaf70eebc7b7835fcd7d4c6403b4e0b2b",
+    "flux_clock_study.py": "eaccf6bdb75678ac6acb5a371f8858201cf83dbac4de83868b70d5570e4beddc",
+    "complete_masked_study.py": "f52633bc9d729b2a5032e024331d9b20fcee8cb993941cab87c197089cdcff99",
+    "masked_kv_study.py": "920416ce49d823b1337a7f6d9f5fca90c8047723bb6b1d37dc09967114b6ad89",
+    "projected_complement.py": "c9a7bfb8d5bdae210fa87ebb460f116567cc3206974cf77974944e2e3f47d225",
+    "sparse_text_kv.py": "872f0871dbe67c24197e9fcf6a92607673c5d66fb976b4657e1075425ab1b652",
+    "test_terminal_capture_cut.py": "7ae721ac4a0a75cd060131de68ccae394e44a1cb0d1264d5a6d06a0adbc4b508",
+    "test_terminal_capture_guard.py": "d4d86c42a0eebf67ad3d5a354920f58a5d94ab72c0aa34d6108156430846bad1",
+    "test_terminal_capture_wheel.py": "1acbb7831e3ddcb8de78006f9294a9571b57afe4c9da1ae54f25b89a5a7efb75"
+  },
+  "scope": "Complete generator mechanics suite, including tiny complete-cut/guard/deployed-wheel fixtures. No full-native parity, learned-reduction or image-quality test."
+}

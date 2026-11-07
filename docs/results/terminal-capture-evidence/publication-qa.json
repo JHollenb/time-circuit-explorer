@@ -1,0 +1,73 @@
+{
+  "NPYPayloadWitnesses": 4,
+  "advisorSHA256": "d71c989c48272a9a09e94db46478a6147b4d84da9b82711772773a2ccea81b02",
+  "articleSHA256": "ad285542fc90b3071b22e12a7ae75a449777cad9e138b731b1a0715f66766abc",
+  "auditSourceSHA256": "f641b2a4667e553ba9a1618b7f94c8864d63b476b3e0392a369d597d7ed73ba1",
+  "blogSHA256": "555c1bc105736232bc05f6d85a3eb3b595bb6130b042aebbe953b8517575c7dd",
+  "completeCutJoins": [
+    {
+      "cursor": 19,
+      "modelIdentity": "a09191c5ff813af77bf89d8e4b9a07237befb67c1aef3e722322d3491250fcd0",
+      "parent": "8551691e8094d927d8521d0b5e6a0416520b2d90abea800d65d14c8d986062e3",
+      "phase": "single",
+      "role": "source",
+      "unchangedDescriptors": [
+        "conditioning",
+        "context",
+        "img_ids",
+        "latent",
+        "noise_prediction",
+        "sigmas",
+        "step",
+        "timesteps",
+        "txt_ids"
+      ]
+    },
+    {
+      "cursor": 20,
+      "modelIdentity": "a09191c5ff813af77bf89d8e4b9a07237befb67c1aef3e722322d3491250fcd0",
+      "parent": "6ad613490ff20c97e5ef42b6c946a349b73387b4b6899e30c2955329005c8955",
+      "phase": "readout",
+      "role": "target",
+      "unchangedDescriptors": [
+        "conditioning",
+        "context",
+        "img_ids",
+        "latent",
+        "noise_prediction",
+        "sigmas",
+        "step",
+        "timesteps",
+        "txt_ids"
+      ]
+    }
+  ],
+  "completeStateCuts": 2,
+  "distinctOriginalTensors": 146,
+  "durableStageRows": 25,
+  "executionIntakeSHA256": "185f860cd3097ed4b46d2661a2789b02e93cdb8f72dffddb7351b4b40c1024cf",
+  "explicitOutputABIs": 29,
+  "fullByteFiles": 71,
+  "headAffineMACs": 421527552,
+  "localLinksChecked": 62,
+  "nativeAffines": 90,
+  "nativeAttentionCalls": 24,
+  "nextNewestPostReviewCycle": 65,
+  "nextPlanSHA256": "21ab4c488b6490b7bff4038b9d644cb0c59fcbb4932b679428359ffb86b4ae71",
+  "nextStorageCycle": 66,
+  "ownedSourcePins": 14,
+  "progressSHA256": "33abd2e33fd1ee2cdb027ea7bb42b8e00b3f7345944c1a882bbc51c012a604bf",
+  "reportSHA256": "b7d357ee2e2d7388686664143799c28882ba22b56229117b161d0c0acbecd7a8",
+  "schema": "tce-terminal-capture-publication-qa-v1",
+  "scope": "Complete typed component-capture/custody/publication mechanics. No independent full-native parity, reduced-producer/image/speedup or arbitrary-prompt zero-neural certification.",
+  "sourceAuditedIntermediateConcatenations": [
+    {
+      "from": "joint4 text/image",
+      "independentIntermediateBytesRetained": false,
+      "kind": "source-audited-concatenation",
+      "to": "single0 rows"
+    }
+  ],
+  "testsPassed": 305,
+  "typedNativeActs": 25
+}
