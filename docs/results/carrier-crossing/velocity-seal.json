@@ -1,0 +1,1042 @@
+{
+  "fields": {
+    "R0A": {
+      "bytes": 262272,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-0b06996e8215/arrays/velocity/R0A.npy",
+      "payloadSHA256": "210ad2a51efb23aba3ebcf06bda28d113a18151ff6c31686d2d91745b8457574",
+      "sha256": "f92334afaaaaea70c5777afb6d4acecabfc09eb652824ee30b0b715e7237eeb7",
+      "shape": [
+        1,
+        1024,
+        128
+      ],
+      "storedDtype": "uint16"
+    },
+    "R0B": {
+      "bytes": 262272,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-0b06996e8215/arrays/velocity/R0B.npy",
+      "payloadSHA256": "a674ac54f51de7f956f595cf9852b9fa77ac0ab95d25bcbac20d50793bc0a239",
+      "sha256": "c9fe08b84712e75e6d67a53aa7d62ece0e2d127fe90945621e8cc7b28f7fdd93",
+      "shape": [
+        1,
+        1024,
+        128
+      ],
+      "storedDtype": "uint16"
+    },
+    "R1A": {
+      "bytes": 262272,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-0b06996e8215/arrays/velocity/R1A.npy",
+      "payloadSHA256": "32b61ce2475ad1561f4e854ce645ff9df92093922f1f4c70f21cb3fd2801e96b",
+      "sha256": "213e37b948bca9003b434838fbee466f2ca0a3c55faa49de98b5274e2a93ae3e",
+      "shape": [
+        1,
+        1024,
+        128
+      ],
+      "storedDtype": "uint16"
+    },
+    "R1B": {
+      "bytes": 262272,
+      "logicalDtype": "torch.bfloat16",
+      "path": "/mnt/hdd8tb/mrun-work/job-0b06996e8215/arrays/velocity/R1B.npy",
+      "payloadSHA256": "7e0ee35b524863f302797720fe1369772a74a65e61587bc9b7d4dfc3cbc84009",
+      "sha256": "0dab4395f62bf11f2e250e7f3e80767987719757b4f313532ba8b41dde450951",
+      "shape": [
+        1,
+        1024,
+        128
+      ],
+      "storedDtype": "uint16"
+    }
+  },
+  "frames": [
+    {
+      "cell": "R0A",
+      "outputFrame": {
+        "act": "tce.replace_first_joint_image_carrier:v1",
+        "frame_id": "d4654e5c5274b2ff55d72bb4d1e1dbe1b5f78e8bae3e0fa9f1d904a55d178a4d",
+        "implementation": "native-projection-input-clamp",
+        "metadata": {
+          "carrier": "A",
+          "cell": "R0A",
+          "receiver": "R0"
+        },
+        "parent_frame_id": "0bec52f816a93bc233f870a1237178fb9c819d5feca11519373e179636bd6a78",
+        "program_fingerprint": "1aca5e50d52a7732a17dceec21f56f9b6a54f139773e25ad104ea4351388e071",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "consumedH0": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "shape": [
+                1,
+                1024,
+                3072
+              ]
+            },
+            "fingerprint": "56f3ed3a98cbdeab8d3a6952e703bca5120918944c72e94f019a358d3345ea18",
+            "handle": "saturn://consumedH0",
+            "kind": "tensor",
+            "name": "consumedH0"
+          },
+          "donorH0": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "storageOffset": 0,
+              "stride": [
+                3145728,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "5d06064ce2a2155757269eacf29f68fc2217fb564f165704c244a2f5cb2d767c",
+            "handle": "saturn://donorH0",
+            "kind": "tensor",
+            "name": "donorH0"
+          },
+          "nativeH0": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "storageOffset": 1572864,
+              "stride": [
+                4718592,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "5d06064ce2a2155757269eacf29f68fc2217fb564f165704c244a2f5cb2d767c",
+            "handle": "saturn://nativeH0",
+            "kind": "tensor",
+            "name": "nativeH0"
+          },
+          "receiverContract": {
+            "abi": {
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              }
+            },
+            "fingerprint": "eff71da7a6a5e174648589e6a2a3d204d652087c518a82def4624fb69ce7c3ff",
+            "handle": "saturn://receiverContract",
+            "kind": "receiver-contract",
+            "name": "receiverContract"
+          }
+        }
+      },
+      "sourceFrame": {
+        "act": "root:v1",
+        "frame_id": "0bec52f816a93bc233f870a1237178fb9c819d5feca11519373e179636bd6a78",
+        "implementation": "saturn",
+        "metadata": {
+          "carrier": "A",
+          "cell": "R0A",
+          "receiver": "R0"
+        },
+        "parent_frame_id": null,
+        "program_fingerprint": "1aca5e50d52a7732a17dceec21f56f9b6a54f139773e25ad104ea4351388e071",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "donorH0": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "storageOffset": 0,
+              "stride": [
+                3145728,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "5d06064ce2a2155757269eacf29f68fc2217fb564f165704c244a2f5cb2d767c",
+            "handle": "saturn://donorH0",
+            "kind": "tensor",
+            "name": "donorH0"
+          },
+          "nativeH0": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "storageOffset": 1572864,
+              "stride": [
+                4718592,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "5d06064ce2a2155757269eacf29f68fc2217fb564f165704c244a2f5cb2d767c",
+            "handle": "saturn://nativeH0",
+            "kind": "tensor",
+            "name": "nativeH0"
+          },
+          "receiverContract": {
+            "abi": {
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              }
+            },
+            "fingerprint": "eff71da7a6a5e174648589e6a2a3d204d652087c518a82def4624fb69ce7c3ff",
+            "handle": "saturn://receiverContract",
+            "kind": "receiver-contract",
+            "name": "receiverContract"
+          }
+        }
+      }
+    },
+    {
+      "cell": "R0B",
+      "outputFrame": {
+        "act": "tce.replace_first_joint_image_carrier:v1",
+        "frame_id": "dd6791a5eef562b43a7ab1698d74c7564d1ab169fe6c922e7e475b477bf12f50",
+        "implementation": "native-projection-input-clamp",
+        "metadata": {
+          "carrier": "B",
+          "cell": "R0B",
+          "receiver": "R0"
+        },
+        "parent_frame_id": "b9bba30d60bfefc7bf64b368ba044f809abe4b483ffa5d0d0a569241b564d83a",
+        "program_fingerprint": "1aca5e50d52a7732a17dceec21f56f9b6a54f139773e25ad104ea4351388e071",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "consumedH0": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "shape": [
+                1,
+                1024,
+                3072
+              ]
+            },
+            "fingerprint": "681a12a652692a5adac159a26f113f56927b72c573c673ebe7549952f1aa6ab6",
+            "handle": "saturn://consumedH0",
+            "kind": "tensor",
+            "name": "consumedH0"
+          },
+          "donorH0": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "storageOffset": 0,
+              "stride": [
+                3145728,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "b6c5a41df2a38d1049e8bc9b19fbf3011ba65a593d36f57e8ef735a7d077fff7",
+            "handle": "saturn://donorH0",
+            "kind": "tensor",
+            "name": "donorH0"
+          },
+          "nativeH0": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "storageOffset": 1572864,
+              "stride": [
+                4718592,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "5d06064ce2a2155757269eacf29f68fc2217fb564f165704c244a2f5cb2d767c",
+            "handle": "saturn://nativeH0",
+            "kind": "tensor",
+            "name": "nativeH0"
+          },
+          "receiverContract": {
+            "abi": {
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              }
+            },
+            "fingerprint": "eff71da7a6a5e174648589e6a2a3d204d652087c518a82def4624fb69ce7c3ff",
+            "handle": "saturn://receiverContract",
+            "kind": "receiver-contract",
+            "name": "receiverContract"
+          }
+        }
+      },
+      "sourceFrame": {
+        "act": "root:v1",
+        "frame_id": "b9bba30d60bfefc7bf64b368ba044f809abe4b483ffa5d0d0a569241b564d83a",
+        "implementation": "saturn",
+        "metadata": {
+          "carrier": "B",
+          "cell": "R0B",
+          "receiver": "R0"
+        },
+        "parent_frame_id": null,
+        "program_fingerprint": "1aca5e50d52a7732a17dceec21f56f9b6a54f139773e25ad104ea4351388e071",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "donorH0": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "storageOffset": 0,
+              "stride": [
+                3145728,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "b6c5a41df2a38d1049e8bc9b19fbf3011ba65a593d36f57e8ef735a7d077fff7",
+            "handle": "saturn://donorH0",
+            "kind": "tensor",
+            "name": "donorH0"
+          },
+          "nativeH0": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "storageOffset": 1572864,
+              "stride": [
+                4718592,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "5d06064ce2a2155757269eacf29f68fc2217fb564f165704c244a2f5cb2d767c",
+            "handle": "saturn://nativeH0",
+            "kind": "tensor",
+            "name": "nativeH0"
+          },
+          "receiverContract": {
+            "abi": {
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              }
+            },
+            "fingerprint": "eff71da7a6a5e174648589e6a2a3d204d652087c518a82def4624fb69ce7c3ff",
+            "handle": "saturn://receiverContract",
+            "kind": "receiver-contract",
+            "name": "receiverContract"
+          }
+        }
+      }
+    },
+    {
+      "cell": "R1A",
+      "outputFrame": {
+        "act": "tce.replace_first_joint_image_carrier:v1",
+        "frame_id": "6b1d744c8622ff5bbb5e015bd33e029add40d8d96d4428e23ccb34f3430e96b1",
+        "implementation": "native-projection-input-clamp",
+        "metadata": {
+          "carrier": "A",
+          "cell": "R1A",
+          "receiver": "R1"
+        },
+        "parent_frame_id": "a96a0ec018cda938b7f80a2a27180e08ce681b5f74acf6bcebc0abc19510074c",
+        "program_fingerprint": "1aca5e50d52a7732a17dceec21f56f9b6a54f139773e25ad104ea4351388e071",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "consumedH0": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "shape": [
+                1,
+                1024,
+                3072
+              ]
+            },
+            "fingerprint": "56f3ed3a98cbdeab8d3a6952e703bca5120918944c72e94f019a358d3345ea18",
+            "handle": "saturn://consumedH0",
+            "kind": "tensor",
+            "name": "consumedH0"
+          },
+          "donorH0": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "storageOffset": 0,
+              "stride": [
+                3145728,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "5d06064ce2a2155757269eacf29f68fc2217fb564f165704c244a2f5cb2d767c",
+            "handle": "saturn://donorH0",
+            "kind": "tensor",
+            "name": "donorH0"
+          },
+          "nativeH0": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "storageOffset": 1572864,
+              "stride": [
+                4718592,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "1eceec65f6944ecb2eda93c37946101f587ee1ee333eff9f7c22f51a3425d131",
+            "handle": "saturn://nativeH0",
+            "kind": "tensor",
+            "name": "nativeH0"
+          },
+          "receiverContract": {
+            "abi": {
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              }
+            },
+            "fingerprint": "0258b520a616caf251c9bac31a1db29e3bd6e012b924f4cdeb1ccc6013412a6f",
+            "handle": "saturn://receiverContract",
+            "kind": "receiver-contract",
+            "name": "receiverContract"
+          }
+        }
+      },
+      "sourceFrame": {
+        "act": "root:v1",
+        "frame_id": "a96a0ec018cda938b7f80a2a27180e08ce681b5f74acf6bcebc0abc19510074c",
+        "implementation": "saturn",
+        "metadata": {
+          "carrier": "A",
+          "cell": "R1A",
+          "receiver": "R1"
+        },
+        "parent_frame_id": null,
+        "program_fingerprint": "1aca5e50d52a7732a17dceec21f56f9b6a54f139773e25ad104ea4351388e071",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "donorH0": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "storageOffset": 0,
+              "stride": [
+                3145728,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "5d06064ce2a2155757269eacf29f68fc2217fb564f165704c244a2f5cb2d767c",
+            "handle": "saturn://donorH0",
+            "kind": "tensor",
+            "name": "donorH0"
+          },
+          "nativeH0": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "storageOffset": 1572864,
+              "stride": [
+                4718592,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "1eceec65f6944ecb2eda93c37946101f587ee1ee333eff9f7c22f51a3425d131",
+            "handle": "saturn://nativeH0",
+            "kind": "tensor",
+            "name": "nativeH0"
+          },
+          "receiverContract": {
+            "abi": {
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              }
+            },
+            "fingerprint": "0258b520a616caf251c9bac31a1db29e3bd6e012b924f4cdeb1ccc6013412a6f",
+            "handle": "saturn://receiverContract",
+            "kind": "receiver-contract",
+            "name": "receiverContract"
+          }
+        }
+      }
+    },
+    {
+      "cell": "R1B",
+      "outputFrame": {
+        "act": "tce.replace_first_joint_image_carrier:v1",
+        "frame_id": "45537f9630cc2b278c6bcfcf75acada5b15f2ec112a8c78a57ba10b95a75aeac",
+        "implementation": "native-projection-input-clamp",
+        "metadata": {
+          "carrier": "B",
+          "cell": "R1B",
+          "receiver": "R1"
+        },
+        "parent_frame_id": "7036be1719928341c033167003926da0e190ff0829b39cec80ab6872158d89e8",
+        "program_fingerprint": "1aca5e50d52a7732a17dceec21f56f9b6a54f139773e25ad104ea4351388e071",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "consumedH0": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "shape": [
+                1,
+                1024,
+                3072
+              ]
+            },
+            "fingerprint": "681a12a652692a5adac159a26f113f56927b72c573c673ebe7549952f1aa6ab6",
+            "handle": "saturn://consumedH0",
+            "kind": "tensor",
+            "name": "consumedH0"
+          },
+          "donorH0": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "storageOffset": 0,
+              "stride": [
+                3145728,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "b6c5a41df2a38d1049e8bc9b19fbf3011ba65a593d36f57e8ef735a7d077fff7",
+            "handle": "saturn://donorH0",
+            "kind": "tensor",
+            "name": "donorH0"
+          },
+          "nativeH0": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "storageOffset": 1572864,
+              "stride": [
+                4718592,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "1eceec65f6944ecb2eda93c37946101f587ee1ee333eff9f7c22f51a3425d131",
+            "handle": "saturn://nativeH0",
+            "kind": "tensor",
+            "name": "nativeH0"
+          },
+          "receiverContract": {
+            "abi": {
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              }
+            },
+            "fingerprint": "0258b520a616caf251c9bac31a1db29e3bd6e012b924f4cdeb1ccc6013412a6f",
+            "handle": "saturn://receiverContract",
+            "kind": "receiver-contract",
+            "name": "receiverContract"
+          }
+        }
+      },
+      "sourceFrame": {
+        "act": "root:v1",
+        "frame_id": "7036be1719928341c033167003926da0e190ff0829b39cec80ab6872158d89e8",
+        "implementation": "saturn",
+        "metadata": {
+          "carrier": "B",
+          "cell": "R1B",
+          "receiver": "R1"
+        },
+        "parent_frame_id": null,
+        "program_fingerprint": "1aca5e50d52a7732a17dceec21f56f9b6a54f139773e25ad104ea4351388e071",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "donorH0": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "storageOffset": 0,
+              "stride": [
+                3145728,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "b6c5a41df2a38d1049e8bc9b19fbf3011ba65a593d36f57e8ef735a7d077fff7",
+            "handle": "saturn://donorH0",
+            "kind": "tensor",
+            "name": "donorH0"
+          },
+          "nativeH0": {
+            "abi": {
+              "dtype": "torch.bfloat16",
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              },
+              "shape": [
+                1,
+                1024,
+                3072
+              ],
+              "storageOffset": 1572864,
+              "stride": [
+                4718592,
+                3072,
+                1
+              ]
+            },
+            "fingerprint": "1eceec65f6944ecb2eda93c37946101f587ee1ee333eff9f7c22f51a3425d131",
+            "handle": "saturn://nativeH0",
+            "kind": "tensor",
+            "name": "nativeH0"
+          },
+          "receiverContract": {
+            "abi": {
+              "saturn:fingerprint": {
+                "durable": true,
+                "policy": "producer-content-sha256-v1"
+              }
+            },
+            "fingerprint": "0258b520a616caf251c9bac31a1db29e3bd6e012b924f4cdeb1ccc6013412a6f",
+            "handle": "saturn://receiverContract",
+            "kind": "receiver-contract",
+            "name": "receiverContract"
+          }
+        }
+      }
+    }
+  ],
+  "requestSHA256": "1aca5e50d52a7732a17dceec21f56f9b6a54f139773e25ad104ea4351388e071",
+  "schema": "tce-carrier-crossing-velocity-seal-v1",
+  "writes": [
+    {
+      "carrier": "A",
+      "cell": "R0A",
+      "consumedPayloadSHA256": "5d06064ce2a2155757269eacf29f68fc2217fb564f165704c244a2f5cb2d767c",
+      "consumedStorageOffset": 1572864,
+      "consumedStoragePointer": 134387924467712,
+      "consumedStride": [
+        4718592,
+        3072,
+        1
+      ],
+      "donor": {
+        "bytes": 6291584,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.base.canonical/H0.npy",
+        "payloadSHA256": "5d06064ce2a2155757269eacf29f68fc2217fb564f165704c244a2f5cb2d767c",
+        "sha256": "9b6444918be80b3f1af6d034867abc0b32422d975ab02e61e438527c6e58c47b",
+        "shape": [
+          1,
+          1024,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "donorStoragePointer": 134372568596480,
+      "dtype": "torch.bfloat16",
+      "evidence": {
+        "act": "tce.replace_first_joint_image_carrier:v1",
+        "elapsed_ms": 17.04339124262333,
+        "implementation": "native-projection-input-clamp",
+        "input_frame_id": "0bec52f816a93bc233f870a1237178fb9c819d5feca11519373e179636bd6a78",
+        "metrics": {
+          "consumedPayloadSHA256": "5d06064ce2a2155757269eacf29f68fc2217fb564f165704c244a2f5cb2d767c",
+          "consumedStorageOffset": 1572864,
+          "consumedStride": [
+            4718592,
+            3072,
+            1
+          ],
+          "nativeH0PayloadSHA256": "5d06064ce2a2155757269eacf29f68fc2217fb564f165704c244a2f5cb2d767c",
+          "recipientStorageOffset": 1572864,
+          "recipientStride": [
+            4718592,
+            3072,
+            1
+          ],
+          "separateStorage": true
+        },
+        "numerical_contract": "complete-carrier-replacement-native-stride-offset-preserved",
+        "output_frame_id": "d4654e5c5274b2ff55d72bb4d1e1dbe1b5f78e8bae3e0fa9f1d904a55d178a4d"
+      },
+      "nativeH0": {
+        "bytes": 6291584,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-0b06996e8215/arrays/receiver/R0/nativeH0.npy",
+        "payloadSHA256": "5d06064ce2a2155757269eacf29f68fc2217fb564f165704c244a2f5cb2d767c",
+        "sha256": "9b6444918be80b3f1af6d034867abc0b32422d975ab02e61e438527c6e58c47b",
+        "shape": [
+          1,
+          1024,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "receiver": "R0",
+      "recipientStorageOffset": 1572864,
+      "recipientStoragePointer": 134387826950144,
+      "recipientStride": [
+        4718592,
+        3072,
+        1
+      ],
+      "shape": [
+        1,
+        1024,
+        3072
+      ]
+    },
+    {
+      "carrier": "B",
+      "cell": "R0B",
+      "consumedPayloadSHA256": "b6c5a41df2a38d1049e8bc9b19fbf3011ba65a593d36f57e8ef735a7d077fff7",
+      "consumedStorageOffset": 1572864,
+      "consumedStoragePointer": 134388358578176,
+      "consumedStride": [
+        4718592,
+        3072,
+        1
+      ],
+      "donor": {
+        "bytes": 6291584,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.base.far_bottom_right/H0.npy",
+        "payloadSHA256": "b6c5a41df2a38d1049e8bc9b19fbf3011ba65a593d36f57e8ef735a7d077fff7",
+        "sha256": "b3326f6f82c4ed9f49c8b2aeda93cf5cdf951737610d325a1418274d395b3737",
+        "shape": [
+          1,
+          1024,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "donorStoragePointer": 134372574887936,
+      "dtype": "torch.bfloat16",
+      "evidence": {
+        "act": "tce.replace_first_joint_image_carrier:v1",
+        "elapsed_ms": 16.892768908292055,
+        "implementation": "native-projection-input-clamp",
+        "input_frame_id": "b9bba30d60bfefc7bf64b368ba044f809abe4b483ffa5d0d0a569241b564d83a",
+        "metrics": {
+          "consumedPayloadSHA256": "b6c5a41df2a38d1049e8bc9b19fbf3011ba65a593d36f57e8ef735a7d077fff7",
+          "consumedStorageOffset": 1572864,
+          "consumedStride": [
+            4718592,
+            3072,
+            1
+          ],
+          "nativeH0PayloadSHA256": "5d06064ce2a2155757269eacf29f68fc2217fb564f165704c244a2f5cb2d767c",
+          "recipientStorageOffset": 1572864,
+          "recipientStride": [
+            4718592,
+            3072,
+            1
+          ],
+          "separateStorage": true
+        },
+        "numerical_contract": "complete-carrier-replacement-native-stride-offset-preserved",
+        "output_frame_id": "dd6791a5eef562b43a7ab1698d74c7564d1ab169fe6c922e7e475b477bf12f50"
+      },
+      "nativeH0": {
+        "bytes": 6291584,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-0b06996e8215/arrays/receiver/R0/nativeH0.npy",
+        "payloadSHA256": "5d06064ce2a2155757269eacf29f68fc2217fb564f165704c244a2f5cb2d767c",
+        "sha256": "9b6444918be80b3f1af6d034867abc0b32422d975ab02e61e438527c6e58c47b",
+        "shape": [
+          1,
+          1024,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "receiver": "R0",
+      "recipientStorageOffset": 1572864,
+      "recipientStoragePointer": 134387524960256,
+      "recipientStride": [
+        4718592,
+        3072,
+        1
+      ],
+      "shape": [
+        1,
+        1024,
+        3072
+      ]
+    },
+    {
+      "carrier": "A",
+      "cell": "R1A",
+      "consumedPayloadSHA256": "5d06064ce2a2155757269eacf29f68fc2217fb564f165704c244a2f5cb2d767c",
+      "consumedStorageOffset": 1572864,
+      "consumedStoragePointer": 134388358578176,
+      "consumedStride": [
+        4718592,
+        3072,
+        1
+      ],
+      "donor": {
+        "bytes": 6291584,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.base.canonical/H0.npy",
+        "payloadSHA256": "5d06064ce2a2155757269eacf29f68fc2217fb564f165704c244a2f5cb2d767c",
+        "sha256": "9b6444918be80b3f1af6d034867abc0b32422d975ab02e61e438527c6e58c47b",
+        "shape": [
+          1,
+          1024,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "donorStoragePointer": 134372568596480,
+      "dtype": "torch.bfloat16",
+      "evidence": {
+        "act": "tce.replace_first_joint_image_carrier:v1",
+        "elapsed_ms": 16.556621063500643,
+        "implementation": "native-projection-input-clamp",
+        "input_frame_id": "a96a0ec018cda938b7f80a2a27180e08ce681b5f74acf6bcebc0abc19510074c",
+        "metrics": {
+          "consumedPayloadSHA256": "5d06064ce2a2155757269eacf29f68fc2217fb564f165704c244a2f5cb2d767c",
+          "consumedStorageOffset": 1572864,
+          "consumedStride": [
+            4718592,
+            3072,
+            1
+          ],
+          "nativeH0PayloadSHA256": "1eceec65f6944ecb2eda93c37946101f587ee1ee333eff9f7c22f51a3425d131",
+          "recipientStorageOffset": 1572864,
+          "recipientStride": [
+            4718592,
+            3072,
+            1
+          ],
+          "separateStorage": true
+        },
+        "numerical_contract": "complete-carrier-replacement-native-stride-offset-preserved",
+        "output_frame_id": "6b1d744c8622ff5bbb5e015bd33e029add40d8d96d4428e23ccb34f3430e96b1"
+      },
+      "nativeH0": {
+        "bytes": 6291584,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-0b06996e8215/arrays/receiver/R1/nativeH0.npy",
+        "payloadSHA256": "1eceec65f6944ecb2eda93c37946101f587ee1ee333eff9f7c22f51a3425d131",
+        "sha256": "380c1267b67301af7e3051ed43be92a52a542adb52e40bf5606c7b57ac38e64c",
+        "shape": [
+          1,
+          1024,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "receiver": "R1",
+      "recipientStorageOffset": 1572864,
+      "recipientStoragePointer": 134387524960256,
+      "recipientStride": [
+        4718592,
+        3072,
+        1
+      ],
+      "shape": [
+        1,
+        1024,
+        3072
+      ]
+    },
+    {
+      "carrier": "B",
+      "cell": "R1B",
+      "consumedPayloadSHA256": "b6c5a41df2a38d1049e8bc9b19fbf3011ba65a593d36f57e8ef735a7d077fff7",
+      "consumedStorageOffset": 1572864,
+      "consumedStoragePointer": 134388358578176,
+      "consumedStride": [
+        4718592,
+        3072,
+        1
+      ],
+      "donor": {
+        "bytes": 6291584,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-1892a00329e9/arrays/reads/s60672.base.far_bottom_right/H0.npy",
+        "payloadSHA256": "b6c5a41df2a38d1049e8bc9b19fbf3011ba65a593d36f57e8ef735a7d077fff7",
+        "sha256": "b3326f6f82c4ed9f49c8b2aeda93cf5cdf951737610d325a1418274d395b3737",
+        "shape": [
+          1,
+          1024,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "donorStoragePointer": 134372574887936,
+      "dtype": "torch.bfloat16",
+      "evidence": {
+        "act": "tce.replace_first_joint_image_carrier:v1",
+        "elapsed_ms": 15.105651691555977,
+        "implementation": "native-projection-input-clamp",
+        "input_frame_id": "7036be1719928341c033167003926da0e190ff0829b39cec80ab6872158d89e8",
+        "metrics": {
+          "consumedPayloadSHA256": "b6c5a41df2a38d1049e8bc9b19fbf3011ba65a593d36f57e8ef735a7d077fff7",
+          "consumedStorageOffset": 1572864,
+          "consumedStride": [
+            4718592,
+            3072,
+            1
+          ],
+          "nativeH0PayloadSHA256": "1eceec65f6944ecb2eda93c37946101f587ee1ee333eff9f7c22f51a3425d131",
+          "recipientStorageOffset": 1572864,
+          "recipientStride": [
+            4718592,
+            3072,
+            1
+          ],
+          "separateStorage": true
+        },
+        "numerical_contract": "complete-carrier-replacement-native-stride-offset-preserved",
+        "output_frame_id": "45537f9630cc2b278c6bcfcf75acada5b15f2ec112a8c78a57ba10b95a75aeac"
+      },
+      "nativeH0": {
+        "bytes": 6291584,
+        "logicalDtype": "torch.bfloat16",
+        "path": "/mnt/hdd8tb/mrun-work/job-0b06996e8215/arrays/receiver/R1/nativeH0.npy",
+        "payloadSHA256": "1eceec65f6944ecb2eda93c37946101f587ee1ee333eff9f7c22f51a3425d131",
+        "sha256": "380c1267b67301af7e3051ed43be92a52a542adb52e40bf5606c7b57ac38e64c",
+        "shape": [
+          1,
+          1024,
+          3072
+        ],
+        "storedDtype": "uint16"
+      },
+      "receiver": "R1",
+      "recipientStorageOffset": 1572864,
+      "recipientStoragePointer": 134387524960256,
+      "recipientStride": [
+        4718592,
+        3072,
+        1
+      ],
+      "shape": [
+        1,
+        1024,
+        3072
+      ]
+    }
+  ]
+}

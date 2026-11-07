@@ -1,0 +1,149 @@
+{
+  "executedPayload": {
+    "host": "beast",
+    "reported_ts": 1794025758.8310223,
+    "sha256": "cca7b119c6bf1cef87197a0d3b914cfb065b0fbb6f5fbdcad2a65dfb67dceec4",
+    "size_bytes": 3146630
+  },
+  "jobID": "job-0b06996e8215",
+  "nextSizingBasis": "Actual same-geometry4call/noVAE run:7546.3MBRSS,8120MBVRAM,55.38s. Reconsider measured resource exception on later geometry; generic alias B64 preview inapplicable.",
+  "reservation": {
+    "cpu_threads": 4,
+    "disk_gb": 1.0,
+    "est_wall_s": 90.0,
+    "ram_mb": 14336.0,
+    "source": "declared",
+    "vram_mb": 13000.0
+  },
+  "result": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-0b06996e8215",
+      "job_log": {
+        "bytes": 697,
+        "sha256": "6a299a318e815898534956688e4eba5bd93c2f7d5f523d673cb0d540ac184ea7"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-0b06996e8215/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=4",
+        "OPENBLAS_NUM_THREADS=4",
+        "MKL_NUM_THREADS=4",
+        "CUBLAS_WORKSPACE_CONFIG=:4096:8",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "--with",
+        "./mdb_runtime-0.1.0-py3-none-any.whl",
+        "--with",
+        "./saturn_pub-0.4.1-py3-none-any.whl",
+        "--with",
+        "./mrun_pub-0.1.2-py3-none-any.whl",
+        "python",
+        "-u",
+        "carrier_crossing_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-0b06996e8215",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-0b06996e8215/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794025758.816593
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794025758.8586583
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794025758.8827064
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794025758.9116435
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794025814.106686
+        },
+        {
+          "name": "finished",
+          "ts": 1794025814.1150234
+        }
+      ]
+    },
+    "elapsed_s": 55.38,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "cca7b119c6bf1cef87197a0d3b914cfb065b0fbb6f5fbdcad2a65dfb67dceec4",
+      "size_bytes": 3146630
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 7546.3,
+    "peak_vram_mb": 8120.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-carrier-crossing-scheduler-v1",
+  "state": "succeeded"
+}

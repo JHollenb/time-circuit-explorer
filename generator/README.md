@@ -84,6 +84,8 @@ The [response-only objective diagnostic](../docs/source-native-response-writer.m
 
 ## Generate from the website
 
+The [carrier–receiver crossing](../docs/carrier-receiver-crossing.md) uses `carrier_crossing_study.py stage|submit|collect` for one four-call native diagnostic. It replaces the complete first-joint image-projection input while preserving native stride/storage offset and independent storage. `publish_carrier_crossing.py verify|publish|audit`, `summarize_carrier_crossing.py` and `plot_carrier_crossing.py` retain full-byte custody, typed handoffs, signed factorial fields and1,024actual query addresses. All244mechanics tests pass. Its nearly orthogonal receiver responses motivate a [two-call text-write follow-up](../docs/plans/carrier-text-write-crossing.md); all native learned work remains paid and this is separate from the website's arbitrary-prompt reconstructed generator.
+
 From this repository in the domains workspace, with the configured mrun client and reachable fleet:
 
 ```sh

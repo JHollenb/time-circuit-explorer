@@ -1,0 +1,204 @@
+{
+  "completeCollectedInventory": {
+    "bytes": 610886,
+    "files": {
+      "derived-fields.json": {
+        "bytes": 2494,
+        "sha256": "15717a217905a0f71ce1b4dc077b1565acbff486367e871d94e3995a41b46217"
+      },
+      "execution.json": {
+        "bytes": 230159,
+        "sha256": "7483812d8611fcef467b173384487c85bddb0105ebb875dccd7ab5149d695482"
+      },
+      "frozen-plan.md": {
+        "bytes": 7232,
+        "sha256": "fb2765329789c0d8c9429c17d89795edd0e7dde2ca9336e763c8c36360594aba"
+      },
+      "inputs.json": {
+        "bytes": 11974,
+        "sha256": "0759d7996573b9f70844f21d207114216fc30a56b600c483425d85fa6ceb30d6"
+      },
+      "observations.jsonl": {
+        "bytes": 313957,
+        "sha256": "201938991596e1e30530bd4e9e34475b7c037ae6a92449ffc8653bf235186038"
+      },
+      "report.json": {
+        "bytes": 2683,
+        "sha256": "0ed3cfb0478c8598bb31a773ba08d75e46db9df60e8f757d6f7708a44534bfb3"
+      },
+      "request.json": {
+        "bytes": 3991,
+        "sha256": "0a4a93bd7e569779086a8e02c6b13edd80777bdf4dfe3bfd3cd97e42422f94a7"
+      },
+      "resource-basis.json": {
+        "bytes": 4903,
+        "sha256": "99a0b0222242f67f54434239b74d562a787a1466e5d316c51c3c485703a6329c"
+      },
+      "velocity-seal.json": {
+        "bytes": 33493,
+        "sha256": "3772637139a1ba43eebdc7171876b309fde6109e1000f7af3d3ce3270be803b3"
+      }
+    }
+  },
+  "jobID": "job-0b06996e8215",
+  "losslessStreams": [
+    {
+      "published": "observations.jsonl.gz",
+      "publishedBytes": 73398,
+      "publishedSHA256": "f2de006643be9ca5708ee4545b3cd97adb12b4a02755d1a098157f6bc107dfac",
+      "source": "observations.jsonl",
+      "sourceBytes": 313957,
+      "sourceSHA256": "201938991596e1e30530bd4e9e34475b7c037ae6a92449ffc8653bf235186038"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "cca7b119c6bf1cef87197a0d3b914cfb065b0fbb6f5fbdcad2a65dfb67dceec4",
+      "size_bytes": 3146630
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794025758.8310223,
+      "sha256": "cca7b119c6bf1cef87197a0d3b914cfb065b0fbb6f5fbdcad2a65dfb67dceec4",
+      "size_bytes": 3146630
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794025756.215693,
+      "sha256": "cca7b119c6bf1cef87197a0d3b914cfb065b0fbb6f5fbdcad2a65dfb67dceec4",
+      "size_bytes": 3146630
+    }
+  },
+  "requestSHA256": "1aca5e50d52a7732a17dceec21f56f9b6a54f139773e25ad104ea4351388e071",
+  "schedulerResult": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-0b06996e8215",
+      "job_log": {
+        "bytes": 697,
+        "sha256": "6a299a318e815898534956688e4eba5bd93c2f7d5f523d673cb0d540ac184ea7"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-0b06996e8215/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=4",
+        "OPENBLAS_NUM_THREADS=4",
+        "MKL_NUM_THREADS=4",
+        "CUBLAS_WORKSPACE_CONFIG=:4096:8",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "--with",
+        "./mdb_runtime-0.1.0-py3-none-any.whl",
+        "--with",
+        "./saturn_pub-0.4.1-py3-none-any.whl",
+        "--with",
+        "./mrun_pub-0.1.2-py3-none-any.whl",
+        "python",
+        "-u",
+        "carrier_crossing_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-0b06996e8215",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-0b06996e8215/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794025758.816593
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794025758.8586583
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794025758.8827064
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794025758.9116435
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794025814.106686
+        },
+        {
+          "name": "finished",
+          "ts": 1794025814.1150234
+        }
+      ]
+    },
+    "elapsed_s": 55.38,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "cca7b119c6bf1cef87197a0d3b914cfb065b0fbb6f5fbdcad2a65dfb67dceec4",
+      "size_bytes": 3146630
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 7546.3,
+    "peak_vram_mb": 8120.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "schema": "tce-carrier-crossing-publication-v1",
+  "scope": "Four native supplied-carrier interventions; all original learned transformer work paid. No natural-branch parity, image, cheap predictor or arbitrary-prompt zero-neural claim."
+}

@@ -1,0 +1,63 @@
+{
+  "schema": "tce-carrier-crossing-advisor-v1",
+  "cycle": 46,
+  "advisor": "gpt-6-astra",
+  "task": "/root/astra_zero_forward_advisor",
+  "decision": "One two-call R1 contrast fixing the first joint text projection write to archived R0 textWrite while preserving the existing H_A/H_B image clamps. No new fit/rank/gain/derivative sweep.",
+  "interpretation": "Strong receiver dependence for this supplied-carrier pair. All-row amplitudes differ1.74% withcosine.01096;944nonlocal amplitudes differ24.04% withcosine.01255. Off-manifold hybrids/two dependent receivers/original learned computation remain limitations. Incidental H_A/nativeR0 equality qualifies that occurrence only.",
+  "sourceReview": "No material defect found. Complete independent-storage replacement preserves stride/offset, fires once per cell and seals four velocities before subtraction.",
+  "decomposition": "d10=Delta_H F(R1,T0); I=(d10-d0)+(d1-d10). First term is remaining receiver dependence with one initial text write fixed, including later text-image feedback. Second is controlled effect of changing that write on the carrier response at R1. Keep signed cross energy; no additive causal percentages.",
+  "expectedWork": {
+    "originalTransformerCalls": 2,
+    "affineCalls": 218,
+    "attentionDispatches": 50,
+    "nominalAffineMACs": 9448195620864,
+    "nominalQKAVMACs": 724775731200,
+    "newDonorFormation": 0,
+    "newEncoderCalls": 0,
+    "newFits": 0,
+    "newSchedulerCommits": 0,
+    "newVAECalls": 0,
+    "newImages": 0
+  },
+  "newestPostSynthesis": "A source-only query update improves fresh own-history fidelity, but the next layer loses a binding with full memory. Reported-state repair sometimes restores a suffix and sometimes introduces a later error. Both support qualifying the next consumer and do not supply a zero-neural generator.",
+  "reviewedSources": {
+    "report.json": "0ed3cfb0478c8598bb31a773ba08d75e46db9df60e8f757d6f7708a44534bfb3",
+    "execution.json": "7483812d8611fcef467b173384487c85bddb0105ebb875dccd7ab5149d695482",
+    "velocity-seal.json": "3772637139a1ba43eebdc7171876b309fde6109e1000f7af3d3ce3270be803b3",
+    "carrier_crossing.py": "71215aa347336a700dc95eb84240d61d503090b3541bd1a53ce18b3014e06281",
+    "carrier_crossing_worker.py": "13e3a4dd1463a45ec31b82920b4ee99e9a34602783d194d760f0bf8283fd37b9",
+    "carrier_crossing_study.py": "c091cede23e4713d1f923dcd61cdd4a754ba9258fbb5218c3974302d5ef87a2a"
+  },
+  "blogSnapshots": [
+    {
+      "path": "../../../../obsidian/blog/2026-11-06-212122-a-better-query-transfers-but-the-next-layer-loses-a-binding.md",
+      "sha256": "5b4c95b4d218fde1743cf1b3252764a229fa7208b6760a89a9a945e490e464b1",
+      "scope": "Exact working-post snapshot at advisory review; later drift retained separately."
+    },
+    {
+      "path": "../../../../obsidian/blog/2026-11-06-201200-correcting-a-reported-state-can-restore-the-remaining-computation.md",
+      "sha256": "7891fd30c5868f4b65a3c71511623dcf377f97a4e63a34bc3ff709ea1b93a712",
+      "scope": "Exact working-post snapshot at advisory review; later drift retained separately."
+    },
+    {
+      "path": "../../../../obsidian/blog/2026-11-06-200500-model-computation-and-the-remaining-work-for-free-chat.md",
+      "sha256": "7c6fdf97046ed8774a6113d451e559b8ce8744884ef500c615e76f28c13c6a7b",
+      "scope": "Exact working-post snapshot at advisory review; later drift retained separately."
+    },
+    {
+      "path": "../../../../obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+      "sha256": "ea0c85695d109426884360e22f639562f1125198ef699101c84cffad29ed0059",
+      "scope": "Exact working-post snapshot at advisory review; later drift retained separately."
+    },
+    {
+      "path": "../../../../obsidian/blog/2026-11-06-154200-context-coverage-and-the-alternative-of-a-better-small-program.md",
+      "sha256": "5628a0313fbe53e2ac14afe937898c745d5674bfd1f4175de257fb6a2a8f684a",
+      "scope": "Exact working-post snapshot at advisory review; later drift retained separately."
+    }
+  ],
+  "nextPlan": "../../plans/carrier-text-write-crossing.md",
+  "nextPeriodicReviewByCycle": 49,
+  "earlierIf": "Material new evidence",
+  "goalStatus": "Active and unresolved"
+}

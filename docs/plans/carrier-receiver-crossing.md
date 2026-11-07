@@ -1,6 +1,6 @@
 # Hold the carrier fixed while changing the receiver
 
-Status: **written and unexecuted**. Selected after the [extension-geometry result](../minimum-response-extension-geometry.md) and [Astra45 review](../results/extension-geometry-evidence/advisor.json). One controlled 2×2 native-consumer assay, not a generator, fit or new reference campaign.
+Status: **executed**, job-0b06996e8215. The [result](../carrier-receiver-crossing.md) records nearly orthogonal responses across receivers, with all four original transformer calls paid. The [pre-execution plan](../results/carrier-crossing/frozen-plan.md) remains immutable. Selected after the [extension-geometry result](../minimum-response-extension-geometry.md) and [Astra45 review](../results/extension-geometry-evidence/advisor.json). One controlled 2×2 native-consumer assay, not a generator, fit or new reference campaign.
 
 The fixed linear extension fails even when feedback inputs lie almost entirely in its source span. Stop spectral/rank/regularization exploration. The next question is whether an identical attention-payload change has a different effect when the receiving state changes. Unlike observational transfer error, this crossing can test receiver dependence of a declared intervention.
 
