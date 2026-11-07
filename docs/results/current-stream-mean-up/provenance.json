@@ -1,0 +1,103 @@
+{
+  "completeCollectedInventory": {
+    "bytes": 23587763,
+    "files": {
+      "candidate-seal.json": {
+        "bytes": 267,
+        "sha256": "240c55f41dab1c7c8b14af8afec15df471578a1770640e4644242381446768dc"
+      },
+      "candidate.json": {
+        "bytes": 18693,
+        "sha256": "d2beae2155fc29fcfc3b5cc727a6689cbc8de8c6352f4b2927bd6d4eb31b4ec5"
+      },
+      "comparison-specifications.json": {
+        "bytes": 13655,
+        "sha256": "32f2ff5fe088ee3e0ec903c041039cc2d878ce4be883a8f68c43c222a9fbb864"
+      },
+      "derived-reference.json": {
+        "bytes": 966,
+        "sha256": "8fd92eb0a6e13981072f6199bcdaa525ae8aa4cbf910a24883404e8742f67494"
+      },
+      "differences.json": {
+        "bytes": 1261,
+        "sha256": "73feb38dab4ab685080a3c2bf84bd28180c55e10d91c4ee3c55735b8baf8adab"
+      },
+      "execution.json": {
+        "bytes": 313838,
+        "sha256": "c606bd19a262e75ac1d5b6f59cf80517eed946fa35dbe2cc427b7d456881a32d"
+      },
+      "frozen-plan.md": {
+        "bytes": 6315,
+        "sha256": "bde7314fc1c58039aa5041d09f8ad91e4a864e638dbd99d387831a8d10a03be6"
+      },
+      "inputs.json": {
+        "bytes": 269927,
+        "sha256": "def665fb752a2cec7d788379a81921926d6c8c26d096f6d0acfde6286cfcd64a"
+      },
+      "observations.jsonl": {
+        "bytes": 22159476,
+        "sha256": "6e6507fc9cea3a3e5ea2307982ad654d2e83d94788759963384836a598d981bd"
+      },
+      "report.json": {
+        "bytes": 30853,
+        "sha256": "458c15dca7078b94e53b5b72029e9e2ed936ace5789707d0f14acac733e16d4d"
+      },
+      "request.json": {
+        "bytes": 6179,
+        "sha256": "dccbf19da397009130610f5072b9c7421905766010272649489db9c24221a301"
+      },
+      "resource-basis.json": {
+        "bytes": 3403,
+        "sha256": "2ca961c29d6d008f35d2c94cb2770c05b55c46282dd31a017836ef21d0007b03"
+      },
+      "targets.json": {
+        "bytes": 25821,
+        "sha256": "a7c6363f2ee5a38928762356fe02a4560e123437a245f3fa62a51a9e0412c549"
+      },
+      "write-observations.jsonl": {
+        "bytes": 737109,
+        "sha256": "196493cfa2a64fe04f920c96f4b076add74db4d057ae00979d6f5e5b718550e4"
+      }
+    }
+  },
+  "jobID": "job-ebc30fcc40e8",
+  "losslessStreams": [
+    {
+      "published": "write-observations.jsonl.gz",
+      "publishedBytes": 158594,
+      "publishedSHA256": "ea946199c687bc226dd222208c42a0ce9253eaa8a568d8fb2a2b8462d11339b4",
+      "source": "write-observations.jsonl",
+      "sourceBytes": 737109,
+      "sourceSHA256": "196493cfa2a64fe04f920c96f4b076add74db4d057ae00979d6f5e5b718550e4"
+    },
+    {
+      "published": "observations.jsonl.gz",
+      "publishedBytes": 2068027,
+      "publishedSHA256": "94591ddca8997634ba9073e9a0cc64350d2a8edb61aa392d94b84a6107a6eeae",
+      "source": "observations.jsonl",
+      "sourceBytes": 22159476,
+      "sourceSHA256": "6e6507fc9cea3a3e5ea2307982ad654d2e83d94788759963384836a598d981bd"
+    }
+  ],
+  "payloadCustody": {
+    "declared": {
+      "sha256": "fada623e9080995f4b8e949dc690f75f59cdf8eae457da55f49e31b166bb6b10",
+      "size_bytes": 3193734
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794078216.232048,
+      "sha256": "fada623e9080995f4b8e949dc690f75f59cdf8eae457da55f49e31b166bb6b10",
+      "size_bytes": 3193734
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794078216.1172736,
+      "sha256": "fada623e9080995f4b8e949dc690f75f59cdf8eae457da55f49e31b166bb6b10",
+      "size_bytes": 3193734
+    }
+  },
+  "requestSHA256": "9ea7d3b9be0fdf19182aaa5943a2e7f25c27b053e9cf81952e2aee9fc653b5a9",
+  "schema": "tce-mean-up-publication-v1",
+  "scope": "One source-input mean-Up completion, ownquarter/fullgates/fulloutput, immutable73comparisons afterseal/exit. Originallearnedmaps/history paid. No newimage/reference/zero-neuralclaim."
+}

@@ -1,0 +1,32 @@
+{
+  "actor": {
+    "CPUSecondsAfterImports": 14.828908839999999,
+    "peakCUDAAllocatedBytes": 593133568,
+    "peakCUDAReservedBytes": 616562688,
+    "setupSecondsAfterImports": 9.535887046717107,
+    "timings": [
+      {
+        "instrumentedSynchronizedSecondsBeforeFinalOutputFingerprint": 4.288915695622563,
+        "scope": "Operation time including any internal diagnostics/copies; excludes subsequent finite checks and output fingerprints.",
+        "stage": "completion"
+      }
+    ],
+    "wallSecondsAfterImports": 17.789632213767618
+  },
+  "analysisSecondsAfterImports": 16.84009259287268,
+  "reservation": {
+    "cpu_threads": 4,
+    "disk_gb": 1.0,
+    "est_wall_s": 90.0,
+    "ram_mb": 4096.0,
+    "source": "declared",
+    "vram_mb": 2048.0
+  },
+  "scheduler": {
+    "elapsed_s": 66.67,
+    "peak_rss_mb": 2094.2,
+    "peak_vram_mb": 902.0
+  },
+  "schema": "tce-mean-up-phases-v1",
+  "scope": "Actor synchronized operation includes internal maps/copies, excludes later finite checks/fingerprints; fresh-process wall includes setup/checks/I/O. Scheduler includes orchestration/imports. No matched serving benchmark."
+}
