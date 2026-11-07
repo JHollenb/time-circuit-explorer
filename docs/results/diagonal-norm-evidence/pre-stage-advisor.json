@@ -1,0 +1,16 @@
+{
+  "schema": "tce-diagonal-norm-pre-stage-advisor-v1",
+  "advisor": "astra_zero_forward_advisor",
+  "model": "gpt-6-astra",
+  "cycle": 59,
+  "reviewedSources": {
+    "diagonal_key_norm.py": "5ea709c8ce56ba5e56f4b9f95a6a8087e2441f7277b7f24675cf2a745873aa7e",
+    "diagonal_norm_worker.py": "166aea64f149a2452a70d7878718aa8c8c5f865f0628dad28a296f9c22199886",
+    "diagonal_norm_analysis.py": "7bf9d2d3c7582665609df34916a07e5f2977bc6cdf9a76e0262e7b139911805b",
+    "diagonal_norm_study.py": "04dd9017fb738d814e9b7f1b13385f5a69dc7700e8334143ac53e353cf3b8df7"
+  },
+  "planSHA256": "8c7bd91118cc09706668f059c849b2600c3d158e14d20c010c64d61d468ad2ef",
+  "finalReview": "No execution blocker. Original W-only compiler excludes gamma/RoPE correctly from raw-key RMS. Actor consumes own norm\u2192head\u2192MLP\u2192state\u2192nextquery; hydrated original maps and numerical read closures explicit. MatrixMAC1421869056, nonmatrix operations separated; source-only no fit or source/target norms.",
+  "preFreezeQualification": "SavedQEnergy\u2212diagonalEnergy can be interpreted as omitted channel-cross energy only when retained reference and new actor actual ModLN inputs match. Otherwise retain forecast/rawdifferences, mark that interpretation inapplicable. Small FP64 projection/reduction/sqrt reconstruction differences remain. Study binds saved reference norm to parent actual actor input before staging.",
+  "scope": "Source/math/resource review before execution. No accuracy or zero-neural inference; no numerical/model runs or edits by advisor."
+}
