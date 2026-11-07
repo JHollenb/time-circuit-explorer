@@ -1,6 +1,6 @@
 # Preserve readable state while routing fewer residual writes
 
-Status: **written and unexecuted**, selected by [Astra39](../results/coarse-global-evidence/advisor.json) after the [coarse-global result](../coarse-global-innovation.md). This is a reduction of original learned computation on existing development inputs. Arbitrary-prompt zero-neural generation remains open.
+Status: **executed** in job-aa657d5672e5. The [result](../rotating-residual-writes.md) retains 57.81% of full-call affine work but loses recognizable image structure on both cases. The frozen pre-execution plan remains in the result publication. [Astra39](../results/coarse-global-evidence/advisor.json) selected this cut after the [coarse-global result](../coarse-global-innovation.md). It reduces original learned computation on existing development inputs; arbitrary-prompt zero-neural generation remains open.
 
 ## Keep the state, restrict the writes
 
@@ -40,6 +40,8 @@ Use the existing two actual Z3H/E/clock3 inputs, source weights, complete IDs, n
 Run two routed candidate calls and two VAE decodes in one guarded finite mrun CUDA lease, serial B1, no retries. Use intent-first preview, measured resident-weight history for any documented envelope exception and a live physical guard-fit check. Four historical full prefix calls and original encoding remain charged.
 
 The authenticated 103-linear source census predicts 2,730,793,893,888 nominal affine MACs per routed call, 57.81% of 4,723,927,154,688 full. Boundary projections cost12,884,901,888; joint blocks543,581,798,400; single blocks2,174,327,193,600. QK/AV geometry is half the full call. Full K/V, all parameters, normalization, softmax, storage, text updates and VAE remain paid. Instrument actual sliced weight/input shapes, physical calls, wall/CPU time and sampled RAM/VRAM; counts do not establish matched speedup.
+
+The implementation separates each single block's fused input projection into selected Q, complete K/V and selected gate/up calls. It therefore executes143physical affine calls per routed denoiser, despite fewer MACs than the103-call native source. Identify sliced operands by underlying storage, offset, stride and shape. Record complete concatenated state hashes at every block handoff and exact unchanged-row witnesses; denoiser timing includes this diagnostic work.
 
 ## Read the result through its actual consumer
 

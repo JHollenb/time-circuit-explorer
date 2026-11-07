@@ -1,0 +1,62 @@
+{
+  "backend": "diffusers",
+  "batch_size": 1,
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "height": 512,
+  "model": "flux2-klein-4b-distilled",
+  "ownedSources": [
+    "rotating_write_study.py",
+    "rotating_write_images.py",
+    "rotating_writes.py",
+    "two_clock.py",
+    "two_clock_carry.py",
+    "last_velocity_decode.py",
+    "encoder_atoms.py",
+    "paired_fields.py",
+    "flux_clock.py",
+    "flux_clock_study.py",
+    "complete_masked_study.py",
+    "masked_kv_study.py",
+    "retained_queries.py"
+  ],
+  "parentJobID": "job-766f3552f96d",
+  "parentReportSHA256": "2a3ec4582d92806a5c405da98512944becf12ac1ad089c9732d5c2d1f406c96e",
+  "parentRequestSHA256": "e1ef83eb71c9424f40bf1482db34ce5d4cfe7666f653235dc54f8547ff4f1750",
+  "prompts": [
+    {
+      "id": "00",
+      "prompt": "A studio photograph of a orange ceramic pitcher to the left of a teal metal watering can on a white table, soft lighting."
+    },
+    {
+      "id": "10",
+      "prompt": "A studio photograph of a teal ceramic pitcher to the left of a orange metal watering can on a white table, soft lighting."
+    }
+  ],
+  "protocol": "OwnZ3H/E/clock3 ->full1024image512textstate/allcurrentKV,originalpositions ->alltext+imagephase(bmod4)Q/attention/MLPwrites,globalb0..24,carryotherimagerowsunchanged ->fullvelocityprojection/originalfinitecommit/VAE. Single fusedweights sliced beforeevaluation. Twoimagessealbefore existingHN/HH/NN/NH/full developmenttargets. No pooling/fit/gain/nativehiddenrefresh/newprefix/noise/reference.",
+  "requestSHA256": "a92d78ccd3d1f75ee7aea2431a7816fbbefb68b32a9da6da0f333ad01e2447a4",
+  "schema": "tce-rotating-write-request-v1",
+  "seed": 271828,
+  "seq_len": 1536,
+  "sourceHashes": {
+    "complete_masked_study.py": "f52633bc9d729b2a5032e024331d9b20fcee8cb993941cab87c197089cdcff99",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "flux_clock.py": "bde499ff527f624fcd1b62a8f6f0b2fbaf70eebc7b7835fcd7d4c6403b4e0b2b",
+    "flux_clock_study.py": "eaccf6bdb75678ac6acb5a371f8858201cf83dbac4de83868b70d5570e4beddc",
+    "frozen-plan.md": "cced322bbbb783e0b262af551caf755a7aab2e15d147dd078ef8bb24014a6f01",
+    "inputs.json": "a50454d267c5a77ad5576b09518001e90d1ce52ebadaa32c51df8d8e43dd8b57",
+    "last_velocity_decode.py": "b3081184e171753f334e9e9896d7d0378791ba0ee00682918303c7bd6a2769be",
+    "masked_kv_study.py": "920416ce49d823b1337a7f6d9f5fca90c8047723bb6b1d37dc09967114b6ad89",
+    "paired_fields.py": "408e035cb2f2f99558dbbe5abccdc281a5deade195abdbbc003549318ef09e88",
+    "resource-basis.json": "8ebd8b223968a0db74b728b13011fdfa6300ad4886226c5419942e5606726355",
+    "retained_queries.py": "7a4305ada53f304e4728daf7cd112f5b7b85cc4378a672f8f7194ae81c942cb1",
+    "rotating_write_images.py": "4e8fc7bb35f335253444d1290ea675f7172cdad5900dc7fa2ca887aee1685ba1",
+    "rotating_write_study.py": "06ebfd43b8d074fca4cd6c5d02ed677c481ed4e8b668577bfb119a4dd822ec5e",
+    "rotating_writes.py": "9ce5f8618765d636fa2e611bec39563cb9102a831e9e18688b8499626366fb69",
+    "targets.json": "ba83604e2ea440db1de9903bda56d57b3f464789842f7182d70db2b3f8cc0366",
+    "two_clock.py": "92484acf922d1328115c5214581a1d9ad6ab4de96ce09ea2efd71d780101ee96",
+    "two_clock_carry.py": "30c0d9ddc6d9c22141722107597334eecd92cffc9f3274e6ea6e8eadde19d49a"
+  },
+  "timeoutSeconds": 600,
+  "width": 512
+}

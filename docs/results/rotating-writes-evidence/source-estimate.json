@@ -1,0 +1,127 @@
+{
+  "schema": "tce-source-native-reader-estimate-v1",
+  "originalAffineRows": [
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        1024,
+        128
+      ],
+      "nominalMACs": 402653184,
+      "parameter": "transformer.x_embedder.weight",
+      "policy": "HN",
+      "step": 3,
+      "weightShape": [
+        3072,
+        128
+      ]
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        7680
+      ],
+      "nominalMACs": 12079595520,
+      "parameter": "transformer.context_embedder.weight",
+      "policy": "HN",
+      "step": 3,
+      "weightShape": [
+        3072,
+        7680
+      ]
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        1024,
+        3072
+      ],
+      "nominalMACs": 9663676416,
+      "parameter": "transformer.transformer_blocks.0.attn.to_q.weight",
+      "policy": "HN",
+      "step": 3,
+      "weightShape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        1024,
+        3072
+      ],
+      "nominalMACs": 9663676416,
+      "parameter": "transformer.transformer_blocks.0.attn.to_k.weight",
+      "policy": "HN",
+      "step": 3,
+      "weightShape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        1024,
+        3072
+      ],
+      "nominalMACs": 9663676416,
+      "parameter": "transformer.transformer_blocks.0.attn.to_v.weight",
+      "policy": "HN",
+      "step": 3,
+      "weightShape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        3072
+      ],
+      "nominalMACs": 4831838208,
+      "parameter": "transformer.transformer_blocks.0.attn.add_k_proj.weight",
+      "policy": "HN",
+      "step": 3,
+      "weightShape": [
+        3072,
+        3072
+      ]
+    },
+    {
+      "case": "00",
+      "inputShape": [
+        1,
+        512,
+        3072
+      ],
+      "nominalMACs": 4831838208,
+      "parameter": "transformer.transformer_blocks.0.attn.add_v_proj.weight",
+      "policy": "HN",
+      "step": 3,
+      "weightShape": [
+        3072,
+        3072
+      ]
+    }
+  ],
+  "originalAffineMACs": 51136954368,
+  "writerAffineMACs": 436207616,
+  "combinedAffineMACs": 51573161984,
+  "fullAffineMACs": 4723927154688,
+  "fractionOfFull": 0.010917433799295374,
+  "QKAVMACs": 9663676416,
+  "originalTensors": 10,
+  "originalTensorBytes": 142344960,
+  "source": "results/two-clock/images.json",
+  "scope": "Static source census only, unexecuted proposed reader; no fit, model, runtime or speedup measurement."
+}
