@@ -1,0 +1,33 @@
+{
+  "schema": "tce-public-scalar-common-baseline-error-v1",
+  "geometrySourceSHA256": "1fc8f598db3188f4fcfb170bad0fcd7579f9a2bc1bf7fbe0b91ca898133dcb20",
+  "crossoverReportSHA256": "ff69ca7b15775b88c69e3f0e7ce8f6877f47e21ecb995a1d395f9e41afa414a1",
+  "width": 2560,
+  "inputs": {
+    "native00OwnEndpointErrorRMS": 0.1602446904865995,
+    "native10OwnEndpointErrorRMS": 0.15940784242671469,
+    "signedH1ResponseErrorNormSquared": 0.007068417222058088,
+    "nativeH1ResponseNormSquared": 3.141766066561104
+  },
+  "impliedGeometry": {
+    "endpointError0NormSquared": 65.73660372261395,
+    "endpointError1NormSquared": 65.05180218147916,
+    "endpointErrorInnerProduct": 65.39066874343553,
+    "endpointErrorCosine": 0.9999596624491742,
+    "meanBaselineErrorRMS": 0.1598246547095405,
+    "changeOfEndpointErrorRMS": 0.0016616559443418005,
+    "changeRelativeToMeanErrorRMS": 0.010396743527221338,
+    "nativeResponseRMS": 0.03503216193372072,
+    "meanErrorRelativeToNativeResponseRMS": 4.562226419594702
+  },
+  "identities": {
+    "stateError": "e0=p-a,e1=q-b; e1-e0=deltaOwn-deltaNative=H1.E",
+    "innerProduct": "(d*RMS(e0)^2+d*RMS(e1)^2-||E||^2)/2",
+    "meanErrorEnergy": "(||e0||^2+||e1||^2+2*dot(e0,e1))/4"
+  },
+  "newLearnedMatrixMACs": 0,
+  "newOriginalNormalizationReconstructions": 0,
+  "scientificArraysRead": 0,
+  "newImages": 0,
+  "scope": "Algebraic geometry implied by already published endpoint RMS/response energies with binary64 reductions. This is not a fresh coordinate inner-product/cosine measurement, a new independent specimen, a neural serving correction or native-consumer attribution. A large nearly common baseline error can cancel in the raw state difference;107 measures failure after its original nonlinear consumer."
+}
