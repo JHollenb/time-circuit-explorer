@@ -1,0 +1,2412 @@
+{
+  "schema": "tce-periodic-research-advisor-survey-v3",
+  "cycle": 102,
+  "advisor": "Astra advisor, /root/astra_zero_forward_advisor",
+  "objective": "Arbitrary raw prompt to independently evaluated image with zero neural serving evaluations. No whole-prompt image cache, supplied contextual state, neural student, renamed original affine/gated evaluation, or inserted procedural scene renderer counts as completion.",
+  "status": "Full scheduled source/research survey complete; goal active and unsolved. New decision-program family is an unimplemented exploratory recommendation.",
+  "scope": {
+    "authorizedWrites": [
+      "time-circuit-explorer/docs/results/research-review-cycle102/advisor-survey.json",
+      "time-circuit-explorer/docs/results/research-review-cycle102/README.md"
+    ],
+    "actualWork": "Read-only Git/filesystem inventories, hashes, source/docs and public scalar metadata. Wrote only these two survey files.",
+    "excluded": "No models, scientific array or image reads, tensor processing, tests, leases/jobs, new agents, fitting, teacher data acquisition, or other source edits.",
+    "distinction": "A file hash recheck is not a content reread. Inventory/search hits are not content reads. Selected ranges/JSON keys are recorded literally. Only bounded local scopes support absence statements.",
+    "instructionFiles": [
+      {
+        "path": "isa/AGENTS.md",
+        "sha256": "fc3bf9e5f8655f8d2fc399bca848d1d2ecb96ba076407c6e5ca0f2e0322a1285"
+      },
+      {
+        "path": "cmachine/AGENTS.md",
+        "sha256": "865141d7d11c33fb259ba61ff1fc8305b7234584fdbbc891ab89991281ce1af7"
+      },
+      {
+        "path": "obsidian/AGENTS.md",
+        "sha256": "998b221016001933d7623f7163276a897094fb160bfb6effef857f7ab6b36c5d"
+      },
+      {
+        "path": "mrun/AGENTS.md",
+        "sha256": "2588f257464565f39aed3d01e62f83cc6e3fe5bc954ade7f5bcb4d9f38c9af09"
+      },
+      {
+        "path": "manalysis/AGENTS.md",
+        "sha256": "b91b9c2905b48a4c0ebdc94beba5d29f58438741602c09abec4b07ae9f8d06c7"
+      },
+      {
+        "path": "cmachine-intake-pan-mamba/AGENTS.md",
+        "sha256": "865141d7d11c33fb259ba61ff1fc8305b7234584fdbbc891ab89991281ce1af7"
+      }
+    ],
+    "skillInstructions": "RTK, Saturn and Rosetta guidance read for the survey; all shell invocations used rtk. Source/consumer and mechanics/trend/terminal distinctions retained."
+  },
+  "reviewWindowUTC": {
+    "inventoryStart": "2026-11-08T10:11:11.778173+00:00",
+    "inventoryEnd": "2026-11-08T10:11:18.030155+00:00",
+    "contentAndFinalHashEnd": "2026-11-08T10:25:02.209268+00:00"
+  },
+  "initialTCE": {
+    "HEAD": "2fff41fcf4b3380116acbb8a691bee7fb74e89bd",
+    "originMain": "2fff41fcf4b3380116acbb8a691bee7fb74e89bd",
+    "branch": "main",
+    "clean": true
+  },
+  "inventory": {
+    "method": "git rev-parse HEAD/origin/main, branch, log latest3 and priorHEAD..HEAD, status --porcelain=v1 --untracked-files=all. rg --files --hidden excluding .git,node_modules,.venv,venv; selected regular non-symlink text/code suffixes statted. Git-ignored files not exhaustively inventoried. Counts are paths/status entries, not independent research findings.",
+    "selectedSuffixes": [
+      ".md",
+      ".py",
+      ".json",
+      ".jsonl",
+      ".toml",
+      ".rs",
+      ".c",
+      ".h",
+      ".cpp",
+      ".ts",
+      ".js",
+      ".yaml",
+      ".yml",
+      ".txt",
+      ".sh",
+      ".hpp",
+      ".cu",
+      ".inc"
+    ],
+    "newerThan": "2026-11-08T08:26:48.080988+00:00 (cycle99 final recheck time)",
+    "repositories": {
+      "saturn": {
+        "HEAD": "ec5fe5176b57b3b944ba4b88d9bdb2232cc7b54b",
+        "originMain": "6a8390dbbb9bef3e0ea14757346cdcb66809b0e1",
+        "branch": "codex/spf-source-consolidation",
+        "trackedStatusEntries": 78999,
+        "untrackedFiles": 64158,
+        "statusSHA256": "29da5b5de2302d2105cb205d53f1c05b904c711d58a016e9f9b2c06205c06c94",
+        "statusSample": [
+          "M docs/CAPABILITY-MACHINE.md",
+          " D e17-forest/decisions/0014a2125c88f9f598506edbd05027ae86a53164019e45c905bfa9e83237d72c.json",
+          " D e17-forest/decisions/0d16763f30ee20af911f4ce6aa994679a322458437a01c73c7fe1e9684d8199d.json"
+        ],
+        "rgPathCount": 71614,
+        "selectedTextCount": 67678,
+        "newerThan99EndCount": 0,
+        "newerThan99EndFirst20": [],
+        "newestSelectedText": [
+          {
+            "path": "saturn/request.jsonl",
+            "mtimeUTC": "2026-11-08T04:22:56.270929+00:00",
+            "bytes": 731148
+          },
+          {
+            "path": "saturn/experiments/2026-11-07-history-reader-role-cut/RESULTS_MANIFEST.json",
+            "mtimeUTC": "2026-11-07T08:39:39.613070+00:00",
+            "bytes": 10581
+          },
+          {
+            "path": "saturn/experiments/2026-11-07-history-reader-role-cut/README.md",
+            "mtimeUTC": "2026-11-07T08:39:39.443489+00:00",
+            "bytes": 3427
+          }
+        ],
+        "newestMarkdown": [
+          {
+            "path": "saturn/experiments/2026-11-07-history-reader-role-cut/README.md",
+            "mtimeUTC": "2026-11-07T08:39:39.443489+00:00",
+            "bytes": 3427
+          },
+          {
+            "path": "saturn/experiments/2026-11-07-history-reader-role-cut/FINDINGS.md",
+            "mtimeUTC": "2026-11-07T08:38:20.735135+00:00",
+            "bytes": 9448
+          },
+          {
+            "path": "saturn/experiments/2026-11-07-history-reader-role-cut/runs/job-0fef9b389248/payload/MATH.md",
+            "mtimeUTC": "2026-11-07T08:34:11.009727+00:00",
+            "bytes": 3703
+          }
+        ],
+        "latest3Commits": [
+          "ec5fe5176b57b3b944ba4b88d9bdb2232cc7b54b 2026-10-27T23:38:24-07:00 Record MDB roadmap priorities and occurrence-qualified DAG request",
+          "cd7a0e827979d71d6c39b1f25885ed78dd4aa243 2026-10-27T15:57:45-07:00 Prove five request integrations with native consumers and fix replay and depth defects",
+          "7efc99ecf3e4cef7fe981f0d6a6bafa78e77cab2 2026-10-27T15:32:01-07:00 Integrate five upvoted Saturn requests with bounded engineering proofs"
+        ],
+        "commitsSince99": [],
+        "HEADUnchangedSince99": true
+      },
+      "saturn-pub": {
+        "HEAD": "79cb0b17868bb52bd7c1dd1fde3f5aaffcc9eeb8",
+        "originMain": "e32303c2d611b29e745edad6d7ddb499f8fd7b0e",
+        "branch": "mdb-project-navigation",
+        "trackedStatusEntries": 11,
+        "untrackedFiles": 456,
+        "statusSHA256": "e37a032445f7b1095df6e9aba8a76619b06833f70cae4c7d5ea43017b53de537",
+        "statusSample": [
+          "M docs/README.md",
+          " M packages/mdb/README.md",
+          " M packages/mdb/docs/COMPUTATION-ATLAS.md"
+        ],
+        "rgPathCount": 6476,
+        "selectedTextCount": 5416,
+        "newerThan99EndCount": 0,
+        "newerThan99EndFirst20": [],
+        "newestSelectedText": [
+          {
+            "path": "saturn-pub/packages/mdb/docs/QWEN-COMPUTATION-FAMILIES.md",
+            "mtimeUTC": "2026-11-07T11:00:00.226141+00:00",
+            "bytes": 15450
+          },
+          {
+            "path": "saturn-pub/packages/mdb/docs/QWEN-COMPUTATION-FORECASTS.md",
+            "mtimeUTC": "2026-11-07T10:40:02.985128+00:00",
+            "bytes": 12964
+          },
+          {
+            "path": "saturn-pub/packages/mdb/docs/COMPUTATION-FAMILY-PROGRAMS.md",
+            "mtimeUTC": "2026-11-07T10:40:02.984555+00:00",
+            "bytes": 11206
+          }
+        ],
+        "newestMarkdown": [
+          {
+            "path": "saturn-pub/packages/mdb/docs/QWEN-COMPUTATION-FAMILIES.md",
+            "mtimeUTC": "2026-11-07T11:00:00.226141+00:00",
+            "bytes": 15450
+          },
+          {
+            "path": "saturn-pub/packages/mdb/docs/QWEN-COMPUTATION-FORECASTS.md",
+            "mtimeUTC": "2026-11-07T10:40:02.985128+00:00",
+            "bytes": 12964
+          },
+          {
+            "path": "saturn-pub/packages/mdb/docs/COMPUTATION-FAMILY-PROGRAMS.md",
+            "mtimeUTC": "2026-11-07T10:40:02.984555+00:00",
+            "bytes": 11206
+          }
+        ],
+        "latest3Commits": [
+          "79cb0b17868bb52bd7c1dd1fde3f5aaffcc9eeb8 2026-11-07T02:29:02-08:00 Compile prospective second-order Qwen read-weight programs and demos",
+          "3989fa887ac8cfba02c74358a3194bc4a967d5f9 2026-11-07T01:47:10-08:00 Compile Qwen read-weight changes before edited receivers execute",
+          "3cc014ae867b34e930248118a67505799467b903 2026-11-07T00:44:06-08:00 Add frozen Qwen read composition and audited own-history qualification"
+        ],
+        "commitsSince99": [],
+        "HEADUnchangedSince99": true
+      },
+      "isa": {
+        "HEAD": "30cda533a8e1346ff9d0cdfaab166429c065722d",
+        "originMain": "a7fe50e9b20f09ac3137c952b653bda8f5935b45",
+        "branch": "main",
+        "trackedStatusEntries": 1,
+        "untrackedFiles": 10095,
+        "statusSHA256": "c6664e67725922921e6e82706c8e81ee4bf5629ae99b9195dab2d6b67d9bb78f",
+        "statusSample": [
+          "M README.md",
+          "?? benchmarks/c_apps/README.md",
+          "?? benchmarks/c_apps/native_measure.c"
+        ],
+        "rgPathCount": 10486,
+        "selectedTextCount": 9518,
+        "newerThan99EndCount": 0,
+        "newerThan99EndFirst20": [],
+        "newestSelectedText": [
+          {
+            "path": "isa/tests/test_m5f_sse.py",
+            "mtimeUTC": "2026-11-05T20:27:06.610507+00:00",
+            "bytes": 6089
+          },
+          {
+            "path": "isa/scripts/m5f_sse.py",
+            "mtimeUTC": "2026-11-05T20:27:06.610245+00:00",
+            "bytes": 10676
+          },
+          {
+            "path": "isa/scripts/m5f_os.py",
+            "mtimeUTC": "2026-11-05T20:27:06.609876+00:00",
+            "bytes": 7578
+          }
+        ],
+        "newestMarkdown": [
+          {
+            "path": "isa/outputs/m5-report/report.md",
+            "mtimeUTC": "2026-11-04T23:59:54.784657+00:00",
+            "bytes": 16190
+          },
+          {
+            "path": "isa/outputs/m4-report/report.md",
+            "mtimeUTC": "2026-11-04T23:59:54.784118+00:00",
+            "bytes": 15366
+          },
+          {
+            "path": "isa/hybrid/README.md",
+            "mtimeUTC": "2026-11-04T23:59:54.770575+00:00",
+            "bytes": 5414
+          }
+        ],
+        "latest3Commits": [
+          "30cda533a8e1346ff9d0cdfaab166429c065722d 2026-11-05T12:27:06-08:00 Merge feat/m5f: M5f frozen ade17e3c (monotone refit, cmov, int stops, SSE/XMM, OS kernel model + fs:), gate 0 refuted",
+          "9635a0e9e8e0f707870c153613d3822259014a46 2026-11-04T20:06:45-08:00 hybrid_launch: ship m5f/m5e/m4_cegis runtime (frozen M5f decoder class)",
+          "9525bc1714a31b78f4637442e388993d36cbfc37 2026-11-04T19:52:52-08:00 m4gate: d46/f2/capps development sets for the M5f freeze gate"
+        ],
+        "commitsSince99": [],
+        "HEADUnchangedSince99": true
+      },
+      "cmachine": {
+        "HEAD": "882249783613f3350a9f11641c23b022b54dd929",
+        "originMain": "882249783613f3350a9f11641c23b022b54dd929",
+        "branch": "main",
+        "trackedStatusEntries": 3,
+        "untrackedFiles": 27,
+        "statusSHA256": "9abb303935ed7f898bf2d5c804b88babcd439a8cba127f2eeac7a16c7f58305f",
+        "statusSample": [
+          "M README.md",
+          " M docs/CAPABILITIES.md",
+          " M docs/STATUS.md"
+        ],
+        "rgPathCount": 1077,
+        "selectedTextCount": 1035,
+        "newerThan99EndCount": 0,
+        "newerThan99EndFirst20": [],
+        "newestSelectedText": [
+          {
+            "path": "cmachine/docs/STATUS.md",
+            "mtimeUTC": "2026-11-07T10:00:12.822170+00:00",
+            "bytes": 18810
+          },
+          {
+            "path": "cmachine/docs/CAPABILITIES.md",
+            "mtimeUTC": "2026-11-07T10:00:12.821800+00:00",
+            "bytes": 46644
+          },
+          {
+            "path": "cmachine/research/frozen_transfer/README.md",
+            "mtimeUTC": "2026-11-07T10:00:12.821413+00:00",
+            "bytes": 6818
+          }
+        ],
+        "newestMarkdown": [
+          {
+            "path": "cmachine/docs/STATUS.md",
+            "mtimeUTC": "2026-11-07T10:00:12.822170+00:00",
+            "bytes": 18810
+          },
+          {
+            "path": "cmachine/docs/CAPABILITIES.md",
+            "mtimeUTC": "2026-11-07T10:00:12.821800+00:00",
+            "bytes": 46644
+          },
+          {
+            "path": "cmachine/research/frozen_transfer/README.md",
+            "mtimeUTC": "2026-11-07T10:00:12.821413+00:00",
+            "bytes": 6818
+          }
+        ],
+        "latest3Commits": [
+          "882249783613f3350a9f11641c23b022b54dd929 2026-11-06T23:08:26-08:00 Document supported models and measured logit errors",
+          "27f59b8be34a227a2ce2fe0f2a79a3c59aea76ba 2026-11-06T23:03:02-08:00 Merge origin/main into codex/model-intake-pan-mamba",
+          "ce3493e62a8b470ecbd799b1f2aef2f92095c155 2026-11-06T22:59:56-08:00 Add source-mapped C graph intake for PAN and Mamba"
+        ],
+        "commitsSince99": [],
+        "HEADUnchangedSince99": true
+      },
+      "model-experiments": {
+        "HEAD": "c36b5d07ef7adc58f0d226f86aa655b0ef5ed649",
+        "originMain": "1941c9825891b56cfefa42e18f720548b1a9e373",
+        "branch": "decoder-spine-mlflow",
+        "trackedStatusEntries": 5,
+        "untrackedFiles": 7670,
+        "statusSHA256": "a6aec23eced7e4d196933805c106f64c0231f4557db9c568111fcdcc59296ebe",
+        "statusSample": [
+          "M dvc.yaml",
+          " M experiments/INDEX.md",
+          " M src/model_experiments/harness.py"
+        ],
+        "rgPathCount": 7871,
+        "selectedTextCount": 7581,
+        "newerThan99EndCount": 0,
+        "newerThan99EndFirst20": [],
+        "newestSelectedText": [
+          {
+            "path": "model-experiments/experiments/2026-11-02-concept-graph-v3/RESULTS.md",
+            "mtimeUTC": "2026-11-04T21:23:07.012444+00:00",
+            "bytes": 6325
+          },
+          {
+            "path": "model-experiments/experiments/2026-11-01-sha-word-target-transport/postrun-custody/OFFLOADED.json",
+            "mtimeUTC": "2026-11-04T19:05:39.958398+00:00",
+            "bytes": 2738
+          },
+          {
+            "path": "model-experiments/experiments/2026-11-01-sha-word-target-transport/evidence-index/OFFLOADED.json",
+            "mtimeUTC": "2026-11-04T19:05:39.944704+00:00",
+            "bytes": 1426
+          }
+        ],
+        "newestMarkdown": [
+          {
+            "path": "model-experiments/experiments/2026-11-02-concept-graph-v3/RESULTS.md",
+            "mtimeUTC": "2026-11-04T21:23:07.012444+00:00",
+            "bytes": 6325
+          },
+          {
+            "path": "model-experiments/experiments/2026-11-02-concept-graph-v3/PLAN.md",
+            "mtimeUTC": "2026-11-02T23:18:19.627621+00:00",
+            "bytes": 3670
+          },
+          {
+            "path": "model-experiments/experiments/2026-11-02-concept-graph-v3/README.md",
+            "mtimeUTC": "2026-11-02T23:13:48.154274+00:00",
+            "bytes": 401
+          }
+        ],
+        "latest3Commits": [
+          "c36b5d07ef7adc58f0d226f86aa655b0ef5ed649 2026-07-15T12:16:49-07:00 mx: smoke pass keeps the real task_family for estimation (same codepath, same RAM)",
+          "1b4ce742767b93f08f059cbb8c7c97f08e0447dd 2026-07-15T11:56:55-07:00 runner: silence runner-level keys in unknown-config warning; e2e SMOKE_OVERRIDES",
+          "ca5756571765ebee04e24d1964c59abb5c403db9 2026-07-15T11:39:09-07:00 mx: smoke-first fleet submits (P2)"
+        ],
+        "commitsSince99": [],
+        "HEADUnchangedSince99": true
+      },
+      "research": {
+        "HEAD": "3e427b76fac5912a46432f1e4d37533521a59322",
+        "originMain": "4eaed8bd4c884c8bba2c122eccf85346076574b0",
+        "branch": "additional-experiments",
+        "trackedStatusEntries": 3,
+        "untrackedFiles": 4069,
+        "statusSHA256": "ad51dc5896e4e66f26fd1adf83b189becc6af6bf1602a541a13cf57cd6a00af2",
+        "statusSample": [
+          "M papers/README.md",
+          " M papers/time-circuit-scaffold/README.md",
+          " M papers/time-circuit-scaffold/paper.md"
+        ],
+        "rgPathCount": 5587,
+        "selectedTextCount": 4138,
+        "newerThan99EndCount": 0,
+        "newerThan99EndFirst20": [],
+        "newestSelectedText": [
+          {
+            "path": "research/papers/time-circuit-scaffold/2026-11-06-220330-time-circuit-architecture-after-the-computation-review.md",
+            "mtimeUTC": "2026-11-07T06:06:27.646106+00:00",
+            "bytes": 18707
+          },
+          {
+            "path": "research/papers/time-circuit-scaffold/README.md",
+            "mtimeUTC": "2026-11-07T06:05:53.266824+00:00",
+            "bytes": 22059
+          },
+          {
+            "path": "research/papers/time-circuit-scaffold/paper.md",
+            "mtimeUTC": "2026-11-07T06:05:53.266358+00:00",
+            "bytes": 202430
+          }
+        ],
+        "newestMarkdown": [
+          {
+            "path": "research/papers/time-circuit-scaffold/2026-11-06-220330-time-circuit-architecture-after-the-computation-review.md",
+            "mtimeUTC": "2026-11-07T06:06:27.646106+00:00",
+            "bytes": 18707
+          },
+          {
+            "path": "research/papers/time-circuit-scaffold/README.md",
+            "mtimeUTC": "2026-11-07T06:05:53.266824+00:00",
+            "bytes": 22059
+          },
+          {
+            "path": "research/papers/time-circuit-scaffold/paper.md",
+            "mtimeUTC": "2026-11-07T06:05:53.266358+00:00",
+            "bytes": 202430
+          }
+        ],
+        "latest3Commits": [
+          "3e427b76fac5912a46432f1e4d37533521a59322 2026-11-06T22:06:55-08:00 Document time circuit architecture refinements and link the paper",
+          "cba5d04f484b53b5bb08d0d71d62a54f023719af 2026-10-30T17:32:54-07:00 Explain compiled C ISA results and failure mechanisms in blog post",
+          "afcb44e983306fdb813cbfa6a4497995a1e0b305 2026-10-30T17:04:38-07:00 Benchmark compiled C across frozen ISA architectures"
+        ],
+        "commitsSince99": [],
+        "HEADUnchangedSince99": true
+      },
+      "obsidian": {
+        "HEAD": "c533a251ca8ffa299e21035d363f982c313137c5",
+        "originMain": "4b47373878fc641d6b2157ed7906d45c4534a8ca",
+        "branch": "main",
+        "trackedStatusEntries": 85,
+        "untrackedFiles": 7352,
+        "statusSHA256": "8cfa7e97bb2b5788279a9a2a54f4a03dfefa748d19950a7e1736462028bcf2be",
+        "statusSample": [
+          "M .DS_Store",
+          " M 2026-08-18-235042-non-bfl-ranked-benefit-novelty-survey.md",
+          " M blog/2026-08-14-what-saturn-can-actually-do.md"
+        ],
+        "rgPathCount": 11177,
+        "selectedTextCount": 9088,
+        "newerThan99EndCount": 1,
+        "newerThan99EndFirst20": [
+          {
+            "path": "obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+            "mtimeUTC": "2026-11-08T10:04:37.495522+00:00",
+            "bytes": 886943
+          }
+        ],
+        "newestSelectedText": [
+          {
+            "path": "obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+            "mtimeUTC": "2026-11-08T10:04:37.495522+00:00",
+            "bytes": 886943
+          },
+          {
+            "path": "obsidian/blog/2026-11-07-013741-predicting-a-changed-read-before-the-reader-runs.md",
+            "mtimeUTC": "2026-11-07T10:30:46.029329+00:00",
+            "bytes": 18377
+          },
+          {
+            "path": "obsidian/blog/2026-11-07-021005-the-read-bends-before-the-reader-runs.md",
+            "mtimeUTC": "2026-11-07T10:30:16.086857+00:00",
+            "bytes": 20658
+          }
+        ],
+        "newestMarkdown": [
+          {
+            "path": "obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+            "mtimeUTC": "2026-11-08T10:04:37.495522+00:00",
+            "bytes": 886943
+          },
+          {
+            "path": "obsidian/blog/2026-11-07-013741-predicting-a-changed-read-before-the-reader-runs.md",
+            "mtimeUTC": "2026-11-07T10:30:46.029329+00:00",
+            "bytes": 18377
+          },
+          {
+            "path": "obsidian/blog/2026-11-07-021005-the-read-bends-before-the-reader-runs.md",
+            "mtimeUTC": "2026-11-07T10:30:16.086857+00:00",
+            "bytes": 20658
+          }
+        ],
+        "latest3Commits": [
+          "c533a251ca8ffa299e21035d363f982c313137c5 2026-11-07T02:30:57-08:00 Document prospective six-head curvature and its two error floors",
+          "25c55355ec375de851051635fb299e8e3e3bb173 2026-11-07T01:47:50-08:00 Document baseline-only read-weight prediction and its remaining costs",
+          "a24f7f364d47cb96b89f6e78402150ae1b1bb18e 2026-11-07T00:47:52-08:00 Record audited Qwen read composition across fresh and generated histories"
+        ],
+        "commitsSince99": [],
+        "HEADUnchangedSince99": true
+      },
+      "mrun": {
+        "HEAD": "ef818f79d6d9d79ba8d391a325318338465ca438",
+        "originMain": null,
+        "branch": "feat/diffusers-phase-cuda",
+        "trackedStatusEntries": 0,
+        "untrackedFiles": 0,
+        "statusSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "statusSample": [],
+        "rgPathCount": 635,
+        "selectedTextCount": 617,
+        "newerThan99EndCount": 0,
+        "newerThan99EndFirst20": [],
+        "newestSelectedText": [
+          {
+            "path": "mrun/docs/API.md",
+            "mtimeUTC": "2026-10-27T22:54:08.998239+00:00",
+            "bytes": 126751
+          },
+          {
+            "path": "mrun/tests/test_fleet_integration.py",
+            "mtimeUTC": "2026-10-27T22:49:08.465528+00:00",
+            "bytes": 60422
+          },
+          {
+            "path": "mrun/tests/test_kv_statecut.py",
+            "mtimeUTC": "2026-10-27T22:45:21.246221+00:00",
+            "bytes": 21025
+          }
+        ],
+        "newestMarkdown": [
+          {
+            "path": "mrun/docs/API.md",
+            "mtimeUTC": "2026-10-27T22:54:08.998239+00:00",
+            "bytes": 126751
+          },
+          {
+            "path": "mrun/docs/OUTBOX.md",
+            "mtimeUTC": "2026-10-10T04:18:38.924062+00:00",
+            "bytes": 2109
+          },
+          {
+            "path": "mrun/docs/QWEN3-MOE-CUDA.md",
+            "mtimeUTC": "2026-10-07T23:28:06.080413+00:00",
+            "bytes": 25731
+          }
+        ],
+        "latest3Commits": [
+          "ef818f79d6d9d79ba8d391a325318338465ca438 2026-10-27T15:57:25-07:00 Repair sandbox probing and reopen abandoned native KV parents safely",
+          "4d4c2f97a8ca376faef9a169ede80024d4d3a1e7 2026-10-27T15:30:55-07:00 Add guarded artifact exchange and durable live watch breakpoints",
+          "49651dfbc8b837fe474e4c0aec6ecf2992763325 2026-10-27T14:52:20-07:00 Keep synthetic fleet admission independent of developer memory pressure"
+        ],
+        "commitsSince99": [],
+        "HEADUnchangedSince99": true
+      },
+      "manalysis": {
+        "HEAD": "c9c617e79618e59457c35f9e34bca0080892b916",
+        "originMain": null,
+        "branch": "feat/decoder-on-decomposed",
+        "trackedStatusEntries": 3,
+        "untrackedFiles": 3,
+        "statusSHA256": "8969015933eb2f5caef9706cb15f7f145310da7bc48e0b2bf49d2304116b1d51",
+        "statusSample": [
+          "M src/manalysis/bench/__init__.py",
+          " M src/manalysis/bench/relational_induction.py",
+          " M tests/test_bench_relational_induction.py"
+        ],
+        "rgPathCount": 361,
+        "selectedTextCount": 359,
+        "newerThan99EndCount": 0,
+        "newerThan99EndFirst20": [],
+        "newestSelectedText": [
+          {
+            "path": "manalysis/tests/test_bench_relational_induction.py",
+            "mtimeUTC": "2026-08-11T15:27:04.382790+00:00",
+            "bytes": 15466
+          },
+          {
+            "path": "manalysis/src/manalysis/bench/relational_induction.py",
+            "mtimeUTC": "2026-08-11T15:06:25.758342+00:00",
+            "bytes": 51230
+          },
+          {
+            "path": "manalysis/src/manalysis/bench/__init__.py",
+            "mtimeUTC": "2026-08-11T14:17:40.753513+00:00",
+            "bytes": 18608
+          }
+        ],
+        "newestMarkdown": [
+          {
+            "path": "manalysis/README.md",
+            "mtimeUTC": "2026-08-06T09:27:50.852780+00:00",
+            "bytes": 58972
+          },
+          {
+            "path": "manalysis/API_GUIDE.md",
+            "mtimeUTC": "2026-08-06T09:27:35.065233+00:00",
+            "bytes": 73812
+          },
+          {
+            "path": "manalysis/AGENTS.md",
+            "mtimeUTC": "2026-08-06T07:29:30.863729+00:00",
+            "bytes": 1236
+          }
+        ],
+        "latest3Commits": [
+          "c9c617e79618e59457c35f9e34bca0080892b916 2026-08-08T02:01:56-07:00 fix(tracer): preserve keyword module inputs",
+          "2ea2eedca427a59b742cf2d2c5249183ece3ef01 2026-08-07T01:34:44-07:00 feat(generative): add branch-batch, causal-prediction, dataflow, and runtime-trace modules with tests",
+          "195d33d8925790f3a8f913df39f5d67805628c7c 2026-08-07T01:26:01-07:00 WIP"
+        ],
+        "commitsSince99": [],
+        "HEADUnchangedSince99": true
+      },
+      "mstack": {
+        "HEAD": "f0f4c6d0ae673b516fa8e7033142ffe12e89a8a0",
+        "originMain": "f0f4c6d0ae673b516fa8e7033142ffe12e89a8a0",
+        "branch": "main",
+        "trackedStatusEntries": 5,
+        "untrackedFiles": 9,
+        "statusSHA256": "eb650aeba9aacf9bf2f289d6085f5b61c374f5418e1889b20258e2808e087d25",
+        "statusSample": [
+          "M experiments/diffusion_edge_mediation_probe.py",
+          " M experiments/diffusion_lexical_address_trace_probe.py",
+          " M experiments/diffusion_lexical_site_surgery_probe.py"
+        ],
+        "rgPathCount": 202,
+        "selectedTextCount": 200,
+        "newerThan99EndCount": 0,
+        "newerThan99EndFirst20": [],
+        "newestSelectedText": [
+          {
+            "path": "mstack/tests/test_circuit_adapter.py",
+            "mtimeUTC": "2026-08-31T02:21:07.332297+00:00",
+            "bytes": 17706
+          },
+          {
+            "path": "mstack/physical/circuit_adapter.py",
+            "mtimeUTC": "2026-08-31T02:20:44.908610+00:00",
+            "bytes": 27391
+          },
+          {
+            "path": "mstack/physical/__init__.py",
+            "mtimeUTC": "2026-08-31T01:33:55.391511+00:00",
+            "bytes": 2007
+          }
+        ],
+        "newestMarkdown": [
+          {
+            "path": "mstack/docs/FLUX-DECOUPLING.md",
+            "mtimeUTC": "2026-08-06T17:34:24.914545+00:00",
+            "bytes": 4305
+          },
+          {
+            "path": "mstack/docs/TARGETED-CIRCUIT-IMAGE.md",
+            "mtimeUTC": "2026-08-06T17:06:28.153775+00:00",
+            "bytes": 1456
+          },
+          {
+            "path": "mstack/docs/FLUX-HYPERGRAPH-SEARCH.md",
+            "mtimeUTC": "2026-08-06T16:50:35.946883+00:00",
+            "bytes": 2136
+          }
+        ],
+        "latest3Commits": [
+          "f0f4c6d0ae673b516fa8e7033142ffe12e89a8a0 2026-08-07T01:38:32-07:00 feat: branch-batch debugger, diffusion lexical/spectral probes, paged_dit experiments, vm context runtime; ignore results/payload artifacts",
+          "64f9c93acbb1e75cfc8e4c71ac528b6fe35fb52b 2026-08-06T14:16:06-07:00 fix: keep BF16 pager compatible with older mrun",
+          "5c2cc78c40e6336b9d5cf22e353a2715cb51a4f8 2026-08-06T10:58:45-07:00 test(tracer): replicate Flux action circuit"
+        ],
+        "commitsSince99": [],
+        "HEADUnchangedSince99": true
+      },
+      "time-circuit-explorer": {
+        "HEAD": "2fff41fcf4b3380116acbb8a691bee7fb74e89bd",
+        "originMain": "2fff41fcf4b3380116acbb8a691bee7fb74e89bd",
+        "branch": "main",
+        "trackedStatusEntries": 0,
+        "untrackedFiles": 0,
+        "statusSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "statusSample": [],
+        "rgPathCount": 4558,
+        "selectedTextCount": 3908,
+        "newerThan99EndCount": 77,
+        "newerThan99EndFirst20": [
+          {
+            "path": "time-circuit-explorer/docs/results/template-prefix-cofactor-evidence/release-qa.json",
+            "mtimeUTC": "2026-11-08T10:08:56.461349+00:00",
+            "bytes": 10644
+          },
+          {
+            "path": "time-circuit-explorer/docs/zero-neural-progress.json",
+            "mtimeUTC": "2026-11-08T10:08:01.576224+00:00",
+            "bytes": 1622629
+          },
+          {
+            "path": "time-circuit-explorer/docs/results/template-prefix-cofactor-evidence/advisor-final.json",
+            "mtimeUTC": "2026-11-08T10:07:26.434305+00:00",
+            "bytes": 11376
+          },
+          {
+            "path": "time-circuit-explorer/docs/results/template-prefix-cofactor-evidence/README.md",
+            "mtimeUTC": "2026-11-08T10:03:14.720177+00:00",
+            "bytes": 3119
+          },
+          {
+            "path": "time-circuit-explorer/docs/compiled-template-prefix.md",
+            "mtimeUTC": "2026-11-08T10:03:14.719828+00:00",
+            "bytes": 7356
+          },
+          {
+            "path": "time-circuit-explorer/docs/results/template-prefix-cofactor-evidence/advisor-actual.json",
+            "mtimeUTC": "2026-11-08T10:01:34.496538+00:00",
+            "bytes": 14938
+          },
+          {
+            "path": "time-circuit-explorer/docs/results/template-prefix-cofactor/publication.json",
+            "mtimeUTC": "2026-11-08T09:59:08.802979+00:00",
+            "bytes": 3631
+          },
+          {
+            "path": "time-circuit-explorer/docs/results/template-prefix-cofactor/mechanics.json",
+            "mtimeUTC": "2026-11-08T09:59:08.802322+00:00",
+            "bytes": 540
+          },
+          {
+            "path": "time-circuit-explorer/docs/results/template-prefix-cofactor/scheduler-job.json",
+            "mtimeUTC": "2026-11-08T09:59:08.802195+00:00",
+            "bytes": 8566
+          },
+          {
+            "path": "time-circuit-explorer/docs/results/template-prefix-cofactor/collection.json",
+            "mtimeUTC": "2026-11-08T09:59:08.802035+00:00",
+            "bytes": 4510
+          }
+        ],
+        "newestSelectedText": [
+          {
+            "path": "time-circuit-explorer/docs/results/template-prefix-cofactor-evidence/release-qa.json",
+            "mtimeUTC": "2026-11-08T10:08:56.461349+00:00",
+            "bytes": 10644
+          },
+          {
+            "path": "time-circuit-explorer/docs/zero-neural-progress.json",
+            "mtimeUTC": "2026-11-08T10:08:01.576224+00:00",
+            "bytes": 1622629
+          },
+          {
+            "path": "time-circuit-explorer/docs/results/template-prefix-cofactor-evidence/advisor-final.json",
+            "mtimeUTC": "2026-11-08T10:07:26.434305+00:00",
+            "bytes": 11376
+          }
+        ],
+        "newestMarkdown": [
+          {
+            "path": "time-circuit-explorer/docs/results/template-prefix-cofactor-evidence/README.md",
+            "mtimeUTC": "2026-11-08T10:03:14.720177+00:00",
+            "bytes": 3119
+          },
+          {
+            "path": "time-circuit-explorer/docs/compiled-template-prefix.md",
+            "mtimeUTC": "2026-11-08T10:03:14.719828+00:00",
+            "bytes": 7356
+          },
+          {
+            "path": "time-circuit-explorer/generator/README.md",
+            "mtimeUTC": "2026-11-08T09:57:56.016791+00:00",
+            "bytes": 72541
+          }
+        ],
+        "latest3Commits": [
+          "2fff41fcf4b3380116acbb8a691bee7fb74e89bd 2026-11-08T02:09:10-08:00 Compile fixed contextual template states from raw input",
+          "5496edcf198692909d14649df80db3a16da28fef 2026-11-08T01:18:20-08:00 Compile selected attention weights without online QK products",
+          "fdd72d86c5eccc235e62a9c5dbe27f0b9f5940eb 2026-11-08T00:38:11-08:00 Review arbitrary-prompt capability and the contextual-state gap"
+        ],
+        "commitsSince99": [
+          "2fff41fcf4b3380116acbb8a691bee7fb74e89bd 2026-11-08T02:09:10-08:00 Compile fixed contextual template states from raw input",
+          "5496edcf198692909d14649df80db3a16da28fef 2026-11-08T01:18:20-08:00 Compile selected attention weights without online QK products",
+          "fdd72d86c5eccc235e62a9c5dbe27f0b9f5940eb 2026-11-08T00:38:11-08:00 Review arbitrary-prompt capability and the contextual-state gap"
+        ],
+        "HEADUnchangedSince99": false
+      },
+      "cmachine-intake-pan-mamba": {
+        "HEAD": "a76c4a0a4450d6feaa9e6ddf65c3be8c289fd948",
+        "originMain": "882249783613f3350a9f11641c23b022b54dd929",
+        "branch": "codex/model-intake-math",
+        "trackedStatusEntries": 0,
+        "untrackedFiles": 0,
+        "statusSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "statusSample": [],
+        "rgPathCount": 1123,
+        "selectedTextCount": 1079,
+        "newerThan99EndCount": 0,
+        "newerThan99EndFirst20": [],
+        "newestSelectedText": [
+          {
+            "path": "cmachine-intake-pan-mamba/research/model_intake/evidence/math-capability-20261107/math-capability-unions.json",
+            "mtimeUTC": "2026-11-07T09:45:32.768285+00:00",
+            "bytes": 1469
+          },
+          {
+            "path": "cmachine-intake-pan-mamba/research/model_intake/plot_capability.py",
+            "mtimeUTC": "2026-11-07T09:45:32.069453+00:00",
+            "bytes": 4872
+          },
+          {
+            "path": "cmachine-intake-pan-mamba/research/model_intake/evidence/math-capability-20261107/mechanics.json",
+            "mtimeUTC": "2026-11-07T09:45:05.043527+00:00",
+            "bytes": 859
+          }
+        ],
+        "newestMarkdown": [
+          {
+            "path": "cmachine-intake-pan-mamba/research/model_intake/MATH-CAPABILITY.md",
+            "mtimeUTC": "2026-11-07T09:44:25.828543+00:00",
+            "bytes": 11101
+          },
+          {
+            "path": "cmachine-intake-pan-mamba/research/model_intake/evidence/math-capability-20261107/README.md",
+            "mtimeUTC": "2026-11-07T09:43:42.806609+00:00",
+            "bytes": 3305
+          },
+          {
+            "path": "cmachine-intake-pan-mamba/docs/CAPABILITIES.md",
+            "mtimeUTC": "2026-11-07T09:41:05.968373+00:00",
+            "bytes": 34140
+          }
+        ],
+        "latest3Commits": [
+          "a76c4a0a4450d6feaa9e6ddf65c3be8c289fd948 2026-11-07T01:45:52-08:00 Measure frozen math capability, scorer efficiency and unions",
+          "d1fcc6a202c961c5cf26c1dccab49763443f022c 2026-11-07T00:54:17-08:00 Localize math rewrite choices with Saturn replay",
+          "75a941a9556dadd4402f1b6d7aab5ffc2e4d53ba 2026-11-06T23:57:13-08:00 Add frozen math intake and C-backed FieldLM consumers"
+        ],
+        "commitsSince99": [],
+        "HEADUnchangedSince99": true
+      }
+    },
+    "summary": {
+      "repositories": 12,
+      "unchangedHEADsOutsideTCE": 11,
+      "TCECommitsSincePriorInventory": 3,
+      "TCESelectedTextFilesNewerThan99End": 77,
+      "ObsidianSelectedTextFilesNewerThan99End": 1,
+      "otherReposSelectedTextFilesNewerThan99End": 0,
+      "meaning": "No newer selected-text mtime outside TCE except our mutable living log in this inventory window. This does not establish global absence of new work, ignored files, or undiscovered approaches."
+    },
+    "newestOtherBlog": {
+      "path": "obsidian/blog/2026-11-07-013741-predicting-a-changed-read-before-the-reader-runs.md",
+      "mtimeUTC": "2026-11-07T10:30:46.029329+00:00",
+      "sha256": "6669041d39918fd8ec7bc824dbec6109cbaee06a6d7f3fdc557edcb01c4500b4"
+    },
+    "endTCEstatusBeforeWritingSurvey": "?? docs/plans/contextual-writer-decision-program.md\n?? docs/results/storage-audit-cycle102/README.md\n?? docs/results/storage-audit-cycle102/current-snapshots.json\n?? docs/results/storage-audit-cycle102/publication.json\n?? docs/results/storage-audit-cycle102/terminal-pointers.json\n",
+    "sampleScope": "Lists retain newest3 selected text paths and newest3 Markdown paths per repository, first10 newer TCE paths and first3 elsewhere, and first3 status entries. Complete counts/hashes come from the full inventoried sets; lists are explicit samples."
+  },
+  "priorReview": {
+    "path": "time-circuit-explorer/docs/results/research-review-cycle99/advisor-survey.json",
+    "sha256": "787e85febbf239ba64cd30667387dfaf71f19fec6ad610a8645437cd5b455977",
+    "priorContentReadPins": 33,
+    "unionPathsRehashed": 76,
+    "unchanged": 75,
+    "changed": 1,
+    "pathsRereadThisSurvey": 13,
+    "rechecks": [
+      {
+        "path": "obsidian/blog/2026-11-07-013741-predicting-a-changed-read-before-the-reader-runs.md",
+        "prior99SHA256": "6669041d39918fd8ec7bc824dbec6109cbaee06a6d7f3fdc557edcb01c4500b4",
+        "current102SHA256": "6669041d39918fd8ec7bc824dbec6109cbaee06a6d7f3fdc557edcb01c4500b4",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": true
+      },
+      {
+        "path": "obsidian/blog/2026-11-07-021005-the-read-bends-before-the-reader-runs.md",
+        "prior99SHA256": "cd2db83f6952d7e8987c6f914330d3573a4fc0c412e69f6b832d81b46d2a81e9",
+        "current102SHA256": "cd2db83f6952d7e8987c6f914330d3573a4fc0c412e69f6b832d81b46d2a81e9",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": true
+      },
+      {
+        "path": "obsidian/blog/2026-11-07-014134-discovering-math-capability-and-building-smaller-unions.md",
+        "prior99SHA256": "be9e34d1ebc74cd626d1fff25e192afd94407bab0b4e0a5a3c7c601d5d27b05e",
+        "current102SHA256": "be9e34d1ebc74cd626d1fff25e192afd94407bab0b4e0a5a3c7c601d5d27b05e",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "obsidian/blog/2026-11-06-230748-symbol-tables-in-mdb-from-causal-roles-to-cheaper-execution.md",
+        "prior99SHA256": "953387fdd0b321931a3fb253f1d39f281b0ffdae7f5a9c5195e3b43211dfce7a",
+        "current102SHA256": "953387fdd0b321931a3fb253f1d39f281b0ffdae7f5a9c5195e3b43211dfce7a",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "obsidian/blog/2026-11-06-231247-two-computation-families-share-a-discovery-protocol.md",
+        "prior99SHA256": "cc7faac2e6d0281c369caa036962b7a90efe36186fd83a9008b8de33d47eb148",
+        "current102SHA256": "cc7faac2e6d0281c369caa036962b7a90efe36186fd83a9008b8de33d47eb148",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "obsidian/blog/2026-11-06-184700-compiling-cheaper-transitions-on-the-states-they-create.md",
+        "prior99SHA256": "e96c50db3017c85e6cd695af942b7ad13d2a85bec8f0f343eb37a9a545da42ea",
+        "current102SHA256": "e96c50db3017c85e6cd695af942b7ad13d2a85bec8f0f343eb37a9a545da42ea",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "obsidian/blog/2026-11-06-125544-a-frozen-mlp-program-updates-a-conversation.md",
+        "prior99SHA256": "9634fc7b5f454d34fafb20be77b503c193f1368af6c075e7c2f1e2b611a03032",
+        "current102SHA256": "9634fc7b5f454d34fafb20be77b503c193f1368af6c075e7c2f1e2b611a03032",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "obsidian/blog/2026-11-06-154200-context-coverage-and-the-alternative-of-a-better-small-program.md",
+        "prior99SHA256": "d9d91867642923d5ceee9f933bf9379115768677e45c6922f3dc1e81c72e9456",
+        "current102SHA256": "d9d91867642923d5ceee9f933bf9379115768677e45c6922f3dc1e81c72e9456",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "obsidian/blog/2026-11-06-211600-the-34-entry-table-and-the-native-computation-we-still-need-to-explain.md",
+        "prior99SHA256": "4091b2c25664b1edc3de198c11f88615bc5009856bd33e193cd51cd97acf0534",
+        "current102SHA256": "4091b2c25664b1edc3de198c11f88615bc5009856bd33e193cd51cd97acf0534",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "obsidian/blog/2026-11-07-012000-a-fourth-family-tests-the-computation-discovery-tool.md",
+        "prior99SHA256": "c8bd0763a7138ff47417b80b3a71ea848887c56b90e176bf7f9caec382d4de2b",
+        "current102SHA256": "c8bd0763a7138ff47417b80b3a71ea848887c56b90e176bf7f9caec382d4de2b",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "obsidian/blog/2026-11-05-153154-state-context-and-the-mathematics-of-time-circuits.md",
+        "prior99SHA256": "923fcbb7c4dbd32756d3eeaaff0a1bf7e74fb835816853ae327d39777a118926",
+        "current102SHA256": "923fcbb7c4dbd32756d3eeaaff0a1bf7e74fb835816853ae327d39777a118926",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "obsidian/blog/2026-11-05-161109-the-one-assumption-that-would-make-model-computation-easier-to-understand.md",
+        "prior99SHA256": "da27c6eb7aa0dc17b3caea133e4b444e61343971eaabc56c611b80cd271e6e5d",
+        "current102SHA256": "da27c6eb7aa0dc17b3caea133e4b444e61343971eaabc56c611b80cd271e6e5d",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "obsidian/blog/2026-08-14-what-saturn-can-actually-do.md",
+        "prior99SHA256": "a746c5d9474cee0d900c0204279e75cfdc99f5eb73abb7394cec484c8dd72e6a",
+        "current102SHA256": "a746c5d9474cee0d900c0204279e75cfdc99f5eb73abb7394cec484c8dd72e6a",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": true
+      },
+      {
+        "path": "saturn/docs/SATURN-BIBLE.md",
+        "prior99SHA256": "cdbe9de6b25d3f0bff689738f81b348a7a811fe39df477e59019a168d39f1133",
+        "current102SHA256": "cdbe9de6b25d3f0bff689738f81b348a7a811fe39df477e59019a168d39f1133",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": true
+      },
+      {
+        "path": "saturn/docs/EVIDENCE-PLANE.md",
+        "prior99SHA256": "b4e130cac94324e1c4214e96347f677c156b14c8a11dc3fcc1696d450e71c136",
+        "current102SHA256": "b4e130cac94324e1c4214e96347f677c156b14c8a11dc3fcc1696d450e71c136",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": true
+      },
+      {
+        "path": "saturn/docs/CAPABILITY-MACHINE.md",
+        "prior99SHA256": "dd32b7cb342f52cdbdf94bd0fffb328ee7ba91a0f6505a04bb033d457dd6ec5b",
+        "current102SHA256": "dd32b7cb342f52cdbdf94bd0fffb328ee7ba91a0f6505a04bb033d457dd6ec5b",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "saturn/docs/CLOSED-STATE-COMPILER.md",
+        "prior99SHA256": "10d43a2486813f6715ed35268bdfe4ba04f501adaf2a014b51c2c7a4b8cbf133",
+        "current102SHA256": "10d43a2486813f6715ed35268bdfe4ba04f501adaf2a014b51c2c7a4b8cbf133",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "saturn/src/saturn/closed_state.py",
+        "prior99SHA256": "16c035a26745b28cbfd298ebe36a9065f58a49628a3efe148608dcedf00b2ec8",
+        "current102SHA256": "16c035a26745b28cbfd298ebe36a9065f58a49628a3efe148608dcedf00b2ec8",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "saturn/request.jsonl",
+        "prior99SHA256": "abf651958088d28ed4bbdefc9da28a2294c5d74c0dd98e698e8696f5dbbf063f",
+        "current102SHA256": "abf651958088d28ed4bbdefc9da28a2294c5d74c0dd98e698e8696f5dbbf063f",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "saturn-pub/packages/mdb/docs/QWEN-COMPUTATION-FAMILIES.md",
+        "prior99SHA256": "0f2df0595159533b318a4ca9cca57d78bcedeb680dcb2571b148fe833c0f720e",
+        "current102SHA256": "0f2df0595159533b318a4ca9cca57d78bcedeb680dcb2571b148fe833c0f720e",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "saturn-pub/packages/mdb/docs/QWEN-COMPUTATION-FORECASTS.md",
+        "prior99SHA256": "774dcebe0e4a9cb32c939ee7903239d3de51fd9420b34e588b12048a28addfd3",
+        "current102SHA256": "774dcebe0e4a9cb32c939ee7903239d3de51fd9420b34e588b12048a28addfd3",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "saturn-pub/packages/mdb/docs/COMPUTATION-FAMILY-PROGRAMS.md",
+        "prior99SHA256": "60fe22f131f5c95e2006be33e5af72c0506ad61482ab30eefe0efbb2621aca08",
+        "current102SHA256": "60fe22f131f5c95e2006be33e5af72c0506ad61482ab30eefe0efbb2621aca08",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "saturn-pub/packages/mdb/qualification/read_weight_second_order_20261107/FINDINGS.md",
+        "prior99SHA256": "77c9fd4c2c470e61afd29b43566deceba266e73191ab4c8d6c3103a334ad33a4",
+        "current102SHA256": "77c9fd4c2c470e61afd29b43566deceba266e73191ab4c8d6c3103a334ad33a4",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "saturn/experiments/2026-11-06-future-reader-operand/FINDINGS.md",
+        "prior99SHA256": "9535b0987b6d0dc9eb4f55cc9b6e2d19d071656b000058bc96c810443ff50dcc",
+        "current102SHA256": "9535b0987b6d0dc9eb4f55cc9b6e2d19d071656b000058bc96c810443ff50dcc",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "research/papers/time-circuit-scaffold/2026-11-06-220330-time-circuit-architecture-after-the-computation-review.md",
+        "prior99SHA256": "ded7641b8c577a31ba186bb9da25f70112ff1adae1a7e9c39ee4bffefe143232",
+        "current102SHA256": "ded7641b8c577a31ba186bb9da25f70112ff1adae1a7e9c39ee4bffefe143232",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": true
+      },
+      {
+        "path": "obsidian/research/model-computation-review-20261106/FINAL-REVIEW.md",
+        "prior99SHA256": "9ad2b95aed147383fd8f0a9af1f163cec8edd915f6b97c68f41961896f1bb7f0",
+        "current102SHA256": "9ad2b95aed147383fd8f0a9af1f163cec8edd915f6b97c68f41961896f1bb7f0",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "model-experiments/experiments/2026-11-02-concept-graph-v3/RESULTS.md",
+        "prior99SHA256": "7d3c6d2c3e4ebf8af2c6efd0f487aae86c78ef43919581b4e1878152fa3a683c",
+        "current102SHA256": "7d3c6d2c3e4ebf8af2c6efd0f487aae86c78ef43919581b4e1878152fa3a683c",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "cmachine/research/frozen_transfer/FINDINGS.md",
+        "prior99SHA256": "fcf893845c0f6c7aa09b50caed725b5690c757244abdf7cccff8be2e078686e3",
+        "current102SHA256": "fcf893845c0f6c7aa09b50caed725b5690c757244abdf7cccff8be2e078686e3",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "cmachine/research/frozen_transfer/RESTORATION-FINDINGS.md",
+        "prior99SHA256": "ecddc87a5eb08d6945bde1bdc38a22aee4212475492d3df56c95449a0a2f68a0",
+        "current102SHA256": "ecddc87a5eb08d6945bde1bdc38a22aee4212475492d3df56c95449a0a2f68a0",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": true
+      },
+      {
+        "path": "cmachine/docs/CAPABILITIES.md",
+        "prior99SHA256": "0f5d2ec5242116ff8ef79e66cc02767dc51eea8c4e91390bfe7e3db392cdb6ea",
+        "current102SHA256": "0f5d2ec5242116ff8ef79e66cc02767dc51eea8c4e91390bfe7e3db392cdb6ea",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "isa/outputs/response-quotient-r3-mamba/SUMMARY.md",
+        "prior99SHA256": "3e755cb6c4a189237e51716a1111722cc2f67fb78565564daaa1dca30a8260a6",
+        "current102SHA256": "3e755cb6c4a189237e51716a1111722cc2f67fb78565564daaa1dca30a8260a6",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "isa/outputs/symbolic-loop-advisor-r3-mamba/SUMMARY.md",
+        "prior99SHA256": "46ad36599a3e7732fdadf828d007bf09000855f09614a735589dc4c2912e897d",
+        "current102SHA256": "46ad36599a3e7732fdadf828d007bf09000855f09614a735589dc4c2912e897d",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/exact-behavioral-compiler.md",
+        "prior99SHA256": "cf1436b4a2244e65ad138d5d5839ea7aeaa8342fa1978e71e376c76407639d4b",
+        "current102SHA256": "cf1436b4a2244e65ad138d5d5839ea7aeaa8342fa1978e71e376c76407639d4b",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/plans/behavioral-certificate-authority.md",
+        "prior99SHA256": "75e86349af0b9ff0c925473d5747f765353ac25cb5e91c599b54db3a1bcada89",
+        "current102SHA256": "75e86349af0b9ff0c925473d5747f765353ac25cb5e91c599b54db3a1bcada89",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/plans/behavioral-realization-serving.md",
+        "prior99SHA256": "50ee66441d4443eb69c8b1e072f6e2f50ffa4da6c5be190118101bd64b20878a",
+        "current102SHA256": "50ee66441d4443eb69c8b1e072f6e2f50ffa4da6c5be190118101bd64b20878a",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/serving-construction.md",
+        "prior99SHA256": "e83dd7aa3a542a87150de843fad54db6a983517a85461edc4a52fa45095e4542",
+        "current102SHA256": "e83dd7aa3a542a87150de843fad54db6a983517a85461edc4a52fa45095e4542",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/results/behavioral-realization/report.json",
+        "prior99SHA256": "38ae1da917a87f5867651652fa1f4cdbb9a66fbc01902f7164bfb9d0fb2547b5",
+        "current102SHA256": "38ae1da917a87f5867651652fa1f4cdbb9a66fbc01902f7164bfb9d0fb2547b5",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/results/behavioral-realization/certificate.json",
+        "prior99SHA256": "ad0db39e893732c08c892d0af3a284e9cf8bc5b215b2ccddf91595f8c8ac4661",
+        "current102SHA256": "ad0db39e893732c08c892d0af3a284e9cf8bc5b215b2ccddf91595f8c8ac4661",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/results/behavioral-realization/program.json",
+        "prior99SHA256": "db7873c59a050c7fc122442c5398e6bfc0d41726ec503a4b68dc5346af040a11",
+        "current102SHA256": "db7873c59a050c7fc122442c5398e6bfc0d41726ec503a4b68dc5346af040a11",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/results/behavioral-realization-evidence/README.md",
+        "prior99SHA256": "3ace2a7245f00fd0991b19079e819d516235eb32355cfe09a67ea4822fd728b3",
+        "current102SHA256": "3ace2a7245f00fd0991b19079e819d516235eb32355cfe09a67ea4822fd728b3",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+        "prior99SHA256": "b454c706b4460fa1c9743cacc0c439cba62b8d9776d966402813e5685f7b446c",
+        "current102SHA256": "7d202f4c2afac50be11edc3d4f8d4ca8b8acd3202afa0f6b3e59f7641c255107",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": false,
+        "reReadContentIn102": true
+      },
+      {
+        "path": "time-circuit-explorer/docs/raw-prompt-encoder-atoms.md",
+        "prior99SHA256": "3f6faba5ff0f36f7179fe428588984cdd6cf67bb8aad5cad2dfa33b7f7f8dd4d",
+        "current102SHA256": "3f6faba5ff0f36f7179fe428588984cdd6cf67bb8aad5cad2dfa33b7f7f8dd4d",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/zero-network-image-response.md",
+        "prior99SHA256": "2f445aec723b6a123cf5bed74c089cd8dbffc58704cc008db883c8708c9782f4",
+        "current102SHA256": "2f445aec723b6a123cf5bed74c089cd8dbffc58704cc008db883c8708c9782f4",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/prediction-only-benchmark.md",
+        "prior99SHA256": "b082b46c3443156ef09acc43d08ed2363ffe493419139f2d8a87c976259ac168",
+        "current102SHA256": "b082b46c3443156ef09acc43d08ed2363ffe493419139f2d8a87c976259ac168",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/generator/behavioral_realization.py",
+        "prior99SHA256": "d8934cc8eb785dfc3b84629b1668d082239e2a504e3dbe812ffedbf63cc03e64",
+        "current102SHA256": "d8934cc8eb785dfc3b84629b1668d082239e2a504e3dbe812ffedbf63cc03e64",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/generator/behavioral_program.py",
+        "prior99SHA256": "14dd19de72b85dfdd814c7060c0ac5196eaf8af506a66f287550178b7e3466c4",
+        "current102SHA256": "14dd19de72b85dfdd814c7060c0ac5196eaf8af506a66f287550178b7e3466c4",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/generator/worker.py",
+        "prior99SHA256": "f398769ef587fbadabe4feba20af2f1b75387eae209be3403033556a312d6d23",
+        "current102SHA256": "f398769ef587fbadabe4feba20af2f1b75387eae209be3403033556a312d6d23",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/generator/encoder_atoms.py",
+        "prior99SHA256": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+        "current102SHA256": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": true
+      },
+      {
+        "path": "time-circuit-explorer/docs/results/research-review-cycle90/advisor-survey.json",
+        "prior99SHA256": "dd5cf4e9a7e21f903abd2f8f9fd0fd978db70d91bc813e1b7b4c85e12df44d4f",
+        "current102SHA256": "dd5cf4e9a7e21f903abd2f8f9fd0fd978db70d91bc813e1b7b4c85e12df44d4f",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "saturn/experiments/2026-11-07-history-reader-role-cut/FINDINGS.md",
+        "prior99SHA256": "c493c1cd3c98062ca0eba39959c6d58fba59f88244faa577038b62d0da90d1cf",
+        "current102SHA256": "c493c1cd3c98062ca0eba39959c6d58fba59f88244faa577038b62d0da90d1cf",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": true
+      },
+      {
+        "path": "isa/docs/executable-symbol-scan-lowering.md",
+        "prior99SHA256": "dfebb5214f6a73393e955459c717068f9cb1cf1f90fd9814a845df0d93e26c68",
+        "current102SHA256": "dfebb5214f6a73393e955459c717068f9cb1cf1f90fd9814a845df0d93e26c68",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/source-ordering-program.md",
+        "prior99SHA256": "2af336711b2e0c57befd0fb0941b207d1de02faf2bd0945065926afb03b04505",
+        "current102SHA256": "2af336711b2e0c57befd0fb0941b207d1de02faf2bd0945065926afb03b04505",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/plans/source-ordering-program-feasibility.md",
+        "prior99SHA256": "354d8ad974625e73a1b5a6e2b1cd9084e21bdc06aa4592b633fa452d32a8807e",
+        "current102SHA256": "354d8ad974625e73a1b5a6e2b1cd9084e21bdc06aa4592b633fa452d32a8807e",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/token-history-address-program.md",
+        "prior99SHA256": "bb612e1b65c18dc93946973706a97866bfc7f9334381f6b06bc283d90a7760de",
+        "current102SHA256": "bb612e1b65c18dc93946973706a97866bfc7f9334381f6b06bc283d90a7760de",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "isa/isa_lab/symbolic_loop.py",
+        "prior99SHA256": "0cfd7661c0705e3f9bf78d6ae2cbca039637f405c3964851cb39df2c4abf6052",
+        "current102SHA256": "0cfd7661c0705e3f9bf78d6ae2cbca039637f405c3964851cb39df2c4abf6052",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": true
+      },
+      {
+        "path": "isa/isa_lab/response_quotient.py",
+        "prior99SHA256": "ff52cd9c9a0d49e6fc8756e613ffd44cf09b2477945292baded612d610181756",
+        "current102SHA256": "ff52cd9c9a0d49e6fc8756e613ffd44cf09b2477945292baded612d610181756",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/generator/source_order_compile.py",
+        "prior99SHA256": "c76d8c0dce2647d4707ab926beda3b23953f61fc7f655b6a6125406d8e6e5ff2",
+        "current102SHA256": "c76d8c0dce2647d4707ab926beda3b23953f61fc7f655b6a6125406d8e6e5ff2",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/generator/source_order_program.py",
+        "prior99SHA256": "b46fd0daf9d91076286e6685622a086a7dfc156d254229e693fcaab8b74b6004",
+        "current102SHA256": "b46fd0daf9d91076286e6685622a086a7dfc156d254229e693fcaab8b74b6004",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/results/source-order-program/report.json",
+        "prior99SHA256": "f37330dc31aa825315691260de06ffe7a0c5d87c15db23dbab57ad65fbf28a84",
+        "current102SHA256": "f37330dc31aa825315691260de06ffe7a0c5d87c15db23dbab57ad65fbf28a84",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/results/source-order-program/scalar-audit.json",
+        "prior99SHA256": "8ceb95ad263dc4a51de68a35b79b700c0b88829c0513fe5334b207865080db40",
+        "current102SHA256": "8ceb95ad263dc4a51de68a35b79b700c0b88829c0513fe5334b207865080db40",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/behavioral-authority.md",
+        "prior99SHA256": "dea80cd48f41f0ceec9a2a363896be3eb13af97244ea7d3e8969c7def201d376",
+        "current102SHA256": "dea80cd48f41f0ceec9a2a363896be3eb13af97244ea7d3e8969c7def201d376",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/results/storage-audit-cycle96/publication.json",
+        "prior99SHA256": "d2d31cf9f367a61c01a521e17856b0e5971ae38d1bce92906a104432c6b128fc",
+        "current102SHA256": "d2d31cf9f367a61c01a521e17856b0e5971ae38d1bce92906a104432c6b128fc",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/results/research-review-cycle93/advisor-survey.json",
+        "prior99SHA256": "de69dc5433955ad9cbd54e9f261f6804fbb833928b4c044cd36fea2228d66d7d",
+        "current102SHA256": "de69dc5433955ad9cbd54e9f261f6804fbb833928b4c044cd36fea2228d66d7d",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/results/research-review-cycle93/README.md",
+        "prior99SHA256": "cc4369769c8a098b532af95b4fe39e71128da18d1dd36522927249380025d939",
+        "current102SHA256": "cc4369769c8a098b532af95b4fe39e71128da18d1dd36522927249380025d939",
+        "in99ContentRead": false,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/order-clock-recurrence.md",
+        "prior99SHA256": "3eb19ce5ef158d1c558cc403d7ddec285e3789144921d159eca03c0932d429d2",
+        "current102SHA256": "3eb19ce5ef158d1c558cc403d7ddec285e3789144921d159eca03c0932d429d2",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/first-read-route-payload.md",
+        "prior99SHA256": "7fb3f9c4c36c780913bf8bba36295bb36f4fd7c0c7f4ac6670d33bbbed3f5ac7",
+        "current102SHA256": "7fb3f9c4c36c780913bf8bba36295bb36f4fd7c0c7f4ac6670d33bbbed3f5ac7",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/relative-mass-producer-feasibility.md",
+        "prior99SHA256": "dc52aece68f128b0177ec43fe0e01c102edfed6e85f1f2e2e0559f2ea77e77b5",
+        "current102SHA256": "dc52aece68f128b0177ec43fe0e01c102edfed6e85f1f2e2e0559f2ea77e77b5",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/plans/compiled-selected-mass.md",
+        "prior99SHA256": "19abf8dada31f969e0774b139bd90770867742f4bb90ae631072dbcfc3285069",
+        "current102SHA256": "19abf8dada31f969e0774b139bd90770867742f4bb90ae631072dbcfc3285069",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "saturn-pub/packages/mdb/src/mdb/read_weight_transport.py",
+        "prior99SHA256": "ceda5583d9027bea4774c26d82244efa588b23be5d7f89666bfd76a1bff67c50",
+        "current102SHA256": "ceda5583d9027bea4774c26d82244efa588b23be5d7f89666bfd76a1bff67c50",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": true
+      },
+      {
+        "path": "cmachine-intake-pan-mamba/research/model_intake/MATH-CAPABILITY.md",
+        "prior99SHA256": "7d6563d63478580c20f1861dd39d98fa431be1be3c8d0ee5cf33982adf02700d",
+        "current102SHA256": "7d6563d63478580c20f1861dd39d98fa431be1be3c8d0ee5cf33982adf02700d",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "cmachine/research/transition_laws/FINDINGS.md",
+        "prior99SHA256": "16f5c9f5067341bb6ddab05f7b9440dfeb18a1ec7f2f6791b3fc6b5c37d5b2a3",
+        "current102SHA256": "16f5c9f5067341bb6ddab05f7b9440dfeb18a1ec7f2f6791b3fc6b5c37d5b2a3",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": true
+      },
+      {
+        "path": "time-circuit-explorer/docs/results/relative-mass-feasibility/report.json",
+        "prior99SHA256": "5ac8fdbd4a21873a858ffa1344dc93ff0f63dae2a17b9a1de50802a0ebb827c4",
+        "current102SHA256": "5ac8fdbd4a21873a858ffa1344dc93ff0f63dae2a17b9a1de50802a0ebb827c4",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/results/storage-audit-cycle99/README.md",
+        "prior99SHA256": "40d09aa8af283ced5da9e6100981f312169227b6e969f7a5bc74111ae8a9c217",
+        "current102SHA256": "40d09aa8af283ced5da9e6100981f312169227b6e969f7a5bc74111ae8a9c217",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/results/first-read-route-payload/common-weight-ratio.json",
+        "prior99SHA256": "72233f9697fcf2abb69358ff2878b1a29b062c1ba321fd0f0c460d06a19b9fec",
+        "current102SHA256": "72233f9697fcf2abb69358ff2878b1a29b062c1ba321fd0f0c460d06a19b9fec",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/results/order-clock-recurrence/report.json",
+        "prior99SHA256": "e58f2c1805a04ab3d98f527cc4404eea9092267a1a77371a8bfe1a88cfd69004",
+        "current102SHA256": "e58f2c1805a04ab3d98f527cc4404eea9092267a1a77371a8bfe1a88cfd69004",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      },
+      {
+        "path": "time-circuit-explorer/docs/results/storage-audit-cycle99/publication.json",
+        "prior99SHA256": "5aa53bd44b48b8b2b6eedd7bdbfdc0c7b636249b26beb1dfa2bd1d5a9d304786",
+        "current102SHA256": "5aa53bd44b48b8b2b6eedd7bdbfdc0c7b636249b26beb1dfa2bd1d5a9d304786",
+        "in99ContentRead": true,
+        "exists": true,
+        "unchangedSince99": true,
+        "reReadContentIn102": false
+      }
+    ],
+    "historicalLivingLog": "Prior99 content read was the cycle98 living-log snapshot b454c706b4460fa1c9743cacc0c439cba62b8d9776d966402813e5685f7b446c. Current102 survey reads the cycle101 version 7d202f4c2afac50be11edc3d4f8d4ca8b8acd3202afa0f6b3e59f7641c255107. Neither is a review of later cycle102 prose.",
+    "finalRehashUTC": "2026-11-08T10:25:02.209268+00:00"
+  },
+  "contentReadSnapshots": [
+    {
+      "path": "saturn/docs/SATURN-BIBLE.md",
+      "sha256": "cdbe9de6b25d3f0bff689738f81b348a7a811fe39df477e59019a168d39f1133",
+      "bytes": 275747,
+      "lineCount": 3203,
+      "scopes": [
+        "Architecture, current runtime/claim boundaries and terminal protocol; selected sections only."
+      ],
+      "ranges": [
+        [
+          1,
+          57
+        ],
+        [
+          3000,
+          3048
+        ],
+        [
+          3093,
+          3121
+        ]
+      ],
+      "fullContentRead": false,
+      "mtimeUTC": "2026-10-27T22:54:08.997392+00:00",
+      "workingTree": {
+        "gitTracked": true,
+        "gitStatus": ""
+      },
+      "repoHEAD": "ec5fe5176b57b3b944ba4b88d9bdb2232cc7b54b",
+      "readTimesUTC": [
+        "2026-11-08T10:12:29.992957+00:00"
+      ]
+    },
+    {
+      "path": "saturn/docs/EVIDENCE-PLANE.md",
+      "sha256": "b4e130cac94324e1c4214e96347f677c156b14c8a11dc3fcc1696d450e71c136",
+      "bytes": 15054,
+      "lineCount": 267,
+      "scopes": [
+        "Offline evidence mechanics and status/claim authority."
+      ],
+      "ranges": [
+        [
+          1,
+          85
+        ]
+      ],
+      "fullContentRead": false,
+      "mtimeUTC": "2026-10-27T22:25:10.728701+00:00",
+      "workingTree": {
+        "gitTracked": true,
+        "gitStatus": ""
+      },
+      "repoHEAD": "ec5fe5176b57b3b944ba4b88d9bdb2232cc7b54b",
+      "readTimesUTC": [
+        "2026-11-08T10:12:29.993215+00:00"
+      ]
+    },
+    {
+      "path": "obsidian/blog/2026-08-14-what-saturn-can-actually-do.md",
+      "sha256": "a746c5d9474cee0d900c0204279e75cfdc99f5eb73abb7394cec484c8dd72e6a",
+      "bytes": 509042,
+      "lineCount": 1953,
+      "scopes": [
+        "Current dynamic circuits, compiled MLP, program/data and ISA supplied-state limitations.",
+        "Repair of previously truncated MLP/memory capability excerpt."
+      ],
+      "ranges": [
+        [
+          377,
+          413
+        ],
+        [
+          968,
+          1009
+        ],
+        [
+          1065,
+          1083
+        ],
+        [
+          1695,
+          1712
+        ]
+      ],
+      "fullContentRead": false,
+      "mtimeUTC": "2026-11-07T10:25:10.021148+00:00",
+      "workingTree": {
+        "gitTracked": true,
+        "gitStatus": "M blog/2026-08-14-what-saturn-can-actually-do.md"
+      },
+      "repoHEAD": "c533a251ca8ffa299e21035d363f982c313137c5",
+      "readTimesUTC": [
+        "2026-11-08T10:12:29.994381+00:00",
+        "2026-11-08T10:12:42.495519+00:00"
+      ]
+    },
+    {
+      "path": "saturn/experiments/2026-11-07-history-reader-role-cut/FINDINGS.md",
+      "sha256": "c493c1cd3c98062ca0eba39959c6d58fba59f88244faa577038b62d0da90d1cf",
+      "bytes": 9448,
+      "lineCount": 83,
+      "scopes": [
+        "Complete newest history-reader actual findings and operand closure."
+      ],
+      "ranges": [
+        [
+          1,
+          83
+        ]
+      ],
+      "fullContentRead": true,
+      "mtimeUTC": "2026-11-07T08:38:20.735135+00:00",
+      "workingTree": {
+        "gitTracked": false,
+        "gitStatus": "?? experiments/2026-11-07-history-reader-role-cut/FINDINGS.md"
+      },
+      "repoHEAD": "ec5fe5176b57b3b944ba4b88d9bdb2232cc7b54b",
+      "readTimesUTC": [
+        "2026-11-08T10:12:42.495836+00:00"
+      ]
+    },
+    {
+      "path": "cmachine/research/frozen_transfer/RESTORATION-FINDINGS.md",
+      "sha256": "ecddc87a5eb08d6945bde1bdc38a22aee4212475492d3df56c95449a0a2f68a0",
+      "bytes": 14003,
+      "lineCount": 118,
+      "scopes": [
+        "Complete latest restoration outcomes; native state versus own recursion."
+      ],
+      "ranges": [
+        [
+          1,
+          118
+        ]
+      ],
+      "fullContentRead": true,
+      "mtimeUTC": "2026-11-07T10:00:12.820784+00:00",
+      "workingTree": {
+        "gitTracked": false,
+        "gitStatus": "?? research/frozen_transfer/RESTORATION-FINDINGS.md"
+      },
+      "repoHEAD": "882249783613f3350a9f11641c23b022b54dd929",
+      "readTimesUTC": [
+        "2026-11-08T10:12:42.496047+00:00"
+      ]
+    },
+    {
+      "path": "obsidian/blog/2026-11-07-013741-predicting-a-changed-read-before-the-reader-runs.md",
+      "sha256": "6669041d39918fd8ec7bc824dbec6109cbaee06a6d7f3fdc557edcb01c4500b4",
+      "bytes": 18377,
+      "lineCount": 195,
+      "scopes": [
+        "selected ranges"
+      ],
+      "ranges": [
+        [
+          34,
+          195
+        ]
+      ],
+      "fullContentRead": false,
+      "mtimeUTC": "2026-11-07T10:30:46.029329+00:00",
+      "workingTree": {
+        "gitTracked": true,
+        "gitStatus": ""
+      },
+      "repoHEAD": "c533a251ca8ffa299e21035d363f982c313137c5",
+      "readTimesUTC": [
+        "2026-11-08T10:16:42.104203+00:00"
+      ]
+    },
+    {
+      "path": "isa/isa_lab/symbolic_loop.py",
+      "sha256": "0cfd7661c0705e3f9bf78d6ae2cbca039637f405c3964851cb39df2c4abf6052",
+      "bytes": 7694,
+      "lineCount": 129,
+      "scopes": [
+        "full"
+      ],
+      "ranges": [
+        [
+          1,
+          129
+        ]
+      ],
+      "fullContentRead": true,
+      "mtimeUTC": "2026-10-29T09:55:48.641821+00:00",
+      "workingTree": {
+        "gitTracked": false,
+        "gitStatus": "?? isa_lab/symbolic_loop.py"
+      },
+      "repoHEAD": "30cda533a8e1346ff9d0cdfaab166429c065722d",
+      "readTimesUTC": [
+        "2026-11-08T10:16:55.458756+00:00"
+      ]
+    },
+    {
+      "path": "saturn-pub/packages/mdb/src/mdb/read_weight_transport.py",
+      "sha256": "ceda5583d9027bea4774c26d82244efa588b23be5d7f89666bfd76a1bff67c50",
+      "bytes": 28504,
+      "lineCount": 604,
+      "scopes": [
+        "selected ranges"
+      ],
+      "ranges": [
+        [
+          150,
+          188
+        ],
+        [
+          350,
+          395
+        ],
+        [
+          405,
+          455
+        ],
+        [
+          465,
+          535
+        ]
+      ],
+      "fullContentRead": false,
+      "mtimeUTC": "2026-11-07T09:25:49.992006+00:00",
+      "workingTree": {
+        "gitTracked": true,
+        "gitStatus": ""
+      },
+      "repoHEAD": "79cb0b17868bb52bd7c1dd1fde3f5aaffcc9eeb8",
+      "readTimesUTC": [
+        "2026-11-08T10:16:55.459285+00:00"
+      ]
+    },
+    {
+      "path": "time-circuit-explorer/generator/encoder_atoms.py",
+      "sha256": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+      "bytes": 10121,
+      "lineCount": 172,
+      "scopes": [
+        "selected ranges"
+      ],
+      "ranges": [
+        [
+          99,
+          141
+        ]
+      ],
+      "fullContentRead": false,
+      "mtimeUTC": "2026-11-06T08:20:02.706715+00:00",
+      "workingTree": {
+        "gitTracked": true,
+        "gitStatus": ""
+      },
+      "repoHEAD": "2fff41fcf4b3380116acbb8a691bee7fb74e89bd",
+      "readTimesUTC": [
+        "2026-11-08T10:16:55.460007+00:00"
+      ]
+    },
+    {
+      "path": "time-circuit-explorer/docs/results/storage-audit-cycle102/publication.json",
+      "sha256": "4f9794f8cabf4df01cb2b07310a3ee624fa8604bd8fdf4369fd7b7c9d1259214",
+      "bytes": 1590,
+      "lineCount": 28,
+      "scopes": [
+        "full"
+      ],
+      "ranges": [
+        [
+          1,
+          28
+        ]
+      ],
+      "fullContentRead": true,
+      "mtimeUTC": "2026-11-08T10:15:07.213689+00:00",
+      "workingTree": {
+        "gitTracked": false,
+        "gitStatus": "?? docs/results/storage-audit-cycle102/publication.json"
+      },
+      "repoHEAD": "2fff41fcf4b3380116acbb8a691bee7fb74e89bd",
+      "readTimesUTC": [
+        "2026-11-08T10:16:55.460342+00:00"
+      ]
+    },
+    {
+      "path": "time-circuit-explorer/docs/results/storage-audit-cycle102/README.md",
+      "sha256": "aca143fd41e79912b18dcd02c15c9b2d8b6a715b5b6318e9a2ac9241f57c0b2e",
+      "bytes": 1223,
+      "lineCount": 7,
+      "scopes": [
+        "full"
+      ],
+      "ranges": [
+        [
+          1,
+          7
+        ]
+      ],
+      "fullContentRead": true,
+      "mtimeUTC": "2026-11-08T10:15:07.224611+00:00",
+      "workingTree": {
+        "gitTracked": false,
+        "gitStatus": "?? docs/results/storage-audit-cycle102/README.md"
+      },
+      "repoHEAD": "2fff41fcf4b3380116acbb8a691bee7fb74e89bd",
+      "readTimesUTC": [
+        "2026-11-08T10:16:55.460505+00:00"
+      ]
+    },
+    {
+      "path": "time-circuit-explorer/docs/results/compiled-selected-mass/report.json",
+      "sha256": "a422ddfd635d7750cfcaf00b51452ea7eae0aefbaa18008dd78da846509d06e3",
+      "bytes": 4361,
+      "lineCount": 140,
+      "scopes": [
+        "selected JSON keys; large tables not content-read",
+        "full"
+      ],
+      "ranges": [
+        [
+          1,
+          140
+        ]
+      ],
+      "jsonKeys": [
+        "mechanics_status",
+        "instrument_status",
+        "terminal_status",
+        "trend_status",
+        "scope",
+        "referenceScope",
+        "diagnosticWork",
+        "diagnosticSeconds"
+      ],
+      "fullContentRead": true,
+      "mtimeUTC": "2026-11-08T08:57:26.996663+00:00",
+      "workingTree": {
+        "gitTracked": true,
+        "gitStatus": ""
+      },
+      "repoHEAD": "2fff41fcf4b3380116acbb8a691bee7fb74e89bd",
+      "readTimesUTC": [
+        "2026-11-08T10:17:25.713142+00:00",
+        "2026-11-08T10:20:08.529199+00:00"
+      ]
+    },
+    {
+      "path": "time-circuit-explorer/docs/results/template-prefix-cofactor/report.json",
+      "sha256": "00d9d555d662335ad6412c71f4a8fe676448ffc650dea20731668fb3605eb2e1",
+      "bytes": 34535,
+      "lineCount": 788,
+      "scopes": [
+        "selected JSON keys; large tables not content-read",
+        "selected JSON keys"
+      ],
+      "ranges": [],
+      "jsonKeys": [
+        "compileAuthenticationCopySeconds",
+        "compiledAssetBytes",
+        "diagnosticsReleasedAfterSealSHA256",
+        "freshChildWallSeconds",
+        "historicalPreparation",
+        "instrument_status",
+        "mechanics_status",
+        "newImages",
+        "newNeuralEvaluations",
+        "newScientificFloatingArithmetic",
+        "requestSHA256",
+        "schema",
+        "scope",
+        "terminal_status",
+        "trend_status",
+        "workerWallSecondsBeforeReport",
+        "comparisons",
+        "program"
+      ],
+      "fullContentRead": false,
+      "mtimeUTC": "2026-11-08T09:59:08.801018+00:00",
+      "workingTree": {
+        "gitTracked": true,
+        "gitStatus": ""
+      },
+      "repoHEAD": "2fff41fcf4b3380116acbb8a691bee7fb74e89bd",
+      "readTimesUTC": [
+        "2026-11-08T10:17:25.713457+00:00",
+        "2026-11-08T10:20:08.529337+00:00"
+      ]
+    },
+    {
+      "path": "saturn/src/saturn/ar/qwen_swiglu_program.py",
+      "sha256": "91fa9bb7787e64412b537040cb27931d42e51bdc4ac3c333b18c7142a2dd672f",
+      "bytes": 26738,
+      "lineCount": 632,
+      "scopes": [
+        "selected ranges"
+      ],
+      "ranges": [
+        [
+          1,
+          92
+        ],
+        [
+          139,
+          187
+        ],
+        [
+          327,
+          343
+        ]
+      ],
+      "fullContentRead": false,
+      "mtimeUTC": "2026-09-06T07:36:38.572927+00:00",
+      "workingTree": {
+        "gitTracked": true,
+        "gitStatus": ""
+      },
+      "repoHEAD": "ec5fe5176b57b3b944ba4b88d9bdb2232cc7b54b",
+      "readTimesUTC": [
+        "2026-11-08T10:19:04.220221+00:00"
+      ]
+    },
+    {
+      "path": "obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+      "sha256": "7d202f4c2afac50be11edc3d4f8d4ca8b8acd3202afa0f6b3e59f7641c255107",
+      "bytes": 886943,
+      "lineCount": 6610,
+      "scopes": [
+        "selected ranges"
+      ],
+      "ranges": [
+        [
+          1,
+          38
+        ],
+        [
+          1418,
+          1427
+        ],
+        [
+          6450,
+          6529
+        ]
+      ],
+      "fullContentRead": false,
+      "mtimeUTC": "2026-11-08T10:04:37.495522+00:00",
+      "workingTree": {
+        "gitTracked": true,
+        "gitStatus": "M blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md"
+      },
+      "repoHEAD": "c533a251ca8ffa299e21035d363f982c313137c5",
+      "readTimesUTC": [
+        "2026-11-08T10:19:04.221742+00:00"
+      ]
+    },
+    {
+      "path": "obsidian/blog/2026-11-07-021005-the-read-bends-before-the-reader-runs.md",
+      "sha256": "cd2db83f6952d7e8987c6f914330d3573a4fc0c412e69f6b832d81b46d2a81e9",
+      "bytes": 20658,
+      "lineCount": 180,
+      "scopes": [
+        "selected ranges"
+      ],
+      "ranges": [
+        [
+          134,
+          180
+        ]
+      ],
+      "fullContentRead": false,
+      "mtimeUTC": "2026-11-07T10:30:16.086857+00:00",
+      "workingTree": {
+        "gitTracked": true,
+        "gitStatus": ""
+      },
+      "repoHEAD": "c533a251ca8ffa299e21035d363f982c313137c5",
+      "readTimesUTC": [
+        "2026-11-08T10:19:41.636611+00:00"
+      ]
+    },
+    {
+      "path": "cmachine/research/transition_laws/FINDINGS.md",
+      "sha256": "16f5c9f5067341bb6ddab05f7b9440dfeb18a1ec7f2f6791b3fc6b5c37d5b2a3",
+      "bytes": 9348,
+      "lineCount": 61,
+      "scopes": [
+        "full"
+      ],
+      "ranges": [
+        [
+          1,
+          61
+        ]
+      ],
+      "fullContentRead": true,
+      "mtimeUTC": "2026-11-07T03:14:38.264436+00:00",
+      "workingTree": {
+        "gitTracked": true,
+        "gitStatus": ""
+      },
+      "repoHEAD": "882249783613f3350a9f11641c23b022b54dd929",
+      "readTimesUTC": [
+        "2026-11-08T10:19:41.636743+00:00"
+      ]
+    },
+    {
+      "path": "research/papers/time-circuit-scaffold/2026-11-06-220330-time-circuit-architecture-after-the-computation-review.md",
+      "sha256": "ded7641b8c577a31ba186bb9da25f70112ff1adae1a7e9c39ee4bffefe143232",
+      "bytes": 18707,
+      "lineCount": 179,
+      "scopes": [
+        "selected ranges"
+      ],
+      "ranges": [
+        [
+          104,
+          179
+        ]
+      ],
+      "fullContentRead": false,
+      "mtimeUTC": "2026-11-07T06:06:27.646106+00:00",
+      "workingTree": {
+        "gitTracked": true,
+        "gitStatus": ""
+      },
+      "repoHEAD": "3e427b76fac5912a46432f1e4d37533521a59322",
+      "readTimesUTC": [
+        "2026-11-08T10:19:41.637030+00:00"
+      ]
+    },
+    {
+      "path": "time-circuit-explorer/generator/token_history_address.py",
+      "sha256": "b17d386c4059384faccc6461620bbabf4bee02503aa20831e41ff9a9a729ab29",
+      "bytes": 10959,
+      "lineCount": 227,
+      "scopes": [
+        "selected ranges"
+      ],
+      "ranges": [
+        [
+          1,
+          32
+        ],
+        [
+          97,
+          159
+        ]
+      ],
+      "fullContentRead": false,
+      "mtimeUTC": "2026-11-08T05:46:01.952296+00:00",
+      "workingTree": {
+        "gitTracked": true,
+        "gitStatus": ""
+      },
+      "repoHEAD": "2fff41fcf4b3380116acbb8a691bee7fb74e89bd",
+      "readTimesUTC": [
+        "2026-11-08T10:20:08.529085+00:00"
+      ]
+    },
+    {
+      "path": "time-circuit-explorer/docs/compiled-template-prefix.md",
+      "sha256": "b6f1dbae3e993519943dadcdc4a8d9a310fcfe365862b0673cf975db93d2bc37",
+      "bytes": 7356,
+      "lineCount": 37,
+      "scopes": [
+        "full"
+      ],
+      "ranges": [
+        [
+          1,
+          37
+        ]
+      ],
+      "fullContentRead": true,
+      "mtimeUTC": "2026-11-08T10:03:14.719828+00:00",
+      "workingTree": {
+        "gitTracked": true,
+        "gitStatus": ""
+      },
+      "repoHEAD": "2fff41fcf4b3380116acbb8a691bee7fb74e89bd",
+      "readTimesUTC": [
+        {
+          "after": "2026-11-08T10:12:42.496047+00:00",
+          "before": "2026-11-08T10:16:25.910819+00:00"
+        }
+      ],
+      "readTimeNote": "Exact command wall-clock timestamp was not retained; bounded by adjacent timestamped reads. Metadata rehash time is recorded separately."
+    },
+    {
+      "path": "time-circuit-explorer/docs/compiled-selected-mass.md",
+      "sha256": "112baf72a0c78327df9b640cba196d53bdf05c53d242982043140d935be0b564",
+      "bytes": 8415,
+      "lineCount": 57,
+      "scopes": [
+        "full"
+      ],
+      "ranges": [
+        [
+          1,
+          57
+        ]
+      ],
+      "fullContentRead": true,
+      "mtimeUTC": "2026-11-08T09:07:10.558661+00:00",
+      "workingTree": {
+        "gitTracked": true,
+        "gitStatus": ""
+      },
+      "repoHEAD": "2fff41fcf4b3380116acbb8a691bee7fb74e89bd",
+      "readTimesUTC": [
+        "2026-11-08T10:16:25.910819+00:00"
+      ]
+    },
+    {
+      "path": "time-circuit-explorer/docs/plans/contextual-state-construction.md",
+      "sha256": "62d1ec1d68963d67aac761eabe828826e952dd5f58faefcdb6540b061cc5b4f9",
+      "bytes": 5481,
+      "lineCount": 35,
+      "scopes": [
+        "full"
+      ],
+      "ranges": [
+        [
+          1,
+          35
+        ]
+      ],
+      "fullContentRead": true,
+      "mtimeUTC": "2026-11-08T09:07:10.558325+00:00",
+      "workingTree": {
+        "gitTracked": true,
+        "gitStatus": ""
+      },
+      "repoHEAD": "2fff41fcf4b3380116acbb8a691bee7fb74e89bd",
+      "readTimesUTC": [
+        "2026-11-08T10:16:25.911010+00:00"
+      ]
+    },
+    {
+      "path": "time-circuit-explorer/generator/fresh_square_encoder.py",
+      "sha256": "5a1104c76dcb597edd9a31540b86be3a0657c2b17ebd70d1fe33c2053f583265",
+      "bytes": 13872,
+      "lineCount": 164,
+      "scopes": [
+        "selected ranges"
+      ],
+      "ranges": [
+        [
+          95,
+          161
+        ]
+      ],
+      "fullContentRead": false,
+      "mtimeUTC": "2026-11-06T22:37:07.886547+00:00",
+      "workingTree": {
+        "gitTracked": true,
+        "gitStatus": ""
+      },
+      "repoHEAD": "2fff41fcf4b3380116acbb8a691bee7fb74e89bd",
+      "readTimesUTC": [
+        "2026-11-08T10:16:25.911376+00:00"
+      ]
+    },
+    {
+      "path": "time-circuit-explorer/generator/template_cofactor_program.py",
+      "sha256": "f090088033dfd0ff09f521f51d5fbf482f26591c0c9e95f1b9bc19ea57b33f53",
+      "bytes": 5073,
+      "lineCount": 97,
+      "scopes": [
+        "full"
+      ],
+      "ranges": [
+        [
+          1,
+          97
+        ]
+      ],
+      "fullContentRead": true,
+      "mtimeUTC": "2026-11-08T09:49:09.149652+00:00",
+      "workingTree": {
+        "gitTracked": true,
+        "gitStatus": ""
+      },
+      "repoHEAD": "2fff41fcf4b3380116acbb8a691bee7fb74e89bd",
+      "readTimesUTC": [
+        "2026-11-08T10:16:25.911658+00:00"
+      ]
+    },
+    {
+      "path": "time-circuit-explorer/docs/plans/contextual-writer-decision-program.md",
+      "sha256": "e2e7b560dff8d46dc08631a76fd305df089f7d055264267372454cb540b994e1",
+      "bytes": 6928,
+      "lineCount": 39,
+      "scopes": [
+        "Full corrected contract reread after finite-diagnostic clarification; supersedes earlier unexecuted draft."
+      ],
+      "ranges": [
+        [
+          1,
+          39
+        ]
+      ],
+      "fullContentRead": true,
+      "mtimeUTC": "2026-11-08T10:23:24.410182+00:00",
+      "workingTree": {
+        "gitTracked": false,
+        "gitStatus": "?? docs/plans/contextual-writer-decision-program.md"
+      },
+      "repoHEAD": "2fff41fcf4b3380116acbb8a691bee7fb74e89bd",
+      "readTimesUTC": [
+        "2026-11-08T10:24:10.947807+00:00"
+      ]
+    }
+  ],
+  "contentReadCounts": {
+    "currentUniquePaths": 25,
+    "historicalSupersededDraftVersions": 1,
+    "notContentRead": "Other inventory paths and remaining prior hashes were not reread. No claim to full contents of selected-range sources or all listed result metadata.",
+    "finalRehashUTC": "2026-11-08T10:25:02.209268+00:00"
+  },
+  "scopedFamilySearch": {
+    "expression": "DecisionTreeRegressor|DecisionTreeClassifier|ExtraTrees|RandomForest|axis.aligned|categorical.*(program|tree)|decision.tree",
+    "directories": [
+      "time-circuit-explorer/generator",
+      "saturn/src",
+      "saturn/docs",
+      "isa/isa_lab",
+      "cmachine/research",
+      "saturn-pub/packages/mdb/src",
+      "model-experiments/src",
+      "manalysis/src",
+      "mstack"
+    ],
+    "globs": "*.py,*.md; initial command excluded outputs/runs/artifacts/docs/results globs where applicable; Git ignores respected.",
+    "observations": "Two Saturn design-doc decision-tree headings and qwen_swiglu_program.py axis-aligned support envelope. Its exact and selected execute methods explicitly retain F.linear gate/up/down and F.silu. No categorical contextual-writer implementation found in this bounded search.",
+    "correction": "Initial mstack/src path did not exist; rg reported exit2. Corrected search over mstack root returned no matches. Search results are not a proof that no relevant implementation exists elsewhere."
+  },
+  "newestEvidence": [
+    {
+      "type": "new since99",
+      "evidence": "Cycle100 source/profile-qualified selected-mass producer",
+      "paths": [
+        "time-circuit-explorer/docs/compiled-selected-mass.md",
+        "time-circuit-explorer/docs/results/compiled-selected-mass/report.json"
+      ],
+      "observation": "1,908 supported queries match same-profile reference supports/scores/weights exactly; synthetic C/D selected effect is zero, unknown history refused. 31,395,840 score bytes plus rank assets and 502,333,440 offline coordinate products remain paid; scalar exponentiation/normalization still executes.",
+      "limit": "One pad token/head, 30 IDs and 512 clocks; no complete contextual state or pixels; same-profile agreement is not independent native finite parity."
+    },
+    {
+      "type": "new since99",
+      "evidence": "Cycle101 fixed-prefix contextual cofactor",
+      "paths": [
+        "time-circuit-explorer/docs/compiled-template-prefix.md",
+        "time-circuit-explorer/generator/template_cofactor_program.py",
+        "time-circuit-explorer/docs/results/template-prefix-cofactor/report.json"
+      ],
+      "observation": "Raw tokenizer owns its packet. A 286,720-byte bank supplies exactly rows0–1 at H0–H27; B prefix matches at all28 states. Historical A/B differ at one H0 row and504 rows from8 onward at each H1–H27.",
+      "limit": "Copy invariance follows from the copy contract; causal source reasoning identifies the input-independent subgraph. No content-dependent Psi, per-layer K/V, full H1, universal finite parity or image is supplied."
+    },
+    {
+      "type": "unchanged source reread",
+      "evidence": "History-reader native intervention",
+      "observation": "Historical V changes first affect the value return while that layer's query/allocation stay fixed; the native block then changes the next query/route. Source partition/row roles and dense receiver computation remain supplied/paid.",
+      "limit": "Locates a dependency; does not instantiate its cheaper producer."
+    },
+    {
+      "type": "unchanged source reread",
+      "evidence": "Latest read transport/Taylor work",
+      "observation": "Scalar state-specific forecasts have positive trends and retained exceptions; source compiler still uses dense parameter equations, native baseline/history and JVP work. Full-dose second order wins7/8 head-level receivers and5/8 consumer comparisons, with a worse receiver retained.",
+      "limit": "No baseline-free state initializer, generic reusable token program or independent pixel constructor."
+    },
+    {
+      "type": "unchanged source reread",
+      "evidence": "cMachine own-state and restoration results",
+      "observation": "All-layer low-rank MLP programs reduce linear MACs40.895% yet give0/8 strict answers; own-state refresh improves local geometry/write error while conditional KL slightly worsens. Restoring predecessor state matters strongly; finite layout can change results.",
+      "limit": "Evidence against those specific reduced-map/state choices, not against categorical state programs or all economical transitions."
+    },
+    {
+      "type": "unchanged source reread",
+      "evidence": "ISA symbolic loop",
+      "observation": "Explicit branch/copy/Boolean program runs on eight supplied64-bit registers, flags and byte windows with an eight-window applicability contract; it owns subsequent decoded registers.",
+      "limit": "Does not discover raw-language contextual initialization. It supports the feasibility of bounded program extraction, not transfer of its supplied registers to FLUX."
+    }
+  ],
+  "findings": [
+    {
+      "kind": "working inference",
+      "claim": "The decisive missing edge remains a content-dependent constructor Psi(u;C), not another coefficient, fixed-prefix or phase cache.",
+      "basis": "Cycle100 closes a bounded coefficient port and101 closes only the constant causal subgraph. Actual H1 changes reach all504 downstream rows on the known edit."
+    },
+    {
+      "kind": "family classification",
+      "claim": "Source-trained categorical/axis-aligned branch programs with shared local writer atoms are permissible non-neural candidates under the operational constraint.",
+      "qualification": "They are approximate learned programs, not exact algebraic lowerings merely because native data train them. Reject runtime affine leaves, original gate/QK computations used as predicates, dense learned readouts, supplied native states or whole-history/output leaves. Offline native labels, lexical atoms and all program costs remain paid."
+    },
+    {
+      "kind": "evidence boundary",
+      "claim": "The inspected prior record does not test or exclude this contextual-writer family.",
+      "basis": "Cycle94 fits four address selectors per head from a narrow inventory; it does not emit H1. ISA has structured operands. Exact/selected SwiGLU code retains original nonlinear affine computation. Keyword search is bounded, not a universal absence proof."
+    },
+    {
+      "kind": "risk",
+      "claim": "A small decision program can still factorize a history cache.",
+      "qualification": "Token/absolute-clock rules can identify the few familiar histories; short local output leaves do not prove compositionality. Audit causal feature ownership, shared atom/leaf use, total bytes, separated histories and unchanged-token downstream response."
+    },
+    {
+      "kind": "no completion",
+      "claim": "No inspected artifact currently implements the complete arbitrary raw-prompt to image computation within the strict serving constraint.",
+      "qualification": "This is limited to the read sources and metadata, not a proof that no such program exists. No global closure proof is required before exploratory construction; no broad absence or impossibility claim is made."
+    }
+  ],
+  "decision": {
+    "primary": "Implement one fixed-budget shared categorical/axis-aligned local-writer program for the complete first contextual H1 bank, beginning with existing qualified native H0/H1 records. This replaces the proposed unary-table expansion as the next primary question.",
+    "contractPath": "time-circuit-explorer/docs/plans/contextual-writer-decision-program.md",
+    "contractSHA256": "e2e7b560dff8d46dc08631a76fd305df089f7d055264267372454cb540b994e1",
+    "implemented": false,
+    "experimentFrozen": false,
+    "jobQueuedByReview": false,
+    "initializer": "Own raw string -> qualified tokenizer -> complete IDs/mask/positions -> compiled lexical H0. Fixed C supplies only source-qualified rows0–1; no teacher R/H1 in serving.",
+    "stateAndFeatures": "Preserve the full input packet. Predicates read only causal owned token/history/position/mask registers and explicitly declared lexical coordinates. If predicted state is used in later features, it must be the candidate's own state, never teacher-forced state. Feature extraction itself is paid.",
+    "update": "For each remaining row p, select signed shared writer atoms with the branch program and perform the frozen finite copy/add sequence: H1_hat[p] = finite_add(H0[p], sum_k sign[k,leaf]*atom[address[k,leaf]]). No dense matrix implementation of the dictionary notation. Produce every active/padding row.",
+    "smallestQuestion": "Does own-input writer selection produce useful contextual H1 and its next-layer Q/K/V operand response beyond identity/H0 and an equal-budget position-only writer, especially at unchanged-token rows following an earlier edit?",
+    "evidencePlan": "Use one frozen grammar/budget, whole-history discovery/transfer separation and target-release order, after fresh source qualification. Existing public histories are reused-history transfer, not fresh held-out evidence. Preserve all rows, zero effects, positive and adverse trends. No automatic tree/dictionary/rank/seed sweep, native-image run or new teacher-data campaign.",
+    "consumer": "Paid original layer1 normalization/QKV is evaluation only, consumed on candidate H1. It must not refresh candidate state or become its serving constructor. A local improvement does not establish later own-state encoder, denoiser or pixel closure.",
+    "diagnostic": "Define actual finite Delta_hat=H1_hat-H0 and native Delta=H1-H0. A post-seal feasible dictionary selection uses identical slot/sign/dictionary/finite-add capacity. Delta_hat-Delta=(Delta_hat-Delta_Ddiag)+(Delta_Ddiag-Delta); retain signed cross energy. Do not label a heuristic selection globally best or use it for serving.",
+    "economy": "Charge tokenizer/lexical assets, source labels, fitting/feature preparation, branch/predicate/dictionary bytes, comparisons, causal memory, selected copies/additions, rounding, transfer and consumer work. For L shared BF16 atoms of width2560, raw atom payload alone is5120*L bytes; tree/feature/runtime storage is additional. No economy measured yet.",
+    "strongestAlternative": {
+      "family": "Exact unary cofactor at the first variable token after a causally fixed prefix",
+      "merit": "A true source-compositional partial evaluation with a token-indexed finite result and no runtime learned arithmetic for that address.",
+      "costs": {
+        "vocabulary": 151936,
+        "width": 2560,
+        "BF16BytesPerValue": 2,
+        "oneStateRawBytes": 777912320,
+        "all28StateRawBytes": 21781544960
+      },
+      "limits": "These are literal uncompressed payload estimates, not lower bounds. Offline native formation and finite-profile qualification are additional. It only closes one unary address, cannot be iterated as a contextual rule without a new state argument, and may first target whitespace-dependent tokenizer output. It does not supply Psi for later rows.",
+      "decision": "Keep as a conditional alternative, not automatic full-vocabulary compilation or the primary next construction."
+    },
+    "otherAlternatives": "Uniform-token symmetry and equal-value classes leave real chat-template/contextual coefficients unresolved; full decision-diagram/bit-GEMM lowering may merely replay original learned arithmetic or explode. Current Taylor forecasts require state-specific dense native compilation. None supersedes the shared-writer experiment on present evidence.",
+    "routeChangeCriteria": "Useful content-sensitive own-state/consumer transfer with shared atoms supports further program discovery. Position-only equivalence, flat response, history-specific leaves, poor consumer transfer or excessive bytes would narrow this fixed family without proving all symbolic programs impossible. Do not use proof absence as a discovery stop gate."
+  },
+  "storage": {
+    "source": "Root's separate scheduled storage102 publication and README, fully read as metadata only.",
+    "publicationSHA256": "4f9794f8cabf4df01cb2b07310a3ee624fa8604bd8fdf4369fd7b7c9d1259214",
+    "pointers": 93,
+    "olderMetadataAndFreshTypeSize": 84,
+    "currentByteSnapshotsFreshFullSHA": 9,
+    "freshFullColdBytes": 3806240603,
+    "candidateThresholdBytes": 100000000,
+    "remainingCandidates": 0,
+    "newArchivedFiles": 0,
+    "newDeletedFiles": 0,
+    "lastActualArchive": 78,
+    "freeBytesObserved": 21105688576,
+    "scope": "Advisor did not rerun remote storage audits. Shared free space is an observation, not attributed to cleanup; earlier pressure receded without a cleanup claim.",
+    "nextReview": 105
+  },
+  "chronology": {
+    "initialInventory": "TCE clean at2fff41fc; other repository working changes were inventoried, not treated as committed evidence.",
+    "routeAdvice": "The categorical-program permissibility and complete-H1 constructor recommendation were sent before root wrote the new family contract.",
+    "lateRootWrites": "Storage102 metadata and the unimplemented contextual-writer contract appeared after the inventory. They were separately read/pinned, not counted as preexisting outside evidence or science.",
+    "supersededDraft": {
+      "path": "time-circuit-explorer/docs/plans/contextual-writer-decision-program.md",
+      "sha256": "cdf9202c151dab08838ee4f247c18688a22c50e294750cd62cbe3f676d763a02",
+      "readAtUTC": "2026-11-08T10:22:30.803617+00:00",
+      "scope": "Full39-line draft read; finite-increment/oracle-capacity clarification requested. Preserved as a historical draft, not final contract approval."
+    },
+    "correction": "Corrected contract explicitly uses actual finite increments, same-capacity feasible diagnostic and signed cross terms; full corrected text reread.",
+    "mutableLivingLog": "Surveyed cycle101 hash remains historical if a later cycle102 section/lead is written. Do not silently substitute later bytes into this receipt.",
+    "finalRecheck": "All88 unique content/prior comparison paths rehashed at final check. No drift from their current selected snapshots; only the explicitly retained draft plan changed during review."
+  },
+  "nextFullReviewCycle": 105,
+  "earlierReviewTrigger": "Material new contextual/program/pixel evidence, source/profile change affecting the chosen family, or resource/retention pressure."
+}
