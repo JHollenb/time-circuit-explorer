@@ -1,0 +1,13 @@
+{
+  "schema": "tce-template-transport-initial-mechanics-v1",
+  "passed": 3,
+  "errors": 1,
+  "seconds": 3.292,
+  "exitCode": 1,
+  "sourceHashes": {
+    "generator/template_transport_ledger.py": "e1e19c5ac06169c52b9649bd72ce7aafe258eceb0798b7e339de4381434d119b",
+    "generator/test_template_transport.py": "fe4c950546791b69761274bdee78c453c1e96b7e217adde8c0b64a6d29875234"
+  },
+  "error": "Existing check_act verifier requires sourceFrame.metadata.originalParameterManifestSHA256; new ledger used only sourceParameterTemplateManifestSHA256.",
+  "scope": "Tiny synthetic mechanics failure before source freeze/stage. No scientific model run or scientific null. Historical ledger source retained under artifacts/template-transport-initial-ledger.py."
+}

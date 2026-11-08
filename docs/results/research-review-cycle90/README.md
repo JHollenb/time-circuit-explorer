@@ -1,0 +1,11 @@
+# Full research review 90
+
+Astra completes a fresh review of repository logs/status, recent file inventories and relevant current findings/limitations. The [survey receipt](advisor-survey.json) binds **55 exact working snapshots**. All 37 previous pins were freshly rechecked: 36 unchanged and only the living log changed. Three new TCE commits and no new neighboring repository commits appeared since review 87. Inventory counts do not mean every file was read.
+
+The newer read forecasts, MLP programs, computation families, cache/history and math/search results retain useful bounded positives and countertrends. None supplies an economical arbitrary-prompt/context/state/pixel producer. Learned parameters, preparation, supplied laws or native consumers remain paid. Repeated original-matrix reductions are evidence about cheaper learned execution, without establishing the strict zero-neural route.
+
+Cycle89 shows why error magnitude alone is inadequate: its error vector turns 41.87° despite a nearly unchanged norm. The conditional template question survives this survey, but the [original one-evaluation proposal](../../plans/frozen-template-transport.md) needs amendment. Historical QR/product ledgers do not record operand strides, and retaining bases can change their layout. Tiny/source checks cannot retroactively attest the old CUDA execution.
+
+The [matched-pair amendment](../../plans/frozen-template-matched-pair.md) therefore evaluates the same explicitly implemented frozen template on both parent and own inputs. It measures the parent association instead of assuming it, retains nonzero parent differences, and costs 144,555,638,784 prospective matrix MACs. It identifies the joint implemented template-policy effect, without separately attributing GU/output bases or claiming prompt-independent reuse. Exact implementation/resource review remains required before staging.
+
+The surveyed living-log SHA is the historical cycle89 snapshot; a later90 synthesis needs its own identity. [Storage90](../storage-audit-cycle90/README.md) is root's independent completed audit, without an advisor cold-byte-replay claim. Next full research review is due **93**, earlier for material evidence.

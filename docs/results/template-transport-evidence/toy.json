@@ -1,0 +1,16 @@
+{
+  "schema": "tce-template-transport-toy-v1",
+  "typedActs": 2,
+  "typedInputsPerAct": 12,
+  "outputABIsPerAct": 33,
+  "analysisABIs": 8,
+  "scalarColumns": 92,
+  "independentChecks": [
+    "Full-rank identity template reproduces independently formed GU/SwiGLU/output/commit from current operands.",
+    "Scalar-loop low-rank GU/output contraction reference.",
+    "Actual typed two-arm execution and template/source immutability with distinct inputs.",
+    "Eight-corner signed/centered identities with intentionally nonzero parent association and explicit zero denominators."
+  ],
+  "sourceSHA256": "fe4c950546791b69761274bdee78c453c1e96b7e217adde8c0b64a6d29875234",
+  "scope": "Tiny synthetic CPU fixtures and native component functions. Does not attest old CUDA layout,real-array parity,prompt quality or strict zero-neural serving."
+}

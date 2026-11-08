@@ -1,0 +1,22 @@
+{
+  "command": [
+    "../common/bin/common",
+    "exec",
+    "python",
+    "../saturn/src/saturn/evidence_pipeline.py",
+    "verify",
+    "artifacts/template-transport-v1/result",
+    "--watch-root",
+    "artifacts/template-transport-v1/saturn-watch",
+    "--registry",
+    "artifacts/template-transport-v1/claims-auto.jsonl",
+    "--results-root",
+    "artifacts/template-transport-v1/result",
+    "--json"
+  ],
+  "returncode": 0,
+  "elapsedSeconds": 0.3207492078654468,
+  "supersedesInvocation": "saturn-verify.json",
+  "reason": "Initial verify invocation incorrectly supplied run-only xref flags and exited at argument parsing; original invocation/stdout/stderr retained.",
+  "scope": "Corrected canonical verify invocation on actual raw result; no model rerun and no scientific null."
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "tce-tiny-reload-geometry-observation-v1",
+  "cycle": 90,
+  "source": "Tiny synthetic CPU Torch6x4 QR/canonical-sign/stack/reload-like view. No scientific arrays or model.",
+  "rawQRQStride": [
+    1,
+    6
+  ],
+  "canonicalStride": [
+    1,
+    6
+  ],
+  "stackedReloadLikeStride": [
+    4,
+    1
+  ],
+  "restoredColumnMajorStride": [
+    1,
+    6
+  ],
+  "logicalValuesExact": true,
+  "scope": "Shows layout can change despite exact logical values. Does not establish historical CUDA operand stride, real-array execution equality or a scientific effect. The separate full research review determines the next test."
+}

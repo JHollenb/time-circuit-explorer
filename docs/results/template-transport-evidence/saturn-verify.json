@@ -1,0 +1,24 @@
+{
+  "command": [
+    "../common/bin/common",
+    "exec",
+    "python",
+    "../saturn/src/saturn/evidence_pipeline.py",
+    "verify",
+    "artifacts/template-transport-v1/result",
+    "--watch-root",
+    "artifacts/template-transport-v1/saturn-watch",
+    "--registry",
+    "artifacts/template-transport-v1/claims-auto.jsonl",
+    "--results-root",
+    "artifacts/template-transport-v1/result",
+    "--xref-db",
+    "artifacts/template-transport-v1/xref.sqlite",
+    "--xref-root",
+    "artifacts/template-transport-v1/result",
+    "--json"
+  ],
+  "returncode": 2,
+  "elapsedSeconds": 0.14362041698768735,
+  "scope": "Actual applied raw-result target instrument;0clean3findings2broken,not model quality."
+}
