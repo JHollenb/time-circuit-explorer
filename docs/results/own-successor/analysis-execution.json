@@ -1,0 +1,204 @@
+{
+  "analyzerPID": 1146177,
+  "candidateSealSHA256": "4854e70313d40e8c79c512e5b5c692d883a6915d7547c6dd55aa9d986dafa1c7",
+  "numericalProfile": {
+    "bf16ReducedPrecisionReduction": true,
+    "cublasWorkspaceConfig": ":4096:8",
+    "cudaMatmulTF32": false,
+    "cudnnBenchmark": false,
+    "cudnnDeterministic": true,
+    "cudnnTF32": false,
+    "deterministicAlgorithms": true,
+    "float32MatmulPrecision": "highest",
+    "threads": 4
+  },
+  "peakCUDAAllocatedBytes": 164364288,
+  "peakCUDAReservedBytes": 207618048,
+  "producerExitSHA256": "dfb64abb5c90ed73db2ef64de5f653c555b28bfd9920db4606306ffa336ad87c",
+  "products": [
+    {
+      "device": "cuda",
+      "dtype": "torch.float64",
+      "leftPayloadSHA256": "d217572482732c2c6b48be3fe3c6c3ee90a7b342370906b183d73129362abcd6",
+      "leftShape": [
+        512,
+        128
+      ],
+      "name": "guInputReconstruction0",
+      "nominalMACs": 201326592,
+      "operator": "torch.matmul",
+      "outputPayloadSHA256": "904d853ed7093d76eac48dd74251d5fad9f910fb5c8a7b3e271688b58b4a1af7",
+      "outputShape": [
+        512,
+        3072
+      ],
+      "rightPayloadSHA256": "1f969d8076e4a97d41e764827cef738a2d0a33624d6c3d8e5db64503ac9281b5",
+      "rightShape": [
+        128,
+        3072
+      ],
+      "synchronizedSecondsBeforeFingerprints": 0.00970368180423975
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float64",
+      "leftPayloadSHA256": "1f969d8076e4a97d41e764827cef738a2d0a33624d6c3d8e5db64503ac9281b5",
+      "leftShape": [
+        128,
+        3072
+      ],
+      "name": "guBasisGram0",
+      "nominalMACs": 50331648,
+      "operator": "torch.matmul",
+      "outputPayloadSHA256": "d20fa0f69e7ad0940768e3a3637cf7b1f043ee24bf92f61c3e5dfe6124708363",
+      "outputShape": [
+        128,
+        128
+      ],
+      "rightPayloadSHA256": "af4c07bcf1dd7499e91824f00ae40f5e76ff8dbd04f33c2b472494c23e3d73a5",
+      "rightShape": [
+        3072,
+        128
+      ],
+      "synchronizedSecondsBeforeFingerprints": 0.0024817190133035183
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float64",
+      "leftPayloadSHA256": "447bce705befa89d8665f649be0c883e8cf82c76a38f139ba5d2ea2b8e9e9952",
+      "leftShape": [
+        1024,
+        128
+      ],
+      "name": "guInputReconstruction1",
+      "nominalMACs": 402653184,
+      "operator": "torch.matmul",
+      "outputPayloadSHA256": "ae284ee692dd1110f0f73bd5574cfe5eb0d6c883249e3a7c87be4a6515dc6eb6",
+      "outputShape": [
+        1024,
+        3072
+      ],
+      "rightPayloadSHA256": "cfe49c2f40d2f987465b4e94c3bae98842a55495e48e475f7c039bee2e036fa5",
+      "rightShape": [
+        128,
+        3072
+      ],
+      "synchronizedSecondsBeforeFingerprints": 0.0013925479725003242
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float64",
+      "leftPayloadSHA256": "cfe49c2f40d2f987465b4e94c3bae98842a55495e48e475f7c039bee2e036fa5",
+      "leftShape": [
+        128,
+        3072
+      ],
+      "name": "guBasisGram1",
+      "nominalMACs": 50331648,
+      "operator": "torch.matmul",
+      "outputPayloadSHA256": "78380a8f1e72807b0ec6d8c875fd562f5370049a98d5e25ad809c3ca419929d8",
+      "outputShape": [
+        128,
+        128
+      ],
+      "rightPayloadSHA256": "43d5d064dee8113b1050ece8a950dbe1472afb9282a467deb36675d77924b3a0",
+      "rightShape": [
+        3072,
+        128
+      ],
+      "synchronizedSecondsBeforeFingerprints": 0.0002272939309477806
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float64",
+      "leftPayloadSHA256": "59d5c9217e0611b19f87e9ef460e42ee9eed4a913b6cad93c54946652b7ad747",
+      "leftShape": [
+        512,
+        128
+      ],
+      "name": "outputSketchReconstruction0",
+      "nominalMACs": 8388608,
+      "operator": "torch.matmul",
+      "outputPayloadSHA256": "3aa457285210f67403dfaa5013ab5b5f4d7f817e564a4ce4cb40c0107114cc03",
+      "outputShape": [
+        512,
+        128
+      ],
+      "rightPayloadSHA256": "16306bcbddcd3cc76edeaf16215ad06734ada81196186160ccc05af708937ed1",
+      "rightShape": [
+        128,
+        128
+      ],
+      "synchronizedSecondsBeforeFingerprints": 0.00011949287727475166
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float64",
+      "leftPayloadSHA256": "4ccec8dbd495fe2f675c237b3653895457cf13b7662874b6c0b31de666e63e5b",
+      "leftShape": [
+        128,
+        512
+      ],
+      "name": "outputBasisGram0",
+      "nominalMACs": 8388608,
+      "operator": "torch.matmul",
+      "outputPayloadSHA256": "0bb705d45b087ee479c3f48fd3ffa818925886eec5f6bfb6f716f4dc6c98fe31",
+      "outputShape": [
+        128,
+        128
+      ],
+      "rightPayloadSHA256": "59d5c9217e0611b19f87e9ef460e42ee9eed4a913b6cad93c54946652b7ad747",
+      "rightShape": [
+        512,
+        128
+      ],
+      "synchronizedSecondsBeforeFingerprints": 0.00014262599870562553
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float64",
+      "leftPayloadSHA256": "861081c1bfa336798f98a74c8cf4289d82ebd29341dfabb22d898ff48e1c9623",
+      "leftShape": [
+        1024,
+        128
+      ],
+      "name": "outputSketchReconstruction1",
+      "nominalMACs": 16777216,
+      "operator": "torch.matmul",
+      "outputPayloadSHA256": "c2ec746b71e3c21afb2d6f0a51f53e2d5eabbebf31880f2225c28258daa10250",
+      "outputShape": [
+        1024,
+        128
+      ],
+      "rightPayloadSHA256": "947734c571ebbf004f5733d6fb44fa2893cb4803a51da1909fcab75e4f891cc5",
+      "rightShape": [
+        128,
+        128
+      ],
+      "synchronizedSecondsBeforeFingerprints": 0.00010396400466561317
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float64",
+      "leftPayloadSHA256": "ed092ded8725f77ec72f8241d2c019d98f8727dfa46b00430652223f6a368aa2",
+      "leftShape": [
+        128,
+        1024
+      ],
+      "name": "outputBasisGram1",
+      "nominalMACs": 16777216,
+      "operator": "torch.matmul",
+      "outputPayloadSHA256": "aa213ad26224d2279d20c82ba1f45f2b46c1a12b539d998f264f6fe94559efa7",
+      "outputShape": [
+        128,
+        128
+      ],
+      "rightPayloadSHA256": "861081c1bfa336798f98a74c8cf4289d82ebd29341dfabb22d898ff48e1c9623",
+      "rightShape": [
+        1024,
+        128
+      ],
+      "synchronizedSecondsBeforeFingerprints": 8.320482447743416e-05
+    }
+  ]
+}

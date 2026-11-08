@@ -1,0 +1,13 @@
+{
+  "schema": "tce-own-successor-whitespace-diagnostic-v1",
+  "command": [
+    "git",
+    "diff",
+    "--cached",
+    "--check"
+  ],
+  "returncode": 2,
+  "stdout": "docs/own-state-successor.md:100: new blank line at EOF.\ndocs/plans/matched-parent-successor.md:36: new blank line at EOF.\ndocs/results/own-successor-evidence/README.md:22: new blank line at EOF.\ngenerator/plot_own_successor.py:66: new blank line at EOF.\n",
+  "stderr": "",
+  "interpretation": "Four cosmetic extra EOF blank lines only. Retain executed plot source and exact reviewed narrative SHA snapshots unchanged; no correctness/source/custody issue or scientific rerun."
+}
