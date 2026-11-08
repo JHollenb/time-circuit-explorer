@@ -1,0 +1,26 @@
+{
+  "schema": "tce-source-order-mechanics-v1",
+  "sourceHashes": {
+    "source_order_program.py": "b46fd0daf9d91076286e6685622a086a7dfc156d254229e693fcaab8b74b6004",
+    "source_order_compile.py": "c76d8c0dce2647d4707ab926beda3b23953f61fc7f655b6a6125406d8e6e5ff2",
+    "source_order_study.py": "300587a2c35e1156ecf5e98a8fb8b299aff1b09c253be7f0e07186a139ccb04f",
+    "test_source_order.py": "c0f4274c141cb472594bf17041ce24408e00ff742f4d55624938bb0c42dc4afe"
+  },
+  "command": [
+    "/Users/jakeholl/domains/common/.venv/bin/python",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "generator",
+    "-p",
+    "test_source_order.py",
+    "-v"
+  ],
+  "returncode": 0,
+  "processWallSeconds": 0.1307814158499241,
+  "stdout": "SOURCE_ORDER_CLOCK 0 products 0 seconds 0.00019929208792746067\nSOURCE_ORDER_CLOCK 6 products 126 seconds 0.0011979169212281704\nSOURCE_ORDER_CLOCK 0 products 0 seconds 3.1833071261644363e-05\nSOURCE_ORDER_CLOCK 6 products 126 seconds 0.00019249995239078999\nSOURCE_ORDER_CLOCK 0 products 0 seconds 2.824980765581131e-05\nSOURCE_ORDER_CLOCK 6 products 126 seconds 0.00018220790661871433\nSOURCE_ORDER_CLOCK 0 products 0 seconds 0.00010379101149737835\nSOURCE_ORDER_CLOCK 6 products 126 seconds 0.00027883308939635754\nSOURCE_ORDER_CLOCK 0 products 0 seconds 2.9084039852023125e-05\nSOURCE_ORDER_CLOCK 6 products 126 seconds 0.0001871250569820404\nSOURCE_ORDER_CLOCK 0 products 0 seconds 2.6084017008543015e-05\nSOURCE_ORDER_CLOCK 6 products 126 seconds 0.00017687492072582245\nSOURCE_ORDER_CLOCK 0 products 0 seconds 2.7167145162820816e-05\nSOURCE_ORDER_CLOCK 3 products 24 seconds 0.00011112517677247524\n",
+  "stderr": "test_batched_products_and_fsum_match_scalar_words (test_source_order.Mechanics) ... ok\ntest_controls_and_last_clock_inapplicable (test_source_order.Mechanics) ... ok\ntest_coverage_empty_prefix_and_sticky_unknown (test_source_order.Mechanics) ... ok\ntest_fresh_serving_file_and_import_exclusions (test_source_order.Mechanics) ... ok\ntest_integer_order_matches_independent_subset_scores (test_source_order.Mechanics) ... ok\ntest_offsets_cover_exact_triangular_layout (test_source_order.Mechanics) ... ok\ntest_serialization_reproducible_and_corruption_refused (test_source_order.Mechanics) ... ok\ntest_ties_use_positions_before_token_ids (test_source_order.Mechanics) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.046s\n\nOK\n",
+  "scope": "Eighttiny supplied-arraymechanics only; no pretrained model or savedneural scientificarrays."
+}

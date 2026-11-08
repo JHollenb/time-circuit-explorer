@@ -1,0 +1,496 @@
+{
+  "schema": "tce-source-order-release-qa-v1",
+  "checks": 281,
+  "passedChecks": [
+    "Published member A-old-reference.jsonl.gz",
+    "Published member B-old-reference.jsonl.gz",
+    "Published member atom-manifest.json",
+    "Published member collection.json",
+    "Published member compile-compiler.json",
+    "Published member compile-order.u16.gz",
+    "Published member compile-program.json",
+    "Published member coverage.json",
+    "Published member execution.json",
+    "Published member frozen-plan.md",
+    "Published member implementation.md",
+    "Published member input-00-tokens.json",
+    "Published member input-01-tokens.json",
+    "Published member input-10-tokens.json",
+    "Published member input-11-tokens.json",
+    "Published member input-A-tokens.json",
+    "Published member input-B-tokens.json",
+    "Published member input-edit-A-tokens.json",
+    "Published member input-edit-B-tokens.json",
+    "Published member input-five-cycle-tokens.json",
+    "Published member input-full-cycle-tokens.json",
+    "Published member input-holes-tokens.json",
+    "Published member input-singleton-tokens.json",
+    "Published member input-thirtyfive-cycle-tokens.json",
+    "Published member inputs.json",
+    "Published member mechanics.json",
+    "Published member observations.jsonl.gz",
+    "Published member panels.json",
+    "Published member prediction-00-clockPlus1.jsonl.gz",
+    "Published member prediction-00-primary.jsonl.gz",
+    "Published member prediction-00-recent.jsonl.gz",
+    "Published member prediction-00-reverseRanks.jsonl.gz",
+    "Published member prediction-01-clockPlus1.jsonl.gz",
+    "Published member prediction-01-primary.jsonl.gz",
+    "Published member prediction-01-recent.jsonl.gz",
+    "Published member prediction-01-reverseRanks.jsonl.gz",
+    "Published member prediction-10-clockPlus1.jsonl.gz",
+    "Published member prediction-10-primary.jsonl.gz",
+    "Published member prediction-10-recent.jsonl.gz",
+    "Published member prediction-10-reverseRanks.jsonl.gz",
+    "Published member prediction-11-clockPlus1.jsonl.gz",
+    "Published member prediction-11-primary.jsonl.gz",
+    "Published member prediction-11-recent.jsonl.gz",
+    "Published member prediction-11-reverseRanks.jsonl.gz",
+    "Published member prediction-A-clockPlus1.jsonl.gz",
+    "Published member prediction-A-primary.jsonl.gz",
+    "Published member prediction-A-recent.jsonl.gz",
+    "Published member prediction-A-reverseRanks.jsonl.gz",
+    "Published member prediction-B-clockPlus1.jsonl.gz",
+    "Published member prediction-B-primary.jsonl.gz",
+    "Published member prediction-B-recent.jsonl.gz",
+    "Published member prediction-B-reverseRanks.jsonl.gz",
+    "Published member prediction-edit-A-clockPlus1.jsonl.gz",
+    "Published member prediction-edit-A-primary.jsonl.gz",
+    "Published member prediction-edit-A-recent.jsonl.gz",
+    "Published member prediction-edit-A-reverseRanks.jsonl.gz",
+    "Published member prediction-edit-B-clockPlus1.jsonl.gz",
+    "Published member prediction-edit-B-primary.jsonl.gz",
+    "Published member prediction-edit-B-recent.jsonl.gz",
+    "Published member prediction-edit-B-reverseRanks.jsonl.gz",
+    "Published member prediction-five-cycle-clockPlus1.jsonl.gz",
+    "Published member prediction-five-cycle-primary.jsonl.gz",
+    "Published member prediction-five-cycle-recent.jsonl.gz",
+    "Published member prediction-five-cycle-reverseRanks.jsonl.gz",
+    "Published member prediction-full-cycle-clockPlus1.jsonl.gz",
+    "Published member prediction-full-cycle-primary.jsonl.gz",
+    "Published member prediction-full-cycle-recent.jsonl.gz",
+    "Published member prediction-full-cycle-reverseRanks.jsonl.gz",
+    "Published member prediction-holes-clockPlus1.jsonl.gz",
+    "Published member prediction-holes-primary.jsonl.gz",
+    "Published member prediction-holes-recent.jsonl.gz",
+    "Published member prediction-holes-reverseRanks.jsonl.gz",
+    "Published member prediction-receipt.json",
+    "Published member prediction-seal.json",
+    "Published member prediction-singleton-clockPlus1.jsonl.gz",
+    "Published member prediction-singleton-primary.jsonl.gz",
+    "Published member prediction-singleton-recent.jsonl.gz",
+    "Published member prediction-singleton-reverseRanks.jsonl.gz",
+    "Published member prediction-thirtyfive-cycle-clockPlus1.jsonl.gz",
+    "Published member prediction-thirtyfive-cycle-primary.jsonl.gz",
+    "Published member prediction-thirtyfive-cycle-recent.jsonl.gz",
+    "Published member prediction-thirtyfive-cycle-reverseRanks.jsonl.gz",
+    "Published member report.json",
+    "Published member request.json",
+    "Published member resource-basis.json",
+    "Published member result-files.json",
+    "Published member scalar-audit.json",
+    "Published member scheduler-job.json",
+    "Published member serve-spec.json",
+    "Published member synthetic-edit-response.json",
+    "Raw byte copy A-old-reference.jsonl.gz",
+    "Raw byte copy B-old-reference.jsonl.gz",
+    "Raw byte copy atom-manifest.json",
+    "Raw byte copy compile-compiler.json",
+    "Raw byte copy compile-order.u16.gz",
+    "Raw byte copy compile-program.json",
+    "Raw byte copy coverage.json",
+    "Raw byte copy execution.json",
+    "Raw byte copy frozen-plan.md",
+    "Raw byte copy implementation.md",
+    "Raw byte copy input-00-tokens.json",
+    "Raw byte copy input-01-tokens.json",
+    "Raw byte copy input-10-tokens.json",
+    "Raw byte copy input-11-tokens.json",
+    "Raw byte copy input-A-tokens.json",
+    "Raw byte copy input-B-tokens.json",
+    "Raw byte copy input-edit-A-tokens.json",
+    "Raw byte copy input-edit-B-tokens.json",
+    "Raw byte copy input-five-cycle-tokens.json",
+    "Raw byte copy input-full-cycle-tokens.json",
+    "Raw byte copy input-holes-tokens.json",
+    "Raw byte copy input-singleton-tokens.json",
+    "Raw byte copy input-thirtyfive-cycle-tokens.json",
+    "Raw byte copy inputs.json",
+    "Raw byte copy observations.jsonl.gz",
+    "Raw byte copy panels.json",
+    "Raw byte copy prediction-00-clockPlus1.jsonl.gz",
+    "Raw byte copy prediction-00-primary.jsonl.gz",
+    "Raw byte copy prediction-00-recent.jsonl.gz",
+    "Raw byte copy prediction-00-reverseRanks.jsonl.gz",
+    "Raw byte copy prediction-01-clockPlus1.jsonl.gz",
+    "Raw byte copy prediction-01-primary.jsonl.gz",
+    "Raw byte copy prediction-01-recent.jsonl.gz",
+    "Raw byte copy prediction-01-reverseRanks.jsonl.gz",
+    "Raw byte copy prediction-10-clockPlus1.jsonl.gz",
+    "Raw byte copy prediction-10-primary.jsonl.gz",
+    "Raw byte copy prediction-10-recent.jsonl.gz",
+    "Raw byte copy prediction-10-reverseRanks.jsonl.gz",
+    "Raw byte copy prediction-11-clockPlus1.jsonl.gz",
+    "Raw byte copy prediction-11-primary.jsonl.gz",
+    "Raw byte copy prediction-11-recent.jsonl.gz",
+    "Raw byte copy prediction-11-reverseRanks.jsonl.gz",
+    "Raw byte copy prediction-A-clockPlus1.jsonl.gz",
+    "Raw byte copy prediction-A-primary.jsonl.gz",
+    "Raw byte copy prediction-A-recent.jsonl.gz",
+    "Raw byte copy prediction-A-reverseRanks.jsonl.gz",
+    "Raw byte copy prediction-B-clockPlus1.jsonl.gz",
+    "Raw byte copy prediction-B-primary.jsonl.gz",
+    "Raw byte copy prediction-B-recent.jsonl.gz",
+    "Raw byte copy prediction-B-reverseRanks.jsonl.gz",
+    "Raw byte copy prediction-edit-A-clockPlus1.jsonl.gz",
+    "Raw byte copy prediction-edit-A-primary.jsonl.gz",
+    "Raw byte copy prediction-edit-A-recent.jsonl.gz",
+    "Raw byte copy prediction-edit-A-reverseRanks.jsonl.gz",
+    "Raw byte copy prediction-edit-B-clockPlus1.jsonl.gz",
+    "Raw byte copy prediction-edit-B-primary.jsonl.gz",
+    "Raw byte copy prediction-edit-B-recent.jsonl.gz",
+    "Raw byte copy prediction-edit-B-reverseRanks.jsonl.gz",
+    "Raw byte copy prediction-five-cycle-clockPlus1.jsonl.gz",
+    "Raw byte copy prediction-five-cycle-primary.jsonl.gz",
+    "Raw byte copy prediction-five-cycle-recent.jsonl.gz",
+    "Raw byte copy prediction-five-cycle-reverseRanks.jsonl.gz",
+    "Raw byte copy prediction-full-cycle-clockPlus1.jsonl.gz",
+    "Raw byte copy prediction-full-cycle-primary.jsonl.gz",
+    "Raw byte copy prediction-full-cycle-recent.jsonl.gz",
+    "Raw byte copy prediction-full-cycle-reverseRanks.jsonl.gz",
+    "Raw byte copy prediction-holes-clockPlus1.jsonl.gz",
+    "Raw byte copy prediction-holes-primary.jsonl.gz",
+    "Raw byte copy prediction-holes-recent.jsonl.gz",
+    "Raw byte copy prediction-holes-reverseRanks.jsonl.gz",
+    "Raw byte copy prediction-receipt.json",
+    "Raw byte copy prediction-seal.json",
+    "Raw byte copy prediction-singleton-clockPlus1.jsonl.gz",
+    "Raw byte copy prediction-singleton-primary.jsonl.gz",
+    "Raw byte copy prediction-singleton-recent.jsonl.gz",
+    "Raw byte copy prediction-singleton-reverseRanks.jsonl.gz",
+    "Raw byte copy prediction-thirtyfive-cycle-clockPlus1.jsonl.gz",
+    "Raw byte copy prediction-thirtyfive-cycle-primary.jsonl.gz",
+    "Raw byte copy prediction-thirtyfive-cycle-recent.jsonl.gz",
+    "Raw byte copy prediction-thirtyfive-cycle-reverseRanks.jsonl.gz",
+    "Raw byte copy report.json",
+    "Raw byte copy request.json",
+    "Raw byte copy resource-basis.json",
+    "Raw byte copy result-files.json",
+    "Raw byte copy serve-spec.json",
+    "Raw byte copy synthetic-edit-response.json",
+    "Raw census",
+    "Frozen executed source source_order_program.py",
+    "Frozen executed source source_order_compile.py",
+    "Frozen executed source source_order_study.py",
+    "Frozen executed source test_source_order.py",
+    "Frozen executed source encoder_atoms.py",
+    "Frozen executed source token_history_address.py",
+    "Frozen executed source token_history_process.py",
+    "Frozen executed plan source-ordering-program-feasibility.md",
+    "Frozen executed plan source-ordering-implementation.md",
+    "Eight targeted prior mechanics checks",
+    "Test source source_order_program.py",
+    "Test source source_order_compile.py",
+    "Test source source_order_study.py",
+    "Test source test_source_order.py",
+    "Successful independent publisher",
+    "Complete integer/scalar audit census",
+    "Primary supported denominators",
+    "Historical response denominators",
+    "Weak and empty applicability retained",
+    "Original publisher refusal source retained",
+    "Separate publication correction",
+    "Current final Astra snapshot article",
+    "Current final Astra snapshot evidenceIndex",
+    "Current final Astra snapshot livingBlog",
+    "Current final Astra snapshot publisherV2",
+    "Current final Astra snapshot scalarAudit",
+    "Actual result Astra snapshot report.json",
+    "Actual result Astra snapshot execution.json",
+    "Actual result Astra snapshot compile-program.json",
+    "Actual result Astra snapshot compile-compiler.json",
+    "Actual result Astra snapshot prediction-receipt.json",
+    "Actual result Astra snapshot prediction-seal.json",
+    "Actual result Astra snapshot observations.jsonl.gz",
+    "Actual result Astra snapshot collection.json",
+    "Actual result Astra snapshot scheduler-job.json",
+    "Source review identity source_order_program.py",
+    "Source review identity source_order_compile.py",
+    "Source review identity source_order_study.py",
+    "Source review identity test_source_order.py",
+    "Source review identity encoder_atoms.py",
+    "Source review identity token_history_address.py",
+    "Source review identity token_history_process.py",
+    "Source review chronology explicit",
+    "Storage schedule",
+    "No invented cleanup",
+    "Prior storage audit pin",
+    "Prior full research survey pin",
+    "Active goal current cycle no pending jobs",
+    "Previous completed turn preserved",
+    "This turn bounded progress",
+    "Current review progress join",
+    "Living blog current join",
+    "Conditional next question",
+    "Current article progress join",
+    "Local backlink time-circuit-explorer/docs/source-ordering-program.md:token-history-address-program.md",
+    "Local backlink time-circuit-explorer/docs/source-ordering-program.md:../../isa/docs/executable-symbol-scan-lowering.md",
+    "Local backlink time-circuit-explorer/docs/source-ordering-program.md:behavioral-authority.md",
+    "Local backlink time-circuit-explorer/docs/source-ordering-program.md:raw-prompt-encoder-atoms.md",
+    "Local backlink time-circuit-explorer/docs/source-ordering-program.md:uncentered-reader.md",
+    "Local backlink time-circuit-explorer/docs/source-ordering-program.md:plans/source-ordering-program-feasibility.md",
+    "Local backlink time-circuit-explorer/docs/source-ordering-program.md:../generator/source_order_program.py",
+    "Local backlink time-circuit-explorer/docs/source-ordering-program.md:../generator/source_order_compile.py",
+    "Local backlink time-circuit-explorer/docs/source-ordering-program.md:../generator/source_order_study.py",
+    "Local backlink time-circuit-explorer/docs/source-ordering-program.md:plans/source-ordering-implementation.md",
+    "Local backlink time-circuit-explorer/docs/source-ordering-program.md:results/source-order-program/publication.json",
+    "Local backlink time-circuit-explorer/docs/source-ordering-program.md:results/source-order-program/panels.json",
+    "Local backlink time-circuit-explorer/docs/source-ordering-program.md:own-state-successor.md",
+    "Local backlink time-circuit-explorer/docs/source-ordering-program.md:gate-first-trajectory.md",
+    "Local backlink time-circuit-explorer/docs/source-ordering-program.md:results/source-order-program-evidence/README.md",
+    "Local backlink time-circuit-explorer/docs/source-ordering-program.md:results/source-order-program/scalar-audit.json",
+    "Local backlink time-circuit-explorer/docs/source-ordering-program.md:../generator/publish_source_order.py",
+    "Local backlink time-circuit-explorer/docs/source-ordering-program.md:../generator/publish_source_order_v2.py",
+    "Local backlink time-circuit-explorer/docs/source-ordering-program.md:results/research-review-cycle93/README.md",
+    "Local backlink time-circuit-explorer/docs/source-ordering-program.md:results/storage-audit-cycle93/README.md",
+    "Local backlink time-circuit-explorer/docs/results/source-order-program-evidence/README.md:../../source-ordering-program.md",
+    "Local backlink time-circuit-explorer/docs/results/source-order-program-evidence/README.md:../source-order-program/publication.json",
+    "Local backlink time-circuit-explorer/docs/results/source-order-program-evidence/README.md:../source-order-program/report.json",
+    "Local backlink time-circuit-explorer/docs/results/source-order-program-evidence/README.md:../source-order-program/execution.json",
+    "Local backlink time-circuit-explorer/docs/results/source-order-program-evidence/README.md:../source-order-program/compile-compiler.json",
+    "Local backlink time-circuit-explorer/docs/results/source-order-program-evidence/README.md:../source-order-program/prediction-receipt.json",
+    "Local backlink time-circuit-explorer/docs/results/source-order-program-evidence/README.md:../source-order-program/panels.json",
+    "Local backlink time-circuit-explorer/docs/results/source-order-program-evidence/README.md:../source-order-program/coverage.json",
+    "Local backlink time-circuit-explorer/docs/results/source-order-program-evidence/README.md:../source-order-program/compile-order.u16.gz",
+    "Local backlink time-circuit-explorer/docs/results/source-order-program-evidence/README.md:../source-order-program/mechanics.json",
+    "Local backlink time-circuit-explorer/docs/results/source-order-program-evidence/README.md:../../../generator/publish_source_order_v2.py",
+    "Local backlink time-circuit-explorer/docs/results/source-order-program-evidence/README.md:publication-instrument-correction.json",
+    "Local backlink time-circuit-explorer/docs/results/source-order-program-evidence/README.md:advisor-source.json",
+    "Local backlink time-circuit-explorer/docs/results/source-order-program-evidence/README.md:advisor-actual-result.json",
+    "Local backlink time-circuit-explorer/docs/results/source-order-program-evidence/README.md:storage-practice.json",
+    "Local backlink time-circuit-explorer/docs/results/source-order-program-evidence/README.md:../research-review-cycle93/README.md",
+    "Local backlink time-circuit-explorer/docs/results/source-order-program-evidence/README.md:../storage-audit-cycle93/README.md",
+    "Local backlink time-circuit-explorer/README.md:docs/source-ordering-program.md",
+    "Local backlink time-circuit-explorer/generator/README.md:../docs/source-ordering-program.md",
+    "Local backlink time-circuit-explorer/docs/zero-neural-research.md:source-ordering-program.md",
+    "Local backlink obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md:../../time-circuit-explorer/docs/source-ordering-program.md",
+    "Local backlink obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md:../../time-circuit-explorer/docs/plans/source-ordering-program-feasibility.md",
+    "Local backlink obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md:../../time-circuit-explorer/docs/plans/source-ordering-implementation.md",
+    "Local backlink obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md:../../time-circuit-explorer/generator/source_order_compile.py",
+    "Local backlink obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md:../../time-circuit-explorer/generator/source_order_program.py",
+    "Local backlink obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md:../../time-circuit-explorer/generator/source_order_study.py",
+    "Local backlink obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md:../../time-circuit-explorer/docs/results/source-order-program/scalar-audit.json",
+    "Local backlink obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md:../../time-circuit-explorer/docs/results/source-order-program/publication.json",
+    "Local backlink obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md:../../time-circuit-explorer/docs/results/source-order-program-evidence/README.md",
+    "Local backlink obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md:../../isa/docs/executable-symbol-scan-lowering.md"
+  ],
+  "localLinks": 50,
+  "links": [
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/source-ordering-program.md",
+      "target": "token-history-address-program.md"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/source-ordering-program.md",
+      "target": "../../isa/docs/executable-symbol-scan-lowering.md"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/source-ordering-program.md",
+      "target": "behavioral-authority.md"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/source-ordering-program.md",
+      "target": "raw-prompt-encoder-atoms.md"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/source-ordering-program.md",
+      "target": "uncentered-reader.md"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/source-ordering-program.md",
+      "target": "plans/source-ordering-program-feasibility.md"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/source-ordering-program.md",
+      "target": "../generator/source_order_program.py"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/source-ordering-program.md",
+      "target": "../generator/source_order_compile.py"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/source-ordering-program.md",
+      "target": "../generator/source_order_study.py"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/source-ordering-program.md",
+      "target": "plans/source-ordering-implementation.md"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/source-ordering-program.md",
+      "target": "results/source-order-program/publication.json"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/source-ordering-program.md",
+      "target": "results/source-order-program/panels.json"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/source-ordering-program.md",
+      "target": "own-state-successor.md"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/source-ordering-program.md",
+      "target": "gate-first-trajectory.md"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/source-ordering-program.md",
+      "target": "results/source-order-program-evidence/README.md"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/source-ordering-program.md",
+      "target": "results/source-order-program/scalar-audit.json"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/source-ordering-program.md",
+      "target": "../generator/publish_source_order.py"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/source-ordering-program.md",
+      "target": "../generator/publish_source_order_v2.py"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/source-ordering-program.md",
+      "target": "results/research-review-cycle93/README.md"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/source-ordering-program.md",
+      "target": "results/storage-audit-cycle93/README.md"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/source-order-program-evidence/README.md",
+      "target": "../../source-ordering-program.md"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/source-order-program-evidence/README.md",
+      "target": "../source-order-program/publication.json"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/source-order-program-evidence/README.md",
+      "target": "../source-order-program/report.json"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/source-order-program-evidence/README.md",
+      "target": "../source-order-program/execution.json"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/source-order-program-evidence/README.md",
+      "target": "../source-order-program/compile-compiler.json"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/source-order-program-evidence/README.md",
+      "target": "../source-order-program/prediction-receipt.json"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/source-order-program-evidence/README.md",
+      "target": "../source-order-program/panels.json"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/source-order-program-evidence/README.md",
+      "target": "../source-order-program/coverage.json"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/source-order-program-evidence/README.md",
+      "target": "../source-order-program/compile-order.u16.gz"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/source-order-program-evidence/README.md",
+      "target": "../source-order-program/mechanics.json"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/source-order-program-evidence/README.md",
+      "target": "../../../generator/publish_source_order_v2.py"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/source-order-program-evidence/README.md",
+      "target": "publication-instrument-correction.json"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/source-order-program-evidence/README.md",
+      "target": "advisor-source.json"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/source-order-program-evidence/README.md",
+      "target": "advisor-actual-result.json"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/source-order-program-evidence/README.md",
+      "target": "storage-practice.json"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/source-order-program-evidence/README.md",
+      "target": "../research-review-cycle93/README.md"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/source-order-program-evidence/README.md",
+      "target": "../storage-audit-cycle93/README.md"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/README.md",
+      "target": "docs/source-ordering-program.md"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/generator/README.md",
+      "target": "../docs/source-ordering-program.md"
+    },
+    {
+      "source": "/Users/jakeholl/domains/time-circuit-explorer/docs/zero-neural-research.md",
+      "target": "source-ordering-program.md"
+    },
+    {
+      "source": "/Users/jakeholl/domains/obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+      "target": "../../time-circuit-explorer/docs/source-ordering-program.md"
+    },
+    {
+      "source": "/Users/jakeholl/domains/obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+      "target": "../../time-circuit-explorer/docs/plans/source-ordering-program-feasibility.md"
+    },
+    {
+      "source": "/Users/jakeholl/domains/obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+      "target": "../../time-circuit-explorer/docs/plans/source-ordering-implementation.md"
+    },
+    {
+      "source": "/Users/jakeholl/domains/obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+      "target": "../../time-circuit-explorer/generator/source_order_compile.py"
+    },
+    {
+      "source": "/Users/jakeholl/domains/obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+      "target": "../../time-circuit-explorer/generator/source_order_program.py"
+    },
+    {
+      "source": "/Users/jakeholl/domains/obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+      "target": "../../time-circuit-explorer/generator/source_order_study.py"
+    },
+    {
+      "source": "/Users/jakeholl/domains/obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+      "target": "../../time-circuit-explorer/docs/results/source-order-program/scalar-audit.json"
+    },
+    {
+      "source": "/Users/jakeholl/domains/obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+      "target": "../../time-circuit-explorer/docs/results/source-order-program/publication.json"
+    },
+    {
+      "source": "/Users/jakeholl/domains/obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+      "target": "../../time-circuit-explorer/docs/results/source-order-program-evidence/README.md"
+    },
+    {
+      "source": "/Users/jakeholl/domains/obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+      "target": "../../isa/docs/executable-symbol-scan-lowering.md"
+    }
+  ],
+  "rawFiles": 86,
+  "rawBytes": 9523323,
+  "auditorSHA256": "f680ed9c094e24bc6bc335caead00c1fbb9be6c9688166f90dbc6da1040477f0",
+  "progressSHA256": "3e4e9af62e82d0195afccd928777fefdd59c40e1ef42a74f08763a4e9dbc9c38",
+  "finalAdvisorSHA256": "b39ea6c6dbaaf6c233a1326b87d6ff3bd2c02001e4612fccc2ccd947827b8f6b",
+  "scope": "Byte/integrity/current-state/link release checks only. Independent scientific scalar/integer audit and eight targeted tests already completed separately; no test/model/scientific-score/image rerun."
+}

@@ -1,0 +1,11 @@
+{
+  "status": "v1-publication-audit-refused-before-copy",
+  "originalAuditor": "generator/publish_source_order.py",
+  "originalSHA256": "d5701c51fe981693dccd28add5973b8145482ee4f354cfb5f61791c54b345422",
+  "error": "ValueError: Read allowlist",
+  "cause": "Initial publication audit checked successful reads only against clean input allowlist. Executed frozen guard also intentionally permits its own output directory; 52 output-file reads hash the just-written prediction files.",
+  "correction": "Separate v2 additionally admits the exact52 receipt output paths beneath the executed served directory. Source/runtime guard/scientific results unchanged; no rerun.",
+  "correctedAuditor": "generator/publish_source_order_v2.py",
+  "correctedSHA256": "a84dba966351c6d47023509b113f85d9c3d55f8daedf581283c6aec5d3fd3d68",
+  "scalarAuditSHA256": "8ceb95ad263dc4a51de68a35b79b700c0b88829c0513fe5334b207865080db40"
+}
