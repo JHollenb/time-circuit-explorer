@@ -1,0 +1,56 @@
+{
+  "schema": "tce-cauchy-root-final-release-qa-v1",
+  "createdAtUTC": "2026-11-08T19:33:48.517305+00:00",
+  "progressSHA256": "bf68712f6dcd51725ce81169e5c8e06245bc0a48c9396f8ae3c0d12c389fb69b",
+  "approvedProgressSHA256": "5bb8c7840c69b90e68ff5d1126c3b84220f33968801c76d92ab865045c178607",
+  "reversibleBookkeepingUpdates": 22,
+  "finalSnapshotEntriesVerified": 18,
+  "primaryMembersVerified": 29,
+  "finalReviewSHA256": "62a4a00af6313905344d3a41278f8752d8520c0d5c55629e86bedd5aff6e4cb9",
+  "preflightPayloadSHA256": "8fb506afe01e65b604b8c90c04506fd48c97e469e6eef3375220f514dd356545",
+  "preflightChecks": [
+    {
+      "check": "cmd-path-closure",
+      "detail": "all relative path tokens resolve inside the payload",
+      "evidence": {
+        "absolute_unverified": [
+          "/usr/bin/env",
+          "/mnt/hdd8tb/mdb/uv-cache",
+          "/mnt/hdd8tb/mdb/torch",
+          "/mnt/hdd8tb/mdb/tmp",
+          "/mnt/hdd8tb/mdb/cuda-cache"
+        ]
+      },
+      "status": "passed"
+    },
+    {
+      "check": "hashed-root-hygiene",
+      "detail": "hashed roots are clean of runtime files",
+      "evidence": {
+        "absolute_unverified": []
+      },
+      "status": "passed"
+    },
+    {
+      "check": "verifier-dry-run",
+      "detail": "no verify config declared",
+      "evidence": {},
+      "status": "skipped"
+    },
+    {
+      "check": "workload-geometry",
+      "detail": "no geometry predicate declared",
+      "evidence": {},
+      "status": "skipped"
+    },
+    {
+      "check": "reservation-sanity",
+      "detail": "no measured history for this exact config",
+      "evidence": {},
+      "status": "passed"
+    }
+  ],
+  "scope": "Local exact hashes/reversible-approved-snapshot reconstruction/payloadpreflight binding only. No mechanics,scientificvector,normalization,publisher,remotehash or fullstorageaudit repetition. Staged gitdiffcheck follows.",
+  "goalStatus": "active-unsolved",
+  "nextFullReviewCycle": 114
+}

@@ -1,0 +1,101 @@
+{
+  "schema": "tce-cauchy-writer-stage-v2-source-review-v1",
+  "cycle": 113,
+  "recordedAtUTC": "2026-11-08T19:13:00.782503+00:00",
+  "reviewer": "astra_zero_forward_advisor",
+  "verdict": "admit-metadata-only-adapter-first-execution-and-fresh-stage",
+  "readyForFirstAdapterExecution": true,
+  "requiredCorrections": [],
+  "snapshots": [
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/cauchy_writer_stage_v2.py",
+      "sha256": "5d7d4a80d0a4908b07e333382883341c69d909f2b14ad7ad96f10a3bf1e35a85",
+      "bytes": 1585,
+      "readScope": "Complete source text, static only; no adapter import or execution."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/cauchy-writer-evidence/stage1-incomplete.json",
+      "sha256": "39c42cfd3f69094b2f6a22aa2c2e92dd4905b00eab1b3e8b969a648027287278",
+      "bytes": 793,
+      "readScope": "Complete failed-stage chronology metadata."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/cauchy-writer-evidence/advisor-source.json",
+      "sha256": "bb7b4206ba5f3560c32935d575b53331f0b1b039a08aaa71ada0f727abd0bd20",
+      "bytes": 45058,
+      "readScope": "Prior static admission metadata, scopes and all59 unique pins rechecked; preserved immutable despite missed validator prerequisite."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/artifacts/cauchy-writer-mechanics.json",
+      "sha256": "92cc96590d35c33d2c18677548c6071148a580e2667e70fc3c6efb0383733faa",
+      "bytes": 3721,
+      "readScope": "Complete eight-test receipt and34 source hashes; no test rerun."
+    },
+    {
+      "path": "/Users/jakeholl/domains/common/.venv/lib/python3.10/site-packages/mdb/job_support.py",
+      "sha256": "9ad31f069b6ac385571a9995817fa471eae0ff25e4b270652b028e330f82cdb5",
+      "bytes": 23879,
+      "readScope": "Lines1-90 and130-206: builder, delegated validation and guarded launch; no import."
+    },
+    {
+      "path": "/Users/jakeholl/domains/common/.venv/lib/python3.10/site-packages/mdb/scheduling_contract.py",
+      "sha256": "0ac29bf9a59203ff58421707004a686ab25877477431c04942df9bfbee22f73e",
+      "bytes": 30342,
+      "readScope": "Lines1-90,380-531 and592-665: complete ordinary finite single-lease validation path and live no-retry checks; no import."
+    },
+    {
+      "path": "/Users/jakeholl/domains/saturn-pub/packages/mdb/src/mdb/job_support.py",
+      "sha256": "9ad31f069b6ac385571a9995817fa471eae0ff25e4b270652b028e330f82cdb5",
+      "bytes": 23879,
+      "readScope": "Hash-only equality to installed helper scoped read."
+    },
+    {
+      "path": "/Users/jakeholl/domains/saturn-pub/packages/mdb/src/mdb/scheduling_contract.py",
+      "sha256": "0ac29bf9a59203ff58421707004a686ab25877477431c04942df9bfbee22f73e",
+      "bytes": 30342,
+      "readScope": "Hash-only equality to installed validator scoped read."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/cauchy-writer-evidence/root-post-mechanics-source.json",
+      "sha256": "79419b1a6d788b8294e68d8b4ec82f66f58e65a68444875c2ec2a89b72412f02",
+      "bytes": 12147,
+      "readScope": "Complete post-mechanics source-binding metadata; distinguishes40 original root snapshot checks from59unique post-mechanics checks."
+    }
+  ],
+  "priorSourceReview": {
+    "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/cauchy-writer-evidence/advisor-source.json",
+    "sha256": "bb7b4206ba5f3560c32935d575b53331f0b1b039a08aaa71ada0f727abd0bd20",
+    "uniquePinsRechecked": 59,
+    "mismatches": []
+  },
+  "chronology": [
+    "Eight supplied mechanics passed once,0.07134691695682704s including candidate imports, with34 scientific payload source hashes. Advisor inspected the receipt, not the test execution.",
+    "Before first import root checked40 source-review snapshots; advisor had checked59unique pins. Root's subsequent post-mechanics/pre-job check covers40 snapshots plus34 owned entries,59unique. Do not retroactively call root's first-import check59pins.",
+    "V1 stage copied source/member files, then stopped while constructing the scheduling-contract request field. Its preserved receipt records no request sealing, submission or scientific execution. Local inspection confirms no root request.json or job.json in artifacts/cauchy-writer-v1.",
+    "The original advisor-source.json remains immutable. Its stage-readiness finding missed the delegated validator requirement described below; this additive review corrects that authority rather than rewriting history.",
+    "All59 prior pinned paths still match. The adapter is new, unimported at this static review; no worker/math/test/assay/arm or reservation changes, and no repeated numerical mechanics are required by this metadata correction."
+  ],
+  "missedAssumption": {
+    "finding": "The earlier review checked one_lease_scheduling_contract's direct model_free/model_loads checks but did not follow its call to require_single_lease_contract. The latter requires explicit task_family='analysis' when model_free=True.",
+    "authority": "Installed mdb/scheduling_contract.py lines480-505, reached by job_support.py line205; source and installed validator hashes match.",
+    "effect": "An engineering stage failure before sealing/submission, not a scientific null or a failed numerical candidate."
+  },
+  "adapterReview": [
+    "The stage-time wrapper copies extra metadata, rejects a conflicting task_family, sets analysis, and delegates to the original canonical builder. Validation is retained and not bypassed.",
+    "The original stage function imports the builder inside stage(), so the temporary module binding is used. study.OWNED is temporarily extended by exactly the adapter filename, causing its bytes to be shipped and included in request.sourceHashes.",
+    "Both bindings are restored in finally on success or error. Use the intended standalone sequential staging process; this adapter is not a concurrent mutable control service.",
+    "The ordinary validator accepts the declared finite_local_program/entire-worker, zero full-model loads, explicit analysis family, one outer submission, in-process branches, direct collection, no automatic retry and declared logical work. Guarded launch revalidates the request.",
+    "Zero full-model loads remains scheduler classification only. Up to six original RMS/gamma evaluations are still paid; CUDA needs, device, one numerical CPU thread, intent-first reservation, strict preflight and900s cap remain unchanged."
+  ],
+  "sourceBindingBeforeSubmitAndPublication": {
+    "required": true,
+    "steps": [
+      "Record adapter current file SHA256 equals payload/cauchy_writer_stage_v2.py SHA256 equals request.sourceHashes['cauchy_writer_stage_v2.py'] before submission and immediately before publication.",
+      "Use fresh artifacts/cauchy-writer-v2; keep incomplete artifacts/cauchy-writer-v1 and stage1-incomplete.json unchanged.",
+      "Use the unchanged original submit/worker/publisher and original eight-test receipt. Frozen publisher's34-file OWNED/test-set check remains valid; its general verify() authenticates every request source hash, including the staged adapter.",
+      "The frozen publisher does not include the new adapter in its local current-source OWNED loop. The separate durable equality record closes that specific current/staged/request gap; do not claim the original publisher independently covers it.",
+      "Retain actual successful stage/preflight/custody receipts; this static review does not assert they have occurred."
+    ]
+  },
+  "scope": "Read-only text/metadata/hash review. No scientific source import, adapter execution, tests, model, arrays, remote checks or job was performed by the advisor. Only this new receipt is authored."
+}

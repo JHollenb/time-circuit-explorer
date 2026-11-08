@@ -1,0 +1,12 @@
+{
+  "schema": "tce-cauchy-writer-incomplete-stage-v1",
+  "directory": "artifacts/cauchy-writer-v1",
+  "exitCode": 1,
+  "phase": "request-dictionary scheduling-contract construction, after source/member copies",
+  "exception": "mdb.scheduling_contract.SchedulingContractError: model_free=True is reserved for explicit task_family=analysis workers",
+  "jobSubmitted": false,
+  "requestSealed": false,
+  "scientificExecution": false,
+  "mechanics": "The eight tiny supplied tests passed once before staging; those results remain valid for unchanged scientific sources.",
+  "correction": "Separate metadata-only cauchy_writer_stage_v2.py adapter adds task_family=analysis to the canonical builder. Original executed sources and incomplete stage remain immutable. No automatic scientific retry."
+}

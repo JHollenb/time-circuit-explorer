@@ -1,0 +1,101 @@
+{
+  "checks": [
+    {
+      "check": "cmd-path-closure",
+      "detail": "all relative path tokens resolve inside the payload",
+      "evidence": {
+        "absolute_unverified": [
+          "/usr/bin/env",
+          "/mnt/hdd8tb/mdb/uv-cache",
+          "/mnt/hdd8tb/mdb/torch",
+          "/mnt/hdd8tb/mdb/tmp",
+          "/mnt/hdd8tb/mdb/cuda-cache"
+        ]
+      },
+      "status": "passed"
+    },
+    {
+      "check": "hashed-root-hygiene",
+      "detail": "hashed roots are clean of runtime files",
+      "evidence": {
+        "absolute_unverified": []
+      },
+      "status": "passed"
+    },
+    {
+      "check": "verifier-dry-run",
+      "detail": "no verify config declared",
+      "evidence": {},
+      "status": "skipped"
+    },
+    {
+      "check": "workload-geometry",
+      "detail": "no geometry predicate declared",
+      "evidence": {},
+      "status": "skipped"
+    },
+    {
+      "check": "reservation-sanity",
+      "detail": "no measured history for this exact config",
+      "evidence": {},
+      "status": "passed"
+    }
+  ],
+  "client_run_id": "52ddec5f23f4a977",
+  "cmd": [
+    "/usr/bin/env",
+    "PYTHONUNBUFFERED=1",
+    "PYTHONNOUSERSITE=1",
+    "PYTHONPATH=",
+    "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+    "UV_LINK_MODE=symlink",
+    "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+    "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+    "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+    "HF_HUB_OFFLINE=1",
+    "TRANSFORMERS_OFFLINE=1",
+    "DIFFUSERS_OFFLINE=1",
+    "TOKENIZERS_PARALLELISM=false",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "OMP_NUM_THREADS=1",
+    "OPENBLAS_NUM_THREADS=1",
+    "MKL_NUM_THREADS=1",
+    "CUBLAS_WORKSPACE_CONFIG=:4096:8",
+    "uv",
+    "run",
+    "--no-project",
+    "--offline",
+    "--python",
+    "3.14.6",
+    "--with",
+    "torch==2.13.0",
+    "--with",
+    "diffusers==0.39.0",
+    "--with",
+    "transformers==5.14.1",
+    "--with",
+    "accelerate==1.14.0",
+    "--with",
+    "safetensors>=0.5",
+    "--with",
+    "numpy>=2.0",
+    "--with",
+    "psutil>=5.9",
+    "--with",
+    "pillow>=10.0",
+    "--with",
+    "pyyaml>=6.0",
+    "python",
+    "-u",
+    "cauchy_writer_study.py",
+    "execute",
+    "."
+  ],
+  "created_ts": 1794165246.416063,
+  "experiment": "tce-cauchy-writer-v1",
+  "payload_root": "/Users/jakeholl/domains/time-circuit-explorer/artifacts/cauchy-writer-v2/payload",
+  "payload_sha256": "8fb506afe01e65b604b8c90c04506fd48c97e469e6eef3375220f514dd356545",
+  "receipt_fingerprint": "4d44056e9f4a6404be19e3a940a01b5d002e7a986b93db0f38a1c5fcab78ac3d",
+  "schema_version": "mrun-preflight-receipt-v1",
+  "verdict": "passed"
+}

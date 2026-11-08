@@ -1,0 +1,5004 @@
+{
+  "parameterPayloadAfter": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7",
+  "parameterPayloadBefore": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7",
+  "rows": [
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 212.51753997057676,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "0682d153b395a1491190a4309a56a4d678539173794f5b8f8523a110a95100a7",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "e57dddcb52bc0b219b87082cadaeeb1b47a67d083b984e37611df651571ac1bf"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "0682d153b395a1491190a4309a56a4d678539173794f5b8f8523a110a95100a7",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": null,
+          "state": "target-A"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "196a9a8e680b29bd49a22ba3374dedda4fbe8be23bc4e22b969a5cadcac0796d",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/target-A-H.bf16",
+        "payloadSHA256": "e786db30b2d0ce6c221f94d27b70e646c00ffb0e76c7e09af9b2a56073c302f9",
+        "sha256": "e786db30b2d0ce6c221f94d27b70e646c00ffb0e76c7e09af9b2a56073c302f9",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "e786db30b2d0ce6c221f94d27b70e646c00ffb0e76c7e09af9b2a56073c302f9",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "e786db30b2d0ce6c221f94d27b70e646c00ffb0e76c7e09af9b2a56073c302f9",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "e57dddcb52bc0b219b87082cadaeeb1b47a67d083b984e37611df651571ac1bf",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": null,
+          "state": "target-A"
+        },
+        "parent_frame_id": "0682d153b395a1491190a4309a56a4d678539173794f5b8f8523a110a95100a7",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "196a9a8e680b29bd49a22ba3374dedda4fbe8be23bc4e22b969a5cadcac0796d",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "a6c3020435aa772a4e1a2908e6837f3ab9153dcf040add3737011d24015c81f7",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/target-A-Z.bf16",
+        "payloadSHA256": "b6ce5151309f13237709c196a0d189742267c2a22a706787c2093de5bc33243a",
+        "sha256": "b6ce5151309f13237709c196a0d189742267c2a22a706787c2093de5bc33243a",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": null,
+      "secondsSynchronizedRegistryOnly": 0.2125906660221517,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "target-A"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.4161732979118824,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "ac373bc55d54bbe3ab7fa068f042f761268e0670f39bc6a804bd8423258fda17",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "2727ff7f171583fb0b4b52c337a1def62b401877f1386a4a7bf35c5324cda4da"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "ac373bc55d54bbe3ab7fa068f042f761268e0670f39bc6a804bd8423258fda17",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+          "state": "parent-A"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "22ef97ab4c43138e291672b8a05b596a6d7b20416909630b42c0343f67a7b730",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/parent-A-H.bf16",
+        "payloadSHA256": "5355b49cdf9ec749d8605299e22e4bbb079cb1633ce0ef658bbcd2cdeca4ec26",
+        "sha256": "5355b49cdf9ec749d8605299e22e4bbb079cb1633ce0ef658bbcd2cdeca4ec26",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "5355b49cdf9ec749d8605299e22e4bbb079cb1633ce0ef658bbcd2cdeca4ec26",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "5355b49cdf9ec749d8605299e22e4bbb079cb1633ce0ef658bbcd2cdeca4ec26",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "2727ff7f171583fb0b4b52c337a1def62b401877f1386a4a7bf35c5324cda4da",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+          "state": "parent-A"
+        },
+        "parent_frame_id": "ac373bc55d54bbe3ab7fa068f042f761268e0670f39bc6a804bd8423258fda17",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "22ef97ab4c43138e291672b8a05b596a6d7b20416909630b42c0343f67a7b730",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "5301a380c8f39f0bc1a40971dd5774eb8166a60a4fc8d5273718cff4a2dfa6b3",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/parent-A-Z.bf16",
+        "payloadSHA256": "7e0d54b0ebe8f662ab65a7256b3c7d8dc4fd7f0c37be24941c4d58e0be2e5bcb",
+        "sha256": "7e0d54b0ebe8f662ab65a7256b3c7d8dc4fd7f0c37be24941c4d58e0be2e5bcb",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+      "secondsSynchronizedRegistryOnly": 0.0014634011313319206,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "parent-A"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.4579002745449543,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "fb004a8b4136b316ff83ef0a91f523c539277c136c48e86b3521a3360e4f7f35",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "9e796657538aaeee45d7aa99a89d95c51d0cfc207a8eab784ca68e70fcea3f77"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "fb004a8b4136b316ff83ef0a91f523c539277c136c48e86b3521a3360e4f7f35",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": null,
+          "state": "target-B"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "4305744393ee8fff1cfc09a157fd1a203533c248a4fd8b0ab281f97265d5ac79",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/target-B-H.bf16",
+        "payloadSHA256": "07be139b33f871133d05f71c1635dcb4bc895f313c7816f38175acea4f3b1993",
+        "sha256": "07be139b33f871133d05f71c1635dcb4bc895f313c7816f38175acea4f3b1993",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "07be139b33f871133d05f71c1635dcb4bc895f313c7816f38175acea4f3b1993",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "07be139b33f871133d05f71c1635dcb4bc895f313c7816f38175acea4f3b1993",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "9e796657538aaeee45d7aa99a89d95c51d0cfc207a8eab784ca68e70fcea3f77",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": null,
+          "state": "target-B"
+        },
+        "parent_frame_id": "fb004a8b4136b316ff83ef0a91f523c539277c136c48e86b3521a3360e4f7f35",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "4305744393ee8fff1cfc09a157fd1a203533c248a4fd8b0ab281f97265d5ac79",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "3a049bb2a0cffd2dae13ccabc4195c71d44d1f4f090e34832aa75a8862c8435a",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/target-B-Z.bf16",
+        "payloadSHA256": "3ba16c1828168a4b2a75c3d49ef4a88529907e3ffffce53ff2ae0b29cbe430b5",
+        "sha256": "3ba16c1828168a4b2a75c3d49ef4a88529907e3ffffce53ff2ae0b29cbe430b5",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": null,
+      "secondsSynchronizedRegistryOnly": 0.0015003900043666363,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "target-B"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.4361501671373844,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "1ea499da6741024332f690d35995a4c7acc8c67dec8dc48b17fd1598f9be8d4a",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "2264fcb33886c5cd74c07b0a6d28ec42dbe98d434f0fce0dc294d534e62ec619"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "1ea499da6741024332f690d35995a4c7acc8c67dec8dc48b17fd1598f9be8d4a",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+          "state": "parent-B"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "23a552450a16d3d3ec34a86414cdaacf31dfb8d9847c5fa2e1e1a87049dae7fc",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/parent-B-H.bf16",
+        "payloadSHA256": "fc72d47a211bcba8dd6a6dcf61d80975f9f7f9a1ada595975b4bcc0049adcc0b",
+        "sha256": "fc72d47a211bcba8dd6a6dcf61d80975f9f7f9a1ada595975b4bcc0049adcc0b",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "fc72d47a211bcba8dd6a6dcf61d80975f9f7f9a1ada595975b4bcc0049adcc0b",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "fc72d47a211bcba8dd6a6dcf61d80975f9f7f9a1ada595975b4bcc0049adcc0b",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "2264fcb33886c5cd74c07b0a6d28ec42dbe98d434f0fce0dc294d534e62ec619",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+          "state": "parent-B"
+        },
+        "parent_frame_id": "1ea499da6741024332f690d35995a4c7acc8c67dec8dc48b17fd1598f9be8d4a",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "23a552450a16d3d3ec34a86414cdaacf31dfb8d9847c5fa2e1e1a87049dae7fc",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "1bbc6b5daf2d13b741c6139d5130dff5a51a4e0912adeb13207d2262f1cb7a46",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/parent-B-Z.bf16",
+        "payloadSHA256": "665d056f46ce28d47566ffff938944bcf5bc4ce36e6571ffc1aae5f1e492593c",
+        "sha256": "665d056f46ce28d47566ffff938944bcf5bc4ce36e6571ffc1aae5f1e492593c",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+      "secondsSynchronizedRegistryOnly": 0.0014746617525815964,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "parent-B"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.462428830564022,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "12d9174352fa029008ccf744c9f8eed0e522b72496e3e8ef6d1143108b498f51",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "bee61b3207f063f7daefebbd9fb49260cb7db84868dca97f41b43606a4798bc2"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "12d9174352fa029008ccf744c9f8eed0e522b72496e3e8ef6d1143108b498f51",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": null,
+          "state": "target-00"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "f95e5475390f42fb6d35d062db889b1126bd0f2e9eea9a240e4af1408c52615c",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/target-00-H.bf16",
+        "payloadSHA256": "ccc6c90f42645d596b04c5c21843410c65a5b92666b488709a63808f54102699",
+        "sha256": "ccc6c90f42645d596b04c5c21843410c65a5b92666b488709a63808f54102699",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "ccc6c90f42645d596b04c5c21843410c65a5b92666b488709a63808f54102699",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "ccc6c90f42645d596b04c5c21843410c65a5b92666b488709a63808f54102699",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "bee61b3207f063f7daefebbd9fb49260cb7db84868dca97f41b43606a4798bc2",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": null,
+          "state": "target-00"
+        },
+        "parent_frame_id": "12d9174352fa029008ccf744c9f8eed0e522b72496e3e8ef6d1143108b498f51",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "f95e5475390f42fb6d35d062db889b1126bd0f2e9eea9a240e4af1408c52615c",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "3d8d0c8efed6729c9dd8c8007e14a9ecf052dced5c1de8fe0864d7fad4574171",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/target-00-Z.bf16",
+        "payloadSHA256": "67c52ffec6fe56cff5d7e4d3a3035e84dc2d05c875f752b090fdcce456d0ee61",
+        "sha256": "67c52ffec6fe56cff5d7e4d3a3035e84dc2d05c875f752b090fdcce456d0ee61",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": null,
+      "secondsSynchronizedRegistryOnly": 0.0015014917589724064,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "target-00"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.4122147113084793,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "6ab10718950b171e2b249dcbf4d78a27640f3c628db49321258c8201c470d040",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "3dd717eb5c93c7dbf9f6860e4aa13a1f1b3865f179df2bce922af5f6049ef536"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "6ab10718950b171e2b249dcbf4d78a27640f3c628db49321258c8201c470d040",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+          "state": "parent-00"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "3db0d4591d478c282b794202113fbf33228e1f9c026696eedf4b5cb372e468d5",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/parent-00-H.bf16",
+        "payloadSHA256": "7e62dda8d34e0e7bb47195e84e97c84bcddeb7d0be721a000f702259f60b0fd3",
+        "sha256": "7e62dda8d34e0e7bb47195e84e97c84bcddeb7d0be721a000f702259f60b0fd3",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "7e62dda8d34e0e7bb47195e84e97c84bcddeb7d0be721a000f702259f60b0fd3",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "7e62dda8d34e0e7bb47195e84e97c84bcddeb7d0be721a000f702259f60b0fd3",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "3dd717eb5c93c7dbf9f6860e4aa13a1f1b3865f179df2bce922af5f6049ef536",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+          "state": "parent-00"
+        },
+        "parent_frame_id": "6ab10718950b171e2b249dcbf4d78a27640f3c628db49321258c8201c470d040",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "3db0d4591d478c282b794202113fbf33228e1f9c026696eedf4b5cb372e468d5",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "3214ed01d8ce4d26b10aa0f7dc33423b2434a54a49dcb23d773ac681328fa726",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/parent-00-Z.bf16",
+        "payloadSHA256": "dc24411be976b1b806e443f403ecfe84fe7fe4c83e049c64450766f84083221d",
+        "sha256": "dc24411be976b1b806e443f403ecfe84fe7fe4c83e049c64450766f84083221d",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+      "secondsSynchronizedRegistryOnly": 0.0014512278139591217,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "parent-00"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.4003333635628223,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "ea35e8e3594cac3062a865c8b15aa4e9cc65074da04ce956a44ec3b3fa2546cd",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "6ff2ed53a278f35a80006d84a0d33b32a6fbff7499e5a091250a9eaed1b62644"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "ea35e8e3594cac3062a865c8b15aa4e9cc65074da04ce956a44ec3b3fa2546cd",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": null,
+          "state": "target-10"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "2d4089ce015ae1e5651abe0ec2713a91b34744b53a823e83a93a8d7f9275f420",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/target-10-H.bf16",
+        "payloadSHA256": "7cc8952c2d96d95e378a03890e0197eb44c27f628751ce4c7805f7a57a0d2aaf",
+        "sha256": "7cc8952c2d96d95e378a03890e0197eb44c27f628751ce4c7805f7a57a0d2aaf",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "7cc8952c2d96d95e378a03890e0197eb44c27f628751ce4c7805f7a57a0d2aaf",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "7cc8952c2d96d95e378a03890e0197eb44c27f628751ce4c7805f7a57a0d2aaf",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "6ff2ed53a278f35a80006d84a0d33b32a6fbff7499e5a091250a9eaed1b62644",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": null,
+          "state": "target-10"
+        },
+        "parent_frame_id": "ea35e8e3594cac3062a865c8b15aa4e9cc65074da04ce956a44ec3b3fa2546cd",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "2d4089ce015ae1e5651abe0ec2713a91b34744b53a823e83a93a8d7f9275f420",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "b1263c03b960126512c626869c54082175490024b649fe75e6ec6fd622625e76",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/target-10-Z.bf16",
+        "payloadSHA256": "ad6eeb70f0e0ba226140214a88f073ec5ce57c53ad7147de4170ca2179bb1dc2",
+        "sha256": "ad6eeb70f0e0ba226140214a88f073ec5ce57c53ad7147de4170ca2179bb1dc2",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": null,
+      "secondsSynchronizedRegistryOnly": 0.0014360900968313217,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "target-10"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.4100819826126099,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "39c9a09ae0b8a209e38da1e996db41373f7e7cd6d963ee17c50954f3102997b3",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "e555cd24c171f5842d7edd3c481602b15d663356fe8083ab8e25c7b47357ab8c"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "39c9a09ae0b8a209e38da1e996db41373f7e7cd6d963ee17c50954f3102997b3",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+          "state": "parent-10"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "4fce83b7dd2decb7a8cc71f77b46768330d950960d6f7598e1a864d1922090bc",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/parent-10-H.bf16",
+        "payloadSHA256": "f4ca2f1d19df29013d30675501a720ebda7350a0d1a7688ecde528e4c89167b4",
+        "sha256": "f4ca2f1d19df29013d30675501a720ebda7350a0d1a7688ecde528e4c89167b4",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "f4ca2f1d19df29013d30675501a720ebda7350a0d1a7688ecde528e4c89167b4",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "f4ca2f1d19df29013d30675501a720ebda7350a0d1a7688ecde528e4c89167b4",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "e555cd24c171f5842d7edd3c481602b15d663356fe8083ab8e25c7b47357ab8c",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+          "state": "parent-10"
+        },
+        "parent_frame_id": "39c9a09ae0b8a209e38da1e996db41373f7e7cd6d963ee17c50954f3102997b3",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "4fce83b7dd2decb7a8cc71f77b46768330d950960d6f7598e1a864d1922090bc",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "d630e27e9b904fd26961386dc90cb862a51d8a76adc698b61ba84d6483136528",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/parent-10-Z.bf16",
+        "payloadSHA256": "dfc7b16ed6d97be3a7a72ac36d44cd763b398c1088671533c284bf511975f9f7",
+        "sha256": "dfc7b16ed6d97be3a7a72ac36d44cd763b398c1088671533c284bf511975f9f7",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+      "secondsSynchronizedRegistryOnly": 0.0014478322118520737,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "parent-10"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.4167441986501217,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "60e177e4a62d79930658f96d93701551577679e6ab36e7e65af796c30ce5e351",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "c9de2e79b4ecf0ac22eda752502dc56959b09651d53085cbe208840abee8adc5"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "60e177e4a62d79930658f96d93701551577679e6ab36e7e65af796c30ce5e351",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": "f979b9dae98d422ae70760fdcda09bfb3ee468da54308d876e2470a4054d0af5",
+          "state": "slot0-dose1-A"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "1162461282c62d5a34e87c0514c996fbd0e5217b1f1953896e93186a99bd84e6",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot0-dose1-A-H.bf16",
+        "payloadSHA256": "799fbfd1cadcdbfed60e19181bc28645b13643cc66c5cd20c0a2c66838a295e5",
+        "sha256": "799fbfd1cadcdbfed60e19181bc28645b13643cc66c5cd20c0a2c66838a295e5",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "799fbfd1cadcdbfed60e19181bc28645b13643cc66c5cd20c0a2c66838a295e5",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "799fbfd1cadcdbfed60e19181bc28645b13643cc66c5cd20c0a2c66838a295e5",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "c9de2e79b4ecf0ac22eda752502dc56959b09651d53085cbe208840abee8adc5",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": "f979b9dae98d422ae70760fdcda09bfb3ee468da54308d876e2470a4054d0af5",
+          "state": "slot0-dose1-A"
+        },
+        "parent_frame_id": "60e177e4a62d79930658f96d93701551577679e6ab36e7e65af796c30ce5e351",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "1162461282c62d5a34e87c0514c996fbd0e5217b1f1953896e93186a99bd84e6",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "66ccfbdb94e5eab424785c5485ed8c9d525a3feef1955018fea44972460a3feb",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot0-dose1-A-Z.bf16",
+        "payloadSHA256": "462b01268dab6530d8537899fa7dcfcff3f71fa640e53448b29d8b39c6aba235",
+        "sha256": "462b01268dab6530d8537899fa7dcfcff3f71fa640e53448b29d8b39c6aba235",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": "f979b9dae98d422ae70760fdcda09bfb3ee468da54308d876e2470a4054d0af5",
+      "secondsSynchronizedRegistryOnly": 0.0014543239958584309,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "slot0-dose1-A"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.418416853994131,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "e4a68b36988064e880f3563b20e1a129000692f730d059861764867ab525459f",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "84c8fd4f90bf26844817d40d0490c4ea441c683c76dee7db6f10be04e04c3e39"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "e4a68b36988064e880f3563b20e1a129000692f730d059861764867ab525459f",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": "f979b9dae98d422ae70760fdcda09bfb3ee468da54308d876e2470a4054d0af5",
+          "state": "slot0-dose1-B"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "3f0bf60087e1c23857fee57795a254d8733e733c14885278fdd0a08c637e9659",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot0-dose1-B-H.bf16",
+        "payloadSHA256": "d57f60691bb3ac002815256547a60c0668472abc2758a190f81e2639252aa790",
+        "sha256": "d57f60691bb3ac002815256547a60c0668472abc2758a190f81e2639252aa790",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "d57f60691bb3ac002815256547a60c0668472abc2758a190f81e2639252aa790",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "d57f60691bb3ac002815256547a60c0668472abc2758a190f81e2639252aa790",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "84c8fd4f90bf26844817d40d0490c4ea441c683c76dee7db6f10be04e04c3e39",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": "f979b9dae98d422ae70760fdcda09bfb3ee468da54308d876e2470a4054d0af5",
+          "state": "slot0-dose1-B"
+        },
+        "parent_frame_id": "e4a68b36988064e880f3563b20e1a129000692f730d059861764867ab525459f",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "3f0bf60087e1c23857fee57795a254d8733e733c14885278fdd0a08c637e9659",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "40117862cb763db5ba3eabb819f71a7c6270687ecabe5ce13ca53c0f515e4abc",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot0-dose1-B-Z.bf16",
+        "payloadSHA256": "e0a3788537efe0c96f331fe5a804ab8f845c625111392228d377a33179713e38",
+        "sha256": "e0a3788537efe0c96f331fe5a804ab8f845c625111392228d377a33179713e38",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": "f979b9dae98d422ae70760fdcda09bfb3ee468da54308d876e2470a4054d0af5",
+      "secondsSynchronizedRegistryOnly": 0.001455887220799923,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "slot0-dose1-B"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.4144000597298145,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "914dcb55313173554e75a770c5e8510df3ab9b05cb3958a34d075232c7daca13",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "f83328d74f3292a60a1869264d387732de1dba908663e6e28ba28f1d6e26c323"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "914dcb55313173554e75a770c5e8510df3ab9b05cb3958a34d075232c7daca13",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": "f979b9dae98d422ae70760fdcda09bfb3ee468da54308d876e2470a4054d0af5",
+          "state": "slot0-dose1-00"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "cfadd6d6c4d72223b0e4f29cafbd511341ca4a2cd1dacf1a6eeee6d11d3d3e21",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot0-dose1-00-H.bf16",
+        "payloadSHA256": "8b6585027bde308df51a214b115232cf4848d0a0dd691e78c349269d12b5f22b",
+        "sha256": "8b6585027bde308df51a214b115232cf4848d0a0dd691e78c349269d12b5f22b",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "8b6585027bde308df51a214b115232cf4848d0a0dd691e78c349269d12b5f22b",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "8b6585027bde308df51a214b115232cf4848d0a0dd691e78c349269d12b5f22b",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "f83328d74f3292a60a1869264d387732de1dba908663e6e28ba28f1d6e26c323",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": "f979b9dae98d422ae70760fdcda09bfb3ee468da54308d876e2470a4054d0af5",
+          "state": "slot0-dose1-00"
+        },
+        "parent_frame_id": "914dcb55313173554e75a770c5e8510df3ab9b05cb3958a34d075232c7daca13",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "cfadd6d6c4d72223b0e4f29cafbd511341ca4a2cd1dacf1a6eeee6d11d3d3e21",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "9d6b8689a86e28e80f874ccb1b122c78cde5dd493f1561ba9fa806e9c3d0c3e4",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot0-dose1-00-Z.bf16",
+        "payloadSHA256": "e52015c177d3d67df71adce75935d906dd4390a7f7e4894901faf115996d4d2b",
+        "sha256": "e52015c177d3d67df71adce75935d906dd4390a7f7e4894901faf115996d4d2b",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": "f979b9dae98d422ae70760fdcda09bfb3ee468da54308d876e2470a4054d0af5",
+      "secondsSynchronizedRegistryOnly": 0.0014513181522488594,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "slot0-dose1-00"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.4137388207018375,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "75c9ebeb700cdb9d563bdb08891b7ec40cb14bc4b7c00f6cac3c60ffd488c5b2",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "51107a452868a58bcf03ded3e6cc0e85ec406d09a994ee381dcadfb67bc6cecb"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "75c9ebeb700cdb9d563bdb08891b7ec40cb14bc4b7c00f6cac3c60ffd488c5b2",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": "f979b9dae98d422ae70760fdcda09bfb3ee468da54308d876e2470a4054d0af5",
+          "state": "slot0-dose1-10"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "fcea64a949cfb8d15d1a4ad47e32ad84b0eddbf43ce134176d8346fa5e4d4fe3",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot0-dose1-10-H.bf16",
+        "payloadSHA256": "9e25a7660096b8018a29357b073c75c9d05ebf604f77d1eb3da21eedeb0353bf",
+        "sha256": "9e25a7660096b8018a29357b073c75c9d05ebf604f77d1eb3da21eedeb0353bf",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "9e25a7660096b8018a29357b073c75c9d05ebf604f77d1eb3da21eedeb0353bf",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "9e25a7660096b8018a29357b073c75c9d05ebf604f77d1eb3da21eedeb0353bf",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "51107a452868a58bcf03ded3e6cc0e85ec406d09a994ee381dcadfb67bc6cecb",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": "f979b9dae98d422ae70760fdcda09bfb3ee468da54308d876e2470a4054d0af5",
+          "state": "slot0-dose1-10"
+        },
+        "parent_frame_id": "75c9ebeb700cdb9d563bdb08891b7ec40cb14bc4b7c00f6cac3c60ffd488c5b2",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "fcea64a949cfb8d15d1a4ad47e32ad84b0eddbf43ce134176d8346fa5e4d4fe3",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "3d8e0199fbd5a59c4803ee47cf78dba123bfec8dfb4784189bc2b225322ad0be",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot0-dose1-10-Z.bf16",
+        "payloadSHA256": "389d37da93c258c80d6943dd540fc10e5c89cbacc546e14227971597ac038c94",
+        "sha256": "389d37da93c258c80d6943dd540fc10e5c89cbacc546e14227971597ac038c94",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": "f979b9dae98d422ae70760fdcda09bfb3ee468da54308d876e2470a4054d0af5",
+      "secondsSynchronizedRegistryOnly": 0.001452540047466755,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "slot0-dose1-10"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.4176052063703537,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "bdbbf2c5274eac89df4971a8012dd2c5f3af74fef3b3ff46716e94de02737871",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "17f8159ffea5c3837090898a9eeff2ea2838a0ac83f7e5592287fb2abea005ad"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "bdbbf2c5274eac89df4971a8012dd2c5f3af74fef3b3ff46716e94de02737871",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": "f4c8498504e96022ea0f538dad6c17c4188c3cf571ecc12a25ce78478695054a",
+          "state": "slot0-dosehalf-A"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "7f786a6bb111ee34992cf6ab5698fa5423761b59a2711c6ec7bfd28ed45b5daa",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot0-dosehalf-A-H.bf16",
+        "payloadSHA256": "2cce910387a93ceea9dc007037bc5224721a2ce269111278b501040f3cdba9e4",
+        "sha256": "2cce910387a93ceea9dc007037bc5224721a2ce269111278b501040f3cdba9e4",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "2cce910387a93ceea9dc007037bc5224721a2ce269111278b501040f3cdba9e4",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "2cce910387a93ceea9dc007037bc5224721a2ce269111278b501040f3cdba9e4",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "17f8159ffea5c3837090898a9eeff2ea2838a0ac83f7e5592287fb2abea005ad",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": "f4c8498504e96022ea0f538dad6c17c4188c3cf571ecc12a25ce78478695054a",
+          "state": "slot0-dosehalf-A"
+        },
+        "parent_frame_id": "bdbbf2c5274eac89df4971a8012dd2c5f3af74fef3b3ff46716e94de02737871",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "7f786a6bb111ee34992cf6ab5698fa5423761b59a2711c6ec7bfd28ed45b5daa",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "92645f2d285dd043475781dfad6fadcb4d196ab90e6fc87780cc9dce508e72f1",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot0-dosehalf-A-Z.bf16",
+        "payloadSHA256": "a5c2a6abd6f4677aabe689265683f582484580ea362068e1b453e2cd0e2ba051",
+        "sha256": "a5c2a6abd6f4677aabe689265683f582484580ea362068e1b453e2cd0e2ba051",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": "f4c8498504e96022ea0f538dad6c17c4188c3cf571ecc12a25ce78478695054a",
+      "secondsSynchronizedRegistryOnly": 0.0014550462365150452,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "slot0-dosehalf-A"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.419608946889639,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "46d156d09a6b27d8b0c247b8b21ae54cf74af2b2aa33563f10dc5de86e46fb51",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "d0eae8a858d7b271231285683350bf9e136631802260d172dcd5bec5fad915f6"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "46d156d09a6b27d8b0c247b8b21ae54cf74af2b2aa33563f10dc5de86e46fb51",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": "f4c8498504e96022ea0f538dad6c17c4188c3cf571ecc12a25ce78478695054a",
+          "state": "slot0-dosehalf-B"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "6bf4ce55ab98221f1766aaedb4c3f2bdebc8e93c2ab6d56bbfcd7f25c867a539",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot0-dosehalf-B-H.bf16",
+        "payloadSHA256": "6a6c8ae5520b0232cc82a79d2c411f62dc07d22ab5f3e03daace9e7d71f785db",
+        "sha256": "6a6c8ae5520b0232cc82a79d2c411f62dc07d22ab5f3e03daace9e7d71f785db",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "6a6c8ae5520b0232cc82a79d2c411f62dc07d22ab5f3e03daace9e7d71f785db",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "6a6c8ae5520b0232cc82a79d2c411f62dc07d22ab5f3e03daace9e7d71f785db",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "d0eae8a858d7b271231285683350bf9e136631802260d172dcd5bec5fad915f6",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": "f4c8498504e96022ea0f538dad6c17c4188c3cf571ecc12a25ce78478695054a",
+          "state": "slot0-dosehalf-B"
+        },
+        "parent_frame_id": "46d156d09a6b27d8b0c247b8b21ae54cf74af2b2aa33563f10dc5de86e46fb51",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "6bf4ce55ab98221f1766aaedb4c3f2bdebc8e93c2ab6d56bbfcd7f25c867a539",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "f92a6a4f2560637e00e18fae6e087dd51d77d9dac51f5e021252f687f9248fcd",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot0-dosehalf-B-Z.bf16",
+        "payloadSHA256": "a99203ab16a5ae87daa5853551f9cd776bfd3c04d7df7a5956ab7b7d44f0ba7e",
+        "sha256": "a99203ab16a5ae87daa5853551f9cd776bfd3c04d7df7a5956ab7b7d44f0ba7e",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": "f4c8498504e96022ea0f538dad6c17c4188c3cf571ecc12a25ce78478695054a",
+      "secondsSynchronizedRegistryOnly": 0.001457971055060625,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "slot0-dosehalf-B"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.4209807850420475,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "07c0cd64c3e61e357e3685e6f58248b0aedbf8ece835ced2fd31c0f3d5eb3087",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "43d841148d71ebce481a270d00abb5e901c99e4997158a25ddf72c3b2254b294"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "07c0cd64c3e61e357e3685e6f58248b0aedbf8ece835ced2fd31c0f3d5eb3087",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": "f4c8498504e96022ea0f538dad6c17c4188c3cf571ecc12a25ce78478695054a",
+          "state": "slot0-dosehalf-00"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "1521450abc21ddc5f98bd1d614350b5c99145f1486c96da2eb0506ded11bfaed",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot0-dosehalf-00-H.bf16",
+        "payloadSHA256": "099b05817154e4d49c1193552f2e54f95a1a8f38fe8cd781bc3412f001c8c6ed",
+        "sha256": "099b05817154e4d49c1193552f2e54f95a1a8f38fe8cd781bc3412f001c8c6ed",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "099b05817154e4d49c1193552f2e54f95a1a8f38fe8cd781bc3412f001c8c6ed",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "099b05817154e4d49c1193552f2e54f95a1a8f38fe8cd781bc3412f001c8c6ed",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "43d841148d71ebce481a270d00abb5e901c99e4997158a25ddf72c3b2254b294",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": "f4c8498504e96022ea0f538dad6c17c4188c3cf571ecc12a25ce78478695054a",
+          "state": "slot0-dosehalf-00"
+        },
+        "parent_frame_id": "07c0cd64c3e61e357e3685e6f58248b0aedbf8ece835ced2fd31c0f3d5eb3087",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "1521450abc21ddc5f98bd1d614350b5c99145f1486c96da2eb0506ded11bfaed",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "21d691cc446130946ae5af99344a42baefd132374edcfd2dab17655640fd634a",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot0-dosehalf-00-Z.bf16",
+        "payloadSHA256": "5ca9b25c0d5033a53989d688b5a3f448f9abb804838599fd882437ed00c8ae6f",
+        "sha256": "5ca9b25c0d5033a53989d688b5a3f448f9abb804838599fd882437ed00c8ae6f",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": "f4c8498504e96022ea0f538dad6c17c4188c3cf571ecc12a25ce78478695054a",
+      "secondsSynchronizedRegistryOnly": 0.0014590430073440075,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "slot0-dosehalf-00"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.4173551462590694,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "5c038f8ddbbe0a68d11e1c17857705a974e2480654ee2f3bd39b609ba21c8bdb",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "f79b9f276625dff274d88f78b3e151e90a0a0171b9a63942d9e956b455c2c390"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "5c038f8ddbbe0a68d11e1c17857705a974e2480654ee2f3bd39b609ba21c8bdb",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": "f4c8498504e96022ea0f538dad6c17c4188c3cf571ecc12a25ce78478695054a",
+          "state": "slot0-dosehalf-10"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "949bca26bb631e2573fb3d50dbd533d67a8ebb8cd32f191216122842fe27b433",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot0-dosehalf-10-H.bf16",
+        "payloadSHA256": "a692b6c580c4249a30731c0d563dc3b37e53fcdf57ec488aa4705b26a09dc0db",
+        "sha256": "a692b6c580c4249a30731c0d563dc3b37e53fcdf57ec488aa4705b26a09dc0db",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "a692b6c580c4249a30731c0d563dc3b37e53fcdf57ec488aa4705b26a09dc0db",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "a692b6c580c4249a30731c0d563dc3b37e53fcdf57ec488aa4705b26a09dc0db",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "f79b9f276625dff274d88f78b3e151e90a0a0171b9a63942d9e956b455c2c390",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": "f4c8498504e96022ea0f538dad6c17c4188c3cf571ecc12a25ce78478695054a",
+          "state": "slot0-dosehalf-10"
+        },
+        "parent_frame_id": "5c038f8ddbbe0a68d11e1c17857705a974e2480654ee2f3bd39b609ba21c8bdb",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "949bca26bb631e2573fb3d50dbd533d67a8ebb8cd32f191216122842fe27b433",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "e9ee7a24f5c54e9e5b542099929e17b8302d15a0109d05fc6cc28448f6ed1737",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot0-dosehalf-10-Z.bf16",
+        "payloadSHA256": "37c988ffc105d3a5e38e1dc1d59df8bf166e3a4038bb08edf7300ced563adf52",
+        "sha256": "37c988ffc105d3a5e38e1dc1d59df8bf166e3a4038bb08edf7300ced563adf52",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": "f4c8498504e96022ea0f538dad6c17c4188c3cf571ecc12a25ce78478695054a",
+      "secondsSynchronizedRegistryOnly": 0.0014551058411598206,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "slot0-dosehalf-10"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.419047825038433,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "ca823a59b4701cc2f971e33f613dff423eea4c062c83f7cec0c66ded4d5424e8",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "dec16a5bdbdde0e0ebab5fb51ddbc00ad55d23c628f3914549b4a55f91ce13ca"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "ca823a59b4701cc2f971e33f613dff423eea4c062c83f7cec0c66ded4d5424e8",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": "277d935fa7d686178a25f5734d3d054be3167991ff26c471a4167e1a1298496c",
+          "state": "slot1-dose1-A"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "18b64d87b9aeea0d4db9dedbd71be6169f0fe68aceab9b2b29f14349d6f8b818",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot1-dose1-A-H.bf16",
+        "payloadSHA256": "c48c3a5597309667117ffa630352b6b96ae321c4a6ac51d54c565e6307501c39",
+        "sha256": "c48c3a5597309667117ffa630352b6b96ae321c4a6ac51d54c565e6307501c39",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "c48c3a5597309667117ffa630352b6b96ae321c4a6ac51d54c565e6307501c39",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "c48c3a5597309667117ffa630352b6b96ae321c4a6ac51d54c565e6307501c39",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "dec16a5bdbdde0e0ebab5fb51ddbc00ad55d23c628f3914549b4a55f91ce13ca",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": "277d935fa7d686178a25f5734d3d054be3167991ff26c471a4167e1a1298496c",
+          "state": "slot1-dose1-A"
+        },
+        "parent_frame_id": "ca823a59b4701cc2f971e33f613dff423eea4c062c83f7cec0c66ded4d5424e8",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "18b64d87b9aeea0d4db9dedbd71be6169f0fe68aceab9b2b29f14349d6f8b818",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "773e334a20ae7c0fff1ea9343fb37b54974e71d5b7458a9d02ac695c89eeaebd",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot1-dose1-A-Z.bf16",
+        "payloadSHA256": "e0c3899c2a9992aab1c544f2c309d0e17f3b395af59deb159dae2682e584b21a",
+        "sha256": "e0c3899c2a9992aab1c544f2c309d0e17f3b395af59deb159dae2682e584b21a",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": "277d935fa7d686178a25f5734d3d054be3167991ff26c471a4167e1a1298496c",
+      "secondsSynchronizedRegistryOnly": 0.0014569181948900223,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "slot1-dose1-A"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.6029821708798409,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "eecb72795f6213bdc455738da0ec4dae0e341e8bf3ab4c99a07254581fbdea38",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "931ce3ccb3cb989f08c3dae9c5f4f29b2413ea78bae90593cca8c3e88e4ed0fe"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "eecb72795f6213bdc455738da0ec4dae0e341e8bf3ab4c99a07254581fbdea38",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": "277d935fa7d686178a25f5734d3d054be3167991ff26c471a4167e1a1298496c",
+          "state": "slot1-dose1-B"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "496ef3e1a09bd2134e9c50fefb2ede89285063935e7e88b23acf17fa4900dea0",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot1-dose1-B-H.bf16",
+        "payloadSHA256": "dc4d698bfa9d0f858a77d230cf107d336d7fde3b458017980ad8b51e942b6f4a",
+        "sha256": "dc4d698bfa9d0f858a77d230cf107d336d7fde3b458017980ad8b51e942b6f4a",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "dc4d698bfa9d0f858a77d230cf107d336d7fde3b458017980ad8b51e942b6f4a",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "dc4d698bfa9d0f858a77d230cf107d336d7fde3b458017980ad8b51e942b6f4a",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "931ce3ccb3cb989f08c3dae9c5f4f29b2413ea78bae90593cca8c3e88e4ed0fe",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": "277d935fa7d686178a25f5734d3d054be3167991ff26c471a4167e1a1298496c",
+          "state": "slot1-dose1-B"
+        },
+        "parent_frame_id": "eecb72795f6213bdc455738da0ec4dae0e341e8bf3ab4c99a07254581fbdea38",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "496ef3e1a09bd2134e9c50fefb2ede89285063935e7e88b23acf17fa4900dea0",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "9b8d7e77a92a82c1637ecd919ac0bfc65925b080e465326c4cf84c6b1b75a8e7",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot1-dose1-B-Z.bf16",
+        "payloadSHA256": "c1fb8ac99f3418f3f481742a1be5be01b4d75050316605c8c6e98a227fd3240e",
+        "sha256": "c1fb8ac99f3418f3f481742a1be5be01b4d75050316605c8c6e98a227fd3240e",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": "277d935fa7d686178a25f5734d3d054be3167991ff26c471a4167e1a1298496c",
+      "secondsSynchronizedRegistryOnly": 0.0016433768905699253,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "slot1-dose1-B"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.6263751313090324,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "8ed0534718902d55be8a008b20168f8f17ec6c5b39cb4fc7a078bfc144242a8f",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "6343ddb07136f7fba43180c249eb8c9d27df4e9eda371b8241da42a3c79c7e00"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "8ed0534718902d55be8a008b20168f8f17ec6c5b39cb4fc7a078bfc144242a8f",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": "277d935fa7d686178a25f5734d3d054be3167991ff26c471a4167e1a1298496c",
+          "state": "slot1-dose1-00"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "57f8031aaed8aaad7779fbfc69074b3e36d4e8510ddac6b06441753761bb9682",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot1-dose1-00-H.bf16",
+        "payloadSHA256": "5bb9dcb56bc85fbb13debe7976fcc08d879941a8606d368f43cc85cc5983ac27",
+        "sha256": "5bb9dcb56bc85fbb13debe7976fcc08d879941a8606d368f43cc85cc5983ac27",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "5bb9dcb56bc85fbb13debe7976fcc08d879941a8606d368f43cc85cc5983ac27",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "5bb9dcb56bc85fbb13debe7976fcc08d879941a8606d368f43cc85cc5983ac27",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "6343ddb07136f7fba43180c249eb8c9d27df4e9eda371b8241da42a3c79c7e00",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": "277d935fa7d686178a25f5734d3d054be3167991ff26c471a4167e1a1298496c",
+          "state": "slot1-dose1-00"
+        },
+        "parent_frame_id": "8ed0534718902d55be8a008b20168f8f17ec6c5b39cb4fc7a078bfc144242a8f",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "57f8031aaed8aaad7779fbfc69074b3e36d4e8510ddac6b06441753761bb9682",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "bd12031c368331ee3c78d514a828798e840d3bfc5445356b4f67e6cb09a260ba",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot1-dose1-00-Z.bf16",
+        "payloadSHA256": "f9ec2fac2dba76c21d2ec04b949d44a5b144da145c3ae7abed20a9cfef9cd7cb",
+        "sha256": "f9ec2fac2dba76c21d2ec04b949d44a5b144da145c3ae7abed20a9cfef9cd7cb",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": "277d935fa7d686178a25f5734d3d054be3167991ff26c471a4167e1a1298496c",
+      "secondsSynchronizedRegistryOnly": 0.0016674217768013477,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "slot1-dose1-00"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.6123191453516483,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "ccf641d1058066239ecfa7ab56f932844c0991b6cff4776576645a874d514ff0",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "c7c86cd731ecdaf9f7cbfc6ccb879253bd1c36416b5f4faef481dbc12074e77f"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "ccf641d1058066239ecfa7ab56f932844c0991b6cff4776576645a874d514ff0",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": "277d935fa7d686178a25f5734d3d054be3167991ff26c471a4167e1a1298496c",
+          "state": "slot1-dose1-10"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "a6fa613c16a3ecc1dc22634f338ed8902a0392fb5e89d8ffbcf431f21139eab7",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot1-dose1-10-H.bf16",
+        "payloadSHA256": "0eb1987055a2fc25ff1967fc58f73f1174c362b3192ae3bd5b132f4a62122407",
+        "sha256": "0eb1987055a2fc25ff1967fc58f73f1174c362b3192ae3bd5b132f4a62122407",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "0eb1987055a2fc25ff1967fc58f73f1174c362b3192ae3bd5b132f4a62122407",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "0eb1987055a2fc25ff1967fc58f73f1174c362b3192ae3bd5b132f4a62122407",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "c7c86cd731ecdaf9f7cbfc6ccb879253bd1c36416b5f4faef481dbc12074e77f",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": "277d935fa7d686178a25f5734d3d054be3167991ff26c471a4167e1a1298496c",
+          "state": "slot1-dose1-10"
+        },
+        "parent_frame_id": "ccf641d1058066239ecfa7ab56f932844c0991b6cff4776576645a874d514ff0",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "a6fa613c16a3ecc1dc22634f338ed8902a0392fb5e89d8ffbcf431f21139eab7",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "6b264c4ec89a1941c1426c66609fc011899398f244b61f1bd981d4c6912bb2a6",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot1-dose1-10-Z.bf16",
+        "payloadSHA256": "cdd90126926e5f6b30248506375a2b51e7f0c0912e15b9ea5238c50aa286c680",
+        "sha256": "cdd90126926e5f6b30248506375a2b51e7f0c0912e15b9ea5238c50aa286c680",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": "277d935fa7d686178a25f5734d3d054be3167991ff26c471a4167e1a1298496c",
+      "secondsSynchronizedRegistryOnly": 0.0016516419127583504,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "slot1-dose1-10"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.5892758965492249,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "fa3c8ec5b840e84f482cd5ba409ec6c5f89753ab621733e48d9f2f972fd415d9",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "af7b967f1187031ea1a55964914280faed0b83aac1a648276cf3125aae78fba4"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "fa3c8ec5b840e84f482cd5ba409ec6c5f89753ab621733e48d9f2f972fd415d9",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": "2ccb5ef16d204ac8f407e12312c86545f32984658cd274641d226d19bb6bb2cf",
+          "state": "slot1-dosehalf-A"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "af6b4c7c510efcb22dbe543651c5194b73a166d75e49d086bf226932f4d2379f",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot1-dosehalf-A-H.bf16",
+        "payloadSHA256": "0e8da70ec31157b20ee01906c2f82697ba47ce8743de220da7e973814ba7114f",
+        "sha256": "0e8da70ec31157b20ee01906c2f82697ba47ce8743de220da7e973814ba7114f",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "0e8da70ec31157b20ee01906c2f82697ba47ce8743de220da7e973814ba7114f",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "0e8da70ec31157b20ee01906c2f82697ba47ce8743de220da7e973814ba7114f",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "af7b967f1187031ea1a55964914280faed0b83aac1a648276cf3125aae78fba4",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": "2ccb5ef16d204ac8f407e12312c86545f32984658cd274641d226d19bb6bb2cf",
+          "state": "slot1-dosehalf-A"
+        },
+        "parent_frame_id": "fa3c8ec5b840e84f482cd5ba409ec6c5f89753ab621733e48d9f2f972fd415d9",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "af6b4c7c510efcb22dbe543651c5194b73a166d75e49d086bf226932f4d2379f",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "4a1e20564702ea5c65e8639e010a593173dc2734bc6b18f6b08aa318e4558f3d",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot1-dosehalf-A-Z.bf16",
+        "payloadSHA256": "c9398c73dd4aa1f3b57da1fcf3fe5e24037cf1994ebc301610362611dfa18bcd",
+        "sha256": "c9398c73dd4aa1f3b57da1fcf3fe5e24037cf1994ebc301610362611dfa18bcd",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": "2ccb5ef16d204ac8f407e12312c86545f32984658cd274641d226d19bb6bb2cf",
+      "secondsSynchronizedRegistryOnly": 0.0016297008842229843,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "slot1-dosehalf-A"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.597462221980095,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "f254c7e1226bf155e9aa28d82e9ca2bf7f44890b2b8c06c421d35656e4ef7d60",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "c4f69aecac44a8db34d99db5f6acae698e50a9b8e0effd967689953b3c78287a"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "f254c7e1226bf155e9aa28d82e9ca2bf7f44890b2b8c06c421d35656e4ef7d60",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": "2ccb5ef16d204ac8f407e12312c86545f32984658cd274641d226d19bb6bb2cf",
+          "state": "slot1-dosehalf-B"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "98fe318df4cdc08e953ef7d3b05068b4156406ceff6a49d74aa23e21760b1962",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot1-dosehalf-B-H.bf16",
+        "payloadSHA256": "1e5d9ffa971ea89b521face5c3d42cf7b1d750fa32f66d2e95ba49f7f365dcf2",
+        "sha256": "1e5d9ffa971ea89b521face5c3d42cf7b1d750fa32f66d2e95ba49f7f365dcf2",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "1e5d9ffa971ea89b521face5c3d42cf7b1d750fa32f66d2e95ba49f7f365dcf2",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "1e5d9ffa971ea89b521face5c3d42cf7b1d750fa32f66d2e95ba49f7f365dcf2",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "c4f69aecac44a8db34d99db5f6acae698e50a9b8e0effd967689953b3c78287a",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": "2ccb5ef16d204ac8f407e12312c86545f32984658cd274641d226d19bb6bb2cf",
+          "state": "slot1-dosehalf-B"
+        },
+        "parent_frame_id": "f254c7e1226bf155e9aa28d82e9ca2bf7f44890b2b8c06c421d35656e4ef7d60",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "98fe318df4cdc08e953ef7d3b05068b4156406ceff6a49d74aa23e21760b1962",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "eb04397c569b3d9e237c05164583fb4319a4e184efff807e190f3ae09b300d99",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot1-dosehalf-B-Z.bf16",
+        "payloadSHA256": "4d637a9b4196e56bbf43ddbfe57df24e38ae35ae55dd5c79343bb30a9fe1ac7b",
+        "sha256": "4d637a9b4196e56bbf43ddbfe57df24e38ae35ae55dd5c79343bb30a9fe1ac7b",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": "2ccb5ef16d204ac8f407e12312c86545f32984658cd274641d226d19bb6bb2cf",
+      "secondsSynchronizedRegistryOnly": 0.001636503729969263,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "slot1-dosehalf-B"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.6025812365114689,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "ef16817a2277cafa41a39079f91065d3ebe963fd5405f5964e37e58657ef781c",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "4986623e3691246cb109c37ddaad4f114a2e8283f2688c80457a5c891914cebc"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "ef16817a2277cafa41a39079f91065d3ebe963fd5405f5964e37e58657ef781c",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": "2ccb5ef16d204ac8f407e12312c86545f32984658cd274641d226d19bb6bb2cf",
+          "state": "slot1-dosehalf-00"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "68633d49b703069ab2d0a812f0242a0a2e399dee5dd41f586ca67a65d0bd3cb9",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot1-dosehalf-00-H.bf16",
+        "payloadSHA256": "0301e2d30f3681e232b31fc90a14fa29229553f7e3a501205b03beafe41f7463",
+        "sha256": "0301e2d30f3681e232b31fc90a14fa29229553f7e3a501205b03beafe41f7463",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "0301e2d30f3681e232b31fc90a14fa29229553f7e3a501205b03beafe41f7463",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "0301e2d30f3681e232b31fc90a14fa29229553f7e3a501205b03beafe41f7463",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "4986623e3691246cb109c37ddaad4f114a2e8283f2688c80457a5c891914cebc",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": "2ccb5ef16d204ac8f407e12312c86545f32984658cd274641d226d19bb6bb2cf",
+          "state": "slot1-dosehalf-00"
+        },
+        "parent_frame_id": "ef16817a2277cafa41a39079f91065d3ebe963fd5405f5964e37e58657ef781c",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "68633d49b703069ab2d0a812f0242a0a2e399dee5dd41f586ca67a65d0bd3cb9",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "5d1e3dea1b2d1d38e919caf1b1d035036c48fb36cc78c81affd383820345a3ff",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot1-dosehalf-00-Z.bf16",
+        "payloadSHA256": "9d709eb4f01098092bf764fb80fcb98a14c47b4982102f72c30346a9245eb85c",
+        "sha256": "9d709eb4f01098092bf764fb80fcb98a14c47b4982102f72c30346a9245eb85c",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": "2ccb5ef16d204ac8f407e12312c86545f32984658cd274641d226d19bb6bb2cf",
+      "secondsSynchronizedRegistryOnly": 0.0016430760733783245,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "slot1-dosehalf-00"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.592421904206276,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "8f6fce7d846bab6425df4b4a5c4228c958a580d9675a5d29779a7dac2d2723ab",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "620c186b0c79b20f557ae2d9c24c7e432a2794317878648314d2bee8ea8c3ed8"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "8f6fce7d846bab6425df4b4a5c4228c958a580d9675a5d29779a7dac2d2723ab",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": "2ccb5ef16d204ac8f407e12312c86545f32984658cd274641d226d19bb6bb2cf",
+          "state": "slot1-dosehalf-10"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "ea755db6bf7b0bfa88fb6933abbf8755561617096e3d799dd24d15e9aad6698b",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot1-dosehalf-10-H.bf16",
+        "payloadSHA256": "684fce7d789d1744ef6c9e88832a308e2b57dd9337bccc03c875ee5ac43b7859",
+        "sha256": "684fce7d789d1744ef6c9e88832a308e2b57dd9337bccc03c875ee5ac43b7859",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "684fce7d789d1744ef6c9e88832a308e2b57dd9337bccc03c875ee5ac43b7859",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "684fce7d789d1744ef6c9e88832a308e2b57dd9337bccc03c875ee5ac43b7859",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "620c186b0c79b20f557ae2d9c24c7e432a2794317878648314d2bee8ea8c3ed8",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": "2ccb5ef16d204ac8f407e12312c86545f32984658cd274641d226d19bb6bb2cf",
+          "state": "slot1-dosehalf-10"
+        },
+        "parent_frame_id": "8f6fce7d846bab6425df4b4a5c4228c958a580d9675a5d29779a7dac2d2723ab",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "ea755db6bf7b0bfa88fb6933abbf8755561617096e3d799dd24d15e9aad6698b",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "608bd2db1c6bf9a766e9e861ded61b01bfaa86aff4b78a261f5b51a9e5690fba",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/slot1-dosehalf-10-Z.bf16",
+        "payloadSHA256": "d8d0adfbf383f36c263ed1a194a9a2d4b9157840e0641f8835dd6d7cfe5a9745",
+        "sha256": "d8d0adfbf383f36c263ed1a194a9a2d4b9157840e0641f8835dd6d7cfe5a9745",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": "2ccb5ef16d204ac8f407e12312c86545f32984658cd274641d226d19bb6bb2cf",
+      "secondsSynchronizedRegistryOnly": 0.0016328268684446812,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "slot1-dosehalf-10"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.401314977556467,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "5873df91f299091a035c97d8a797bb032222f5ddfd079d3b59d55c4f25728923",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "da578a15c26d273b7a5e0b3b14be00905a607649099a8ffecd0d774ca7489b3c"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "5873df91f299091a035c97d8a797bb032222f5ddfd079d3b59d55c4f25728923",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": null,
+          "state": "target-01"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "145a6a829af82b02c32ac8ad917274304bb1a6e632f08f1f7e39a4cfe109674f",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/target-01-H.bf16",
+        "payloadSHA256": "82522aed100a6be8602c8903d1ddf977b3a0e42cfcb3e8b1a48be6c9c9ac3109",
+        "sha256": "82522aed100a6be8602c8903d1ddf977b3a0e42cfcb3e8b1a48be6c9c9ac3109",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "82522aed100a6be8602c8903d1ddf977b3a0e42cfcb3e8b1a48be6c9c9ac3109",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "82522aed100a6be8602c8903d1ddf977b3a0e42cfcb3e8b1a48be6c9c9ac3109",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "da578a15c26d273b7a5e0b3b14be00905a607649099a8ffecd0d774ca7489b3c",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": null,
+          "state": "target-01"
+        },
+        "parent_frame_id": "5873df91f299091a035c97d8a797bb032222f5ddfd079d3b59d55c4f25728923",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "145a6a829af82b02c32ac8ad917274304bb1a6e632f08f1f7e39a4cfe109674f",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "cf78dc9b0ecdddaba93ab4aec6126eb52d19153e5bd1c152e44a26b07f3c9945",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/target-01-Z.bf16",
+        "payloadSHA256": "2f976aea83c8b351f6475253903af386bae708150387301e6cc4b60c3c66989c",
+        "sha256": "2f976aea83c8b351f6475253903af386bae708150387301e6cc4b60c3c66989c",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": null,
+      "secondsSynchronizedRegistryOnly": 0.0014384835958480835,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "target-01"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.4193090610206127,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "49bc112a8b5db332810ba28e64ebde83130ae9e9089df9e4f1b4f632009c3d35",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "27c90890c822d87c49d7f45a6db53d30c2b5f83939101ef8b2c34ceb723e0855"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "49bc112a8b5db332810ba28e64ebde83130ae9e9089df9e4f1b4f632009c3d35",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+          "state": "parent-01"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "00a0f86eb44a20ae3cc95e3e633a4ef6b520c5043413f912349465fd09f39698",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/parent-01-H.bf16",
+        "payloadSHA256": "2db14a80ef1f6e354cc716d14c2cb4e73c730765b9894df551521168d334cd01",
+        "sha256": "2db14a80ef1f6e354cc716d14c2cb4e73c730765b9894df551521168d334cd01",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "2db14a80ef1f6e354cc716d14c2cb4e73c730765b9894df551521168d334cd01",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "2db14a80ef1f6e354cc716d14c2cb4e73c730765b9894df551521168d334cd01",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "27c90890c822d87c49d7f45a6db53d30c2b5f83939101ef8b2c34ceb723e0855",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+          "state": "parent-01"
+        },
+        "parent_frame_id": "49bc112a8b5db332810ba28e64ebde83130ae9e9089df9e4f1b4f632009c3d35",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "00a0f86eb44a20ae3cc95e3e633a4ef6b520c5043413f912349465fd09f39698",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "edb6a3ccceeab9f64fe08c4fe84cff36697c70e11b8f084e83f88fa67e482fa9",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/parent-01-Z.bf16",
+        "payloadSHA256": "6f224742b6453d566ab3c8d75b32afb7ef1401c2fb56f94210bcee39e5126f7a",
+        "sha256": "6f224742b6453d566ab3c8d75b32afb7ef1401c2fb56f94210bcee39e5126f7a",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+      "secondsSynchronizedRegistryOnly": 0.001456869300454855,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "parent-01"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.4066747389733791,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "1de51992c89e9640ebd8193e387e6a1c69c592bf67cf58427ce4be1e3c022950",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "5573f85380610dbcf67d0be04946770babb1ebba6fb0076e22080212e915fc4d"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "1de51992c89e9640ebd8193e387e6a1c69c592bf67cf58427ce4be1e3c022950",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+          "state": "accepted-01"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "00a0f86eb44a20ae3cc95e3e633a4ef6b520c5043413f912349465fd09f39698",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/accepted-01-H.bf16",
+        "payloadSHA256": "2db14a80ef1f6e354cc716d14c2cb4e73c730765b9894df551521168d334cd01",
+        "sha256": "2db14a80ef1f6e354cc716d14c2cb4e73c730765b9894df551521168d334cd01",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "2db14a80ef1f6e354cc716d14c2cb4e73c730765b9894df551521168d334cd01",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "2db14a80ef1f6e354cc716d14c2cb4e73c730765b9894df551521168d334cd01",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "5573f85380610dbcf67d0be04946770babb1ebba6fb0076e22080212e915fc4d",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+          "state": "accepted-01"
+        },
+        "parent_frame_id": "1de51992c89e9640ebd8193e387e6a1c69c592bf67cf58427ce4be1e3c022950",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "00a0f86eb44a20ae3cc95e3e633a4ef6b520c5043413f912349465fd09f39698",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "edb6a3ccceeab9f64fe08c4fe84cff36697c70e11b8f084e83f88fa67e482fa9",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/accepted-01-Z.bf16",
+        "payloadSHA256": "6f224742b6453d566ab3c8d75b32afb7ef1401c2fb56f94210bcee39e5126f7a",
+        "sha256": "6f224742b6453d566ab3c8d75b32afb7ef1401c2fb56f94210bcee39e5126f7a",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+      "secondsSynchronizedRegistryOnly": 0.001444695983082056,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "accepted-01"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.4156321994960308,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "520ba0abbb97d511216a385409cd0b5720c78db4c99e590f87f44ebddd2133b7",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "e352e8e38a240402af114b216d5ce774dc82d627b35c8db89e4a5c8c16ef1278"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "520ba0abbb97d511216a385409cd0b5720c78db4c99e590f87f44ebddd2133b7",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": null,
+          "state": "target-11"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "0d04d2b9640928552c9138ff5f7535c8c26717ab7a3fe5c5d29a44044a2875c4",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/target-11-H.bf16",
+        "payloadSHA256": "f5c88f147541655c5098765d292b13588af2c8bf2d86573b12fc477f9de7d61d",
+        "sha256": "f5c88f147541655c5098765d292b13588af2c8bf2d86573b12fc477f9de7d61d",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "f5c88f147541655c5098765d292b13588af2c8bf2d86573b12fc477f9de7d61d",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "f5c88f147541655c5098765d292b13588af2c8bf2d86573b12fc477f9de7d61d",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "e352e8e38a240402af114b216d5ce774dc82d627b35c8db89e4a5c8c16ef1278",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": null,
+          "state": "target-11"
+        },
+        "parent_frame_id": "520ba0abbb97d511216a385409cd0b5720c78db4c99e590f87f44ebddd2133b7",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "0d04d2b9640928552c9138ff5f7535c8c26717ab7a3fe5c5d29a44044a2875c4",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "29ec3b8c0fc250d7b79edb37f5e67c603ea79d71eceaab99ab5a6acd440c9ca5",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/target-11-Z.bf16",
+        "payloadSHA256": "f710e4f94ada233c8f2c90a806a3dae50a2757199aa7d1cdce1724605132c09b",
+        "sha256": "f710e4f94ada233c8f2c90a806a3dae50a2757199aa7d1cdce1724605132c09b",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": null,
+      "secondsSynchronizedRegistryOnly": 0.00145333306863904,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "target-11"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.3989009894430637,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "6b3ee21d2e451cf8ee434a7a6add7e48db2fe53ce8a8d24ba88034e90052b38c",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "1636ea0ad3c20f34d1573008d7ecb7299eeb7fe434a1a2a32c17baccda8758c9"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "6b3ee21d2e451cf8ee434a7a6add7e48db2fe53ce8a8d24ba88034e90052b38c",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+          "state": "parent-11"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "7baac91df571cc7e2db282e9919cf85bb113e858f8a5c36cb84d0fd3c6401279",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/parent-11-H.bf16",
+        "payloadSHA256": "75bb4577a75d39f8d74ba95357c9bc7b07a88b05ccf5c943ab8fcec68af79558",
+        "sha256": "75bb4577a75d39f8d74ba95357c9bc7b07a88b05ccf5c943ab8fcec68af79558",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "75bb4577a75d39f8d74ba95357c9bc7b07a88b05ccf5c943ab8fcec68af79558",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "75bb4577a75d39f8d74ba95357c9bc7b07a88b05ccf5c943ab8fcec68af79558",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "1636ea0ad3c20f34d1573008d7ecb7299eeb7fe434a1a2a32c17baccda8758c9",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+          "state": "parent-11"
+        },
+        "parent_frame_id": "6b3ee21d2e451cf8ee434a7a6add7e48db2fe53ce8a8d24ba88034e90052b38c",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "7baac91df571cc7e2db282e9919cf85bb113e858f8a5c36cb84d0fd3c6401279",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "8971d18358c3337889994aae052ac399bb02f0fb3af2c24b977f4bc7ce9c7f12",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/parent-11-Z.bf16",
+        "payloadSHA256": "fec27c301e9580ff73275eda688cfb53b7d49be636665e1c34dca8364bcab1d4",
+        "sha256": "fec27c301e9580ff73275eda688cfb53b7d49be636665e1c34dca8364bcab1d4",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+      "secondsSynchronizedRegistryOnly": 0.001436320599168539,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "parent-11"
+    },
+    {
+      "evidence": {
+        "act": "joint_writer.source_operand:v1",
+        "elapsed_ms": 1.40415970236063,
+        "implementation": "original-normalization-only",
+        "input_frame_id": "6c0547f8ff4bc32e5030bf318a2649ca5883c3bffc556e926c44ed8098e9054d",
+        "metrics": {
+          "inputShape": [
+            1,
+            512,
+            2560
+          ],
+          "inputStride": [
+            1310720,
+            2560,
+            1
+          ],
+          "nominalMatrixMACs": 0,
+          "normalizationUnits": 1,
+          "originalLinears": 0,
+          "outputStride": [
+            1310720,
+            2560,
+            1
+          ]
+        },
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "output_frame_id": "9af28d1fa21af87a59ab2f98ced5aaa06089dfdbeb4944a98a8cf686f2385fe6"
+      },
+      "input": {
+        "act": "joint_writer.H1-install:v1",
+        "frame_id": "6c0547f8ff4bc32e5030bf318a2649ca5883c3bffc556e926c44ed8098e9054d",
+        "implementation": "actual-finite",
+        "metadata": {
+          "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+          "state": "accepted-11"
+        },
+        "parent_frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "7baac91df571cc7e2db282e9919cf85bb113e858f8a5c36cb84d0fd3c6401279",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/accepted-11-H.bf16",
+        "payloadSHA256": "75bb4577a75d39f8d74ba95357c9bc7b07a88b05ccf5c943ab8fcec68af79558",
+        "sha256": "75bb4577a75d39f8d74ba95357c9bc7b07a88b05ccf5c943ab8fcec68af79558",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadAfter": {
+        "H1": "75bb4577a75d39f8d74ba95357c9bc7b07a88b05ccf5c943ab8fcec68af79558",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "inputPayloadBefore": {
+        "H1": "75bb4577a75d39f8d74ba95357c9bc7b07a88b05ccf5c943ab8fcec68af79558",
+        "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+      },
+      "output": {
+        "act": "joint_writer.source_operand:v1",
+        "frame_id": "9af28d1fa21af87a59ab2f98ced5aaa06089dfdbeb4944a98a8cf686f2385fe6",
+        "implementation": "original-normalization-only",
+        "metadata": {
+          "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+          "state": "accepted-11"
+        },
+        "parent_frame_id": "6c0547f8ff4bc32e5030bf318a2649ca5883c3bffc556e926c44ed8098e9054d",
+        "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "7baac91df571cc7e2db282e9919cf85bb113e858f8a5c36cb84d0fd3c6401279",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "Z": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                2560
+              ]
+            },
+            "fingerprint": "8971d18358c3337889994aae052ac399bb02f0fb3af2c24b977f4bc7ce9c7f12",
+            "handle": "saturn://Z",
+            "kind": "opaque",
+            "name": "Z"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          }
+        }
+      },
+      "outputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/accepted-11-Z.bf16",
+        "payloadSHA256": "fec27c301e9580ff73275eda688cfb53b7d49be636665e1c34dca8364bcab1d4",
+        "sha256": "fec27c301e9580ff73275eda688cfb53b7d49be636665e1c34dca8364bcab1d4",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+      "secondsSynchronizedRegistryOnly": 0.001440919004380703,
+      "spec": {
+        "abi_version": "v1",
+        "identity": "joint_writer.source_operand:v1",
+        "invalidates": [],
+        "name": "joint_writer.source_operand",
+        "numerical_contract": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+        "reads": [
+          "H1",
+          "normWeight"
+        ],
+        "schema": "saturn-act-spec-v1",
+        "tolerance": {},
+        "write_abis": {
+          "Z": {
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              512,
+              2560
+            ]
+          }
+        },
+        "write_kinds": {},
+        "writes": [
+          "Z"
+        ]
+      },
+      "state": "accepted-11"
+    }
+  ],
+  "weightParent": {
+    "act": "root:v1",
+    "frame_id": "13aa1ff40d43f8c296bc5ffd4d9ff0732f52c08a81f1e3a5278e1f28c96a1630",
+    "implementation": "saturn",
+    "metadata": {},
+    "parent_frame_id": null,
+    "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+    "schema": "saturn-frame-v1",
+    "slots": {
+      "normWeight": {
+        "abi": {},
+        "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+        "handle": "saturn://normWeight",
+        "kind": "opaque",
+        "name": "normWeight"
+      }
+    }
+  }
+}

@@ -1,0 +1,1312 @@
+[
+  {
+    "candidateSHAs": {
+      "fullCandidateSHA": "f979b9dae98d422ae70760fdcda09bfb3ee468da54308d876e2470a4054d0af5",
+      "halfCandidateSHA": "f4c8498504e96022ea0f538dad6c17c4188c3cf571ecc12a25ce78478695054a"
+    },
+    "evidence": {
+      "act": "joint_writer.propose_slot0:v1",
+      "elapsed_ms": 23124.127441085875,
+      "implementation": "paired-proposal-and-H-graph-projection",
+      "input_frame_id": "096fce877ff5431db597adcb1d5067c60e5399c80ff8eaa7cf9a5750f5229a9a",
+      "metrics": {
+        "candidatePrograms": 2,
+        "newOriginalLinears": 0,
+        "slot": 0,
+        "treeFitAttempts": 1
+      },
+      "numerical_contract": "Four equal native-discovery-normalized finite H/Z endpoint and paired losses on learned rows2..511;zero energy uses absolute squared loss. Ideal Jacobian and scalar paired surrogate propose only;complete two-admission H and source-policy Z decide continuation.",
+      "output_frame_id": "d7ca9212590972d98c0b157f1d28f58e1a8513f761edef7dacde4c55b6e4be5d"
+    },
+    "fit": {
+      "atoms": 14,
+      "candidateCutsEnumerated": 3848,
+      "directFallbackCandidates": 0,
+      "endpointEnergy": 92.94188857148563,
+      "normalEquationResidualRMS": 2.7816277924168446e-18,
+      "normalMatrixCondition": 34246.5801503412,
+      "objective": "Equal separately normalized endpoint and unchanged-token paired residual loss; q=P*R in FP64.",
+      "peakCutCacheBytes": 18921304,
+      "relaxedLoss": 0.9983276213039884,
+      "responseEnergy": 0.5505834219366676,
+      "search": "Greedy globally best relaxed split; leafDFS/feature/cut tie order. Exact duplicate right masks use first feature/cut. Cholesky Schur score, direct partition solve for cancellation-dominated denominator; no explicit inverse.",
+      "seconds": 21.493538840208203,
+      "splits": [
+        {
+          "feature": 1,
+          "leaf": 0,
+          "leftRows": 1904,
+          "lossAfter": 1.1848178515140098,
+          "lossBefore": 1.2618432883682131,
+          "realizedRelaxedDecrease": 0.07702543685420338,
+          "relaxedGain": 0.07702543685420528,
+          "rightRows": 136,
+          "schur": 0.0026898528084859283,
+          "schurMinusRealizedDecrease": 1.9012569296705806e-15,
+          "split": 0,
+          "threshold": 0.0
+        },
+        {
+          "feature": 0,
+          "leaf": 1,
+          "leftRows": 96,
+          "lossAfter": 1.1178194475801377,
+          "lossBefore": 1.1848178515140098,
+          "realizedRelaxedDecrease": 0.06699840393387202,
+          "relaxedGain": 0.06699840393387203,
+          "rightRows": 40,
+          "schur": 0.0011155380795631591,
+          "schurMinusRealizedDecrease": 1.3877787807814457e-17,
+          "split": 1,
+          "threshold": 25.0
+        },
+        {
+          "feature": 131,
+          "leaf": 2,
+          "leftRows": 16,
+          "lossAfter": 1.0736505188160437,
+          "lossBefore": 1.1178194475801377,
+          "realizedRelaxedDecrease": 0.04416892876409406,
+          "relaxedGain": 0.04416892876409432,
+          "rightRows": 24,
+          "schur": 0.00037932526956891495,
+          "schurMinusRealizedDecrease": 2.5673907444456745e-16,
+          "split": 2,
+          "threshold": -0.006195068359375
+        },
+        {
+          "feature": 139,
+          "leaf": 1,
+          "leftRows": 8,
+          "lossAfter": 1.05137644826817,
+          "lossBefore": 1.0736505188160437,
+          "realizedRelaxedDecrease": 0.02227407054787367,
+          "relaxedGain": 0.022274070547874076,
+          "rightRows": 88,
+          "schur": 0.014487567115492875,
+          "schurMinusRealizedDecrease": 4.0592529337857286e-16,
+          "split": 3,
+          "threshold": -0.018658161163330078
+        },
+        {
+          "feature": 131,
+          "leaf": 4,
+          "leftRows": 29,
+          "lossAfter": 1.035582079606502,
+          "lossBefore": 1.05137644826817,
+          "realizedRelaxedDecrease": 0.015794368661667946,
+          "relaxedGain": 0.015794368661666985,
+          "rightRows": 59,
+          "schur": 0.0007992519639147197,
+          "schurMinusRealizedDecrease": -9.610368056911511e-16,
+          "split": 4,
+          "threshold": -0.01214599609375
+        },
+        {
+          "feature": 138,
+          "leaf": 2,
+          "leftRows": 8,
+          "lossAfter": 1.0224132844593,
+          "lossBefore": 1.035582079606502,
+          "realizedRelaxedDecrease": 0.01316879514720215,
+          "relaxedGain": 0.013168795147201998,
+          "rightRows": 8,
+          "schur": 0.00015836362855155446,
+          "schurMinusRealizedDecrease": -1.5265566588595902e-16,
+          "split": 5,
+          "threshold": -0.00067901611328125
+        },
+        {
+          "feature": 123,
+          "leaf": 3,
+          "leftRows": 16,
+          "lossAfter": 1.013560077784985,
+          "lossBefore": 1.0224132844593,
+          "realizedRelaxedDecrease": 0.008853206674314995,
+          "relaxedGain": 0.008853206674315058,
+          "rightRows": 8,
+          "schur": 0.00020907119434392406,
+          "schurMinusRealizedDecrease": 6.245004513516506e-17,
+          "split": 6,
+          "threshold": -0.034912109375
+        },
+        {
+          "feature": 2,
+          "leaf": 0,
+          "leftRows": 954,
+          "lossAfter": 1.0089188873533925,
+          "lossBefore": 1.013560077784985,
+          "realizedRelaxedDecrease": 0.00464119043159239,
+          "relaxedGain": 0.004641190431591917,
+          "rightRows": 950,
+          "schur": 0.0013449264042430429,
+          "schurMinusRealizedDecrease": -4.735795089416683e-16,
+          "split": 7,
+          "threshold": 35.0
+        },
+        {
+          "feature": 109,
+          "leaf": 8,
+          "leftRows": 475,
+          "lossAfter": 1.006103763842774,
+          "lossBefore": 1.0089188873533925,
+          "realizedRelaxedDecrease": 0.0028151235106186334,
+          "relaxedGain": 0.002815123510619325,
+          "rightRows": 475,
+          "schur": 0.45473626178259685,
+          "schurMinusRealizedDecrease": 6.917209860457518e-16,
+          "split": 8,
+          "threshold": 8.0
+        },
+        {
+          "feature": 0,
+          "leaf": 8,
+          "leftRows": 8,
+          "lossAfter": 1.0015668346764441,
+          "lossBefore": 1.006103763842774,
+          "realizedRelaxedDecrease": 0.004536929166329751,
+          "relaxedGain": 0.0045369291663265535,
+          "rightRows": 467,
+          "schur": 0.007540862034544293,
+          "schurMinusRealizedDecrease": -3.1970953662252555e-15,
+          "split": 9,
+          "threshold": 44.0
+        },
+        {
+          "feature": 0,
+          "leaf": 9,
+          "leftRows": 99,
+          "lossAfter": 0.9998442208827145,
+          "lossBefore": 1.0015668346764441,
+          "realizedRelaxedDecrease": 0.0017226137937296215,
+          "relaxedGain": 0.0017226137937294763,
+          "rightRows": 376,
+          "schur": 0.07027458673808579,
+          "schurMinusRealizedDecrease": -1.452830911130576e-16,
+          "split": 10,
+          "threshold": 135.0
+        },
+        {
+          "feature": 0,
+          "leaf": 0,
+          "leftRows": 8,
+          "lossAfter": 0.9990661037748585,
+          "lossBefore": 0.9998442208827145,
+          "realizedRelaxedDecrease": 0.0007781171078560245,
+          "relaxedGain": 0.0007781171078558754,
+          "rightRows": 946,
+          "schur": 2.2367265331704224e-05,
+          "schurMinusRealizedDecrease": -1.4907779871675686e-16,
+          "split": 11,
+          "threshold": 38.0
+        },
+        {
+          "feature": 0,
+          "leaf": 12,
+          "leftRows": 752,
+          "lossAfter": 0.9983276213039884,
+          "lossBefore": 0.9990661037748585,
+          "realizedRelaxedDecrease": 0.0007384824708700499,
+          "relaxedGain": 0.0007384824708698733,
+          "rightRows": 194,
+          "schur": 0.00043481906219323464,
+          "schurMinusRealizedDecrease": -1.7661653389788867e-16,
+          "split": 12,
+          "threshold": 414.0
+        }
+      ],
+      "uniqueCandidatePartitionsCached": 2877,
+      "zeroEnergyPolicy": "Use absolute corresponding component; no divide by zero."
+    },
+    "input": {
+      "act": "root:v1",
+      "frame_id": "096fce877ff5431db597adcb1d5067c60e5399c80ff8eaa7cf9a5750f5229a9a",
+      "implementation": "saturn",
+      "metadata": {
+        "inputProgram": "parent",
+        "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+        "slot": 0
+      },
+      "parent_frame_id": null,
+      "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+      "schema": "saturn-frame-v1",
+      "slots": {
+        "edges": {
+          "abi": {},
+          "fingerprint": "cb299d0ff56ca0ddbea12c30b226b57b40df2e70a99f6b6bd7e1176d7419bf69",
+          "handle": "saturn://edges",
+          "kind": "opaque",
+          "name": "edges"
+        },
+        "features": {
+          "abi": {},
+          "fingerprint": "d2676015b17bcd43c9cb58616bd29de28123a40198306457884ca1c76613b04e",
+          "handle": "saturn://features",
+          "kind": "opaque",
+          "name": "features"
+        },
+        "gamma": {
+          "abi": {},
+          "fingerprint": "76fd2e53fb22540cc148be238da2f9d1c96bd7b6ec46bd8559eda3beeea562c6",
+          "handle": "saturn://gamma",
+          "kind": "opaque",
+          "name": "gamma"
+        },
+        "h": {
+          "abi": {},
+          "fingerprint": "cc9b3c86e1816ae0865c8f16b752b1c63ee728413abe2965419c919eeadd9ae5",
+          "handle": "saturn://h",
+          "kind": "opaque",
+          "name": "h"
+        },
+        "oldSlot": {
+          "abi": {},
+          "fingerprint": "ec0fae58384836e8dfe3ecf318afc187c9db1577df71cefd8fb721003911356b",
+          "handle": "saturn://oldSlot",
+          "kind": "opaque",
+          "name": "oldSlot"
+        },
+        "pairWeights": {
+          "abi": {},
+          "fingerprint": "647d3959883672e8e42fb4ac0930f1a74c237ae19e9751755c033e11e9e0ae67",
+          "handle": "saturn://pairWeights",
+          "kind": "opaque",
+          "name": "pairWeights"
+        },
+        "scaleVector": {
+          "abi": {},
+          "fingerprint": "edfc2f94687faed02b0ddbce954441ba66585bc8596ad743f87c48f23e181ac7",
+          "handle": "saturn://scaleVector",
+          "kind": "opaque",
+          "name": "scaleVector"
+        },
+        "target": {
+          "abi": {},
+          "fingerprint": "f63de6ef108b3c2520686ddc7ef14f95f3fd4ce6817f88753e3b4235e1130fd9",
+          "handle": "saturn://target",
+          "kind": "opaque",
+          "name": "target"
+        },
+        "weights": {
+          "abi": {},
+          "fingerprint": "fb1953c918180c9852372d8f86eaf90bd0415f2ee7b71daac01f6f16cfdc7074",
+          "handle": "saturn://weights",
+          "kind": "opaque",
+          "name": "weights"
+        },
+        "z": {
+          "abi": {},
+          "fingerprint": "917e77c18114fdfa96151daa2ad50f888b88b8824839b3787986662fd1c60267",
+          "handle": "saturn://z",
+          "kind": "opaque",
+          "name": "z"
+        },
+        "zt": {
+          "abi": {},
+          "fingerprint": "2139254a3708b744586de04ebba85dc334e8ecc43508f8c46cde7528575bfee9",
+          "handle": "saturn://zt",
+          "kind": "opaque",
+          "name": "zt"
+        }
+      }
+    },
+    "inputFields": {
+      "edges": {
+        "bytes": 16400,
+        "dtype": "torch.int64",
+        "format": "npy",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/fit0-edges.npy",
+        "payloadSHA256": "5613005200b63a2c854a4421046b5d5c71ecf7a2b0e52ca9f3a4c9060eaf6ca3",
+        "sha256": "3c790a090b20dff479b81cb15551e7975d7d8cfced540814e052e28f9db72cc3",
+        "shape": [
+          1017,
+          2
+        ],
+        "storedDtype": "<i8"
+      },
+      "features": {
+        "bytes": 2529728,
+        "dtype": "torch.float64",
+        "format": "npy",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/fit0-features.npy",
+        "payloadSHA256": "ce00fa3c636fc3f7b08dba48aae8ec01815fd7b4f478bb6b538875980cbcf282",
+        "sha256": "03bcb97912d50276e3f40389239a0048aefc20297c969fe8e72a52d0e9ce9ada",
+        "shape": [
+          2040,
+          155
+        ],
+        "storedDtype": "<f8"
+      },
+      "gamma": {
+        "bytes": 20608,
+        "dtype": "torch.float64",
+        "format": "npy",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/fit0-gamma.npy",
+        "payloadSHA256": "94eeeca291f37b9a63c1e5b7ca1728b55ba70034efa2398282e8d4dbe3191bca",
+        "sha256": "07aef90bbb635e401d2e365c3cf02b14cd5a220bab68a2ba066bba3faba1f6d9",
+        "shape": [
+          2560
+        ],
+        "storedDtype": "<f8"
+      },
+      "h": {
+        "bytes": 41779328,
+        "dtype": "torch.float64",
+        "format": "npy",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/fit0-h.npy",
+        "payloadSHA256": "ab9fc829288dc49a39fcc99d3b606cf855cf4854e1d399493342da8d88ad056e",
+        "sha256": "92786bcd483c8daf186d7dca2aa776b3b692023a8ad873a0d97498408bc49f57",
+        "shape": [
+          2040,
+          2560
+        ],
+        "storedDtype": "<f8"
+      },
+      "oldSlot": {
+        "bytes": 41779328,
+        "dtype": "torch.float64",
+        "format": "npy",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/fit0-oldSlot.npy",
+        "payloadSHA256": "d3c63c5405e71d48029b8bcaf1eb4e7f7914faff88265cd1130570a98843872f",
+        "sha256": "77f63c02ed004da50813ab121bc1541359428ee73ad4fde232b22e913dba803a",
+        "shape": [
+          2040,
+          2560
+        ],
+        "storedDtype": "<f8"
+      },
+      "pairWeights": {
+        "bytes": 8264,
+        "dtype": "torch.float64",
+        "format": "npy",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/fit0-pairWeights.npy",
+        "payloadSHA256": "35e9a04874a312673a7c4018c73369c897f94bb5a9795d942a1b3345e33365f0",
+        "sha256": "77a01e62d10be9d6df9207defeb16763aeb9fb5f37b51165cf6da8e4103483c2",
+        "shape": [
+          1017
+        ],
+        "storedDtype": "<f8"
+      },
+      "scaleVector": {
+        "bytes": 160,
+        "dtype": "torch.float64",
+        "format": "npy",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/fit0-scaleVector.npy",
+        "payloadSHA256": "94b46bbae30009e38740f0206fb5c57b9e9770970271064fd2cbfac9a2392b49",
+        "sha256": "ea6f90bce8250cd48786f9161f9666eb9d19650bda0f1324b23d50d22ff90595",
+        "shape": [
+          4
+        ],
+        "storedDtype": "<f8"
+      },
+      "target": {
+        "bytes": 41779328,
+        "dtype": "torch.float64",
+        "format": "npy",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/fit0-target.npy",
+        "payloadSHA256": "d83d03849bf387c0a866d203552b7267427a2e42ff8e8bc7c0fed75a9a134b31",
+        "sha256": "216790b7409d710da0a3ba576db97b107dd4a93ba218b7c40bf15a1be2d9bf8e",
+        "shape": [
+          2040,
+          2560
+        ],
+        "storedDtype": "<f8"
+      },
+      "weights": {
+        "bytes": 16448,
+        "dtype": "torch.float64",
+        "format": "npy",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/fit0-weights.npy",
+        "payloadSHA256": "ea92361a9d3ca641283727be7f739863ee902503764b4f99cc57b6a2f9e38a64",
+        "sha256": "2dfd7468e2a4d099bdd127007a1cce869d46e1c6ebe019fa54055da18731a454",
+        "shape": [
+          2040
+        ],
+        "storedDtype": "<f8"
+      },
+      "z": {
+        "bytes": 41779328,
+        "dtype": "torch.float64",
+        "format": "npy",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/fit0-z.npy",
+        "payloadSHA256": "5406e7be0348d587148b2b101999adbe6652fd146c6b141b9ea2784d11b134d9",
+        "sha256": "762448ce164cd6d990bb57c75f4aebcb57f106f0a3893a51ae38cbf30c4c834b",
+        "shape": [
+          2040,
+          2560
+        ],
+        "storedDtype": "<f8"
+      },
+      "zt": {
+        "bytes": 41779328,
+        "dtype": "torch.float64",
+        "format": "npy",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/fit0-zt.npy",
+        "payloadSHA256": "2fa628937e22e50a99676085f87c91278f237807a9bf8f9a823c5c2eca8e8567",
+        "sha256": "637d4c98481accd6c2288337d754f613954b8fe56c0d382d06f893377bc6027b",
+        "shape": [
+          2040,
+          2560
+        ],
+        "storedDtype": "<f8"
+      }
+    },
+    "inputPayloadAfter": {
+      "edges": "5613005200b63a2c854a4421046b5d5c71ecf7a2b0e52ca9f3a4c9060eaf6ca3",
+      "features": "ce00fa3c636fc3f7b08dba48aae8ec01815fd7b4f478bb6b538875980cbcf282",
+      "gamma": "94eeeca291f37b9a63c1e5b7ca1728b55ba70034efa2398282e8d4dbe3191bca",
+      "h": "ab9fc829288dc49a39fcc99d3b606cf855cf4854e1d399493342da8d88ad056e",
+      "oldSlot": "d3c63c5405e71d48029b8bcaf1eb4e7f7914faff88265cd1130570a98843872f",
+      "pairWeights": "35e9a04874a312673a7c4018c73369c897f94bb5a9795d942a1b3345e33365f0",
+      "scaleVector": "94b46bbae30009e38740f0206fb5c57b9e9770970271064fd2cbfac9a2392b49",
+      "target": "d83d03849bf387c0a866d203552b7267427a2e42ff8e8bc7c0fed75a9a134b31",
+      "weights": "ea92361a9d3ca641283727be7f739863ee902503764b4f99cc57b6a2f9e38a64",
+      "z": "5406e7be0348d587148b2b101999adbe6652fd146c6b141b9ea2784d11b134d9",
+      "zt": "2fa628937e22e50a99676085f87c91278f237807a9bf8f9a823c5c2eca8e8567"
+    },
+    "inputPayloadBefore": {
+      "edges": "5613005200b63a2c854a4421046b5d5c71ecf7a2b0e52ca9f3a4c9060eaf6ca3",
+      "features": "ce00fa3c636fc3f7b08dba48aae8ec01815fd7b4f478bb6b538875980cbcf282",
+      "gamma": "94eeeca291f37b9a63c1e5b7ca1728b55ba70034efa2398282e8d4dbe3191bca",
+      "h": "ab9fc829288dc49a39fcc99d3b606cf855cf4854e1d399493342da8d88ad056e",
+      "oldSlot": "d3c63c5405e71d48029b8bcaf1eb4e7f7914faff88265cd1130570a98843872f",
+      "pairWeights": "35e9a04874a312673a7c4018c73369c897f94bb5a9795d942a1b3345e33365f0",
+      "scaleVector": "94b46bbae30009e38740f0206fb5c57b9e9770970271064fd2cbfac9a2392b49",
+      "target": "d83d03849bf387c0a866d203552b7267427a2e42ff8e8bc7c0fed75a9a134b31",
+      "weights": "ea92361a9d3ca641283727be7f739863ee902503764b4f99cc57b6a2f9e38a64",
+      "z": "5406e7be0348d587148b2b101999adbe6652fd146c6b141b9ea2784d11b134d9",
+      "zt": "2fa628937e22e50a99676085f87c91278f237807a9bf8f9a823c5c2eca8e8567"
+    },
+    "output": {
+      "act": "joint_writer.propose_slot0:v1",
+      "frame_id": "d7ca9212590972d98c0b157f1d28f58e1a8513f761edef7dacde4c55b6e4be5d",
+      "implementation": "paired-proposal-and-H-graph-projection",
+      "metadata": {
+        "inputProgram": "parent",
+        "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+        "slot": 0
+      },
+      "parent_frame_id": "096fce877ff5431db597adcb1d5067c60e5399c80ff8eaa7cf9a5750f5229a9a",
+      "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+      "schema": "saturn-frame-v1",
+      "slots": {
+        "edges": {
+          "abi": {},
+          "fingerprint": "cb299d0ff56ca0ddbea12c30b226b57b40df2e70a99f6b6bd7e1176d7419bf69",
+          "handle": "saturn://edges",
+          "kind": "opaque",
+          "name": "edges"
+        },
+        "features": {
+          "abi": {},
+          "fingerprint": "d2676015b17bcd43c9cb58616bd29de28123a40198306457884ca1c76613b04e",
+          "handle": "saturn://features",
+          "kind": "opaque",
+          "name": "features"
+        },
+        "fullCandidateSHA": {
+          "abi": {},
+          "fingerprint": "e46cd85883858a550ea53db8b70e62f59d55e2b14e001442a9445d81cd3fe938",
+          "handle": "saturn://fullCandidateSHA",
+          "kind": "opaque",
+          "name": "fullCandidateSHA"
+        },
+        "gamma": {
+          "abi": {},
+          "fingerprint": "76fd2e53fb22540cc148be238da2f9d1c96bd7b6ec46bd8559eda3beeea562c6",
+          "handle": "saturn://gamma",
+          "kind": "opaque",
+          "name": "gamma"
+        },
+        "gradient": {
+          "abi": {},
+          "fingerprint": "2dd4f60238237ee1c0652db30309c91a2ba5bf22f8abefdfb1ae31499d9fa30a",
+          "handle": "saturn://gradient",
+          "kind": "opaque",
+          "name": "gradient"
+        },
+        "h": {
+          "abi": {},
+          "fingerprint": "cc9b3c86e1816ae0865c8f16b752b1c63ee728413abe2965419c919eeadd9ae5",
+          "handle": "saturn://h",
+          "kind": "opaque",
+          "name": "h"
+        },
+        "halfCandidateSHA": {
+          "abi": {},
+          "fingerprint": "8cfd422aacc970cf614df64a5729ee9f27baef1e42f157f7f2bc4fdfe99c386d",
+          "handle": "saturn://halfCandidateSHA",
+          "kind": "opaque",
+          "name": "halfCandidateSHA"
+        },
+        "oldSlot": {
+          "abi": {},
+          "fingerprint": "ec0fae58384836e8dfe3ecf318afc187c9db1577df71cefd8fb721003911356b",
+          "handle": "saturn://oldSlot",
+          "kind": "opaque",
+          "name": "oldSlot"
+        },
+        "pairWeights": {
+          "abi": {},
+          "fingerprint": "647d3959883672e8e42fb4ac0930f1a74c237ae19e9751755c033e11e9e0ae67",
+          "handle": "saturn://pairWeights",
+          "kind": "opaque",
+          "name": "pairWeights"
+        },
+        "scaleVector": {
+          "abi": {},
+          "fingerprint": "edfc2f94687faed02b0ddbce954441ba66585bc8596ad743f87c48f23e181ac7",
+          "handle": "saturn://scaleVector",
+          "kind": "opaque",
+          "name": "scaleVector"
+        },
+        "step": {
+          "abi": {},
+          "fingerprint": "e4b97e0865f98691b21738b7322944045efe4a6e34b3ef05a707b36dc61c22ac",
+          "handle": "saturn://step",
+          "kind": "opaque",
+          "name": "step"
+        },
+        "target": {
+          "abi": {},
+          "fingerprint": "f63de6ef108b3c2520686ddc7ef14f95f3fd4ce6817f88753e3b4235e1130fd9",
+          "handle": "saturn://target",
+          "kind": "opaque",
+          "name": "target"
+        },
+        "weights": {
+          "abi": {},
+          "fingerprint": "fb1953c918180c9852372d8f86eaf90bd0415f2ee7b71daac01f6f16cfdc7074",
+          "handle": "saturn://weights",
+          "kind": "opaque",
+          "name": "weights"
+        },
+        "z": {
+          "abi": {},
+          "fingerprint": "917e77c18114fdfa96151daa2ad50f888b88b8824839b3787986662fd1c60267",
+          "handle": "saturn://z",
+          "kind": "opaque",
+          "name": "z"
+        },
+        "zt": {
+          "abi": {},
+          "fingerprint": "2139254a3708b744586de04ebba85dc334e8ecc43508f8c46cde7528575bfee9",
+          "handle": "saturn://zt",
+          "kind": "opaque",
+          "name": "zt"
+        }
+      }
+    },
+    "outputFields": {
+      "gradient": {
+        "bytes": 41779328,
+        "dtype": "torch.float64",
+        "format": "npy",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/fit0-gradient.npy",
+        "payloadSHA256": "2c282a0ea402fa9631c5570a8f4a704a08ce9c62783264e5bc37fe8b7f86a1aa",
+        "sha256": "06046cad7a8acfd3d2566752725a991db85d6362081dd05cd91792344d99cbb2",
+        "shape": [
+          2040,
+          2560
+        ],
+        "storedDtype": "<f8"
+      },
+      "step": {
+        "bytes": 41779328,
+        "dtype": "torch.float64",
+        "format": "npy",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/fit0-step.npy",
+        "payloadSHA256": "14887418ffa9e6b7a1a0d9e05a64d384ca60f1d78f0fd2d0001f89e454108e7f",
+        "sha256": "513c228c2dbd4bc1c0ccb1ef0868b9f020293f4b1cf29acc7e2b0769e971c573",
+        "shape": [
+          2040,
+          2560
+        ],
+        "storedDtype": "<f8"
+      }
+    },
+    "parent": "parent",
+    "projection": {
+      "admissions": [
+        {
+          "dose": 1.0,
+          "reason": null,
+          "status": "admitted"
+        },
+        {
+          "dose": 0.5,
+          "reason": null,
+          "status": "admitted"
+        }
+      ],
+      "doses": [
+        1.0,
+        0.5
+      ],
+      "metric": "H endpoint/pair graph only;not complete paired H/Z surrogate minimization. Dose refits oldSlot+dose*step;zero dose on this new route need not reproduce parent.",
+      "normalMatrixCondition": 34246.58015034121
+    },
+    "proposal": {
+      "gradientRMS": 6.222659035818533e-05,
+      "maximumAbsoluteSolveResidual": 3.2194786143562e-16,
+      "pairedRows": 2034,
+      "proposalOnly": "g and A omit the same objective factor. j is heuristic RMS-gamma/radius,not an exact Hessian or descent bound. Finite admissions and rho treated approximately.",
+      "singletonRows": 6,
+      "solveResidualRMS": 1.1560013067500557e-18,
+      "stepRMS": 0.08361901069081033
+    },
+    "seconds": 23.12413730006665,
+    "slot": 0,
+    "sourceProgramSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+    "spec": {
+      "abi_version": "v1",
+      "identity": "joint_writer.propose_slot0:v1",
+      "invalidates": [],
+      "name": "joint_writer.propose_slot0",
+      "numerical_contract": "Four equal native-discovery-normalized finite H/Z endpoint and paired losses on learned rows2..511;zero energy uses absolute squared loss. Ideal Jacobian and scalar paired surrogate propose only;complete two-admission H and source-policy Z decide continuation.",
+      "reads": [
+        "h",
+        "z",
+        "target",
+        "zt",
+        "oldSlot",
+        "features",
+        "weights",
+        "edges",
+        "pairWeights",
+        "gamma",
+        "scaleVector"
+      ],
+      "schema": "saturn-act-spec-v1",
+      "tolerance": {},
+      "write_abis": {},
+      "write_kinds": {},
+      "writes": [
+        "gradient",
+        "step",
+        "fullCandidateSHA",
+        "halfCandidateSHA"
+      ]
+    }
+  },
+  {
+    "candidateSHAs": {
+      "fullCandidateSHA": "277d935fa7d686178a25f5734d3d054be3167991ff26c471a4167e1a1298496c",
+      "halfCandidateSHA": "2ccb5ef16d204ac8f407e12312c86545f32984658cd274641d226d19bb6bb2cf"
+    },
+    "evidence": {
+      "act": "joint_writer.propose_slot1:v1",
+      "elapsed_ms": 19145.111511927098,
+      "implementation": "paired-proposal-and-H-graph-projection",
+      "input_frame_id": "fb46a88a59b77f8ebb1a2f09c828c1e9d52b063e773816410ea39b08fb4428f5",
+      "metrics": {
+        "candidatePrograms": 2,
+        "newOriginalLinears": 0,
+        "slot": 1,
+        "treeFitAttempts": 1
+      },
+      "numerical_contract": "Four equal native-discovery-normalized finite H/Z endpoint and paired losses on learned rows2..511;zero energy uses absolute squared loss. Ideal Jacobian and scalar paired surrogate propose only;complete two-admission H and source-policy Z decide continuation.",
+      "output_frame_id": "c747406a930f550e2b87b8709e46a8f1d81441461ad99dda96ac232f7af02e95"
+    },
+    "fit": {
+      "atoms": 9,
+      "candidateCutsEnumerated": 3471,
+      "directFallbackCandidates": 0,
+      "endpointEnergy": 92.94188857148563,
+      "normalEquationResidualRMS": 5.564190758132274e-19,
+      "normalMatrixCondition": 1090.9965352203178,
+      "objective": "Equal separately normalized endpoint and unchanged-token paired residual loss; q=P*R in FP64.",
+      "peakCutCacheBytes": 22675662,
+      "relaxedLoss": 1.0449660852987595,
+      "responseEnergy": 0.5505834219366676,
+      "search": "Greedy globally best relaxed split; leafDFS/feature/cut tie order. Exact duplicate right masks use first feature/cut. Cholesky Schur score, direct partition solve for cancellation-dominated denominator; no explicit inverse.",
+      "seconds": 18.396668007597327,
+      "splits": [
+        {
+          "feature": 139,
+          "leaf": 0,
+          "leftRows": 8,
+          "lossAfter": 1.216018192386353,
+          "lossBefore": 1.376184170441173,
+          "realizedRelaxedDecrease": 0.16016597805482014,
+          "relaxedGain": 0.16016597805482102,
+          "rightRows": 2032,
+          "schur": 0.014505656386526926,
+          "schurMinusRealizedDecrease": 8.881784197001252e-16,
+          "split": 0,
+          "threshold": -0.018658161163330078
+        },
+        {
+          "feature": 152,
+          "leaf": 1,
+          "leftRows": 478,
+          "lossAfter": 1.1724462379234435,
+          "lossBefore": 1.216018192386353,
+          "realizedRelaxedDecrease": 0.0435719544629094,
+          "relaxedGain": 0.04357195446291013,
+          "rightRows": 1554,
+          "schur": 0.4694603934708122,
+          "schurMinusRealizedDecrease": 7.28583859910259e-16,
+          "split": 1,
+          "threshold": -0.01298065185546875
+        },
+        {
+          "feature": 131,
+          "leaf": 2,
+          "leftRows": 53,
+          "lossAfter": 1.1368023949609978,
+          "lossBefore": 1.1724462379234435,
+          "realizedRelaxedDecrease": 0.035643842962445715,
+          "relaxedGain": 0.0356438429625217,
+          "rightRows": 1501,
+          "schur": 0.0016865356786962549,
+          "schurMinusRealizedDecrease": 7.598782714168806e-14,
+          "split": 2,
+          "threshold": -0.005859375
+        },
+        {
+          "feature": 0,
+          "leaf": 2,
+          "leftRows": 37,
+          "lossAfter": 1.1085537323338557,
+          "lossBefore": 1.1368023949609978,
+          "realizedRelaxedDecrease": 0.028248662627142096,
+          "relaxedGain": 0.028248662627141645,
+          "rightRows": 16,
+          "schur": 0.00044190406633063,
+          "schurMinusRealizedDecrease": -4.510281037539698e-16,
+          "split": 3,
+          "threshold": 24.0
+        },
+        {
+          "feature": 145,
+          "leaf": 3,
+          "leftRows": 8,
+          "lossAfter": 1.0812393075956375,
+          "lossBefore": 1.1085537323338557,
+          "realizedRelaxedDecrease": 0.027314424738218213,
+          "relaxedGain": 0.02731442473822513,
+          "rightRows": 1493,
+          "schur": 0.014064643316190006,
+          "schurMinusRealizedDecrease": 6.918077222195507e-15,
+          "split": 4,
+          "threshold": -0.009043375651041666
+        },
+        {
+          "feature": 0,
+          "leaf": 1,
+          "leftRows": 254,
+          "lossAfter": 1.0734213204393308,
+          "lossBefore": 1.0812393075956375,
+          "realizedRelaxedDecrease": 0.00781798715630666,
+          "relaxedGain": 0.007817987156306444,
+          "rightRows": 224,
+          "schur": 0.11647440646910157,
+          "schurMinusRealizedDecrease": -2.1684043449710089e-16,
+          "split": 5,
+          "threshold": 287.0
+        },
+        {
+          "feature": 0,
+          "leaf": 6,
+          "leftRows": 63,
+          "lossAfter": 1.0514662886439403,
+          "lossBefore": 1.0734213204393308,
+          "realizedRelaxedDecrease": 0.02195503179539049,
+          "relaxedGain": 0.021955031795391752,
+          "rightRows": 161,
+          "schur": 0.04323160655810088,
+          "schurMinusRealizedDecrease": 1.2628786905111156e-15,
+          "split": 6,
+          "threshold": 350.0
+        },
+        {
+          "feature": 0,
+          "leaf": 1,
+          "leftRows": 246,
+          "lossAfter": 1.0449660852987595,
+          "lossBefore": 1.0514662886439403,
+          "realizedRelaxedDecrease": 0.006500203345180866,
+          "relaxedGain": 0.00650020334518079,
+          "rightRows": 8,
+          "schur": 0.007409804777075657,
+          "schurMinusRealizedDecrease": -7.632783294297951e-17,
+          "split": 7,
+          "threshold": 279.0
+        }
+      ],
+      "uniqueCandidatePartitionsCached": 2928,
+      "zeroEnergyPolicy": "Use absolute corresponding component; no divide by zero."
+    },
+    "input": {
+      "act": "root:v1",
+      "frame_id": "fb46a88a59b77f8ebb1a2f09c828c1e9d52b063e773816410ea39b08fb4428f5",
+      "implementation": "saturn",
+      "metadata": {
+        "inputProgram": "parent",
+        "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+        "slot": 1
+      },
+      "parent_frame_id": null,
+      "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+      "schema": "saturn-frame-v1",
+      "slots": {
+        "edges": {
+          "abi": {},
+          "fingerprint": "cb299d0ff56ca0ddbea12c30b226b57b40df2e70a99f6b6bd7e1176d7419bf69",
+          "handle": "saturn://edges",
+          "kind": "opaque",
+          "name": "edges"
+        },
+        "features": {
+          "abi": {},
+          "fingerprint": "d2676015b17bcd43c9cb58616bd29de28123a40198306457884ca1c76613b04e",
+          "handle": "saturn://features",
+          "kind": "opaque",
+          "name": "features"
+        },
+        "gamma": {
+          "abi": {},
+          "fingerprint": "76fd2e53fb22540cc148be238da2f9d1c96bd7b6ec46bd8559eda3beeea562c6",
+          "handle": "saturn://gamma",
+          "kind": "opaque",
+          "name": "gamma"
+        },
+        "h": {
+          "abi": {},
+          "fingerprint": "cc9b3c86e1816ae0865c8f16b752b1c63ee728413abe2965419c919eeadd9ae5",
+          "handle": "saturn://h",
+          "kind": "opaque",
+          "name": "h"
+        },
+        "oldSlot": {
+          "abi": {},
+          "fingerprint": "e3877afe8da0d3365f208aec5110dbfe2f14c48e8e95c837969a410a2fe3f222",
+          "handle": "saturn://oldSlot",
+          "kind": "opaque",
+          "name": "oldSlot"
+        },
+        "pairWeights": {
+          "abi": {},
+          "fingerprint": "647d3959883672e8e42fb4ac0930f1a74c237ae19e9751755c033e11e9e0ae67",
+          "handle": "saturn://pairWeights",
+          "kind": "opaque",
+          "name": "pairWeights"
+        },
+        "scaleVector": {
+          "abi": {},
+          "fingerprint": "edfc2f94687faed02b0ddbce954441ba66585bc8596ad743f87c48f23e181ac7",
+          "handle": "saturn://scaleVector",
+          "kind": "opaque",
+          "name": "scaleVector"
+        },
+        "target": {
+          "abi": {},
+          "fingerprint": "f63de6ef108b3c2520686ddc7ef14f95f3fd4ce6817f88753e3b4235e1130fd9",
+          "handle": "saturn://target",
+          "kind": "opaque",
+          "name": "target"
+        },
+        "weights": {
+          "abi": {},
+          "fingerprint": "fb1953c918180c9852372d8f86eaf90bd0415f2ee7b71daac01f6f16cfdc7074",
+          "handle": "saturn://weights",
+          "kind": "opaque",
+          "name": "weights"
+        },
+        "z": {
+          "abi": {},
+          "fingerprint": "917e77c18114fdfa96151daa2ad50f888b88b8824839b3787986662fd1c60267",
+          "handle": "saturn://z",
+          "kind": "opaque",
+          "name": "z"
+        },
+        "zt": {
+          "abi": {},
+          "fingerprint": "2139254a3708b744586de04ebba85dc334e8ecc43508f8c46cde7528575bfee9",
+          "handle": "saturn://zt",
+          "kind": "opaque",
+          "name": "zt"
+        }
+      }
+    },
+    "inputFields": {
+      "edges": {
+        "bytes": 16400,
+        "dtype": "torch.int64",
+        "format": "npy",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/fit1-edges.npy",
+        "payloadSHA256": "5613005200b63a2c854a4421046b5d5c71ecf7a2b0e52ca9f3a4c9060eaf6ca3",
+        "sha256": "3c790a090b20dff479b81cb15551e7975d7d8cfced540814e052e28f9db72cc3",
+        "shape": [
+          1017,
+          2
+        ],
+        "storedDtype": "<i8"
+      },
+      "features": {
+        "bytes": 2529728,
+        "dtype": "torch.float64",
+        "format": "npy",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/fit1-features.npy",
+        "payloadSHA256": "ce00fa3c636fc3f7b08dba48aae8ec01815fd7b4f478bb6b538875980cbcf282",
+        "sha256": "03bcb97912d50276e3f40389239a0048aefc20297c969fe8e72a52d0e9ce9ada",
+        "shape": [
+          2040,
+          155
+        ],
+        "storedDtype": "<f8"
+      },
+      "gamma": {
+        "bytes": 20608,
+        "dtype": "torch.float64",
+        "format": "npy",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/fit1-gamma.npy",
+        "payloadSHA256": "94eeeca291f37b9a63c1e5b7ca1728b55ba70034efa2398282e8d4dbe3191bca",
+        "sha256": "07aef90bbb635e401d2e365c3cf02b14cd5a220bab68a2ba066bba3faba1f6d9",
+        "shape": [
+          2560
+        ],
+        "storedDtype": "<f8"
+      },
+      "h": {
+        "bytes": 41779328,
+        "dtype": "torch.float64",
+        "format": "npy",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/fit1-h.npy",
+        "payloadSHA256": "ab9fc829288dc49a39fcc99d3b606cf855cf4854e1d399493342da8d88ad056e",
+        "sha256": "92786bcd483c8daf186d7dca2aa776b3b692023a8ad873a0d97498408bc49f57",
+        "shape": [
+          2040,
+          2560
+        ],
+        "storedDtype": "<f8"
+      },
+      "oldSlot": {
+        "bytes": 41779328,
+        "dtype": "torch.float64",
+        "format": "npy",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/fit1-oldSlot.npy",
+        "payloadSHA256": "f03b7d719247fa71e10caca6061692194215fdae12119feaf8b3a0821fd14954",
+        "sha256": "53bb537344fa0f2f2995a5734fcc5380b74ded883016e6a7cca1dd8103c2c695",
+        "shape": [
+          2040,
+          2560
+        ],
+        "storedDtype": "<f8"
+      },
+      "pairWeights": {
+        "bytes": 8264,
+        "dtype": "torch.float64",
+        "format": "npy",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/fit1-pairWeights.npy",
+        "payloadSHA256": "35e9a04874a312673a7c4018c73369c897f94bb5a9795d942a1b3345e33365f0",
+        "sha256": "77a01e62d10be9d6df9207defeb16763aeb9fb5f37b51165cf6da8e4103483c2",
+        "shape": [
+          1017
+        ],
+        "storedDtype": "<f8"
+      },
+      "scaleVector": {
+        "bytes": 160,
+        "dtype": "torch.float64",
+        "format": "npy",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/fit1-scaleVector.npy",
+        "payloadSHA256": "94b46bbae30009e38740f0206fb5c57b9e9770970271064fd2cbfac9a2392b49",
+        "sha256": "ea6f90bce8250cd48786f9161f9666eb9d19650bda0f1324b23d50d22ff90595",
+        "shape": [
+          4
+        ],
+        "storedDtype": "<f8"
+      },
+      "target": {
+        "bytes": 41779328,
+        "dtype": "torch.float64",
+        "format": "npy",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/fit1-target.npy",
+        "payloadSHA256": "d83d03849bf387c0a866d203552b7267427a2e42ff8e8bc7c0fed75a9a134b31",
+        "sha256": "216790b7409d710da0a3ba576db97b107dd4a93ba218b7c40bf15a1be2d9bf8e",
+        "shape": [
+          2040,
+          2560
+        ],
+        "storedDtype": "<f8"
+      },
+      "weights": {
+        "bytes": 16448,
+        "dtype": "torch.float64",
+        "format": "npy",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/fit1-weights.npy",
+        "payloadSHA256": "ea92361a9d3ca641283727be7f739863ee902503764b4f99cc57b6a2f9e38a64",
+        "sha256": "2dfd7468e2a4d099bdd127007a1cce869d46e1c6ebe019fa54055da18731a454",
+        "shape": [
+          2040
+        ],
+        "storedDtype": "<f8"
+      },
+      "z": {
+        "bytes": 41779328,
+        "dtype": "torch.float64",
+        "format": "npy",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/fit1-z.npy",
+        "payloadSHA256": "5406e7be0348d587148b2b101999adbe6652fd146c6b141b9ea2784d11b134d9",
+        "sha256": "762448ce164cd6d990bb57c75f4aebcb57f106f0a3893a51ae38cbf30c4c834b",
+        "shape": [
+          2040,
+          2560
+        ],
+        "storedDtype": "<f8"
+      },
+      "zt": {
+        "bytes": 41779328,
+        "dtype": "torch.float64",
+        "format": "npy",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/fit1-zt.npy",
+        "payloadSHA256": "2fa628937e22e50a99676085f87c91278f237807a9bf8f9a823c5c2eca8e8567",
+        "sha256": "637d4c98481accd6c2288337d754f613954b8fe56c0d382d06f893377bc6027b",
+        "shape": [
+          2040,
+          2560
+        ],
+        "storedDtype": "<f8"
+      }
+    },
+    "inputPayloadAfter": {
+      "edges": "5613005200b63a2c854a4421046b5d5c71ecf7a2b0e52ca9f3a4c9060eaf6ca3",
+      "features": "ce00fa3c636fc3f7b08dba48aae8ec01815fd7b4f478bb6b538875980cbcf282",
+      "gamma": "94eeeca291f37b9a63c1e5b7ca1728b55ba70034efa2398282e8d4dbe3191bca",
+      "h": "ab9fc829288dc49a39fcc99d3b606cf855cf4854e1d399493342da8d88ad056e",
+      "oldSlot": "f03b7d719247fa71e10caca6061692194215fdae12119feaf8b3a0821fd14954",
+      "pairWeights": "35e9a04874a312673a7c4018c73369c897f94bb5a9795d942a1b3345e33365f0",
+      "scaleVector": "94b46bbae30009e38740f0206fb5c57b9e9770970271064fd2cbfac9a2392b49",
+      "target": "d83d03849bf387c0a866d203552b7267427a2e42ff8e8bc7c0fed75a9a134b31",
+      "weights": "ea92361a9d3ca641283727be7f739863ee902503764b4f99cc57b6a2f9e38a64",
+      "z": "5406e7be0348d587148b2b101999adbe6652fd146c6b141b9ea2784d11b134d9",
+      "zt": "2fa628937e22e50a99676085f87c91278f237807a9bf8f9a823c5c2eca8e8567"
+    },
+    "inputPayloadBefore": {
+      "edges": "5613005200b63a2c854a4421046b5d5c71ecf7a2b0e52ca9f3a4c9060eaf6ca3",
+      "features": "ce00fa3c636fc3f7b08dba48aae8ec01815fd7b4f478bb6b538875980cbcf282",
+      "gamma": "94eeeca291f37b9a63c1e5b7ca1728b55ba70034efa2398282e8d4dbe3191bca",
+      "h": "ab9fc829288dc49a39fcc99d3b606cf855cf4854e1d399493342da8d88ad056e",
+      "oldSlot": "f03b7d719247fa71e10caca6061692194215fdae12119feaf8b3a0821fd14954",
+      "pairWeights": "35e9a04874a312673a7c4018c73369c897f94bb5a9795d942a1b3345e33365f0",
+      "scaleVector": "94b46bbae30009e38740f0206fb5c57b9e9770970271064fd2cbfac9a2392b49",
+      "target": "d83d03849bf387c0a866d203552b7267427a2e42ff8e8bc7c0fed75a9a134b31",
+      "weights": "ea92361a9d3ca641283727be7f739863ee902503764b4f99cc57b6a2f9e38a64",
+      "z": "5406e7be0348d587148b2b101999adbe6652fd146c6b141b9ea2784d11b134d9",
+      "zt": "2fa628937e22e50a99676085f87c91278f237807a9bf8f9a823c5c2eca8e8567"
+    },
+    "output": {
+      "act": "joint_writer.propose_slot1:v1",
+      "frame_id": "c747406a930f550e2b87b8709e46a8f1d81441461ad99dda96ac232f7af02e95",
+      "implementation": "paired-proposal-and-H-graph-projection",
+      "metadata": {
+        "inputProgram": "parent",
+        "programSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+        "slot": 1
+      },
+      "parent_frame_id": "fb46a88a59b77f8ebb1a2f09c828c1e9d52b063e773816410ea39b08fb4428f5",
+      "program_fingerprint": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+      "schema": "saturn-frame-v1",
+      "slots": {
+        "edges": {
+          "abi": {},
+          "fingerprint": "cb299d0ff56ca0ddbea12c30b226b57b40df2e70a99f6b6bd7e1176d7419bf69",
+          "handle": "saturn://edges",
+          "kind": "opaque",
+          "name": "edges"
+        },
+        "features": {
+          "abi": {},
+          "fingerprint": "d2676015b17bcd43c9cb58616bd29de28123a40198306457884ca1c76613b04e",
+          "handle": "saturn://features",
+          "kind": "opaque",
+          "name": "features"
+        },
+        "fullCandidateSHA": {
+          "abi": {},
+          "fingerprint": "e199c7d842c2f72e1f303ead1094793d0e64a997796bd632f67621b736e54137",
+          "handle": "saturn://fullCandidateSHA",
+          "kind": "opaque",
+          "name": "fullCandidateSHA"
+        },
+        "gamma": {
+          "abi": {},
+          "fingerprint": "76fd2e53fb22540cc148be238da2f9d1c96bd7b6ec46bd8559eda3beeea562c6",
+          "handle": "saturn://gamma",
+          "kind": "opaque",
+          "name": "gamma"
+        },
+        "gradient": {
+          "abi": {},
+          "fingerprint": "2dd4f60238237ee1c0652db30309c91a2ba5bf22f8abefdfb1ae31499d9fa30a",
+          "handle": "saturn://gradient",
+          "kind": "opaque",
+          "name": "gradient"
+        },
+        "h": {
+          "abi": {},
+          "fingerprint": "cc9b3c86e1816ae0865c8f16b752b1c63ee728413abe2965419c919eeadd9ae5",
+          "handle": "saturn://h",
+          "kind": "opaque",
+          "name": "h"
+        },
+        "halfCandidateSHA": {
+          "abi": {},
+          "fingerprint": "d7f37fd34d623180fb0db38e71768704066421f51b2a38bfa5ca28b569cfbd85",
+          "handle": "saturn://halfCandidateSHA",
+          "kind": "opaque",
+          "name": "halfCandidateSHA"
+        },
+        "oldSlot": {
+          "abi": {},
+          "fingerprint": "e3877afe8da0d3365f208aec5110dbfe2f14c48e8e95c837969a410a2fe3f222",
+          "handle": "saturn://oldSlot",
+          "kind": "opaque",
+          "name": "oldSlot"
+        },
+        "pairWeights": {
+          "abi": {},
+          "fingerprint": "647d3959883672e8e42fb4ac0930f1a74c237ae19e9751755c033e11e9e0ae67",
+          "handle": "saturn://pairWeights",
+          "kind": "opaque",
+          "name": "pairWeights"
+        },
+        "scaleVector": {
+          "abi": {},
+          "fingerprint": "edfc2f94687faed02b0ddbce954441ba66585bc8596ad743f87c48f23e181ac7",
+          "handle": "saturn://scaleVector",
+          "kind": "opaque",
+          "name": "scaleVector"
+        },
+        "step": {
+          "abi": {},
+          "fingerprint": "e4b97e0865f98691b21738b7322944045efe4a6e34b3ef05a707b36dc61c22ac",
+          "handle": "saturn://step",
+          "kind": "opaque",
+          "name": "step"
+        },
+        "target": {
+          "abi": {},
+          "fingerprint": "f63de6ef108b3c2520686ddc7ef14f95f3fd4ce6817f88753e3b4235e1130fd9",
+          "handle": "saturn://target",
+          "kind": "opaque",
+          "name": "target"
+        },
+        "weights": {
+          "abi": {},
+          "fingerprint": "fb1953c918180c9852372d8f86eaf90bd0415f2ee7b71daac01f6f16cfdc7074",
+          "handle": "saturn://weights",
+          "kind": "opaque",
+          "name": "weights"
+        },
+        "z": {
+          "abi": {},
+          "fingerprint": "917e77c18114fdfa96151daa2ad50f888b88b8824839b3787986662fd1c60267",
+          "handle": "saturn://z",
+          "kind": "opaque",
+          "name": "z"
+        },
+        "zt": {
+          "abi": {},
+          "fingerprint": "2139254a3708b744586de04ebba85dc334e8ecc43508f8c46cde7528575bfee9",
+          "handle": "saturn://zt",
+          "kind": "opaque",
+          "name": "zt"
+        }
+      }
+    },
+    "outputFields": {
+      "gradient": {
+        "bytes": 41779328,
+        "dtype": "torch.float64",
+        "format": "npy",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/fit1-gradient.npy",
+        "payloadSHA256": "2c282a0ea402fa9631c5570a8f4a704a08ce9c62783264e5bc37fe8b7f86a1aa",
+        "sha256": "06046cad7a8acfd3d2566752725a991db85d6362081dd05cd91792344d99cbb2",
+        "shape": [
+          2040,
+          2560
+        ],
+        "storedDtype": "<f8"
+      },
+      "step": {
+        "bytes": 41779328,
+        "dtype": "torch.float64",
+        "format": "npy",
+        "path": "/mnt/hdd8tb/mrun-work/job-3f6bdef376c4/arrays/fit1-step.npy",
+        "payloadSHA256": "14887418ffa9e6b7a1a0d9e05a64d384ca60f1d78f0fd2d0001f89e454108e7f",
+        "sha256": "513c228c2dbd4bc1c0ccb1ef0868b9f020293f4b1cf29acc7e2b0769e971c573",
+        "shape": [
+          2040,
+          2560
+        ],
+        "storedDtype": "<f8"
+      }
+    },
+    "parent": "parent",
+    "projection": {
+      "admissions": [
+        {
+          "dose": 1.0,
+          "reason": null,
+          "status": "admitted"
+        },
+        {
+          "dose": 0.5,
+          "reason": null,
+          "status": "admitted"
+        }
+      ],
+      "doses": [
+        1.0,
+        0.5
+      ],
+      "metric": "H endpoint/pair graph only;not complete paired H/Z surrogate minimization. Dose refits oldSlot+dose*step;zero dose on this new route need not reproduce parent.",
+      "normalMatrixCondition": 1090.9965352203176
+    },
+    "proposal": {
+      "gradientRMS": 6.222659035818533e-05,
+      "maximumAbsoluteSolveResidual": 3.2194786143562e-16,
+      "pairedRows": 2034,
+      "proposalOnly": "g and A omit the same objective factor. j is heuristic RMS-gamma/radius,not an exact Hessian or descent bound. Finite admissions and rho treated approximately.",
+      "singletonRows": 6,
+      "solveResidualRMS": 1.1560013067500557e-18,
+      "stepRMS": 0.08361901069081033
+    },
+    "seconds": 19.14513873308897,
+    "slot": 1,
+    "sourceProgramSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+    "spec": {
+      "abi_version": "v1",
+      "identity": "joint_writer.propose_slot1:v1",
+      "invalidates": [],
+      "name": "joint_writer.propose_slot1",
+      "numerical_contract": "Four equal native-discovery-normalized finite H/Z endpoint and paired losses on learned rows2..511;zero energy uses absolute squared loss. Ideal Jacobian and scalar paired surrogate propose only;complete two-admission H and source-policy Z decide continuation.",
+      "reads": [
+        "h",
+        "z",
+        "target",
+        "zt",
+        "oldSlot",
+        "features",
+        "weights",
+        "edges",
+        "pairWeights",
+        "gamma",
+        "scaleVector"
+      ],
+      "schema": "saturn-act-spec-v1",
+      "tolerance": {},
+      "write_abis": {},
+      "write_kinds": {},
+      "writes": [
+        "gradient",
+        "step",
+        "fullCandidateSHA",
+        "halfCandidateSHA"
+      ]
+    }
+  }
+]

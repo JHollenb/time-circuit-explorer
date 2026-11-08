@@ -1,0 +1,464 @@
+{
+  "evidence": {
+    "act": "cauchy_writer.joint_constants:v1",
+    "elapsed_ms": 417.84271877259016,
+    "implementation": "FP64-fixed-route-full-J",
+    "input_frame_id": "f9f32fa3b81e3b3c5a83658d26a7d0062b39dbeafb2e1fb2a4885d882af81150",
+    "metrics": {
+      "candidateRays": 1,
+      "fullForwardJacobianApplications": 1,
+      "originalLinears": 0,
+      "routeFits": 0
+    },
+    "numerical_contract": "One joint fixed-route leaf-mass Cauchy direction;full ideal forward RMS/gamma J;alpha=min(ray minimum,row-relative eta=1/16 trust bound);FP32 atom admission;actual two BF16 state adds and source-policy Z decide discovery continuation.",
+    "output_frame_id": "62e00c889af70d9c3d7c0abf11d7c20ec1884239a1d71d9555af89f1284c1161"
+  },
+  "input": {
+    "act": "root:v1",
+    "frame_id": "f9f32fa3b81e3b3c5a83658d26a7d0062b39dbeafb2e1fb2a4885d882af81150",
+    "implementation": "saturn",
+    "metadata": {},
+    "parent_frame_id": null,
+    "program_fingerprint": "6aa3efba6312ca0c34a78a154e8884bd8c0ae311a1bdb36a03019b22c9745511",
+    "schema": "saturn-frame-v1",
+    "slots": {
+      "edges": {
+        "abi": {},
+        "fingerprint": "cb299d0ff56ca0ddbea12c30b226b57b40df2e70a99f6b6bd7e1176d7419bf69",
+        "handle": "saturn://edges",
+        "kind": "opaque",
+        "name": "edges"
+      },
+      "features": {
+        "abi": {},
+        "fingerprint": "d2676015b17bcd43c9cb58616bd29de28123a40198306457884ca1c76613b04e",
+        "handle": "saturn://features",
+        "kind": "opaque",
+        "name": "features"
+      },
+      "gamma": {
+        "abi": {},
+        "fingerprint": "76fd2e53fb22540cc148be238da2f9d1c96bd7b6ec46bd8559eda3beeea562c6",
+        "handle": "saturn://gamma",
+        "kind": "opaque",
+        "name": "gamma"
+      },
+      "gradient": {
+        "abi": {},
+        "fingerprint": "2dd4f60238237ee1c0652db30309c91a2ba5bf22f8abefdfb1ae31499d9fa30a",
+        "handle": "saturn://gradient",
+        "kind": "opaque",
+        "name": "gradient"
+      },
+      "h": {
+        "abi": {},
+        "fingerprint": "cc9b3c86e1816ae0865c8f16b752b1c63ee728413abe2965419c919eeadd9ae5",
+        "handle": "saturn://h",
+        "kind": "opaque",
+        "name": "h"
+      },
+      "labels0": {
+        "abi": {},
+        "fingerprint": "47d8d81e4f3035e0d2b42a39ca59d48a2f3ea8f442517755b9f1182df6b4944e",
+        "handle": "saturn://labels0",
+        "kind": "opaque",
+        "name": "labels0"
+      },
+      "labels1": {
+        "abi": {},
+        "fingerprint": "f2a79b4dd023aedc42afc1aec5eaf08aa1c60524397b055bd9e412d1da841399",
+        "handle": "saturn://labels1",
+        "kind": "opaque",
+        "name": "labels1"
+      },
+      "pairWeights": {
+        "abi": {},
+        "fingerprint": "647d3959883672e8e42fb4ac0930f1a74c237ae19e9751755c033e11e9e0ae67",
+        "handle": "saturn://pairWeights",
+        "kind": "opaque",
+        "name": "pairWeights"
+      },
+      "scaleVector": {
+        "abi": {},
+        "fingerprint": "edfc2f94687faed02b0ddbce954441ba66585bc8596ad743f87c48f23e181ac7",
+        "handle": "saturn://scaleVector",
+        "kind": "opaque",
+        "name": "scaleVector"
+      },
+      "target": {
+        "abi": {},
+        "fingerprint": "f63de6ef108b3c2520686ddc7ef14f95f3fd4ce6817f88753e3b4235e1130fd9",
+        "handle": "saturn://target",
+        "kind": "opaque",
+        "name": "target"
+      },
+      "weights": {
+        "abi": {},
+        "fingerprint": "fb1953c918180c9852372d8f86eaf90bd0415f2ee7b71daac01f6f16cfdc7074",
+        "handle": "saturn://weights",
+        "kind": "opaque",
+        "name": "weights"
+      },
+      "z": {
+        "abi": {},
+        "fingerprint": "917e77c18114fdfa96151daa2ad50f888b88b8824839b3787986662fd1c60267",
+        "handle": "saturn://z",
+        "kind": "opaque",
+        "name": "z"
+      },
+      "zt": {
+        "abi": {},
+        "fingerprint": "2139254a3708b744586de04ebba85dc334e8ecc43508f8c46cde7528575bfee9",
+        "handle": "saturn://zt",
+        "kind": "opaque",
+        "name": "zt"
+      }
+    }
+  },
+  "inputABIs": {
+    "edges": {
+      "dtype": "torch.int64",
+      "payloadSHA256": "5613005200b63a2c854a4421046b5d5c71ecf7a2b0e52ca9f3a4c9060eaf6ca3",
+      "shape": [
+        1017,
+        2
+      ]
+    },
+    "features": {
+      "dtype": "torch.float64",
+      "payloadSHA256": "ce00fa3c636fc3f7b08dba48aae8ec01815fd7b4f478bb6b538875980cbcf282",
+      "shape": [
+        2040,
+        155
+      ]
+    },
+    "gamma": {
+      "dtype": "torch.float64",
+      "payloadSHA256": "94eeeca291f37b9a63c1e5b7ca1728b55ba70034efa2398282e8d4dbe3191bca",
+      "shape": [
+        2560
+      ]
+    },
+    "gradient": {
+      "dtype": "torch.float64",
+      "payloadSHA256": "2c282a0ea402fa9631c5570a8f4a704a08ce9c62783264e5bc37fe8b7f86a1aa",
+      "shape": [
+        2040,
+        2560
+      ]
+    },
+    "h": {
+      "dtype": "torch.float64",
+      "payloadSHA256": "ab9fc829288dc49a39fcc99d3b606cf855cf4854e1d399493342da8d88ad056e",
+      "shape": [
+        2040,
+        2560
+      ]
+    },
+    "labels0": {
+      "dtype": "torch.int64",
+      "payloadSHA256": "465ece396c098b0684617acbdbfa6df7f7e1caad18101d394ff2608b81b9d05f",
+      "shape": [
+        2040
+      ]
+    },
+    "labels1": {
+      "dtype": "torch.int64",
+      "payloadSHA256": "a6f4d9dcbb4b58d9ee596bc3404e64629b8dd2ef825feb6d98617ce30e42d88e",
+      "shape": [
+        2040
+      ]
+    },
+    "pairWeights": {
+      "dtype": "torch.float64",
+      "payloadSHA256": "35e9a04874a312673a7c4018c73369c897f94bb5a9795d942a1b3345e33365f0",
+      "shape": [
+        1017
+      ]
+    },
+    "scaleVector": {
+      "dtype": "torch.float64",
+      "payloadSHA256": "94b46bbae30009e38740f0206fb5c57b9e9770970271064fd2cbfac9a2392b49",
+      "shape": [
+        4
+      ]
+    },
+    "target": {
+      "dtype": "torch.float64",
+      "payloadSHA256": "d83d03849bf387c0a866d203552b7267427a2e42ff8e8bc7c0fed75a9a134b31",
+      "shape": [
+        2040,
+        2560
+      ]
+    },
+    "weights": {
+      "dtype": "torch.float64",
+      "payloadSHA256": "ea92361a9d3ca641283727be7f739863ee902503764b4f99cc57b6a2f9e38a64",
+      "shape": [
+        2040
+      ]
+    },
+    "z": {
+      "dtype": "torch.float64",
+      "payloadSHA256": "5406e7be0348d587148b2b101999adbe6652fd146c6b141b9ea2784d11b134d9",
+      "shape": [
+        2040,
+        2560
+      ]
+    },
+    "zt": {
+      "dtype": "torch.float64",
+      "payloadSHA256": "2fa628937e22e50a99676085f87c91278f237807a9bf8f9a823c5c2eca8e8567",
+      "shape": [
+        2040,
+        2560
+      ]
+    }
+  },
+  "inputPayloadAfter": {
+    "edges": "5613005200b63a2c854a4421046b5d5c71ecf7a2b0e52ca9f3a4c9060eaf6ca3",
+    "features": "ce00fa3c636fc3f7b08dba48aae8ec01815fd7b4f478bb6b538875980cbcf282",
+    "gamma": "94eeeca291f37b9a63c1e5b7ca1728b55ba70034efa2398282e8d4dbe3191bca",
+    "gradient": "2c282a0ea402fa9631c5570a8f4a704a08ce9c62783264e5bc37fe8b7f86a1aa",
+    "h": "ab9fc829288dc49a39fcc99d3b606cf855cf4854e1d399493342da8d88ad056e",
+    "labels0": "465ece396c098b0684617acbdbfa6df7f7e1caad18101d394ff2608b81b9d05f",
+    "labels1": "a6f4d9dcbb4b58d9ee596bc3404e64629b8dd2ef825feb6d98617ce30e42d88e",
+    "pairWeights": "35e9a04874a312673a7c4018c73369c897f94bb5a9795d942a1b3345e33365f0",
+    "scaleVector": "94b46bbae30009e38740f0206fb5c57b9e9770970271064fd2cbfac9a2392b49",
+    "target": "d83d03849bf387c0a866d203552b7267427a2e42ff8e8bc7c0fed75a9a134b31",
+    "weights": "ea92361a9d3ca641283727be7f739863ee902503764b4f99cc57b6a2f9e38a64",
+    "z": "5406e7be0348d587148b2b101999adbe6652fd146c6b141b9ea2784d11b134d9",
+    "zt": "2fa628937e22e50a99676085f87c91278f237807a9bf8f9a823c5c2eca8e8567"
+  },
+  "inputPayloadBefore": {
+    "edges": "5613005200b63a2c854a4421046b5d5c71ecf7a2b0e52ca9f3a4c9060eaf6ca3",
+    "features": "ce00fa3c636fc3f7b08dba48aae8ec01815fd7b4f478bb6b538875980cbcf282",
+    "gamma": "94eeeca291f37b9a63c1e5b7ca1728b55ba70034efa2398282e8d4dbe3191bca",
+    "gradient": "2c282a0ea402fa9631c5570a8f4a704a08ce9c62783264e5bc37fe8b7f86a1aa",
+    "h": "ab9fc829288dc49a39fcc99d3b606cf855cf4854e1d399493342da8d88ad056e",
+    "labels0": "465ece396c098b0684617acbdbfa6df7f7e1caad18101d394ff2608b81b9d05f",
+    "labels1": "a6f4d9dcbb4b58d9ee596bc3404e64629b8dd2ef825feb6d98617ce30e42d88e",
+    "pairWeights": "35e9a04874a312673a7c4018c73369c897f94bb5a9795d942a1b3345e33365f0",
+    "scaleVector": "94b46bbae30009e38740f0206fb5c57b9e9770970271064fd2cbfac9a2392b49",
+    "target": "d83d03849bf387c0a866d203552b7267427a2e42ff8e8bc7c0fed75a9a134b31",
+    "weights": "ea92361a9d3ca641283727be7f739863ee902503764b4f99cc57b6a2f9e38a64",
+    "z": "5406e7be0348d587148b2b101999adbe6652fd146c6b141b9ea2784d11b134d9",
+    "zt": "2fa628937e22e50a99676085f87c91278f237807a9bf8f9a823c5c2eca8e8567"
+  },
+  "output": {
+    "act": "cauchy_writer.joint_constants:v1",
+    "frame_id": "62e00c889af70d9c3d7c0abf11d7c20ec1884239a1d71d9555af89f1284c1161",
+    "implementation": "FP64-fixed-route-full-J",
+    "metadata": {},
+    "parent_frame_id": "f9f32fa3b81e3b3c5a83658d26a7d0062b39dbeafb2e1fb2a4885d882af81150",
+    "program_fingerprint": "6aa3efba6312ca0c34a78a154e8884bd8c0ae311a1bdb36a03019b22c9745511",
+    "schema": "saturn-frame-v1",
+    "slots": {
+      "Jq": {
+        "abi": {
+          "dtype": "float64",
+          "shape": [
+            2040,
+            2560
+          ]
+        },
+        "fingerprint": "1e35983216a1a405472411d616bfcd23cddcfdcff7508730161cd24123dd76b0",
+        "handle": "saturn://Jq",
+        "kind": "opaque",
+        "name": "Jq"
+      },
+      "edges": {
+        "abi": {},
+        "fingerprint": "cb299d0ff56ca0ddbea12c30b226b57b40df2e70a99f6b6bd7e1176d7419bf69",
+        "handle": "saturn://edges",
+        "kind": "opaque",
+        "name": "edges"
+      },
+      "features": {
+        "abi": {},
+        "fingerprint": "d2676015b17bcd43c9cb58616bd29de28123a40198306457884ca1c76613b04e",
+        "handle": "saturn://features",
+        "kind": "opaque",
+        "name": "features"
+      },
+      "gamma": {
+        "abi": {},
+        "fingerprint": "76fd2e53fb22540cc148be238da2f9d1c96bd7b6ec46bd8559eda3beeea562c6",
+        "handle": "saturn://gamma",
+        "kind": "opaque",
+        "name": "gamma"
+      },
+      "gradient": {
+        "abi": {},
+        "fingerprint": "2dd4f60238237ee1c0652db30309c91a2ba5bf22f8abefdfb1ae31499d9fa30a",
+        "handle": "saturn://gradient",
+        "kind": "opaque",
+        "name": "gradient"
+      },
+      "h": {
+        "abi": {},
+        "fingerprint": "cc9b3c86e1816ae0865c8f16b752b1c63ee728413abe2965419c919eeadd9ae5",
+        "handle": "saturn://h",
+        "kind": "opaque",
+        "name": "h"
+      },
+      "labels0": {
+        "abi": {},
+        "fingerprint": "47d8d81e4f3035e0d2b42a39ca59d48a2f3ea8f442517755b9f1182df6b4944e",
+        "handle": "saturn://labels0",
+        "kind": "opaque",
+        "name": "labels0"
+      },
+      "labels1": {
+        "abi": {},
+        "fingerprint": "f2a79b4dd023aedc42afc1aec5eaf08aa1c60524397b055bd9e412d1da841399",
+        "handle": "saturn://labels1",
+        "kind": "opaque",
+        "name": "labels1"
+      },
+      "pairWeights": {
+        "abi": {},
+        "fingerprint": "647d3959883672e8e42fb4ac0930f1a74c237ae19e9751755c033e11e9e0ae67",
+        "handle": "saturn://pairWeights",
+        "kind": "opaque",
+        "name": "pairWeights"
+      },
+      "q": {
+        "abi": {
+          "dtype": "float64",
+          "shape": [
+            2040,
+            2560
+          ]
+        },
+        "fingerprint": "cc5612e5ecb0ec9c4dfe840de9c75d96ce5f512f761b0121e9fca1972eb697c5",
+        "handle": "saturn://q",
+        "kind": "opaque",
+        "name": "q"
+      },
+      "r0": {
+        "abi": {
+          "dtype": "float64",
+          "shape": [
+            14,
+            2560
+          ]
+        },
+        "fingerprint": "f0c95206a11b0b971a61dffaac4e7774d6302b7f7c9cbd8f521641356051bab7",
+        "handle": "saturn://r0",
+        "kind": "opaque",
+        "name": "r0"
+      },
+      "r1": {
+        "abi": {
+          "dtype": "float64",
+          "shape": [
+            9,
+            2560
+          ]
+        },
+        "fingerprint": "f7e8176916a3513d6a32a3b63065a0efed575b72e40c221ec9b4b11bc4a3a69f",
+        "handle": "saturn://r1",
+        "kind": "opaque",
+        "name": "r1"
+      },
+      "scaleVector": {
+        "abi": {},
+        "fingerprint": "edfc2f94687faed02b0ddbce954441ba66585bc8596ad743f87c48f23e181ac7",
+        "handle": "saturn://scaleVector",
+        "kind": "opaque",
+        "name": "scaleVector"
+      },
+      "target": {
+        "abi": {},
+        "fingerprint": "f63de6ef108b3c2520686ddc7ef14f95f3fd4ce6817f88753e3b4235e1130fd9",
+        "handle": "saturn://target",
+        "kind": "opaque",
+        "name": "target"
+      },
+      "weights": {
+        "abi": {},
+        "fingerprint": "fb1953c918180c9852372d8f86eaf90bd0415f2ee7b71daac01f6f16cfdc7074",
+        "handle": "saturn://weights",
+        "kind": "opaque",
+        "name": "weights"
+      },
+      "z": {
+        "abi": {},
+        "fingerprint": "917e77c18114fdfa96151daa2ad50f888b88b8824839b3787986662fd1c60267",
+        "handle": "saturn://z",
+        "kind": "opaque",
+        "name": "z"
+      },
+      "zt": {
+        "abi": {},
+        "fingerprint": "2139254a3708b744586de04ebba85dc334e8ecc43508f8c46cde7528575bfee9",
+        "handle": "saturn://zt",
+        "kind": "opaque",
+        "name": "zt"
+      }
+    }
+  },
+  "seconds": 0.41785644413903356,
+  "spec": {
+    "abi_version": "v1",
+    "identity": "cauchy_writer.joint_constants:v1",
+    "invalidates": [],
+    "name": "cauchy_writer.joint_constants",
+    "numerical_contract": "One joint fixed-route leaf-mass Cauchy direction;full ideal forward RMS/gamma J;alpha=min(ray minimum,row-relative eta=1/16 trust bound);FP32 atom admission;actual two BF16 state adds and source-policy Z decide discovery continuation.",
+    "reads": [
+      "h",
+      "z",
+      "target",
+      "zt",
+      "features",
+      "weights",
+      "edges",
+      "pairWeights",
+      "gamma",
+      "scaleVector",
+      "gradient",
+      "labels0",
+      "labels1"
+    ],
+    "schema": "saturn-act-spec-v1",
+    "tolerance": {},
+    "write_abis": {
+      "Jq": {
+        "dtype": "float64",
+        "shape": [
+          2040,
+          2560
+        ]
+      },
+      "q": {
+        "dtype": "float64",
+        "shape": [
+          2040,
+          2560
+        ]
+      },
+      "r0": {
+        "dtype": "float64",
+        "shape": [
+          14,
+          2560
+        ]
+      },
+      "r1": {
+        "dtype": "float64",
+        "shape": [
+          9,
+          2560
+        ]
+      }
+    },
+    "write_kinds": {},
+    "writes": [
+      "r0",
+      "r1",
+      "q",
+      "Jq"
+    ]
+  }
+}
