@@ -1,0 +1,143 @@
+{
+  "analysisBytesByField": {
+    "basisGram": 262144,
+    "rowStatistics": 2211840,
+    "sketchResidual": 1572864,
+    "sketchRowStatistics": 98304
+  },
+  "analysisExtraLogicalBudgetBytes": 1073741824,
+  "analysisOutputLogicalBytes": 4145152,
+  "comparisonFileBytes": 56623872,
+  "extraProducerTemporaryBudgetBytes": 536870912,
+  "intentFirstFullModelPreview": {
+    "beast": {
+      "artifact_id": null,
+      "artifact_kind": null,
+      "artifact_locator": {},
+      "artifact_mount": null,
+      "backend": "diffusers",
+      "device": "cuda",
+      "dtype": "bfloat16",
+      "engine_options": {},
+      "engine_profile": "backend:diffusers",
+      "est_ram_mb": 8410.0,
+      "est_vram_mb": 40212.3,
+      "est_wall_s": null,
+      "max_batch": 64,
+      "model": "flux2-klein-4b-distilled",
+      "ram_limit_mb": 52809.0,
+      "reasons": [
+        "host=beast ram=66513MB cuda=True mps=False ane=False task=forward",
+        "dtype=bfloat16 (explicit opt-in \u2014 not the canonical path)",
+        "device=cuda (explicit)",
+        "TF32 forced OFF on cuda (breaches 4-decimal stats)",
+        "backend=diffusers (explicit)",
+        "max_batch=64 threads=4 ram_limit=52809MB (est x 1.3)",
+        "selector fallback: explicit backend has no matching local artifact",
+        "science runtime envelope: diffusers"
+      ],
+      "threads": 4,
+      "weights_gb": 9.6
+    }
+  },
+  "joinedBF16Bytes": 37748736,
+  "joinedFP64Bytes": 150994944,
+  "liveHost": {
+    "active_jobs": [],
+    "admission": {
+      "enabled": true,
+      "max_concurrent": null,
+      "ram_margin_mb": 3325.6384512,
+      "vram_margin_mb": 819.0
+    },
+    "name": "beast",
+    "ram_total_mb": 66512.769024,
+    "telemetry": {
+      "cpu_pct": 0.1,
+      "disk_free_gb": 68.429275136,
+      "disks": [
+        {
+          "free_gb": 68.4,
+          "mount": "/",
+          "total_gb": 235.5
+        },
+        {
+          "free_gb": 310.8,
+          "mount": "/mnt/big",
+          "total_gb": 1999.6
+        },
+        {
+          "free_gb": 2462.9,
+          "mount": "/mnt/hdd8tb",
+          "total_gb": 7937.3
+        },
+        {
+          "free_gb": 533.9,
+          "mount": "/mnt/ssd1tb",
+          "total_gb": 1000.0
+        },
+        {
+          "free_gb": 197.4,
+          "mount": "/mnt/usb-storage",
+          "total_gb": 502.9
+        },
+        {
+          "free_gb": 0.4,
+          "mount": "/recovery",
+          "total_gb": 4.3
+        }
+      ],
+      "host": "beast",
+      "load1": 0.0087890625,
+      "mem_pressure": null,
+      "pressure_external": false,
+      "ram_free_mb": 51855.917056,
+      "running": [],
+      "swap_total_mb": 21474.299904,
+      "swap_used_mb": 5113.618432,
+      "top_external": [
+        {
+          "name": "bitcoind",
+          "pid": 3661879,
+          "rss_mb": 16129
+        },
+        {
+          "name": "mount.ntfs-3g",
+          "pid": 815703,
+          "rss_mb": 1330
+        }
+      ],
+      "ts": 1794100162.3911247,
+      "vram_free_mb": 15943.0
+    },
+    "vram_total_mb": 16376.0
+  },
+  "measuredParent": {
+    "elapsed_s": 25.81,
+    "peak_rss_mb": 1795.6,
+    "peak_vram_mb": 1564.0
+  },
+  "measuredParentJobID": "job-50d1afc5dce1",
+  "originalLoadedParameterBytes": 75497472,
+  "producerBytesByField": {
+    "columnSigns": 2048,
+    "compressedWrites": 6291456,
+    "exit": 9437184,
+    "gatedWrite": 9437184,
+    "imageOut": 6291456,
+    "preResidualUpdate": 9437184,
+    "projectedInputs": 25165824,
+    "qrR": 262144,
+    "rowBasis": 1572864,
+    "sketch": 1572864,
+    "sketchSigns": 25165824,
+    "textOut": 3145728,
+    "updateFP64": 37748736
+  },
+  "producerOutputLogicalBytes": 135530496,
+  "promotedOutFP64Bytes": 301989888,
+  "scope": "Closest83measured1795.6MBRSS/1564device used same originalout/FP64weight/join and six receiving products. New two source sketches add25MBretainedsigns and1.6MBF, rawPCG/temp budget explicit. Retain source-derived4096RAM3072VRAM4CPU3GBdisk90expected300cap; fullmodel sizing inapplicable. EightFP64products/twoQR; postexit targetaccounts sequential under1GiBextra. No source/attention/GU/encoder/VAE execution.",
+  "sourceFileBytes": 47192704,
+  "twoFP64SketchBytes": 25165824,
+  "twoRawPCG64WordBytes": 25165824
+}
