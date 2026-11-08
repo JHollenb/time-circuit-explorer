@@ -1,0 +1,511 @@
+{
+  "parameterPayloadAfter": {
+    "kWeight": "13cc0fea963b505b118b5700dfceb358d7cc45e5cfd002e859ccd940c08e3cbf",
+    "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7",
+    "qWeight": "fe59e1c85b6f1f736f2f8c7d073284631fb999459782c17c08800ba0ab29da83",
+    "vWeight": "8a3de78d84b72f8a6d426a07a618d252d6df64ad1b2220853beb93e09b7b4c61"
+  },
+  "parameterPayloadBefore": {
+    "kWeight": "13cc0fea963b505b118b5700dfceb358d7cc45e5cfd002e859ccd940c08e3cbf",
+    "normWeight": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7",
+    "qWeight": "fe59e1c85b6f1f736f2f8c7d073284631fb999459782c17c08800ba0ab29da83",
+    "vWeight": "8a3de78d84b72f8a6d426a07a618d252d6df64ad1b2220853beb93e09b7b4c61"
+  },
+  "rows": [
+    {
+      "branch": "Xno",
+      "case": "Xno",
+      "evidence": {
+        "act": "contrast_writer.next_operand:v1",
+        "elapsed_ms": 580.1371349953115,
+        "implementation": "original-selected-maps",
+        "input_frame_id": "99062fddecf424d6b4b239bfea07245fc3c7509c1fde3d8e2ab08aea204b61db",
+        "metrics": {
+          "attentionCalls": 0,
+          "calls": [
+            {
+              "inputShape": [
+                1,
+                512,
+                2560
+              ],
+              "nominalMACs": 5368709120,
+              "port": "Q",
+              "weightShape": [
+                4096,
+                2560
+              ]
+            },
+            {
+              "inputShape": [
+                1,
+                512,
+                2560
+              ],
+              "nominalMACs": 1342177280,
+              "port": "K",
+              "weightShape": [
+                1024,
+                2560
+              ]
+            },
+            {
+              "inputShape": [
+                1,
+                512,
+                2560
+              ],
+              "nominalMACs": 1342177280,
+              "port": "V",
+              "weightShape": [
+                1024,
+                2560
+              ]
+            }
+          ],
+          "fullBlocks": 0,
+          "linears": 3,
+          "nominalMACs": 8053063680
+        },
+        "numerical_contract": "qualified-CUDA-BF16-inputnorm-and-three-original-affines",
+        "output_frame_id": "6a912e702ad5c0e267a2fc33d28806d902c5c879e0944d9b156c910ffcebd54e"
+      },
+      "input": {
+        "act": "own-contrast-H1-install:v1",
+        "frame_id": "99062fddecf424d6b4b239bfea07245fc3c7509c1fde3d8e2ab08aea204b61db",
+        "implementation": "candidate",
+        "metadata": {
+          "case": "Xno",
+          "method": "candidate"
+        },
+        "parent_frame_id": "4da1762c2d051aa0efe53ca2bd5c8d5d61fb69926962ed4fa9391f5bd86b7007",
+        "program_fingerprint": "7d9b4030c580256bb63fd34f738b7112e1b1f34377d9483e509a8be449005282",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "0e0c66474008522d6a28bcd0e4d98e3a0d34dfbde03680b6afc40cf6c07459b4",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "kWeight": {
+            "abi": {},
+            "fingerprint": "a4f187b8fef14d73b4365b8593bf23acf511e71bce95e1905c15b3d859a53a30",
+            "handle": "saturn://kWeight",
+            "kind": "opaque",
+            "name": "kWeight"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          },
+          "qWeight": {
+            "abi": {},
+            "fingerprint": "f8dfc7e9069112fb0f9230827749e7bc14a5b11848185a07ee5494f350f25c99",
+            "handle": "saturn://qWeight",
+            "kind": "opaque",
+            "name": "qWeight"
+          },
+          "vWeight": {
+            "abi": {},
+            "fingerprint": "c68b8e7278aa986fd6d1f1216cdfdb06666be7234fb34a0b6d1e291a04ea97b4",
+            "handle": "saturn://vWeight",
+            "kind": "opaque",
+            "name": "vWeight"
+          }
+        }
+      },
+      "method": "candidate",
+      "output": {
+        "act": "contrast_writer.next_operand:v1",
+        "frame_id": "6a912e702ad5c0e267a2fc33d28806d902c5c879e0944d9b156c910ffcebd54e",
+        "implementation": "original-selected-maps",
+        "metadata": {
+          "case": "Xno",
+          "method": "candidate"
+        },
+        "parent_frame_id": "99062fddecf424d6b4b239bfea07245fc3c7509c1fde3d8e2ab08aea204b61db",
+        "program_fingerprint": "7d9b4030c580256bb63fd34f738b7112e1b1f34377d9483e509a8be449005282",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "0e0c66474008522d6a28bcd0e4d98e3a0d34dfbde03680b6afc40cf6c07459b4",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "K": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                1024
+              ]
+            },
+            "fingerprint": "b699816016d5694073b745bb0c9f422f7fc2a205237bf74fcc67853751337dc4",
+            "handle": "saturn://K",
+            "kind": "opaque",
+            "name": "K"
+          },
+          "Q": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                4096
+              ]
+            },
+            "fingerprint": "8e2d67c66a2805657ecd5e3381deb06fe397ab5efbeccee2277849d3bc8d8f98",
+            "handle": "saturn://Q",
+            "kind": "opaque",
+            "name": "Q"
+          },
+          "V": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                1024
+              ]
+            },
+            "fingerprint": "abcc41e981c9945d5a5f1130e481b77acd297014a479e10098ddcca9de4640a7",
+            "handle": "saturn://V",
+            "kind": "opaque",
+            "name": "V"
+          },
+          "kWeight": {
+            "abi": {},
+            "fingerprint": "a4f187b8fef14d73b4365b8593bf23acf511e71bce95e1905c15b3d859a53a30",
+            "handle": "saturn://kWeight",
+            "kind": "opaque",
+            "name": "kWeight"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          },
+          "qWeight": {
+            "abi": {},
+            "fingerprint": "f8dfc7e9069112fb0f9230827749e7bc14a5b11848185a07ee5494f350f25c99",
+            "handle": "saturn://qWeight",
+            "kind": "opaque",
+            "name": "qWeight"
+          },
+          "vWeight": {
+            "abi": {},
+            "fingerprint": "c68b8e7278aa986fd6d1f1216cdfdb06666be7234fb34a0b6d1e291a04ea97b4",
+            "handle": "saturn://vWeight",
+            "kind": "opaque",
+            "name": "vWeight"
+          }
+        }
+      },
+      "semantics": {
+        "base": "a",
+        "meaning": "native-baseline-own-response-after-admission"
+      }
+    },
+    {
+      "branch": "Xon",
+      "case": "Xon",
+      "evidence": {
+        "act": "contrast_writer.next_operand:v1",
+        "elapsed_ms": 3.344471100717783,
+        "implementation": "original-selected-maps",
+        "input_frame_id": "0d6eda4bc3a3a89d55714c184da85eaa16a473b650bf93126191b55db3022f4a",
+        "metrics": {
+          "attentionCalls": 0,
+          "calls": [
+            {
+              "inputShape": [
+                1,
+                512,
+                2560
+              ],
+              "nominalMACs": 5368709120,
+              "port": "Q",
+              "weightShape": [
+                4096,
+                2560
+              ]
+            },
+            {
+              "inputShape": [
+                1,
+                512,
+                2560
+              ],
+              "nominalMACs": 1342177280,
+              "port": "K",
+              "weightShape": [
+                1024,
+                2560
+              ]
+            },
+            {
+              "inputShape": [
+                1,
+                512,
+                2560
+              ],
+              "nominalMACs": 1342177280,
+              "port": "V",
+              "weightShape": [
+                1024,
+                2560
+              ]
+            }
+          ],
+          "fullBlocks": 0,
+          "linears": 3,
+          "nominalMACs": 8053063680
+        },
+        "numerical_contract": "qualified-CUDA-BF16-inputnorm-and-three-original-affines",
+        "output_frame_id": "3e77e1b476b48b9cc36bb6b72ef640f7c59763a36e2ca45bd571794d41b6436e"
+      },
+      "input": {
+        "act": "own-contrast-H1-install:v1",
+        "frame_id": "0d6eda4bc3a3a89d55714c184da85eaa16a473b650bf93126191b55db3022f4a",
+        "implementation": "candidate",
+        "metadata": {
+          "case": "Xon",
+          "method": "candidate"
+        },
+        "parent_frame_id": "4da1762c2d051aa0efe53ca2bd5c8d5d61fb69926962ed4fa9391f5bd86b7007",
+        "program_fingerprint": "7d9b4030c580256bb63fd34f738b7112e1b1f34377d9483e509a8be449005282",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "38e1bb4a5d1e081b0a06c40dbdd4817753ea4d5603d09033edf0a6002d485ba6",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "kWeight": {
+            "abi": {},
+            "fingerprint": "a4f187b8fef14d73b4365b8593bf23acf511e71bce95e1905c15b3d859a53a30",
+            "handle": "saturn://kWeight",
+            "kind": "opaque",
+            "name": "kWeight"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          },
+          "qWeight": {
+            "abi": {},
+            "fingerprint": "f8dfc7e9069112fb0f9230827749e7bc14a5b11848185a07ee5494f350f25c99",
+            "handle": "saturn://qWeight",
+            "kind": "opaque",
+            "name": "qWeight"
+          },
+          "vWeight": {
+            "abi": {},
+            "fingerprint": "c68b8e7278aa986fd6d1f1216cdfdb06666be7234fb34a0b6d1e291a04ea97b4",
+            "handle": "saturn://vWeight",
+            "kind": "opaque",
+            "name": "vWeight"
+          }
+        }
+      },
+      "method": "candidate",
+      "output": {
+        "act": "contrast_writer.next_operand:v1",
+        "frame_id": "3e77e1b476b48b9cc36bb6b72ef640f7c59763a36e2ca45bd571794d41b6436e",
+        "implementation": "original-selected-maps",
+        "metadata": {
+          "case": "Xon",
+          "method": "candidate"
+        },
+        "parent_frame_id": "0d6eda4bc3a3a89d55714c184da85eaa16a473b650bf93126191b55db3022f4a",
+        "program_fingerprint": "7d9b4030c580256bb63fd34f738b7112e1b1f34377d9483e509a8be449005282",
+        "schema": "saturn-frame-v1",
+        "slots": {
+          "H1": {
+            "abi": {},
+            "fingerprint": "38e1bb4a5d1e081b0a06c40dbdd4817753ea4d5603d09033edf0a6002d485ba6",
+            "handle": "saturn://H1",
+            "kind": "opaque",
+            "name": "H1"
+          },
+          "K": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                1024
+              ]
+            },
+            "fingerprint": "af0d666149a5ee13e8cd16800f212bd97871cbc8d2f0691f3b6b32030c79550f",
+            "handle": "saturn://K",
+            "kind": "opaque",
+            "name": "K"
+          },
+          "Q": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                4096
+              ]
+            },
+            "fingerprint": "9d57d09da5790f51f4e2e2abd09c9dc740d2137eac5cebaa142ab33fc3bb90de",
+            "handle": "saturn://Q",
+            "kind": "opaque",
+            "name": "Q"
+          },
+          "V": {
+            "abi": {
+              "dtype": "bfloat16",
+              "shape": [
+                1,
+                512,
+                1024
+              ]
+            },
+            "fingerprint": "d239c6ed711e193966a27eb4efa7ba4d5a775726484ae1d5b522b27f39b5b8d8",
+            "handle": "saturn://V",
+            "kind": "opaque",
+            "name": "V"
+          },
+          "kWeight": {
+            "abi": {},
+            "fingerprint": "a4f187b8fef14d73b4365b8593bf23acf511e71bce95e1905c15b3d859a53a30",
+            "handle": "saturn://kWeight",
+            "kind": "opaque",
+            "name": "kWeight"
+          },
+          "normWeight": {
+            "abi": {},
+            "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+            "handle": "saturn://normWeight",
+            "kind": "opaque",
+            "name": "normWeight"
+          },
+          "qWeight": {
+            "abi": {},
+            "fingerprint": "f8dfc7e9069112fb0f9230827749e7bc14a5b11848185a07ee5494f350f25c99",
+            "handle": "saturn://qWeight",
+            "kind": "opaque",
+            "name": "qWeight"
+          },
+          "vWeight": {
+            "abi": {},
+            "fingerprint": "c68b8e7278aa986fd6d1f1216cdfdb06666be7234fb34a0b6d1e291a04ea97b4",
+            "handle": "saturn://vWeight",
+            "kind": "opaque",
+            "name": "vWeight"
+          }
+        }
+      },
+      "semantics": {
+        "base": "p",
+        "meaning": "own-baseline-native-response-after-admission"
+      }
+    }
+  ],
+  "spec": {
+    "abi_version": "v1",
+    "identity": "contrast_writer.next_operand:v1",
+    "invalidates": [],
+    "name": "contrast_writer.next_operand",
+    "numerical_contract": "qualified-CUDA-BF16-inputnorm-and-three-original-affines",
+    "reads": [
+      "H1",
+      "normWeight",
+      "qWeight",
+      "kWeight",
+      "vWeight"
+    ],
+    "schema": "saturn-act-spec-v1",
+    "tolerance": {},
+    "write_abis": {
+      "K": {
+        "dtype": "bfloat16",
+        "shape": [
+          1,
+          512,
+          1024
+        ]
+      },
+      "Q": {
+        "dtype": "bfloat16",
+        "shape": [
+          1,
+          512,
+          4096
+        ]
+      },
+      "V": {
+        "dtype": "bfloat16",
+        "shape": [
+          1,
+          512,
+          1024
+        ]
+      }
+    },
+    "write_kinds": {},
+    "writes": [
+      "Q",
+      "K",
+      "V"
+    ]
+  },
+  "unchangedWeightParent": {
+    "act": "root:v1",
+    "frame_id": "4da1762c2d051aa0efe53ca2bd5c8d5d61fb69926962ed4fa9391f5bd86b7007",
+    "implementation": "saturn",
+    "metadata": {},
+    "parent_frame_id": null,
+    "program_fingerprint": "7d9b4030c580256bb63fd34f738b7112e1b1f34377d9483e509a8be449005282",
+    "schema": "saturn-frame-v1",
+    "slots": {
+      "kWeight": {
+        "abi": {},
+        "fingerprint": "a4f187b8fef14d73b4365b8593bf23acf511e71bce95e1905c15b3d859a53a30",
+        "handle": "saturn://kWeight",
+        "kind": "opaque",
+        "name": "kWeight"
+      },
+      "normWeight": {
+        "abi": {},
+        "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+        "handle": "saturn://normWeight",
+        "kind": "opaque",
+        "name": "normWeight"
+      },
+      "qWeight": {
+        "abi": {},
+        "fingerprint": "f8dfc7e9069112fb0f9230827749e7bc14a5b11848185a07ee5494f350f25c99",
+        "handle": "saturn://qWeight",
+        "kind": "opaque",
+        "name": "qWeight"
+      },
+      "vWeight": {
+        "abi": {},
+        "fingerprint": "c68b8e7278aa986fd6d1f1216cdfdb06666be7234fb34a0b6d1e291a04ea97b4",
+        "handle": "saturn://vWeight",
+        "kind": "opaque",
+        "name": "vWeight"
+      }
+    }
+  }
+}

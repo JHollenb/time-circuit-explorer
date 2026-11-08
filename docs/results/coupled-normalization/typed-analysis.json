@@ -1,0 +1,916 @@
+{
+  "evidence": {
+    "act": "coupled_normalization.explanation:v1",
+    "elapsed_ms": 5.883340258151293,
+    "implementation": "FP64-coupled-explanation",
+    "input_frame_id": "2d5287185f290e0705b5c6a7d8b12995f2790f1bb97426f6a27061c5b7d8d9e1",
+    "metrics": {
+      "originalLinears": 0,
+      "position": 9,
+      "retainedRowFields": 79,
+      "width": 2560
+    },
+    "numerical_contract": "Contiguous FP64 coordinate products and np.sum(dtype=float64); ordered vector sums; all signed Gram terms via math.fsum. No scientific threshold. FP64 sum(h*h)/width+epsilon, sqrt, reciprocal; ideal=gamma*(h*inverse); D=gamma*(delta/radiusRight); B=gamma*(h*(inverseRight-inverseLeft)). rho includes rounding of this explanatory evaluation. Left-associated sums retain edge g, contrast g and final closure separately.",
+    "output_frame_id": "9fe0c6cef8ce9236998864bfa42230030dd90bf1c8d02b754c9af71a635ae030"
+  },
+  "input": {
+    "act": "root:v1",
+    "frame_id": "2d5287185f290e0705b5c6a7d8b12995f2790f1bb97426f6a27061c5b7d8d9e1",
+    "implementation": "saturn",
+    "metadata": {
+      "position": 9,
+      "source": "six-full-H1-six-full-Z-gamma"
+    },
+    "parent_frame_id": null,
+    "program_fingerprint": "8ec08426905127b0840c46ea5c95db7ac4ef196e9b6fc98d673bc19f5f77dd0a",
+    "schema": "saturn-frame-v1",
+    "slots": {
+      "H-Xno": {
+        "abi": {},
+        "fingerprint": "0e0c66474008522d6a28bcd0e4d98e3a0d34dfbde03680b6afc40cf6c07459b4",
+        "handle": "saturn://H-Xno",
+        "kind": "opaque",
+        "name": "H-Xno"
+      },
+      "H-Xon": {
+        "abi": {},
+        "fingerprint": "38e1bb4a5d1e081b0a06c40dbdd4817753ea4d5603d09033edf0a6002d485ba6",
+        "handle": "saturn://H-Xon",
+        "kind": "opaque",
+        "name": "H-Xon"
+      },
+      "H-a": {
+        "abi": {},
+        "fingerprint": "f95e5475390f42fb6d35d062db889b1126bd0f2e9eea9a240e4af1408c52615c",
+        "handle": "saturn://H-a",
+        "kind": "opaque",
+        "name": "H-a"
+      },
+      "H-b": {
+        "abi": {},
+        "fingerprint": "2d4089ce015ae1e5651abe0ec2713a91b34744b53a823e83a93a8d7f9275f420",
+        "handle": "saturn://H-b",
+        "kind": "opaque",
+        "name": "H-b"
+      },
+      "H-p": {
+        "abi": {},
+        "fingerprint": "3db0d4591d478c282b794202113fbf33228e1f9c026696eedf4b5cb372e468d5",
+        "handle": "saturn://H-p",
+        "kind": "opaque",
+        "name": "H-p"
+      },
+      "H-q": {
+        "abi": {},
+        "fingerprint": "4fce83b7dd2decb7a8cc71f77b46768330d950960d6f7598e1a864d1922090bc",
+        "handle": "saturn://H-q",
+        "kind": "opaque",
+        "name": "H-q"
+      },
+      "Z-Xno": {
+        "abi": {},
+        "fingerprint": "c1ec99514be6465d2c5c013f5f6b54053605ca9238cfe1f72eaa53999e18beb4",
+        "handle": "saturn://Z-Xno",
+        "kind": "opaque",
+        "name": "Z-Xno"
+      },
+      "Z-Xon": {
+        "abi": {},
+        "fingerprint": "8786677c17e64cd1eef5c219a44fe408af2da25aadb6431b0bf075034a81a111",
+        "handle": "saturn://Z-Xon",
+        "kind": "opaque",
+        "name": "Z-Xon"
+      },
+      "Z-a": {
+        "abi": {},
+        "fingerprint": "3d8d0c8efed6729c9dd8c8007e14a9ecf052dced5c1de8fe0864d7fad4574171",
+        "handle": "saturn://Z-a",
+        "kind": "opaque",
+        "name": "Z-a"
+      },
+      "Z-b": {
+        "abi": {},
+        "fingerprint": "b1263c03b960126512c626869c54082175490024b649fe75e6ec6fd622625e76",
+        "handle": "saturn://Z-b",
+        "kind": "opaque",
+        "name": "Z-b"
+      },
+      "Z-p": {
+        "abi": {},
+        "fingerprint": "3214ed01d8ce4d26b10aa0f7dc33423b2434a54a49dcb23d773ac681328fa726",
+        "handle": "saturn://Z-p",
+        "kind": "opaque",
+        "name": "Z-p"
+      },
+      "Z-q": {
+        "abi": {},
+        "fingerprint": "d630e27e9b904fd26961386dc90cb862a51d8a76adc698b61ba84d6483136528",
+        "handle": "saturn://Z-q",
+        "kind": "opaque",
+        "name": "Z-q"
+      },
+      "gamma": {
+        "abi": {},
+        "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+        "handle": "saturn://gamma",
+        "kind": "opaque",
+        "name": "gamma"
+      }
+    }
+  },
+  "inputPayloadAfter": {
+    "H-Xno": "a8af684bccaa3283e10a1f1349fb20127714439e9da60a416a790eee2f887b52",
+    "H-Xon": "5a9c071a1e648f6faf7fde5be3858a1c16c9f13774e2bdc0791216e7d88aebea",
+    "H-a": "ccc6c90f42645d596b04c5c21843410c65a5b92666b488709a63808f54102699",
+    "H-b": "7cc8952c2d96d95e378a03890e0197eb44c27f628751ce4c7805f7a57a0d2aaf",
+    "H-p": "7e62dda8d34e0e7bb47195e84e97c84bcddeb7d0be721a000f702259f60b0fd3",
+    "H-q": "f4ca2f1d19df29013d30675501a720ebda7350a0d1a7688ecde528e4c89167b4",
+    "Z-Xno": "51d28d1bf89941fc47961a1a8b68c05630a068c8d71910f6d2b05dfa48edf65d",
+    "Z-Xon": "40bd15a96d1bf2ced8a97c9a9d4fdb51b114f435b9a6090fe6ebcef0a0b68800",
+    "Z-a": "67c52ffec6fe56cff5d7e4d3a3035e84dc2d05c875f752b090fdcce456d0ee61",
+    "Z-b": "ad6eeb70f0e0ba226140214a88f073ec5ce57c53ad7147de4170ca2179bb1dc2",
+    "Z-p": "dc24411be976b1b806e443f403ecfe84fe7fe4c83e049c64450766f84083221d",
+    "Z-q": "dfc7b16ed6d97be3a7a72ac36d44cd763b398c1088671533c284bf511975f9f7",
+    "gamma": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+  },
+  "inputPayloadBefore": {
+    "H-Xno": "a8af684bccaa3283e10a1f1349fb20127714439e9da60a416a790eee2f887b52",
+    "H-Xon": "5a9c071a1e648f6faf7fde5be3858a1c16c9f13774e2bdc0791216e7d88aebea",
+    "H-a": "ccc6c90f42645d596b04c5c21843410c65a5b92666b488709a63808f54102699",
+    "H-b": "7cc8952c2d96d95e378a03890e0197eb44c27f628751ce4c7805f7a57a0d2aaf",
+    "H-p": "7e62dda8d34e0e7bb47195e84e97c84bcddeb7d0be721a000f702259f60b0fd3",
+    "H-q": "f4ca2f1d19df29013d30675501a720ebda7350a0d1a7688ecde528e4c89167b4",
+    "Z-Xno": "51d28d1bf89941fc47961a1a8b68c05630a068c8d71910f6d2b05dfa48edf65d",
+    "Z-Xon": "40bd15a96d1bf2ced8a97c9a9d4fdb51b114f435b9a6090fe6ebcef0a0b68800",
+    "Z-a": "67c52ffec6fe56cff5d7e4d3a3035e84dc2d05c875f752b090fdcce456d0ee61",
+    "Z-b": "ad6eeb70f0e0ba226140214a88f073ec5ce57c53ad7147de4170ca2179bb1dc2",
+    "Z-p": "dc24411be976b1b806e443f403ecfe84fe7fe4c83e049c64450766f84083221d",
+    "Z-q": "dfc7b16ed6d97be3a7a72ac36d44cd763b398c1088671533c284bf511975f9f7",
+    "gamma": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+  },
+  "output": {
+    "act": "coupled_normalization.explanation:v1",
+    "frame_id": "9fe0c6cef8ce9236998864bfa42230030dd90bf1c8d02b754c9af71a635ae030",
+    "implementation": "FP64-coupled-explanation",
+    "metadata": {
+      "position": 9,
+      "source": "six-full-H1-six-full-Z-gamma"
+    },
+    "parent_frame_id": "2d5287185f290e0705b5c6a7d8b12995f2790f1bb97426f6a27061c5b7d8d9e1",
+    "program_fingerprint": "8ec08426905127b0840c46ea5c95db7ac4ef196e9b6fc98d673bc19f5f77dd0a",
+    "schema": "saturn-frame-v1",
+    "slots": {
+      "H-Xno": {
+        "abi": {},
+        "fingerprint": "0e0c66474008522d6a28bcd0e4d98e3a0d34dfbde03680b6afc40cf6c07459b4",
+        "handle": "saturn://H-Xno",
+        "kind": "opaque",
+        "name": "H-Xno"
+      },
+      "H-Xon": {
+        "abi": {},
+        "fingerprint": "38e1bb4a5d1e081b0a06c40dbdd4817753ea4d5603d09033edf0a6002d485ba6",
+        "handle": "saturn://H-Xon",
+        "kind": "opaque",
+        "name": "H-Xon"
+      },
+      "H-a": {
+        "abi": {},
+        "fingerprint": "f95e5475390f42fb6d35d062db889b1126bd0f2e9eea9a240e4af1408c52615c",
+        "handle": "saturn://H-a",
+        "kind": "opaque",
+        "name": "H-a"
+      },
+      "H-b": {
+        "abi": {},
+        "fingerprint": "2d4089ce015ae1e5651abe0ec2713a91b34744b53a823e83a93a8d7f9275f420",
+        "handle": "saturn://H-b",
+        "kind": "opaque",
+        "name": "H-b"
+      },
+      "H-p": {
+        "abi": {},
+        "fingerprint": "3db0d4591d478c282b794202113fbf33228e1f9c026696eedf4b5cb372e468d5",
+        "handle": "saturn://H-p",
+        "kind": "opaque",
+        "name": "H-p"
+      },
+      "H-q": {
+        "abi": {},
+        "fingerprint": "4fce83b7dd2decb7a8cc71f77b46768330d950960d6f7598e1a864d1922090bc",
+        "handle": "saturn://H-q",
+        "kind": "opaque",
+        "name": "H-q"
+      },
+      "Z-Xno": {
+        "abi": {},
+        "fingerprint": "c1ec99514be6465d2c5c013f5f6b54053605ca9238cfe1f72eaa53999e18beb4",
+        "handle": "saturn://Z-Xno",
+        "kind": "opaque",
+        "name": "Z-Xno"
+      },
+      "Z-Xon": {
+        "abi": {},
+        "fingerprint": "8786677c17e64cd1eef5c219a44fe408af2da25aadb6431b0bf075034a81a111",
+        "handle": "saturn://Z-Xon",
+        "kind": "opaque",
+        "name": "Z-Xon"
+      },
+      "Z-a": {
+        "abi": {},
+        "fingerprint": "3d8d0c8efed6729c9dd8c8007e14a9ecf052dced5c1de8fe0864d7fad4574171",
+        "handle": "saturn://Z-a",
+        "kind": "opaque",
+        "name": "Z-a"
+      },
+      "Z-b": {
+        "abi": {},
+        "fingerprint": "b1263c03b960126512c626869c54082175490024b649fe75e6ec6fd622625e76",
+        "handle": "saturn://Z-b",
+        "kind": "opaque",
+        "name": "Z-b"
+      },
+      "Z-p": {
+        "abi": {},
+        "fingerprint": "3214ed01d8ce4d26b10aa0f7dc33423b2434a54a49dcb23d773ac681328fa726",
+        "handle": "saturn://Z-p",
+        "kind": "opaque",
+        "name": "Z-p"
+      },
+      "Z-q": {
+        "abi": {},
+        "fingerprint": "d630e27e9b904fd26961386dc90cb862a51d8a76adc698b61ba84d6483136528",
+        "handle": "saturn://Z-q",
+        "kind": "opaque",
+        "name": "Z-q"
+      },
+      "edge-native-B": {
+        "abi": {},
+        "fingerprint": "abc0bb1fc752ea17b51018aa7a0146e47fdd53338b598c5f746fc52952d4a9a0",
+        "handle": "saturn://edge-native-B",
+        "kind": "opaque",
+        "name": "edge-native-B"
+      },
+      "edge-native-D": {
+        "abi": {},
+        "fingerprint": "816540c098b215f4964462df3cbf15cbcf97afdaba00dae1889808000c483fcc",
+        "handle": "saturn://edge-native-D",
+        "kind": "opaque",
+        "name": "edge-native-D"
+      },
+      "edge-native-R": {
+        "abi": {},
+        "fingerprint": "e67fde27d7932afe976c037030d741dd8005f084ed9dc28d1481de7f0af25071",
+        "handle": "saturn://edge-native-R",
+        "kind": "opaque",
+        "name": "edge-native-R"
+      },
+      "edge-native-Z": {
+        "abi": {},
+        "fingerprint": "c219acff33975caa9f94b5880d50d4b93cfad11f6fe681b3f55a2c137dbd6b39",
+        "handle": "saturn://edge-native-Z",
+        "kind": "opaque",
+        "name": "edge-native-Z"
+      },
+      "edge-native-delta": {
+        "abi": {},
+        "fingerprint": "e4aa0773e9ac4f19c4afaa5d598660b959a139d2f0b961281a2bc82f2ddae965",
+        "handle": "saturn://edge-native-delta",
+        "kind": "opaque",
+        "name": "edge-native-delta"
+      },
+      "edge-native-g": {
+        "abi": {},
+        "fingerprint": "5139f330cbeecdf4c9c992a23200c7e64570f01833f1ee39e7f5495d4954f599",
+        "handle": "saturn://edge-native-g",
+        "kind": "opaque",
+        "name": "edge-native-g"
+      },
+      "edge-no-B": {
+        "abi": {},
+        "fingerprint": "3e4a9a2581fc17d7e23b2c762a8b2c19d1638e2f5183cb6ba77bca08764c4ef5",
+        "handle": "saturn://edge-no-B",
+        "kind": "opaque",
+        "name": "edge-no-B"
+      },
+      "edge-no-D": {
+        "abi": {},
+        "fingerprint": "13fbfd0ee5b09c4623a779cf18f013b9f5fc113348134343d072997bda00ac7e",
+        "handle": "saturn://edge-no-D",
+        "kind": "opaque",
+        "name": "edge-no-D"
+      },
+      "edge-no-R": {
+        "abi": {},
+        "fingerprint": "0ac78a10bb9f565412c5dd6e9f0c22a511f605ec45c7a965085b191b8e3ab326",
+        "handle": "saturn://edge-no-R",
+        "kind": "opaque",
+        "name": "edge-no-R"
+      },
+      "edge-no-Z": {
+        "abi": {},
+        "fingerprint": "cbe3084ad67770aa00dfd03eef4da337717162fc39236733a36a5f5f7896be3c",
+        "handle": "saturn://edge-no-Z",
+        "kind": "opaque",
+        "name": "edge-no-Z"
+      },
+      "edge-no-delta": {
+        "abi": {},
+        "fingerprint": "9e9787615f2db3edcb45540ea6a7a80908d4c5f7882d1db9a13f1cb1b405daba",
+        "handle": "saturn://edge-no-delta",
+        "kind": "opaque",
+        "name": "edge-no-delta"
+      },
+      "edge-no-g": {
+        "abi": {},
+        "fingerprint": "69d676b92653a7d1af5eaecdf496b5a3f23e57615bf9c2a4b59266d2343f647d",
+        "handle": "saturn://edge-no-g",
+        "kind": "opaque",
+        "name": "edge-no-g"
+      },
+      "edge-on-B": {
+        "abi": {},
+        "fingerprint": "7fa2e0863dafaf45d95f73b4b9f4dcc2407bdd4a41ae981dfa7b3e2b648a8aec",
+        "handle": "saturn://edge-on-B",
+        "kind": "opaque",
+        "name": "edge-on-B"
+      },
+      "edge-on-D": {
+        "abi": {},
+        "fingerprint": "3a3bf74fdbe25ca65db39ab6bfbca5a1205cd1cab3aec45229a9670c17d01545",
+        "handle": "saturn://edge-on-D",
+        "kind": "opaque",
+        "name": "edge-on-D"
+      },
+      "edge-on-R": {
+        "abi": {},
+        "fingerprint": "0375c964e846ad89084b5a30d3d28f6713b67bf865cfdf0025a962fd313c6072",
+        "handle": "saturn://edge-on-R",
+        "kind": "opaque",
+        "name": "edge-on-R"
+      },
+      "edge-on-Z": {
+        "abi": {},
+        "fingerprint": "f7a90c2f3b800ba0acef4711c477318fc224c5728f4a8ea2bfbfef540d382a38",
+        "handle": "saturn://edge-on-Z",
+        "kind": "opaque",
+        "name": "edge-on-Z"
+      },
+      "edge-on-delta": {
+        "abi": {},
+        "fingerprint": "06f700e9a79adab092ebd0b5642c76911966be891a70a72847186605f822adbf",
+        "handle": "saturn://edge-on-delta",
+        "kind": "opaque",
+        "name": "edge-on-delta"
+      },
+      "edge-on-g": {
+        "abi": {},
+        "fingerprint": "5a4f87257597b7d9b6d17f66c9a56bde0927542e55647642fc03baa72dba4681",
+        "handle": "saturn://edge-on-g",
+        "kind": "opaque",
+        "name": "edge-on-g"
+      },
+      "edge-own-B": {
+        "abi": {},
+        "fingerprint": "6ff99242e4f47ff4f14e9517e219c9a36bcf1bc30207a49354c6db51d193c181",
+        "handle": "saturn://edge-own-B",
+        "kind": "opaque",
+        "name": "edge-own-B"
+      },
+      "edge-own-D": {
+        "abi": {},
+        "fingerprint": "8ff09db72e2e72d40dddfccee5a7140793b537df60574bf0614cade27790860e",
+        "handle": "saturn://edge-own-D",
+        "kind": "opaque",
+        "name": "edge-own-D"
+      },
+      "edge-own-R": {
+        "abi": {},
+        "fingerprint": "6cfad1c9ab0e2fc45519fbb4d5f26bdd448cb653e3c29e6f24831d9f1c86cd80",
+        "handle": "saturn://edge-own-R",
+        "kind": "opaque",
+        "name": "edge-own-R"
+      },
+      "edge-own-Z": {
+        "abi": {},
+        "fingerprint": "94cf3f00f9df06a291d3df2ebf608fe7a96e3afe7dfcb130c40f57991a856eb9",
+        "handle": "saturn://edge-own-Z",
+        "kind": "opaque",
+        "name": "edge-own-Z"
+      },
+      "edge-own-delta": {
+        "abi": {},
+        "fingerprint": "5ef4427eda5864d62c1eb428080cdad23138f972941be6fd708cce9654cd7f75",
+        "handle": "saturn://edge-own-delta",
+        "kind": "opaque",
+        "name": "edge-own-delta"
+      },
+      "edge-own-g": {
+        "abi": {},
+        "fingerprint": "8fdfb4faf65bddaee33289ed6c6daf7696fd81f4ba971a7dcf7801d653ec988a",
+        "handle": "saturn://edge-own-g",
+        "kind": "opaque",
+        "name": "edge-own-g"
+      },
+      "endpoint-p-error": {
+        "abi": {},
+        "fingerprint": "4ecb186abe4e9b035ff50a547b4637058f36c7af4fb80f7dd3b5d45177a98564",
+        "handle": "saturn://endpoint-p-error",
+        "kind": "opaque",
+        "name": "endpoint-p-error"
+      },
+      "endpoint-q-error": {
+        "abi": {},
+        "fingerprint": "142bbf235ebe3d0357f1de6e45a505df0f1facc96229989664a8b36dcbd1c12d",
+        "handle": "saturn://endpoint-q-error",
+        "kind": "opaque",
+        "name": "endpoint-q-error"
+      },
+      "factor-E-B": {
+        "abi": {},
+        "fingerprint": "67fab2e9363fceddf74e2788e44d8b4e40312744b3239f7cd70cd56f428ee4eb",
+        "handle": "saturn://factor-E-B",
+        "kind": "opaque",
+        "name": "factor-E-B"
+      },
+      "factor-E-D": {
+        "abi": {},
+        "fingerprint": "137f79a8ab9db9f50f27ae1eb4ca210c13f8a99098f5682a9d087d657ed9ec4e",
+        "handle": "saturn://factor-E-D",
+        "kind": "opaque",
+        "name": "factor-E-D"
+      },
+      "factor-E-G": {
+        "abi": {},
+        "fingerprint": "5ccfb601ad5cc5889dd8f47238f621dc7f06651dab8e3884c4bd3fa271f4e8bf",
+        "handle": "saturn://factor-E-G",
+        "kind": "opaque",
+        "name": "factor-E-G"
+      },
+      "factor-E-R": {
+        "abi": {},
+        "fingerprint": "1b6b7ec529f1e305599a0518b953343778676e3d89ed8bc8b7e6a5d57c0bc7b3",
+        "handle": "saturn://factor-E-R",
+        "kind": "opaque",
+        "name": "factor-E-R"
+      },
+      "factor-E-closure": {
+        "abi": {},
+        "fingerprint": "982f90daa52217b474b181d22c78b963ff749d2d2bce936c71a51e3cf6f0f710",
+        "handle": "saturn://factor-E-closure",
+        "kind": "opaque",
+        "name": "factor-E-closure"
+      },
+      "factor-E-g": {
+        "abi": {},
+        "fingerprint": "583158247da34a341928f22a9e24badf0c78a2ab73a43de2db09fd0e81c4d935",
+        "handle": "saturn://factor-E-g",
+        "kind": "opaque",
+        "name": "factor-E-g"
+      },
+      "factor-Uno-B": {
+        "abi": {},
+        "fingerprint": "0106a1bc889eb2acfc2c0e89addc00eb8e3c9a11d8f6ec967bd2c03bbf51e2d4",
+        "handle": "saturn://factor-Uno-B",
+        "kind": "opaque",
+        "name": "factor-Uno-B"
+      },
+      "factor-Uno-D": {
+        "abi": {},
+        "fingerprint": "759b3280ca5e7c5b9ce0fc5d9523ca938efd2f76e2592554ba76cb3e3c9b29d0",
+        "handle": "saturn://factor-Uno-D",
+        "kind": "opaque",
+        "name": "factor-Uno-D"
+      },
+      "factor-Uno-G": {
+        "abi": {},
+        "fingerprint": "f4c3c2f9c7c02e341c5b08634f25fa162fd15864ae37bf7f048629715fec4f13",
+        "handle": "saturn://factor-Uno-G",
+        "kind": "opaque",
+        "name": "factor-Uno-G"
+      },
+      "factor-Uno-R": {
+        "abi": {},
+        "fingerprint": "4a96af5a22a0eea9e8e711ce4b139f1655c9def9c8baa3772468aaa67b06d36c",
+        "handle": "saturn://factor-Uno-R",
+        "kind": "opaque",
+        "name": "factor-Uno-R"
+      },
+      "factor-Uno-closure": {
+        "abi": {},
+        "fingerprint": "982f90daa52217b474b181d22c78b963ff749d2d2bce936c71a51e3cf6f0f710",
+        "handle": "saturn://factor-Uno-closure",
+        "kind": "opaque",
+        "name": "factor-Uno-closure"
+      },
+      "factor-Uno-g": {
+        "abi": {},
+        "fingerprint": "31ce0ff3808d1022237f300c41f5a7d1244468468070ab84dbc57f0d1cb9305d",
+        "handle": "saturn://factor-Uno-g",
+        "kind": "opaque",
+        "name": "factor-Uno-g"
+      },
+      "factor-Uon-B": {
+        "abi": {},
+        "fingerprint": "42b28b907412ba377ca0bf9a9552800d7a9ae9728b98ca05058b2ef217fc21b6",
+        "handle": "saturn://factor-Uon-B",
+        "kind": "opaque",
+        "name": "factor-Uon-B"
+      },
+      "factor-Uon-D": {
+        "abi": {},
+        "fingerprint": "b9c50ae7506ec993c2d976cbf8623ddca8df3058b3acb74c2791517605cc1700",
+        "handle": "saturn://factor-Uon-D",
+        "kind": "opaque",
+        "name": "factor-Uon-D"
+      },
+      "factor-Uon-G": {
+        "abi": {},
+        "fingerprint": "707ac63eb8934d1ec2015b102d50b3111f314f74b6c54e6e660d0da7e48e1c8a",
+        "handle": "saturn://factor-Uon-G",
+        "kind": "opaque",
+        "name": "factor-Uon-G"
+      },
+      "factor-Uon-R": {
+        "abi": {},
+        "fingerprint": "aa854114968da552a654e1139e891e72cd8a35feb9e305dfea90557e69501b08",
+        "handle": "saturn://factor-Uon-R",
+        "kind": "opaque",
+        "name": "factor-Uon-R"
+      },
+      "factor-Uon-closure": {
+        "abi": {},
+        "fingerprint": "982f90daa52217b474b181d22c78b963ff749d2d2bce936c71a51e3cf6f0f710",
+        "handle": "saturn://factor-Uon-closure",
+        "kind": "opaque",
+        "name": "factor-Uon-closure"
+      },
+      "factor-Uon-g": {
+        "abi": {},
+        "fingerprint": "969584c98f38a771cdf3bab234d6281c26a2da3a74534418d65c25ab47d4dc13",
+        "handle": "saturn://factor-Uon-g",
+        "kind": "opaque",
+        "name": "factor-Uon-g"
+      },
+      "factor-Vno-B": {
+        "abi": {},
+        "fingerprint": "dea26db1eb388b833aea7a216c2687c7c0ddb0060aa2ab03d7b55f9b33a94757",
+        "handle": "saturn://factor-Vno-B",
+        "kind": "opaque",
+        "name": "factor-Vno-B"
+      },
+      "factor-Vno-D": {
+        "abi": {},
+        "fingerprint": "e2c967319bfee72c6eb91de95d6b3b7cd09a9c9966e37868e7525c97a95b7291",
+        "handle": "saturn://factor-Vno-D",
+        "kind": "opaque",
+        "name": "factor-Vno-D"
+      },
+      "factor-Vno-G": {
+        "abi": {},
+        "fingerprint": "f5cf70fd17c031cf566e16e4c562d0c4b70eb56ee42c5797422a7b874253fcc8",
+        "handle": "saturn://factor-Vno-G",
+        "kind": "opaque",
+        "name": "factor-Vno-G"
+      },
+      "factor-Vno-R": {
+        "abi": {},
+        "fingerprint": "a559f64f62392b095e26976d5be3306e1ad0911f1dc09422038078c25a08fc8d",
+        "handle": "saturn://factor-Vno-R",
+        "kind": "opaque",
+        "name": "factor-Vno-R"
+      },
+      "factor-Vno-closure": {
+        "abi": {},
+        "fingerprint": "982f90daa52217b474b181d22c78b963ff749d2d2bce936c71a51e3cf6f0f710",
+        "handle": "saturn://factor-Vno-closure",
+        "kind": "opaque",
+        "name": "factor-Vno-closure"
+      },
+      "factor-Vno-g": {
+        "abi": {},
+        "fingerprint": "f983d867c1f299b7e0d4e2071a012938c0a5c69f56584eac1d41d3bee828b256",
+        "handle": "saturn://factor-Vno-g",
+        "kind": "opaque",
+        "name": "factor-Vno-g"
+      },
+      "factor-Von-B": {
+        "abi": {},
+        "fingerprint": "92be749afea6aed7b8d11173751ea3987a4166040957bb46346e151d797a9150",
+        "handle": "saturn://factor-Von-B",
+        "kind": "opaque",
+        "name": "factor-Von-B"
+      },
+      "factor-Von-D": {
+        "abi": {},
+        "fingerprint": "d021ebe9f071a5539fc323a169852a38e0610ca975f0281895065b851b41fe52",
+        "handle": "saturn://factor-Von-D",
+        "kind": "opaque",
+        "name": "factor-Von-D"
+      },
+      "factor-Von-G": {
+        "abi": {},
+        "fingerprint": "1562811a8ad4c9cd3d48d7a7fdb996cb0830661c9e9108ab001bcc70fdb2985f",
+        "handle": "saturn://factor-Von-G",
+        "kind": "opaque",
+        "name": "factor-Von-G"
+      },
+      "factor-Von-R": {
+        "abi": {},
+        "fingerprint": "d7c8c9f82e1004e813388025eaa8b52b11b86268ed911cb5985610bea7f2750e",
+        "handle": "saturn://factor-Von-R",
+        "kind": "opaque",
+        "name": "factor-Von-R"
+      },
+      "factor-Von-closure": {
+        "abi": {},
+        "fingerprint": "982f90daa52217b474b181d22c78b963ff749d2d2bce936c71a51e3cf6f0f710",
+        "handle": "saturn://factor-Von-closure",
+        "kind": "opaque",
+        "name": "factor-Von-closure"
+      },
+      "factor-Von-g": {
+        "abi": {},
+        "fingerprint": "a0e7f2186898fac484419274f59dd3f7b956d87ee852d0dbf6e6b5ebf51282cc",
+        "handle": "saturn://factor-Von-g",
+        "kind": "opaque",
+        "name": "factor-Von-g"
+      },
+      "gamma": {
+        "abi": {},
+        "fingerprint": "e767e36ec9dde9a791319b46343a6f2707ddef3d913a662858aaf1e512d0f33e",
+        "handle": "saturn://gamma",
+        "kind": "opaque",
+        "name": "gamma"
+      },
+      "response-Cno": {
+        "abi": {},
+        "fingerprint": "cbe3084ad67770aa00dfd03eef4da337717162fc39236733a36a5f5f7896be3c",
+        "handle": "saturn://response-Cno",
+        "kind": "opaque",
+        "name": "response-Cno"
+      },
+      "response-Con": {
+        "abi": {},
+        "fingerprint": "f7a90c2f3b800ba0acef4711c477318fc224c5728f4a8ea2bfbfef540d382a38",
+        "handle": "saturn://response-Con",
+        "kind": "opaque",
+        "name": "response-Con"
+      },
+      "response-E": {
+        "abi": {},
+        "fingerprint": "699747d0c10cd6ed879e434a1ac7196edf069ea484b7983fd4cef50e75aad32d",
+        "handle": "saturn://response-E",
+        "kind": "opaque",
+        "name": "response-E"
+      },
+      "response-N": {
+        "abi": {},
+        "fingerprint": "c219acff33975caa9f94b5880d50d4b93cfad11f6fe681b3f55a2c137dbd6b39",
+        "handle": "saturn://response-N",
+        "kind": "opaque",
+        "name": "response-N"
+      },
+      "response-O": {
+        "abi": {},
+        "fingerprint": "94cf3f00f9df06a291d3df2ebf608fe7a96e3afe7dfcb130c40f57991a856eb9",
+        "handle": "saturn://response-O",
+        "kind": "opaque",
+        "name": "response-O"
+      },
+      "response-Uno": {
+        "abi": {},
+        "fingerprint": "57ae4e6cbbe3e151ecfc6a44e5578f39b25b4ba433f91becfd44f41877bdeff2",
+        "handle": "saturn://response-Uno",
+        "kind": "opaque",
+        "name": "response-Uno"
+      },
+      "response-Uon": {
+        "abi": {},
+        "fingerprint": "5a9d485d73b1ac55b4346d3a90e6736c659088288c84564aa00c9fd33b6976c9",
+        "handle": "saturn://response-Uon",
+        "kind": "opaque",
+        "name": "response-Uon"
+      },
+      "response-Vno": {
+        "abi": {},
+        "fingerprint": "51155661f2e3781f801684272409b45f91b753dd0318f5befca4c6e919777315",
+        "handle": "saturn://response-Vno",
+        "kind": "opaque",
+        "name": "response-Vno"
+      },
+      "response-Von": {
+        "abi": {},
+        "fingerprint": "693cf9cb4b4976de828bc09a80cd84307c969aae25f183756092311b70ba8847",
+        "handle": "saturn://response-Von",
+        "kind": "opaque",
+        "name": "response-Von"
+      },
+      "response-gno": {
+        "abi": {},
+        "fingerprint": "982f90daa52217b474b181d22c78b963ff749d2d2bce936c71a51e3cf6f0f710",
+        "handle": "saturn://response-gno",
+        "kind": "opaque",
+        "name": "response-gno"
+      },
+      "response-gon": {
+        "abi": {},
+        "fingerprint": "982f90daa52217b474b181d22c78b963ff749d2d2bce936c71a51e3cf6f0f710",
+        "handle": "saturn://response-gon",
+        "kind": "opaque",
+        "name": "response-gon"
+      },
+      "state-Xno-ideal": {
+        "abi": {},
+        "fingerprint": "98b45160b4d571863718b38c7d9b8b3092887cb76aecb79b881b98979283c95f",
+        "handle": "saturn://state-Xno-ideal",
+        "kind": "opaque",
+        "name": "state-Xno-ideal"
+      },
+      "state-Xno-rho": {
+        "abi": {},
+        "fingerprint": "197a2d09dfff99d67396d938d849488124ece21d4866265c115eb4051a052416",
+        "handle": "saturn://state-Xno-rho",
+        "kind": "opaque",
+        "name": "state-Xno-rho"
+      },
+      "state-Xon-ideal": {
+        "abi": {},
+        "fingerprint": "44cb8abb7df0b4f4b2a499aba53a1b247f569fb8dc77649782a851f002133b10",
+        "handle": "saturn://state-Xon-ideal",
+        "kind": "opaque",
+        "name": "state-Xon-ideal"
+      },
+      "state-Xon-rho": {
+        "abi": {},
+        "fingerprint": "62c533c88e5ad1d6aaa036843a13a41890b00911005ab4cbae054cd13b6529c5",
+        "handle": "saturn://state-Xon-rho",
+        "kind": "opaque",
+        "name": "state-Xon-rho"
+      },
+      "state-a-ideal": {
+        "abi": {},
+        "fingerprint": "3884a3518dca404cb44e921c2a6bc0be7a0686c4131bbd59b09ef1d3bcfe285b",
+        "handle": "saturn://state-a-ideal",
+        "kind": "opaque",
+        "name": "state-a-ideal"
+      },
+      "state-a-rho": {
+        "abi": {},
+        "fingerprint": "63162080d9f1d1ad815e73e0a2d3b774c9f18acf780f6f45023baca1cc6dc76c",
+        "handle": "saturn://state-a-rho",
+        "kind": "opaque",
+        "name": "state-a-rho"
+      },
+      "state-b-ideal": {
+        "abi": {},
+        "fingerprint": "6f54caef3d6cebff1cf7b528908b0db4b8a84bfa7c2e6da0d37277f1a2928aff",
+        "handle": "saturn://state-b-ideal",
+        "kind": "opaque",
+        "name": "state-b-ideal"
+      },
+      "state-b-rho": {
+        "abi": {},
+        "fingerprint": "5523ebcc0281a6a1816144e4e1f0a4d393258a42fd5f5cfc9664deb9ed5c8533",
+        "handle": "saturn://state-b-rho",
+        "kind": "opaque",
+        "name": "state-b-rho"
+      },
+      "state-p-ideal": {
+        "abi": {},
+        "fingerprint": "99ca86aefcf8e7119c4eb0c3f3869d937f3925a10d85b51e4db70461f2b08f5d",
+        "handle": "saturn://state-p-ideal",
+        "kind": "opaque",
+        "name": "state-p-ideal"
+      },
+      "state-p-rho": {
+        "abi": {},
+        "fingerprint": "6f932b96d388e489d0e6d7de53bfc5785173b07bc04e273756a5cb71deb46468",
+        "handle": "saturn://state-p-rho",
+        "kind": "opaque",
+        "name": "state-p-rho"
+      },
+      "state-q-ideal": {
+        "abi": {},
+        "fingerprint": "e83f0b35018db171b175f3d66ad7ec92644aa2f5c58c7c228652f1800db5bb49",
+        "handle": "saturn://state-q-ideal",
+        "kind": "opaque",
+        "name": "state-q-ideal"
+      },
+      "state-q-rho": {
+        "abi": {},
+        "fingerprint": "0a88274eb61f975b9f4f59b1c25cc68de4aaf910c127207bc54986cdaa99304d",
+        "handle": "saturn://state-q-rho",
+        "kind": "opaque",
+        "name": "state-q-rho"
+      }
+    }
+  },
+  "spec": {
+    "abi_version": "v1",
+    "identity": "coupled_normalization.explanation:v1",
+    "invalidates": [],
+    "name": "coupled_normalization.explanation",
+    "numerical_contract": "Contiguous FP64 coordinate products and np.sum(dtype=float64); ordered vector sums; all signed Gram terms via math.fsum. No scientific threshold. FP64 sum(h*h)/width+epsilon, sqrt, reciprocal; ideal=gamma*(h*inverse); D=gamma*(delta/radiusRight); B=gamma*(h*(inverseRight-inverseLeft)). rho includes rounding of this explanatory evaluation. Left-associated sums retain edge g, contrast g and final closure separately.",
+    "reads": [
+      "H-a",
+      "H-b",
+      "H-p",
+      "H-q",
+      "H-Xno",
+      "H-Xon",
+      "Z-a",
+      "Z-b",
+      "Z-p",
+      "Z-q",
+      "Z-Xno",
+      "Z-Xon",
+      "gamma"
+    ],
+    "schema": "saturn-act-spec-v1",
+    "tolerance": {},
+    "write_abis": {},
+    "write_kinds": {},
+    "writes": [
+      "state-a-ideal",
+      "state-a-rho",
+      "state-b-ideal",
+      "state-b-rho",
+      "state-p-ideal",
+      "state-p-rho",
+      "state-q-ideal",
+      "state-q-rho",
+      "state-Xno-ideal",
+      "state-Xno-rho",
+      "state-Xon-ideal",
+      "state-Xon-rho",
+      "edge-native-delta",
+      "edge-native-D",
+      "edge-native-B",
+      "edge-native-R",
+      "edge-native-Z",
+      "edge-native-g",
+      "edge-own-delta",
+      "edge-own-D",
+      "edge-own-B",
+      "edge-own-R",
+      "edge-own-Z",
+      "edge-own-g",
+      "edge-no-delta",
+      "edge-no-D",
+      "edge-no-B",
+      "edge-no-R",
+      "edge-no-Z",
+      "edge-no-g",
+      "edge-on-delta",
+      "edge-on-D",
+      "edge-on-B",
+      "edge-on-R",
+      "edge-on-Z",
+      "edge-on-g",
+      "response-N",
+      "response-O",
+      "response-Cno",
+      "response-Con",
+      "response-E",
+      "response-Uno",
+      "response-Vno",
+      "response-gno",
+      "response-Uon",
+      "response-Von",
+      "response-gon",
+      "factor-E-D",
+      "factor-E-B",
+      "factor-E-R",
+      "factor-E-G",
+      "factor-E-g",
+      "factor-E-closure",
+      "factor-Uno-D",
+      "factor-Uno-B",
+      "factor-Uno-R",
+      "factor-Uno-G",
+      "factor-Uno-g",
+      "factor-Uno-closure",
+      "factor-Vno-D",
+      "factor-Vno-B",
+      "factor-Vno-R",
+      "factor-Vno-G",
+      "factor-Vno-g",
+      "factor-Vno-closure",
+      "factor-Uon-D",
+      "factor-Uon-B",
+      "factor-Uon-R",
+      "factor-Uon-G",
+      "factor-Uon-g",
+      "factor-Uon-closure",
+      "factor-Von-D",
+      "factor-Von-B",
+      "factor-Von-R",
+      "factor-Von-G",
+      "factor-Von-g",
+      "factor-Von-closure",
+      "endpoint-p-error",
+      "endpoint-q-error"
+    ]
+  }
+}

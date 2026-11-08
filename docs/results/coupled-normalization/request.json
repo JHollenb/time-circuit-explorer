@@ -1,0 +1,350 @@
+{
+  "backend": "original-RMS-gamma-only;CPU-FP64-explanation",
+  "batch_size": 1,
+  "cases": [
+    "00",
+    "10"
+  ],
+  "contrasts": {
+    "E": [
+      "own",
+      "native"
+    ],
+    "Uno": [
+      "own",
+      "no"
+    ],
+    "Uon": [
+      "own",
+      "on"
+    ],
+    "Vno": [
+      "no",
+      "native"
+    ],
+    "Von": [
+      "on",
+      "native"
+    ]
+  },
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "edges": {
+    "native": [
+      "a",
+      "b"
+    ],
+    "no": [
+      "a",
+      "Xno"
+    ],
+    "on": [
+      "p",
+      "Xon"
+    ],
+    "own": [
+      "p",
+      "q"
+    ]
+  },
+  "endpoints": {
+    "Xno": {
+      "bytes": 2621440,
+      "dtype": "torch.bfloat16",
+      "format": "raw",
+      "path": "/mnt/hdd8tb/mrun-work/job-ef24db06d909/arrays/Xno.bf16",
+      "payloadSHA256": "a8af684bccaa3283e10a1f1349fb20127714439e9da60a416a790eee2f887b52",
+      "sha256": "a8af684bccaa3283e10a1f1349fb20127714439e9da60a416a790eee2f887b52",
+      "shape": [
+        1,
+        512,
+        2560
+      ],
+      "storedDtype": "<u2"
+    },
+    "Xon": {
+      "bytes": 2621440,
+      "dtype": "torch.bfloat16",
+      "format": "raw",
+      "path": "/mnt/hdd8tb/mrun-work/job-ef24db06d909/arrays/Xon.bf16",
+      "payloadSHA256": "5a9c071a1e648f6faf7fde5be3858a1c16c9f13774e2bdc0791216e7d88aebea",
+      "sha256": "5a9c071a1e648f6faf7fde5be3858a1c16c9f13774e2bdc0791216e7d88aebea",
+      "shape": [
+        1,
+        512,
+        2560
+      ],
+      "storedDtype": "<u2"
+    },
+    "a": {
+      "bytes": 2621568,
+      "format": "npy",
+      "path": "/mnt/hdd8tb/mrun-work/job-b69f30eff20a/arrays/full/00/H1.npy",
+      "payloadSHA256": "ccc6c90f42645d596b04c5c21843410c65a5b92666b488709a63808f54102699",
+      "sha256": "aaf42795a349751bc431562234c06c42f345b93621947cc352a73d81a0033f66",
+      "shape": [
+        1,
+        512,
+        2560
+      ],
+      "storedDtype": "<u2"
+    },
+    "b": {
+      "bytes": 2621568,
+      "format": "npy",
+      "path": "/mnt/hdd8tb/mrun-work/job-b69f30eff20a/arrays/full/10/H1.npy",
+      "payloadSHA256": "7cc8952c2d96d95e378a03890e0197eb44c27f628751ce4c7805f7a57a0d2aaf",
+      "sha256": "54abe527a00e44f5e8c27c39eef83fe6a79e9c06176238f2c58ee28fd88ddd4f",
+      "shape": [
+        1,
+        512,
+        2560
+      ],
+      "storedDtype": "<u2"
+    },
+    "p": {
+      "bytes": 2621440,
+      "format": "raw",
+      "path": "/mnt/hdd8tb/mrun-work/job-4a3243572a50/final/accepted-00.bf16",
+      "payloadSHA256": "7e62dda8d34e0e7bb47195e84e97c84bcddeb7d0be721a000f702259f60b0fd3",
+      "sha256": "7e62dda8d34e0e7bb47195e84e97c84bcddeb7d0be721a000f702259f60b0fd3",
+      "shape": [
+        1,
+        512,
+        2560
+      ],
+      "storedDtype": "<u2"
+    },
+    "q": {
+      "bytes": 2621440,
+      "format": "raw",
+      "path": "/mnt/hdd8tb/mrun-work/job-4a3243572a50/final/accepted-10.bf16",
+      "payloadSHA256": "f4ca2f1d19df29013d30675501a720ebda7350a0d1a7688ecde528e4c89167b4",
+      "sha256": "f4ca2f1d19df29013d30675501a720ebda7350a0d1a7688ecde528e4c89167b4",
+      "shape": [
+        1,
+        512,
+        2560
+      ],
+      "storedDtype": "<u2"
+    }
+  },
+  "explanatoryPolicy": "FP64 sum(h*h)/width+epsilon, sqrt, reciprocal; ideal=gamma*(h*inverse); D=gamma*(delta/radiusRight); B=gamma*(h*(inverseRight-inverseLeft)). rho includes rounding of this explanatory evaluation. Left-associated sums retain edge g, contrast g and final closure separately.",
+  "gammaParameter": {
+    "bytes": 5120,
+    "file": "/mnt/big/llm-models/FLUX.2-klein-4B/text_encoder/model-00001-of-00002.safetensors",
+    "name": "model.layers.1.input_layernorm.weight",
+    "payloadSHA256": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+  },
+  "needs": {
+    "cuda": true
+  },
+  "numericalProfile": {
+    "bf16ReducedPrecisionReduction": true,
+    "cublasWorkspaceConfig": ":4096:8",
+    "cudaMatmulTF32": false,
+    "cudnnBenchmark": false,
+    "cudnnDeterministic": true,
+    "cudnnTF32": false,
+    "deterministicAlgorithms": true,
+    "float32MatmulPrecision": "highest",
+    "threads": 1
+  },
+  "parent": {
+    "custody": {
+      "declared": {
+        "sha256": "8287403f8c36252ad3a1cc9f581f3be58930d0c2b6bccf9d85caaade0a64c821",
+        "size_bytes": 197305
+      },
+      "executed": {
+        "host": "beast",
+        "reported_ts": 1794148839.3797007,
+        "sha256": "8287403f8c36252ad3a1cc9f581f3be58930d0c2b6bccf9d85caaade0a64c821",
+        "size_bytes": 197305
+      },
+      "required": true,
+      "sealed": {
+        "sealed_ts": 1794148839.2717888,
+        "sha256": "8287403f8c36252ad3a1cc9f581f3be58930d0c2b6bccf9d85caaade0a64c821",
+        "size_bytes": 197305
+      }
+    },
+    "jobID": "job-ef24db06d909",
+    "publicationSHA256": "81f4fb4078446d9ddeb510ac0115353aeeca701cd03f0b08d13786c64e8fc6ee"
+  },
+  "physicalWork": {
+    "QKVMatricesMaterialized": 0,
+    "analysisActs": 1,
+    "analysisRowFields": 79,
+    "comparisonRows": 1024,
+    "coordinatesPerPointwiseStage": 7864320,
+    "fullEncoderEvaluations": 0,
+    "fullOperandFields": 6,
+    "gammaFields": 1,
+    "images": 0,
+    "intervenedRows": 2,
+    "nominalMatrixMACs": 0,
+    "normalizationActs": 6,
+    "normalizedRows": 3072,
+    "originalLinears": 0,
+    "retainedNumericFields": 86,
+    "rsqrtCallsByRow": 3072,
+    "unmodifiedRowControlRows": 1022
+  },
+  "position": 9,
+  "protocol": "Offline same six actual107 states. Six paid original norm/gamma reconstructions,zero affineMACs. Source-policy reconstruction,not parity with unavailable107 intermediates. No fit,newprompt,QKV,attention,MLP,suffix,image,retry or expansion.",
+  "remoteInputs": {
+    "/mnt/hdd8tb/mrun-work/job-4a3243572a50/final/accepted-00.bf16": {
+      "bytes": 2621440,
+      "sha256": "7e62dda8d34e0e7bb47195e84e97c84bcddeb7d0be721a000f702259f60b0fd3"
+    },
+    "/mnt/hdd8tb/mrun-work/job-4a3243572a50/final/accepted-10.bf16": {
+      "bytes": 2621440,
+      "sha256": "f4ca2f1d19df29013d30675501a720ebda7350a0d1a7688ecde528e4c89167b4"
+    },
+    "/mnt/hdd8tb/mrun-work/job-b69f30eff20a/arrays/full/00/H1.npy": {
+      "bytes": 2621568,
+      "sha256": "aaf42795a349751bc431562234c06c42f345b93621947cc352a73d81a0033f66"
+    },
+    "/mnt/hdd8tb/mrun-work/job-b69f30eff20a/arrays/full/10/H1.npy": {
+      "bytes": 2621568,
+      "sha256": "54abe527a00e44f5e8c27c39eef83fe6a79e9c06176238f2c58ee28fd88ddd4f"
+    },
+    "/mnt/hdd8tb/mrun-work/job-ef24db06d909/arrays/Xno.bf16": {
+      "bytes": 2621440,
+      "sha256": "a8af684bccaa3283e10a1f1349fb20127714439e9da60a416a790eee2f887b52"
+    },
+    "/mnt/hdd8tb/mrun-work/job-ef24db06d909/arrays/Xon.bf16": {
+      "bytes": 2621440,
+      "sha256": "5a9c071a1e648f6faf7fde5be3858a1c16c9f13774e2bdc0791216e7d88aebea"
+    }
+  },
+  "requestSHA256": "8ec08426905127b0840c46ea5c95db7ac4ef196e9b6fc98d673bc19f5f77dd0a",
+  "retainedMetadata": [
+    "request.json",
+    "family-plan.md",
+    "frozen-plan.md",
+    "review108-survey.json",
+    "review108-geometry.json",
+    "review108-common-error.json",
+    "parent-request.json",
+    "parent-publication.json",
+    "parent-report.json",
+    "parent-array-manifest.json",
+    "parent-typed-construction.json",
+    "parent-analysis.json",
+    "parent-consumer-fields.json",
+    "parent-typed-consumers.json",
+    "parent-qualified-parent-inputs.json"
+  ],
+  "rmsNormEpsilon": 1e-06,
+  "scheduling_contract": {
+    "additional_scheduler_submissions": 0,
+    "branchIsolation": "Six source-policy normalization Acts and one FP64 explanatory Act; no child leases/retries/expansion.",
+    "branch_execution": "in_process",
+    "checkpoint_policy": "one outer Saturn worker lease; all logical branches and analysis remain in process",
+    "collection_policy": "direct_job_only",
+    "control_plane": "mrun_outer_lease",
+    "data_plane": "resident_worker",
+    "execution_model": "finite_local_program",
+    "interactive": false,
+    "lease_scope": "entire-worker",
+    "logical_branches": 6,
+    "logical_checkpoint_replays": 0,
+    "logical_operations": 7,
+    "max_local_work_items": 256,
+    "max_mrun_submissions": 1,
+    "modelLoadScope": "Only5120B original gamma; full shard authenticated, no QKV tensor materialization.",
+    "model_loads": 1,
+    "mrun_retry_policy": "none_for_finite_lease",
+    "per_branch_mrun_submissions": 0,
+    "per_transition_mrun_submissions": 0,
+    "replay_policy": "none_source_only",
+    "schema": "saturn-single-lease-scheduling-contract-v1"
+  },
+  "schema": "tce-coupled-normalization-v1",
+  "scoring": "Contiguous FP64 coordinate products and np.sum(dtype=float64); ordered vector sums; all signed Gram terms via math.fsum. No scientific threshold.",
+  "selectedParameterAsset": {
+    "after_signature": [
+      66311,
+      298015,
+      4967215360,
+      1784967532015721400,
+      1784967532019901900
+    ],
+    "before_signature": [
+      66311,
+      298015,
+      4967215360,
+      1784967532015721400,
+      1784967532019901900
+    ],
+    "bytes": 4967215360,
+    "header_bytes": 26360,
+    "header_sha256": "8d1a2170cadc1eb2e68cb60f5610c304d263f29de260584fd4fadc73d40b56ec",
+    "path": "/mnt/big/llm-models/FLUX.2-klein-4B/text_encoder/model-00001-of-00002.safetensors",
+    "selected_count": 229,
+    "selected_payload_bytes": 4967188992,
+    "sha256": "8c0506e7f4936fa7e26183a4fd8da4e2bdbc5990ba64ae441f965d51228f36ea",
+    "tensor_count": 229,
+    "verifiedSignature": [
+      66311,
+      298015,
+      4967215360,
+      1784967532015721400,
+      1784967532019901900
+    ]
+  },
+  "seq_len": 512,
+  "sourceHashes": {
+    "contextual_writer_program.py": "30fbd807de9ce8e9f14c9f06981036efe6b99760e34f0d4eb9328ade4ead896b",
+    "contextual_writer_saturn_init.py": "0b4063f8755a49201d726dd04de0578aa1bd9f31d9f900f9885d3a1e58e5fc8f",
+    "contextual_writer_worker.py": "c370e93a070c1773b3459877f56fd87f8343b83c1549110c5aec2bf2daeb980a",
+    "contrast_writer_fit.py": "dee4935b275189c60485a9d7cdf09ffaa819259cad87c9fdc668e995f59ee232",
+    "contrast_writer_worker.py": "15eadd131e887cbc7d711d741a1d94bd1d4be067c860ac81cb80c3784b5e5c99",
+    "coupled_normalization.py": "ac3084af4eabef77cbce464cd1feff61a9958331b196dbe590db04b46a755083",
+    "coupled_normalization_study.py": "9e38d1941531fe6c774ca34f22a5a0abc74805ca234a7355af56f2b406a65df6",
+    "coupled_normalization_worker.py": "6a07f3c081aee5cd178224c644a5e011afc89b1f2b34849457a6b279e8edb527",
+    "family-plan.md": "c22e3dfb640a472ef8d6267a5dd13dcb258d86d635bddda82e8f84b3d14fae8f",
+    "finite_consumer_crossover.py": "85e0968d02e83567946de7e36d8f0ff9dc6753bfc5ee1c45a812cdc83fa2ab2c",
+    "finite_consumer_crossover_study.py": "1296057f2b8f2328470fa766076b7fcab606e2147af920df544f5b7ec6807bcf",
+    "finite_consumer_crossover_study_v2.py": "b2989f13b26cbee1fb47800cd59832c8c3a45c8f7367c1d8cecf6d1d6cdf1d6f",
+    "finite_consumer_crossover_worker.py": "e678185d43fcae6be0c0663310fd39ca393e0c8f1eb5eb9614f309f84fcf06fc",
+    "frozen-plan.md": "c4cce5d21cd9721a6f52d49ee5f0815e92cde0282f420416fb5ff793cd04084d",
+    "parent-analysis.json": "1080d3c55203017e25ccef6910f82e54f2101dc480f030e5c33b4ac29fa2efd9",
+    "parent-array-manifest.json": "2137d0863f1f9dbf967dfd74bfd94be8fb22e006691a5f7f18ffb551eb832c4c",
+    "parent-consumer-fields.json": "229ca925bf536e5e8ebebbdec423fa7debb0dc947cb930f052795d561c15055c",
+    "parent-publication.json": "81f4fb4078446d9ddeb510ac0115353aeeca701cd03f0b08d13786c64e8fc6ee",
+    "parent-qualified-parent-inputs.json": "6b7026624254d757259f199eb46c98de843edba32ce2ed6d20a9da8ab2065e7a",
+    "parent-report.json": "ff69ca7b15775b88c69e3f0e7ce8f6877f47e21ecb995a1d395f9e41afa414a1",
+    "parent-request.json": "f9f1eeafcfc98fa50e8a87545034cdef436dee136a417eeaa889f5b6c0123f4b",
+    "parent-typed-construction.json": "1e453c4b1407e48b5a82066125d8297071985bc97619656be8adf3709f87a866",
+    "parent-typed-consumers.json": "cc739be18ab3ef65c35fa57b111ab8ec531e3cdb8ad2893ece473735b8e7b484",
+    "publish_contextual_writer.py": "680cb16cccc8a57461c859662dd1fefb4a6c5655293ce21f7fa0d76bc1176b00",
+    "publish_contrast_writer.py": "6e0c0c13cfb6a98cf3e1c9dc5f6c63dd09647af2ff5ec32b12e06ae8acaa4b41",
+    "publish_coupled_normalization.py": "bf1d1db15e0b0807a58071c83611ed6f86383fc4850fee8c22fb07c62ea645bd",
+    "publish_finite_consumer_crossover.py": "2506017e8dacb8f11835a8e17e5ba88175d15b1d2dd8143b5176afa9cd39652d",
+    "review108-common-error.json": "e037c368ea5a6960fd5a9d7e43801f6c4ae7f6a30d3cc97eeb31eeea109799cd",
+    "review108-geometry.json": "1fc8f598db3188f4fcfb170bad0fcd7579f9a2bc1bf7fbe0b91ca898133dcb20",
+    "review108-survey.json": "73881791456594c4e4b04de5730187fa1e090d58467394c580569a03c1a21456",
+    "saturn/__init__.py": "0b4063f8755a49201d726dd04de0578aa1bd9f31d9f900f9885d3a1e58e5fc8f",
+    "saturn/tensor_hash.py": "5e37cc1e34f4b49c97f026b861af8cbb8d47697931743b19e3fd506c9932f3f4",
+    "saturn/titan.py": "42b55ccb9185e87357bb40ad9b3162d1fe3407148f7087c52b18e2920e8eef01",
+    "template_cofactor_program.py": "f090088033dfd0ff09f521f51d5fbf482f26591c0c9e95f1b9bc19ea57b33f53",
+    "test_coupled_normalization.py": "67dae9742f8c4244602631024bef231cfb7d5bc34aae64ae1abb7f12a01c511c",
+    "test_finite_consumer_crossover.py": "16aad728b8e95d655e8f74b4f24fbc52817eb797cb9c8f8e662d379d4556a95c",
+    "token_history_address.py": "b17d386c4059384faccc6461620bbabf4bee02503aa20831e41ff9a9a729ab29",
+    "token_history_process.py": "33092498786e550451e9c751f5a23983af645582e82199b7cc834e3aa7d2a385"
+  },
+  "sourcePolicy": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+  "states": [
+    "a",
+    "b",
+    "p",
+    "q",
+    "Xno",
+    "Xon"
+  ],
+  "timeoutSeconds": 900,
+  "torchVersion": "2.13.0+cu130"
+}

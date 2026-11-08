@@ -1,0 +1,75 @@
+{
+  "schema": "tce-public-scalar-baseline-geometry-v1",
+  "analysisSourceSHA256": "75c52b406c2aeced2f2d501b1bc5b2b7261f234aa43f4c26461046ae931de9bf",
+  "publicTransportSHA256": "d4107ee10864064f49eb8fa1d296ce649a040bb1f0e84c7b8010a8b280bcc46c",
+  "publicParentPublicationSHA256": "0a3a231312dc619a3266a7b15b6e35640b95616575765176c9fed10f041b5d54",
+  "acceptedProgramSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+  "epsilon": 1e-06,
+  "suppliedMechanicsFixtures": 3,
+  "rows": [
+    {
+      "case": "00",
+      "inputRow": {
+        "case": "00",
+        "method": "candidate",
+        "port": "H1",
+        "position": 9,
+        "active": true,
+        "errorRMS": 0.1602446904865995,
+        "normalizerRMS": 0.1935638385972863,
+        "relativeRMS": 0.8278648101208202,
+        "predictionRMS": 0.12172219943912299,
+        "targetRMS": 0.19580181912649533,
+        "cosine": 0.5764232759588022
+      },
+      "geometry": {
+        "radiusRatioOwnToNative": 0.6216602071530596,
+        "baselineAngleDegrees": 54.80063387034004,
+        "bestNonnegativeScaleOwnTowardNative": 0.9272320623489424,
+        "bestRayErrorRelativeToNative": 0.8171512754275813,
+        "normMatchedStateErrorRelativeToNative": 0.9204093915657291,
+        "idealNormalizedUnweightedRadialSquared": 4.286310708224711e-10,
+        "idealNormalizedUnweightedAngularSquared": 0.8471138131626517,
+        "idealNormalizedUnweightedErrorRMS": 0.9203878604106438
+      }
+    },
+    {
+      "case": "10",
+      "inputRow": {
+        "case": "10",
+        "method": "candidate",
+        "port": "H1",
+        "position": 9,
+        "active": true,
+        "errorRMS": 0.15940784242671469,
+        "normalizerRMS": 0.18403091805260993,
+        "relativeRMS": 0.8662014193785844,
+        "predictionRMS": 0.12408108472630291,
+        "targetRMS": 0.1863047755913771,
+        "cosine": 0.5341271151253053
+      },
+      "geometry": {
+        "radiusRatioOwnToNative": 0.666011294302248,
+        "baselineAngleDegrees": 57.71526614079137,
+        "bestNonnegativeScaleOwnTowardNative": 0.8019790650620839,
+        "bestRayErrorRelativeToNative": 0.845404178418772,
+        "normMatchedStateErrorRelativeToNative": 0.9652697911720792,
+        "idealNormalizedUnweightedRadialSquared": 3.2649463406609375e-10,
+        "idealNormalizedUnweightedAngularSquared": 0.9317020907620329,
+        "idealNormalizedUnweightedErrorRMS": 0.9652471658018621
+      }
+    }
+  ],
+  "wallSecondsBeforeSerialization": 0.2252998750191182,
+  "formulas": {
+    "bestScale": "alpha=max(0,c*T/P), minimizes ||alpha*p-a||/||a|| over alpha>=0",
+    "rayResidual": "sqrt(1-max(0,c)^2), relative to native target norm",
+    "normMatchedResidual": "sqrt(2*(1-c)), relative to native norm after matching radius",
+    "idealNormalization": "x=P/sqrt(P^2+epsilon),y=T/sqrt(T^2+epsilon); squared RMS=(x-y)^2+2*x*y*(1-c)"
+  },
+  "newLearnedMatrixMACs": 0,
+  "newOriginalNormalizationReconstructions": 0,
+  "scientificArraysRead": 0,
+  "newImages": 0,
+  "scope": "Public scalar algebra on two authenticated historical endpoints, not actual native finite/gamma normalization operands, neural serving, consumer-response attribution or new vector replay. Source norms/cosines remain producer measurements; minima are ideal ray formulas evaluated in binary64. Target-assisted scalar fits are diagnostic, not a serving initializer."
+}

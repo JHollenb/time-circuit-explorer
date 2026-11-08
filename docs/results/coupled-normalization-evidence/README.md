@@ -1,0 +1,11 @@
+# Normalization audit evidence
+
+The [source review](advisor-source.json) admits exact source bytes before the seven supplied mechanics. Root checks25primary pins before first import and submission in [root-pre-submit-binding.json](root-pre-submit-binding.json). The other18scoped dependency pins are separately root-checked after the successful job, before publication, in [root-pre-publication-binding.json](root-pre-publication-binding.json); they are not retroactively claimed as root pre-submit checks. Astra checks all43during source review.
+
+The [actual review](advisor-actual.json) verifies36exact scoped snapshots, all1024raw comparison rows and1022unmodified controls, typed/custody/source/scalar joins and resource accounting. It does not independently replay vectors or repeat the publisher's remote byte checks. No material publication correction is required.
+
+The [scalar supplement](public-scalar-direction.json) runs once from the source-reviewed [stdlib helper](scalar_direction_geometry.py), with three independent supplied ray witnesses. It infers D-direction geometry from published energies, without a new vector measurement. Its best scale uses native targets and is not a serving correction.
+
+The [standard Saturn sweep](saturn-instrument.json) and verify each return2/evidence-incomplete-empty-target: compressed observations and gate-free canonical Frame/Act receipts remain unsupported by that instrument. The dedicated publisher covers them separately. A [launcher-only stop](instrument-launch-stop.json) occurs before either evidence command; the corrected wrapper invokes the shared launcher explicitly and repeats no scientific work. [Existing feature requests](workspace-requests.json) are upvoted once, gzip3→4 and Frame/Act17→18, preserving unrelated Saturn changes.
+
+No numerical array hydrates locally. Scientific source, tests, frozen implementation plan and generated primary records retain their executed bytes. The [article](../../coupled-normalization.md) explains the result; the [joint writer decision](../../plans/joint-baseline-response-writer.md) remains unimplemented/unrun. Full research/storage108 stays current, next111or earlier material evidence/pressure. Final narrative/status QA follows in separate records.

@@ -1,0 +1,363 @@
+{
+  "parameterAssets": [
+    {
+      "after_signature": [
+        66311,
+        298015,
+        4967215360,
+        1784967532015721400,
+        1784967532019901900
+      ],
+      "before_signature": [
+        66311,
+        298015,
+        4967215360,
+        1784967532015721400,
+        1784967532019901900
+      ],
+      "bytes": 4967215360,
+      "header_bytes": 26360,
+      "header_sha256": "8d1a2170cadc1eb2e68cb60f5610c304d263f29de260584fd4fadc73d40b56ec",
+      "path": "/mnt/big/llm-models/FLUX.2-klein-4B/text_encoder/model-00001-of-00002.safetensors",
+      "selected_count": 229,
+      "selected_payload_bytes": 4967188992,
+      "sha256": "8c0506e7f4936fa7e26183a4fd8da4e2bdbc5990ba64ae441f965d51228f36ea",
+      "tensor_count": 229,
+      "verifiedSignature": [
+        66311,
+        298015,
+        4967215360,
+        1784967532015721400,
+        1784967532019901900
+      ]
+    }
+  ],
+  "parameters": [
+    {
+      "bytes": 5120,
+      "file": "/mnt/big/llm-models/FLUX.2-klein-4B/text_encoder/model-00001-of-00002.safetensors",
+      "name": "model.layers.1.input_layernorm.weight",
+      "payloadSHA256": "47a6a01623efa6e33553ee3851a63fa92ca3ed3c718506ffec53100cc0cd73c7"
+    },
+    {
+      "bytes": 20971520,
+      "file": "/mnt/big/llm-models/FLUX.2-klein-4B/text_encoder/model-00001-of-00002.safetensors",
+      "name": "model.layers.1.self_attn.q_proj.weight",
+      "payloadSHA256": "fe59e1c85b6f1f736f2f8c7d073284631fb999459782c17c08800ba0ab29da83"
+    },
+    {
+      "bytes": 5242880,
+      "file": "/mnt/big/llm-models/FLUX.2-klein-4B/text_encoder/model-00001-of-00002.safetensors",
+      "name": "model.layers.1.self_attn.k_proj.weight",
+      "payloadSHA256": "13cc0fea963b505b118b5700dfceb358d7cc45e5cfd002e859ccd940c08e3cbf"
+    },
+    {
+      "bytes": 5242880,
+      "file": "/mnt/big/llm-models/FLUX.2-klein-4B/text_encoder/model-00001-of-00002.safetensors",
+      "name": "model.layers.1.self_attn.v_proj.weight",
+      "payloadSHA256": "8a3de78d84b72f8a6d426a07a618d252d6df64ad1b2220853beb93e09b7b4c61"
+    }
+  ],
+  "reused": {
+    "a": {
+      "case": "00",
+      "fields": {
+        "K": {
+          "bytes": 1048704,
+          "dtype": "bf16",
+          "path": "/mnt/hdd8tb/mrun-work/job-ac1391fc231a/arrays/00/native-K.npy",
+          "payloadSHA256": "33959abc5baed32093677cf1c81589d668e7bce809103c90a5550c8a68afd6fd",
+          "sha256": "d5d9fae55ba3535fa244c9bc3b2b586c909e6e15974970d221cc1db0e0ef8828",
+          "shape": [
+            1,
+            512,
+            1024
+          ]
+        },
+        "Q": {
+          "bytes": 4194432,
+          "dtype": "bf16",
+          "path": "/mnt/hdd8tb/mrun-work/job-ac1391fc231a/arrays/00/native-Q.npy",
+          "payloadSHA256": "d6a26b6993b1dac070f03468437b7da69ed8dbd9df81750f0a1af768456738d0",
+          "sha256": "96869151abdd862cfca4b7b50c4ba142998ca95f4db2e7616df5ef2d13f5baae",
+          "shape": [
+            1,
+            512,
+            4096
+          ]
+        },
+        "V": {
+          "bytes": 1048704,
+          "dtype": "bf16",
+          "path": "/mnt/hdd8tb/mrun-work/job-ac1391fc231a/arrays/00/native-V.npy",
+          "payloadSHA256": "da855a6958397dc901a84fddbdf1df2d1b417502377c74f74da36d18d941bddf",
+          "sha256": "67e983e2a154620bb8badf2db1382d1855c87bb6d69eee186b1518ac1c935076",
+          "shape": [
+            1,
+            512,
+            1024
+          ]
+        }
+      },
+      "inputPayloadSHA256": "ccc6c90f42645d596b04c5c21843410c65a5b92666b488709a63808f54102699",
+      "method": "native"
+    },
+    "b": {
+      "case": "10",
+      "fields": {
+        "K": {
+          "bytes": 1048704,
+          "dtype": "bf16",
+          "path": "/mnt/hdd8tb/mrun-work/job-ac1391fc231a/arrays/10/native-K.npy",
+          "payloadSHA256": "dee5655d8ad48a7db4f1be039425cd30b8bdcea376d04887ce6423951eaab84e",
+          "sha256": "930d5535c2916687fec72a6887f83145d261850a139228ddc2460b2aff17c4b4",
+          "shape": [
+            1,
+            512,
+            1024
+          ]
+        },
+        "Q": {
+          "bytes": 4194432,
+          "dtype": "bf16",
+          "path": "/mnt/hdd8tb/mrun-work/job-ac1391fc231a/arrays/10/native-Q.npy",
+          "payloadSHA256": "f80bb10648491aa14e3d4af353698f721068af9230b0711060e67703e3019ed1",
+          "sha256": "a476ec674dbbb7a1f5e168335375ceb1d076f18c1bf6d789664735e96d8e0a30",
+          "shape": [
+            1,
+            512,
+            4096
+          ]
+        },
+        "V": {
+          "bytes": 1048704,
+          "dtype": "bf16",
+          "path": "/mnt/hdd8tb/mrun-work/job-ac1391fc231a/arrays/10/native-V.npy",
+          "payloadSHA256": "dd2358e33111f8bd65c1e3930e8ed8983dbe3db5abd63faf86132785deaf957c",
+          "sha256": "d07df3b61f76b18251d137f4904a5a615e4281213e23c120e34fbd24fc6cda79",
+          "shape": [
+            1,
+            512,
+            1024
+          ]
+        }
+      },
+      "inputPayloadSHA256": "7cc8952c2d96d95e378a03890e0197eb44c27f628751ce4c7805f7a57a0d2aaf",
+      "method": "native"
+    },
+    "p": {
+      "case": "00",
+      "fields": {
+        "K": {
+          "bytes": 1048704,
+          "dtype": "bf16",
+          "path": "/mnt/hdd8tb/mrun-work/job-4a3243572a50/arrays/00/candidate-K.npy",
+          "payloadSHA256": "b80e3323d28156dfa22063e238e2d012bd72f64406afaf39ae574bf10dfa4250",
+          "sha256": "975112cd294364fc427a6c4ad89634de96714428e7633071a96ce1e1feabf984",
+          "shape": [
+            1,
+            512,
+            1024
+          ]
+        },
+        "Q": {
+          "bytes": 4194432,
+          "dtype": "bf16",
+          "path": "/mnt/hdd8tb/mrun-work/job-4a3243572a50/arrays/00/candidate-Q.npy",
+          "payloadSHA256": "585aaadacd9d5cbdc64a744fbe1206166c8c35a469dd6f7bd8940633535ffda9",
+          "sha256": "af91406a02d49c2049bd6ce3553d1771c921e805eaab2cfa1f8e361e6410e5cf",
+          "shape": [
+            1,
+            512,
+            4096
+          ]
+        },
+        "V": {
+          "bytes": 1048704,
+          "dtype": "bf16",
+          "path": "/mnt/hdd8tb/mrun-work/job-4a3243572a50/arrays/00/candidate-V.npy",
+          "payloadSHA256": "71c5e7a112656efca64960a488aeff1a3604e4132e3846018a38dbe4d67689f2",
+          "sha256": "000f36355eaa81c99a1fc35acae990252668eac4edd530aa6a7be562e26c5f44",
+          "shape": [
+            1,
+            512,
+            1024
+          ]
+        }
+      },
+      "inputPayloadSHA256": "7e62dda8d34e0e7bb47195e84e97c84bcddeb7d0be721a000f702259f60b0fd3",
+      "method": "candidate"
+    },
+    "q": {
+      "case": "10",
+      "fields": {
+        "K": {
+          "bytes": 1048704,
+          "dtype": "bf16",
+          "path": "/mnt/hdd8tb/mrun-work/job-4a3243572a50/arrays/10/candidate-K.npy",
+          "payloadSHA256": "4a2ef25a92e517518189f9f084a3002889e404b65484f84394369113c92a3728",
+          "sha256": "9b7031ea4234ba9cd6bdafb6a5d3f5b9d90ca49210d5c2651a501e4eaa4cc139",
+          "shape": [
+            1,
+            512,
+            1024
+          ]
+        },
+        "Q": {
+          "bytes": 4194432,
+          "dtype": "bf16",
+          "path": "/mnt/hdd8tb/mrun-work/job-4a3243572a50/arrays/10/candidate-Q.npy",
+          "payloadSHA256": "a6c063a9474dee954ba40aa39474dc73e3e32b6035f78f6a67d0f32ae5f1fafa",
+          "sha256": "bb2d6b7591a33f1bd37df53d25063663758b99dfdeb34f49797f0c328183f508",
+          "shape": [
+            1,
+            512,
+            4096
+          ]
+        },
+        "V": {
+          "bytes": 1048704,
+          "dtype": "bf16",
+          "path": "/mnt/hdd8tb/mrun-work/job-4a3243572a50/arrays/10/candidate-V.npy",
+          "payloadSHA256": "4b32e42a6b43ef6314ce08f86fd2cf9011918ddf5a0c24a548c664138e872f48",
+          "sha256": "6d4c68baf818c86044b861bf2a177cf71739596c4f581da525ce0b992e1bde55",
+          "shape": [
+            1,
+            512,
+            1024
+          ]
+        }
+      },
+      "inputPayloadSHA256": "f4ca2f1d19df29013d30675501a720ebda7350a0d1a7688ecde528e4c89167b4",
+      "method": "candidate"
+    }
+  },
+  "rows": [
+    {
+      "branch": "Xno",
+      "case": "Xno",
+      "fields": {
+        "K": {
+          "bytes": 1048704,
+          "dtype": "bf16",
+          "path": "/mnt/hdd8tb/mrun-work/job-ef24db06d909/arrays/Xno/candidate-K.npy",
+          "payloadSHA256": "06de3094e0dd31f7d494c3c7bdd949954004e8d830567fddf09bae648f76564a",
+          "sha256": "2fff0629ae8f878572f9d2b40b8f9cfd65838673d6cd70c91473751fd6cd64be",
+          "shape": [
+            1,
+            512,
+            1024
+          ]
+        },
+        "Q": {
+          "bytes": 4194432,
+          "dtype": "bf16",
+          "path": "/mnt/hdd8tb/mrun-work/job-ef24db06d909/arrays/Xno/candidate-Q.npy",
+          "payloadSHA256": "66612e619390fda84dcd770e7c972c87bd03914053705afae2b5b555ba3e2061",
+          "sha256": "c88ca8e7bf31e047bfc57f31bc2ba1515d9be96f8edf5b5b7bc03e87da9f9bc5",
+          "shape": [
+            1,
+            512,
+            4096
+          ]
+        },
+        "V": {
+          "bytes": 1048704,
+          "dtype": "bf16",
+          "path": "/mnt/hdd8tb/mrun-work/job-ef24db06d909/arrays/Xno/candidate-V.npy",
+          "payloadSHA256": "efbffece908a7cd3dd4e47f59c1ed36356089260fbd2c7a0c0fa5628dd5f79ea",
+          "sha256": "a5546b0d59faf00b67ef5c8804d24ab0ab19e2e546191e6d78e6a4c55fa6caae",
+          "shape": [
+            1,
+            512,
+            1024
+          ]
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-ef24db06d909/arrays/Xno.bf16",
+        "payloadSHA256": "a8af684bccaa3283e10a1f1349fb20127714439e9da60a416a790eee2f887b52",
+        "sha256": "a8af684bccaa3283e10a1f1349fb20127714439e9da60a416a790eee2f887b52",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadSHA256": "a8af684bccaa3283e10a1f1349fb20127714439e9da60a416a790eee2f887b52",
+      "method": "candidate",
+      "secondsWithHashCapture": 0.5928781540133059,
+      "semantics": {
+        "base": "a",
+        "meaning": "native-baseline-own-response-after-admission"
+      }
+    },
+    {
+      "branch": "Xon",
+      "case": "Xon",
+      "fields": {
+        "K": {
+          "bytes": 1048704,
+          "dtype": "bf16",
+          "path": "/mnt/hdd8tb/mrun-work/job-ef24db06d909/arrays/Xon/candidate-K.npy",
+          "payloadSHA256": "e2671200b06dffdb1deb1c902659d64ba20742042814c63612e70969044334d7",
+          "sha256": "3818197453e2cbcb9a1252834dd58608d2f43388b647ec95f0ee851e6be7799c",
+          "shape": [
+            1,
+            512,
+            1024
+          ]
+        },
+        "Q": {
+          "bytes": 4194432,
+          "dtype": "bf16",
+          "path": "/mnt/hdd8tb/mrun-work/job-ef24db06d909/arrays/Xon/candidate-Q.npy",
+          "payloadSHA256": "80f5dd794f60459b5bba0ab0d797bb6498da2f7a2e3549fbce452be45ddb06c4",
+          "sha256": "adef40d32e3066b2b36362eaa96eb0d3adcaded0c6df9ce8a59e0862e727d50d",
+          "shape": [
+            1,
+            512,
+            4096
+          ]
+        },
+        "V": {
+          "bytes": 1048704,
+          "dtype": "bf16",
+          "path": "/mnt/hdd8tb/mrun-work/job-ef24db06d909/arrays/Xon/candidate-V.npy",
+          "payloadSHA256": "69fb33b363ec1e186c5bdffab7c3e05384bd515f032bac9465e623c82d2e10bb",
+          "sha256": "ae24b0e69edfee25d5348ffe4c6fb5c22a9e521ea77cd69895c115e6de5d28bc",
+          "shape": [
+            1,
+            512,
+            1024
+          ]
+        }
+      },
+      "inputField": {
+        "bytes": 2621440,
+        "dtype": "torch.bfloat16",
+        "format": "raw",
+        "path": "/mnt/hdd8tb/mrun-work/job-ef24db06d909/arrays/Xon.bf16",
+        "payloadSHA256": "5a9c071a1e648f6faf7fde5be3858a1c16c9f13774e2bdc0791216e7d88aebea",
+        "sha256": "5a9c071a1e648f6faf7fde5be3858a1c16c9f13774e2bdc0791216e7d88aebea",
+        "shape": [
+          1,
+          512,
+          2560
+        ],
+        "storedDtype": "<u2"
+      },
+      "inputPayloadSHA256": "5a9c071a1e648f6faf7fde5be3858a1c16c9f13774e2bdc0791216e7d88aebea",
+      "method": "candidate",
+      "secondsWithHashCapture": 0.01579501898959279,
+      "semantics": {
+        "base": "p",
+        "meaning": "own-baseline-native-response-after-admission"
+      }
+    }
+  ]
+}

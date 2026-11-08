@@ -1,0 +1,158 @@
+{
+  "analysisSealSHA256": "16dc9e2061b064d027988639769f047c5dc678264352981cda60013722ac5d3f",
+  "comparisonRows": 1024,
+  "controls": [
+    {
+      "branch": "Xno",
+      "unmodifiedRows": 511,
+      "unmodifiedRowsChanged": 0
+    },
+    {
+      "branch": "Xon",
+      "unmodifiedRows": 511,
+      "unmodifiedRowsChanged": 0
+    }
+  ],
+  "cpuSeconds": 3.8265867740000004,
+  "cudaDeviceName": "NVIDIA GeForce RTX 4080",
+  "cudaVersion": "13.0",
+  "explanatoryPolicy": "FP64 sum(h*h)/width+epsilon, sqrt, reciprocal; ideal=gamma*(h*inverse); D=gamma*(delta/radiusRight); B=gamma*(h*(inverseRight-inverseLeft)). rho includes rounding of this explanatory evaluation. Left-associated sums retain edge g, contrast g and final closure separately.",
+  "gammaLoad": {
+    "authenticatedShardBytes": 4967215360,
+    "fullShardAuthenticationSeconds": 2.915476087015122,
+    "gammaLoadAndHeaderSeconds": 0.2601288449950516,
+    "materializedParameterBytes": 5120,
+    "materializedParameterNames": [
+      "model.layers.1.input_layernorm.weight"
+    ]
+  },
+  "highWaterRSSKiB": 1136204,
+  "instrument_status": "inspect-controls-finite-residuals-and-signed-terms",
+  "limitations": [
+    "Supplied stored107 states and original gamma are research inputs,not serving.",
+    "New source-policy reconstruction; unavailable107 normalized intermediates cannot establish direct parity.",
+    "One discovery causal row; no independent specimen.",
+    "rho includes explanatory FP64 rounding; signed components are not additive causal percentages.",
+    "Pre-affine geometry cannot determine unique QKV attribution;107 QKV scalars reused only.",
+    "Six original normalization/gamma evaluations remain paid neural arithmetic;zero new affineMACs is not zero neural work.",
+    "No fit,newprompt,QKV,attention,MLP,suffix or image."
+  ],
+  "mechanics_status": "completed",
+  "numericalProfile": {
+    "bf16ReducedPrecisionReduction": true,
+    "cublasWorkspaceConfig": ":4096:8",
+    "cudaMatmulTF32": false,
+    "cudnnBenchmark": false,
+    "cudnnDeterministic": true,
+    "cudnnTF32": false,
+    "deterministicAlgorithms": true,
+    "float32MatmulPrecision": "highest",
+    "threads": 1
+  },
+  "numericalThreads": 1,
+  "numpyVersion": "2.5.4",
+  "peakCUDAAllocatedBytes": 22287360,
+  "physicalWork": {
+    "QKVMatricesMaterialized": 0,
+    "analysisActs": 1,
+    "analysisRowFields": 79,
+    "comparisonRows": 1024,
+    "coordinatesPerPointwiseStage": 7864320,
+    "fullEncoderEvaluations": 0,
+    "fullOperandFields": 6,
+    "gammaFields": 1,
+    "images": 0,
+    "intervenedRows": 2,
+    "nominalMatrixMACs": 0,
+    "normalizationActs": 6,
+    "normalizedRows": 3072,
+    "originalLinears": 0,
+    "retainedNumericFields": 86,
+    "rsqrtCallsByRow": 3072,
+    "unmodifiedRowControlRows": 1022
+  },
+  "position": 9,
+  "requestSHA256": "8ec08426905127b0840c46ea5c95db7ac4ef196e9b6fc98d673bc19f5f77dd0a",
+  "retainedNumericFileBytes": 17361792,
+  "schema": "tce-coupled-normalization-v1",
+  "scoring": "Contiguous FP64 coordinate products and np.sum(dtype=float64); ordered vector sums; all signed Gram terms via math.fsum. No scientific threshold.",
+  "sourcePolicy": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+  "summaries": [
+    {
+      "branch": "Xno",
+      "cosine": 0.9999734219603318,
+      "errorRMS": 0.0003154561346871931,
+      "normalizerRMS": 0.04326785725328895,
+      "predictionRMS": 0.043266661635860855,
+      "relativeRMS": 0.007290773213947729,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.04326785725328895
+    },
+    {
+      "branch": "Xno",
+      "cosine": 0.9852828943484778,
+      "errorRMS": 0.007137957504134754,
+      "normalizerRMS": 0.041758892976209265,
+      "predictionRMS": 0.04111973379040018,
+      "relativeRMS": 0.17093263243834955,
+      "rows": 1,
+      "selection": "intervened",
+      "targetRMS": 0.041758892976209265
+    },
+    {
+      "branch": "Xno",
+      "cosine": 1.0,
+      "errorRMS": 0.0,
+      "normalizerRMS": 0.04327075862714978,
+      "predictionRMS": 0.04327075862714978,
+      "relativeRMS": 0.0,
+      "rows": 511,
+      "selection": "unmodified",
+      "targetRMS": 0.04327075862714978
+    },
+    {
+      "branch": "Xon",
+      "cosine": 0.9999168024542646,
+      "errorRMS": 0.0005354226370633596,
+      "normalizerRMS": 0.04150811734735483,
+      "predictionRMS": 0.04150647002425135,
+      "relativeRMS": 0.012899227218202905,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.04150811734735483
+    },
+    {
+      "branch": "Xon",
+      "cosine": 0.9314755151848522,
+      "errorRMS": 0.012115231278985127,
+      "normalizerRMS": 0.03313859910139002,
+      "predictionRMS": 0.03206477513375977,
+      "relativeRMS": 0.36559274101834155,
+      "rows": 1,
+      "selection": "intervened",
+      "targetRMS": 0.03313859910139002
+    },
+    {
+      "branch": "Xon",
+      "cosine": 1.0,
+      "errorRMS": 0.0,
+      "normalizerRMS": 0.041522842174740296,
+      "predictionRMS": 0.041522842174740296,
+      "relativeRMS": 0.0,
+      "rows": 511,
+      "selection": "unmodified",
+      "targetRMS": 0.041522842174740296
+    }
+  ],
+  "terminal_status": "arbitrary-prompt-zero-neural-images-unachieved",
+  "timing": {
+    "analysisActSecondsIncludingHashes": 0.00590051244944334,
+    "comparisonAndRetentionSeconds": 0.04534295992925763,
+    "stateAuthenticationAndReadSeconds": 0.23366190074011683
+  },
+  "torchVersion": "2.13.0+cu130",
+  "trend_status": "retain-both-paths-without-proxy-threshold",
+  "unmodifiedRowControlRows": 1022,
+  "workerWallSecondsAfterImportsAndRequestVerification": 5.393517359625548
+}

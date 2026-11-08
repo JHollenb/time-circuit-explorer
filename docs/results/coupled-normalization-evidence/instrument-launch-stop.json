@@ -1,0 +1,9 @@
+{
+  "schema": "tce-coupled-normalization-instrument-launch-stop-v1",
+  "stage": "before first saturn-evidence subprocess",
+  "error": "FileNotFoundError: saturn-evidence",
+  "cause": "The shared launcher resolves saturn-evidence when invoked directly; its entry point is not on a nested Python subprocess PATH.",
+  "completedInstrumentCommands": 0,
+  "scientificJobRepeated": false,
+  "correction": "Invoke the existing absolute common launcher with exec saturn-evidence inside the metadata wrapper. Reuse the verified empty cycle109 index."
+}

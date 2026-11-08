@@ -1,0 +1,448 @@
+{
+  "schema": "tce-coupled-normalization-advisor-actual-v1",
+  "cycle": 109,
+  "advisor": "Astra",
+  "recordedAtUTC": "2026-11-08T16:07:40.585718+00:00",
+  "status": "actual-result-reviewed-no-material-publication-correction",
+  "verdict": "mechanically-supported-bounded-source-policy-result;strict-original-goal-unachieved",
+  "scope": {
+    "authorizedWrite": "docs/results/coupled-normalization-evidence/advisor-actual.json",
+    "executionByAdvisor": "Local stdlib reading, hashing, JSON/schema joins and arithmetic on already-public scalars only. No candidate imports, tests, model/normalization/affine execution, tensor/image hydration, remote check, publisher rerun or new job.",
+    "freshFullSurvey": false,
+    "fullResearchAndStorageCurrentCycle": 108,
+    "nextPeriodicCycle": 111,
+    "narrativesExcluded": "Draft docs/coupled-normalization.md and mutable blog/progress are outside this actual-result receipt."
+  },
+  "snapshots": [
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization/analysis-seal.json",
+      "sha256": "16dc9e2061b064d027988639769f047c5dc678264352981cda60013722ac5d3f",
+      "bytes": 468,
+      "readScope": "Complete five-member seal read and local hashes checked."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization/analysis.json",
+      "sha256": "697f8e447fbb0dd1052ee430e6e1a503815e623c2da77a509ab0b6a0b9838fb4",
+      "bytes": 25129,
+      "readScope": "Complete analysis content read, including every edge, contrast, signed Gram, radii and endpoint panel; scalar recomputation only."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization/array-manifest.json",
+      "sha256": "59347176d3c100acbf1f2143e638d302a891a8ac2056cac6cc88d00d650e7a6f",
+      "bytes": 34695,
+      "readScope": "Complete86-field metadata parsed/joined; all path/byte/hash entries traversed; representative raw gamma/Z and FP64 NPY ABI entries displayed. No arrays read."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization/collection.json",
+      "sha256": "a76732ac1e732bfee0c1d420936278fbec9922f16b5869a35ecaceba4b36b9d5",
+      "bytes": 7164,
+      "readScope": "Complete metadata read and local inventory/custody/result joins checked."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization/family-plan.md",
+      "sha256": "c22e3dfb640a472ef8d6267a5dd13dcb258d86d635bddda82e8f84b3d14fae8f",
+      "bytes": 4797,
+      "readScope": "Complete selected contract freshly read via identical current docs/plans/coupled-baseline-response-state.md; published copy hash verified."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization/frozen-plan.md",
+      "sha256": "c4cce5d21cd9721a6f52d49ee5f0815e92cde0282f420416fb5ff793cd04084d",
+      "bytes": 7915,
+      "readScope": "Hash/byte recheck; complete preexecution read reused from advisor-source.json."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization/mechanics.json",
+      "sha256": "7405d713dc1d471694834e9f0c498d097b9c098c42b4362492e59e19f5d95ebc",
+      "bytes": 3523,
+      "readScope": "Complete seven-test receipt and all21 source hashes read; tests were not rerun."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization/observations.jsonl.gz",
+      "sha256": "25507f9b4d8985b82fd84cdcd0d3bbc9f9e0ce5882f4d00319072fa57873c033",
+      "bytes": 13488,
+      "readScope": "All1024 lossless public-scalar rows parsed; exact unique domain,1022 controls and36 pooled summaries independently reconstructed. Three representative/intervention rows displayed."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization/parent-analysis.json",
+      "sha256": "1080d3c55203017e25ccef6910f82e54f2101dc480f030e5c33b4ac29fa2efd9",
+      "bytes": 9557,
+      "readScope": "Hash/byte recheck and publication/collection membership only; earlier scoped source/parent review reused where applicable, no full fresh content-read claim."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization/parent-array-manifest.json",
+      "sha256": "2137d0863f1f9dbf967dfd74bfd94be8fb22e006691a5f7f18ffb551eb832c4c",
+      "bytes": 23528,
+      "readScope": "Hash/byte recheck and publication/collection membership only; earlier scoped source/parent review reused where applicable, no full fresh content-read claim."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization/parent-consumer-fields.json",
+      "sha256": "229ca925bf536e5e8ebebbdec423fa7debb0dc947cb930f052795d561c15055c",
+      "bytes": 12294,
+      "readScope": "Hash/byte recheck and publication/collection membership only; earlier scoped source/parent review reused where applicable, no full fresh content-read claim."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization/parent-publication.json",
+      "sha256": "81f4fb4078446d9ddeb510ac0115353aeeca701cd03f0b08d13786c64e8fc6ee",
+      "bytes": 19732,
+      "readScope": "Hash/byte recheck and publication/collection membership only; earlier scoped source/parent review reused where applicable, no full fresh content-read claim."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization/parent-qualified-parent-inputs.json",
+      "sha256": "6b7026624254d757259f199eb46c98de843edba32ce2ed6d20a9da8ab2065e7a",
+      "bytes": 14842,
+      "readScope": "Hash/byte recheck and publication/collection membership only; earlier scoped source/parent review reused where applicable, no full fresh content-read claim."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization/parent-report.json",
+      "sha256": "ff69ca7b15775b88c69e3f0e7ce8f6877f47e21ecb995a1d395f9e41afa414a1",
+      "bytes": 22830,
+      "readScope": "Hash/byte recheck and publication/collection membership only; earlier scoped source/parent review reused where applicable, no full fresh content-read claim."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization/parent-request.json",
+      "sha256": "f9f1eeafcfc98fa50e8a87545034cdef436dee136a417eeaa889f5b6c0123f4b",
+      "bytes": 61475,
+      "readScope": "Hash/byte recheck and publication/collection membership only; earlier scoped source/parent review reused where applicable, no full fresh content-read claim."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization/parent-typed-construction.json",
+      "sha256": "1e453c4b1407e48b5a82066125d8297071985bc97619656be8adf3709f87a866",
+      "bytes": 7675,
+      "readScope": "Hash/byte recheck and publication/collection membership only; earlier scoped source/parent review reused where applicable, no full fresh content-read claim."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization/parent-typed-consumers.json",
+      "sha256": "cc739be18ab3ef65c35fa57b111ab8ec531e3cdb8ad2893ece473735b8e7b484",
+      "bytes": 16014,
+      "readScope": "Hash/byte recheck and publication/collection membership only; earlier scoped source/parent review reused where applicable, no full fresh content-read claim."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization/publication.json",
+      "sha256": "8bb04982247fdcaeab39b4d98565851d4988bde2991da23660570da8a89acce4",
+      "bytes": 22714,
+      "readScope": "Complete publication metadata read; all25 local member hashes/bytes and93 remote-witness records checked. Remote file bytes themselves were not accessed by advisor."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization/report.json",
+      "sha256": "b2ca7362e058c0469ac6201837f26ec5a62d808312392f807c2b1ca79d8f6bc9",
+      "bytes": 5668,
+      "readScope": "Complete report content read."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization/request.json",
+      "sha256": "5dda550eeaa95a27d271e650c4aa8f6cd8a91a03e6ad51faba15168561bc316c",
+      "bytes": 13649,
+      "readScope": "All request keys inventoried; identity, state/edge domains, profile, work, endpoint/gamma descriptors and source bindings inspected through metadata checks. Not a full prose reread of all inherited metadata."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization/review108-common-error.json",
+      "sha256": "e037c368ea5a6960fd5a9d7e43801f6c4ae7f6a30d3cc97eeb31eeea109799cd",
+      "bytes": 1754,
+      "readScope": "Hash/byte recheck and publication/collection membership only; earlier scoped source/parent review reused where applicable, no full fresh content-read claim."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization/review108-geometry.json",
+      "sha256": "1fc8f598db3188f4fcfb170bad0fcd7579f9a2bc1bf7fbe0b91ca898133dcb20",
+      "bytes": 3393,
+      "readScope": "Hash/byte recheck and publication/collection membership only; earlier scoped source/parent review reused where applicable, no full fresh content-read claim."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization/review108-survey.json",
+      "sha256": "73881791456594c4e4b04de5730187fa1e090d58467394c580569a03c1a21456",
+      "bytes": 151715,
+      "readScope": "Hash/byte recheck and publication/collection membership only; earlier scoped source/parent review reused where applicable, no full fresh content-read claim."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization/scheduler-job.json",
+      "sha256": "7f11131abc0746b9ce8edc94a7e8c5ae76615581bd489ffbd7d0e10f0871106f",
+      "bytes": 11759,
+      "readScope": "Complete saved scheduler metadata read; no live scheduler call by advisor."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization/typed-analysis.json",
+      "sha256": "3e1371fec390c421a03da86d36ca7a96c5cd73962f3534bbdf59cfe25b7d2140",
+      "bytes": 31566,
+      "readScope": "Complete spec/evidence and input metadata displayed; all13 input and79 output slots parsed and canonical frame/payload joins checked. No numerical payload read."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization/typed-normalization.json",
+      "sha256": "48ece4d0bbcf6aeb051ac269eebb0d8439e10db27977d74e1f8387f312daede2",
+      "bytes": 30634,
+      "readScope": "All six transaction schemas, domains, metadata, geometry, frame identities and payload fingerprints parsed/checked. First transaction and shared gamma parent fully displayed; not tensor contents."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization-evidence/advisor-source.json",
+      "sha256": "a81788ed889f17ce1792284b2489c13e573a7fc593822a11ba9f1ad61a38b709",
+      "bytes": 49539,
+      "readScope": "Prior immutable source receipt reused; all25primary+18additional absolute-path pins rehashed unchanged; no claim of repeating all original source reads."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization-evidence/root-pre-submit-binding.json",
+      "sha256": "9ae85927ea3b4b3f99e3c250dd1514d4cc4535e9407352414caf04df252eaa75",
+      "bytes": 4581,
+      "readScope": "Complete content read."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization-evidence/root-pre-publication-binding.json",
+      "sha256": "972013a371713590bf2f7eff41169ffce949110ce8adddeaca83c1edc7514a3b",
+      "bytes": 779,
+      "readScope": "Complete content read."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization-evidence/scalar_direction_geometry.py",
+      "sha256": "bd21582f9e8eae0d9c6c33c2d1f7ac25afb222656b59ac6a213f73bd70b22ec1",
+      "bytes": 2480,
+      "readScope": "Complete content read."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/coupled-normalization-evidence/public-scalar-direction.json",
+      "sha256": "83192635fc089ba26434b5a472cd6ed1913c1ae3b500f11c6f5ae0428f9e1681",
+      "bytes": 1226,
+      "readScope": "Complete content read."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/coupled_normalization.py",
+      "sha256": "ac3084af4eabef77cbce464cd1feff61a9958331b196dbe590db04b46a755083",
+      "bytes": 5935,
+      "readScope": "Complete fresh source text read, never imported/executed."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/coupled_normalization_worker.py",
+      "sha256": "6a07f3c081aee5cd178224c644a5e011afc89b1f2b34849457a6b279e8edb527",
+      "bytes": 13896,
+      "readScope": "Complete fresh source text read, never imported/executed."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/publish_coupled_normalization.py",
+      "sha256": "bf1d1db15e0b0807a58071c83611ed6f86383fc4850fee8c22fb07c62ea645bd",
+      "bytes": 17108,
+      "readScope": "Complete fresh source text read, never imported/executed."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/publish_finite_consumer_crossover.py",
+      "sha256": "2506017e8dacb8f11835a8e17e5ba88175d15b1d2dd8143b5176afa9cd39652d",
+      "bytes": 20470,
+      "readScope": "Lines1–63 fresh text read for scalar and typed binding; remaining prior scope reused."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/publish_contextual_writer.py",
+      "sha256": "680cb16cccc8a57461c859662dd1fefb4a6c5655293ce21f7fa0d76bc1176b00",
+      "bytes": 22298,
+      "readScope": "Lines1–33 fresh text read for canonical digest/frame checking; remaining prior scope reused."
+    }
+  ],
+  "verification": {
+    "createdAtUTC": "2026-11-08T16:06:10.644811+00:00",
+    "checks": {
+      "25PublishedMembers": true,
+      "43ReviewedPinsUnchanged": true,
+      "CollectionMembers": true,
+      "Seal": true,
+      "RequestIdentity": true,
+      "Custody": true,
+      "SuccessfulJob": true,
+      "Profile": true,
+      "RetainedCountBytes": true,
+      "AllRetainedRemoteWitnesses": true,
+      "SixNormalizationTransactions": true,
+      "GammaParent": true,
+      "AnalysisTransaction": true,
+      "1024UniqueRows": true,
+      "1022UnchangedControls": true,
+      "36PooledScalars": true,
+      "All9SignedSumNormSummaries": true,
+      "FinalClosuresZero": true
+    },
+    "maxPooledScalarDelta": 1.1102230246251565e-16,
+    "maxSignedScalarDelta": 0,
+    "checksAreMetadataAndPublicScalarsOnly": true,
+    "freshRemoteAuthority": "publisher;not independently repeated",
+    "freshRemoteCount": 93,
+    "freshRemoteBytes": 5000306048,
+    "publishedMembers": 25,
+    "publishedMemberBytes": 535264,
+    "typedTransactions": 7,
+    "observationRows": 1024,
+    "sourceReceiptSHA256": "a81788ed889f17ce1792284b2489c13e573a7fc593822a11ba9f1ad61a38b709"
+  },
+  "chronology": {
+    "sourceReviewSHA256": "a81788ed889f17ce1792284b2489c13e573a7fc593822a11ba9f1ad61a38b709",
+    "preexecutionReview": true,
+    "rootBeforeFirstImportPrimaryPins": 25,
+    "mechanics": {
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "secondsIncludingCandidateImports": 0.07492120796814561
+    },
+    "rootBeforeSubmit": {
+      "reviewedPrimaryPins": 25,
+      "stagedSourceHashes": 38,
+      "testedCurrentStagedJoins": 21
+    },
+    "rootAfterSuccessfulRunBeforePublication": {
+      "reviewedPrimaryPlusScopedPins": 43,
+      "stagedSourceHashes": 38,
+      "testedCurrentStagedJoins": 21
+    },
+    "clarification": "The additional18 scoped pins are not retroactively described as root pre-import checks. Advisor independently rehashed all43 for this result review.",
+    "scalarSupplement": "The bd21582f helper was statically approved before its first local stdlib run. The later83192635 scalar result matches the advisor's independently computed polarization quantities; neither is new coordinate evidence."
+  },
+  "actualExecution": {
+    "jobID": "job-5ad4ac56520d",
+    "savedSchedulerState": "succeeded",
+    "returncode": 0,
+    "requestIdentitySHA256": "8ec08426905127b0840c46ea5c95db7ac4ef196e9b6fc98d673bc19f5f77dd0a",
+    "requestFileSHA256": "5dda550eeaa95a27d271e650c4aa8f6cd8a91a03e6ad51faba15168561bc316c",
+    "payloadSHA256": "a0f6867e1050e0e928451a30ac07d73bf62805fb002d1fbcc7917c87e08bd802",
+    "payloadBytes": 156713,
+    "declaredSealedExecutedMatch": true,
+    "host": "beast",
+    "schedulerSeconds": 12.49,
+    "workerSecondsAfterImportsAndRequestVerification": 5.393517359625548,
+    "workerCPUSeconds": 3.8265867740000004,
+    "sampledPeakRSSMB": 1167.2,
+    "sampledPeakVRAMMB": 316,
+    "torchPeakCUDAAllocatedBytes": 22287360,
+    "reservation": {
+      "source": "probe-default",
+      "ramMB": 4096,
+      "vramMB": 4096,
+      "cpuThreads": 4,
+      "diskGB": 1
+    },
+    "numericalThreads": 1,
+    "torchVersion": "2.13.0+cu130",
+    "numpyVersion": "2.5.4",
+    "cudaVersion": "13.0",
+    "limits": "One guarded outer lease;900s cap; no retries or additional arms. Scheduler's four reservedCPU threads differ from one numerical thread. Device allocator peak and sampled VRAM are distinct instruments.",
+    "paidWork": {
+      "originalNormalizationGammaUnits": 6,
+      "fullRows": 3072,
+      "originalGammaMaterializedBytes": 5120,
+      "fullShardAuthenticatedBytes": 4967215360,
+      "fullShardHashSeconds": 2.915476087015122,
+      "gammaHeaderLoadSeconds": 0.2601288449950516,
+      "originalLinears": 0,
+      "newAffineMACs": 0,
+      "QKVMatricesMaterialized": 0,
+      "analysisActs": 1,
+      "pointwiseCoordinatesPerStage": 7864320
+    },
+    "timingScope": "Act/event timings include canonical hash work; worker time includes authentication/analysis/retention but excludes imports/request verification and final report writing. No isolated kernel or matched speedup claim."
+  },
+  "evidenceGeometry": {
+    "normalizationActs": 6,
+    "analysisActs": 1,
+    "analysisInputs": 13,
+    "fullBF16ZFields": 6,
+    "gammaFields": 1,
+    "FP64RowFields": 79,
+    "totalNumericFields": 86,
+    "retainedNumericFileBytes": 17361792,
+    "rawComparisonRows": 1024,
+    "intervenedRows": 2,
+    "unchangedControlRows": 1022,
+    "unchangedControlsWithObservedDifference": 0,
+    "pooledGroups": 6,
+    "rebuiltPooledScalars": 36,
+    "publisherRebuiltAnalysisScalars": 402,
+    "localPublicationMembers": 25,
+    "localMemberBytes": 535264,
+    "freshRemoteWitnesses": 93,
+    "freshRemoteWitnessBytes": 5000306048,
+    "authority": "Remote full-file/NPY-payload verification is the frozen publisher's recorded authority. Advisor checked the complete metadata joins, not the remote bytes or vector arithmetic independently."
+  },
+  "mathematicalInterpretation": {
+    "mainFinding": "For this one repeated-prefix discovery contrast, the own baseline changes the finite normalized response substantially despite a relatively accurate raw H1 difference. Both the gain of the gamma-weighted displacement term and the baseline-aligned denominator term matter. A positive signed cross reinforces their mismatch; this is not a large angular error in D, nor a pure radius-only endpoint repair.",
+    "denominator": "All response and component relative norms below use ||Z(b)-Z(a)||, unless explicitly labelled nativeD or native endpoint. Norm ratios are not causal shares. The full512 comparison summaries include511 unchanged rows per branch and must not replace the row9 response denominator.",
+    "normalizedResponse": {
+      "nativeSquaredNorm": 0.13650567728604557,
+      "ownSquaredNorm": 0.3569467987173418,
+      "errorSquaredNorm": 0.06963725269467957,
+      "relativeError": 0.714242119780341,
+      "ownToNativeNorm": 1.6170609464320833,
+      "ownNativeCosine": 0.9599960674512245
+    },
+    "crossings": {
+      "Vno": 0.047029407920836125,
+      "Uno": 0.7345409605093535,
+      "Uon": 0.07516909151781428,
+      "Von": 0.7609098850848506,
+      "noPathCrossTwiceDot": -0.004316361689220116,
+      "onPathCrossTwiceDot": -0.010168640957299857,
+      "interpretation": "The predicted admitted displacement on the native base remains close in response; a native admitted displacement on the own base does not. Both ordered paths retain negative cross terms. They support baseline dependence, not a unique radius-versus-direction causal allocation."
+    },
+    "errorComponents": {
+      "Drelative": 0.5077425417611071,
+      "Brelative": 0.3490923736201222,
+      "Rrelative": 0.02183126018179278,
+      "DBcosine": 0.3644056439634579,
+      "DBTwiceDot": 0.017633954606255307,
+      "interpretation": "D and B errors reinforce in the complete error account. R is smaller here but retained; it includes finite source-policy discrepancy and rounding of the FP64 explanatory evaluation. Tiny G/g are regrouping records, not absent-by-definition."
+    },
+    "radii": {
+      "nativeLeft": 0.19580437271226808,
+      "nativeRight": 0.1863074593465151,
+      "ownLeft": 0.1217263070839563,
+      "ownRight": 0.12408511428392997,
+      "interpretation": "Native radius shrinks while own radius grows. This reverses the sign of the inverse-radius change. B additionally contains the baseline vector and gamma, so it is not a scalar-only causal term."
+    },
+    "endpoints": {
+      "pRelativeFiniteZError": 0.8389086691942849,
+      "qRelativeFiniteZError": 0.9137094626644081,
+      "pFiniteZCosine": 0.583430279189377,
+      "qFiniteZCosine": 0.49615961457713725,
+      "interpretation": "These use their corresponding native finiteZ endpoint norms. They preserve the large baseline geometry error; high response cosine alone does not establish a usable state."
+    },
+    "finiteClosure": {
+      "allFourEdgeFinalClosureSquared": 0,
+      "allFiveContrastFinalClosureSquared": 0,
+      "responsePathGnoGonSquared": 0,
+      "UnoNormSquaredMinusGram": -1.3877787807814457e-17,
+      "otherReportedEdgeContrastGramResiduals": 0,
+      "interpretation": "Final vector closure is observed zero at this evaluated precision. Nonzero intermediate g/G and the signed scalar Gram residual remain evidence; zero final closure does not assert exact real-arithmetic decomposition or unavailable107 intermediate parity."
+    },
+    "explanatoryLaw": "For actual admitted endpoints h,k, D=Gamma*(k-h)/s(k), B=Gamma*h*(1/s(k)-1/s(h)), R=rho(k)-rho(h), with source-policy Z and separately retained ordered-sum g. Contrasts subtract actual edge components and preserve a further regrouping term and final closure.",
+    "causalLimits": [
+      "Six source-policy normalization reconstructions are new original arithmetic; normalized intermediates were unavailable107, so this is not directly measured parity to those missing fields.",
+      "Row9 is one already-inspected causal prefix, repeated in vessel pairs rather than an independent replication. Neither1022 controls nor six states create a broad sample.",
+      "Pre-affine error norms cannot uniquely explain the historical Q/K/V errors: projection directions and denominators differ. No new projection was performed.",
+      "The separate fixed-nine-atom vessel-padding capacity shortfall remains. Neither normalization analysis nor a good row9 correction would produce missing history-dependent responses."
+    ]
+  },
+  "scalarDirectionInference": {
+    "authority": "Three published evaluated FP64 energies; inferred polarization, not a new direct coordinate angle.",
+    "ownD2": 0.34815336135716635,
+    "nativeD2": 0.1627368510695771,
+    "differenceD2": 0.035191503327936725,
+    "formula": "dot=(ownD2+nativeD2-differenceD2)/2; c=dot/sqrt(ownD2*nativeD2); lambda=max(0,dot/ownD2); rayResidual/nativeD=sqrt(max(0,1-max(0,c)^2)).",
+    "inferredDot": 0.23784935454940337,
+    "inferredCosine": 0.99924901038184,
+    "normGain": 1.4626564888365063,
+    "bestNonnegativeOwnScale": 0.6831740863343169,
+    "minimumRayErrorRelativeToNativeD": 0.03874809996520355,
+    "outgoingRadiusRatioNativeToOwn": 1.5014489080471711,
+    "usefulness": "This prevents mislabelling the D defect as predominantly angular. It helps choose a coupled state representation, not an online gain knob.",
+    "limits": "The best scale uses the native target. It repairs only the explanatory D component under its own denominator; it does not repair B, endpoint direction, finite admission, gamma response, padding capacity or the full consumer. No such correction was applied.",
+    "supplement": {
+      "helperSHA256": "bd21582f9e8eae0d9c6c33c2d1f7ac25afb222656b59ac6a213f73bd70b22ec1",
+      "resultSHA256": "83192635fc089ba26434b5a472cd6ed1913c1ae3b500f11c6f5ae0428f9e1681",
+      "suppliedWitnesses": 3,
+      "secondsIncludingProcessStartup": 0.027307000011205673
+    }
+  },
+  "nextConstructiveDecision": {
+    "selected": "Return to one input-owned coupled writer construction, replacing the frozen-baseline plus independently fitted residual organization; do not queue another scalar-gain or decomposition assay.",
+    "question": "Can one bounded shared branch/constant-writer program preserve both its baseline state and its contextual response at the next finite operand, when both writer slots may carry contextual information?",
+    "proposedBoundary": "Use the existing raw tokenizer/lexical/causal features to construct each H independently. Keep a small fixed two-slot branch/copy/add/BF16 language and an explicit fixed tree/atom/byte budget; permit the baseline slot to be rewritten jointly with the response slot. Retain the old104 writer as the unchanged control.",
+    "objective": "A later concrete contract should balance actual finite H endpoint error, source-policy Z endpoint error, and differences of those own finite Z endpoints on discovery pairs, with frozen stratum weights and native-derived offline normalizers. Each prediction comes from its own input; pair identities, native radii, native Z, and target-assisted scales are not serving inputs.",
+    "whyThisChangesAction": "106 says rerouting the fixed nine atoms has little room to fix widespread vessel-padding responses.107–109 say raw-change accuracy can hide a wrong baseline and wrong normalized gain. Together these favor rewriting the coupled dictionary/route organization under a consumer-aligned offline objective, rather than another fixed-nine routing pass or one-row rescale.",
+    "costAndPermissionBoundary": "This receipt chooses a constructive representation question, not a ready optimizer or implementation. Freeze one bounded fitting/proposal algorithm, actual constant bytes, split/known-history status, finite admission and paid offline normalization/consumer work in a separate source-qualified contract. No rank/depth/features/domain/teacher sweep or new experiment is queued here.",
+    "servingRestrictions": "No original affine/gated/normalization fallback, dense learned readout, native state refresh, whole-history leaves or target-assisted correction may be relabelled as a zero-neural writer. Original normalization used for offline research feedback remains paid. Subsequent QKV/state continuation and general conditioning/denoising/pixels remain unresolved.",
+    "evaluation": "Retain all active/padding and endpoint/response countertrends, the reused transfer split, unknown-token behavior and actual program cost. A local endpoint or row9 improvement is not arbitrary-prompt closure.",
+    "alternativesNotSelected": "A target-assisted radius/gain repair is explanatory only; a further local crossover is lower-value after the completed paired paths. A direction/radius code is not yet an input-owned initializer/update program or a demonstrated compression."
+  },
+  "requiredCorrections": [],
+  "finalBoundary": "Actual mechanics/integrity support the bounded reported result. No terminal serving/image/generalization claim, no complete-goal completion, and no scientific success threshold follows from this review."
+}
