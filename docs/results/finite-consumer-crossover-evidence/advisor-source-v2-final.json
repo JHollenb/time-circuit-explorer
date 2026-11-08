@@ -1,0 +1,146 @@
+{
+  "schema": "astra-source-correction-final-binding-v1",
+  "researchCycle": 107,
+  "createdAtUTC": "2026-11-08T14:39:25.051201+00:00",
+  "reviewer": "Astra advisor",
+  "status": "bounded-proceed-with-final-v2-preparation",
+  "snapshots": [
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/finite_consumer_crossover_study_v2.py",
+      "sha256": "b2989f13b26cbee1fb47800cd59832c8c3a45c8f7367c1d8cecf6d1d6cdf1d6f",
+      "bytes": 10846,
+      "lineCount": 107,
+      "pinnedAtUTC": "2026-11-08T14:39:25.051201+00:00",
+      "readScope": {
+        "kind": "complete-earlier-v2-read-plus-complete-final-diff-and-current-custody-block-reread",
+        "ranges": [
+          [
+            1,
+            107
+          ]
+        ],
+        "currentBlockReread": [
+          49,
+          60
+        ],
+        "fullCurrentContentCovered": true,
+        "qualification": "The c18bc9d3 v2 source was read completely; the entire v1-to-current-v2 diff and current explicit coverage block were reread. The additional condition is recorded below."
+      }
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/plans/finite-consumer-crossover-staging-v2.md",
+      "sha256": "cb04e3d0dd826fcf268423e7a8e99488c8976bb292b29e38bf111a0ba8eb538d",
+      "bytes": 2379,
+      "lineCount": 11,
+      "pinnedAtUTC": "2026-11-08T14:39:25.051201+00:00",
+      "readScope": {
+        "kind": "complete-content-reused-with-current-hash-recheck",
+        "ranges": [
+          [
+            1,
+            11
+          ]
+        ],
+        "fullContentRead": true
+      }
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/finite-consumer-crossover-evidence/staging-v1-stop.json",
+      "sha256": "d7898beb52bb08914de088092ad06116db157cb74d98cc4ad88e6aac9695a6de",
+      "bytes": 1108,
+      "lineCount": 13,
+      "pinnedAtUTC": "2026-11-08T14:39:25.051201+00:00",
+      "readScope": {
+        "kind": "complete-content-reused-with-current-hash-recheck",
+        "ranges": [
+          [
+            1,
+            13
+          ]
+        ],
+        "fullContentRead": true
+      }
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/finite-consumer-crossover-evidence/advisor-source.json",
+      "sha256": "bfef0c1163876cf86a0dd680c01dcc98cb3b98ac0c6c2aab1808cab1f2978ed6",
+      "bytes": 28712,
+      "lineCount": 667,
+      "pinnedAtUTC": "2026-11-08T14:39:25.051201+00:00",
+      "readScope": {
+        "kind": "hash-and-authority-reuse",
+        "fullContentRead": false
+      }
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/finite-consumer-crossover-evidence/advisor-source-v2.json",
+      "sha256": "80cd1db03e76ba50a7429c219048da010c3a7bff8c5919408721e19745371916",
+      "bytes": 11831,
+      "lineCount": 235,
+      "pinnedAtUTC": "2026-11-08T14:39:25.051201+00:00",
+      "readScope": {
+        "kind": "hash-and-authority-reuse",
+        "fullContentRead": false
+      }
+    }
+  ],
+  "historicalReceipts": {
+    "original": "docs/results/finite-consumer-crossover-evidence/advisor-source.json",
+    "originalSHA256": "bfef0c1163876cf86a0dd680c01dcc98cb3b98ac0c6c2aab1808cab1f2978ed6",
+    "originalMistake": "Static review missed that parent104 freshRemoteFiles has no safetensors rows. V1 staging therefore failed at the invalid shard inventory lookup before root.mkdir or any scientific submission.",
+    "preliminaryV2": "docs/results/finite-consumer-crossover-evidence/advisor-source-v2.json",
+    "preliminaryV2SHA256": "80cd1db03e76ba50a7429c219048da010c3a7bff8c5919408721e19745371916",
+    "preliminaryV2DriverSHA256": "c18bc9d375999182261dcbf1b6a80df5b38a7efad78811ee0f66619acb61eec0",
+    "chronology": "The preliminary addendum receipt was written immediately before the message announcing the final explicit selected-file coverage condition arrived. It remains immutable as an earlier snapshot. This final binding approves only the b2989f13 current driver.",
+    "actualTesting": "Root reports one prior eight-mechanics pass and no v2 import/stage/job at the correction review request. Advisor performed no execution or scheduler query. The unchanged numerical tests are not to be represented as testing new v2 staging logic."
+  },
+  "originalSnapshotVerification": {
+    "count": 28,
+    "comparedAgainst": "Original advisor-source.json snapshots, not mutable current progress metadata",
+    "mismatchCount": 0,
+    "mismatches": [],
+    "rootSourceAndHelperExecutionRepeatedByAdvisor": false
+  },
+  "finalCorrection": {
+    "exactCondition": "len(assets)==1 AND len(source['parameters'])==4 AND {asset['path'] for asset in assets}==selected_files",
+    "subsequentCondition": "parent_consumer['parameters']==source['parameters'] AND parent_consumer['parameterAssets']==assets",
+    "finding": "The explicit set equality makes coverage of every selected parameter file part of the v2 contract. The fixed actual parent metadata satisfies it; no partial selected-file coverage is accepted.",
+    "historicalAuthority": "Both parent-inputs.json and consumer-fields.json are authenticated members of the successful104 publication. Their selected shard/header/four-payload records agree. This is historical metadata identity, not invented membership in the parent's freshRemoteFiles.",
+    "currentAuthority": "Unchanged parameters() freshly authenticates the selected full shard, header and four BF16 payloads before loading. Unchanged publication code freshly hashes the full shard again afterward. Both remain future execution checks.",
+    "entryPoint": "V2 is in OWNED/request.sourceHashes and is the submitted execute CLI. Unchanged worker imports identical v1 WORK/verify; generic verify covers all request sourceHashes, including v2 and staging-plan-v2.md.",
+    "arithmeticAndResourceChange": false,
+    "physicalWork": "7 Acts,2 original full512 normalization/QKV units,6 linears and16,106,127,360 nominal learned matrix MACs. One intent-first guarded CUDA lease,900-second cap,expected below5minutes,no retries."
+  },
+  "separatePublicationChecks": {
+    "required": true,
+    "why": "Unchanged v1 publisher validates all staged sourceHashes but its current-source OWNED loop includes only the original15 files.",
+    "checks": [
+      "Before first v2 import/stage, current driver and addendum equal these reviewed pins.",
+      "Before submission, current v2 SHA equals staged v2 SHA equals request.sourceHashes['finite_consumer_crossover_study_v2.py']; current addendum similarly equals staged staging-plan-v2.md and its request hash.",
+      "Immediately before unchanged publisher invocation, repeat those current/staged/request comparisons and retain a durable additive metadata receipt.",
+      "Repeat in final release QA; do not attribute the external current-v2 check to the unchanged publisher's original current-source loop."
+    ],
+    "currentCheckCompletion": "Not asserted here: no staged request exists for advisor inspection at this review. Root will durably record the checks when those artifacts exist."
+  },
+  "decision": {
+    "materialCorrectionsRemaining": [],
+    "readiness": "Ready for first v2 stage and the planned submission once the current/staged/request bindings, actual staging, strict preflight and admission are observed. This is not approval of an unobserved scientific result.",
+    "publisherCopyRequired": false,
+    "repeatedNumericalMechanicsRequired": false,
+    "noScientificRetry": "V1 stopped during preparation without a submitted scientific job. The first scientific lease remains the sole planned assay.",
+    "interpretationUnchanged": "Paid diagnostic on one discovery row. Both admission and regrouping remainders remain; no pure causal share, complete contextual producer or arbitrary-prompt zero-neural image claim."
+  },
+  "advisorScope": {
+    "sourceReadAndPublicMetadataOnly": true,
+    "noCandidateImports": true,
+    "noTests": true,
+    "noArrays": true,
+    "noModels": true,
+    "noRemoteChecks": true,
+    "noJobs": true,
+    "noAgents": true,
+    "onlyNewWrite": "docs/results/finite-consumer-crossover-evidence/advisor-source-v2-final.json",
+    "noPriorReceiptOrSourceMutation": true,
+    "fullResearchStorage": "105 current;108 next or earlier material evidence."
+  }
+}

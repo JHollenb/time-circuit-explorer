@@ -1,0 +1,122 @@
+{
+  "run": {
+    "exitCode": 2,
+    "result": {
+      "broken": true,
+      "command": "run",
+      "exit_code": 2,
+      "findings": 0,
+      "instrument_status": "evidence-incomplete-empty-target",
+      "pack": "saturn-evidence-pack-v1",
+      "schema": "saturn-evidence-pipeline-v1",
+      "steps": {
+        "claims": {
+          "chain_ok": true,
+          "errors": [],
+          "ingested": 0,
+          "ingested_claims": [],
+          "receipts_accepted": 0,
+          "receipts_found": 0,
+          "registry": "artifacts/finite-consumer-crossover-cycle107-index/claims-auto.jsonl",
+          "skipped_invalid": 0,
+          "skipped_invalid_receipts": [],
+          "skipped_too_large": 0,
+          "skipped_unchanged": 0,
+          "status": "ok"
+        },
+        "target_scope": {
+          "instrument_status": "evidence-incomplete-empty-target",
+          "invalid_receipts": 0,
+          "receipts": 0,
+          "status": "incomplete",
+          "streams": 0
+        },
+        "watch": {
+          "fires": 0,
+          "ledgers_broken": 0,
+          "ledgers_unchanged": 0,
+          "ledgers_verified": 0,
+          "ledgers_written": 0,
+          "per_stream": [],
+          "records": 0,
+          "status": "ok",
+          "stream_errors": 0,
+          "streams": 0,
+          "streams_too_large": 0,
+          "streams_with_predicates": 0
+        },
+        "xref": {
+          "db": "artifacts/finite-consumer-crossover-cycle107-index/xref.sqlite",
+          "distinct_addresses": 0,
+          "files_scanned": 25,
+          "files_skipped_unchanged": 0,
+          "files_too_large": 0,
+          "files_unparseable": 0,
+          "refs_added": 0,
+          "refs_from_citations": 0,
+          "refs_with_model_id": 0,
+          "root": "docs/results/finite-consumer-crossover",
+          "status": "ok"
+        }
+      },
+      "target": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/finite-consumer-crossover"
+    }
+  },
+  "verify": {
+    "exitCode": 2,
+    "result": {
+      "broken": true,
+      "command": "verify",
+      "exit_code": 2,
+      "findings": 0,
+      "instrument_status": "evidence-incomplete-empty-target",
+      "pack": "saturn-evidence-pack-v1",
+      "schema": "saturn-evidence-pipeline-v1",
+      "steps": {
+        "claims": {
+          "registry": "artifacts/finite-consumer-crossover-cycle107-index/claims-auto.jsonl",
+          "status": "skipped"
+        },
+        "target_scope": {
+          "claims": [],
+          "claims_current": 0,
+          "claims_drifted": 0,
+          "claims_missing": 0,
+          "instrument_status": "evidence-incomplete-empty-target",
+          "receipts": 0,
+          "status": "incomplete",
+          "streams": 0
+        },
+        "watch": {
+          "ledgers": [],
+          "ledgers_broken": 0,
+          "ledgers_checked": 0,
+          "ledgers_missing": 0,
+          "ledgers_missing_expected": 0,
+          "status": "ok"
+        }
+      },
+      "target": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/finite-consumer-crossover"
+    }
+  },
+  "schema": "tce-finite-consumer-crossover-evidence-instrument-v1",
+  "jobID": "job-ef24db06d909",
+  "target": "docs/results/finite-consumer-crossover",
+  "interpretation": "The standard sweep recognizes no gzip JSONL stream or gate-free Frame/Act claim. Empty unsupported target is an instrument limitation, without scientific success/absence authority. Dedicated publisher checks 3072 comparisons,108 pooled and188 signed summaries,typed bindings and full-byte custody separately; vector arithmetic remains producer-qualified.",
+  "isolation": "Watch/claims/xref scoped to ignored artifacts/finite-consumer-crossover-cycle107-index. No global claims registry or historical receipts modified.",
+  "existingRequestsUpvoted": [
+    {
+      "path": "../saturn/request.jsonl",
+      "handle": "evidence-plane-gzip-jsonl-streams",
+      "previousVoteCount": 2,
+      "voteCount": 3
+    },
+    {
+      "path": "../saturn/request.jsonl",
+      "handle": "evidence-observation-frame-act-ingest",
+      "previousVoteCount": 16,
+      "voteCount": 17
+    }
+  ],
+  "scope": "One post-job standard run and one read-only verify; no tensor hydration, model, image or mechanics repetition."
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "tce-finite-consumer-crossover-staging-stop-v1",
+  "researchCycle": 107,
+  "sourceSHA256": "1296057f2b8f2328470fa766076b7fcab606e2147af920df544f5b7ec6807bcf",
+  "mechanics": {"testsRun": 8, "failures": 0, "errors": 0, "wallSecondsIncludingImports": 0.06467862497083843},
+  "stageOutcome": "KeyError for selected safetensors shard in historical parent freshRemoteFiles",
+  "observedParentInventory": "No safetensors rows; source parameterAssets and parent consumer parameterAssets agree exactly on one selected full shard/four tensors.",
+  "stageDirectoryCreated": false,
+  "jobSubmitted": false,
+  "newConsumerExecuted": false,
+  "preMechanicsWrapperStop": "First pin-check wrapper used reviewedSources instead of actual snapshots key. It stopped before any new source import/test. Only the wrapper key was corrected; all28 pins verified before the one eight-test run.",
+  "correction": "Separate v2 driver and staging-plan-v2 addendum preserve original executed source; historical parameter metadata join followed by unchanged current full-shard/header/tensor checks. Pending Astra review."
+}

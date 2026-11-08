@@ -1,0 +1,255 @@
+{
+  "branches": {
+    "Xno": {
+      "base": "a",
+      "meaning": "native-baseline-own-response-after-admission"
+    },
+    "Xon": {
+      "base": "p",
+      "meaning": "own-baseline-native-response-after-admission"
+    }
+  },
+  "evidence": {
+    "act": "finite_consumer.crossover:v1",
+    "elapsed_ms": 10.816196911036968,
+    "implementation": "finite-admission",
+    "input_frame_id": "a7ce658627261d0152dff9ab0a7555c50185aab064f7e1acbb438c41f80a3b02",
+    "metrics": {
+      "crossedStates": 2,
+      "newLinears": 0,
+      "position": 9
+    },
+    "numerical_contract": "FP64 subtraction and sum, then FP32 RNE and BF16 RNE. Stored diagonals remain authoritative.",
+    "output_frame_id": "9d17e1c76e6cc7d59275c420bdc65297f1559d4651eb372893c67570f934d54a"
+  },
+  "input": {
+    "act": "root:v1",
+    "frame_id": "a7ce658627261d0152dff9ab0a7555c50185aab064f7e1acbb438c41f80a3b02",
+    "implementation": "saturn",
+    "metadata": {
+      "position": 9,
+      "source": "authenticated-stored-diagonal-H1"
+    },
+    "parent_frame_id": null,
+    "program_fingerprint": "7d9b4030c580256bb63fd34f738b7112e1b1f34377d9483e509a8be449005282",
+    "schema": "saturn-frame-v1",
+    "slots": {
+      "a": {
+        "abi": {},
+        "fingerprint": "f95e5475390f42fb6d35d062db889b1126bd0f2e9eea9a240e4af1408c52615c",
+        "handle": "saturn://a",
+        "kind": "opaque",
+        "name": "a"
+      },
+      "b": {
+        "abi": {},
+        "fingerprint": "2d4089ce015ae1e5651abe0ec2713a91b34744b53a823e83a93a8d7f9275f420",
+        "handle": "saturn://b",
+        "kind": "opaque",
+        "name": "b"
+      },
+      "p": {
+        "abi": {},
+        "fingerprint": "3db0d4591d478c282b794202113fbf33228e1f9c026696eedf4b5cb372e468d5",
+        "handle": "saturn://p",
+        "kind": "opaque",
+        "name": "p"
+      },
+      "q": {
+        "abi": {},
+        "fingerprint": "4fce83b7dd2decb7a8cc71f77b46768330d950960d6f7598e1a864d1922090bc",
+        "handle": "saturn://q",
+        "kind": "opaque",
+        "name": "q"
+      }
+    }
+  },
+  "inputPayloadAfter": {
+    "a": "ccc6c90f42645d596b04c5c21843410c65a5b92666b488709a63808f54102699",
+    "b": "7cc8952c2d96d95e378a03890e0197eb44c27f628751ce4c7805f7a57a0d2aaf",
+    "p": "7e62dda8d34e0e7bb47195e84e97c84bcddeb7d0be721a000f702259f60b0fd3",
+    "q": "f4ca2f1d19df29013d30675501a720ebda7350a0d1a7688ecde528e4c89167b4"
+  },
+  "inputPayloadBefore": {
+    "a": "ccc6c90f42645d596b04c5c21843410c65a5b92666b488709a63808f54102699",
+    "b": "7cc8952c2d96d95e378a03890e0197eb44c27f628751ce4c7805f7a57a0d2aaf",
+    "p": "7e62dda8d34e0e7bb47195e84e97c84bcddeb7d0be721a000f702259f60b0fd3",
+    "q": "f4ca2f1d19df29013d30675501a720ebda7350a0d1a7688ecde528e4c89167b4"
+  },
+  "output": {
+    "act": "finite_consumer.crossover:v1",
+    "frame_id": "9d17e1c76e6cc7d59275c420bdc65297f1559d4651eb372893c67570f934d54a",
+    "implementation": "finite-admission",
+    "metadata": {
+      "position": 9,
+      "source": "authenticated-stored-diagonal-H1"
+    },
+    "parent_frame_id": "a7ce658627261d0152dff9ab0a7555c50185aab064f7e1acbb438c41f80a3b02",
+    "program_fingerprint": "7d9b4030c580256bb63fd34f738b7112e1b1f34377d9483e509a8be449005282",
+    "schema": "saturn-frame-v1",
+    "slots": {
+      "Xno": {
+        "abi": {},
+        "fingerprint": "0e0c66474008522d6a28bcd0e4d98e3a0d34dfbde03680b6afc40cf6c07459b4",
+        "handle": "saturn://Xno",
+        "kind": "opaque",
+        "name": "Xno"
+      },
+      "Xon": {
+        "abi": {},
+        "fingerprint": "38e1bb4a5d1e081b0a06c40dbdd4817753ea4d5603d09033edf0a6002d485ba6",
+        "handle": "saturn://Xon",
+        "kind": "opaque",
+        "name": "Xon"
+      },
+      "a": {
+        "abi": {},
+        "fingerprint": "f95e5475390f42fb6d35d062db889b1126bd0f2e9eea9a240e4af1408c52615c",
+        "handle": "saturn://a",
+        "kind": "opaque",
+        "name": "a"
+      },
+      "b": {
+        "abi": {},
+        "fingerprint": "2d4089ce015ae1e5651abe0ec2713a91b34744b53a823e83a93a8d7f9275f420",
+        "handle": "saturn://b",
+        "kind": "opaque",
+        "name": "b"
+      },
+      "deltaN": {
+        "abi": {},
+        "fingerprint": "e4aa0773e9ac4f19c4afaa5d598660b959a139d2f0b961281a2bc82f2ddae965",
+        "handle": "saturn://deltaN",
+        "kind": "opaque",
+        "name": "deltaN"
+      },
+      "deltaO": {
+        "abi": {},
+        "fingerprint": "5ef4427eda5864d62c1eb428080cdad23138f972941be6fd708cce9654cd7f75",
+        "handle": "saturn://deltaO",
+        "kind": "opaque",
+        "name": "deltaO"
+      },
+      "diagN": {
+        "abi": {},
+        "fingerprint": "982f90daa52217b474b181d22c78b963ff749d2d2bce936c71a51e3cf6f0f710",
+        "handle": "saturn://diagN",
+        "kind": "opaque",
+        "name": "diagN"
+      },
+      "diagO": {
+        "abi": {},
+        "fingerprint": "982f90daa52217b474b181d22c78b963ff749d2d2bce936c71a51e3cf6f0f710",
+        "handle": "saturn://diagO",
+        "kind": "opaque",
+        "name": "diagO"
+      },
+      "p": {
+        "abi": {},
+        "fingerprint": "3db0d4591d478c282b794202113fbf33228e1f9c026696eedf4b5cb372e468d5",
+        "handle": "saturn://p",
+        "kind": "opaque",
+        "name": "p"
+      },
+      "q": {
+        "abi": {},
+        "fingerprint": "4fce83b7dd2decb7a8cc71f77b46768330d950960d6f7598e1a864d1922090bc",
+        "handle": "saturn://q",
+        "kind": "opaque",
+        "name": "q"
+      },
+      "rNO": {
+        "abi": {},
+        "fingerprint": "df38d066256362bb253a131603e7a2118fffc183cc7a3739195c74cbc69ff3be",
+        "handle": "saturn://rNO",
+        "kind": "opaque",
+        "name": "rNO"
+      },
+      "rON": {
+        "abi": {},
+        "fingerprint": "79130b52fe356dddbb944a7e757d9c7ce62822b09529e9911f089d11080f7dc8",
+        "handle": "saturn://rON",
+        "kind": "opaque",
+        "name": "rON"
+      },
+      "sumNO": {
+        "abi": {},
+        "fingerprint": "6a0bc365e5150b0fff8d1e73717a6e3612d277a16efd59d90034fbd91520d22a",
+        "handle": "saturn://sumNO",
+        "kind": "opaque",
+        "name": "sumNO"
+      },
+      "sumON": {
+        "abi": {},
+        "fingerprint": "0a05a9bd9d3bfc09086c224e7c02b98652f0db1cbadb13413a2cedcb64df4d06",
+        "handle": "saturn://sumON",
+        "kind": "opaque",
+        "name": "sumON"
+      }
+    }
+  },
+  "rowFields": {
+    "deltaN": {
+      "nonzeroCoordinates": 2532,
+      "normSquared": 3.141766066561104
+    },
+    "deltaO": {
+      "nonzeroCoordinates": 2552,
+      "normSquared": 2.988654763522959
+    },
+    "diagN": {
+      "nonzeroCoordinates": 0,
+      "normSquared": 0.0
+    },
+    "diagO": {
+      "nonzeroCoordinates": 0,
+      "normSquared": 0.0
+    },
+    "rNO": {
+      "nonzeroCoordinates": 1591,
+      "normSquared": 0.00020960681797532743
+    },
+    "rON": {
+      "nonzeroCoordinates": 801,
+      "normSquared": 3.974076855683961e-05
+    },
+    "sumNO": {
+      "nonzeroCoordinates": 2560,
+      "normSquared": 89.59773054074105
+    },
+    "sumON": {
+      "nonzeroCoordinates": 2557,
+      "normSquared": 39.364437004839715
+    }
+  },
+  "seconds": 0.010826987214386463,
+  "spec": {
+    "abi_version": "v1",
+    "identity": "finite_consumer.crossover:v1",
+    "invalidates": [],
+    "name": "finite_consumer.crossover",
+    "numerical_contract": "FP64 subtraction and sum, then FP32 RNE and BF16 RNE. Stored diagonals remain authoritative.",
+    "reads": [
+      "a",
+      "b",
+      "p",
+      "q"
+    ],
+    "schema": "saturn-act-spec-v1",
+    "tolerance": {},
+    "write_abis": {},
+    "write_kinds": {},
+    "writes": [
+      "Xno",
+      "Xon",
+      "deltaN",
+      "deltaO",
+      "sumNO",
+      "sumON",
+      "rNO",
+      "rON",
+      "diagN",
+      "diagO"
+    ]
+  }
+}

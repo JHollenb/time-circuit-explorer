@@ -1,0 +1,1026 @@
+[
+  {
+    "evidence": {
+      "act": "finite_consumer.signed_analysis:v1",
+      "elapsed_ms": 1.4632311649620533,
+      "implementation": "FP64-signed-paths",
+      "input_frame_id": "8e02267082bde4cca09e5c2621a45585f42e15c34c972a1ec3ea6bda09f4c1c4",
+      "metrics": {
+        "learnedOperators": 0,
+        "port": "H1",
+        "position": 9,
+        "width": 2560
+      },
+      "numerical_contract": "Contiguous FP64 products then np.sum(dtype=float64); separately formed signed paths and regrouping residual; math.fsum Gram terms.",
+      "output_frame_id": "23e5a4217b21d49bb16e383b3f807ea5999cd13296b15e2ebc1e41232d983455"
+    },
+    "input": {
+      "act": "root:v1",
+      "frame_id": "8e02267082bde4cca09e5c2621a45585f42e15c34c972a1ec3ea6bda09f4c1c4",
+      "implementation": "saturn",
+      "metadata": {
+        "port": "H1",
+        "position": 9,
+        "source": "actual-full-geometry-output-payloads"
+      },
+      "parent_frame_id": null,
+      "program_fingerprint": "7d9b4030c580256bb63fd34f738b7112e1b1f34377d9483e509a8be449005282",
+      "schema": "saturn-frame-v1",
+      "slots": {
+        "Xno": {
+          "abi": {},
+          "fingerprint": "0e0c66474008522d6a28bcd0e4d98e3a0d34dfbde03680b6afc40cf6c07459b4",
+          "handle": "saturn://Xno",
+          "kind": "opaque",
+          "name": "Xno"
+        },
+        "Xon": {
+          "abi": {},
+          "fingerprint": "38e1bb4a5d1e081b0a06c40dbdd4817753ea4d5603d09033edf0a6002d485ba6",
+          "handle": "saturn://Xon",
+          "kind": "opaque",
+          "name": "Xon"
+        },
+        "a": {
+          "abi": {},
+          "fingerprint": "f95e5475390f42fb6d35d062db889b1126bd0f2e9eea9a240e4af1408c52615c",
+          "handle": "saturn://a",
+          "kind": "opaque",
+          "name": "a"
+        },
+        "b": {
+          "abi": {},
+          "fingerprint": "2d4089ce015ae1e5651abe0ec2713a91b34744b53a823e83a93a8d7f9275f420",
+          "handle": "saturn://b",
+          "kind": "opaque",
+          "name": "b"
+        },
+        "p": {
+          "abi": {},
+          "fingerprint": "3db0d4591d478c282b794202113fbf33228e1f9c026696eedf4b5cb372e468d5",
+          "handle": "saturn://p",
+          "kind": "opaque",
+          "name": "p"
+        },
+        "q": {
+          "abi": {},
+          "fingerprint": "4fce83b7dd2decb7a8cc71f77b46768330d950960d6f7598e1a864d1922090bc",
+          "handle": "saturn://q",
+          "kind": "opaque",
+          "name": "q"
+        }
+      }
+    },
+    "inputPayloadAfter": {
+      "Xno": "a8af684bccaa3283e10a1f1349fb20127714439e9da60a416a790eee2f887b52",
+      "Xon": "5a9c071a1e648f6faf7fde5be3858a1c16c9f13774e2bdc0791216e7d88aebea",
+      "a": "ccc6c90f42645d596b04c5c21843410c65a5b92666b488709a63808f54102699",
+      "b": "7cc8952c2d96d95e378a03890e0197eb44c27f628751ce4c7805f7a57a0d2aaf",
+      "p": "7e62dda8d34e0e7bb47195e84e97c84bcddeb7d0be721a000f702259f60b0fd3",
+      "q": "f4ca2f1d19df29013d30675501a720ebda7350a0d1a7688ecde528e4c89167b4"
+    },
+    "inputPayloadBefore": {
+      "Xno": "a8af684bccaa3283e10a1f1349fb20127714439e9da60a416a790eee2f887b52",
+      "Xon": "5a9c071a1e648f6faf7fde5be3858a1c16c9f13774e2bdc0791216e7d88aebea",
+      "a": "ccc6c90f42645d596b04c5c21843410c65a5b92666b488709a63808f54102699",
+      "b": "7cc8952c2d96d95e378a03890e0197eb44c27f628751ce4c7805f7a57a0d2aaf",
+      "p": "7e62dda8d34e0e7bb47195e84e97c84bcddeb7d0be721a000f702259f60b0fd3",
+      "q": "f4ca2f1d19df29013d30675501a720ebda7350a0d1a7688ecde528e4c89167b4"
+    },
+    "output": {
+      "act": "finite_consumer.signed_analysis:v1",
+      "frame_id": "23e5a4217b21d49bb16e383b3f807ea5999cd13296b15e2ebc1e41232d983455",
+      "implementation": "FP64-signed-paths",
+      "metadata": {
+        "port": "H1",
+        "position": 9,
+        "source": "actual-full-geometry-output-payloads"
+      },
+      "parent_frame_id": "8e02267082bde4cca09e5c2621a45585f42e15c34c972a1ec3ea6bda09f4c1c4",
+      "program_fingerprint": "7d9b4030c580256bb63fd34f738b7112e1b1f34377d9483e509a8be449005282",
+      "schema": "saturn-frame-v1",
+      "slots": {
+        "Cno": {
+          "abi": {},
+          "fingerprint": "9e9787615f2db3edcb45540ea6a7a80908d4c5f7882d1db9a13f1cb1b405daba",
+          "handle": "saturn://Cno",
+          "kind": "opaque",
+          "name": "Cno"
+        },
+        "Con": {
+          "abi": {},
+          "fingerprint": "06f700e9a79adab092ebd0b5642c76911966be891a70a72847186605f822adbf",
+          "handle": "saturn://Con",
+          "kind": "opaque",
+          "name": "Con"
+        },
+        "E": {
+          "abi": {},
+          "fingerprint": "cf8fe5555f393a1afb0c49058e497342a1a622ff5bf12bf51cc1d8f6c996d8ce",
+          "handle": "saturn://E",
+          "kind": "opaque",
+          "name": "E"
+        },
+        "N": {
+          "abi": {},
+          "fingerprint": "e4aa0773e9ac4f19c4afaa5d598660b959a139d2f0b961281a2bc82f2ddae965",
+          "handle": "saturn://N",
+          "kind": "opaque",
+          "name": "N"
+        },
+        "O": {
+          "abi": {},
+          "fingerprint": "5ef4427eda5864d62c1eb428080cdad23138f972941be6fd708cce9654cd7f75",
+          "handle": "saturn://O",
+          "kind": "opaque",
+          "name": "O"
+        },
+        "Uno": {
+          "abi": {},
+          "fingerprint": "9552a5316a2572740298ba9439537aafbfa31d8451137e6b8bf096475cc452a9",
+          "handle": "saturn://Uno",
+          "kind": "opaque",
+          "name": "Uno"
+        },
+        "Uon": {
+          "abi": {},
+          "fingerprint": "6b77e4ed4542a496408e379ef04f8bc48e0c7ddbbabcd2e7f2ab8abccd2e3bc1",
+          "handle": "saturn://Uon",
+          "kind": "opaque",
+          "name": "Uon"
+        },
+        "Vno": {
+          "abi": {},
+          "fingerprint": "6973eddeb38aa74a3880f531ec23d837d2490bc555c397c64e012dac6d79ed69",
+          "handle": "saturn://Vno",
+          "kind": "opaque",
+          "name": "Vno"
+        },
+        "Von": {
+          "abi": {},
+          "fingerprint": "79130b52fe356dddbb944a7e757d9c7ce62822b09529e9911f089d11080f7dc8",
+          "handle": "saturn://Von",
+          "kind": "opaque",
+          "name": "Von"
+        },
+        "Xno": {
+          "abi": {},
+          "fingerprint": "0e0c66474008522d6a28bcd0e4d98e3a0d34dfbde03680b6afc40cf6c07459b4",
+          "handle": "saturn://Xno",
+          "kind": "opaque",
+          "name": "Xno"
+        },
+        "Xon": {
+          "abi": {},
+          "fingerprint": "38e1bb4a5d1e081b0a06c40dbdd4817753ea4d5603d09033edf0a6002d485ba6",
+          "handle": "saturn://Xon",
+          "kind": "opaque",
+          "name": "Xon"
+        },
+        "a": {
+          "abi": {},
+          "fingerprint": "f95e5475390f42fb6d35d062db889b1126bd0f2e9eea9a240e4af1408c52615c",
+          "handle": "saturn://a",
+          "kind": "opaque",
+          "name": "a"
+        },
+        "b": {
+          "abi": {},
+          "fingerprint": "2d4089ce015ae1e5651abe0ec2713a91b34744b53a823e83a93a8d7f9275f420",
+          "handle": "saturn://b",
+          "kind": "opaque",
+          "name": "b"
+        },
+        "gno": {
+          "abi": {},
+          "fingerprint": "982f90daa52217b474b181d22c78b963ff749d2d2bce936c71a51e3cf6f0f710",
+          "handle": "saturn://gno",
+          "kind": "opaque",
+          "name": "gno"
+        },
+        "gon": {
+          "abi": {},
+          "fingerprint": "982f90daa52217b474b181d22c78b963ff749d2d2bce936c71a51e3cf6f0f710",
+          "handle": "saturn://gon",
+          "kind": "opaque",
+          "name": "gon"
+        },
+        "p": {
+          "abi": {},
+          "fingerprint": "3db0d4591d478c282b794202113fbf33228e1f9c026696eedf4b5cb372e468d5",
+          "handle": "saturn://p",
+          "kind": "opaque",
+          "name": "p"
+        },
+        "q": {
+          "abi": {},
+          "fingerprint": "4fce83b7dd2decb7a8cc71f77b46768330d950960d6f7598e1a864d1922090bc",
+          "handle": "saturn://q",
+          "kind": "opaque",
+          "name": "q"
+        }
+      }
+    },
+    "port": "H1",
+    "spec": {
+      "abi_version": "v1",
+      "identity": "finite_consumer.signed_analysis:v1",
+      "invalidates": [],
+      "name": "finite_consumer.signed_analysis",
+      "numerical_contract": "Contiguous FP64 products then np.sum(dtype=float64); separately formed signed paths and regrouping residual; math.fsum Gram terms.",
+      "reads": [
+        "a",
+        "b",
+        "p",
+        "q",
+        "Xno",
+        "Xon"
+      ],
+      "schema": "saturn-act-spec-v1",
+      "tolerance": {},
+      "write_abis": {},
+      "write_kinds": {},
+      "writes": [
+        "N",
+        "O",
+        "Cno",
+        "Con",
+        "E",
+        "Uno",
+        "Vno",
+        "gno",
+        "Uon",
+        "Von",
+        "gon"
+      ]
+    }
+  },
+  {
+    "evidence": {
+      "act": "finite_consumer.signed_analysis:v1",
+      "elapsed_ms": 3.77015583217144,
+      "implementation": "FP64-signed-paths",
+      "input_frame_id": "9cce81d591f36aff89abbcec50503352c1b6832c9e94e81f4c10afb0ff681111",
+      "metrics": {
+        "learnedOperators": 0,
+        "port": "Q",
+        "position": 9,
+        "width": 4096
+      },
+      "numerical_contract": "Contiguous FP64 products then np.sum(dtype=float64); separately formed signed paths and regrouping residual; math.fsum Gram terms.",
+      "output_frame_id": "443015dd352316d51083f55feef1c289f501bfdcd776f49cc05a8ee01c035045"
+    },
+    "input": {
+      "act": "root:v1",
+      "frame_id": "9cce81d591f36aff89abbcec50503352c1b6832c9e94e81f4c10afb0ff681111",
+      "implementation": "saturn",
+      "metadata": {
+        "port": "Q",
+        "position": 9,
+        "source": "actual-full-geometry-output-payloads"
+      },
+      "parent_frame_id": null,
+      "program_fingerprint": "7d9b4030c580256bb63fd34f738b7112e1b1f34377d9483e509a8be449005282",
+      "schema": "saturn-frame-v1",
+      "slots": {
+        "Xno": {
+          "abi": {},
+          "fingerprint": "8e2d67c66a2805657ecd5e3381deb06fe397ab5efbeccee2277849d3bc8d8f98",
+          "handle": "saturn://Xno",
+          "kind": "opaque",
+          "name": "Xno"
+        },
+        "Xon": {
+          "abi": {},
+          "fingerprint": "9d57d09da5790f51f4e2e2abd09c9dc740d2137eac5cebaa142ab33fc3bb90de",
+          "handle": "saturn://Xon",
+          "kind": "opaque",
+          "name": "Xon"
+        },
+        "a": {
+          "abi": {},
+          "fingerprint": "820e2a5a836781caee82545397ecc3b3689c5c1af1a2cb750f3c353eb8edebfe",
+          "handle": "saturn://a",
+          "kind": "opaque",
+          "name": "a"
+        },
+        "b": {
+          "abi": {},
+          "fingerprint": "053a5cbc8d4fe81cbfa4401485056104e95539d17875c8b07161cac432cfe326",
+          "handle": "saturn://b",
+          "kind": "opaque",
+          "name": "b"
+        },
+        "p": {
+          "abi": {},
+          "fingerprint": "3438446278344bd4c29d0552d2cbba1854e35892a4394b3599c9cb49cf5089c4",
+          "handle": "saturn://p",
+          "kind": "opaque",
+          "name": "p"
+        },
+        "q": {
+          "abi": {},
+          "fingerprint": "ec6f771b520a28b84378d40d772393e11141c713cebd0b4c9f2598799ea297eb",
+          "handle": "saturn://q",
+          "kind": "opaque",
+          "name": "q"
+        }
+      }
+    },
+    "inputPayloadAfter": {
+      "Xno": "66612e619390fda84dcd770e7c972c87bd03914053705afae2b5b555ba3e2061",
+      "Xon": "80f5dd794f60459b5bba0ab0d797bb6498da2f7a2e3549fbce452be45ddb06c4",
+      "a": "d6a26b6993b1dac070f03468437b7da69ed8dbd9df81750f0a1af768456738d0",
+      "b": "f80bb10648491aa14e3d4af353698f721068af9230b0711060e67703e3019ed1",
+      "p": "585aaadacd9d5cbdc64a744fbe1206166c8c35a469dd6f7bd8940633535ffda9",
+      "q": "a6c063a9474dee954ba40aa39474dc73e3e32b6035f78f6a67d0f32ae5f1fafa"
+    },
+    "inputPayloadBefore": {
+      "Xno": "66612e619390fda84dcd770e7c972c87bd03914053705afae2b5b555ba3e2061",
+      "Xon": "80f5dd794f60459b5bba0ab0d797bb6498da2f7a2e3549fbce452be45ddb06c4",
+      "a": "d6a26b6993b1dac070f03468437b7da69ed8dbd9df81750f0a1af768456738d0",
+      "b": "f80bb10648491aa14e3d4af353698f721068af9230b0711060e67703e3019ed1",
+      "p": "585aaadacd9d5cbdc64a744fbe1206166c8c35a469dd6f7bd8940633535ffda9",
+      "q": "a6c063a9474dee954ba40aa39474dc73e3e32b6035f78f6a67d0f32ae5f1fafa"
+    },
+    "output": {
+      "act": "finite_consumer.signed_analysis:v1",
+      "frame_id": "443015dd352316d51083f55feef1c289f501bfdcd776f49cc05a8ee01c035045",
+      "implementation": "FP64-signed-paths",
+      "metadata": {
+        "port": "Q",
+        "position": 9,
+        "source": "actual-full-geometry-output-payloads"
+      },
+      "parent_frame_id": "9cce81d591f36aff89abbcec50503352c1b6832c9e94e81f4c10afb0ff681111",
+      "program_fingerprint": "7d9b4030c580256bb63fd34f738b7112e1b1f34377d9483e509a8be449005282",
+      "schema": "saturn-frame-v1",
+      "slots": {
+        "Cno": {
+          "abi": {},
+          "fingerprint": "77765d34ae098c3cbecf02f83f21efdea5d318d53204f05648095a30728da3aa",
+          "handle": "saturn://Cno",
+          "kind": "opaque",
+          "name": "Cno"
+        },
+        "Con": {
+          "abi": {},
+          "fingerprint": "cdd8ef51adca91b160b40105eeecdfb0479e23fea592447b70e4554487f38ac6",
+          "handle": "saturn://Con",
+          "kind": "opaque",
+          "name": "Con"
+        },
+        "E": {
+          "abi": {},
+          "fingerprint": "b1ebe62d25630c297debfe42e97ba9faee8577e1d973bf5e128bbe3ee06c1f00",
+          "handle": "saturn://E",
+          "kind": "opaque",
+          "name": "E"
+        },
+        "N": {
+          "abi": {},
+          "fingerprint": "267d95bc9534501bd9e2cb9dac316f05a9f14b53dcecd711cdebf32ce04954ee",
+          "handle": "saturn://N",
+          "kind": "opaque",
+          "name": "N"
+        },
+        "O": {
+          "abi": {},
+          "fingerprint": "4a82c2f83b2d661ec9648fe41f642c1181f2535c66e679adbd2adf737e588c2d",
+          "handle": "saturn://O",
+          "kind": "opaque",
+          "name": "O"
+        },
+        "Uno": {
+          "abi": {},
+          "fingerprint": "4a91a2fe973d37e9a5f050a41806278f657ed0a17f6b9fb1a2aa3e5168fe1ee8",
+          "handle": "saturn://Uno",
+          "kind": "opaque",
+          "name": "Uno"
+        },
+        "Uon": {
+          "abi": {},
+          "fingerprint": "e7f31659fb7508bcfd7f4c320d6e55e930e102d4f602d4a11fcb58177feaa50f",
+          "handle": "saturn://Uon",
+          "kind": "opaque",
+          "name": "Uon"
+        },
+        "Vno": {
+          "abi": {},
+          "fingerprint": "a29d34dd9344db393a7d13c51f127faf923e816f9835503bdbcf9cabd9fad66f",
+          "handle": "saturn://Vno",
+          "kind": "opaque",
+          "name": "Vno"
+        },
+        "Von": {
+          "abi": {},
+          "fingerprint": "d91e74c28ad65d07cf693f8f227b2856efd135c96b105f7c6d2e1b53931f8c01",
+          "handle": "saturn://Von",
+          "kind": "opaque",
+          "name": "Von"
+        },
+        "Xno": {
+          "abi": {},
+          "fingerprint": "8e2d67c66a2805657ecd5e3381deb06fe397ab5efbeccee2277849d3bc8d8f98",
+          "handle": "saturn://Xno",
+          "kind": "opaque",
+          "name": "Xno"
+        },
+        "Xon": {
+          "abi": {},
+          "fingerprint": "9d57d09da5790f51f4e2e2abd09c9dc740d2137eac5cebaa142ab33fc3bb90de",
+          "handle": "saturn://Xon",
+          "kind": "opaque",
+          "name": "Xon"
+        },
+        "a": {
+          "abi": {},
+          "fingerprint": "820e2a5a836781caee82545397ecc3b3689c5c1af1a2cb750f3c353eb8edebfe",
+          "handle": "saturn://a",
+          "kind": "opaque",
+          "name": "a"
+        },
+        "b": {
+          "abi": {},
+          "fingerprint": "053a5cbc8d4fe81cbfa4401485056104e95539d17875c8b07161cac432cfe326",
+          "handle": "saturn://b",
+          "kind": "opaque",
+          "name": "b"
+        },
+        "gno": {
+          "abi": {},
+          "fingerprint": "3e088183aa78ac21bedb2ccfaab64ec4d929db89a39d390bea6de1688ffddeca",
+          "handle": "saturn://gno",
+          "kind": "opaque",
+          "name": "gno"
+        },
+        "gon": {
+          "abi": {},
+          "fingerprint": "3e088183aa78ac21bedb2ccfaab64ec4d929db89a39d390bea6de1688ffddeca",
+          "handle": "saturn://gon",
+          "kind": "opaque",
+          "name": "gon"
+        },
+        "p": {
+          "abi": {},
+          "fingerprint": "3438446278344bd4c29d0552d2cbba1854e35892a4394b3599c9cb49cf5089c4",
+          "handle": "saturn://p",
+          "kind": "opaque",
+          "name": "p"
+        },
+        "q": {
+          "abi": {},
+          "fingerprint": "ec6f771b520a28b84378d40d772393e11141c713cebd0b4c9f2598799ea297eb",
+          "handle": "saturn://q",
+          "kind": "opaque",
+          "name": "q"
+        }
+      }
+    },
+    "port": "Q",
+    "spec": {
+      "abi_version": "v1",
+      "identity": "finite_consumer.signed_analysis:v1",
+      "invalidates": [],
+      "name": "finite_consumer.signed_analysis",
+      "numerical_contract": "Contiguous FP64 products then np.sum(dtype=float64); separately formed signed paths and regrouping residual; math.fsum Gram terms.",
+      "reads": [
+        "a",
+        "b",
+        "p",
+        "q",
+        "Xno",
+        "Xon"
+      ],
+      "schema": "saturn-act-spec-v1",
+      "tolerance": {},
+      "write_abis": {},
+      "write_kinds": {},
+      "writes": [
+        "N",
+        "O",
+        "Cno",
+        "Con",
+        "E",
+        "Uno",
+        "Vno",
+        "gno",
+        "Uon",
+        "Von",
+        "gon"
+      ]
+    }
+  },
+  {
+    "evidence": {
+      "act": "finite_consumer.signed_analysis:v1",
+      "elapsed_ms": 0.6992649286985397,
+      "implementation": "FP64-signed-paths",
+      "input_frame_id": "0f42154199001f4460a8f4d6d3ecf32b761a84559eab4dfd57201acc3313b5f5",
+      "metrics": {
+        "learnedOperators": 0,
+        "port": "K",
+        "position": 9,
+        "width": 1024
+      },
+      "numerical_contract": "Contiguous FP64 products then np.sum(dtype=float64); separately formed signed paths and regrouping residual; math.fsum Gram terms.",
+      "output_frame_id": "c7deda1ccf3209d7946beff2b4f010d8ef18e245bef0d9df0b9630ef85e1e3df"
+    },
+    "input": {
+      "act": "root:v1",
+      "frame_id": "0f42154199001f4460a8f4d6d3ecf32b761a84559eab4dfd57201acc3313b5f5",
+      "implementation": "saturn",
+      "metadata": {
+        "port": "K",
+        "position": 9,
+        "source": "actual-full-geometry-output-payloads"
+      },
+      "parent_frame_id": null,
+      "program_fingerprint": "7d9b4030c580256bb63fd34f738b7112e1b1f34377d9483e509a8be449005282",
+      "schema": "saturn-frame-v1",
+      "slots": {
+        "Xno": {
+          "abi": {},
+          "fingerprint": "b699816016d5694073b745bb0c9f422f7fc2a205237bf74fcc67853751337dc4",
+          "handle": "saturn://Xno",
+          "kind": "opaque",
+          "name": "Xno"
+        },
+        "Xon": {
+          "abi": {},
+          "fingerprint": "af0d666149a5ee13e8cd16800f212bd97871cbc8d2f0691f3b6b32030c79550f",
+          "handle": "saturn://Xon",
+          "kind": "opaque",
+          "name": "Xon"
+        },
+        "a": {
+          "abi": {},
+          "fingerprint": "6e994db9547656e523349fad66bc07adc8a57d777be90cc0d2606347c2868b32",
+          "handle": "saturn://a",
+          "kind": "opaque",
+          "name": "a"
+        },
+        "b": {
+          "abi": {},
+          "fingerprint": "50087236bc24447c2e654154cfb51d355cc8da8f98d6d7d252077d067f808677",
+          "handle": "saturn://b",
+          "kind": "opaque",
+          "name": "b"
+        },
+        "p": {
+          "abi": {},
+          "fingerprint": "45e408f166679a9838dafc529f41d5eb7a67c53fd2b49e546b3be8702515449f",
+          "handle": "saturn://p",
+          "kind": "opaque",
+          "name": "p"
+        },
+        "q": {
+          "abi": {},
+          "fingerprint": "aa5402390a0910179febf1bb8239e2a1a09cb0d0e7cfb078b910ed6af52e3112",
+          "handle": "saturn://q",
+          "kind": "opaque",
+          "name": "q"
+        }
+      }
+    },
+    "inputPayloadAfter": {
+      "Xno": "06de3094e0dd31f7d494c3c7bdd949954004e8d830567fddf09bae648f76564a",
+      "Xon": "e2671200b06dffdb1deb1c902659d64ba20742042814c63612e70969044334d7",
+      "a": "33959abc5baed32093677cf1c81589d668e7bce809103c90a5550c8a68afd6fd",
+      "b": "dee5655d8ad48a7db4f1be039425cd30b8bdcea376d04887ce6423951eaab84e",
+      "p": "b80e3323d28156dfa22063e238e2d012bd72f64406afaf39ae574bf10dfa4250",
+      "q": "4a2ef25a92e517518189f9f084a3002889e404b65484f84394369113c92a3728"
+    },
+    "inputPayloadBefore": {
+      "Xno": "06de3094e0dd31f7d494c3c7bdd949954004e8d830567fddf09bae648f76564a",
+      "Xon": "e2671200b06dffdb1deb1c902659d64ba20742042814c63612e70969044334d7",
+      "a": "33959abc5baed32093677cf1c81589d668e7bce809103c90a5550c8a68afd6fd",
+      "b": "dee5655d8ad48a7db4f1be039425cd30b8bdcea376d04887ce6423951eaab84e",
+      "p": "b80e3323d28156dfa22063e238e2d012bd72f64406afaf39ae574bf10dfa4250",
+      "q": "4a2ef25a92e517518189f9f084a3002889e404b65484f84394369113c92a3728"
+    },
+    "output": {
+      "act": "finite_consumer.signed_analysis:v1",
+      "frame_id": "c7deda1ccf3209d7946beff2b4f010d8ef18e245bef0d9df0b9630ef85e1e3df",
+      "implementation": "FP64-signed-paths",
+      "metadata": {
+        "port": "K",
+        "position": 9,
+        "source": "actual-full-geometry-output-payloads"
+      },
+      "parent_frame_id": "0f42154199001f4460a8f4d6d3ecf32b761a84559eab4dfd57201acc3313b5f5",
+      "program_fingerprint": "7d9b4030c580256bb63fd34f738b7112e1b1f34377d9483e509a8be449005282",
+      "schema": "saturn-frame-v1",
+      "slots": {
+        "Cno": {
+          "abi": {},
+          "fingerprint": "552fb05faef97e30e6cc6b91b14ab7f78f5acd915f35c2aaf2d7bd44d2d9a582",
+          "handle": "saturn://Cno",
+          "kind": "opaque",
+          "name": "Cno"
+        },
+        "Con": {
+          "abi": {},
+          "fingerprint": "a611e72f6ca91fc783a9b71d8097bf93237b89714fce6d217a3d1a81f596f03b",
+          "handle": "saturn://Con",
+          "kind": "opaque",
+          "name": "Con"
+        },
+        "E": {
+          "abi": {},
+          "fingerprint": "6ba4e0aef71318c8dfd7af57eecf2f4a7618781d88ae8d56bb772ba70a15eaef",
+          "handle": "saturn://E",
+          "kind": "opaque",
+          "name": "E"
+        },
+        "N": {
+          "abi": {},
+          "fingerprint": "327993f9230d4281af01da6ba7222550b4e7011c6f4b955cdd8fb03a868196d1",
+          "handle": "saturn://N",
+          "kind": "opaque",
+          "name": "N"
+        },
+        "O": {
+          "abi": {},
+          "fingerprint": "7a412503e92024274dc124688ef41ed54eabcb5bb7b62d75fa4f3fa7561650e4",
+          "handle": "saturn://O",
+          "kind": "opaque",
+          "name": "O"
+        },
+        "Uno": {
+          "abi": {},
+          "fingerprint": "40b0f131f4859569f4dc3686cbecfbab144287026ba6e23b79ce8362e434004c",
+          "handle": "saturn://Uno",
+          "kind": "opaque",
+          "name": "Uno"
+        },
+        "Uon": {
+          "abi": {},
+          "fingerprint": "07def4842035258ec2d832668e4cafcb1fc8b7ec5d01d6f8816c5b4bd88e204e",
+          "handle": "saturn://Uon",
+          "kind": "opaque",
+          "name": "Uon"
+        },
+        "Vno": {
+          "abi": {},
+          "fingerprint": "a9d7e7069a1a7244e6657ecda824edc4e4fb4fd0375f9b39084930887ba14021",
+          "handle": "saturn://Vno",
+          "kind": "opaque",
+          "name": "Vno"
+        },
+        "Von": {
+          "abi": {},
+          "fingerprint": "7d95e9826000b1d09628ec2b0dc3427cc374b9226c04a0829aea22833ffb93a5",
+          "handle": "saturn://Von",
+          "kind": "opaque",
+          "name": "Von"
+        },
+        "Xno": {
+          "abi": {},
+          "fingerprint": "b699816016d5694073b745bb0c9f422f7fc2a205237bf74fcc67853751337dc4",
+          "handle": "saturn://Xno",
+          "kind": "opaque",
+          "name": "Xno"
+        },
+        "Xon": {
+          "abi": {},
+          "fingerprint": "af0d666149a5ee13e8cd16800f212bd97871cbc8d2f0691f3b6b32030c79550f",
+          "handle": "saturn://Xon",
+          "kind": "opaque",
+          "name": "Xon"
+        },
+        "a": {
+          "abi": {},
+          "fingerprint": "6e994db9547656e523349fad66bc07adc8a57d777be90cc0d2606347c2868b32",
+          "handle": "saturn://a",
+          "kind": "opaque",
+          "name": "a"
+        },
+        "b": {
+          "abi": {},
+          "fingerprint": "50087236bc24447c2e654154cfb51d355cc8da8f98d6d7d252077d067f808677",
+          "handle": "saturn://b",
+          "kind": "opaque",
+          "name": "b"
+        },
+        "gno": {
+          "abi": {},
+          "fingerprint": "e702146ffaa2a82f86d5b93e2b3015270b312a573057393828aa198e4171b4a9",
+          "handle": "saturn://gno",
+          "kind": "opaque",
+          "name": "gno"
+        },
+        "gon": {
+          "abi": {},
+          "fingerprint": "e702146ffaa2a82f86d5b93e2b3015270b312a573057393828aa198e4171b4a9",
+          "handle": "saturn://gon",
+          "kind": "opaque",
+          "name": "gon"
+        },
+        "p": {
+          "abi": {},
+          "fingerprint": "45e408f166679a9838dafc529f41d5eb7a67c53fd2b49e546b3be8702515449f",
+          "handle": "saturn://p",
+          "kind": "opaque",
+          "name": "p"
+        },
+        "q": {
+          "abi": {},
+          "fingerprint": "aa5402390a0910179febf1bb8239e2a1a09cb0d0e7cfb078b910ed6af52e3112",
+          "handle": "saturn://q",
+          "kind": "opaque",
+          "name": "q"
+        }
+      }
+    },
+    "port": "K",
+    "spec": {
+      "abi_version": "v1",
+      "identity": "finite_consumer.signed_analysis:v1",
+      "invalidates": [],
+      "name": "finite_consumer.signed_analysis",
+      "numerical_contract": "Contiguous FP64 products then np.sum(dtype=float64); separately formed signed paths and regrouping residual; math.fsum Gram terms.",
+      "reads": [
+        "a",
+        "b",
+        "p",
+        "q",
+        "Xno",
+        "Xon"
+      ],
+      "schema": "saturn-act-spec-v1",
+      "tolerance": {},
+      "write_abis": {},
+      "write_kinds": {},
+      "writes": [
+        "N",
+        "O",
+        "Cno",
+        "Con",
+        "E",
+        "Uno",
+        "Vno",
+        "gno",
+        "Uon",
+        "Von",
+        "gon"
+      ]
+    }
+  },
+  {
+    "evidence": {
+      "act": "finite_consumer.signed_analysis:v1",
+      "elapsed_ms": 0.6915200501680374,
+      "implementation": "FP64-signed-paths",
+      "input_frame_id": "aae5f36610959c4873b21711595d4be627dd76f0a163cfe091c8219df31767e8",
+      "metrics": {
+        "learnedOperators": 0,
+        "port": "V",
+        "position": 9,
+        "width": 1024
+      },
+      "numerical_contract": "Contiguous FP64 products then np.sum(dtype=float64); separately formed signed paths and regrouping residual; math.fsum Gram terms.",
+      "output_frame_id": "2809dbf037d0f980bd21b20f729a4c42a64d80b7d738c6301eb5039bf7c2c237"
+    },
+    "input": {
+      "act": "root:v1",
+      "frame_id": "aae5f36610959c4873b21711595d4be627dd76f0a163cfe091c8219df31767e8",
+      "implementation": "saturn",
+      "metadata": {
+        "port": "V",
+        "position": 9,
+        "source": "actual-full-geometry-output-payloads"
+      },
+      "parent_frame_id": null,
+      "program_fingerprint": "7d9b4030c580256bb63fd34f738b7112e1b1f34377d9483e509a8be449005282",
+      "schema": "saturn-frame-v1",
+      "slots": {
+        "Xno": {
+          "abi": {},
+          "fingerprint": "abcc41e981c9945d5a5f1130e481b77acd297014a479e10098ddcca9de4640a7",
+          "handle": "saturn://Xno",
+          "kind": "opaque",
+          "name": "Xno"
+        },
+        "Xon": {
+          "abi": {},
+          "fingerprint": "d239c6ed711e193966a27eb4efa7ba4d5a775726484ae1d5b522b27f39b5b8d8",
+          "handle": "saturn://Xon",
+          "kind": "opaque",
+          "name": "Xon"
+        },
+        "a": {
+          "abi": {},
+          "fingerprint": "28a3708f6cd35fabb7814c534f4a9f33ffe1db34bf8b89737d4649b0147b335a",
+          "handle": "saturn://a",
+          "kind": "opaque",
+          "name": "a"
+        },
+        "b": {
+          "abi": {},
+          "fingerprint": "1de5274e440245450666ee6fd364eab21171e1cfe49573209fb5ee79ed109d39",
+          "handle": "saturn://b",
+          "kind": "opaque",
+          "name": "b"
+        },
+        "p": {
+          "abi": {},
+          "fingerprint": "6dbd49b8bf6940d7198e8fd7c18588c8733babacc3eb2290b5e27dedeb937387",
+          "handle": "saturn://p",
+          "kind": "opaque",
+          "name": "p"
+        },
+        "q": {
+          "abi": {},
+          "fingerprint": "82485fe9c66103b813683133e36b638c9a408820320b0f94ba6cf550afd3d9c4",
+          "handle": "saturn://q",
+          "kind": "opaque",
+          "name": "q"
+        }
+      }
+    },
+    "inputPayloadAfter": {
+      "Xno": "efbffece908a7cd3dd4e47f59c1ed36356089260fbd2c7a0c0fa5628dd5f79ea",
+      "Xon": "69fb33b363ec1e186c5bdffab7c3e05384bd515f032bac9465e623c82d2e10bb",
+      "a": "da855a6958397dc901a84fddbdf1df2d1b417502377c74f74da36d18d941bddf",
+      "b": "dd2358e33111f8bd65c1e3930e8ed8983dbe3db5abd63faf86132785deaf957c",
+      "p": "71c5e7a112656efca64960a488aeff1a3604e4132e3846018a38dbe4d67689f2",
+      "q": "4b32e42a6b43ef6314ce08f86fd2cf9011918ddf5a0c24a548c664138e872f48"
+    },
+    "inputPayloadBefore": {
+      "Xno": "efbffece908a7cd3dd4e47f59c1ed36356089260fbd2c7a0c0fa5628dd5f79ea",
+      "Xon": "69fb33b363ec1e186c5bdffab7c3e05384bd515f032bac9465e623c82d2e10bb",
+      "a": "da855a6958397dc901a84fddbdf1df2d1b417502377c74f74da36d18d941bddf",
+      "b": "dd2358e33111f8bd65c1e3930e8ed8983dbe3db5abd63faf86132785deaf957c",
+      "p": "71c5e7a112656efca64960a488aeff1a3604e4132e3846018a38dbe4d67689f2",
+      "q": "4b32e42a6b43ef6314ce08f86fd2cf9011918ddf5a0c24a548c664138e872f48"
+    },
+    "output": {
+      "act": "finite_consumer.signed_analysis:v1",
+      "frame_id": "2809dbf037d0f980bd21b20f729a4c42a64d80b7d738c6301eb5039bf7c2c237",
+      "implementation": "FP64-signed-paths",
+      "metadata": {
+        "port": "V",
+        "position": 9,
+        "source": "actual-full-geometry-output-payloads"
+      },
+      "parent_frame_id": "aae5f36610959c4873b21711595d4be627dd76f0a163cfe091c8219df31767e8",
+      "program_fingerprint": "7d9b4030c580256bb63fd34f738b7112e1b1f34377d9483e509a8be449005282",
+      "schema": "saturn-frame-v1",
+      "slots": {
+        "Cno": {
+          "abi": {},
+          "fingerprint": "bd54ec315311e8755048696be9122c465103212dffff1ff53a167195d4ea189e",
+          "handle": "saturn://Cno",
+          "kind": "opaque",
+          "name": "Cno"
+        },
+        "Con": {
+          "abi": {},
+          "fingerprint": "066e38e6c6c4590c428e8cd37406bcbcdbe7f2c48844336d6a36dd9c4d8db76f",
+          "handle": "saturn://Con",
+          "kind": "opaque",
+          "name": "Con"
+        },
+        "E": {
+          "abi": {},
+          "fingerprint": "64d8bab81b96efa5f52ea8db915a74f3edbb508b31c1ff7229362632b44c2cad",
+          "handle": "saturn://E",
+          "kind": "opaque",
+          "name": "E"
+        },
+        "N": {
+          "abi": {},
+          "fingerprint": "4537d4cee82f3aa312ea5aadd5d7e95f75d280bb2936f212cfdd9be66264caec",
+          "handle": "saturn://N",
+          "kind": "opaque",
+          "name": "N"
+        },
+        "O": {
+          "abi": {},
+          "fingerprint": "2ff300ddf2b6ef6bb8ce5a961e4b3a4f53ee8a1313f08f19484eca37d8da306d",
+          "handle": "saturn://O",
+          "kind": "opaque",
+          "name": "O"
+        },
+        "Uno": {
+          "abi": {},
+          "fingerprint": "58ef6b20942b4b3448f176b0e2adc2d78dd9c357e2ff6b6aa8fb70968f163686",
+          "handle": "saturn://Uno",
+          "kind": "opaque",
+          "name": "Uno"
+        },
+        "Uon": {
+          "abi": {},
+          "fingerprint": "32b62f1c509390fcee42d176ad62d74a40731f6f1ce85360dc97606552c88d56",
+          "handle": "saturn://Uon",
+          "kind": "opaque",
+          "name": "Uon"
+        },
+        "Vno": {
+          "abi": {},
+          "fingerprint": "b796a17653d4c83239a83dbbe145fa92ce87a671e10947aae8c7d5379985c7df",
+          "handle": "saturn://Vno",
+          "kind": "opaque",
+          "name": "Vno"
+        },
+        "Von": {
+          "abi": {},
+          "fingerprint": "4ec8a41bc4660584fa61d11a3727857c85fce172f2a3764cce7c0ff06b5b6e64",
+          "handle": "saturn://Von",
+          "kind": "opaque",
+          "name": "Von"
+        },
+        "Xno": {
+          "abi": {},
+          "fingerprint": "abcc41e981c9945d5a5f1130e481b77acd297014a479e10098ddcca9de4640a7",
+          "handle": "saturn://Xno",
+          "kind": "opaque",
+          "name": "Xno"
+        },
+        "Xon": {
+          "abi": {},
+          "fingerprint": "d239c6ed711e193966a27eb4efa7ba4d5a775726484ae1d5b522b27f39b5b8d8",
+          "handle": "saturn://Xon",
+          "kind": "opaque",
+          "name": "Xon"
+        },
+        "a": {
+          "abi": {},
+          "fingerprint": "28a3708f6cd35fabb7814c534f4a9f33ffe1db34bf8b89737d4649b0147b335a",
+          "handle": "saturn://a",
+          "kind": "opaque",
+          "name": "a"
+        },
+        "b": {
+          "abi": {},
+          "fingerprint": "1de5274e440245450666ee6fd364eab21171e1cfe49573209fb5ee79ed109d39",
+          "handle": "saturn://b",
+          "kind": "opaque",
+          "name": "b"
+        },
+        "gno": {
+          "abi": {},
+          "fingerprint": "e702146ffaa2a82f86d5b93e2b3015270b312a573057393828aa198e4171b4a9",
+          "handle": "saturn://gno",
+          "kind": "opaque",
+          "name": "gno"
+        },
+        "gon": {
+          "abi": {},
+          "fingerprint": "e702146ffaa2a82f86d5b93e2b3015270b312a573057393828aa198e4171b4a9",
+          "handle": "saturn://gon",
+          "kind": "opaque",
+          "name": "gon"
+        },
+        "p": {
+          "abi": {},
+          "fingerprint": "6dbd49b8bf6940d7198e8fd7c18588c8733babacc3eb2290b5e27dedeb937387",
+          "handle": "saturn://p",
+          "kind": "opaque",
+          "name": "p"
+        },
+        "q": {
+          "abi": {},
+          "fingerprint": "82485fe9c66103b813683133e36b638c9a408820320b0f94ba6cf550afd3d9c4",
+          "handle": "saturn://q",
+          "kind": "opaque",
+          "name": "q"
+        }
+      }
+    },
+    "port": "V",
+    "spec": {
+      "abi_version": "v1",
+      "identity": "finite_consumer.signed_analysis:v1",
+      "invalidates": [],
+      "name": "finite_consumer.signed_analysis",
+      "numerical_contract": "Contiguous FP64 products then np.sum(dtype=float64); separately formed signed paths and regrouping residual; math.fsum Gram terms.",
+      "reads": [
+        "a",
+        "b",
+        "p",
+        "q",
+        "Xno",
+        "Xon"
+      ],
+      "schema": "saturn-act-spec-v1",
+      "tolerance": {},
+      "write_abis": {},
+      "write_kinds": {},
+      "writes": [
+        "N",
+        "O",
+        "Cno",
+        "Con",
+        "E",
+        "Uno",
+        "Vno",
+        "gno",
+        "Uon",
+        "Von",
+        "gon"
+      ]
+    }
+  }
+]
