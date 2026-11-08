@@ -1,0 +1,405 @@
+{
+  "schema": "tce-root-pre-release-qa-v1",
+  "cycle": 111,
+  "atUTC": "2026-11-08T17:54:53.792903+00:00",
+  "status": "passed",
+  "checks": 90,
+  "localLinks": 60,
+  "scope": "Metadata,exact file hashes,scalar identities in frozen supplied output,and scoped Markdown link existence. No rerun of helper,model,scientific arrays or remote storage hashes. Final narrative review remains separate.",
+  "snapshots": [
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/README.md",
+      "sha256": "ec4132bcd71485561b074816ddaee0ffd866257070db4207a9a6ae32bdd3657f"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/README.md",
+      "sha256": "dab33116aca4001bc228fb5982f53aa705045a57a50cbcf0d4f43bf3b76948a3"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/zero-neural-research.md",
+      "sha256": "43a7837715dd7f318efa900973d954085e35f1ccab35918784239c23b7c9308d"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/zero-neural-progress.json",
+      "sha256": "69e1af05b42a88e324b3f05918aaa8a0addc6d7964e692d0294aa6d4a21c859a"
+    },
+    {
+      "path": "/Users/jakeholl/domains/obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+      "sha256": "00fcd6e1fc24b4a8dcf90daa73cf43beadd6d051effb7ed9cae7459f690943f4"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/research-review-cycle111/README.md",
+      "sha256": "844f63801f9e5ffb531a84ce5e02cea7dab89e632baa72badf3718fd0c89291a"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/storage-audit-cycle111/README.md",
+      "sha256": "75852ca554832c59825a2cb3e63fd29b2b6ae66ace920a558e1b7351705f47f3"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/storage-audit-cycle111/publication.json",
+      "sha256": "b911a5424e3f87142b60e2f1400b4cd937b927eff92d34b76c9c665c0e55bae7"
+    }
+  ],
+  "rows": [
+    {
+      "check": "survey",
+      "value": "3006cad0f01e7aeaa4ddb878afc52d0fe4bbca276c25841fe905cc37e839b291"
+    },
+    {
+      "check": "rootPinVerification",
+      "value": "ebd308065342f3dcd319d177c154993492d0d1faa25cd0784ab63d3219d43a68"
+    },
+    {
+      "check": "storage",
+      "value": "b911a5424e3f87142b60e2f1400b4cd937b927eff92d34b76c9c665c0e55bae7"
+    },
+    {
+      "check": "suppliedSource",
+      "value": "17271b6229e4d86e6ff88c616c1fd979a7a53111ce19d70732067cd8be2d1298"
+    },
+    {
+      "check": "sourceAdmission",
+      "value": "5f0fc87eb97245d16a9959d3659a6881677e30b2ca8b316595e44f153e52b64c"
+    },
+    {
+      "check": "suppliedResult",
+      "value": "c3a2e7f40dabec1c8562ac2324289c5faf96ca4870edd2dd77c30423540b0237"
+    },
+    {
+      "check": "selectedContract",
+      "value": "eea40e41786e8a000ed998e41dd19250f5e67cbd6c9d3c5b75b2c96d11059c34"
+    },
+    {
+      "check": "active",
+      "value": "active"
+    },
+    {
+      "check": "cycle",
+      "value": 111
+    },
+    {
+      "check": "lastTensor",
+      "value": 110
+    },
+    {
+      "check": "fullSurvey",
+      "value": 111
+    },
+    {
+      "check": "storage",
+      "value": 111
+    },
+    {
+      "check": "nextStorage",
+      "value": 114
+    },
+    {
+      "check": "nextReview",
+      "value": 114
+    },
+    {
+      "check": "noImplementation",
+      "value": false
+    },
+    {
+      "check": "noNewFit",
+      "value": false
+    },
+    {
+      "check": "noLiveJobs",
+      "value": []
+    },
+    {
+      "check": "currentBlog",
+      "value": "00fcd6e1fc24b4a8dcf90daa73cf43beadd6d051effb7ed9cae7459f690943f4"
+    },
+    {
+      "check": "evidenceBlog",
+      "value": "00fcd6e1fc24b4a8dcf90daa73cf43beadd6d051effb7ed9cae7459f690943f4"
+    },
+    {
+      "check": "storage:terminal-pointers.json",
+      "value": "af2241259f45738e68127977ffa36b5c88e93aa310933c73ac4f05a4a37e2000"
+    },
+    {
+      "check": "storage:current-snapshots.json",
+      "value": "58deb0084feee7438ba0f688a43ac2eee02ce7d51fc3376943fcfe94f90c8009"
+    },
+    {
+      "check": "auditor:storage_terminal_snapshots.py",
+      "value": "ac9cc9e151db11f325d9d16abdf957342827332c82e55f3cfb6593ef1c9311d9"
+    },
+    {
+      "check": "auditor:storage_local_snapshots_v2.py",
+      "value": "b8dd7b28932a34bfca1e4d082312553f46cb878468f6e07463ccde378241845c"
+    },
+    {
+      "check": "sourceResultJoin",
+      "value": "17271b6229e4d86e6ff88c616c1fd979a7a53111ce19d70732067cd8be2d1298"
+    },
+    {
+      "check": "suppliedCases",
+      "value": 3
+    },
+    {
+      "check": "signBefore",
+      "value": "-26/25"
+    },
+    {
+      "check": "signAfter",
+      "value": "49/100"
+    },
+    {
+      "check": "matchedSign",
+      "value": "-1/101"
+    },
+    {
+      "check": "secant",
+      "value": 2.0
+    },
+    {
+      "check": "actualZero",
+      "value": 0.0
+    },
+    {
+      "check": "link:/Users/jakeholl/domains/obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md:../../time-circuit-explorer/docs/results/research-review-cycle111/README.md",
+      "value": true
+    },
+    {
+      "check": "link:/Users/jakeholl/domains/obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md:../../time-circuit-explorer/docs/results/research-review-cycle111/projection-geometry.json",
+      "value": true
+    },
+    {
+      "check": "link:/Users/jakeholl/domains/obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md:../../time-circuit-explorer/docs/plans/writer-proposal-direction.md",
+      "value": true
+    },
+    {
+      "check": "link:/Users/jakeholl/domains/obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md:2026-11-06-111533-improving-an-mlp-on-its-own-predicted-states.md",
+      "value": true
+    },
+    {
+      "check": "link:/Users/jakeholl/domains/obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md:2026-11-07-021005-the-read-bends-before-the-reader-runs.md",
+      "value": true
+    },
+    {
+      "check": "link:/Users/jakeholl/domains/obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md:../../isa/docs/executable-symbol-scan-lowering.md",
+      "value": true
+    },
+    {
+      "check": "link:/Users/jakeholl/domains/obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md:../../cmachine/research/state_quotient/FINDINGS.md",
+      "value": true
+    },
+    {
+      "check": "link:/Users/jakeholl/domains/obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md:2026-11-05-153154-state-context-and-the-mathematics-of-time-circuits.md",
+      "value": true
+    },
+    {
+      "check": "link:/Users/jakeholl/domains/obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md:../../time-circuit-explorer/docs/results/research-review-cycle111/advisor-projection-source.json",
+      "value": true
+    },
+    {
+      "check": "link:/Users/jakeholl/domains/obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md:../../time-circuit-explorer/docs/results/storage-audit-cycle111/README.md",
+      "value": true
+    },
+    {
+      "check": "link:docs/results/research-review-cycle111/README.md:../../joint-state-writer.md",
+      "value": true
+    },
+    {
+      "check": "link:docs/results/research-review-cycle111/README.md:advisor-survey.json",
+      "value": true
+    },
+    {
+      "check": "link:docs/results/research-review-cycle111/README.md:root-pin-verification.json",
+      "value": true
+    },
+    {
+      "check": "link:docs/results/research-review-cycle111/README.md:projection-geometry.json",
+      "value": true
+    },
+    {
+      "check": "link:docs/results/research-review-cycle111/README.md:projection-geometry.json",
+      "value": true
+    },
+    {
+      "check": "link:docs/results/research-review-cycle111/README.md:../../plans/writer-proposal-direction.md",
+      "value": true
+    },
+    {
+      "check": "link:docs/results/research-review-cycle111/README.md:../../../../obsidian/blog/2026-11-06-111533-improving-an-mlp-on-its-own-predicted-states.md",
+      "value": true
+    },
+    {
+      "check": "link:docs/results/research-review-cycle111/README.md:../../../../obsidian/blog/2026-11-07-021005-the-read-bends-before-the-reader-runs.md",
+      "value": true
+    },
+    {
+      "check": "link:docs/results/research-review-cycle111/README.md:../../../../isa/docs/executable-symbol-scan-lowering.md",
+      "value": true
+    },
+    {
+      "check": "link:docs/results/research-review-cycle111/README.md:../../../../cmachine/research/state_quotient/FINDINGS.md",
+      "value": true
+    },
+    {
+      "check": "link:docs/results/research-review-cycle111/README.md:../../../../obsidian/blog/2026-11-05-153154-state-context-and-the-mathematics-of-time-circuits.md",
+      "value": true
+    },
+    {
+      "check": "link:docs/results/research-review-cycle111/README.md:../../../generator/README.md",
+      "value": true
+    },
+    {
+      "check": "link:docs/results/research-review-cycle111/README.md:projection_geometry.py",
+      "value": true
+    },
+    {
+      "check": "link:docs/results/research-review-cycle111/README.md:../storage-audit-cycle111/README.md",
+      "value": true
+    },
+    {
+      "check": "link:docs/results/storage-audit-cycle111/README.md:terminal-pointers.json",
+      "value": true
+    },
+    {
+      "check": "link:docs/results/storage-audit-cycle111/README.md:current-snapshots.json",
+      "value": true
+    },
+    {
+      "check": "link:docs/results/storage-audit-cycle111/README.md:publication.json",
+      "value": true
+    },
+    {
+      "check": "link:docs/results/storage-audit-cycle111/README.md:../storage-audit-cycle108/README.md",
+      "value": true
+    },
+    {
+      "check": "link:README.md:generator/README.md",
+      "value": true
+    },
+    {
+      "check": "link:README.md:docs/results/research-review-cycle111/README.md",
+      "value": true
+    },
+    {
+      "check": "link:README.md:docs/plans/writer-proposal-direction.md",
+      "value": true
+    },
+    {
+      "check": "link:README.md:docs/results/storage-audit-cycle111/README.md",
+      "value": true
+    },
+    {
+      "check": "link:README.md:docs/joint-state-writer.md",
+      "value": true
+    },
+    {
+      "check": "link:README.md:docs/coupled-normalization.md",
+      "value": true
+    },
+    {
+      "check": "link:README.md:docs/plans/joint-baseline-response-writer.md",
+      "value": true
+    },
+    {
+      "check": "link:README.md:docs/results/research-review-cycle108/README.md",
+      "value": true
+    },
+    {
+      "check": "link:README.md:docs/results/storage-audit-cycle108/README.md",
+      "value": true
+    },
+    {
+      "check": "link:README.md:docs/finite-consumer-crossover.md",
+      "value": true
+    },
+    {
+      "check": "link:README.md:docs/finite-writer-capacity.md",
+      "value": true
+    },
+    {
+      "check": "link:README.md:docs/plans/finite-consumer-crossover.md",
+      "value": true
+    },
+    {
+      "check": "link:README.md:docs/results/research-review-cycle105/README.md",
+      "value": true
+    },
+    {
+      "check": "link:README.md:docs/results/storage-audit-cycle105/README.md",
+      "value": true
+    },
+    {
+      "check": "link:README.md:docs/contrast-aware-contextual-writer.md",
+      "value": true
+    },
+    {
+      "check": "link:generator/README.md:../docs/results/research-review-cycle111/README.md",
+      "value": true
+    },
+    {
+      "check": "link:generator/README.md:../docs/joint-state-writer.md",
+      "value": true
+    },
+    {
+      "check": "link:generator/README.md:../docs/plans/writer-proposal-direction.md",
+      "value": true
+    },
+    {
+      "check": "link:generator/README.md:../docs/coupled-normalization.md",
+      "value": true
+    },
+    {
+      "check": "link:generator/README.md:../docs/plans/joint-baseline-response-writer.md",
+      "value": true
+    },
+    {
+      "check": "link:generator/README.md:../docs/results/research-review-cycle108/README.md",
+      "value": true
+    },
+    {
+      "check": "link:generator/README.md:../docs/results/storage-audit-cycle108/README.md",
+      "value": true
+    },
+    {
+      "check": "link:generator/README.md:../docs/finite-consumer-crossover.md",
+      "value": true
+    },
+    {
+      "check": "link:generator/README.md:../docs/finite-writer-capacity.md",
+      "value": true
+    },
+    {
+      "check": "link:generator/README.md:../docs/plans/finite-consumer-crossover.md",
+      "value": true
+    },
+    {
+      "check": "link:docs/zero-neural-research.md:results/research-review-cycle111/README.md",
+      "value": true
+    },
+    {
+      "check": "link:docs/zero-neural-research.md:plans/writer-proposal-direction.md",
+      "value": true
+    },
+    {
+      "check": "link:docs/zero-neural-research.md:results/storage-audit-cycle111/README.md",
+      "value": true
+    },
+    {
+      "check": "link:docs/zero-neural-research.md:joint-state-writer.md",
+      "value": true
+    },
+    {
+      "check": "link:docs/zero-neural-research.md:plans/arbitrary-prompt-zero-neural.md",
+      "value": true
+    },
+    {
+      "check": "link:docs/zero-neural-research.md:zero-network-image-response.md",
+      "value": true
+    },
+    {
+      "check": "link:docs/zero-neural-research.md:relative-mass-producer-feasibility.md",
+      "value": true
+    }
+  ]
+}

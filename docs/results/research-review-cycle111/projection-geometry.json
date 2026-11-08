@@ -1,0 +1,76 @@
+{
+  "schema": "tce-projection-geometry-supplied-v1",
+  "cases": 3,
+  "metricMismatch": {
+    "g": [
+      "2",
+      "-1"
+    ],
+    "A_diagonal": [
+      "100",
+      "1"
+    ],
+    "M_diagonal": [
+      "1",
+      "1"
+    ],
+    "sharedAtomDesignColumn": [
+      "1",
+      "1"
+    ],
+    "step": [
+      "-1/50",
+      "1"
+    ],
+    "HMetricProjection": [
+      "49/100",
+      "49/100"
+    ],
+    "AMetricProjection": [
+      "-1/101",
+      "-1/101"
+    ],
+    "exactProducts": {
+      "unconstrainedSlopeWithoutHalf": "-26/25",
+      "HMetricProjectedSlopeWithoutHalf": "49/100",
+      "AMetricProjectedSlopeWithoutHalf": "-1/101",
+      "negativeAMetricEnergy": "-1/101"
+    }
+  },
+  "changedRoute": {
+    "oldSlot": [
+      "0",
+      "1"
+    ],
+    "newRouteZeroDoseOffset": [
+      "1/2",
+      "-1/2"
+    ],
+    "zeroDoseLocalModelProductWithoutHalf": "3/2",
+    "affineIdentityCheckedDoses": [
+      "0",
+      "1/2",
+      "1"
+    ]
+  },
+  "finiteDose": {
+    "H0": 256.0,
+    "parentAtom": 1.0,
+    "parentH": 256.0,
+    "candidateH": {
+      "zero": 256.0,
+      "half": 258.0,
+      "full": 258.0
+    },
+    "actualHChanges": {
+      "zero": 0.0,
+      "half": 2.0,
+      "full": 2.0
+    },
+    "twoHalfChangesMinusFull": 2.0,
+    "actualZeroDoseChange": 0.0
+  },
+  "scope": "Exact supplied two-row/one-constant-atom projection and independent scalar BF16 witnesses. Not an observed model direction, native finite gradient, actual110 attribution or optimizer success.",
+  "sourceSHA256": "17271b6229e4d86e6ff88c616c1fd979a7a53111ce19d70732067cd8be2d1298",
+  "secondsAfterStandardLibraryImports": 0.00023725000210106373
+}

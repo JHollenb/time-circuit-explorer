@@ -1,0 +1,32 @@
+{
+  "schema": "tce-advisor-supplied-mechanics-source-review-v1",
+  "researchCycle": 111,
+  "reviewer": "Astra (/root/astra_zero_forward_advisor)",
+  "status": "approved-for-one-supplied-stdlib-run",
+  "source": {
+    "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/research-review-cycle111/projection_geometry.py",
+    "sha256": "17271b6229e4d86e6ff88c616c1fd979a7a53111ce19d70732067cd8be2d1298",
+    "bytes": 3736,
+    "readScope": "Complete source, all67 lines",
+    "readAtUTC": "2026-11-08T17:43:26.481880+00:00"
+  },
+  "chronology": "Static approval was delivered to root as an explicit pinned message before the helper's first run. This durable receipt is authored afterward; it does not claim the file itself existed before execution. Root reports independent source rehash and one common-launched successful run. Advisor did not import or execute the helper.",
+  "readyForFirstSuppliedMechanicsRun": true,
+  "findings": [
+    "The exact Fraction example is correct: A=diag(100,1), M=I, g=(2,-1), Delta=(-1/50,1); g·Delta=-26/25, H-metric shared-atom projection product=49/100, A-metric product=-1/101.",
+    "For a linear zero-containing fixed-route perturbation space B and SPD declared surrogate A, B^T A B delta=-B^T g implies g^T B delta=-delta^T B^T A B delta<=0. Redundant columns require a consistent quotient or pseudoinverse. This is before FP32 atom and BF16 state admissions.",
+    "The changed-route projection has a nonzero zero-dose offset unless the old write is representable on that route. Its exact affine identity does not carry through finite admission.",
+    "The struct FP32/BF16 witness correctly applies both additions: parent256, zero-dose256, half/full258. Twice half displacement minus full displacement is2, while actual zero-dose displacement is0.",
+    "Only supplied tiny values and the helper's own source are read. Exclusive destination creation preserves existing results. No model, scientific tensor, original normalization, native experiment or learned fit is executed by this helper."
+  ],
+  "limits": "No actual cycle110 direction alignment, finite-objective descent, optimizer success, causal attribution, capacity exclusion or new serving capability follows from these examples. The empirical Delta/u/v audit remains proposed.",
+  "issues": [],
+  "sourceCorrectionsRequired": false,
+  "laterResult": {
+    "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/research-review-cycle111/projection-geometry.json",
+    "sha256": "c3a2e7f40dabec1c8562ac2324289c5faf96ca4870edd2dd77c30423540b0237",
+    "bytes": 1638,
+    "readScope": "Complete compact JSON read after root's one run; three case outputs match the reviewed supplied mathematics.",
+    "secondsAfterStandardLibraryImports": 0.00023725000210106373
+  }
+}
