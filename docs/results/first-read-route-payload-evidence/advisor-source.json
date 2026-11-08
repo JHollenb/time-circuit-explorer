@@ -1,0 +1,36 @@
+{
+  "schema": "tce-first-read-advisor-source-v1",
+  "timestamp": "2026-11-08T07:35:54.358310+00:00",
+  "advisor": "Astra /root/astra_zero_forward_advisor",
+  "outcome": "bounded-proceed",
+  "chronology": "Exact review completed before first mechanics test, staging or submission; reviewer performed no tests, arrays, models, jobs or edits.",
+  "finalPins": {
+    "generator/first_read_payload.py": "677caddeaa57478606feae9c14fe24d2b9132dece5d9c50764f7545a50cfa0d4",
+    "generator/first_read_payload_study.py": "b601f7c8d6e72570f73e43caebd98d44d0161f67c559d2832e5b380a53ffebd3",
+    "generator/test_first_read_payload.py": "4f9857eaf87bc912d2c12b35b8dc47333bfd1f9f21a389fcb9c64be41f070b84",
+    "docs/plans/first-read-route-payload-implementation.md": "f322d01dc712b8f55e8f9c09be27704d97d2c56b772a36003b4820848f7368ee",
+    "generator/publish_first_read_payload.py": "97518af82540d75845871fc1d6719f5ad8c577a22fca414891d1e8308474cad2"
+  },
+  "originalPlanSHA256": "57bbbd9f0df7a73b5cbdb6cca702713a42ab343dae28c970d661c7a0782bdd72",
+  "findingsAndCorrections": [
+    "Root removed implicit token_history_address import dependency before execution.",
+    "Allow zero V payload; reject only V differences outside address8. Ninth tiny test checks this.",
+    "Enforce exactly four distinct source pairs.",
+    "Bind collected input metadata to staged hashes and submitted request."
+  ],
+  "conclusions": [
+    "Ordered per-query FP64 contractions/source casts/crossover signs and separate replay account consistent.",
+    "Finite discrepancies change instrument status without suppressing evidence.",
+    "418-character note, single CPU lease, host-local pin,300-second cap,no retries appropriate.",
+    "Independent byte/scalar audit distinguished from source-audited vector calculation; member allowlist trusted code,not adversarial sandbox."
+  ],
+  "profileGuidance": {
+    "parentJobID": "job-2ed557dbb033",
+    "numpy": "2.5.4",
+    "mathThreads": 1,
+    "head": 0,
+    "kvGroup": 0,
+    "policy": "current-top4-uncentered-fp64-fp32-bf16-v1",
+    "scope": "Earlier targeted source/profile guidance only; not a new full research survey or scientific evidence."
+  }
+}

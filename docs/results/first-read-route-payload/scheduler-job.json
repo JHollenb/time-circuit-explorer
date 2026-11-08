@@ -1,0 +1,258 @@
+{
+  "admission": {
+    "claim_key": "mrun:e9331577c153bc0b70687d821bc94777e7fc2c38b8092bf689e34d2c3cd39c18",
+    "fencing_epoch": 1,
+    "idempotency_key": "mrun:e9331577c153bc0b70687d821bc94777e7fc2c38b8092bf689e34d2c3cd39c18",
+    "scope_sha256": "8bed41d4855ec968012b8224d4af4b7904f9bb1b7f4003c1537cb16d720690ad"
+  },
+  "assigned_host": "beast",
+  "client_run_id": "b90bda2b6065be1f",
+  "cmd": [
+    "/usr/bin/env",
+    "PYTHONUNBUFFERED=1",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "PYTHONNOUSERSITE=1",
+    "PYTHONPATH=",
+    "OMP_NUM_THREADS=1",
+    "OPENBLAS_NUM_THREADS=1",
+    "MKL_NUM_THREADS=1",
+    "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+    "UV_LINK_MODE=symlink",
+    "uv",
+    "run",
+    "--no-project",
+    "--offline",
+    "--python",
+    "3.14.6",
+    "--with",
+    "numpy==2.5.4",
+    "python",
+    "-u",
+    "first_read_payload_study.py",
+    "execute",
+    "."
+  ],
+  "config": {
+    "backend": "numpy2.5.4-source-FP64-per-query-dot/FP32-BF16-RNE",
+    "crossReadProducts": 488448,
+    "device": "cpu",
+    "endpointReplayProducts": 488448,
+    "head": 0,
+    "mrun_guarded_request_sha256": "e9331577c153bc0b70687d821bc94777e7fc2c38b8092bf689e34d2c3cd39c18",
+    "requestSHA256": "6dcf5ba1605a4244546487b23e292930153b9a589c68f990041e22f1808877a6",
+    "retry_on_kill": false,
+    "schema": "tce-first-read-payload-request-v1",
+    "task_family": "analysis"
+  },
+  "created_ts": 1794123366.856908,
+  "env_alias": "mrun",
+  "experiment": "tce-first-read-route-payload-v1",
+  "external_rss_mb": null,
+  "external_vram_mb": null,
+  "finished_ts": 1794123369.2631629,
+  "job_id": "job-21bbdd67b700",
+  "kill_requested": 0,
+  "lease_expires_ts": 1794123428.736871,
+  "meta": {
+    "observed_peak_rss_mb": 73.4,
+    "observed_peak_rss_ts": 1794123368.7370775,
+    "queue_note": "Saved firstreader head0/group0,one35-key A/Bedit@8,477dependentpaddingqueries. Two crossreads488448valueproducts,sealbeforehistoricalraw/roundedmemberreads;endpointreplay488448separate. Capturedorderedtop4weights/tokenlocalV supplied;diagnosticGram/rounding work paid. CPU/BLAS1,hostlocalsourcepin,300scap,noretry. No QK/softmax/checkpoint/MLP/suffix/VAE/image. Preserve finite mismatch/cancellation,notsemanticshares."
+  },
+  "needs": {
+    "cpu": true,
+    "host": "beast",
+    "payload_custody_v2": true
+  },
+  "payload_custody": {
+    "declared": {
+      "sha256": "8428d919bc873e16e44620ede8508914c6cf61f6ad3ebcccb430cf32175824df",
+      "size_bytes": 29730
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794123367.0825336,
+      "sha256": "8428d919bc873e16e44620ede8508914c6cf61f6ad3ebcccb430cf32175824df",
+      "size_bytes": 29730
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794123366.9073572,
+      "sha256": "8428d919bc873e16e44620ede8508914c6cf61f6ad3ebcccb430cf32175824df",
+      "size_bytes": 29730
+    }
+  },
+  "payload_kind": "shipped",
+  "plan": null,
+  "plans": null,
+  "priority": 0,
+  "reservation": {
+    "cpu_threads": 4,
+    "disk_gb": 1.0,
+    "est_wall_s": null,
+    "ram_mb": 4096.0,
+    "source": "probe-default",
+    "vram_mb": 0.0
+  },
+  "result": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-21bbdd67b700",
+      "job_log": {
+        "bytes": 219,
+        "sha256": "d38f4e8e64f804cbeea56c694beba2e25eb2331284e510c6099ae72ab9f7999f"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-21bbdd67b700/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "numpy==2.5.4",
+        "python",
+        "-u",
+        "first_read_payload_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-21bbdd67b700",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-21bbdd67b700/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794123367.0726206
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794123367.1004317
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794123367.111873
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794123367.137349
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794123369.1980114
+        },
+        {
+          "name": "finished",
+          "ts": 1794123369.2067897
+        }
+      ]
+    },
+    "elapsed_s": 2.32,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "8428d919bc873e16e44620ede8508914c6cf61f6ad3ebcccb430cf32175824df",
+      "size_bytes": 29730
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 73.4,
+    "peak_vram_mb": 0.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "started_ts": 1794123367.1212876,
+  "state": "succeeded",
+  "status_detail": null,
+  "submitted_request": {
+    "client_estimate": null,
+    "client_run_id": "b90bda2b6065be1f",
+    "cmd": [
+      "/usr/bin/env",
+      "PYTHONUNBUFFERED=1",
+      "PYTHONDONTWRITEBYTECODE=1",
+      "PYTHONNOUSERSITE=1",
+      "PYTHONPATH=",
+      "OMP_NUM_THREADS=1",
+      "OPENBLAS_NUM_THREADS=1",
+      "MKL_NUM_THREADS=1",
+      "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+      "UV_LINK_MODE=symlink",
+      "uv",
+      "run",
+      "--no-project",
+      "--offline",
+      "--python",
+      "3.14.6",
+      "--with",
+      "numpy==2.5.4",
+      "python",
+      "-u",
+      "first_read_payload_study.py",
+      "execute",
+      "."
+    ],
+    "config": {
+      "backend": "numpy2.5.4-source-FP64-per-query-dot/FP32-BF16-RNE",
+      "crossReadProducts": 488448,
+      "device": "cpu",
+      "endpointReplayProducts": 488448,
+      "head": 0,
+      "mrun_guarded_request_sha256": "e9331577c153bc0b70687d821bc94777e7fc2c38b8092bf689e34d2c3cd39c18",
+      "requestSHA256": "6dcf5ba1605a4244546487b23e292930153b9a589c68f990041e22f1808877a6",
+      "retry_on_kill": false,
+      "schema": "tce-first-read-payload-request-v1",
+      "task_family": "analysis"
+    },
+    "env_alias": "mrun",
+    "experiment": "tce-first-read-route-payload-v1",
+    "needs": {
+      "cpu": true,
+      "host": "beast",
+      "payload_custody_v2": true
+    },
+    "payload": {
+      "sha256": "8428d919bc873e16e44620ede8508914c6cf61f6ad3ebcccb430cf32175824df",
+      "size_bytes": 29730
+    },
+    "payload_kind": "shipped",
+    "plans": null,
+    "priority": 0,
+    "reservation": null,
+    "schema": "mrun.normalized-job-request.v2",
+    "timeout_s": 300.0
+  },
+  "submitted_request_sha256": "11408db028179c7362cc5cafd698ab8c96fe5c2536de7d1ed67ff9037571284a",
+  "timeout_s": 300.0
+}

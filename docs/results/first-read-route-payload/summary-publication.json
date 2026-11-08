@@ -1,0 +1,59 @@
+{
+  "schema": "tce-first-read-public-scalar-supplement-v1",
+  "timestamp": "2026-11-08T07:38:39.429154+00:00",
+  "publicationSHA256": "d512cd7e0c335d973721594de0c75d32afc072733ec9856082f00c081bf8d084",
+  "sourceHashes": {
+    "report.json": "bda2e1cc010cc1354061669717b286345cd3ea95df4a854cab2a54dbbf474f37",
+    "rows.jsonl.gz": "0b12bcbf1dd816a01a048199983f47817dc6035a7a172e2bdd654292fb54e7dc",
+    "row-summary.json": "ea387eddc29b28522fe2219d5a2c1c750c28ee04f3e62456aff27131c7450f76"
+  },
+  "summarizerSHA256": "0990e70975088c9d52d60706f1a9f2d5b708ccfa264c65f2244c2e806ebd8706",
+  "summaryVerification": "Exact JSON equality to independent named stdlib scalar helper; no vector rerun.",
+  "sameOrderedSupportNonzeroReadRows": [
+    {
+      "queryPosition": 74,
+      "support": [
+        8,
+        1,
+        7,
+        9
+      ],
+      "weightsA": [
+        0.2746040304858993,
+        0.26620558649944664,
+        0.24541591714619965,
+        0.2137744658684543
+      ],
+      "weightsB": [
+        0.5109509971877461,
+        0.17947105042203432,
+        0.16545502676972162,
+        0.14412292562049808
+      ],
+      "rawDeltaSquaredNorm": 0.03297436968905974
+    },
+    {
+      "queryPosition": 75,
+      "support": [
+        8,
+        7,
+        10,
+        1
+      ],
+      "weightsA": [
+        0.2598129768828548,
+        0.25445878564625257,
+        0.2533711278473155,
+        0.23235710962357695
+      ],
+      "weightsB": [
+        0.49329699000383004,
+        0.17419250619112872,
+        0.17344793831388292,
+        0.15906256549115844
+      ],
+      "rawDeltaSquaredNorm": 0.03317893698086348
+    }
+  ],
+  "scope": "Additive scalar supplement after immutable original publication, not a new scientific worker or vector calculation."
+}

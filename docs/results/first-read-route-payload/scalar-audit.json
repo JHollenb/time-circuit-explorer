@@ -1,0 +1,588 @@
+{
+  "schema": "tce-first-read-payload-publication-audit-v1",
+  "jobID": "job-21bbdd67b700",
+  "requestSHA256": "6dcf5ba1605a4244546487b23e292930153b9a589c68f990041e22f1808877a6",
+  "rawFiles": 13,
+  "rawBytes": 252819,
+  "scalarRows": 477,
+  "panels": 3,
+  "memberReads": 18,
+  "allScalarAggregatesMatch": true,
+  "maximumObservedScalarGramRemainder": 1.3877787807814457e-17,
+  "retainedArrayBytes": 15641082,
+  "freshRemoteByteVerification": {
+    "files": [
+      {
+        "path": "/mnt/hdd8tb/mrun-work/job-21bbdd67b700/arrays/crosses.npz",
+        "sha256": "c81b93c5c5180fef8de2d477388922f0437032d6151afb77a62ce1ff683c0e86",
+        "bytes": 977390,
+        "headers": {
+          "AB.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "BA.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          }
+        }
+      },
+      {
+        "path": "/mnt/hdd8tb/mrun-work/job-21bbdd67b700/arrays/effects.npz",
+        "sha256": "466d3dc1ba6e255c5821fa24735830028d3b0ad7ec81af423cb67f03a4df7d0a",
+        "bytes": 14663692,
+        "headers": {
+          "raw-AA.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "raw-BB.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "raw-AB.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "raw-BA.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "replay-AA.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "replay-BB.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "bf16-AB.npy": {
+            "dtype": "<u2",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "bf16-BA.npy": {
+            "dtype": "<u2",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "retained-bf16-AA.npy": {
+            "dtype": "<u2",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "retained-bf16-BB.npy": {
+            "dtype": "<u2",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "ideal-payload.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "ideal-interaction.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "value-delta.npy": {
+            "dtype": "<f8",
+            "shape": [
+              128
+            ],
+            "fortranOrder": false
+          },
+          "retainedRaw-payload.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "retainedRaw-allocation.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "retainedRaw-interaction.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "retainedRaw-delta.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "retainedRaw-closureRemainder.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "retainedRaw-idealPayloadRemainder.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "retainedRaw-idealInteractionRemainder.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "replayRaw-payload.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "replayRaw-allocation.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "replayRaw-interaction.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "replayRaw-delta.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "replayRaw-closureRemainder.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "replayRaw-idealPayloadRemainder.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "replayRaw-idealInteractionRemainder.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "admittedBF16-payload.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "admittedBF16-allocation.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "admittedBF16-interaction.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "admittedBF16-delta.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "admittedBF16-closureRemainder.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "admittedBF16-idealPayloadRemainder.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          },
+          "admittedBF16-idealInteractionRemainder.npy": {
+            "dtype": "<f8",
+            "shape": [
+              477,
+              128
+            ],
+            "fortranOrder": false
+          }
+        }
+      },
+      {
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/lexical/A.npz",
+        "sha256": "ad946f690895ca4f657c03cf82d44a22390aa94f8d851acb28817788d5311ea4",
+        "bytes": 14170230,
+        "headers": {
+          "ids.npy": {
+            "dtype": "<i8",
+            "shape": [
+              512
+            ],
+            "fortranOrder": false
+          },
+          "mask.npy": {
+            "dtype": "<i8",
+            "shape": [
+              512
+            ],
+            "fortranOrder": false
+          },
+          "positions.npy": {
+            "dtype": "<i8",
+            "shape": [
+              512
+            ],
+            "fortranOrder": false
+          },
+          "e.npy": {
+            "dtype": "<u2",
+            "shape": [
+              512,
+              2560
+            ],
+            "fortranOrder": false
+          },
+          "q.npy": {
+            "dtype": "<u2",
+            "shape": [
+              512,
+              4096
+            ],
+            "fortranOrder": false
+          },
+          "k.npy": {
+            "dtype": "<u2",
+            "shape": [
+              512,
+              1024
+            ],
+            "fortranOrder": false
+          },
+          "v.npy": {
+            "dtype": "<u2",
+            "shape": [
+              512,
+              1024
+            ],
+            "fortranOrder": false
+          },
+          "qpos.npy": {
+            "dtype": "<u2",
+            "shape": [
+              512,
+              4096
+            ],
+            "fortranOrder": false
+          },
+          "kpos.npy": {
+            "dtype": "<u2",
+            "shape": [
+              512,
+              1024
+            ],
+            "fortranOrder": false
+          }
+        }
+      },
+      {
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/A-selected.npz",
+        "sha256": "8aa232084c0ed030f306e6968149ddf5d21e20fbf13c891caebdb0e33131e1f3",
+        "bytes": 22550028,
+        "headers": {
+          "raw.npy": {
+            "dtype": "<f8",
+            "shape": [
+              512,
+              4096
+            ],
+            "fortranOrder": false
+          },
+          "rounded.npy": {
+            "dtype": "<u2",
+            "shape": [
+              512,
+              4096
+            ],
+            "fortranOrder": false
+          },
+          "supportPositions.npy": {
+            "dtype": "<i8",
+            "shape": [
+              512,
+              32,
+              4
+            ],
+            "fortranOrder": false
+          },
+          "selectedLogits.npy": {
+            "dtype": "<f8",
+            "shape": [
+              512,
+              32,
+              4
+            ],
+            "fortranOrder": false
+          },
+          "selectedWeights.npy": {
+            "dtype": "<f8",
+            "shape": [
+              512,
+              32,
+              4
+            ],
+            "fortranOrder": false
+          },
+          "prefixCounts.npy": {
+            "dtype": "<i8",
+            "shape": [
+              512
+            ],
+            "fortranOrder": false
+          }
+        }
+      },
+      {
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/lexical/B.npz",
+        "sha256": "2940f24ee0944396570606c845792ea96a647ce91111c48b9f98bb7a73bba467",
+        "bytes": 14170230,
+        "headers": {
+          "ids.npy": {
+            "dtype": "<i8",
+            "shape": [
+              512
+            ],
+            "fortranOrder": false
+          },
+          "mask.npy": {
+            "dtype": "<i8",
+            "shape": [
+              512
+            ],
+            "fortranOrder": false
+          },
+          "positions.npy": {
+            "dtype": "<i8",
+            "shape": [
+              512
+            ],
+            "fortranOrder": false
+          },
+          "e.npy": {
+            "dtype": "<u2",
+            "shape": [
+              512,
+              2560
+            ],
+            "fortranOrder": false
+          },
+          "q.npy": {
+            "dtype": "<u2",
+            "shape": [
+              512,
+              4096
+            ],
+            "fortranOrder": false
+          },
+          "k.npy": {
+            "dtype": "<u2",
+            "shape": [
+              512,
+              1024
+            ],
+            "fortranOrder": false
+          },
+          "v.npy": {
+            "dtype": "<u2",
+            "shape": [
+              512,
+              1024
+            ],
+            "fortranOrder": false
+          },
+          "qpos.npy": {
+            "dtype": "<u2",
+            "shape": [
+              512,
+              4096
+            ],
+            "fortranOrder": false
+          },
+          "kpos.npy": {
+            "dtype": "<u2",
+            "shape": [
+              512,
+              1024
+            ],
+            "fortranOrder": false
+          }
+        }
+      },
+      {
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/B-selected.npz",
+        "sha256": "5e0abc1565c15a7b330700d3a4e8e687060941e74b3af6d6cd2eeb5ea01c0cb1",
+        "bytes": 22550028,
+        "headers": {
+          "raw.npy": {
+            "dtype": "<f8",
+            "shape": [
+              512,
+              4096
+            ],
+            "fortranOrder": false
+          },
+          "rounded.npy": {
+            "dtype": "<u2",
+            "shape": [
+              512,
+              4096
+            ],
+            "fortranOrder": false
+          },
+          "supportPositions.npy": {
+            "dtype": "<i8",
+            "shape": [
+              512,
+              32,
+              4
+            ],
+            "fortranOrder": false
+          },
+          "selectedLogits.npy": {
+            "dtype": "<f8",
+            "shape": [
+              512,
+              32,
+              4
+            ],
+            "fortranOrder": false
+          },
+          "selectedWeights.npy": {
+            "dtype": "<f8",
+            "shape": [
+              512,
+              32,
+              4
+            ],
+            "fortranOrder": false
+          },
+          "prefixCounts.npy": {
+            "dtype": "<i8",
+            "shape": [
+              512
+            ],
+            "fortranOrder": false
+          }
+        }
+      }
+    ],
+    "bytes": 89081598,
+    "scope": "Fresh full-file SHA and ZIP/NPY headers only; no numerical values interpreted or transported."
+  },
+  "auditorSHA256": "97518af82540d75845871fc1d6719f5ad8c577a22fca414891d1e8308474cad2",
+  "scope": "Independent full-byte/custody/member-phase and all-row scalar aggregation checks. Vector calculations are the source-audited worker result, not independently rerun here. No numerical arrays transported/interpreted locally; no scientific quality gate."
+}

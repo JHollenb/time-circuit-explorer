@@ -1,0 +1,307 @@
+{
+  "schema": "tce-first-read-source-intake97-v1",
+  "timestamp": "2026-11-08T07:22:00.657607+00:00",
+  "originalJobID": "job-2ed557dbb033",
+  "originalJobState": "succeeded",
+  "originalPayloadCustody": {
+    "required": true,
+    "declared": {
+      "sha256": "f1b031f2200dbe3f8e83af19fe9cc42ad3675fa1602c0bd65cabfd64c683d0e9",
+      "size_bytes": 186644
+    },
+    "sealed": {
+      "sha256": "f1b031f2200dbe3f8e83af19fe9cc42ad3675fa1602c0bd65cabfd64c683d0e9",
+      "size_bytes": 186644,
+      "sealed_ts": 1794003662.4389083
+    },
+    "executed": {
+      "sha256": "f1b031f2200dbe3f8e83af19fe9cc42ad3675fa1602c0bd65cabfd64c683d0e9",
+      "size_bytes": 186644,
+      "reported_ts": 1794003662.5580513,
+      "host": "beast"
+    }
+  },
+  "readerSealSHA256": "8f9b0eb30195036e3791ec11099373d9356a1049b3d08590b233b4c55adff8f5",
+  "sourceInspectionCodeSHA256": "9fa0493fdecb808ef5b0e08bbf2a1e48d1e00e05173923a086552fad2c4d28c2",
+  "intake": {
+    "files": [
+      {
+        "id": "A",
+        "kind": "lexical",
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/lexical/A.npz",
+        "sha256": "ad946f690895ca4f657c03cf82d44a22390aa94f8d851acb28817788d5311ea4",
+        "members": [
+          "ids",
+          "mask",
+          "positions",
+          "v"
+        ],
+        "bytes": 14170230,
+        "headers": {
+          "ids": {
+            "dtype": "<i8",
+            "shape": [
+              512
+            ],
+            "fortranOrder": false,
+            "npyVersion": [
+              1,
+              0
+            ]
+          },
+          "mask": {
+            "dtype": "<i8",
+            "shape": [
+              512
+            ],
+            "fortranOrder": false,
+            "npyVersion": [
+              1,
+              0
+            ]
+          },
+          "positions": {
+            "dtype": "<i8",
+            "shape": [
+              512
+            ],
+            "fortranOrder": false,
+            "npyVersion": [
+              1,
+              0
+            ]
+          },
+          "v": {
+            "dtype": "<u2",
+            "shape": [
+              512,
+              1024
+            ],
+            "fortranOrder": false,
+            "npyVersion": [
+              1,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "id": "A",
+        "kind": "selected",
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/A-selected.npz",
+        "sha256": "8aa232084c0ed030f306e6968149ddf5d21e20fbf13c891caebdb0e33131e1f3",
+        "members": [
+          "raw",
+          "rounded",
+          "supportPositions",
+          "selectedWeights",
+          "prefixCounts"
+        ],
+        "bytes": 22550028,
+        "headers": {
+          "raw": {
+            "dtype": "<f8",
+            "shape": [
+              512,
+              4096
+            ],
+            "fortranOrder": false,
+            "npyVersion": [
+              1,
+              0
+            ]
+          },
+          "rounded": {
+            "dtype": "<u2",
+            "shape": [
+              512,
+              4096
+            ],
+            "fortranOrder": false,
+            "npyVersion": [
+              1,
+              0
+            ]
+          },
+          "supportPositions": {
+            "dtype": "<i8",
+            "shape": [
+              512,
+              32,
+              4
+            ],
+            "fortranOrder": false,
+            "npyVersion": [
+              1,
+              0
+            ]
+          },
+          "selectedWeights": {
+            "dtype": "<f8",
+            "shape": [
+              512,
+              32,
+              4
+            ],
+            "fortranOrder": false,
+            "npyVersion": [
+              1,
+              0
+            ]
+          },
+          "prefixCounts": {
+            "dtype": "<i8",
+            "shape": [
+              512
+            ],
+            "fortranOrder": false,
+            "npyVersion": [
+              1,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "id": "B",
+        "kind": "lexical",
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/lexical/B.npz",
+        "sha256": "2940f24ee0944396570606c845792ea96a647ce91111c48b9f98bb7a73bba467",
+        "members": [
+          "ids",
+          "mask",
+          "positions",
+          "v"
+        ],
+        "bytes": 14170230,
+        "headers": {
+          "ids": {
+            "dtype": "<i8",
+            "shape": [
+              512
+            ],
+            "fortranOrder": false,
+            "npyVersion": [
+              1,
+              0
+            ]
+          },
+          "mask": {
+            "dtype": "<i8",
+            "shape": [
+              512
+            ],
+            "fortranOrder": false,
+            "npyVersion": [
+              1,
+              0
+            ]
+          },
+          "positions": {
+            "dtype": "<i8",
+            "shape": [
+              512
+            ],
+            "fortranOrder": false,
+            "npyVersion": [
+              1,
+              0
+            ]
+          },
+          "v": {
+            "dtype": "<u2",
+            "shape": [
+              512,
+              1024
+            ],
+            "fortranOrder": false,
+            "npyVersion": [
+              1,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "id": "B",
+        "kind": "selected",
+        "path": "/mnt/hdd8tb/mrun-work/job-2ed557dbb033/reader/B-selected.npz",
+        "sha256": "5e0abc1565c15a7b330700d3a4e8e687060941e74b3af6d6cd2eeb5ea01c0cb1",
+        "members": [
+          "raw",
+          "rounded",
+          "supportPositions",
+          "selectedWeights",
+          "prefixCounts"
+        ],
+        "bytes": 22550028,
+        "headers": {
+          "raw": {
+            "dtype": "<f8",
+            "shape": [
+              512,
+              4096
+            ],
+            "fortranOrder": false,
+            "npyVersion": [
+              1,
+              0
+            ]
+          },
+          "rounded": {
+            "dtype": "<u2",
+            "shape": [
+              512,
+              4096
+            ],
+            "fortranOrder": false,
+            "npyVersion": [
+              1,
+              0
+            ]
+          },
+          "supportPositions": {
+            "dtype": "<i8",
+            "shape": [
+              512,
+              32,
+              4
+            ],
+            "fortranOrder": false,
+            "npyVersion": [
+              1,
+              0
+            ]
+          },
+          "selectedWeights": {
+            "dtype": "<f8",
+            "shape": [
+              512,
+              32,
+              4
+            ],
+            "fortranOrder": false,
+            "npyVersion": [
+              1,
+              0
+            ]
+          },
+          "prefixCounts": {
+            "dtype": "<i8",
+            "shape": [
+              512
+            ],
+            "fortranOrder": false,
+            "npyVersion": [
+              1,
+              0
+            ]
+          }
+        }
+      }
+    ],
+    "bytes": 73440516,
+    "scope": "Fresh full-file SHA plus selected ZIP/NPY headers only; no numerical array values interpreted."
+  },
+  "scope": "Administrative byte/header authentication before scientific implementation; no model, numerical array computation or new scientific provenance claim."
+}

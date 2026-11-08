@@ -1,0 +1,167 @@
+{
+  "costScope": "Read products are exact counts, not total FLOPs. Qualification, diagnostics (norms/dots/factorial/rounding), file hashing, member materialization and serialization add paid CPU work. Historical lexical compilation, QK/softmax and all source acquisition remain paid.",
+  "crossReadProducts": 488448,
+  "endpointReplay": {
+    "A": {
+      "bf16WordDifferences": 0,
+      "coordinates": 61056,
+      "rawBitDifferences": 0,
+      "rawDifferenceSquaredNorm": 0.0,
+      "rawMaxAbsoluteDifference": 0.0,
+      "retainedRawAdmissionWordDifferences": 0
+    },
+    "B": {
+      "bf16WordDifferences": 0,
+      "coordinates": 61056,
+      "rawBitDifferences": 0,
+      "rawDifferenceSquaredNorm": 0.0,
+      "rawMaxAbsoluteDifference": 0.0,
+      "retainedRawAdmissionWordDifferences": 0
+    }
+  },
+  "endpointReplayProducts": 488448,
+  "guardCanaryDenials": [
+    "torch",
+    "transformers",
+    "diffusers",
+    "checkpoint-open"
+  ],
+  "highWaterRSSKiB": 78980,
+  "instrument_status": "source-endpoint-bit-exact",
+  "mechanics_status": "complete",
+  "newImages": 0,
+  "newNeuralModelEncoderDenoiserVAEEvaluations": 0,
+  "newQKProducts": 0,
+  "newSoftmaxEvaluations": 0,
+  "panels": {
+    "admittedBF16": {
+      "allocationNormOverDelta": 0.9095033985958619,
+      "deltaSquaredMinusGram": 0.0,
+      "negativeCrossTermRows": 145,
+      "payloadDotAllocation": 0.052693948575824025,
+      "payloadNormOverDelta": 0.4044147376260496,
+      "rows": 477,
+      "scope": "Dependent query-vector geometry; norm ratios are not semantic shares.",
+      "summedSquaredNorms": {
+        "allocation": 9.422155161308186,
+        "closureRemainder": 0.0,
+        "delta": 11.390468812677504,
+        "idealInteractionRemainder": 0.00024003427110426244,
+        "idealPayloadRemainder": 5.87571819846812e-05,
+        "interaction": 5.1432041887782685,
+        "payload": 1.8629257542176698
+      },
+      "twicePayloadDotAllocation": 0.10538789715164805,
+      "zeroDeltaRows": 49
+    },
+    "replayRaw": {
+      "allocationNormOverDelta": 0.9095082189056205,
+      "deltaSquaredMinusGram": 0.0,
+      "negativeCrossTermRows": 145,
+      "payloadDotAllocation": 0.05270669458286815,
+      "payloadNormOverDelta": 0.40440130983952843,
+      "rows": 477,
+      "scope": "Dependent query-vector geometry; norm ratios are not semantic shares.",
+      "summedSquaredNorms": {
+        "allocation": 9.422403279402001,
+        "closureRemainder": 4.590498110831972e-32,
+        "delta": 11.390648023581138,
+        "idealInteractionRemainder": 4.1055412164339955e-31,
+        "idealPayloadRemainder": 8.294443016163768e-32,
+        "interaction": 5.142820495085311,
+        "payload": 1.8628313550134006
+      },
+      "twicePayloadDotAllocation": 0.1054133891657363,
+      "zeroDeltaRows": 49
+    },
+    "retainedRaw": {
+      "allocationNormOverDelta": 0.9095082189056205,
+      "deltaSquaredMinusGram": 0.0,
+      "negativeCrossTermRows": 145,
+      "payloadDotAllocation": 0.05270669458286815,
+      "payloadNormOverDelta": 0.40440130983952843,
+      "rows": 477,
+      "scope": "Dependent query-vector geometry; norm ratios are not semantic shares.",
+      "summedSquaredNorms": {
+        "allocation": 9.422403279402001,
+        "closureRemainder": 4.590498110831972e-32,
+        "delta": 11.390648023581138,
+        "idealInteractionRemainder": 4.1055412164339955e-31,
+        "idealPayloadRemainder": 8.294443016163768e-32,
+        "interaction": 5.142820495085311,
+        "payload": 1.8628313550134006
+      },
+      "twicePayloadDotAllocation": 0.1054133891657363,
+      "zeroDeltaRows": 49
+    }
+  },
+  "qualification": {
+    "activeKeys": 35,
+    "changedTokenPositions": [
+      8
+    ],
+    "changedValuePositions": [
+      8
+    ],
+    "changedValueWords": 128,
+    "paddingQueries": 477,
+    "valueDeltaSquaredNorm": 0.14456108986632898,
+    "weightSumMaxAbsoluteError": {
+      "A": 6.661338147750939e-16,
+      "B": 6.661338147750939e-16
+    }
+  },
+  "readWork": {
+    "AA": {
+      "cpuSeconds": 0.0018807680000000049,
+      "expression": "separate C-contiguous float64[4] @ fancy-gather float64[4,128] per query; captured order; no renormalization",
+      "queries": 477,
+      "scalarValueProducts": 244224,
+      "wallSeconds": 0.001880840864032507
+    },
+    "AB": {
+      "cpuSeconds": 0.0026833619999999947,
+      "expression": "separate C-contiguous float64[4] @ fancy-gather float64[4,128] per query; captured order; no renormalization",
+      "queries": 477,
+      "scalarValueProducts": 244224,
+      "wallSeconds": 0.021082856692373753
+    },
+    "BA": {
+      "cpuSeconds": 0.0018696669999999915,
+      "expression": "separate C-contiguous float64[4] @ fancy-gather float64[4,128] per query; captured order; no renormalization",
+      "queries": 477,
+      "scalarValueProducts": 244224,
+      "wallSeconds": 0.0018696202896535397
+    },
+    "BB": {
+      "cpuSeconds": 0.001875737999999988,
+      "expression": "separate C-contiguous float64[4] @ fancy-gather float64[4,128] per query; captured order; no renormalization",
+      "queries": 477,
+      "scalarValueProducts": 244224,
+      "wallSeconds": 0.0018756012432277203
+    }
+  },
+  "requestSHA256": "6dcf5ba1605a4244546487b23e292930153b9a589c68f990041e22f1808877a6",
+  "rowCounts": {
+    "addressInBoth": 43,
+    "addressInNeither": 49,
+    "addressOnlyA": 0,
+    "addressOnlyB": 385,
+    "orderedSupportChanged": 426,
+    "total": 477
+  },
+  "runtime": {
+    "device": "cpu",
+    "mathThreads": 1,
+    "numpy": "2.5.4",
+    "policy": "FP64perquerydot->FP32->BF16RNE",
+    "python": "3.14.6 (main, Jun 23 2026, 15:18:23) [Clang 22.1.3 ]"
+  },
+  "schema": "tce-first-read-payload-result-v1",
+  "scope": "Paid retrospective selected-top4 first-read crossover on one35-key A/B pair. Captured weights and token-local values are supplied. No new prompt/image capability.",
+  "sourcePreparationSeconds": 0.1433856077492237,
+  "terminal_status": "arbitrary-prompt zero-neural generation unestablished",
+  "trend_status": "All dependent rows, signed effects and finite/admission remainders retained without quality gate",
+  "workerCPUSecondsBeforeReport": 0.194861254,
+  "workerWallSecondsBeforeReport": 0.31682506669312716
+}
