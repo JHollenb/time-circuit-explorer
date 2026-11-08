@@ -1,0 +1,153 @@
+{
+  "backend": "torch-selected-qkv-bf16;paired-fit-numpy-CPU1;stdlib-serving",
+  "batch_size": 1,
+  "budget": {
+    "coordinates": [
+      0,
+      160,
+      320,
+      480,
+      640,
+      800,
+      960,
+      1120,
+      1280,
+      1440,
+      1600,
+      1760,
+      1920,
+      2080,
+      2240,
+      2400
+    ],
+    "depth": 4,
+    "maxLeavesPerSlot": 16,
+    "maxLiteralFeatures": 64,
+    "minLeafRows": 8,
+    "slots": 2,
+    "thresholdsPerFeature": 16
+  },
+  "cases": [
+    {
+      "id": "A",
+      "prompt": "A red cube to the left of a blue sphere on a plain white tabletop. Two separate objects, studio photograph."
+    },
+    {
+      "id": "B",
+      "prompt": "A red cube to the right of a blue sphere on a plain white tabletop. Two separate objects, studio photograph."
+    },
+    {
+      "id": "00",
+      "prompt": "A studio photograph of a orange ceramic pitcher to the left of a teal metal watering can on a white table, soft lighting."
+    },
+    {
+      "id": "10",
+      "prompt": "A studio photograph of a teal ceramic pitcher to the left of a orange metal watering can on a white table, soft lighting."
+    },
+    {
+      "id": "01",
+      "prompt": "A studio photograph of a orange ceramic pitcher to the right of a teal metal watering can on a white table, soft lighting."
+    },
+    {
+      "id": "11",
+      "prompt": "A studio photograph of a teal ceramic pitcher to the right of a orange metal watering can on a white table, soft lighting."
+    },
+    {
+      "id": "novel",
+      "prompt": "A small glass observatory on a cliff above a violet ocean at sunrise."
+    }
+  ],
+  "device": "cuda",
+  "discovery": [
+    "A",
+    "B",
+    "00",
+    "10"
+  ],
+  "dtype": "bfloat16",
+  "finitePolicy": "Each slot: Python binary64 H+atom, round to IEEE FP32 RNE, then BF16 RNE; slot0 before slot1.",
+  "needs": {
+    "cuda": true
+  },
+  "novelNoTarget": [
+    "novel"
+  ],
+  "physicalWork": {
+    "consumerUnits": 6,
+    "fullBlocks": 0,
+    "images": 0,
+    "nominalMACs": 48318382080,
+    "originalLinears": 18
+  },
+  "protocol": "Fixed prior slot0/features/budget;one lambda1 paired residual tree. Relaxed global split Schur scoring,FP32 atoms,BF16 serving. Discovery actualQKV endpoint+response selects candidate/endpoint,exactimmutable restore. Ownfinalseal before reusedtransfer targetaccess. No expansion/newteacher/image.",
+  "requestSHA256": "fd34eaf901c407fc1b097854f3b07d21d017d46ea7a68ad63c0db8fd26fee33e",
+  "retainedMetadata": [
+    "request.json",
+    "reuse.json",
+    "frozen-plan.md",
+    "parent-inputs.json",
+    "parent-request.json",
+    "parent-programs.json",
+    "parent-consumer-fields.json",
+    "parent-typed-consumers.json",
+    "parent-lexical-manifest.json",
+    "parent-publication.json"
+  ],
+  "scheduling_contract": {
+    "additional_scheduler_submissions": 0,
+    "branchIsolation": "Fresh non-neural serving children within one outer lease;no per-child scheduler submissions.",
+    "branch_execution": "in_process",
+    "checkpoint_policy": "one outer Saturn worker lease; all logical branches and analysis remain in process",
+    "collection_policy": "direct_job_only",
+    "control_plane": "mrun_outer_lease",
+    "data_plane": "resident_worker",
+    "execution_model": "finite_local_program",
+    "interactive": false,
+    "lease_scope": "entire-worker",
+    "logical_branches": 6,
+    "logical_checkpoint_replays": 0,
+    "logical_operations": 6,
+    "max_local_work_items": 256,
+    "max_mrun_submissions": 1,
+    "modelLoadScope": "One selected layer1 inputnorm/QKV set;historical native/H0/endpoint/position outputs reused with exact input binding.",
+    "model_loads": 1,
+    "mrun_retry_policy": "none_for_finite_lease",
+    "per_branch_mrun_submissions": 0,
+    "per_transition_mrun_submissions": 0,
+    "replay_policy": "none_source_only",
+    "schema": "saturn-single-lease-scheduling-contract-v1"
+  },
+  "schema": "tce-contrast-writer-assay-v1",
+  "seq_len": 512,
+  "sourceHashes": {
+    "contextual_writer_program.py": "30fbd807de9ce8e9f14c9f06981036efe6b99760e34f0d4eb9328ade4ead896b",
+    "contextual_writer_saturn_init.py": "0b4063f8755a49201d726dd04de0578aa1bd9f31d9f900f9885d3a1e58e5fc8f",
+    "contextual_writer_worker.py": "c370e93a070c1773b3459877f56fd87f8343b83c1549110c5aec2bf2daeb980a",
+    "contrast_writer_fit.py": "dee4935b275189c60485a9d7cdf09ffaa819259cad87c9fdc668e995f59ee232",
+    "contrast_writer_study.py": "5d414af5f87fac1acaddd11533ded8e0242e401e5f4abb9f7e97edcda38e50cd",
+    "contrast_writer_worker.py": "15eadd131e887cbc7d711d741a1d94bd1d4be067c860ac81cb80c3784b5e5c99",
+    "frozen-plan.md": "81d4472210b10fbdea7ce2dbe66060adc49b4522aab5ec8266c88997dc0f816a",
+    "parent-consumer-fields.json": "1d53bc8c7699756497ad4f5d0ec51ef627010ad34c4454a40e592695fd3438e8",
+    "parent-inputs.json": "6b7026624254d757259f199eb46c98de843edba32ce2ed6d20a9da8ab2065e7a",
+    "parent-lexical-manifest.json": "b0f17a72cda3ad154bd410b9aba5445817e3baeedafadc8f813aba06659ec131",
+    "parent-programs.json": "0b3bec4a70c8e268175a1f2da5576b07b8b08e19b09263bf4036852c12c64a82",
+    "parent-publication.json": "101ad4e63e066bf4de3085cbcdacdc44205526445323b1388214d3e687455ab5",
+    "parent-request.json": "ea659ae9764f4652aebd541dd8bbd545381d3dc3c7afa3ec560978e30ed6542c",
+    "parent-typed-consumers.json": "2e896ecb02bb6a9e8f1a14c9b0837b46875341f0e4d4d6e7d7441651ec161eb1",
+    "publish_contextual_writer.py": "680cb16cccc8a57461c859662dd1fefb4a6c5655293ce21f7fa0d76bc1176b00",
+    "publish_contrast_writer.py": "6e0c0c13cfb6a98cf3e1c9dc5f6c63dd09647af2ff5ec32b12e06ae8acaa4b41",
+    "reuse.json": "a1e1b4a6ad7881d236835bb63d3966ec2d9cc300cd3d051ff063227d9111e6d4",
+    "saturn/__init__.py": "0b4063f8755a49201d726dd04de0578aa1bd9f31d9f900f9885d3a1e58e5fc8f",
+    "saturn/tensor_hash.py": "5e37cc1e34f4b49c97f026b861af8cbb8d47697931743b19e3fd506c9932f3f4",
+    "saturn/titan.py": "42b55ccb9185e87357bb40ad9b3162d1fe3407148f7087c52b18e2920e8eef01",
+    "template_cofactor_program.py": "f090088033dfd0ff09f521f51d5fbf482f26591c0c9e95f1b9bc19ea57b33f53",
+    "test_contrast_writer.py": "c5496294aa1aa033f40fa772fcd3d8e42c53c32016bf6cd85d87f78328c5a482",
+    "token_history_address.py": "b17d386c4059384faccc6461620bbabf4bee02503aa20831e41ff9a9a729ab29",
+    "token_history_process.py": "33092498786e550451e9c751f5a23983af645582e82199b7cc834e3aa7d2a385"
+  },
+  "timeoutSeconds": 900,
+  "transfer": [
+    "01",
+    "11"
+  ]
+}
