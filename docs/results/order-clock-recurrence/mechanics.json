@@ -1,0 +1,25 @@
+{
+  "schema": "tce-order-clock-mechanics-v1",
+  "sourceHashes": {
+    "order_clock_program.py": "f51442fa4e0b04999b388227207a3aae80a360890b8c09d7978606f37ecbcb8d",
+    "order_clock_study.py": "2050de6f4b38f68b80187c09bd187b168da0f74b3ee51ee83bb844ead31f9763",
+    "test_order_clock.py": "35adc87423224f4a91d45bc45c29422748810a388812724cd50aee301bfb4e2e"
+  },
+  "command": [
+    "/Users/jakeholl/domains/common/.venv/bin/python",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "generator",
+    "-p",
+    "test_order_clock.py",
+    "-v"
+  ],
+  "returncode": 0,
+  "processWallSeconds": 0.10835770796984434,
+  "stdout": "ORDER_CLOCK_COMPILE 3 bytes 39\nORDER_CLOCK_COMPILE 3 bytes 39\nORDER_CLOCK_COMPILE 3 bytes 39\nORDER_CLOCK_COMPILE 3 bytes 39\nORDER_CLOCK_COMPILE 3 bytes 39\nORDER_CLOCK_COMPILE 3 bytes 39\nORDER_CLOCK_COMPILE 3 bytes 39\nORDER_CLOCK_COMPILE 3 bytes 39\n",
+  "stderr": "test_every_rank_reconstructed_from_empty (test_order_clock.Mechanics) ... ok\ntest_fixed_grammar_byte_account_and_maximal_run (test_order_clock.Mechanics) ... ok\ntest_fresh_file_import_exclusions_and_replay (test_order_clock.Mechanics) ... ok\ntest_invalid_bytecode_and_source_permutation_refused (test_order_clock.Mechanics) ... ok\ntest_little_endian_and_deterministic_compression (test_order_clock.Mechanics) ... ok\ntest_sort_restriction_and_controls (test_order_clock.Mechanics) ... ok\ntest_sparse_rank_transport_all_tiny_legal_histories (test_order_clock.Mechanics) ... ok\ntest_unknown_sticky_masked_unknown_and_empty (test_order_clock.Mechanics) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.050s\n\nOK\n",
+  "scope": "Eighttiny supplied-integer mechanics,including81legalhistoriesx4methods; no model/savedneuralarrays."
+}

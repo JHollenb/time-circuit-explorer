@@ -1,0 +1,228 @@
+{
+  "admission": {
+    "claim_key": "mrun:d2ef801e4eb1d426b3e1b742390fefc38dc160eb263e9f23e50bdfbc11d8ea31",
+    "fencing_epoch": 1,
+    "idempotency_key": "mrun:d2ef801e4eb1d426b3e1b742390fefc38dc160eb263e9f23e50bdfbc11d8ea31",
+    "scope_sha256": "81f8618a5083c02252c99dafbf2ffd1415793bfd27f197ef63afff4de9c35f97"
+  },
+  "assigned_host": "beast",
+  "client_run_id": "d161d8439356799d",
+  "cmd": [
+    "/usr/bin/env",
+    "PYTHONUNBUFFERED=1",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "PYTHONNOUSERSITE=1",
+    "PYTHONPATH=",
+    "OMP_NUM_THREADS=1",
+    "OPENBLAS_NUM_THREADS=1",
+    "MKL_NUM_THREADS=1",
+    "python3",
+    "-u",
+    "order_clock_study.py",
+    "execute",
+    "."
+  ],
+  "config": {
+    "alphabetSize": 30,
+    "backend": "stdlib-integer-copy-insert-v1",
+    "device": "cpu",
+    "head": 0,
+    "length": 512,
+    "mrun_guarded_request_sha256": "d2ef801e4eb1d426b3e1b742390fefc38dc160eb263e9f23e50bdfbc11d8ea31",
+    "requestSHA256": "cf5d8dec66afb2af8418400ac672cb6aaee2916aa90c4a7127b7d2c093129a72",
+    "retry_on_kill": false,
+    "schema": "tce-order-clock-request-v1",
+    "task_family": "analysis"
+  },
+  "created_ts": 1794121410.7332518,
+  "env_alias": "mrun",
+  "experiment": "tce-order-clock-recurrence-v1",
+  "external_rss_mb": null,
+  "external_vram_mb": null,
+  "finished_ts": 1794121444.99903,
+  "job_id": "job-cc7afe8a9eca",
+  "kill_requested": 0,
+  "lease_expires_ts": 1794121503.9424715,
+  "meta": {
+    "observed_peak_rss_mb": 162.7,
+    "observed_peak_rss_ts": 1794121443.9431741,
+    "queue_note": "Exact finite order recurrence:fixed5B-COPY/3B-INSERT/2Bclockcounts;compile3924480savedordinals,no scores/modelcalls. Freshstdlib transports admitted ranks;full-order proof paidseparately.13packetsx4methods,sealedbefore512clock/26624oldrowcomparisons. Chargeallcopies/state/updatework/programbytes. IntentfirstCPU,softBeast,600scap,noretries;stopafteronegrammar,retainlarger/slowerresult."
+  },
+  "needs": {
+    "cpu": true,
+    "payload_custody_v2": true,
+    "prefer_host": "beast"
+  },
+  "payload_custody": {
+    "declared": {
+      "sha256": "d3edb50aaef2de971b2ac23453a347909eb15fc25c65fc8cccb9988515946499",
+      "size_bytes": 7311726
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794121411.2000551,
+      "sha256": "d3edb50aaef2de971b2ac23453a347909eb15fc25c65fc8cccb9988515946499",
+      "size_bytes": 7311726
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794121411.0736952,
+      "sha256": "d3edb50aaef2de971b2ac23453a347909eb15fc25c65fc8cccb9988515946499",
+      "size_bytes": 7311726
+    }
+  },
+  "payload_kind": "shipped",
+  "plan": null,
+  "plans": null,
+  "priority": 0,
+  "reservation": {
+    "cpu_threads": 4,
+    "disk_gb": 1.0,
+    "est_wall_s": null,
+    "ram_mb": 4096.0,
+    "source": "probe-default",
+    "vram_mb": 0.0
+  },
+  "result": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-cc7afe8a9eca",
+      "job_log": {
+        "bytes": 849,
+        "sha256": "c62740feb3119b9252561180d45752c80a1587639a8c29df5e5161f055066742"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-cc7afe8a9eca/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "python3",
+        "-u",
+        "order_clock_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-cc7afe8a9eca",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-cc7afe8a9eca/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794121411.157931
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794121411.2310255
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794121411.2387369
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794121411.2690654
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794121444.9387498
+        },
+        {
+          "name": "finished",
+          "ts": 1794121444.9559922
+        }
+      ]
+    },
+    "elapsed_s": 33.87,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "d3edb50aaef2de971b2ac23453a347909eb15fc25c65fc8cccb9988515946499",
+      "size_bytes": 7311726
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 162.7,
+    "peak_vram_mb": 0.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "started_ts": 1794121411.248816,
+  "state": "succeeded",
+  "status_detail": null,
+  "submitted_request": {
+    "client_estimate": null,
+    "client_run_id": "d161d8439356799d",
+    "cmd": [
+      "/usr/bin/env",
+      "PYTHONUNBUFFERED=1",
+      "PYTHONDONTWRITEBYTECODE=1",
+      "PYTHONNOUSERSITE=1",
+      "PYTHONPATH=",
+      "OMP_NUM_THREADS=1",
+      "OPENBLAS_NUM_THREADS=1",
+      "MKL_NUM_THREADS=1",
+      "python3",
+      "-u",
+      "order_clock_study.py",
+      "execute",
+      "."
+    ],
+    "config": {
+      "alphabetSize": 30,
+      "backend": "stdlib-integer-copy-insert-v1",
+      "device": "cpu",
+      "head": 0,
+      "length": 512,
+      "mrun_guarded_request_sha256": "d2ef801e4eb1d426b3e1b742390fefc38dc160eb263e9f23e50bdfbc11d8ea31",
+      "requestSHA256": "cf5d8dec66afb2af8418400ac672cb6aaee2916aa90c4a7127b7d2c093129a72",
+      "retry_on_kill": false,
+      "schema": "tce-order-clock-request-v1",
+      "task_family": "analysis"
+    },
+    "env_alias": "mrun",
+    "experiment": "tce-order-clock-recurrence-v1",
+    "needs": {
+      "cpu": true,
+      "payload_custody_v2": true,
+      "prefer_host": "beast"
+    },
+    "payload": {
+      "sha256": "d3edb50aaef2de971b2ac23453a347909eb15fc25c65fc8cccb9988515946499",
+      "size_bytes": 7311726
+    },
+    "payload_kind": "shipped",
+    "plans": null,
+    "priority": 0,
+    "reservation": null,
+    "schema": "mrun.normalized-job-request.v2",
+    "timeout_s": 600.0
+  },
+  "submitted_request_sha256": "c4bae6bddddab6e9ca674b69c6d9bb74abd7bc05b059333bb1273393b9ab09a5",
+  "timeout_s": 600.0
+}
