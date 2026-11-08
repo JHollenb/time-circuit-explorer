@@ -1,0 +1,24 @@
+{
+  "command": [
+    "../common/bin/common",
+    "exec",
+    "python",
+    "../saturn/src/saturn/evidence_pipeline.py",
+    "run",
+    "artifacts/dense-corner-v1/result",
+    "--watch-root",
+    "artifacts/dense-corner-v1/saturn-watch",
+    "--registry",
+    "artifacts/dense-corner-v1/claims-auto.jsonl",
+    "--results-root",
+    "artifacts/dense-corner-v1/result",
+    "--xref-db",
+    "artifacts/dense-corner-v1/xref.sqlite",
+    "--xref-root",
+    "artifacts/dense-corner-v1/result",
+    "--json"
+  ],
+  "returncode": 0,
+  "elapsedSeconds": 0.32349454215727746,
+  "scope": "Actual applied raw-result target instrument;0clean3findings2broken,not model quality."
+}
