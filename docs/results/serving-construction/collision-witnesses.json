@@ -1,0 +1,245 @@
+{
+  "schema": "tce-serving-collision-witness-v1",
+  "cycle": 91,
+  "analyzerSourceSHA256": "a32f453153c13a22f9febf3e3cfebe7540e8d8adf72ca0457bed49a24b7904e0",
+  "sourceSHA256": {
+    "docs/results/fresh-prompt-square/request.json": "c8544002b36980941b50f3c9899db93fb16a82c03da69ee7d3463aadf45dc288",
+    "docs/results/fresh-prompt-square/report.json": "db131593e32969d38c3345834493fe914ad888bbd913730daf793f10127d22f9",
+    "generator/fresh_square_study.py": "5c0084346395cdb70066372428ed400ecb38cc06b3d9f38d3195ba8535b33c14",
+    "generator/fresh_square_encoder.py": "5a1104c76dcb597edd9a31540b86be3a0657c2b17ebd70d1fe33c2053f583265",
+    "generator/fresh_square_images.py": "4cdc4ce242cb670efdef2cab485914363dc7ad55e88f3abc0515fbdc6048179d",
+    "generator/encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "generator/response_chart.py": "1d0febad9df24642badb474a521ee819ffb667b4cc22269a8603d36fee22589d",
+    "docs/raw-prompt-encoder-atoms.md": "3f6faba5ff0f36f7179fe428588984cdd6cf67bb8aad5cad2dfa33b7f7f8dd4d",
+    "docs/zero-network-image-response.md": "2f445aec723b6a123cf5bed74c089cd8dbffc58704cc008db883c8708c9782f4",
+    "docs/fresh-prompt-square.md": "3d862bdf0e1e0c011065183b6982225e6ebeefc1ffbf167dbe7f7ba44ee86bbf",
+    "docs/plans/complete-serving-construction.md": "d44bb8e51f2ac013bff0f91888014b34dacad92b2a22ab11582e28dbbb7781b1",
+    "generator/render_response.py": "2e6b0af97bfd422a002a47d6eedd04c67c60aba9e2f79e3dcc036bd729d2025e",
+    "docs/results/fresh-prompt-square/noise-seal.json": "3971848ac18fbef7d6ff616284fedd20e07fffd4c313be2297087bf7740336d8",
+    "docs/results/fresh-prompt-square/full-seal.json": "4c1bc60b3981a5ce8a6466a63079a04415e0b2a1ac57d4278ff17d68d1c4b29b",
+    "docs/results/fresh-prompt-square/images-full.json": "602146e108d7976615c82a4695047c2c338a2f9a189f20a4b398caba189f639f",
+    "docs/results/fresh-prompt-square/retained-array-verification.json": "bd8c8872b06301012f510e4117fdb68826b85b758d744b8de26803b127a827d0",
+    "docs/results/fresh-prompt-square/provenance.json": "e0077bc7eb4372928080fbc3e86cba3c015734b4371c219f3102e109ac447184"
+  },
+  "historicalRequestSHA256": "beeff453d9412eaef5ae67b122483561880cc1a70825cea0b2497340e9e7ef92",
+  "historicalCandidateSealSHA256": "560d1dcdb3ddcce3135d0cdf997e8f31d07547ba5f4233847d762eb8cf0dd7c3",
+  "historicalFullSealSHA256": "4c1bc60b3981a5ce8a6466a63079a04415e0b2a1ac57d4278ff17d68d1c4b29b",
+  "historicalJobID": "job-b69f30eff20a",
+  "commonControls": {
+    "newHistoricalNoiseDraws": 1,
+    "rawNoisePayloadSHA256": "1f07173aaa003c2089c47833f64b8e4f8da11b018c200c19f4037ed3aedc1c99",
+    "packedNoisePayloadSHA256": "966aae426ab36a631fd55a852684fe1ac963e9f2f9a452ef25b0cad65a18faf6",
+    "schedule": {
+      "sigmas": [
+        1.0,
+        0.9580853581428528,
+        0.8839818835258484,
+        0.7174965739250183,
+        0.0
+      ],
+      "sigmasPayloadSHA256": "47eb6994cb84cb458fd9a90cd3eb5e5890856680c154abec35f26e833e400852",
+      "timesteps": [
+        1000.0,
+        958.0853881835938,
+        883.9818725585938,
+        717.49658203125
+      ],
+      "timestepsPayloadSHA256": "1e400c851167980caf2cd88333c7b146d8c3168b4b49d817e7df5271dbda734b"
+    },
+    "numericalProfile": {
+      "bf16ReducedPrecisionReduction": true,
+      "cublasWorkspaceConfig": ":4096:8",
+      "cudaMatmulTF32": false,
+      "cudnnBenchmark": false,
+      "cudnnDeterministic": true,
+      "cudnnTF32": false,
+      "deterministicAlgorithms": true,
+      "float32MatmulPrecision": "highest",
+      "threads": 4
+    },
+    "scope": "Current local metadata joins/source clone rule; historical raw bytes are not freshly rehashed or numerically replayed."
+  },
+  "representation": "Sorted Counter(prompt.split()) over raw whitespace-delimited words, case and punctuation retained",
+  "promptWordCounts": {
+    "00": 23,
+    "10": 23,
+    "01": 23,
+    "11": 23
+  },
+  "bagCollisionClasses": [
+    [
+      "00",
+      "10"
+    ],
+    [
+      "01",
+      "11"
+    ]
+  ],
+  "orderedWordCollisionClasses": [],
+  "witnesses": [
+    {
+      "cases": [
+        "00",
+        "10"
+      ],
+      "publishedContrast": "color-left",
+      "sourceDenominator": "referenceRms; full-reference PNG response",
+      "nativeImageDistanceRMS": 60.40180436359169,
+      "pixelScale": "0..255",
+      "commonSeed": 271828,
+      "sameWordBag": true,
+      "status": "counterexample",
+      "orderedWordsDiffer": true,
+      "minimumWorstEndpointRMS": 30.200902181795843,
+      "minimumMeanEndpointSquaredRMS": 912.0944925944009,
+      "minimumPairPooledRMS": 30.200902181795843
+    },
+    {
+      "cases": [
+        "01",
+        "11"
+      ],
+      "publishedContrast": "color-right",
+      "sourceDenominator": "referenceRms; full-reference PNG response",
+      "nativeImageDistanceRMS": 62.211730601947885,
+      "pixelScale": "0..255",
+      "commonSeed": 271828,
+      "sameWordBag": true,
+      "status": "counterexample",
+      "orderedWordsDiffer": true,
+      "minimumWorstEndpointRMS": 31.105865300973942,
+      "minimumMeanEndpointSquaredRMS": 967.5748561223347,
+      "minimumPairPooledRMS": 31.105865300973942
+    }
+  ],
+  "knownWiring": {
+    "stateDomain": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "controlDomain": [
+      "hold",
+      "reveal"
+    ],
+    "transition": "(v,h)->(v,h) for hold; (h,h) for reveal",
+    "readout": "visible register v",
+    "transitionsPerRepresentation": 8,
+    "visibleOnlyWitnesses": [
+      {
+        "clock": 0,
+        "control": "reveal",
+        "states": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "code": [
+          0
+        ],
+        "successorCodes": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      {
+        "clock": 0,
+        "control": "reveal",
+        "states": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "code": [
+          1
+        ],
+        "successorCodes": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ]
+      }
+    ],
+    "refinedObservedWitnesses": [],
+    "scope": "Exhaustive only for this supplied four-state toy. No FLUX/Qwen quotient inferred."
+  },
+  "dependencyTable": [
+    {
+      "function": "c lexical prefix",
+      "status": "implemented-bounded-prefix",
+      "source": "generator/encoder_atoms.py:Prefix.tokenize/forward",
+      "provided": "Ordered IDs/mask/positions and compiled token-local E/Q/K/V/RoPE",
+      "missing": "First contextual attention and remaining contextual conditioning"
+    },
+    {
+      "function": "c complete conditioning",
+      "status": "unresolved-without-neural-evaluation",
+      "source": "generator/fresh_square_encoder.py:execute",
+      "provided": "Own-state native-weight encoder continuation",
+      "missing": "Executable non-neural contextual producer from ordered lexical operands"
+    },
+    {
+      "function": "I latent initializer",
+      "status": "specified-conditional-on-conditioning",
+      "source": "generator/fresh_square_study.py:noise;generator/fresh_square_images.py:execute",
+      "provided": "Declared RNG draw/packing plus conditioning and finite schedule state",
+      "missing": "General conditioning is still an unresolved input; learned image projections belong to T"
+    },
+    {
+      "function": "T own-state transitions",
+      "status": "unresolved-without-neural-evaluation",
+      "source": "generator/fresh_square_images.py:execute",
+      "provided": "Original learned denoiser and actual scheduler commits",
+      "missing": "Executable general transition independent of original learned maps"
+    },
+    {
+      "function": "R general pixels",
+      "status": "unresolved-without-neural-evaluation",
+      "source": "generator/fresh_square_images.py:execute;generator/response_chart.py:evaluate",
+      "provided": "Native VAE or RGB interpolation on four supplied context curves",
+      "missing": "Pixel producer for candidate-generated general states without a supplied scene renderer"
+    }
+  ],
+  "newImages": 0,
+  "newModelEvaluations": 0,
+  "newLearnedMatrixMACs": 0,
+  "scientificTensorOrImageReads": 0,
+  "numericalScope": "Published scalar JSON, raw text and tiny supplied finite-state mechanics only",
+  "mechanics_status": "complete",
+  "instrument_status": "applicable to two historical prompt pairs",
+  "trend_status": "Both raw-word-bag collisions have positive native-image distance and a necessary endpoint-error floor",
+  "terminal_status": "unassessed for arbitrary-prompt quality or generation",
+  "scope": "Retrospective exact-native factoring exclusion for this nominated representation and common controls. Not an exclusion of ordered atoms, position-aware representations, all compact states, or prompt-faithful generation without native pixel parity.",
+  "analysisSecondsBeforeReceiptWrite": 0.012247832957655191
+}
