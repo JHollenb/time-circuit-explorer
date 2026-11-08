@@ -1,0 +1,566 @@
+{
+  "schema": "tce-advisor-research-survey-v1",
+  "cycle": 93,
+  "advisor": "astra_zero_forward_advisor",
+  "reviewWindowUTC": {
+    "inventoryStart": "2026-11-08T05:05:17.245682Z",
+    "receiptEnd": "2026-11-08T05:21:47.428377+00:00"
+  },
+  "priorSurvey": {
+    "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/research-review-cycle90/advisor-survey.json",
+    "sha256": "dd5cf4e9a7e21f903abd2f8f9fd0fd978db70d91bc813e1b7b4c85e12df44d4f",
+    "window": "2026-11-08T03:21:12Z--2026-11-08T03:28:21Z",
+    "pinsRehashed": 55,
+    "unchangedAtSurvey": 54,
+    "changedAtSurvey": [
+      {
+        "path": "obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+        "priorSHA256": "45eec80c904a11e8d4f49f1f15cf8fc02891243d5dfe0125bf36a19c21bc2df9",
+        "surveySHA256": "54f0a646923434926eeae8c78d9384a948ea45e57e01f7e2d0b0bfb6216e36c8",
+        "unchanged": false
+      }
+    ]
+  },
+  "repositorySnapshotsAtReceipt": {
+    "time-circuit-explorer": {
+      "HEAD": "b5ad80961d95583d106d139e4a5c3ad99400c6dd",
+      "branch": "main",
+      "trackedStatusEntries": 3,
+      "untrackedFiles": 11,
+      "latestCommit": "b5ad80961d95583d106d139e4a5c3ad99400c6dd 2026-11-07T21:03:47-08:00 Compile exact future states into a guarded copy program",
+      "originMain": "b5ad80961d95583d106d139e4a5c3ad99400c6dd",
+      "endStatusEntries": [
+        "M README.md",
+        " M docs/zero-neural-progress.json",
+        " M generator/README.md",
+        "?? docs/behavioral-authority.md",
+        "?? docs/results/behavioral-authority-evidence/README.md",
+        "?? docs/results/behavioral-authority-evidence/collection.json",
+        "?? docs/results/behavioral-authority-evidence/primary-references.json",
+        "?? docs/results/behavioral-authority/report.json",
+        "?? docs/results/storage-audit-cycle93/README.md",
+        "?? docs/results/storage-audit-cycle93/current-snapshots.json",
+        "?? docs/results/storage-audit-cycle93/publication.json",
+        "?? docs/results/storage-audit-cycle93/terminal-pointers.json",
+        "?? generator/behavioral_authority.py",
+        "?? generator/test_behavioral_authority.py"
+      ]
+    },
+    "obsidian": {
+      "HEAD": "c533a251ca8ffa299e21035d363f982c313137c5",
+      "branch": "main",
+      "trackedStatusEntries": 85,
+      "untrackedFiles": 7352,
+      "latestCommit": "c533a251ca8ffa299e21035d363f982c313137c5 2026-11-07T02:30:57-08:00 Document prospective six-head curvature and its two error floors",
+      "originMain": "4b47373878fc641d6b2157ed7906d45c4534a8ca"
+    },
+    "saturn": {
+      "HEAD": "ec5fe5176b57b3b944ba4b88d9bdb2232cc7b54b",
+      "branch": "codex/spf-source-consolidation",
+      "trackedStatusEntries": 78999,
+      "untrackedFiles": 64158,
+      "latestCommit": "ec5fe5176b57b3b944ba4b88d9bdb2232cc7b54b 2026-10-27T23:38:24-07:00 Record MDB roadmap priorities and occurrence-qualified DAG request",
+      "originMain": "6a8390dbbb9bef3e0ea14757346cdcb66809b0e1"
+    },
+    "saturn-pub": {
+      "HEAD": "79cb0b17868bb52bd7c1dd1fde3f5aaffcc9eeb8",
+      "branch": "mdb-project-navigation",
+      "trackedStatusEntries": 11,
+      "untrackedFiles": 456,
+      "latestCommit": "79cb0b17868bb52bd7c1dd1fde3f5aaffcc9eeb8 2026-11-07T02:29:02-08:00 Compile prospective second-order Qwen read-weight programs and demos",
+      "originMain": "e32303c2d611b29e745edad6d7ddb499f8fd7b0e"
+    },
+    "manalysis": {
+      "HEAD": "c9c617e79618e59457c35f9e34bca0080892b916",
+      "branch": "feat/decoder-on-decomposed",
+      "trackedStatusEntries": 3,
+      "untrackedFiles": 3,
+      "latestCommit": "c9c617e79618e59457c35f9e34bca0080892b916 2026-08-08T02:01:56-07:00 fix(tracer): preserve keyword module inputs",
+      "originMain": null
+    },
+    "mstack": {
+      "HEAD": "f0f4c6d0ae673b516fa8e7033142ffe12e89a8a0",
+      "branch": "main",
+      "trackedStatusEntries": 5,
+      "untrackedFiles": 9,
+      "latestCommit": "f0f4c6d0ae673b516fa8e7033142ffe12e89a8a0 2026-08-07T01:38:32-07:00 feat: branch-batch debugger, diffusion lexical/spectral probes, paged_dit experiments, vm context runtime; ignore results/payload artifacts",
+      "originMain": "f0f4c6d0ae673b516fa8e7033142ffe12e89a8a0"
+    },
+    "model-experiments": {
+      "HEAD": "c36b5d07ef7adc58f0d226f86aa655b0ef5ed649",
+      "branch": "decoder-spine-mlflow",
+      "trackedStatusEntries": 5,
+      "untrackedFiles": 7670,
+      "latestCommit": "c36b5d07ef7adc58f0d226f86aa655b0ef5ed649 2026-07-15T12:16:49-07:00 mx: smoke pass keeps the real task_family for estimation (same codepath, same RAM)",
+      "originMain": "1941c9825891b56cfefa42e18f720548b1a9e373"
+    },
+    "research": {
+      "HEAD": "3e427b76fac5912a46432f1e4d37533521a59322",
+      "branch": "additional-experiments",
+      "trackedStatusEntries": 3,
+      "untrackedFiles": 4069,
+      "latestCommit": "3e427b76fac5912a46432f1e4d37533521a59322 2026-11-06T22:06:55-08:00 Document time circuit architecture refinements and link the paper",
+      "originMain": "4eaed8bd4c884c8bba2c122eccf85346076574b0"
+    },
+    "mrun": {
+      "HEAD": "ef818f79d6d9d79ba8d391a325318338465ca438",
+      "branch": "feat/diffusers-phase-cuda",
+      "trackedStatusEntries": 0,
+      "untrackedFiles": 0,
+      "latestCommit": "ef818f79d6d9d79ba8d391a325318338465ca438 2026-10-27T15:57:25-07:00 Repair sandbox probing and reopen abandoned native KV parents safely",
+      "originMain": null
+    },
+    "cmachine": {
+      "HEAD": "882249783613f3350a9f11641c23b022b54dd929",
+      "branch": "main",
+      "trackedStatusEntries": 3,
+      "untrackedFiles": 27,
+      "latestCommit": "882249783613f3350a9f11641c23b022b54dd929 2026-11-06T23:08:26-08:00 Document supported models and measured logit errors",
+      "originMain": "882249783613f3350a9f11641c23b022b54dd929"
+    },
+    "isa": {
+      "HEAD": "30cda533a8e1346ff9d0cdfaab166429c065722d",
+      "branch": "main",
+      "trackedStatusEntries": 1,
+      "untrackedFiles": 10095,
+      "latestCommit": "30cda533a8e1346ff9d0cdfaab166429c065722d 2026-11-05T12:27:06-08:00 Merge feat/m5f: M5f frozen ade17e3c (monotone refit, cmov, int stops, SSE/XMM, OS kernel model + fs:), gate 0 refuted",
+      "originMain": "a7fe50e9b20f09ac3137c952b653bda8f5935b45"
+    }
+  },
+  "initialTCE": {
+    "HEAD": "b5ad80961d95583d106d139e4a5c3ad99400c6dd",
+    "originMainSame": true,
+    "tracked": 0,
+    "untracked": 0,
+    "newCommitsSince90": [
+      "8a8967a39760c7c11c033bf906937fc49eb0befb20",
+      "9765eff0adf944fe645c118cf5904c3f1de35aa7",
+      "b5ad80961d95583d106d139e4a5c3ad99400c6dd"
+    ]
+  },
+  "inventoryMethod": "Independent git log/status and rg --files/stat. Default ignore/hidden rules apply; not every filesystem object. Text counts .md/.py/.json/.jsonl/.toml/.yaml/.yml/.txt/.rs; cmachine/isa extended scan also .c/.h. Different count definitions are not comparable with prior receipts. All inventoried paths statted; zero missing. Most recent45 blogs/25nonblogs/18text-per-repo inspected before content selections. No images or scientific arrays opened.",
+  "rgInventory": {
+    "obsidian": {
+      "files": 11172,
+      "text": 8951,
+      "md": 2548,
+      "blogMd": 1300,
+      "topBlogMd": 1292,
+      "nestedBlogMd": 8,
+      "nonblogMd": 1248,
+      "newerThan90": 2
+    },
+    "saturn": {
+      "files": 71548,
+      "text": 67267,
+      "newerThan90": 1
+    },
+    "saturn-pub": {
+      "files": 6469,
+      "text": 5415,
+      "newerThan90": 0
+    },
+    "manalysis": {
+      "files": 360,
+      "text": 359,
+      "newerThan90": 0
+    },
+    "mstack": {
+      "files": 201,
+      "text": 174,
+      "newerThan90": 0
+    },
+    "model-experiments": {
+      "files": 7855,
+      "text": 7471,
+      "newerThan90": 0
+    },
+    "research": {
+      "files": 5575,
+      "text": 4115,
+      "newerThan90": 0
+    },
+    "time-circuit-explorer": {
+      "files": 4119,
+      "text": 3617,
+      "newerThan90": 118,
+      "newerText": 116
+    },
+    "cmachine": {
+      "files": 1072,
+      "textIncludingCHeaders": 976,
+      "newerThan90": 0
+    },
+    "isa": {
+      "files": 10480,
+      "textIncludingCHeaders": 9443,
+      "newerThan90": 0
+    }
+  },
+  "mtimeFacts": {
+    "comparisonBoundary": "2026-11-08T03:28:21Z (90 close)",
+    "newObsidian": [
+      "livinglog92 2026-11-08T04:58:23.135968Z,830972B",
+      "blog/images/template-transport-cycle90.png 2026-11-08T03:52:38.240016Z,209289B; stat-only"
+    ],
+    "newSaturn": "request.jsonl 2026-11-08T04:22:56.270929Z,731148B",
+    "newestNonlivingBlog": "013741-predicting-a-changed-read at 2026-11-07T10:30:46.029329Z",
+    "secondNonlivingBlog": "021005-the-read-bends at 2026-11-07T10:30:16.086857Z",
+    "capabilitySynthesis": "2026-11-07T10:25:10.021148Z",
+    "newestNonblog": "model-computation-review README 2026-11-07T05:49:15.711813Z",
+    "saturnPubNewest": "QWEN-COMPUTATION-FAMILIES 2026-11-07T11:00:00.226141Z",
+    "cmachineNewest": "2026-11-07T10:00:12.822170Z",
+    "isaNewest": "2026-11-05T20:27:06.610507Z",
+    "finding": "No new neighboring research since90 found in stated inventory. Dirty/untracked working evidence reread anyway. Later root93 code/prose is separate from this route survey."
+  },
+  "contentReadSnapshotCount": 49,
+  "contentReadSnapshots": [
+    {
+      "path": "obsidian/blog/2026-11-07-013741-predicting-a-changed-read-before-the-reader-runs.md",
+      "sha256": "6669041d39918fd8ec7bc824dbec6109cbaee06a6d7f3fdc557edcb01c4500b4",
+      "contentReadScope": "Body28–195",
+      "bytes": 18377
+    },
+    {
+      "path": "obsidian/blog/2026-11-07-021005-the-read-bends-before-the-reader-runs.md",
+      "sha256": "cd2db83f6952d7e8987c6f914330d3573a4fc0c412e69f6b832d81b46d2a81e9",
+      "contentReadScope": "Lead/headings,115–180 current results/cost/limitations",
+      "bytes": 20658
+    },
+    {
+      "path": "obsidian/blog/2026-11-07-014134-discovering-math-capability-and-building-smaller-unions.md",
+      "sha256": "be9e34d1ebc74cd626d1fff25e192afd94407bab0b4e0a5a3c7c601d5d27b05e",
+      "contentReadScope": "Headings,current90–157 results/cost/limitations",
+      "bytes": 21254
+    },
+    {
+      "path": "obsidian/blog/2026-11-06-230748-symbol-tables-in-mdb-from-causal-roles-to-cheaper-execution.md",
+      "sha256": "953387fdd0b321931a3fb253f1d39f281b0ffdae7f5a9c5195e3b43211dfce7a",
+      "contentReadScope": "Headings,105–187",
+      "bytes": 20129
+    },
+    {
+      "path": "obsidian/blog/2026-11-06-231247-two-computation-families-share-a-discovery-protocol.md",
+      "sha256": "cc7faac2e6d0281c369caa036962b7a90efe36186fd83a9008b8de33d47eb148",
+      "contentReadScope": "Current mechanics/results/cost/limits around70–233",
+      "bytes": 25331
+    },
+    {
+      "path": "obsidian/blog/2026-11-06-184700-compiling-cheaper-transitions-on-the-states-they-create.md",
+      "sha256": "e96c50db3017c85e6cd695af942b7ad13d2a85bec8f0f343eb37a9a545da42ea",
+      "contentReadScope": "Headings,current results/limits around123–201; not complete historical reread",
+      "bytes": 20421
+    },
+    {
+      "path": "obsidian/blog/2026-11-06-125544-a-frozen-mlp-program-updates-a-conversation.md",
+      "sha256": "9634fc7b5f454d34fafb20be77b503c193f1368af6c075e7c2f1e2b611a03032",
+      "contentReadScope": "30–180",
+      "bytes": 71342
+    },
+    {
+      "path": "obsidian/blog/2026-11-06-154200-context-coverage-and-the-alternative-of-a-better-small-program.md",
+      "sha256": "d9d91867642923d5ceee9f933bf9379115768677e45c6922f3dc1e81c72e9456",
+      "contentReadScope": "Heading index, visible current tail/proposals after379; partial only",
+      "bytes": 55441
+    },
+    {
+      "path": "obsidian/blog/2026-11-06-211600-the-34-entry-table-and-the-native-computation-we-still-need-to-explain.md",
+      "sha256": "4091b2c25664b1edc3de198c11f88615bc5009856bd33e193cd51cd97acf0534",
+      "contentReadScope": "42–122",
+      "bytes": 17508
+    },
+    {
+      "path": "obsidian/blog/2026-11-07-012000-a-fourth-family-tests-the-computation-discovery-tool.md",
+      "sha256": "c8bd0763a7138ff47417b80b3a71ea848887c56b90e176bf7f9caec382d4de2b",
+      "contentReadScope": "96–193",
+      "bytes": 20777
+    },
+    {
+      "path": "obsidian/blog/2026-11-05-153154-state-context-and-the-mathematics-of-time-circuits.md",
+      "sha256": "923fcbb7c4dbd32756d3eeaaff0a1bf7e74fb835816853ae327d39777a118926",
+      "contentReadScope": "Headings, complete final50 lines",
+      "bytes": 84656
+    },
+    {
+      "path": "obsidian/blog/2026-11-05-161109-the-one-assumption-that-would-make-model-computation-easier-to-understand.md",
+      "sha256": "da27c6eb7aa0dc17b3caea133e4b444e61343971eaabc56c611b80cd271e6e5d",
+      "contentReadScope": "Metadata/lead and visible closing hypothesis/limitations; partial only",
+      "bytes": 133845
+    },
+    {
+      "path": "obsidian/blog/2026-08-14-what-saturn-can-actually-do.md",
+      "sha256": "a746c5d9474cee0d900c0204279e75cfdc99f5eb73abb7394cec484c8dd72e6a",
+      "contentReadScope": "Metadata1–85/headings/current377–415,950–1088 in part, complete ISA1695–1726; not whole long synthesis",
+      "bytes": 509042
+    },
+    {
+      "path": "saturn/docs/SATURN-BIBLE.md",
+      "sha256": "cdbe9de6b25d3f0bff689738f81b348a7a811fe39df477e59019a168d39f1133",
+      "contentReadScope": "1–100 and headings",
+      "bytes": 275747
+    },
+    {
+      "path": "saturn/docs/EVIDENCE-PLANE.md",
+      "sha256": "b4e130cac94324e1c4214e96347f677c156b14c8a11dc3fcc1696d450e71c136",
+      "contentReadScope": "1–120",
+      "bytes": 15054
+    },
+    {
+      "path": "saturn/docs/CAPABILITY-MACHINE.md",
+      "sha256": "dd32b7cb342f52cdbdf94bd0fffb328ee7ba91a0f6505a04bb033d457dd6ec5b",
+      "contentReadScope": "1–110",
+      "bytes": 81420
+    },
+    {
+      "path": "saturn/docs/CLOSED-STATE-COMPILER.md",
+      "sha256": "10d43a2486813f6715ed35268bdfe4ba04f501adaf2a014b51c2c7a4b8cbf133",
+      "contentReadScope": "Complete227lines",
+      "bytes": 9792
+    },
+    {
+      "path": "saturn/src/saturn/closed_state.py",
+      "sha256": "16c035a26745b28cbfd298ebe36a9065f58a49628a3efe148608dcedf00b2ec8",
+      "contentReadScope": "645–715 and834–880",
+      "bytes": 51005
+    },
+    {
+      "path": "saturn/request.jsonl",
+      "sha256": "abf651958088d28ed4bbdefc9da28a2294c5d74c0dd98e698e8696f5dbbf063f",
+      "contentReadScope": "Only behavioral-hankel-predictive-state-compiler record line156, vote6; wholefile hash not wholefile read",
+      "bytes": 731148
+    },
+    {
+      "path": "saturn-pub/packages/mdb/docs/QWEN-COMPUTATION-FAMILIES.md",
+      "sha256": "0f2df0595159533b318a4ca9cca57d78bcedeb680dcb2571b148fe833c0f720e",
+      "contentReadScope": "1–85",
+      "bytes": 15450
+    },
+    {
+      "path": "saturn-pub/packages/mdb/docs/QWEN-COMPUTATION-FORECASTS.md",
+      "sha256": "774dcebe0e4a9cb32c939ee7903239d3de51fd9420b34e588b12048a28addfd3",
+      "contentReadScope": "First55,last25",
+      "bytes": 12964
+    },
+    {
+      "path": "saturn-pub/packages/mdb/docs/COMPUTATION-FAMILY-PROGRAMS.md",
+      "sha256": "60fe22f131f5c95e2006be33e5af72c0506ad61482ab30eefe0efbb2621aca08",
+      "contentReadScope": "1–85",
+      "bytes": 11206
+    },
+    {
+      "path": "saturn-pub/packages/mdb/qualification/read_weight_second_order_20261107/FINDINGS.md",
+      "sha256": "77c9fd4c2c470e61afd29b43566deceba266e73191ab4c8d6c3103a334ad33a4",
+      "contentReadScope": "Current findings/limits;52–65 not fully visible in returned output",
+      "bytes": 11455
+    },
+    {
+      "path": "saturn/experiments/2026-11-06-future-reader-operand/FINDINGS.md",
+      "sha256": "9535b0987b6d0dc9eb4f55cc9b6e2d19d071656b000058bc96c810443ff50dcc",
+      "contentReadScope": "Complete65lines",
+      "bytes": 10641
+    },
+    {
+      "path": "research/papers/time-circuit-scaffold/2026-11-06-220330-time-circuit-architecture-after-the-computation-review.md",
+      "sha256": "ded7641b8c577a31ba186bb9da25f70112ff1adae1a7e9c39ee4bffefe143232",
+      "contentReadScope": "Complete179lines",
+      "bytes": 18707
+    },
+    {
+      "path": "obsidian/research/model-computation-review-20261106/FINAL-REVIEW.md",
+      "sha256": "9ad2b95aed147383fd8f0a9af1f163cec8edd915f6b97c68f41961896f1bb7f0",
+      "contentReadScope": "Complete18lines",
+      "bytes": 1713
+    },
+    {
+      "path": "model-experiments/experiments/2026-11-02-concept-graph-v3/RESULTS.md",
+      "sha256": "7d3c6d2c3e4ebf8af2c6efd0f487aae86c78ef43919581b4e1878152fa3a683c",
+      "contentReadScope": "Complete84lines",
+      "bytes": 6325
+    },
+    {
+      "path": "cmachine/research/frozen_transfer/FINDINGS.md",
+      "sha256": "fcf893845c0f6c7aa09b50caed725b5690c757244abdf7cccff8be2e078686e3",
+      "contentReadScope": "1–85 and94–137;86–93 not freshly read",
+      "bytes": 15880
+    },
+    {
+      "path": "cmachine/research/frozen_transfer/RESTORATION-FINDINGS.md",
+      "sha256": "ecddc87a5eb08d6945bde1bdc38a22aee4212475492d3df56c95449a0a2f68a0",
+      "contentReadScope": "Complete118lines",
+      "bytes": 14003
+    },
+    {
+      "path": "cmachine/docs/CAPABILITIES.md",
+      "sha256": "0f5d2ec5242116ff8ef79e66cc02767dc51eea8c4e91390bfe7e3db392cdb6ea",
+      "contentReadScope": "1–85",
+      "bytes": 46644
+    },
+    {
+      "path": "isa/outputs/response-quotient-r3-mamba/SUMMARY.md",
+      "sha256": "3e755cb6c4a189237e51716a1111722cc2f67fb78565564daaa1dca30a8260a6",
+      "contentReadScope": "Complete7lines",
+      "bytes": 705
+    },
+    {
+      "path": "isa/outputs/symbolic-loop-advisor-r3-mamba/SUMMARY.md",
+      "sha256": "46ad36599a3e7732fdadf828d007bf09000855f09614a735589dc4c2912e897d",
+      "contentReadScope": "Complete13lines",
+      "bytes": 2362
+    },
+    {
+      "path": "time-circuit-explorer/docs/exact-behavioral-compiler.md",
+      "sha256": "cf1436b4a2244e65ad138d5d5839ea7aeaa8342fa1978e71e376c76407639d4b",
+      "contentReadScope": "Complete current92article",
+      "bytes": 12044
+    },
+    {
+      "path": "time-circuit-explorer/docs/plans/behavioral-certificate-authority.md",
+      "sha256": "75e86349af0b9ff0c925473d5747f765353ac25cb5e91c599b54db3a1bcada89",
+      "contentReadScope": "Complete19line unexecuted plan at survey",
+      "bytes": 3017
+    },
+    {
+      "path": "time-circuit-explorer/docs/plans/behavioral-realization-serving.md",
+      "sha256": "50ee66441d4443eb69c8b1e072f6e2f50ffa4da6c5be190118101bd64b20878a",
+      "contentReadScope": "Current conditional realization/cost sections through approx66; not fresh complete reread",
+      "bytes": 5833
+    },
+    {
+      "path": "time-circuit-explorer/docs/serving-construction.md",
+      "sha256": "e83dd7aa3a542a87150de843fad54db6a983517a85461edc4a52fa45095e4542",
+      "contentReadScope": "First36,last22",
+      "bytes": 11548
+    },
+    {
+      "path": "time-circuit-explorer/docs/results/behavioral-realization/report.json",
+      "sha256": "38ae1da917a87f5867651652fa1f4cdbb9a66fbc01902f7164bfb9d0fb2547b5",
+      "contentReadScope": "Complete scalar report and all35valid+1invalid rows; no arrays",
+      "bytes": 8958
+    },
+    {
+      "path": "time-circuit-explorer/docs/results/behavioral-realization/certificate.json",
+      "sha256": "ad0db39e893732c08c892d0af3a284e9cf8bc5b215b2ccddf91595f8c8ac4661",
+      "contentReadScope": "Complete supplied-graph certificate",
+      "bytes": 3119
+    },
+    {
+      "path": "time-circuit-explorer/docs/results/behavioral-realization/program.json",
+      "sha256": "db7873c59a050c7fc122442c5398e6bfc0d41726ec503a4b68dc5346af040a11",
+      "contentReadScope": "Complete copy/constant program",
+      "bytes": 922
+    },
+    {
+      "path": "time-circuit-explorer/docs/results/behavioral-realization-evidence/README.md",
+      "sha256": "3ace2a7245f00fd0991b19079e819d516235eb32355cfe09a67ea4822fd728b3",
+      "contentReadScope": "Complete evidence index",
+      "bytes": 3957
+    },
+    {
+      "path": "obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md",
+      "sha256": "54f0a646923434926eeae8c78d9384a948ea45e57e01f7e2d0b0bfb6216e36c8",
+      "contentReadScope": "Historical92 snapshot metadata/current lead and entire90/91/92 sections; later93 edits NOT surveyed",
+      "surveyedBytes": 830972,
+      "currentWorkingSHA256NotReviewed": "3e3d82ee96aab535cea641af82333707df79838e80fc8dbb646366382b5aa798",
+      "historicalSnapshot": true,
+      "note": "Observed directly before later cycle93 edits; no current-byte equality asserted."
+    },
+    {
+      "path": "time-circuit-explorer/docs/raw-prompt-encoder-atoms.md",
+      "sha256": "3f6faba5ff0f36f7179fe428588984cdd6cf67bb8aad5cad2dfa33b7f7f8dd4d",
+      "contentReadScope": "First28,last22,headings",
+      "bytes": 13557
+    },
+    {
+      "path": "time-circuit-explorer/docs/zero-network-image-response.md",
+      "sha256": "2f445aec723b6a123cf5bed74c089cd8dbffc58704cc008db883c8708c9782f4",
+      "contentReadScope": "First28,last22,headings",
+      "bytes": 15700
+    },
+    {
+      "path": "time-circuit-explorer/docs/prediction-only-benchmark.md",
+      "sha256": "b082b46c3443156ef09acc43d08ed2363ffe493419139f2d8a87c976259ac168",
+      "contentReadScope": "Complete28lines",
+      "bytes": 3857
+    },
+    {
+      "path": "time-circuit-explorer/generator/behavioral_realization.py",
+      "sha256": "d8934cc8eb785dfc3b84629b1668d082239e2a504e3dbe812ffedbf63cc03e64",
+      "contentReadScope": "Function inventory,154–177 and216–293",
+      "bytes": 14129
+    },
+    {
+      "path": "time-circuit-explorer/generator/behavioral_program.py",
+      "sha256": "14dd19de72b85dfdd814c7060c0ac5196eaf8af506a66f287550178b7e3466c4",
+      "contentReadScope": "18–62",
+      "bytes": 6556
+    },
+    {
+      "path": "time-circuit-explorer/generator/worker.py",
+      "sha256": "f398769ef587fbadabe4feba20af2f1b75387eae209be3403033556a312d6d23",
+      "contentReadScope": "36–51 and212–235 input/seed/encoder interface",
+      "bytes": 20800
+    },
+    {
+      "path": "time-circuit-explorer/generator/encoder_atoms.py",
+      "sha256": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+      "contentReadScope": "90–153 actual lexical frontend",
+      "bytes": 10121
+    },
+    {
+      "path": "time-circuit-explorer/docs/results/research-review-cycle90/advisor-survey.json",
+      "sha256": "dd5cf4e9a7e21f903abd2f8f9fd0fd978db70d91bc813e1b7b4c85e12df44d4f",
+      "contentReadScope": "Complete survey metadata/pins/inventory;55 files rehashed not all reread",
+      "bytes": 13154
+    }
+  ],
+  "externalPrimaryReference": {
+    "url": "https://www.cs.ox.ac.uk/james.worrell/fossacs12-journal.pdf",
+    "title": "On the Complexity of Equivalence and Minimisation for Q-Weighted Automata",
+    "scope": "Read pages4–5 Proposition3.1/proof via web. No local byteSHA claimed.",
+    "result": "Nonzero n-dimensional weighted automaton has a distinguishing word length≤n−1; difference dimension r1+r2 yields sufficient maximum r1+r2−1."
+  },
+  "findings": [
+    "Conditional symbol-table/forecast programs are useful and sometimes prospectively improve native consumers, but contextual operands, native baselines/JVPs and original learned maps remain paid; second-order context/consumer regressions remain visible.",
+    "MLP own-state local coverage/write improvements do not imply all-layer answer or KL improvement. Selected conversational frozen programs are bounded positive trends, not a complete learned-work-free transition.",
+    "Math-union/concept-graph programs consume supplied grammars/features/rewrite rules; symbolic exactness does not establish discovered general prompt semantics or image rendering.",
+    "Newly read cmachine frozen transfer is substantive cross-format/error-recall evidence, with four-digit failures and a large preceding-native-state dependency. Native preceding-output restore98.58% versus current-E-only17.92% identifies an unresolved formation dependency; layout qualifications matter.",
+    "Native-derived ISA XOR/AND/bit/copy programs and own-state loops are concrete nonneural computation families. Cut31 exceptions, additional future classes, flag ambiguity and eight-window coverage prevent global claims. They suggest a method/class, not FLUX context/pixel capability.",
+    "closed_state.py executes learned linear runtime maps and finite-horizon linear Hankel/SVD analysis. The general behavioral compiler remains a request. Relabeling dense learned recurrence as an automaton does not meet the strict criterion.",
+    "Cycle92 supplies complete finite graph authority and learns no native image semantics. Exact rank3 panel plus independent4-state/8-edge graph certificate supports two copy/constant registers; finite panel alone supplies no global rank upper bound.",
+    "No inspected artifact instantiates the strict complete c/I/T/R chain. Raw atoms are lexical/noncontextual; four-context RGB response chart is narrow; bounded arbitrary-string dense generator still pays original encoder/transition/VAE.",
+    "Global proof absence limits terminal claims, not discovery. Explicitly speculative source-derived programs may be explored with paid dependencies, held-out evidence and adverse results retained."
+  ],
+  "bestNextAction": {
+    "oneCut": "Complete the existing transcript-authority decision constructively: exact B/B_a/initial/readout reconstruction, unrestricted singleton-word alternative agreeing with all observations, and unique completion conditional on independently justified global rank≤3. No new oracle, organism, model, image or native Hankel survey.",
+    "derivation": "For exact scalar series over a field, rank(H)≤r and nonsingular r×r block B imply the selected full Hankel rows span and future-test coordinates separate. b(ua)=b(u)B^-1 B_a and f(u)=b(u)B^-1 f(P). Thus recorded shifted blocks, initial tests and readout fix all words conditional on that independent bound. Exhaustive lengths≤5 suffice to compare two rank≤3 series but are not necessary for the basis argument.",
+    "premisePolicy": "Empirical rank is a lower bound, not global upper bound. Keep source authority, permissible lowering and economy separate. Uncertified candidates remain exploration-eligible.",
+    "nextFamily": "Source-derived finite-control/register programs with guarded rewrites, data-dependent binding/addressing and arithmetic are a plausible permissible family. Native ISA demonstrates restricted members; raw-prompt contextual initialization/update and source-derived pixel readout for this model remain unspecified. QKV tables plus attention and dense M_token/C do not solve that gap.",
+    "noAutomaticContinuation": "Close this authority question after this one analysis. Do not automatically add tiny panel families or return to matrix/rank/seed/precision/depth campaigns. A next native construction needs an actual source-derived algorithm, named missing dependency, complete serving costs and consumer observation. No complete image candidate is currently established."
+  },
+  "planCorrectionRequired": "Add constructive conditional rank-upper-bound/uniqueness case and explorationAllowedWithoutGlobalProof; do not imply exhaustive≤5 is necessary. This recommendation was sent before root implemented93.",
+  "rootReportedStorageNotRerun": {
+    "olderMetadataPointers": 84,
+    "freshFullSHAPointers": 9,
+    "freshBytes": 3806240603,
+    "totalPointers": 93,
+    "remaining100MBTransports": 0,
+    "newArchive": 0
+  },
+  "subsequentSeparateSourceReview": {
+    "chronology": "After survey route recommendation; no actual93 report review included.",
+    "snapshots": {
+      "generator/behavioral_authority.py": "7f18da573d7d44426cdc9926eab8aa5001bb2786896bea329b4c1f2b2050f3e0",
+      "generator/test_behavioral_authority.py": "21cb1c9fa113e7eb6de4c25743dabb5130e5bbfe527f93b2584d3c9c4fcb0958"
+    },
+    "verdict": "Bounded proceed/no blocking issue for pinned scalar transcript. Rank34 singleton is a weighted chain, not a34-state complete DFA; alternative rank31..37 follows subadditivity. Advisor did not execute sources/tests."
+  },
+  "scope": {
+    "modelsTestsJobsRunByAdvisor": false,
+    "scientificArraysImagesRead": false,
+    "newAgents": false,
+    "repositoryEdits": false,
+    "onlyNewFile": "This explicitly authorized temporary receipt.",
+    "later93BlogReviewed": false
+  },
+  "nextFullSurveyDueCycle": 96
+}

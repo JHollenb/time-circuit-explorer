@@ -1,0 +1,23 @@
+{
+  "schema": "tce-authority-collection-v1",
+  "cycle": 93,
+  "recordedAt": "2026-11-08T05:16:12.645041+00:00",
+  "sourcePath": "/Users/jakeholl/domains/time-circuit-explorer/artifacts/behavioral-authority-v1/report.json",
+  "publicPath": "docs/results/behavioral-authority/report.json",
+  "sha256": "d2f50e9c96c9e505b39e2cd36f0da3f67feacf666685be4130ae25df13f76f40",
+  "bytes": 15319,
+  "byteExact": true,
+  "sourceHashes": {
+    "generator/behavioral_authority.py": "7f18da573d7d44426cdc9926eab8aa5001bb2786896bea329b4c1f2b2050f3e0",
+    "generator/test_behavioral_authority.py": "21cb1c9fa113e7eb6de4c25743dabb5130e5bbfe527f93b2584d3c9c4fcb0958"
+  },
+  "commandProcessWallSeconds": 0.091592875,
+  "tests": {
+    "command": "rtk proxy ../common/bin/common exec python -m unittest discover -s generator -p test_behavioral_authority.py -v",
+    "count": 3,
+    "status": "passed",
+    "reportedSeconds": 0.001,
+    "processWallSeconds": 0.104057209
+  },
+  "scope": "One local stdlib frozen-transcript scalar analysis, no source graph/certificate reads, native model/oracle calls/scientific arrays/images. New compiler/test sources frozen after execution."
+}

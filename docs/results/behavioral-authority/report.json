@@ -1,0 +1,886 @@
+{
+  "schema": "tce-behavioral-authority-v1",
+  "cycle": 93,
+  "inputPins": {
+    "docs/results/behavioral-realization/discovery-queries.json": {
+      "sha256": "7bd02ebe4b3e419fd144bc66c6aa99d8d86b166c5c77e81615da38410fef0d5f",
+      "bytes": 4303
+    },
+    "docs/results/behavioral-realization/shallow-queries.json": {
+      "sha256": "a685f5d9a12d4f1a8396d86d8f4334c71601078c2033d25ebc687081d99922c1",
+      "bytes": 1256
+    },
+    "docs/results/behavioral-realization/request.json": {
+      "sha256": "734ec850110072feee8df02908cd253459be938e1980bede7b45a589667f21fe",
+      "bytes": 6647
+    },
+    "docs/results/behavioral-realization/serving.json": {
+      "sha256": "019247a9505d8763130e2af83b90c6e47cd81f146a0d68eec6bd82f8d9f8f2b9",
+      "bytes": 12483
+    },
+    "docs/results/behavioral-realization/prediction-seal.json": {
+      "sha256": "55beff15cc7cda3f4edb67ac1ac29db00df5983cdf98e34a271d834f4716662b",
+      "bytes": 264
+    },
+    "docs/results/behavioral-realization/realization.json": {
+      "sha256": "a67bef8dd993328e1774041f9658296d5491a381ead39fe5d2a6bce36c6ba82d",
+      "bytes": 1416
+    },
+    "docs/plans/behavioral-certificate-authority.md": {
+      "sha256": "75e86349af0b9ff0c925473d5747f765353ac25cb5e91c599b54db3a1bcada89",
+      "bytes": 3017
+    },
+    "generator/worker.py": {
+      "sha256": "f398769ef587fbadabe4feba20af2f1b75387eae209be3403033556a312d6d23",
+      "bytes": 20800
+    },
+    "generator/encoder_atoms.py": {
+      "sha256": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+      "bytes": 10121
+    },
+    "generator/fresh_square_encoder.py": {
+      "sha256": "5a1104c76dcb597edd9a31540b86be3a0657c2b17ebd70d1fe33c2053f583265",
+      "bytes": 13872
+    },
+    "docs/results/raw-prompt-encoder-atoms/manifest.json": {
+      "sha256": "9a155bd1410c52909997bacaf1d1aac2f9e90be86dc269d5e7edfab2b5285432",
+      "bytes": 62287
+    }
+  },
+  "sourceGraphOrCertificateRead": false,
+  "newSourceOracleCalls": 0,
+  "newNeuralModelEvaluations": 0,
+  "scientificArrayReads": 0,
+  "newImages": 0,
+  "observedDistinctWords": 37,
+  "maximumObservedWordLength": 32,
+  "maximumDiscoveryQueryLength": 5,
+  "recordedRefusals": [
+    "invalid"
+  ],
+  "comparisons": [
+    {
+      "tokens": [],
+      "recorded": "0",
+      "reconstructed": "0"
+    },
+    {
+      "tokens": [
+        "a"
+      ],
+      "recorded": "0",
+      "reconstructed": "0"
+    },
+    {
+      "tokens": [
+        "b"
+      ],
+      "recorded": "0",
+      "reconstructed": "0"
+    },
+    {
+      "tokens": [
+        "a",
+        "a"
+      ],
+      "recorded": "0",
+      "reconstructed": "0"
+    },
+    {
+      "tokens": [
+        "a",
+        "b"
+      ],
+      "recorded": "0",
+      "reconstructed": "0"
+    },
+    {
+      "tokens": [
+        "b",
+        "a"
+      ],
+      "recorded": "1",
+      "reconstructed": "1"
+    },
+    {
+      "tokens": [
+        "b",
+        "b"
+      ],
+      "recorded": "1",
+      "reconstructed": "1"
+    },
+    {
+      "tokens": [
+        "a",
+        "a",
+        "a"
+      ],
+      "recorded": "0",
+      "reconstructed": "0"
+    },
+    {
+      "tokens": [
+        "a",
+        "a",
+        "b"
+      ],
+      "recorded": "0",
+      "reconstructed": "0"
+    },
+    {
+      "tokens": [
+        "a",
+        "b",
+        "a"
+      ],
+      "recorded": "1",
+      "reconstructed": "1"
+    },
+    {
+      "tokens": [
+        "a",
+        "b",
+        "b"
+      ],
+      "recorded": "1",
+      "reconstructed": "1"
+    },
+    {
+      "tokens": [
+        "b",
+        "a",
+        "a"
+      ],
+      "recorded": "0",
+      "reconstructed": "0"
+    },
+    {
+      "tokens": [
+        "b",
+        "a",
+        "b"
+      ],
+      "recorded": "0",
+      "reconstructed": "0"
+    },
+    {
+      "tokens": [
+        "b",
+        "b",
+        "a"
+      ],
+      "recorded": "1",
+      "reconstructed": "1"
+    },
+    {
+      "tokens": [
+        "b",
+        "b",
+        "b"
+      ],
+      "recorded": "1",
+      "reconstructed": "1"
+    },
+    {
+      "tokens": [
+        "a",
+        "a",
+        "a",
+        "a"
+      ],
+      "recorded": "0",
+      "reconstructed": "0"
+    },
+    {
+      "tokens": [
+        "a",
+        "a",
+        "a",
+        "b"
+      ],
+      "recorded": "0",
+      "reconstructed": "0"
+    },
+    {
+      "tokens": [
+        "a",
+        "a",
+        "b",
+        "a"
+      ],
+      "recorded": "1",
+      "reconstructed": "1"
+    },
+    {
+      "tokens": [
+        "a",
+        "a",
+        "b",
+        "b"
+      ],
+      "recorded": "1",
+      "reconstructed": "1"
+    },
+    {
+      "tokens": [
+        "a",
+        "b",
+        "a",
+        "a"
+      ],
+      "recorded": "0",
+      "reconstructed": "0"
+    },
+    {
+      "tokens": [
+        "a",
+        "b",
+        "a",
+        "b"
+      ],
+      "recorded": "0",
+      "reconstructed": "0"
+    },
+    {
+      "tokens": [
+        "a",
+        "b",
+        "b",
+        "a"
+      ],
+      "recorded": "1",
+      "reconstructed": "1"
+    },
+    {
+      "tokens": [
+        "a",
+        "b",
+        "b",
+        "b"
+      ],
+      "recorded": "1",
+      "reconstructed": "1"
+    },
+    {
+      "tokens": [
+        "b",
+        "a",
+        "a",
+        "a"
+      ],
+      "recorded": "0",
+      "reconstructed": "0"
+    },
+    {
+      "tokens": [
+        "b",
+        "a",
+        "a",
+        "b"
+      ],
+      "recorded": "0",
+      "reconstructed": "0"
+    },
+    {
+      "tokens": [
+        "b",
+        "a",
+        "b",
+        "a"
+      ],
+      "recorded": "1",
+      "reconstructed": "1"
+    },
+    {
+      "tokens": [
+        "b",
+        "a",
+        "b",
+        "b"
+      ],
+      "recorded": "1",
+      "reconstructed": "1"
+    },
+    {
+      "tokens": [
+        "b",
+        "b",
+        "a",
+        "a"
+      ],
+      "recorded": "0",
+      "reconstructed": "0"
+    },
+    {
+      "tokens": [
+        "b",
+        "b",
+        "a",
+        "b"
+      ],
+      "recorded": "0",
+      "reconstructed": "0"
+    },
+    {
+      "tokens": [
+        "b",
+        "b",
+        "b",
+        "a"
+      ],
+      "recorded": "1",
+      "reconstructed": "1"
+    },
+    {
+      "tokens": [
+        "b",
+        "b",
+        "b",
+        "b"
+      ],
+      "recorded": "1",
+      "reconstructed": "1"
+    },
+    {
+      "tokens": [
+        "b",
+        "a",
+        "a",
+        "b",
+        "a"
+      ],
+      "recorded": "1",
+      "reconstructed": "1"
+    },
+    {
+      "tokens": [
+        "b",
+        "a",
+        "b",
+        "b",
+        "a"
+      ],
+      "recorded": "1",
+      "reconstructed": "1"
+    },
+    {
+      "tokens": [
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a"
+      ],
+      "recorded": "0",
+      "reconstructed": "0"
+    },
+    {
+      "tokens": [
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b"
+      ],
+      "recorded": "0",
+      "reconstructed": "0"
+    },
+    {
+      "tokens": [
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a",
+        "b",
+        "a"
+      ],
+      "recorded": "1",
+      "reconstructed": "1"
+    },
+    {
+      "tokens": [
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b"
+      ],
+      "recorded": "1",
+      "reconstructed": "1"
+    }
+  ],
+  "reconstructed": {
+    "basis": [
+      [
+        "0",
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "1",
+        "1"
+      ],
+      [
+        "1",
+        "0",
+        "1"
+      ]
+    ],
+    "initial": [
+      "0",
+      "0",
+      "1"
+    ],
+    "operators": {
+      "a": [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "b": [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    "readout": [
+      [
+        "1"
+      ],
+      [
+        "0"
+      ],
+      [
+        "0"
+      ]
+    ]
+  },
+  "conditionalRealization": {
+    "sampledRankLowerBound": 3,
+    "globalRankUpperBoundPremise": 3,
+    "premiseEstablishedByTranscript": false,
+    "status": "unique-global-realization-conditional-on-independent-rank-upper-bound",
+    "proof": "Global rank at most3 plus nonsingular3minor makes selected full rows a basis. Future-test coordinates separate rows; shifted basis rows, initial tests and current readouts fix every transition and output by induction."
+  },
+  "unrestrictedAlternative": {
+    "definition": "g(w)=f_reconstructed(w)+1[w=a^33]",
+    "witness": [
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a"
+    ],
+    "fAtWitness": "0",
+    "gAtWitness": "1",
+    "agreesWithEveryRecordedWord": true,
+    "singletonDifferenceExactHankelRank": 34,
+    "rankProof": "Rows a^i/columns a^j for0<=i,j<=33 form a34x34 anti-diagonal identity. A34state weighted chain realizes the singleton, so lower and upper bounds agree.",
+    "alternativeRankLowerBound": 31,
+    "alternativeRankUpperBound": 37,
+    "scope": "Different finite-state source. Does not contradict the prior complete supplied-graph certificate. Not another queried organism."
+  },
+  "genericDimensionBound": {
+    "twoRanks": [
+      3,
+      3
+    ],
+    "sufficientExhaustiveMaximumLength": 5,
+    "allBinaryWordsThroughLength5": 63,
+    "missingLength5Words": [
+      [
+        "a",
+        "a",
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a",
+        "a",
+        "b"
+      ],
+      [
+        "a",
+        "a",
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a",
+        "b",
+        "b"
+      ],
+      [
+        "a",
+        "a",
+        "b",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "b",
+        "a",
+        "b"
+      ],
+      [
+        "a",
+        "a",
+        "b",
+        "b",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "b",
+        "b",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "b",
+        "a",
+        "a",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "a",
+        "b",
+        "a",
+        "b",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "b",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "b",
+        "b",
+        "a",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "b",
+        "b",
+        "a"
+      ],
+      [
+        "a",
+        "b",
+        "b",
+        "b",
+        "b"
+      ],
+      [
+        "b",
+        "a",
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "b",
+        "a",
+        "a",
+        "a",
+        "b"
+      ],
+      [
+        "b",
+        "a",
+        "a",
+        "b",
+        "b"
+      ],
+      [
+        "b",
+        "a",
+        "b",
+        "a",
+        "a"
+      ],
+      [
+        "b",
+        "a",
+        "b",
+        "a",
+        "b"
+      ],
+      [
+        "b",
+        "a",
+        "b",
+        "b",
+        "b"
+      ],
+      [
+        "b",
+        "b",
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "b",
+        "b",
+        "a",
+        "a",
+        "b"
+      ],
+      [
+        "b",
+        "b",
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "b",
+        "a",
+        "b",
+        "b"
+      ],
+      [
+        "b",
+        "b",
+        "b",
+        "a",
+        "a"
+      ],
+      [
+        "b",
+        "b",
+        "b",
+        "a",
+        "b"
+      ],
+      [
+        "b",
+        "b",
+        "b",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "b",
+        "b",
+        "b",
+        "b"
+      ]
+    ],
+    "scope": "Sufficient comparison theorem, not a necessary test panel. Basis-based conditional reconstruction needs fewer words."
+  },
+  "nativeInterface": {
+    "rawWrapper": "Nonempty stripped text; incoming length<=1000 Python characters; seed uint32.",
+    "nativeEncoderCall": "Native pipe.encode_prompt requests max_sequence_length=512.",
+    "lexicalFrontend": "Separately qualified151936-ID token-local store, Jinja2 chat template, right padding/truncation512, masks/positions/RoPE; not complete contextual encoding.",
+    "globalEconomicalRankBound": "not-established",
+    "qualifiedGlobalEquivalenceOracle": "not-established",
+    "sourceDerivedReducedCommutingProof": "not-established",
+    "finiteDomain": "Effective bounded finite-vocabulary sequences are finite under fixed framing/controls. Token truncation alone does not bound raw strings; wrapper character cap separately restricts raw input.",
+    "sourceDerivedContextAndPixelProgram": "unresolved"
+  },
+  "work": {
+    "rationalLinearMACs": 2598
+  },
+  "sourceSHA256": "7f18da573d7d44426cdc9926eab8aa5001bb2786896bea329b4c1f2b2050f3e0",
+  "elapsedSecondsBeforeReportWrite": 0.010763457976281643,
+  "mechanics_status": "complete",
+  "instrument_status": "exact frozen-transcript conditional-realization analysis",
+  "trend_status": "An independent global complexity bound is substantive extra authority; sampled rank alone cannot supply it.",
+  "terminal_status": "arbitrary-prompt zero-neural image generation unestablished",
+  "explorationAllowedWithoutGlobalProof": true,
+  "scope": "Supplied toy/transcript and native source interfaces only. Rational toy coefficient evaluation is paid analysis, not a new permissible image generator. Exact elimination, JSON, source/hash reads and Python overhead additional to counted linear MACs."
+}
