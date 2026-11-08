@@ -1,0 +1,138 @@
+{
+  "CPUSeconds": 2.23911995,
+  "blockedNeuralRuntimeRoots": [
+    "diffusers",
+    "jax",
+    "onnxruntime",
+    "tensorflow",
+    "torch",
+    "transformers"
+  ],
+  "computeAndInternalFingerprintSeconds": 0.9074429138563573,
+  "fileQuarantine": {
+    "ownStoreLinkedFiles": [],
+    "ownStoreMissingProbes": {},
+    "successfulFileOpenCounts": {
+      "/mnt/hdd8tb/mrun-work/job-50d1afc5dce1/arrays/candidate/exit.npy": 3,
+      "/mnt/hdd8tb/mrun-work/job-50d1afc5dce1/arrays/candidate/gatedWrite.npy": 3,
+      "/mnt/hdd8tb/mrun-work/job-50d1afc5dce1/arrays/candidate/preResidualUpdate.npy": 3,
+      "/mnt/hdd8tb/mrun-work/job-50d1afc5dce1/arrays/candidate/rowBasis.npy": 3,
+      "/mnt/hdd8tb/mrun-work/job-50d1afc5dce1/arrays/candidate/updateFP64.npy": 3,
+      "/mnt/hdd8tb/mrun-work/job-62e5183c03aa/arrays/dense/gate.npy": 3,
+      "/mnt/hdd8tb/mrun-work/job-77ff707619cf/arrays/candidate/exit.npy": 3,
+      "/mnt/hdd8tb/mrun-work/job-77ff707619cf/arrays/candidate/gatedWrite.npy": 3,
+      "/mnt/hdd8tb/mrun-work/job-77ff707619cf/arrays/candidate/preResidualUpdate.npy": 3,
+      "/mnt/hdd8tb/mrun-work/job-e02711cf1c88/arrays/candidate/b_joint4_imageOut0.npy": 3,
+      "/mnt/hdd8tb/mrun-work/job-e02711cf1c88/arrays/candidate/b_joint4_textOut0.npy": 3
+    }
+  },
+  "loadedNeuralRuntimeRoots": [],
+  "numericalProfile": {
+    "BLASBuildConfiguration": "{\n  \"Compilers\": {\n    \"c\": {\n      \"name\": \"gcc\",\n      \"linker\": \"ld.bfd\",\n      \"version\": \"14.2.1\",\n      \"commands\": \"cc\"\n    },\n    \"cython\": {\n      \"name\": \"cython\",\n      \"linker\": \"cython\",\n      \"version\": \"3.3.0\",\n      \"commands\": \"cython\"\n    },\n    \"c++\": {\n      \"name\": \"gcc\",\n      \"linker\": \"ld.bfd\",\n      \"version\": \"14.2.1\",\n      \"commands\": \"c++\"\n    }\n  },\n  \"Machine Information\": {\n    \"host\": {\n      \"cpu\": \"x86_64\",\n      \"family\": \"x86_64\",\n      \"endian\": \"little\",\n      \"system\": \"linux\"\n    },\n    \"build\": {\n      \"cpu\": \"x86_64\",\n      \"family\": \"x86_64\",\n      \"endian\": \"little\",\n      \"system\": \"linux\"\n    }\n  },\n  \"Build Dependencies\": {\n    \"blas\": {\n      \"name\": \"scipy-openblas\",\n      \"found\": true,\n      \"version\": \"0.3.34.106.0\",\n      \"detection method\": \"pkgconfig\",\n      \"include directory\": \"/opt/_internal/cpython-3.14.6/lib/python3.14/site-packages/scipy_openblas64/include\",\n      \"lib directory\": \"/opt/_internal/cpython-3.14.6/lib/python3.14/site-packages/scipy_openblas64/lib\",\n      \"openblas configuration\": \"OpenBLAS 0.3.34.106.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64\",\n      \"pc file directory\": \"/project/.openblas\"\n    },\n    \"lapack\": {\n      \"name\": \"scipy-openblas\",\n      \"found\": true,\n      \"version\": \"0.3.34.106.0\",\n      \"detection method\": \"pkgconfig\",\n      \"include directory\": \"/opt/_internal/cpython-3.14.6/lib/python3.14/site-packages/scipy_openblas64/include\",\n      \"lib directory\": \"/opt/_internal/cpython-3.14.6/lib/python3.14/site-packages/scipy_openblas64/lib\",\n      \"openblas configuration\": \"OpenBLAS 0.3.34.106.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64\",\n      \"pc file directory\": \"/project/.openblas\"\n    }\n  },\n  \"Python Information\": {\n    \"path\": \"/tmp/build-env-c90f47zn/bin/python\",\n    \"version\": \"3.14\"\n  },\n  \"SIMD Extensions\": {\n    \"baseline\": [\n      \"X86_V2\"\n    ],\n    \"found\": [\n      \"X86_V3\",\n      \"X86_V4\",\n      \"AVX512_ICL\"\n    ],\n    \"not found\": [\n      \"AVX512_SPR\"\n    ]\n  }\n}\n",
+    "device": "cpu",
+    "dtype": "float64",
+    "environment": {
+      "MKL_NUM_THREADS": "4",
+      "OMP_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "4"
+    },
+    "numpy": "2.5.4",
+    "scope": "Recorded NumPy/build/thread configuration and operation calls, not retired-kernel or accumulator attestation."
+  },
+  "products": [
+    {
+      "device": "cpu",
+      "dtype": "float64",
+      "leftPayloadSHA256": "44e91410bbf54896f7921c03ca53850b148c485b27bc8d9fd4c25dd5029c6630",
+      "leftShape": [
+        128,
+        512
+      ],
+      "name": "project0",
+      "nominalMACs": 201326592,
+      "operator": "numpy.matmul",
+      "outputPayloadSHA256": "5a4d0f0e79cbaa0cb139a46b34144dda598514fe5ecb53e089dcf9449493ce7b",
+      "outputShape": [
+        128,
+        3072
+      ],
+      "rightPayloadSHA256": "e26b7e1ac7abc888f3aa9f7e9c1e91c6b9efe4228b3dbc22b5e8d173ee26a894",
+      "rightShape": [
+        512,
+        3072
+      ],
+      "secondsBeforeFingerprints": 0.2656746096909046
+    },
+    {
+      "device": "cpu",
+      "dtype": "float64",
+      "leftPayloadSHA256": "8763785fd15047e2fd644d08207652caf87033e613e4f91353499da892d9d482",
+      "leftShape": [
+        512,
+        128
+      ],
+      "name": "reconstruct0",
+      "nominalMACs": 201326592,
+      "operator": "numpy.matmul",
+      "outputPayloadSHA256": "56a64f51a38fe2a5fd1c06aec701ee13195051ac8af231a5950cf57272bcc070",
+      "outputShape": [
+        512,
+        3072
+      ],
+      "rightPayloadSHA256": "5a4d0f0e79cbaa0cb139a46b34144dda598514fe5ecb53e089dcf9449493ce7b",
+      "rightShape": [
+        128,
+        3072
+      ],
+      "secondsBeforeFingerprints": 0.001609461847692728
+    },
+    {
+      "device": "cpu",
+      "dtype": "float64",
+      "leftPayloadSHA256": "41549ec6a77f201eeaa34bba015d9d39ddadcbbf02e99cd36e5ce1b5cdebe097",
+      "leftShape": [
+        128,
+        1024
+      ],
+      "name": "project1",
+      "nominalMACs": 402653184,
+      "operator": "numpy.matmul",
+      "outputPayloadSHA256": "8fa9bd2eef897f7d40d8afcd5cfe22597a6b08b1d9fe59c813e92a86e6ff9c85",
+      "outputShape": [
+        128,
+        3072
+      ],
+      "rightPayloadSHA256": "92aa62c36d49527fdc08f69b9458e49099dcc49fd5feb32d3ececf32492b2936",
+      "rightShape": [
+        1024,
+        3072
+      ],
+      "secondsBeforeFingerprints": 0.003826737869530916
+    },
+    {
+      "device": "cpu",
+      "dtype": "float64",
+      "leftPayloadSHA256": "d1300429e39c45b1b2b713252ebf279fc597739ba38c1ca7a45c9d048084dddf",
+      "leftShape": [
+        1024,
+        128
+      ],
+      "name": "reconstruct1",
+      "nominalMACs": 402653184,
+      "operator": "numpy.matmul",
+      "outputPayloadSHA256": "14c9b502aaa6b2e17d8da3f24722db1f236adfc8bfe4fb83a39e5c1825aff35b",
+      "outputShape": [
+        1024,
+        3072
+      ],
+      "rightPayloadSHA256": "8fa9bd2eef897f7d40d8afcd5cfe22597a6b08b1d9fe59c813e92a86e6ff9c85",
+      "rightShape": [
+        128,
+        3072
+      ],
+      "secondsBeforeFingerprints": 0.0033922172151505947
+    }
+  ],
+  "setupSeconds": 0.8875854010693729,
+  "sourceClosure": true
+}

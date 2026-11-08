@@ -1,0 +1,50 @@
+{
+  "backend": "numpy",
+  "device": "cpu",
+  "dtype": "float64",
+  "fixedAddress": {
+    "clock": 0,
+    "singleBlock": 0
+  },
+  "ownedSources": [
+    "fixed_row_projection.py",
+    "fixed_row_projection_study.py",
+    "test_fixed_row_projection.py",
+    "encoder_atoms.py",
+    "paired_fields.py",
+    "terminal_capture_guard_v2.py"
+  ],
+  "plannedWork": {
+    "denominatorScalarAdditions": 47170560,
+    "denominatorScalarMultiplications": 47185920,
+    "gramScalarAdditions": 292457472,
+    "gramScalarMultiplications": 292552704,
+    "matrixMACs": 1207959552,
+    "matrixProducts": 4,
+    "newCheckpointLoads": 0,
+    "newFits": 0,
+    "newImages": 0,
+    "newLearnedMapApplications": 0,
+    "newNeuralEvaluations": 0,
+    "newQR": 0,
+    "projectMACs": 603979776,
+    "reconstructMACs": 603979776,
+    "scope": "Four FP64 projector contractions. Explicit pairwise Gram/denominator reductions charged separately; means, elementwise differences/products, copies, hashes and retention also paid. Counts describe array geometry, not retired hardware instructions. Historical source/model formation remains paid."
+  },
+  "protocol": "One saved-U numerical projection of saved82 update. Four FP64 NumPy CPU contractions; no learned map/QR/fit/runtime/model/consumer/image. Retain a,b,c plus independently saved gate/commit remainders, explicit account closures and every full/centered signed Gram row. Denominators use saved exit-minus-common-incoming. All historical formation paid; b combined finite-policy/reassociation, not uniquely native rounding or pure attention/MLP escape.",
+  "requestSHA256": "0c51e98a15787cb413261b9dcfe45fb520fc95a63522171e60a2664da09c9402",
+  "schema": "tce-fixed-row-projection-request-v1",
+  "sourceHashes": {
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "fixed_row_projection.py": "3d5a62f218c514e27541a07256285fcbec849c98507f5ac86d0d5f1011026958",
+    "fixed_row_projection_study.py": "4e99745230b8b42e9fc24e415f77e977dc8dbc0b722ccdbca0a761dd5a4c5656",
+    "frozen-plan.md": "39a9a350fab95b94c61af86e3cb382f589f4ce9d9b05db3f78ed865309f03221",
+    "implementation-notes.md": "50f8962b515f892ed29e45c7c4162e53f5dc93b5c11ca93e4c252c983d873a92",
+    "inputs.json": "ed341b2f7a8cb135b427c31d67d55042a3d3d8dd3bee0d17c6329bb2df32fb99",
+    "paired_fields.py": "408e035cb2f2f99558dbbe5abccdc281a5deade195abdbbc003549318ef09e88",
+    "resource-basis.json": "c8d3d3c3341aacc9b1c6998cabc5079b10320c5b13929960e106bb70a04944a9",
+    "terminal_capture_guard_v2.py": "eb577f23577062efef8107a51ae7e2baf8ae860678612532c17b55cda3fe7849",
+    "test_fixed_row_projection.py": "50146cadcf9734716bbd3858ec380559ae9940c7701843a94fe1fc4daa776b5b"
+  },
+  "timeoutSeconds": 180
+}

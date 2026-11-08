@@ -1,0 +1,28 @@
+{
+  "schema": "tce-fixed-row-projection-publication-initial-findings-v1",
+  "command": "rtk proxy ../common/bin/common exec python generator/audit_fixed_row_projection_publication.py",
+  "exitCode": 1,
+  "finding": "ValueError: Scheduled storage receipt changed",
+  "rows": [
+    {
+      "published": "docs/results/storage-audit-cycle84/terminal-pointers.json",
+      "authoritativeSource": "artifacts/storage-audit-cycle84/result.json",
+      "expectedSHA256": "0a359bcb1bc857a3eba0f655258f1d78b907dd7cd76716803f59edf28c48a3f4",
+      "copiedSHA256BeforeRepair": "dbacd5f9208b09336d160441965338faaa59041b69628285b1f972bce92959b0",
+      "sourceBytes": 60390,
+      "copyBytesBeforeRepair": 60391,
+      "difference": "One added trailing newline from artifact publication patch, identical parsed JSON."
+    },
+    {
+      "published": "docs/results/storage-audit-cycle84/current-snapshots.json",
+      "authoritativeSource": "artifacts/storage-local-snapshot-audit-cycle84/result.json",
+      "expectedSHA256": "bc97657d68e4ea8d243e2e0ff83e78eb5118499e4898ced53f9f0d693727d2a9",
+      "copiedSHA256BeforeRepair": "3574e5d368595234ee63b10d751ad8901679dd7b6b1d183174d20268828cfb6b",
+      "sourceBytes": 5512,
+      "copyBytesBeforeRepair": 5513,
+      "difference": "One added trailing newline from artifact publication patch, identical parsed JSON."
+    }
+  ],
+  "correction": "Restore byte-exact copies from immutable actual audit output files; keep original publication hash ledger and frozen science/staged review snapshots unchanged. No source/scientific data/outcome/plot/auditor edit. Then repeat final publication audit only.",
+  "scope": "Publication-copy integrity finding and actual original receipts retained; not a scientific run or a scientific failure."
+}

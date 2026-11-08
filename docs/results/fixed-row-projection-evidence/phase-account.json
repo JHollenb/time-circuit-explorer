@@ -1,0 +1,29 @@
+{
+  "schema": "tce-fixed-row-projection-phase-v1",
+  "schedulerSeconds": 9.38,
+  "sampledPeakRSSMB": 1044.6,
+  "sampledPeakVRAMMB": 0.0,
+  "workerWallSecondsAfterImports": 8.459596337284893,
+  "setupSeconds": 0.8875854010693729,
+  "computeAndInternalFingerprintSeconds": 0.9074429138563573,
+  "CPUSecondsAtExecutionReceipt": 2.23911995,
+  "matrixSecondsBeforeFingerprints": 0.27450302662327886,
+  "work": {
+    "denominatorScalarAdditions": 47170560,
+    "denominatorScalarMultiplications": 47185920,
+    "gramScalarAdditions": 292457472,
+    "gramScalarMultiplications": 292552704,
+    "matrixMACs": 1207959552,
+    "matrixProducts": 4,
+    "newCheckpointLoads": 0,
+    "newFits": 0,
+    "newImages": 0,
+    "newLearnedMapApplications": 0,
+    "newNeuralEvaluations": 0,
+    "newQR": 0,
+    "projectMACs": 603979776,
+    "reconstructMACs": 603979776,
+    "scope": "Four FP64 projector contractions. Explicit pairwise Gram/denominator reductions charged separately; means, elementwise differences/products, copies, hashes and retention also paid. Counts describe array geometry, not retired hardware instructions. Historical source/model formation remains paid."
+  },
+  "scope": "Actual bounded diagnostic scopes, not additive serving components or a matched runtime saving. Imports/setup/hashes/copies/retention/scalar reductions paid."
+}

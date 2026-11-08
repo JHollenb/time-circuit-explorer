@@ -1,0 +1,22 @@
+{
+  "schema": "tce-fixed-row-projection-initial-findings-v1",
+  "stage": "before freeze/staging",
+  "findings": [
+    {
+      "source": "Astra publisher review",
+      "observedPublisherSHA256": "117a46ff62a420d87a967f90dcdb6cb9714d1d772c69f4ab1ef2a38035e06b2c",
+      "issue": "Publisher audit authenticated current files and plans but did not bind collected inputs/resource-basis to request source hashes.",
+      "correction": "Audit checks every request sourceHashes entry: owned source against local generator, all staged metadata against collected publication. Redundant plan-only check removed.",
+      "correctedPublisherSHA256": "2d68656a717e0eccdd458aa0615100fd330109dd032d0342cfd60e52b5733459",
+      "testedScienceHelpersChanged": false,
+      "syntaxCheckPassed": true
+    },
+    {
+      "source": "Astra core-source review",
+      "supersededObservedTestSHA256": "0405265dcc7691e947482c968c2ef094d437949413928d631cde0eca1a3b341d",
+      "finalReviewedTestSHA256": "50146cadcf9734716bbd3858ec380559ae9940c7701843a94fe1fc4daa776b5b",
+      "correction": "Strengthened nonzero toy work assertion to exact geometry-derived MAC equality before the355-test suite; Astra reread final version."
+    }
+  ],
+  "scope": "Historical reviewed snapshots and corrections preserved. No failed or repeated scientific run; no payload or job had been staged. tests.json retains initial publisher pin and actual355 result; final approved publisher pin is bound separately."
+}

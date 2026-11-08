@@ -1,0 +1,79 @@
+{
+  "admission": "Intent-first CPU analysis, no hand-reserved RAM/VRAM, four configured BLAS threads. Host pin required by authenticated retained arrays. No GPU/model acquisition. 180s cap, no retries; complete tensors stay remote.",
+  "extraTemporaryBudgetBytes": 268435456,
+  "liveHost": {
+    "active_jobs": [],
+    "admission": {
+      "enabled": true,
+      "max_concurrent": null,
+      "ram_margin_mb": 3325.6384512,
+      "vram_margin_mb": 819.0
+    },
+    "name": "beast",
+    "ram_total_mb": 66512.769024,
+    "telemetry": {
+      "cpu_pct": 0.1,
+      "disk_free_gb": 68.429574144,
+      "disks": [
+        {
+          "free_gb": 68.4,
+          "mount": "/",
+          "total_gb": 235.5
+        },
+        {
+          "free_gb": 310.8,
+          "mount": "/mnt/big",
+          "total_gb": 1999.6
+        },
+        {
+          "free_gb": 2463.5,
+          "mount": "/mnt/hdd8tb",
+          "total_gb": 7937.3
+        },
+        {
+          "free_gb": 533.9,
+          "mount": "/mnt/ssd1tb",
+          "total_gb": 1000.0
+        },
+        {
+          "free_gb": 197.4,
+          "mount": "/mnt/usb-storage",
+          "total_gb": 502.9
+        },
+        {
+          "free_gb": 0.4,
+          "mount": "/recovery",
+          "total_gb": 4.3
+        }
+      ],
+      "host": "beast",
+      "load1": 0.0556640625,
+      "mem_pressure": null,
+      "pressure_external": false,
+      "ram_free_mb": 51881.037824,
+      "running": [],
+      "swap_total_mb": 21474.299904,
+      "swap_used_mb": 5113.729024,
+      "top_external": [
+        {
+          "name": "bitcoind",
+          "pid": 3661879,
+          "rss_mb": 16092
+        },
+        {
+          "name": "mount.ntfs-3g",
+          "pid": 815703,
+          "rss_mb": 1329
+        }
+      ],
+      "ts": 1794098333.5258446,
+      "vram_free_mb": 15943.0
+    }
+  },
+  "promotedSourceBytes": 303587328,
+  "retainedOutputLogicalBytes": 574414848,
+  "scope": "Eleven promoted saved fields, fifteen full-width output/account arrays, two-stream compressed rows, scalar Grams/means and denominator arrays. Pairwise Gram temporaries reused; no stacked full-width term cube. Copies/hashes/NumPy/BLAS/import overhead remain additional.",
+  "sourceFileBytes": 105389440,
+  "sourceFiles": 11,
+  "workingArrayBudgetBytes": 1146437632
+}

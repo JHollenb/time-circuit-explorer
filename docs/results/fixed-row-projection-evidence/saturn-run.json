@@ -1,0 +1,22 @@
+{
+  "command": [
+    "../common/bin/common",
+    "exec",
+    "python",
+    "../saturn/src/saturn/evidence_pipeline.py",
+    "run",
+    "artifacts/fixed-row-projection-v1/result",
+    "--watch-root",
+    "artifacts/fixed-row-projection-v1/saturn-watch",
+    "--registry",
+    "artifacts/fixed-row-projection-v1/claims-auto.jsonl",
+    "--results-root",
+    "artifacts/fixed-row-projection-v1/result",
+    "--xref-db",
+    "artifacts/fixed-row-projection-v1/xref.sqlite",
+    "--xref-root",
+    "artifacts/fixed-row-projection-v1/result",
+    "--json"
+  ],
+  "returncode": 0
+}

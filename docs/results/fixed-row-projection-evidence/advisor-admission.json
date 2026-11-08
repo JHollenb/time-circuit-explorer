@@ -1,0 +1,18 @@
+{
+  "schema": "tce-fixed-row-projection-advisor-admission-v1",
+  "advisor": "/root/astra_zero_forward_advisor",
+  "model": "gpt-6-astra",
+  "decision": "bounded-proceed",
+  "reviewedSHA256": {
+    "generator/fixed_row_projection_submit_v2.py": "a1b483f8c80ea5b5551b2424f527ff11bdb6ab2ccee75d9dd6dba263d897dadc"
+  },
+  "requestSHA256": "0c51e98a15787cb413261b9dcfe45fb520fc95a63522171e60a2664da09c9402",
+  "frozenMembersVerified": 10,
+  "findings": [
+    "Original and amended command construction match; no frozen science/request/payload change.",
+    "No job handle existed; original refusal occurred before API creation/submission, not a science failure.",
+    "Working array budget plus512MiB allowance is1683308544bytes;2048RAM gives margin. Not measured RSS.",
+    "Separate admission correction binds external launcher/request/frozen resource basis; CPU4/VRAM0/disk2/60estimate180cap/guardedpreflight/no retries explicit."
+  ],
+  "scope": "Source/metadata review only of submission/resource amendment. No model/tests/scientific arrays/edits. External launcher source not retroactively part of executed payload custody; separately bound in effective configuration."
+}
