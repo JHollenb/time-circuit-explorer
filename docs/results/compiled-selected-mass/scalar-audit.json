@@ -1,0 +1,111 @@
+{
+  "schema": "tce-compiled-mass-scalar-byte-audit-v1",
+  "panels": [
+    {
+      "case": "A",
+      "referenceRows": 477,
+      "supportDifferences": 0,
+      "scoreWordDifferences": 0,
+      "weightWordDifferences": 0,
+      "maximumAbsWeightDifference": 0.0,
+      "historicalRows": 477,
+      "historicalSupportDifferences": 0,
+      "historicalMaximumAbsWeightDifference": 4.440892098500626e-16,
+      "statuses": {
+        "active-query-outside-padding-contract": 35,
+        "supported": 477
+      }
+    },
+    {
+      "case": "B",
+      "referenceRows": 477,
+      "supportDifferences": 0,
+      "scoreWordDifferences": 0,
+      "weightWordDifferences": 0,
+      "maximumAbsWeightDifference": 0.0,
+      "historicalRows": 477,
+      "historicalSupportDifferences": 0,
+      "historicalMaximumAbsWeightDifference": 4.996003610813204e-16,
+      "statuses": {
+        "active-query-outside-padding-contract": 35,
+        "supported": 477
+      }
+    },
+    {
+      "case": "C",
+      "referenceRows": 477,
+      "supportDifferences": 0,
+      "scoreWordDifferences": 0,
+      "weightWordDifferences": 0,
+      "maximumAbsWeightDifference": 0.0,
+      "historicalRows": 0,
+      "historicalSupportDifferences": 0,
+      "historicalMaximumAbsWeightDifference": 0.0,
+      "statuses": {
+        "active-query-outside-padding-contract": 35,
+        "supported": 477
+      }
+    },
+    {
+      "case": "D",
+      "referenceRows": 477,
+      "supportDifferences": 0,
+      "scoreWordDifferences": 0,
+      "weightWordDifferences": 0,
+      "maximumAbsWeightDifference": 0.0,
+      "historicalRows": 0,
+      "historicalSupportDifferences": 0,
+      "historicalMaximumAbsWeightDifference": 0.0,
+      "statuses": {
+        "active-query-outside-padding-contract": 35,
+        "supported": 477
+      }
+    },
+    {
+      "case": "unknown",
+      "referenceRows": 0,
+      "supportDifferences": 0,
+      "scoreWordDifferences": 0,
+      "weightWordDifferences": 0,
+      "maximumAbsWeightDifference": 0.0,
+      "historicalRows": 0,
+      "historicalSupportDifferences": 0,
+      "historicalMaximumAbsWeightDifference": 0.0,
+      "statuses": {
+        "active-query-outside-padding-contract": 35,
+        "unknown-admitted-token": 477
+      }
+    }
+  ],
+  "massWork": {
+    "divisions": 7632,
+    "expCalls": 7632,
+    "finiteScoreChecks": 7632,
+    "fsumCalls": 1908,
+    "maximumComparisons": 5724,
+    "scoreLookups": 7632,
+    "subtractions": 7632,
+    "supportedEmptyQueries": 0,
+    "supportedNonemptyQueries": 1908,
+    "unsupportedQueries": 652
+  },
+  "pairedRowsIndependentlyRebuilt": 954,
+  "completeObservationRows": 2560,
+  "sameProfileReferenceWork": {
+    "coordinateProducts": 8547840,
+    "scoreFsumCalls": 66780,
+    "normalizerExpCalls": 7632,
+    "normalizerFsumCalls": 1908
+  },
+  "freshRemoteScoreByteVerification": {
+    "path": "/mnt/hdd8tb/mrun-work/job-833def2c0ba2/compiled/scores.f64",
+    "bytes": 31395840,
+    "sha256": "387c640f24f9736bf40844f61c5ee761aacd82b6b662f7058ba9d7c54490f58a",
+    "completeClockSegmentsVerified": 512,
+    "decodedFloatingArrays": false
+  },
+  "localMathLibmMaxAbsDifference": 5.551115123125783e-17,
+  "localMathDifferentWords": 6,
+  "localMathScope": "Public selected scalars only, host libm may differ; this observation is not a numerical quality gate or native-reader proof.",
+  "scope": "Independent custody/hash/public-scalar joins and aggregate reconstruction. Full source QK references are worker-source-audited, not locally recomputed. No complete score/operand array hydration."
+}

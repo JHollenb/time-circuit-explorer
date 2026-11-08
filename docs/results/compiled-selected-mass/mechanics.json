@@ -1,0 +1,27 @@
+{
+  "schema": "tce-compiled-mass-mechanics-v1",
+  "tests": 6,
+  "successful": true,
+  "failures": 0,
+  "errors": 0,
+  "testWallSeconds": 0.07495070900768042,
+  "wrapperWallSecondsBeforeReceipt": 0.1309197919908911,
+  "python": "3.10.14 (main, Aug 30 2024, 13:27:55) [Clang 15.0.0 (clang-1500.3.9.4)]",
+  "platform": "macOS-15.6-arm64-arm-64bit",
+  "sourceHashes": {
+    "compiled_mass_program.py": "b40fb601c8f8c8bf59f68138d1627e4320ba6506b10a554183659eda03551b62",
+    "compiled_mass_compile.py": "4d33b205ff8c7cfb27dd454b5dc8f0c543d02ad68c130e7be8b176ed85b1e72a",
+    "compiled_mass_study.py": "c7dfcc0ba92bfa17f8597fbe345347be86ba8c0d152b2beb98901b263109d583",
+    "test_compiled_mass.py": "c0dd0b6145094cca5b472e6f0ac66b6eb90e319fc203a89b1b9e172da199695c",
+    "publish_compiled_mass.py": "497e0b4b4b16f70f7f325107adc5ff5045746b6f4129fbd3038aebad41c0c295",
+    "source_order_program.py": "b46fd0daf9d91076286e6685622a086a7dfc156d254229e693fcaab8b74b6004",
+    "source_order_compile.py": "c76d8c0dce2647d4707ab926beda3b23953f61fc7f655b6a6125406d8e6e5ff2",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "token_history_address.py": "b17d386c4059384faccc6461620bbabf4bee02503aa20831e41ff9a9a729ab29",
+    "token_history_process.py": "33092498786e550451e9c751f5a23983af645582e82199b7cc834e3aa7d2a385"
+  },
+  "advisorSourceSHA256": "d0d6f1a8f9fe0f7b09b9da0e58672e8b49599dd50e9ab1e87245a8f698b22336",
+  "unittestOutput": "test_domain_and_score_corruption_refused (test_compiled_mass.Mechanics) ... ok\ntest_empty_padding_and_unknown_is_not_skipped (test_compiled_mass.Mechanics) ... ok\ntest_empty_shift_invariance_and_underflow (test_compiled_mass.Mechanics) ... ok\ntest_fresh_child_runtime_and_target_exclusion (test_compiled_mass.Mechanics) ... ok\ntest_historical_custody_must_match_retained_original (test_compiled_mass.Mechanics) ... ok\ntest_own_support_short_prefix_and_scalar_reference (test_compiled_mass.Mechanics) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.075s\n\nOK\n",
+  "suppliedFixtureOutput": "SOURCE_ORDER_CLOCK 0 products 0 seconds 0.00023462506942451\nSOURCE_ORDER_CLOCK 4 products 40 seconds 0.0012496248818933964\nCOMPILED_MASS_CLOCK 0 {'coordinateProducts': 0, 'fsumCalls': 0}\nCOMPILED_MASS_CLOCK 4 {'coordinateProducts': 40, 'fsumCalls': 20}\nSOURCE_ORDER_CLOCK 0 products 0 seconds 3.445800393819809e-05\nSOURCE_ORDER_CLOCK 4 products 40 seconds 0.0001463328953832388\nCOMPILED_MASS_CLOCK 0 {'coordinateProducts': 0, 'fsumCalls': 0}\nCOMPILED_MASS_CLOCK 4 {'coordinateProducts': 40, 'fsumCalls': 20}\nSOURCE_ORDER_CLOCK 0 products 0 seconds 2.9124785214662552e-05\nSOURCE_ORDER_CLOCK 4 products 40 seconds 0.00013124989345669746\nCOMPILED_MASS_CLOCK 0 {'coordinateProducts': 0, 'fsumCalls': 0}\nCOMPILED_MASS_CLOCK 4 {'coordinateProducts': 40, 'fsumCalls': 20}\nSOURCE_ORDER_CLOCK 0 products 0 seconds 0.00011320807971060276\nSOURCE_ORDER_CLOCK 4 products 40 seconds 0.00025916704908013344\nCOMPILED_MASS_CLOCK 0 {'coordinateProducts': 0, 'fsumCalls': 0}\nCOMPILED_MASS_CLOCK 4 {'coordinateProducts': 40, 'fsumCalls': 20}\n",
+  "scope": "Six tiny supplied mechanics only;2D/5clock/2token operands,custody/refusal/corruption and fresh stdlib child. No actual source-model arrays/checkpoints/production score compilation. Sources frozen after this execution."
+}

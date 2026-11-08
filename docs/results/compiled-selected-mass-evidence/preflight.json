@@ -1,0 +1,74 @@
+{
+  "checks": [
+    {
+      "check": "cmd-path-closure",
+      "detail": "all relative path tokens resolve inside the payload",
+      "evidence": {
+        "absolute_unverified": [
+          "/usr/bin/env",
+          "/mnt/hdd8tb/mdb/uv-cache"
+        ]
+      },
+      "status": "passed"
+    },
+    {
+      "check": "hashed-root-hygiene",
+      "detail": "hashed roots are clean of runtime files",
+      "evidence": {
+        "absolute_unverified": []
+      },
+      "status": "passed"
+    },
+    {
+      "check": "verifier-dry-run",
+      "detail": "no verify config declared",
+      "evidence": {},
+      "status": "skipped"
+    },
+    {
+      "check": "workload-geometry",
+      "detail": "no geometry predicate declared",
+      "evidence": {},
+      "status": "skipped"
+    },
+    {
+      "check": "reservation-sanity",
+      "detail": "no measured history for this exact config",
+      "evidence": {},
+      "status": "passed"
+    }
+  ],
+  "client_run_id": "132ef7000dbc26d8",
+  "cmd": [
+    "/usr/bin/env",
+    "PYTHONUNBUFFERED=1",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "PYTHONNOUSERSITE=1",
+    "PYTHONPATH=",
+    "OMP_NUM_THREADS=1",
+    "OPENBLAS_NUM_THREADS=1",
+    "MKL_NUM_THREADS=1",
+    "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+    "UV_LINK_MODE=symlink",
+    "uv",
+    "run",
+    "--no-project",
+    "--offline",
+    "--python",
+    "3.14.6",
+    "--with",
+    "numpy==2.5.4",
+    "python",
+    "-u",
+    "compiled_mass_study.py",
+    "execute",
+    "."
+  ],
+  "created_ts": 1794128190.1564019,
+  "experiment": "tce-compiled-selected-mass-v1",
+  "payload_root": "/Users/jakeholl/domains/time-circuit-explorer/artifacts/compiled-selected-mass-v1/payload",
+  "payload_sha256": "a9503e7bd5fe48dff2b4ad95cad44c239a5cb4c73a775bfe944d70db0c2d2f1e",
+  "receipt_fingerprint": "c783c8435c391cac36062cd41ba2eced2dcc7937020d1f3e8e295daee6cbbf4a",
+  "schema_version": "mrun-preflight-receipt-v1",
+  "verdict": "passed"
+}

@@ -1,0 +1,52 @@
+{
+  "backend": "numpy2.5.4 FP64 elementwise offline;stdlib score lookup/exp/fsum serving;Python scalar reference",
+  "cases": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "unknown"
+  ],
+  "compileProducts": 502333440,
+  "device": "cpu",
+  "ownedSources": [
+    "compiled_mass_program.py",
+    "compiled_mass_compile.py",
+    "compiled_mass_study.py",
+    "test_compiled_mass.py",
+    "source_order_program.py",
+    "source_order_compile.py",
+    "encoder_atoms.py",
+    "token_history_address.py",
+    "token_history_process.py"
+  ],
+  "referenceProducts": 8547840,
+  "requestSHA256": "d203bcb5d5d19df1c41c6ce6c842aa93580c36fdfd2bcca070e9364ce3f1ea5e",
+  "schema": "tce-compiled-mass-request-v1",
+  "scope": "One selected-weight producer only; scalar attention and offline learned compilation paid. No value/contextual/denoising/pixel or arbitrary-prompt zero-neural claim.",
+  "sourceHashes": {
+    "A-tokens.json": "7265b97bdaab561215d221f083fd2e1ff02c120da1196a4aeabac001bcd538ea",
+    "B-tokens.json": "f29609947047c30b4e91d4fd254eaf305c665ae6e3785d42a3d94f29e1a03980",
+    "C-tokens.json": "e363c83dfe9eec29c4b0b7973c93618871b012e81bd72746a6b129ea66dcb1d7",
+    "D-tokens.json": "aae635e25200c996e7d4812c194240503d32e14840308761c857320a5029afb8",
+    "clock-ledger.json": "084a12ec5ff814d3ba470ee9b761bc29cafbf76ace84fae524935241c2069d6f",
+    "compiled_mass_compile.py": "4d33b205ff8c7cfb27dd454b5dc8f0c543d02ad68c130e7be8b176ed85b1e72a",
+    "compiled_mass_program.py": "b40fb601c8f8c8bf59f68138d1627e4320ba6506b10a554183659eda03551b62",
+    "compiled_mass_study.py": "c7dfcc0ba92bfa17f8597fbe345347be86ba8c0d152b2beb98901b263109d583",
+    "encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "frozen-plan.md": "19abf8dada31f969e0774b139bd90770867742f4bb90ae631072dbcfc3285069",
+    "implementation.md": "ce8a1f996cc8a72b103cdd96f950e3aec3db44220deecc54232915ffe285782f",
+    "inputs.json": "693e631a7c4c3025438c87359bb2eadb6b1122f0b12e51df0e2079834ea51c1c",
+    "old-weights.jsonl.gz": "0b12bcbf1dd816a01a048199983f47817dc6035a7a172e2bdd654292fb54e7dc",
+    "rank-program.json": "3971cce66cd288193b3b600669dc11bbc26bbc8e600bad512b1edb8ec8da747c",
+    "ranks.u16.gz": "f3f64e04a3f326d460ea1d7237d219f72537c17db9dda31f4ef2b8240db3dcf7",
+    "resource-basis.json": "0157673baf949a9e975428c4f43e46c5794b0ebd7ee96f225f313212a30ca003",
+    "source_order_compile.py": "c76d8c0dce2647d4707ab926beda3b23953f61fc7f655b6a6125406d8e6e5ff2",
+    "source_order_program.py": "b46fd0daf9d91076286e6685622a086a7dfc156d254229e693fcaab8b74b6004",
+    "test_compiled_mass.py": "c0dd0b6145094cca5b472e6f0ac66b6eb90e319fc203a89b1b9e172da199695c",
+    "token_history_address.py": "b17d386c4059384faccc6461620bbabf4bee02503aa20831e41ff9a9a729ab29",
+    "token_history_process.py": "33092498786e550451e9c751f5a23983af645582e82199b7cc834e3aa7d2a385",
+    "unknown-tokens.json": "611eb4fcf8e4e80f3ad9e5a0f0598c8c4c887b3d99a60909ebade1c554fb4b8f"
+  },
+  "timeoutSeconds": 600
+}
