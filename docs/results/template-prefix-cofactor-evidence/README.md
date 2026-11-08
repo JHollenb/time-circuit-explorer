@@ -1,0 +1,15 @@
+# Template-prefix cofactor evidence, cycle 101
+
+The [article](../../compiled-template-prefix.md) and [report](../template-prefix-cofactor/report.json) describe a partial constructor of actual contextual template rows. Its first two rows at H0–H27 come from compiled constants; every other row stays unresolved. It produces no image and no content-dependent contextual state.
+
+The [source review](advisor-source.json) pins four complete new sources/plan and twelve supporting snapshots before any tests, staging or execution. It corrects the historical mask-origin and native-request joins. [Five supplied-byte mechanics tests](mechanics.json) run once in 0.01508 seconds including loading; all executed sources stay unchanged. The [preflight receipt](preflight.json) matches the exact command and payload. Command closure, hashed-root hygiene and reservation sanity pass; undeclared verifier and workload-geometry hooks are skipped.
+
+One guarded intent-first CPU job, `job-521d4678edb9`, succeeds in 4.29 seconds with sampled peak RSS 276.8 MB and no VRAM. Declared/sealed/executed payload SHA and size match. Beast placement is required by host-local source files. No new model evaluation or scientific floating arithmetic runs. Historical original-model preparation remains charged.
+
+The [publication](../template-prefix-cofactor/publication.json) authenticates all nine compact members, current successful scheduler custody and the prediction seal. It freshly verifies the complete compiled bank plus eight served outputs near compute: nine files, 2,580,480 bytes, without numerical decoding or local hydration. All eight outputs are identical because the compiled subgraph is content-independent. Raw packets change and are retained. All 28 prefix states match historical B; B was already public. The native A/B records differ on row 8 at H0 and all 504 rows from 8 onward at H1–H27.
+
+The [actual-result review](advisor-actual.json) independently checks all compact metadata joins, all eight changed-input-position lists, every comparison record and the publisher's complete compact inventory. The advisor does not rerun native computation, hydrate arrays or repeat the publisher's SSH byte checks. Its approval is scoped to the two-row constructor and recorded comparisons.
+
+The leading-newline specimen changes token 2 from 198 to 1406, so the two-token prefix is deliberate. Empty and long specimens exercise direct tokenization; the image server's nonblank 1–1,000-character contract is separate. A wrong first token refuses state access. Per-layer prefix K/V and a dynamic consumer are not implemented. Native finite agreement outside recorded A/B, especially fully attended dispatch, is not established.
+
+The [storage scan](storage-practice.json) is an early pressure-triggered local inventory, not a new remote restoration-pointer audit. It finds no large member or qualifying transport in its recorded owned scope, archives/deletes nothing and preserves extracted evidence. Compiled/tokenizer/output bytes remain on Beast. Last full research/storage review is 99, next 102; last actual archive is 78.

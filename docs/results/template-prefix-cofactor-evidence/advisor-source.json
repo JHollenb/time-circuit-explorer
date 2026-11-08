@@ -1,0 +1,184 @@
+{
+  "schema": "tce-template-prefix-cofactor-advisor-source-v1",
+  "cycle": 101,
+  "reviewer": "Astra advisor",
+  "reviewedAtUTC": "2026-11-08T09:54:00Z",
+  "repository": "/Users/jakeholl/domains/time-circuit-explorer",
+  "reviewKind": "Scoped static source, mathematical contract, provenance, isolation and resource review before first execution",
+  "chronology": {
+    "parentReportedTestsStageAndJobNotStartedAtFinalReview": true,
+    "advisorExecutedCandidateOrTests": false,
+    "advisorReadScientificArrays": false,
+    "advisorSubmittedOrInspectedLiveJobs": false,
+    "advisorEdits": ["docs/results/template-prefix-cofactor-evidence/advisor-source.json"],
+    "scope": "Source and public JSON/text metadata only. The tokenizer/template text assets were read and SHA-authenticated during the immediately preceding architectural review; no tokenizer, native model or array computation was run by the advisor."
+  },
+  "decision": {
+    "status": "bounded-proceed",
+    "readyForFirstTargetedMechanics": true,
+    "readyForGuardedStagingAndOneCPURunAfterMechanics": true,
+    "remainingBlockingFindings": [],
+    "limits": "This is static approval of the declared partial constructor, not evidence that tests passed, staging or scheduling succeeded, native B rows agree, or arbitrary-prompt zero-neural image generation works. Runtime source/custody checks, mechanics and mrun admission remain authoritative in their respective scopes."
+  },
+  "reviewedSnapshots": [
+    {
+      "path": "generator/template_cofactor_program.py",
+      "sha256": "f090088033dfd0ff09f521f51d5fbf482f26591c0c9e95f1b9bc19ea57b33f53",
+      "scope": "Complete source: TokenInput, PrefixState ownership, packet validation, unsupported-state invalidation, and H0..H27 byte slicing."
+    },
+    {
+      "path": "generator/template_cofactor_study.py",
+      "sha256": "f7d57c3c60f4d6e1efc66a40856a50c601bc7aa14eb3fde6d40c1f1661ca5374",
+      "scope": "Complete source and final corrective additions: stage/request/custody joins, mask and position origin, original request byte hash, compiler, fresh child, seal, post-seal diagnosticsReleasedAfterSealSHA256, submit and collection dispatch."
+    },
+    {
+      "path": "generator/test_template_cofactor.py",
+      "sha256": "575eb15916a62dbd1a6b9691503afa0c1d5701be8666ee250690ae66b4312708",
+      "scope": "Complete source. Five supplied-byte mechanics tests, not executed by the advisor. They cover layer order, explicit partial output, owned inputs, wrong-prefix invalidation, mask/position refusal and corrupt-bank refusal. They do not establish tokenizer/native parity or real child execution."
+    },
+    {
+      "path": "docs/plans/template-prefix-cofactor.md",
+      "sha256": "2402e4bbb413ee69e9cfdb27108ad0f3581ab1ec58fd36e726cf39f32b029e2e",
+      "scope": "Complete frozen plan."
+    }
+  ],
+  "supportingSnapshots": [
+    {
+      "path": "generator/encoder_atoms.py",
+      "sha256": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+      "scope": "Prefix initialization/tokenize policy compared directly, lines 99-127; broader source read during preceding focused advice."
+    },
+    {
+      "path": "generator/token_history_process.py",
+      "sha256": "33092498786e550451e9c751f5a23983af645582e82199b7cc834e3aa7d2a385",
+      "scope": "Complete source, especially isolate/NoEvaluation and its transitive token_history_address import."
+    },
+    {
+      "path": "generator/token_history_address.py",
+      "sha256": "b17d386c4059384faccc6461620bbabf4bee02503aa20831e41ff9a9a729ab29",
+      "scope": "Hash and staged transitive dependency identity only in this review; its fit/run_packet functions are not invoked by this candidate."
+    },
+    {
+      "path": "generator/run.py",
+      "sha256": "f7eddbe640abd624df6d649fda699c5290458868536bf5f01a981c2b677163d3",
+      "scope": "command() source and relevant collection/inventory references; not a complete source reread."
+    },
+    {
+      "path": "generator/response_study.py",
+      "sha256": "dcd99c237ef36b4d832a53a470cabae6437d4dc0cc0a0cbe723c146da0d56206",
+      "scope": "collect() lines 116-137: terminal state/request/custody, Beast path, bounded inventory, rsync and complete byte equality."
+    },
+    {
+      "path": "docs/results/complete-masked-image/provenance.json",
+      "sha256": "487a72a3775bd73b1c7d4698c6af9fcb41e0e4329e87ca1a034bb847ba2c20b5",
+      "scope": "Selected metadata: historical job/request/custody, scheduler result/profile and inventory authority. No new scheduler query by advisor."
+    },
+    {
+      "path": "docs/results/complete-masked-image/request.json",
+      "sha256": "9866e7fbb0a25df76d5affa463cb542c0047ade790440b3cf0c367de04f14fb5",
+      "scope": "Request identity/hash binding; complete byte hash, not a new historical execution verification."
+    },
+    {
+      "path": "docs/results/complete-masked-image/encoder-full.json",
+      "sha256": "a5ac5dac6adb49406d234ff1e366b4fa8807193ef2a74912073e9d6e62e5d2e3",
+      "scope": "Selected fields/metadata: full lane, lexical A/B token/mask identities, native geometry/numerical profile, H0/H1/H27 descriptors and all-state inventory structure. No NPY payload read or complete primitive-row audit by advisor."
+    },
+    {
+      "path": "docs/results/raw-prompt-encoder-atoms/manifest.json",
+      "sha256": "9a155bd1410c52909997bacaf1d1aac2f9e90be86dc269d5e7edfab2b5285432",
+      "scope": "Manifest metadata excluding atom shard contents: tokenizer/template hashes, token policy, vocabulary and fixed geometry."
+    },
+    {
+      "path": "docs/results/source-order-program/inputs.json",
+      "sha256": "94b29f3538c4c21c7b20fc420ede17427adbba8e3cef69a5570be3a5fe07b99a",
+      "scope": "Atom store/manifest identity and historical discovery metadata, not numerical atom data."
+    },
+    {
+      "path": "docs/results/source-order-program/input-A-tokens.json",
+      "sha256": "7265b97bdaab561215d221f083fd2e1ff02c120da1196a4aeabac001bcd538ea",
+      "scope": "Complete byte hash and JSON field schema; runtime stage checks authenticate the complete ID/mask payloads and positions."
+    },
+    {
+      "path": "docs/results/source-order-program/input-B-tokens.json",
+      "sha256": "f29609947047c30b4e91d4fd254eaf305c665ae6e3785d42a3d94f29e1a03980",
+      "scope": "Complete byte hash; runtime stage checks authenticate the complete ID/mask payloads and positions."
+    }
+  ],
+  "sourceAssetsFromPrecedingFocusedAdvice": [
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/chat_template.jinja",
+      "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+      "scope": "Complete authenticated text read, no template execution."
+    },
+    {
+      "path": "/mnt/hdd8tb/mrun-work/job-7dcbeae35deb/atom-store/tokenizer.json",
+      "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+      "scope": "Complete byte hash, selected normalization/pretokenizer/added-token/BPE policy and basic vocabulary metadata; no tokenizer execution or exhaustive merge-table analysis."
+    }
+  ],
+  "findings": [
+    {
+      "id": "historical-mask-origin",
+      "status": "corrected-before-execution",
+      "initialFinding": "Stage initially bound only historical token IDs, not the companion mask payload to the original native input.",
+      "resolution": "Final stage checks struct.pack('<512q') mask SHA256 against lexical maskSHA256, positions against range(512), activeRows, prefix IDs and prefix masks."
+    },
+    {
+      "id": "durable-parent-authority",
+      "status": "corrected-before-execution",
+      "resolution": "Final stage authenticates native metadata and original request file hashes against historical provenance, checks observed successful custody/request identity, joins native/request/provenance logical request identities, and stages both original provenance and request under new sourceHashes."
+    },
+    {
+      "id": "raw-frontend-port",
+      "status": "no-blocker",
+      "detail": "TokenInput reproduces the relevant Prefix.tokenize policy without AtomStore/numerical imports: authenticated tokenizer and template, right padding/truncation512, identical Jinja environment/filter/exception handling and single-user generation/thinking flags. Historical A/B complete packets are compared before their outputs seal. Empty and overlength cases are tokenizer-boundary controls; they are not evidence that the local image server accepts those inputs."
+    },
+    {
+      "id": "partial-numeric-state",
+      "status": "no-blocker",
+      "detail": "NPY v1 header, full file/payload SHA, shape and exact uint16 layout are checked. The compiler copies only the first10240 payload bytes from each A H0..H27 field, in layer order, producing286720 bytes. PrefixState owns complete input packets, emits only two numeric rows, and marks positions[2,512) plus QKV/continuation/image operations unresolved. Wrong-prefix or invalid input cannot read a previously supported state."
+    },
+    {
+      "id": "source-serving-comparison-separation",
+      "status": "no-blocker",
+      "detail": "Only A state payloads are read during compilation. A/B token packets and public metadata are available earlier, with their role explicit. The fresh child finishes before the serving seal and B state reads. The final report binds diagnosticsReleasedAfterSealSHA256. B remains a previously public historical comparison, not a fresh held-out sample."
+    },
+    {
+      "id": "finite-and-goal-scope",
+      "status": "qualified",
+      "detail": "Causal independence is a source-level law. Compiled bytes define the recorded A copy policy; equality to historical B is an observation to collect, not a hard quality gate. All-attended versus padded native SDPA/dispatch may differ finitely. This source does not claim universal native bit parity, prefix K/V compilation, complete H1, new dynamic contextual computation or arbitrary-prompt zero-neural images. No savings in an unexecuted full consumer should be credited."
+    },
+    {
+      "id": "trusted-child-boundary",
+      "status": "qualified",
+      "detail": "Non-neural tokenizer/template initialization and empty-string warmup occur before the guard and are separately timed. Thereafter declared compiled-file reads/output writes, import canaries and original-state-file canaries apply. This is a trusted-code audit guard, not an adversarial sandbox. The fresh child is launched without -I; inherited environment and pre-guard initialization are outside that guard."
+    },
+    {
+      "id": "measurement-interpretation",
+      "status": "publication-caution",
+      "detail": "Do not call child ru_maxrss isolated steady-state memory: it is a high-water measurement and may include inherited pre-exec history. Time scopes exclude the final receipt/report writes as named. The plan's286720 bytes describe the compiled state bank only, not tokenizer assets, eight served copies, JSON, interpreter memory or inherited source storage. These qualifications do not block the bounded assay."
+    }
+  ],
+  "resourceReview": {
+    "device": "CPU only",
+    "placement": "Hard Beast pin justified by host-local historical state and tokenizer assets",
+    "admission": "Intent-first; no hand-guessed RAM/VRAM reservation in reviewed launch",
+    "timeoutSeconds": 120,
+    "childTimeoutSeconds": 80,
+    "retryOnKill": false,
+    "preflight": true,
+    "guarded": true,
+    "queueNoteCharacters": 313,
+    "runtime": "Existing offline cached uv command; numerical/model packages may be installed in that environment but the candidate does not import or execute them. Tokenizer/Jinja versions are recorded at execution.",
+    "geometryBasis": "Each historical H file is approximately2.62MB; files are authenticated one at a time rather than loading a model or all layers. The compiled bank is286720B and tokenizer JSON approximately11.42MB. Eight served copies remain near compute. Only compact results are collected locally.",
+    "conclusion": "No static resource or timeout blocker found for this small byte/tokenizer job. Actual fleet availability and mrun admission have not been rechecked by the advisor and remain required operational facts."
+  },
+  "mechanicsPolicy": {
+    "expectedTests": 5,
+    "observedTestsByAdvisor": 0,
+    "requiredIntegrity": "Source/parent identity, input masks and token origins, exact byte layout, guard refusals, source lineage and prediction seal ordering.",
+    "observationsNotGates": "Historical B prefix agreement/disagreement, every A/B differing row count, zero effect on compiled rows across content changes, timings and memory.",
+    "fullGoal": "Active and unsolved: arbitrary raw prompt to image without neural evaluations."
+  },
+  "periodicReview": {"lastFullResearchCycle": 99, "nextDueCycle": 102, "newFullSurveyPerformedHere": false}
+}
