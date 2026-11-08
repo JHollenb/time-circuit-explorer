@@ -1,0 +1,152 @@
+{
+  "schema": "tce-relative-mass-feasibility-v1",
+  "sourceHashes": {
+    "generator/source_order_compile.py": "c76d8c0dce2647d4707ab926beda3b23953f61fc7f655b6a6125406d8e6e5ff2",
+    "generator/source_order_program.py": "b46fd0daf9d91076286e6685622a086a7dfc156d254229e693fcaab8b74b6004",
+    "generator/encoder_atoms.py": "6889cd42e46b9881a6568b8378edef0488f651d6867bdb1dcf7b0a79266c6922",
+    "docs/results/source-order-program/compile-program.json": "3971cce66cd288193b3b600669dc11bbc26bbc8e600bad512b1edb8ec8da747c",
+    "docs/results/source-order-program/atom-manifest.json": "9a155bd1410c52909997bacaf1d1aac2f9e90be86dc269d5e7edfab2b5285432",
+    "docs/plans/first-read-relative-mass-producer.md": "cf9076d897c84688eec3e44706b12c9fef9bac6d659285440ed20016185738af",
+    "generator/relative_mass_feasibility.py": "8e54fcfc9acc832c5f60bd3abc9f442c99437d5f650718346edf5b935f9c7781",
+    "generator/test_relative_mass_feasibility.py": "f5f507c9baa4971bb895374b1c497f592db772be36f49ad631a8cf019b223dfc"
+  },
+  "sourceDomain": {
+    "alphabet": [
+      11,
+      13,
+      32,
+      198,
+      264,
+      271,
+      279,
+      311,
+      315,
+      389,
+      872,
+      1290,
+      2115,
+      2518,
+      4158,
+      6171,
+      6303,
+      8651,
+      9043,
+      10300,
+      14029,
+      14396,
+      23739,
+      25366,
+      77091,
+      88471,
+      151644,
+      151645,
+      151667,
+      151668
+    ],
+    "length": 512,
+    "head": 0,
+    "paddingQueryID": 151643,
+    "dimension": 128,
+    "vocabulary": 151936,
+    "heads": 32
+  },
+  "literalLayoutCensus": {
+    "strictPastPositionPairs": 130816,
+    "currentDomainScores": 3924480,
+    "currentDomainFP64Bytes": 31395840,
+    "projectedCompileCoordinateProducts": 502333440,
+    "idealRelativeOffsetScores": 15330,
+    "idealRelativeOffsetFP64Bytes": 122640,
+    "fixedQueryFullVocabularyScoresPerHead": 19875659776,
+    "fixedQueryFullVocabularyFP64BytesPerHead": 159005278208,
+    "fixedQueryFullVocabularyFP64BytesAllHeads": 5088168902656,
+    "allQueryIDsStrictPastScoresPerHead": 3019828243726336,
+    "allQueryIDsStrictPastFP64BytesAllHeads": 773076030393942016,
+    "additionalLegalActiveDiagonalScoresPerHead": 77791232,
+    "allQueryIDsWithLegalDiagonalFP64BytesAllHeads": 773076050308497408,
+    "scope": "Literal dense FP64 layouts,not information-theoretic lower bounds,measured compressed sizes or native finite-parity certification. Diagonal assumes legal same-token current query/key;strict-past census alone excludes it."
+  },
+  "rotaryWitness": {
+    "suppliedUnrotatedQueryAndKey": [
+      "1",
+      "0"
+    ],
+    "angleStep": "pi/8",
+    "unscaled": true,
+    "bf16CosStep": "237/256",
+    "bf16SinStep": "49/128",
+    "bf16CosAndSinTwoSteps": "181/256",
+    "firstQueryKeyPositions": [
+      1,
+      0
+    ],
+    "translatedQueryKeyPositions": [
+      2,
+      1
+    ],
+    "relativeOffsetBoth": 1,
+    "firstScore": "237/256",
+    "translatedScore": "60635/65536",
+    "signedDifference": "-37/65536",
+    "scope": "Exact rational supplied2-D rounded-rotary toy,not native Qwen measurements. Refutes universal exact relative-offset reuse for this finite policy;does not quantify source-model error or exclude other compact evaluators."
+  },
+  "weightWitness": {
+    "positiveMassesA": [
+      8,
+      4,
+      2,
+      1
+    ],
+    "positiveMassesB": [
+      64,
+      16,
+      4,
+      1
+    ],
+    "sameStrictDescendingOrder": true,
+    "normalizedA": [
+      "8/15",
+      "4/15",
+      "2/15",
+      "1/15"
+    ],
+    "normalizedB": [
+      "64/85",
+      "16/85",
+      "4/85",
+      "1/85"
+    ],
+    "scope": "Supplied rational counterexample:ordering does not determine normalized masses. No fitted coefficients or source-model observation."
+  },
+  "candidate": {
+    "kind": "offline token/absolute-position scalar-score partial evaluation",
+    "scoreContract": "scaled-fp64-coordinate-products-then-python-math-fsum-v1",
+    "historyDependentTable": false,
+    "serving": "Reuse95 own integer supports;look up up to4fixed FP64 scores;execute declared4-way normalization. Values/mixing remain separately charged.",
+    "onlineQKCoordinateProducts": 0,
+    "normalizationStillExecuted": true,
+    "implementationExists": false,
+    "scope": "One finite learned primitive compiled offline,not a full zero-neural reader/generator. Scores absent from95 retained asset;rank/hash receipts cannot provide their magnitudes."
+  },
+  "alternatives": [
+    {
+      "kind": "ideal-relative-position Fourier law",
+      "directCoefficientProductsPerScore": 128,
+      "scope": "Direct64-frequency real rewrite still pays128learned coefficient products;not a lower bound on all possible programs. Source BF16 rotations do not inherit ideal shift symmetry."
+    },
+    {
+      "kind": "direct trigonometric clock recurrence",
+      "scope": "Advancing phases can avoid trig recomputation but does not eliminate coefficient weighting or final sums;exact finite source equivalence and a genuinely cheaper lowering remain unestablished."
+    }
+  ],
+  "newModelEvaluations": 0,
+  "scientificArrayReads": 0,
+  "newLearnedScoreProducts": 0,
+  "newImages": 0,
+  "mechanics_status": "complete",
+  "instrument_status": "source-bound-counts-and-supplied-rational-witnesses",
+  "trend_status": "Finite partial evaluation is concrete;literal all-vocabulary/active-query scaling motivates explicit economy constraints",
+  "terminal_status": "No weight producer executed;arbitrary-prompt zero-neural images unestablished",
+  "analysisSecondsBeforeReportWrite": 0.001848583109676838,
+  "scope": "Local source/public-metadata and tiny integer/rational mechanics only. Byte counts are hypothetical uncompressed layouts;no table compiled/no mrun/native/model/scientific-array work. No universal lower-bound or impossibility claim."
+}
