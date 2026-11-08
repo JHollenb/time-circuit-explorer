@@ -1,0 +1,113 @@
+{
+  "run": {
+    "exitCode": 2,
+    "result": {
+      "broken": true,
+      "command": "run",
+      "exit_code": 2,
+      "findings": 0,
+      "instrument_status": "evidence-incomplete-empty-target",
+      "pack": "saturn-evidence-pack-v1",
+      "schema": "saturn-evidence-pipeline-v1",
+      "steps": {
+        "claims": {
+          "chain_ok": true,
+          "errors": [],
+          "ingested": 0,
+          "ingested_claims": [],
+          "receipts_accepted": 0,
+          "receipts_found": 0,
+          "registry": "/Users/jakeholl/domains/time-circuit-explorer/artifacts/writer-direction-cycle112-index/claims-auto.jsonl",
+          "skipped_invalid": 0,
+          "skipped_invalid_receipts": [],
+          "skipped_too_large": 0,
+          "skipped_unchanged": 0,
+          "status": "ok"
+        },
+        "target_scope": {
+          "instrument_status": "evidence-incomplete-empty-target",
+          "invalid_receipts": 0,
+          "receipts": 0,
+          "status": "incomplete",
+          "streams": 0
+        },
+        "watch": {
+          "fires": 0,
+          "ledgers_broken": 0,
+          "ledgers_unchanged": 0,
+          "ledgers_verified": 0,
+          "ledgers_written": 0,
+          "per_stream": [],
+          "records": 0,
+          "status": "ok",
+          "stream_errors": 0,
+          "streams": 0,
+          "streams_too_large": 0,
+          "streams_with_predicates": 0
+        },
+        "xref": {
+          "db": "/Users/jakeholl/domains/time-circuit-explorer/artifacts/writer-direction-cycle112-index/xref.sqlite",
+          "distinct_addresses": 0,
+          "files_scanned": 23,
+          "files_skipped_unchanged": 0,
+          "files_too_large": 0,
+          "files_unparseable": 0,
+          "refs_added": 0,
+          "refs_from_citations": 0,
+          "refs_with_model_id": 0,
+          "root": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/writer-direction",
+          "status": "ok"
+        }
+      },
+      "target": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/writer-direction"
+    },
+    "stderr": ""
+  },
+  "verify": {
+    "exitCode": 2,
+    "result": {
+      "broken": true,
+      "command": "verify",
+      "exit_code": 2,
+      "findings": 0,
+      "instrument_status": "evidence-incomplete-empty-target",
+      "pack": "saturn-evidence-pack-v1",
+      "schema": "saturn-evidence-pipeline-v1",
+      "steps": {
+        "claims": {
+          "registry": "/Users/jakeholl/domains/time-circuit-explorer/artifacts/writer-direction-cycle112-index/claims-auto.jsonl",
+          "status": "skipped"
+        },
+        "target_scope": {
+          "claims": [],
+          "claims_current": 0,
+          "claims_drifted": 0,
+          "claims_missing": 0,
+          "instrument_status": "evidence-incomplete-empty-target",
+          "receipts": 0,
+          "status": "incomplete",
+          "streams": 0
+        },
+        "watch": {
+          "ledgers": [],
+          "ledgers_broken": 0,
+          "ledgers_checked": 0,
+          "ledgers_missing": 0,
+          "ledgers_missing_expected": 0,
+          "status": "ok"
+        }
+      },
+      "target": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/writer-direction"
+    },
+    "stderr": ""
+  },
+  "schema": "tce-writer-direction-evidence-instrument-v1",
+  "cycle": 112,
+  "jobID": "job-a45856d73397",
+  "createdAtUTC": "2026-11-08T18:25:08.320227+00:00",
+  "target": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/writer-direction",
+  "interpretation": "Standard instrument coverage is separate from dedicated scalar/typed/byte publication. Unsupported transport/schema is an instrument limitation,not scientific null or success.",
+  "isolation": "Watch/claims/xref scoped to ignored112index;no historical/global ledgers modified.",
+  "scope": "One post-job run and one verify;no scientific vector/model computation repeated.",
+  "launcherCorrection": "An initial outer wrapper stopped on absent PATH console entry before calling any instrument. Corrected by common launcher and canonical Saturn venv PATH;no instrument/science was repeated."
+}

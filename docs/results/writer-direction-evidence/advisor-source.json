@@ -1,0 +1,551 @@
+{
+  "schema": "tce-writer-direction-advisor-source-v1",
+  "cycle": 112,
+  "createdAtUTC": "2026-11-08T18:19:07.879Z",
+  "reviewer": "astra_zero_forward_advisor",
+  "verdict": "bounded-proceed-after-preexecution-corrections",
+  "readyForFirstNineMechanicsTests": true,
+  "readyForFirstImport": true,
+  "admissionScope": "Exact static source/math/resource/publisher admission for the nine supplied mechanics, followed by one guarded saved-only CPU assay if mechanics and declared execution-integrity checks pass. No approval for additional fits, doses, source-policy normalization, transfer, models or images.",
+  "chronology": {
+    "rootStateAtReview": "Root reports no imports/tests/stage/job before this receipt. Root performed source AST/pin metadata checks only. The advisor did not run syntax checks or import candidate code.",
+    "readScopes": "All six final primary snapshots read completely as source text. Helpers scoped as listed. Parent110 source/metadata reused with exact earlier112 scopes. Scientific arrays were not opened.",
+    "firstDrafts": [
+      {
+        "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/publish_writer_direction.py",
+        "sha256": "b5303938560142d8702c10bd4b41f824a7dee3c6206ddd1bb0e6a7a66e1ce550",
+        "bytes": 13872,
+        "readScope": "Complete source text; not imported or executed",
+        "readAtUTC": "2026-11-08T18:14:05.327495+00:00"
+      },
+      {
+        "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/test_writer_direction.py",
+        "sha256": "aa79bc26284823ab35feab4d93f6ff94d89dd1b3d2e75af3af21472d1dee348c",
+        "bytes": 4349,
+        "readScope": "Complete text; not imported or executed",
+        "readAtUTC": "2026-11-08T18:14:29.767922+00:00"
+      }
+    ],
+    "corrections": [
+      {
+        "finding": "Publisher's original typed-domain checks were self-consistent but did not independently establish all expected shapes, dtypes, named Act policy and output bytes.",
+        "resolution": "Corrected publisher asserts exact22 inputs, named Act/policy/writeABIs and five expected NPY output ABIs/bytes; explicit finite summary/reaggregation checks protect scalar integrity.",
+        "status": "resolved-before-first-execution"
+      },
+      {
+        "finding": "Original Z mechanics exercised h=0 or zero residual and did not witness the nonzero Jacobian projection term.",
+        "resolution": "Existing zero-reference test extended with h=(1,0), gamma=(2,3), epsilon=1 and scalar-math expected (2/s-1/s^3,3/s), s=sqrt(1.5). Nine test methods remain.",
+        "status": "resolved-before-first-execution"
+      }
+    ],
+    "noAdvisorExecution": [
+      "No candidate/helper imports",
+      "No tests or scientific numerical arrays",
+      "No fits or model/normalization calls",
+      "No remote hashes or scheduler calls",
+      "No jobs or new agents"
+    ],
+    "engineeringOnly": "Local standard-library file/hash/JSON inspection and metadata shape census; only this receipt authored."
+  },
+  "snapshots": [
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/writer_direction_math.py",
+      "sha256": "a572cbef86c73433d9b6a85cc0f28264b5b0a2d2ab2b93800152688213a5bbaa",
+      "bytes": 4528,
+      "readScope": "Complete source text; not imported or executed",
+      "readAtUTC": "2026-11-08T18:13:55.069371+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/writer_direction_worker.py",
+      "sha256": "2005351134e7f059210ef96ba902ea9a7e4e51937ddd41f4090688aa3fda2f36",
+      "bytes": 13273,
+      "readScope": "Complete source text; not imported or executed",
+      "readAtUTC": "2026-11-08T18:13:55.069952+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/writer_direction_study.py",
+      "sha256": "48583fa866c4f85b31454001a6d32dda591a9af91c7e69525801b1514934f98d",
+      "bytes": 9826,
+      "readScope": "Complete source text; not imported or executed",
+      "readAtUTC": "2026-11-08T18:14:05.327203+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/publish_writer_direction.py",
+      "sha256": "676e01f248d2fc1676e80997f64207b4288648b47bf8b1deb2c3404fe90c608d",
+      "bytes": 15618,
+      "readScope": "Complete corrected source text; not imported or executed",
+      "readAtUTC": "2026-11-08T18:16:54.643985+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/test_writer_direction.py",
+      "sha256": "d4af8f01b049e62a5588369c9914595d2fa2e5b7510a2df6124ab35ab8add4d8",
+      "bytes": 4562,
+      "readScope": "Complete corrected source text; not imported or executed",
+      "readAtUTC": "2026-11-08T18:16:54.644313+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/plans/writer-direction-assay.md",
+      "sha256": "df7b6319d589eb51471f5dc436b7f9b0cffdd853dc83768b2a4f537e21820b76",
+      "bytes": 7580,
+      "readScope": "Complete text; not imported or executed",
+      "readAtUTC": "2026-11-08T18:14:29.768191+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/template_cofactor_program.py",
+      "sha256": "f090088033dfd0ff09f521f51d5fbf482f26591c0c9e95f1b9bc19ea57b33f53",
+      "bytes": 5073,
+      "readScope": {
+        "lineRanges": [
+          [
+            1,
+            24
+          ]
+        ]
+      },
+      "readAtUTC": "2026-11-08T18:15:00.605995+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/contextual_writer_program.py",
+      "sha256": "30fbd807de9ce8e9f14c9f06981036efe6b99760e34f0d4eb9328ade4ead896b",
+      "bytes": 11571,
+      "readScope": {
+        "lineRanges": [
+          [
+            1,
+            25
+          ],
+          [
+            73,
+            98
+          ]
+        ]
+      },
+      "readAtUTC": "2026-11-08T18:15:00.606478+00:00",
+      "additionalReadScopes": [
+        {
+          "readScope": {
+            "lineRanges": [
+              [
+                123,
+                139
+              ]
+            ]
+          },
+          "readAtUTC": "2026-11-08T18:17:36.614742+00:00"
+        }
+      ]
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/contextual_writer_saturn_init.py",
+      "sha256": "0b4063f8755a49201d726dd04de0578aa1bd9f31d9f900f9885d3a1e58e5fc8f",
+      "bytes": 224,
+      "readScope": "Complete source",
+      "readAtUTC": "2026-11-08T18:15:00.606692+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/run.py",
+      "sha256": "f7eddbe640abd624df6d649fda699c5290458868536bf5f01a981c2b677163d3",
+      "bytes": 15386,
+      "readScope": {
+        "lineRanges": [
+          [
+            1,
+            42
+          ]
+        ]
+      },
+      "readAtUTC": "2026-11-08T18:15:00.606893+00:00",
+      "additionalReadScopes": [
+        {
+          "readScope": {
+            "lineRanges": [
+              [
+                108,
+                124
+              ]
+            ]
+          },
+          "readAtUTC": "2026-11-08T18:15:48.545403+00:00"
+        }
+      ]
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/worker.py",
+      "sha256": "f398769ef587fbadabe4feba20af2f1b75387eae209be3403033556a312d6d23",
+      "bytes": 20800,
+      "readScope": {
+        "lineRanges": [
+          [
+            7,
+            70
+          ]
+        ]
+      },
+      "readAtUTC": "2026-11-08T18:15:00.607168+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/response_study.py",
+      "sha256": "dcd99c237ef36b4d832a53a470cabae6437d4dc0cc0a0cbe723c146da0d56206",
+      "bytes": 12761,
+      "readScope": {
+        "lineRanges": [
+          [
+            116,
+            165
+          ]
+        ]
+      },
+      "readAtUTC": "2026-11-08T18:15:00.607440+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/saturn/src/saturn/titan.py",
+      "sha256": "42b55ccb9185e87357bb40ad9b3162d1fe3407148f7087c52b18e2920e8eef01",
+      "bytes": 31554,
+      "readScope": {
+        "lineRanges": [
+          [
+            55,
+            80
+          ],
+          [
+            368,
+            435
+          ],
+          [
+            589,
+            667
+          ],
+          [
+            747,
+            850
+          ]
+        ]
+      },
+      "readAtUTC": "2026-11-08T18:15:00.607729+00:00",
+      "additionalReadScopes": [
+        {
+          "readScope": {
+            "lineRanges": [
+              [
+                20,
+                54
+              ],
+              [
+                270,
+                328
+              ],
+              [
+                436,
+                495
+              ]
+            ]
+          },
+          "readAtUTC": "2026-11-08T18:15:48.545684+00:00"
+        },
+        {
+          "readScope": {
+            "lineRanges": [
+              [
+                123,
+                169
+              ]
+            ]
+          },
+          "readAtUTC": "2026-11-08T18:17:36.615146+00:00"
+        }
+      ]
+    },
+    {
+      "path": "/Users/jakeholl/domains/saturn/src/saturn/tensor_hash.py",
+      "sha256": "5e37cc1e34f4b49c97f026b861af8cbb8d47697931743b19e3fd506c9932f3f4",
+      "bytes": 2543,
+      "readScope": "Complete source",
+      "readAtUTC": "2026-11-08T18:15:00.608240+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/saturn-pub/packages/mdb/src/mdb/job_support.py",
+      "sha256": "9ad31f069b6ac385571a9995817fa471eae0ff25e4b270652b028e330f82cdb5",
+      "bytes": 23879,
+      "readScope": {
+        "lineRanges": [
+          [
+            1,
+            82
+          ],
+          [
+            142,
+            206
+          ]
+        ]
+      },
+      "readAtUTC": "2026-11-08T18:15:48.544875+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/mrun/src/mrun/client/submit.py",
+      "sha256": "8c116ecfa5b41b350bd0f4db8c8c4426d851da61b1666e6adb1819ac9c872806",
+      "bytes": 46212,
+      "readScope": {
+        "lineRanges": [
+          [
+            1040,
+            1138
+          ]
+        ]
+      },
+      "readAtUTC": "2026-11-08T18:16:10.430938+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/common/.venv/lib/python3.10/site-packages/mdb/job_support.py",
+      "sha256": "9ad31f069b6ac385571a9995817fa471eae0ff25e4b270652b028e330f82cdb5",
+      "bytes": 23879,
+      "readScope": "Hash-only comparison to scoped read of canonical saturn-pub/packages/mdb/src/mdb/job_support.py; exact bytes equal."
+    },
+    {
+      "path": "/Users/jakeholl/domains/common/src/common_harness/launch.py",
+      "sha256": "31ab91ca6645e2cc1bac26c04056d548bf80ad18203b689f94660448bd4ebdfd",
+      "bytes": 3492,
+      "readScope": "Complete environment command-resolution source text, not executed."
+    },
+    {
+      "path": "/Users/jakeholl/domains/common/src/common_harness/env.py",
+      "sha256": "fb138de67fe32c33f7fd21b48dc389cb049dbe4d3dde8e31dae8dbc1c9dd6df9",
+      "bytes": 5693,
+      "readScope": "Complete environment source text; credentials and .env contents not read."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/joint_writer_math.py",
+      "sha256": "527daf4e12fd3446fea6046c9a038724daa350347f46000f320ba56ca6f41e31",
+      "bytes": 8301,
+      "lineCount": 115,
+      "fullContentRead": true,
+      "lineRanges": null,
+      "readAtUTC": "2026-11-08T18:00:57.068448+00:00",
+      "additionalReadScopes": [
+        {
+          "readScope": "Lines 1–15 only.",
+          "readAtUTC": "2026-11-08T18:04:40.257886+00:00"
+        }
+      ],
+      "scopeReuse": "Read earlier in this same cycle112 design pass; not reread in full during this implementation pass."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/joint_writer_worker.py",
+      "sha256": "3799d1865cca8f7d8883cd341b1addc9f8b5ab699dcb69444f2c17726fcc3b7e",
+      "bytes": 23713,
+      "lineCount": 200,
+      "fullContentRead": false,
+      "lineRanges": [
+        [
+          96,
+          156
+        ]
+      ],
+      "readAtUTC": "2026-11-08T18:00:57.068975+00:00",
+      "additionalReadScopes": [
+        {
+          "readScope": "Lines1–95: SCALE_KEYS, saved field loader/writer, panel measures, consumer boundary and worker setup. No imports or execution.",
+          "readAtUTC": "2026-11-08T18:05:17.048016+00:00"
+        }
+      ],
+      "scopeReuse": "Read earlier in this same cycle112 design pass; not reread in full during this implementation pass."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/plans/writer-proposal-direction.md",
+      "sha256": "eea40e41786e8a000ed998e41dd19250f5e67cbd6c9d3c5b75b2c96d11059c34",
+      "bytes": 3948,
+      "lineCount": 36,
+      "fullContentRead": true,
+      "lineRanges": null,
+      "readAtUTC": "2026-11-08T18:00:57.069350+00:00",
+      "scopeReuse": "Read earlier in this same cycle112 design pass; not reread in full during this implementation pass."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/joint-writer/array-manifest.json",
+      "sha256": "ef5f1b2d4c6850d3348cf1b0801e0eaf3ba1fe415860a6b47644e66d155f3726",
+      "bytes": 36932,
+      "fullContentRead": false,
+      "readScope": "All field names; complete fit0 descriptors, fit1 gradient/step/h/z/oldSlot descriptors and slot0-dose1 A H/Z descriptors.",
+      "readAtUTC": "2026-11-08T18:01:26.545287+00:00",
+      "scopeReuse": "Read earlier in this same cycle112 design pass; not reread in full during this implementation pass."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/joint-writer/typed-proposals.json",
+      "sha256": "e9eb59e38c1de26568c39e9b8ff3bed26b96a44feb00f1b487d55fad1fcdfaf8",
+      "bytes": 48655,
+      "fullContentRead": false,
+      "readScope": "Two proposal rows: slot/parent/program, candidate SHAs, projection/proposal observations and all input/output field descriptors; other Frame/evidence members not reread.",
+      "readAtUTC": "2026-11-08T18:01:26.545896+00:00",
+      "scopeReuse": "Read earlier in this same cycle112 design pass; not reread in full during this implementation pass."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/joint-writer/request.json",
+      "sha256": "9d39cd7f69edbaed7218bf9edd12d41c09696e89ca4cf7413a42e594f673cd46",
+      "bytes": 29044,
+      "fullContentRead": false,
+      "readScope": "Selected backend/discovery/transfer/finite/objective/epsilon/source identities; no complete parent embedded program review.",
+      "readAtUTC": "2026-11-08T18:04:40.254871+00:00",
+      "scopeReuse": "Read earlier in this same cycle112 design pass; not reread in full during this implementation pass."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/joint-writer/programs.json",
+      "sha256": "fc277878f4bfb61982514c3c3ddba33edcf2fda8516ffbd0e9a861454581a058",
+      "bytes": 93280,
+      "fullContentRead": false,
+      "readScope": "Catalog keys and exact bundle/dictionary/feature/prefix identities; trees inspected only through metadata equality, not full node-by-node review.",
+      "readAtUTC": "2026-11-08T18:04:40.255743+00:00",
+      "scopeReuse": "Read earlier in this same cycle112 design pass; not reread in full during this implementation pass."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/joint-writer/selection.json",
+      "sha256": "6e6bf70cbf500a306d257397761e99cba34511696f37cbac396381467a94b940",
+      "bytes": 13829,
+      "fullContentRead": false,
+      "readScope": "Both selections: slot, parent and candidate objective records, selected ID and exact restoration identities; Frame internals not fully reread.",
+      "readAtUTC": "2026-11-08T18:04:40.256006+00:00",
+      "scopeReuse": "Read earlier in this same cycle112 design pass; not reread in full during this implementation pass."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/joint-writer/initializer-serving.json",
+      "sha256": "42d92177ec827917cae4e8db2a084b4183bfad778bcba5bc29aea0feb7c50d3e",
+      "bytes": 229800,
+      "fullContentRead": false,
+      "readScope": "Top-level schema and four initializer row IDs/keys plus packet key and ID/mask lengths only; no complete receipt or ID/mask content review.",
+      "readAtUTC": "2026-11-08T18:04:40.256928+00:00",
+      "scopeReuse": "Read earlier in this same cycle112 design pass; not reread in full during this implementation pass."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/joint-writer/publication.json",
+      "sha256": "4f15854368616a14910558de1a7a003f9da1e35d2880b45259c9940ea4b7fde5",
+      "bytes": 37778,
+      "fullContentRead": false,
+      "readScope": "Top-level authority/scope and all metadata file hash joins used by this design; fresh remote field count only, not remote recheck.",
+      "readAtUTC": "2026-11-08T18:04:40.257305+00:00",
+      "scopeReuse": "Read earlier in this same cycle112 design pass; not reread in full during this implementation pass."
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/contrast_writer_worker.py",
+      "sha256": "15eadd131e887cbc7d711d741a1d94bd1d4be067c860ac81cb80c3784b5e5c99",
+      "bytes": 24669,
+      "fullContentRead": false,
+      "readScope": "Lines 36–59 only.",
+      "readAtUTC": "2026-11-08T18:04:40.257696+00:00",
+      "scopeReuse": "Read earlier in this same cycle112 design pass; not reread in full during this implementation pass."
+    }
+  ],
+  "primarySnapshots": [
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/writer_direction_math.py",
+      "sha256": "a572cbef86c73433d9b6a85cc0f28264b5b0a2d2ab2b93800152688213a5bbaa",
+      "bytes": 4528,
+      "readScope": "Complete source text; not imported or executed",
+      "readAtUTC": "2026-11-08T18:13:55.069371+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/writer_direction_worker.py",
+      "sha256": "2005351134e7f059210ef96ba902ea9a7e4e51937ddd41f4090688aa3fda2f36",
+      "bytes": 13273,
+      "readScope": "Complete source text; not imported or executed",
+      "readAtUTC": "2026-11-08T18:13:55.069952+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/writer_direction_study.py",
+      "sha256": "48583fa866c4f85b31454001a6d32dda591a9af91c7e69525801b1514934f98d",
+      "bytes": 9826,
+      "readScope": "Complete source text; not imported or executed",
+      "readAtUTC": "2026-11-08T18:14:05.327203+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/publish_writer_direction.py",
+      "sha256": "676e01f248d2fc1676e80997f64207b4288648b47bf8b1deb2c3404fe90c608d",
+      "bytes": 15618,
+      "readScope": "Complete corrected source text; not imported or executed",
+      "readAtUTC": "2026-11-08T18:16:54.643985+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/test_writer_direction.py",
+      "sha256": "d4af8f01b049e62a5588369c9914595d2fa2e5b7510a2df6124ab35ab8add4d8",
+      "bytes": 4562,
+      "readScope": "Complete corrected source text; not imported or executed",
+      "readAtUTC": "2026-11-08T18:16:54.644313+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/plans/writer-direction-assay.md",
+      "sha256": "df7b6319d589eb51471f5dc436b7f9b0cffdd853dc83768b2a4f537e21820b76",
+      "bytes": 7580,
+      "readScope": "Complete text; not imported or executed",
+      "readAtUTC": "2026-11-08T18:14:29.768191+00:00"
+    }
+  ],
+  "materialConclusions": {
+    "mathematics": [
+      "Ordered paired residual is (value[right]-value[left])-(target[right]-target[left]), matching original110 finite ordering rather than reassociating endpoint errors.",
+      "Four endpoint/response H/Z components preserve stored measures/scales and zero-reference absolute policy. Ideal pullback gamma multiplication, radius and projection subtraction agree with source110.",
+      "Saved gradient and the independently distributed component sum may differ in FP64 grouping; norm/max reconstruction residuals and scalar product-sum residuals are retained, not forced to zero.",
+      "Actual proposal d=alpha*step, changed-slot FP32 write difference u, saved BF16 state difference v, mapping u-d and admission v-u are distinct. All direct dots, direction norms and evaluated regrouping/closure residuals are retained.",
+      "The /2 factor is the anchored ideal-model contribution to the mean of four normalized squared losses; it is not a derivative of the finite BF16 objective. Components remain contribution-scaled, not derivatives of unaveraged terms.",
+      "Half-dose programs use actual retained route/refitted FP32 dictionaries. No interpolation or zero-dose inference is made.",
+      "Historical finite objective changes are copied and authenticated from original110 records, not newly recomputed from candidate Z arrays. This narrower scope avoids a new normalization or candidate-Z pass and must remain explicit."
+    ],
+    "fieldAndSourceClosure": [
+      "Original110 publication and full metadata members bind successful parent identity, exact typed fit descriptors, four complete parent-retained futures and retained array files.",
+      "Both fit alias identities are authenticated before common arrays are loaded once. Actual parent routed atoms reproduce oldSlot; fit h/z must match the declared parent BF16 field slices.",
+      "Saved features supply original route inputs. The changed slot is isolated by exact other-tree/dictionary and prefix/literals/budget checks. Original immutable catalog also supplies the unchanged feature schema; no feature generation or tokenizer is run.",
+      "Exact four candidate H stacks drop precisely2*2560*2=10240 leading bytes per full field; publisher rehashes those byte concatenations against the typed BF16 inputs.",
+      "One canonical CPU Frame/Act declares22 numerical inputs and5 outputs. Before/after input hashes, canonical frame identities and output fingerprints are joined; exact current/staged/test source hashes are required before publication.",
+      "Source numerical outputs are packed independently from all8,160 public row records and compared byte-for-byte with typed product payloads. Publication is independent byte/scalar validation, not independent routed-write or vector-dot replay."
+    ],
+    "publication": [
+      "All four futures and all2040 learned positions per future are required. Histories A/B/00/10, active/padding and paired flags are checked against original packets; groups are exactly15 dependent subsets per future.",
+      "All52 scalar columns per row survive. Summary fsum versus producer NumPy reduction differences are published as diagnostics without a scientific tolerance gate; nonfinite records remain an integrity error.",
+      "All inherited finite objective/term changes bind to authenticated future and initial-parent records.",
+      "Collection uses the reused direct succeeded-job path, exact request and declared/sealed/executed custody, pre/post remote inventory and local byte equality. Compact limits are128MiB/200files; this assay's expected compact metadata/rows fit those bounds.",
+      "Remote verifier performs regular-file/path/size/fullSHA checks, NPY v1 C-order dtype/shape/raw-body SHA checks and BF16 byte joins without loading scientific arrays on the Mac."
+    ],
+    "gateAssessment": "Remaining refusal paths protect custody, exact specimen/domain, schema/shape, finite arithmetic, immutability, scalar completeness or resource bounds. Direction signs, closure magnitudes, gradient reconstruction sizes and finite-loss disagreement have no scientific pass/fail authority."
+  },
+  "resources": {
+    "lane": "One model-free saved-only CPU lease, host-local Beast; no CUDA requested, CUDA_VISIBLE_DEVICES empty; CPU numerical threads fixed to1 via environment plus torch.set_num_threads(1). Scheduler reservation remains intent-first and may reserve more threads than the numerical policy.",
+    "launcher": "guarded_mrun_launch preserves required finite single-lease/no-retry contract; ram_mb/cpu_threads/est_wall_s omitted so there is no explicit-memory frontend conflict. Strict preflight enabled; no claim that undeclared workload/geometry hooks will execute.",
+    "timeoutSeconds": 900,
+    "expectedSeconds": "Under300 from workload structure; not a measured runtime guarantee.",
+    "metadataCensus": {
+      "selectedFieldRecords": 50,
+      "uniqueCachedFieldsByWorkerKey": 38,
+      "cachedInputPayloadBytes": 399739000,
+      "newCandidateWritePayloadBytes": 167116800,
+      "newCandidateSubsetHBytes": 41779200,
+      "fourGradientComponentPayloadBytes": 167116800,
+      "fiveOutputNPYBytes": 3427840
+    },
+    "memoryAssessment": "Cached inputs plus four write tensors, BF16 subsets and four gradient components total approximately776MB before combined/reconstruction/direction/product scratch, masks, allocator and Torch/NumPy runtime. Temporary arrays can take live numerical storage above1GB. Intent-first admission is appropriate; no GPU/model/lexical table/checkpoint is materialized. This is a source census, not a measured RSS claim.",
+    "directProducts": 647577600,
+    "gradientReconstructionNormProducts": 5222400,
+    "additionalPaidWork": "Two ideal pullbacks/radius reconstructions; pointwise FP64 differences, scaling, scatter, comparisons and reductions; dictionary gathers, source authentication, tensor/file hashing, JSON/gzip, aggregation and typed bookkeeping.",
+    "maximumWorkScope": "No new fit, dose, original normalization invocation, affine, QKV, whole model, transfer target or image. Historical native preparation remains paid.",
+    "subagentReview": "No work expected above15minutes; no additional agent was created."
+  },
+  "mechanics": {
+    "expectedTests": 9,
+    "executedByAdvisor": false,
+    "coverage": [
+      "Projection can reverse signed slope",
+      "Oriented pair component and cancellation-sensitive original pair ordering",
+      "Zero-reference scale convention",
+      "Nonzero-state/nonuniform-gamma ideal pullback",
+      "Separate mapping/admission accounting",
+      "Two-admission BF16 secant counterexample",
+      "Duplicate-pair and nonfinite integrity rejection",
+      "31 coordinate products per coordinate and52-column geometry"
+    ],
+    "limit": "These supplied tiny fixtures do not establish actual data results, float-runtime parity of unrelated implementations, or contextual/image capability."
+  },
+  "remainingLimits": [
+    "All four actual futures are dependent discovery specimens. No independent transfer or fresh prompt claim.",
+    "No separate edge-row stream is emitted. Exact pair-edge metadata and complete node products are retained, so pair sums can be derived without new scientific arrays; current summaries are15 node/history strata.",
+    "Component-sum product residuals include scalar regrouping as implemented, rather than an independently dotted reconstructed-gradient residual vector.",
+    "Routed write gathers, gradient components, vector products and gradient norm/max remain source-qualified producer calculations. Publisher independently validates their bytes and public scalar representation.",
+    "This static admission does not assert nine mechanics pass, successful scheduler admission, runtime performance, or actual scientific outcomes.",
+    "The full arbitrary raw-prompt-to-image zero-neural-serving goal remains active and unsolved. A later constructive choice must follow the signed evidence, without automatic model/dictionary/feature/dose expansion."
+  ],
+  "reviewSchedule": "Full research/storage111 current; next114 or earlier material evidence."
+}

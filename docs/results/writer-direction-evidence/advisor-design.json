@@ -1,0 +1,248 @@
+{
+  "schema": "tce-writer-direction-advisor-design-v1",
+  "cycle": 112,
+  "createdAtUTC": "2026-11-08T18:06:54.024Z",
+  "reviewer": "astra_zero_forward_advisor",
+  "status": "design-guidance-complete; implementation admission pending",
+  "readyForNewScientificExecution": false,
+  "scope": {
+    "task": "Minimal saved-only proposal-to-writer-to-admitted-state audit selected by full review111.",
+    "performed": [
+      "Local source text review",
+      "Local compact JSON metadata/scalar review",
+      "SHA256 and byte-count verification of the six read parent metadata members against publication110",
+      "Mathematical design reasoning"
+    ],
+    "notPerformed": [
+      "Scientific array or image payload reads",
+      "Import/execution of experiment code",
+      "Tests or fits",
+      "Model or source-policy normalization calls",
+      "Remote byte checks",
+      "mrun submissions",
+      "New full research survey",
+      "Implementation/source admission for cycle112"
+    ],
+    "historicalAuthority": "Cycle110 producer measurements and publication remain authoritative within their stated source-qualified scope. This advisor did not independently replay any vector calculation.",
+    "periodicReview": "Full research/storage111 remains current; next114 or earlier material evidence.",
+    "currentHEAD": "310034b78839a8e300fe23489caa1db2cb2b4a96 reported revalidated clean by root, not independently git-rechecked in this design pass."
+  },
+  "snapshots": [
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/joint_writer_math.py",
+      "sha256": "527daf4e12fd3446fea6046c9a038724daa350347f46000f320ba56ca6f41e31",
+      "bytes": 8301,
+      "lineCount": 115,
+      "fullContentRead": true,
+      "lineRanges": null,
+      "readAtUTC": "2026-11-08T18:00:57.068448+00:00",
+      "additionalReadScopes": [
+        {
+          "readAtUTC": "2026-11-08T18:04:40.257886+00:00",
+          "scope": "Lines 1–15 only."
+        }
+      ]
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/joint_writer_worker.py",
+      "sha256": "3799d1865cca8f7d8883cd341b1addc9f8b5ab699dcb69444f2c17726fcc3b7e",
+      "bytes": 23713,
+      "lineCount": 200,
+      "fullContentRead": false,
+      "lineRanges": [
+        [
+          96,
+          156
+        ]
+      ],
+      "readAtUTC": "2026-11-08T18:00:57.068975+00:00",
+      "additionalReadScopes": [
+        {
+          "readAtUTC": "2026-11-08T18:05:17.048016+00:00",
+          "scope": "Lines1–95: SCALE_KEYS, saved field loader/writer, panel measures, consumer boundary and worker setup. No imports or execution."
+        }
+      ]
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/plans/writer-proposal-direction.md",
+      "sha256": "eea40e41786e8a000ed998e41dd19250f5e67cbd6c9d3c5b75b2c96d11059c34",
+      "bytes": 3948,
+      "lineCount": 36,
+      "fullContentRead": true,
+      "lineRanges": null,
+      "readAtUTC": "2026-11-08T18:00:57.069350+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/joint-writer/array-manifest.json",
+      "sha256": "ef5f1b2d4c6850d3348cf1b0801e0eaf3ba1fe415860a6b47644e66d155f3726",
+      "bytes": 36932,
+      "fullContentRead": false,
+      "readScope": "All field names; complete fit0 descriptors, fit1 gradient/step/h/z/oldSlot descriptors and slot0-dose1 A H/Z descriptors.",
+      "readAtUTC": "2026-11-08T18:01:26.545287+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/joint-writer/typed-proposals.json",
+      "sha256": "e9eb59e38c1de26568c39e9b8ff3bed26b96a44feb00f1b487d55fad1fcdfaf8",
+      "bytes": 48655,
+      "fullContentRead": false,
+      "readScope": "Two proposal rows: slot/parent/program, candidate SHAs, projection/proposal observations and all input/output field descriptors; other Frame/evidence members not reread.",
+      "readAtUTC": "2026-11-08T18:01:26.545896+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/joint-writer/request.json",
+      "sha256": "9d39cd7f69edbaed7218bf9edd12d41c09696e89ca4cf7413a42e594f673cd46",
+      "bytes": 29044,
+      "fullContentRead": false,
+      "readScope": "Selected backend/discovery/transfer/finite/objective/epsilon/source identities; no complete parent embedded program review.",
+      "readAtUTC": "2026-11-08T18:04:40.254871+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/joint-writer/programs.json",
+      "sha256": "fc277878f4bfb61982514c3c3ddba33edcf2fda8516ffbd0e9a861454581a058",
+      "bytes": 93280,
+      "fullContentRead": false,
+      "readScope": "Catalog keys and exact bundle/dictionary/feature/prefix identities; trees inspected only through metadata equality, not full node-by-node review.",
+      "readAtUTC": "2026-11-08T18:04:40.255743+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/joint-writer/selection.json",
+      "sha256": "6e6bf70cbf500a306d257397761e99cba34511696f37cbac396381467a94b940",
+      "bytes": 13829,
+      "fullContentRead": false,
+      "readScope": "Both selections: slot, parent and candidate objective records, selected ID and exact restoration identities; Frame internals not fully reread.",
+      "readAtUTC": "2026-11-08T18:04:40.256006+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/joint-writer/initializer-serving.json",
+      "sha256": "42d92177ec827917cae4e8db2a084b4183bfad778bcba5bc29aea0feb7c50d3e",
+      "bytes": 229800,
+      "fullContentRead": false,
+      "readScope": "Top-level schema and four initializer row IDs/keys plus packet key and ID/mask lengths only; no complete receipt or ID/mask content review.",
+      "readAtUTC": "2026-11-08T18:04:40.256928+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/joint-writer/publication.json",
+      "sha256": "4f15854368616a14910558de1a7a003f9da1e35d2880b45259c9940ea4b7fde5",
+      "bytes": 37778,
+      "fullContentRead": false,
+      "readScope": "Top-level authority/scope and all metadata file hash joins used by this design; fresh remote field count only, not remote recheck.",
+      "readAtUTC": "2026-11-08T18:04:40.257305+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/contextual_writer_program.py",
+      "sha256": "30fbd807de9ce8e9f14c9f06981036efe6b99760e34f0d4eb9328ade4ead896b",
+      "bytes": 11571,
+      "fullContentRead": false,
+      "readScope": "Lines 73–78 only.",
+      "readAtUTC": "2026-11-08T18:04:40.257489+00:00"
+    },
+    {
+      "path": "/Users/jakeholl/domains/time-circuit-explorer/generator/contrast_writer_worker.py",
+      "sha256": "15eadd131e887cbc7d711d741a1d94bd1d4be067c860ac81cb80c3784b5e5c99",
+      "bytes": 24669,
+      "fullContentRead": false,
+      "readScope": "Lines 36–59 only.",
+      "readAtUTC": "2026-11-08T18:04:40.257696+00:00"
+    }
+  ],
+  "parentAuthority": {
+    "publicationSHA256": "4f15854368616a14910558de1a7a003f9da1e35d2880b45259c9940ea4b7fde5",
+    "jobID": "job-3f6bdef376c4",
+    "embeddedRequestSHA256": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+    "requestFileSHA256": "9d39cd7f69edbaed7218bf9edd12d41c09696e89ca4cf7413a42e594f673cd46",
+    "metadataMembersCheckedAgainstPublication": [
+      "request.json",
+      "programs.json",
+      "selection.json",
+      "initializer-serving.json",
+      "array-manifest.json",
+      "typed-proposals.json"
+    ],
+    "allSixSHAAndByteJoinsMatch": true,
+    "scopeLimit": "The parent publication records 164 fresh remote files and source-qualified numerical evidence; these are reused authority, not new advisor remote verification."
+  },
+  "observedDesignFacts": {
+    "discoveryOrder": [
+      "A",
+      "B",
+      "00",
+      "10"
+    ],
+    "rowsPerHistory": 510,
+    "originalPositions": "2..511 inclusive",
+    "rows": 2040,
+    "width": 2560,
+    "features": 155,
+    "orientedPairEdges": 1017,
+    "pairedNodes": 2034,
+    "singletonNodes": 6,
+    "parentProgramSHA256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1",
+    "selection": "Both slot proposals retained this same parent; all four complete futures remain evidence.",
+    "sameParentPayloads": "fit0/fit1 metadata bind identical gradient, step, h, z, target, zt, features, measures, gamma and scale payloads; oldSlot differs by slot. Authenticate both aliases before deduplicating physical loads.",
+    "programIsolation": "Each future preserves the other slot's dictionary and tree, fixed prefix and featureNames. Changed slot uses actual candidate routes and actual admitted FP32 atoms, including the half-dose RHS refit.",
+    "scaleOrder": [
+      "Hendpoint",
+      "Hresponse",
+      "Zendpoint",
+      "Zresponse"
+    ],
+    "epsilon": 0.000001,
+    "knownOutcome": "All four H endpoint terms improve, while H response, Z endpoint and Z response terms worsen in aggregate; both continuation choices retain parent. No capacity exclusion follows."
+  },
+  "minimalInputClosure": [
+    "Pin the original110 publication, source request and successful job/custody, then authenticate the exact metadata members and selected remote files before numerical reads. The embedded request SHA and request-file SHA are different named identities.",
+    "Join typed-proposal slot/parent/sourceProgramSHA/candidateSHAs and input/output descriptors to array-manifest entries, the program catalog and complete future/selection records. Do not infer slot1's parent merely from slot0 ordering.",
+    "Use fit{slot}-{h,z,target,zt,features,weights,edges,pairWeights,gamma,scaleVector,gradient,step,oldSlot}. Bind NPY dtype/shape/header, full-file SHA and raw payload SHA. Preserve both alias records even when equal bytes are loaded once.",
+    "Bind initializer-serving packet IDs/mask/positions to discovery order and rows2..511 for strata and oriented unchanged-token edges. Use the stored measures, verifying their source policy; do not silently regenerate differently rounded measures.",
+    "Read exact parent/candidate program JSON and dictionary bytes. Apply the frozen <= route comparator to saved features. Reconstructed parent routed FP32 atoms must equal saved oldSlot; bind actual candidate writes without an atom optimizer/refit.",
+    "Read only saved full BF16 H/Z for the four discovery histories of each actual candidate; join program identity and normalization field metadata. Bind saved fit parent h/z to the corresponding learned-row slices of authenticated parent outputs. No transfer data is needed.",
+    "No tokenizer, full lexical table, H0, checkpoint shard, QKV tensors, fresh program serving, new dose, tree fit, linear solve or original normalization call is necessary."
+  ],
+  "mathematics": {
+    "directions": [
+      "d = alpha * savedDelta for alpha in {1, 0.5}, corresponding to the actual future record.",
+      "u = widened actual candidate FP32 atom selected by candidate route - widened actual parent FP32 atom selected by parent route.",
+      "v = widened saved candidate BF16 H - bound saved parent H.",
+      "m = u - d is total proposal-to-writer mapping discrepancy: changed route, projection and FP32 atom admission remain combined.",
+      "a = v - u is the finite state-admission discrepancy, including both sequential BF16 admissions and the downstream effect of the unchanged other slot.",
+      "Evaluate all five directly and retain explicit coordinate/dot regrouping residuals; floating telescoping is not silently treated as bit-exact.",
+      "Do not infer any true zero-dose state or route-offset magnitude from 2*u_half-u_full or 2*v_half-v_full."
+    ],
+    "gradientComponents": [
+      "Let eH=h-target and eHp=(h[j]-h[i])-(target[j]-target[i]); define eZ and eZp with the same exact pair order.",
+      "g_HE = W eH / EH; g_HR = P^T V eHp / PH.",
+      "g_ZE = J_h^T(W eZ / EZ); g_ZR = J_h^T(P^T V eZp / PZ). Use each frozen zero-scale -> denominator1 convention.",
+      "J_h is the declared ideal FP64 RMS/gamma Jacobian with the saved gamma and epsilon. It is anchored at saved parent H and finite parent Z; it is not the derivative of the piecewise finite BF16 objective.",
+      "Reproduce the original grouped gradient as a source comparison, and separately retain r_g = saved_g - ordered_sum(g_HE,g_HR,g_ZE,g_ZR). Distributing the pullback and changing reduction order can change last bits.",
+      "For the mean of four normalized squared losses, the aggregate anchored local-model slope is dot(saved_g,direction)/2. Each unaveraged component's directional derivative is 2*dot(g_component,direction), and its contribution to the four-term mean is dot(g_component,direction)/2.",
+      "Pair accounts can be retained on their original oriented edges: H response uses eHp dot (direction[j]-direction[i]); Z response uses the corresponding rowwise ideal Jacobian displacement difference. Node-attributed gradient contributions are signed accounting, not independent causal effects."
+    ],
+    "accounts": [
+      "For every actual future retain signed dots with saved g, the four components and the component-sum residual for d,u,v,m,a; retain direct regrouping residuals rather than deriving all dots by subtraction.",
+      "Keep norms/cosines where informative, explicitly undefined at zero norm, and sign counts. Do not classify a small or positive slope as instrument failure.",
+      "Retain every learned-row contribution for all four futures with history/position/active-padding labels and all original pair-edge contributions with pair/position/active-padding labels. Include the six singleton learned rows in endpoint accounting.",
+      "Use the original global normalizers and measures for stratum contributions. Within-stratum renormalized diagnostics, if included, must be separately labelled and not summed as the original loss.",
+      "Rebuild the four actual finite objective changes from saved H/Z and target fields using the original pair subtraction order; compare to immutable future scalars. This is saved-array reanalysis, not a new normalization evaluation.",
+      "Compare local-model direction accounts with actual finite loss changes; disagreements can reflect curvature, the ideal/finite mismatch, changed-route mapping and admission. The audit does not uniquely apportion all such mechanisms."
+    ]
+  },
+  "resourcesAndExecution": {
+    "recommendedLane": "One bounded saved-only CPU mrun lease, CPU1 / CUDA false, no model. Intent-first sizing and strict declared preflight; exact implementation/resource review must precede first candidate import/test/stage/run.",
+    "storage": "Scientific input and new vector payloads remain near Beast. Publish compact metadata, complete scalar rows and custody records.",
+    "geometry": "One 2040x2560 FP64 matrix contains 5,222,400 values and 41,779,200 payload bytes (41,779,328 in the retained NPY format). Deduplicate authenticated equal inputs, stream one candidate and one gradient component where practical, and release scratch buffers.",
+    "costQualification": "No new original normalization invocations, affine contractions, fit, dose or solve. The ideal Jacobian still pays radius/gamma arithmetic, and routing, FP32 gathers, BF16 decoding, FP64 differences, dots and reductions must be counted/timed. This is not zero-work or a new zero-neural serving constructor.",
+    "reservation": "Do not fix a RAM estimate from this prose alone; source review should census simultaneous arrays, tensor-view/hash temporaries and output retention. The design does not require full Gram matrices or dense projection operators."
+  },
+  "constructiveDecision": [
+    "If d has a negative local slope but u loses it, prioritize a parent-preserving fixed-route atom-space proposal in the same full SPD surrogate used to propose Delta, rather than expanding features or atoms.",
+    "If u retains favorable slope but v loses it, investigate the actual two-admission mapping and representability before more fitting.",
+    "If v has favorable anchored slope while the actual finite loss worsens, the result points to local-model/finite-objective agreement or finite step curvature; it does not establish a useful smaller dose without evaluation.",
+    "Preserve mixed history/active/padding and component outcomes. Do not require every component/row to agree or turn the diagnostic sign into a scientific hard gate.",
+    "Complete this one audit before choosing the next constructive change. No automatic dose sweep, new tree, additional proxy campaign or broader teacher/image data is authorized by this receipt."
+  ],
+  "verdict": {
+    "design": "The selected saved-only audit is supported by the retained field closure and can answer a concrete proposal-mapping question without another fit or native consumer call.",
+    "sourceAdmission": "Not performed: cycle112 implementation, tests, publisher and exact assay resource contract are not approved by this design note.",
+    "goal": "Arbitrary raw-prompt-to-image zero-neural serving remains unsolved. This audit is target-assisted offline diagnosis of a bounded local writer; it supplies no new contextual producer, continuation or pixel result."
+  }
+}
