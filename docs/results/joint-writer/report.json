@@ -1,0 +1,2416 @@
+{
+  "analysisSealSHA256": "4738cfc4d24af8c9d83ce2c98a53b19d6b635699b9c152dc27defa93b8e892f7",
+  "authenticatedServingAssets": [
+    {
+      "bytes": 10240,
+      "path": "/mnt/hdd8tb/mrun-work/job-4a3243572a50/accepted/prefix.bf16",
+      "sha256": "f72ee1fd1fc36a11a300d65087c36d6c58f7d0dbbf3941ede765da352fc6ca2a"
+    },
+    {
+      "bytes": 12512,
+      "path": "/mnt/hdd8tb/mrun-work/job-4a3243572a50/accepted/program.json",
+      "sha256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1"
+    },
+    {
+      "bytes": 143360,
+      "path": "/mnt/hdd8tb/mrun-work/job-4a3243572a50/accepted/slot0.f32",
+      "sha256": "eb412dc82f31605f325275de0151637e52ed757d48e2d8bd4186d84932b29630"
+    },
+    {
+      "bytes": 92160,
+      "path": "/mnt/hdd8tb/mrun-work/job-4a3243572a50/accepted/slot1.f32",
+      "sha256": "1494cf5541186c8eea278a10af938dc8331709a8b0b502794193932842c0a86b"
+    },
+    {
+      "bytes": 4168,
+      "path": "/mnt/hdd8tb/mrun-work/job-ac1391fc231a/lexical/chat_template.jinja",
+      "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8"
+    },
+    {
+      "bytes": 777912320,
+      "path": "/mnt/hdd8tb/mrun-work/job-ac1391fc231a/lexical/h0.bf16",
+      "sha256": "eabe5625fc0575bf517c424041e9701c0fd521889e0f547c8522d2aa20e8c0f8"
+    },
+    {
+      "bytes": 900,
+      "path": "/mnt/hdd8tb/mrun-work/job-ac1391fc231a/lexical/manifest.json",
+      "sha256": "b0f17a72cda3ad154bd410b9aba5445817e3baeedafadc8f813aba06659ec131"
+    },
+    {
+      "bytes": 4861952,
+      "path": "/mnt/hdd8tb/mrun-work/job-ac1391fc231a/lexical/row-hashes.bin",
+      "sha256": "31aa582bfd501bcd8044059f0bac2b3129b833fabd14e8ebbcc2ba5fa70e3c07"
+    },
+    {
+      "bytes": 11422654,
+      "path": "/mnt/hdd8tb/mrun-work/job-ac1391fc231a/lexical/tokenizer.json",
+      "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+    }
+  ],
+  "budget": {
+    "coordinates": [
+      0,
+      160,
+      320,
+      480,
+      640,
+      800,
+      960,
+      1120,
+      1280,
+      1440,
+      1600,
+      1760,
+      1920,
+      2080,
+      2240,
+      2400
+    ],
+    "depth": 4,
+    "maxLeavesPerSlot": 16,
+    "maxLiteralFeatures": 64,
+    "minLeafRows": 8,
+    "slots": 2,
+    "thresholdsPerFeature": 16
+  },
+  "candidateFuturesAttempted": 4,
+  "candidatePrograms": 4,
+  "completeCandidateFutures": 4,
+  "cpuSeconds": 49.932716148,
+  "finalFreshServingSeconds": 10.69546022824943,
+  "gammaLoad": {
+    "authenticatedShardBytes": 4967215360,
+    "fullShardAuthenticationSeconds": 2.6724085649475455,
+    "gammaLoadAndHeaderSeconds": 0.15068000881001353,
+    "materializedParameterBytes": 5120,
+    "materializedParameterNames": [
+      "model.layers.1.input_layernorm.weight"
+    ]
+  },
+  "highWaterRSSKiB": 2264456,
+  "initialFreshServingSeconds": 3.2744106892496347,
+  "initialObjective": {
+    "errorEnergies": {
+      "Hendpoint": 33.77624455938462,
+      "Hresponse": 0.3346966063421676,
+      "Zendpoint": 1.6840677511233033,
+      "Zresponse": 0.024134648082960182
+    },
+    "nativeEnergies": {
+      "Hendpoint": 92.94188857148563,
+      "Hresponse": 0.5505834219366676,
+      "Zendpoint": 4.195139025070304,
+      "Zresponse": 0.04142035534571285
+    },
+    "score": 0.48885402565072444,
+    "terms": {
+      "Hendpoint": 0.3634125051526777,
+      "Hresponse": 0.6078944497908747,
+      "Zendpoint": 0.4014331208237088,
+      "Zresponse": 0.5826760268356365
+    },
+    "zeroReferenceUsesAbsolute": {
+      "Hendpoint": false,
+      "Hresponse": false,
+      "Zendpoint": false,
+      "Zresponse": false
+    }
+  },
+  "instrument_status": "inspect-whole-discovery-transfer-endpoints-responses-and-finite-feedback",
+  "limitations": [
+    "One approximate alternating sweep,not global joint optimization.",
+    "Ideal Jacobian and isotropic surrogate propose only;Hgraph projection differs from full surrogate.",
+    "Native targets and original gamma/normalization paid offline;all serving uses own lexical/history features and two finite additions.",
+    "Known transfer is not newly held out;novel raw prompt unscored.",
+    "No QKV,attention,MLP,fullencoder,denoiser,VAE,image or matched speedup."
+  ],
+  "mechanics_status": "completed",
+  "normalizationUnits": 30,
+  "numericalProfile": {
+    "bf16ReducedPrecisionReduction": true,
+    "cublasWorkspaceConfig": ":4096:8",
+    "cudaMatmulTF32": false,
+    "cudnnBenchmark": false,
+    "cudnnDeterministic": true,
+    "cudnnTF32": false,
+    "deterministicAlgorithms": true,
+    "float32MatmulPrecision": "highest",
+    "threads": 1
+  },
+  "numpyVersion": "2.5.4",
+  "objectivePolicy": "Four equal native-discovery-normalized finite H/Z endpoint and paired losses on learned rows2..511;zero energy uses absolute squared loss. Ideal Jacobian and scalar paired surrogate propose only;complete two-admission H and source-policy Z decide continuation.",
+  "observationRows": 18432,
+  "pairs": [
+    {
+      "cosine": 0.4551790813820213,
+      "errorRMS": 0.016743371498746138,
+      "method": "parent",
+      "normalizerRMS": 0.01868350278149494,
+      "pair": [
+        "A",
+        "B"
+      ],
+      "port": "H",
+      "predictionRMS": 0.010399334502111664,
+      "relativeRMS": 0.8961580542236224,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.01868350278149494
+    },
+    {
+      "cosine": 0.49451966560102545,
+      "errorRMS": 0.01550173920594802,
+      "method": "parent",
+      "normalizerRMS": 0.01783465185178496,
+      "pair": [
+        "A",
+        "B"
+      ],
+      "port": "H",
+      "predictionRMS": 0.008700379616855446,
+      "relativeRMS": 0.8691921398172148,
+      "rows": 511,
+      "selection": "unchangedToken",
+      "targetRMS": 0.01783465185178496
+    },
+    {
+      "cosine": 0.4945196656010255,
+      "errorRMS": 0.015532164631110703,
+      "method": "parent",
+      "normalizerRMS": 0.017869656108920877,
+      "pair": [
+        "A",
+        "B"
+      ],
+      "port": "H",
+      "predictionRMS": 0.008717455942640747,
+      "relativeRMS": 0.8691921398172149,
+      "rows": 509,
+      "selection": "unchangedLearned",
+      "targetRMS": 0.017869656108920877
+    },
+    {
+      "cosine": 0.972280477647062,
+      "errorRMS": 0.003673931275260051,
+      "method": "parent",
+      "normalizerRMS": 0.015684334253614797,
+      "pair": [
+        "A",
+        "B"
+      ],
+      "port": "H",
+      "predictionRMS": 0.015028492354151565,
+      "relativeRMS": 0.23424209251427508,
+      "rows": 32,
+      "selection": "unchangedActive",
+      "targetRMS": 0.015684334253614797
+    },
+    {
+      "cosine": 0.4570363023316973,
+      "errorRMS": 0.016016459931952248,
+      "method": "parent",
+      "normalizerRMS": 0.018006770174461607,
+      "pair": [
+        "A",
+        "B"
+      ],
+      "port": "H",
+      "predictionRMS": 0.008120371510037003,
+      "relativeRMS": 0.8894687818400577,
+      "rows": 477,
+      "selection": "unchangedPadding",
+      "targetRMS": 0.018006770174461607
+    },
+    {
+      "cosine": 0.4388927283460992,
+      "errorRMS": 0.0047813651003553665,
+      "method": "parent",
+      "normalizerRMS": 0.005241955793573653,
+      "pair": [
+        "A",
+        "B"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.0031230740573575866,
+      "relativeRMS": 0.9121338081898849,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.005241955793573653
+    },
+    {
+      "cosine": 0.4954883257535313,
+      "errorRMS": 0.004406159985108573,
+      "method": "parent",
+      "normalizerRMS": 0.0050726036092554935,
+      "pair": [
+        "A",
+        "B"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.0024993527581411573,
+      "relativeRMS": 0.8686190218114175,
+      "rows": 511,
+      "selection": "unchangedToken",
+      "targetRMS": 0.0050726036092554935
+    },
+    {
+      "cosine": 0.4954883257535312,
+      "errorRMS": 0.0044148080012505475,
+      "method": "parent",
+      "normalizerRMS": 0.005082559661247011,
+      "pair": [
+        "A",
+        "B"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.002504258263858141,
+      "relativeRMS": 0.8686190218114175,
+      "rows": 509,
+      "selection": "unchangedLearned",
+      "targetRMS": 0.005082559661247011
+    },
+    {
+      "cosine": 0.9726446004068403,
+      "errorRMS": 0.0010983050998239505,
+      "method": "parent",
+      "normalizerRMS": 0.004696273340947383,
+      "pair": [
+        "A",
+        "B"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.004694818563056266,
+      "relativeRMS": 0.2338673710168643,
+      "rows": 32,
+      "selection": "unchangedActive",
+      "targetRMS": 0.004696273340947383
+    },
+    {
+      "cosine": 0.45370984452127655,
+      "errorRMS": 0.004551609211640836,
+      "method": "parent",
+      "normalizerRMS": 0.005107428429826441,
+      "pair": [
+        "A",
+        "B"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.0022832790372460257,
+      "relativeRMS": 0.8911743501015653,
+      "rows": 477,
+      "selection": "unchangedPadding",
+      "targetRMS": 0.005107428429826441
+    },
+    {
+      "cosine": 0.4551790813820213,
+      "errorRMS": 0.016743371498746138,
+      "method": "accepted",
+      "normalizerRMS": 0.01868350278149494,
+      "pair": [
+        "A",
+        "B"
+      ],
+      "port": "H",
+      "predictionRMS": 0.010399334502111664,
+      "relativeRMS": 0.8961580542236224,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.01868350278149494
+    },
+    {
+      "cosine": 0.49451966560102545,
+      "errorRMS": 0.01550173920594802,
+      "method": "accepted",
+      "normalizerRMS": 0.01783465185178496,
+      "pair": [
+        "A",
+        "B"
+      ],
+      "port": "H",
+      "predictionRMS": 0.008700379616855446,
+      "relativeRMS": 0.8691921398172148,
+      "rows": 511,
+      "selection": "unchangedToken",
+      "targetRMS": 0.01783465185178496
+    },
+    {
+      "cosine": 0.4945196656010255,
+      "errorRMS": 0.015532164631110703,
+      "method": "accepted",
+      "normalizerRMS": 0.017869656108920877,
+      "pair": [
+        "A",
+        "B"
+      ],
+      "port": "H",
+      "predictionRMS": 0.008717455942640747,
+      "relativeRMS": 0.8691921398172149,
+      "rows": 509,
+      "selection": "unchangedLearned",
+      "targetRMS": 0.017869656108920877
+    },
+    {
+      "cosine": 0.972280477647062,
+      "errorRMS": 0.003673931275260051,
+      "method": "accepted",
+      "normalizerRMS": 0.015684334253614797,
+      "pair": [
+        "A",
+        "B"
+      ],
+      "port": "H",
+      "predictionRMS": 0.015028492354151565,
+      "relativeRMS": 0.23424209251427508,
+      "rows": 32,
+      "selection": "unchangedActive",
+      "targetRMS": 0.015684334253614797
+    },
+    {
+      "cosine": 0.4570363023316973,
+      "errorRMS": 0.016016459931952248,
+      "method": "accepted",
+      "normalizerRMS": 0.018006770174461607,
+      "pair": [
+        "A",
+        "B"
+      ],
+      "port": "H",
+      "predictionRMS": 0.008120371510037003,
+      "relativeRMS": 0.8894687818400577,
+      "rows": 477,
+      "selection": "unchangedPadding",
+      "targetRMS": 0.018006770174461607
+    },
+    {
+      "cosine": 0.4388927283460992,
+      "errorRMS": 0.0047813651003553665,
+      "method": "accepted",
+      "normalizerRMS": 0.005241955793573653,
+      "pair": [
+        "A",
+        "B"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.0031230740573575866,
+      "relativeRMS": 0.9121338081898849,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.005241955793573653
+    },
+    {
+      "cosine": 0.4954883257535313,
+      "errorRMS": 0.004406159985108573,
+      "method": "accepted",
+      "normalizerRMS": 0.0050726036092554935,
+      "pair": [
+        "A",
+        "B"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.0024993527581411573,
+      "relativeRMS": 0.8686190218114175,
+      "rows": 511,
+      "selection": "unchangedToken",
+      "targetRMS": 0.0050726036092554935
+    },
+    {
+      "cosine": 0.4954883257535312,
+      "errorRMS": 0.0044148080012505475,
+      "method": "accepted",
+      "normalizerRMS": 0.005082559661247011,
+      "pair": [
+        "A",
+        "B"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.002504258263858141,
+      "relativeRMS": 0.8686190218114175,
+      "rows": 509,
+      "selection": "unchangedLearned",
+      "targetRMS": 0.005082559661247011
+    },
+    {
+      "cosine": 0.9726446004068403,
+      "errorRMS": 0.0010983050998239505,
+      "method": "accepted",
+      "normalizerRMS": 0.004696273340947383,
+      "pair": [
+        "A",
+        "B"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.004694818563056266,
+      "relativeRMS": 0.2338673710168643,
+      "rows": 32,
+      "selection": "unchangedActive",
+      "targetRMS": 0.004696273340947383
+    },
+    {
+      "cosine": 0.45370984452127655,
+      "errorRMS": 0.004551609211640836,
+      "method": "accepted",
+      "normalizerRMS": 0.005107428429826441,
+      "pair": [
+        "A",
+        "B"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.0022832790372460257,
+      "relativeRMS": 0.8911743501015653,
+      "rows": 477,
+      "selection": "unchangedPadding",
+      "targetRMS": 0.005107428429826441
+    },
+    {
+      "cosine": 0.028952289048152516,
+      "errorRMS": 0.021966205851998988,
+      "method": "parent",
+      "normalizerRMS": 0.02108976181059752,
+      "pair": [
+        "00",
+        "10"
+      ],
+      "port": "H",
+      "predictionRMS": 0.006783843582759137,
+      "relativeRMS": 1.0415577970615606,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.02108976181059752
+    },
+    {
+      "cosine": 0.11718389936638372,
+      "errorRMS": 0.013135528300520382,
+      "method": "parent",
+      "normalizerRMS": 0.01322660451540214,
+      "pair": [
+        "00",
+        "10"
+      ],
+      "port": "H",
+      "predictionRMS": 0.0015129786664392548,
+      "relativeRMS": 0.9931141651074769,
+      "rows": 510,
+      "selection": "unchangedToken",
+      "targetRMS": 0.01322660451540214
+    },
+    {
+      "cosine": 0.11718389936638374,
+      "errorRMS": 0.013161360239533411,
+      "method": "parent",
+      "normalizerRMS": 0.013252615562188725,
+      "pair": [
+        "00",
+        "10"
+      ],
+      "port": "H",
+      "predictionRMS": 0.0015159540452550368,
+      "relativeRMS": 0.9931141651074769,
+      "rows": 508,
+      "selection": "unchangedLearned",
+      "targetRMS": 0.013252615562188725
+    },
+    {
+      "cosine": 0.5813801618479979,
+      "errorRMS": 0.008528552487073874,
+      "method": "parent",
+      "normalizerRMS": 0.010480553590500442,
+      "pair": [
+        "00",
+        "10"
+      ],
+      "port": "H",
+      "predictionRMS": 0.0059478625317843994,
+      "relativeRMS": 0.813750191097171,
+      "rows": 33,
+      "selection": "unchangedActive",
+      "targetRMS": 0.010480553590500442
+    },
+    {
+      "cosine": null,
+      "errorRMS": 0.013423951732544969,
+      "method": "parent",
+      "normalizerRMS": 0.013423951732544969,
+      "pair": [
+        "00",
+        "10"
+      ],
+      "port": "H",
+      "predictionRMS": 0.0,
+      "relativeRMS": 1.0,
+      "rows": 475,
+      "selection": "unchangedPadding",
+      "targetRMS": 0.013423951732544969
+    },
+    {
+      "cosine": 0.07897772703203941,
+      "errorRMS": 0.004812620599242112,
+      "method": "parent",
+      "normalizerRMS": 0.004438375838753187,
+      "pair": [
+        "00",
+        "10"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.002243945155835835,
+      "relativeRMS": 1.0843202049770657,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.004438375838753187
+    },
+    {
+      "cosine": 0.09102583612760327,
+      "errorRMS": 0.003402644716789694,
+      "method": "parent",
+      "normalizerRMS": 0.0034101624144495337,
+      "pair": [
+        "00",
+        "10"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.0005228735520836297,
+      "relativeRMS": 0.9977955015784628,
+      "rows": 510,
+      "selection": "unchangedToken",
+      "targetRMS": 0.0034101624144495337
+    },
+    {
+      "cosine": 0.09102583612760329,
+      "errorRMS": 0.0034093362566193965,
+      "method": "parent",
+      "normalizerRMS": 0.00341686873835971,
+      "pair": [
+        "00",
+        "10"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.0005239018196492681,
+      "relativeRMS": 0.9977955015784629,
+      "rows": 508,
+      "selection": "unchangedLearned",
+      "targetRMS": 0.00341686873835971
+    },
+    {
+      "cosine": 0.5818930172102289,
+      "errorRMS": 0.0018990554557624104,
+      "method": "parent",
+      "normalizerRMS": 0.002097126908704517,
+      "pair": [
+        "00",
+        "10"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.0020555346075159637,
+      "relativeRMS": 0.9055510412269406,
+      "rows": 33,
+      "selection": "unchangedActive",
+      "targetRMS": 0.002097126908704517
+    },
+    {
+      "cosine": null,
+      "errorRMS": 0.0034900652569502615,
+      "method": "parent",
+      "normalizerRMS": 0.0034900652569502615,
+      "pair": [
+        "00",
+        "10"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.0,
+      "relativeRMS": 1.0,
+      "rows": 475,
+      "selection": "unchangedPadding",
+      "targetRMS": 0.0034900652569502615
+    },
+    {
+      "cosine": 0.028952289048152516,
+      "errorRMS": 0.021966205851998988,
+      "method": "accepted",
+      "normalizerRMS": 0.02108976181059752,
+      "pair": [
+        "00",
+        "10"
+      ],
+      "port": "H",
+      "predictionRMS": 0.006783843582759137,
+      "relativeRMS": 1.0415577970615606,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.02108976181059752
+    },
+    {
+      "cosine": 0.11718389936638372,
+      "errorRMS": 0.013135528300520382,
+      "method": "accepted",
+      "normalizerRMS": 0.01322660451540214,
+      "pair": [
+        "00",
+        "10"
+      ],
+      "port": "H",
+      "predictionRMS": 0.0015129786664392548,
+      "relativeRMS": 0.9931141651074769,
+      "rows": 510,
+      "selection": "unchangedToken",
+      "targetRMS": 0.01322660451540214
+    },
+    {
+      "cosine": 0.11718389936638374,
+      "errorRMS": 0.013161360239533411,
+      "method": "accepted",
+      "normalizerRMS": 0.013252615562188725,
+      "pair": [
+        "00",
+        "10"
+      ],
+      "port": "H",
+      "predictionRMS": 0.0015159540452550368,
+      "relativeRMS": 0.9931141651074769,
+      "rows": 508,
+      "selection": "unchangedLearned",
+      "targetRMS": 0.013252615562188725
+    },
+    {
+      "cosine": 0.5813801618479979,
+      "errorRMS": 0.008528552487073874,
+      "method": "accepted",
+      "normalizerRMS": 0.010480553590500442,
+      "pair": [
+        "00",
+        "10"
+      ],
+      "port": "H",
+      "predictionRMS": 0.0059478625317843994,
+      "relativeRMS": 0.813750191097171,
+      "rows": 33,
+      "selection": "unchangedActive",
+      "targetRMS": 0.010480553590500442
+    },
+    {
+      "cosine": null,
+      "errorRMS": 0.013423951732544969,
+      "method": "accepted",
+      "normalizerRMS": 0.013423951732544969,
+      "pair": [
+        "00",
+        "10"
+      ],
+      "port": "H",
+      "predictionRMS": 0.0,
+      "relativeRMS": 1.0,
+      "rows": 475,
+      "selection": "unchangedPadding",
+      "targetRMS": 0.013423951732544969
+    },
+    {
+      "cosine": 0.07897772703203941,
+      "errorRMS": 0.004812620599242112,
+      "method": "accepted",
+      "normalizerRMS": 0.004438375838753187,
+      "pair": [
+        "00",
+        "10"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.002243945155835835,
+      "relativeRMS": 1.0843202049770657,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.004438375838753187
+    },
+    {
+      "cosine": 0.09102583612760327,
+      "errorRMS": 0.003402644716789694,
+      "method": "accepted",
+      "normalizerRMS": 0.0034101624144495337,
+      "pair": [
+        "00",
+        "10"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.0005228735520836297,
+      "relativeRMS": 0.9977955015784628,
+      "rows": 510,
+      "selection": "unchangedToken",
+      "targetRMS": 0.0034101624144495337
+    },
+    {
+      "cosine": 0.09102583612760329,
+      "errorRMS": 0.0034093362566193965,
+      "method": "accepted",
+      "normalizerRMS": 0.00341686873835971,
+      "pair": [
+        "00",
+        "10"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.0005239018196492681,
+      "relativeRMS": 0.9977955015784629,
+      "rows": 508,
+      "selection": "unchangedLearned",
+      "targetRMS": 0.00341686873835971
+    },
+    {
+      "cosine": 0.5818930172102289,
+      "errorRMS": 0.0018990554557624104,
+      "method": "accepted",
+      "normalizerRMS": 0.002097126908704517,
+      "pair": [
+        "00",
+        "10"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.0020555346075159637,
+      "relativeRMS": 0.9055510412269406,
+      "rows": 33,
+      "selection": "unchangedActive",
+      "targetRMS": 0.002097126908704517
+    },
+    {
+      "cosine": null,
+      "errorRMS": 0.0034900652569502615,
+      "method": "accepted",
+      "normalizerRMS": 0.0034900652569502615,
+      "pair": [
+        "00",
+        "10"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.0,
+      "relativeRMS": 1.0,
+      "rows": 475,
+      "selection": "unchangedPadding",
+      "targetRMS": 0.0034900652569502615
+    },
+    {
+      "cosine": 0.0274973481704739,
+      "errorRMS": 0.022060995141190816,
+      "method": "parent",
+      "normalizerRMS": 0.02117943577425485,
+      "pair": [
+        "01",
+        "11"
+      ],
+      "port": "H",
+      "predictionRMS": 0.006783843582759137,
+      "relativeRMS": 1.0416233641128234,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.02117943577425485
+    },
+    {
+      "cosine": 0.11850105145299221,
+      "errorRMS": 0.01298748223177125,
+      "method": "parent",
+      "normalizerRMS": 0.01307958936640055,
+      "pair": [
+        "01",
+        "11"
+      ],
+      "port": "H",
+      "predictionRMS": 0.0015129786664392548,
+      "relativeRMS": 0.9929579490571845,
+      "rows": 510,
+      "selection": "unchangedToken",
+      "targetRMS": 0.01307958936640055
+    },
+    {
+      "cosine": 0.11850105145299218,
+      "errorRMS": 0.01301302302779166,
+      "method": "parent",
+      "normalizerRMS": 0.013105311297570607,
+      "pair": [
+        "01",
+        "11"
+      ],
+      "port": "H",
+      "predictionRMS": 0.0015159540452550368,
+      "relativeRMS": 0.9929579490571845,
+      "rows": 508,
+      "selection": "unchangedLearned",
+      "targetRMS": 0.013105311297570607
+    },
+    {
+      "cosine": 0.5738536497462131,
+      "errorRMS": 0.008696920140333115,
+      "method": "parent",
+      "normalizerRMS": 0.010618013748621232,
+      "pair": [
+        "01",
+        "11"
+      ],
+      "port": "H",
+      "predictionRMS": 0.0059478625317843994,
+      "relativeRMS": 0.8190722244508702,
+      "rows": 33,
+      "selection": "unchangedActive",
+      "targetRMS": 0.010618013748621232
+    },
+    {
+      "cosine": null,
+      "errorRMS": 0.013260792422927844,
+      "method": "parent",
+      "normalizerRMS": 0.013260792422927844,
+      "pair": [
+        "01",
+        "11"
+      ],
+      "port": "H",
+      "predictionRMS": 0.0,
+      "relativeRMS": 1.0,
+      "rows": 475,
+      "selection": "unchangedPadding",
+      "targetRMS": 0.013260792422927844
+    },
+    {
+      "cosine": 0.0792312548026474,
+      "errorRMS": 0.004830185065272475,
+      "method": "parent",
+      "normalizerRMS": 0.004458796009278053,
+      "pair": [
+        "01",
+        "11"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.002243945155835835,
+      "relativeRMS": 1.083293574144594,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.004458796009278053
+    },
+    {
+      "cosine": 0.09051181770902204,
+      "errorRMS": 0.00342205364224375,
+      "method": "parent",
+      "normalizerRMS": 0.0034295287948377354,
+      "pair": [
+        "01",
+        "11"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.0005228735520836297,
+      "relativeRMS": 0.997820355786125,
+      "rows": 510,
+      "selection": "unchangedToken",
+      "targetRMS": 0.0034295287948377354
+    },
+    {
+      "cosine": 0.09051181770902206,
+      "errorRMS": 0.003428783351088597,
+      "method": "parent",
+      "normalizerRMS": 0.0034362732040951966,
+      "pair": [
+        "01",
+        "11"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.0005239018196492681,
+      "relativeRMS": 0.997820355786125,
+      "rows": 508,
+      "selection": "unchangedLearned",
+      "targetRMS": 0.0034362732040951966
+    },
+    {
+      "cosine": 0.5787052884006739,
+      "errorRMS": 0.0019118044182444565,
+      "method": "parent",
+      "normalizerRMS": 0.0021086786812529335,
+      "pair": [
+        "01",
+        "11"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.0020555346075159637,
+      "relativeRMS": 0.9066361960412582,
+      "rows": 33,
+      "selection": "unchangedActive",
+      "targetRMS": 0.0021086786812529335
+    },
+    {
+      "cosine": null,
+      "errorRMS": 0.0035099003446915746,
+      "method": "parent",
+      "normalizerRMS": 0.0035099003446915746,
+      "pair": [
+        "01",
+        "11"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.0,
+      "relativeRMS": 1.0,
+      "rows": 475,
+      "selection": "unchangedPadding",
+      "targetRMS": 0.0035099003446915746
+    },
+    {
+      "cosine": 0.0274973481704739,
+      "errorRMS": 0.022060995141190816,
+      "method": "accepted",
+      "normalizerRMS": 0.02117943577425485,
+      "pair": [
+        "01",
+        "11"
+      ],
+      "port": "H",
+      "predictionRMS": 0.006783843582759137,
+      "relativeRMS": 1.0416233641128234,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.02117943577425485
+    },
+    {
+      "cosine": 0.11850105145299221,
+      "errorRMS": 0.01298748223177125,
+      "method": "accepted",
+      "normalizerRMS": 0.01307958936640055,
+      "pair": [
+        "01",
+        "11"
+      ],
+      "port": "H",
+      "predictionRMS": 0.0015129786664392548,
+      "relativeRMS": 0.9929579490571845,
+      "rows": 510,
+      "selection": "unchangedToken",
+      "targetRMS": 0.01307958936640055
+    },
+    {
+      "cosine": 0.11850105145299218,
+      "errorRMS": 0.01301302302779166,
+      "method": "accepted",
+      "normalizerRMS": 0.013105311297570607,
+      "pair": [
+        "01",
+        "11"
+      ],
+      "port": "H",
+      "predictionRMS": 0.0015159540452550368,
+      "relativeRMS": 0.9929579490571845,
+      "rows": 508,
+      "selection": "unchangedLearned",
+      "targetRMS": 0.013105311297570607
+    },
+    {
+      "cosine": 0.5738536497462131,
+      "errorRMS": 0.008696920140333115,
+      "method": "accepted",
+      "normalizerRMS": 0.010618013748621232,
+      "pair": [
+        "01",
+        "11"
+      ],
+      "port": "H",
+      "predictionRMS": 0.0059478625317843994,
+      "relativeRMS": 0.8190722244508702,
+      "rows": 33,
+      "selection": "unchangedActive",
+      "targetRMS": 0.010618013748621232
+    },
+    {
+      "cosine": null,
+      "errorRMS": 0.013260792422927844,
+      "method": "accepted",
+      "normalizerRMS": 0.013260792422927844,
+      "pair": [
+        "01",
+        "11"
+      ],
+      "port": "H",
+      "predictionRMS": 0.0,
+      "relativeRMS": 1.0,
+      "rows": 475,
+      "selection": "unchangedPadding",
+      "targetRMS": 0.013260792422927844
+    },
+    {
+      "cosine": 0.0792312548026474,
+      "errorRMS": 0.004830185065272475,
+      "method": "accepted",
+      "normalizerRMS": 0.004458796009278053,
+      "pair": [
+        "01",
+        "11"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.002243945155835835,
+      "relativeRMS": 1.083293574144594,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.004458796009278053
+    },
+    {
+      "cosine": 0.09051181770902204,
+      "errorRMS": 0.00342205364224375,
+      "method": "accepted",
+      "normalizerRMS": 0.0034295287948377354,
+      "pair": [
+        "01",
+        "11"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.0005228735520836297,
+      "relativeRMS": 0.997820355786125,
+      "rows": 510,
+      "selection": "unchangedToken",
+      "targetRMS": 0.0034295287948377354
+    },
+    {
+      "cosine": 0.09051181770902206,
+      "errorRMS": 0.003428783351088597,
+      "method": "accepted",
+      "normalizerRMS": 0.0034362732040951966,
+      "pair": [
+        "01",
+        "11"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.0005239018196492681,
+      "relativeRMS": 0.997820355786125,
+      "rows": 508,
+      "selection": "unchangedLearned",
+      "targetRMS": 0.0034362732040951966
+    },
+    {
+      "cosine": 0.5787052884006739,
+      "errorRMS": 0.0019118044182444565,
+      "method": "accepted",
+      "normalizerRMS": 0.0021086786812529335,
+      "pair": [
+        "01",
+        "11"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.0020555346075159637,
+      "relativeRMS": 0.9066361960412582,
+      "rows": 33,
+      "selection": "unchangedActive",
+      "targetRMS": 0.0021086786812529335
+    },
+    {
+      "cosine": null,
+      "errorRMS": 0.0035099003446915746,
+      "method": "accepted",
+      "normalizerRMS": 0.0035099003446915746,
+      "pair": [
+        "01",
+        "11"
+      ],
+      "port": "Z",
+      "predictionRMS": 0.0,
+      "relativeRMS": 1.0,
+      "rows": 475,
+      "selection": "unchangedPadding",
+      "targetRMS": 0.0035099003446915746
+    }
+  ],
+  "peakCUDAAllocatedBytes": 17044480,
+  "physicalWork": {
+    "QKVMatricesMaterialized": 0,
+    "discoveryHistories": 4,
+    "discoveryLearnedRows": 2040,
+    "doses": [
+      1.0,
+      0.5
+    ],
+    "freshServingChildren": 2,
+    "images": 0,
+    "knownTransferHistories": 2,
+    "maximumCandidatePrograms": 4,
+    "maximumNormalizationUnits": 30,
+    "nominalMatrixMACs": 0,
+    "novelUnscoredHistories": 1,
+    "originalLinears": 0,
+    "proposalFitAttempts": 2,
+    "slotOrder": [
+      0,
+      1
+    ]
+  },
+  "proposalFitAttempts": 2,
+  "requestSHA256": "abea09ff6e11a52195b2f2caaff89f0352366330d0813cacf8380f217606ad6b",
+  "retainedNumericFileBytes": 747385328,
+  "schema": "tce-joint-writer-v1",
+  "selected": "parent",
+  "selectedDiscoveryObjective": {
+    "errorEnergies": {
+      "Hendpoint": 33.77624455938462,
+      "Hresponse": 0.3346966063421676,
+      "Zendpoint": 1.6840677511233033,
+      "Zresponse": 0.024134648082960182
+    },
+    "nativeEnergies": {
+      "Hendpoint": 92.94188857148563,
+      "Hresponse": 0.5505834219366676,
+      "Zendpoint": 4.195139025070304,
+      "Zresponse": 0.04142035534571285
+    },
+    "score": 0.48885402565072444,
+    "terms": {
+      "Hendpoint": 0.3634125051526777,
+      "Hresponse": 0.6078944497908747,
+      "Zendpoint": 0.4014331208237088,
+      "Zresponse": 0.5826760268356365
+    },
+    "zeroReferenceUsesAbsolute": {
+      "Hendpoint": false,
+      "Hresponse": false,
+      "Zendpoint": false,
+      "Zresponse": false
+    }
+  },
+  "sourcePolicy": "Original CUDA FP32 square/mean/epsilon/rsqrt/rescale, BF16 admission, then original BF16 gamma product; full [1,512,2560].",
+  "summaries": [
+    {
+      "case": "A",
+      "cosine": 0.90494844720643,
+      "errorRMS": 0.06903558104709213,
+      "method": "parent",
+      "normalizerRMS": 0.16088740126274428,
+      "port": "H",
+      "predictionRMS": 0.15448313911407943,
+      "relativeRMS": 0.4290925237480251,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.16088740126274428
+    },
+    {
+      "case": "A",
+      "cosine": 0.9036815361822296,
+      "errorRMS": 0.06917081248138665,
+      "method": "parent",
+      "normalizerRMS": 0.16017324639335667,
+      "port": "H",
+      "predictionRMS": 0.1537134762870755,
+      "relativeRMS": 0.4318499751919592,
+      "rows": 510,
+      "selection": "learned",
+      "targetRMS": 0.16017324639335667
+    },
+    {
+      "case": "A",
+      "cosine": 0.7615818375484538,
+      "errorRMS": 0.14327020644627686,
+      "method": "parent",
+      "normalizerRMS": 0.2210687393754469,
+      "port": "H",
+      "predictionRMS": 0.1692023384708993,
+      "relativeRMS": 0.6480798997227613,
+      "rows": 35,
+      "selection": "active",
+      "targetRMS": 0.2210687393754469
+    },
+    {
+      "case": "A",
+      "cosine": 0.9244455783517852,
+      "errorRMS": 0.06007898959743744,
+      "method": "parent",
+      "normalizerRMS": 0.15555740343825672,
+      "port": "H",
+      "predictionRMS": 0.15334748718838928,
+      "relativeRMS": 0.38621748801100153,
+      "rows": 477,
+      "selection": "padding",
+      "targetRMS": 0.15555740343825672
+    },
+    {
+      "case": "A",
+      "cosine": 0.9162368361752105,
+      "errorRMS": 0.017207092582452888,
+      "method": "parent",
+      "normalizerRMS": 0.042471351240655236,
+      "port": "Z",
+      "predictionRMS": 0.04147379161758453,
+      "relativeRMS": 0.4051458708001169,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.042471351240655236
+    },
+    {
+      "case": "A",
+      "cosine": 0.9158155045222415,
+      "errorRMS": 0.017240798966532953,
+      "method": "parent",
+      "normalizerRMS": 0.04245010802721485,
+      "port": "Z",
+      "predictionRMS": 0.04144807586823725,
+      "relativeRMS": 0.40614264056712984,
+      "rows": 510,
+      "selection": "learned",
+      "targetRMS": 0.04245010802721485
+    },
+    {
+      "case": "A",
+      "cosine": 0.6835850931240449,
+      "errorRMS": 0.031144317198792553,
+      "method": "parent",
+      "normalizerRMS": 0.038019163195336284,
+      "port": "Z",
+      "predictionRMS": 0.04012995429527268,
+      "relativeRMS": 0.8191741895732452,
+      "rows": 35,
+      "selection": "active",
+      "targetRMS": 0.038019163195336284
+    },
+    {
+      "case": "A",
+      "cosine": 0.9310678976713751,
+      "errorRMS": 0.015704699500279827,
+      "method": "parent",
+      "normalizerRMS": 0.04277978909314793,
+      "port": "Z",
+      "predictionRMS": 0.04157068535425086,
+      "relativeRMS": 0.36710558497810036,
+      "rows": 477,
+      "selection": "padding",
+      "targetRMS": 0.04277978909314793
+    },
+    {
+      "case": "A",
+      "cosine": 0.90494844720643,
+      "errorRMS": 0.06903558104709213,
+      "method": "accepted",
+      "normalizerRMS": 0.16088740126274428,
+      "port": "H",
+      "predictionRMS": 0.15448313911407943,
+      "relativeRMS": 0.4290925237480251,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.16088740126274428
+    },
+    {
+      "case": "A",
+      "cosine": 0.9036815361822296,
+      "errorRMS": 0.06917081248138665,
+      "method": "accepted",
+      "normalizerRMS": 0.16017324639335667,
+      "port": "H",
+      "predictionRMS": 0.1537134762870755,
+      "relativeRMS": 0.4318499751919592,
+      "rows": 510,
+      "selection": "learned",
+      "targetRMS": 0.16017324639335667
+    },
+    {
+      "case": "A",
+      "cosine": 0.7615818375484538,
+      "errorRMS": 0.14327020644627686,
+      "method": "accepted",
+      "normalizerRMS": 0.2210687393754469,
+      "port": "H",
+      "predictionRMS": 0.1692023384708993,
+      "relativeRMS": 0.6480798997227613,
+      "rows": 35,
+      "selection": "active",
+      "targetRMS": 0.2210687393754469
+    },
+    {
+      "case": "A",
+      "cosine": 0.9244455783517852,
+      "errorRMS": 0.06007898959743744,
+      "method": "accepted",
+      "normalizerRMS": 0.15555740343825672,
+      "port": "H",
+      "predictionRMS": 0.15334748718838928,
+      "relativeRMS": 0.38621748801100153,
+      "rows": 477,
+      "selection": "padding",
+      "targetRMS": 0.15555740343825672
+    },
+    {
+      "case": "A",
+      "cosine": 0.9162368361752105,
+      "errorRMS": 0.017207092582452888,
+      "method": "accepted",
+      "normalizerRMS": 0.042471351240655236,
+      "port": "Z",
+      "predictionRMS": 0.04147379161758453,
+      "relativeRMS": 0.4051458708001169,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.042471351240655236
+    },
+    {
+      "case": "A",
+      "cosine": 0.9158155045222415,
+      "errorRMS": 0.017240798966532953,
+      "method": "accepted",
+      "normalizerRMS": 0.04245010802721485,
+      "port": "Z",
+      "predictionRMS": 0.04144807586823725,
+      "relativeRMS": 0.40614264056712984,
+      "rows": 510,
+      "selection": "learned",
+      "targetRMS": 0.04245010802721485
+    },
+    {
+      "case": "A",
+      "cosine": 0.6835850931240449,
+      "errorRMS": 0.031144317198792553,
+      "method": "accepted",
+      "normalizerRMS": 0.038019163195336284,
+      "port": "Z",
+      "predictionRMS": 0.04012995429527268,
+      "relativeRMS": 0.8191741895732452,
+      "rows": 35,
+      "selection": "active",
+      "targetRMS": 0.038019163195336284
+    },
+    {
+      "case": "A",
+      "cosine": 0.9310678976713751,
+      "errorRMS": 0.015704699500279827,
+      "method": "accepted",
+      "normalizerRMS": 0.04277978909314793,
+      "port": "Z",
+      "predictionRMS": 0.04157068535425086,
+      "relativeRMS": 0.36710558497810036,
+      "rows": 477,
+      "selection": "padding",
+      "targetRMS": 0.04277978909314793
+    },
+    {
+      "case": "B",
+      "cosine": 0.9037595633250283,
+      "errorRMS": 0.06904905462235579,
+      "method": "parent",
+      "normalizerRMS": 0.15991963796132636,
+      "port": "H",
+      "predictionRMS": 0.15358897398757707,
+      "relativeRMS": 0.4317734551090845,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.15991963796132636
+    },
+    {
+      "case": "B",
+      "cosine": 0.9024610666463907,
+      "errorRMS": 0.06918431244957522,
+      "method": "parent",
+      "normalizerRMS": 0.1591973180361081,
+      "port": "H",
+      "predictionRMS": 0.1528112731057351,
+      "relativeRMS": 0.4345821481357072,
+      "rows": 510,
+      "selection": "learned",
+      "targetRMS": 0.1591973180361081
+    },
+    {
+      "case": "B",
+      "cosine": 0.7618785054714209,
+      "errorRMS": 0.1435400687506266,
+      "method": "parent",
+      "normalizerRMS": 0.22160446927267702,
+      "port": "H",
+      "predictionRMS": 0.16967114749697204,
+      "relativeRMS": 0.647730928991352,
+      "rows": 35,
+      "selection": "active",
+      "targetRMS": 0.22160446927267702
+    },
+    {
+      "case": "B",
+      "cosine": 0.9234566407678405,
+      "errorRMS": 0.06004833724935609,
+      "method": "parent",
+      "normalizerRMS": 0.15442622455495705,
+      "port": "H",
+      "predictionRMS": 0.15234209889174558,
+      "relativeRMS": 0.3888480562314476,
+      "rows": 477,
+      "selection": "padding",
+      "targetRMS": 0.15442622455495705
+    },
+    {
+      "case": "B",
+      "cosine": 0.9152983027730468,
+      "errorRMS": 0.017223554925005408,
+      "method": "parent",
+      "normalizerRMS": 0.04230266692174175,
+      "port": "Z",
+      "predictionRMS": 0.04123739223543997,
+      "relativeRMS": 0.4071505694160678,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.04230266692174175
+    },
+    {
+      "case": "B",
+      "cosine": 0.9148682623810153,
+      "errorRMS": 0.017257293556604235,
+      "method": "parent",
+      "normalizerRMS": 0.04228067579153886,
+      "port": "Z",
+      "predictionRMS": 0.04121059866693836,
+      "relativeRMS": 0.4081603057077375,
+      "rows": 510,
+      "selection": "learned",
+      "targetRMS": 0.04228067579153886
+    },
+    {
+      "case": "B",
+      "cosine": 0.6876208823253651,
+      "errorRMS": 0.030889219998604358,
+      "method": "parent",
+      "normalizerRMS": 0.03809714201442181,
+      "port": "Z",
+      "predictionRMS": 0.039944210333582655,
+      "relativeRMS": 0.8108015028243098,
+      "rows": 35,
+      "selection": "active",
+      "targetRMS": 0.03809714201442181
+    },
+    {
+      "case": "B",
+      "cosine": 0.9299028169959034,
+      "errorRMS": 0.015760936460149765,
+      "method": "parent",
+      "normalizerRMS": 0.04259490018420079,
+      "port": "Z",
+      "predictionRMS": 0.041330686452561195,
+      "relativeRMS": 0.37001933076476085,
+      "rows": 477,
+      "selection": "padding",
+      "targetRMS": 0.04259490018420079
+    },
+    {
+      "case": "B",
+      "cosine": 0.9037595633250283,
+      "errorRMS": 0.06904905462235579,
+      "method": "accepted",
+      "normalizerRMS": 0.15991963796132636,
+      "port": "H",
+      "predictionRMS": 0.15358897398757707,
+      "relativeRMS": 0.4317734551090845,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.15991963796132636
+    },
+    {
+      "case": "B",
+      "cosine": 0.9024610666463907,
+      "errorRMS": 0.06918431244957522,
+      "method": "accepted",
+      "normalizerRMS": 0.1591973180361081,
+      "port": "H",
+      "predictionRMS": 0.1528112731057351,
+      "relativeRMS": 0.4345821481357072,
+      "rows": 510,
+      "selection": "learned",
+      "targetRMS": 0.1591973180361081
+    },
+    {
+      "case": "B",
+      "cosine": 0.7618785054714209,
+      "errorRMS": 0.1435400687506266,
+      "method": "accepted",
+      "normalizerRMS": 0.22160446927267702,
+      "port": "H",
+      "predictionRMS": 0.16967114749697204,
+      "relativeRMS": 0.647730928991352,
+      "rows": 35,
+      "selection": "active",
+      "targetRMS": 0.22160446927267702
+    },
+    {
+      "case": "B",
+      "cosine": 0.9234566407678405,
+      "errorRMS": 0.06004833724935609,
+      "method": "accepted",
+      "normalizerRMS": 0.15442622455495705,
+      "port": "H",
+      "predictionRMS": 0.15234209889174558,
+      "relativeRMS": 0.3888480562314476,
+      "rows": 477,
+      "selection": "padding",
+      "targetRMS": 0.15442622455495705
+    },
+    {
+      "case": "B",
+      "cosine": 0.9152983027730468,
+      "errorRMS": 0.017223554925005408,
+      "method": "accepted",
+      "normalizerRMS": 0.04230266692174175,
+      "port": "Z",
+      "predictionRMS": 0.04123739223543997,
+      "relativeRMS": 0.4071505694160678,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.04230266692174175
+    },
+    {
+      "case": "B",
+      "cosine": 0.9148682623810153,
+      "errorRMS": 0.017257293556604235,
+      "method": "accepted",
+      "normalizerRMS": 0.04228067579153886,
+      "port": "Z",
+      "predictionRMS": 0.04121059866693836,
+      "relativeRMS": 0.4081603057077375,
+      "rows": 510,
+      "selection": "learned",
+      "targetRMS": 0.04228067579153886
+    },
+    {
+      "case": "B",
+      "cosine": 0.6876208823253651,
+      "errorRMS": 0.030889219998604358,
+      "method": "accepted",
+      "normalizerRMS": 0.03809714201442181,
+      "port": "Z",
+      "predictionRMS": 0.039944210333582655,
+      "relativeRMS": 0.8108015028243098,
+      "rows": 35,
+      "selection": "active",
+      "targetRMS": 0.03809714201442181
+    },
+    {
+      "case": "B",
+      "cosine": 0.9299028169959034,
+      "errorRMS": 0.015760936460149765,
+      "method": "accepted",
+      "normalizerRMS": 0.04259490018420079,
+      "port": "Z",
+      "predictionRMS": 0.041330686452561195,
+      "relativeRMS": 0.37001933076476085,
+      "rows": 477,
+      "selection": "padding",
+      "targetRMS": 0.04259490018420079
+    },
+    {
+      "case": "00",
+      "cosine": 0.9101431221291592,
+      "errorRMS": 0.07046413252024672,
+      "method": "parent",
+      "normalizerRMS": 0.17008029796006632,
+      "port": "H",
+      "predictionRMS": 0.15444327731219035,
+      "relativeRMS": 0.41429920670053866,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.17008029796006632
+    },
+    {
+      "case": "00",
+      "cosine": 0.9090560681772855,
+      "errorRMS": 0.07060216229507446,
+      "method": "parent",
+      "normalizerRMS": 0.16944011421517005,
+      "port": "H",
+      "predictionRMS": 0.15367325771592608,
+      "relativeRMS": 0.41667914721432253,
+      "rows": 510,
+      "selection": "learned",
+      "targetRMS": 0.16944011421517005
+    },
+    {
+      "case": "00",
+      "cosine": 0.737140431774127,
+      "errorRMS": 0.14969989260300337,
+      "method": "parent",
+      "normalizerRMS": 0.22130869238655015,
+      "port": "H",
+      "predictionRMS": 0.1698986932787545,
+      "relativeRMS": 0.6764302431534372,
+      "rows": 37,
+      "selection": "active",
+      "targetRMS": 0.22130869238655015
+    },
+    {
+      "case": "00",
+      "cosine": 0.9317995928119723,
+      "errorRMS": 0.06005273425212806,
+      "method": "parent",
+      "normalizerRMS": 0.1654252108902289,
+      "port": "H",
+      "predictionRMS": 0.15317392744450983,
+      "relativeRMS": 0.3630204485093703,
+      "rows": 475,
+      "selection": "padding",
+      "targetRMS": 0.1654252108902289
+    },
+    {
+      "case": "00",
+      "cosine": 0.9216512409435209,
+      "errorRMS": 0.01686772961809295,
+      "method": "parent",
+      "normalizerRMS": 0.04326785725328895,
+      "port": "Z",
+      "predictionRMS": 0.04150811734735483,
+      "relativeRMS": 0.3898443484120252,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.04326785725328895
+    },
+    {
+      "case": "00",
+      "cosine": 0.9212675023348303,
+      "errorRMS": 0.01690077123568998,
+      "method": "parent",
+      "normalizerRMS": 0.043250101474646356,
+      "port": "Z",
+      "predictionRMS": 0.04148255751536266,
+      "relativeRMS": 0.39076836029153317,
+      "rows": 510,
+      "selection": "learned",
+      "targetRMS": 0.043250101474646356
+    },
+    {
+      "case": "00",
+      "cosine": 0.6607353211586668,
+      "errorRMS": 0.032760801068455095,
+      "method": "parent",
+      "normalizerRMS": 0.03842403566205278,
+      "port": "Z",
+      "predictionRMS": 0.04092581629462826,
+      "relativeRMS": 0.852612186720651,
+      "rows": 37,
+      "selection": "active",
+      "targetRMS": 0.03842403566205278
+    },
+    {
+      "case": "00",
+      "cosine": 0.9396470522711123,
+      "errorRMS": 0.014935891188552932,
+      "method": "parent",
+      "normalizerRMS": 0.04362259154415325,
+      "port": "Z",
+      "predictionRMS": 0.0415531329687775,
+      "relativeRMS": 0.34238890125166793,
+      "rows": 475,
+      "selection": "padding",
+      "targetRMS": 0.04362259154415325
+    },
+    {
+      "case": "00",
+      "cosine": 0.9101431221291592,
+      "errorRMS": 0.07046413252024672,
+      "method": "accepted",
+      "normalizerRMS": 0.17008029796006632,
+      "port": "H",
+      "predictionRMS": 0.15444327731219035,
+      "relativeRMS": 0.41429920670053866,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.17008029796006632
+    },
+    {
+      "case": "00",
+      "cosine": 0.9090560681772855,
+      "errorRMS": 0.07060216229507446,
+      "method": "accepted",
+      "normalizerRMS": 0.16944011421517005,
+      "port": "H",
+      "predictionRMS": 0.15367325771592608,
+      "relativeRMS": 0.41667914721432253,
+      "rows": 510,
+      "selection": "learned",
+      "targetRMS": 0.16944011421517005
+    },
+    {
+      "case": "00",
+      "cosine": 0.737140431774127,
+      "errorRMS": 0.14969989260300337,
+      "method": "accepted",
+      "normalizerRMS": 0.22130869238655015,
+      "port": "H",
+      "predictionRMS": 0.1698986932787545,
+      "relativeRMS": 0.6764302431534372,
+      "rows": 37,
+      "selection": "active",
+      "targetRMS": 0.22130869238655015
+    },
+    {
+      "case": "00",
+      "cosine": 0.9317995928119723,
+      "errorRMS": 0.06005273425212806,
+      "method": "accepted",
+      "normalizerRMS": 0.1654252108902289,
+      "port": "H",
+      "predictionRMS": 0.15317392744450983,
+      "relativeRMS": 0.3630204485093703,
+      "rows": 475,
+      "selection": "padding",
+      "targetRMS": 0.1654252108902289
+    },
+    {
+      "case": "00",
+      "cosine": 0.9216512409435209,
+      "errorRMS": 0.01686772961809295,
+      "method": "accepted",
+      "normalizerRMS": 0.04326785725328895,
+      "port": "Z",
+      "predictionRMS": 0.04150811734735483,
+      "relativeRMS": 0.3898443484120252,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.04326785725328895
+    },
+    {
+      "case": "00",
+      "cosine": 0.9212675023348303,
+      "errorRMS": 0.01690077123568998,
+      "method": "accepted",
+      "normalizerRMS": 0.043250101474646356,
+      "port": "Z",
+      "predictionRMS": 0.04148255751536266,
+      "relativeRMS": 0.39076836029153317,
+      "rows": 510,
+      "selection": "learned",
+      "targetRMS": 0.043250101474646356
+    },
+    {
+      "case": "00",
+      "cosine": 0.6607353211586668,
+      "errorRMS": 0.032760801068455095,
+      "method": "accepted",
+      "normalizerRMS": 0.03842403566205278,
+      "port": "Z",
+      "predictionRMS": 0.04092581629462826,
+      "relativeRMS": 0.852612186720651,
+      "rows": 37,
+      "selection": "active",
+      "targetRMS": 0.03842403566205278
+    },
+    {
+      "case": "00",
+      "cosine": 0.9396470522711123,
+      "errorRMS": 0.014935891188552932,
+      "method": "accepted",
+      "normalizerRMS": 0.04362259154415325,
+      "port": "Z",
+      "predictionRMS": 0.0415531329687775,
+      "relativeRMS": 0.34238890125166793,
+      "rows": 475,
+      "selection": "padding",
+      "targetRMS": 0.04362259154415325
+    },
+    {
+      "case": "10",
+      "cosine": 0.9095105439123417,
+      "errorRMS": 0.07081796195499256,
+      "method": "parent",
+      "normalizerRMS": 0.17036202195553407,
+      "port": "H",
+      "predictionRMS": 0.15445082958512169,
+      "relativeRMS": 0.4156910157680369,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.17036202195553407
+    },
+    {
+      "case": "10",
+      "cosine": 0.9084191280134967,
+      "errorRMS": 0.0709566848341765,
+      "method": "parent",
+      "normalizerRMS": 0.16972400889830463,
+      "port": "H",
+      "predictionRMS": 0.15368087759402335,
+      "relativeRMS": 0.4180709923997398,
+      "rows": 510,
+      "selection": "learned",
+      "targetRMS": 0.16972400889830463
+    },
+    {
+      "case": "10",
+      "cosine": 0.7360287710319147,
+      "errorRMS": 0.14992084762094968,
+      "method": "parent",
+      "normalizerRMS": 0.2212112575043887,
+      "port": "H",
+      "predictionRMS": 0.16999366933458657,
+      "relativeRMS": 0.6777270257955806,
+      "rows": 37,
+      "selection": "active",
+      "targetRMS": 0.2212112575043887
+    },
+    {
+      "case": "10",
+      "cosine": 0.9311301574723431,
+      "errorRMS": 0.06045707362999381,
+      "method": "parent",
+      "normalizerRMS": 0.16574752091920358,
+      "port": "H",
+      "predictionRMS": 0.15317392744450983,
+      "relativeRMS": 0.36475401438712696,
+      "rows": 475,
+      "selection": "padding",
+      "targetRMS": 0.16574752091920358
+    },
+    {
+      "case": "10",
+      "cosine": 0.920868879850433,
+      "errorRMS": 0.016950068334636758,
+      "method": "parent",
+      "normalizerRMS": 0.043266382760833604,
+      "port": "Z",
+      "predictionRMS": 0.04150487111978595,
+      "relativeRMS": 0.39176069856203954,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.043266382760833604
+    },
+    {
+      "case": "10",
+      "cosine": 0.9204812312182015,
+      "errorRMS": 0.01698327124272439,
+      "method": "parent",
+      "normalizerRMS": 0.04324862059203991,
+      "port": "Z",
+      "predictionRMS": 0.04147929654879695,
+      "relativeRMS": 0.3926893161038813,
+      "rows": 510,
+      "selection": "learned",
+      "targetRMS": 0.04324862059203991
+    },
+    {
+      "case": "10",
+      "cosine": 0.6573809637748483,
+      "errorRMS": 0.03289423829501669,
+      "method": "parent",
+      "normalizerRMS": 0.038408325431126225,
+      "port": "Z",
+      "predictionRMS": 0.04088023277775003,
+      "relativeRMS": 0.8564351068625111,
+      "rows": 37,
+      "selection": "active",
+      "targetRMS": 0.038408325431126225
+    },
+    {
+      "case": "10",
+      "cosine": 0.9390061188931771,
+      "errorRMS": 0.015013321964292664,
+      "method": "parent",
+      "normalizerRMS": 0.043622092833799635,
+      "port": "Z",
+      "predictionRMS": 0.0415531329687775,
+      "relativeRMS": 0.3441678514025791,
+      "rows": 475,
+      "selection": "padding",
+      "targetRMS": 0.043622092833799635
+    },
+    {
+      "case": "10",
+      "cosine": 0.9095105439123417,
+      "errorRMS": 0.07081796195499256,
+      "method": "accepted",
+      "normalizerRMS": 0.17036202195553407,
+      "port": "H",
+      "predictionRMS": 0.15445082958512169,
+      "relativeRMS": 0.4156910157680369,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.17036202195553407
+    },
+    {
+      "case": "10",
+      "cosine": 0.9084191280134967,
+      "errorRMS": 0.0709566848341765,
+      "method": "accepted",
+      "normalizerRMS": 0.16972400889830463,
+      "port": "H",
+      "predictionRMS": 0.15368087759402335,
+      "relativeRMS": 0.4180709923997398,
+      "rows": 510,
+      "selection": "learned",
+      "targetRMS": 0.16972400889830463
+    },
+    {
+      "case": "10",
+      "cosine": 0.7360287710319147,
+      "errorRMS": 0.14992084762094968,
+      "method": "accepted",
+      "normalizerRMS": 0.2212112575043887,
+      "port": "H",
+      "predictionRMS": 0.16999366933458657,
+      "relativeRMS": 0.6777270257955806,
+      "rows": 37,
+      "selection": "active",
+      "targetRMS": 0.2212112575043887
+    },
+    {
+      "case": "10",
+      "cosine": 0.9311301574723431,
+      "errorRMS": 0.06045707362999381,
+      "method": "accepted",
+      "normalizerRMS": 0.16574752091920358,
+      "port": "H",
+      "predictionRMS": 0.15317392744450983,
+      "relativeRMS": 0.36475401438712696,
+      "rows": 475,
+      "selection": "padding",
+      "targetRMS": 0.16574752091920358
+    },
+    {
+      "case": "10",
+      "cosine": 0.920868879850433,
+      "errorRMS": 0.016950068334636758,
+      "method": "accepted",
+      "normalizerRMS": 0.043266382760833604,
+      "port": "Z",
+      "predictionRMS": 0.04150487111978595,
+      "relativeRMS": 0.39176069856203954,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.043266382760833604
+    },
+    {
+      "case": "10",
+      "cosine": 0.9204812312182015,
+      "errorRMS": 0.01698327124272439,
+      "method": "accepted",
+      "normalizerRMS": 0.04324862059203991,
+      "port": "Z",
+      "predictionRMS": 0.04147929654879695,
+      "relativeRMS": 0.3926893161038813,
+      "rows": 510,
+      "selection": "learned",
+      "targetRMS": 0.04324862059203991
+    },
+    {
+      "case": "10",
+      "cosine": 0.6573809637748483,
+      "errorRMS": 0.03289423829501669,
+      "method": "accepted",
+      "normalizerRMS": 0.038408325431126225,
+      "port": "Z",
+      "predictionRMS": 0.04088023277775003,
+      "relativeRMS": 0.8564351068625111,
+      "rows": 37,
+      "selection": "active",
+      "targetRMS": 0.038408325431126225
+    },
+    {
+      "case": "10",
+      "cosine": 0.9390061188931771,
+      "errorRMS": 0.015013321964292664,
+      "method": "accepted",
+      "normalizerRMS": 0.043622092833799635,
+      "port": "Z",
+      "predictionRMS": 0.0415531329687775,
+      "relativeRMS": 0.3441678514025791,
+      "rows": 475,
+      "selection": "padding",
+      "targetRMS": 0.043622092833799635
+    },
+    {
+      "case": "01",
+      "cosine": 0.9078239779503561,
+      "errorRMS": 0.07050444194100573,
+      "method": "parent",
+      "normalizerRMS": 0.16806839312509247,
+      "port": "H",
+      "predictionRMS": 0.15444337850628473,
+      "relativeRMS": 0.4194985186092047,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.16806839312509247
+    },
+    {
+      "case": "01",
+      "cosine": 0.9066810572342378,
+      "errorRMS": 0.07064255067657663,
+      "method": "parent",
+      "normalizerRMS": 0.1674125484706419,
+      "port": "H",
+      "predictionRMS": 0.1536733598159072,
+      "relativeRMS": 0.4219668795554161,
+      "rows": 510,
+      "selection": "learned",
+      "targetRMS": 0.1674125484706419
+    },
+    {
+      "case": "01",
+      "cosine": 0.7332796303118011,
+      "errorRMS": 0.15095985014651814,
+      "method": "parent",
+      "normalizerRMS": 0.22176492758717276,
+      "port": "H",
+      "predictionRMS": 0.1698999661981108,
+      "relativeRMS": 0.6807201291429543,
+      "rows": 37,
+      "selection": "active",
+      "targetRMS": 0.22176492758717276
+    },
+    {
+      "case": "01",
+      "cosine": 0.9303007535947476,
+      "errorRMS": 0.05985773058327878,
+      "method": "parent",
+      "normalizerRMS": 0.16314544964250116,
+      "port": "H",
+      "predictionRMS": 0.15317392744450983,
+      "relativeRMS": 0.3668979472884127,
+      "rows": 475,
+      "selection": "padding",
+      "targetRMS": 0.16314544964250116
+    },
+    {
+      "case": "01",
+      "cosine": 0.9194135952924196,
+      "errorRMS": 0.017080521439659695,
+      "method": "parent",
+      "normalizerRMS": 0.043187528050715004,
+      "port": "Z",
+      "predictionRMS": 0.041508144649123016,
+      "relativeRMS": 0.39549662160802734,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.043187528050715004
+    },
+    {
+      "case": "01",
+      "cosine": 0.9190176913412922,
+      "errorRMS": 0.017113979887864946,
+      "method": "parent",
+      "normalizerRMS": 0.04316942379203477,
+      "port": "Z",
+      "predictionRMS": 0.041482584941084755,
+      "relativeRMS": 0.39643753343362115,
+      "rows": 510,
+      "selection": "learned",
+      "targetRMS": 0.04316942379203477
+    },
+    {
+      "case": "01",
+      "cosine": 0.6559593236794027,
+      "errorRMS": 0.03301398149957344,
+      "method": "parent",
+      "normalizerRMS": 0.03849378485934651,
+      "port": "Z",
+      "predictionRMS": 0.04092619946578229,
+      "relativeRMS": 0.8576444644298848,
+      "rows": 37,
+      "selection": "active",
+      "targetRMS": 0.03849378485934651
+    },
+    {
+      "case": "01",
+      "cosine": 0.9376260796647253,
+      "errorRMS": 0.01515157708118311,
+      "method": "parent",
+      "normalizerRMS": 0.043531904719030595,
+      "port": "Z",
+      "predictionRMS": 0.0415531329687775,
+      "relativeRMS": 0.34805683736965876,
+      "rows": 475,
+      "selection": "padding",
+      "targetRMS": 0.043531904719030595
+    },
+    {
+      "case": "01",
+      "cosine": 0.9078239779503561,
+      "errorRMS": 0.07050444194100573,
+      "method": "accepted",
+      "normalizerRMS": 0.16806839312509247,
+      "port": "H",
+      "predictionRMS": 0.15444337850628473,
+      "relativeRMS": 0.4194985186092047,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.16806839312509247
+    },
+    {
+      "case": "01",
+      "cosine": 0.9066810572342378,
+      "errorRMS": 0.07064255067657663,
+      "method": "accepted",
+      "normalizerRMS": 0.1674125484706419,
+      "port": "H",
+      "predictionRMS": 0.1536733598159072,
+      "relativeRMS": 0.4219668795554161,
+      "rows": 510,
+      "selection": "learned",
+      "targetRMS": 0.1674125484706419
+    },
+    {
+      "case": "01",
+      "cosine": 0.7332796303118011,
+      "errorRMS": 0.15095985014651814,
+      "method": "accepted",
+      "normalizerRMS": 0.22176492758717276,
+      "port": "H",
+      "predictionRMS": 0.1698999661981108,
+      "relativeRMS": 0.6807201291429543,
+      "rows": 37,
+      "selection": "active",
+      "targetRMS": 0.22176492758717276
+    },
+    {
+      "case": "01",
+      "cosine": 0.9303007535947476,
+      "errorRMS": 0.05985773058327878,
+      "method": "accepted",
+      "normalizerRMS": 0.16314544964250116,
+      "port": "H",
+      "predictionRMS": 0.15317392744450983,
+      "relativeRMS": 0.3668979472884127,
+      "rows": 475,
+      "selection": "padding",
+      "targetRMS": 0.16314544964250116
+    },
+    {
+      "case": "01",
+      "cosine": 0.9194135952924196,
+      "errorRMS": 0.017080521439659695,
+      "method": "accepted",
+      "normalizerRMS": 0.043187528050715004,
+      "port": "Z",
+      "predictionRMS": 0.041508144649123016,
+      "relativeRMS": 0.39549662160802734,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.043187528050715004
+    },
+    {
+      "case": "01",
+      "cosine": 0.9190176913412922,
+      "errorRMS": 0.017113979887864946,
+      "method": "accepted",
+      "normalizerRMS": 0.04316942379203477,
+      "port": "Z",
+      "predictionRMS": 0.041482584941084755,
+      "relativeRMS": 0.39643753343362115,
+      "rows": 510,
+      "selection": "learned",
+      "targetRMS": 0.04316942379203477
+    },
+    {
+      "case": "01",
+      "cosine": 0.6559593236794027,
+      "errorRMS": 0.03301398149957344,
+      "method": "accepted",
+      "normalizerRMS": 0.03849378485934651,
+      "port": "Z",
+      "predictionRMS": 0.04092619946578229,
+      "relativeRMS": 0.8576444644298848,
+      "rows": 37,
+      "selection": "active",
+      "targetRMS": 0.03849378485934651
+    },
+    {
+      "case": "01",
+      "cosine": 0.9376260796647253,
+      "errorRMS": 0.01515157708118311,
+      "method": "accepted",
+      "normalizerRMS": 0.043531904719030595,
+      "port": "Z",
+      "predictionRMS": 0.0415531329687775,
+      "relativeRMS": 0.34805683736965876,
+      "rows": 475,
+      "selection": "padding",
+      "targetRMS": 0.043531904719030595
+    },
+    {
+      "case": "11",
+      "cosine": 0.9074530144124703,
+      "errorRMS": 0.07072065730319775,
+      "method": "parent",
+      "normalizerRMS": 0.1682691584339993,
+      "port": "H",
+      "predictionRMS": 0.1544509307742679,
+      "relativeRMS": 0.4202829440722301,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.1682691584339993
+    },
+    {
+      "case": "11",
+      "cosine": 0.9063078998903652,
+      "errorRMS": 0.0708591895756333,
+      "method": "parent",
+      "normalizerRMS": 0.16761488925942392,
+      "port": "H",
+      "predictionRMS": 0.1536809796889421,
+      "relativeRMS": 0.42274997101219236,
+      "rows": 510,
+      "selection": "learned",
+      "targetRMS": 0.16761488925942392
+    },
+    {
+      "case": "11",
+      "cosine": 0.7325994283263516,
+      "errorRMS": 0.15102403619754673,
+      "method": "parent",
+      "normalizerRMS": 0.22159355165908923,
+      "port": "H",
+      "predictionRMS": 0.16999494154276368,
+      "relativeRMS": 0.6815362408644895,
+      "rows": 37,
+      "selection": "active",
+      "targetRMS": 0.22159355165908923
+    },
+    {
+      "case": "11",
+      "cosine": 0.9298733612593015,
+      "errorRMS": 0.06011947787151502,
+      "method": "parent",
+      "normalizerRMS": 0.16338647742241033,
+      "port": "H",
+      "predictionRMS": 0.15317392744450983,
+      "relativeRMS": 0.36795871249543777,
+      "rows": 475,
+      "selection": "padding",
+      "targetRMS": 0.16338647742241033
+    },
+    {
+      "case": "11",
+      "cosine": 0.9187466295072575,
+      "errorRMS": 0.017150529360138125,
+      "method": "parent",
+      "normalizerRMS": 0.04318921543013852,
+      "port": "Z",
+      "predictionRMS": 0.0415048984236895,
+      "relativeRMS": 0.397102128143084,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.04318921543013852
+    },
+    {
+      "case": "11",
+      "cosine": 0.9183474220761093,
+      "errorRMS": 0.017184124944460064,
+      "method": "parent",
+      "normalizerRMS": 0.043171118498897806,
+      "port": "Z",
+      "predictionRMS": 0.04147932397667517,
+      "relativeRMS": 0.3980467854892105,
+      "rows": 510,
+      "selection": "learned",
+      "targetRMS": 0.043171118498897806
+    },
+    {
+      "case": "11",
+      "cosine": 0.6528353581863338,
+      "errorRMS": 0.03313695944105003,
+      "method": "parent",
+      "normalizerRMS": 0.0384823473738073,
+      "port": "Z",
+      "predictionRMS": 0.04088061637615517,
+      "relativeRMS": 0.8610950657236787,
+      "rows": 37,
+      "selection": "active",
+      "targetRMS": 0.0384823473738073
+    },
+    {
+      "case": "11",
+      "cosine": 0.9370938139732754,
+      "errorRMS": 0.015215772118883888,
+      "method": "parent",
+      "normalizerRMS": 0.04353449679921403,
+      "port": "Z",
+      "predictionRMS": 0.0415531329687775,
+      "relativeRMS": 0.34951069238403587,
+      "rows": 475,
+      "selection": "padding",
+      "targetRMS": 0.04353449679921403
+    },
+    {
+      "case": "11",
+      "cosine": 0.9074530144124703,
+      "errorRMS": 0.07072065730319775,
+      "method": "accepted",
+      "normalizerRMS": 0.1682691584339993,
+      "port": "H",
+      "predictionRMS": 0.1544509307742679,
+      "relativeRMS": 0.4202829440722301,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.1682691584339993
+    },
+    {
+      "case": "11",
+      "cosine": 0.9063078998903652,
+      "errorRMS": 0.0708591895756333,
+      "method": "accepted",
+      "normalizerRMS": 0.16761488925942392,
+      "port": "H",
+      "predictionRMS": 0.1536809796889421,
+      "relativeRMS": 0.42274997101219236,
+      "rows": 510,
+      "selection": "learned",
+      "targetRMS": 0.16761488925942392
+    },
+    {
+      "case": "11",
+      "cosine": 0.7325994283263516,
+      "errorRMS": 0.15102403619754673,
+      "method": "accepted",
+      "normalizerRMS": 0.22159355165908923,
+      "port": "H",
+      "predictionRMS": 0.16999494154276368,
+      "relativeRMS": 0.6815362408644895,
+      "rows": 37,
+      "selection": "active",
+      "targetRMS": 0.22159355165908923
+    },
+    {
+      "case": "11",
+      "cosine": 0.9298733612593015,
+      "errorRMS": 0.06011947787151502,
+      "method": "accepted",
+      "normalizerRMS": 0.16338647742241033,
+      "port": "H",
+      "predictionRMS": 0.15317392744450983,
+      "relativeRMS": 0.36795871249543777,
+      "rows": 475,
+      "selection": "padding",
+      "targetRMS": 0.16338647742241033
+    },
+    {
+      "case": "11",
+      "cosine": 0.9187466295072575,
+      "errorRMS": 0.017150529360138125,
+      "method": "accepted",
+      "normalizerRMS": 0.04318921543013852,
+      "port": "Z",
+      "predictionRMS": 0.0415048984236895,
+      "relativeRMS": 0.397102128143084,
+      "rows": 512,
+      "selection": "all",
+      "targetRMS": 0.04318921543013852
+    },
+    {
+      "case": "11",
+      "cosine": 0.9183474220761093,
+      "errorRMS": 0.017184124944460064,
+      "method": "accepted",
+      "normalizerRMS": 0.043171118498897806,
+      "port": "Z",
+      "predictionRMS": 0.04147932397667517,
+      "relativeRMS": 0.3980467854892105,
+      "rows": 510,
+      "selection": "learned",
+      "targetRMS": 0.043171118498897806
+    },
+    {
+      "case": "11",
+      "cosine": 0.6528353581863338,
+      "errorRMS": 0.03313695944105003,
+      "method": "accepted",
+      "normalizerRMS": 0.0384823473738073,
+      "port": "Z",
+      "predictionRMS": 0.04088061637615517,
+      "relativeRMS": 0.8610950657236787,
+      "rows": 37,
+      "selection": "active",
+      "targetRMS": 0.0384823473738073
+    },
+    {
+      "case": "11",
+      "cosine": 0.9370938139732754,
+      "errorRMS": 0.015215772118883888,
+      "method": "accepted",
+      "normalizerRMS": 0.04353449679921403,
+      "port": "Z",
+      "predictionRMS": 0.0415531329687775,
+      "relativeRMS": 0.34951069238403587,
+      "rows": 475,
+      "selection": "padding",
+      "targetRMS": 0.04353449679921403
+    }
+  ],
+  "terminal_status": "arbitrary-prompt-zero-neural-images-unachieved",
+  "torchVersion": "2.13.0+cu130",
+  "transferReleasedAfterSealSHA256": "3b0fdaaee854d375ab58b052234132793814ac1d3d681a56ada56e24cadd0dbc",
+  "trend_status": "retain-both-doses-parents-all-strata-and-regressions",
+  "workerWallSecondsAfterImportsAndRequestVerification": 71.82684308011085
+}
