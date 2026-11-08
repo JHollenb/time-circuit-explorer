@@ -1,0 +1,213 @@
+{
+  "custody": {
+    "declared": {
+      "sha256": "118914e1ba7e2be1d58968258b5ee3e0bd574fffdc035133f08d10b853cf9c47",
+      "size_bytes": 138356
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794136959.4287283,
+      "sha256": "118914e1ba7e2be1d58968258b5ee3e0bd574fffdc035133f08d10b853cf9c47",
+      "size_bytes": 138356
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794136959.3255556,
+      "sha256": "118914e1ba7e2be1d58968258b5ee3e0bd574fffdc035133f08d10b853cf9c47",
+      "size_bytes": 138356
+    }
+  },
+  "inventory": {
+    "bytes": 5579969,
+    "files": {
+      "consumer-fields.json": {
+        "bytes": 499752,
+        "sha256": "1d53bc8c7699756497ad4f5d0ec51ef627010ad34c4454a40e592695fd3438e8"
+      },
+      "discovery-seal.json": {
+        "bytes": 290357,
+        "sha256": "bdeea4d022b0e60c8e2eb2ed875890817f6dd62b129a0d91e47df48e7586a8a1"
+      },
+      "discovery-serving.json": {
+        "bytes": 486761,
+        "sha256": "6c801a60d3e45466a820d623238982aef3a6f318fc15346865e6a63ed4adf5fe"
+      },
+      "feedback.json": {
+        "bytes": 20504,
+        "sha256": "c8a17f42f2c39dd02cfca0ce9694a8a7d9cb98446f37c2e237a5f52b96be9103"
+      },
+      "final-seal.json": {
+        "bytes": 338881,
+        "sha256": "be630292c88d124fc525426a1aedbdf4a270ef1d936c9a6fdf3f0813a49a6bc1"
+      },
+      "final-serving.json": {
+        "bytes": 623152,
+        "sha256": "cd404dd58067a33ba9c6972c685c5c2d27a427600eed067b0a1c2e420021f41c"
+      },
+      "frozen-plan.md": {
+        "bytes": 5861,
+        "sha256": "6ccdf446668847b5b64cfb5d2169bb911872d2422d39bd2a72e4b835b5ce6418"
+      },
+      "initializer-seal.json": {
+        "bytes": 920,
+        "sha256": "f6dea11b3dc46edaa30c670a9993adfa6544060a14d78184ed4c717262a177b4"
+      },
+      "initializer-serving.json": {
+        "bytes": 97698,
+        "sha256": "9242bc0a14b88ce39885bb4eec1ceddf80ec2b0c61b3e8c06c8227c52e65c49d"
+      },
+      "inputs.json": {
+        "bytes": 14842,
+        "sha256": "6b7026624254d757259f199eb46c98de843edba32ce2ed6d20a9da8ab2065e7a"
+      },
+      "lexical-manifest.json": {
+        "bytes": 900,
+        "sha256": "b0f17a72cda3ad154bd410b9aba5445817e3baeedafadc8f813aba06659ec131"
+      },
+      "observations.jsonl.gz": {
+        "bytes": 2814688,
+        "sha256": "de75b84d7377a0d1541d43288f5dddb3f9772bda9c9d6c73ea9885c4bf994da8"
+      },
+      "programs.json": {
+        "bytes": 66301,
+        "sha256": "0b3bec4a70c8e268175a1f2da5576b07b8b08e19b09263bf4036852c12c64a82"
+      },
+      "report.json": {
+        "bytes": 131729,
+        "sha256": "e8da4992f99163aa51a8e2228215c968042324a10a83a4a711b42df0e97b9357"
+      },
+      "request.json": {
+        "bytes": 5843,
+        "sha256": "ea659ae9764f4652aebd541dd8bbd545381d3dc3c7afa3ec560978e30ed6542c"
+      },
+      "typed-consumers.json": {
+        "bytes": 181780,
+        "sha256": "2e896ecb02bb6a9e8f1a14c9b0837b46875341f0e4d4d6e7d7441651ec161eb1"
+      }
+    }
+  },
+  "jobID": "job-ac1391fc231a",
+  "result": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-ac1391fc231a",
+      "job_log": {
+        "bytes": 677,
+        "sha256": "b60c96d16a9909562a5804eda95d3d328867c183a9bb2aa4e0f4ca075590a012"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-ac1391fc231a/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "CUBLAS_WORKSPACE_CONFIG=:4096:8",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "python",
+        "-u",
+        "contextual_writer_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-ac1391fc231a",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-ac1391fc231a/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794136959.4158216
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794136959.4478316
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794136959.473638
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794136959.5017982
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794137124.075291
+        },
+        {
+          "name": "finished",
+          "ts": 1794137124.0839708
+        }
+      ]
+    },
+    "elapsed_s": 165.09,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "118914e1ba7e2be1d58968258b5ee3e0bd574fffdc035133f08d10b853cf9c47",
+      "size_bytes": 138356
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 2403.4,
+    "peak_vram_mb": 412.0,
+    "returncode": 0,
+    "status": "ok"
+  }
+}

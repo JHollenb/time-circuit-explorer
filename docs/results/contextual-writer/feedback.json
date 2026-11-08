@@ -1,0 +1,610 @@
+{
+  "acceptedProgramSHA256": "05484ad36e4e3d6e5429397bec6df62c42adeee578422af279aff6c6c1086da5",
+  "baselineFrame": {
+    "act": "root:v1",
+    "frame_id": "e1ec116c045159d05b4fe48352073ed3371881706e47812415cac09d50497c94",
+    "implementation": "saturn",
+    "metadata": {},
+    "parent_frame_id": null,
+    "program_fingerprint": "27ecb4684523e2b920d4432ced84ef3406fe1961dd3cd9799a669c41def82d61",
+    "schema": "saturn-frame-v1",
+    "slots": {
+      "program": {
+        "abi": {},
+        "fingerprint": "7f6be8865c150664e1c4ec8dc21666b2d2259263644bac000c780353e55ecad1",
+        "handle": "saturn://program",
+        "kind": "opaque",
+        "name": "program"
+      }
+    }
+  },
+  "exactRestore": true,
+  "proposalFrame": {
+    "act": "offline-half-atom-proposal:v1",
+    "frame_id": "0664698d757b753792c4d134b6d4666fd54e22abb72a471af152151b57c03fb5",
+    "implementation": "fixed-amplitude-only",
+    "metadata": {},
+    "parent_frame_id": "e1ec116c045159d05b4fe48352073ed3371881706e47812415cac09d50497c94",
+    "program_fingerprint": "27ecb4684523e2b920d4432ced84ef3406fe1961dd3cd9799a669c41def82d61",
+    "schema": "saturn-frame-v1",
+    "slots": {
+      "program": {
+        "abi": {},
+        "fingerprint": "0b95329db04d1df0645bacf7d247768d4ff490a91f934340bd49f1136a982208",
+        "handle": "saturn://program",
+        "kind": "opaque",
+        "name": "program"
+      }
+    }
+  },
+  "restoredFiles": {
+    "prefix.bf16": "f72ee1fd1fc36a11a300d65087c36d6c58f7d0dbbf3941ede765da352fc6ca2a",
+    "program.json": "05484ad36e4e3d6e5429397bec6df62c42adeee578422af279aff6c6c1086da5",
+    "slot0.f32": "eb412dc82f31605f325275de0151637e52ed757d48e2d8bd4186d84932b29630",
+    "slot1.f32": "1bfd57c803075d1e8f36ffe8431bd7b95e339cb006b53869a06f2c1310708d3e"
+  },
+  "restoredFrame": {
+    "act": "root:v1",
+    "frame_id": "e1ec116c045159d05b4fe48352073ed3371881706e47812415cac09d50497c94",
+    "implementation": "saturn",
+    "metadata": {},
+    "parent_frame_id": null,
+    "program_fingerprint": "27ecb4684523e2b920d4432ced84ef3406fe1961dd3cd9799a669c41def82d61",
+    "schema": "saturn-frame-v1",
+    "slots": {
+      "program": {
+        "abi": {},
+        "fingerprint": "7f6be8865c150664e1c4ec8dc21666b2d2259263644bac000c780353e55ecad1",
+        "handle": "saturn://program",
+        "kind": "opaque",
+        "name": "program"
+      }
+    }
+  },
+  "scope": "Discovery-only reversible immutable-program selection, no optimizer rollback or predicate search. Control has no extra feedback proposal.",
+  "scores": {
+    "half": {
+      "errorMeanSquare": 0.0014054723578731591,
+      "referenceIncrementMeanSquare": 0.010818668464766496,
+      "score": 0.12991176894369263,
+      "terms": [
+        {
+          "case": "A",
+          "cosine": 0.9271905869005377,
+          "errorRMS": 0.04667491570128285,
+          "normalizerRMS": 0.1042311599264256,
+          "port": "Q",
+          "predictionRMS": 0.12221788649360588,
+          "relativeRMS": 0.4478019407462184,
+          "stratum": "active",
+          "targetRMS": 0.1042311599264256
+        },
+        {
+          "case": "A",
+          "cosine": 0.9307740286830016,
+          "errorRMS": 0.05462811541367619,
+          "normalizerRMS": 0.11954257382055153,
+          "port": "K",
+          "predictionRMS": 0.14404175813947584,
+          "relativeRMS": 0.4569762358946686,
+          "stratum": "active",
+          "targetRMS": 0.11954257382055153
+        },
+        {
+          "case": "A",
+          "cosine": 0.8443564498597999,
+          "errorRMS": 0.03661359809915393,
+          "normalizerRMS": 0.06770679299875418,
+          "port": "V",
+          "predictionRMS": 0.06212873553294843,
+          "relativeRMS": 0.5407669818274753,
+          "stratum": "active",
+          "targetRMS": 0.06770679299875418
+        },
+        {
+          "case": "A",
+          "cosine": 0.9753491036509556,
+          "errorRMS": 0.023916159099877293,
+          "normalizerRMS": 0.10680538040110633,
+          "port": "Q",
+          "predictionRMS": 0.10823575919866261,
+          "relativeRMS": 0.223922793122036,
+          "stratum": "padding",
+          "targetRMS": 0.10680538040110633
+        },
+        {
+          "case": "A",
+          "cosine": 0.986206021817163,
+          "errorRMS": 0.023608228102847264,
+          "normalizerRMS": 0.13800239926299696,
+          "port": "K",
+          "predictionRMS": 0.14206275770938592,
+          "relativeRMS": 0.17107114245061836,
+          "stratum": "padding",
+          "targetRMS": 0.13800239926299696
+        },
+        {
+          "case": "A",
+          "cosine": 0.9474759878189373,
+          "errorRMS": 0.021883128941542637,
+          "normalizerRMS": 0.0674815247846934,
+          "port": "V",
+          "predictionRMS": 0.06755251033424997,
+          "relativeRMS": 0.3242832614017387,
+          "stratum": "padding",
+          "targetRMS": 0.0674815247846934
+        },
+        {
+          "case": "B",
+          "cosine": 0.9255596854066694,
+          "errorRMS": 0.04712769760777348,
+          "normalizerRMS": 0.10390438981904145,
+          "port": "Q",
+          "predictionRMS": 0.12212181671387595,
+          "relativeRMS": 0.4535679165225885,
+          "stratum": "active",
+          "targetRMS": 0.10390438981904145
+        },
+        {
+          "case": "B",
+          "cosine": 0.9293107266002019,
+          "errorRMS": 0.05514680192541663,
+          "normalizerRMS": 0.11923428868182913,
+          "port": "K",
+          "predictionRMS": 0.14400597577346966,
+          "relativeRMS": 0.46250791223800714,
+          "stratum": "active",
+          "targetRMS": 0.11923428868182913
+        },
+        {
+          "case": "B",
+          "cosine": 0.84185560126755,
+          "errorRMS": 0.03705020228080996,
+          "normalizerRMS": 0.06806282135502513,
+          "port": "V",
+          "predictionRMS": 0.06213155771357265,
+          "relativeRMS": 0.5443530189198441,
+          "stratum": "active",
+          "targetRMS": 0.06806282135502513
+        },
+        {
+          "case": "B",
+          "cosine": 0.9740433569962891,
+          "errorRMS": 0.024525319106676984,
+          "normalizerRMS": 0.10653136901133561,
+          "port": "Q",
+          "predictionRMS": 0.10823575919866261,
+          "relativeRMS": 0.23021687728491816,
+          "stratum": "padding",
+          "targetRMS": 0.10653136901133561
+        },
+        {
+          "case": "B",
+          "cosine": 0.9855888824941822,
+          "errorRMS": 0.024098774941679838,
+          "normalizerRMS": 0.1382107703976101,
+          "port": "K",
+          "predictionRMS": 0.14206275770938592,
+          "relativeRMS": 0.17436249629715217,
+          "stratum": "padding",
+          "targetRMS": 0.1382107703976101
+        },
+        {
+          "case": "B",
+          "cosine": 0.9452674244617051,
+          "errorRMS": 0.022288298887974903,
+          "normalizerRMS": 0.06715845559261861,
+          "port": "V",
+          "predictionRMS": 0.06755251033424997,
+          "relativeRMS": 0.33187628707805794,
+          "stratum": "padding",
+          "targetRMS": 0.06715845559261861
+        },
+        {
+          "case": "00",
+          "cosine": 0.9193939802610058,
+          "errorRMS": 0.04879866695871326,
+          "normalizerRMS": 0.10543808726226982,
+          "port": "Q",
+          "predictionRMS": 0.12265522800732957,
+          "relativeRMS": 0.46281821138627083,
+          "stratum": "active",
+          "targetRMS": 0.10543808726226982
+        },
+        {
+          "case": "00",
+          "cosine": 0.922859929331773,
+          "errorRMS": 0.05725843471975393,
+          "normalizerRMS": 0.12096876695974591,
+          "port": "K",
+          "predictionRMS": 0.14492320648087714,
+          "relativeRMS": 0.473332382885307,
+          "stratum": "active",
+          "targetRMS": 0.12096876695974591
+        },
+        {
+          "case": "00",
+          "cosine": 0.820874024794273,
+          "errorRMS": 0.03949794971947445,
+          "normalizerRMS": 0.06797366906676583,
+          "port": "V",
+          "predictionRMS": 0.06308239102015917,
+          "relativeRMS": 0.5810772062440582,
+          "stratum": "active",
+          "targetRMS": 0.06797366906676583
+        },
+        {
+          "case": "00",
+          "cosine": 0.9789332771540269,
+          "errorRMS": 0.02209632360078387,
+          "normalizerRMS": 0.10536334764188358,
+          "port": "Q",
+          "predictionRMS": 0.10818677151008652,
+          "relativeRMS": 0.209715466481631,
+          "stratum": "padding",
+          "targetRMS": 0.10536334764188358
+        },
+        {
+          "case": "00",
+          "cosine": 0.9877682798592194,
+          "errorRMS": 0.022328738083239232,
+          "normalizerRMS": 0.1374402059780706,
+          "port": "K",
+          "predictionRMS": 0.14202716954732628,
+          "relativeRMS": 0.16246147133104497,
+          "stratum": "padding",
+          "targetRMS": 0.1374402059780706
+        },
+        {
+          "case": "00",
+          "cosine": 0.9549829235057227,
+          "errorRMS": 0.020619287715886243,
+          "normalizerRMS": 0.06938176195082574,
+          "port": "V",
+          "predictionRMS": 0.06748372323038061,
+          "relativeRMS": 0.29718599147856956,
+          "stratum": "padding",
+          "targetRMS": 0.06938176195082574
+        },
+        {
+          "case": "10",
+          "cosine": 0.918830506095661,
+          "errorRMS": 0.0489593425968578,
+          "normalizerRMS": 0.10536048301053352,
+          "port": "Q",
+          "predictionRMS": 0.12265522800732957,
+          "relativeRMS": 0.4646841130366025,
+          "stratum": "active",
+          "targetRMS": 0.10536048301053352
+        },
+        {
+          "case": "10",
+          "cosine": 0.9224278880050192,
+          "errorRMS": 0.05740281200681711,
+          "normalizerRMS": 0.1209135830405025,
+          "port": "K",
+          "predictionRMS": 0.14492320648087714,
+          "relativeRMS": 0.4747424612137153,
+          "stratum": "active",
+          "targetRMS": 0.1209135830405025
+        },
+        {
+          "case": "10",
+          "cosine": 0.8208159219741786,
+          "errorRMS": 0.03950990708579815,
+          "normalizerRMS": 0.06798744686963222,
+          "port": "V",
+          "predictionRMS": 0.06308239102015917,
+          "relativeRMS": 0.5811353257838829,
+          "stratum": "active",
+          "targetRMS": 0.06798744686963222
+        },
+        {
+          "case": "10",
+          "cosine": 0.9787798338389077,
+          "errorRMS": 0.02217497969670135,
+          "normalizerRMS": 0.10537870170488693,
+          "port": "Q",
+          "predictionRMS": 0.10818677151008652,
+          "relativeRMS": 0.21043132376789367,
+          "stratum": "padding",
+          "targetRMS": 0.10537870170488693
+        },
+        {
+          "case": "10",
+          "cosine": 0.9877368664316685,
+          "errorRMS": 0.022375835083019872,
+          "normalizerRMS": 0.13728970921170597,
+          "port": "K",
+          "predictionRMS": 0.14202716954732628,
+          "relativeRMS": 0.16298260963256528,
+          "stratum": "padding",
+          "targetRMS": 0.13728970921170597
+        },
+        {
+          "case": "10",
+          "cosine": 0.954710879915571,
+          "errorRMS": 0.020698799846412822,
+          "normalizerRMS": 0.06945567067560673,
+          "port": "V",
+          "predictionRMS": 0.06748372323038061,
+          "relativeRMS": 0.2980145414344457,
+          "stratum": "padding",
+          "targetRMS": 0.06945567067560673
+        }
+      ]
+    },
+    "initial": {
+      "errorMeanSquare": 0.0011745454626231496,
+      "referenceIncrementMeanSquare": 0.010818668464766496,
+      "score": 0.10856654554563062,
+      "terms": [
+        {
+          "case": "A",
+          "cosine": 0.938089939301452,
+          "errorRMS": 0.040883572275429735,
+          "normalizerRMS": 0.1042311599264256,
+          "port": "Q",
+          "predictionRMS": 0.11695914783332569,
+          "relativeRMS": 0.3922394445604223,
+          "stratum": "active",
+          "targetRMS": 0.1042311599264256
+        },
+        {
+          "case": "A",
+          "cosine": 0.9372485559393974,
+          "errorRMS": 0.04790861148721848,
+          "normalizerRMS": 0.11954257382055153,
+          "port": "K",
+          "predictionRMS": 0.13566349318527585,
+          "relativeRMS": 0.4007661032891541,
+          "stratum": "active",
+          "targetRMS": 0.11954257382055153
+        },
+        {
+          "case": "A",
+          "cosine": 0.8622741702392266,
+          "errorRMS": 0.034860311069705344,
+          "normalizerRMS": 0.06770679299875418,
+          "port": "V",
+          "predictionRMS": 0.0646641933479833,
+          "relativeRMS": 0.514871691978481,
+          "stratum": "active",
+          "targetRMS": 0.06770679299875418
+        },
+        {
+          "case": "A",
+          "cosine": 0.975212401839943,
+          "errorRMS": 0.024074307098528924,
+          "normalizerRMS": 0.10680538040110633,
+          "port": "Q",
+          "predictionRMS": 0.10874679682465421,
+          "relativeRMS": 0.22540350503053452,
+          "stratum": "padding",
+          "targetRMS": 0.10680538040110633
+        },
+        {
+          "case": "A",
+          "cosine": 0.9860618628577368,
+          "errorRMS": 0.023787587692178574,
+          "normalizerRMS": 0.13800239926299696,
+          "port": "K",
+          "predictionRMS": 0.1422962125456138,
+          "relativeRMS": 0.17237082702341697,
+          "stratum": "padding",
+          "targetRMS": 0.13800239926299696
+        },
+        {
+          "case": "A",
+          "cosine": 0.9469480654200316,
+          "errorRMS": 0.022045720763972387,
+          "normalizerRMS": 0.0674815247846934,
+          "port": "V",
+          "predictionRMS": 0.06785867453355891,
+          "relativeRMS": 0.3266926886182771,
+          "stratum": "padding",
+          "targetRMS": 0.0674815247846934
+        },
+        {
+          "case": "B",
+          "cosine": 0.9361865860253756,
+          "errorRMS": 0.04143883508871873,
+          "normalizerRMS": 0.10390438981904145,
+          "port": "Q",
+          "predictionRMS": 0.11685106810576883,
+          "relativeRMS": 0.3988169812737275,
+          "stratum": "active",
+          "targetRMS": 0.10390438981904145
+        },
+        {
+          "case": "B",
+          "cosine": 0.9356152874554331,
+          "errorRMS": 0.04847569447422202,
+          "normalizerRMS": 0.11923428868182913,
+          "port": "K",
+          "predictionRMS": 0.13560188305890195,
+          "relativeRMS": 0.40655833997196095,
+          "stratum": "active",
+          "targetRMS": 0.11923428868182913
+        },
+        {
+          "case": "B",
+          "cosine": 0.8589307621066251,
+          "errorRMS": 0.035400797225436875,
+          "normalizerRMS": 0.06806282135502513,
+          "port": "V",
+          "predictionRMS": 0.06465694822881997,
+          "relativeRMS": 0.5201194502470211,
+          "stratum": "active",
+          "targetRMS": 0.06806282135502513
+        },
+        {
+          "case": "B",
+          "cosine": 0.9738820230739175,
+          "errorRMS": 0.02469936801171841,
+          "normalizerRMS": 0.10653136901133561,
+          "port": "Q",
+          "predictionRMS": 0.10874679682465421,
+          "relativeRMS": 0.2318506580825995,
+          "stratum": "padding",
+          "targetRMS": 0.10653136901133561
+        },
+        {
+          "case": "B",
+          "cosine": 0.9854148865030345,
+          "errorRMS": 0.0242976927962117,
+          "normalizerRMS": 0.1382107703976101,
+          "port": "K",
+          "predictionRMS": 0.1422962125456138,
+          "relativeRMS": 0.17580173184992137,
+          "stratum": "padding",
+          "targetRMS": 0.1382107703976101
+        },
+        {
+          "case": "B",
+          "cosine": 0.9446742603892104,
+          "errorRMS": 0.022466875574517955,
+          "normalizerRMS": 0.06715845559261861,
+          "port": "V",
+          "predictionRMS": 0.06785867453355891,
+          "relativeRMS": 0.33453532211641995,
+          "stratum": "padding",
+          "targetRMS": 0.06715845559261861
+        },
+        {
+          "case": "00",
+          "cosine": 0.9334705382221542,
+          "errorRMS": 0.042825292654526045,
+          "normalizerRMS": 0.10543808726226982,
+          "port": "Q",
+          "predictionRMS": 0.11852237515437904,
+          "relativeRMS": 0.406165302942201,
+          "stratum": "active",
+          "targetRMS": 0.10543808726226982
+        },
+        {
+          "case": "00",
+          "cosine": 0.93317058136104,
+          "errorRMS": 0.05000144385227629,
+          "normalizerRMS": 0.12096876695974591,
+          "port": "K",
+          "predictionRMS": 0.13757479484107524,
+          "relativeRMS": 0.41334176671334494,
+          "stratum": "active",
+          "targetRMS": 0.12096876695974591
+        },
+        {
+          "case": "00",
+          "cosine": 0.8445819836614437,
+          "errorRMS": 0.03726087363874303,
+          "normalizerRMS": 0.06797366906676583,
+          "port": "V",
+          "predictionRMS": 0.06539588165622139,
+          "relativeRMS": 0.5481662848322083,
+          "stratum": "active",
+          "targetRMS": 0.06797366906676583
+        },
+        {
+          "case": "00",
+          "cosine": 0.9787885313339211,
+          "errorRMS": 0.022293312504438854,
+          "normalizerRMS": 0.10536334764188358,
+          "port": "Q",
+          "predictionRMS": 0.10869899539888725,
+          "relativeRMS": 0.21158508156186293,
+          "stratum": "padding",
+          "targetRMS": 0.10536334764188358
+        },
+        {
+          "case": "00",
+          "cosine": 0.9876653486144769,
+          "errorRMS": 0.022485369797879667,
+          "normalizerRMS": 0.1374402059780706,
+          "port": "K",
+          "predictionRMS": 0.14226162838846945,
+          "relativeRMS": 0.16360110666210248,
+          "stratum": "padding",
+          "targetRMS": 0.1374402059780706
+        },
+        {
+          "case": "00",
+          "cosine": 0.9545492128835729,
+          "errorRMS": 0.020738394919064915,
+          "normalizerRMS": 0.06938176195082574,
+          "port": "V",
+          "predictionRMS": 0.06779057457929971,
+          "relativeRMS": 0.29890268473958953,
+          "stratum": "padding",
+          "targetRMS": 0.06938176195082574
+        },
+        {
+          "case": "10",
+          "cosine": 0.932874979918826,
+          "errorRMS": 0.043008055163911076,
+          "normalizerRMS": 0.10536048301053352,
+          "port": "Q",
+          "predictionRMS": 0.11852237515437904,
+          "relativeRMS": 0.4081991078155109,
+          "stratum": "active",
+          "targetRMS": 0.10536048301053352
+        },
+        {
+          "case": "10",
+          "cosine": 0.9327171092061157,
+          "errorRMS": 0.050160265038683795,
+          "normalizerRMS": 0.1209135830405025,
+          "port": "K",
+          "predictionRMS": 0.13757479484107524,
+          "relativeRMS": 0.4148439222240365,
+          "stratum": "active",
+          "targetRMS": 0.1209135830405025
+        },
+        {
+          "case": "10",
+          "cosine": 0.8446705843149572,
+          "errorRMS": 0.0372550149502728,
+          "normalizerRMS": 0.06798744686963222,
+          "port": "V",
+          "predictionRMS": 0.06539588165622139,
+          "relativeRMS": 0.5479690246599539,
+          "stratum": "active",
+          "targetRMS": 0.06798744686963222
+        },
+        {
+          "case": "10",
+          "cosine": 0.9786370949614432,
+          "errorRMS": 0.022370285270151793,
+          "normalizerRMS": 0.10537870170488693,
+          "port": "Q",
+          "predictionRMS": 0.10869899539888725,
+          "relativeRMS": 0.21228469233564654,
+          "stratum": "padding",
+          "targetRMS": 0.10537870170488693
+        },
+        {
+          "case": "10",
+          "cosine": 0.9876354914140513,
+          "errorRMS": 0.022532284369625736,
+          "normalizerRMS": 0.13728970921170597,
+          "port": "K",
+          "predictionRMS": 0.14226162838846945,
+          "relativeRMS": 0.16412216544854136,
+          "stratum": "padding",
+          "targetRMS": 0.13728970921170597
+        },
+        {
+          "case": "10",
+          "cosine": 0.9542890355652154,
+          "errorRMS": 0.020814110492279825,
+          "normalizerRMS": 0.06945567067560673,
+          "port": "V",
+          "predictionRMS": 0.06779057457929971,
+          "relativeRMS": 0.2996747463499747,
+          "stratum": "padding",
+          "targetRMS": 0.06945567067560673
+        }
+      ]
+    }
+  },
+  "selected": "initial"
+}
