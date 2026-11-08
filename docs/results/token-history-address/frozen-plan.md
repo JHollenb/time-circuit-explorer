@@ -1,0 +1,31 @@
+# A token-history program for one contextual address port
+
+Cycle 94 proposes one saved-only CPU assay after the [cycle 93 authority analysis](../behavioral-authority.md) and full research/storage reviews. It uses no new model, neural student, image or decoder. The broader arbitrary-prompt zero-neural image goal remains active.
+
+The target is the ordered four-key support of [our approximate first encoder reader](../uncentered-reader.md), not a semantic top-k instruction in native FLUX. Discover a small head-specific register program from the two historical red-cube/blue-sphere prompts. Freeze it and execute unchanged on the four already-recorded [fresh-square prompts](../fresh-prompt-square.md). This is retrospective transfer, not fresh held-out evidence. Historical native/compiled lexical preparation remains paid.
+
+## Frozen family and discovery
+
+Each program has four selectors for each of 32 query heads. An initially empty causal state admits a token ID and its position when the mask is active. The state maintains ordered admitted positions and token-to-occurrence lists. A query, including a padding query, may read only the admitted prefix and its current input ID/position.
+
+The selector language contains first/recent active offsets 0 through 3; first/last occurrence of the current query token; last occurrence before the current query position; first/last occurrence of a different token; and first/last occurrence of a literal token ID found only in discovery inputs. No query-ID dispatch table, prompt identifier, complete-prefix key, Q/K/V, logits, weights, hidden vector, token spelling, semantic parser or renderer is a program feature. Literal selectors are ordinary reusable vocabulary predicates, whose selection is learned from the discovery supports.
+
+Resolve the four selector slots in order. An unavailable or already-used address falls back to the most recent unused admitted address. Once the prefix is exhausted, emit -1. Store and charge fallback events. A fresh process advances its own token-history state; it never imports a target state.
+
+Fit the slots greedily and independently for each head. Use only active discovery queries with more than four admitted keys. At each slot, score the actual resolved rule after earlier slots, duplicate removal and fallback. Maximize exact ordered-slot matches, then target-support membership, then choose the first expression in the declared deterministic inventory (generic expressions before sorted literal IDs). Required -1 outputs on exhausted prefixes are mechanics, not learned hits. There is no iterative budget increase, target-driven language extension or post-transfer refit.
+
+## Contrasts and measurements
+
+Fit a position-only control with the same algorithm and only the eight first/recent selectors. Also serve earliest-four in ascending position order, recent-four in descending position order, the learned program from head (h+1) mod 32 at head h, and the learned program with every query token replaced by its unique negative position sentinel. The latter is a synthetic control, outside the tokenizer domain, and removes token repeats and literal matches while preserving causal positions and masks. The head rotation is a routing-specificity diagnostic, not a randomization test. All six methods emit ordered addresses and retain every row, including raw selector addresses, unavailable/duplicate/exhausted reasons, fallbacks and final addresses. Compare primary addresses with recent-four and token-null addresses. The position-only family has fewer candidates, so its comparison does not isolate token information from search capacity; token-null jointly removes repeat and literal information.
+
+Report ordered-support equality, set equality, top-one equality, fractional set overlap and coverage of the old reader's selected weights. Those weights sum to one within its retained top four; coverage is not full native-attention mass. Report discovery and transfer separately, every case/head, active versus padding, prefixes with at most four keys, and transfer query IDs absent from active discovery inputs. Dependent token/head rows do not supply independent prompt replication or an iid confidence interval.
+
+Primary serving uses integer indexing, equality/copy/position operations and bounded selectors. Measure discovery, fresh-child primary serving, controls, serialization and scoring separately; retain logical counters, source/asset sizes and process RSS. The historical score scan's products may be named as the operation targeted for removal, not as a demonstrated parity or runtime saving. Selected-score/soft-weight/value formation and all later contextual layers, denoising and decoding remain unresolved and paid.
+
+## Execution and evidence
+
+Pin the two public reader seals and complete SHA-256 bytes of their six lexical and six selected packets on Beast. Intake hashes authenticate files without interpreting numerical labels. Extract only IDs/masks/positions for all cases and supports for discovery. The compiler child may read those discovery inputs/supports. The fresh serving child may read only clean token packets and its frozen program, with file/import canaries. Seal every prediction before the scorer interprets transfer supports or selected weights.
+
+Use one guarded, preflighted mrun CPU lease with a finite timeout, no accelerator, retries or model acquisition. Intent-first admission omits hand-selected reservations and thread/wall estimates; the source environment requests one numerical-library thread. Retain all full historical tensors near compute. Publish compact address/scalar records and exact source/request/seal/custody joins. A quality measurement cannot stop discovery or erase counter-trends; integrity, causality and source identity remain strict.
+
+Success would establish only this particular nonneural address producer's measured support-level transfer. Wrong addresses require an actual unchanged downstream consumer before an image-quality claim. No old image can be inherited from approximate support agreement. Failure or weak transfer would bound this fixed rule family and discovery set, not prove that symbolic contextual computation is impossible.

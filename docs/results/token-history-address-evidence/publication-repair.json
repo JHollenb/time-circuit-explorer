@@ -1,0 +1,26 @@
+{
+  "schema": "tce-token-history-publication-repair-v1",
+  "failedPublisher": {
+    "path": "generator/publish_token_history.py",
+    "sha256": "1dec5b4155f9580ea999c3a63d6d3e96aae2200b688b1b37e92187c0f00652df",
+    "failure": "Independent scalar metric differs under exact float equality",
+    "publicDestinationCreated": false
+  },
+  "diagnosis": {
+    "localPython": "3.10.14",
+    "workerPython": "3.14.6",
+    "firstDifference": 1.1102230246251565e-16,
+    "maximumFull589824MethodRowDifference": 2.220446049250313e-16,
+    "scope": "Different float sum implementations; source and raw assay unchanged."
+  },
+  "correctedPublisher": {
+    "path": "generator/publish_token_history_v2.py",
+    "sha256": "1bc4000889f93026892f8417a9c91ac7ca461e1a64dc83a576f0cd6ba7873679",
+    "scalarAuditSHA256": "582609b6ceb672ba153366dc5e1b3db5cea1be21e7869a00aaebcce21cb050d3",
+    "rowTolerance": 1e-15,
+    "exactIndicatorCounts": true
+  },
+  "scientificReruns": 0,
+  "scientificSourcesChanged": false,
+  "rawResultsChanged": false
+}

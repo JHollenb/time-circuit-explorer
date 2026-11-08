@@ -1,0 +1,92 @@
+{
+  "admission": "Intent-first CPU, no hand reservation/thread/wall estimate. Hard pin required by retained host-local files. Numerical-library threads1, no CUDA/model acquisition, finite300s/no retries.",
+  "fitMembers": [
+    "discovery IDs/mask/positions",
+    "discovery supportPositions"
+  ],
+  "liveHost": {
+    "active_jobs": [],
+    "admission": {
+      "enabled": true,
+      "max_concurrent": null,
+      "ram_margin_mb": 3325.6384512,
+      "vram_margin_mb": 819.0
+    },
+    "name": "beast",
+    "ram_total_mb": 66512.769024,
+    "telemetry": {
+      "cpu_pct": 0.1,
+      "disk_free_gb": 68.3992064,
+      "disks": [
+        {
+          "free_gb": 68.4,
+          "mount": "/",
+          "total_gb": 235.5
+        },
+        {
+          "free_gb": 310.7,
+          "mount": "/mnt/big",
+          "total_gb": 1999.6
+        },
+        {
+          "free_gb": 2458.6,
+          "mount": "/mnt/hdd8tb",
+          "total_gb": 7937.3
+        },
+        {
+          "free_gb": 533.9,
+          "mount": "/mnt/ssd1tb",
+          "total_gb": 1000.0
+        },
+        {
+          "free_gb": 197.4,
+          "mount": "/mnt/usb-storage",
+          "total_gb": 502.9
+        },
+        {
+          "free_gb": 0.4,
+          "mount": "/recovery",
+          "total_gb": 4.3
+        }
+      ],
+      "host": "beast",
+      "load1": 0.0458984375,
+      "mem_pressure": null,
+      "pressure_external": false,
+      "ram_free_mb": 51815.288832,
+      "running": [],
+      "swap_total_mb": 21474.299904,
+      "swap_used_mb": 5107.572736,
+      "top_external": [
+        {
+          "name": "bitcoind",
+          "pid": 3661879,
+          "rss_mb": 16394
+        },
+        {
+          "name": "mount.ntfs-3g",
+          "pid": 815703,
+          "rss_mb": 1330
+        }
+      ],
+      "ts": 1794116896.644494,
+      "vram_free_mb": 15943.0
+    }
+  },
+  "promotedMembers": [
+    "ids",
+    "mask",
+    "positions",
+    "supportPositions",
+    "selectedWeights",
+    "prefixCounts"
+  ],
+  "servingMembers": [
+    "ids",
+    "mask",
+    "positions"
+  ],
+  "sourceNPZBytes": 220321548,
+  "sourceNPZFiles": 12,
+  "workingSet": "One source member at a time; six small clean token packets, one selected support/weight bank during scoring, six address/trace packets per case. No hidden, Q/K/V, raw head vectors or model parameters loaded."
+}

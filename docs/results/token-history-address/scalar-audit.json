@@ -1,0 +1,188 @@
+{
+  "floatSumAudit": {
+    "maximumAbsoluteRowFloatDifference": 2.220446049250313e-16,
+    "panelAbsoluteTolerance": 1e-10,
+    "panelRelativeTolerance": 1e-12,
+    "rowTolerance": 1e-15,
+    "scope": "V1 exact equality rejected a 1.1102230246251565e-16 difference. Full589824row localPython3.10 versus worker3.14 sum scan found maximum2.220446049250313e-16. Four nonnegative normalized weights; source outputs remain unchanged. Indicator counts remain exact."
+  },
+  "jobID": "job-1ef4d6dc284b",
+  "mechanics_status": "complete",
+  "pairedAddressSensitivity": [
+    {
+      "changedInputPositions": [
+        8
+      ],
+      "pair": [
+        "A",
+        "B"
+      ],
+      "panels": [
+        {
+          "group": "activeNontrivial",
+          "programOrderedChanges": 0,
+          "referenceOrderedChanges": 89,
+          "referenceSetChanges": 53,
+          "rows": 992,
+          "unchangedKeySpinePrefixViolations": 0,
+          "unchangedQueryReferenceOrderedChanges": 68,
+          "unchangedQueryRows": 960
+        },
+        {
+          "group": "paddingNontrivial",
+          "programOrderedChanges": 0,
+          "referenceOrderedChanges": 2212,
+          "referenceSetChanges": 1656,
+          "rows": 15264,
+          "unchangedKeySpinePrefixViolations": 0,
+          "unchangedQueryReferenceOrderedChanges": 2212,
+          "unchangedQueryRows": 15264
+        }
+      ]
+    },
+    {
+      "changedInputPositions": [
+        8,
+        16
+      ],
+      "pair": [
+        "00",
+        "10"
+      ],
+      "panels": [
+        {
+          "group": "activeNontrivial",
+          "programOrderedChanges": 0,
+          "referenceOrderedChanges": 150,
+          "referenceSetChanges": 120,
+          "rows": 1056,
+          "unchangedKeySpinePrefixViolations": 0,
+          "unchangedQueryReferenceOrderedChanges": 97,
+          "unchangedQueryRows": 992
+        },
+        {
+          "group": "paddingNontrivial",
+          "programOrderedChanges": 0,
+          "referenceOrderedChanges": 3804,
+          "referenceSetChanges": 3387,
+          "rows": 15200,
+          "unchangedKeySpinePrefixViolations": 0,
+          "unchangedQueryReferenceOrderedChanges": 3804,
+          "unchangedQueryRows": 15200
+        }
+      ]
+    },
+    {
+      "changedInputPositions": [
+        13
+      ],
+      "pair": [
+        "00",
+        "01"
+      ],
+      "panels": [
+        {
+          "group": "activeNontrivial",
+          "programOrderedChanges": 0,
+          "referenceOrderedChanges": 80,
+          "referenceSetChanges": 57,
+          "rows": 1056,
+          "unchangedKeySpinePrefixViolations": 0,
+          "unchangedQueryReferenceOrderedChanges": 54,
+          "unchangedQueryRows": 1024
+        },
+        {
+          "group": "paddingNontrivial",
+          "programOrderedChanges": 0,
+          "referenceOrderedChanges": 2168,
+          "referenceSetChanges": 1593,
+          "rows": 15200,
+          "unchangedKeySpinePrefixViolations": 0,
+          "unchangedQueryReferenceOrderedChanges": 2168,
+          "unchangedQueryRows": 15200
+        }
+      ]
+    },
+    {
+      "changedInputPositions": [
+        13
+      ],
+      "pair": [
+        "10",
+        "11"
+      ],
+      "panels": [
+        {
+          "group": "activeNontrivial",
+          "programOrderedChanges": 0,
+          "referenceOrderedChanges": 83,
+          "referenceSetChanges": 58,
+          "rows": 1056,
+          "unchangedKeySpinePrefixViolations": 0,
+          "unchangedQueryReferenceOrderedChanges": 57,
+          "unchangedQueryRows": 1024
+        },
+        {
+          "group": "paddingNontrivial",
+          "programOrderedChanges": 0,
+          "referenceOrderedChanges": 2175,
+          "referenceSetChanges": 1592,
+          "rows": 15200,
+          "unchangedKeySpinePrefixViolations": 0,
+          "unchangedQueryReferenceOrderedChanges": 2175,
+          "unchangedQueryRows": 15200
+        }
+      ]
+    },
+    {
+      "changedInputPositions": [
+        8,
+        16
+      ],
+      "pair": [
+        "01",
+        "11"
+      ],
+      "panels": [
+        {
+          "group": "activeNontrivial",
+          "programOrderedChanges": 0,
+          "referenceOrderedChanges": 150,
+          "referenceSetChanges": 122,
+          "rows": 1056,
+          "unchangedKeySpinePrefixViolations": 0,
+          "unchangedQueryReferenceOrderedChanges": 97,
+          "unchangedQueryRows": 992
+        },
+        {
+          "group": "paddingNontrivial",
+          "programOrderedChanges": 0,
+          "referenceOrderedChanges": 3814,
+          "referenceSetChanges": 3394,
+          "rows": 15200,
+          "unchangedKeySpinePrefixViolations": 0,
+          "unchangedQueryReferenceOrderedChanges": 3814,
+          "unchangedQueryRows": 15200
+        }
+      ]
+    }
+  ],
+  "pairedSensitivityScope": "Post-hoc public integer/scalar contrast; no refit, new model/array/consumer/image or independent new prompts.",
+  "predictionFiles": 37,
+  "publisherSHA256": "1bc4000889f93026892f8417a9c91ac7ca461e1a64dc83a576f0cd6ba7873679",
+  "requestSHA256": "2b57ae53cc6e28b5e60a1d80953c65e1248b990afa82194c746ee14d126762fe",
+  "resultBytes": 18115754,
+  "resultFiles": 68,
+  "schema": "tce-token-history-scalar-audit-v1",
+  "scope": "Byte/source/custody/member-access/seal/child-exclusion joins and independent scalar formulas/accumulations. Trusted-code audit, not adversarial isolation or native image certification.",
+  "sourceHashes": {
+    "test_token_history_address.py": "3d0d40a3e2a54312611370fdd0b90f18223c195fa7f4e5745884680b407ac7fd",
+    "token_history_address.py": "b17d386c4059384faccc6461620bbabf4bee02503aa20831e41ff9a9a729ab29",
+    "token_history_process.py": "33092498786e550451e9c751f5a23983af645582e82199b7cc834e3aa7d2a385",
+    "token_history_study.py": "6513133d2a9fc1b7afe39428520d907f209078aa9842a36457d2c4146baa2a04"
+  },
+  "terminal_status": "unassessed",
+  "verifiedHeadQueryRows": 98304,
+  "verifiedMethodRows": 589824,
+  "verifiedPanels": 4398
+}
