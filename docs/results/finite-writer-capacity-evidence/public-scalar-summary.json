@@ -1,0 +1,440 @@
+{
+  "schema": "tce-fixed-writer-capacity-public-scalar-summary-v1",
+  "jobID": "job-459c49bb9118",
+  "sourceFiles": {
+    "publication.json": "e2a0867b6f86f18e9d068a634162ff1cf4cec226d08ad7db6238c6711f02f114",
+    "report.json": "01cf0b5ef3e08f2cdb4a7becad5dce1da6585e71eff841797832b865fc9fe835",
+    "components.jsonl.gz": "a5a343491b0a58f393869bf65470865ad0d093f15f6f1e0b98525b8c26c38e28",
+    "observations.jsonl.gz": "c9a159b7a2b06e4b8049a128e2f808a1a2b90a6e4023c979e1e36d12263b6bea"
+  },
+  "derivation": {
+    "domain": "Previously published component norms, coefficients, row metrics and selected labels only; stdlib scalar arithmetic; no tensor/image/model reads or scientific rerun.",
+    "rowComparison": "Strictly compare retained capacity/current errorRMS per identical row. Nonzero counts compare predictionRMS or targetRMS to zero.",
+    "endpointMinimum": "math.fsum(alpha_i * min_a endpointNorm_i[a]) over all rows; response penalty omitted.",
+    "responseMinimum": "math.fsum(beta_e * min_ab responseNorm_e[a][b]) over disjoint pairs; endpoint penalty omitted.",
+    "pairResponseMinimumRelativeRMS": "sqrt(fsum(min_ab responseNorm_e[a][b]) / fsum(2560 * targetRMS_e**2)) within the unchanged learned stratum. Denominator is rebuilt from producer row scalars; this does not independently replay coordinates.",
+    "scope": "Independent reductions of published producer scalars. Separate endpoint/response minima need not share labels; no new serving program, consumer optimum, fresh generalization or image."
+  },
+  "caseRows": {
+    "10": {
+      "all": {
+        "rows": 512,
+        "errorImproved": 310,
+        "errorWorsened": 60,
+        "errorTied": 142,
+        "currentNonzeroPredictionRows": 512,
+        "capacityNonzeroPredictionRows": 512,
+        "nativeNonzeroRows": 512
+      },
+      "learned": {
+        "rows": 510,
+        "errorImproved": 310,
+        "errorWorsened": 60,
+        "errorTied": 140,
+        "currentNonzeroPredictionRows": 510,
+        "capacityNonzeroPredictionRows": 510,
+        "nativeNonzeroRows": 510
+      },
+      "active": {
+        "rows": 37,
+        "errorImproved": 16,
+        "errorWorsened": 0,
+        "errorTied": 21,
+        "currentNonzeroPredictionRows": 37,
+        "capacityNonzeroPredictionRows": 37,
+        "nativeNonzeroRows": 37
+      },
+      "padding": {
+        "rows": 475,
+        "errorImproved": 294,
+        "errorWorsened": 60,
+        "errorTied": 121,
+        "currentNonzeroPredictionRows": 475,
+        "capacityNonzeroPredictionRows": 475,
+        "nativeNonzeroRows": 475
+      }
+    },
+    "11": {
+      "all": {
+        "rows": 512,
+        "errorImproved": 363,
+        "errorWorsened": 54,
+        "errorTied": 95,
+        "currentNonzeroPredictionRows": 512,
+        "capacityNonzeroPredictionRows": 512,
+        "nativeNonzeroRows": 512
+      },
+      "learned": {
+        "rows": 510,
+        "errorImproved": 363,
+        "errorWorsened": 54,
+        "errorTied": 93,
+        "currentNonzeroPredictionRows": 510,
+        "capacityNonzeroPredictionRows": 510,
+        "nativeNonzeroRows": 510
+      },
+      "active": {
+        "rows": 37,
+        "errorImproved": 17,
+        "errorWorsened": 0,
+        "errorTied": 20,
+        "currentNonzeroPredictionRows": 37,
+        "capacityNonzeroPredictionRows": 37,
+        "nativeNonzeroRows": 37
+      },
+      "padding": {
+        "rows": 475,
+        "errorImproved": 346,
+        "errorWorsened": 54,
+        "errorTied": 75,
+        "currentNonzeroPredictionRows": 475,
+        "capacityNonzeroPredictionRows": 475,
+        "nativeNonzeroRows": 475
+      }
+    },
+    "A": {
+      "all": {
+        "rows": 512,
+        "errorImproved": 162,
+        "errorWorsened": 32,
+        "errorTied": 318,
+        "currentNonzeroPredictionRows": 512,
+        "capacityNonzeroPredictionRows": 512,
+        "nativeNonzeroRows": 512
+      },
+      "learned": {
+        "rows": 510,
+        "errorImproved": 162,
+        "errorWorsened": 32,
+        "errorTied": 316,
+        "currentNonzeroPredictionRows": 510,
+        "capacityNonzeroPredictionRows": 510,
+        "nativeNonzeroRows": 510
+      },
+      "active": {
+        "rows": 35,
+        "errorImproved": 18,
+        "errorWorsened": 0,
+        "errorTied": 17,
+        "currentNonzeroPredictionRows": 35,
+        "capacityNonzeroPredictionRows": 35,
+        "nativeNonzeroRows": 35
+      },
+      "padding": {
+        "rows": 477,
+        "errorImproved": 144,
+        "errorWorsened": 32,
+        "errorTied": 301,
+        "currentNonzeroPredictionRows": 477,
+        "capacityNonzeroPredictionRows": 477,
+        "nativeNonzeroRows": 477
+      }
+    },
+    "B": {
+      "all": {
+        "rows": 512,
+        "errorImproved": 195,
+        "errorWorsened": 57,
+        "errorTied": 260,
+        "currentNonzeroPredictionRows": 512,
+        "capacityNonzeroPredictionRows": 512,
+        "nativeNonzeroRows": 512
+      },
+      "learned": {
+        "rows": 510,
+        "errorImproved": 195,
+        "errorWorsened": 57,
+        "errorTied": 258,
+        "currentNonzeroPredictionRows": 510,
+        "capacityNonzeroPredictionRows": 510,
+        "nativeNonzeroRows": 510
+      },
+      "active": {
+        "rows": 35,
+        "errorImproved": 18,
+        "errorWorsened": 0,
+        "errorTied": 17,
+        "currentNonzeroPredictionRows": 35,
+        "capacityNonzeroPredictionRows": 35,
+        "nativeNonzeroRows": 35
+      },
+      "padding": {
+        "rows": 477,
+        "errorImproved": 177,
+        "errorWorsened": 57,
+        "errorTied": 243,
+        "currentNonzeroPredictionRows": 477,
+        "capacityNonzeroPredictionRows": 477,
+        "nativeNonzeroRows": 477
+      }
+    },
+    "00": {
+      "all": {
+        "rows": 512,
+        "errorImproved": 317,
+        "errorWorsened": 67,
+        "errorTied": 128,
+        "currentNonzeroPredictionRows": 512,
+        "capacityNonzeroPredictionRows": 512,
+        "nativeNonzeroRows": 512
+      },
+      "learned": {
+        "rows": 510,
+        "errorImproved": 317,
+        "errorWorsened": 67,
+        "errorTied": 126,
+        "currentNonzeroPredictionRows": 510,
+        "capacityNonzeroPredictionRows": 510,
+        "nativeNonzeroRows": 510
+      },
+      "active": {
+        "rows": 37,
+        "errorImproved": 16,
+        "errorWorsened": 1,
+        "errorTied": 20,
+        "currentNonzeroPredictionRows": 37,
+        "capacityNonzeroPredictionRows": 37,
+        "nativeNonzeroRows": 37
+      },
+      "padding": {
+        "rows": 475,
+        "errorImproved": 301,
+        "errorWorsened": 66,
+        "errorTied": 108,
+        "currentNonzeroPredictionRows": 475,
+        "capacityNonzeroPredictionRows": 475,
+        "nativeNonzeroRows": 475
+      }
+    },
+    "01": {
+      "all": {
+        "rows": 512,
+        "errorImproved": 367,
+        "errorWorsened": 56,
+        "errorTied": 89,
+        "currentNonzeroPredictionRows": 512,
+        "capacityNonzeroPredictionRows": 512,
+        "nativeNonzeroRows": 512
+      },
+      "learned": {
+        "rows": 510,
+        "errorImproved": 367,
+        "errorWorsened": 56,
+        "errorTied": 87,
+        "currentNonzeroPredictionRows": 510,
+        "capacityNonzeroPredictionRows": 510,
+        "nativeNonzeroRows": 510
+      },
+      "active": {
+        "rows": 37,
+        "errorImproved": 17,
+        "errorWorsened": 1,
+        "errorTied": 19,
+        "currentNonzeroPredictionRows": 37,
+        "capacityNonzeroPredictionRows": 37,
+        "nativeNonzeroRows": 37
+      },
+      "padding": {
+        "rows": 475,
+        "errorImproved": 350,
+        "errorWorsened": 55,
+        "errorTied": 70,
+        "currentNonzeroPredictionRows": 475,
+        "capacityNonzeroPredictionRows": 475,
+        "nativeNonzeroRows": 475
+      }
+    }
+  },
+  "pairRows": {
+    "A/B": {
+      "all": {
+        "rows": 512,
+        "errorImproved": 324,
+        "errorWorsened": 3,
+        "errorTied": 185,
+        "currentNonzeroPredictionRows": 480,
+        "capacityNonzeroPredictionRows": 307,
+        "nativeNonzeroRows": 504
+      },
+      "unchangedLearned": {
+        "rows": 509,
+        "errorImproved": 323,
+        "errorWorsened": 3,
+        "errorTied": 183,
+        "currentNonzeroPredictionRows": 479,
+        "capacityNonzeroPredictionRows": 306,
+        "nativeNonzeroRows": 503,
+        "responseOnlyMinimumRelativeRMSFromPublishedNorms": 0.7746544679187616
+      },
+      "unchangedActive": {
+        "rows": 32,
+        "errorImproved": 1,
+        "errorWorsened": 0,
+        "errorTied": 31,
+        "currentNonzeroPredictionRows": 2,
+        "capacityNonzeroPredictionRows": 1,
+        "nativeNonzeroRows": 26,
+        "responseOnlyMinimumRelativeRMSFromPublishedNorms": 0.22653569030508813
+      },
+      "unchangedPadding": {
+        "rows": 477,
+        "errorImproved": 322,
+        "errorWorsened": 3,
+        "errorTied": 152,
+        "currentNonzeroPredictionRows": 477,
+        "capacityNonzeroPredictionRows": 305,
+        "nativeNonzeroRows": 477,
+        "responseOnlyMinimumRelativeRMSFromPublishedNorms": 0.7924773469405771
+      }
+    },
+    "00/10": {
+      "all": {
+        "rows": 512,
+        "errorImproved": 144,
+        "errorWorsened": 0,
+        "errorTied": 368,
+        "currentNonzeroPredictionRows": 3,
+        "capacityNonzeroPredictionRows": 145,
+        "nativeNonzeroRows": 504
+      },
+      "unchangedLearned": {
+        "rows": 508,
+        "errorImproved": 142,
+        "errorWorsened": 0,
+        "errorTied": 366,
+        "currentNonzeroPredictionRows": 1,
+        "capacityNonzeroPredictionRows": 143,
+        "nativeNonzeroRows": 502,
+        "responseOnlyMinimumRelativeRMSFromPublishedNorms": 0.9571463894637051
+      },
+      "unchangedActive": {
+        "rows": 33,
+        "errorImproved": 1,
+        "errorWorsened": 0,
+        "errorTied": 32,
+        "currentNonzeroPredictionRows": 1,
+        "capacityNonzeroPredictionRows": 2,
+        "nativeNonzeroRows": 27,
+        "responseOnlyMinimumRelativeRMSFromPublishedNorms": 0.7821830392130067
+      },
+      "unchangedPadding": {
+        "rows": 475,
+        "errorImproved": 141,
+        "errorWorsened": 0,
+        "errorTied": 334,
+        "currentNonzeroPredictionRows": 0,
+        "capacityNonzeroPredictionRows": 141,
+        "nativeNonzeroRows": 475,
+        "responseOnlyMinimumRelativeRMSFromPublishedNorms": 0.9638549489660839
+      }
+    },
+    "01/11": {
+      "all": {
+        "rows": 512,
+        "errorImproved": 147,
+        "errorWorsened": 0,
+        "errorTied": 365,
+        "currentNonzeroPredictionRows": 3,
+        "capacityNonzeroPredictionRows": 148,
+        "nativeNonzeroRows": 504
+      },
+      "unchangedLearned": {
+        "rows": 508,
+        "errorImproved": 145,
+        "errorWorsened": 0,
+        "errorTied": 363,
+        "currentNonzeroPredictionRows": 1,
+        "capacityNonzeroPredictionRows": 146,
+        "nativeNonzeroRows": 502,
+        "responseOnlyMinimumRelativeRMSFromPublishedNorms": 0.9586648312643499
+      },
+      "unchangedActive": {
+        "rows": 33,
+        "errorImproved": 1,
+        "errorWorsened": 0,
+        "errorTied": 32,
+        "currentNonzeroPredictionRows": 1,
+        "capacityNonzeroPredictionRows": 2,
+        "nativeNonzeroRows": 27,
+        "responseOnlyMinimumRelativeRMSFromPublishedNorms": 0.7825990668772749
+      },
+      "unchangedPadding": {
+        "rows": 475,
+        "errorImproved": 144,
+        "errorWorsened": 0,
+        "errorTied": 331,
+        "currentNonzeroPredictionRows": 0,
+        "capacityNonzeroPredictionRows": 144,
+        "nativeNonzeroRows": 475,
+        "responseOnlyMinimumRelativeRMSFromPublishedNorms": 0.9657607125746586
+      }
+    }
+  },
+  "independentTermFloors": {
+    "discovery": {
+      "independentEndpointMinimumNormalizedSquaredError": 0.3456499059925592,
+      "independentResponseMinimumNormalizedSquaredError": 0.524092152435517,
+      "endpointMinimumNormalizedRMS": 0.5879199826443724,
+      "responseMinimumNormalizedRMS": 0.7239420919075759
+    },
+    "reusedTransfer": {
+      "independentEndpointMinimumNormalizedSquaredError": 0.3538861635768924,
+      "independentResponseMinimumNormalizedSquaredError": 0.8075902767030403,
+      "endpointMinimumNormalizedRMS": 0.5948833192962233,
+      "responseMinimumNormalizedRMS": 0.8986602676779698
+    }
+  },
+  "labelChoices": {
+    "discovery": {
+      "changedLabels": 1200,
+      "currentAtomOccupancy": {
+        "0": 8,
+        "1": 246,
+        "2": 8,
+        "3": 63,
+        "4": 161,
+        "5": 8,
+        "6": 8,
+        "7": 41,
+        "8": 1497
+      },
+      "capacityAtomOccupancy": {
+        "0": 2,
+        "1": 476,
+        "2": 126,
+        "3": 454,
+        "4": 310,
+        "5": 2,
+        "6": 12,
+        "7": 16,
+        "8": 642
+      },
+      "componentsWithExactMinimumTies": 0,
+      "smallestPositiveDistinctGap": 1.3351865505172077e-8,
+      "largestNextDistinctGap": 0.008483585122336943
+    },
+    "reusedTransfer": {
+      "changedLabels": 840,
+      "currentAtomOccupancy": {
+        "5": 4,
+        "6": 2,
+        "7": 24,
+        "8": 990
+      },
+      "capacityAtomOccupancy": {
+        "0": 4,
+        "1": 219,
+        "2": 106,
+        "3": 349,
+        "4": 153,
+        "5": 2,
+        "6": 4,
+        "7": 8,
+        "8": 175
+      },
+      "componentsWithExactMinimumTies": 0,
+      "smallestPositiveDistinctGap": 4.055251062360342e-9,
+      "largestNextDistinctGap": 0.014262662045434079
+    }
+  }
+}

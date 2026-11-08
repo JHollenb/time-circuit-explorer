@@ -1,0 +1,223 @@
+{
+  "backend": "numpy-FP64-finite-enumeration;torch-CPU-canonical-custody-only",
+  "cases": [
+    "A",
+    "B",
+    "00",
+    "10",
+    "01",
+    "11"
+  ],
+  "device": "cpu",
+  "discovery": [
+    "A",
+    "B",
+    "00",
+    "10"
+  ],
+  "dtype": "BF16-states-FP32-atoms-FP64-scores",
+  "finitePolicy": "Each slot: Python binary64 H+atom, round to IEEE FP32 RNE, then BF16 RNE; slot0 before slot1.",
+  "needs": {
+    "cpu": true
+  },
+  "parent": {
+    "custody": {
+      "declared": {
+        "sha256": "a4d82bf59e9520f70c5f14a80155023a0da2f80e7de6322fdb6a3050fd83121f",
+        "size_bytes": 104923
+      },
+      "executed": {
+        "host": "beast",
+        "reported_ts": 1794140021.922402,
+        "sha256": "a4d82bf59e9520f70c5f14a80155023a0da2f80e7de6322fdb6a3050fd83121f",
+        "size_bytes": 104923
+      },
+      "required": true,
+      "sealed": {
+        "sealed_ts": 1794140021.8201392,
+        "sha256": "a4d82bf59e9520f70c5f14a80155023a0da2f80e7de6322fdb6a3050fd83121f",
+        "size_bytes": 104923
+      }
+    },
+    "jobID": "job-4a3243572a50",
+    "publicationSHA256": "0a3a231312dc619a3266a7b15b6e35640b95616575765176c9fed10f041b5d54",
+    "requestSHA256": "fd34eaf901c407fc1b097854f3b07d21d017d46ea7a68ad63c0db8fd26fee33e"
+  },
+  "physicalWork": {
+    "endpointNormProducts": 70502400,
+    "evaluatedChoices": 123615,
+    "finiteOptionCoordinateAdditions": 70502400,
+    "finiteOptionStates": 27540,
+    "groups": 2,
+    "newImages": 0,
+    "newNeuralEvaluations": 0,
+    "newOriginalLinears": 0,
+    "pairedComponents": 1525,
+    "pairedResponseNormProducts": 316224000,
+    "rows": 3060,
+    "unpairedComponents": 10
+  },
+  "protocol": "Fixed own slot0/nine atoms;target-assisted81/9 enumeration. No fit,resolver,native projection,image,teacher/data/family expansion. One CPU1host-local lease,no retries. Historical neural work paid.",
+  "remoteInputs": {
+    "/mnt/hdd8tb/mrun-work/job-394733a01129/arrays/full/A/H1.npy": {
+      "bytes": 2621568,
+      "sha256": "8cf31183b6fe7548a82dcf714ce934288b0d5460925302c29b0ffe571433b44e"
+    },
+    "/mnt/hdd8tb/mrun-work/job-394733a01129/arrays/full/B/H1.npy": {
+      "bytes": 2621568,
+      "sha256": "6ce4553427b02dafc0619a427667d2a0e0898630c1bbc3d7fe1f936837ac767b"
+    },
+    "/mnt/hdd8tb/mrun-work/job-4a3243572a50/accepted/prefix.bf16": {
+      "bytes": 10240,
+      "sha256": "f72ee1fd1fc36a11a300d65087c36d6c58f7d0dbbf3941ede765da352fc6ca2a"
+    },
+    "/mnt/hdd8tb/mrun-work/job-4a3243572a50/accepted/program.json": {
+      "bytes": 12512,
+      "sha256": "1b04d028cb027b2b477902acc1f7407ecf91f37192046280dde863513b4e5eb1"
+    },
+    "/mnt/hdd8tb/mrun-work/job-4a3243572a50/accepted/slot0.f32": {
+      "bytes": 143360,
+      "sha256": "eb412dc82f31605f325275de0151637e52ed757d48e2d8bd4186d84932b29630"
+    },
+    "/mnt/hdd8tb/mrun-work/job-4a3243572a50/accepted/slot1.f32": {
+      "bytes": 92160,
+      "sha256": "1494cf5541186c8eea278a10af938dc8331709a8b0b502794193932842c0a86b"
+    },
+    "/mnt/hdd8tb/mrun-work/job-4a3243572a50/final/00-H0.bf16": {
+      "bytes": 2621440,
+      "sha256": "5a72949e226c6622d2c322935938ba75c5aa086c8617c5fd62cb707538c313e5"
+    },
+    "/mnt/hdd8tb/mrun-work/job-4a3243572a50/final/01-H0.bf16": {
+      "bytes": 2621440,
+      "sha256": "bf6547fe4cdda3aae623deebf7d094633a858656b4490bc9b64e27fa29eaaf72"
+    },
+    "/mnt/hdd8tb/mrun-work/job-4a3243572a50/final/10-H0.bf16": {
+      "bytes": 2621440,
+      "sha256": "9bd455cd5853e93b1e6e2ef3f80051bfc04f391869dd595bd5e0c93d3a9cf034"
+    },
+    "/mnt/hdd8tb/mrun-work/job-4a3243572a50/final/11-H0.bf16": {
+      "bytes": 2621440,
+      "sha256": "5c77dfbeb2d4ae5c0d49a41283238399162a504238eeedd938d47c7d9e89ce90"
+    },
+    "/mnt/hdd8tb/mrun-work/job-4a3243572a50/final/A-H0.bf16": {
+      "bytes": 2621440,
+      "sha256": "f6caa79353ba235cb222fc1c72e5c975b0d9723174d248dd9ea150e7d3e2478b"
+    },
+    "/mnt/hdd8tb/mrun-work/job-4a3243572a50/final/B-H0.bf16": {
+      "bytes": 2621440,
+      "sha256": "0af985bc9f0dd2a1af2eec03980dfa92e1933893bdbb3738689b2e82af687116"
+    },
+    "/mnt/hdd8tb/mrun-work/job-4a3243572a50/final/candidate-00.bf16": {
+      "bytes": 2621440,
+      "sha256": "7e62dda8d34e0e7bb47195e84e97c84bcddeb7d0be721a000f702259f60b0fd3"
+    },
+    "/mnt/hdd8tb/mrun-work/job-4a3243572a50/final/candidate-01.bf16": {
+      "bytes": 2621440,
+      "sha256": "2db14a80ef1f6e354cc716d14c2cb4e73c730765b9894df551521168d334cd01"
+    },
+    "/mnt/hdd8tb/mrun-work/job-4a3243572a50/final/candidate-10.bf16": {
+      "bytes": 2621440,
+      "sha256": "f4ca2f1d19df29013d30675501a720ebda7350a0d1a7688ecde528e4c89167b4"
+    },
+    "/mnt/hdd8tb/mrun-work/job-4a3243572a50/final/candidate-11.bf16": {
+      "bytes": 2621440,
+      "sha256": "75bb4577a75d39f8d74ba95357c9bc7b07a88b05ccf5c943ab8fcec68af79558"
+    },
+    "/mnt/hdd8tb/mrun-work/job-4a3243572a50/final/candidate-A.bf16": {
+      "bytes": 2621440,
+      "sha256": "5355b49cdf9ec749d8605299e22e4bbb079cb1633ce0ef658bbcd2cdeca4ec26"
+    },
+    "/mnt/hdd8tb/mrun-work/job-4a3243572a50/final/candidate-B.bf16": {
+      "bytes": 2621440,
+      "sha256": "fc72d47a211bcba8dd6a6dcf61d80975f9f7f9a1ada595975b4bcc0049adcc0b"
+    },
+    "/mnt/hdd8tb/mrun-work/job-b69f30eff20a/arrays/full/00/H1.npy": {
+      "bytes": 2621568,
+      "sha256": "aaf42795a349751bc431562234c06c42f345b93621947cc352a73d81a0033f66"
+    },
+    "/mnt/hdd8tb/mrun-work/job-b69f30eff20a/arrays/full/01/H1.npy": {
+      "bytes": 2621568,
+      "sha256": "48e25777086da0160abee9786fa87c418ea6d4e6dde8e3fa97f6e151a33c8b52"
+    },
+    "/mnt/hdd8tb/mrun-work/job-b69f30eff20a/arrays/full/10/H1.npy": {
+      "bytes": 2621568,
+      "sha256": "54abe527a00e44f5e8c27c39eef83fe6a79e9c06176238f2c58ee28fd88ddd4f"
+    },
+    "/mnt/hdd8tb/mrun-work/job-b69f30eff20a/arrays/full/11/H1.npy": {
+      "bytes": 2621568,
+      "sha256": "9a43f047e7bd9d9841c77231821b95008677873fe247d2ed5e00689d30e43954"
+    }
+  },
+  "requestSHA256": "5c3bbda3e20425e4809f00a71356993f832150c1d84a54469a4e47b29f6e2b0d",
+  "retainedMetadata": [
+    "request.json",
+    "frozen-plan.md",
+    "family-plan.md",
+    "parent-programs.json",
+    "parent-final-serving.json",
+    "parent-parent-inputs.json",
+    "parent-fit.json",
+    "parent-publication.json",
+    "parent-report.json",
+    "parent-request.json"
+  ],
+  "scheduling_contract": {
+    "additional_scheduler_submissions": 0,
+    "branchIsolation": "Two canonical CPU capacity Acts. Scalar choices are arithmetic inside each Act,not scheduler work items. No child leases,model or GPU.",
+    "branch_execution": "in_process",
+    "checkpoint_policy": "one outer Saturn worker lease; all logical branches and analysis remain in process",
+    "collection_policy": "direct_job_only",
+    "control_plane": "mrun_outer_lease",
+    "data_plane": "resident_worker",
+    "execution_model": "finite_local_program",
+    "exhaustiveScalarChoices": 123615,
+    "interactive": false,
+    "lease_scope": "entire-worker",
+    "logical_branches": 2,
+    "logical_checkpoint_replays": 0,
+    "logical_operations": 2,
+    "max_local_work_items": 256,
+    "max_mrun_submissions": 1,
+    "model_free": true,
+    "model_loads": 0,
+    "mrun_retry_policy": "none_for_finite_lease",
+    "per_branch_mrun_submissions": 0,
+    "per_transition_mrun_submissions": 0,
+    "replay_policy": "none_source_only",
+    "schema": "saturn-single-lease-scheduling-contract-v1",
+    "task_family": "analysis"
+  },
+  "schema": "tce-fixed-writer-capacity-v1",
+  "sourceHashes": {
+    "contextual_writer_program.py": "30fbd807de9ce8e9f14c9f06981036efe6b99760e34f0d4eb9328ade4ead896b",
+    "contextual_writer_saturn_init.py": "0b4063f8755a49201d726dd04de0578aa1bd9f31d9f900f9885d3a1e58e5fc8f",
+    "contextual_writer_worker.py": "c370e93a070c1773b3459877f56fd87f8343b83c1549110c5aec2bf2daeb980a",
+    "family-plan.md": "1f6d4c0c5401e06e12f4eacb9cf64304e94c594fab9335480b4895fbeb7e7175",
+    "finite_writer_capacity.py": "f0d2d9babac2578d49ae2a6b8a8a137d890ebc7375c0ae2767479340eaca5f92",
+    "finite_writer_capacity_study.py": "85d37d65cfe41b55464684d6b40dcae82a19c93646603d42185b938508b1a479",
+    "finite_writer_capacity_worker.py": "9774e8ffe65f7304f1943b186ed5f83dd230452604206773c0574a51847124c5",
+    "frozen-plan.md": "56a147a228e34d27bf9c10b3653acc740de5e1e90887f63a934022954f68e1f3",
+    "parent-final-serving.json": "824b4b785a087be45fe211809b4e176b192248279d50b7b2ec43969df64f5dcf",
+    "parent-fit.json": "314ca6a9744d883f7bd5fb0071a4a3bae664d5060513dcc77df714840f913c72",
+    "parent-parent-inputs.json": "6b7026624254d757259f199eb46c98de843edba32ce2ed6d20a9da8ab2065e7a",
+    "parent-programs.json": "8683093aa4fce709e3ecedc84ae371b6f8c8cb69f8014a8630b4a725cab72108",
+    "parent-publication.json": "0a3a231312dc619a3266a7b15b6e35640b95616575765176c9fed10f041b5d54",
+    "parent-report.json": "287cd7def75b84ba85fbedf3524929942341445224b53465d89deb47265f1817",
+    "parent-request.json": "bac1428e29d7e7020128a92eec4b7323946ac8d8b0d3dca9c4b62046eee3d80c",
+    "publish_contextual_writer.py": "680cb16cccc8a57461c859662dd1fefb4a6c5655293ce21f7fa0d76bc1176b00",
+    "publish_contrast_writer.py": "6e0c0c13cfb6a98cf3e1c9dc5f6c63dd09647af2ff5ec32b12e06ae8acaa4b41",
+    "publish_finite_writer_capacity.py": "b3ee28782776bec86ca5923776f95a2efe1713ce2cfe6a5387f039dcf80966cb",
+    "saturn/__init__.py": "0b4063f8755a49201d726dd04de0578aa1bd9f31d9f900f9885d3a1e58e5fc8f",
+    "saturn/tensor_hash.py": "5e37cc1e34f4b49c97f026b861af8cbb8d47697931743b19e3fd506c9932f3f4",
+    "saturn/titan.py": "42b55ccb9185e87357bb40ad9b3162d1fe3407148f7087c52b18e2920e8eef01",
+    "template_cofactor_program.py": "f090088033dfd0ff09f521f51d5fbf482f26591c0c9e95f1b9bc19ea57b33f53",
+    "test_finite_writer_capacity.py": "3d8ce3279ec8a0ddff2f491965d0bceee20abfebe9cf135205b396743fc1051e",
+    "token_history_address.py": "b17d386c4059384faccc6461620bbabf4bee02503aa20831e41ff9a9a729ab29",
+    "token_history_process.py": "33092498786e550451e9c751f5a23983af645582e82199b7cc834e3aa7d2a385"
+  },
+  "timeoutSeconds": 900,
+  "transfer": [
+    "01",
+    "11"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": "tce-finite-capacity-evidence-instrument-v1",
+  "jobID": "job-459c49bb9118",
+  "target": "docs/results/finite-writer-capacity",
+  "runObserved": {
+    "exitCode": 2,
+    "instrument_status": "evidence-incomplete-empty-target",
+    "watchStreams": 0,
+    "watchRecords": 0,
+    "recognizedClaimReceipts": 0,
+    "xrefFilesScanned": 17,
+    "xrefAddresses": 0,
+    "xrefReferences": 0,
+    "stepErrors": 0
+  },
+  "verify": {
+    "exitCode": 2,
+    "result": {
+      "broken": true,
+      "command": "verify",
+      "exit_code": 2,
+      "findings": 0,
+      "instrument_status": "evidence-incomplete-empty-target",
+      "pack": "saturn-evidence-pack-v1",
+      "schema": "saturn-evidence-pipeline-v1",
+      "steps": {
+        "claims": {
+          "registry": "artifacts/finite-writer-capacity-cycle106-index/claims-auto.jsonl",
+          "status": "skipped"
+        },
+        "target_scope": {
+          "claims": [],
+          "claims_current": 0,
+          "claims_drifted": 0,
+          "claims_missing": 0,
+          "instrument_status": "evidence-incomplete-empty-target",
+          "receipts": 0,
+          "status": "incomplete",
+          "streams": 0
+        },
+        "watch": {
+          "ledgers": [],
+          "ledgers_broken": 0,
+          "ledgers_checked": 0,
+          "ledgers_missing": 0,
+          "ledgers_missing_expected": 0,
+          "status": "ok"
+        }
+      },
+      "target": "/Users/jakeholl/domains/time-circuit-explorer/docs/results/finite-writer-capacity"
+    }
+  },
+  "interpretation": "The standard instrument does not discover this publication's gzip JSONL or gate-free Frame/Act schema. Zero fires/recognized claims is not scientific evidence of success or absence. The frozen dedicated publisher supplies separate complete component, observation, pooled-scalar, typed ABI and byte-custody checks; it does not independently replay vector norms.",
+  "isolation": "Watch/claims/xref paths scoped to ignored artifacts/finite-writer-capacity-cycle106-index; no global claims registry or historical receipts modified.",
+  "existingRequestsUpvoted": [
+    {
+      "path": "../saturn/request.jsonl",
+      "handle": "evidence-plane-gzip-jsonl-streams",
+      "previousVoteCount": 1,
+      "voteCount": 2
+    },
+    {
+      "path": "../saturn/request.jsonl",
+      "handle": "evidence-observation-frame-act-ingest",
+      "previousVoteCount": 15,
+      "voteCount": 16
+    }
+  ],
+  "scope": "One standard post-job run and one read-only verification. No tensors, model or images read; no scientific assay or mechanics rerun."
+}

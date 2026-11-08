@@ -1,0 +1,217 @@
+{
+  "custody": {
+    "declared": {
+      "sha256": "a5ca38a33a152e3c63fdcb5d4dd0cc83286a0b0e4b351e62944d330c69c788cf",
+      "size_bytes": 137815
+    },
+    "executed": {
+      "host": "beast",
+      "reported_ts": 1794145382.060859,
+      "sha256": "a5ca38a33a152e3c63fdcb5d4dd0cc83286a0b0e4b351e62944d330c69c788cf",
+      "size_bytes": 137815
+    },
+    "required": true,
+    "sealed": {
+      "sealed_ts": 1794145381.912168,
+      "sha256": "a5ca38a33a152e3c63fdcb5d4dd0cc83286a0b0e4b351e62944d330c69c788cf",
+      "size_bytes": 137815
+    }
+  },
+  "inventory": {
+    "bytes": 5566936,
+    "files": {
+      "analysis-seal.json": {
+        "bytes": 475,
+        "sha256": "1474b6d996e0795cb9862839ba4314a3c88195134950bb7e3734382dd057a110"
+      },
+      "array-manifest.json": {
+        "bytes": 12105,
+        "sha256": "8b79be7adb9c6391e6ded191f5e1e667cabfa51f8ffedc40172b206796bd94f4"
+      },
+      "components.jsonl.gz": {
+        "bytes": 2539833,
+        "sha256": "a5a343491b0a58f393869bf65470865ad0d093f15f6f1e0b98525b8c26c38e28"
+      },
+      "family-plan.md": {
+        "bytes": 7055,
+        "sha256": "1f6d4c0c5401e06e12f4eacb9cf64304e94c594fab9335480b4895fbeb7e7175"
+      },
+      "frozen-plan.md": {
+        "bytes": 5839,
+        "sha256": "56a147a228e34d27bf9c10b3653acc740de5e1e90887f63a934022954f68e1f3"
+      },
+      "input-reconstruction.json": {
+        "bytes": 181807,
+        "sha256": "6edc94d565a69ec33ab99aade34d1e8ef0c0ed70dc4c6e2cdab001be054d0c1d"
+      },
+      "observations.jsonl.gz": {
+        "bytes": 449521,
+        "sha256": "c9a159b7a2b06e4b8049a128e2f808a1a2b90a6e4023c979e1e36d12263b6bea"
+      },
+      "parent-final-serving.json": {
+        "bytes": 1083892,
+        "sha256": "824b4b785a087be45fe211809b4e176b192248279d50b7b2ec43969df64f5dcf"
+      },
+      "parent-fit.json": {
+        "bytes": 5655,
+        "sha256": "314ca6a9744d883f7bd5fb0071a4a3bae664d5060513dcc77df714840f913c72"
+      },
+      "parent-parent-inputs.json": {
+        "bytes": 14842,
+        "sha256": "6b7026624254d757259f199eb46c98de843edba32ce2ed6d20a9da8ab2065e7a"
+      },
+      "parent-programs.json": {
+        "bytes": 63075,
+        "sha256": "8683093aa4fce709e3ecedc84ae371b6f8c8cb69f8014a8630b4a725cab72108"
+      },
+      "parent-publication.json": {
+        "bytes": 42201,
+        "sha256": "0a3a231312dc619a3266a7b15b6e35640b95616575765176c9fed10f041b5d54"
+      },
+      "parent-report.json": {
+        "bytes": 235528,
+        "sha256": "287cd7def75b84ba85fbedf3524929942341445224b53465d89deb47265f1817"
+      },
+      "parent-request.json": {
+        "bytes": 6402,
+        "sha256": "bac1428e29d7e7020128a92eec4b7323946ac8d8b0d3dca9c4b62046eee3d80c"
+      },
+      "report.json": {
+        "bytes": 530014,
+        "sha256": "01cf0b5ef3e08f2cdb4a7becad5dce1da6585e71eff841797832b865fc9fe835"
+      },
+      "request.json": {
+        "bytes": 10021,
+        "sha256": "0617a7ac46af12b909c492a1636db1bc308a5689dcffbe88d5d663e16c4bc119"
+      },
+      "typed-capacity.json": {
+        "bytes": 378671,
+        "sha256": "7a866fd4cf6ea9d406c8acfc1a8ff3c09ec9f8869ecd71e2f5972afb917c22ac"
+      }
+    }
+  },
+  "jobID": "job-459c49bb9118",
+  "result": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-459c49bb9118",
+      "job_log": {
+        "bytes": 320,
+        "sha256": "0a14c3f9d52fee114a39191a19ffa31ee2740bb85cb6e145e909f19248930fbf"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-459c49bb9118/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "CUDA_VISIBLE_DEVICES=",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "python",
+        "-u",
+        "finite_writer_capacity_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-459c49bb9118",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-459c49bb9118/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794145382.0512784
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794145382.0859587
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794145382.0936239
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794145382.1221135
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794145393.3729532
+        },
+        {
+          "name": "finished",
+          "ts": 1794145393.3952596
+        }
+      ]
+    },
+    "elapsed_s": 12.05,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "a5ca38a33a152e3c63fdcb5d4dd0cc83286a0b0e4b351e62944d330c69c788cf",
+      "size_bytes": 137815
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 1309.1,
+    "peak_vram_mb": 0.0,
+    "returncode": 0,
+    "status": "ok"
+  }
+}
