@@ -1,0 +1,41 @@
+{
+  "schema": "tce-current-row-output-phase-account-v1",
+  "schedulerSeconds": 25.81,
+  "producerWallSecondsAfterImports": 9.223534698132426,
+  "setupSecondsAfterImports": 6.004178534261882,
+  "CPUSecondsAfterImports": 7.122865560999999,
+  "producerTimings": [
+    {
+      "instrumentedSynchronizedSecondsBeforeFinalFingerprints": 2.7231279900297523,
+      "scope": "QR/output/gate/add plus internal operation/join fingerprints; excludes setup, outer/final hashes and retention.",
+      "stage": "rowOutput"
+    }
+  ],
+  "QRSeconds": [
+    0.4435367230325937,
+    0.0027354322373867035
+  ],
+  "analysisSecondsAfterImports": 6.8666217820718884,
+  "work": {
+    "additionalQRApproxFLOPs": 95070890.66666667,
+    "assayMACs": 12733906944,
+    "candidate": {
+      "compressedOriginalOut": 9663676416,
+      "projectInputs": 2415919104,
+      "reconstructUpdate": 603979776
+    },
+    "candidateMACs": 12683575296,
+    "diagnostic": {
+      "basisGram": 25165824,
+      "coordinateReconstruction": 25165824
+    },
+    "diagnosticMACs": 50331648,
+    "inherited82GateUpFormationMACs": 19327352832,
+    "matched82FullOutMACs": 57982058496,
+    "prospectiveComposedProducerMACs": 32010928128,
+    "scope": "Actual new output/diagnostic products separate. Composed count retains historical82 GU formation, is prospective and excludes paid upstream source/attention and QR/scalar/data work."
+  },
+  "peakCUDAAllocatedBytes": 997990400,
+  "peakCUDAReservedBytes": 1279262720,
+  "scope": "Measured scopes are not additive matched serving components. Original map/source formation, first-use QR, copies, casts, hashes, retention and post-exit analysis remain paid. No speedup measured."
+}

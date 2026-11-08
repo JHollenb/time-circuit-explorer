@@ -1,0 +1,20 @@
+{
+  "schema": "tce-current-row-output-saturn-verify-v1",
+  "args": [
+    "/Users/jakeholl/domains/common/.venv/bin/python",
+    "../saturn/src/saturn/evidence_pipeline.py",
+    "verify",
+    "artifacts/current-row-output-v1/result",
+    "--watch-root",
+    "artifacts/current-row-output-v1/saturn-watch",
+    "--registry",
+    "artifacts/current-row-output-v1/claims-auto.jsonl",
+    "--results-root",
+    "artifacts/current-row-output-v1/result",
+    "--json"
+  ],
+  "returncode": 0,
+  "seconds": 0.10633799992501736,
+  "stdout": "saturn-verify-stdout.txt",
+  "stderr": "saturn-verify-stderr.txt"
+}

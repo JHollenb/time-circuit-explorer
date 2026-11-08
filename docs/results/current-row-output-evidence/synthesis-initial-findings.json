@@ -1,0 +1,18 @@
+{
+  "schema": "tce-current-row-output-synthesis-initial-findings-v1",
+  "advisor": "/root/astra_zero_forward_advisor",
+  "model": "gpt-6-astra",
+  "decision": "two-terminology-corrections-required",
+  "reviewedSHA256": {
+    "docs/current-row-output.md": "bc8f8db8a974faf8faece30494670cb7ce54228472b1a9b5dea4c54dcf0676a5",
+    "docs/plans/fixed-row-projection-diagnostic.md": "b0d628699ab5abf47abbcb201472c71d551b67b6953289ac974e3a3447262ad1",
+    "docs/results/current-row-output-evidence/README.md": "51c79d2a5b735f8ba1dcd21d8fc024f3b9191af3d60dfc5abd0de2b1a387d6f0",
+    "../obsidian/blog/2026-11-06-004204-toward-arbitrary-prompt-images-without-neural-evaluations.md": "a74fdf09619b8bdefdc56d223ebff4b119fcbebf3bf5930f59cdbe2415929d5d"
+  },
+  "findings": [
+    "Replace native BF16 accumulation phrasing: BF16 operands/output and reduction settings are recorded, but accumulator implementation/precision is not independently attested.",
+    "Article title should name the combined same-coordinate output cut rather than prematurely isolate row-space escape.",
+    "Math, four projector products, saved gate/commit remainders, denominators, signed accounts, costs and original-goal scope otherwise consistent. Evidence README approved."
+  ],
+  "scope": "Exact four synthesis files, latest blog paragraph and Cycle83 section. No models/tests/scientific arrays/edits/full newest-post survey; fullsurvey/storage due84 before staging."
+}

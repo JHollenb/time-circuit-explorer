@@ -1,0 +1,30 @@
+{
+  "schema": "tce-current-row-output-advisor-result-v1",
+  "advisor": "/root/astra_zero_forward_advisor",
+  "model": "gpt-6-astra",
+  "decision": "mechanically-coherent-unfavorable-row-space-result-no-publication-blocker",
+  "reviewedSHA256": {
+    "docs/results/current-row-output/report.json": "82a4253c22cf3f53c486d8f94099357ecd129da5aa2776422b05a4ce00c14d25",
+    "docs/results/current-row-output/execution.json": "057c7c4033407a91a65c3b089315c1c90a21030bcccfd8f91d5bb6b28f395ade",
+    "docs/results/current-row-output/analysis-execution.json": "aa6dec155698ea338a2ae718be82ff3c8aedbd98c168d0d2d7317090e5377a6b",
+    "docs/results/current-row-output/candidate-seal.json": "d0cb2e0ac9c37d3e896d86629d2c996fc79d534190aa37def9adab7294f30111",
+    "docs/results/current-row-output/producer-exit.json": "d196785d2a56df51717fe0355021fd4ec0a8e0e5e17b4054c1779187ce64ab6b",
+    "docs/results/current-row-output/retained-array-verification.json": "da746ebcfb1f0dea5c9b93ced8ae0bda7bb562a2033e430643f434630628bf6d",
+    "docs/results/current-row-output/scheduler.json": "8e4c14fa08fbe4d22a095f00da4f6b331fa7e9829ce80fc4d0289551bfb0a3e1",
+    "docs/results/current-row-output/provenance.json": "6eff885f2251b808dfc0fe00d6290fe96d86d51dc4e40e5992875f665fd50bfa",
+    "docs/results/current-row-output/observations.jsonl.gz": "fed29f1f333d626a5bf6392b316238983d0a0d90b916c8186b334a9151291b39"
+  },
+  "findings": [
+    "All17 staged source pins match; actual BF16 input join, quarantine, observed exit and six products are coherent.",
+    "Actual increment error18.003%->30.936%; centered23.879%->41.446%;1534 rows worsen. Only global rows27/1524 improve; row33 reaches222.23% relative error and loses to no-update.",
+    "Signed cross term offers modest cancellation. Almost all new-cut delta energy is within-stream variation; QR mechanics do not establish output sufficiency."
+  ],
+  "nextCut": {
+    "status": "written-unexecuted",
+    "law": "P=fl64(U fl64(U.T Y82)); a=Y82-P; b=P-Y83_FP64; c=Y83_FP64-Y83_BF16; independently saved gate/commit remainders",
+    "matrixMACs": 1207959552,
+    "newOriginalMapApplications": 0,
+    "scope": "Fixed retained U, no new QR/basis/fit/consumer/candidate/image. b is combined finite-policy/reassociation discrepancy. Numerical U is approximately orthonormal; ideal best-subspace identities separate."
+  },
+  "scope": "Read-only exact source, metadata and complete lossless scalar rows; no advisor model/test/scientific-array execution, edits or repeat remote byte audit. Full newest-post/storage survey remains due84 before science staging."
+}

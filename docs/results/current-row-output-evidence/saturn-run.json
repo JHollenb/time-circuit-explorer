@@ -1,0 +1,25 @@
+{
+  "schema": "tce-current-row-output-saturn-run-v1",
+  "args": [
+    "/Users/jakeholl/domains/common/.venv/bin/python",
+    "../saturn/src/saturn/evidence_pipeline.py",
+    "run",
+    "artifacts/current-row-output-v1/result",
+    "--watch-root",
+    "artifacts/current-row-output-v1/saturn-watch",
+    "--registry",
+    "artifacts/current-row-output-v1/claims-auto.jsonl",
+    "--results-root",
+    "artifacts/current-row-output-v1/result",
+    "--xref-db",
+    "artifacts/current-row-output-v1/xref.sqlite",
+    "--xref-root",
+    "artifacts/current-row-output-v1/result",
+    "--json"
+  ],
+  "returncode": 0,
+  "seconds": 0.11749837500974536,
+  "stdout": "saturn-run-stdout.txt",
+  "stderr": "saturn-run-stderr.txt",
+  "scope": "Actual standard source-entry sweep on finished raw compact result; watch/registry/xref outside target."
+}

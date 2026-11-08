@@ -1,0 +1,113 @@
+{
+  "analyzerPID": 1138231,
+  "candidateSealSHA256": "d0cb2e0ac9c37d3e896d86629d2c996fc79d534190aa37def9adab7294f30111",
+  "diagnosticMatrixMACs": 50331648,
+  "numericalProfile": {
+    "bf16ReducedPrecisionReduction": true,
+    "cublasWorkspaceConfig": ":4096:8",
+    "cudaMatmulTF32": false,
+    "cudnnBenchmark": false,
+    "cudnnDeterministic": true,
+    "cudnnTF32": false,
+    "deterministicAlgorithms": true,
+    "float32MatmulPrecision": "highest",
+    "threads": 4
+  },
+  "peakCUDAAllocatedBytes": 40632320,
+  "peakCUDAReservedBytes": 56623104,
+  "producerExitSHA256": "d196785d2a56df51717fe0355021fd4ec0a8e0e5e17b4054c1779187ce64ab6b",
+  "products": [
+    {
+      "device": "cuda",
+      "dtype": "torch.float64",
+      "leftPayloadSHA256": "8763785fd15047e2fd644d08207652caf87033e613e4f91353499da892d9d482",
+      "leftShape": [
+        512,
+        128
+      ],
+      "name": "coordinateReconstruction0",
+      "nominalMACs": 8388608,
+      "operator": "torch.matmul",
+      "outputPayloadSHA256": "1691c842a82fb6597d588b0beddd63474246eb87d7409a4b0e3b30254e44a5f6",
+      "outputShape": [
+        512,
+        128
+      ],
+      "rightPayloadSHA256": "60278b30ab2f2becfd47333ee90124f06234a45ba1cbbc2b38b99c7c39e26696",
+      "rightShape": [
+        128,
+        128
+      ],
+      "synchronizedSecondsBeforeFingerprints": 0.00882532075047493
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float64",
+      "leftPayloadSHA256": "44e91410bbf54896f7921c03ca53850b148c485b27bc8d9fd4c25dd5029c6630",
+      "leftShape": [
+        128,
+        512
+      ],
+      "name": "basisGram0",
+      "nominalMACs": 8388608,
+      "operator": "torch.matmul",
+      "outputPayloadSHA256": "7afccf7fed38c12ed93aff78dd7c5d25ab9038fb13d16f629b2d987d26b66c67",
+      "outputShape": [
+        128,
+        128
+      ],
+      "rightPayloadSHA256": "8763785fd15047e2fd644d08207652caf87033e613e4f91353499da892d9d482",
+      "rightShape": [
+        512,
+        128
+      ],
+      "synchronizedSecondsBeforeFingerprints": 0.00018674880266189575
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float64",
+      "leftPayloadSHA256": "d1300429e39c45b1b2b713252ebf279fc597739ba38c1ca7a45c9d048084dddf",
+      "leftShape": [
+        1024,
+        128
+      ],
+      "name": "coordinateReconstruction1",
+      "nominalMACs": 16777216,
+      "operator": "torch.matmul",
+      "outputPayloadSHA256": "f0aa3c78ce6b3f7dda72613f90b85b1e864fc45098111258e95cb3210b259f99",
+      "outputShape": [
+        1024,
+        128
+      ],
+      "rightPayloadSHA256": "2cee5814b944a375ec274e045de2971d72b61e46355ae8b80d0e9a4287118e14",
+      "rightShape": [
+        128,
+        128
+      ],
+      "synchronizedSecondsBeforeFingerprints": 0.00013498077169060707
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float64",
+      "leftPayloadSHA256": "41549ec6a77f201eeaa34bba015d9d39ddadcbbf02e99cd36e5ce1b5cdebe097",
+      "leftShape": [
+        128,
+        1024
+      ],
+      "name": "basisGram1",
+      "nominalMACs": 16777216,
+      "operator": "torch.matmul",
+      "outputPayloadSHA256": "ac66f1d58519173e5c63b9ac1cd7d58903aaa2e5adcb82632838b9e07a6711e7",
+      "outputShape": [
+        128,
+        128
+      ],
+      "rightPayloadSHA256": "d1300429e39c45b1b2b713252ebf279fc597739ba38c1ca7a45c9d048084dddf",
+      "rightShape": [
+        1024,
+        128
+      ],
+      "synchronizedSecondsBeforeFingerprints": 0.002758525311946869
+    }
+  ]
+}
