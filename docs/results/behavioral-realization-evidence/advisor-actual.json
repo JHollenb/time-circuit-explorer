@@ -1,0 +1,55 @@
+{
+  "schema": "tce-astra-actual-result-review-v1",
+  "cycle": 92,
+  "advisor": "astra_zero_forward_advisor",
+  "model": "gpt-6-astra",
+  "recordedAt": "2026-11-08T04:58:23.110826+00:00",
+  "status": "bounded-result-supported-no-material-defect",
+  "sourceHashes": {
+    "generator/behavioral_realization.py": "d8934cc8eb785dfc3b84629b1668d082239e2a504e3dbe812ffedbf63cc03e64",
+    "generator/behavioral_program.py": "14dd19de72b85dfdd814c7060c0ac5196eaf8af506a66f287550178b7e3466c4",
+    "generator/behavioral_realization_study.py": "7efb6555c9553d86e11768d075702562bead03b3c019a3c28484dd23006c8c1b",
+    "generator/test_behavioral_realization.py": "97946d23e702a4c573440890a6bc6d856859e8f3e05f1a742cdcdca0081265ef"
+  },
+  "artifactHashes": {
+    "report.json": "38ae1da917a87f5867651652fa1f4cdbb9a66fbc01902f7164bfb9d0fb2547b5",
+    "realization.json": "a67bef8dd993328e1774041f9658296d5491a381ead39fe5d2a6bce36c6ba82d",
+    "certificate.json": "ad0db39e893732c08c892d0af3a284e9cf8bc5b215b2ccddf91595f8c8ac4661",
+    "program.json": "db7873c59a050c7fc122442c5398e6bfc0d41726ec503a4b68dc5346af040a11",
+    "serving.json": "019247a9505d8763130e2af83b90c6e47cd81f146a0d68eec6bd82f8d9f8f2b9",
+    "discovery-queries.json": "7bd02ebe4b3e419fd144bc66c6aa99d8d86b166c5c77e81615da38410fef0d5f",
+    "shallow-queries.json": "a685f5d9a12d4f1a8396d86d8f4334c71601078c2033d25ebc687081d99922c1",
+    "shallow-certificate.json": "d352d3ae1b8778a7fc64919dc70a7695cd0931b12fafaff813f434c22dcafb32",
+    "gauge-realization.json": "81825262d95557db9535930052e86568f92f27c6030b7044a3f86f507ad0a9b3",
+    "gauge-certificate.json": "3a8bff487c863b04cc09f61bad98c75001f89d34cd16c3f3325e5f4ded836bdc",
+    "gauge-lowering.json": "ccf411ea4fd69b5504b55bf83eee9edc5eb9721a667a6e7f62d9bababc443dc8",
+    "prediction-seal.json": "55beff15cc7cda3f4edb67ac1ac29db00df5983cdf98e34a271d834f4716662b",
+    "files.json": "6c0fedf37d7a4148da194184d2ee8e751086a04e38331d68354709147aeecc0e"
+  },
+  "reviewedResults": {
+    "validServingRowsExact": 35,
+    "invalidSymbolExplicitlyRefused": 1,
+    "rawManifestMembersVerified": 16,
+    "initialEquality": true,
+    "transitionEqualities": 8,
+    "outputEqualities": 4,
+    "exactGlobalRank": 3
+  },
+  "summary": [
+    "Global rank/all-word authority: nonsingular minor plus complete initial/output/all-edge certificate for supplied machine. Finite serving rows exercise implementation only.",
+    "Shallow current-output representation fails four edges; shortest suffix a, first whole-word failure ba.",
+    "Fixed gauge remains closed and exceeds this copy/constant ISA, without proving absence of another program.",
+    "All source behavior/complete graph supplied. No image semantics, contextual prompt state or pixel program.",
+    "Accounting and source/seal/program/request/child-exit identities agree. Exact elimination/graph/Python/guards/JSON additional. Two persistent registers do not describe total Python memory. Single-run timings establish no native-model comparison."
+  ],
+  "nextRecommendation": {
+    "kind": "certificate-authority-analysis",
+    "status": "written-unexecuted",
+    "plan": "docs/plans/behavioral-certificate-authority.md",
+    "question": "What extra justified hypothesis class, equivalence authority or source-derived commuting proof excludes transcript-indistinguishable alternatives?",
+    "mathematicalWitnessProposal": "g(w)=1 for w=a^33, f(w) otherwise; agrees with recorded queries/serving words but differs at an unqueried word. Different source does not invalidate the original complete-graph certificate.",
+    "nextFullReviewBeforeImplementation": 93,
+    "noNativeImageHankelCampaign": true
+  },
+  "reviewOperations": "File hashing and JSON/scalar inspection only; no tests, models, scientific arrays, edits or jobs."
+}

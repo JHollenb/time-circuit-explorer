@@ -1,0 +1,470 @@
+{
+  "schema": "tce-exact-behavioral-compiler-study-v1",
+  "cycle": 92,
+  "sourceID": "d846ea7d0df84ad0478fa86ef84c62d9700b7082923cc27a700c5bb6f4529b68",
+  "discovery": {
+    "requests": 83,
+    "physicalQueries": 33,
+    "cacheHits": 50,
+    "physicalSourceTransitions": 108,
+    "maximumPhysicalQueryLength": 5
+  },
+  "panelRank": 3,
+  "globalRankProof": {
+    "sampledMinorLowerBound": 3,
+    "completeRealizationUpperBound": 3,
+    "authority": "Exact nonsingular minor plus complete finite-graph commuting/output/initial certificate"
+  },
+  "completeCertificateStatus": "proved-on-supplied-finite-domain",
+  "sourceStates": 4,
+  "stateSymbolEqualities": 8,
+  "outputEqualities": 4,
+  "initialEquality": true,
+  "programPersistentRegisters": 2,
+  "shallowRank": 1,
+  "shallowStatus": "counterexample",
+  "shallowFirstWholeWordFailure": [
+    "b",
+    "a"
+  ],
+  "shallowOracleAccounting": {
+    "requests": 13,
+    "physicalQueries": 9,
+    "cacheHits": 4,
+    "physicalSourceTransitions": 16,
+    "maximumPhysicalQueryLength": 3
+  },
+  "gaugeClosure": "proved-on-supplied-finite-domain",
+  "gaugeLoweringStatus": "not-lowerable-by-copy-constant-in-these-coordinates",
+  "orderContrast": {
+    "ab": [
+      0
+    ],
+    "ba": [
+      1
+    ]
+  },
+  "sourceExecutionAccounting": {
+    "outputCallsWholeStudyBeforeReport": 170,
+    "symbolTransitionsWholeStudyBeforeReport": 636,
+    "exactRationalLinearMACsBeforeReport": 940,
+    "scope": "Main-process supplied-source queries and row-times-matrix loops only. Static graph traversal, exact elimination/pivots, JSON, guards and child dispatch additional."
+  },
+  "servingRows": [
+    {
+      "id": "word-empty",
+      "expected": [
+        0
+      ],
+      "actual": [
+        0
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-a",
+      "expected": [
+        0
+      ],
+      "actual": [
+        0
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-b",
+      "expected": [
+        0
+      ],
+      "actual": [
+        0
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-aa",
+      "expected": [
+        0
+      ],
+      "actual": [
+        0
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-ab",
+      "expected": [
+        0
+      ],
+      "actual": [
+        0
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-ba",
+      "expected": [
+        1
+      ],
+      "actual": [
+        1
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-bb",
+      "expected": [
+        1
+      ],
+      "actual": [
+        1
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-aaa",
+      "expected": [
+        0
+      ],
+      "actual": [
+        0
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-aab",
+      "expected": [
+        0
+      ],
+      "actual": [
+        0
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-aba",
+      "expected": [
+        1
+      ],
+      "actual": [
+        1
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-abb",
+      "expected": [
+        1
+      ],
+      "actual": [
+        1
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-baa",
+      "expected": [
+        0
+      ],
+      "actual": [
+        0
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-bab",
+      "expected": [
+        0
+      ],
+      "actual": [
+        0
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-bba",
+      "expected": [
+        1
+      ],
+      "actual": [
+        1
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-bbb",
+      "expected": [
+        1
+      ],
+      "actual": [
+        1
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-aaaa",
+      "expected": [
+        0
+      ],
+      "actual": [
+        0
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-aaab",
+      "expected": [
+        0
+      ],
+      "actual": [
+        0
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-aaba",
+      "expected": [
+        1
+      ],
+      "actual": [
+        1
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-aabb",
+      "expected": [
+        1
+      ],
+      "actual": [
+        1
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-abaa",
+      "expected": [
+        0
+      ],
+      "actual": [
+        0
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-abab",
+      "expected": [
+        0
+      ],
+      "actual": [
+        0
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-abba",
+      "expected": [
+        1
+      ],
+      "actual": [
+        1
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-abbb",
+      "expected": [
+        1
+      ],
+      "actual": [
+        1
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-baaa",
+      "expected": [
+        0
+      ],
+      "actual": [
+        0
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-baab",
+      "expected": [
+        0
+      ],
+      "actual": [
+        0
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-baba",
+      "expected": [
+        1
+      ],
+      "actual": [
+        1
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-babb",
+      "expected": [
+        1
+      ],
+      "actual": [
+        1
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-bbaa",
+      "expected": [
+        0
+      ],
+      "actual": [
+        0
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-bbab",
+      "expected": [
+        0
+      ],
+      "actual": [
+        0
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-bbba",
+      "expected": [
+        1
+      ],
+      "actual": [
+        1
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "word-bbbb",
+      "expected": [
+        1
+      ],
+      "actual": [
+        1
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "long-0",
+      "expected": [
+        0
+      ],
+      "actual": [
+        0
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "long-1",
+      "expected": [
+        1
+      ],
+      "actual": [
+        1
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "long-2",
+      "expected": [
+        0
+      ],
+      "actual": [
+        0
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "long-3",
+      "expected": [
+        1
+      ],
+      "actual": [
+        1
+      ],
+      "equal": true,
+      "status": "in-domain"
+    },
+    {
+      "id": "invalid",
+      "expected": null,
+      "actual": null,
+      "equal": true,
+      "status": "explicit-invalid-symbol-control"
+    }
+  ],
+  "servingSHA256": "019247a9505d8763130e2af83b90c6e47cd81f146a0d68eec6bd82f8d9f8f2b9",
+  "predictionSealSHA256": "55beff15cc7cda3f4edb67ac1ac29db00df5983cdf98e34a271d834f4716662b",
+  "guardCanaries": 12,
+  "coefficientMatrixEvaluationsInCopyChild": 0,
+  "importGuardCanaries": 2,
+  "sourceOracleCallsInCopyChild": 0,
+  "neuralRuntimeImportsInCopyChild": [],
+  "newNeuralModelEvaluations": 0,
+  "newImages": 0,
+  "scientificArrayReads": 0,
+  "nominalDenseCoefficientMACsPerSymbol": 9,
+  "nominalDenseCoefficientMACsPerReadout": 3,
+  "sourceHashes": {
+    "behavioral_realization_study.py": "7efb6555c9553d86e11768d075702562bead03b3c019a3c28484dd23006c8c1b",
+    "behavioral_program.py": "14dd19de72b85dfdd814c7060c0ac5196eaf8af506a66f287550178b7e3466c4",
+    "behavioral_realization.py": "d8934cc8eb785dfc3b84629b1668d082239e2a504e3dbe812ffedbf63cc03e64"
+  },
+  "elapsedSecondsBeforeReportWrite": 0.03652095911093056,
+  "mechanics_status": "complete",
+  "instrument_status": "supplied finite-machine exact compiler mechanics",
+  "trend_status": "Future tests recover ordered memory; exact copy lowering removes coefficient arithmetic for this supplied toy",
+  "terminal_status": "bounded finite-machine closure only; arbitrary-prompt image goal unestablished",
+  "scope": "All source behavior, alphabet and scalar readout supplied. Complete proof applies only to this finite graph. No learned image state, raw-prompt interpreter, general pixel producer or neural-model compression established."
+}

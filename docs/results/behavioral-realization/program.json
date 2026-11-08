@@ -1,0 +1,48 @@
+{
+  "status": "lowered",
+  "schema": "tce-byte-copy-program-v1",
+  "sourceID": "d846ea7d0df84ad0478fa86ef84c62d9700b7082923cc27a700c5bb6f4529b68",
+  "realizationID": "5c49f7d534b1e8dfb472126b308319673c3d93817fbd3d62ca8f5a0a250960e1",
+  "alphabet": [
+    "a",
+    "b"
+  ],
+  "persistentRegisters": 2,
+  "initial": [
+    0,
+    0
+  ],
+  "eliminatedConstants": {
+    "2": 1
+  },
+  "transitions": {
+    "a": [
+      {
+        "op": "copy",
+        "register": 1
+      },
+      {
+        "op": "constant",
+        "value": 0
+      }
+    ],
+    "b": [
+      {
+        "op": "copy",
+        "register": 1
+      },
+      {
+        "op": "constant",
+        "value": 1
+      }
+    ]
+  },
+  "readout": [
+    {
+      "op": "copy",
+      "register": 0
+    }
+  ],
+  "updatePolicy": "all reads from the complete old state",
+  "scope": "Supplied finite-machine mechanics only; scalar output, no text interpretation or image renderer."
+}

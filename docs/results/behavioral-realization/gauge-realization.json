@@ -1,0 +1,129 @@
+{
+  "schema": "tce-exact-behavioral-realization-v1",
+  "alphabet": [
+    "a",
+    "b"
+  ],
+  "rank": 3,
+  "outputWidth": 1,
+  "panelShape": [
+    7,
+    7
+  ],
+  "prefixBasis": [
+    [],
+    [
+      "b"
+    ],
+    [
+      "b",
+      "a"
+    ]
+  ],
+  "futureTests": [
+    {
+      "suffix": [],
+      "channel": 0
+    },
+    {
+      "suffix": [
+        "a"
+      ],
+      "channel": 0
+    },
+    {
+      "suffix": [
+        "b",
+        "a"
+      ],
+      "channel": 0
+    }
+  ],
+  "basis": [
+    [
+      "0",
+      "0",
+      "1"
+    ],
+    [
+      "0",
+      "1",
+      "1"
+    ],
+    [
+      "1",
+      "0",
+      "1"
+    ]
+  ],
+  "coordinateTransform": [
+    [
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "1",
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1"
+    ]
+  ],
+  "initial": [
+    "0",
+    "0",
+    "1"
+  ],
+  "operators": {
+    "a": [
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "b": [
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "1",
+        "1"
+      ]
+    ]
+  },
+  "readout": [
+    [
+      "1"
+    ],
+    [
+      "-1"
+    ],
+    [
+      "0"
+    ]
+  ],
+  "scope": "Finite-panel exact-rank hypothesis; no global closure follows from compilation alone. One declared exact coordinate change; no gauge search."
+}

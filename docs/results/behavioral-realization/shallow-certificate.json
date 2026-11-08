@@ -1,0 +1,263 @@
+{
+  "schema": "tce-complete-finite-closure-v1",
+  "sourceID": "d846ea7d0df84ad0478fa86ef84c62d9700b7082923cc27a700c5bb6f4529b68",
+  "realizationID": "57192d60cf9ec256767ddcf513ca6824e109b4a9bec47c434794aa0ec4b5affa",
+  "reachableStates": [
+    "00",
+    "01",
+    "10",
+    "11"
+  ],
+  "sourceCodes": {
+    "00": [
+      "0"
+    ],
+    "01": [
+      "0"
+    ],
+    "10": [
+      "1"
+    ],
+    "11": [
+      "1"
+    ]
+  },
+  "initialEqual": true,
+  "transitions": [
+    {
+      "state": "00",
+      "symbol": "a",
+      "predicted": [
+        "0"
+      ],
+      "target": [
+        "0"
+      ],
+      "equal": true
+    },
+    {
+      "state": "00",
+      "symbol": "b",
+      "predicted": [
+        "0"
+      ],
+      "target": [
+        "0"
+      ],
+      "equal": true
+    },
+    {
+      "state": "01",
+      "symbol": "a",
+      "predicted": [
+        "0"
+      ],
+      "target": [
+        "1"
+      ],
+      "equal": false
+    },
+    {
+      "state": "01",
+      "symbol": "b",
+      "predicted": [
+        "0"
+      ],
+      "target": [
+        "1"
+      ],
+      "equal": false
+    },
+    {
+      "state": "10",
+      "symbol": "a",
+      "predicted": [
+        "0"
+      ],
+      "target": [
+        "0"
+      ],
+      "equal": true
+    },
+    {
+      "state": "10",
+      "symbol": "b",
+      "predicted": [
+        "0"
+      ],
+      "target": [
+        "0"
+      ],
+      "equal": true
+    },
+    {
+      "state": "11",
+      "symbol": "a",
+      "predicted": [
+        "0"
+      ],
+      "target": [
+        "1"
+      ],
+      "equal": false
+    },
+    {
+      "state": "11",
+      "symbol": "b",
+      "predicted": [
+        "0"
+      ],
+      "target": [
+        "1"
+      ],
+      "equal": false
+    }
+  ],
+  "outputs": [
+    {
+      "state": "00",
+      "predicted": [
+        "0"
+      ],
+      "target": [
+        0
+      ],
+      "equal": true
+    },
+    {
+      "state": "01",
+      "predicted": [
+        "0"
+      ],
+      "target": [
+        0
+      ],
+      "equal": true
+    },
+    {
+      "state": "10",
+      "predicted": [
+        "1"
+      ],
+      "target": [
+        1
+      ],
+      "equal": true
+    },
+    {
+      "state": "11",
+      "predicted": [
+        "1"
+      ],
+      "target": [
+        1
+      ],
+      "equal": true
+    }
+  ],
+  "mergedFutureWitnesses": [
+    {
+      "states": [
+        "00",
+        "01"
+      ],
+      "prefixes": [
+        [],
+        [
+          "b"
+        ]
+      ],
+      "sharedCode": [
+        "0"
+      ],
+      "suffix": [
+        "a"
+      ],
+      "leftOutput": [
+        0
+      ],
+      "rightOutput": [
+        1
+      ],
+      "visitedPairs": 2
+    },
+    {
+      "states": [
+        "10",
+        "11"
+      ],
+      "prefixes": [
+        [
+          "b",
+          "a"
+        ],
+        [
+          "b",
+          "b"
+        ]
+      ],
+      "sharedCode": [
+        "1"
+      ],
+      "suffix": [
+        "a"
+      ],
+      "leftOutput": [
+        0
+      ],
+      "rightOutput": [
+        1
+      ],
+      "visitedPairs": 2
+    }
+  ],
+  "counterexamples": [
+    {
+      "state": "01",
+      "symbol": "a",
+      "predicted": [
+        "0"
+      ],
+      "target": [
+        "1"
+      ],
+      "equal": false
+    },
+    {
+      "state": "01",
+      "symbol": "b",
+      "predicted": [
+        "0"
+      ],
+      "target": [
+        "1"
+      ],
+      "equal": false
+    },
+    {
+      "state": "11",
+      "symbol": "a",
+      "predicted": [
+        "0"
+      ],
+      "target": [
+        "1"
+      ],
+      "equal": false
+    },
+    {
+      "state": "11",
+      "symbol": "b",
+      "predicted": [
+        "0"
+      ],
+      "target": [
+        "1"
+      ],
+      "equal": false
+    }
+  ],
+  "closureStatus": "counterexample",
+  "authority": "Exact initial/output/all reachable state-symbol commuting equalities; induction over every finite word.",
+  "scope": "Complete only for the supplied finite source graph; no neural or image-model closure certificate."
+}

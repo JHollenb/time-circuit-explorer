@@ -1,0 +1,26 @@
+{
+  "schema": "tce-astra-source-review-v1",
+  "cycle": 92,
+  "advisor": "astra_zero_forward_advisor",
+  "model": "gpt-6-astra",
+  "recordedAt": "2026-11-08T04:58:23.110826+00:00",
+  "status": "bounded-proceed",
+  "sourceHashes": {
+    "generator/behavioral_realization.py": "d8934cc8eb785dfc3b84629b1668d082239e2a504e3dbe812ffedbf63cc03e64",
+    "generator/behavioral_program.py": "14dd19de72b85dfdd814c7060c0ac5196eaf8af506a66f287550178b7e3466c4",
+    "generator/behavioral_realization_study.py": "7efb6555c9553d86e11768d075702562bead03b3c019a3c28484dd23006c8c1b",
+    "generator/test_behavioral_realization.py": "97946d23e702a4c573440890a6bc6d856859e8f3e05f1a742cdcdca0081265ef"
+  },
+  "reviewedPreRetentionStudySHA256": "cd1ea4feae264b1e7b96b43e1233c57bad6de353b8d774626acdef9e8bb9df93",
+  "summary": [
+    "Correct exact panel pivots and row-vector inverse convention. Global upper bound belongs to separate all-reachable finite graph certificate.",
+    "Constant elimination checks invariance; next-state reads complete old state; rank-zero handling consistent.",
+    "Fresh child contains no coefficient evaluator or oracle; fixture/import canaries and post-exit pre-comparison seal preserve intended boundary.",
+    "Complete physical query answers retained. Gaussian elimination, graph, guard and serialization work additional to rational linear MACs.",
+    "Inspect every scored serving row before claiming fresh-child parity. Root did so after execution.",
+    "Successful mechanics do not supply model-derived contextual prompt interpretation or a general pixel program."
+  ],
+  "timingScope": "Source review completed concurrently with the tiny local run; no pre-execution admission claim.",
+  "reviewOperations": "Read four files only; no tests, executions or edits.",
+  "guardScope": "Audited trusted-code controls; not adversarial sandbox or hardware counter."
+}

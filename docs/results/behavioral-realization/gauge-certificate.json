@@ -1,0 +1,203 @@
+{
+  "schema": "tce-complete-finite-closure-v1",
+  "sourceID": "d846ea7d0df84ad0478fa86ef84c62d9700b7082923cc27a700c5bb6f4529b68",
+  "realizationID": "33eefc9d26f283fd4bc614def000048bff30bcf8c7fd5c81498f2f2a49dd4015",
+  "reachableStates": [
+    "00",
+    "01",
+    "10",
+    "11"
+  ],
+  "sourceCodes": {
+    "00": [
+      "0",
+      "0",
+      "1"
+    ],
+    "01": [
+      "1",
+      "1",
+      "1"
+    ],
+    "10": [
+      "1",
+      "0",
+      "1"
+    ],
+    "11": [
+      "2",
+      "1",
+      "1"
+    ]
+  },
+  "initialEqual": true,
+  "transitions": [
+    {
+      "state": "00",
+      "symbol": "a",
+      "predicted": [
+        "0",
+        "0",
+        "1"
+      ],
+      "target": [
+        "0",
+        "0",
+        "1"
+      ],
+      "equal": true
+    },
+    {
+      "state": "00",
+      "symbol": "b",
+      "predicted": [
+        "1",
+        "1",
+        "1"
+      ],
+      "target": [
+        "1",
+        "1",
+        "1"
+      ],
+      "equal": true
+    },
+    {
+      "state": "01",
+      "symbol": "a",
+      "predicted": [
+        "1",
+        "0",
+        "1"
+      ],
+      "target": [
+        "1",
+        "0",
+        "1"
+      ],
+      "equal": true
+    },
+    {
+      "state": "01",
+      "symbol": "b",
+      "predicted": [
+        "2",
+        "1",
+        "1"
+      ],
+      "target": [
+        "2",
+        "1",
+        "1"
+      ],
+      "equal": true
+    },
+    {
+      "state": "10",
+      "symbol": "a",
+      "predicted": [
+        "0",
+        "0",
+        "1"
+      ],
+      "target": [
+        "0",
+        "0",
+        "1"
+      ],
+      "equal": true
+    },
+    {
+      "state": "10",
+      "symbol": "b",
+      "predicted": [
+        "1",
+        "1",
+        "1"
+      ],
+      "target": [
+        "1",
+        "1",
+        "1"
+      ],
+      "equal": true
+    },
+    {
+      "state": "11",
+      "symbol": "a",
+      "predicted": [
+        "1",
+        "0",
+        "1"
+      ],
+      "target": [
+        "1",
+        "0",
+        "1"
+      ],
+      "equal": true
+    },
+    {
+      "state": "11",
+      "symbol": "b",
+      "predicted": [
+        "2",
+        "1",
+        "1"
+      ],
+      "target": [
+        "2",
+        "1",
+        "1"
+      ],
+      "equal": true
+    }
+  ],
+  "outputs": [
+    {
+      "state": "00",
+      "predicted": [
+        "0"
+      ],
+      "target": [
+        0
+      ],
+      "equal": true
+    },
+    {
+      "state": "01",
+      "predicted": [
+        "0"
+      ],
+      "target": [
+        0
+      ],
+      "equal": true
+    },
+    {
+      "state": "10",
+      "predicted": [
+        "1"
+      ],
+      "target": [
+        1
+      ],
+      "equal": true
+    },
+    {
+      "state": "11",
+      "predicted": [
+        "1"
+      ],
+      "target": [
+        1
+      ],
+      "equal": true
+    }
+  ],
+  "mergedFutureWitnesses": [],
+  "counterexamples": [],
+  "closureStatus": "proved-on-supplied-finite-domain",
+  "authority": "Exact initial/output/all reachable state-symbol commuting equalities; induction over every finite word.",
+  "scope": "Complete only for the supplied finite source graph; no neural or image-model closure certificate."
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "tce-supplied-two-bit-machine-v1",
+  "alphabet": [
+    "a",
+    "b"
+  ],
+  "initial": "00",
+  "states": {
+    "00": {
+      "output": [
+        0
+      ],
+      "next": {
+        "a": "00",
+        "b": "01"
+      }
+    },
+    "01": {
+      "output": [
+        0
+      ],
+      "next": {
+        "a": "10",
+        "b": "11"
+      }
+    },
+    "10": {
+      "output": [
+        1
+      ],
+      "next": {
+        "a": "00",
+        "b": "01"
+      }
+    },
+    "11": {
+      "output": [
+        1
+      ],
+      "next": {
+        "a": "10",
+        "b": "11"
+      }
+    }
+  },
+  "interface": "Input is an ordered symbol list; empty word is identity; unknown symbols refused. Readout once at the end; no EOS symbol.",
+  "scope": "Completely supplied finite toy. No natural-language parser, model-derived semantics, image renderer or pixel claim."
+}
