@@ -1,0 +1,242 @@
+{
+  "analysisFiveDecodedCornersBytes": 188743680,
+  "analysisOutputLogicalBytes": 114032640,
+  "analysisSixCenteredVectorsBytes": 226492416,
+  "analysisSixVectorsBytes": 226492416,
+  "closestWholeProducerMeasurement": {
+    "artifacts": {
+      "bytes_sent": 0,
+      "errors": [],
+      "job_id": "job-64601318e329",
+      "job_log": {
+        "bytes": 578,
+        "sha256": "ae20fe7c1799e61e6f98c9dcf4fb3ca1d46ffc750ca5e9165b55bb11c2536250"
+      },
+      "job_status": "ok",
+      "ledger": null,
+      "objects": 0,
+      "objects_already_remote": 0,
+      "objects_pending": 0,
+      "objects_uploaded": 0,
+      "rows": 0,
+      "runs_prefix": "s3://mrun/runs/job-64601318e329/",
+      "schema": "mrun.run-artifacts-v1",
+      "status": "complete",
+      "store": {
+        "bucket": "mrun",
+        "cas_prefix": "cas/",
+        "endpoint": "http://192.168.68.202:9030",
+        "runs_prefix": "runs/"
+      }
+    },
+    "diagnostics": {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONPATH=",
+        "UV_CACHE_DIR=/mnt/hdd8tb/mdb/uv-cache",
+        "UV_LINK_MODE=symlink",
+        "TORCH_HOME=/mnt/hdd8tb/mdb/torch",
+        "TMPDIR=/mnt/hdd8tb/mdb/tmp",
+        "CUDA_CACHE_PATH=/mnt/hdd8tb/mdb/cuda-cache",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "DIFFUSERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=4",
+        "OPENBLAS_NUM_THREADS=4",
+        "MKL_NUM_THREADS=4",
+        "CUBLAS_WORKSPACE_CONFIG=:4096:8",
+        "uv",
+        "run",
+        "--no-project",
+        "--offline",
+        "--python",
+        "3.14.6",
+        "--with",
+        "torch==2.13.0",
+        "--with",
+        "diffusers==0.39.0",
+        "--with",
+        "transformers==5.14.1",
+        "--with",
+        "accelerate==1.14.0",
+        "--with",
+        "safetensors>=0.5",
+        "--with",
+        "numpy>=2.0",
+        "--with",
+        "psutil>=5.9",
+        "--with",
+        "pillow>=10.0",
+        "--with",
+        "pyyaml>=6.0",
+        "--with",
+        "./mdb_runtime-0.1.0-py3-none-any.whl",
+        "--with",
+        "./saturn_pub-0.4.1-py3-none-any.whl",
+        "--with",
+        "./mrun_pub-0.1.2-py3-none-any.whl",
+        "python",
+        "-u",
+        "own_successor_study.py",
+        "execute",
+        "."
+      ],
+      "cwd": "/mnt/hdd8tb/mrun-work/job-64601318e329",
+      "log_path": "/mnt/hdd8tb/mrun-work/job-64601318e329/job.log",
+      "phase": "finished",
+      "phases": [
+        {
+          "name": "payload.prepare",
+          "ts": 1794103890.2462878
+        },
+        {
+          "name": "dispatch.vram_guard",
+          "ts": 1794103890.2866342
+        },
+        {
+          "name": "process.launch",
+          "ts": 1794103890.3142707
+        },
+        {
+          "name": "process.monitor",
+          "ts": 1794103890.3408504
+        },
+        {
+          "name": "process.finalize",
+          "ts": 1794103943.5148816
+        },
+        {
+          "name": "finished",
+          "ts": 1794103943.5309641
+        }
+      ]
+    },
+    "elapsed_s": 53.43,
+    "executed_payload": {
+      "host": "beast",
+      "sha256": "99a6723dab581c39c98ea2ca4450c6cd6e15397ea6f1551440f1cccaa66e5d02",
+      "size_bytes": 3189925
+    },
+    "failure": null,
+    "os_memory_limit_backend": "linux-cgroup-v2",
+    "payload_sandbox": {
+      "requested": false
+    },
+    "payload_sandbox_backend": "off",
+    "peak_rss_mb": 2717.2,
+    "peak_vram_mb": 2554.0,
+    "returncode": 0,
+    "status": "ok"
+  },
+  "extraAnalyzerTemporaryAllowanceBytes": 1073741824,
+  "extraProducerTemporaryAllowanceBytes": 1073741824,
+  "intentFirstFullModelPreview": {
+    "beast": {
+      "artifact_id": null,
+      "artifact_kind": null,
+      "artifact_locator": {},
+      "artifact_mount": null,
+      "backend": "diffusers",
+      "device": "cuda",
+      "dtype": "bfloat16",
+      "engine_options": {},
+      "engine_profile": "backend:diffusers",
+      "est_ram_mb": 8410.0,
+      "est_vram_mb": 40212.3,
+      "est_wall_s": null,
+      "max_batch": 64,
+      "model": "flux2-klein-4b-distilled",
+      "ram_limit_mb": 52809.0,
+      "reasons": [
+        "host=beast ram=66513MB cuda=True mps=False ane=False task=forward",
+        "dtype=bfloat16 (explicit opt-in \u2014 not the canonical path)",
+        "device=cuda (explicit)",
+        "TF32 forced OFF on cuda (breaches 4-decimal stats)",
+        "backend=diffusers (explicit)",
+        "max_batch=64 threads=4 ram_limit=52809MB (est x 1.3)",
+        "selector fallback: explicit backend has no matching local artifact",
+        "science runtime envelope: diffusers"
+      ],
+      "threads": 4,
+      "weights_gb": 9.6
+    }
+  },
+  "liveHost": {
+    "active_jobs": [],
+    "admission": {
+      "enabled": true,
+      "max_concurrent": null,
+      "ram_margin_mb": 3325.6384512,
+      "vram_margin_mb": 819.0
+    },
+    "name": "beast",
+    "ram_total_mb": 66512.769024,
+    "telemetry": {
+      "cpu_pct": 0.1,
+      "disk_free_gb": 68.418945024,
+      "disks": [
+        {
+          "free_gb": 68.4,
+          "mount": "/",
+          "total_gb": 235.5
+        },
+        {
+          "free_gb": 310.8,
+          "mount": "/mnt/big",
+          "total_gb": 1999.6
+        },
+        {
+          "free_gb": 2461.6,
+          "mount": "/mnt/hdd8tb",
+          "total_gb": 7937.3
+        },
+        {
+          "free_gb": 533.9,
+          "mount": "/mnt/ssd1tb",
+          "total_gb": 1000.0
+        },
+        {
+          "free_gb": 197.4,
+          "mount": "/mnt/usb-storage",
+          "total_gb": 502.9
+        },
+        {
+          "free_gb": 0.4,
+          "mount": "/recovery",
+          "total_gb": 4.3
+        }
+      ],
+      "host": "beast",
+      "load1": 0.2197265625,
+      "mem_pressure": null,
+      "pressure_external": false,
+      "ram_free_mb": 51873.882112,
+      "running": [],
+      "swap_total_mb": 21474.299904,
+      "swap_used_mb": 5110.51776,
+      "top_external": [
+        {
+          "name": "bitcoind",
+          "pid": 3661879,
+          "rss_mb": 16228
+        },
+        {
+          "name": "mount.ntfs-3g",
+          "pid": 815703,
+          "rss_mb": 1330
+        }
+      ],
+      "ts": 1794105250.620253,
+      "vram_free_mb": 15943.0
+    },
+    "vram_total_mb": 16376.0
+  },
+  "originalParameterBF16Bytes": 245367296,
+  "physicalQKVBF16Bytes": 56623104,
+  "producerOutputLogicalBytes": 608065536,
+  "scope": "Same measured87 producer2717.2MB RSS/2554sampleddevice,not future peak guarantee. NewCPU scalar analyzer adds decoded5corners/sixvectors/centeredcopies and4retainedfields. GPU producer unchanged608MBlogical outputs/245MBmaps/56.6MBphysicalQKV/twopadded85MBbuffers/promotedGU453MBfreedbeforeout302MB. Allocation-derived6144RAM4096VRAM4CPU4GBdisk120est360cap retained;actualadmission/peaks authoritative. Fullmodel fit inapplicable."
+}

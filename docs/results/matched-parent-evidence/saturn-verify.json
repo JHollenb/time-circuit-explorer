@@ -1,0 +1,20 @@
+{
+  "command": [
+    "../common/bin/common",
+    "exec",
+    "python",
+    "../saturn/src/saturn/evidence_pipeline.py",
+    "verify",
+    "artifacts/matched-parent-v1/result",
+    "--watch-root",
+    "artifacts/matched-parent-v1/saturn-watch",
+    "--registry",
+    "artifacts/matched-parent-v1/claims-auto.jsonl",
+    "--results-root",
+    "artifacts/matched-parent-v1/result",
+    "--json"
+  ],
+  "returncode": 0,
+  "elapsedSeconds": 0.25515733286738396,
+  "scope": "Actual raw-result applied instrument,0clean3findings2broken,not model quality."
+}

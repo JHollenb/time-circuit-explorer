@@ -1,0 +1,13 @@
+{
+  "schema": "tce-matched-parent-whitespace-diagnostic-v1",
+  "command": [
+    "git",
+    "diff",
+    "--cached",
+    "--check"
+  ],
+  "returncode": 2,
+  "stdout": "docs/results/matched-parent/frozen-plan.md:36: new blank line at EOF.\n",
+  "stderr": "",
+  "interpretation": "Only immutable executed copy of the historical87frozen plan retains its original extra EOF blank line. Preserve source/custody identity;no authored source or numerical correctness issue."
+}
