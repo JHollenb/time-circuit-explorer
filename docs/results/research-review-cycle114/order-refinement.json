@@ -1,0 +1,346 @@
+{
+  "schema": "tce-causal-order-public-mechanics-v1",
+  "inputSHA256": {
+    "programs.json": "d1134a1b7e549a56d1e3e54fd09d47ef6963f9011c88efbd6081bab4ccd1768a",
+    "final-serving.json": "c6eb72f4d3cc3cd1fbb952d5b242fa2a99cb5696b76859aac65fd18577ced265"
+  },
+  "literals": [
+    18575,
+    94607
+  ],
+  "oldLeaf8Depth": 4,
+  "oldSlot1Depth": 4,
+  "proposedSlot1Depth": 6,
+  "featureCount": {
+    "parent": 155,
+    "proposed": 156
+  },
+  "atomCount": {
+    "parent": 23,
+    "proposed": 25
+  },
+  "addedAtomBytesFP32": 20480,
+  "proposedSlot1Tree": {
+    "feature": 139,
+    "gain": 0.26711916075433545,
+    "left": {
+      "atom": 0
+    },
+    "right": {
+      "feature": 152,
+      "gain": 0.04273445439496633,
+      "left": {
+        "feature": 0,
+        "gain": 0.007450188212402282,
+        "left": {
+          "feature": 0,
+          "gain": 0.006125755826788936,
+          "left": {
+            "atom": 1
+          },
+          "right": {
+            "atom": 2
+          },
+          "threshold": 279.0
+        },
+        "right": {
+          "feature": 0,
+          "gain": 0.021791105784923964,
+          "left": {
+            "atom": 3
+          },
+          "right": {
+            "atom": 4
+          },
+          "threshold": 350.0
+        },
+        "threshold": 287.0
+      },
+      "right": {
+        "feature": 145,
+        "gain": 0.041313674813437666,
+        "left": {
+          "feature": 133,
+          "gain": 0.004042363579846056,
+          "left": {
+            "atom": 5
+          },
+          "right": {
+            "atom": 6
+          },
+          "threshold": 0.002471923828125
+        },
+        "right": {
+          "feature": 131,
+          "gain": 0.03457302107235574,
+          "left": {
+            "atom": 7
+          },
+          "right": {
+            "feature": 155,
+            "threshold": -0.5,
+            "left": {
+              "atom": 9
+            },
+            "right": {
+              "feature": 155,
+              "threshold": 0.5,
+              "left": {
+                "atom": 8
+              },
+              "right": {
+                "atom": 10
+              }
+            }
+          },
+          "threshold": -0.006195068359375
+        },
+        "threshold": -0.009043375651041666
+      },
+      "threshold": -0.01298065185546875
+    },
+    "threshold": -0.018658161163330078
+  },
+  "census": [
+    {
+      "id": "A",
+      "oldLeaf8Rows": 493,
+      "groups": [
+        {
+          "order": 0,
+          "stratum": "active",
+          "newLeaf": 8,
+          "rows": 16
+        },
+        {
+          "order": 0,
+          "stratum": "padding",
+          "newLeaf": 8,
+          "rows": 477
+        }
+      ],
+      "firstExamples": {
+        "0": {
+          "row": 9,
+          "firstA": -1,
+          "firstB": -1
+        }
+      }
+    },
+    {
+      "id": "B",
+      "oldLeaf8Rows": 14,
+      "groups": [
+        {
+          "order": 0,
+          "stratum": "active",
+          "newLeaf": 8,
+          "rows": 14
+        }
+      ],
+      "firstExamples": {
+        "0": {
+          "row": 13,
+          "firstA": -1,
+          "firstB": -1
+        }
+      }
+    },
+    {
+      "id": "00",
+      "oldLeaf8Rows": 496,
+      "groups": [
+        {
+          "order": 0,
+          "stratum": "active",
+          "newLeaf": 8,
+          "rows": 6
+        },
+        {
+          "order": 1,
+          "stratum": "active",
+          "newLeaf": 10,
+          "rows": 15
+        },
+        {
+          "order": 1,
+          "stratum": "padding",
+          "newLeaf": 10,
+          "rows": 475
+        }
+      ],
+      "firstExamples": {
+        "0": {
+          "row": 5,
+          "firstA": -1,
+          "firstB": -1
+        },
+        "1": {
+          "row": 16,
+          "firstA": 8,
+          "firstB": 16
+        }
+      }
+    },
+    {
+      "id": "10",
+      "oldLeaf8Rows": 494,
+      "groups": [
+        {
+          "order": -1,
+          "stratum": "active",
+          "newLeaf": 9,
+          "rows": 14
+        },
+        {
+          "order": -1,
+          "stratum": "padding",
+          "newLeaf": 9,
+          "rows": 475
+        },
+        {
+          "order": 0,
+          "stratum": "active",
+          "newLeaf": 8,
+          "rows": 5
+        }
+      ],
+      "firstExamples": {
+        "0": {
+          "row": 5,
+          "firstA": -1,
+          "firstB": -1
+        },
+        "-1": {
+          "row": 17,
+          "firstA": 16,
+          "firstB": 8
+        }
+      }
+    },
+    {
+      "id": "01",
+      "oldLeaf8Rows": 496,
+      "groups": [
+        {
+          "order": 0,
+          "stratum": "active",
+          "newLeaf": 8,
+          "rows": 6
+        },
+        {
+          "order": 1,
+          "stratum": "active",
+          "newLeaf": 10,
+          "rows": 15
+        },
+        {
+          "order": 1,
+          "stratum": "padding",
+          "newLeaf": 10,
+          "rows": 475
+        }
+      ],
+      "firstExamples": {
+        "0": {
+          "row": 5,
+          "firstA": -1,
+          "firstB": -1
+        },
+        "1": {
+          "row": 16,
+          "firstA": 8,
+          "firstB": 16
+        }
+      }
+    },
+    {
+      "id": "11",
+      "oldLeaf8Rows": 494,
+      "groups": [
+        {
+          "order": -1,
+          "stratum": "active",
+          "newLeaf": 9,
+          "rows": 14
+        },
+        {
+          "order": -1,
+          "stratum": "padding",
+          "newLeaf": 9,
+          "rows": 475
+        },
+        {
+          "order": 0,
+          "stratum": "active",
+          "newLeaf": 8,
+          "rows": 5
+        }
+      ],
+      "firstExamples": {
+        "0": {
+          "row": 5,
+          "firstA": -1,
+          "firstB": -1
+        },
+        "-1": {
+          "row": 17,
+          "firstA": 16,
+          "firstB": 8
+        }
+      }
+    },
+    {
+      "id": "novel",
+      "oldLeaf8Rows": 501,
+      "groups": [
+        {
+          "order": 0,
+          "stratum": "active",
+          "newLeaf": 8,
+          "rows": 16
+        },
+        {
+          "order": 0,
+          "stratum": "padding",
+          "newLeaf": 8,
+          "rows": 485
+        }
+      ],
+      "firstExamples": {
+        "0": {
+          "row": 4,
+          "firstA": -1,
+          "firstB": -1
+        }
+      }
+    }
+  ],
+  "suppliedMechanics": {
+    "cases": [
+      "causal-prefix",
+      "translated-order",
+      "masked-missing-neutral",
+      "symbolic-parent-alias",
+      "weighted-contrast"
+    ],
+    "contrastD": "3/2",
+    "contrastS": [
+      "5/2",
+      "-1"
+    ],
+    "contrastVector": [
+      "-5/3",
+      "2/3"
+    ],
+    "gDotQ": "-29/6",
+    "weightedMean": [
+      "0",
+      "0"
+    ],
+    "scope": "Supplied exact integer/rational mechanics, not a learned or finite writer result."
+  },
+  "scope": "Fresh public token/mask integer census using reported old leaves. Symbolic null follows from cloning atom bytes, not numerical replay. No fitted contrast, refined serving artifact, original consumer, image or scientific array.",
+  "sourceSHA256": "204c34a7bea6ce50b5088089245949f204900d041e2d7088a16089d952e5ffb9",
+  "secondsAfterStandardLibraryImports": 0.00483520794659853
+}
